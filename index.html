@@ -1,172 +1,626 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Chat App - Puter.js Stream</title>
+    <title>Generatore di Lezioni con Claude Opus</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-            flex-direction: column;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
         }
-
-        #chat-container {
-            width: 80%;
-            max-width: 600px;
-            margin: auto;
-            background: white;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #4a4a4a;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
             border: 1px solid #ddd;
             border-radius: 4px;
-            padding: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            resize: vertical;
         }
-
-        #messages {
-            height: 300px;
-            overflow-y: auto;
-            border-bottom: 1px solid #ddd;
-            margin-bottom: 20px;
-            padding: 10px;
+        .button-group {
             display: flex;
-            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
         }
-
-        .message-container {
-            display: flex;
-            margin: 5px 0;
-        }
-
-        .user-message-container {
-            justify-content: flex-end;
-        }
-
-        .message {
-            padding: 10px 15px;
-            border-radius: 20px;
-            max-width: 70%;
-            word-wrap: break-word;
-        }
-
-        .ai-message {
-            background-color: #f0f0f0;
-            color: black;
-            border: 1px solid #ddd;
-        }
-
-        .user-message {
-            background-color: #007bff;
-            color: white;
-        }
-
-        #chat-input {
-            display: flex;
-        }
-
-        #chat-input input {
+        button {
             flex-grow: 1;
             padding: 10px;
-            margin-right: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-
-        #chat-input button {
-            padding: 10px 20px;
-            background: #007bff;
             color: white;
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
         }
-
-        #chat-input button:hover {
-            background: #0056b3;
+        #generate-button {
+            background-color: #007bff;
+        }
+        #generate-button:hover:not(:disabled) {
+            background-color: #0056b3;
+        }
+        #stop-button {
+            background-color: #dc3545;
+        }
+        #stop-button:hover:not(:disabled) {
+            background-color: #c82333;
+        }
+        #copy-button {
+            background-color: #28a745;
+            margin-top: 10px;
+            display: none; /* Inizialmente nascosto */
+        }
+        #copy-button:hover {
+            background-color: #218838;
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        #response-container {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #e9ecef;
+            border-left: 5px solid #007bff;
+            border-radius: 4px;
+            min-height: 100px; /* Altezza minima */
+            white-space: pre-wrap; /* Mantiene la formattazione */
+            word-wrap: break-word; /* Evita che le parole lunghe rompano il layout */
+        }
+        #loading {
+            display: none;
+            text-align: center;
+            margin-top: 10px;
+            color: #6c757d;
         }
     </style>
-    <script src="https://js.puter.com/v2/"></script>
 </head>
-
 <body>
-    <div id="chat-container">
-        <div id="messages"></div>
-        <div id="chat-input">
-            <input type="text" id="input-message" placeholder="Type a message..." onkeypress="if(event.key === 'Enter') sendMessage()">
-            <button onclick="sendMessage()">Send</button>
-        </div>
+
+<div class="container">
+    <h1>Crea una Lezione con Claude Opus</h1>
+
+    <p>Inserisci qui sotto l'argomento per la tua lezione di italiano.</p>
+
+    <label for="prompt">Argomento della lezione:</label>
+    <textarea id="prompt" rows="6" placeholder="Es. 'Crea una breve lezione sul passato prossimo per studenti principianti...'"></textarea>
+    
+    <div class="button-group">
+        <button id="generate-button">Genera Lezione</button>
+        <button id="stop-button" disabled>Ferma</button>
     </div>
-    <p>Powered by Puter.js (Streaming)</p>
 
-    <script>
-        const messages = [];
+    <div id="loading">Generazione in corso...</div>
+    <div id="response-container">La risposta apparirà qui.</div>
+    
+    <button id="copy-button">Copia Contenuto</button>
+</div>
 
-        function addMessage(msg, isUser) {
-            const messagesDiv = document.getElementById("messages");
-            const messageContainer = document.createElement("div");
-            const messageDiv = document.createElement("div");
+<script src="https://js.puter.com/v2/"></script>
 
-            messageDiv.textContent = msg;
-            messageDiv.classList.add("message");
+<script>
+    const promptInput = document.getElementById('prompt');
+    const generateButton = document.getElementById('generate-button');
+    const stopButton = document.getElementById('stop-button');
+    const copyButton = document.getElementById('copy-button');
+    const responseContainer = document.getElementById('response-container');
+    const loadingDiv = document.getElementById('loading');
 
-            if (isUser) {
-                messageContainer.classList.add("message-container", "user-message-container");
-                messageDiv.classList.add("user-message");
-            } else {
-                messageContainer.classList.add("message-container");
-                messageDiv.classList.add("ai-message");
-            }
+    let controller = null; // Controller per annullare la richiesta
 
-            messageContainer.appendChild(messageDiv);
-            messagesDiv.appendChild(messageContainer);
-            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+    const defaultInstructions = `ISTRUZIONI COMPLETE PER LA CREAZIONE DI LEZIONI DI ITALIANO B2
+## 🧠 RESET MEMORIA OBBLIGATORIO
 
-            // Restituisci il div del messaggio per poterlo aggiornare
-            return messageDiv;
+**PRIMA DI CREARE OGNI LEZIONE:**
+- Cancella completamente qualsiasi ricordo di versioni precedenti delle istruzioni
+- Leggi ESCLUSIVAMENTE le istruzioni fornite in questa sessione
+- NON fare riferimento a "contraddizioni" o "versioni diverse" che non esistono
+- Se qualcosa non è chiaro, chiedi chiarimenti specifici senza inventare problemi
+- Concentrati SOLO su quello che è effettivamente scritto nelle istruzioni correnti
+- Non sovrapporre informazioni di conversazioni precedenti
+- Tratta ogni richiesta di lezione come un progetto completamente nuovo
+
+**COMPORTAMENTI DA EVITARE:**
+❌ "Ho trovato una contraddizione" (quando non c'è)
+❌ "Nelle istruzioni precedenti diceva..."  
+❌ "Mi ricordo che..."
+❌ Creare problemi inesistenti
+❌ Complicare istruzioni semplici e chiare
+
+**COMPORTAMENTI CORRETTI:**
+✅ Leggere le istruzioni attuali con precisione
+✅ Seguire esattamente il template fornito    
+✅ Chiedere chiarimenti solo se realmente necessario
+✅ Focalizzarsi sui fatti scritti, non su interpretazioni
+
+## 🗂️ VERIFICA LEZIONI IN GOOGLE DRIVE - OBBLIGATORIO
+
+### **PRIMA di creare qualsiasi lezione:**
+1. **Cerca le lezioni esistenti nella cartella:**
+    \`\`\`
+    Link: https://drive.google.com/drive/folders/1moRyb_5kuNpPMUhzXI7l5oZ9uA_7lR2i?usp=sharing
+
+    Percorso: Lezioni Italiano > Lezioni per tutti > B2
+    (nella cartella principale B2, NON nelle sottocartelle)
+    
+    Usa google_drive_search con query:
+    - "Lezione" in parents della cartella B2
+    - oppure: name contains 'Lezione' AND name contains 'B2'
+    \`\`\`
+    
+2. **I file hanno questi nomi:**
+    - "Lezione X – B2" (Google Docs)
+    - "Lezione X – B2.docx" (Word)
+    - Dove X = numero progressivo
+
+3. **Analizza ogni lezione trovata per:**
+    - Numero progressivo
+    - Livello (A0, A1, A2, B1, ecc.)
+    - Tema trattato
+    - Grammatica insegnata
+    - Vocabolario introdotto
+
+4. **Determina il numero della nuova lezione:**
+    - Se creazione sequenziale: usa il numero successivo all'ultima
+    - Se riempimento buchi: identifica il numero mancante
+    - Se lezione intermedia: usa SOLO elementi delle lezioni precedenti
+
+📋 OVERVIEW DEL PROGETTO
+Questo progetto prevede la creazione di lezioni di italiano per stranieri di livello B2 (elementare) per studenti dai 14 ai 64 anni. Ogni lezione deve essere creata come artifact di tipo code con il markdown.
+
+🎯 FORMATO TECNICO OBBLIGATORIO
+Template Base della Lezione
+Formato Artifact
+Tipo: application/vnd.ant.code
+Language: markdown
+Contenuto: DEVE apparire come codice markdown non formattato
+OBBLIGATORIO: Usare ### per titoli, #### per sottosezioni, **grassetto**, ecc.
+NON accettabile: Testo normale con solo simboli emoji
+Esempio corretto: ### **Titolo** invece di "### Titolo"
+
+ATTENZIONE: Ogni riga:  
+- Deve seguire le regole Markdown, non solo essere dichiarata come tale
+- Deve andare a capo con due spazi alla fine affinchè non si creino blocchi di testo illeggibili
+
+\`\`\`markdown
+## **Lezione X – B2**
+
+⏳ **Durata:** 50 minuti
+
+🧾 **Tema:** [Tema in italiano]
+
+### **🎯 Obiettivi**
+
+✅ [Obiettivo in italiano]
+✅ [Obiettivo in italiano]
+✅ [Obiettivo in italiano]
+✅ [Obiettivo in italiano]
+✅ [Obiettivo in italiano]
+\`\`\`
+
+## 📏 REQUISITI DI LUNGHEZZA E SVILUPPO
+
+### Lunghezza Minima per Sezione
+- **Sezioni standard:** 15-25 righe minimo
+- **NON accettabile:** Sezioni di sole 3-4 righe
+- **Ogni sezione deve includere:**
+  1. Introduzione/contesto (2-3 righe)
+  2. Contenuto principale (vocabolario/dialogo/spiegazione)
+  3. Attività/esercizio (sempre 10 items)
+  4. Eventuali note o esempi aggiuntivi
+
+### Esempi di Sviluppo Adeguato
+
+**❌ TROPPO SCARNO:**
+\`\`\`markdown
+### 3️⃣ Numeri
+1️⃣ uno
+2️⃣ due  
+📝 Esercizio: [10 frasi]
+\`\`\`
+
+✅ ADEGUATAMENTE SVILUPPATO:
+\`\`\`markdown
+### 3️⃣ 🔢 I numeri da 1 a 10
+
+📌 **Contesto:** I numeri sono fondamentali per comunicare in italiano. Li usiamo per dire l'ora, i prezzi, le quantità e molto altro.
+
+#### **📖 Vocabolario**
+
+1️⃣ **uno**
+2️⃣ **due**
+3️⃣ **tre**
+[etc...]
+
+#### **🎯 Pronuncia**
+Attenzione alla pronuncia di "tre" (rolling R) e "sette" (double T).
+
+#### **📝 Esercizio -- Scrivi il numero in lettere**
+[10 frasi complete]
+\`\`\`
+
+### **Struttura Standard delle Sezioni:**
+
+1️⃣ [emoji] Titolo sezione
+📌 Contesto: [Spiegazione in italiano]
+📖 Vocabolario
+🔹 parola italiana
+🔹 parola italiana
+🔹 parola italiana
+[continuare fino a 8-12 parole]
+📝 Esercizio -- Tipo di esercizio
+1️⃣ [Frase con spazio] __________.
+2️⃣ [Frase con spazio] __________.
+3️⃣ [Frase con spazio] __________.
+4️⃣ [Frase con spazio] __________.
+5️⃣ [Frase con spazio] __________.
+6️⃣ [Frase con spazio] __________.
+7️⃣ [Frase con spazio] __________.
+8️⃣ [Frase con spazio] __________.
+9️⃣ [Frase con spazio] __________.
+🔟 [Frase con spazio] __________.
+
+[Ripetere per almeno 10 sezioni totali]
+
+🏠 Compiti per casa
+1️⃣ [Primo compito in italiano]
+2️⃣ [Secondo compito in italiano]
+3️⃣ [Terzo compito in italiano]
+4️⃣ [Quarto compito in italiano]
+
+## 📐 REGOLE DI FORMATTAZIONE MARKDOWN
+
+### Gerarchie dei Titoli
+- **H2 (##):** Solo per il titolo principale "Lezione X – B2" (con grassetto)
+- **H3 (###):** Per sezioni principali con **grassetto** (es: ### **🎯 Obiettivi**)
+- **H4 (####):** Per sottosezioni con **grassetto** (es: #### **📖 Vocabolario**)
+- **H5 (#####):** Da evitare, usare solo se strettamente necessario
+
+### Elementi Obbligatori
+1. **Titolo:** \`## **Lezione X – B2**\` (X = numero determinato dalla ricerca in Google Drive)
+2. **Durata:** Sempre esattamente "50 minuti"
+3. **Tema:** Solo in italiano
+4. **Obiettivi:** Minimo 5, massimo 7, con check emoji ✅
+5. **Separatori:** Usare \`---\` tra sezioni principali
+6. **Numerazione sezioni:** Da 1️⃣ a 🔟 (minimo 10 sezioni)
+
+## 🎨 USO DELLE EMOJI
+
+### Emoji Obbligatorie
+- ⏳ per durata
+- 🧾 per tema
+- 🎯 per obiettivi
+- ✅ per ogni obiettivo
+- 📌 per contesto
+- 📖 per vocabolario
+- 📝 per esercizi scritti
+- 🎧 per ascolto
+- 🎭 per role-play
+- 🗣️ per speaking
+- 🏠 per compiti
+- 1️⃣-🔟 per numerazione
+
+### Emoji Tematiche Consigliate per Sezioni
+- 👋 saluti e presentazioni
+- 🍝 cibo e cucina
+- 🏠 casa e famiglia
+- 🛒 shopping
+- 🚌 trasporti
+- ☀️ tempo atmosferico
+- 👕 vestiti
+- 💊 salute
+- 📚 scuola
+- 🎉 eventi
+
+## 📚 STRUTTURA PEDAGOGICA
+
+### Sezione 1 (Introduttiva) - OBBLIGATORIA
+Deve sempre contenere:
+1. Contesto con spiegazione chiara (minimo 2-3 frasi)
+2. Vocabolario nuovo (8-12 parole)
+3. Esercizio di completamento con 10 frasi numerate
+4. **LUNGHEZZA MINIMA:** Ogni sezione deve essere sostanziosa (non solo titolo + esercizio)
+
+### Sezioni 2-9 (Sviluppo) - VARIETÀ E SOSTANZA
+**⚠️ IMPORTANTE: Ogni sezione deve essere adeguatamente sviluppata**
+- **NON accettabile:** Solo titolo + esercizio
+- **Minimo richiesto:** Contesto/spiegazione + contenuto + attività
+- **Lunghezza indicativa:** 15-25 righe per sezione
+
+Alternare tra:
+- **Grammatica:** Spiegazioni semplici con tabelle ed esempi multipli
+- **Dialoghi:** Conversazioni pratiche di almeno 6-8 battute con contesto
+- **Ascolto:** Risorsa autentica con URL visibile + attività pre/post ascolto
+- **Lettura:** Testi di 100-120 parole con glossario + 5-10 domande comprensione
+- **Dettato:** 10 frasi semplici da dettare, con focus su suoni/ortografia difficili
+- **Role-play:** Situazioni pratiche con istruzioni chiare e modello completo
+- **Pronuncia:** Focus su suoni difficili con almeno 10 parole esempio
+- **Cultura:** Elementi di cultura italiana con spiegazioni dettagliate
+- **Giochi:** Attività ludiche con regole chiare e almeno 10 items
+
+### Sezione 10 (Conclusiva) - FLESSIBILE
+Può essere:
+- Ripasso generale
+- Gioco finale
+- Mini-progetto
+- Autovalutazione
+
+### Compiti per Casa - OBBLIGATORI
+Sempre 4 compiti con:
+- Numerazione emoji (1️⃣-4️⃣)
+- Descrizione in italiano
+- Varietà di tipologie (scrittura, ascolto, pratica orale, ricerca)
+
+## 🎯 TIPOLOGIE DI ESERCIZI
+
+### Esercizi con Completamento (più comuni)
+\`\`\`markdown
+📝 **Esercizio -- Completa le frasi**
+1️⃣ Io __________ al supermercato.
+\`\`\`
+
+### Vero o Falso
+\`\`\`markdown
+📝 **Esercizio -- Vero o Falso**
+1️⃣ Maria va a scuola. [V/F]
+\`\`\`
+
+### Abbinamento
+\`\`\`markdown
+📝 **Esercizio -- Abbina**
+Colonna A       Colonna B
+1️⃣ Ciao         A. Saluto di sera
+2️⃣ Buonasera    B. Saluto informale
+\`\`\`
+
+### Scelta Multipla
+\`\`\`markdown
+📝 **Esercizio -- Scegli la risposta corretta**
+1️⃣ Maria _____ italiana.
+    a) sono  b) è  c) sei
+\`\`\`
+
+⚠️ ATTENZIONE PARTICOLARE: CONCORDANZA NEGLI ESERCIZI
+### Regole di Concordanza da Verificare SEMPRE
+
+**ARTICOLI DETERMINATIVI**
+- Maschile singolare: il/lo → aggettivo -o
+- Femminile singolare: la → aggettivo -a      
+- Maschile plurale: i/gli → aggettivo -i
+- Femminile plurale: le → aggettivo -e
+
+**PRIMA DI CREARE OGNI ESERCIZIO**
+- Identifica il genere della parola che andrà nello spazio vuoto
+- Verifica che articoli e aggettivi nella frase concordino
+- Controlla sia genere che numero
+
+### Esempi di Controllo
+\`\`\`markdown
+✅ CORRETTO: "La __________ è grande" (casa - femm. sing.)
+✅ CORRETTO: "Il __________ è rosso" (libro - masc. sing.)
+✅ CORRETTO: "Le __________ sono belle" (ragazze - femm. plur.)
+
+❌ SBAGLIATO: "La __________ è alto" (ragazzo - non concorda)
+❌ SBAGLIATO: "Il __________ sono buone" (pizze - non concorda)
+❌ SBAGLIATO: "I __________ è veloce" (macchina - non concorda)
+\`\`\`
+
+**VERBI DA CONTROLLARE**
+- Verifica che il verbo concordi con il soggetto in numero
+- Es: "Maria __________ (mangiare)" → mangia (3ª sing.)
+- Es: "I bambini __________ (giocare)" → giocano (3ª plur.)
+
+## 📊 CONTROLLO QUALITÀ
+### Checklist Pre-Pubblicazione
+
+☐ Ho cercato in Google Drive nella cartella "Lezioni Italiano > Lezioni per tutti > B2"
+☐ Ho identificato il numero progressivo corretto
+☐ Ho verificato cosa è stato insegnato nelle lezioni precedenti
+☐ Non uso grammatica/vocabolario di lezioni successive (se intermedia)
+☐ Numero lezione progressivo corretto
+☐ Tema non ripetuto in altre lezioni
+☐ PREREQUISITI verificati (usa SOLO vocabolario/grammatica già insegnati)
+☐ 10+ sezioni numerate con emoji
+☐ SEZIONI SVILUPPATE (non scarne, minimo 15-25 righe ciascuna)
+☐ Vocabolario 8-12 parole
+☐ Tutti gli esercizi hanno 10 items
+☐ CONCORDANZA verificata in OGNI esercizio (articoli, aggettivi, verbi)
+☐ Risorsa autentica con URL visibile
+☐ 4 compiti per casa
+☐ Artifact tipo application/vnd.ant.code con language="markdown"
+☐ Emoji appropriate e coerenti
+☐ OGNI RIGA scritta in vera sintassi markdown (###, ####, **, ecc.)
+☐ OGNI RIGA va a capo con due spazi alla fine
+☐ NON solo testo normale in un container markdown
+☐ URL artifact mantenuto invariato (no modifiche durante revisioni)
+
+### Errori Comuni da Evitare
+
+❌ Usare "insegnante" invece di "tutor"
+❌ ERRORI DI CONCORDANZA (il casa, la libro, i bambino è)
+❌ USARE GRAMMATICA NON ANCORA INSEGNATA (es. passato in Lezione 3)
+❌ USARE VOCABOLARIO DI LEZIONI FUTURE
+❌ SEZIONI TROPPO SCARNE (solo titolo + esercizio senza contenuto)
+❌ Esercizi con meno di 10 items
+❌ Link di risorse autentiche non funzionanti
+❌ Mescolare livelli di difficoltà
+❌ Ripetere temi già trattati
+❌ Formattazione markdown di tipo code inconsistente
+❌ Mancanza di varietà nelle attività
+❌ Non verificare genere/numero prima di creare frasi
+❌ Sezioni senza contesto o spiegazioni adeguate
+
+## 🎓 LINEE GUIDA PEDAGOGICHE
+
+### Principi Didattici
+- Progressione: Dal semplice al complesso
+- Ripetizione: Riutilizzare vocabolario nelle sezioni successive
+- Praticità: Situazioni di vita reale
+- Interattività: Bilanciare teoria e pratica
+- Multimedialità: Integrare video/audio autentici
+
+### Adattamento all'Età (14-64 anni)
+- Temi universali e neutri
+- Esempi che spaziano da scuola a lavoro
+- Cultura italiana accessibile a tutti
+- Evitare riferimenti troppo giovani o datati
+
+### Livello B2 - Caratteristiche
+- Frasi semplici e complesse base (soggetto-verbo-oggetto)
+- Presente indicativo e passato prossimo base
+- Vocabolario concreto e quotidiano espanso
+- Strutture grammaticali elementari (articoli, preposizioni base)
+- Massimo 120 parole per testi di lettura
+
+## 📝 ESEMPIO DI SEZIONE COMPLETA
+\`\`\`markdown
+### **3️⃣ 🍝 Al ristorante**
+
+📌 **Contesto:** Impariamo a ordinare cibo in un ristorante italiano. Conoscere le espressioni base per ordinare è molto importante quando si viaggia in Italia.
+
+#### **📖 Vocabolario**
+
+🍝 **pasta** 🍕 **pizza** 💧 **acqua** 🍷 **vino** 🥗 **insalata** 🍰 **dolce** 🧾 **menu** 💰 **conto** #### **💬 Dialogo**
+
+👤 **Cameriere:** Buongiorno, cosa desidera?      
+👤 **Cliente:** Vorrei una pizza margherita, per favore.      
+👤 **Cameriere:** Da bere?      
+👤 **Cliente:** Un'acqua naturale, grazie.      
+
+#### **📝 Esercizio -- Completa il dialogo**
+
+1️⃣ Cameriere: Buongiorno, cosa __________?      
+2️⃣ Cliente: __________ una pasta al pomodoro.      
+3️⃣ Cameriere: Da __________?      
+4️⃣ Cliente: Un __________ rosso, grazie.      
+5️⃣ Cameriere: __________ subito!      
+6️⃣ Cliente: Posso avere il __________?      
+7️⃣ Cameriere: Sono 15 __________.      
+8️⃣ Cliente: Ecco a __________.      
+9️⃣ Cameriere: __________ e arrivederci!      
+🔟 Cliente: __________, buona giornata!      
+\`\`\`
+
+## 🚀 ISTRUZIONI FINALI PER L'IA
+
+**PRIMA DI INIZIARE:**
+- Controlla SEMPRE le lezioni esistenti per evitare duplicati
+- Identifica quali argomenti grammaticali e vocabolario sono già stati insegnati
+- Pianifica esercizi usando SOLO elementi già conosciuti dagli studenti
+
+**CREA SEMPRE:** Un artifact in formato Markdown di tipo code
+**SEGUI ESATTAMENTE:** Il template e le regole di formattazione
+**VERIFICA:**
+- Che tutti i link siano con URL visibile
+- Che NON usi grammatica/vocabolario non ancora insegnati
+- Che articoli/aggettivi/verbi concordino correttamente
+
+**MANTIENI:** Coerenza stilistica con le lezioni esistenti
+**RICORDA:** Il target è B2 - elementare
+**USA:** Il termine "tutor" mai "insegnante"
+**INCLUDI:** Sempre elementi culturali italiani autentici
+**PRESERVA:** L'URL dell'artifact senza modificarlo
+
+## 📌 PROMEMORIA GOOGLE DRIVE
+Quando l'utente richiede una lezione, se non specifica il numero:
+1. Cerca SEMPRE prima in Google Drive nella cartella "Lezioni Italiano > Lezioni per tutti > B2"
+2. I file si chiamano "Lezione X – B2" o "Lezione X – B2.docx"
+3. Identifica automaticamente il numero da assegnare
+4. Informa l'utente: "Ho trovato le Lezioni 1-5, creerò la Lezione 6"
+
+**NOTA FINALE:** Queste istruzioni sono complete e dettagliate per permettere a qualsiasi IA di creare lezioni nel formato corretto. Seguile attentamente per garantire coerenza e qualità nel progetto.`;
+
+    const handleGenerate = async () => {
+        const userPrompt = promptInput.value;
+        if (!userPrompt) {
+            alert('Per favore, inserisci un argomento per la lezione.');
+            return;
         }
+        
+        // Unisci le istruzioni predefinite con il prompt dell'utente
+        const completePrompt = defaultInstructions + '\n\n' + userPrompt;
 
-        async function sendMessage() {
-            const input = document.getElementById("input-message");
-            const userMessage = input.value.trim();
+        // Imposta lo stato dei pulsanti e del display
+        generateButton.disabled = true;
+        stopButton.disabled = false;
+        copyButton.style.display = 'none';
+        loadingDiv.style.display = 'block';
+        responseContainer.textContent = '';
+        
+        controller = new AbortController();
 
-            if (userMessage) {
-                addMessage(userMessage, true);
-                input.value = '';
-                messages.push({ content: userMessage, role: 'user' });
+        try {
+            const response = await puter.ai.chat(completePrompt, {
+                model: 'openrouter:anthropic/claude-opus-4',
+                stream: true,
+                signal: controller.signal // Passa il segnale di annullamento
+            });
 
-                try {
-                    // Crea un nuovo div per il messaggio AI vuoto
-                    const aiMessageDiv = addMessage("", false);
-                    let fullAiResponse = '';
-
-                    const stream = await puter.ai.chat(messages, { stream: true });
-                    
-                    for await (const part of stream) {
-                        if (part.text) {
-                            fullAiResponse += part.text;
-                            // Aggiorna il contenuto del div del messaggio AI con i nuovi pezzi
-                            aiMessageDiv.textContent = fullAiResponse;
-                            // Assicurati che lo scroll sia sempre in fondo
-                            document.getElementById("messages").scrollTop = document.getElementById("messages").scrollHeight;
-                        }
-                    }
-
-                    // Aggiungi la risposta completa all'array di messaggi per la cronologia
-                    messages.push({ content: fullAiResponse, role: 'assistant' });
-
-                } catch (error) {
-                    console.error("AI response error:", error);
-                    addMessage("Sorry, an error occurred. Please try again.", false);
+            for await (const part of response) {
+                if (part && part.text) {
+                    responseContainer.textContent += part.text;
                 }
             }
+        } catch (error) {
+            if (error.name === 'AbortError') {
+                responseContainer.textContent += '\n\nGenerazione interrotta.';
+            } else {
+                console.error('Errore durante la generazione:', error);
+                responseContainer.textContent = 'Si è verificato un errore. Per favore, riprova.';
+            }
+        } finally {
+            // Ripristina lo stato dei pulsanti e del display
+            generateButton.disabled = false;
+            stopButton.disabled = true;
+            loadingDiv.style.display = 'none';
+            if (responseContainer.textContent.trim() !== '') {
+                copyButton.style.display = 'block';
+            }
         }
-    </script>
-</body>
+    };
 
+    const handleCopy = async () => {
+        try {
+            await navigator.clipboard.writeText(responseContainer.textContent);
+            const originalText = copyButton.textContent;
+            copyButton.textContent = 'Copiato!';
+            setTimeout(() => {
+                copyButton.textContent = originalText;
+            }, 2000);
+        } catch (err) {
+            console.error('Errore nella copia del testo:', err);
+            alert('Impossibile copiare il testo. Controlla che il browser lo supporti.');
+        }
+    };
+
+    const handleStop = () => {
+        if (controller) {
+            controller.abort();
+        }
+    };
+
+    generateButton.addEventListener('click', handleGenerate);
+    stopButton.addEventListener('click', handleStop);
+    copyButton.addEventListener('click', handleCopy);
+</script>
+
+</body>
 </html>
