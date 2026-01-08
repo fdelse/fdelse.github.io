@@ -1,9 +1,9 @@
 /* Custom Fonts */
 @font-face {
     font-family: 'Futura-Light';
-    src: url('images/Futura-Light.woff2') format('woff2'),
-         url('images/Futura-Light.woff') format('woff'),
-         url('images/Futura-Light.ttf') format('truetype');
+    src: url('Futura-Light.woff2') format('woff2'),
+         url('Futura-Light.woff') format('woff'),
+         url('Futura-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -11,9 +11,9 @@
 
 @font-face {
     font-family: 'Futura-Heavy';
-    src: url('images/Futura_W01_Heavy.woff2') format('woff2'),
-         url('images/Futura_W01_Heavy.woff') format('woff'),
-         url('images/Futura_W01_Heavy.ttf') format('truetype');
+    src: url('Futura_W01_Heavy.woff2') format('woff2'),
+         url('Futura_W01_Heavy.woff') format('woff'),
+         url('Futura_W01_Heavy.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -21,9 +21,9 @@
 
 @font-face {
     font-family: 'PacificaCondensed';
-    src: url('images/PacificaCondensed.woff2') format('woff2'),
-         url('images/PacificaCondensed.woff') format('woff'),
-         url('images/PacificaCondensed.ttf') format('truetype');
+    src: url('PacificaCondensed.woff2') format('woff2'),
+         url('PacificaCondensed.woff') format('woff'),
+         url('PacificaCondensed.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -160,7 +160,7 @@ body {
     position: relative;
     width: 100%;
     min-height: 700px;
-    background-image: url('images/dylan-lami.jpg');
+    background-image: url('dylan-lami.jpg');
     background-size: 99%;
     background-position: center center;
     background-repeat: no-repeat;
