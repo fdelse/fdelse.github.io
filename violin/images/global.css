@@ -606,20 +606,22 @@ body {
     }
 
     .social-bar {
-        padding: 20px 0;
-        gap: 15px;
+        padding: 10px 0 15px 0 !important; 
+        margin-top: 0px !important;    
+        margin-bottom: 0px !important;
+        gap: 10px;     
         display: flex;
-        flex-wrap: nowrap;
+        justify-content: center;
     }
 
     .social-bar a {
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
+        width: 35px; 
+        height: 35px;
+        font-size: 18px;
     }
 
     .hero {
-        padding: 5px 0 0 0;
+        padding: 5px 0 0 0!important;
         margin-bottom: 15px;
         background-color: var(--white);
     }
