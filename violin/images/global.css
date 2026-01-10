@@ -580,7 +580,7 @@ body {
 
     .hero {
         padding: 0.69rem 1.88rem 0.63rem;
-        margin-bottom: 0; 
+        margin-bottom: 1.25rem; 
     }
 
     .hero-image-mobile {
@@ -620,13 +620,14 @@ body {
     }
 
     .video-section {
-        background-color: var(--white);
-        padding: 0 1.88rem 1.88rem;
+    background-color: var(--white);
+    padding: 0 1.88rem 1.88rem;
+    margin-bottom: 0rem;
     }
 
     .music-section {
-        padding: 0.94rem 1.88rem 0.31rem;
-        margin-bottom: 1.19rem;
+    padding: 0.94rem 1.88rem 0.31rem;
+    margin-bottom: 1.7rem;
     }
 
     .music-title {
