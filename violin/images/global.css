@@ -198,7 +198,7 @@ body {
     font-size: var(--fs-hero-subtitle);
     color: var(--white);
     letter-spacing: 0.06rem;
-    margin-left: 65%;
+    margin-left: 75%;
     margin-top: 0.63rem;
     text-shadow: 0.13rem 0.13rem 0.63rem rgba(0,0,0,0.3);
 }
@@ -510,8 +510,42 @@ body {
    MEDIA QUERIES - Mobile First Approach
 ======================================== */
 
+/* Small Mobile: 320px */
+@media (max-width: 320px) {
+    .hero-title {
+        font-size: 1.6rem;
+        margin-left: 50%;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+        margin-left: 66%;
+    }
+    
+    .services p {
+        font-size: 0.75rem;
+    }
+}
+
+/* Mobile: 375px-425px */
+@media (min-width: 375px) and (max-width: 425px) {
+    .hero-title {
+        font-size: 1.9rem;
+        margin-left: 52%;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.35rem;
+        margin-left: 68%;
+    }
+    
+    .services p {
+        font-size: 0.85rem;
+    }
+}
+
 /* Tablet: 768px+ */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     body {
         padding-bottom: 0; /* Remove mobile footer padding */
     }
@@ -584,7 +618,7 @@ body {
     }
 
     .hero-image-mobile {
-        display: none; /* Hide mobile image */
+        display: none; 
     }
 
     .hero-content {
@@ -607,16 +641,16 @@ body {
     }
 
     .hero-subtitle {
-        margin-left: 9.63rem;
+        margin-left: 9rem;
         margin-top: 1.25rem;
     }
 
     .services {
         position: absolute;
         bottom: 1.88rem;
-        right: 3.13rem;
+        right: 6rem;
         padding-left: 0;
-        padding-bottom: 0;
+        padding-bottom: 100px;
     }
 
     .video-section {
@@ -719,7 +753,7 @@ body {
     }
 
     .hero-subtitle {
-        margin-left: 11.06rem;
+        margin-left: 12.4rem;
     }
 }
 
