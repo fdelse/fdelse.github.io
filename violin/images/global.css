@@ -53,7 +53,7 @@
     --fs-hero-subtitle: clamp(1.5rem, 3.5vw + 0.5rem, 3.8rem);
     --fs-services: clamp(0.95rem, 1.5vw + 0.3rem, 1.9rem);
     --fs-nav: clamp(1.2rem, 2vw, 1.56rem);
-    --fs-music-title: clamp(1.2rem, 3vw, 3.4rem);
+    --fs-music-title: clamp(1.3rem, 3vw, 3.4rem);
     --fs-dj-banner: clamp(2.3rem, 4.5vw, 5.5rem);
     --fs-unforgettable: clamp(1.6rem, 3vw, 3.5rem);
     --fs-contact-title: clamp(2.9rem, 4vw, 4.5rem);
@@ -525,6 +525,10 @@ body {
     .services p {
         font-size: 0.75rem;
     }
+
+    .music-title {
+        font-size: 0.95rem;
+    }
 }
 
 /* Mobile: 375px-425px */
@@ -542,6 +546,11 @@ body {
     .services p {
         font-size: 0.85rem;
     }
+
+    .music-title {
+        font-size: 1.1rem;
+    }
+    
 }
 
 /* Tablet: 768px+ */
