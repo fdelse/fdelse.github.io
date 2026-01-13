@@ -1,0 +1,774 @@
+/* Custom Fonts */
+@font-face {
+    font-family: 'Futura-Light';
+    src: url('Futura-Light.woff2') format('woff2'),
+         url('Futura-Light.woff') format('woff'),
+         url('Futura-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura-Heavy';
+    src: url('Futura_W01_Heavy.woff2') format('woff2'),
+         url('Futura_W01_Heavy.woff') format('woff'),
+         url('Futura_W01_Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PacificaCondensed';
+    src: url('PacificaCondensed.woff2') format('woff2'),
+         url('PacificaCondensed.woff') format('woff'),
+         url('PacificaCondensed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* CSS Reset & Variables */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navy-blue: #002e5d;
+    --coral-red: #f94144;
+    --white: #ffffff;
+    --black: #000000;
+    
+    /* Fluid Typography */
+    --fs-hero-title: clamp(2.3rem, 5vw + 1rem, 4.9rem);
+    --fs-hero-subtitle: clamp(1.5rem, 3.5vw + 0.5rem, 3.8rem);
+    --fs-services: clamp(0.95rem, 1.5vw + 0.3rem, 1.9rem);
+    --fs-nav: clamp(1.2rem, 2vw, 1.56rem);
+    --fs-music-title: clamp(1.3rem, 3vw, 3.4rem);
+    --fs-dj-banner: clamp(2.3rem, 4.5vw, 5.5rem);
+    --fs-unforgettable: clamp(1.6rem, 3vw, 3.5rem);
+    --fs-contact-title: clamp(2.9rem, 4vw, 4.5rem);
+    --fs-availability-title: clamp(1.8rem, 2.5vw, 2.8rem);
+}
+
+body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+    background-color: var(--white);
+    padding-bottom: 4.38rem; /* Mobile: spazio per footer nav */
+}
+
+/* ========================================
+   HEADER & NAVIGATION - Mobile Base
+======================================== */
+
+.header {
+    background-color: var(--navy-blue);
+    padding: 0.94rem 1.25rem;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav-container {
+    display: none; /* Hidden on mobile */
+}
+
+.nav-menu {
+    display: none; /* Hidden on mobile */
+}
+
+/* Social Icons Bar */
+.social-bar {
+    background-color: var(--coral-red);
+    padding: 0.63rem 0 0.94rem 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.63rem;
+    position: relative;        
+    z-index: 10;
+}
+
+.social-bar a {
+    width: 2.19rem;
+    height: 2.19rem;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--coral-red);
+    font-size: 1.13rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+.social-bar a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0.25rem 0.94rem rgba(0,0,0,0.3);
+}
+
+/* ========================================
+   HERO SECTION - Mobile Base
+======================================== */
+
+.hero {
+    position: relative;
+    background-color: var(--white);
+    padding: 0;
+    margin-top: -0.25rem;
+    margin-bottom: 0.34rem;
+}
+
+.hero-image-mobile {
+    display: block;
+    position: absolute;
+    width: 100%;
+    max-width: 42.5rem;
+    height: 30rem;             
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.contact-title-section {
+    background-color: var(--white);
+    padding: 1.25rem 0.63rem;
+    text-align: center;
+}
+
+.contact-main-title {
+    font-family: 'Futura-Light', sans-serif;
+    font-size: var(--fs-contact-title);
+    font-weight: normal;
+    color: var(--black);
+    letter-spacing: 0.63rem;
+}
+
+.hero-content {
+    position: relative;
+    width: 100%;
+    min-height: 30rem;
+    background-image: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-top: 2.5rem;
+    margin-left: 0;
+    opacity: 0;
+    animation: fadeIn 2s ease-in 1s forwards;
+}
+
+.hero-title {
+    font-family: 'PacificaCondensed', sans-serif;
+    font-size: var(--fs-hero-title);
+    font-weight: normal;
+    color: var(--white);
+    letter-spacing: 0.13rem;
+    line-height: 1;
+    margin-left: 55%;
+    margin-top: 0;
+    text-shadow: 0.13rem 0.13rem 0.63rem rgba(0,0,0,0.3);
+}
+
+.hero-subtitle {
+    font-family: 'PacificaCondensed', sans-serif;
+    font-size: var(--fs-hero-subtitle);
+    color: var(--white);
+    letter-spacing: 0.06rem;
+    margin-left: 75%;
+    margin-top: 0.63rem;
+    text-shadow: 0.13rem 0.13rem 0.63rem rgba(0,0,0,0.3);
+}
+
+.services {
+    position: relative;
+    z-index: 2;
+    bottom: auto;
+    right: auto;
+    margin-top: auto;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 55%;
+    padding-bottom: 1.25rem;
+}
+
+.services p {
+    font-family: 'PacificaCondensed', sans-serif;
+    font-size: var(--fs-services);
+    color: var(--white);
+    letter-spacing: 0.13rem;
+    line-height: 1.3;
+}
+
+/* ========================================
+   VIDEO & MUSIC SECTIONS - Mobile Base
+======================================== */
+
+.video-section {
+    background-color: var(--black);
+    padding: 0;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-container img {
+    object-fit: cover;
+}
+
+.music-section {
+    background-color: var(--black);
+    padding: 1.25rem 1.25rem 0.31rem;
+    text-align: center;
+    margin-bottom: 0.94rem;
+}
+
+.music-title {
+    font-family: 'Futura-Light', sans-serif;
+    font-size: var(--fs-music-title);
+    color: var(--white);
+    letter-spacing: 0;
+    margin-top: 0.63rem;
+    margin-bottom: 1.25rem;
+    font-weight: normal;
+}
+
+.music-icons {
+    display: flex;
+    justify-content: center;
+    gap: clamp(4.38rem, 15vw, 15.63rem);
+    margin-top: 1.88rem;
+}
+
+.music-icon {
+    color: var(--white);
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.music-icon:hover {
+    transform: scale(1.1);
+}
+
+/* ========================================
+   BANNERS - Mobile Base
+======================================== */
+
+.dj-banner {
+    background-color: var(--coral-red);
+    padding: 1.88rem 1.25rem;
+    text-align: center;
+}
+
+.dj-banner h2 {
+    font-family: 'Futura-Light', sans-serif;
+    font-size: var(--fs-dj-banner);
+    color: var(--white);
+    letter-spacing: 0.06rem;
+    font-weight: normal;
+}
+
+.unforgettable-banner {
+    background-color: var(--coral-red);
+    padding: 1.56rem 0.31rem;
+    text-align: center;
+}
+
+.unforgettable-banner h2 {
+    font-family: 'Futura-Light', sans-serif;
+    font-size: var(--fs-unforgettable);
+    color: var(--white);
+    letter-spacing: 0;
+    font-weight: normal;
+}
+
+/* ========================================
+   FORM SECTION - Mobile Base
+======================================== */
+
+.availability-section {
+    background-color: #f5f5f5;
+    padding: 3.13rem 1.25rem;
+}
+
+.availability-title {
+    font-family: 'Futura-Heavy', sans-serif;
+    font-size: var(--fs-availability-title);
+    color: var(--black);
+    letter-spacing: 0.19rem;
+    text-align: center;
+    margin-bottom: 1.88rem;
+    font-weight: 600;
+}
+
+.availability-form {
+    max-width: 50rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile: single column */
+    gap: 1.25rem;
+}
+
+.form-row.full-width {
+    grid-template-columns: 1fr;
+}
+
+.availability-form input,
+.availability-form textarea {
+    padding: 0.75rem 0.94rem;
+    border: none;
+    background-color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.88rem;
+    color: #333;
+}
+
+.availability-form input::placeholder,
+.availability-form textarea::placeholder {
+    color: #666;
+}
+
+.availability-form textarea {
+    resize: vertical;
+    min-height: 7.5rem;
+}
+
+.submit-btn {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 0.94rem 1.25rem;
+    border: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    margin-top: 1.25rem;
+    width: 100%; /* Mobile: full width */
+}
+
+.submit-btn:hover {
+    background-color: #333;
+}
+
+/* ========================================
+   CONTACT BUTTON - Mobile Base
+======================================== */
+
+.contact-btn {
+    display: none; /* Hidden on mobile */
+}
+
+/* ========================================
+   MOBILE MENU
+======================================== */
+
+.mobile-menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 1.75rem;
+    cursor: pointer;
+    padding: 0.63rem;
+}
+
+.mobile-menu-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.mobile-menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+
+.close-menu-btn {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding: 0.63rem;
+}
+
+.mobile-menu-list {
+    list-style: none;
+    text-align: center;
+}
+
+.mobile-menu-list li {
+    margin: 1.88rem 0;
+}
+
+.mobile-menu-list li a {
+    color: var(--white);
+    text-decoration: none;
+    font-family: 'Futura-Heavy', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.13rem;
+    transition: color 0.3s ease;
+}
+
+.mobile-menu-list li a:hover,
+.mobile-menu-list li a.active {
+    color: var(--coral-red);
+}
+
+.mobile-footer-nav {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    padding: 0.94rem 0;
+    box-shadow: 0 -0.13rem 0.63rem rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+.mobile-footer-nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.mobile-footer-nav a {
+    color: #333;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* ========================================
+   MEDIA QUERIES - Mobile First Approach
+======================================== */
+
+/* Small Mobile: 320px */
+@media (max-width: 320px) {
+    .hero-title {
+        font-size: 1.6rem;
+        margin-left: 50%;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+        margin-left: 66%;
+    }
+    
+    .services p {
+        font-size: 0.75rem;
+    }
+
+    .music-title {
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobile: 375px-425px */
+@media (min-width: 375px) and (max-width: 425px) {
+    .hero-title {
+        font-size: 1.9rem;
+        margin-left: 52%;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.35rem;
+        margin-left: 68%;
+    }
+    
+    .services p {
+        font-size: 0.85rem;
+    }
+
+    .music-title {
+        font-size: 1.1rem;
+    }
+    
+}
+
+/* Tablet: 768px+ */
+@media (min-width: 769px) {
+    body {
+        padding-bottom: 0; /* Remove mobile footer padding */
+    }
+
+    .header {
+        padding: 1.4rem 0;
+        justify-content: center;
+    }
+
+    .mobile-menu-btn {
+        display: none;
+    }
+
+    .mobile-menu-overlay {
+        display: none;
+    }
+
+    .nav-container {
+        display: block;
+        background-color: var(--coral-red);
+        padding: 0.94rem 2.5rem 2.13rem;
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+        list-style: none;
+        opacity: 0;
+        animation: fadeIn 1.5s ease-in forwards;
+    }
+
+    .nav-menu li a {
+        color: var(--white);
+        text-decoration: none;
+        font-family: 'Futura-Heavy', sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        letter-spacing: 0.06rem;
+        padding: 0.13rem 1.5rem;
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+
+    .nav-menu li a:hover {
+        transform: scale(1.1);
+    }
+
+    .nav-menu li a.active {
+        background-color: var(--white);
+        color: var(--navy-blue);
+    }
+
+    .social-bar {
+        padding: 0 0 1.56rem 0;
+        margin-top: -0.63rem;
+        gap: 0.94rem;
+    }
+
+    .social-bar a {
+        width: 2.63rem;
+        height: 2.63rem;
+        font-size: 1.5rem;
+    }
+
+    .hero {
+        padding: 0.69rem 1.88rem 0.63rem;
+        margin-bottom: 1.25rem; 
+    }
+
+    .hero-image-mobile {
+        display: none; 
+    }
+
+    .hero-content {
+        min-height: 43.75rem;
+        background-image: url('dylan-lami.jpg'); /* Show desktop background */
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding: 3.75rem 3.75rem 1.25rem;
+    }
+
+    .hero-text {
+        text-align: left;
+        padding-top: 0;
+    }
+
+    .hero-title {
+        margin-left: 0;
+        margin-top: 2.5rem;
+    }
+
+    .hero-subtitle {
+        margin-left: 9rem;
+        margin-top: 1.25rem;
+    }
+
+    .services {
+        position: absolute;
+        bottom: 1.88rem;
+        right: 6rem;
+        padding-left: 0;
+        padding-bottom: 100px;
+    }
+
+    .video-section {
+    background-color: var(--white);
+    padding: 0 1.88rem 1.88rem;
+    margin-bottom: 0rem;
+    }
+
+    .music-section {
+    padding: 0.94rem 1.88rem 0.31rem;
+    margin-bottom: 1.7rem;
+    }
+
+    .music-title {
+        margin-top: 0;
+    }
+
+    .music-icons {
+        margin-top: -0.63rem;
+    }
+
+    .dj-banner {
+        padding: 2.5rem 1.88rem;
+    }
+
+    .unforgettable-banner {
+        padding: 3.75rem 1.88rem;
+    }
+
+    .availability-section {
+        padding: 5rem 1.88rem;
+    }
+
+    .availability-title {
+        margin-bottom: 3.13rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr 1fr; /* Tablet: two columns */
+    }
+
+    .availability-form input,
+    .availability-form textarea {
+        padding: 0.94rem 1.25rem;
+        font-size: 1rem;
+    }
+
+    .submit-btn {
+        width: auto;
+        padding: 0.94rem 2.5rem;
+        font-size: 1.13rem;
+    }
+
+    .contact-btn {
+        display: flex;
+        position: fixed;
+        right: 1.88rem;
+        bottom: 1.88rem;
+        background-color: #4267B2;
+        color: var(--white);
+        padding: 0.75rem 1.56rem;
+        border-radius: 1.56rem;
+        text-decoration: none;
+        font-family: 'Arial', sans-serif;
+        font-size: 0.88rem;
+        align-items: center;
+        gap: 0.63rem;
+        box-shadow: 0 0.25rem 0.94rem rgba(0,0,0,0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        z-index: 100;
+    }
+
+    .contact-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0.38rem 1.25rem rgba(0,0,0,0.4);
+    }
+
+    .contact-btn i {
+        font-size: 1.13rem;
+    }
+
+    .mobile-footer-nav {
+        display: none;
+    }
+}
+
+/* Desktop: 1025px+ */
+@media (min-width: 1025px) {
+    .nav-menu {
+        gap: 0.31rem;
+    }
+
+    .nav-menu li a {
+        font-size: var(--fs-nav);
+        padding: 0.13rem 2.5rem;
+    }
+
+    .hero-title {
+        margin-left: 3.75rem;
+    }
+
+    .hero-subtitle {
+        margin-left: 12.4rem;
+    }
+}
+
+/* Large Desktop: 1400px+ */
+@media (min-width: 1400px) {
+    .hero-content {
+        min-height: 85vh; 
+    }
+}
