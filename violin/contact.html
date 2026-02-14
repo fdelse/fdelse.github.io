@@ -58,20 +58,25 @@
     <!-- Availability Form -->
     <section class="availability-section" id="contact">
         <h5 class="availability-title">AVAILABILITY</h5>
-        <form class="availability-form">
+        <form class="availability-form" action="https://formsubmit.co/cliente.raquel.cabello@gmail.com" method="POST">
+            <!-- Formsubmit Configuration -->
+            <input type="hidden" name="_subject" value="New Event Request from Website">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
             <div class="form-row">
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email" required>
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
             </div>
             <div class="form-row">
-                <input type="date" placeholder="Date of the Event" required>
-                <input type="text" placeholder="Event address" required>
+                <input type="date" name="event_date" placeholder="Date of the Event" required>
+                <input type="text" name="event_address" placeholder="Event address" required>
             </div>
             <div class="form-row full-width">
-                <input type="text" placeholder="Event Time" required>
+                <input type="text" name="event_time" placeholder="Event Time" required>
             </div>
             <div class="form-row full-width">
-                <textarea placeholder="Tell me more about your event" rows="5" required></textarea>
+                <textarea name="message" placeholder="Tell me more about your event" rows="5" required></textarea>
             </div>
             <button type="submit" class="submit-btn">Submit</button>
         </form>

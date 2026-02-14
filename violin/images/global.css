@@ -577,13 +577,13 @@ body {
 /* Mobile: 375px-425px */
 @media (min-width: 375px) and (max-width: 426px) {
     .hero-title {
-        font-size: 1.4rem !important;
+        font-size: 1.6rem !important;
         margin-left: 52%;
         letter-spacing: 0.05rem;
     }
 
     .hero-subtitle {
-        font-size: 1.1rem !important;
+        font-size: 1.4rem !important;
         margin-left: 66%;
     }
     
