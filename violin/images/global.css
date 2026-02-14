@@ -286,13 +286,13 @@ body {
 
 .music-icon {
     color: var(--white);
-    font-size: clamp(2.592rem, 5.184vw, 5.184rem);
+    font-size: clamp(2rem, 4vw, 4rem);
     text-decoration: none;
     transition: transform 0.3s ease;
 }
 
 .music-icon i {
-    font-size: clamp(2.592rem, 5.184vw, 5.184rem);
+    font-size: clamp(2rem, 4vw, 4rem);
 }
 
 .music-icon:hover {
