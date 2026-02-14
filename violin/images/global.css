@@ -233,6 +233,10 @@ body {
     margin-bottom: 0.94rem;
 }
 
+.video-section:last-of-type {
+    margin-bottom: 0;
+}
+
 .video-container {
     position: relative;
     width: 100%;
