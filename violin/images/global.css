@@ -539,8 +539,9 @@ body {
 
 .mobile-footer-nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     list-style: none;
+    gap: calc(1rem - 2mm);
 }
 
 .mobile-footer-nav a {
