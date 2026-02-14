@@ -74,7 +74,7 @@ body {
 .header {
     background-color: var(--navy-blue);
     padding: 0.94rem 1.25rem;
-    height: calc(54px - 4mm);
+    height: calc(54px - 2mm);
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -130,7 +130,7 @@ body {
     background-color: var(--white);
     padding: 0;
     margin-top: -0.25rem;
-    margin-bottom: 0.34rem;
+    margin-bottom: 0.94rem;
 }
 
 .hero-image-mobile {
@@ -198,7 +198,7 @@ body {
     font-size: var(--fs-hero-subtitle);
     color: var(--white);
     letter-spacing: 0.06rem;
-    margin-left: 75%;
+    margin-left: 80%;
     margin-top: 0.63rem;
     text-shadow: 0.13rem 0.13rem 0.63rem rgba(0,0,0,0.3);
 }
@@ -230,6 +230,7 @@ body {
 .video-section {
     background-color: var(--black);
     padding: 0;
+    margin-bottom: 0.94rem;
 }
 
 .video-container {
@@ -280,13 +281,13 @@ body {
 
 .music-icon {
     color: var(--white);
-    font-size: clamp(1.8rem, 3.6vw, 3.6rem);
+    font-size: clamp(2.16rem, 4.32vw, 4.32rem);
     text-decoration: none;
     transition: transform 0.3s ease;
 }
 
 .music-icon i {
-    font-size: clamp(1.8rem, 3.6vw, 3.6rem);
+    font-size: clamp(2.16rem, 4.32vw, 4.32rem);
 }
 
 .music-icon:hover {
