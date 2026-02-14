@@ -130,7 +130,7 @@ body {
     background-color: var(--white);
     padding: 0;
     margin-top: -0.25rem;
-    margin-bottom: 0.94rem;
+    margin-bottom: 0.47rem;
 }
 
 .hero-image-mobile {
@@ -198,7 +198,7 @@ body {
     font-size: var(--fs-hero-subtitle);
     color: var(--white);
     letter-spacing: 0.06rem;
-    margin-left: 80%;
+    margin-left: 71%;
     margin-top: 0.63rem;
     text-shadow: 0.13rem 0.13rem 0.63rem rgba(0,0,0,0.3);
 }
@@ -230,11 +230,12 @@ body {
 .video-section {
     background-color: var(--black);
     padding: 0;
-    margin-bottom: 0.94rem;
+    margin-bottom: 0.47rem;
 }
 
 .video-section:last-of-type {
     margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .video-container {
@@ -263,7 +264,7 @@ body {
     background-color: var(--black);
     padding: calc(0.63rem + 4mm) 1.25rem 0.94rem;
     text-align: center;
-    margin-bottom: 0.94rem;
+    margin-bottom: 0.47rem;
 }
 
 .music-title {
@@ -285,13 +286,13 @@ body {
 
 .music-icon {
     color: var(--white);
-    font-size: clamp(2.16rem, 4.32vw, 4.32rem);
+    font-size: clamp(2.592rem, 5.184vw, 5.184rem);
     text-decoration: none;
     transition: transform 0.3s ease;
 }
 
 .music-icon i {
-    font-size: clamp(2.16rem, 4.32vw, 4.32rem);
+    font-size: clamp(2.592rem, 5.184vw, 5.184rem);
 }
 
 .music-icon:hover {
@@ -320,6 +321,7 @@ body {
     background-color: var(--coral-red);
     padding: 1.56rem 0.31rem;
     text-align: center;
+    margin-top: -0.47rem;
 }
 
 .unforgettable-banner h2 {
@@ -551,16 +553,16 @@ body {
    MEDIA QUERIES - Mobile First Approach
 ======================================== */
 
-/* Small Mobile: 320px */
-@media (max-width: 320px) {
+/* Small Mobile: 320px-374px */
+@media (max-width: 374px) {
     .hero-title {
-        font-size: 1.6rem;
-        margin-left: 50%;
+        font-size: 1.4rem;
+        margin-left: 47%;
     }
 
     .hero-subtitle {
-        font-size: 1.2rem;
-        margin-left: 66%;
+        font-size: 1.1rem;
+        margin-left: 68%;
     }
     
     .services p {
@@ -573,19 +575,20 @@ body {
 }
 
 /* Mobile: 375px-425px */
-@media (min-width: 375px) and (max-width: 425px) {
+@media (min-width: 375px) and (max-width: 426px) {
     .hero-title {
-        font-size: 1.9rem;
+        font-size: 1.4rem !important;
         margin-left: 52%;
+        letter-spacing: 0.05rem;
     }
 
     .hero-subtitle {
-        font-size: 1.35rem;
-        margin-left: 68%;
+        font-size: 1.1rem !important;
+        margin-left: 66%;
     }
     
     .services p {
-        font-size: 0.85rem;
+        font-size: 0.95rem;
     }
 
     .music-title {
@@ -594,10 +597,23 @@ body {
     
 }
 
+/* Medium Mobile: 427px-768px */
+@media (min-width: 427px) and (max-width: 768px) {
+    .hero-title {
+        font-size: 3rem !important;
+        letter-spacing: 0.08rem;
+    }
+
+    .hero-subtitle {
+        font-size: 2.4rem !important;
+    }
+}
+
 /* Tablet: 768px+ */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     body {
         padding-bottom: 0; /* Remove mobile footer padding */
+        margin: 0;
     }
 
     .header {
@@ -663,8 +679,8 @@ body {
     }
 
     .hero {
-        padding: 0.69rem 3.76rem 0.63rem;
-        margin-bottom: 1.25rem;
+        padding: 0.69rem 0 0.63rem;
+        margin-bottom: calc(0.625rem - 1mm);
     }
 
     .hero-image-mobile {
@@ -677,7 +693,8 @@ body {
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        padding: 3.75rem 3.75rem 1.25rem;
+        padding: 3.75rem 0 1.25rem;
+        margin: 0;
     }
 
     .hero-text {
@@ -686,7 +703,7 @@ body {
     }
 
     .hero-title {
-        margin-left: 0;
+        margin-left: 3%;
         margin-top: 2.5rem;
     }
 
@@ -705,13 +722,17 @@ body {
 
     .video-section {
         background-color: var(--white);
-        padding: 0 3.76rem 1.88rem;
+        padding: 0 0 0.94rem;
         margin-bottom: 0rem;
+    }
+
+    .video-section:last-of-type {
+        padding-bottom: 0;
     }
 
     .music-section {
     padding: 4mm 3.76rem 1.56rem;
-    margin-bottom: 1.7rem;
+    margin-bottom: 0.85rem;
     }
 
     .music-title {
@@ -728,6 +749,7 @@ body {
 
     .unforgettable-banner {
         padding: 3.75rem 1.88rem;
+        margin-top: -0.94rem;
     }
 
     .availability-section {
