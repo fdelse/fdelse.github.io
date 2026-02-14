@@ -556,12 +556,12 @@ body {
 /* Small Mobile: 320px-374px */
 @media (max-width: 374px) {
     .hero-title {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         margin-left: 47%;
     }
 
     .hero-subtitle {
-        font-size: 1.1rem;
+        font-size: 1.4rem;
         margin-left: 68%;
     }
     
