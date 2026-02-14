@@ -406,6 +406,22 @@ body {
 }
 
 /* ========================================
+   VIDEOS PAGE SECTION - Mobile Base
+======================================== */
+
+.videos-section {
+    background-color: var(--white);
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.88rem;
+}
+
+.video-item {
+    width: 100%;
+}
+
+/* ========================================
    MOBILE MENU
 ======================================== */
 
@@ -591,8 +607,8 @@ body {
     .nav-menu li a {
         color: var(--white);
         text-decoration: none;
-        font-family: 'Futura-Heavy', sans-serif;
-        font-weight: 600;
+        font-family: 'Futura-Light', sans-serif;
+        font-weight: normal;
         font-size: 1rem;
         letter-spacing: 0.06rem;
         padding: 0.13rem 1.5rem;
@@ -632,7 +648,7 @@ body {
 
     .hero-content {
         min-height: 43.75rem;
-        background-image: url('dylan-lami.jpg'); /* Show desktop background */
+        background-image: url('wedding-cerimonies.jpg'); /* Show desktop background */
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -663,9 +679,9 @@ body {
     }
 
     .video-section {
-    background-color: var(--white);
-    padding: 0 1.88rem 1.88rem;
-    margin-bottom: 0rem;
+        background-color: var(--white);
+        padding: 1.88rem 1.88rem 1.88rem;
+        margin-bottom: 0rem;
     }
 
     .music-section {
@@ -741,6 +757,11 @@ body {
         font-size: 1.13rem;
     }
 
+    .videos-section {
+        padding: 1.88rem;
+        gap: 2.5rem;
+    }
+
     .mobile-footer-nav {
         display: none;
     }
@@ -763,6 +784,11 @@ body {
 
     .hero-subtitle {
         margin-left: 12.4rem;
+    }
+
+    .videos-section {
+        padding: 3.75rem 3.75rem;
+        gap: 3.75rem;
     }
 }
 
