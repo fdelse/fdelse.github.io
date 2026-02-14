@@ -256,7 +256,7 @@ body {
 
 .music-section {
     background-color: var(--black);
-    padding: calc(1.25rem + 4mm) 1.25rem 0.31rem;
+    padding: calc(0.63rem + 4mm) 1.25rem 0.94rem;
     text-align: center;
     margin-bottom: 0.94rem;
 }
@@ -275,14 +275,18 @@ body {
     display: flex;
     justify-content: center;
     gap: clamp(4.38rem, 15vw, 15.63rem);
-    margin-top: calc(1.88rem - 4mm);
+    margin-top: calc(1.88rem + 1mm);
 }
 
 .music-icon {
     color: var(--white);
-    font-size: clamp(2.5rem, 5vw, 5rem);
+    font-size: clamp(1.8rem, 3.6vw, 3.6rem);
     text-decoration: none;
     transition: transform 0.3s ease;
+}
+
+.music-icon i {
+    font-size: clamp(1.8rem, 3.6vw, 3.6rem);
 }
 
 .music-icon:hover {
@@ -548,7 +552,7 @@ body {
         font-size: 1.6rem;
         margin-left: 50%;
     }
-    
+
     .hero-subtitle {
         font-size: 1.2rem;
         margin-left: 66%;
@@ -569,7 +573,7 @@ body {
         font-size: 1.9rem;
         margin-left: 52%;
     }
-    
+
     .hero-subtitle {
         font-size: 1.35rem;
         margin-left: 68%;
@@ -642,7 +646,7 @@ body {
     }
 
     .social-bar {
-        padding: 4mm 0 1.56rem 0;
+        padding: 4mm 3.76rem 1.56rem 3.76rem;
         margin-top: -0.63rem;
         gap: 0.94rem;
     }
@@ -654,8 +658,8 @@ body {
     }
 
     .hero {
-        padding: 0.69rem 1.88rem 0.63rem;
-        margin-bottom: 1.25rem; 
+        padding: 0.69rem 3.76rem 0.63rem;
+        margin-bottom: 1.25rem;
     }
 
     .hero-image-mobile {
@@ -696,12 +700,12 @@ body {
 
     .video-section {
         background-color: var(--white);
-        padding: 0 1.88rem 1.88rem;
+        padding: 0 3.76rem 1.88rem;
         margin-bottom: 0rem;
     }
 
     .music-section {
-    padding: calc(0.94rem + 4mm) 1.88rem 0.31rem;
+    padding: 4mm 3.76rem 1.56rem;
     margin-bottom: 1.7rem;
     }
 
@@ -710,7 +714,7 @@ body {
     }
 
     .music-icons {
-        margin-top: calc(-0.63rem - 4mm);
+        margin-top: calc(-0.63rem + 1mm);
     }
 
     .dj-banner {
@@ -802,8 +806,8 @@ body {
     .hero {
         padding: 0;
         margin-top: 0.425rem;
-        margin-left: 0.85rem;
-        margin-right: 0.85rem;
+        margin-left: 1.7rem;
+        margin-right: 1.7rem;
         margin-bottom: 1.7rem;
     }
 
@@ -836,24 +840,24 @@ body {
 
     .video-section {
         padding: 0;
-        margin-left: 0.85rem;
-        margin-right: 0.85rem;
+        margin-left: 1.7rem;
+        margin-right: 1.7rem;
         margin-bottom: 0;
     }
 
     .music-section {
-        margin-left: 0.85rem;
-        margin-right: 0.85rem;
+        margin-left: 1.7rem;
+        margin-right: 1.7rem;
     }
 
     .dj-banner {
-        margin-left: 0.85rem;
-        margin-right: 0.85rem;
+        margin-left: 1.7rem;
+        margin-right: 1.7rem;
     }
 
     .unforgettable-banner {
-        margin-left: 0.85rem;
-        margin-right: 0.85rem;
+        margin-left: 1.7rem;
+        margin-right: 1.7rem;
     }
 
     .availability-section {
