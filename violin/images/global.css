@@ -541,7 +541,7 @@ body {
     display: flex;
     justify-content: center;
     list-style: none;
-    gap: calc(1rem - 2mm);
+    gap: calc(1rem + 2mm);
 }
 
 .mobile-footer-nav a {
