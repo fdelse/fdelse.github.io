@@ -49,9 +49,9 @@
     --black: #000000;
     
     /* Fluid Typography */
-    --fs-hero-title: clamp(2.3rem, 5vw + 1rem, 4.9rem);
-    --fs-hero-subtitle: clamp(1.5rem, 3.5vw + 0.5rem, 3.8rem);
-    --fs-services: clamp(0.95rem, 1.5vw + 0.3rem, 1.9rem);
+    --fs-hero-title: clamp(3.19rem, 5vw + 1rem, 4.9rem);
+    --fs-hero-subtitle: clamp(2.08rem, 3.5vw + 0.5rem, 3.8rem);
+    --fs-services: clamp(0.75rem, 1.5vw + 0.3rem, 1.9rem);
     --fs-nav: clamp(1.2rem, 2vw, 1.56rem);
     --fs-music-title: clamp(1.3rem, 3vw, 3.4rem);
     --fs-dj-banner: clamp(2.3rem, 4.5vw, 5.5rem);
@@ -90,7 +90,7 @@ body {
 
 /* Social Icons Bar */
 .social-bar {
-    background-color: var(--coral-red);
+    background-color: #f600b9;
     padding: calc(0.63rem + 4mm) 0 0.94rem 0;
     margin-top: 0;
     display: flex;
@@ -108,7 +108,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--coral-red);
+    color: #f600b9;
     font-size: 1.13rem;
     text-decoration: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -188,7 +188,7 @@ body {
     color: var(--white);
     letter-spacing: 0.13rem;
     line-height: 1;
-    margin-left: 55%;
+    margin-left: calc(55% - 2cm);
     margin-top: 0;
     text-shadow: 0.13rem 0.13rem 0.63rem rgba(0,0,0,0.3);
 }
@@ -198,7 +198,7 @@ body {
     font-size: var(--fs-hero-subtitle);
     color: var(--white);
     letter-spacing: 0.06rem;
-    margin-left: 71%;
+    margin-left: calc(71% - 2cm);
     margin-top: 0.63rem;
     text-shadow: 0.13rem 0.13rem 0.63rem rgba(0,0,0,0.3);
 }
@@ -211,7 +211,7 @@ body {
     margin-top: auto;
     font-weight: bold;
     text-align: left;
-    padding-left: 55%;
+    padding-left: calc(55% + 1cm);
     padding-bottom: 1.25rem;
 }
 
@@ -558,12 +558,12 @@ body {
 @media (max-width: 374px) {
     .hero-title {
         font-size: 1.6rem;
-        margin-left: 47%;
+        margin-left: 32%;
     }
 
     .hero-subtitle {
         font-size: 1.4rem;
-        margin-left: 68%;
+        margin-left: 53%;
     }
     
     .services p {
@@ -578,18 +578,18 @@ body {
 /* Mobile: 375px-425px */
 @media (min-width: 375px) and (max-width: 426px) {
     .hero-title {
-        font-size: 1.6rem !important;
-        margin-left: 52%;
+        font-size: 2.2rem !important;
+        margin-left: 31%;
         letter-spacing: 0.05rem;
     }
 
     .hero-subtitle {
-        font-size: 1.4rem !important;
-        margin-left: 66%;
+        font-size: 1.94rem !important;
+        margin-left: 49%;
     }
     
     .services p {
-        font-size: 0.95rem;
+        font-size: 0.75rem;
     }
 
     .music-title {
