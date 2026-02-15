@@ -95,7 +95,7 @@ body {
     margin-top: 0;
     display: flex;
     justify-content: center;
-    gap: calc(0.63rem + 2mm);
+    gap: calc(0.63rem + 3mm);
     position: relative;
     z-index: 10;
 }
