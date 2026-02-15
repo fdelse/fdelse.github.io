@@ -262,7 +262,7 @@ body {
 
 .music-section {
     background-color: var(--black);
-    padding: 0.5rem 1.25rem 0.5rem;
+    padding: calc(0.5rem + 3.5mm) 1.25rem calc(0.5rem + 3.5mm);
     text-align: center;
     margin-bottom: 0.47rem;
 }
