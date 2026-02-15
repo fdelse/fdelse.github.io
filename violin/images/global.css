@@ -95,7 +95,7 @@ body {
     margin-top: 0;
     display: flex;
     justify-content: center;
-    gap: 0.63rem;
+    gap: calc(0.63rem + 2mm);
     position: relative;
     z-index: 10;
 }
@@ -230,7 +230,7 @@ body {
 .video-section {
     background-color: var(--black);
     padding: 0;
-    margin-bottom: 0.47rem;
+    margin-bottom: 0;
 }
 
 .video-section:last-of-type {
