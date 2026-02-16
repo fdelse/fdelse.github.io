@@ -72,7 +72,7 @@ body {
 ======================================== */
 
 .header {
-    background-color: var(--navy-blue);
+    background-color: #f600b9;
     padding: 0.94rem 1.25rem;
     height: calc(54px - 2mm);
     display: flex;
@@ -623,6 +623,7 @@ body {
     }
 
     .header {
+        background-color: var(--navy-blue);
         padding: calc(1.4rem - 2mm) 0;
         justify-content: center;
     }
