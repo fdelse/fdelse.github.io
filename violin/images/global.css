@@ -632,7 +632,7 @@ body {
 
     .nav-container {
         display: block;
-        background-color: var(--coral-red);
+        background-color: #f600b9;
         padding: 0.94rem 2.5rem calc(2.13rem - 4mm);
     }
 
