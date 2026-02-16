@@ -975,3 +975,10 @@ body {
         right: calc(6rem + 10cm);
     }
 }
+
+/* Extra Large: 1900px+ */
+@media (min-width: 1900px) {
+    .hero-content {
+        background-position: center calc(50% + 2cm);
+    }
+}
