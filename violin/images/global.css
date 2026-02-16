@@ -90,7 +90,7 @@ body {
 
 /* Social Icons Bar */
 .social-bar {
-    background-color: #f600b9;
+    background-color: var(--white);
     padding: calc(0.63rem + 4mm) 0 0.94rem 0;
     margin-top: 0;
     display: flex;
@@ -103,7 +103,7 @@ body {
 .social-bar a {
     width: 2.19rem;
     height: 2.19rem;
-    background-color: var(--white);
+    background-color: transparent;
     border-radius: 50%;
     display: flex;
     align-items: center;
