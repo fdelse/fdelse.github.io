@@ -64,7 +64,7 @@ body {
     font-family: sans-serif;
     overflow-x: hidden;
     background-color: var(--white);
-    padding-bottom: 4.38rem; /* Mobile: spazio per footer nav */
+    padding-bottom: 0;
 }
 
 /* ========================================
@@ -91,13 +91,16 @@ body {
 /* Social Icons Bar */
 .social-bar {
     background-color: var(--white);
-    padding: calc(0.63rem + 4mm) 0 0.94rem 0;
-    margin-top: 0;
+    padding: calc(0.63rem + 4mm) 0;
+    margin: 0;
     display: flex;
     justify-content: center;
-    gap: calc(0.63rem + 2.5mm);
+    align-items: center;
+    gap: calc(0.63rem + 1.5mm);
     position: relative;
     z-index: 10;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .social-bar a {
@@ -129,7 +132,7 @@ body {
     position: relative;
     background-color: var(--white);
     padding: 0;
-    margin-top: -0.25rem;
+    margin-top: 0;
     margin-bottom: 0.47rem;
 }
 
@@ -188,7 +191,8 @@ body {
     color: var(--white);
     letter-spacing: 0.13rem;
     line-height: 1;
-    margin-left: calc(55% - 2cm);
+    text-align: right;
+    margin-right: 0.5cm;
     margin-top: 0;
     text-shadow: 0.13rem 0.13rem 0.63rem rgba(0,0,0,0.3);
 }
@@ -198,7 +202,8 @@ body {
     font-size: var(--fs-hero-subtitle);
     color: var(--white);
     letter-spacing: 0.06rem;
-    margin-left: calc(71% - 2cm);
+    text-align: right;
+    margin-right: 0.5cm;
     margin-top: 0.63rem;
     text-shadow: 0.13rem 0.13rem 0.63rem rgba(0,0,0,0.3);
 }
@@ -526,7 +531,7 @@ body {
 }
 
 .mobile-footer-nav {
-    display: block;
+    display: none;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -556,14 +561,16 @@ body {
 
 /* Small Mobile: 320px-374px */
 @media (max-width: 374px) {
+    .social-bar {
+        gap: calc(0.63rem - 0.5mm);
+    }
+
     .hero-title {
         font-size: 1.6rem;
-        margin-left: 32%;
     }
 
     .hero-subtitle {
         font-size: 1.4rem;
-        margin-left: 53%;
     }
     
     .services p {
@@ -579,13 +586,11 @@ body {
 @media (min-width: 375px) and (max-width: 426px) {
     .hero-title {
         font-size: 2.2rem !important;
-        margin-left: 31%;
         letter-spacing: 0.05rem;
     }
 
     .hero-subtitle {
         font-size: 1.94rem !important;
-        margin-left: 49%;
     }
     
     .services p {
@@ -668,7 +673,7 @@ body {
     }
 
     .social-bar {
-        padding: 4mm 3.76rem 1.56rem 3.76rem;
+        padding: 4mm 3.76rem;
         margin-top: -0.63rem;
         gap: 0.94rem;
     }
@@ -680,7 +685,8 @@ body {
     }
 
     .hero {
-        padding: 0.69rem 0 0.63rem;
+        padding: 0 0 0.63rem;
+        margin-top: 0;
         margin-bottom: calc(0.625rem - 1mm);
     }
 
@@ -704,11 +710,15 @@ body {
     }
 
     .hero-title {
+        text-align: left;
+        margin-right: 0;
         margin-left: 55%;
         margin-top: 2.5rem;
     }
 
     .hero-subtitle {
+        text-align: left;
+        margin-right: 0;
         margin-left: 71%;
         margin-top: 1.25rem;
     }
@@ -870,7 +880,7 @@ body {
 
     .hero {
         padding: 0;
-        margin-top: 0.425rem;
+        margin-top: 0;
         margin-left: 1.7rem;
         margin-right: 1.7rem;
         margin-bottom: 0.85rem;
