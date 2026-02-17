@@ -860,7 +860,7 @@ body {
 /* Desktop small: 1025px-1439px */
 @media (min-width: 1025px) and (max-width: 1439px) {
     .hero-subtitle {
-        margin-left: 76% !important;
+        margin-left: 75% !important;
     }
 }
 
@@ -954,7 +954,7 @@ body {
     }
 
     .hero-subtitle {
-        margin-left: 1022px !important;
+        margin-left: 1013px !important;
     }
 
     .services {
