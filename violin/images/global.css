@@ -977,6 +977,134 @@ body {
     }
 }
 
+/* Cookie Banner */
+.cookie-banner {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: var(--white);
+    padding: 1rem 1.5rem;
+    z-index: 200;
+    font-size: 0.85rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cookie-banner.active {
+    display: flex;
+}
+
+.cookie-banner p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.cookie-banner button {
+    background-color: #f600b9;
+    color: var(--white);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.cookie-banner button:hover {
+    opacity: 0.9;
+}
+
+.cookie-link {
+    color: #f600b9;
+    text-decoration: underline;
+}
+
+.cookie-link:hover {
+    opacity: 0.8;
+}
+
+/* Cookie Policy Page */
+.cookie-policy-section {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 3rem;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.7;
+}
+
+.cookie-policy-title {
+    font-family: 'Futura-Heavy', sans-serif;
+    font-size: 1.8rem;
+    color: var(--black);
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.cookie-policy-date {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.cookie-policy-section h2 {
+    font-size: 1.2rem;
+    color: var(--black);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.cookie-policy-section h3 {
+    font-size: 1rem;
+    color: var(--black);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cookie-policy-section p {
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+}
+
+.cookie-policy-section ul {
+    margin: 0.5rem 0 1rem 1.5rem;
+    font-size: 0.95rem;
+}
+
+.cookie-policy-section ul li {
+    margin-bottom: 0.4rem;
+}
+
+.cookie-policy-section a {
+    color: #f600b9;
+    text-decoration: underline;
+}
+
+.cookie-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.85rem;
+}
+
+.cookie-table th,
+.cookie-table td {
+    border: 1px solid #ddd;
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+}
+
+.cookie-table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
 /* Extra Large: 1900px+ */
 @media (min-width: 1900px) {
     .hero-content {

@@ -29,4 +29,19 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Cookie Banner
+    const cookieBanner = document.querySelector('.cookie-banner');
+    const acceptBtn = document.querySelector('.cookie-accept');
+
+    if (cookieBanner && !localStorage.getItem('cookiesAccepted')) {
+        cookieBanner.classList.add('active');
+    }
+
+    if (acceptBtn) {
+        acceptBtn.addEventListener('click', function() {
+            localStorage.setItem('cookiesAccepted', 'true');
+            cookieBanner.classList.remove('active');
+        });
+    }
 });
