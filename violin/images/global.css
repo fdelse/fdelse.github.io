@@ -624,7 +624,8 @@ body {
 
     .header {
         background-color: var(--navy-blue);
-        padding: calc(1.4rem - 2mm) 0;
+        height: 10mm;
+        padding: 0;
         justify-content: center;
     }
 
@@ -639,7 +640,7 @@ body {
     .nav-container {
         display: block;
         background-color: #f600b9;
-        padding: 0.94rem 2.5rem calc(2.13rem - 4mm);
+        padding: 0.94rem 2.5rem calc(2.13rem - 3mm);
     }
 
     .nav-menu {
@@ -669,8 +670,10 @@ body {
     }
 
     .nav-menu li a.active {
-        background-color: var(--white);
-        color: var(--navy-blue);
+        background-color: #ff90e3;
+        color: var(--black);
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
     }
 
     .social-bar {
