@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Read(//c/**)",
+      "Bash(cmd /c \"dir c:\\\\laragon\\\\www\\\\fdelse.github.io\\\\falaschimoto\\\\ /b 2>&1\")",
+      "Bash(cmd /c \"dir c:\\\\laragon\\\\www\\\\fdelse.github.io\\\\falaschimoto\\\\ 2>&1\")",
+      "Bash(cmd /c \"dir c:\\\\laragon\\\\www\\\\fdelse.github.io\\\\falaschimoto\\\\index.html 2>&1\")",
+      "Read(//c//**)",
+      "Bash(git -C \"c:/laragon/www/fdelse.github.io/falaschimoto\" status)",
+      "Bash(git -C \"c:/laragon/www/fdelse.github.io/falaschimoto\" ls-files --others --exclude-standard)",
+      "Bash(git -C \"c:/laragon/www/fdelse.github.io/falaschimoto\" status --short)",
+      "Bash(git -C \"c:/laragon/www/fdelse.github.io/falaschimoto\" log --oneline --name-status HEAD~1..HEAD)",
+      "Bash(git -C \"c:/laragon/www/fdelse.github.io/falaschimoto\" show HEAD:index.html)",
+      "Bash(git -C \"c:/laragon/www/fdelse.github.io/falaschimoto\" log --oneline --all -- \"index.html\")",
+      "Bash(git -C \"c:/laragon/www/fdelse.github.io/falaschimoto\" ls-files \"index.html\")",
+      "Bash(git -C \"c:/laragon/www/fdelse.github.io/falaschimoto\" ls-tree -r HEAD --name-only)",
+      "Bash(python3:*)",
+      "Bash(where:*)",
+      "WebFetch(domain:saimoto.es)",
+      "WebFetch(domain:web.archive.org)",
+      "Bash(powershell -command \"Add-Type -AssemblyName System.Drawing; [System.Drawing.Image]::FromFile\\(''c:/laragon/www/fdelse.github.io/falaschimoto/images/suzuki-sv-7gx-side-by-side.jpg''\\) | ForEach-Object { Write-Output \\($_Width.ToString\\(\\) + ''x'' + $_Height.ToString\\(\\)\\) }\")"
+    ]
+  }
+}

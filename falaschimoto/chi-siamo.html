@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chi Siamo - Falaschi Moto Collesalvetti Livorno</title>
+  <meta name="description" content="Chi siamo - Falaschi Moto a Collesalvetti, Livorno. Concessionario Suzuki, Beta, SYM, SWM. Officina autorizzata moto e scooter. Scopri il nostro team.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="images/global.css">
+  <link rel="stylesheet" href="images/page.css">
+  <style>
+    /* CHI SIAMO — stili specifici */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      margin: 48px 0;
+    }
+    .team-card {
+      text-align: center;
+    }
+    .team-avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #1a1a1a;
+      margin: 0 auto 16px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 42px;
+      color: #555;
+    }
+    .team-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .team-card h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 4px;
+    }
+    .team-card p {
+      font-size: 13px;
+      color: #888;
+    }
+
+    /* RECENSIONI */
+    .reviews-section {
+      background: #f7f7f7;
+      padding: 60px 0;
+      margin-top: 60px;
+    }
+    .reviews-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .reviews-header .google-rating {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 14px 28px;
+      margin-top: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .google-logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: #4285F4;
+    }
+    .google-logo span:nth-child(2) { color: #EA4335; }
+    .google-logo span:nth-child(3) { color: #FBBC05; }
+    .google-logo span:nth-child(4) { color: #4285F4; }
+    .google-logo span:nth-child(5) { color: #34A853; }
+    .google-logo span:nth-child(6) { color: #EA4335; }
+    .stars-big {
+      color: #FBBC05;
+      font-size: 22px;
+      letter-spacing: 2px;
+    }
+    .rating-num {
+      font-size: 28px;
+      font-weight: 800;
+      color: #333;
+      line-height: 1;
+    }
+    .rating-count {
+      font-size: 13px;
+      color: #888;
+    }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .review-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+    .review-card-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .reviewer-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #2ea3f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+    .reviewer-name {
+      font-weight: 700;
+      font-size: 14px;
+      color: #333;
+    }
+    .reviewer-date {
+      font-size: 12px;
+      color: #aaa;
+    }
+    .review-stars {
+      color: #FBBC05;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    .review-text {
+      font-size: 13px;
+      color: #555;
+      line-height: 1.7;
+    }
+    .reviews-cta {
+      text-align: center;
+      margin-top: 36px;
+    }
+    .btn-google {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #fff;
+      border: 2px solid #4285F4;
+      color: #4285F4;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 12px 28px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-google:hover {
+      background: #4285F4;
+      color: #fff;
+    }
+
+    @media (max-width: 900px) {
+      .team-grid { grid-template-columns: repeat(2, 1fr); }
+      .reviews-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .team-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+      .reviews-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="main-header">
+  <div class="header-inner">
+    <a href="index.html" id="logo">
+      <img src="images/moto-livorno-officina-moto-livorno-accessori-moto-livorno.png" alt="Falaschi Moto">
+    </a>
+    <nav>
+      <ul id="top-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chi-siamo.html" class="active">Chi Siamo</a></li>
+        <li><a href="https://dealer.moto.it/falaschimoto" target="_blank" rel="noopener">Moto e Accessori</a></li>
+        <li><a href="servizi.html">Servizi</a></li>
+        <li><a href="servizio-tecnico.html">Officina</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+    <img src="images/suzukiLogo.png" alt="Suzuki" class="header-suzuki-logo">
+    <button class="hamburger">&#9776;</button>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero page-hero-dark">
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <span class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Chi Siamo</span>
+    <h1>Chi Siamo</h1>
+  </div>
+</section>
+
+<!-- CHI SIAMO -->
+<section class="page-content">
+  <div class="container">
+
+    <!-- TEAM -->
+    <div>
+      <span class="section-label center">IL NOSTRO TEAM</span>
+      <h2 class="center">Lo staff di Falaschi Moto</h2>
+      <p class="center" style="margin-top:8px; color:#111">Lo Staff di Falaschi Moto è felice di accogliervi nel salone e nell'officina di Collesalvetti.</p>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar"><img src="images/enrico-falaschi.jpg" alt="Enrico Falaschi"></div>
+          <h4>Enrico Falaschi</h4>
+          <p>Titolare</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar"><img src="images/umberto-falaschi.jpg" alt="Umberto Falaschi"></div>
+          <h4>Umberto Falaschi</h4>
+          <p>Vendite e ricambi</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar"><img src="images/giovanni-brandoli.jpg" alt="Giovanni Brandoli"></div>
+          <h4>Giovanni Brandoli</h4>
+          <p>Responsabile officina</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar"><img src="images/jonatan-panella.jpg" alt="Jonathan Panella"></div>
+          <h4>Jonathan Panella</h4>
+          <p>Meccanico specializzato</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-intro" style="margin-top:70px">
+      <span class="section-label">QUALCHE PAROLA SU DI NOI</span>
+      <h2>Falaschi Moto — da Collesalvetti per tutti i motociclisti</h2>
+    </div>
+
+    <div class="content-grid">
+      <div class="content-text">
+        <p class="lead">Nel punto vendita ed officina autorizzata a Collesalvetti (Livorno) offriamo assistenza e riparazione per qualsiasi moto o scooter. Oltre alle moto vendiamo abbigliamento tecnico ed i migliori accessori per le due ruote.</p>
+
+        <p>Nel salone trovate le occasioni che state cercando, con moto nuove a prezzi competitivi ed una vasta gamma di moto e scooter usati.</p>
+
+        <p>Siamo <strong>concessionari ufficiali Suzuki, Beta, SYM, SWM, Valenti e VerveMoto</strong>, inoltre rivenditori autorizzati <strong>Vespa, Honda, Piaggio e Aprilia</strong>. Per finire siamo rivenditori ufficiali di oggettistica per moto delle migliori marche.</p>
+
+        <p>L'officina specializzata di Falaschi Moto è in grado di risolvere qualsiasi problema meccanico di mezzi a due ruote.</p>
+
+        <div class="highlight-box" style="margin-top:28px">
+          <p>&#10003; Concessionario Suzuki · Beta · SYM · SWM · Valenti · VerveMoto<br>
+          &#10003; Rivenditore autorizzato Honda · Vespa · Piaggio · Aprilia<br>
+          &#10003; Officina autorizzata moto e scooter<br>
+          &#10003; Abbigliamento tecnico e accessori<br>
+          &#10003; Moto nuove e usate</p>
+        </div>
+
+        <a href="contatti.html" class="btn-primary" style="margin-top:24px">Vieni a trovarci</a>
+      </div>
+
+      <div class="content-sidebar">
+        <div class="info-box">
+          <h4>&#128344; Orari</h4>
+          <table class="hours-table">
+            <tr><td>Lunedì</td><td>10:00 – 13:00<br>16:00 – 20:00</td></tr>
+            <tr><td>Mar – Sabato</td><td>09:00 – 13:00<br>16:00 – 20:00</td></tr>
+            <tr><td>Domenica</td><td>Chiuso</td></tr>
+          </table>
+        </div>
+        <div class="info-box">
+          <h4>&#128222; Contatti</h4>
+          <p><a href="tel:+390586965064">0586 965064</a></p>
+          <p><a href="mailto:info@falaschimoto.it">info@falaschimoto.it</a></p>
+          <address>Via dell'Azalea, 30/32<br>57014 Collesalvetti (LI)</address>
+        </div>
+        <div class="info-box info-box-blue">
+          <h4>&#128247; Seguici</h4>
+          <p>Resta aggiornato sulle novità di Falaschi Moto, offerte e nuovi arrivi.</p>
+          <a href="#" class="btn-cta" style="font-size:12px;padding:10px 22px">Facebook</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container footer-grid">
+      <div class="footer-col footer-brand">
+        <img src="images/moto-livorno-officina-moto-livorno-accessori-moto-livorno.png" alt="Falaschi Moto" class="footer-logo">
+        <p>Concessionario ufficiale Suzuki, Beta, SYM, SWM a Collesalvetti (Livorno). Officina specializzata, ricambi originali e abbigliamento tecnico.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/FalaschiMoto" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          <a href="https://www.instagram.com/falaschimoto" target="_blank" rel="noopener" aria-label="Instagram">@</a>
+          <a href="#" aria-label="YouTube">&#x25B6;</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Navigazione</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="chi-siamo.html">Chi Siamo</a></li>
+          <li><a href="https://dealer.moto.it/falaschimoto" target="_blank" rel="noopener">Moto e Accessori</a></li>
+          <li><a href="servizi.html">Servizi</a></li>
+          <li><a href="servizio-tecnico.html">Officina</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Orari</h5>
+        <p>Lunedì: 10:00 – 13:00 / 16:00 – 20:00</p>
+        <p>Mar – Sab: 09:00 – 13:00 / 16:00 – 20:00</p>
+        <p>Domenica: Chiuso</p>
+      </div>
+      <div class="footer-col">
+        <h5>Contatti</h5>
+        <p>Via dell'Azalea, 30/32<br>57014 Collesalvetti (LI)</p>
+        <p><a href="tel:+390586965064">0586 965064</a></p>
+        <p><a href="mailto:info@falaschimoto.it">info@falaschimoto.it</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2025 Falaschi Moto &mdash; Concessionario Ufficiale Suzuki · Beta · SYM &mdash; Collesalvetti (LI)</p>
+    </div>
+  </div>
+</footer>
+
+<script src="images/script.js"></script>
+</body>
+</html>

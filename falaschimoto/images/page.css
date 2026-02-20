@@ -1,0 +1,539 @@
+/* =====================================================
+   PAGE.CSS — Stili pagine interne
+   ===================================================== */
+
+/* PAGE HERO */
+.page-hero {
+  height: 320px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-color: #111;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 40px;
+  margin-top: 66px;
+}
+
+.page-hero-dark {
+  background-image: linear-gradient(135deg, #111 0%, #333 100%);
+}
+
+.page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('negozio.jpg');
+  background-size: cover;
+  background-position: center 50%;
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.breadcrumb {
+  display: block;
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.breadcrumb a {
+  color: #fff;
+}
+
+.breadcrumb a:hover {
+  color: #2ea3f2;
+}
+
+.page-hero-content h1 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.1;
+}
+
+/* PAGE CONTENT */
+.page-content {
+  padding: 80px 0;
+}
+
+.page-intro {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 60px;
+}
+
+.page-intro h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.lead {
+  font-size: 16px;
+  color: #111;
+  line-height: 1.8;
+}
+
+/* CONTENT GRID */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 50px;
+  align-items: start;
+}
+
+.content-text h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+  margin: 28px 0 12px;
+}
+
+.content-text h3:first-child {
+  margin-top: 0;
+}
+
+.content-text p {
+  font-size: 14px;
+  color: #111;
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+.highlight-box {
+  background: #f5f9fd;
+  border-left: 3px solid #2ea3f2;
+  padding: 20px 24px;
+  margin: 24px 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 2;
+}
+
+/* SIDEBAR */
+.content-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-box {
+  background: #f8f8f8;
+  border: 1px solid #eee;
+  padding: 22px 20px;
+}
+
+.info-box-blue {
+  background: #2ea3f2;
+  border-color: #2ea3f2;
+  color: #fff;
+}
+
+.info-box-blue h4 {
+  color: #fff;
+}
+
+.info-box-blue p {
+  color: rgba(255,255,255,0.9);
+}
+
+.info-box h4 {
+  font-size: 13px;
+  font-weight: 700;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.info-box-blue h4 {
+  border-bottom-color: rgba(255,255,255,0.3);
+}
+
+.info-box p {
+  font-size: 13px;
+  color: #111;
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+.info-box address {
+  font-size: 13px;
+  color: #111;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.info-box a {
+  color: #2ea3f2;
+}
+
+.info-box-blue a {
+  color: #fff;
+}
+
+.hours-table {
+  width: 100%;
+  font-size: 13px;
+  border-collapse: collapse;
+}
+
+.hours-table td {
+  padding: 5px 0;
+  color: #111;
+  vertical-align: top;
+}
+
+.hours-table td:first-child {
+  font-weight: 600;
+  color: #111;
+  width: 55%;
+}
+
+.check-list {
+  list-style: none;
+}
+
+.check-list li {
+  font-size: 13px;
+  color: #111;
+  padding: 4px 0;
+  padding-left: 18px;
+  position: relative;
+}
+
+.check-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #2ea3f2;
+  font-weight: 700;
+}
+
+/* YAMAHA BANNER */
+.yamaha-banner {
+  margin-top: 60px;
+  overflow: hidden;
+}
+
+.yamaha-banner img {
+  width: 100%;
+  height: auto;
+}
+
+/* ACTIVE NAV */
+#top-menu .active {
+  color: #2ea3f2 !important;
+}
+
+/* FEATURED SECTION */
+.featured-section {
+  margin-top: 70px;
+  padding-top: 60px;
+  border-top: 1px solid #eee;
+}
+
+.featured-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 36px;
+}
+
+/* VENTAJAS (servicio tecnico) */
+.ventajas-section {
+  background: #f4f4f4;
+  padding: 80px 0;
+}
+
+.ventajas-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 50px;
+}
+
+.ventajas-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.ventaja-item {
+  text-align: center;
+  padding: 30px 20px;
+  background: #fff;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.ventaja-item:hover {
+  border-bottom-color: #2ea3f2;
+}
+
+.ventaja-icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.ventaja-item h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.ventaja-item p {
+  font-size: 13px;
+  color: #111;
+  line-height: 1.7;
+}
+
+/* CONTACTO */
+.contact-depts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.dept-card {
+  background: #f8f8f8;
+  padding: 30px 24px;
+  border-top: 3px solid #2ea3f2;
+  text-align: center;
+}
+
+.dept-icon {
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+
+.dept-card h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 14px;
+}
+
+.dept-card address {
+  font-size: 13px;
+  color: #111;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.dept-phone {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.dept-phone a {
+  color: #111;
+}
+
+.dept-phone a:hover {
+  color: #2ea3f2;
+}
+
+.dept-email {
+  font-size: 12px;
+  margin-bottom: 14px;
+}
+
+.dept-email a {
+  color: #111;
+  word-break: break-all;
+}
+
+.dept-hours {
+  font-size: 12px;
+  color: #111;
+  line-height: 1.8;
+  border-top: 1px solid #ddd;
+  padding-top: 14px;
+  margin-top: 14px;
+  text-align: left;
+}
+
+/* FORM + MAP GRID */
+.contact-main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.contact-form-wrap h3,
+.contact-map-wrap h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.contact-form-wrap > p,
+.contact-map-wrap > p {
+  font-size: 14px;
+  color: #111;
+  margin-bottom: 24px;
+  line-height: 1.7;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  color: #111;
+  transition: border-color 0.3s;
+  outline: none;
+  width: 100%;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #2ea3f2;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-check label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  color: #111;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+.form-check input[type="checkbox"] {
+  width: auto;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.btn-submit {
+  display: inline-block;
+  padding: 14px 36px;
+  background: #2ea3f2;
+  color: #fff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 2px solid #2ea3f2;
+  cursor: pointer;
+  transition: all 0.3s;
+  align-self: flex-start;
+}
+
+.btn-submit:hover {
+  background: transparent;
+  color: #2ea3f2;
+}
+
+.map-embed iframe {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.how-to-get h4 {
+  font-size: 13px;
+  font-weight: 700;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.how-to-get p {
+  font-size: 13px;
+  color: #111;
+}
+
+/* =====================================================
+   RESPONSIVE PAGINE INTERNE
+   ===================================================== */
+
+@media (max-width: 980px) {
+  .page-hero { height: 240px; }
+  .page-hero-content { width: 92%; }
+  .page-hero-content h1 { font-size: 28px; }
+
+  .content-grid { grid-template-columns: 1fr; }
+  .content-sidebar { order: -1; }
+
+  .ventajas-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .contact-depts { grid-template-columns: 1fr; }
+
+  .contact-main-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
+@media (max-width: 767px) {
+  .page-content { padding: 50px 0; }
+
+  .form-row { grid-template-columns: 1fr; }
+
+  .ventajas-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+  .ventajas-grid { grid-template-columns: 1fr; }
+}
