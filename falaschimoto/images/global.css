@@ -964,11 +964,12 @@ address {
 
 /* ---- max 768px : tablet portrait ---- */
 @media (max-width: 768px) {
+  .hero-img { object-position: calc(50% - 3cm) center; }
   .hero-content h1 { font-size: 28px; }
   .hero-badge { font-size: 10px; letter-spacing: 1px; }
   .hero-concessionario { font-size: 22px; margin-top: 16px; }
   .hero-sub-brands { font-size: 17px; margin-top: 24px; }
-  .hero-top-left { top: 20px; left: 20px; }
+  .hero-top-left { top: calc(20px + 3cm); left: 20px; }
 
   .brand-logos-track img { height: 70px; }
   .brand-logos-track { gap: 32px; }
