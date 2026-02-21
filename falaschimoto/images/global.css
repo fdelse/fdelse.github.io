@@ -850,12 +850,30 @@ address {
 .footer-bottom {
   background: #111;
   padding: 16px 0;
+}
+
+.footer-bottom .container {
+  position: relative;
   text-align: center;
 }
 
 .footer-bottom p {
   font-size: 12px;
   color: #aaa;
+}
+
+.footer-bottom .footer-credit {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-bottom .footer-credit:hover {
+  color: #2ea3f2;
 }
 
 /* =====================================================

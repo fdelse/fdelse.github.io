@@ -186,6 +186,12 @@
   color: #fff;
 }
 
+.info-box-blue h4,
+.info-box-blue p,
+.info-box-blue address {
+  color: #fff;
+}
+
 .hours-table {
   width: 100%;
   font-size: 13px;
