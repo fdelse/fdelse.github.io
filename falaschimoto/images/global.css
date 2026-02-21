@@ -169,7 +169,7 @@ address {
 }
 
 .header-suzuki-logo {
-  height: 28px;
+  height: 40px;
   width: auto;
   display: block;
 }
@@ -232,7 +232,7 @@ address {
   text-transform: uppercase;
   line-height: 1.7;
   margin-top: 2cm;
-  text-shadow: 1px 2px 5px rgba(0,0,0,0.5), 1px 1px 0px rgba(0,0,0,0.3);
+  text-shadow: 2px 4px 10px rgba(0,0,0,0.85), 1px 2px 0px rgba(0,0,0,0.6);
 }
 
 .hero-brands-bar {
@@ -880,6 +880,25 @@ address {
    RESPONSIVE
    ===================================================== */
 
+/* ---- 1440px+ : desktop largo ---- */
+@media (min-width: 1440px) {
+  .container { max-width: 1260px; }
+  .header-suzuki-logo { height: 38px; }
+}
+
+/* ---- 2560px+ : 2K / 4K ---- */
+@media (min-width: 2560px) {
+  .container { max-width: 1600px; }
+  body { font-size: 16px; }
+  .header-suzuki-logo { height: 48px; }
+  .hero-content h1 { font-size: 68px; }
+  .hero-concessionario { font-size: 40px; }
+  .hero-sub-brands { font-size: 30px; }
+  .brand-logos-track img { height: 120px; }
+  .brand-logos-track { gap: 90px; }
+}
+
+/* ---- max 1130px ---- */
 @media (max-width: 1130px) {
   #top-menu > li > a {
     padding: 24px 11px;
@@ -887,6 +906,20 @@ address {
   }
 }
 
+/* ---- max 1024px : tablet landscape / laptop piccolo ---- */
+@media (max-width: 1024px) {
+  .container { width: 92%; }
+  #top-menu > li > a { padding: 24px 10px; font-size: 12px; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .gama-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
+}
+
+@media (max-width: 980px) {
+  .header-suzuki-logo { display: none; }
+}
+
+/* ---- max 980px : tablet ---- */
 @media (max-width: 980px) {
   .container { width: 92%; }
 
@@ -929,9 +962,17 @@ address {
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
 }
 
-@media (max-width: 767px) {
+/* ---- max 768px : tablet portrait ---- */
+@media (max-width: 768px) {
   .hero-content h1 { font-size: 28px; }
   .hero-badge { font-size: 10px; letter-spacing: 1px; }
+  .hero-concessionario { font-size: 22px; margin-top: 16px; }
+  .hero-sub-brands { font-size: 17px; margin-top: 24px; }
+  .hero-top-left { top: 20px; left: 20px; }
+
+  .brand-logos-track img { height: 70px; }
+  .brand-logos-track { gap: 32px; }
+  #brand-logos { margin-top: 24px; margin-bottom: 24px; }
 
   .services-grid { grid-template-columns: 1fr; }
 
@@ -939,10 +980,66 @@ address {
 
   .footer-grid { grid-template-columns: 1fr; }
   .footer-brand p { max-width: 100%; }
+
+  .scroll-down-arrow { display: none; }
 }
 
+/* ---- max 480px ---- */
 @media (max-width: 480px) {
   .gama-grid { grid-template-columns: 1fr; }
   .gama-card { height: 180px; }
-  .hero-content h1 { font-size: 24px; }
+  .hero-content h1 { font-size: 22px; }
+  .brand-logos-track img { height: 50px; }
+  .brand-logos-track { gap: 20px; }
+}
+
+/* ---- max 425px : phone grande ---- */
+@media (max-width: 425px) {
+  .container { width: 94%; }
+  .hero-content h1 { font-size: 20px; }
+  .hero-concessionario { font-size: 16px; margin-top: 14px; margin-bottom: 6px; }
+  .hero-sub-brands { font-size: 13px; margin-top: 12px; line-height: 1.5; }
+  .hero-top-left { top: 14px; left: 14px; }
+  .brand-logos-track img { height: 42px; }
+  .brand-logos-track { gap: 16px; }
+  #brand-logos { padding: 18px 0; }
+  #servicios { padding: 50px 0; }
+  #about { padding: 50px 0; }
+  #gama { padding: 50px 0; }
+  #contacto, #contatti { padding: 50px 0; }
+  .contact-col h4 { font-size: 13px; }
+  .footer-grid { gap: 20px; }
+  .footer-top { padding: 40px 0 24px; }
+}
+
+/* ---- max 375px : iPhone standard ---- */
+@media (max-width: 375px) {
+  .hero-content h1 { font-size: 18px; }
+  .hero-concessionario { font-size: 14px; }
+  .hero-sub-brands { font-size: 12px; letter-spacing: 1px; }
+  .hero-top-left { top: 12px; left: 12px; }
+  #logo img { height: 36px; }
+  .brand-logos-track img { height: 36px; }
+  .brand-logos-track { gap: 12px; }
+  .header-inner { padding-left: 10px; padding-right: 12px; }
+  .services-grid { gap: 14px; }
+  .btn-primary { padding: 10px 22px; font-size: 12px; }
+}
+
+/* ---- max 320px : phone piccolo ---- */
+@media (max-width: 320px) {
+  body { font-size: 13px; }
+  .container { width: 96%; }
+  .hero-content h1 { font-size: 16px; }
+  .hero-concessionario { font-size: 13px; letter-spacing: 1px; }
+  .hero-sub-brands { font-size: 11px; letter-spacing: 0.5px; }
+  .hero-top-left { top: 10px; left: 10px; }
+  #logo img { height: 32px; }
+  .brand-logos-track img { height: 30px; }
+  .brand-logos-track { gap: 10px; }
+  .header-inner { padding-left: 8px; padding-right: 10px; height: 56px; }
+  nav { top: 56px; }
+  .btn-primary { padding: 9px 18px; font-size: 12px; }
+  .section-label { font-size: 14px; letter-spacing: 1.5px; }
+  .footer-top { padding: 30px 0 20px; }
 }

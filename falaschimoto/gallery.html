@@ -58,9 +58,12 @@
       transform: scale(1.05);
     }
     @media (max-width: 1024px) {
+      .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 768px) {
       .gallery-grid { grid-template-columns: repeat(2, 1fr); }
     }
-    @media (max-width: 600px) {
+    @media (max-width: 425px) {
       .gallery-grid { grid-template-columns: 1fr; }
     }
 
