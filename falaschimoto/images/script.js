@@ -7,6 +7,24 @@ window.addEventListener('scroll', function () {
   }
 });
 
+// Cookie banner
+(function () {
+  var banner = document.getElementById('cookie-banner');
+  if (!banner) return;
+  if (localStorage.getItem('cookie-consent')) {
+    banner.style.display = 'none';
+    return;
+  }
+  banner.querySelector('.btn-cookie-accept').addEventListener('click', function () {
+    localStorage.setItem('cookie-consent', 'accepted');
+    banner.style.display = 'none';
+  });
+  banner.querySelector('.btn-cookie-reject').addEventListener('click', function () {
+    localStorage.setItem('cookie-consent', 'rejected');
+    banner.style.display = 'none';
+  });
+})();
+
 // Hamburger menu toggle
 var hamburger = document.querySelector('.hamburger');
 var nav = document.querySelector('nav');

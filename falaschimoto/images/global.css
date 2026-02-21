@@ -877,6 +877,95 @@ address {
 }
 
 /* =====================================================
+   COOKIE BANNER
+   ===================================================== */
+
+#cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9998;
+  background: #1a1a1a;
+  border-top: 2px solid #2ea3f2;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.4);
+}
+
+#cookie-banner p {
+  font-size: 13px;
+  color: #ccc;
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+}
+
+#cookie-banner a {
+  color: #2ea3f2;
+  text-decoration: underline;
+}
+
+#cookie-banner .cookie-buttons {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+#cookie-banner .btn-cookie-accept {
+  background: #2ea3f2;
+  color: #fff;
+  border: none;
+  padding: 9px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#cookie-banner .btn-cookie-accept:hover {
+  background: #1a7ab8;
+}
+
+#cookie-banner .btn-cookie-reject {
+  background: transparent;
+  color: #aaa;
+  border: 1px solid #555;
+  padding: 9px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#cookie-banner .btn-cookie-reject:hover {
+  border-color: #aaa;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #cookie-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 18px;
+    gap: 14px;
+  }
+  #cookie-banner .cookie-buttons {
+    width: 100%;
+  }
+  #cookie-banner .btn-cookie-accept,
+  #cookie-banner .btn-cookie-reject {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+/* =====================================================
    RESPONSIVE
    ===================================================== */
 
@@ -975,7 +1064,7 @@ address {
   .brand-logos-track { gap: 32px; }
   #brand-logos { margin-top: 24px; margin-bottom: 24px; }
 
-  .about-img { margin-top: -0.5cm; margin-bottom: 1cm; }
+  .about-img { margin-top: -0.5cm; margin-bottom: 0.5cm; }
 
   .services-grid { grid-template-columns: 1fr; }
 
@@ -985,6 +1074,9 @@ address {
   .footer-brand p { max-width: 100%; }
 
   .scroll-down-arrow { display: none; }
+
+  .footer-bottom .container { flex-direction: column; align-items: center; gap: 6px; }
+  .footer-bottom .footer-credit { position: static; transform: none; }
 }
 
 /* ---- max 480px ---- */
