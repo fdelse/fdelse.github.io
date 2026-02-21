@@ -214,7 +214,7 @@ address {
 }
 
 .hero-concessionario {
-  color: #fff;
+  color: #ff3333;
   font-size: 33px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -225,7 +225,7 @@ address {
 }
 
 .hero-sub-brands {
-  color: rgba(255,255,255,0.9);
+  color: #ff3333;
   font-size: 24px;
   font-weight: 600;
   letter-spacing: 2px;
