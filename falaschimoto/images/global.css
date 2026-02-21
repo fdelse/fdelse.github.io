@@ -221,6 +221,7 @@ address {
   text-transform: uppercase;
   margin-top: 1cm;
   margin-bottom: 10px;
+  text-shadow: 2px 3px 6px rgba(0,0,0,0.6), 1px 1px 0px rgba(0,0,0,0.4);
 }
 
 .hero-sub-brands {
@@ -231,6 +232,7 @@ address {
   text-transform: uppercase;
   line-height: 1.7;
   margin-top: 2cm;
+  text-shadow: 1px 2px 5px rgba(0,0,0,0.5), 1px 1px 0px rgba(0,0,0,0.3);
 }
 
 .hero-brands-bar {
