@@ -975,6 +975,8 @@ address {
   .brand-logos-track { gap: 32px; }
   #brand-logos { margin-top: 24px; margin-bottom: 24px; }
 
+  .about-img { margin-top: -0.5cm; margin-bottom: 1cm; }
+
   .services-grid { grid-template-columns: 1fr; }
 
   .gama-grid { grid-template-columns: 1fr 1fr; }

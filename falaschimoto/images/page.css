@@ -544,7 +544,7 @@
   .ventajas-grid { grid-template-columns: 1fr 1fr; }
 
   .about-grid { grid-template-columns: 1fr; }
-  .about-grid > div:last-child { display: none; }
+  .about-grid > div:last-child { min-height: 220px; }
 
   .info-boxes { grid-template-columns: 1fr; }
 }
