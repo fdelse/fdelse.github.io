@@ -455,6 +455,15 @@ body {
     margin-bottom: 55px;
 }
 
+.sede-mappa-wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 30px rgba(0,0,0,0.12);
+}
+
 .sedi-grid {
     display: flex;
     flex-wrap: wrap;
