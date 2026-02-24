@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chi Siamo - Pegaso Amministrazioni Condominiali</title>
+    <title>Servizi - Pegaso Amministrazioni Condominiali</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="images/global.css">
@@ -13,9 +13,9 @@
         .page-banner {
             position: relative;
             height: 380px;
-            background-image: url('images/chi-siamo.jpg');
+            background-image: url('images/servizi.jpg');
             background-size: cover;
-            background-position: center top;
+            background-position: center;
             display: flex;
             align-items: flex-end;
             padding-bottom: 45px;
@@ -46,9 +46,7 @@
             text-decoration: none;
         }
 
-        .breadcrumb a:hover {
-            color: #ffffff;
-        }
+        .breadcrumb a:hover { color: #ffffff; }
 
         .page-banner-title {
             font-size: 52px;
@@ -60,12 +58,12 @@
         }
 
         /* --- CONTENUTO --- */
-        .chi-siamo-content {
+        .servizi-content {
             background: #ffffff;
             padding: 75px 40px 80px;
         }
 
-        .chi-siamo-inner {
+        .servizi-inner {
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
@@ -75,7 +73,7 @@
         }
 
         /* Colonna sinistra */
-        .cs-section-label {
+        .sv-section-label {
             font-size: 12px;
             font-weight: 700;
             color: var(--blue-testai);
@@ -84,7 +82,7 @@
             margin-bottom: 10px;
         }
 
-        .cs-title {
+        .sv-title {
             font-size: 34px;
             font-weight: 700;
             color: var(--text-gray);
@@ -94,7 +92,7 @@
             display: inline-block;
         }
 
-        .cs-title::after {
+        .sv-title::after {
             content: '';
             position: absolute;
             left: 0;
@@ -104,55 +102,74 @@
             background-color: var(--yellow-testai);
         }
 
-        .cs-photo {
-            width: 100%;
-            height: calc(310px + 2cm);
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 32px;
-            display: block;
-        }
-
-        .cs-text {
+        .sv-text {
             font-size: 15px;
             color: var(--text-gray);
             line-height: 1.85;
             margin-bottom: 18px;
         }
 
-        .cs-text strong {
-            color: var(--text-gray);
-            font-weight: 700;
-        }
-
-        /* Badge ANACI */
-        .anaci-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 16px;
-            background: #f4f7fb;
-            border: 2px solid #dde6f0;
-            border-radius: 10px;
-            padding: 16px 24px;
-            margin-top: 24px;
-        }
-
-        .anaci-text {
-            font-size: 13px;
-            color: var(--text-gray);
-            font-weight: 600;
-            line-height: 1.4;
-        }
-
-        .anaci-text strong {
+        /* Griglia servizi */
+        .sv-grid-title {
             font-size: 20px;
-            color: var(--blue-testai);
             font-weight: 700;
-            display: block;
+            color: var(--text-gray);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin: 40px 0 24px;
+            padding-top: 20px;
+            border-top: 2px solid #f0f0f0;
         }
 
-        /* Sidebar destra */
-        .cs-sidebar {
+        .sv-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .sv-card {
+            border-radius: 10px;
+            border: 2px solid #e8eef5;
+            padding: 28px 22px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 14px;
+            transition: box-shadow 0.2s, border-color 0.2s;
+        }
+
+        .sv-card:hover {
+            box-shadow: 0 6px 28px rgba(0,0,0,0.10);
+            border-color: var(--blue-testai);
+        }
+
+        .sv-card-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background-color: var(--blue-testai);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .sv-card-icon i {
+            color: #ffffff;
+            font-size: 22px;
+        }
+
+        .sv-card-text {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--text-gray);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            line-height: 1.5;
+        }
+
+        /* Sidebar */
+        .sv-sidebar {
             display: flex;
             flex-direction: column;
             gap: 22px;
@@ -160,13 +177,13 @@
             top: 100px;
         }
 
-        .cs-card {
+        .sv-card-side {
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 4px 22px rgba(0,0,0,0.09);
         }
 
-        .cs-card-header {
+        .sv-card-side-header {
             background-color: var(--blue-testai);
             color: #ffffff;
             font-weight: 700;
@@ -176,18 +193,18 @@
             letter-spacing: 0.5px;
         }
 
-        .cs-card-body {
+        .sv-card-side-body {
             background: #ffffff;
             padding: 20px 22px;
         }
 
-        .cs-card-body p {
+        .sv-card-side-body p {
             font-size: 14px;
             color: var(--text-gray);
             line-height: 1.75;
         }
 
-        .cs-contact-row {
+        .sv-contact-row {
             display: flex;
             align-items: flex-start;
             gap: 12px;
@@ -197,11 +214,9 @@
             line-height: 1.6;
         }
 
-        .cs-contact-row:last-child {
-            margin-bottom: 0;
-        }
+        .sv-contact-row:last-child { margin-bottom: 0; }
 
-        .cs-contact-row i {
+        .sv-contact-row i {
             color: var(--blue-testai);
             font-size: 15px;
             margin-top: 3px;
@@ -210,10 +225,34 @@
             text-align: center;
         }
 
-        .cs-contact-row em {
+        .sv-contact-row em {
             font-style: italic;
             font-size: 13px;
             opacity: 0.8;
+        }
+
+        /* Tag */
+        .sv-tags {
+            margin-top: 36px;
+            font-size: 13px;
+            color: var(--text-gray);
+        }
+
+        .sv-tags strong {
+            font-weight: 700;
+            margin-right: 6px;
+        }
+
+        .sv-tag {
+            display: inline-block;
+            background: #f0f4f8;
+            border: 1px solid #dde6f0;
+            border-radius: 4px;
+            padding: 3px 10px;
+            margin: 3px 4px 3px 0;
+            font-size: 12px;
+            color: var(--blue-testai);
+            font-weight: 600;
         }
     </style>
 </head>
@@ -241,71 +280,95 @@
 <!-- BANNER -->
 <section class="page-banner">
     <div class="page-banner-content">
-        <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Chi Siamo</p>
-        <h1 class="page-banner-title">Chi Siamo</h1>
+        <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Servizi</p>
+        <h1 class="page-banner-title">Servizi</h1>
     </div>
 </section>
 
 <!-- CONTENUTO -->
 <main>
-    <div class="chi-siamo-content">
-        <div class="chi-siamo-inner">
+    <div class="servizi-content">
+        <div class="servizi-inner">
 
             <!-- Colonna sinistra -->
-            <div class="cs-left">
-                <p class="cs-section-label">Qualche Parola Su Di Noi</p>
-                <h2 class="cs-title">Chi Siamo</h2>
+            <div class="sv-left">
+                <p class="sv-section-label">Di Seguito Alcuni Dei Nostri Servizi</p>
+                <h2 class="sv-title">I Nostri Servizi</h2>
 
-                <img src="images/livorno.jpg" alt="Livorno" class="cs-photo">
+                <p class="sv-text">L'Amministrazione Pegaso dispone all'interno dei propri locali di un ampio salone per effettuare le riunioni ed è possibile partecipare alle assemblee di condominio sia in persona che in modalità remota.</p>
 
-                <p class="cs-text">Pegaso Sas Amministrazione Condominiale e Immobiliare ha iniziato la propria attività nel <strong>1993 a Livorno</strong>.</p>
+                <p class="sv-text">Inoltre vicino all'ingresso dell'edificio in cui è ubicata l'amministrazione è disponibile un comodo e capiente parcheggio (in Piazza Benamozegh) che può essere utilizzato dai condomini che devono recarsi presso gli uffici amministrativi.</p>
 
-                <p class="cs-text">L'Amministrazione ha intrapreso fin dal principio un costante percorso di crescita professionale grazie a cui, oggi è diventata uno dei maggiori punti di riferimento del suo settore sulla piazza di Livorno.</p>
+                <h3 class="sv-grid-title">Alcuni Dei Nostri Servizi</h3>
 
-                <p class="cs-text">Lo staff è composto in pianta stabile dall'Amministratore <strong>Maria Rosa Fiorini</strong> e dai suoi collaboratori, <strong>Andrea Crucitti</strong>, <strong>Simone Tamburini</strong> e <strong>Fabio Di Bartolomeo</strong>, più altri collaboratori esterni.</p>
-
-                <div class="anaci-badge">
-                    <img src="images/Logo-ANACI-h60px.png" alt="Logo ANACI" style="height:60px;width:auto;display:block;">
-                    <div class="anaci-text">
-                        Siamo soci<strong>ANACI</strong>
+                <div class="sv-cards">
+                    <div class="sv-card">
+                        <div class="sv-card-icon">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </div>
+                        <p class="sv-card-text">Redazione contabilità condominiale con dettaglio analitico delle spese</p>
                     </div>
+                    <div class="sv-card">
+                        <div class="sv-card-icon">
+                            <i class="fas fa-search-location"></i>
+                        </div>
+                        <p class="sv-card-text">Sopralluoghi su richiesta per valutare interventi</p>
+                    </div>
+                    <div class="sv-card">
+                        <div class="sv-card-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <p class="sv-card-text">Disbrigo di pratiche fiscali condominiali</p>
+                    </div>
+                    <div class="sv-card">
+                        <div class="sv-card-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <p class="sv-card-text">Manutenzione ordinaria e straordinaria impianti con sopralluoghi di tecnici specializzati</p>
+                    </div>
+                </div>
+
+                <div class="sv-tags">
+                    <strong>Tag:</strong>
+                    <span class="sv-tag">amministratore di condominio livorno</span>
+                    <span class="sv-tag">anaci livorno</span>
                 </div>
             </div>
 
             <!-- Sidebar destra -->
-            <aside class="cs-sidebar">
+            <aside class="sv-sidebar">
 
-                <div class="cs-card">
-                    <div class="cs-card-header">Informazioni Aziendali</div>
-                    <div class="cs-card-body">
-                        <p>Pegaso Sas Amministrazione Condominiale a Livorno ha iniziato l'attività professionale nel 1993. Fin dalla fase iniziale del suo servizio di amministratore di condomini Pegaso si è sempre distinta per onestà e professionalità. Oggi Pegaso è una delle amministrazioni più importanti sulla piazza Livornese.</p>
+                <div class="sv-card-side">
+                    <div class="sv-card-side-header">Info Aziendali</div>
+                    <div class="sv-card-side-body">
+                        <p>L'amministratore di condominio Pegaso sas è nel suo settore il punto di riferimento nel circondario livornese. Come amministratore condomini offre ai propri clienti la massima onestà e professionalità.</p>
                     </div>
                 </div>
 
-                <div class="cs-card">
-                    <div class="cs-card-header">Contatti</div>
-                    <div class="cs-card-body">
-                        <div class="cs-contact-row">
+                <div class="sv-card-side">
+                    <div class="sv-card-side-header">Orario</div>
+                    <div class="sv-card-side-body">
+                        <div class="sv-contact-row">
+                            <i class="fas fa-clock"></i>
+                            <span>Dal Lunedì al Venerdì<br>dalle 09 alle 12<br><em>(previo appuntamento e orario ridotto a causa del Covid)</em></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sv-card-side">
+                    <div class="sv-card-side-header">Contatti</div>
+                    <div class="sv-card-side-body">
+                        <div class="sv-contact-row">
                             <i class="fas fa-map-marker-alt"></i>
                             <span>Via dei Lanzi, 33<br>57123 Livorno</span>
                         </div>
-                        <div class="cs-contact-row">
+                        <div class="sv-contact-row">
                             <i class="fas fa-phone"></i>
                             <span>0586 898284</span>
                         </div>
-                        <div class="cs-contact-row">
+                        <div class="sv-contact-row">
                             <i class="fas fa-envelope"></i>
                             <span>info@amministrazionepegaso.it</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cs-card">
-                    <div class="cs-card-header">Orario</div>
-                    <div class="cs-card-body">
-                        <div class="cs-contact-row">
-                            <i class="fas fa-clock"></i>
-                            <span>Dal Lunedì al Venerdì<br>dalle 09 alle 12<br><em>(previo appuntamento e orario ridotto a causa del Covid)</em></span>
                         </div>
                     </div>
                 </div>

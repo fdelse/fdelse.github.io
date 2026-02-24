@@ -39,13 +39,15 @@ body {
     height: calc(65px + 6mm);
 }
 
-/* When header becomes scrolled (green), make nav links white for contrast */
+/* When header becomes scrolled (green), make nav links white and rimuovi il rettangolo */
 .ct-header.scrolled .nav-menu a {
     color: #ffffff;
+    background: transparent;
 }
 .ct-header.scrolled .nav-menu a:hover {
     color: #ffffff;
-    opacity: 0.85;
+    background: rgba(255, 255, 255, 0.15);
+    opacity: 1;
 }
 
 /* Make button text white when header is scrolled */
@@ -89,15 +91,19 @@ body {
 
 .nav-menu a {
     text-decoration: none;
-    color: #3c3e3d;
+    color: #2b2f2d;
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
     padding: 8px 18px;
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 6px;
+    backdrop-filter: blur(4px);
+    transition: background 0.2s, color 0.2s;
 }
 
 .nav-menu a:hover {
-    color: #339933;
+    color: #7ac97a;
     opacity: 1;
 }
 
