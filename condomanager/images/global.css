@@ -23,7 +23,7 @@ body {
 /* HEADER */
 .ct-header {
     background-color: transparent;
-    height: 65px;
+    height: calc(65px + 6mm);
     display: flex;
     align-items: center;
     position: fixed;
@@ -36,7 +36,21 @@ body {
 
 .ct-header.scrolled {
     background-color: var(--blue-testai);
-    height: 65px;
+    height: calc(65px + 6mm);
+}
+
+/* When header becomes scrolled (green), make nav links white for contrast */
+.ct-header.scrolled .nav-menu a {
+    color: #ffffff;
+}
+.ct-header.scrolled .nav-menu a:hover {
+    color: #ffffff;
+    opacity: 0.85;
+}
+
+/* Make button text white when header is scrolled */
+.ct-header.scrolled .btn-preventivo {
+    color: #ffffff;
 }
 
 .ct-container {
@@ -53,7 +67,7 @@ body {
     align-items: flex-end;
     gap: 5px;
     position: relative;
-    top: -0.1cm;
+    top: -0.4cm;
 }
 
 .logo img {
@@ -120,9 +134,9 @@ body {
 /* HERO */
 .hero-section {
     position: relative;
-    min-height: 700px;
+    min-height: 840px;
     background-image: url('pegaso-amministrazioni-condominiali-24.jpg');
-    background-size: cover;
+    background-size: 120% auto;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -141,25 +155,39 @@ body {
     background: rgba(51,153,51,0.32);
     background: #33993352;
     backdrop-filter: blur(5px);
-    max-width: 450px;
+    max-width: 576px;
     padding: 50px 40px;
     border-radius: 15px;
     color: white;
     text-align: center;
+    margin-top: 4cm;
+}
+
+@media (min-width: 992px) {
+    .hero-box {
+        /* reduce width by additional 1cm + 0.5cm from the right, keep left margin */
+        max-width: calc(576px - 5mm - 1cm - 0.5cm);
+        margin-left: 1cm;
+        margin-right: auto;
+        transform: none;
+    }
 }
 
 .hero-box h1 {
-    font-size: 22px;
+    font-size: 27px;
     font-weight: 700;
     margin-bottom: 25px;
     line-height: 1.1;
 }
 
 .hero-box p {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.6;
     margin-bottom: 20px;
     color: #ffffff;
+    max-width: calc(100% - 2cm);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-box p strong {
@@ -171,6 +199,9 @@ body {
     font-size: 16px !important;
     margin: 30px 0 25px 0 !important;
     text-align: center;
+    max-width: calc(100% - 2cm) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .search-box {
@@ -182,7 +213,7 @@ body {
     padding: 15px 20px;
     border: none;
     border-radius: 8px;
-    font-size: 14px;
+    font-size: 20px;
     color: #666;
     background-color: white;
     cursor: pointer;
@@ -192,11 +223,53 @@ body {
     background-position: right 15px center;
 }
 
+/* SEZIONE INTRO (bianca) */
+.intro-section {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+.intro-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-gray);
+    margin-bottom: 30px;
+}
+
+.intro-illustration {
+    max-width: 300px;
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* SEZIONE PERCHÉ (verde) */
+.perche-section {
+    background-color: #387c30;
+    text-align: center;
+    padding: 60px 20px 70px;
+}
+
+.perche-section .section-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.perche-text {
+    color: #ffffff;
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
 /* --- SEZIONE SERVIZI --- */
 .services-grid {
     padding: 100px 0;
-    background-color: #387c30;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: var(--text-gray);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -214,6 +287,10 @@ body {
     padding-bottom: 25px;
     display: inline-block;
     line-height: 1.2;
+    color: var(--text-gray);
+}
+
+.perche-section .section-title {
     color: #ffffff;
 }
 
@@ -242,7 +319,7 @@ body {
 }
 
 .service-card img {
-    height: 150px; 
+    height: 185px;
     width: auto;
     margin-bottom: 20px;
     object-fit: contain;
@@ -250,18 +327,178 @@ body {
 
 .service-card h3 {
     font-size: 20px;
-    color: var(--yellow-testai);
+    color: var(--blue-testai);
     margin-bottom: 15px;
 }
 
 .service-card p {
     font-size: 15px;
-    color: #ffffff;
+    color: var(--text-gray);
 }
 
 .service-card p strong {
-    color: #ffffff; 
+    color: var(--text-gray);
     font-weight: 700;
+}
+
+/* --- SEZIONE SCOPRI SERVIZI --- */
+.scopri-servizi-section {
+    position: relative;
+    min-height: 500px;
+    background-image: url('amministratori-condominio-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.scopri-servizi-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.scopri-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding: 80px 20px;
+}
+
+.scopri-icon-circle {
+    width: 110px;
+    height: 110px;
+    background-color: #1a73c7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scopri-icon-circle i {
+    font-size: 46px;
+    color: #ffffff;
+}
+
+.scopri-content h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    max-width: 600px;
+    line-height: 1.2;
+}
+
+.btn-vai-servizi {
+    background-color: var(--yellow-testai);
+    color: #3c3e3d;
+    padding: 12px 35px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.btn-vai-servizi:hover {
+    opacity: 0.9;
+}
+
+.scopri-question {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.btn-preventivo-large {
+    background-color: var(--yellow-testai);
+    color: #3c3e3d;
+    padding: 18px 55px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.btn-preventivo-large:hover {
+    opacity: 0.9;
+}
+
+/* --- SEZIONE LE NOSTRE SEDI --- */
+.sedi-section {
+    background-color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.sedi-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--text-gray);
+    margin-bottom: 15px;
+}
+
+.sedi-subtitle {
+    font-size: 16px;
+    color: var(--text-gray);
+    margin-bottom: 55px;
+}
+
+.sedi-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 45px 55px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.sede-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.sede-circle {
+    width: 155px;
+    height: 155px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.sede-circle:hover {
+    transform: scale(1.05);
+}
+
+.sede-circle i {
+    font-size: 60px;
+    color: #1168b5;
+}
+
+.sede-label {
+    background-color: var(--yellow-testai);
+    color: #3c3e3d;
+    font-weight: 700;
+    padding: 7px 22px;
+    border-radius: 20px;
+    font-size: 15px;
 }
 
 /* --- FOOTER MODIFICATO --- */
@@ -304,7 +541,7 @@ body {
 }
 
 .footer-bottom {
-    background-color: #011d01;
+    background-color: #000400;
     padding: 20px 0;
     text-align: center; 
     font-size: 13px;
