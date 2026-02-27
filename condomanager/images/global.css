@@ -2317,8 +2317,8 @@ body {
 @media (max-width: 768px) {
     .hero-section { min-height: 560px; }
     .hero-box { padding: 35px 28px; margin-top: 1.5cm; }
-    .hero-box h1 { font-size: 22px; }
-    .hero-box p { font-size: 16px; max-width: 100%; }
+    .hero-box h1 { font-size: 25px; }
+    .hero-box p { font-size: 17px; max-width: 100%; }
 
     .page-banner-photo { height: 260px; }
     .page-banner-privacy { height: 240px; }
@@ -2349,8 +2349,8 @@ body {
 
     .hero-section { min-height: 480px; background-size: cover; }
     .hero-box { padding: 28px 22px; max-width: 95%; margin-top: 1cm; }
-    .hero-box h1 { font-size: 20px; }
-    .hero-box p { font-size: 14px; }
+    .hero-box h1 { font-size: 23px; }
+    .hero-box p { font-size: 15px; }
 
     .page-banner-photo { height: 220px; }
     .page-banner-privacy { height: 210px; }
@@ -2369,7 +2369,7 @@ body {
 
 @media (max-width: 480px) {
     .hero-section { min-height: 420px; }
-    .hero-box h1 { font-size: 18px; }
+    .hero-box h1 { font-size: 21px; }
 
     .page-banner-photo { height: 200px; }
     .page-banner-privacy { height: 190px; }
@@ -2388,8 +2388,8 @@ body {
 @media (max-width: 425px) {
     .hero-section { min-height: 380px; }
     .hero-box { padding: 24px 18px; }
-    .hero-box h1 { font-size: 16px; }
-    .hero-box p { font-size: 13px; }
+    .hero-box h1 { font-size: 19px; }
+    .hero-box p { font-size: 14px; }
     .valorizzazione { font-size: 13px !important; margin: 20px 0 18px 0 !important; }
 
     .logo img { max-height: 42px; }
@@ -2427,7 +2427,7 @@ body {
 
 @media (max-width: 320px) {
     .hero-box { padding: 18px 14px; }
-    .hero-box h1 { font-size: 15px; }
+    .hero-box h1 { font-size: 17px; }
     .page-banner-photo { height: 150px; }
     .page-banner-privacy { height: 145px; }
     .page-banner-title { font-size: 18px; }
