@@ -8,180 +8,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="images/global.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <style>
-        /* --- BANNER PAGINA --- */
-        .page-banner {
-            position: relative;
-            height: 320px;
-            background-color: #387c30;
-            display: flex;
-            align-items: flex-end;
-            padding-bottom: 45px;
-        }
 
-        .page-banner::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: rgba(0, 40, 0, 0.45);
-        }
-
-        .page-banner-content {
-            position: relative;
-            z-index: 1;
-            max-width: 1250px;
-            width: 95%;
-            margin: 0 auto;
-        }
-
-        .page-banner h1 {
-            color: #ffffff;
-            font-size: 40px;
-            font-weight: 700;
-            line-height: 1.1;
-            margin-bottom: 12px;
-        }
-
-        .breadcrumb {
-            color: rgba(255,255,255,0.75);
-            font-size: 14px;
-        }
-
-        .breadcrumb a {
-            color: rgba(255,255,255,0.75);
-            text-decoration: none;
-        }
-
-        .breadcrumb a:hover {
-            color: #ffbb02;
-        }
-
-        /* --- CONTENUTO PRIVACY --- */
-        .privacy-content {
-            background-color: #ffffff;
-            padding: 70px 20px 90px;
-        }
-
-        .privacy-inner {
-            max-width: 860px;
-            margin: 0 auto;
-        }
-
-        .privacy-inner h2 {
-            font-size: 26px;
-            font-weight: 700;
-            color: #387c30;
-            margin: 45px 0 15px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #ffbb02;
-        }
-
-        .privacy-inner h2:first-child {
-            margin-top: 0;
-        }
-
-        .privacy-inner h3 {
-            font-size: 18px;
-            font-weight: 700;
-            color: #4d5d6d;
-            margin: 25px 0 10px;
-        }
-
-        .privacy-inner p {
-            font-size: 15px;
-            color: #4d5d6d;
-            line-height: 1.8;
-            margin-bottom: 15px;
-        }
-
-        .privacy-inner ul {
-            margin: 10px 0 20px 25px;
-        }
-
-        .privacy-inner ul li {
-            font-size: 15px;
-            color: #4d5d6d;
-            line-height: 1.8;
-            margin-bottom: 6px;
-        }
-
-        .privacy-inner a {
-            color: #387c30;
-            text-decoration: underline;
-        }
-
-        .privacy-inner a:hover {
-            color: #006600;
-        }
-
-        .info-box {
-            background-color: #f4faf3;
-            border-left: 4px solid #387c30;
-            padding: 20px 25px;
-            border-radius: 0 8px 8px 0;
-            margin: 20px 0;
-        }
-
-        .info-box p {
-            margin-bottom: 0;
-        }
-
-        .cookie-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            font-size: 14px;
-        }
-
-        .cookie-table th {
-            background-color: #387c30;
-            color: #ffffff;
-            padding: 12px 15px;
-            text-align: left;
-            font-weight: 700;
-        }
-
-        .cookie-table td {
-            padding: 11px 15px;
-            border-bottom: 1px solid #e8f0e6;
-            color: #4d5d6d;
-            vertical-align: top;
-        }
-
-        .cookie-table tr:nth-child(even) td {
-            background-color: #f9fcf8;
-        }
-
-        .last-update {
-            margin-top: 50px;
-            padding-top: 25px;
-            border-top: 1px solid #e0e0e0;
-            font-size: 13px;
-            color: #999;
-            text-align: right;
-        }
-
-        /* Gestisci preferenze cookie */
-        .btn-cookie-settings {
-            display: inline-block;
-            background-color: #387c30;
-            color: #ffffff;
-            padding: 11px 28px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 14px;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.2s;
-            margin-top: 10px;
-        }
-
-        .btn-cookie-settings:hover {
-            background-color: #006600;
-            color: #ffffff;
-        }
-    </style>
 </head>
 <body>
 
@@ -201,12 +28,17 @@
         <div class="header-action">
             <a href="contatti.html" class="btn-preventivo">RICHIEDI PREVENTIVO</a>
         </div>
+        <button class="hamburger-btn" aria-label="Apri menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
 </header>
 
-<main style="padding-top: calc(65px + 6mm);">
+<main>
 
-    <section class="page-banner">
+    <section class="page-banner page-banner-privacy">
         <div class="page-banner-content">
             <h1>Privacy Policy & Cookie Policy</h1>
             <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Privacy Policy</p>
@@ -341,7 +173,7 @@
             <button class="btn-cookie-settings" id="openCookieSettings">
                 <i class="fas fa-cookie-bite"></i> Gestisci preferenze cookie
             </button>
-            <p style="margin-top: 20px;">Puoi anche disabilitare i cookie direttamente dalle impostazioni del browser (<a href="https://support.mozilla.org/it/kb/Gestione dei cookie" target="_blank" rel="noopener">guida per Firefox</a>). Tieni presente che la disattivazione di alcuni cookie potrebbe compromettere il corretto funzionamento del sito.</p>
+            <p>Puoi anche disabilitare i cookie direttamente dalle impostazioni del browser (<a href="https://support.mozilla.org/it/kb/Gestione dei cookie" target="_blank" rel="noopener">guida per Firefox</a>). Tieni presente che la disattivazione di alcuni cookie potrebbe compromettere il corretto funzionamento del sito.</p>
 
             <p class="last-update">Ultimo aggiornamento: Febbraio 2026</p>
         </div>

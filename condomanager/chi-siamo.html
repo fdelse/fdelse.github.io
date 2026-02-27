@@ -8,214 +8,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="images/global.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <style>
-        /* --- BANNER PAGINA --- */
-        .page-banner {
-            position: relative;
-            height: 380px;
-            background-image: url('images/chi-siamo.jpg');
-            background-size: cover;
-            background-position: center top;
-            display: flex;
-            align-items: flex-end;
-            padding-bottom: 45px;
-        }
 
-        .page-banner::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.50);
-        }
-
-        .page-banner-content {
-            position: relative;
-            z-index: 1;
-            padding: 0 50px;
-        }
-
-        .breadcrumb {
-            color: rgba(255,255,255,0.85);
-            font-size: 13px;
-            font-weight: 400;
-            margin-bottom: 10px;
-        }
-
-        .breadcrumb a {
-            color: rgba(255,255,255,0.85);
-            text-decoration: none;
-        }
-
-        .breadcrumb a:hover {
-            color: #ffffff;
-        }
-
-        .page-banner-title {
-            font-size: 52px;
-            font-weight: 700;
-            color: #ffffff;
-            text-transform: uppercase;
-            line-height: 1;
-            letter-spacing: 1px;
-        }
-
-        /* --- CONTENUTO --- */
-        .chi-siamo-content {
-            background: #ffffff;
-            padding: 75px 40px 80px;
-        }
-
-        .chi-siamo-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 340px;
-            gap: 65px;
-            align-items: start;
-        }
-
-        /* Colonna sinistra */
-        .cs-section-label {
-            font-size: 12px;
-            font-weight: 700;
-            color: var(--blue-testai);
-            text-transform: uppercase;
-            letter-spacing: 2.5px;
-            margin-bottom: 10px;
-        }
-
-        .cs-title {
-            font-size: 34px;
-            font-weight: 700;
-            color: var(--text-gray);
-            position: relative;
-            padding-bottom: 22px;
-            margin-bottom: 30px;
-            display: inline-block;
-        }
-
-        .cs-title::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 75px;
-            height: 5px;
-            background-color: var(--yellow-testai);
-        }
-
-        .cs-photo {
-            width: 100%;
-            height: calc(310px + 2cm);
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 32px;
-            display: block;
-        }
-
-        .cs-text {
-            font-size: 15px;
-            color: var(--text-gray);
-            line-height: 1.85;
-            margin-bottom: 18px;
-        }
-
-        .cs-text strong {
-            color: var(--text-gray);
-            font-weight: 700;
-        }
-
-        /* Badge ANACI */
-        .anaci-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 16px;
-            background: #f4f7fb;
-            border: 2px solid #dde6f0;
-            border-radius: 10px;
-            padding: 16px 24px;
-            margin-top: 24px;
-        }
-
-        .anaci-text {
-            font-size: 13px;
-            color: var(--text-gray);
-            font-weight: 600;
-            line-height: 1.4;
-        }
-
-        .anaci-text strong {
-            font-size: 20px;
-            color: var(--blue-testai);
-            font-weight: 700;
-            display: block;
-        }
-
-        /* Sidebar destra */
-        .cs-sidebar {
-            display: flex;
-            flex-direction: column;
-            gap: 22px;
-            position: sticky;
-            top: 100px;
-        }
-
-        .cs-card {
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 22px rgba(0,0,0,0.09);
-        }
-
-        .cs-card-header {
-            background-color: var(--blue-testai);
-            color: #ffffff;
-            font-weight: 700;
-            font-size: 15px;
-            padding: 13px 20px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .cs-card-body {
-            background: #ffffff;
-            padding: 20px 22px;
-        }
-
-        .cs-card-body p {
-            font-size: 14px;
-            color: var(--text-gray);
-            line-height: 1.75;
-        }
-
-        .cs-contact-row {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            margin-bottom: 14px;
-            font-size: 14px;
-            color: var(--text-gray);
-            line-height: 1.6;
-        }
-
-        .cs-contact-row:last-child {
-            margin-bottom: 0;
-        }
-
-        .cs-contact-row i {
-            color: var(--blue-testai);
-            font-size: 15px;
-            margin-top: 3px;
-            flex-shrink: 0;
-            width: 16px;
-            text-align: center;
-        }
-
-        .cs-contact-row em {
-            font-style: italic;
-            font-size: 13px;
-            opacity: 0.8;
-        }
-    </style>
 </head>
 <body>
 
@@ -235,11 +28,16 @@
         <div class="header-action">
             <a href="contatti.html" class="btn-preventivo">RICHIEDI PREVENTIVO</a>
         </div>
+        <button class="hamburger-btn" aria-label="Apri menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
 </header>
 
 <!-- BANNER -->
-<section class="page-banner">
+<section class="page-banner page-banner-photo page-banner-chi-siamo">
     <div class="page-banner-content">
         <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Chi Siamo</p>
         <h1 class="page-banner-title">Chi Siamo</h1>
@@ -265,7 +63,7 @@
                 <p class="cs-text">Lo staff è composto in pianta stabile dall'Amministratore <strong>Maria Rosa Fiorini</strong> e dai suoi collaboratori, <strong>Andrea Crucitti</strong>, <strong>Simone Tamburini</strong> e <strong>Fabio Di Bartolomeo</strong>, più altri collaboratori esterni.</p>
 
                 <div class="anaci-badge">
-                    <img src="images/Logo-ANACI-h60px.png" alt="Logo ANACI" style="height:60px;width:auto;display:block;">
+                    <img src="images/Logo-ANACI-h60px.png" alt="Logo ANACI">
                     <div class="anaci-text">
                         Siamo soci<strong>ANACI</strong>
                     </div>
