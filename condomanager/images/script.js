@@ -12,12 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
             navMenu.classList.toggle('open');
         });
 
-        navMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburgerBtn.classList.remove('open');
-                navMenu.classList.remove('open');
-            });
-        });
     }
 
     // Gestione header trasparente con scroll
