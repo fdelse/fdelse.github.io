@@ -2318,7 +2318,7 @@ body {
     .hero-section { min-height: 560px; }
     .hero-box { padding: 35px 28px; margin-top: 1.5cm; }
     .hero-box h1 { font-size: 25px; }
-    .hero-box p { font-size: 17px; max-width: 100%; }
+    .hero-box p { font-size: 18px; max-width: 100%; }
 
     .page-banner-photo { height: 260px; }
     .page-banner-privacy { height: 240px; }
@@ -2350,7 +2350,7 @@ body {
     .hero-section { min-height: 480px; background-size: cover; }
     .hero-box { padding: 28px 22px; max-width: 95%; margin-top: 1cm; }
     .hero-box h1 { font-size: 23px; }
-    .hero-box p { font-size: 15px; }
+    .hero-box p { font-size: 16px; }
 
     .page-banner-photo { height: 220px; }
     .page-banner-privacy { height: 210px; }
@@ -2389,7 +2389,7 @@ body {
     .hero-section { min-height: 380px; }
     .hero-box { padding: 24px 18px; }
     .hero-box h1 { font-size: 19px; }
-    .hero-box p { font-size: 14px; }
+    .hero-box p { font-size: 15px; }
     .valorizzazione { font-size: 13px !important; margin: 20px 0 18px 0 !important; }
 
     .logo img { max-height: 42px; }
