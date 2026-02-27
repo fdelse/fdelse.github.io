@@ -53,8 +53,18 @@
             <!-- Colonna sinistra: form -->
             <div class="ct-left">
                 <p class="ct-section-label">Scrivici</p>
-                <h2 class="ct-title">Richiedi un Preventivo</h2>
-                <p class="ct-subtitle">Compila il modulo sottostante per ricevere un preventivo gratuito e senza impegno. Ti risponderemo nel più breve tempo possibile.</p>
+                <h2 class="ct-title">Contattaci</h2>
+                <p class="ct-subtitle">Usa questo modulo per qualsiasi comunicazione generale: informazioni, domande o segnalazioni. Ti risponderemo nel più breve tempo possibile.</p>
+
+                <!-- Box preventivo -->
+                <div class="ct-preventivo-box">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <div>
+                        <strong>Vuoi un preventivo per il cambio amministratore?</strong>
+                        <p>Usa il modulo dedicato per ricevere un preventivo gratuito e dettagliato.</p>
+                        <a href="cambio-amministratore.html" class="ct-preventivo-link">Vai al preventivo &rarr;</a>
+                    </div>
+                </div>
 
                 <form class="preventivo-form" id="preventivo-form" novalidate>
 
@@ -81,25 +91,13 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="servizio">Tipo di richiesta</label>
-                        <select id="servizio" name="servizio">
-                            <option value="">-- Seleziona --</option>
-                            <option value="preventivo">Preventivo cambio amministratore</option>
-                            <option value="contabilita">Contabilità condominiale</option>
-                            <option value="manutenzione">Manutenzione impianti</option>
-                            <option value="fiscale">Pratiche fiscali condominiali</option>
-                            <option value="altro">Altro</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="condominio">Condominio / Indirizzo immobile</label>
-                        <input type="text" id="condominio" name="condominio" placeholder="Via Roma 1, Livorno">
+                        <label for="oggetto">Oggetto *</label>
+                        <input type="text" id="oggetto" name="oggetto" placeholder="Di cosa si tratta?" required>
                     </div>
 
                     <div class="form-group">
                         <label for="messaggio">Messaggio *</label>
-                        <textarea id="messaggio" name="messaggio" placeholder="Descrivi brevemente la tua richiesta..." required></textarea>
+                        <textarea id="messaggio" name="messaggio" placeholder="Scrivi il tuo messaggio..." required></textarea>
                     </div>
 
                     <div class="form-privacy">
@@ -108,11 +106,11 @@
                     </div>
 
                     <button type="submit" class="btn-invia">
-                        <i class="fas fa-paper-plane"></i>&nbsp; Invia richiesta
+                        <i class="fas fa-paper-plane"></i>&nbsp; Invia messaggio
                     </button>
 
                     <div class="form-success" id="form-success">
-                        <i class="fas fa-check-circle"></i>&nbsp; Grazie! La tua richiesta è stata inviata. Ti contatteremo al più presto.
+                        <i class="fas fa-check-circle"></i>&nbsp; Grazie! Il tuo messaggio è stato inviato. Ti risponderemo al più presto.
                     </div>
 
                 </form>
@@ -193,10 +191,11 @@
         e.preventDefault();
         const nome = document.getElementById('nome').value.trim();
         const email = document.getElementById('email').value.trim();
+        const oggetto = document.getElementById('oggetto').value.trim();
         const messaggio = document.getElementById('messaggio').value.trim();
         const privacy = document.getElementById('privacy').checked;
 
-        if (!nome || !email || !messaggio || !privacy) {
+        if (!nome || !email || !oggetto || !messaggio || !privacy) {
             alert('Compila tutti i campi obbligatori e accetta la privacy policy.');
             return;
         }

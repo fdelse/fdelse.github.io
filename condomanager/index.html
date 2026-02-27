@@ -44,10 +44,11 @@
                 <p><strong>Amministrazione Pegaso</strong> rappresenta l'eccellenza nella gestione condominiale in Italia. Garantiamo massima trasparenza, presenza continua sul territorio e soluzioni innovative per <strong>ottimizzare le spese</strong> condominiali e migliorare l'efficienza energetica degli edifici.</p>
                 <p class="valorizzazione">VALORIZZIAMO IMMOBILI E PERSONE</p>
                 <div class="search-box">
-                    <select>
-                        <option>Cosa stai cercando?</option>
-                        <option>Preventivo cambio amministratore</option>
-                        <option>Contatti</option>
+                    <select onchange="if(this.value) window.location.href=this.value; this.selectedIndex=0;">
+                        <option value="">Cosa stai cercando?</option>
+                        <option value="cambio-amministratore.html">Preventivo cambio amministratore</option>
+                        <option value="servizi.html">I nostri servizi</option>
+                        <option value="contatti.html">Contatti</option>
                     </select>
                 </div>
             </div>

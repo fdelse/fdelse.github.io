@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio Amministratore di Condominio - Preventivo Gratuito | Pegaso</title>
+    <meta name="description" content="Vuoi cambiare amministratore di condominio? Richiedi un preventivo gratuito a Pegaso Amministrazioni. Guida completa e form per il cambio amministratore.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="images/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="ct-header scrolled">
+    <div class="ct-container">
+        <div class="logo">
+            <img src="images/pegaso-logo.png" alt="Pegaso Logo">
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="chi-siamo.html">CHI SIAMO</a></li>
+                <li><a href="servizi.html">SERVIZI</a></li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li class="nav-preventivo"><a href="contatti.html">RICHIEDI PREVENTIVO</a></li>
+            </ul>
+        </nav>
+        <div class="header-action">
+            <a href="contatti.html" class="btn-preventivo">RICHIEDI PREVENTIVO</a>
+        </div>
+        <button class="hamburger-btn" aria-label="Apri menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<!-- BANNER -->
+<section class="page-banner page-banner-photo page-banner-cambio">
+    <div class="page-banner-content">
+        <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Cambio Amministratore</p>
+        <h1 class="page-banner-title">Cambio Amministratore</h1>
+    </div>
+</section>
+
+<!-- STRIP VANTAGGI -->
+<div class="ca-benefits-strip">
+    <div class="ca-benefits-inner">
+        <div class="ca-benefit">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span><strong>Preventivo gratuito</strong><br>senza impegno</span>
+        </div>
+        <div class="ca-benefit">
+            <i class="fas fa-bolt"></i>
+            <span><strong>Risposta rapida</strong><br>entro 24 ore</span>
+        </div>
+        <div class="ca-benefit">
+            <i class="fas fa-shield-alt"></i>
+            <span><strong>Professionisti</strong><br>certificati ANACI</span>
+        </div>
+        <div class="ca-benefit">
+            <i class="fas fa-handshake"></i>
+            <span><strong>Trasparenza</strong><br>totale sui costi</span>
+        </div>
+    </div>
+</div>
+
+<main>
+
+    <!-- SEZIONE INTRO + FORM -->
+    <div class="cambio-content">
+        <div class="cambio-inner">
+
+            <!-- Colonna sinistra: intro + form -->
+            <div class="ca-left">
+
+                <p class="ca-section-label">Preventivo Gratuito</p>
+                <h2 class="ca-title">Richiedi un preventivo per il cambio amministratore</h2>
+                <p class="ca-subtitle">
+                    Compila il form per richiedere un <strong>preventivo gratuito</strong>. Per maggiori informazioni ti invitiamo a leggere le informazioni
+                    riportate in questa pagina per scoprire i dettagli importanti per la richiesta di un preventivo di amministrazione condominiale.
+                </p>
+                <p class="ca-subtitle ca-subtitle-link">
+                    Se invece stai cercando un <a href="contatti.html" class="ca-link">preventivo per la revisione contabile clicca qui</a>.
+                </p>
+
+                <div class="cambio-form-card">
+                    <form class="cambio-form" id="cambio-form" novalidate>
+
+                        <!-- SEZIONE 1: DATI PERSONALI -->
+                        <div class="form-block">
+                            <h3 class="form-block-title">
+                                <span class="form-block-icon"><i class="fas fa-user"></i></span>
+                                Dati personali
+                            </h3>
+                            <div class="form-block-body">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="ca-nome">Nome *</label>
+                                        <input type="text" id="ca-nome" name="nome" placeholder="Mario" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ca-cognome">Cognome *</label>
+                                        <input type="text" id="ca-cognome" name="cognome" placeholder="Rossi" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="ca-email">Email *</label>
+                                        <input type="email" id="ca-email" name="email" placeholder="mario.rossi@email.it" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ca-telefono">Telefono</label>
+                                        <input type="tel" id="ca-telefono" name="telefono" placeholder="0586 000000">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SEZIONE 2: DATI CONDOMINIO -->
+                        <div class="form-block">
+                            <h3 class="form-block-title">
+                                <span class="form-block-icon"><i class="fas fa-building"></i></span>
+                                Dati del condominio
+                            </h3>
+                            <div class="form-block-body">
+                                <div class="form-group">
+                                    <label for="ca-condominio">Nome condominio / Ragione sociale</label>
+                                    <input type="text" id="ca-condominio" name="condominio" placeholder="Condominio Via Roma">
+                                </div>
+                                <div class="form-group">
+                                    <label for="ca-indirizzo">Indirizzo *</label>
+                                    <input type="text" id="ca-indirizzo" name="indirizzo" placeholder="Via Roma, 1" required>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="ca-citta">Città *</label>
+                                        <input type="text" id="ca-citta" name="citta" placeholder="Livorno" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ca-cap">CAP</label>
+                                        <input type="text" id="ca-cap" name="cap" placeholder="57100">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="ca-unita">N° unità immobiliari *</label>
+                                        <input type="number" id="ca-unita" name="unita" placeholder="es. 12" min="1" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ca-scale">N° scale</label>
+                                        <input type="number" id="ca-scale" name="scale" placeholder="es. 1" min="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SEZIONE 3: DETTAGLI -->
+                        <div class="form-block">
+                            <h3 class="form-block-title">
+                                <span class="form-block-icon"><i class="fas fa-list-ul"></i></span>
+                                Dettagli
+                            </h3>
+                            <div class="form-block-body">
+
+                                <div class="form-group">
+                                    <label>Data assemblea per il cambio <span class="label-optional">(se già convocata)</span></label>
+                                    <div class="form-row-3">
+                                        <input type="number" name="data-giorno" placeholder="Giorno" min="1" max="31">
+                                        <select name="data-mese">
+                                            <option value="">Mese</option>
+                                            <option>Gennaio</option><option>Febbraio</option><option>Marzo</option>
+                                            <option>Aprile</option><option>Maggio</option><option>Giugno</option>
+                                            <option>Luglio</option><option>Agosto</option><option>Settembre</option>
+                                            <option>Ottobre</option><option>Novembre</option><option>Dicembre</option>
+                                        </select>
+                                        <input type="number" name="data-anno" placeholder="Anno" min="2024">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Tipo di riscaldamento</label>
+                                    <div class="radio-card-group">
+                                        <label class="radio-card">
+                                            <input type="radio" name="riscaldamento" value="autonomo">
+                                            <span class="radio-card-inner">
+                                                <i class="fas fa-home"></i>
+                                                <span>Autonomo</span>
+                                            </span>
+                                        </label>
+                                        <label class="radio-card">
+                                            <input type="radio" name="riscaldamento" value="centralizzato" checked>
+                                            <span class="radio-card-inner">
+                                                <i class="fas fa-fire"></i>
+                                                <span>Centralizzato</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>È presente il portiere?</label>
+                                        <div class="radio-card-group">
+                                            <label class="radio-card">
+                                                <input type="radio" name="portiere" value="si">
+                                                <span class="radio-card-inner"><i class="fas fa-user-tie"></i><span>Sì</span></span>
+                                            </label>
+                                            <label class="radio-card">
+                                                <input type="radio" name="portiere" value="no" checked>
+                                                <span class="radio-card-inner"><i class="fas fa-times-circle"></i><span>No</span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>È presente l'ascensore?</label>
+                                        <div class="radio-card-group">
+                                            <label class="radio-card">
+                                                <input type="radio" name="ascensore" value="si">
+                                                <span class="radio-card-inner"><i class="fas fa-arrow-up"></i><span>Sì</span></span>
+                                            </label>
+                                            <label class="radio-card">
+                                                <input type="radio" name="ascensore" value="no" checked>
+                                                <span class="radio-card-inner"><i class="fas fa-times-circle"></i><span>No</span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="ca-note">Ulteriori informazioni</label>
+                                    <textarea id="ca-note" name="note" placeholder="Aggiungi eventuali note utili per la valutazione del preventivo..."></textarea>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="form-privacy">
+                            <input type="checkbox" id="ca-privacy" name="privacy" required>
+                            <label for="ca-privacy">Ho letto e accetto la <a href="privacy-policy.html">Privacy Policy</a>. Acconsento al trattamento dei miei dati personali per ricevere una risposta alla mia richiesta.</label>
+                        </div>
+
+                        <button type="submit" class="btn-invia btn-invia-full">
+                            <i class="fas fa-paper-plane"></i>&nbsp; Invia la richiesta
+                        </button>
+
+                        <div class="form-success" id="cambio-form-success">
+                            <i class="fas fa-check-circle"></i>&nbsp; Grazie! La tua richiesta è stata inviata. Ti contatteremo al più presto.
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+            <!-- Sidebar destra -->
+            <aside class="ct-sidebar">
+
+                <div class="ct-card">
+                    <div class="ct-card-header"><i class="fas fa-phone-alt" style="margin-right:8px;opacity:0.8;"></i>Contatti</div>
+                    <div class="ct-card-body">
+                        <div class="ct-contact-row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Via dei Lanzi, 33<br>57123 Livorno</span>
+                        </div>
+                        <div class="ct-contact-row">
+                            <i class="fas fa-phone"></i>
+                            <span>0586 898284</span>
+                        </div>
+                        <div class="ct-contact-row">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@amministrazionepegaso.it</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ct-card">
+                    <div class="ct-card-header"><i class="fas fa-clock" style="margin-right:8px;opacity:0.8;"></i>Orario</div>
+                    <div class="ct-card-body">
+                        <div class="ct-contact-row">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Dal Lunedì al Venerdì<br>dalle 09:00 alle 12:00<br><em>(previo appuntamento)</em></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ct-card ca-cta-card">
+                    <div class="ca-cta-card-body">
+                        <i class="fas fa-headset ca-cta-icon"></i>
+                        <p class="ca-cta-text">Preferisci parlare direttamente con noi?</p>
+                        <a href="tel:0586898284" class="ca-cta-tel">
+                            <i class="fas fa-phone"></i> 0586 898284
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ct-card">
+                    <div class="ct-card-header"><i class="fas fa-link" style="margin-right:8px;opacity:0.8;"></i>Link Utili</div>
+                    <div class="ct-card-body">
+                        <div class="ct-contact-row">
+                            <i class="fas fa-concierge-bell"></i>
+                            <a href="servizi.html" class="ca-link">I nostri servizi</a>
+                        </div>
+                        <div class="ct-contact-row">
+                            <i class="fas fa-users"></i>
+                            <a href="chi-siamo.html" class="ca-link">Chi siamo</a>
+                        </div>
+                        <div class="ct-contact-row">
+                            <i class="fas fa-envelope"></i>
+                            <a href="contatti.html" class="ca-link">Contatti generali</a>
+                        </div>
+                    </div>
+                </div>
+
+            </aside>
+        </div>
+    </div>
+
+    <!-- SEZIONE FOTO DIVISORE CON CTA -->
+    <div class="ca-photo-divider">
+        <div class="ca-photo-divider-content">
+            <h2>Hai già scelto Pegaso?</h2>
+            <p>Gestiamo il cambio amministratore in modo semplice e senza stress per tutti i condòmini.</p>
+            <a href="#cambio-form" class="ca-photo-cta">
+                <i class="fas fa-arrow-up"></i> Richiedi il preventivo
+            </a>
+        </div>
+    </div>
+
+    <!-- SEZIONE FAQ -->
+    <section class="ca-faq-section">
+        <div class="ca-faq-inner">
+
+            <h2 class="ca-faq-main-title">FAQ &mdash; Informazioni utili per la richiesta di un preventivo</h2>
+
+            <div class="ca-faq-grid">
+
+                <div class="ca-faq-item">
+                    <div class="ca-faq-num">01</div>
+                    <div class="ca-faq-body">
+                        <h3 class="ca-faq-question">Quali aspetti considerare per la scelta dell'amministratore?</h3>
+                        <p>Molto spesso si guarda subito al costo dell'amministratore di condominio, lasciandosi condizionare dal preventivo con le voci più basse. Bisogna invece fare attenzione a tutti i costi occulti che si possono nascondere in un preventivo poco trasparente.</p>
+                        <div class="ca-warning-box">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div>
+                                <p>Quando si riceve un preventivo, <strong>bisogna sempre verificare</strong>:</p>
+                                <ul class="ca-warning-list">
+                                    <li>Se ci sono <strong>costi nascosti o occulti</strong></li>
+                                    <li>Se il contratto è <strong>vincolante e in che termini</strong></li>
+                                    <li>Come si comporta l'amministratore per <strong>attività straordinarie non stimate</strong> in sede di approvazione del preventivo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ca-faq-item">
+                    <div class="ca-faq-num">02</div>
+                    <div class="ca-faq-body">
+                        <h3 class="ca-faq-question">Cosa deve contenere il preventivo dell'amministratore di condominio?</h3>
+                        <p>Il preventivo è un documento che deve individuare tutte le azioni che l'amministratore attuerà per la gestione ordinaria del condominio, specificando per ogni singola voce il relativo compenso. Il preventivo è il <strong>vero biglietto da visita dell'amministratore</strong>: da come viene redatto si comprende molto della sua professionalità.</p>
+                    </div>
+                </div>
+
+                <div class="ca-faq-item">
+                    <div class="ca-faq-num">03</div>
+                    <div class="ca-faq-body">
+                        <h3 class="ca-faq-question">Cosa deve essere incluso in un preventivo?</h3>
+                        <p><strong>La prima regola</strong> è l'individuazione di <strong>costi esatti</strong> per ogni attività, non stime approssimative. Se desiderate verificare il vostro attuale rendiconto condominiale o avere un ordine di grandezza dei costi, contattateci direttamente.</p>
+                    </div>
+                </div>
+
+                <div class="ca-faq-item">
+                    <div class="ca-faq-num">04</div>
+                    <div class="ca-faq-body">
+                        <h3 class="ca-faq-question">Come valutare il preventivo dell'amministratore di condominio?</h3>
+                        <p>Oltre alla cifra richiesta, è fondamentale analizzare la chiarezza espositiva del preventivo. Fate attenzione ai preventivi troppo bassi: spesso nascondono insidie. Il costo per il singolo condomino viene generalmente calcolato in proporzione alla tabella millesimale, ma il regolamento condominiale può prevedere modalità diverse di ripartizione.</p>
+                    </div>
+                </div>
+
+                <div class="ca-faq-item">
+                    <div class="ca-faq-num">05</div>
+                    <div class="ca-faq-body">
+                        <h3 class="ca-faq-question">Come quantifica la propria remunerazione l'amministratore di condominio?</h3>
+                        <p>Non esiste un tariffario pubblico obbligatorio; ogni amministratore determina liberamente il proprio compenso. I principali fattori che incidono sul calcolo sono:</p>
+                        <ul class="ca-faq-list">
+                            <li>Tipo di servizio e qualifica professionale dell'amministratore</li>
+                            <li>Dimensione e complessità del condominio</li>
+                            <li>Numero di scale e centri termici</li>
+                            <li>Presenza di attività commerciali, box, posti auto o terreno</li>
+                            <li>Tipo di riscaldamento (autonomo o centralizzato)</li>
+                            <li>Presenza del portiere</li>
+                        </ul>
+                        <p class="ca-faq-note"><strong>Nota:</strong> il preventivo si basa principalmente sulle caratteristiche strutturali del condominio. La riforma del 2012 obbliga l'amministratore a specificare analiticamente il proprio compenso.</p>
+                    </div>
+                </div>
+
+                <div class="ca-faq-item">
+                    <div class="ca-faq-num">06</div>
+                    <div class="ca-faq-body">
+                        <h3 class="ca-faq-question">Cosa significa specificare il compenso dell'amministratore di condominio?</h3>
+                        <p>L'amministratore deve indicare in modo chiaro quanto richiede per ogni singola attività, comprese le attività straordinarie con compenso variabile (percentuale sul valore dell'opera) o fisso, in modo che i condòmini possano confrontare e valutare ogni voce.</p>
+                    </div>
+                </div>
+
+                <div class="ca-faq-item ca-faq-highlight">
+                    <div class="ca-faq-num ca-faq-num-highlight">07</div>
+                    <div class="ca-faq-body">
+                        <h3 class="ca-faq-question">Il preventivo deve essere parte integrante del verbale di nomina</h3>
+                        <p>L'amministratore di condominio è un professionista tenuto a fornire informazioni chiare e complete. Il preventivo accettato dall'assemblea <strong>deve essere allegato al verbale di nomina</strong>, in modo da rendere esplicite tutte le responsabilità e i compensi concordati. Un preventivo privo di prezzi certi e analitici non è conforme alla normativa vigente.</p>
+                    </div>
+                </div>
+
+                <div class="ca-faq-item">
+                    <div class="ca-faq-num">08</div>
+                    <div class="ca-faq-body">
+                        <h3 class="ca-faq-question">Documentazione per valutare il preventivo di un amministratore</h3>
+                        <p>Quando si valuta un cambio amministratore è utile richiedere e verificare:</p>
+                        <ul class="ca-faq-list ca-faq-checklist">
+                            <li><i class="fas fa-check-circle"></i> Registro di Gestione del Condominio (presentazione libera)</li>
+                            <li><i class="fas fa-check-circle"></i> Nota descrittiva delle attività ordinarie e straordinarie</li>
+                            <li><i class="fas fa-check-circle"></i> Qualifica e iscrizione professionale</li>
+                            <li><i class="fas fa-check-circle"></i> Attestazione aggiornamenti annuali D.Lgs 102/2014</li>
+                            <li><i class="fas fa-check-circle"></i> Assicurazione professionale</li>
+                            <li><i class="fas fa-check-circle"></i> Curriculum vitae</li>
+                            <li><i class="fas fa-check-circle"></i> Documenti previsti dall'art. 71-bis C.C.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="main-footer">
+    <div class="ct-container footer-grid">
+        <div class="footer-info">
+            <img src="images/pegaso-logo.png" alt="Pegaso Logo" class="footer-logo">
+            <p>Innovazione e professionalità al servizio del tuo condominio.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Link Utili</h4>
+            <ul>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Contatti</h4>
+            <p>Email: info@amministrazionepegaso.it</p>
+            <p>Tel: 0586 898284</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Amministrazione Pegaso. Tutti i diritti riservati.</p>
+    </div>
+</footer>
+
+<script src="images/script.js"></script>
+<script>
+    document.getElementById('cambio-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const nome = document.getElementById('ca-nome').value.trim();
+        const email = document.getElementById('ca-email').value.trim();
+        const indirizzo = document.getElementById('ca-indirizzo').value.trim();
+        const citta = document.getElementById('ca-citta').value.trim();
+        const unita = document.getElementById('ca-unita').value.trim();
+        const privacy = document.getElementById('ca-privacy').checked;
+
+        if (!nome || !email || !indirizzo || !citta || !unita || !privacy) {
+            alert('Compila tutti i campi obbligatori (*) e accetta la privacy policy.');
+            return;
+        }
+
+        document.getElementById('cambio-form-success').style.display = 'block';
+        this.reset();
+    });
+</script>
+
+<!-- Cookie Popup -->
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Consenso cookie">
+    <div class="cookie-banner-inner">
+        <div class="cookie-banner-icon">
+            <i class="fas fa-cookie-bite"></i>
+        </div>
+        <div class="cookie-banner-text">
+            <h3>Informativa sui Cookie</h3>
+            <p>Utilizziamo cookie tecnici necessari e, con il tuo consenso, cookie analitici per migliorare la navigazione. Per saperne di più consulta la nostra <a href="privacy-policy.html">Privacy &amp; Cookie Policy</a>.</p>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookieAccept" class="btn-cookie-accept">Accetta tutti</button>
+            <button id="cookieReject" class="btn-cookie-reject">Solo necessari</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

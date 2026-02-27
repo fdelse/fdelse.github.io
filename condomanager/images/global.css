@@ -1267,6 +1267,56 @@ body {
     opacity: 0.8;
 }
 
+/* Box preventivo nella pagina contatti */
+.ct-preventivo-box {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    background: #f4faf3;
+    border: 2px solid #c5e3bf;
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 32px;
+}
+
+.ct-preventivo-box > i {
+    font-size: 26px;
+    color: var(--blue-testai);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.ct-preventivo-box strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-gray);
+    margin-bottom: 4px;
+}
+
+.ct-preventivo-box p {
+    font-size: 13px;
+    color: var(--text-gray);
+    line-height: 1.5;
+    margin: 0 0 10px;
+}
+
+.ct-preventivo-link {
+    display: inline-block;
+    background-color: var(--blue-testai);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 8px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.ct-preventivo-link:hover {
+    opacity: 0.85;
+}
+
 .ct-map {
     border-radius: 10px;
     overflow: hidden;
@@ -1278,6 +1328,626 @@ body {
     width: 100%;
     height: 220px;
     border: 0;
+}
+
+/* ==============================
+   CAMBIO AMMINISTRATORE PAGE
+   ============================== */
+
+.page-banner-cambio {
+    background-image: url('cambio-amministratore.jpg');
+    background-position: center;
+}
+
+/* --- Benefits strip --- */
+.ca-benefits-strip {
+    background-color: var(--blue-testai);
+    padding: 22px 40px;
+}
+
+.ca-benefits-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ca-benefit {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.ca-benefit i {
+    font-size: 26px;
+    color: var(--yellow-testai);
+    flex-shrink: 0;
+}
+
+/* --- Layout --- */
+.cambio-content {
+    background: #f5f8f5;
+    padding: 70px 40px 80px;
+}
+
+.cambio-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 55px;
+    align-items: start;
+}
+
+.ca-left {
+    min-width: 0;
+}
+
+.ca-section-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--blue-testai);
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-bottom: 10px;
+}
+
+.ca-title {
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--text-gray);
+    position: relative;
+    padding-bottom: 22px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.ca-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 75px;
+    height: 5px;
+    background-color: var(--yellow-testai);
+}
+
+.ca-subtitle {
+    font-size: 15px;
+    color: var(--text-gray);
+    line-height: 1.7;
+    margin: 20px 0 14px;
+}
+
+.ca-subtitle-link {
+    margin-top: 0;
+    margin-bottom: 28px;
+}
+
+.ca-link {
+    color: var(--blue-testai);
+    text-decoration: underline;
+}
+
+.ca-link:hover {
+    color: var(--dark-blue);
+}
+
+/* --- Form card wrapper --- */
+.cambio-form-card {
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+.cambio-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0 0 32px;
+}
+
+/* --- Form blocks (sections) --- */
+.form-block {
+    border-bottom: 1px solid #eef2ee;
+}
+
+.form-block:last-of-type {
+    border-bottom: none;
+}
+
+.form-block-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--blue-testai);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 18px 28px;
+    background: #f4faf3;
+    border-bottom: 1px solid #e2f0df;
+}
+
+.form-block-icon {
+    width: 32px;
+    height: 32px;
+    background-color: var(--blue-testai);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.form-block-icon i {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.form-block-body {
+    padding: 24px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Override form-group dentro form-block */
+.form-block-body .form-group {
+    margin-bottom: 0;
+}
+
+/* Label optional tag */
+.label-optional {
+    font-weight: 400;
+    font-size: 12px;
+    color: #999;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+/* --- Date row --- */
+.form-row-3 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.form-row-3 input,
+.form-row-3 select {
+    border: 2px solid #e0e8f0;
+    border-radius: 8px;
+    padding: 11px 13px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-gray);
+    background: #fafcff;
+    transition: border-color 0.2s;
+    width: 100%;
+}
+
+.form-row-3 select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    cursor: pointer;
+}
+
+.form-row-3 input:focus,
+.form-row-3 select:focus {
+    outline: none;
+    border-color: var(--blue-testai);
+    background: #ffffff;
+}
+
+/* --- Radio cards --- */
+.radio-card-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 6px;
+    flex-wrap: wrap;
+}
+
+.radio-card {
+    cursor: pointer;
+    flex: 1;
+    min-width: 90px;
+}
+
+.radio-card input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.radio-card-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 12px 10px;
+    border: 2px solid #e0e8f0;
+    border-radius: 10px;
+    background: #fafcff;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-gray);
+    transition: border-color 0.2s, background 0.2s, color 0.2s;
+    text-align: center;
+}
+
+.radio-card-inner i {
+    font-size: 18px;
+    color: #aabcaa;
+    transition: color 0.2s;
+}
+
+.radio-card input[type="radio"]:checked + .radio-card-inner {
+    border-color: var(--blue-testai);
+    background: #f0f9ee;
+    color: var(--blue-testai);
+}
+
+.radio-card input[type="radio"]:checked + .radio-card-inner i {
+    color: var(--blue-testai);
+}
+
+.radio-card:hover .radio-card-inner {
+    border-color: #8cc488;
+}
+
+/* --- Privacy + submit --- */
+.cambio-form .form-privacy {
+    margin: 0 28px;
+}
+
+.cambio-form .btn-invia-full {
+    align-self: stretch;
+    text-align: center;
+    margin: 16px 28px 0;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.cambio-form .form-success {
+    margin: 8px 28px 0;
+}
+
+/* --- Sidebar CTA card --- */
+.ca-cta-card .ct-card-header {
+    display: none;
+}
+
+.ca-cta-card-body {
+    background: var(--blue-testai);
+    padding: 28px 22px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.ca-cta-icon {
+    font-size: 32px;
+    color: var(--yellow-testai);
+    display: block;
+    margin-bottom: 12px;
+}
+
+.ca-cta-text {
+    font-size: 14px;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.55;
+    margin-bottom: 16px;
+}
+
+.ca-cta-tel {
+    display: inline-block;
+    background: var(--yellow-testai);
+    color: #1a2b1a;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 11px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.ca-cta-tel:hover {
+    opacity: 0.88;
+}
+
+/* --- Photo divider with CTA --- */
+.ca-photo-divider {
+    height: 380px;
+    background-image: url('amministratori-condominio-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ca-photo-divider::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 55, 0, 0.55);
+}
+
+.ca-photo-divider-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.ca-photo-divider-content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 14px;
+    line-height: 1.2;
+}
+
+.ca-photo-divider-content p {
+    font-size: 16px;
+    color: rgba(255,255,255,0.88);
+    max-width: 500px;
+    margin: 0 auto 28px;
+    line-height: 1.6;
+}
+
+.ca-photo-cta {
+    display: inline-block;
+    background-color: var(--yellow-testai);
+    color: #1a2b1a;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 14px 36px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.ca-photo-cta:hover {
+    opacity: 0.9;
+}
+
+/* --- FAQ Section --- */
+.ca-faq-section {
+    background-color: #f5f8f5;
+    padding: 80px 40px 100px;
+}
+
+.ca-faq-inner {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.ca-faq-main-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-gray);
+    text-align: center;
+    margin-bottom: 55px;
+    position: relative;
+    padding-bottom: 22px;
+}
+
+.ca-faq-main-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 5px;
+    background-color: var(--yellow-testai);
+}
+
+.ca-faq-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.ca-faq-item {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 14px rgba(0,0,0,0.06);
+    display: flex;
+    gap: 0;
+    overflow: hidden;
+}
+
+.ca-faq-num {
+    background: var(--blue-testai);
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 62px;
+    flex-shrink: 0;
+    letter-spacing: 1px;
+}
+
+.ca-faq-num-highlight {
+    background: var(--dark-blue);
+}
+
+.ca-faq-highlight {
+    border: 2px solid #b4d9af;
+}
+
+.ca-faq-body {
+    padding: 26px 30px;
+    flex: 1;
+    min-width: 0;
+}
+
+.ca-faq-question {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--blue-testai);
+    margin-bottom: 12px;
+    line-height: 1.35;
+}
+
+.ca-faq-highlight .ca-faq-question {
+    color: var(--dark-blue);
+}
+
+.ca-faq-body p {
+    font-size: 14px;
+    color: var(--text-gray);
+    line-height: 1.85;
+    margin-bottom: 12px;
+}
+
+.ca-faq-body p:last-child {
+    margin-bottom: 0;
+}
+
+.ca-faq-list {
+    margin: 10px 0 14px 22px;
+    list-style: disc;
+}
+
+.ca-faq-list li {
+    font-size: 14px;
+    color: var(--text-gray);
+    line-height: 1.8;
+    margin-bottom: 5px;
+}
+
+.ca-faq-checklist {
+    list-style: none;
+    margin-left: 0;
+}
+
+.ca-faq-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.ca-faq-checklist li i {
+    color: var(--blue-testai);
+    font-size: 14px;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.ca-faq-note {
+    background: #f4faf3;
+    border-left: 4px solid var(--blue-testai);
+    padding: 12px 16px;
+    border-radius: 0 8px 8px 0;
+    font-size: 13px !important;
+    margin-top: 14px;
+}
+
+.ca-warning-box {
+    background: #fffbea;
+    border: 2px solid var(--yellow-testai);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 14px 0;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.ca-warning-box i {
+    color: #e6a800;
+    font-size: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.ca-warning-box p {
+    font-size: 13px !important;
+    margin-bottom: 6px !important;
+}
+
+.ca-warning-list {
+    list-style: none;
+    margin: 4px 0 0 0;
+    padding: 0;
+}
+
+.ca-warning-list li {
+    font-size: 13px;
+    color: var(--text-gray);
+    line-height: 1.75;
+    padding-left: 16px;
+    position: relative;
+    margin-bottom: 3px;
+}
+
+.ca-warning-list li::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+    color: #e6a800;
+}
+
+/* --- Responsive --- */
+@media (max-width: 980px) {
+    .cambio-inner { grid-template-columns: 1fr; }
+    .cambio-content { padding: 60px 30px 70px; }
+    .ca-title { font-size: 28px; }
+    .ca-photo-divider { background-attachment: scroll; }
+    .ca-benefits-strip { padding: 18px 30px; }
+}
+
+@media (max-width: 768px) {
+    .cambio-content { padding: 50px 20px 60px; }
+    .ca-title { font-size: 26px; }
+    .form-row-3 { grid-template-columns: 1fr; }
+    .ca-faq-section { padding: 60px 20px 70px; }
+    .ca-faq-main-title { font-size: 24px; }
+    .ca-faq-question { font-size: 16px; }
+    .ca-photo-divider { height: 300px; background-attachment: scroll; }
+    .ca-photo-divider-content h2 { font-size: 26px; }
+    .ca-benefits-inner { gap: 14px 30px; }
+    .form-block-title { padding: 16px 20px; }
+    .form-block-body { padding: 20px; }
+    .cambio-form .form-privacy { margin: 0 20px; }
+    .cambio-form .btn-invia-full { margin: 16px 20px 0; }
+    .cambio-form .form-success { margin: 8px 20px 0; }
+    .ca-faq-num { min-width: 48px; font-size: 16px; }
+    .ca-faq-body { padding: 20px 22px; }
+}
+
+@media (max-width: 560px) {
+    .ca-benefits-strip { padding: 16px 20px; }
+    .ca-benefit { font-size: 12px; gap: 10px; }
+    .ca-benefit i { font-size: 20px; }
+    .ca-title { font-size: 22px; }
+    .cambio-content { padding: 40px 15px 50px; }
+    .ca-photo-divider { height: 260px; }
+    .ca-photo-divider-content h2 { font-size: 22px; }
+    .ca-photo-divider-content p { font-size: 14px; }
+    .ca-faq-num { min-width: 40px; font-size: 14px; }
+    .ca-faq-body { padding: 18px 16px; }
+    .radio-card-group { gap: 8px; }
 }
 
 /* ==============================
