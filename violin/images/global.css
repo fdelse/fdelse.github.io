@@ -56,7 +56,7 @@
     --fs-music-title: clamp(1.3rem, 3vw, 3.4rem);
     --fs-dj-banner: clamp(2.3rem, 4.5vw, 5.5rem);
     --fs-unforgettable: clamp(1.6rem, 3vw, 3.5rem);
-    --fs-contact-title: clamp(2.9rem, 4vw, 4.5rem);
+    --fs-contact-title: clamp(2.1rem, 4vw, 4.5rem);
     --fs-availability-title: clamp(1.8rem, 2.5vw, 2.8rem);
 }
 
@@ -73,8 +73,8 @@ body {
 
 .header {
     background-color: #f600b9;
-    padding: 0.94rem 1.25rem;
-    height: calc(54px - 2mm);
+    padding: calc(0.94rem + 2mm) 1.25rem;
+    height: calc(54px + 4mm);
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -122,6 +122,32 @@ body {
 .social-bar a:hover {
     transform: scale(1.1);
     box-shadow: 0 0.25rem 0.94rem rgba(0,0,0,0.3);
+}
+
+.music-square-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.35rem;
+    height: 1.35rem;
+    background-color: #a71f85;
+    border-radius: 0.3rem;
+}
+
+.music-square-icon i {
+    color: white;
+    font-size: 0.7rem;
+}
+
+.music-icon .music-square-icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    background-color: #000;
+    border-radius: 22%;
+}
+
+.music-icon .music-square-icon i {
+    font-size: 1.7rem;
 }
 
 /* ========================================
@@ -285,19 +311,19 @@ body {
 .music-icons {
     display: flex;
     justify-content: center;
-    gap: clamp(4.38rem, 15vw, 15.63rem);
-    margin-top: 0.2rem;
+    gap: calc(clamp(4.38rem, 15vw, 15.63rem) + 2mm);
+    margin-top: calc(0.2rem + 2mm);
 }
 
 .music-icon {
     color: var(--white);
-    font-size: clamp(2rem, 4vw, 4rem);
+    font-size: 2.1rem;
     text-decoration: none;
     transition: transform 0.3s ease;
 }
 
 .music-icon i {
-    font-size: clamp(2rem, 4vw, 4rem);
+    font-size: 2.1rem;
 }
 
 .music-icon:hover {
@@ -427,14 +453,63 @@ body {
 
 .videos-section {
     background-color: var(--white);
-    padding: 0.3rem 1.25rem 1.25rem;
+    padding: 0 0 2cm;
     display: flex;
     flex-direction: column;
-    gap: 1.88rem;
+    gap: 4mm;
 }
 
 .video-item {
     width: 100%;
+}
+
+.video-thumb-link {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+}
+
+.video-thumb-link img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.video-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 68px;
+    height: 48px;
+    background-color: #ff0000;
+    border-radius: 12px;
+    pointer-events: none;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-play-btn::after {
+    content: '';
+    border-style: solid;
+    border-width: 11px 0 11px 20px;
+    border-color: transparent transparent transparent white;
+    margin-left: 4px;
+}
+
+.video-play-btn i {
+    display: none;
+}
+
+.video-thumb-link:hover .video-play-btn {
+    opacity: 1;
+    background-color: #cc0000;
 }
 
 /* ========================================
@@ -820,8 +895,8 @@ body {
     }
 
     .videos-section {
-        padding: 0.5rem 1.88rem 1.88rem;
-        gap: 2.5rem;
+        padding: 0 5mm 2cm;
+        gap: 1cm;
     }
 
     .music-playlist-section {
@@ -909,8 +984,8 @@ body {
     }
 
     .videos-section {
-        padding: 1rem 5rem 3.75rem;
-        gap: 3.75rem;
+        padding: 0 5mm 2cm;
+        gap: 1cm;
     }
 
     .music-playlist-section {
