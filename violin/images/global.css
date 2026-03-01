@@ -312,7 +312,7 @@ body {
     display: flex;
     justify-content: center;
     gap: calc(clamp(4.38rem, 15vw, 15.63rem) + 2mm);
-    margin-top: calc(0.2rem + 2mm);
+    margin-top: calc(0.2rem + 5mm);
 }
 
 .music-icon {
@@ -830,7 +830,7 @@ body {
     }
 
     .music-icons {
-        margin-top: calc(-0.63rem + 1mm);
+        margin-top: 5mm;
     }
 
     .dj-banner {
@@ -932,6 +932,13 @@ body {
 
     .services {
         right: calc(6rem + 3cm);
+    }
+}
+
+/* 1024px-1050px */
+@media (min-width: 1024px) and (max-width: 1050px) {
+    .music-icons {
+        margin-top: 3mm;
     }
 }
 
