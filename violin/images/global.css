@@ -453,7 +453,7 @@ body {
 
 .videos-section {
     background-color: var(--white);
-    padding: 0 0 2cm;
+    padding: 0 0 1cm;
     display: flex;
     flex-direction: column;
     gap: 4mm;
@@ -895,7 +895,7 @@ body {
     }
 
     .videos-section {
-        padding: 0 5mm 2cm;
+        padding: 0 5mm 1cm;
         gap: 1cm;
     }
 
@@ -991,7 +991,7 @@ body {
     }
 
     .videos-section {
-        padding: 0 5mm 2cm;
+        padding: 0 5mm 1cm;
         gap: 1cm;
     }
 
