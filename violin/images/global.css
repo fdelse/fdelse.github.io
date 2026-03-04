@@ -372,6 +372,11 @@ body {
     padding: 3.13rem 1.25rem;
 }
 
+.availability-section-home {
+    background-color: #f5f5f5;
+    padding: calc(3.13rem + 1cm) 1.25rem 3.13rem 1.25rem;
+}
+
 .availability-title {
     font-family: 'Futura-Heavy', sans-serif;
     font-size: var(--fs-availability-title);
@@ -853,7 +858,7 @@ body {
     }
  
     .availability-section-home {
-        padding: 5rem 1.88rem 1rem 1.88rem;
+        padding: calc(5rem + 1cm) 1.88rem 1rem 1.88rem;
     }
 
     .availability-title {
