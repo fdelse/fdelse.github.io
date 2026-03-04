@@ -56,7 +56,7 @@
     --fs-music-title: clamp(1.3rem, 3vw, 3.4rem);
     --fs-dj-banner: clamp(2.3rem, 4.5vw, 5.5rem);
     --fs-unforgettable: clamp(1.6rem, 3vw, 3.5rem);
-    --fs-contact-title: clamp(2.1rem, 4vw, 4.5rem);
+    --fs-contact-title: clamp(2.1rem, 3vw, 3.5rem);
     --fs-availability-title: clamp(1.8rem, 2.5vw, 2.8rem);
 }
 
@@ -445,6 +445,12 @@ body {
 
 .contact-btn {
     display: none; /* Hidden on mobile */
+}
+
+.bottom-sign {
+    text-align: center;
+    margin-top: 0.8cm;
+    font-size: 0.7rem;
 }
 
 /* ========================================
@@ -845,6 +851,10 @@ body {
     .availability-section {
         padding: 5rem 1.88rem;
     }
+ 
+    .availability-section-home {
+        padding: 5rem 1.88rem 1rem 1.88rem;
+    }
 
     .availability-title {
         margin-bottom: 3.13rem;
@@ -892,6 +902,12 @@ body {
 
     .contact-btn i {
         font-size: 1.13rem;
+    }
+
+    .bottom-sign {
+        text-align: center; 
+        margin-top: 1.2cm; 
+        font-size: 0.7rem;
     }
 
     .videos-section {
