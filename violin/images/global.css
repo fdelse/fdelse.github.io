@@ -149,6 +149,9 @@ body {
 
 .music-icon .music-square-icon i {
     font-size: 1.7rem;
+    position: relative;
+    top: -1px;
+    left: -1px;
 }
 
 /* ========================================
