@@ -127,7 +127,8 @@ body {
 .social-bar a[aria-label="Apple Music"] i {
     font-size: 1.7rem;
     position: relative;
-    left: -1px;
+    top: -1px;
+    left: -0.5px;
 }
 
 
