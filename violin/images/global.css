@@ -124,6 +124,12 @@ body {
     box-shadow: 0 0.25rem 0.94rem rgba(0,0,0,0.3);
 }
 
+.social-bar a[aria-label="Apple Music"] i {
+    font-size: 1.7rem;
+    position: relative;
+    left: -1px;
+}
+
 
 .music-square-icon {
     display: inline-flex;
