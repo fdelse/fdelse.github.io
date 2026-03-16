@@ -1234,9 +1234,9 @@ body {
 ======================================== */
 
 .reviews-section {
-    background-color: var(--black);
+    background-color: #fff;
     padding: 2.5rem 1.2rem;
-    color: var(--white);
+    color: #222;
 }
 
 .storefrontContent {
@@ -1255,13 +1255,13 @@ body {
 
 .storefrontVerifiedReview {
     font-size: 0.75rem;
-    color: #888;
+    color: #666;
     display: flex;
     align-items: flex-start;
     gap: 0.5rem;
     margin-bottom: 1.5rem;
     padding: 0.75rem;
-    background: rgba(255,255,255,0.05);
+    background: #f5f5f5;
     border-radius: 0.4rem;
     line-height: 1.4;
 }
@@ -1317,17 +1317,17 @@ body {
 
 .storefrontReviewsSummaryCTA__ratingScoreLabel {
     font-size: 1rem;
-    color: #ccc;
+    color: #444;
 }
 
 .storefrontReviewsSummaryCTA__ratingReviewCounter {
     font-size: 0.8rem;
-    color: #888;
+    color: #666;
 }
 
 .storefrontReviewsSummaryCTA__ratingRecommend {
     font-size: 0.82rem;
-    color: #aaa;
+    color: #555;
     font-style: italic;
 }
 
@@ -1366,7 +1366,7 @@ body {
     align-items: center;
     gap: 0.6rem;
     font-size: 0.78rem;
-    color: #ccc;
+    color: #444;
 }
 
 .ratingSingleLine {
@@ -1379,7 +1379,7 @@ body {
 .ratingSingleLine__picture {
     flex: 1;
     height: 4px;
-    background: rgba(255,255,255,0.15);
+    background: #ddd;
     border-radius: 2px;
     position: relative;
     overflow: visible;
@@ -1394,7 +1394,7 @@ body {
 
 .ratingSingleLine__count {
     font-size: 0.78rem;
-    color: #bbb;
+    color: #555;
     min-width: 2.2rem;
     text-align: right;
 }
@@ -1434,7 +1434,7 @@ body {
 
 .storefrontReviewsTileSubpage {
     padding: 1rem;
-    background: rgba(255,255,255,0.05);
+    background: #f9f9f9;
     border-radius: 0.5rem;
     display: grid;
     grid-template-columns: 3rem 1fr auto;
@@ -1495,7 +1495,7 @@ body {
     display: inline-block;
     width: 70px;
     height: 12px;
-    background: rgba(255,255,255,0.15);
+    background: #ddd;
     border-radius: 2px;
     position: relative;
     overflow: hidden;
@@ -1531,7 +1531,7 @@ body {
 
 .storefrontReviewsTileContent__description {
     font-size: 0.82rem;
-    color: #ccc;
+    color: #555;
     line-height: 1.55;
 }
 
@@ -1553,7 +1553,7 @@ body {
 /* Lead tile ("¿Te han convencido?") */
 .sectionLeadTile {
     padding: 1.2rem;
-    background: rgba(255,255,255,0.07);
+    background: #f0f0f0;
     border-radius: 0.5rem;
     text-align: center;
     display: flex;
@@ -1565,13 +1565,13 @@ body {
 .sectionLeadTile__title {
     font-size: 0.95rem;
     margin: 0;
-    color: #ddd;
+    color: #333;
 }
 
 .sectionLeadTile__button {
     background: transparent;
-    border: 1px solid rgba(255,255,255,0.4);
-    color: white;
+    border: 1px solid rgba(0,0,0,0.3);
+    color: #333;
     padding: 0.45rem 1rem;
     border-radius: 0.3rem;
     cursor: pointer;
@@ -1580,7 +1580,7 @@ body {
 }
 
 .sectionLeadTile__button:hover {
-    background: rgba(255,255,255,0.1);
+    background: rgba(0,0,0,0.07);
 }
 
 .sectionLeadTile__icon {
