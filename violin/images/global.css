@@ -466,7 +466,7 @@ body {
 
 .bottom-sign {
     text-align: center;
-    margin-top: 0.8cm;
+    margin-top: -0.2cm;
     font-size: 0.7rem;
 }
 
@@ -1250,11 +1250,12 @@ body {
 }
 
 .storefrontReviews__title {
-    font-size: 1.4rem;
+    font-family: 'Futura-Heavy', sans-serif;
+    font-size: clamp(1.4rem, 2vw, 2.2rem);
     text-align: center;
     margin-bottom: 1.2rem;
-    letter-spacing: 2px;
-    font-weight: 800;
+    letter-spacing: 0.19rem;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
