@@ -448,6 +448,7 @@ body {
     transition: background-color 0.3s ease;
     align-self: center;
     margin-top: 1.25rem;
+    margin-bottom: 2cm;
     width: 100%; /* Mobile: full width */
 }
 
