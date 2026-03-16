@@ -1241,8 +1241,12 @@ body {
 }
 
 .storefrontContent {
-    max-width: 720px;
+    max-width: 50rem;
     margin: 0 auto;
+}
+
+.storefrontReviewsSummaryCTA {
+    max-width: 25rem;
 }
 
 .storefrontReviews__title {
