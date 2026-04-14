@@ -673,7 +673,8 @@ body {
     }
     
     .services {
-        margin-top: -1cm;
+        position: relative;
+        top: -0.5cm;
         padding-left: calc(55% + 1cm - 1cm);
     }
 
@@ -698,7 +699,8 @@ body {
     }
 
     .services {
-        margin-top: -1cm;
+        position: relative;
+        top: -0.5cm;
         padding-left: calc(55% + 1cm - 1cm);
     }
 
@@ -724,7 +726,8 @@ body {
     }
 
     .services {
-        margin-top: -1cm;
+        position: relative;
+        top: -0.5cm;
         padding-left: calc(55% + 1cm - 1cm);
     }
 }
