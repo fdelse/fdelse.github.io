@@ -671,10 +671,10 @@ body {
     .hero-subtitle {
         font-size: 1.4rem;
     }
-    
+
     .services {
         position: relative;
-        top: -0.5cm;
+        top: -1cm;
         padding-left: calc(55% + 1cm - 1cm);
     }
 
@@ -700,7 +700,7 @@ body {
 
     .services {
         position: relative;
-        top: -0.5cm;
+        top: -1cm;
         padding-left: calc(55% + 1cm - 1cm);
     }
 
