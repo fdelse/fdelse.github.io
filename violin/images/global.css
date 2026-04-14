@@ -672,6 +672,11 @@ body {
         font-size: 1.4rem;
     }
     
+    .services {
+        margin-top: -1cm;
+        padding-left: calc(55% + 1cm - 1cm);
+    }
+
     .services p {
         font-size: 0.75rem;
     }
@@ -692,6 +697,11 @@ body {
         font-size: 1.94rem !important;
     }
 
+    .services {
+        margin-top: -1cm;
+        padding-left: calc(55% + 1cm - 1cm);
+    }
+
     .services p {
         font-size: 0.75rem;
     }
@@ -699,7 +709,7 @@ body {
     .music-title {
         font-size: 1.1rem;
     }
-    
+
 }
 
 /* Medium Mobile: 427px-768px */
@@ -711,6 +721,11 @@ body {
 
     .hero-subtitle {
         font-size: 2.4rem !important;
+    }
+
+    .services {
+        margin-top: -1cm;
+        padding-left: calc(55% + 1cm - 1cm);
     }
 }
 
