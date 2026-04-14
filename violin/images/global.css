@@ -846,6 +846,7 @@ body {
 
     .services {
         position: absolute;
+        top: auto;
         bottom: 1.88rem;
         right: calc(6rem + 2cm);
         padding-left: 0;
