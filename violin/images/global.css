@@ -675,7 +675,7 @@ body {
 
     .services {
         position: relative;
-        top: -2cm;
+        top: -1cm;
         padding-left: calc(55% + 1cm - 1cm);
     }
 
@@ -701,7 +701,7 @@ body {
 
     .services {
         position: relative;
-        top: -2cm;
+        top: -1cm;
         padding-left: calc(55% + 1cm - 1cm);
     }
 
@@ -728,7 +728,7 @@ body {
 
     .services {
         position: relative;
-        top: -1.5cm;
+        top: -0.5cm;
         padding-left: calc(55% + 1cm - 1cm);
     }
 }
@@ -848,7 +848,7 @@ body {
     .services {
         position: absolute;
         top: auto;
-        bottom: calc(1.88rem + 1cm);
+        bottom: 1.88rem;
         right: calc(6rem + 2cm);
         padding-left: 0;
         padding-bottom: 100px;
