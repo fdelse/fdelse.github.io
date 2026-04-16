@@ -178,7 +178,7 @@ body {
     position: absolute;
     width: 100%;
     max-width: 42.5rem;
-    height: 30rem;             
+    height: calc(30rem - 1cm);
     left: 50%;
     transform: translateX(-50%);
     top: 0;
