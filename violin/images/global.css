@@ -820,7 +820,7 @@ body {
         min-height: calc(43.75rem - 1cm);
         background-image: url('wedding-ceremonies-mallorca.webp'); /* Show desktop background */
         background-size: cover;
-        background-position: center center;
+        background-position: top center;
         background-repeat: no-repeat;
         padding: 3.75rem 0 1.25rem;
         margin: 0;
