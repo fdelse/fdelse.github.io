@@ -203,7 +203,7 @@ body {
 .hero-content {
     position: relative;
     width: 100%;
-    min-height: 30rem;
+    min-height: calc(30rem - 1cm);
     background-image: none;
     padding: 0;
     display: flex;
@@ -674,7 +674,7 @@ body {
 
     .services {
         position: relative;
-        top: -1cm;
+        top: -2cm;
         padding-left: calc(55% + 1cm - 1cm);
     }
 
@@ -700,7 +700,7 @@ body {
 
     .services {
         position: relative;
-        top: -1cm;
+        top: -2cm;
         padding-left: calc(55% + 1cm - 1cm);
     }
 
@@ -727,7 +727,7 @@ body {
 
     .services {
         position: relative;
-        top: -0.5cm;
+        top: -1.5cm;
         padding-left: calc(55% + 1cm - 1cm);
     }
 }
@@ -816,7 +816,7 @@ body {
     }
 
     .hero-content {
-        min-height: 43.75rem;
+        min-height: calc(43.75rem - 1cm);
         background-image: url('wedding-ceremonies-mallorca.webp'); /* Show desktop background */
         background-size: cover;
         background-position: center center;
@@ -847,7 +847,7 @@ body {
     .services {
         position: absolute;
         top: auto;
-        bottom: 1.88rem;
+        bottom: calc(1.88rem + 1cm);
         right: calc(6rem + 2cm);
         padding-left: 0;
         padding-bottom: 100px;
@@ -1084,7 +1084,7 @@ body {
 /* Large Desktop: 1440px+ */
 @media (min-width: 1440px) {
     .hero-content {
-        min-height: 85vh;
+        min-height: calc(85vh - 1cm);
     }
 
     .hero-title {
