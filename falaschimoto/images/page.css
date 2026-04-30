@@ -81,7 +81,7 @@
 }
 
 .lead {
-  font-size: 16px;
+  font-size: 18px;
   color: #111;
   line-height: 1.8;
 }
@@ -106,7 +106,7 @@
 }
 
 .content-text p {
-  font-size: 14px;
+  font-size: 16px;
   color: #111;
   line-height: 1.8;
   margin-bottom: 14px;
@@ -114,10 +114,10 @@
 
 .highlight-box {
   background: #f5f9fd;
-  border-left: 3px solid #2ea3f2;
+  border-left: 5px solid #2ea3f2;
   padding: 20px 24px;
   margin: 24px 0;
-  font-size: 14px;
+  font-size: 15px;
   color: #555;
   line-height: 2;
 }
@@ -132,6 +132,7 @@
 .info-box {
   background: #f8f8f8;
   border: 1px solid #eee;
+  border-left: 4px solid #2ea3f2;
   padding: 22px 20px;
 }
 
@@ -150,7 +151,6 @@
 }
 
 .info-box h4 {
-  font-size: 13px;
   font-weight: 700;
   color: #111;
   text-transform: uppercase;
@@ -160,25 +160,32 @@
   border-bottom: 1px solid #ddd;
 }
 
+.info-box h4 i { color: #2ea3f2 !important; }
+.info-box-blue h4 i { color: #fff !important; }
+.dept-icon i { color: #2ea3f2 !important; }
+.how-to-get h4 i { color: #2ea3f2 !important; }
+
 .info-box-blue h4 {
   border-bottom-color: rgba(255,255,255,0.3);
 }
 
 .info-box p {
-  font-size: 13px;
   color: #111;
   margin-bottom: 6px;
   line-height: 1.6;
 }
 
 .info-box address {
-  font-size: 13px;
   color: #111;
   line-height: 1.6;
   margin-bottom: 8px;
 }
 
 .info-box a {
+  color: #111;
+}
+
+.info-box a:hover {
   color: #2ea3f2;
 }
 
@@ -194,7 +201,6 @@
 
 .hours-table {
   width: 100%;
-  font-size: 13px;
   border-collapse: collapse;
 }
 
@@ -215,7 +221,7 @@
 }
 
 .check-list li {
-  font-size: 13px;
+  font-size: 15px;
   color: #111;
   padding: 4px 0;
   padding-left: 18px;
@@ -294,10 +300,11 @@
 .ventaja-icon {
   font-size: 40px;
   margin-bottom: 16px;
+  color: #2ea3f2;
 }
 
 .ventaja-item h4 {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   color: #111;
   text-transform: uppercase;
@@ -306,7 +313,7 @@
 }
 
 .ventaja-item p {
-  font-size: 13px;
+  font-size: 15px;
   color: #111;
   line-height: 1.7;
 }
@@ -314,7 +321,7 @@
 /* CONTACTO */
 .contact-depts {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   margin-bottom: 60px;
 }
@@ -329,6 +336,7 @@
 .dept-icon {
   font-size: 36px;
   margin-bottom: 14px;
+  color: #2ea3f2;
 }
 
 .dept-card h3 {
@@ -341,7 +349,7 @@
 }
 
 .dept-card address {
-  font-size: 13px;
+  font-size: 15px;
   color: #111;
   line-height: 1.6;
   margin-bottom: 12px;
@@ -362,7 +370,7 @@
 }
 
 .dept-email {
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 14px;
 }
 
@@ -371,8 +379,12 @@
   word-break: break-all;
 }
 
+.dept-email a:hover {
+  color: #2ea3f2;
+}
+
 .dept-hours {
-  font-size: 12px;
+  font-size: 14px;
   color: #111;
   line-height: 1.8;
   border-top: 1px solid #ddd;
@@ -424,7 +436,7 @@
 }
 
 .form-group label {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   color: #111;
   text-transform: uppercase;
@@ -485,6 +497,7 @@
   text-transform: uppercase;
   border: 2px solid #2ea3f2;
   cursor: pointer;
+  border-radius: 4px;
   transition: all 0.3s;
   align-self: flex-start;
 }
@@ -619,7 +632,7 @@
 }
 
 .privacy-content h3 {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 700;
   color: #222;
   margin-top: 28px;
@@ -627,7 +640,7 @@
 }
 
 .privacy-content p {
-  font-size: 14px;
+  font-size: 16px;
   color: #444;
   line-height: 1.85;
   margin-bottom: 14px;
@@ -640,7 +653,7 @@
 }
 
 .privacy-content ul li {
-  font-size: 14px;
+  font-size: 16px;
   color: #444;
   line-height: 1.85;
   margin-bottom: 6px;
@@ -670,7 +683,7 @@
 }
 
 .privacy-content .last-update {
-  font-size: 12px;
+  font-size: 13px;
   color: #999;
   margin-bottom: 40px;
 }
@@ -727,13 +740,13 @@
   object-fit: cover;
 }
 .team-card h4 {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   color: #333;
   margin-bottom: 4px;
 }
 .team-card p {
-  font-size: 13px;
+  font-size: 14px;
   color: #888;
 }
 
@@ -819,7 +832,7 @@
   color: #333;
 }
 .reviewer-date {
-  font-size: 12px;
+  font-size: 13px;
   color: #aaa;
 }
 .review-stars {
@@ -828,7 +841,7 @@
   margin-bottom: 10px;
 }
 .review-text {
-  font-size: 13px;
+  font-size: 15px;
   color: #555;
   line-height: 1.7;
 }
@@ -962,7 +975,7 @@
   margin-bottom: 20px;
 }
 .servizi-intro p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.85;
   color: #555;
   margin-bottom: 14px;
@@ -996,15 +1009,19 @@
   object-fit: contain;
   display: block;
 }
+.servizio-icon i {
+  font-size: 52px;
+  color: #2ea3f2;
+}
 .servizio-card h3 {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   color: #222;
   margin-bottom: 12px;
   line-height: 1.3;
 }
 .servizio-card p {
-  font-size: 13px;
+  font-size: 15px;
   color: #777;
   line-height: 1.7;
 }
@@ -1026,7 +1043,7 @@
 }
 .servizi-cta-box p {
   color: rgba(255,255,255,0.7);
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.7;
 }
 .servizi-cta-box a {
