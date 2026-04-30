@@ -512,6 +512,10 @@ address {
   margin-bottom: 18px;
 }
 
+#chi-siamo {
+  margin-top: -1cm;
+}
+
 #chi-siamo .section-label {
   margin-top: 3cm;
 }
