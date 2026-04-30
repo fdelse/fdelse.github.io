@@ -205,7 +205,7 @@ address {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: linear-gradient(to right, rgba(0,0,0,0.45) 15%, transparent 45%);
 }
 
 .hero-top-left {
