@@ -1,5 +1,5 @@
-/* =====================================================
-   SAIMOTO.ES — Replica CSS
+﻿/* =====================================================
+   SAIMOTO.ES â€” Replica CSS
    Font: Exo 2 | Divi Theme inspired
    ===================================================== */
 
@@ -638,7 +638,7 @@ address {
 
 #demo-bike {
   position: relative;
-  background-image: url('prova-su-strada-moto-livorno.jpg');
+  background-image: url('prova-su-strada-moto-livorno.webp');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
