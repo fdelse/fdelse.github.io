@@ -124,7 +124,7 @@ address {
 
 #top-menu > li > a:hover,
 #top-menu > li.has-sub:hover > a {
-  color: #2ea3f2;
+  color: #CC0000;
 }
 
 /* Submenu */
@@ -157,7 +157,7 @@ address {
 }
 
 .submenu li a:hover {
-  color: #2ea3f2;
+  color: #CC0000;
   padding-left: 26px;
 }
 
@@ -205,7 +205,7 @@ address {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(0,0,0,0.45) 15%, transparent 45%);
+  background: linear-gradient(to right, rgba(0,0,0,0.45) 15%, rgba(0,0,0,0.15) 100%);
 }
 
 .hero-top-left {
@@ -303,20 +303,20 @@ address {
 .btn-cta {
   display: inline-block;
   padding: 14px 36px;
-  background: #2ea3f2;
+  background: #CC0000;
   color: #fff;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  border: 2px solid #2ea3f2;
-  border-radius: 4px;
+  border: 2px solid #CC0000;
+  border-radius: 0;
   transition: all 0.3s;
 }
 
 .btn-cta:hover {
   background: transparent;
-  color: #2ea3f2;
+  color: #CC0000;
 }
 
 .scroll-down-arrow {
@@ -465,13 +465,13 @@ address {
   left: 20px;
   font-size: 14px;
   font-weight: 700;
-  color: #2ea3f2;
+  color: #CC0000;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .link-more:hover {
-  color: #1a7ab8;
+  color: #990000;
 }
 
 /* =====================================================
@@ -496,11 +496,11 @@ address {
 
 .section-label {
   display: block;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 21px;
+  font-weight: 800;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #2ea3f2;
+  color: #555;
   margin-bottom: 14px;
 }
 
@@ -541,20 +541,20 @@ address {
   display: inline-block;
   margin-top: 10px;
   padding: 12px 30px;
-  background: #2ea3f2;
+  background: #CC0000;
   color: #fff;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
   transition: all 0.3s;
-  border: 2px solid #2ea3f2;
-  border-radius: 4px;
+  border: 2px solid #CC0000;
+  border-radius: 0;
 }
 
 .btn-primary:hover {
   background: transparent;
-  color: #2ea3f2;
+  color: #CC0000;
 }
 
 .about-img img {
@@ -671,14 +671,14 @@ address {
 }
 
 .demo-overlay .btn-cta {
-  background: #2ea3f2;
+  background: #CC0000;
   color: #fff;
-  border-color: #2ea3f2;
+  border-color: #CC0000;
 }
 
 .demo-overlay .btn-cta:hover {
   background: transparent;
-  color: #2ea3f2;
+  color: #CC0000;
 }
 
 /* =====================================================
@@ -719,7 +719,7 @@ address {
   letter-spacing: 1px;
   margin-bottom: 16px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #2ea3f2;
+  border-bottom: 2px solid #555;
 }
 
 .contact-col address {
@@ -738,10 +738,10 @@ address {
 }
 
 .contact-col a:hover {
-  color: #2ea3f2;
+  color: #CC0000;
 }
 
-.contact-col a i { color: #2ea3f2; }
+.contact-col a i { color: #CC0000; }
 
 .hours {
   margin-top: 12px;
@@ -815,8 +815,12 @@ address {
 }
 
 .social-links a:hover {
-  background: #2ea3f2;
-  color: #fff;
+  background: #fff;
+  color: #222;
+}
+
+.social-links a:hover i {
+  color: #222 !important;
 }
 
 .footer-col h5 {
@@ -843,7 +847,7 @@ address {
 }
 
 .footer-col ul a:hover {
-  color: #2ea3f2;
+  color: #CC0000;
   padding-left: 6px;
 }
 
@@ -859,7 +863,7 @@ address {
 }
 
 .footer-col a:hover {
-  color: #2ea3f2;
+  color: #CC0000;
 }
 
 .footer-bottom {
@@ -888,7 +892,7 @@ address {
 }
 
 .footer-bottom .footer-credit:hover {
-  color: #2ea3f2;
+  color: #CC0000;
 }
 
 /* =====================================================
@@ -920,7 +924,7 @@ address {
 }
 
 #cookie-banner a {
-  color: #2ea3f2;
+  color: #555;
   text-decoration: underline;
 }
 

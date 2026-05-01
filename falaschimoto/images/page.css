@@ -49,7 +49,7 @@
 }
 
 .breadcrumb a:hover {
-  color: #2ea3f2;
+  color: #CC0000;
 }
 
 .page-hero-content h1 {
@@ -114,7 +114,7 @@
 
 .highlight-box {
   background: #f5f9fd;
-  border-left: 5px solid #2ea3f2;
+  border-left: 5px solid #555;
   padding: 20px 24px;
   margin: 24px 0;
   font-size: 15px;
@@ -132,13 +132,13 @@
 .info-box {
   background: #f8f8f8;
   border: 1px solid #eee;
-  border-left: 4px solid #2ea3f2;
+  border-left: 4px solid #555;
   padding: 22px 20px;
 }
 
 .info-box-blue {
-  background: #2ea3f2;
-  border-color: #2ea3f2;
+  background: #555;
+  border-color: #555;
   color: #fff;
 }
 
@@ -160,10 +160,10 @@
   border-bottom: 1px solid #ddd;
 }
 
-.info-box h4 i { color: #2ea3f2 !important; }
+.info-box h4 i { color: #CC0000 !important; }
 .info-box-blue h4 i { color: #fff !important; }
-.dept-icon i { color: #2ea3f2 !important; }
-.how-to-get h4 i { color: #2ea3f2 !important; }
+.dept-icon i { color: #CC0000 !important; }
+.how-to-get h4 i { color: #CC0000 !important; }
 
 .info-box-blue h4 {
   border-bottom-color: rgba(255,255,255,0.3);
@@ -186,11 +186,25 @@
 }
 
 .info-box a:hover {
-  color: #2ea3f2;
+  color: #CC0000;
 }
 
 .info-box-blue a {
   color: #fff;
+}
+
+.info-box-blue .social-links a {
+  background: #888;
+  color: #fff;
+}
+
+.info-box-blue .social-links a:hover {
+  background: #fff;
+  color: #222;
+}
+
+.info-box-blue .social-links a:hover i {
+  color: #222 !important;
 }
 
 .info-box-blue h4,
@@ -232,7 +246,7 @@
   content: '✓';
   position: absolute;
   left: 0;
-  color: #2ea3f2;
+  color: #CC0000;
   font-weight: 700;
 }
 
@@ -249,7 +263,7 @@
 
 /* ACTIVE NAV */
 #top-menu .active {
-  color: #2ea3f2 !important;
+  color: #CC0000 !important;
 }
 
 /* FEATURED SECTION */
@@ -294,13 +308,13 @@
 }
 
 .ventaja-item:hover {
-  border-bottom-color: #2ea3f2;
+  border-bottom-color: #CC0000;
 }
 
 .ventaja-icon {
   font-size: 40px;
   margin-bottom: 16px;
-  color: #2ea3f2;
+  color: #CC0000;
 }
 
 .ventaja-item h4 {
@@ -329,14 +343,14 @@
 .dept-card {
   background: #f8f8f8;
   padding: 30px 24px;
-  border-top: 3px solid #2ea3f2;
+  border-top: 3px solid #555;
   text-align: center;
 }
 
 .dept-icon {
   font-size: 36px;
   margin-bottom: 14px;
-  color: #2ea3f2;
+  color: #CC0000;
 }
 
 .dept-card h3 {
@@ -366,7 +380,7 @@
 }
 
 .dept-phone a:hover {
-  color: #2ea3f2;
+  color: #CC0000;
 }
 
 .dept-email {
@@ -380,7 +394,7 @@
 }
 
 .dept-email a:hover {
-  color: #2ea3f2;
+  color: #CC0000;
 }
 
 .dept-hours {
@@ -467,6 +481,9 @@
   resize: vertical;
 }
 
+.contact-form a { color: #CC0000; }
+.contact-form a:hover { color: #990000; }
+
 .form-check label {
   display: flex;
   align-items: flex-start;
@@ -488,23 +505,23 @@
 .btn-submit {
   display: inline-block;
   padding: 14px 36px;
-  background: #2ea3f2;
+  background: #CC0000;
   color: #fff;
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  border: 2px solid #2ea3f2;
+  border: 2px solid #CC0000;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 0;
   transition: all 0.3s;
   align-self: flex-start;
 }
 
 .btn-submit:hover {
   background: transparent;
-  color: #2ea3f2;
+  color: #CC0000;
 }
 
 .map-embed iframe {
@@ -691,7 +708,7 @@
 }
 
 .privacy-content a { color: #111; }
-.privacy-content a:hover { color: #2ea3f2; }
+.privacy-content a:hover { color: #CC0000; }
 
 @media (max-width: 768px) {
   .privacy-content { padding: 40px 0 60px; }
