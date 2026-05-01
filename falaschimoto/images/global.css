@@ -1075,8 +1075,8 @@ address {
   .hero-sub-brands { font-size: 17px; margin-top: 24px; }
   .hero-top-left { top: calc(20px + 3cm); left: 20px; }
 
-  .brand-logos-track img { height: 70px; }
-  .brand-logos-track { gap: 32px; }
+  .brand-logos-track img { height: 93px; }
+  .brand-logos-track { gap: 43px; }
   #brand-logos { margin-top: 24px; margin-bottom: 24px; }
 
   .about-img { margin-top: -0.5cm; margin-bottom: 0.5cm; }
@@ -1099,8 +1099,8 @@ address {
   .gama-grid { grid-template-columns: 1fr; }
   .gama-card { height: 180px; }
   .hero-content h1 { font-size: 22px; }
-  .brand-logos-track img { height: 50px; }
-  .brand-logos-track { gap: 20px; }
+  .brand-logos-track img { height: 67px; }
+  .brand-logos-track { gap: 27px; }
 }
 
 /* ---- max 425px : phone grande ---- */
@@ -1110,8 +1110,8 @@ address {
   .hero-concessionario { font-size: 16px; margin-top: 14px; margin-bottom: 6px; }
   .hero-sub-brands { font-size: 13px; margin-top: 12px; line-height: 1.5; }
   .hero-top-left { top: 14px; left: 14px; }
-  .brand-logos-track img { height: 42px; }
-  .brand-logos-track { gap: 16px; }
+  .brand-logos-track img { height: 56px; }
+  .brand-logos-track { gap: 21px; }
   #brand-logos { padding: 18px 0; }
   #servicios { padding: 50px 0; }
   #about { padding: 50px 0; }
@@ -1129,8 +1129,8 @@ address {
   .hero-sub-brands { font-size: 12px; letter-spacing: 1px; }
   .hero-top-left { top: 12px; left: 12px; }
   #logo img { height: 36px; }
-  .brand-logos-track img { height: 36px; }
-  .brand-logos-track { gap: 12px; }
+  .brand-logos-track img { height: 48px; }
+  .brand-logos-track { gap: 16px; }
   .header-inner { padding-left: 10px; padding-right: 12px; }
   .services-grid { gap: 14px; }
   .btn-primary { padding: 10px 22px; font-size: 12px; }
@@ -1145,8 +1145,8 @@ address {
   .hero-sub-brands { font-size: 11px; letter-spacing: 0.5px; }
   .hero-top-left { top: 10px; left: 10px; }
   #logo img { height: 32px; }
-  .brand-logos-track img { height: 30px; }
-  .brand-logos-track { gap: 10px; }
+  .brand-logos-track img { height: 40px; }
+  .brand-logos-track { gap: 13px; }
   .header-inner { padding-left: 8px; padding-right: 10px; height: 56px; }
   nav { top: 56px; }
   .btn-primary { padding: 9px 18px; font-size: 12px; }
