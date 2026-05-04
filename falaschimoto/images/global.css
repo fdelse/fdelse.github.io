@@ -615,7 +615,7 @@ address {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.75) 30%, transparent 70%);
+  background: linear-gradient(to top, rgba(0,0,0,0.60) 25%, transparent 65%);
 }
 
 .gama-label {

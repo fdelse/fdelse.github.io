@@ -243,9 +243,14 @@
 }
 
 .check-list li::before {
-  content: 'âœ“';
+  content: '\2713';
   position: absolute;
   left: 0;
+  color: #CC0000;
+  font-weight: 700;
+}
+
+.ck {
   color: #CC0000;
   font-weight: 700;
 }
@@ -590,7 +595,7 @@
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
 
   .servizi-grid { grid-template-columns: 1fr !important; }
-  .servizio-icon img { height: 130px !important; }
+  .servizio-icon img { height: 150px !important; }
 }
 
 @media (max-width: 600px) {
@@ -1028,7 +1033,7 @@
 .servizio-icon img {
   width: auto;
   max-width: 100%;
-  height: 89px;
+  height: 119px;
   object-fit: contain;
   display: block;
 }
