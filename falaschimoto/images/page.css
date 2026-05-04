@@ -609,11 +609,12 @@
   .page-hero-content h1 { font-size: 22px; }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 428px) {
   .page-hero { height: 190px; margin-top: 56px; }
   .page-hero-content h1 { font-size: 20px; }
   .page-intro h2 { font-size: 22px; }
   .page-intro p { font-size: 14px; }
+  .page-intro p.lead { font-size: 16px; }
   .page-content { padding: 40px 0; }
   .info-box { padding: 16px 14px; }
   .hours-table td, .hours-table th { font-size: 12px; padding: 6px 8px; }
