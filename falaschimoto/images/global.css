@@ -1109,7 +1109,7 @@ address {
 
 /* ---- max 428px : phone grande ---- */
 @media (max-width: 428px) {
-  .container { width: 94%; }
+  .container { width: 100%; padding: 0 18px; box-sizing: border-box; }
   .hero-content h1 { font-size: 20px; }
   .hero-concessionario { font-size: 16px; margin-top: 14px; margin-bottom: 6px; }
   .hero-sub-brands { font-size: 13px; margin-top: 12px; line-height: 1.5; }
@@ -1143,7 +1143,7 @@ address {
 /* ---- max 320px : phone piccolo ---- */
 @media (max-width: 320px) {
   body { font-size: 13px; }
-  .container { width: 96%; }
+  .container { width: 100%; padding: 0 14px; box-sizing: border-box; }
   .hero-content h1 { font-size: 16px; }
   .hero-concessionario { font-size: 13px; letter-spacing: 1px; }
   .hero-sub-brands { font-size: 11px; letter-spacing: 0.5px; }
