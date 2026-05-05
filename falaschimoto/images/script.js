@@ -5,7 +5,7 @@ window.addEventListener('scroll', function () {
   } else {
     header.classList.remove('header-scrolled');
   }
-});
+}, { passive: true });
 
 // Cookie banner
 (function () {
@@ -31,7 +31,9 @@ var nav = document.querySelector('nav');
 if (hamburger && nav) {
   hamburger.addEventListener('click', function () {
     nav.classList.toggle('open');
-    hamburger.innerHTML = nav.classList.contains('open') ? '&#10005;' : '&#9776;';
+    var isOpen = nav.classList.contains('open');
+    hamburger.innerHTML = isOpen ? '&#10005;' : '&#9776;';
+    hamburger.setAttribute('aria-expanded', isOpen);
   });
 
   // Chiudi il menu cliccando su un link

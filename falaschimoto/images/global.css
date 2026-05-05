@@ -59,6 +59,18 @@ address {
   text-align: center;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* =====================================================
    HEADER
    ===================================================== */
@@ -413,6 +425,17 @@ address {
   background-size: cover;
   background-position: center;
   background-color: #1a1a1a;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-thumb img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .service-taller {
@@ -924,7 +947,7 @@ address {
 }
 
 #cookie-banner a {
-  color: #555;
+  color: #FF4444;
   text-decoration: underline;
 }
 
@@ -935,7 +958,7 @@ address {
 }
 
 #cookie-banner .btn-cookie-accept {
-  background: #2ea3f2;
+  background: #1a7ab8;
   color: #fff;
   border: none;
   padding: 9px 20px;
@@ -947,7 +970,7 @@ address {
 }
 
 #cookie-banner .btn-cookie-accept:hover {
-  background: #1a7ab8;
+  background: #145d8c;
 }
 
 #cookie-banner .btn-cookie-reject {
@@ -1096,6 +1119,7 @@ address {
 
   .footer-bottom .container { flex-direction: column; align-items: center; gap: 6px; }
   .footer-bottom .footer-credit { position: static; transform: none; }
+  #demo-bike { background-attachment: scroll; }
 }
 
 /* ---- max 480px ---- */

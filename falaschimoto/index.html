@@ -16,9 +16,11 @@
   <link rel="apple-touch-icon" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;800&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="images/global.css?v=2">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -97,21 +99,21 @@
       </ul>
     </nav>
     <img src="images/suzukiLogo.webp" alt="Suzuki" class="header-suzuki-logo">
-    <button class="hamburger">&#9776;</button>
+    <button class="hamburger" aria-label="Menu" aria-expanded="false">&#9776;</button>
   </div>
 </header>
 
 <!-- HERO -->
 <section id="hero">
   <div class="hero-bg">
-    <img src="images/suzuki-sv-7gx-side-by-side.webp" alt="Falaschi Moto Suzuki" class="hero-img">
+    <img src="images/suzuki-sv-7gx-side-by-side.webp" alt="Falaschi Moto Suzuki" class="hero-img" fetchpriority="high">
     <div class="hero-overlay"></div>
     <div class="hero-top-left">
-      <p class="hero-concessionario">Concessionario Suzuki</p>
+      <h1 class="hero-concessionario">Concessionario Suzuki</h1>
       <p class="hero-sub-brands">SYM &nbsp;·&nbsp; Beta &nbsp;·&nbsp; Benelli &nbsp;·&nbsp; Keeway <br> Cyclone &nbsp;·&nbsp; Benda &nbsp;·&nbsp; Morbidelli</p>
       <p class="hero-sub-brands" style="margin-top:1cm;">Vendita Usato &nbsp;·&nbsp; Accessori Moto</p>
     </div>
-    <a href="#servizi" class="scroll-down-arrow"></a>
+    <a href="#servizi" class="scroll-down-arrow" aria-label="Scorri ai servizi"></a>
   </div>
 </section>
 
@@ -145,37 +147,46 @@
 <!-- SERVIZI -->
 <section id="servizi">
   <div class="container">
+    <h2 class="sr-only">I Nostri Servizi</h2>
     <div class="services-grid">
 
       <div class="service-card">
-        <div class="service-thumb" style="background-image:url('images/vendita-moto-nuove-livorno.webp'); background-size:cover; background-position:center;"></div>
+        <div class="service-thumb">
+          <img src="images/vendita-moto-nuove-livorno.webp" alt="Esposizione e vendite moto" loading="lazy">
+        </div>
         <div class="service-body">
           <h3>Esposizione e Vendite</h3>
           <p>Concessionario ufficiale Suzuki, SYM, Beta, Benelli, Keeway, Cyclone, Benda, Morbidelli.</p>
-          <a href="esposizione-e-vendite.html" class="link-more">Maggiori informazioni &#8594;</a>
+          <a href="esposizione-e-vendite.html" class="link-more" aria-label="Maggiori informazioni su Esposizione e Vendite">Maggiori informazioni &#8594;</a>
         </div>
       </div>
 
       <div class="service-card">
-        <div class="service-thumb service-taller" style="background-image:url('images/officina-specializzata-moto-livorno.webp'); background-size:cover; background-position:center;"></div>
+        <div class="service-thumb service-taller">
+          <img src="images/officina-specializzata-moto-livorno.webp" alt="Officina specializzata moto" loading="lazy">
+        </div>
         <div class="service-body">
           <h3>Officina Specializzata</h3>
           <p>Riparazione di moto nuove ed usate, preparazioni ad hoc, mappature su banco BAPRO, centraline BAZZAZ e Rapid Bike, assistenza pista.</p>
-          <a href="servizio-tecnico.html" class="link-more">Maggiori informazioni &#8594;</a>
+          <a href="servizio-tecnico.html" class="link-more" aria-label="Maggiori informazioni su Officina Specializzata">Maggiori informazioni &#8594;</a>
         </div>
       </div>
 
       <div class="service-card">
-        <div class="service-thumb service-recambios" style="background-image:url('images/ricambi-originali-suzuki-livorno.webp'); background-size:cover; background-position:center;"></div>
+        <div class="service-thumb service-recambios">
+          <img src="images/ricambi-originali-suzuki-livorno.webp" alt="Ricambi e accessori moto" loading="lazy">
+        </div>
         <div class="service-body">
           <h3>Ricambi e Accessori</h3>
           <p>Ricambi originali per tutte le marche trattate. Caschi, giacche, tute, guanti, stivali e accessori delle migliori marche.</p>
-          <a href="ricambi-e-accessori.html" class="link-more">Maggiori informazioni &#8594;</a>
+          <a href="ricambi-e-accessori.html" class="link-more" aria-label="Maggiori informazioni su Ricambi e Accessori">Maggiori informazioni &#8594;</a>
         </div>
       </div>
 
       <div class="service-card">
-        <div class="service-thumb" style="background-image:url('images/recupero-moto-su-strada.webp'); background-size:cover; background-position:center;"></div>
+        <div class="service-thumb">
+          <img src="images/recupero-moto-su-strada.webp" alt="Recupero moto su strada" loading="lazy">
+        </div>
         <div class="service-body">
           <h3>Recupero su Strada</h3>
           <p>Soccorso stradale e assistenza autoveicoli su strada. Siamo pronti ad aiutarti in caso di emergenza.</p>
@@ -233,8 +244,8 @@
           Via dell'Azalea, 30/32<br>
           57014 Collesalvetti (LI)
         </address>
-        <p><a href="tel:+390586965064"><i class="fa-solid fa-phone"></i> 0586 965064</a></p>
-        <p><a href="mailto:info@falaschimoto.it"><i class="fa-solid fa-envelope"></i> info@falaschimoto.it</a></p>
+        <p><a href="tel:+390586965064"><i class="fa-solid fa-phone" aria-hidden="true"></i> 0586 965064</a></p>
+        <p><a href="mailto:info@falaschimoto.it"><i class="fa-solid fa-envelope" aria-hidden="true"></i> info@falaschimoto.it</a></p>
         <p class="hours">Lun: 10:00 &ndash; 13:00 / 16:00 &ndash; 20:00<br>Mar &ndash; Sab: 09:00 &ndash; 13:00 / 16:00 &ndash; 20:00<br>Domenica: chiuso</p>
       </div>
 
@@ -244,8 +255,8 @@
           Via dell'Azalea, 30/32<br>
           57014 Collesalvetti (LI)
         </address>
-        <p><a href="tel:+390586965064"><i class="fa-solid fa-phone"></i> 0586 965064</a></p>
-        <p><a href="mailto:info@falaschimoto.it"><i class="fa-solid fa-envelope"></i> info@falaschimoto.it</a></p>
+        <p><a href="tel:+390586965064"><i class="fa-solid fa-phone" aria-hidden="true"></i> 0586 965064</a></p>
+        <p><a href="mailto:info@falaschimoto.it"><i class="fa-solid fa-envelope" aria-hidden="true"></i> info@falaschimoto.it</a></p>
         <p class="hours">Mar &ndash; Sab: 09:00 &ndash; 13:00 / 16:00 &ndash; 20:00</p>
       </div>
 
@@ -271,8 +282,8 @@
         <img src="images/moto-livorno-officina-moto-livorno-accessori-moto-livorno.webp" alt="Falaschi Moto" class="footer-logo">
         <p>Concessionario ufficiale Suzuki, SYM, Beta, Benelli, Keeway, Cyclone, Benda, Morbidelli a Collesalvetti (Livorno). Officina specializzata, ricambi originali e abbigliamento tecnico.</p>
         <div class="social-links">
-          <a href="https://www.facebook.com/FalaschiMoto" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/falaschimoto" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/FalaschiMoto" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/falaschimoto" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
         </div>
       </div>
 
