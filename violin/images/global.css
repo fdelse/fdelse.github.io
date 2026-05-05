@@ -332,9 +332,12 @@ body {
 
 .music-section {
     background-color: var(--black);
-    padding: calc(0.5rem + 5.5mm) 1.25rem calc(0.5rem + 5.5mm);
+    padding: 1.3rem 1.25rem;
     text-align: center;
     margin-bottom: 0.47rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .music-title {
@@ -892,8 +895,8 @@ body {
     }
 
     .music-section {
-    padding: 4mm 3.76rem 1.56rem;
-    margin-bottom: 0.85rem;
+        padding: 1.75rem 3.76rem;
+        margin-bottom: 0.85rem;
     }
 
     .music-title {
@@ -1125,6 +1128,10 @@ body {
 
     .services {
         right: calc(6rem + 5cm);
+    }
+
+    .music-section {
+        padding: 2.1rem 3.76rem;
     }
 }
 
