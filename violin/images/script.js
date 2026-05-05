@@ -44,4 +44,18 @@ document.addEventListener('DOMContentLoaded', function() {
             cookieBanner.classList.remove('active');
         });
     }
+
+    // YouTube facade: load iframe on click
+    document.querySelectorAll('.yt-facade').forEach(function(facade) {
+        facade.querySelector('.video-play-btn').addEventListener('click', function() {
+            var id = facade.dataset.id;
+            var iframe = document.createElement('iframe');
+            iframe.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&mute=1';
+            iframe.frameBorder = '0';
+            iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+            iframe.allowFullscreen = true;
+            iframe.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border:none';
+            facade.replaceWith(iframe);
+        });
+    });
 });
