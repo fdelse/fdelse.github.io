@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // YouTube facade: load iframe on click
     document.querySelectorAll('.yt-facade').forEach(function(facade) {
-        facade.querySelector('.video-play-btn').addEventListener('click', function() {
+        facade.addEventListener('click', function() {
             var id = facade.dataset.id;
             var iframe = document.createElement('iframe');
             iframe.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&mute=1';
