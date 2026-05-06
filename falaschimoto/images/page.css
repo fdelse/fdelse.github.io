@@ -430,7 +430,7 @@
 
 .contact-form-wrap > p,
 .contact-map-wrap > p {
-  font-size: 14px;
+  font-size: 16px;
   color: #111;
   margin-bottom: 24px;
   line-height: 1.7;
@@ -535,7 +535,7 @@
 }
 
 .how-to-get h4 {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   color: #111;
   text-transform: uppercase;
@@ -544,7 +544,7 @@
 }
 
 .how-to-get p {
-  font-size: 13px;
+  font-size: 16px;
   color: #111;
 }
 
