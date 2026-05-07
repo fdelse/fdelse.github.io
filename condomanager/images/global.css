@@ -202,7 +202,11 @@ body {
 }
 
 .hero-section::before {
-    display: none;
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.35) 100%);
+    z-index: 0;
 }
 
 .hero-content-wrapper {
