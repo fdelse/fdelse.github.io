@@ -2561,7 +2561,7 @@ body {
     .ct-header { padding-top: 5mm; align-items: flex-start; }
     .hero-section { min-height: 560px; }
     .hero-bg-img { object-position: 70% center; }
-    .hero-section::before { background: rgba(0,0,0,0.55); }
+    .hero-section::before { background: rgba(0,0,0,0.45); }
     .hero-box { padding: 35px 20px; margin-top: 1cm; margin-left: auto; margin-right: auto; }
     .hero-box h1 { font-size: 38px; }
     .hero-box p { font-size: 17px; }
