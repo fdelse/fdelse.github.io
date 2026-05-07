@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /images/
 
-Sitemap: https://pegasofincas.eu/sitemap.xml
+Sitemap: https://fdelse.github.io/condomanager/sitemap.xml
