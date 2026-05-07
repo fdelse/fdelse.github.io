@@ -426,7 +426,7 @@ body {
 .scopri-servizi-section {
     position: relative;
     min-height: 500px;
-    background-image: url('servicios-administrador-fincas-malaga.jpg');
+    background-image: url('servicios-administrador-fincas-malaga.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -824,17 +824,17 @@ body {
 
 /* Background image per pagina (path relativo a /images/) */
 .page-banner-chi-siamo {
-    background-image: url('quienes-somos-administrador-fincas-malaga.jpg');
+    background-image: url('quienes-somos-administrador-fincas-malaga.webp');
     background-position: center top;
 }
 
 .page-banner-servizi {
-    background-image: url('servicios-comunidades-propietarios-malaga.jpg');
+    background-image: url('servicios-comunidades-propietarios-malaga.webp');
     background-position: center;
 }
 
 .page-banner-contatti {
-    background-image: url('contacto-administrador-fincas-malaga.jpg');
+    background-image: url('contacto-administrador-fincas-malaga.webp');
     background-position: center;
 }
 
@@ -1541,7 +1541,7 @@ body {
    ============================== */
 
 .page-banner-cambio {
-    background-image: url('cambio-administrador-fincas-malaga.jpg');
+    background-image: url('cambio-administrador-fincas-malaga.webp');
     background-position: center;
 }
 
@@ -1881,7 +1881,7 @@ body {
 /* --- Photo divider with CTA --- */
 .ca-photo-divider {
     height: 380px;
-    background-image: url('servicios-administrador-fincas-malaga.jpg');
+    background-image: url('servicios-administrador-fincas-malaga.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -2545,7 +2545,7 @@ body {
 
 @media (max-width: 768px) {
     .scopri-servizi-section {
-        background-image: url('servicios-administrador-fincas-malaga-mobile.jpg');
+        background-image: url('servicios-administrador-fincas-malaga-mobile.webp');
     }
     .ct-header { padding-top: 5mm; align-items: flex-start; }
     .hero-section { min-height: 560px; }
