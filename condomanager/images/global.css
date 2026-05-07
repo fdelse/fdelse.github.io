@@ -246,6 +246,7 @@ body {
     font-weight: 600;
     margin-bottom: 25px;
     line-height: 1.15;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.7);
 }
 
 .hero-box p {
@@ -263,6 +264,7 @@ body {
 .hero-intro {
     font-size: 19px !important;
     line-height: 1.8;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.9);
 }
 
 .valorizzazione {
