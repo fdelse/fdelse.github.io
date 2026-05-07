@@ -2493,6 +2493,7 @@ body {
         gap: 0;
         width: 100%;
         text-align: center;
+        transform: translateX(-1.5cm);
     }
     .nav-menu a {
         display: block;
