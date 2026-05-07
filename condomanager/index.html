@@ -18,7 +18,7 @@
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap"></noscript>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="preload" as="image" href="images/administracion-comunidades-propietarios-malaga.jpg" fetchpriority="high">
-    <link rel="stylesheet" href="images/global.css?v=2">
+    <link rel="stylesheet" href="images/global.min.css?v=3">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -165,13 +165,13 @@
         <h2 class="sedi-title" data-aos="fade-up">Nuestra Sede</h2>
         <p class="sedi-subtitle" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">Estamos en Calle Mefistofeles, 19<br>29006 Málaga</p>
         <div class="sede-mappa-wrapper" data-aos="fade-up" data-aos-delay="200">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.4719012997703!2d-4.4656717258010605!3d36.711226272712764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7431258e9bb%3A0xab9c1bffa594859!2sC.%20Mefistofeles%2C%2019%2C%20Teatinos-Universidad%2C%2029006%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1778074804239!5m2!1ses!2ses"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                title="Sede Pegaso Fincas - Calle Mefistofeles 19, Málaga">
-            </iframe>
+            <div class="map-facade" data-height="420" onclick="loadGoogleMap(this)" onkeydown="if(event.key==='Enter'||event.key===' ')loadGoogleMap(this)" role="button" tabindex="0" aria-label="Cargar mapa interactivo de la sede">
+                <div class="map-placeholder">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:48px;height:48px;color:#387c30"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <p>Calle Mefistofeles, 19<br>29006 Málaga</p>
+                    <button type="button" class="btn-load-map">Ver mapa interactivo</button>
+                </div>
+            </div>
         </div>
     </section>
 </main>
@@ -217,7 +217,7 @@
     </div>
 </div>
 
-<script defer src="images/script.js?v=2"></script>
+<script defer src="images/script.js?v=3"></script>
 <script>
 (function(){
     var els = document.querySelectorAll('[data-aos]');

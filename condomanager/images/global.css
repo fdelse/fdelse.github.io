@@ -546,6 +546,44 @@ body {
     height: 420px;
 }
 
+/* MAP FACADE */
+.map-facade {
+    cursor: pointer;
+    width: 100%;
+}
+.map-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background: linear-gradient(135deg, #f0f4f0 0%, #e8efe8 100%);
+    text-align: center;
+    padding: 20px;
+}
+.map-placeholder p {
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin: 0;
+}
+.sede-mappa-wrapper .map-placeholder { height: 420px; }
+.ct-map .map-placeholder            { height: 280px; }
+.btn-load-map {
+    background: var(--blue-testai);
+    color: #ffffff;
+    border: none;
+    padding: 11px 28px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    transition: opacity 0.2s;
+}
+.btn-load-map:hover { opacity: 0.85; }
+
 .sedi-grid {
     display: flex;
     flex-wrap: wrap;
