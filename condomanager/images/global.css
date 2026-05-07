@@ -20,7 +20,7 @@
 }
 
 body {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', Georgia, serif;
     color: var(--text-gray);
     line-height: 1.6;
     padding-top: 0;
@@ -586,7 +586,7 @@ body {
     font-size: 14px;
     font-weight: 700;
     cursor: pointer;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', Georgia, serif;
     transition: opacity 0.2s;
 }
 .btn-load-map:hover { opacity: 0.85; }
@@ -1314,7 +1314,7 @@ body {
     border-radius: 8px;
     padding: 12px 15px;
     font-size: 14px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', Georgia, serif;
     color: var(--text-gray);
     background: #fafcff;
     transition: border-color 0.2s;
@@ -1374,7 +1374,7 @@ body {
     border-radius: 8px;
     font-size: 14px;
     font-weight: 700;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', Georgia, serif;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     cursor: pointer;
@@ -1729,7 +1729,7 @@ body {
     border-radius: 8px;
     padding: 11px 13px;
     font-size: 14px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', Georgia, serif;
     color: var(--text-gray);
     background: #fafcff;
     transition: border-color 0.2s;
@@ -2372,7 +2372,7 @@ body {
     border-radius: 8px;
     font-weight: 700;
     font-size: 14px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', Georgia, serif;
     cursor: pointer;
     transition: background-color 0.2s;
     white-space: nowrap;
@@ -2390,7 +2390,7 @@ body {
     border-radius: 8px;
     font-weight: 700;
     font-size: 14px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', Georgia, serif;
     cursor: pointer;
     transition: border-color 0.2s, color 0.2s;
     white-space: nowrap;
