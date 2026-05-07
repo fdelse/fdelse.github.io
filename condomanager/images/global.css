@@ -2531,6 +2531,7 @@ body {
         background-image: url('servicios-administrador-fincas-malaga-mobile.jpg');
     }
     .hero-section { min-height: 560px; }
+    .hero-bg-img { object-position: 70% center; }
     .hero-box { padding: 35px 20px; margin-top: 1.5cm; margin-left: auto; margin-right: auto; }
     .hero-box h1 { font-size: 34px; }
     .hero-box p { font-size: 16px; }
