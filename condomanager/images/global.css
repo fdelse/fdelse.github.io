@@ -2586,7 +2586,7 @@ body {
 
 @media (max-width: 480px) {
     .hero-section { min-height: 420px; }
-    .hero-box h1 { font-size: 24px; }
+    .hero-box h1 { font-size: 30px; }
 
     .page-banner-photo { height: 200px; }
     .page-banner-privacy { height: 190px; }
@@ -2605,8 +2605,8 @@ body {
 @media (max-width: 425px) {
     .hero-section { min-height: 380px; }
     .hero-box { padding: 24px 18px; }
-    .hero-box h1 { font-size: 22px; }
-    .hero-box p { font-size: 15px; }
+    .hero-box h1 { font-size: 30px; }
+    .hero-box p { font-size: 16px; }
     .valorizzazione { font-size: 13px !important; margin: 20px 0 18px 0 !important; }
 
     .logo img { max-height: 42px; }
