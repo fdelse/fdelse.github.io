@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 header.classList.remove('scrolled');
             }
         }
-    });
+    }, { passive: true });
 
     // ==============================
     // COOKIE BANNER

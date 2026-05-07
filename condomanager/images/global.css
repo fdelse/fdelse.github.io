@@ -2482,6 +2482,12 @@ body {
 }
 
 @media (max-width: 768px) {
+    .hero-section {
+        background-image: url('pegaso-amministrazioni-condominiali-24-mobile.jpg');
+    }
+    .scopri-servizi-section {
+        background-image: url('amministratori-condominio-2-mobile.jpg');
+    }
     .hero-section { min-height: 560px; }
     .hero-box { padding: 35px 20px 35px 0; margin-top: 1.5cm; }
     .hero-box h1 { font-size: 34px; }
