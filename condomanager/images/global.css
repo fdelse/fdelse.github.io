@@ -71,16 +71,14 @@ body {
     background: transparent;
 }
 .nav-menu a.active {
-    background: rgba(255, 255, 255, 0.30);
-    color: #ffffff;
-    border-color: rgba(255, 255, 255, 0.70);
+    color: var(--yellow-testai);
 }
 
-.ct-header.scrolled .nav-menu a:hover,
+.ct-header.scrolled .nav-menu a:hover {
+    opacity: 0.75;
+}
 .ct-header.scrolled .nav-menu a.active {
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.15);
-    opacity: 1;
+    color: var(--yellow-testai);
 }
 
 /* Make button text white when header is scrolled */
@@ -140,15 +138,12 @@ body {
     text-transform: uppercase;
     white-space: nowrap;
     padding: 8px 12px;
-    background: rgba(255, 255, 255, 0.22);
     border-radius: 6px;
-    backdrop-filter: blur(4px);
-    transition: background 0.2s, color 0.2s;
+    transition: color 0.2s, opacity 0.2s;
 }
 
 .nav-menu a:hover {
-    background: rgba(255, 255, 255, 0.38);
-    opacity: 1;
+    opacity: 0.75;
 }
 
 .header-action {
