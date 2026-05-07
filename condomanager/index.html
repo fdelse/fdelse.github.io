@@ -79,15 +79,16 @@
 
 <main>
     <section class="hero-section">
-        <img src="images/administracion-comunidades-propietarios-malaga.jpg"
-             srcset="images/administracion-comunidades-propietarios-malaga-mobile.jpg 768w, images/administracion-comunidades-propietarios-malaga.jpg 1920w"
-             sizes="100vw"
-             alt="Administración de comunidades de propietarios en Málaga - Pegaso Fincas"
-             class="hero-bg-img"
-             fetchpriority="high"
-             loading="eager"
-             decoding="async"
-             width="1920" height="840">
+        <picture>
+            <source media="(max-width: 768px)" srcset="images/administracion-comunidades-propietarios-malaga-mobile.jpg">
+            <img src="images/administracion-comunidades-propietarios-malaga.jpg"
+                 alt="Administración de comunidades de propietarios en Málaga - Pegaso Fincas"
+                 class="hero-bg-img"
+                 fetchpriority="high"
+                 loading="eager"
+                 decoding="async"
+                 width="1920" height="840">
+        </picture>
         <div class="hero-content-wrapper">
             <div class="hero-box">
                 <h1>Administración de Comunidades de Propietarios Pegaso</h1>
