@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 :focus-visible {
     outline: 3px solid var(--yellow-testai);
     outline-offset: 3px;
@@ -24,6 +28,7 @@ body {
     color: var(--text-gray);
     line-height: 1.6;
     padding-top: 0;
+    overflow-x: hidden;
 }
 
 /* SCROLL ANIMATIONS */
@@ -2463,7 +2468,7 @@ body {
     .page-banner-photo { height: 320px; }
     .page-banner-title { font-size: 42px; }
 
-    .hamburger-btn { display: flex; position: relative; z-index: 10000; }
+    .hamburger-btn { display: flex; position: relative; z-index: 10000; margin-right: 5mm; }
     .ct-header { z-index: 10000; }
     .header-action { display: none; }
 
@@ -2473,12 +2478,12 @@ body {
         left: 0;
         right: 0;
         bottom: 0;
+        margin-right: 0;
         background: var(--blue-testai);
         z-index: 9999;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-right: 20mm;
         visibility: hidden;
         opacity: 0;
         pointer-events: none;
@@ -2500,10 +2505,10 @@ body {
         padding: 18px 24px;
         border-radius: 0;
         background: transparent;
-        border-bottom: 1px solid rgba(255,255,255,0.15);
         color: #ffffff;
         font-size: 18px;
-        backdrop-filter: none;
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+        border-right: 5mm solid var(--blue-testai);
     }
     .nav-menu a:last-child { border-bottom: none; }
     .nav-preventivo { display: list-item; }
