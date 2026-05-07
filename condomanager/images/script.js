@@ -8,12 +8,17 @@
         });
     }
 
-    window.addEventListener('scroll', function() {
-        var header = document.querySelector('.ct-header');
-        if (header && !header.classList.contains('always-scrolled')) {
-            header.classList[window.scrollY > 50 ? 'add' : 'remove']('scrolled');
-        }
-    }, { passive: true });
+    var header = document.querySelector('.ct-header');
+    if (header && !header.classList.contains('always-scrolled')) {
+        var scrolled = false;
+        window.addEventListener('scroll', function() {
+            var past = window.scrollY > 50;
+            if (past !== scrolled) {
+                scrolled = past;
+                header.classList[scrolled ? 'add' : 'remove']('scrolled');
+            }
+        }, { passive: true });
+    }
 
     var banner = document.getElementById('cookie-banner');
     if (!banner) return;
