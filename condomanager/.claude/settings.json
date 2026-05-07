@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(cd \"c:\\\\laragon\\\\www\\\\fdelse.github.io\\\\condomanager\\\\images\" && rm *.jpg *.jpeg *.png && ls *.webp)"
+      "Bash(cd \"c:\\\\laragon\\\\www\\\\fdelse.github.io\\\\condomanager\\\\images\" && rm *.jpg *.jpeg *.png && ls *.webp)",
+      "Bash(node _minify.js)"
     ],
     "additionalDirectories": [
       "c:\\laragon\\www\\fdelse.github.io\\condomanager"
