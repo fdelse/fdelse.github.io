@@ -1,14 +1,54 @@
-<!DOCTYPE html>
-<html lang="it">
+﻿<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pegaso - Amministrazioni Condominiali</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Pegaso Fincas, administrador de fincas en Málaga desde 1993. Gestión integral de comunidades de propietarios con transparencia y administradores colegiados. Solicita presupuesto gratuito.">
+    <link rel="canonical" href="https://pegasofincas.eu/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Administrador de Fincas en Málaga | Pegaso Fincas">
+    <meta property="og:description" content="Gestión integral de comunidades de propietarios en Málaga. Transparencia, profesionalidad y administradores colegiados desde 1993.">
+    <meta property="og:url" content="https://pegasofincas.eu/">
+    <meta property="og:site_name" content="Pegaso Fincas">
+    <meta property="og:locale" content="es_ES">
+    <title>Administrador de Fincas en Málaga | Pegaso Fincas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="images/global.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://pegasofincas.eu/",
+  "name": "Pegaso Fincas",
+  "description": "Administrador de fincas y gestor de comunidades de propietarios en Málaga desde 1993.",
+  "url": "https://pegasofincas.eu",
+  "telephone": "+34952334760",
+  "email": "info@pegasofincas.eu",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle Mefistofeles, 19",
+    "addressLocality": "Málaga",
+    "postalCode": "29006",
+    "addressCountry": "ES"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 36.711226,
+    "longitude": -4.465672
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "12:00"
+  }],
+  "areaServed": { "@type": "City", "name": "Málaga" },
+  "priceRange": "$$"
+}
+</script></head>
 <body>
 
 <header class="ct-header">
@@ -18,17 +58,17 @@
         </div>
         <nav class="nav-menu">
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="chi-siamo.html">CHI SIAMO</a></li>
-                <li><a href="servizi.html">SERVIZI</a></li>
-                <li><a href="contatti.html">CONTATTI</a></li>
-                <li class="nav-preventivo"><a href="contatti.html">RICHIEDI PREVENTIVO</a></li>
+                <li><a href="#" class="active">INICIO</a></li>
+                <li><a href="quienes-somos.html">QUIÉNES SOMOS</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li class="nav-preventivo"><a href="cambio-administrador.html">SOLICITAR PRESUPUESTO</a></li>
             </ul>
         </nav>
         <div class="header-action">
-            <a href="contatti.html" class="btn-preventivo">RICHIEDI PREVENTIVO</a>
+            <a href="cambio-administrador.html" class="btn-preventivo">SOLICITAR PRESUPUESTO</a>
         </div>
-        <button class="hamburger-btn" aria-label="Apri menu">
+        <button class="hamburger-btn" aria-label="Abrir menú">
             <span></span>
             <span></span>
             <span></span>
@@ -40,56 +80,67 @@
     <section class="hero-section">
         <div class="hero-content-wrapper">
             <div class="hero-box">
-                <h1>Amministrazioni Condominiali Amministrazione Pegaso</h1>
-                <p><strong>Amministrazione Pegaso</strong> rappresenta l'eccellenza nella gestione condominiale in Italia. Garantiamo massima trasparenza, presenza continua sul territorio e soluzioni innovative per <strong>ottimizzare le spese</strong> condominiali e migliorare l'efficienza energetica degli edifici.</p>
-                <p class="valorizzazione">VALORIZZIAMO IMMOBILI E PERSONE</p>
+                <h1>Administración de Comunidades de Propietarios Pegaso</h1>
+                <p><strong>Pegaso Fincas</strong> representa la excelencia en la gestión de comunidades en Málaga. Garantizamos máxima transparencia, presencia continua y soluciones eficaces para <strong>optimizar los gastos</strong> de tu comunidad.</p>
+                <p class="valorizzazione">PONEMOS EN VALOR INMUEBLES Y PERSONAS</p>
                 <div class="search-box">
                     <select onchange="if(this.value) window.location.href=this.value; this.selectedIndex=0;">
-                        <option value="">Cosa stai cercando?</option>
-                        <option value="cambio-amministratore.html">Preventivo cambio amministratore</option>
-                        <option value="servizi.html">I nostri servizi</option>
-                        <option value="contatti.html">Contatti</option>
+                        <option value="">¿Qué estás buscando?</option>
+                        <option value="cambio-administrador.html">Presupuesto cambio de administrador</option>
+                        <option value="servicios.html">Nuestros servicios</option>
+                        <option value="contacto.html">Contacto</option>
                     </select>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="intro-section">
-        <h2 class="intro-title">Il tuo Amministratore di Condominio</h2>
-        <img src="images/amministrazioni-condominiale-pegaso.png" alt="Amministratore di Condominio Pegaso" class="intro-illustration">
-    </section>
-
     <section class="perche-section">
-        <h2 class="section-title">Perché scegliere l'Amministrazione Condominiale Pegaso</h2>
-        <p class="perche-text">Disponiamo della collaborazione di imprese, artigiani e professionisti selezionati, che ci garantiscono qualità, esperienza e tempestività di intervento, nonché la possibilità di effettuare preventivi per ogni tipo di operazione si voglia svolgere nella amministrazione di condominio.</p>
+        <h2 class="section-title" data-aos="fade-up">Por qué elegir Pegaso Fincas</h2>
+        <p class="perche-text" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">Contamos con la colaboración de empresas, técnicos y profesionales seleccionados que nos garantizan calidad, experiencia y rapidez de intervención, así como la posibilidad de realizar presupuestos para cualquier tipo de operación en la administración de comunidades.</p>
     </section>
 
     <section class="services-grid">
         <div class="section-header">
-            <h2 class="section-title">I Nostri Punti di Forza</h2>
+            <h2 class="section-title" data-aos="fade-up">Nuestros Puntos Fuertes</h2>
         </div>
 
         <div class="grid-layout">
-            <div class="service-card">
-                <img src="images/presenza.png" alt="Presenza">
-                <h3>PRESENZA</h3>
-                <p><strong>Monitoraggio periodico</strong> degli edifici e un <strong>servizio di assistenza</strong> sempre pronto a rispondere alle vostre segnalazioni.</p>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                <svg class="service-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32 6C21.5 6 13 14.5 13 25c0 14.8 19 33 19 33s19-18.2 19-33C51 14.5 42.5 6 32 6z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="32" cy="25" r="7" stroke="currentColor" stroke-width="2.5"/>
+                </svg>
+                <h3>PRESENCIA</h3>
+                <p><strong>Seguimiento periódico</strong> de los edificios y un <strong>servicio de atención</strong> siempre listo para responder a sus comunicaciones.</p>
             </div>
-            <div class="service-card">
-                <img src="images/trasparenza.png" alt="Trasparenza">
-                <h3>TRASPARENZA</h3>
-                <p><strong>Rendicontazione semplificata</strong> e gestione dei costi cristallina per offrire a ogni condomino il <strong>pieno controllo dei bilanci</strong>.</p>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <svg class="service-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="8" y1="56" x2="56" y2="56" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                    <rect x="12" y="36" width="10" height="20" rx="1.5" stroke="currentColor" stroke-width="2.5"/>
+                    <rect x="27" y="24" width="10" height="32" rx="1.5" stroke="currentColor" stroke-width="2.5"/>
+                    <rect x="42" y="12" width="10" height="44" rx="1.5" stroke="currentColor" stroke-width="2.5"/>
+                </svg>
+                <h3>TRANSPARENCIA</h3>
+                <p><strong>Informes simplificados</strong> y gestión de costes clara para ofrecer a cada propietario el <strong>control total de los presupuestos</strong>.</p>
             </div>
-            <div class="service-card">
-                <img src="images/risparmio.png" alt="Risparmio">
-                <h3>RISPARMIO</h3>
-                <p>Mettiamo al tuo servizio <strong>professionisti esperti</strong> per individuare ed eliminare <strong>sprechi e inefficienze</strong> energetiche o gestionali.</p>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <svg class="service-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="32" cy="32" r="24" stroke="currentColor" stroke-width="2.5"/>
+                    <path d="M40 22c-2.5-1.5-5.5-2-8-1-5 1.5-8 7-6.5 12.5S32 43 37 41.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                    <line x1="22" y1="30" x2="36" y2="30" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                    <line x1="22" y1="36" x2="36" y2="36" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+                <h3>AHORRO</h3>
+                <p>Ponemos a tu disposición <strong>profesionales expertos</strong> para identificar y eliminar <strong>despilfarros e ineficiencias</strong> energéticas o de gestión.</p>
             </div>
-            <div class="service-card">
-                <img src="images/sicurezza.png" alt="Sicurezza">
-                <h3>SICUREZZA</h3>
-                <p>Gestiamo in modo rigoroso la <strong>conformità del tuo stabile</strong>, curando l'archiviazione e l'<strong>aggiornamento costante</strong> di tutti i documenti sulla sicurezza.</p>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <svg class="service-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32 6L10 15v17c0 13 9.5 25 22 28 12.5-3 22-15 22-28V15L32 6z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <polyline points="22,33 28,39 42,25" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h3>SEGURIDAD</h3>
+                <p>Gestionamos de forma rigurosa el <strong>cumplimiento normativo de tu edificio</strong>, garantizando el archivo y la <strong>actualización constante</strong> de toda la documentación de seguridad.</p>
             </div>
         </div>
     </section>
@@ -97,29 +148,27 @@
     <!-- SEZIONE SCOPRI SERVIZI -->
     <section class="scopri-servizi-section">
         <div class="scopri-content">
-            <div class="scopri-icon-circle">
+            <div class="scopri-icon-circle" data-aos="fade-up">
                 <i class="fas fa-building"></i>
             </div>
-            <h2>Scopri i Nostri Servizi Condominiali</h2>
-            <a href="servizi.html" class="btn-vai-servizi">VAI A I SERVIZI</a>
-            <p class="scopri-question">VUOI UN AMMINISTRATORE SEMPRE DISPONIBILE ?</p>
-            <a href="contatti.html" class="btn-preventivo-large"><i class="fas fa-envelope"></i> RICHIEDI UN PREVENTIVO</a>
+            <h2 data-aos="fade-up" data-aos-delay="100">Descubre Nuestros Servicios para Comunidades</h2>
+            <a href="servicios.html" class="btn-vai-servizi" data-aos="fade-up" data-aos-delay="200">VER SERVICIOS</a>
+            <p class="scopri-question" data-aos="fade-up" data-aos-delay="200">¿QUIERES UN ADMINISTRADOR SIEMPRE DISPONIBLE?</p>
+            <a href="cambio-administrador.html" class="btn-preventivo-large" data-aos="fade-up" data-aos-delay="300"><i class="fas fa-envelope"></i> SOLICITAR PRESUPUESTO</a>
         </div>
     </section>
 
     <!-- SEZIONE LA NOSTRA SEDE -->
     <section class="sedi-section">
-        <h2 class="sedi-title">La Nostra Sede</h2>
-        <p class="sedi-subtitle">Siamo in Via dei Lanzi, 33 &mdash; 57123 Livorno LI, Italia</p>
-        <div class="sede-mappa-wrapper">
+        <h2 class="sedi-title" data-aos="fade-up">Nuestra Sede</h2>
+        <p class="sedi-subtitle" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">Estamos en Calle Mefistofeles, 19<br>29006 Málaga</p>
+        <div class="sede-mappa-wrapper" data-aos="fade-up" data-aos-delay="200">
             <iframe
-                src="https://maps.google.com/maps?q=Via+dei+Lanzi+33+57123+Livorno+LI+Italia&output=embed&z=16"
-                width="100%"
-                height="420"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.4719012997703!2d-4.4656717258010605!3d36.711226272712764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7431258e9bb%3A0xab9c1bffa594859!2sC.%20Mefistofeles%2C%2019%2C%20Teatinos-Universidad%2C%2029006%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1778074804239!5m2!1ses!2ses"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-                title="Sede Pegaso Amministrazioni - Via delle Cateratte 101, Livorno">
+                title="Sede Pegaso Fincas - Calle Mefistofeles 19, Málaga">
             </iframe>
         </div>
     </section>
@@ -129,42 +178,45 @@
     <div class="ct-container footer-grid">
         <div class="footer-info">
             <img src="images/pegaso-logo.png" alt="Pegaso Logo" class="footer-logo">
-            <p>Innovazione e professionalità al servizio del tuo condominio.</p>
+            <p>Innovación y profesionalidad al servicio de tu comunidad.</p>
+            <img src="images/LOGO_Administrador_Fincas-300x92.jpg" alt="Administrador de Fincas Colegiado" class="footer-logo-cgcafe">
         </div>
         <div class="footer-links">
-            <h4>Link Utili</h4>
+            <h4>Enlaces de Interés</h4>
             <ul>
-                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
             </ul>
         </div>
         <div class="footer-contact">
-            <h4>Contatti</h4>
-            <p>Email: info@pegaso.homes</p>
-            <p>Tel: +39 02 123 4567</p>
+            <h4>Contacto</h4>
+            <p>Email: info@pegasofincas.eu</p>
+            <p>Tel: 952 334760</p>
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2026 Amministrazione Pegaso. Tutti i diritti riservati.</p>
+        <p>&copy; 2026 Pegaso Fincas. Todos los derechos reservados.</p>
     </div>
 </footer>
 
 <!-- Cookie Popup -->
-<div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Consenso cookie">
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Aviso de cookies">
     <div class="cookie-banner-inner">
         <div class="cookie-banner-icon">
             <i class="fas fa-cookie-bite"></i>
         </div>
         <div class="cookie-banner-text">
-            <h3>Informativa sui Cookie</h3>
-            <p>Utilizziamo cookie tecnici necessari e, con il tuo consenso, cookie analitici per migliorare la navigazione. Per saperne di più consulta la nostra <a href="privacy-policy.html">Privacy &amp; Cookie Policy</a>.</p>
+            <h3>Aviso de Cookies</h3>
+            <p>Utilizamos cookies técnicas necesarias y, con tu consentimiento, cookies analíticas para mejorar la navegación. Para más información consulta nuestra <a href="politica-privacidad.html">Política de Privacidad y Cookies</a>.</p>
         </div>
         <div class="cookie-banner-actions">
-            <button id="cookieAccept" class="btn-cookie-accept">Accetta tutti</button>
-            <button id="cookieReject" class="btn-cookie-reject">Solo necessari</button>
+            <button id="cookieAccept" class="btn-cookie-accept">Aceptar todas</button>
+            <button id="cookieReject" class="btn-cookie-reject">Solo necesarias</button>
         </div>
     </div>
 </div>
 
 <script src="images/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 600, once: true, offset: 80 });</script>
 </body>
 </html>

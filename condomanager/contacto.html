@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta con Pegaso Fincas, tu administrador de fincas en Málaga. Tel: 952 334760 · info@pegasofincas.eu · Calle Mefistofeles, 19, 29006 Málaga.">
+    <link rel="canonical" href="https://pegasofincas.eu/contacto.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contacto | Pegaso Fincas">
+    <meta property="og:description" content="Administrador de fincas en Málaga. Contacta con Pegaso Fincas: 952 334760, info@pegasofincas.eu.">
+    <meta property="og:url" content="https://pegasofincas.eu/contacto.html">
+    <meta property="og:site_name" content="Pegaso Fincas">
+    <meta property="og:locale" content="es_ES">
+    <title>Contacto | Pegaso Fincas – Administrador de Fincas Málaga</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="images/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+</head>
+<body>
+
+<header class="ct-header">
+    <div class="ct-container">
+        <div class="logo">
+            <img src="images/pegaso-logo.png" alt="Pegaso Logo">
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="quienes-somos.html">QUIÉNES SOMOS</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="contacto.html" class="active">CONTACTO</a></li>
+                <li class="nav-preventivo"><a href="cambio-administrador.html">SOLICITAR PRESUPUESTO</a></li>
+            </ul>
+        </nav>
+        <div class="header-action">
+            <a href="cambio-administrador.html" class="btn-preventivo">SOLICITAR PRESUPUESTO</a>
+        </div>
+        <button class="hamburger-btn" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<!-- BANNER -->
+<section class="page-banner page-banner-photo page-banner-contatti">
+    <div class="page-banner-content">
+        <p class="breadcrumb"><a href="index.html">Inicio</a> &rsaquo; Contacto</p>
+        <h1 class="page-banner-title">Contacto</h1>
+    </div>
+</section>
+
+<!-- CONTENIDO -->
+<main>
+    <div class="contatti-content">
+        <div class="contatti-inner">
+
+            <!-- Columna izquierda: formulario -->
+            <div class="ct-left">
+                <p class="ct-section-label" data-aos="fade-up" data-aos-duration="500">Escríbenos</p>
+                <h2 class="ct-title" data-aos="fade-up">Contáctanos</h2>
+
+                <!-- Box presupuesto -->
+                <div class="ct-preventivo-box">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <div>
+                        <strong>¿Quieres un presupuesto para el cambio de administrador?</strong>
+                        <p>Usa el formulario dedicado para recibir un presupuesto gratuito y detallado.</p>
+                        <a href="cambio-administrador.html" class="ct-preventivo-link">Ir al presupuesto &rarr;</a>
+                    </div>
+                </div>
+
+                <p class="ct-subtitle" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">Usa este formulario para cualquier comunicación general: información, preguntas o sugerencias. También puedes utilizarlo para solicitar una <strong>revisión de las cuentas de tu comunidad</strong>. Te responderemos en el menor tiempo posible.</p>
+
+                <form class="preventivo-form" id="preventivo-form" novalidate>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nome">Nombre *</label>
+                            <input type="text" id="nome" name="nome" placeholder="Juan" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cognome">Apellidos *</label>
+                            <input type="text" id="cognome" name="cognome" placeholder="García" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" placeholder="juan.garcia@email.es" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="952 000000">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="oggetto">Asunto *</label>
+                        <input type="text" id="oggetto" name="oggetto" placeholder="¿De qué se trata?" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="messaggio">Mensaje *</label>
+                        <textarea id="messaggio" name="messaggio" placeholder="Escribe tu mensaje..." required></textarea>
+                    </div>
+
+                    <div class="form-privacy">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">He leído y acepto la <a href="politica-privacidad.html">Política de Privacidad</a>. Consiento el tratamiento de mis datos personales para recibir una respuesta a mi solicitud.</label>
+                    </div>
+
+                    <button type="submit" class="btn-invia">
+                        <i class="fas fa-paper-plane"></i>&nbsp; Enviar mensaje
+                    </button>
+
+                    <div class="form-success" id="form-success">
+                        <i class="fas fa-check-circle"></i>&nbsp; ¡Gracias! Tu mensaje ha sido enviado. Te responderemos lo antes posible.
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- Sidebar derecha -->
+            <aside class="ct-sidebar" data-aos="fade-left" data-aos-duration="600">
+
+                <div class="ct-card">
+                    <div class="ct-card-header">Contacto</div>
+                    <div class="ct-card-body">
+                        <div class="ct-contact-row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Calle Mefistofeles, 19<br>29006 Málaga</span>
+                        </div>
+                        <div class="ct-contact-row">
+                            <i class="fas fa-phone"></i>
+                            <span>952 334760</span>
+                        </div>
+                        <div class="ct-contact-row">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@pegasofincas.eu</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ct-card">
+                    <div class="ct-card-header">Horario</div>
+                    <div class="ct-card-body">
+                        <div class="ct-contact-row">
+                            <i class="fas fa-clock"></i>
+                            <span>De Lunes a Viernes<br>de 09:00 a 12:00<br></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ct-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.4719012997703!2d-4.4656717258010605!3d36.711226272712764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7431258e9bb%3A0xab9c1bffa594859!2sC.%20Mefistofeles%2C%2019%2C%20Teatinos-Universidad%2C%2029006%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1778074804239!5m2!1ses!2ses"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Sede Pegaso Fincas - Calle Mefistofeles 19, Málaga">
+                    </iframe>
+                </div>
+
+            </aside>
+        </div>
+    </div>
+</main>
+
+<footer class="main-footer">
+    <div class="ct-container footer-grid">
+        <div class="footer-info">
+            <img src="images/pegaso-logo.png" alt="Pegaso Logo" class="footer-logo">
+            <p>Innovación y profesionalidad al servicio de tu comunidad.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Enlaces de Interés</h4>
+            <ul>
+                <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Contacto</h4>
+            <p>Email: info@pegasofincas.eu</p>
+            <p>Tel: 952 334760</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Pegaso Fincas. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="images/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 600, once: true, offset: 80 });</script>
+<script>
+    document.getElementById('preventivo-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const nome = document.getElementById('nome').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const oggetto = document.getElementById('oggetto').value.trim();
+        const messaggio = document.getElementById('messaggio').value.trim();
+        const privacy = document.getElementById('privacy').checked;
+
+        if (!nome || !email || !oggetto || !messaggio || !privacy) {
+            alert('Por favor, rellena todos los campos obligatorios y acepta la política de privacidad.');
+            return;
+        }
+
+        document.getElementById('form-success').style.display = 'block';
+        this.reset();
+    });
+</script>
+
+<!-- Cookie Popup -->
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Aviso de cookies">
+    <div class="cookie-banner-inner">
+        <div class="cookie-banner-icon">
+            <i class="fas fa-cookie-bite"></i>
+        </div>
+        <div class="cookie-banner-text">
+            <h3>Aviso de Cookies</h3>
+            <p>Utilizamos cookies técnicas necesarias y, con tu consentimiento, cookies analíticas para mejorar la navegación. Para más información consulta nuestra <a href="politica-privacidad.html">Política de Privacidad y Cookies</a>.</p>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookieAccept" class="btn-cookie-accept">Aceptar todas</button>
+            <button id="cookieReject" class="btn-cookie-reject">Solo necesarias</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
