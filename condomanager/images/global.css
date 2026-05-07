@@ -254,6 +254,11 @@ body {
     font-weight: 700;
 }
 
+.hero-intro {
+    font-size: 19px !important;
+    line-height: 1.8;
+}
+
 .valorizzazione {
     font-weight: 700 !important;
     font-size: 13px !important;
@@ -2458,21 +2463,25 @@ body {
     .page-banner-photo { height: 320px; }
     .page-banner-title { font-size: 42px; }
 
-    .hamburger-btn { display: flex; }
+    .hamburger-btn { display: flex; position: relative; z-index: 10000; }
+    .ct-header { z-index: 10000; }
     .header-action { display: none; }
 
     .nav-menu {
         position: fixed;
-        top: calc(65px + 6mm);
+        top: 0;
         left: 0;
         right: 0;
+        bottom: 0;
         background: var(--blue-testai);
         z-index: 9999;
-        padding: 6px 0 10px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
         visibility: hidden;
         opacity: 0;
         pointer-events: none;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
     }
     .nav-menu.open {
         visibility: visible;
@@ -2483,14 +2492,16 @@ body {
         flex-direction: column;
         gap: 0;
         width: 100%;
+        text-align: center;
     }
     .nav-menu a {
         display: block;
-        padding: 14px 24px;
+        padding: 18px 24px;
         border-radius: 0;
         background: transparent;
         border-bottom: 1px solid rgba(255,255,255,0.15);
         color: #ffffff;
+        font-size: 18px;
         backdrop-filter: none;
     }
     .nav-menu a:last-child { border-bottom: none; }
