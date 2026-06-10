@@ -2156,6 +2156,9 @@ body {
     .ca-faq-note { font-size: 16px; }
     .ca-warning-box p, .ca-warning-list li { font-size: 16px; }
     .form-row-3 input, .form-row-3 select { font-size: 16px; }
+    .ca-benefit { font-size: 15px; }
+    .ca-cta-tel { font-size: 17px; }
+    .ca-photo-cta { font-size: 16px; }
     .form-row-3 { grid-template-columns: 1fr; }
     .ca-faq-section { padding: 60px 20px 70px; }
     .ca-faq-main-title { font-size: 24px; }
