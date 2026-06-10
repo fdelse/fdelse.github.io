@@ -155,6 +155,7 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
+    margin-right: 2cm;
 }
 
 .search-icon {
