@@ -2613,6 +2613,11 @@ body {
     .cs-card-body p, .sv-card-side-body p, .ct-card-body p { font-size: 16px; }
     .cs-contact-row, .sv-contact-row, .ct-contact-row { font-size: 16px; }
     .cs-contact-row em, .sv-contact-row em, .ct-contact-row em { font-size: 15px; }
+    .ct-card-header { font-size: 17px; }
+    .cs-card-header { font-size: 17px; }
+    .sv-card-side-header { font-size: 17px; }
+    .sv-tags { font-size: 15px; }
+    .ct-preventivo-box strong { font-size: 16px; }
     .sv-card-text { font-size: 16px; }
     .ct-preventivo-box p { font-size: 16px; }
     .anaci-text { font-size: 15px; }
