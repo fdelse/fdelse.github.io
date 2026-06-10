@@ -2113,7 +2113,7 @@ body {
 }
 
 .ca-warning-box p {
-    font-size: 13px !important;
+    font-size: 17px !important;
     margin-bottom: 6px !important;
 }
 
@@ -2685,6 +2685,7 @@ body {
 }
 
 @media (max-width: 425px) {
+    .ca-benefit { font-size: 13px; }
     .hero-section { min-height: 380px; }
     .hero-box { padding: 24px 18px; }
     .hero-box h1 { font-size: 33px; }
