@@ -2145,6 +2145,9 @@ body {
     .ca-subtitle { font-size: 18px; }
     .ca-section-label { font-size: 14px; }
     .ca-faq-body p, .ca-faq-list li { font-size: 16px; }
+    .ca-cta-text { font-size: 16px; }
+    .radio-card-inner { font-size: 15px; }
+    .form-block-title { font-size: 15px; }
     .form-row-3 { grid-template-columns: 1fr; }
     .ca-faq-section { padding: 60px 20px 70px; }
     .ca-faq-main-title { font-size: 24px; }
@@ -2597,10 +2600,20 @@ body {
     .perche-text { font-size: 19px; }
     .cs-text, .sv-text { font-size: 18px; }
     .cs-colegiado-text { font-size: 16px; }
-    .cs-section-label { font-size: 14px; }
+    .cs-section-label, .sv-section-label, .ct-section-label { font-size: 14px; }
     .hero-intro { font-size: 19px !important; }
     .service-card p { font-size: 17px; }
     .breadcrumb { font-size: 18px; }
+    .ct-subtitle { font-size: 18px; }
+    .cs-card-body p, .sv-card-side-body p, .ct-card-body p { font-size: 16px; }
+    .cs-contact-row, .sv-contact-row, .ct-contact-row { font-size: 16px; }
+    .cs-contact-row em, .sv-contact-row em, .ct-contact-row em { font-size: 15px; }
+    .sv-card-text { font-size: 16px; }
+    .ct-preventivo-box p { font-size: 16px; }
+    .anaci-text { font-size: 15px; }
+    .form-group label { font-size: 15px; }
+    .form-group input, .form-group select, .form-group textarea { font-size: 16px; }
+    .form-privacy { font-size: 15px; }
 }
 
 @media (max-width: 600px) {
