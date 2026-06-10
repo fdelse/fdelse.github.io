@@ -1,4 +1,4 @@
-/* Reset generale */
+﻿/* Reset generale */
 * {
     margin: 0;
     padding: 0;
@@ -324,7 +324,7 @@ body {
     margin: 0 auto;
 }
 
-/* SEZIONE PERCHÉ (verde) */
+/* SEZIONE PERCHÃ‰ (verde) */
 .perche-section {
     background-color: #387c30;
     text-align: center;
@@ -2128,7 +2128,7 @@ body {
 }
 
 .ca-warning-list li::before {
-    content: '›';
+    content: 'â€º';
     position: absolute;
     left: 0;
     font-weight: 700;
@@ -2149,20 +2149,20 @@ body {
     .ca-title { font-size: 26px; }
     .ca-subtitle { font-size: 18px; }
     .ca-section-label { font-size: 14px; }
-    .ca-faq-body p, .ca-faq-list li { font-size: 16px; }
-    .ca-cta-text { font-size: 16px; }
+    .ca-faq-body p, .ca-faq-list li { font-size: 17px; }
+    .ca-cta-text { font-size: 17px; }
     .radio-card-inner { font-size: 15px; }
     .form-block-title { font-size: 15px; }
-    .ca-faq-note { font-size: 16px; }
-    .ca-warning-box p, .ca-warning-list li { font-size: 16px; }
-    .form-row-3 input, .form-row-3 select { font-size: 16px; }
+    .ca-faq-note { font-size: 17px; }
+    .ca-warning-box p, .ca-warning-list li { font-size: 17px; }
+    .form-row-3 input, .form-row-3 select { font-size: 17px; }
     .ca-benefit { font-size: 15px; }
     .ca-cta-tel { font-size: 17px; }
-    .ca-photo-cta { font-size: 16px; }
+    .ca-photo-cta { font-size: 17px; }
     .form-row-3 { grid-template-columns: 1fr; }
     .ca-faq-section { padding: 60px 20px 70px; }
     .ca-faq-main-title { font-size: 24px; }
-    .ca-faq-question { font-size: 16px; }
+    .ca-faq-question { font-size: 17px; }
     .ca-photo-divider { height: 300px; background-attachment: scroll; }
     .ca-photo-divider-content h2 { font-size: 26px; }
     .ca-benefits-inner { gap: 14px 30px; }
@@ -2610,31 +2610,34 @@ body {
     .intro-title { font-size: 29px; }
     .perche-text { font-size: 19px; }
     .cs-text, .sv-text { font-size: 18px; }
-    .cs-colegiado-text { font-size: 16px; }
+    .cs-colegiado-text { font-size: 17px; }
     .cs-section-label, .sv-section-label, .ct-section-label { font-size: 14px; }
     .hero-intro { font-size: 19px !important; }
     .service-card p { font-size: 17px; }
     .breadcrumb { font-size: 18px; }
     .ct-subtitle { font-size: 18px; }
-    .cs-card-body p, .sv-card-side-body p, .ct-card-body p { font-size: 16px; }
-    .cs-contact-row, .sv-contact-row, .ct-contact-row { font-size: 16px; }
+    .cs-card-body p, .sv-card-side-body p, .ct-card-body p { font-size: 17px; }
+    .cs-contact-row, .sv-contact-row, .ct-contact-row { font-size: 17px; }
     .cs-contact-row em, .sv-contact-row em, .ct-contact-row em { font-size: 15px; }
     .ct-card-header { font-size: 17px; }
     .cs-card-header { font-size: 17px; }
     .sv-card-side-header { font-size: 17px; }
     .sv-tags { font-size: 15px; }
     .sv-tag { font-size: 15px; }
-    .ct-preventivo-box strong { font-size: 16px; }
-    .ct-preventivo-link { font-size: 16px; }
+    .ct-preventivo-box strong { font-size: 17px; }
+    .ct-preventivo-link { font-size: 17px; }
     .map-placeholder p { font-size: 17px; }
     .sede-label { font-size: 17px; }
     .form-success { font-size: 17px; }
     .privacy-inner p, .privacy-inner ul li { font-size: 17px; }
-    .sv-card-text { font-size: 16px; }
-    .ct-preventivo-box p { font-size: 16px; }
+    .footer-info p, .footer-contact p, .footer-contact h3 { font-size: 15px; }
+    .footer-links a { font-size: 15px; }
+    .footer-bottom { font-size: 15px; }
+    .sv-card-text { font-size: 17px; }
+    .ct-preventivo-box p { font-size: 17px; }
     .anaci-text { font-size: 15px; }
     .form-group label { font-size: 15px; }
-    .form-group input, .form-group select, .form-group textarea { font-size: 16px; }
+    .form-group input, .form-group select, .form-group textarea { font-size: 17px; }
     .form-privacy { font-size: 15px; }
 }
 
@@ -2696,7 +2699,7 @@ body {
     .privacy-content { padding: 40px 15px 60px; }
 
     .btn-invia { align-self: stretch; text-align: center; }
-    .search-box select { font-size: 16px; }
+    .search-box select { font-size: 17px; }
     .service-card img { height: 140px; }
 }
 
