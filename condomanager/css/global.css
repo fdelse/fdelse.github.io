@@ -2153,6 +2153,9 @@ body {
     .ca-cta-text { font-size: 16px; }
     .radio-card-inner { font-size: 15px; }
     .form-block-title { font-size: 15px; }
+    .ca-faq-note { font-size: 16px; }
+    .ca-warning-box p, .ca-warning-list li { font-size: 16px; }
+    .form-row-3 input, .form-row-3 select { font-size: 16px; }
     .form-row-3 { grid-template-columns: 1fr; }
     .ca-faq-section { padding: 60px 20px 70px; }
     .ca-faq-main-title { font-size: 24px; }
@@ -2617,7 +2620,13 @@ body {
     .cs-card-header { font-size: 17px; }
     .sv-card-side-header { font-size: 17px; }
     .sv-tags { font-size: 15px; }
+    .sv-tag { font-size: 15px; }
     .ct-preventivo-box strong { font-size: 16px; }
+    .ct-preventivo-link { font-size: 16px; }
+    .map-placeholder p { font-size: 17px; }
+    .sede-label { font-size: 17px; }
+    .form-success { font-size: 17px; }
+    .privacy-inner p, .privacy-inner ul li { font-size: 17px; }
     .sv-card-text { font-size: 16px; }
     .ct-preventivo-box p { font-size: 16px; }
     .anaci-text { font-size: 15px; }
