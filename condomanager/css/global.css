@@ -2624,10 +2624,7 @@ body {
     .page-banner-privacy { height: 190px; }
     .page-banner-title { font-size: 27px; }
 
-    .section-title { font-size: 29px; }
     .section-title::after { width: 100px; }
-    .cs-title, .sv-title, .ct-title { font-size: 27px; }
-    .sedi-title { font-size: 29px; }
 
     .perche-section { padding: 50px 20px 60px; }
     .services-grid { padding: 55px 0; }
@@ -2653,7 +2650,6 @@ body {
     .contatti-content { padding: 40px 15px 50px; }
     .privacy-content { padding: 40px 15px 60px; }
 
-    .cs-title, .sv-title, .ct-title { font-size: 25px; }
     .btn-invia { align-self: stretch; text-align: center; }
     .search-box select { font-size: 16px; }
     .service-card img { height: 140px; }
@@ -2667,9 +2663,6 @@ body {
     .page-banner-privacy { height: 160px; }
     .page-banner-title { font-size: 22px; }
 
-    .section-title { font-size: 27px; }
-    .cs-title, .sv-title, .ct-title { font-size: 23px; }
-
     .logo img { max-height: 38px; }
     .footer-logo { height: 38px; }
 }
@@ -2680,8 +2673,6 @@ body {
     .page-banner-photo { height: 150px; }
     .page-banner-privacy { height: 145px; }
     .page-banner-title { font-size: 20px; }
-    .section-title { font-size: 25px; }
-    .cs-title, .sv-title, .ct-title { font-size: 23px; }
     .chi-siamo-content,
     .servizi-content,
     .contatti-content { padding: 35px 12px 40px; }
