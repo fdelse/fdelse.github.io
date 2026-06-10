@@ -2593,6 +2593,9 @@ body {
     .perche-text { font-size: 19px; }
     .cs-text, .sv-text { font-size: 18px; }
     .cs-colegiado-text { font-size: 16px; }
+    .cs-section-label { font-size: 14px; }
+    .hero-intro { font-size: 19px !important; }
+    .service-card p { font-size: 17px; }
 }
 
 @media (max-width: 600px) {
