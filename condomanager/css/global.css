@@ -2585,7 +2585,7 @@ body {
     .hero-section { min-height: 560px; }
     .hero-bg-img { object-position: 70% center; }
     .hero-section::before { background: rgba(0,0,0,0.45); }
-    .hero-box { padding: 35px 20px; margin-top: 1cm; margin-left: auto; margin-right: auto; }
+    .hero-box { padding: 35px 20px; margin-top: 3mm; margin-left: auto; margin-right: auto; }
     .hero-box h1 { font-size: 42px; }
     .hero-box p { font-size: 18px; }
     .valorizzazione { font-size: 15px !important; }
@@ -2648,7 +2648,7 @@ body {
     .grid-layout { grid-template-columns: 1fr; }
 
     .hero-section { min-height: 480px; }
-    .hero-box { padding: 28px 16px; max-width: 95%; margin-top: 1cm; }
+    .hero-box { padding: 28px 16px; max-width: 95%; margin-top: 3mm; }
     .hero-box h1 { font-size: 38px; }
     .hero-box p { font-size: 18px; }
 
