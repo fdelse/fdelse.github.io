@@ -661,7 +661,7 @@ address {
 
 #demo-bike {
   position: relative;
-  background-image: url('prova-su-strada-moto-livorno.webp');
+  background-image: url('../images/prova-su-strada-moto-livorno.webp');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1119,12 +1119,12 @@ address {
 
   .footer-bottom .container { flex-direction: column; align-items: center; gap: 6px; }
   .footer-bottom .footer-credit { position: static; transform: none; }
-  #demo-bike { background-attachment: scroll; background-image: url('prova-su-strada-moto-livorno-960w.webp'); }
+  #demo-bike { background-attachment: scroll; background-image: url('../images/prova-su-strada-moto-livorno-960w.webp'); }
 }
 
 /* ---- max 480px ---- */
 @media (max-width: 480px) {
-  #demo-bike { background-image: url('prova-su-strada-moto-livorno-480w.webp'); }
+  #demo-bike { background-image: url('../images/prova-su-strada-moto-livorno-480w.webp'); }
   .gama-grid { grid-template-columns: 1fr; }
   .gama-card { height: 180px; }
   .hero-content h1 { font-size: 22px; }
