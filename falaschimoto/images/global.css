@@ -1098,8 +1098,8 @@ address {
   .hero-img { object-position: calc(50% - 3cm) center; }
   .hero-content h1 { font-size: 28px; }
   .hero-badge { font-size: 10px; letter-spacing: 1px; }
-  .hero-concessionario { font-size: 22px; margin-top: 16px; }
-  .hero-sub-brands { font-size: 17px; margin-top: 24px; }
+  .hero-concessionario { font-size: 28px; margin-top: 16px; }
+  .hero-sub-brands { font-size: 21px; margin-top: 24px; }
   .hero-top-left { top: 80px; left: 30px; }
 
   .brand-logos-track img { height: 93px; }
@@ -1136,8 +1136,8 @@ address {
 @media (max-width: 428px) {
   .container { width: 100%; padding: 0 18px; box-sizing: border-box; }
   .hero-content h1 { font-size: 20px; }
-  .hero-concessionario { font-size: 16px; margin-top: 14px; margin-bottom: 6px; }
-  .hero-sub-brands { font-size: 13px; margin-top: 12px; line-height: 1.5; }
+  .hero-concessionario { font-size: 24px; margin-top: 14px; margin-bottom: 6px; }
+  .hero-sub-brands { font-size: 18px; margin-top: 12px; line-height: 1.5; }
   .hero-top-left { top: 80px; left: 24px; }
   .brand-logos-track img { height: 56px; }
   .brand-logos-track { gap: 21px; }
@@ -1154,8 +1154,8 @@ address {
 /* ---- max 375px : iPhone standard ---- */
 @media (max-width: 375px) {
   .hero-content h1 { font-size: 18px; }
-  .hero-concessionario { font-size: 14px; }
-  .hero-sub-brands { font-size: 12px; letter-spacing: 1px; }
+  .hero-concessionario { font-size: 21px; }
+  .hero-sub-brands { font-size: 16px; letter-spacing: 1px; }
   .hero-top-left { top: calc(12px + 1cm); left: 22px; }
   #logo img { height: 36px; }
   .brand-logos-track img { height: 48px; }
@@ -1170,8 +1170,8 @@ address {
   body { font-size: 13px; }
   .container { width: 100%; padding: 0 14px; box-sizing: border-box; }
   .hero-content h1 { font-size: 16px; }
-  .hero-concessionario { font-size: 13px; letter-spacing: 1px; }
-  .hero-sub-brands { font-size: 11px; letter-spacing: 0.5px; }
+  .hero-concessionario { font-size: 18px; letter-spacing: 1px; }
+  .hero-sub-brands { font-size: 14px; letter-spacing: 0.5px; }
   .hero-top-left { top: calc(10px + 1cm); left: 20px; }
   #logo img { height: 32px; }
   .brand-logos-track img { height: 40px; }
