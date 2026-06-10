@@ -2583,14 +2583,14 @@ body {
     .contatti-content { padding: 50px 20px 60px; }
     .privacy-content { padding: 50px 20px 70px; }
 
-    .section-title { font-size: 34px; }
-    .cs-title, .sv-title, .ct-title { font-size: 32px; }
-    .sedi-title { font-size: 31px; }
+    .section-title { font-size: 40px; }
+    .cs-title, .sv-title, .ct-title { font-size: 40px; }
+    .sedi-title { font-size: 36px; }
 
     .services-grid { padding: 70px 0; }
     .section-header { margin-bottom: 50px; }
-    .intro-title { font-size: 29px; }
-    .perche-text { font-size: 17px; }
+    .intro-title { font-size: 34px; }
+    .perche-text { font-size: 19px; }
 }
 
 @media (max-width: 600px) {
