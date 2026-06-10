@@ -95,7 +95,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 2cm;
 }
 
 .logo {
@@ -242,6 +241,9 @@ body {
         margin-left: 1cm;
         margin-right: auto;
         margin-top: 0;
+    }
+    .ct-container {
+        padding-right: 2cm;
     }
     .hero-section {
         align-items: flex-start;
@@ -2492,7 +2494,7 @@ body {
     .page-banner-photo { height: 320px; }
     .page-banner-title { font-size: 42px; }
 
-    .hamburger-btn { display: flex; position: relative; z-index: 10000; margin-right: 5mm; }
+    .hamburger-btn { display: flex; position: relative; z-index: 10000; margin-right: -5mm; }
     .ct-header { z-index: 10000; }
     .header-action { display: none; }
 
