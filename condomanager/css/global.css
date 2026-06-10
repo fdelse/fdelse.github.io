@@ -2133,7 +2133,7 @@ body {
 }
 
 .ca-warning-list li::before {
-    content: 'â€º';
+    content: '\203A';
     position: absolute;
     left: 0;
     font-weight: 700;
