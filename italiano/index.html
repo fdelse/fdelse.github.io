@@ -77,17 +77,28 @@
   .search input:focus{outline:2px solid var(--c-b1);outline-offset:1px;}
 
   .nav{padding:2px 14px 18px;overflow-y:auto;flex:1;}
-  .nav a{
+  .nav-group{display:flex;flex-direction:column;}
+  .nav-level{
     display:flex;align-items:center;gap:11px;
     padding:9px 12px;border-radius:8px;
     color:var(--spine-ink);text-decoration:none;font-size:14px;font-weight:500;
     transition:background .15s ease;
   }
-  .nav a:hover{background:var(--spine-soft);}
-  .nav a.active{background:var(--spine-soft);color:#fff;}
-  .nav a .dot{width:10px;height:10px;border-radius:50%;flex:none;background:var(--lvl,#888);}
-  .nav a .lbl{flex:1;}
-  .nav a .n{font-size:11px;color:var(--spine-faint);font-variant-numeric:tabular-nums;}
+  .nav-level:hover{background:var(--spine-soft);}
+  .nav-level.active{background:var(--spine-soft);color:#fff;}
+  .nav-level .dot{width:10px;height:10px;border-radius:50%;flex:none;background:var(--lvl,#888);}
+  .nav-level .lbl{flex:1;}
+  .nav-level .n{font-size:11px;color:var(--spine-faint);font-variant-numeric:tabular-nums;}
+  .chevron{font-size:11px;color:var(--spine-faint);transition:transform .2s;flex:none;}
+  .nav-level.open .chevron{transform:rotate(90deg);}
+  .subnav{display:none;padding:2px 0 6px 36px;flex-direction:column;gap:1px;}
+  .subnav.open{display:flex;}
+  .subnav a{
+    padding:5px 10px;border-radius:6px;
+    color:var(--spine-faint);text-decoration:none;font-size:12.5px;
+    transition:background .12s,color .12s;
+  }
+  .subnav a:hover{background:var(--spine-soft);color:#fff;}
   .spine__foot{padding:14px 26px 22px;font-size:11px;color:var(--spine-faint);border-top:1px solid var(--spine-soft);}
 
   /* ---------- contenuto ---------- */
@@ -125,6 +136,7 @@
     border-left:4px solid var(--lvl);
     padding:20px 22px 22px;
     display:flex;flex-direction:column;
+    scroll-margin-top:20px;
   }
   .card__cat{
     font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;
@@ -181,8 +193,11 @@
     .spine__sub{display:none;}
     .search{padding:0 20px 14px;}
     .nav{display:flex;gap:6px;overflow-x:auto;padding:0 14px 14px;flex:none;}
-    .nav a{flex:none;white-space:nowrap;padding:8px 13px;}
-    .nav a .n{display:none;}
+    .nav-group{flex:none;}
+    .nav-level{flex:none;white-space:nowrap;padding:8px 13px;}
+    .nav-level .n{display:none;}
+    .subnav{display:none !important;}
+    .chevron{display:none;}
     .spine__foot{display:none;}
     .masthead{padding:30px 22px 22px;}
     .masthead h1{font-size:30px;}
@@ -637,10 +652,10 @@ function tableHTML(t){
   return h+"</table>";
 }
 
-function cardHTML(e){
+function cardHTML(e, lvlId, idx){
   const search = (e.title+" "+e.cat+" "+e.rule+" "+e.ex.join(" ")).toLowerCase()
     .replace(/<[^>]+>/g,"");
-  let h = "<article class='card' data-search=\""+search.replace(/"/g,"")+"\" style='--lvl:"+colorById[e.lvl]+"'>";
+  let h = "<article class='card' id='card-"+lvlId+"-"+idx+"' data-search=\""+search.replace(/"/g,"")+"\" style='--lvl:"+colorById[e.lvl]+"'>";
   h += "<p class='card__cat'>"+e.cat+"</p>";
   h += "<h3 class='card__title'>"+e.title+"</h3>";
   h += "<p class='card__rule'>"+e.rule+"</p>";
@@ -669,13 +684,17 @@ function build(){
   let navHTML = "", contentHTML = "";
   LEVELS.forEach(l=>{
     const items = ENTRIES.filter(e=>e.lvl===l.id);
-    navHTML += "<a href='#lvl-"+l.id+"' data-lvl='"+l.id+"' style='--lvl:"+l.color+"'>"
-      + "<span class='dot'></span><span class='lbl'>"+l.tag+"</span><span class='n'>"+items.length+"</span></a>";
+    const sublinks = items.map((e,i)=>"<a href='#card-"+l.id+"-"+i+"'>"+e.title+"</a>").join("");
+    navHTML += "<div class='nav-group'>"
+      + "<a href='#lvl-"+l.id+"' class='nav-level' data-lvl='"+l.id+"' style='--lvl:"+l.color+"'>"
+      + "<span class='dot'></span><span class='lbl'>"+l.tag+"</span><span class='n'>"+items.length+"</span>"
+      + "<span class='chevron'>›</span></a>"
+      + "<div class='subnav' id='subnav-"+l.id+"'>"+sublinks+"</div></div>";
     contentHTML += "<section class='level' id='lvl-"+l.id+"' style='--lvl:"+l.color+"'>"
       + "<div class='level__head'><span class='level__tag'>"+l.tag+"</span>"
       + "<span class='level__name'>"+l.name+"</span>"
       + "<span class='level__count'>"+items.length+" voci</span></div>"
-      + "<div class='grid'>"+items.map(cardHTML).join("")+"</div></section>";
+      + "<div class='grid'>"+items.map((e,i)=>cardHTML(e,l.id,i)).join("")+"</div></section>";
   });
   nav.innerHTML = navHTML;
   content.innerHTML = contentHTML;
@@ -705,7 +724,7 @@ function setupSearch(){
 
 /* ===== Nav attiva + torna su ===== */
 function setupScroll(){
-  const links = [...document.querySelectorAll(".nav a")];
+  const links = [...document.querySelectorAll(".nav-level")];
   const sections = links.map(a=>document.querySelector(a.getAttribute("href")));
   const totop = document.getElementById("totop");
 
@@ -725,9 +744,23 @@ function setupScroll(){
   totop.addEventListener("click", ()=>window.scrollTo({top:0, behavior:"smooth"}));
 }
 
+function setupNav(){
+  document.querySelectorAll(".nav-level").forEach(a=>{
+    a.addEventListener("click",()=>{
+      const lvl = a.dataset.lvl;
+      const subnav = document.getElementById("subnav-"+lvl);
+      const isOpen = a.classList.contains("open");
+      document.querySelectorAll(".nav-level").forEach(l=>l.classList.remove("open"));
+      document.querySelectorAll(".subnav").forEach(s=>s.classList.remove("open"));
+      if(!isOpen){a.classList.add("open");subnav.classList.add("open");}
+    });
+  });
+}
+
 build();
 setupSearch();
 setupScroll();
+setupNav();
 </script>
 </body>
 </html>
