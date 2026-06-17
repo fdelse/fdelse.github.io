@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vademecum di grammatica italiana · A0–C1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1b1e27;
+    --ink-soft:#4a4f5e;
+    --ink-faint:#8a8f9e;
+    --paper:#faf9f6;
+    --card:#ffffff;
+    --line:#e7e4dc;
+    --line-soft:#f0ede6;
+    --spine:#15171f;
+    --spine-soft:#21242e;
+    --spine-ink:#cfd2db;
+    --spine-faint:#7c8090;
+
+    /* colori per livello: progressione facile -> difficile */
+    --c-a:#2e9e6b;
+    --c-a2:#10a3a8;
+    --c-b1:#2f6cdf;
+    --c-b2:#6e4ad8;
+    --c-c1:#b62a6e;
+
+    --display:"Fraunces", Georgia, "Times New Roman", serif;
+    --sans:"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+
+  /* ---------- layout ---------- */
+  .shell{display:grid;grid-template-columns:288px 1fr;min-height:100vh;}
+
+  /* ---------- dorso / sidebar ---------- */
+  .spine{
+    background:var(--spine);
+    color:var(--spine-ink);
+    position:sticky;top:0;height:100vh;
+    display:flex;flex-direction:column;
+    border-right:1px solid #000;
+  }
+  .spine__head{padding:30px 26px 20px;}
+  .spine__kicker{
+    font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--spine-faint);font-weight:600;margin:0 0 12px;
+  }
+  .spine__title{
+    font-family:var(--display);font-weight:600;font-size:27px;line-height:1.1;
+    margin:0;color:#fff;letter-spacing:-.01em;
+  }
+  .spine__title em{font-style:italic;font-weight:400;color:#fff;}
+  .spine__sub{margin:10px 0 0;font-size:12.5px;color:var(--spine-faint);line-height:1.4;}
+
+  .search{padding:4px 22px 18px;}
+  .search input{
+    width:100%;padding:10px 12px;border-radius:9px;
+    border:1px solid var(--spine-soft);
+    background:var(--spine-soft);color:#fff;font-family:var(--sans);font-size:14px;
+  }
+  .search input::placeholder{color:var(--spine-faint);}
+  .search input:focus{outline:2px solid var(--c-b1);outline-offset:1px;}
+
+  .nav{padding:2px 14px 18px;overflow-y:auto;flex:1;}
+  .nav a{
+    display:flex;align-items:center;gap:11px;
+    padding:9px 12px;border-radius:8px;
+    color:var(--spine-ink);text-decoration:none;font-size:14px;font-weight:500;
+    transition:background .15s ease;
+  }
+  .nav a:hover{background:var(--spine-soft);}
+  .nav a.active{background:var(--spine-soft);color:#fff;}
+  .nav a .dot{width:10px;height:10px;border-radius:50%;flex:none;background:var(--lvl,#888);}
+  .nav a .lbl{flex:1;}
+  .nav a .n{font-size:11px;color:var(--spine-faint);font-variant-numeric:tabular-nums;}
+  .spine__foot{padding:14px 26px 22px;font-size:11px;color:var(--spine-faint);border-top:1px solid var(--spine-soft);}
+
+  /* ---------- contenuto ---------- */
+  main{padding:0 0 80px;}
+  .masthead{
+    padding:44px 56px 30px;border-bottom:1px solid var(--line);
+    background:linear-gradient(180deg,#fff, var(--paper));
+  }
+  .masthead h1{
+    font-family:var(--display);font-weight:600;font-size:42px;line-height:1.05;
+    margin:0;letter-spacing:-.02em;color:var(--ink);
+  }
+  .masthead h1 em{font-style:italic;font-weight:400;}
+  .masthead p{margin:14px 0 0;color:var(--ink-soft);font-size:15.5px;max-width:60ch;}
+  .legend{display:flex;flex-wrap:wrap;gap:8px 18px;margin:22px 0 0;}
+  .legend span{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--ink-soft);font-weight:500;}
+  .legend i{width:11px;height:11px;border-radius:50%;display:inline-block;}
+
+  .level{padding:0 56px;scroll-margin-top:14px;}
+  .level__head{
+    display:flex;align-items:baseline;gap:16px;
+    padding:46px 0 4px;border-bottom:2px solid var(--lvl);margin-bottom:4px;
+  }
+  .level__tag{
+    font-family:var(--display);font-weight:700;font-size:34px;color:var(--lvl);
+    letter-spacing:-.01em;line-height:1;
+  }
+  .level__name{font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);font-weight:600;}
+  .level__count{margin-left:auto;font-size:12.5px;color:var(--ink-faint);font-variant-numeric:tabular-nums;}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:18px;padding:24px 0 8px;}
+
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:12px;
+    border-left:4px solid var(--lvl);
+    padding:20px 22px 22px;
+    display:flex;flex-direction:column;
+  }
+  .card__cat{
+    font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;
+    color:var(--lvl);margin:0 0 6px;
+  }
+  .card__title{font-family:var(--display);font-weight:600;font-size:21px;line-height:1.15;margin:0 0 10px;color:var(--ink);letter-spacing:-.01em;}
+  .card__rule{margin:0;font-size:14.5px;color:var(--ink-soft);}
+  .card__rule b{color:var(--ink);font-weight:600;}
+  .card__rule i, .ex i{font-family:var(--display);font-style:italic;}
+
+  .ex{margin:14px 0 0;display:flex;flex-direction:column;gap:6px;}
+  .ex p{
+    margin:0;padding:5px 0 5px 13px;border-left:2px solid var(--line);
+    font-family:var(--display);font-style:italic;font-size:15px;color:var(--ink);line-height:1.4;
+  }
+  .ex p b{font-style:normal;font-weight:600;color:var(--lvl);}
+
+  table{border-collapse:collapse;width:100%;margin:15px 0 0;font-size:13px;}
+  table caption{text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);font-weight:600;padding:0 0 5px;}
+  td,th{padding:5px 9px;border-bottom:1px solid var(--line-soft);text-align:left;}
+  th{font-weight:600;color:var(--ink-soft);font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;}
+  td:first-child{color:var(--ink-soft);font-weight:500;white-space:nowrap;}
+  td b, td .form{color:var(--ink);font-weight:600;}
+  .tbl-wrap{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:4px;}
+  .tbl-wrap > div{flex:1 1 130px;}
+
+  .note{
+    margin:14px 0 0;font-size:13px;color:var(--ink-soft);
+    background:var(--line-soft);border-radius:8px;padding:9px 12px;
+  }
+  .note::before{content:"Nota — ";font-weight:700;color:var(--ink);}
+
+  .empty{display:none;padding:60px 56px;color:var(--ink-faint);font-size:16px;}
+  .empty b{color:var(--ink);}
+
+  .totop{
+    position:fixed;right:22px;bottom:22px;z-index:5;
+    width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+    background:#fff;color:var(--ink);font-size:18px;cursor:pointer;
+    box-shadow:0 4px 14px rgba(0,0,0,.08);opacity:0;pointer-events:none;transition:opacity .2s;
+  }
+  .totop.show{opacity:1;pointer-events:auto;}
+  .totop:focus-visible{outline:2px solid var(--c-b1);outline-offset:2px;}
+
+  a:focus-visible, button:focus-visible{outline:2px solid var(--c-b1);outline-offset:2px;}
+
+  /* ---------- mobile ---------- */
+  .menu-btn{display:none;}
+  @media (max-width:900px){
+    .shell{grid-template-columns:1fr;}
+    .spine{position:sticky;top:0;height:auto;flex-direction:column;border-right:none;border-bottom:1px solid #000;z-index:10;}
+    .spine__head{padding:18px 20px 12px;}
+    .spine__title{font-size:22px;}
+    .spine__sub{display:none;}
+    .search{padding:0 20px 14px;}
+    .nav{display:flex;gap:6px;overflow-x:auto;padding:0 14px 14px;flex:none;}
+    .nav a{flex:none;white-space:nowrap;padding:8px 13px;}
+    .nav a .n{display:none;}
+    .spine__foot{display:none;}
+    .masthead{padding:30px 22px 22px;}
+    .masthead h1{font-size:30px;}
+    .level{padding:0 22px;}
+    .grid{grid-template-columns:1fr;gap:14px;padding:18px 0 4px;}
+    .level__head{padding:34px 0 4px;}
+    .level__tag{font-size:27px;}
+  }
+
+  /* ---------- stampa ---------- */
+  @media print{
+    .spine,.totop,.menu-btn{display:none !important;}
+    .shell{display:block;}
+    body{background:#fff;}
+    .masthead{padding:0 0 16px;border:none;}
+    .level{padding:0;}
+    .card{break-inside:avoid;border:1px solid #ccc;box-shadow:none;}
+    .grid{display:block;}
+    .card{margin:0 0 10px;}
+    a{color:inherit;}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+    *{transition:none !important;}
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+  <aside class="spine">
+    <div class="spine__head">
+      <p class="spine__kicker">Italiano · L2</p>
+      <h1 class="spine__title">Vademecum di <em>grammatica</em></h1>
+      <p class="spine__sub">Riferimento rapido da lezione, dal principiante assoluto all'avanzato.</p>
+    </div>
+    <div class="search">
+      <input id="q" type="search" placeholder="Cerca una struttura…" aria-label="Cerca una struttura grammaticale" autocomplete="off">
+    </div>
+    <nav class="nav" id="nav" aria-label="Livelli"></nav>
+    <div class="spine__foot">A0 → C1 · curriculum Italiano Standard</div>
+  </aside>
+
+  <main>
+    <header class="masthead">
+      <h1>Le strutture grammaticali <em>dell'italiano</em></h1>
+      <p>Ogni voce è un riferimento essenziale: la regola in una riga, esempi d'uso e, dove serve, la tabella delle forme. I colori segnalano il livello, dal più semplice al più complesso.</p>
+      <div class="legend" id="legend"></div>
+    </header>
+    <div id="content"></div>
+    <div class="empty" id="empty">Nessuna voce per <b id="empty-q"></b>. Prova con un altro termine.</div>
+  </main>
+</div>
+<button class="totop" id="totop" aria-label="Torna in cima">↑</button>
+
+<script>
+/* ===== Dati ===== */
+const LEVELS = [
+  {id:"a",  tag:"A0 · A1", name:"Fondamenta",        color:"var(--c-a)"},
+  {id:"a2", tag:"A2",      name:"Elementare",        color:"var(--c-a2)"},
+  {id:"b1", tag:"B1",      name:"Intermedio",        color:"var(--c-b1)"},
+  {id:"b2", tag:"B2",      name:"Intermedio-avanzato",color:"var(--c-b2)"},
+  {id:"c1", tag:"C1",      name:"Avanzato",          color:"var(--c-c1)"},
+];
+
+const ENTRIES = [
+  /* ---------------- A0 · A1 ---------------- */
+  {lvl:"a", cat:"Verbi", title:"Essere e avere",
+   rule:"I due verbi irregolari fondamentali. <i>Essere</i> indica identità, stato, provenienza e nazionalità; <i>avere</i> indica possesso, età e sensazioni (fame, sete, caldo, sonno).",
+   ex:["Io <b>sono</b> italiano.","Tu <b>hai</b> vent'anni.","Noi <b>abbiamo</b> fame."],
+   tables:[
+     {caption:"essere", rows:[["io","sono"],["tu","sei"],["lui/lei","è"],["noi","siamo"],["voi","siete"],["loro","sono"]]},
+     {caption:"avere", rows:[["io","ho"],["tu","hai"],["lui/lei","ha"],["noi","abbiamo"],["voi","avete"],["loro","hanno"]]}
+   ]},
+
+  {lvl:"a", cat:"Articoli", title:"Articoli determinativi",
+   rule:"Introducono qualcosa di noto o specifico. Cambiano per genere, numero e lettera iniziale della parola che segue.",
+   ex:["<b>il</b> libro, <b>lo</b> studente, <b>l'</b>amico","<b>la</b> casa, <b>l'</b>amica","<b>i</b> libri, <b>gli</b> studenti, <b>le</b> case"],
+   tables:[
+     {headers:["","Maschile","Femminile"], rows:[
+       ["Sing.","il / lo / l'","la / l'"],
+       ["Plur.","i / gli","le"]
+     ]}
+   ],
+   note:"<i>lo / gli</i> davanti a z, s+consonante, ps, gn, x, y; <i>l'</i> davanti a vocale."},
+
+  {lvl:"a", cat:"Articoli", title:"Articoli indeterminativi",
+   rule:"Indicano qualcosa di generico e non specifico. Esistono solo al singolare.",
+   ex:["<b>un</b> libro, <b>uno</b> zaino","<b>una</b> penna, <b>un'</b>amica"],
+   tables:[
+     {headers:["Maschile","Femminile"], rows:[["un / uno","una / un'"]]}
+   ],
+   note:"<i>uno</i> davanti a z, s+consonante, ps, gn; <i>un'</i> solo davanti a nome femminile che inizia per vocale."},
+
+  {lvl:"a", cat:"Nomi", title:"Il plurale dei nomi",
+   rule:"Regola base secondo la terminazione: <b>-o → -i</b>, <b>-a → -e</b>, <b>-e → -i</b> (maschili e femminili).",
+   ex:["libro → libr<b>i</b>","casa → cas<b>e</b>","studente → student<b>i</b>"],
+   tables:[
+     {headers:["Sing.","Plur."], rows:[["-o","-i"],["-a","-e"],["-e","-i"]]}
+   ],
+   note:"Invariabili: città, caffè, bar, film. Irregolari: uomo → uomini, uovo → uova."},
+
+  {lvl:"a", cat:"Sintassi", title:"C'è / Ci sono",
+   rule:"Per dire che qualcosa esiste o si trova in un luogo. <b>C'è</b> con il singolare, <b>ci sono</b> con il plurale.",
+   ex:["<b>C'è</b> un problema.","<b>Ci sono</b> due finestre.","Quanti studenti <b>ci sono</b>?"]},
+
+  {lvl:"a", cat:"Aggettivi", title:"L'accordo dell'aggettivo",
+   rule:"L'aggettivo concorda in genere e numero col nome. Due classi: in <b>-o</b> (quattro forme) e in <b>-e</b> (due forme).",
+   ex:["un ragazzo alt<b>o</b> / una ragazza alt<b>a</b>","ragazzi alt<b>i</b> / ragazze alt<b>e</b>","un libro interessant<b>e</b> / libri interessant<b>i</b>"],
+   tables:[
+     {caption:"in -o", headers:["M","F"], rows:[["-o","-a"],["-i","-e"]]},
+     {caption:"in -e", headers:["M","F"], rows:[["-e","-e"],["-i","-i"]]}
+   ]},
+
+  {lvl:"a", cat:"Verbi", title:"Presente: verbi regolari",
+   rule:"Tre coniugazioni: <b>-are, -ere, -ire</b>. Si toglie la desinenza dell'infinito e si aggiungono le terminazioni.",
+   ex:["Io parl<b>o</b> italiano.","Tu prend<b>i</b> il treno.","Loro dorm<b>ono</b> poco."],
+   tables:[
+     {caption:"parl-are", rows:[["io","parlo"],["tu","parli"],["lui/lei","parla"],["noi","parliamo"],["voi","parlate"],["loro","parlano"]]},
+     {caption:"prend-ere", rows:[["io","prendo"],["tu","prendi"],["lui/lei","prende"],["noi","prendiamo"],["voi","prendete"],["loro","prendono"]]},
+     {caption:"dorm-ire", rows:[["io","dormo"],["tu","dormi"],["lui/lei","dorme"],["noi","dormiamo"],["voi","dormite"],["loro","dormono"]]},
+     {caption:"cap-ire (-isc-)", rows:[["io","capisco"],["tu","capisci"],["lui/lei","capisce"],["noi","capiamo"],["voi","capite"],["loro","capiscono"]]}
+   ],
+   note:"Alcuni verbi in -ire inseriscono -isc-: capire, finire, preferire, pulire, spedire."},
+
+  {lvl:"a", cat:"Sintassi", title:"La negazione",
+   rule:"Si nega mettendo <b>non</b> immediatamente prima del verbo.",
+   ex:["<b>Non</b> mangio carne.","<b>Non</b> sono stanco.","Lei <b>non</b> parla spagnolo."]},
+
+  {lvl:"a", cat:"Verbi", title:"Modali: dovere, potere, volere",
+   rule:"Reggono un altro verbo all'infinito. <b>Dovere</b> = obbligo/necessità; <b>potere</b> = possibilità/permesso; <b>volere</b> = volontà.",
+   ex:["<b>Devo</b> studiare.","<b>Posso</b> entrare?","<b>Voglio</b> un caffè."],
+   tables:[
+     {caption:"dovere", rows:[["io","devo"],["tu","devi"],["lui/lei","deve"],["noi","dobbiamo"],["voi","dovete"],["loro","devono"]]},
+     {caption:"potere", rows:[["io","posso"],["tu","puoi"],["lui/lei","può"],["noi","possiamo"],["voi","potete"],["loro","possono"]]},
+     {caption:"volere", rows:[["io","voglio"],["tu","vuoi"],["lui/lei","vuole"],["noi","vogliamo"],["voi","volete"],["loro","vogliono"]]}
+   ]},
+
+  {lvl:"a", cat:"Preposizioni", title:"Le preposizioni semplici",
+   rule:"Sono <b>di, a, da, in, con, su, per, tra/fra</b>. Esprimono relazioni di luogo, tempo, possesso, mezzo, scopo.",
+   ex:["il libro <b>di</b> Maria","vado <b>a</b> Roma, abito <b>in</b> Italia","vengo <b>da</b> Napoli, esco <b>con</b> gli amici"],
+   note:"di = possesso/specificazione · a = luogo (città)/termine · da = provenienza/agente · in = luogo (paesi)/mezzo · con = compagnia/mezzo."},
+
+  {lvl:"a", cat:"Aggettivi", title:"Gli aggettivi possessivi",
+   rule:"Indicano possesso e concordano con la <b>cosa posseduta</b>, non col possessore. Di norma vogliono l'articolo.",
+   ex:["<b>il mio</b> libro, <b>la mia</b> casa","<b>i tuoi</b> amici, <b>le sue</b> idee","<b>mia</b> madre, <b>tuo</b> fratello (senza articolo)"],
+   tables:[
+     {headers:["M sing.","F sing.","M plur.","F plur."], rows:[
+       ["mio","mia","miei","mie"],
+       ["tuo","tua","tuoi","tue"],
+       ["suo","sua","suoi","sue"],
+       ["nostro","nostra","nostri","nostre"],
+       ["vostro","vostra","vostri","vostre"],
+       ["loro","loro","loro","loro"]
+     ]}
+   ],
+   note:"Niente articolo con i nomi di famiglia al singolare (mia sorella), ma sì con loro (la loro madre) e al plurale (i miei fratelli)."},
+
+  {lvl:"a", cat:"Sintassi", title:"L'ora",
+   rule:"Si chiede «Che ora è? / Che ore sono?». Si risponde con <b>è</b> per l'una, mezzogiorno e mezzanotte; con <b>sono le</b> per tutte le altre.",
+   ex:["<b>È</b> l'una.","<b>Sono le</b> tre e mezza.","<b>Sono le</b> otto meno un quarto."]},
+
+  {lvl:"a", cat:"Verbi", title:"Il verbo piacere",
+   rule:"Costruzione invertita: il soggetto è la cosa che piace. <b>piace</b> + singolare o infinito, <b>piacciono</b> + plurale. La persona si esprime col pronome indiretto.",
+   ex:["<b>Mi piace</b> il caffè.","<b>Mi piacciono</b> i dolci.","<b>Ti piace</b> viaggiare?"],
+   tables:[
+     {headers:["Pronome","+ sing./infinito","+ plurale"], rows:[
+       ["mi / ti / gli·le","piace","piacciono"],
+       ["ci / vi / gli","piace","piacciono"]
+     ]}
+   ]},
+
+  /* ---------------- A2 ---------------- */
+  {lvl:"a2", cat:"Pragmatica", title:"Tu e Lei: formale e informale",
+   rule:"<b>Tu</b> (2ª persona) nei contesti informali; <b>Lei</b> come forma di cortesia con sconosciuti e superiori. Lei regge il verbo alla 3ª persona singolare.",
+   ex:["<b>Tu</b> come stai?","<b>Lei</b> come sta?","Scusi, <b>Lei</b> è il direttore?"]},
+
+  {lvl:"a2", cat:"Preposizioni", title:"Le preposizioni articolate",
+   rule:"Fusione di preposizione + articolo determinativo. Si combinano regolarmente solo <b>di, a, da, in, su</b>; con e per restano separate.",
+   ex:["vado <b>al</b> cinema","parlo <b>della</b> scuola","esco <b>dallo</b> studio, dormo <b>nel</b> letto"],
+   tables:[
+     {headers:["","il","lo","la","i","gli","le"], rows:[
+       ["di","del","dello","della","dei","degli","delle"],
+       ["a","al","allo","alla","ai","agli","alle"],
+       ["da","dal","dallo","dalla","dai","dagli","dalle"],
+       ["in","nel","nello","nella","nei","negli","nelle"],
+       ["su","sul","sullo","sulla","sui","sugli","sulle"]
+     ]}
+   ]},
+
+  {lvl:"a2", cat:"Verbi", title:"Verbi irregolari comuni",
+   rule:"Verbi ad altissima frequenza con forme irregolari al presente: andare, fare, venire, stare, dare.",
+   ex:["<b>Vado</b> a casa.","<b>Faccio</b> i compiti.","<b>Vengo</b> con te."],
+   tables:[
+     {caption:"andare", rows:[["io","vado"],["tu","vai"],["lui/lei","va"],["noi","andiamo"],["voi","andate"],["loro","vanno"]]},
+     {caption:"fare", rows:[["io","faccio"],["tu","fai"],["lui/lei","fa"],["noi","facciamo"],["voi","fate"],["loro","fanno"]]},
+     {caption:"venire", rows:[["io","vengo"],["tu","vieni"],["lui/lei","viene"],["noi","veniamo"],["voi","venite"],["loro","vengono"]]},
+     {caption:"stare / dare", rows:[["sto","do"],["stai","dai"],["sta","dà"],["stiamo","diamo"],["state","date"],["stanno","danno"]]}
+   ]},
+
+  {lvl:"a2", cat:"Verbi", title:"Il passato prossimo",
+   rule:"Azioni concluse nel passato. Ausiliare <b>avere</b> o <b>essere</b> al presente + participio passato. Con <i>essere</i> il participio concorda col soggetto.",
+   ex:["<b>Ho mangiato</b> la pizza.","<b>Sono andato/a</b> a casa.","<b>Siamo arrivati</b> ieri."],
+   tables:[
+     {caption:"participio regolare", headers:["Infinito","Participio"], rows:[["-are","-ato"],["-ere","-uto"],["-ire","-ito"]]},
+     {caption:"participi irregolari", headers:["Infinito","Participio"], rows:[["fare","fatto"],["dire","detto"],["prendere","preso"],["leggere","letto"],["scrivere","scritto"],["vedere","visto"],["essere","stato"]]}
+   ],
+   note:"Vogliono essere i verbi di movimento e stato (andare, venire, stare, nascere, morire…) e tutti i riflessivi."},
+
+  {lvl:"a2", cat:"Verbi", title:"I verbi riflessivi",
+   rule:"L'azione ricade sul soggetto. Pronome riflessivo + verbo. Al passato prossimo sempre con <b>essere</b> e participio concordato.",
+   ex:["<b>Mi sveglio</b> alle sette.","Come <b>ti chiami</b>?","<b>Ci siamo divertiti</b>."],
+   tables:[
+     {caption:"lavarsi", rows:[["io","mi lavo"],["tu","ti lavi"],["lui/lei","si lava"],["noi","ci laviamo"],["voi","vi lavate"],["loro","si lavano"]]}
+   ]},
+
+  {lvl:"a2", cat:"Verbi", title:"L'imperativo",
+   rule:"Dà ordini, istruzioni e consigli. Forme per tu, Lei, voi. Il negativo del <b>tu</b> = <b>non</b> + infinito.",
+   ex:["<b>Mangia</b> la verdura!","<b>Non fumare</b>!","<b>Prenda</b> un caffè."],
+   tables:[
+     {headers:["","-are","-ere","-ire"], rows:[
+       ["tu","parla","prendi","dormi"],
+       ["Lei","parli","prenda","dorma"],
+       ["voi","parlate","prendete","dormite"]
+     ]}
+   ],
+   note:"Negativo: tu → non + infinito (non parlare); Lei/voi → non + imperativo (non parli, non parlate)."},
+
+  {lvl:"a2", cat:"Aggettivi", title:"Dimostrativi: questo e quello",
+   rule:"<b>Questo</b> per ciò che è vicino, <b>quello</b> per ciò che è lontano. <i>Quello</i> davanti al nome segue le forme dell'articolo determinativo.",
+   ex:["<b>questo</b> libro, <b>questa</b> casa","<b>quel</b> ragazzo, <b>quella</b> macchina","<b>quegli</b> studenti, <b>quei</b> libri"],
+   tables:[
+     {caption:"questo", headers:["M","F"], rows:[["questo / quest'","questa / quest'"],["questi","queste"]]},
+     {caption:"quello", headers:["M","F"], rows:[["quel/quello/quell'","quella/quell'"],["quei/quegli","quelle"]]}
+   ]},
+
+  {lvl:"a2", cat:"Aggettivi", title:"I comparativi",
+   rule:"Maggioranza: <b>più … di/che</b>; minoranza: <b>meno … di/che</b>; uguaglianza: <b>(così)… come</b>, <b>(tanto)… quanto</b>. <i>Di</i> davanti a nomi e pronomi; <i>che</i> tra due termini riferiti allo stesso soggetto.",
+   ex:["Marco è più alto <b>di</b> Luca.","Leggo più <b>che</b> scrivo.","Sono alto <b>come</b> te."],
+   note:"Irregolari: buono → migliore, cattivo → peggiore, grande → maggiore, piccolo → minore."},
+
+  {lvl:"a2", cat:"Pronomi", title:"I pronomi diretti",
+   rule:"Sostituiscono l'oggetto diretto (chi? che cosa?): <b>mi, ti, lo/la, ci, vi, li/le</b>. Al passato prossimo lo/la/li/le concordano col participio.",
+   ex:["Compro il pane → <b>Lo</b> compro.","Vedo Maria → <b>La</b> vedo.","Ho visto i film → <b>Li</b> ho vist<b>i</b>."]},
+
+  {lvl:"a2", cat:"Verbi", title:"Condizionale di cortesia: vorrei",
+   rule:"<b>Vorrei, potrei, dovrei</b> per richieste, proposte e consigli gentili. Più educato dell'indicativo (voglio, posso, devo).",
+   ex:["<b>Vorrei</b> un caffè.","<b>Potrei</b> avere il conto?","<b>Dovresti</b> riposare."]},
+
+  {lvl:"a2", cat:"Verbi", title:"Sapere e potere",
+   rule:"<b>Sapere</b> = capacità appresa o conoscere un fatto; <b>potere</b> = possibilità concreta o permesso.",
+   ex:["<b>So</b> nuotare. (capacità)","Non <b>posso</b> nuotare qui: è vietato. (permesso)","<b>So</b> che arrivi domani. (fatto)"]},
+
+  /* ---------------- B1 ---------------- */
+  {lvl:"b1", cat:"Verbi", title:"L'imperfetto",
+   rule:"Descrive il passato: abitudini, descrizioni, stati, azioni in corso. Terminazioni regolari uguali per le tre coniugazioni.",
+   ex:["Da bambino <b>giocavo</b> a calcio.","<b>Pioveva</b> e <b>faceva</b> freddo.","Mentre <b>studiavo</b>, ascoltavo musica."],
+   tables:[
+     {caption:"parlare", rows:[["io","parlavo"],["tu","parlavi"],["lui/lei","parlava"],["noi","parlavamo"],["voi","parlavate"],["loro","parlavano"]]},
+     {caption:"irregolari", headers:["essere","fare"], rows:[["ero","facevo"],["eri","facevi"],["era","faceva"],["eravamo","facevamo"],["eravate","facevate"],["erano","facevano"]]}
+   ],
+   note:"Irregolari da radice latina: dire → dicevo, bere → bevevo, fare → facevo."},
+
+  {lvl:"b1", cat:"Verbi", title:"Imperfetto o passato prossimo?",
+   rule:"<b>Passato prossimo</b> = azione puntuale e conclusa che fa avanzare il racconto. <b>Imperfetto</b> = sfondo, descrizione, abitudine, azione in corso. Spesso convivono.",
+   ex:["Mentre <i>dormivo</i>, <i>è suonato</i> il telefono.","Ieri <i>faceva</i> caldo, così <i>sono andato</i> al mare.","Da piccolo <i>andavo</i> al mare ogni estate."]},
+
+  {lvl:"b1", cat:"Verbi", title:"Stare + gerundio",
+   rule:"Esprime un'azione in corso proprio in questo momento (o nel momento di cui si parla). <b>stare</b> coniugato + gerundio (-ando/-endo).",
+   ex:["<b>Sto studiando</b>.","<b>Stavano mangiando</b> quando sono arrivato."],
+   note:"<i>Stare per</i> + infinito esprime invece un'azione imminente: «Sto per uscire»."},
+
+  {lvl:"b1", cat:"Verbi", title:"Il futuro semplice",
+   rule:"Azioni future, previsioni e supposizioni sul presente. Terminazioni uguali per tutti; -are e -ere condividono la radice in -er-.",
+   ex:["Domani <b>partirò</b>.","<b>Saranno</b> le cinque. (supposizione)","<b>Pioverà</b> nel weekend."],
+   tables:[
+     {caption:"regolari", headers:["parlare","prendere","dormire"], rows:[
+       ["parlerò","prenderò","dormirò"],["parlerai","prenderai","dormirai"],["parlerà","prenderà","dormirà"],
+       ["parleremo","prenderemo","dormiremo"],["parlerete","prenderete","dormirete"],["parleranno","prenderanno","dormiranno"]
+     ]},
+     {caption:"irregolari", headers:["essere","avere"], rows:[["sarò","avrò"],["sarai","avrai"],["sarà","avrà"],["saremo","avremo"],["sarete","avrete"],["saranno","avranno"]]}
+   ]},
+
+  {lvl:"b1", cat:"Nomi", title:"Il partitivo",
+   rule:"Esprime una quantità indefinita («un po' di», «alcuni»). <b>di + articolo determinativo</b>, oppure <i>qualche</i> + singolare, <i>alcuni/e</i> + plurale.",
+   ex:["Vorrei <b>del</b> pane.","Ho comprato <b>delle</b> mele.","C'è <b>qualche</b> problema."]},
+
+  {lvl:"b1", cat:"Verbi", title:"Il congiuntivo presente",
+   rule:"Esprime soggettività: opinione, dubbio, desiderio, emozione. Nelle subordinate dopo <i>penso che, credo che, voglio che, è importante che</i>, con soggetti diversi nelle due frasi.",
+   ex:["Penso che tu <b>abbia</b> ragione.","Voglio che tu <b>venga</b>.","È meglio che <b>partiamo</b> presto."],
+   tables:[
+     {caption:"regolari", headers:["parlare","prendere","dormire"], rows:[
+       ["parli","prenda","dorma"],["parli","prenda","dorma"],["parli","prenda","dorma"],
+       ["parliamo","prendiamo","dormiamo"],["parliate","prendiate","dormiate"],["parlino","prendano","dormano"]
+     ]},
+     {caption:"irregolari", headers:["essere","avere"], rows:[["sia","abbia"],["sia","abbia"],["sia","abbia"],["siamo","abbiamo"],["siate","abbiate"],["siano","abbiano"]]}
+   ]},
+
+  {lvl:"b1", cat:"Verbi", title:"Il congiuntivo passato",
+   rule:"Soggettività su un fatto già avvenuto. <b>congiuntivo presente di essere/avere + participio passato</b>.",
+   ex:["Credo che <b>siano</b> già <b>partiti</b>.","Mi dispiace che tu <b>abbia avuto</b> problemi."]},
+
+  {lvl:"b1", cat:"Verbi", title:"Il congiuntivo imperfetto",
+   rule:"Soggettività riferita al passato e ipotesi possibili. Dopo reggente al passato o al condizionale, e nel periodo ipotetico della possibilità.",
+   ex:["Pensavo che <b>fosse</b> facile.","Se <b>avessi</b> tempo, viaggerei.","Vorrei che tu <b>venissi</b>."],
+   tables:[
+     {caption:"regolari", headers:["parlare","prendere","dormire"], rows:[
+       ["parlassi","prendessi","dormissi"],["parlassi","prendessi","dormissi"],["parlasse","prendesse","dormisse"],
+       ["parlassimo","prendessimo","dormissimo"],["parlaste","prendeste","dormiste"],["parlassero","prendessero","dormissero"]
+     ]},
+     {caption:"irregolari", headers:["essere","fare"], rows:[["fossi","facessi"],["fossi","facessi"],["fosse","facesse"],["fossimo","facessimo"],["foste","faceste"],["fossero","facessero"]]}
+   ]},
+
+  {lvl:"b1", cat:"Verbi", title:"Il condizionale semplice",
+   rule:"Desideri, richieste cortesi, consigli e conseguenza di un'ipotesi. Stessa radice del futuro + terminazioni -ei, -esti, -ebbe, -emmo, -este, -ebbero.",
+   ex:["<b>Vorrei</b> partire.","<b>Dovresti</b> riposare.","Al posto tuo, <b>andrei</b>."],
+   tables:[
+     {caption:"parlare / essere / avere", headers:["parlare","essere","avere"], rows:[
+       ["parlerei","sarei","avrei"],["parleresti","saresti","avresti"],["parlerebbe","sarebbe","avrebbe"],
+       ["parleremmo","saremmo","avremmo"],["parlereste","sareste","avreste"],["parlerebbero","sarebbero","avrebbero"]
+     ]}
+   ]},
+
+  {lvl:"b1", cat:"Sintassi", title:"Il periodo ipotetico",
+   rule:"Tre tipi. <b>1° realtà:</b> se + indicativo, indicativo/futuro. <b>2° possibilità:</b> se + cong. imperfetto, condizionale presente. <b>3° irrealtà nel passato:</b> se + cong. trapassato, condizionale passato.",
+   ex:["Se <i>piove</i>, <i>resto</i> a casa.","Se <i>avessi</i> soldi, <i>comprerei</i> una casa.","Se <i>avessi studiato</i>, <i>avrei superato</i> l'esame."]},
+
+  {lvl:"b1", cat:"Pronomi", title:"Pronomi relativi: che e cui",
+   rule:"<b>Che</b> = soggetto o oggetto diretto, invariabile. <b>Cui</b> dopo una preposizione (a cui, di cui, con cui). <b>Il/la cui</b> esprime possesso.",
+   ex:["Il libro <b>che</b> leggo.","La ragazza <b>con cui</b> parlo.","Lo scrittore <b>il cui</b> romanzo è famoso."]},
+
+  {lvl:"b1", cat:"Pronomi", title:"I pronomi indiretti",
+   rule:"Sostituiscono il complemento di termine (a chi?): <b>mi, ti, gli/le, ci, vi, gli</b>. Usati con dare, dire, scrivere, telefonare, piacere.",
+   ex:["Telefono a Maria → <b>Le</b> telefono.","Ho scritto a Marco → <b>Gli</b> ho scritto.","<b>Ci</b> hanno regalato un libro."]},
+
+  {lvl:"b1", cat:"Pronomi", title:"I pronomi combinati",
+   rule:"Indiretto + diretto insieme. Mi/ti/ci/vi diventano <b>me, te, ce, ve</b>; gli/le diventano <b>glie-</b> e si uniscono: glielo, gliela, glieli, gliele.",
+   ex:["<b>Me lo</b> dai?","<b>Glielo</b> ho già detto.","<b>Te la</b> mando domani."],
+   tables:[
+     {headers:["+ lo","+ la","+ li","+ le"], rows:[
+       ["me lo","me la","me li","me le"],
+       ["te lo","te la","te li","te le"],
+       ["glielo","gliela","glieli","gliele"],
+       ["ce lo","ce la","ce li","ce le"],
+       ["ve lo","ve la","ve li","ve le"]
+     ]}
+   ]},
+
+  {lvl:"b1", cat:"Verbi", title:"I verbi pronominali",
+   rule:"Verbi che con i pronomi cambiano significato: <b>andarsene</b> (andare via), <b>farcela</b> (riuscire), <b>cavarsela</b> (gestire), <b>volerci</b> (essere necessario), <b>metterci</b> (impiegare tempo).",
+   ex:["Me ne vado.","Non ce la faccio.","Ci vogliono due ore.","Ci metto dieci minuti."]},
+
+  {lvl:"b1", cat:"Sintassi", title:"Si impersonale e si passivante",
+   rule:"<b>Si</b> + verbo alla 3ª persona per un soggetto generico («la gente»). È <b>passivante</b> quando c'è un oggetto che diventa soggetto: il verbo concorda con esso.",
+   ex:["In Italia <b>si mangia</b> bene.","<b>Si vendono</b> case.","Qui <b>si parla</b> italiano."]},
+
+  {lvl:"b1", cat:"Sintassi", title:"La forma passiva",
+   rule:"L'oggetto diventa soggetto. <b>essere</b> (o <b>venire</b>) + participio passato; l'agente si introduce con <b>da</b>.",
+   ex:["La torta <b>è stata fatta da</b> Anna.","Il pacco <b>viene consegnato</b> domani.","I biglietti <b>sono</b> già <b>stati venduti</b>."]},
+
+  {lvl:"b1", cat:"Aggettivi", title:"I superlativi",
+   rule:"<b>Relativo:</b> il/la più … (di) — il massimo entro un gruppo. <b>Assoluto:</b> -issimo oppure molto + aggettivo — grado altissimo in assoluto.",
+   ex:["È <b>il più</b> alto <b>della</b> classe.","È bell<b>issimo</b>.","È <b>molto</b> interessante."],
+   note:"Irregolari: buono → ottimo, cattivo → pessimo, grande → massimo, piccolo → minimo."},
+
+  {lvl:"b1", cat:"Verbi", title:"Il passato remoto",
+   rule:"Azione conclusa e percepita come lontana dal presente. Tipico della narrazione storica e letteraria, e dell'uso parlato in alcune regioni del Sud.",
+   ex:["Dante <b>scrisse</b> la Divina Commedia.","Nel 1492 Colombo <b>arrivò</b> in America."],
+   tables:[
+     {caption:"parlare / essere", headers:["parlare","essere"], rows:[
+       ["parlai","fui"],["parlasti","fosti"],["parlò","fu"],["parlammo","fummo"],["parlaste","foste"],["parlarono","furono"]
+     ]}
+   ]},
+
+  {lvl:"b1", cat:"Sintassi", title:"Il discorso indiretto",
+   rule:"Riportare le parole altrui. Cambiano pronomi, tempi verbali e indicatori di tempo/luogo. Con reggente al passato: presente → imperfetto, passato prossimo → trapassato, futuro → condizionale composto.",
+   ex:["«Vengo domani» → Disse che <b>sarebbe venuto</b> il giorno dopo.","«Ho finito» → Disse che <b>aveva finito</b>."]},
+
+  /* ---------------- B2 ---------------- */
+  {lvl:"b2", cat:"Verbi", title:"Il futuro anteriore",
+   rule:"Azione futura anteriore a un'altra azione futura, oppure supposizione su un fatto passato. <b>futuro di essere/avere + participio</b>.",
+   ex:["Quando <b>avrò finito</b>, ti chiamo.","<b>Sarà</b> già <b>partito</b>. (supposizione)"]},
+
+  {lvl:"b2", cat:"Verbi", title:"Il congiuntivo trapassato",
+   rule:"Soggettività su un fatto anteriore a un altro passato; ramo del periodo ipotetico dell'irrealtà. <b>cong. imperfetto di essere/avere + participio</b>.",
+   ex:["Credevo che <b>fossero</b> già <b>usciti</b>.","Se <b>avessi saputo</b>, sarei venuto."]},
+
+  {lvl:"b2", cat:"Sintassi", title:"La concordanza dei tempi (congiuntivo)",
+   rule:"Il tempo del congiuntivo dipende dal verbo reggente e dal rapporto temporale. Reggente al <b>presente</b> → cong. presente/passato; reggente al <b>passato/condizionale</b> → cong. imperfetto/trapassato.",
+   ex:["Penso che <i>venga</i> / <i>sia venuto</i>.","Pensavo che <i>venisse</i> / <i>fosse venuto</i>."],
+   tables:[
+     {headers:["Reggente","Contemporaneità","Anteriorità"], rows:[
+       ["Presente","cong. presente","cong. passato"],
+       ["Passato","cong. imperfetto","cong. trapassato"]
+     ]}
+   ]},
+
+  {lvl:"b2", cat:"Verbi", title:"Il gerundio: semplice e composto",
+   rule:"<b>Semplice</b> (-ando/-endo): azione contemporanea, modo, causa, mezzo. <b>Composto</b> (avendo/essendo + participio): azione anteriore.",
+   ex:["<i>Camminando</i>, pensavo.","Sbagliando si impara.","<i>Avendo finito</i>, è uscito."]},
+
+  {lvl:"b2", cat:"Verbi", title:"Infinito sostantivato e passato",
+   rule:"L'infinito può funzionare da <b>nome</b> (spesso con articolo). L'<b>infinito passato</b> (avere/essere + participio) esprime anteriorità.",
+   ex:["<b>Il mangiare</b> sano fa bene.","Dopo <b>aver mangiato</b>, sono uscito.","Mi scuso per <b>essere arrivato</b> tardi."]},
+
+  {lvl:"b2", cat:"Sintassi", title:"Relative esplicative e limitative",
+   rule:"<b>Limitativa:</b> restringe il significato, è essenziale, senza virgole. <b>Esplicativa:</b> aggiunge un'informazione, tra virgole. Con verbi di opinione o incertezza la relativa può reggere il congiuntivo.",
+   ex:["Gli studenti <i>che studiano</i> superano l'esame. (limitativa)","Mio fratello, <i>che vive a Roma</i>, è medico. (esplicativa)","Cerco una casa che <i>abbia</i> il giardino. (congiuntivo)"]},
+
+  {lvl:"b2", cat:"Sintassi", title:"Il costrutto causativo: far fare",
+   rule:"<b>Fare + infinito</b> = far compiere l'azione a un altro. <b>Farsi + infinito</b> = farla compiere a proprio favore. <b>Lasciare + infinito</b> = permettere.",
+   ex:["<b>Faccio riparare</b> l'auto.","<b>Mi sono fatto tagliare</b> i capelli.","<b>Lascia parlare</b> lui."]},
+
+  {lvl:"b2", cat:"Verbi", title:"Il trapassato prossimo",
+   rule:"Azione passata anteriore a un'altra azione passata. <b>imperfetto di essere/avere + participio</b>.",
+   ex:["Quando sono arrivato, <b>erano</b> già <b>usciti</b>.","<b>Avevo studiato</b>, perciò ero tranquillo."]},
+
+  /* ---------------- C1 ---------------- */
+  {lvl:"c1", cat:"Sintassi", title:"La forma passiva: tutte le forme",
+   rule:"Oltre a essere/venire, <b>andare + participio</b> esprime obbligo/necessità («va fatto» = deve essere fatto). Il <b>si passivante</b> serve per regole e generalizzazioni.",
+   ex:["Il modulo <b>va compilato</b> in stampatello.","Questi errori <b>vanno evitati</b>.","I documenti <b>vengono controllati</b> all'ingresso."]},
+
+  {lvl:"c1", cat:"Sintassi", title:"Le proposizioni concessive",
+   rule:"Esprimono un ostacolo che non impedisce l'azione. <b>Benché, sebbene, nonostante, malgrado</b> + congiuntivo; <b>anche se</b> + indicativo.",
+   ex:["<b>Benché</b> fosse stanco, ha continuato.","<b>Nonostante</b> piovesse, siamo usciti.","<b>Anche se</b> piove, esco."]},
+
+  {lvl:"c1", cat:"Sintassi", title:"Le proposizioni temporali avanzate",
+   rule:"<b>Prima che</b> + congiuntivo (soggetti diversi); <b>dopo che</b> + indicativo; <b>finché (non)</b> e <b>(non) appena</b> per limiti e immediatezza.",
+   ex:["Esci <b>prima che</b> arrivi.","<b>Dopo che</b> ebbe finito, partì.","Aspetta <b>finché non</b> torno.","<b>Appena</b> arrivi, chiamami."]},
+
+  {lvl:"c1", cat:"Verbi", title:"Periodo ipotetico misto",
+   rule:"Combina ipotesi e conseguenza su piani temporali diversi. Tipico: <b>cong. trapassato + condizionale presente</b> (causa passata, effetto presente).",
+   ex:["Se <i>avessi studiato</i> medicina, ora <i>sarei</i> dottore.","Se non <i>avessi perso</i> il treno, <i>sarei</i> già a casa."]},
+
+  {lvl:"c1", cat:"Sintassi", title:"Connettivi argomentativi avanzati",
+   rule:"Strumenti per strutturare un testo formale. Aggiungere: <i>inoltre, peraltro</i>. Opporre: <i>tuttavia, nondimeno</i>. Causa: <i>poiché, dato che, in quanto</i>. Conseguenza: <i>pertanto, di conseguenza</i>. Concludere: <i>in definitiva, in sintesi</i>.",
+   ex:["Il progetto è valido; <b>tuttavia</b>, i costi restano alti.","<b>Poiché</b> mancano i fondi, il lavoro è sospeso.","<b>Pertanto</b>, conviene rinviare la decisione."]}
+];
+
+/* ===== Rendering ===== */
+const colorById = Object.fromEntries(LEVELS.map(l=>[l.id,l.color]));
+
+function tableHTML(t){
+  let h = "<table>";
+  if(t.caption) h += "<caption>"+t.caption+"</caption>";
+  if(t.headers){
+    h += "<tr>"+t.headers.map(x=>"<th>"+x+"</th>").join("")+"</tr>";
+  }
+  t.rows.forEach(r=>{
+    h += "<tr>"+r.map((c,i)=> i===0 ? "<td>"+c+"</td>" : "<td><span class='form'>"+c+"</span></td>").join("")+"</tr>";
+  });
+  return h+"</table>";
+}
+
+function cardHTML(e){
+  const search = (e.title+" "+e.cat+" "+e.rule+" "+e.ex.join(" ")).toLowerCase()
+    .replace(/<[^>]+>/g,"");
+  let h = "<article class='card' data-search=\""+search.replace(/"/g,"")+"\" style='--lvl:"+colorById[e.lvl]+"'>";
+  h += "<p class='card__cat'>"+e.cat+"</p>";
+  h += "<h3 class='card__title'>"+e.title+"</h3>";
+  h += "<p class='card__rule'>"+e.rule+"</p>";
+  if(e.ex && e.ex.length){
+    h += "<div class='ex'>"+e.ex.map(x=>"<p>"+x+"</p>").join("")+"</div>";
+  }
+  if(e.tables && e.tables.length){
+    if(e.tables.length>1){
+      h += "<div class='tbl-wrap'>"+e.tables.map(t=>"<div>"+tableHTML(t)+"</div>").join("")+"</div>";
+    } else {
+      h += tableHTML(e.tables[0]);
+    }
+  }
+  if(e.note) h += "<p class='note'>"+e.note+"</p>";
+  return h+"</article>";
+}
+
+function build(){
+  const content = document.getElementById("content");
+  const nav = document.getElementById("nav");
+  const legend = document.getElementById("legend");
+
+  legend.innerHTML = LEVELS.map(l=>
+    "<span><i style='background:"+l.color+"'></i>"+l.tag+"</span>").join("");
+
+  let navHTML = "", contentHTML = "";
+  LEVELS.forEach(l=>{
+    const items = ENTRIES.filter(e=>e.lvl===l.id);
+    navHTML += "<a href='#lvl-"+l.id+"' data-lvl='"+l.id+"' style='--lvl:"+l.color+"'>"
+      + "<span class='dot'></span><span class='lbl'>"+l.tag+"</span><span class='n'>"+items.length+"</span></a>";
+    contentHTML += "<section class='level' id='lvl-"+l.id+"' style='--lvl:"+l.color+"'>"
+      + "<div class='level__head'><span class='level__tag'>"+l.tag+"</span>"
+      + "<span class='level__name'>"+l.name+"</span>"
+      + "<span class='level__count'>"+items.length+" voci</span></div>"
+      + "<div class='grid'>"+items.map(cardHTML).join("")+"</div></section>";
+  });
+  nav.innerHTML = navHTML;
+  content.innerHTML = contentHTML;
+}
+
+/* ===== Ricerca ===== */
+function setupSearch(){
+  const q = document.getElementById("q");
+  const empty = document.getElementById("empty");
+  const emptyQ = document.getElementById("empty-q");
+  q.addEventListener("input", ()=>{
+    const term = q.value.trim().toLowerCase();
+    let anyVisible = false;
+    document.querySelectorAll(".card").forEach(c=>{
+      const match = !term || c.dataset.search.includes(term);
+      c.style.display = match ? "" : "none";
+      if(match) anyVisible = true;
+    });
+    document.querySelectorAll(".level").forEach(sec=>{
+      const visible = sec.querySelectorAll(".card:not([style*='display: none'])").length;
+      sec.style.display = visible ? "" : "none";
+    });
+    empty.style.display = (term && !anyVisible) ? "block" : "none";
+    emptyQ.textContent = "«"+q.value.trim()+"»";
+  });
+}
+
+/* ===== Nav attiva + torna su ===== */
+function setupScroll(){
+  const links = [...document.querySelectorAll(".nav a")];
+  const sections = links.map(a=>document.querySelector(a.getAttribute("href")));
+  const totop = document.getElementById("totop");
+
+  const obs = new IntersectionObserver((entries)=>{
+    entries.forEach(en=>{
+      if(en.isIntersecting){
+        const id = en.target.id;
+        links.forEach(a=>a.classList.toggle("active", a.getAttribute("href")==="#"+id));
+      }
+    });
+  }, {rootMargin:"-20% 0px -70% 0px"});
+  sections.forEach(s=>s && obs.observe(s));
+
+  window.addEventListener("scroll", ()=>{
+    totop.classList.toggle("show", window.scrollY>500);
+  });
+  totop.addEventListener("click", ()=>window.scrollTo({top:0, behavior:"smooth"}));
+}
+
+build();
+setupSearch();
+setupScroll();
+</script>
+</body>
+</html>
