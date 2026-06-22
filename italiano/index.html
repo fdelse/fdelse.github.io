@@ -21,6 +21,9 @@
     --spine-soft:#21242e;
     --spine-ink:#cfd2db;
     --spine-faint:#7c8090;
+    --warn-bg:#fbf3e8;
+    --warn-line:#d98a2b;
+    --warn-ink:#9a5e12;
 
     /* colori per livello: progressione facile -> difficile */
     --c-a:#2e9e6b;
@@ -62,11 +65,10 @@
     color:var(--spine-faint);font-weight:600;margin:0 0 12px;
   }
   .spine__title{
-    font-family:var(--display);font-weight:600;font-size:16px;line-height:1.1;
+    font-family:var(--display);font-weight:600;font-size:25px;line-height:1.1;
     margin:0;color:#fff;letter-spacing:-.01em;
   }
   .spine__title em{font-style:italic;font-weight:400;color:#fff;}
-  .spine__sub{margin:10px 0 0;font-size:12.5px;color:var(--spine-faint);line-height:1.4;}
 
   .search{padding:4px 22px 18px;}
   .search input{
@@ -83,7 +85,7 @@
     display:flex;align-items:center;gap:11px;
     padding:9px 12px;border-radius:8px;
     color:var(--spine-ink);text-decoration:none;font-size:14px;font-weight:500;
-    transition:background .15s ease;
+    transition:background .15s ease;cursor:pointer;
   }
   .nav-level:hover{background:var(--spine-soft);}
   .nav-level.active{background:var(--spine-soft);color:#fff;}
@@ -103,7 +105,7 @@
   .spine__foot{padding:14px 26px 22px;font-size:11px;color:var(--spine-faint);border-top:1px solid var(--spine-soft);}
 
   /* ---------- contenuto ---------- */
-  main{padding:0 0 80px;}
+  main{padding:0 0 80px;max-width:1340px;margin-inline:auto;width:100%;}
   .masthead{
     padding:44px 56px 30px;border-bottom:1px solid var(--line);
     background:linear-gradient(180deg,#fff, var(--paper));
@@ -113,7 +115,7 @@
     margin:0;letter-spacing:-.02em;color:var(--ink);
   }
   .masthead h1 em{font-style:italic;font-weight:400;}
-  .masthead p{margin:14px 0 0;color:var(--ink-soft);font-size:15.5px;max-width:60ch;}
+  .masthead p{margin:14px 0 0;color:var(--ink-soft);font-size:15.5px;max-width:64ch;}
   .legend{display:flex;flex-wrap:wrap;gap:8px 18px;margin:22px 0 0;}
   .legend span{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--ink-soft);font-weight:500;}
   .legend i{width:11px;height:11px;border-radius:50%;display:inline-block;}
@@ -130,12 +132,12 @@
   .level__name{font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);font-weight:600;}
   .level__count{margin-left:auto;font-size:12.5px;color:var(--ink-faint);font-variant-numeric:tabular-nums;}
 
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:18px;padding:24px 0 8px;}
+  .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;padding:24px 0 8px;align-items:start;}
 
   .card{
     background:var(--card);border:1px solid var(--line);border-radius:12px;
     border-left:4px solid var(--lvl);
-    padding:20px 22px 22px;
+    padding:22px 24px 24px;
     display:flex;flex-direction:column;
     scroll-margin-top:20px;
   }
@@ -143,19 +145,35 @@
     font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;
     color:var(--lvl);margin:0 0 6px;
   }
-  .card__title{font-family:var(--display);font-weight:600;font-size:21px;line-height:1.15;margin:0 0 10px;color:var(--ink);letter-spacing:-.01em;}
-  .card__rule{margin:0;font-size:14.5px;color:var(--ink-soft);}
-  .card__rule b{color:var(--ink);font-weight:600;}
-  .card__rule i, .ex i{font-family:var(--display);font-style:italic;}
+  .card__title{font-family:var(--display);font-weight:600;font-size:22px;line-height:1.15;margin:0 0 11px;color:var(--ink);letter-spacing:-.01em;}
+  .card__def{margin:0;font-size:14.5px;color:var(--ink);line-height:1.5;}
+  .card__def b{font-weight:600;}
+  .card__def i, .sec i, .uses i, .ex i{font-family:var(--display);font-style:italic;}
 
-  .ex{margin:14px 0 0;display:flex;flex-direction:column;gap:6px;}
+  /* sezioni */
+  .sec{margin:16px 0 0;}
+  .sec__h{
+    font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;
+    color:var(--lvl);margin:0 0 8px;display:flex;align-items:center;gap:9px;
+  }
+  .sec__h::after{content:"";flex:1;height:1px;background:var(--line);}
+  .sec__t{margin:0 0 2px;font-size:13.5px;color:var(--ink-soft);line-height:1.5;}
+  .sec__t b{color:var(--ink);font-weight:600;}
+
+  .uses{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;}
+  .uses li{font-size:13.5px;line-height:1.45;}
+  .use-l{display:block;font-weight:600;color:var(--ink);}
+  .use-e{display:block;font-family:var(--display);font-style:italic;color:var(--ink-soft);margin-top:2px;}
+  .use-e b{font-style:normal;font-weight:600;color:var(--lvl);}
+
+  .ex{margin:0;display:flex;flex-direction:column;gap:6px;}
   .ex p{
     margin:0;padding:5px 0 5px 13px;border-left:2px solid var(--line);
     font-family:var(--display);font-style:italic;font-size:15px;color:var(--ink);line-height:1.4;
   }
   .ex p b{font-style:normal;font-weight:600;color:var(--lvl);}
 
-  table{border-collapse:collapse;width:100%;margin:15px 0 0;font-size:13px;}
+  table{border-collapse:collapse;width:100%;margin:11px 0 0;font-size:13px;}
   table caption{text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);font-weight:600;padding:0 0 5px;}
   td,th{padding:5px 9px;border-bottom:1px solid var(--line-soft);text-align:left;}
   th{font-weight:600;color:var(--ink-soft);font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;}
@@ -164,11 +182,14 @@
   .tbl-wrap{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:4px;}
   .tbl-wrap > div{flex:1 1 130px;}
 
-  .note{
-    margin:14px 0 0;font-size:13px;color:var(--ink-soft);
-    background:var(--line-soft);border-radius:8px;padding:9px 12px;
+  .warn{
+    margin:16px 0 0;font-size:13px;color:var(--ink-soft);line-height:1.5;
+    background:var(--warn-bg);border-left:3px solid var(--warn-line);
+    border-radius:0 8px 8px 0;padding:10px 13px;
   }
-  .note::before{content:"Nota — ";font-weight:700;color:var(--ink);}
+  .warn::before{content:"Attenzione — ";font-weight:700;color:var(--warn-ink);}
+  .warn b{color:var(--ink);font-weight:600;}
+  .warn i{font-family:var(--display);font-style:italic;}
 
   .empty{display:none;padding:60px 56px;color:var(--ink-faint);font-size:16px;}
   .empty b{color:var(--ink);}
@@ -182,16 +203,17 @@
   .totop.show{opacity:1;pointer-events:auto;}
   .totop:focus-visible{outline:2px solid var(--c-b1);outline-offset:2px;}
 
-  a:focus-visible, button:focus-visible{outline:2px solid var(--c-b1);outline-offset:2px;}
+  a:focus-visible, button:focus-visible, .nav-level:focus-visible{outline:2px solid var(--c-b1);outline-offset:2px;}
 
   /* ---------- mobile ---------- */
-  .menu-btn{display:none;}
+  @media (max-width:1000px){
+    .grid{grid-template-columns:1fr;}
+  }
   @media (max-width:900px){
     .shell{grid-template-columns:1fr;}
     .spine{position:sticky;top:0;height:auto;flex-direction:column;border-right:none;border-bottom:1px solid #000;z-index:10;}
     .spine__head{padding:18px 20px 12px;}
-    .spine__title{font-size:22px;}
-    .spine__sub{display:none;}
+    .spine__title{font-size:20px;}
     .search{padding:0 20px 14px;}
     .nav{display:flex;gap:6px;overflow-x:auto;padding:0 14px 14px;flex:none;}
     .nav-group{flex:none;}
@@ -201,23 +223,24 @@
     .chevron{display:none;}
     .spine__foot{display:none;}
     .masthead{padding:30px 22px 22px;}
-    .masthead h1{font-size:30px;}
+    .masthead h1{font-size:29px;}
     .level{padding:0 22px;}
-    .grid{grid-template-columns:1fr;gap:14px;padding:18px 0 4px;}
+    .grid{gap:14px;padding:18px 0 4px;}
     .level__head{padding:34px 0 4px;}
     .level__tag{font-size:27px;}
   }
 
   /* ---------- stampa ---------- */
   @media print{
-    .spine,.totop,.menu-btn{display:none !important;}
+    .spine,.totop{display:none !important;}
     .shell{display:block;}
     body{background:#fff;}
+    main{max-width:none;}
     .masthead{padding:0 0 16px;border:none;}
     .level{padding:0;}
-    .card{break-inside:avoid;border:1px solid #ccc;box-shadow:none;}
     .grid{display:block;}
-    .card{margin:0 0 10px;}
+    .card{break-inside:avoid;border:1px solid #ccc;box-shadow:none;margin:0 0 10px;}
+    .sec__h::after{background:#ddd;}
     a{color:inherit;}
   }
 
@@ -243,7 +266,7 @@
   <main>
     <header class="masthead">
       <h1>Le strutture grammaticali <em>dell'italiano</em></h1>
-      <p>Ogni voce è un riferimento essenziale: la regola in una riga, esempi d'uso e, dove serve, la tabella delle forme. I colori segnalano il livello, dal più semplice al più complesso.</p>
+      <p>Ogni voce spiega una struttura in profondità: che cos'è, come si forma, quando si usa nei suoi diversi valori, esempi d'uso e le insidie da evitare. I colori segnalano il livello, dal più semplice al più complesso.</p>
       <div class="legend" id="legend"></div>
     </header>
     <div id="content"></div>
@@ -253,7 +276,7 @@
 <button class="totop" id="totop" aria-label="Torna in cima">↑</button>
 
 <script>
-/* ===== Dati ===== */
+/* ===== Livelli ===== */
 const LEVELS = [
   {id:"a",  tag:"A0 · A1", name:"Fondamenta",        color:"var(--c-a)"},
   {id:"a2", tag:"A2",      name:"Elementare",        color:"var(--c-a2)"},
@@ -262,121 +285,203 @@ const LEVELS = [
   {id:"c1", tag:"C1",      name:"Avanzato",          color:"var(--c-c1)"},
 ];
 
+/* ===== Voci =====
+   Schema: {lvl, cat, title, def, form?, tables?, uses?[{label,ex}], ex?[], warn?} */
 const ENTRIES = [
   /* ---------------- A0 · A1 ---------------- */
   {lvl:"a", cat:"Verbi", title:"Essere e avere",
-   rule:"I due verbi irregolari fondamentali. <i>Essere</i> indica identità, stato, provenienza e nazionalità; <i>avere</i> indica possesso, età e sensazioni (fame, sete, caldo, sonno).",
-   ex:["Io <b>sono</b> italiano.","Tu <b>hai</b> vent'anni.","Noi <b>abbiamo</b> fame."],
+   def:"I due verbi più importanti dell'italiano: reggono da soli moltissime frasi di base e fanno da <b>ausiliari</b> per costruire i tempi composti (ho mangiato, sono andato).",
+   form:"Sono entrambi <b>irregolari</b>: le forme vanno memorizzate, non seguono le terminazioni regolari.",
    tables:[
      {caption:"essere", rows:[["io","sono"],["tu","sei"],["lui/lei","è"],["noi","siamo"],["voi","siete"],["loro","sono"]]},
      {caption:"avere", rows:[["io","ho"],["tu","hai"],["lui/lei","ha"],["noi","abbiamo"],["voi","avete"],["loro","hanno"]]}
-   ]},
+   ],
+   uses:[
+     {label:"essere — identità e qualità", ex:"Sono Marco. / Siamo stanchi."},
+     {label:"essere — provenienza e nazionalità", ex:"È di Roma. / Sei spagnola?"},
+     {label:"avere — possesso", ex:"Ho una macchina nuova."},
+     {label:"avere — età", ex:"Quanti anni hai? — Ho trent'anni."},
+     {label:"avere — sensazioni fisiche", ex:"Ho fame, ho sonno, ho freddo, ho paura."}
+   ],
+   warn:"Per l'età e le sensazioni l'italiano usa sempre <b>avere</b>, mai essere: si dice «<i>ho</i> 30 anni» e «<i>ho</i> caldo». «Sono caldo» sarebbe un'altra cosa."},
 
   {lvl:"a", cat:"Articoli", title:"Articoli determinativi",
-   rule:"Introducono qualcosa di noto o specifico. Cambiano per genere, numero e lettera iniziale della parola che segue.",
-   ex:["<b>il</b> libro, <b>lo</b> studente, <b>l'</b>amico","<b>la</b> casa, <b>l'</b>amica","<b>i</b> libri, <b>gli</b> studenti, <b>le</b> case"],
+   def:"Accompagnano un nome già noto, specifico o unico. In italiano il nome quasi sempre vuole un articolo: automatizzarlo è uno degli scogli iniziali.",
+   form:"La scelta dipende da <b>genere</b>, <b>numero</b> e dalla <b>lettera iniziale</b> della parola che segue (anche di un aggettivo).",
    tables:[
      {headers:["","Maschile","Femminile"], rows:[
        ["Sing.","il / lo / l'","la / l'"],
        ["Plur.","i / gli","le"]
      ]}
    ],
-   note:"<i>lo / gli</i> davanti a z, s+consonante, ps, gn, x, y; <i>l'</i> davanti a vocale."},
+   uses:[
+     {label:"il / i — maschile + consonante", ex:"il libro → i libri"},
+     {label:"lo / gli — maschile + z, s+cons., ps, gn, x, y", ex:"lo zaino, lo studente → gli studenti"},
+     {label:"l' / gli — maschile + vocale", ex:"l'amico → gli amici"},
+     {label:"la / le — femminile + consonante", ex:"la casa → le case"},
+     {label:"l' / le — femminile + vocale", ex:"l'amica → le amiche"}
+   ],
+   warn:"L'articolo si accorda con la <b>prima parola</b> che segue, non col nome: «lo studente» ma «il bravo studente» (ora segue <i>bravo</i>)."},
 
   {lvl:"a", cat:"Articoli", title:"Articoli indeterminativi",
-   rule:"Indicano qualcosa di generico e non specifico. Esistono solo al singolare.",
-   ex:["<b>un</b> libro, <b>uno</b> zaino","<b>una</b> penna, <b>un'</b>amica"],
+   def:"Introducono qualcosa di generico, non ancora identificato («uno qualsiasi»). Esistono <b>solo al singolare</b>; al plurale si usa il partitivo (dei, delle) o niente articolo.",
+   form:"Seguono le stesse regole fonetiche degli articoli determinativi.",
    tables:[
      {headers:["Maschile","Femminile"], rows:[["un / uno","una / un'"]]}
    ],
-   note:"<i>uno</i> davanti a z, s+consonante, ps, gn; <i>un'</i> solo davanti a nome femminile che inizia per vocale."},
+   uses:[
+     {label:"un — maschile, caso generale (anche + vocale)", ex:"un libro, un amico"},
+     {label:"uno — maschile + z, s+cons., ps, gn", ex:"uno zaino, uno studente"},
+     {label:"una — femminile + consonante", ex:"una penna"},
+     {label:"un' — femminile + vocale", ex:"un'amica"}
+   ],
+   warn:"Maschile «un amico» <b>senza</b> apostrofo; femminile «un'amica» <b>con</b> apostrofo. L'apostrofo qui segnala il femminile davanti a vocale."},
 
   {lvl:"a", cat:"Nomi", title:"Il plurale dei nomi",
-   rule:"Regola base secondo la terminazione: <b>-o → -i</b>, <b>-a → -e</b>, <b>-e → -i</b> (maschili e femminili).",
-   ex:["libro → libr<b>i</b>","casa → cas<b>e</b>","studente → student<b>i</b>"],
+   def:"Il nome cambia la vocale finale per passare dal singolare al plurale. È un meccanismo regolare con alcune eccezioni importanti.",
+   form:"Regola base secondo la terminazione del singolare.",
    tables:[
-     {headers:["Sing.","Plur."], rows:[["-o","-i"],["-a","-e"],["-e","-i"]]}
+     {headers:["Sing.","Plur.","Esempio"], rows:[["-o","-i","libro → libri"],["-a","-e","casa → case"],["-e","-i","chiave → chiavi"]]}
    ],
-   note:"Invariabili: città, caffè, bar, film. Irregolari: uomo → uomini, uovo → uova."},
+   uses:[
+     {label:"maschili in -o → -i", ex:"treno → treni"},
+     {label:"femminili in -a → -e", ex:"porta → porte"},
+     {label:"-e → -i (maschili e femminili)", ex:"studente → studenti, notte → notti"}
+   ],
+   warn:"Restano <b>invariabili</b> i nomi tronchi (città, caffè), i monosillabi (re) e le parole straniere (bar, film). Irregolari: uomo → uomini, uovo → uova. I nomi in -co/-go, -ca/-ga seguono regole proprie (amico → amici, ma fuoco → fuochi)."},
 
   {lvl:"a", cat:"Sintassi", title:"C'è / Ci sono",
-   rule:"Per dire che qualcosa esiste o si trova in un luogo. <b>C'è</b> con il singolare, <b>ci sono</b> con il plurale.",
-   ex:["<b>C'è</b> un problema.","<b>Ci sono</b> due finestre.","Quanti studenti <b>ci sono</b>?"]},
+   def:"Segnalano l'esistenza o la presenza di qualcosa in un luogo, come l'inglese <i>there is / there are</i>.",
+   uses:[
+     {label:"c'è + nome singolare", ex:"C'è un problema. / In frigo c'è il latte."},
+     {label:"ci sono + nome plurale", ex:"Ci sono molte persone."}
+   ],
+   ex:["Quante stanze ci sono?","Scusi, c'è un bagno qui vicino?"],
+   warn:"Da non confondere con «è» (verbo essere): «Marco <i>è</i> qui» (dove si trova il soggetto) ≠ «Qui <i>c'è</i> Marco» (segnalo la sua presenza)."},
 
   {lvl:"a", cat:"Aggettivi", title:"L'accordo dell'aggettivo",
-   rule:"L'aggettivo concorda in genere e numero col nome. Due classi: in <b>-o</b> (quattro forme) e in <b>-e</b> (due forme).",
-   ex:["un ragazzo alt<b>o</b> / una ragazza alt<b>a</b>","ragazzi alt<b>i</b> / ragazze alt<b>e</b>","un libro interessant<b>e</b> / libri interessant<b>i</b>"],
+   def:"In italiano l'aggettivo non è mai invariabile: si accorda in <b>genere</b> e <b>numero</b> con il nome a cui si riferisce.",
+   form:"Due classi. Classe 1 (in -o): quattro forme. Classe 2 (in -e): due forme, uguali per maschile e femminile.",
    tables:[
-     {caption:"in -o", headers:["M","F"], rows:[["-o","-a"],["-i","-e"]]},
-     {caption:"in -e", headers:["M","F"], rows:[["-e","-e"],["-i","-i"]]}
-   ]},
+     {caption:"classe in -o", headers:["M","F"], rows:[["alto","alta"],["alti","alte"]]},
+     {caption:"classe in -e", headers:["M","F"], rows:[["grande","grande"],["grandi","grandi"]]}
+   ],
+   uses:[
+     {label:"classe in -o: 4 forme distinte", ex:"un libro rosso / una borsa rossa / libri rossi / borse rosse"},
+     {label:"classe in -e: 2 forme", ex:"un film interessante / una storia interessante"},
+     {label:"posizione: di norma dopo il nome", ex:"una macchina veloce"}
+   ],
+   warn:"Con un nome plurale di <b>genere misto</b> l'aggettivo va al maschile plurale: «Marco e Anna sono <i>simpatici</i>»."},
 
-  {lvl:"a", cat:"Verbi", title:"Presente: verbi regolari",
-   rule:"Tre coniugazioni: <b>-are, -ere, -ire</b>. Si toglie la desinenza dell'infinito e si aggiungono le terminazioni.",
-   ex:["Io parl<b>o</b> italiano.","Tu prend<b>i</b> il treno.","Loro dorm<b>ono</b> poco."],
+  {lvl:"a", cat:"Verbi", title:"Presente indicativo: verbi regolari",
+   def:"Il tempo base per ciò che è abituale, vero in generale o in corso ora. È il primo sistema verbale completo che si impara.",
+   form:"Si toglie la desinenza dell'infinito (-are, -ere, -ire) e si aggiungono le terminazioni della persona.",
    tables:[
      {caption:"parl-are", rows:[["io","parlo"],["tu","parli"],["lui/lei","parla"],["noi","parliamo"],["voi","parlate"],["loro","parlano"]]},
      {caption:"prend-ere", rows:[["io","prendo"],["tu","prendi"],["lui/lei","prende"],["noi","prendiamo"],["voi","prendete"],["loro","prendono"]]},
      {caption:"dorm-ire", rows:[["io","dormo"],["tu","dormi"],["lui/lei","dorme"],["noi","dormiamo"],["voi","dormite"],["loro","dormono"]]},
      {caption:"cap-ire (-isc-)", rows:[["io","capisco"],["tu","capisci"],["lui/lei","capisce"],["noi","capiamo"],["voi","capite"],["loro","capiscono"]]}
    ],
-   note:"Alcuni verbi in -ire inseriscono -isc-: capire, finire, preferire, pulire, spedire."},
+   uses:[
+     {label:"azioni abituali", ex:"Ogni mattina prendo il caffè."},
+     {label:"verità generali", ex:"L'acqua bolle a 100 gradi."},
+     {label:"azione nel presente", ex:"Adesso lavoro, ti chiamo dopo."},
+     {label:"futuro programmato", ex:"Domani parto per Roma."}
+   ],
+   warn:"I verbi in <b>-ire</b> si dividono in due gruppi: alcuni inseriscono <b>-isc-</b> in quattro persone su sei (capisco, capisci, capisce… capiscono). Non c'è regola sicura, vanno imparati: capire, finire, preferire, pulire, spedire, costruire."},
 
   {lvl:"a", cat:"Sintassi", title:"La negazione",
-   rule:"Si nega mettendo <b>non</b> immediatamente prima del verbo.",
-   ex:["<b>Non</b> mangio carne.","<b>Non</b> sono stanco.","Lei <b>non</b> parla spagnolo."]},
+   def:"Per rendere negativa una frase si mette <b>non</b> immediatamente prima del verbo.",
+   uses:[
+     {label:"non + verbo", ex:"Non capisco. / Non sono stanco."},
+     {label:"doppia negazione (corretta in italiano)", ex:"Non ho visto nessuno. / Non c'è niente."}
+   ],
+   warn:"A differenza di altre lingue, in italiano la <b>doppia negazione</b> è obbligatoria e non si annulla: «non… nessuno», «non… mai», «non… niente» restano frasi negative."},
 
   {lvl:"a", cat:"Verbi", title:"Modali: dovere, potere, volere",
-   rule:"Reggono un altro verbo all'infinito. <b>Dovere</b> = obbligo/necessità; <b>potere</b> = possibilità/permesso; <b>volere</b> = volontà.",
-   ex:["<b>Devo</b> studiare.","<b>Posso</b> entrare?","<b>Voglio</b> un caffè."],
+   def:"Tre verbi che accompagnano un altro verbo all'infinito per esprimere obbligo, possibilità o volontà. Irregolari e frequentissimi.",
+   form:"Verbo modale coniugato + <b>infinito</b>, senza preposizione: «devo studiare».",
    tables:[
      {caption:"dovere", rows:[["io","devo"],["tu","devi"],["lui/lei","deve"],["noi","dobbiamo"],["voi","dovete"],["loro","devono"]]},
      {caption:"potere", rows:[["io","posso"],["tu","puoi"],["lui/lei","può"],["noi","possiamo"],["voi","potete"],["loro","possono"]]},
      {caption:"volere", rows:[["io","voglio"],["tu","vuoi"],["lui/lei","vuole"],["noi","vogliamo"],["voi","volete"],["loro","vogliono"]]}
-   ]},
+   ],
+   uses:[
+     {label:"dovere — obbligo, necessità", ex:"Devo lavorare. / Devi stare attento."},
+     {label:"potere — possibilità, permesso", ex:"Posso aiutarti. / Posso uscire?"},
+     {label:"volere — volontà, desiderio", ex:"Voglio imparare l'italiano."}
+   ],
+   warn:"Nei tempi composti l'ausiliare è di solito quello del verbo all'infinito: «<i>Sono</i> dovuto partire» (partire vuole essere), «<i>Ho</i> dovuto studiare» (studiare vuole avere)."},
 
   {lvl:"a", cat:"Preposizioni", title:"Le preposizioni semplici",
-   rule:"Sono <b>di, a, da, in, con, su, per, tra/fra</b>. Esprimono relazioni di luogo, tempo, possesso, mezzo, scopo.",
-   ex:["il libro <b>di</b> Maria","vado <b>a</b> Roma, abito <b>in</b> Italia","vengo <b>da</b> Napoli, esco <b>con</b> gli amici"],
-   note:"di = possesso/specificazione · a = luogo (città)/termine · da = provenienza/agente · in = luogo (paesi)/mezzo · con = compagnia/mezzo."},
+   def:"Parole brevi e invariabili che collegano elementi della frase ed esprimono relazioni di luogo, tempo, possesso, mezzo, scopo. L'uso è in gran parte idiomatico.",
+   form:"Sono: <b>di, a, da, in, con, su, per, tra/fra</b>.",
+   uses:[
+     {label:"di — possesso, specificazione, materia", ex:"il libro di Anna, un tavolo di legno"},
+     {label:"a — luogo (città), termine, ora", ex:"a Roma, a Maria, alle tre"},
+     {label:"da — provenienza, agente, «a casa di»", ex:"vengo da Napoli, vado dal medico"},
+     {label:"in — luogo (Paesi, ambienti), mezzo", ex:"in Italia, in treno"},
+     {label:"con — compagnia, mezzo", ex:"esco con te, scrivo con la penna"}
+   ],
+   warn:"Città contro Paesi: si va «<b>a</b> Roma» ma «<b>in</b> Italia». È una distinzione fissa, non logica, da memorizzare caso per caso."},
 
   {lvl:"a", cat:"Aggettivi", title:"Gli aggettivi possessivi",
-   rule:"Indicano possesso e concordano con la <b>cosa posseduta</b>, non col possessore. Di norma vogliono l'articolo.",
-   ex:["<b>il mio</b> libro, <b>la mia</b> casa","<b>i tuoi</b> amici, <b>le sue</b> idee","<b>mia</b> madre, <b>tuo</b> fratello (senza articolo)"],
+   def:"Indicano a chi appartiene qualcosa. In italiano concordano con la <b>cosa posseduta</b>, non con chi possiede, e di norma vogliono l'articolo.",
+   form:"Struttura tipica: <b>articolo + possessivo + nome</b> («il mio libro», «le mie chiavi»).",
    tables:[
      {headers:["M sing.","F sing.","M plur.","F plur."], rows:[
-       ["mio","mia","miei","mie"],
-       ["tuo","tua","tuoi","tue"],
-       ["suo","sua","suoi","sue"],
-       ["nostro","nostra","nostri","nostre"],
-       ["vostro","vostra","vostri","vostre"],
-       ["loro","loro","loro","loro"]
+       ["mio","mia","miei","mie"],["tuo","tua","tuoi","tue"],["suo","sua","suoi","sue"],
+       ["nostro","nostra","nostri","nostre"],["vostro","vostra","vostri","vostre"],["loro","loro","loro","loro"]
      ]}
    ],
-   note:"Niente articolo con i nomi di famiglia al singolare (mia sorella), ma sì con loro (la loro madre) e al plurale (i miei fratelli)."},
+   uses:[
+     {label:"con l'articolo: caso normale", ex:"la tua idea, i nostri amici"},
+     {label:"senza articolo: familiari singolari", ex:"mia madre, tuo fratello, sua zia"},
+     {label:"loro: sempre con l'articolo", ex:"la loro casa, i loro figli"}
+   ],
+   warn:"«suo/sua» vale sia <b>«di lui»</b> sia <b>«di lei»</b>: concorda con l'oggetto, non col proprietario. «Marco ama <i>sua</i> sorella» e «Anna ama <i>suo</i> fratello» usano la stessa radice."},
 
   {lvl:"a", cat:"Sintassi", title:"L'ora",
-   rule:"Si chiede «Che ora è? / Che ore sono?». Si risponde con <b>è</b> per l'una, mezzogiorno e mezzanotte; con <b>sono le</b> per tutte le altre.",
-   ex:["<b>È</b> l'una.","<b>Sono le</b> tre e mezza.","<b>Sono le</b> otto meno un quarto."]},
+   def:"Per dire l'ora si usa il verbo essere, con una particolarità: singolare o plurale a seconda dell'ora.",
+   form:"«È» + l'una / mezzogiorno / mezzanotte; «Sono le» + tutte le altre ore.",
+   uses:[
+     {label:"ore «singolari»", ex:"È l'una. / È mezzogiorno."},
+     {label:"ore «plurali»", ex:"Sono le otto."},
+     {label:"minuti: «e» fino alla mezza, «meno» dopo", ex:"Sono le 9 e venti. / Sono le 9 meno un quarto."}
+   ],
+   warn:"L'articolo femminile (l', le) è obbligatorio perché sottintende «ora/ore»: «sono <b>le</b> tre»."},
 
   {lvl:"a", cat:"Verbi", title:"Il verbo piacere",
-   rule:"Costruzione invertita: il soggetto è la cosa che piace. <b>piace</b> + singolare o infinito, <b>piacciono</b> + plurale. La persona si esprime col pronome indiretto.",
-   ex:["<b>Mi piace</b> il caffè.","<b>Mi piacciono</b> i dolci.","<b>Ti piace</b> viaggiare?"],
+   def:"Esprime gradimento, ma con una costruzione <b>rovesciata</b>: ciò che piace è il soggetto grammaticale, la persona che prova il gradimento è un complemento.",
+   form:"pronome indiretto + <b>piace</b> (+ singolare/infinito) / <b>piacciono</b> (+ plurale). Alla lettera: «a me è gradito il caffè».",
    tables:[
      {headers:["Pronome","+ sing./infinito","+ plurale"], rows:[
        ["mi / ti / gli·le","piace","piacciono"],
        ["ci / vi / gli","piace","piacciono"]
      ]}
-   ]},
+   ],
+   uses:[
+     {label:"piace + nome singolare", ex:"Mi piace la musica."},
+     {label:"piace + verbo all'infinito", ex:"Mi piace leggere."},
+     {label:"piacciono + nome plurale", ex:"Mi piacciono i gatti."},
+     {label:"al passato (con essere)", ex:"Mi è piaciuto il film. / Mi sono piaciute le foto."}
+   ],
+   warn:"L'accordo è con la <b>cosa che piace</b>: «mi <i>piacciono</i> i dolci» (plurale per «i dolci»). Stessa costruzione per: servire, mancare, bastare, interessare, sembrare."},
 
   /* ---------------- A2 ---------------- */
   {lvl:"a2", cat:"Pragmatica", title:"Tu e Lei: formale e informale",
-   rule:"<b>Tu</b> (2ª persona) nei contesti informali; <b>Lei</b> come forma di cortesia con sconosciuti e superiori. Lei regge il verbo alla 3ª persona singolare.",
-   ex:["<b>Tu</b> come stai?","<b>Lei</b> come sta?","Scusi, <b>Lei</b> è il direttore?"]},
+   def:"L'italiano distingue due registri per rivolgersi a qualcuno: il <b>tu</b> confidenziale e il <b>Lei</b> di cortesia. Sceglierlo bene è competenza sociale, non solo grammaticale.",
+   form:"Tu = 2ª persona singolare. Lei = 3ª persona singolare femminile (anche con un uomo), spesso con la maiuscola.",
+   uses:[
+     {label:"tu — amici, famiglia, coetanei, bambini", ex:"Tu cosa fai stasera?"},
+     {label:"Lei — sconosciuti, contesti formali, superiori, clienti", ex:"Lei desidera?"},
+     {label:"voi — plurale, per entrambi i registri", ex:"Voi cosa pensate?"}
+   ],
+   warn:"Con il Lei <b>tutto</b> va alla 3ª persona, anche aggettivi e pronomi: «Lei è stanc<i>o</i>?» a un uomo, «Lei è stanc<i>a</i>?» a una donna. Passare al tu («darsi del tu») è un gesto sociale preciso."},
 
   {lvl:"a2", cat:"Preposizioni", title:"Le preposizioni articolate",
-   rule:"Fusione di preposizione + articolo determinativo. Si combinano regolarmente solo <b>di, a, da, in, su</b>; con e per restano separate.",
-   ex:["vado <b>al</b> cinema","parlo <b>della</b> scuola","esco <b>dallo</b> studio, dormo <b>nel</b> letto"],
+   def:"Quando una preposizione semplice incontra un articolo determinativo, le due parole si <b>fondono</b> in una sola.",
+   form:"Si combinano di, a, da, in, su. «Con» e «per» oggi restano quasi sempre separate (con il, per il).",
    tables:[
      {headers:["","il","lo","la","i","gli","le"], rows:[
        ["di","del","dello","della","dei","degli","delle"],
@@ -385,37 +490,64 @@ const ENTRIES = [
        ["in","nel","nello","nella","nei","negli","nelle"],
        ["su","sul","sullo","sulla","sui","sugli","sulle"]
      ]}
-   ]},
+   ],
+   uses:[
+     {label:"di + art. — specificazione", ex:"il colore del mare"},
+     {label:"a + art. — luogo, termine", ex:"vado alla stazione"},
+     {label:"da + art. — provenienza", ex:"esco dal lavoro"},
+     {label:"in + art. — luogo", ex:"sono nello studio"},
+     {label:"su + art. — sopra", ex:"il libro è sul tavolo"}
+   ],
+   warn:"La fusione è <b>obbligatoria</b>: non «a il cinema» ma «al cinema». Davanti a vocale c'è l'apostrofo: dell'amico, all'università, nell'aula."},
 
   {lvl:"a2", cat:"Verbi", title:"Verbi irregolari comuni",
-   rule:"Verbi ad altissima frequenza con forme irregolari al presente: andare, fare, venire, stare, dare.",
-   ex:["<b>Vado</b> a casa.","<b>Faccio</b> i compiti.","<b>Vengo</b> con te."],
+   def:"Un piccolo gruppo di verbi ad altissima frequenza che non seguono le terminazioni regolari al presente e vanno imparati a memoria.",
    tables:[
      {caption:"andare", rows:[["io","vado"],["tu","vai"],["lui/lei","va"],["noi","andiamo"],["voi","andate"],["loro","vanno"]]},
      {caption:"fare", rows:[["io","faccio"],["tu","fai"],["lui/lei","fa"],["noi","facciamo"],["voi","fate"],["loro","fanno"]]},
      {caption:"venire", rows:[["io","vengo"],["tu","vieni"],["lui/lei","viene"],["noi","veniamo"],["voi","venite"],["loro","vengono"]]},
      {caption:"stare / dare", rows:[["sto","do"],["stai","dai"],["sta","dà"],["stiamo","diamo"],["state","date"],["stanno","danno"]]}
-   ]},
+   ],
+   uses:[
+     {label:"andare — spostamento (verso una meta)", ex:"Vado a scuola."},
+     {label:"venire — spostamento (verso chi parla)", ex:"Vieni alla festa?"},
+     {label:"fare — attività generica", ex:"Cosa fai? — Faccio i compiti."},
+     {label:"stare — stato, salute, + gerundio", ex:"Come stai? — Sto bene."},
+     {label:"dare — consegnare", ex:"Ti do il mio numero."}
+   ],
+   warn:"«fa» (fare) si scrive senza accento, ma «dà» (dare) lo prende per distinguerlo da «da» preposizione. Stessa logia per «dì» (giorno) vs «di» preposizione."},
 
   {lvl:"a2", cat:"Verbi", title:"Il passato prossimo",
-   rule:"Azioni concluse nel passato. Ausiliare <b>avere</b> o <b>essere</b> al presente + participio passato. Con <i>essere</i> il participio concorda col soggetto.",
-   ex:["<b>Ho mangiato</b> la pizza.","<b>Sono andato/a</b> a casa.","<b>Siamo arrivati</b> ieri."],
+   def:"Il tempo del passato più usato nel parlato. Indica un'azione <b>conclusa</b>, vista nel suo risultato o come evento puntuale, anche se recentissima.",
+   form:"ausiliare <b>avere</b> o <b>essere</b> al presente + participio passato. Regolare: -are → -ato, -ere → -uto, -ire → -ito.",
    tables:[
      {caption:"participio regolare", headers:["Infinito","Participio"], rows:[["-are","-ato"],["-ere","-uto"],["-ire","-ito"]]},
-     {caption:"participi irregolari", headers:["Infinito","Participio"], rows:[["fare","fatto"],["dire","detto"],["prendere","preso"],["leggere","letto"],["scrivere","scritto"],["vedere","visto"],["essere","stato"]]}
+     {caption:"irregolari frequenti", headers:["Infinito","Participio"], rows:[["fare","fatto"],["dire","detto"],["prendere","preso"],["leggere","letto"],["scrivere","scritto"],["vedere","visto"]]}
    ],
-   note:"Vogliono essere i verbi di movimento e stato (andare, venire, stare, nascere, morire…) e tutti i riflessivi."},
+   uses:[
+     {label:"evento concluso e puntuale", ex:"Ieri ho incontrato Luca."},
+     {label:"azione con effetto sul presente", ex:"Ho perso le chiavi (e ora non le trovo)."},
+     {label:"ausiliare AVERE — verbi transitivi", ex:"Ho letto un libro."},
+     {label:"ausiliare ESSERE — movimento/stato e riflessivi", ex:"Sono partito. / Mi sono alzato."}
+   ],
+   warn:"<b>Accordo del participio:</b> con essere concorda col soggetto (Maria è andat<i>a</i>, loro sono partit<i>i</i>); con avere è invariabile, ma concorda col pronome diretto che precede (Le mele? Le ho mangiat<i>e</i>). Altri participi da sapere: messo, chiesto, risposto, aperto, chiuso, offerto, perso, rimasto, venuto, nato, morto, stato."},
 
   {lvl:"a2", cat:"Verbi", title:"I verbi riflessivi",
-   rule:"L'azione ricade sul soggetto. Pronome riflessivo + verbo. Al passato prossimo sempre con <b>essere</b> e participio concordato.",
-   ex:["<b>Mi sveglio</b> alle sette.","Come <b>ti chiami</b>?","<b>Ci siamo divertiti</b>."],
+   def:"Verbi in cui l'azione «torna» sul soggetto, che è insieme chi compie e chi subisce. All'infinito finiscono in <b>-si</b> (lavarsi, alzarsi).",
+   form:"pronome riflessivo (mi, ti, si, ci, vi, si) + verbo coniugato normalmente.",
    tables:[
      {caption:"lavarsi", rows:[["io","mi lavo"],["tu","ti lavi"],["lui/lei","si lava"],["noi","ci laviamo"],["voi","vi lavate"],["loro","si lavano"]]}
-   ]},
+   ],
+   uses:[
+     {label:"riflessivi propri: l'azione torna sul soggetto", ex:"Mi lavo. / Ti vesti."},
+     {label:"riflessivi reciproci (plurale): «l'un l'altro»", ex:"Si amano. / Ci telefoniamo ogni giorno."},
+     {label:"con le parti del corpo: niente possessivo", ex:"Mi lavo le mani (non «le mie mani»)."}
+   ],
+   warn:"Ai tempi composti il riflessivo vuole <b>sempre essere</b>, con participio accordato: «mi sono lavat<i>o</i>/lavat<i>a</i>», «si sono divertit<i>i</i>»."},
 
   {lvl:"a2", cat:"Verbi", title:"L'imperativo",
-   rule:"Dà ordini, istruzioni e consigli. Forme per tu, Lei, voi. Il negativo del <b>tu</b> = <b>non</b> + infinito.",
-   ex:["<b>Mangia</b> la verdura!","<b>Non fumare</b>!","<b>Prenda</b> un caffè."],
+   def:"Il modo di ordini, istruzioni, consigli e inviti. Ha forme solo per tu, noi, voi e per il Lei di cortesia (manca la 1ª persona singolare).",
+   form:"Le forme di tu/noi/voi sono quasi uguali al presente; il <b>Lei</b> usa le forme del congiuntivo presente.",
    tables:[
      {headers:["","-are","-ere","-ire"], rows:[
        ["tu","parla","prendi","dormi"],
@@ -423,118 +555,222 @@ const ENTRIES = [
        ["voi","parlate","prendete","dormite"]
      ]}
    ],
-   note:"Negativo: tu → non + infinito (non parlare); Lei/voi → non + imperativo (non parli, non parlate)."},
+   uses:[
+     {label:"ordini e istruzioni", ex:"Apri la finestra! / Girate a destra."},
+     {label:"consigli", ex:"Riposati un po'."},
+     {label:"forma di cortesia (Lei)", ex:"Si accomodi. / Mi dica."}
+   ],
+   warn:"Il negativo del <b>tu</b> è speciale: non + infinito → «non parlare!», «non andare!». I pronomi si <b>attaccano</b> al verbo con tu/noi/voi (dimmi!, alzati!, andiamocene!), ma vanno <b>prima</b> col Lei (mi dica, si accomodi)."},
 
   {lvl:"a2", cat:"Aggettivi", title:"Dimostrativi: questo e quello",
-   rule:"<b>Questo</b> per ciò che è vicino, <b>quello</b> per ciò che è lontano. <i>Quello</i> davanti al nome segue le forme dell'articolo determinativo.",
-   ex:["<b>questo</b> libro, <b>questa</b> casa","<b>quel</b> ragazzo, <b>quella</b> macchina","<b>quegli</b> studenti, <b>quei</b> libri"],
+   def:"Indicano la distanza di qualcosa rispetto a chi parla: <b>questo</b> (vicino) e <b>quello</b> (lontano).",
+   form:"Questo ha 4 forme regolari. <b>Quello</b>, davanti al nome, si comporta come l'articolo determinativo.",
    tables:[
      {caption:"questo", headers:["M","F"], rows:[["questo / quest'","questa / quest'"],["questi","queste"]]},
      {caption:"quello", headers:["M","F"], rows:[["quel/quello/quell'","quella/quell'"],["quei/quegli","quelle"]]}
-   ]},
+   ],
+   uses:[
+     {label:"questo — vicino a chi parla", ex:"Questo caffè è ottimo."},
+     {label:"quello — lontano da chi parla", ex:"Quella montagna è alta."},
+     {label:"come pronomi (senza nome)", ex:"Prendo questo, non quello."}
+   ],
+   warn:"Come aggettivo, «quello» cambia secondo la parola che segue, esattamente come l'articolo: «quel ragazzo», «quello studente», «quegli amici», «quei libri»."},
 
   {lvl:"a2", cat:"Aggettivi", title:"I comparativi",
-   rule:"Maggioranza: <b>più … di/che</b>; minoranza: <b>meno … di/che</b>; uguaglianza: <b>(così)… come</b>, <b>(tanto)… quanto</b>. <i>Di</i> davanti a nomi e pronomi; <i>che</i> tra due termini riferiti allo stesso soggetto.",
-   ex:["Marco è più alto <b>di</b> Luca.","Leggo più <b>che</b> scrivo.","Sono alto <b>come</b> te."],
-   note:"Irregolari: buono → migliore, cattivo → peggiore, grande → maggiore, piccolo → minore."},
+   def:"Confrontano due elementi rispetto a una qualità, stabilendo se uno è superiore, inferiore o uguale all'altro.",
+   form:"Maggioranza: <b>più</b> …; minoranza: <b>meno</b> …; uguaglianza: (così) … <b>come</b> / (tanto) … <b>quanto</b>.",
+   uses:[
+     {label:"di — davanti a nomi, pronomi, numeri", ex:"Marco è più alto di Luca."},
+     {label:"che — tra due termini sullo stesso piano", ex:"È più furbo che intelligente. / Leggo più che scrivo."},
+     {label:"uguaglianza", ex:"Sono alto come te."}
+   ],
+   warn:"Comparativi <b>irregolari</b> accanto alle forme regolari: buono → migliore, cattivo → peggiore, grande → maggiore, piccolo → minore."},
 
   {lvl:"a2", cat:"Pronomi", title:"I pronomi diretti",
-   rule:"Sostituiscono l'oggetto diretto (chi? che cosa?): <b>mi, ti, lo/la, ci, vi, li/le</b>. Al passato prossimo lo/la/li/le concordano col participio.",
-   ex:["Compro il pane → <b>Lo</b> compro.","Vedo Maria → <b>La</b> vedo.","Ho visto i film → <b>Li</b> ho vist<b>i</b>."]},
+   def:"Sostituiscono il <b>complemento oggetto</b> (la persona o cosa su cui ricade direttamente l'azione) per non ripeterlo.",
+   form:"mi, ti, lo/la, ci, vi, li/le. Di norma vanno <b>prima</b> del verbo.",
+   uses:[
+     {label:"sostituiscono l'oggetto già nominato", ex:"Conosci Maria? — Sì, la conosco."},
+     {label:"posizione: prima del verbo coniugato", ex:"Ti aspetto."},
+     {label:"si attaccano a infinito e imperativo", ex:"Voglio vederlo. / Chiamala!"}
+   ],
+   warn:"Al passato prossimo lo/la/li/le fanno <b>concordare</b> il participio: «Hai visto i film? — Sì, li ho vist<i>i</i>». «Lo» e «la» davanti a ho/hai/ha si apostrofano: «l'ho visto»."},
 
-  {lvl:"a2", cat:"Verbi", title:"Condizionale di cortesia: vorrei",
-   rule:"<b>Vorrei, potrei, dovrei</b> per richieste, proposte e consigli gentili. Più educato dell'indicativo (voglio, posso, devo).",
-   ex:["<b>Vorrei</b> un caffè.","<b>Potrei</b> avere il conto?","<b>Dovresti</b> riposare."]},
+  {lvl:"a2", cat:"Verbi", title:"Condizionale di cortesia",
+   def:"Una prima forma di condizionale, utile fin da subito perché rende qualsiasi richiesta più educata e meno brusca.",
+   form:"Forme fisse più utili: <b>vorrei, potrei, dovrei</b> (1ª persona); vorresti, potresti, dovresti (2ª).",
+   uses:[
+     {label:"vorrei — desiderio attenuato", ex:"Vorrei un caffè, per favore."},
+     {label:"potrei / potresti — richiesta gentile", ex:"Potresti aiutarmi?"},
+     {label:"dovresti — consiglio", ex:"Dovresti riposare di più."}
+   ],
+   warn:"«Voglio un caffè» è corretto ma suona brusco; «<i>Vorrei</i> un caffè» è la forma che ci si aspetta da un adulto al bar o in negozio. È una questione di registro, non di grammatica."},
 
   {lvl:"a2", cat:"Verbi", title:"Sapere e potere",
-   rule:"<b>Sapere</b> = capacità appresa o conoscere un fatto; <b>potere</b> = possibilità concreta o permesso.",
-   ex:["<b>So</b> nuotare. (capacità)","Non <b>posso</b> nuotare qui: è vietato. (permesso)","<b>So</b> che arrivi domani. (fatto)"]},
+   def:"Due verbi che in molte lingue si traducono allo stesso modo, ma in italiano coprono significati diversi: <b>capacità</b> contro <b>possibilità</b>.",
+   uses:[
+     {label:"sapere + infinito — abilità appresa", ex:"So guidare. / Sai nuotare?"},
+     {label:"sapere + nome/frase — conoscere un fatto", ex:"So la verità. / So che è tardi."},
+     {label:"potere — possibilità concreta o permesso", ex:"Non posso venire (non ho tempo). / Posso entrare?"}
+   ],
+   warn:"«So nuotare» = ne sono capace, ho imparato. «Posso nuotare» = ho la possibilità qui e ora (l'acqua è calda, non è vietato). Scambiarli cambia il senso della frase."},
 
   /* ---------------- B1 ---------------- */
   {lvl:"b1", cat:"Verbi", title:"L'imperfetto",
-   rule:"Descrive il passato: abitudini, descrizioni, stati, azioni in corso. Terminazioni regolari uguali per le tre coniugazioni.",
-   ex:["Da bambino <b>giocavo</b> a calcio.","<b>Pioveva</b> e <b>faceva</b> freddo.","Mentre <b>studiavo</b>, ascoltavo musica."],
+   def:"Il secondo grande tempo del passato. Non racconta un evento concluso, ma <b>descrive</b>: com'erano le cose, cosa si faceva di abitudine, cosa era in corso.",
+   form:"Radice + terminazioni uguali per tutte e tre le coniugazioni (-avo/-evo/-ivo…). È uno dei tempi più regolari dell'italiano.",
    tables:[
      {caption:"parlare", rows:[["io","parlavo"],["tu","parlavi"],["lui/lei","parlava"],["noi","parlavamo"],["voi","parlavate"],["loro","parlavano"]]},
-     {caption:"irregolari", headers:["essere","fare"], rows:[["ero","facevo"],["eri","facevi"],["era","faceva"],["eravamo","facevamo"],["eravate","facevate"],["erano","facevano"]]}
+     {caption:"essere / fare", headers:["essere","fare"], rows:[["ero","facevo"],["eri","facevi"],["era","faceva"],["eravamo","facevamo"],["eravate","facevate"],["erano","facevano"]]}
    ],
-   note:"Irregolari da radice latina: dire → dicevo, bere → bevevo, fare → facevo."},
+   uses:[
+     {label:"abitudini nel passato", ex:"Da bambino giocavo a calcio ogni giorno."},
+     {label:"descrizioni (persone, luoghi, tempo)", ex:"La casa era grande e c'era un giardino."},
+     {label:"azione in corso, sfondo di un'altra", ex:"Dormivo quando hai chiamato."},
+     {label:"età e ora nel passato", ex:"Avevo dieci anni. / Erano le tre."}
+   ],
+   warn:"Pochissimi irregolari, quasi tutti dalla radice latina: essere → ero; fare → facevo; dire → dicevo; bere → bevevo."},
 
   {lvl:"b1", cat:"Verbi", title:"Imperfetto o passato prossimo?",
-   rule:"<b>Passato prossimo</b> = azione puntuale e conclusa che fa avanzare il racconto. <b>Imperfetto</b> = sfondo, descrizione, abitudine, azione in corso. Spesso convivono.",
-   ex:["Mentre <i>dormivo</i>, <i>è suonato</i> il telefono.","Ieri <i>faceva</i> caldo, così <i>sono andato</i> al mare.","Da piccolo <i>andavo</i> al mare ogni estate."]},
+   def:"Il punto più delicato del passato italiano: i due tempi non sono intercambiabili, ma raccontano il passato da <b>due punti di vista diversi</b>.",
+   uses:[
+     {label:"passato prossimo — l'evento che «succede»", ex:"Ho aperto la porta."},
+     {label:"imperfetto — la cornice in cui succede", ex:"Era notte e pioveva."},
+     {label:"insieme: sfondo + azione", ex:"Mentre cenavo (sfondo), è arrivato un messaggio (evento)."},
+     {label:"abitudine vs volta singola", ex:"Andavo sempre al mare ≠ Sono andato al mare ieri."}
+   ],
+   warn:"Spia utile (ma non assoluta): «mentre, ogni giorno, sempre» chiamano l'imperfetto; «ieri, una volta, all'improvviso» chiamano il passato prossimo. A decidere è comunque il <b>significato</b>, non la singola parola."},
 
   {lvl:"b1", cat:"Verbi", title:"Stare + gerundio",
-   rule:"Esprime un'azione in corso proprio in questo momento (o nel momento di cui si parla). <b>stare</b> coniugato + gerundio (-ando/-endo).",
-   ex:["<b>Sto studiando</b>.","<b>Stavano mangiando</b> quando sono arrivato."],
-   note:"<i>Stare per</i> + infinito esprime invece un'azione imminente: «Sto per uscire»."},
+   def:"La forma <b>progressiva</b> italiana: mette in primo piano un'azione còlta proprio nel suo svolgersi, ora o in un momento preciso del passato.",
+   form:"stare coniugato (presente o imperfetto) + gerundio: -are → -ando, -ere/-ire → -endo.",
+   uses:[
+     {label:"azione in corso ora", ex:"Sto leggendo, ti richiamo dopo."},
+     {label:"azione in corso nel passato (con imperfetto)", ex:"Stavo uscendo quando è suonato il telefono."}
+   ],
+   warn:"Non è obbligatoria come in inglese: per il presente abituale basta il presente semplice. «Lavoro in banca» (in generale) ≠ «Sto lavorando» (proprio ora). Diversa da «<b>stare per</b> + infinito» = azione imminente: «sto per uscire»."},
 
   {lvl:"b1", cat:"Verbi", title:"Il futuro semplice",
-   rule:"Azioni future, previsioni e supposizioni sul presente. Terminazioni uguali per tutti; -are e -ere condividono la radice in -er-.",
-   ex:["Domani <b>partirò</b>.","<b>Saranno</b> le cinque. (supposizione)","<b>Pioverà</b> nel weekend."],
+   def:"Il tempo delle azioni che devono ancora avvenire, ma anche — tipicamente italiano — delle <b>supposizioni</b> sul presente.",
+   form:"Radice del futuro + terminazioni uguali per tutti. I verbi in -are cambiano la -a- in -e- (parlare → parler-).",
    tables:[
      {caption:"regolari", headers:["parlare","prendere","dormire"], rows:[
        ["parlerò","prenderò","dormirò"],["parlerai","prenderai","dormirai"],["parlerà","prenderà","dormirà"],
        ["parleremo","prenderemo","dormiremo"],["parlerete","prenderete","dormirete"],["parleranno","prenderanno","dormiranno"]
      ]},
      {caption:"irregolari", headers:["essere","avere"], rows:[["sarò","avrò"],["sarai","avrai"],["sarà","avrà"],["saremo","avremo"],["sarete","avrete"],["saranno","avranno"]]}
-   ]},
+   ],
+   uses:[
+     {label:"eventi futuri", ex:"L'anno prossimo cambierò lavoro."},
+     {label:"previsioni", ex:"Domani pioverà."},
+     {label:"supposizione/probabilità sul presente", ex:"Saranno le cinque. / Avrà trent'anni."}
+   ],
+   warn:"Molti verbi hanno radice <b>contratta</b>: avere → avrò, andare → andrò, venire → verrò, vedere → vedrò, vivere → vivrò, bere → berrò. Vanno memorizzati."},
 
   {lvl:"b1", cat:"Nomi", title:"Il partitivo",
-   rule:"Esprime una quantità indefinita («un po' di», «alcuni»). <b>di + articolo determinativo</b>, oppure <i>qualche</i> + singolare, <i>alcuni/e</i> + plurale.",
-   ex:["Vorrei <b>del</b> pane.","Ho comprato <b>delle</b> mele.","C'è <b>qualche</b> problema."]},
+   def:"Esprime una quantità imprecisata, «una parte di» qualcosa. Funziona come <b>plurale dell'articolo indeterminativo</b> (che non esiste).",
+   form:"di + articolo determinativo (del, dello, della, dei, degli, delle). Alternative: «un po' di», «qualche» + singolare, «alcuni/e» + plurale.",
+   uses:[
+     {label:"quantità indefinita di non numerabili", ex:"Vorrei del pane / dell'acqua."},
+     {label:"«alcuni» numerabili (plurale di un/una)", ex:"Ho comprato delle mele."},
+     {label:"alternative equivalenti", ex:"qualche amico / alcuni amici / un po' di tempo"}
+   ],
+   warn:"Nelle frasi negative il partitivo di solito <b>sparisce</b>: «Ho del pane» → «Non ho pane» (non «non ho del pane»)."},
 
   {lvl:"b1", cat:"Verbi", title:"Il congiuntivo presente",
-   rule:"Esprime soggettività: opinione, dubbio, desiderio, emozione. Nelle subordinate dopo <i>penso che, credo che, voglio che, è importante che</i>, con soggetti diversi nelle due frasi.",
-   ex:["Penso che tu <b>abbia</b> ragione.","Voglio che tu <b>venga</b>.","È meglio che <b>partiamo</b> presto."],
+   def:"Il modo della <b>soggettività</b>. L'indicativo presenta i fatti come certi; il congiuntivo li filtra attraverso un'opinione, un dubbio, un desiderio o un'emozione. Si usa quasi solo nelle subordinate.",
+   form:"Si forma dalla radice del presente. Le prime tre persone sono identiche, perciò spesso si aggiunge il pronome: che io parli / che tu parli / che lui parli.",
    tables:[
      {caption:"regolari", headers:["parlare","prendere","dormire"], rows:[
        ["parli","prenda","dorma"],["parli","prenda","dorma"],["parli","prenda","dorma"],
        ["parliamo","prendiamo","dormiamo"],["parliate","prendiate","dormiate"],["parlino","prendano","dormano"]
      ]},
      {caption:"irregolari", headers:["essere","avere"], rows:[["sia","abbia"],["sia","abbia"],["sia","abbia"],["siamo","abbiamo"],["siate","abbiate"],["siano","abbiano"]]}
-   ]},
+   ],
+   uses:[
+     {label:"dopo verbi di opinione e dubbio", ex:"Penso che sia giusto. / Dubito che venga."},
+     {label:"dopo verbi di volontà e desiderio", ex:"Voglio che tu studi."},
+     {label:"dopo espressioni impersonali", ex:"È importante che tu lo sappia."},
+     {label:"dopo certe congiunzioni (benché, affinché, prima che)", ex:"Te lo dico affinché tu capisca."}
+   ],
+   warn:"Serve il congiuntivo solo se i <b>due soggetti sono diversi</b>. Se il soggetto è lo stesso si usa «di + infinito»: «Penso che <i>tu</i> abbia ragione» ma «Penso <i>di</i> avere ragione» (io–io). Irregolari: essere (sia), avere (abbia), fare (faccia), andare (vada), venire (venga), dare (dia), stare (stia)."},
 
   {lvl:"b1", cat:"Verbi", title:"Il congiuntivo passato",
-   rule:"Soggettività su un fatto già avvenuto. <b>congiuntivo presente di essere/avere + participio passato</b>.",
-   ex:["Credo che <b>siano</b> già <b>partiti</b>.","Mi dispiace che tu <b>abbia avuto</b> problemi."]},
+   def:"Esprime la stessa soggettività del congiuntivo presente, ma riferita a un fatto <b>già avvenuto</b> rispetto al momento in cui si parla.",
+   form:"congiuntivo presente di essere/avere + participio passato (sia andato, abbia parlato).",
+   uses:[
+     {label:"opinione su un fatto passato", ex:"Credo che sia già partito."},
+     {label:"emozione per qualcosa di accaduto", ex:"Mi dispiace che tu abbia avuto problemi."}
+   ],
+   warn:"Valgono le regole dei tempi composti: con essere il participio <b>concorda</b> col soggetto (credo che sia partit<i>a</i> / siano partit<i>i</i>)."},
 
   {lvl:"b1", cat:"Verbi", title:"Il congiuntivo imperfetto",
-   rule:"Soggettività riferita al passato e ipotesi possibili. Dopo reggente al passato o al condizionale, e nel periodo ipotetico della possibilità.",
-   ex:["Pensavo che <b>fosse</b> facile.","Se <b>avessi</b> tempo, viaggerei.","Vorrei che tu <b>venissi</b>."],
+   def:"Il congiuntivo riferito al passato o a ipotesi non reali. Regge il periodo ipotetico della possibilità e le frasi soggettive con reggente al passato.",
+   form:"Terminazioni in <b>-ssi</b> molto regolari (-assi/-essi/-issi…). Pochi irregolari.",
    tables:[
      {caption:"regolari", headers:["parlare","prendere","dormire"], rows:[
        ["parlassi","prendessi","dormissi"],["parlassi","prendessi","dormissi"],["parlasse","prendesse","dormisse"],
        ["parlassimo","prendessimo","dormissimo"],["parlaste","prendeste","dormiste"],["parlassero","prendessero","dormissero"]
      ]},
      {caption:"irregolari", headers:["essere","fare"], rows:[["fossi","facessi"],["fossi","facessi"],["fosse","facesse"],["fossimo","facessimo"],["foste","faceste"],["fossero","facessero"]]}
-   ]},
+   ],
+   uses:[
+     {label:"frase soggettiva con reggente al passato", ex:"Pensavo che fosse facile."},
+     {label:"desiderio", ex:"Vorrei che tu venissi."},
+     {label:"ipotesi possibile (periodo ipotetico 2° tipo)", ex:"Se avessi tempo, viaggerei."}
+   ],
+   warn:"Irregolari principali: essere → fossi; dare → dessi; stare → stessi; fare → facessi; dire → dicessi; bere → bevessi."},
 
   {lvl:"b1", cat:"Verbi", title:"Il condizionale semplice",
-   rule:"Desideri, richieste cortesi, consigli e conseguenza di un'ipotesi. Stessa radice del futuro + terminazioni -ei, -esti, -ebbe, -emmo, -este, -ebbero.",
-   ex:["<b>Vorrei</b> partire.","<b>Dovresti</b> riposare.","Al posto tuo, <b>andrei</b>."],
+   def:"Il modo di ciò che dipende da una condizione, dei desideri e delle richieste cortesi. È la <b>conseguenza</b> del periodo ipotetico.",
+   form:"Stessa radice (anche irregolare) del futuro + terminazioni -ei, -esti, -ebbe, -emmo, -este, -ebbero.",
    tables:[
      {caption:"parlare / essere / avere", headers:["parlare","essere","avere"], rows:[
        ["parlerei","sarei","avrei"],["parleresti","saresti","avresti"],["parlerebbe","sarebbe","avrebbe"],
        ["parleremmo","saremmo","avremmo"],["parlereste","sareste","avreste"],["parlerebbero","sarebbero","avrebbero"]
      ]}
-   ]},
+   ],
+   uses:[
+     {label:"desiderio", ex:"Mi piacerebbe vivere al mare."},
+     {label:"richiesta o consiglio cortese", ex:"Potresti aprire la finestra? / Dovresti riposare."},
+     {label:"conseguenza di un'ipotesi", ex:"Con più tempo, finirei prima."},
+     {label:"notizia non confermata (giornalismo)", ex:"Il ministro sarebbe pronto a dimettersi."}
+   ],
+   warn:"Chi conosce il futuro è avvantaggiato: la radice è la stessa (andrò → andrei, avrò → avrei). Cambiano solo le terminazioni."},
 
   {lvl:"b1", cat:"Sintassi", title:"Il periodo ipotetico",
-   rule:"Tre tipi. <b>1° realtà:</b> se + indicativo, indicativo/futuro. <b>2° possibilità:</b> se + cong. imperfetto, condizionale presente. <b>3° irrealtà nel passato:</b> se + cong. trapassato, condizionale passato.",
-   ex:["Se <i>piove</i>, <i>resto</i> a casa.","Se <i>avessi</i> soldi, <i>comprerei</i> una casa.","Se <i>avessi studiato</i>, <i>avrei superato</i> l'esame."]},
+   def:"La struttura «se…, allora…». In italiano modo e tempo dei verbi cambiano a seconda di <b>quanto l'ipotesi è realistica</b>: si distinguono tre tipi.",
+   uses:[
+     {label:"1° tipo — realtà: se + indicativo, indicativo/futuro", ex:"Se studi, passi l'esame. / Se piove, resterò a casa."},
+     {label:"2° tipo — possibilità: se + cong. imperfetto, condizionale presente", ex:"Se avessi tempo, viaggerei."},
+     {label:"3° tipo — irrealtà nel passato: se + cong. trapassato, condizionale passato", ex:"Se avessi studiato, avrei superato l'esame."}
+   ],
+   warn:"Errore classico: il condizionale dopo «se». <b>Non</b> «se avrei tempo» ma «se <i>avessi</i> tempo». Dopo «se» va il congiuntivo (tipi 2 e 3), mai il condizionale."},
 
   {lvl:"b1", cat:"Pronomi", title:"Pronomi relativi: che e cui",
-   rule:"<b>Che</b> = soggetto o oggetto diretto, invariabile. <b>Cui</b> dopo una preposizione (a cui, di cui, con cui). <b>Il/la cui</b> esprime possesso.",
-   ex:["Il libro <b>che</b> leggo.","La ragazza <b>con cui</b> parlo.","Lo scrittore <b>il cui</b> romanzo è famoso."]},
+   def:"Collegano due frasi riferendosi a un elemento già nominato, per non ripeterlo. Sono lo strumento principale per costruire <b>frasi complesse</b>.",
+   form:"«che» è invariabile e copre soggetto e oggetto diretto; «cui» si usa dopo una preposizione.",
+   uses:[
+     {label:"che = soggetto", ex:"Il treno che parte alle 8 è in ritardo."},
+     {label:"che = oggetto diretto", ex:"Il libro che leggo è bello."},
+     {label:"cui = dopo preposizione", ex:"La persona a cui scrivo / il motivo per cui resto."},
+     {label:"il/la/i/le cui = possesso («di cui»)", ex:"Lo scrittore il cui romanzo è famoso."}
+   ],
+   warn:"Dopo una preposizione <b>non</b> si usa «che»: non «la casa in che vivo» ma «la casa in <i>cui</i> vivo». In alternativa, più formale: il quale / la quale / i quali / le quali."},
 
   {lvl:"b1", cat:"Pronomi", title:"I pronomi indiretti",
-   rule:"Sostituiscono il complemento di termine (a chi?): <b>mi, ti, gli/le, ci, vi, gli</b>. Usati con dare, dire, scrivere, telefonare, piacere.",
-   ex:["Telefono a Maria → <b>Le</b> telefono.","Ho scritto a Marco → <b>Gli</b> ho scritto.","<b>Ci</b> hanno regalato un libro."]},
+   def:"Sostituiscono il <b>complemento di termine</b>, la persona «a cui» è diretta l'azione (a chi do, dico, scrivo, telefono…).",
+   form:"mi, ti, gli (a lui), le (a lei), ci, vi, gli/loro (a loro).",
+   uses:[
+     {label:"con verbi di «dare/dire» a qualcuno", ex:"Do un libro a Marco → Gli do un libro."},
+     {label:"con telefonare, rispondere, piacere", ex:"Telefono a Maria → Le telefono."},
+     {label:"posizione: come i diretti", ex:"Ti scrivo. / Voglio parlarti."}
+   ],
+   warn:"Distinzione cruciale: «<i>La</i> vedo» (diretto = vedo lei) contro «<i>Le</i> parlo» (indiretto = parlo a lei). A differenza dei diretti, gli indiretti <b>non</b> fanno concordare il participio: «Le ho parlato» (non «parlata»)."},
 
   {lvl:"b1", cat:"Pronomi", title:"I pronomi combinati",
-   rule:"Indiretto + diretto insieme. Mi/ti/ci/vi diventano <b>me, te, ce, ve</b>; gli/le diventano <b>glie-</b> e si uniscono: glielo, gliela, glieli, gliele.",
-   ex:["<b>Me lo</b> dai?","<b>Glielo</b> ho già detto.","<b>Te la</b> mando domani."],
+   def:"Quando in una frase ci sono insieme un pronome <b>indiretto</b> e uno <b>diretto</b>, si fondono in un'unica forma con alcune trasformazioni.",
+   form:"L'indiretto va per primo e cambia: mi/ti/ci/vi → me, te, ce, ve; gli e le → glie- (unito al diretto).",
    tables:[
      {headers:["+ lo","+ la","+ li","+ le"], rows:[
        ["me lo","me la","me li","me le"],
@@ -543,132 +779,261 @@ const ENTRIES = [
        ["ce lo","ce la","ce li","ce le"],
        ["ve lo","ve la","ve li","ve le"]
      ]}
-   ]},
+   ],
+   uses:[
+     {label:"indiretto + diretto", ex:"Me lo dai? (a me + lo)"},
+     {label:"glie- per lui e per lei", ex:"Glielo dico (a lui / a lei)."}
+   ],
+   warn:"«gli» e «le» diventano <b>entrambi</b> «glie-»: «glielo dico» può valere sia «lo dico a lui» sia «lo dico a lei». Decide il contesto."},
 
   {lvl:"b1", cat:"Verbi", title:"I verbi pronominali",
-   rule:"Verbi che con i pronomi cambiano significato: <b>andarsene</b> (andare via), <b>farcela</b> (riuscire), <b>cavarsela</b> (gestire), <b>volerci</b> (essere necessario), <b>metterci</b> (impiegare tempo).",
-   ex:["Me ne vado.","Non ce la faccio.","Ci vogliono due ore.","Ci metto dieci minuti."]},
+   def:"Verbi «incastonati» con uno o due pronomi che ne <b>cambiano il significato</b> rispetto al verbo di partenza. Frequentissimi nell'italiano parlato e idiomatico.",
+   uses:[
+     {label:"andarsene = andare via", ex:"È tardi, me ne vado."},
+     {label:"farcela = riuscire", ex:"È dura, ma ce la faccio."},
+     {label:"cavarsela = riuscire a gestire", ex:"Non parlo bene il tedesco, ma me la cavo."},
+     {label:"volerci = essere necessario", ex:"Ci vogliono due ore."},
+     {label:"metterci = impiegare (soggetto personale)", ex:"Ci metto dieci minuti."}
+   ],
+   warn:"Occhio a <b>volerci</b> contro <b>metterci</b>: «ci vuole/vogliono» è impersonale e concorda con la cosa necessaria; «ci metto/metti…» ha un soggetto personale. «Ci vogliono 2 ore» ma «<i>Io</i> ci metto 2 ore»."},
 
   {lvl:"b1", cat:"Sintassi", title:"Si impersonale e si passivante",
-   rule:"<b>Si</b> + verbo alla 3ª persona per un soggetto generico («la gente»). È <b>passivante</b> quando c'è un oggetto che diventa soggetto: il verbo concorda con esso.",
-   ex:["In Italia <b>si mangia</b> bene.","<b>Si vendono</b> case.","Qui <b>si parla</b> italiano."]},
+   def:"Il «si» permette di parlare <b>senza indicare chi compie l'azione</b>: o perché il soggetto è generico («la gente»), o per spostare il focus sull'oggetto.",
+   form:"si + verbo alla 3ª persona. Singolare (impersonale) oppure singolare/plurale secondo l'oggetto (passivante).",
+   uses:[
+     {label:"impersonale: soggetto generico", ex:"In Italia si mangia bene. / Come si dice…?"},
+     {label:"passivante: il verbo concorda con l'oggetto", ex:"Si vende una casa / Si vendono case."}
+   ],
+   warn:"Nel «si» passivante il verbo si <b>accorda</b> con ciò che subisce l'azione: «si affitta<i>no</i> camere» (plurale), non «si affitta camere»."},
 
   {lvl:"b1", cat:"Sintassi", title:"La forma passiva",
-   rule:"L'oggetto diventa soggetto. <b>essere</b> (o <b>venire</b>) + participio passato; l'agente si introduce con <b>da</b>.",
-   ex:["La torta <b>è stata fatta da</b> Anna.","Il pacco <b>viene consegnato</b> domani.","I biglietti <b>sono</b> già <b>stati venduti</b>."]},
+   def:"Ribalta la prospettiva: ciò che <b>subisce</b> l'azione diventa soggetto, mentre chi la compie passa in secondo piano (o sparisce).",
+   form:"essere (o venire) + participio passato, accordato col soggetto. Chi compie l'azione è introdotto da «da».",
+   uses:[
+     {label:"con essere (qualsiasi tempo)", ex:"La lettera è stata scritta da Marco."},
+     {label:"con venire (tempi semplici, sottolinea l'azione)", ex:"Il pacco viene consegnato domani."},
+     {label:"agente introdotto da «da»", ex:"Il quadro è stato dipinto da un artista locale."}
+   ],
+   warn:"«Venire» come ausiliare passivo vale <b>solo nei tempi semplici</b> (viene fatto, veniva fatto), mai nei composti: non «è venuto fatto». Lì si usa solo essere."},
 
   {lvl:"b1", cat:"Aggettivi", title:"I superlativi",
-   rule:"<b>Relativo:</b> il/la più … (di) — il massimo entro un gruppo. <b>Assoluto:</b> -issimo oppure molto + aggettivo — grado altissimo in assoluto.",
-   ex:["È <b>il più</b> alto <b>della</b> classe.","È bell<b>issimo</b>.","È <b>molto</b> interessante."],
-   note:"Irregolari: buono → ottimo, cattivo → pessimo, grande → massimo, piccolo → minimo."},
+   def:"Esprimono il <b>grado massimo</b> di una qualità: rispetto a un gruppo (relativo) o in assoluto (assoluto).",
+   form:"Relativo: articolo + più/meno + aggettivo (+ di/tra). Assoluto: aggettivo + -issimo, oppure molto + aggettivo.",
+   uses:[
+     {label:"relativo: il massimo dentro un gruppo", ex:"È lo studente più bravo della classe."},
+     {label:"assoluto con -issimo", ex:"Il caffè è buonissimo."},
+     {label:"assoluto con «molto»", ex:"È molto interessante."}
+   ],
+   warn:"Irregolari: ottimo (= buonissimo), pessimo (= cattivissimo), massimo, minimo. Dopo il superlativo relativo la frase che segue vuole spesso il congiuntivo: «È il film più bello che io <i>abbia</i> visto»."},
 
   {lvl:"b1", cat:"Verbi", title:"Il passato remoto",
-   rule:"Azione conclusa e percepita come lontana dal presente. Tipico della narrazione storica e letteraria, e dell'uso parlato in alcune regioni del Sud.",
-   ex:["Dante <b>scrisse</b> la Divina Commedia.","Nel 1492 Colombo <b>arrivò</b> in America."],
+   def:"Un tempo del passato che presenta l'azione come conclusa e <b>«staccata»</b> dal presente. È il tempo della narrazione storica e letteraria, e dell'uso parlato in molte regioni del Centro-Sud.",
+   form:"Molto irregolare alla 1ª e 3ª singolare e alla 3ª plurale; spesso si impara prima a riconoscerlo che a produrlo.",
    tables:[
      {caption:"parlare / essere", headers:["parlare","essere"], rows:[
        ["parlai","fui"],["parlasti","fosti"],["parlò","fu"],["parlammo","fummo"],["parlaste","foste"],["parlarono","furono"]
      ]}
-   ]},
+   ],
+   uses:[
+     {label:"eventi storici", ex:"Nel 1861 nacque il Regno d'Italia."},
+     {label:"narrativa, fiabe, biografie", ex:"Il re chiamò il figlio e gli disse…"}
+   ],
+   warn:"Molti verbi seguono lo schema <b>«1-3-3»</b> (irregolari io/lui/loro, regolari le altre): prendere → presi, prendesti, prese, prendemmo, prendeste, presero. Da riconoscere: fu/furono, ebbe/ebbero, fece, disse, venne."},
 
   {lvl:"b1", cat:"Sintassi", title:"Il discorso indiretto",
-   rule:"Riportare le parole altrui. Cambiano pronomi, tempi verbali e indicatori di tempo/luogo. Con reggente al passato: presente → imperfetto, passato prossimo → trapassato, futuro → condizionale composto.",
-   ex:["«Vengo domani» → Disse che <b>sarebbe venuto</b> il giorno dopo.","«Ho finito» → Disse che <b>aveva finito</b>."]},
+   def:"Riferire ciò che qualcuno ha detto senza citarlo testualmente. Se il verbo che introduce è al <b>passato</b>, scattano cambi di tempi, pronomi e parole di tempo/luogo.",
+   uses:[
+     {label:"presente → imperfetto", ex:"«Sto bene» → Disse che stava bene."},
+     {label:"passato prossimo → trapassato", ex:"«Ho finito» → Disse che aveva finito."},
+     {label:"futuro → condizionale composto", ex:"«Verrò» → Disse che sarebbe venuto."},
+     {label:"cambiano anche gli indicatori", ex:"oggi → quel giorno; ieri → il giorno prima; qui → lì."}
+   ],
+   warn:"Il futuro nel discorso indiretto al passato diventa <b>condizionale passato</b> (sarebbe venuto), non presente: errore frequente «disse che verrebbe»."},
 
   /* ---------------- B2 ---------------- */
   {lvl:"b2", cat:"Verbi", title:"Il futuro anteriore",
-   rule:"Azione futura anteriore a un'altra azione futura, oppure supposizione su un fatto passato. <b>futuro di essere/avere + participio</b>.",
-   ex:["Quando <b>avrò finito</b>, ti chiamo.","<b>Sarà</b> già <b>partito</b>. (supposizione)"]},
+   def:"Esprime un'azione futura che sarà <b>già conclusa</b> prima di un'altra azione futura. Vale anche come supposizione su qualcosa di passato.",
+   form:"futuro semplice di essere/avere + participio passato (avrò finito, sarò partito).",
+   uses:[
+     {label:"azione futura anteriore a un'altra", ex:"Quando avrò finito, ti chiamo."},
+     {label:"supposizione su un fatto passato", ex:"Non risponde: sarà uscito."}
+   ],
+   warn:"Dopo «quando, appena, dopo che» riferiti al futuro, l'italiano preferisce il futuro anteriore dove altre lingue usano il presente: «appena <i>sarò arrivato</i>, ti scrivo»."},
 
   {lvl:"b2", cat:"Verbi", title:"Il congiuntivo trapassato",
-   rule:"Soggettività su un fatto anteriore a un altro passato; ramo del periodo ipotetico dell'irrealtà. <b>cong. imperfetto di essere/avere + participio</b>.",
-   ex:["Credevo che <b>fossero</b> già <b>usciti</b>.","Se <b>avessi saputo</b>, sarei venuto."]},
+   def:"Il congiuntivo che esprime un fatto <b>anteriore</b> a un altro momento passato. È anche il modo dell'ipotesi impossibile nel passato.",
+   form:"congiuntivo imperfetto di essere/avere + participio passato (fossi andato, avessi fatto).",
+   uses:[
+     {label:"anteriorità rispetto a un passato", ex:"Credevo che fossero già usciti."},
+     {label:"periodo ipotetico dell'irrealtà (3° tipo)", ex:"Se avessi saputo, sarei venuto."}
+   ],
+   warn:"Apre il periodo ipotetico del 3° tipo: «se + cong. trapassato… condizionale passato». Da tenere distinto dal 2° tipo, che usa il cong. <i>imperfetto</i> (possibilità nel presente)."},
 
-  {lvl:"b2", cat:"Sintassi", title:"La concordanza dei tempi (congiuntivo)",
-   rule:"Il tempo del congiuntivo dipende dal verbo reggente e dal rapporto temporale. Reggente al <b>presente</b> → cong. presente/passato; reggente al <b>passato/condizionale</b> → cong. imperfetto/trapassato.",
-   ex:["Penso che <i>venga</i> / <i>sia venuto</i>.","Pensavo che <i>venisse</i> / <i>fosse venuto</i>."],
+  {lvl:"b2", cat:"Sintassi", title:"La concordanza dei tempi",
+   def:"La regola che governa <b>quale tempo del congiuntivo</b> usare nella subordinata. Dipende da due cose: il tempo del verbo reggente e il rapporto temporale tra le due azioni.",
+   form:"Reggente al presente/futuro → cong. presente (contemporaneità) o passato (anteriorità). Reggente al passato/condizionale → cong. imperfetto o trapassato.",
    tables:[
      {headers:["Reggente","Contemporaneità","Anteriorità"], rows:[
        ["Presente","cong. presente","cong. passato"],
        ["Passato","cong. imperfetto","cong. trapassato"]
      ]}
-   ]},
+   ],
+   uses:[
+     {label:"presente + contemporaneità", ex:"Penso che venga (ora)."},
+     {label:"presente + anteriorità", ex:"Penso che sia venuto (prima)."},
+     {label:"passato + contemporaneità", ex:"Pensavo che venisse (allora)."},
+     {label:"passato + anteriorità", ex:"Pensavo che fosse venuto (prima di allora)."}
+   ],
+   warn:"L'errore tipico avanzato è «bloccare» il congiuntivo al presente anche con reggente al passato («pensavo che venga»). Il reggente al passato <b>tira indietro</b> tutto il sistema."},
 
   {lvl:"b2", cat:"Verbi", title:"Il gerundio: semplice e composto",
-   rule:"<b>Semplice</b> (-ando/-endo): azione contemporanea, modo, causa, mezzo. <b>Composto</b> (avendo/essendo + participio): azione anteriore.",
-   ex:["<i>Camminando</i>, pensavo.","Sbagliando si impara.","<i>Avendo finito</i>, è uscito."]},
+   def:"Una forma <b>implicita</b> che collega due azioni esprimendo tempo, causa, modo, mezzo o condizione, senza congiunzioni.",
+   form:"Semplice: -ando/-endo. Composto: avendo/essendo + participio passato.",
+   uses:[
+     {label:"semplice — contemporaneità", ex:"Camminando, ascoltavo musica."},
+     {label:"semplice — modo / mezzo", ex:"Si impara sbagliando."},
+     {label:"semplice — causa", ex:"Essendo stanco, sono rimasto a casa."},
+     {label:"composto — azione anteriore", ex:"Avendo finito, è uscito."}
+   ],
+   warn:"Il soggetto del gerundio deve <b>coincidere</b> con quello della principale: «Tornando a casa, ho incontrato Luca» (sono io a tornare). Con soggetti diversi la frase risulta sbagliata o ambigua."},
 
   {lvl:"b2", cat:"Verbi", title:"Infinito sostantivato e passato",
-   rule:"L'infinito può funzionare da <b>nome</b> (spesso con articolo). L'<b>infinito passato</b> (avere/essere + participio) esprime anteriorità.",
-   ex:["<b>Il mangiare</b> sano fa bene.","Dopo <b>aver mangiato</b>, sono uscito.","Mi scuso per <b>essere arrivato</b> tardi."]},
+   def:"L'infinito non è solo la forma «base» del verbo: può comportarsi da <b>nome</b>, e nella forma passata indica un'azione già avvenuta.",
+   uses:[
+     {label:"infinito come nome (spesso con articolo)", ex:"Il fumare fa male. / il suo modo di parlare"},
+     {label:"infinito passato — anteriorità", ex:"Dopo aver mangiato, sono uscito."},
+     {label:"in scuse e ringraziamenti", ex:"Grazie per essere venuti."}
+   ],
+   warn:"L'infinito passato si forma con avere/essere all'infinito + participio. Spesso si <b>tronca</b>: «dopo aver letto», «dopo esser tornato»."},
 
   {lvl:"b2", cat:"Sintassi", title:"Relative esplicative e limitative",
-   rule:"<b>Limitativa:</b> restringe il significato, è essenziale, senza virgole. <b>Esplicativa:</b> aggiunge un'informazione, tra virgole. Con verbi di opinione o incertezza la relativa può reggere il congiuntivo.",
-   ex:["Gli studenti <i>che studiano</i> superano l'esame. (limitativa)","Mio fratello, <i>che vive a Roma</i>, è medico. (esplicativa)","Cerco una casa che <i>abbia</i> il giardino. (congiuntivo)"]},
+   def:"Due tipi di frase relativa che, con la stessa parola «che», <b>cambiano il senso</b> della frase a seconda della punteggiatura e della funzione.",
+   uses:[
+     {label:"limitativa (restrittiva): essenziale, senza virgole", ex:"Gli studenti che studiano superano l'esame (solo quelli)."},
+     {label:"esplicativa (appositiva): aggiunta, tra virgole", ex:"Gli studenti, che erano stanchi, sono usciti (tutti)."},
+     {label:"con incertezza/ricerca: + congiuntivo", ex:"Cerco una segretaria che parli tre lingue."}
+   ],
+   warn:"Le <b>virgole</b> cambiano il significato: «I colleghi che lavorano da casa…» (solo alcuni) ≠ «I colleghi, che lavorano da casa,…» (tutti). Il congiuntivo segnala che l'oggetto è desiderato o non ancora trovato."},
 
   {lvl:"b2", cat:"Sintassi", title:"Il costrutto causativo: far fare",
-   rule:"<b>Fare + infinito</b> = far compiere l'azione a un altro. <b>Farsi + infinito</b> = farla compiere a proprio favore. <b>Lasciare + infinito</b> = permettere.",
-   ex:["<b>Faccio riparare</b> l'auto.","<b>Mi sono fatto tagliare</b> i capelli.","<b>Lascia parlare</b> lui."]},
+   def:"Una costruzione per dire che il soggetto non compie l'azione direttamente, ma la <b>fa compiere</b> a qualcun altro.",
+   form:"fare + infinito. Riflessivo «farsi + infinito» = farla compiere a proprio favore. «Lasciare + infinito» = permettere.",
+   uses:[
+     {label:"far fare a qualcuno", ex:"Faccio riparare l'auto (la porto dal meccanico)."},
+     {label:"farsi fare (a proprio favore)", ex:"Mi sono fatto tagliare i capelli."},
+     {label:"lasciare = permettere", ex:"Lascia parlare lui."}
+   ],
+   warn:"«Ho riparato l'auto» = l'ho fatto io. «Ho <i>fatto riparare</i> l'auto» = l'ha fatto un altro per me. È una differenza di senso, non di stile."},
 
   {lvl:"b2", cat:"Verbi", title:"Il trapassato prossimo",
-   rule:"Azione passata anteriore a un'altra azione passata. <b>imperfetto di essere/avere + participio</b>.",
-   ex:["Quando sono arrivato, <b>erano</b> già <b>usciti</b>.","<b>Avevo studiato</b>, perciò ero tranquillo."]},
+   def:"Il «passato del passato»: indica un'azione conclusa <b>prima</b> di un altro momento o evento passato.",
+   form:"imperfetto di essere/avere + participio passato (avevo fatto, ero andato).",
+   uses:[
+     {label:"azione anteriore a un'altra passata", ex:"Quando sono arrivato, lo spettacolo era già finito."},
+     {label:"causa nel passato", ex:"Ero stanco perché avevo lavorato tutto il giorno."}
+   ],
+   warn:"Segnala sempre un <b>ordine</b> temporale: il trapassato è l'azione «più indietro». Spesso accompagnato da già, non ancora, prima."},
 
   /* ---------------- C1 ---------------- */
   {lvl:"c1", cat:"Sintassi", title:"La forma passiva: tutte le forme",
-   rule:"Oltre a essere/venire, <b>andare + participio</b> esprime obbligo/necessità («va fatto» = deve essere fatto). Il <b>si passivante</b> serve per regole e generalizzazioni.",
-   ex:["Il modulo <b>va compilato</b> in stampatello.","Questi errori <b>vanno evitati</b>.","I documenti <b>vengono controllati</b> all'ingresso."]},
+   def:"A livello avanzato il passivo non è solo essere/venire: l'italiano dispone di costruzioni che aggiungono sfumature di <b>obbligo</b> o impersonalità.",
+   uses:[
+     {label:"andare + participio = dovere essere", ex:"Il modulo va compilato (= deve essere compilato)."},
+     {label:"venire + participio = passivo dinamico", ex:"Le decisioni vengono prese dal consiglio."},
+     {label:"si passivante = regole e generalizzazioni", ex:"Qui non si fuma. / Si raccomanda la puntualità."}
+   ],
+   warn:"«Andare + participio» con valore di obbligo esiste <b>solo nei tempi semplici</b> (va fatto, andava fatto). Nei composti torna il significato letterale di «andare», quindi in quel senso va evitato."},
 
   {lvl:"c1", cat:"Sintassi", title:"Le proposizioni concessive",
-   rule:"Esprimono un ostacolo che non impedisce l'azione. <b>Benché, sebbene, nonostante, malgrado</b> + congiuntivo; <b>anche se</b> + indicativo.",
-   ex:["<b>Benché</b> fosse stanco, ha continuato.","<b>Nonostante</b> piovesse, siamo usciti.","<b>Anche se</b> piove, esco."]},
+   def:"Introducono un ostacolo o una circostanza contraria che <b>non impedisce</b> ciò che dice la principale («anche se è così, succede comunque»).",
+   form:"benché, sebbene, nonostante, malgrado, per quanto + CONGIUNTIVO; anche se + INDICATIVO.",
+   uses:[
+     {label:"con congiuntivo", ex:"Benché fosse tardi, siamo usciti."},
+     {label:"nonostante / malgrado + congiuntivo", ex:"Nonostante piovesse, abbiamo camminato."},
+     {label:"anche se + indicativo", ex:"Anche se ho poco tempo, ti aiuto."}
+   ],
+   warn:"Le concessive «colte» (benché, sebbene, nonostante) reggono il <b>congiuntivo</b>; solo «anche se» regge l'indicativo. Errore tipico: «benché <i>è</i> tardi» invece di «benché <i>sia</i> tardi»."},
 
   {lvl:"c1", cat:"Sintassi", title:"Le proposizioni temporali avanzate",
-   rule:"<b>Prima che</b> + congiuntivo (soggetti diversi); <b>dopo che</b> + indicativo; <b>finché (non)</b> e <b>(non) appena</b> per limiti e immediatezza.",
-   ex:["Esci <b>prima che</b> arrivi.","<b>Dopo che</b> ebbe finito, partì.","Aspetta <b>finché non</b> torno.","<b>Appena</b> arrivi, chiamami."]},
+   def:"A livello avanzato le frasi di tempo si raffinano: la scelta tra <b>congiuntivo e indicativo</b> dipende dalla congiunzione e dall'ordine degli eventi.",
+   form:"prima che + congiuntivo (soggetti diversi); dopo che + indicativo; finché (non) e (non) appena secondo il contesto.",
+   uses:[
+     {label:"prima che + congiuntivo", ex:"Esci prima che cominci a piovere."},
+     {label:"prima di + infinito (stesso soggetto)", ex:"Prima di uscire, chiudi la porta."},
+     {label:"dopo che + indicativo", ex:"Dopo che ebbe parlato, tutti applaudirono."},
+     {label:"finché (non) / appena", ex:"Aspetta finché non torno. / Appena arrivo, ti chiamo."}
+   ],
+   warn:"«Prima che» vuole il congiuntivo <b>solo con due soggetti diversi</b> (esci prima che <i>io</i> arrivi). Con lo stesso soggetto si usa «prima <i>di</i> + infinito» (esci prima di fare tardi)."},
 
-  {lvl:"c1", cat:"Verbi", title:"Periodo ipotetico misto",
-   rule:"Combina ipotesi e conseguenza su piani temporali diversi. Tipico: <b>cong. trapassato + condizionale presente</b> (causa passata, effetto presente).",
-   ex:["Se <i>avessi studiato</i> medicina, ora <i>sarei</i> dottore.","Se non <i>avessi perso</i> il treno, <i>sarei</i> già a casa."]},
+  {lvl:"c1", cat:"Verbi", title:"Il periodo ipotetico misto",
+   def:"Una combinazione avanzata in cui causa e conseguenza stanno su <b>piani temporali diversi</b>: tipicamente una condizione non realizzata nel passato con effetti sul presente.",
+   uses:[
+     {label:"causa passata → effetto presente", ex:"Se avessi studiato medicina, ora sarei medico."},
+     {label:"condizione presente → effetto passato", ex:"Se fossi una persona seria, non ti saresti comportato così."}
+   ],
+   warn:"Il misto «incrocia» i tipi: cong. trapassato (passato) + condizionale presente (ora). Va usato quando una conseguenza <b>attuale</b> dipende da un'ipotesi sul passato; un solo tempo falserebbe il senso."},
 
   {lvl:"c1", cat:"Sintassi", title:"Connettivi argomentativi avanzati",
-   rule:"Strumenti per strutturare un testo formale. Aggiungere: <i>inoltre, peraltro</i>. Opporre: <i>tuttavia, nondimeno</i>. Causa: <i>poiché, dato che, in quanto</i>. Conseguenza: <i>pertanto, di conseguenza</i>. Concludere: <i>in definitiva, in sintesi</i>.",
-   ex:["Il progetto è valido; <b>tuttavia</b>, i costi restano alti.","<b>Poiché</b> mancano i fondi, il lavoro è sospeso.","<b>Pertanto</b>, conviene rinviare la decisione."]}
+   def:"Gli <b>snodi logici</b> che danno struttura a un testo formale o a un'argomentazione orale, segnalando come le idee si legano tra loro.",
+   uses:[
+     {label:"aggiungere", ex:"inoltre, peraltro, oltre a ciò"},
+     {label:"opporre / concedere", ex:"tuttavia, nondimeno, per quanto, d'altra parte"},
+     {label:"causa", ex:"poiché, dato che, in quanto, visto che"},
+     {label:"conseguenza", ex:"pertanto, di conseguenza, dunque, perciò"},
+     {label:"concludere / riassumere", ex:"in definitiva, in sintesi, tutto sommato"}
+   ],
+   warn:"<b>Registro:</b> «poiché, pertanto, nondimeno» appartengono allo scritto formale; nel parlato spontaneo suonano artificiosi, dove si preferiscono «siccome, quindi, però». Adeguare il connettivo al contesto è parte della competenza C1."}
 ];
 
 /* ===== Rendering ===== */
 const colorById = Object.fromEntries(LEVELS.map(l=>[l.id,l.color]));
+const strip = s => (s||"").replace(/<[^>]+>/g,"");
 
 function tableHTML(t){
   let h = "<table>";
   if(t.caption) h += "<caption>"+t.caption+"</caption>";
-  if(t.headers){
-    h += "<tr>"+t.headers.map(x=>"<th>"+x+"</th>").join("")+"</tr>";
-  }
+  if(t.headers) h += "<tr>"+t.headers.map(x=>"<th>"+x+"</th>").join("")+"</tr>";
   t.rows.forEach(r=>{
     h += "<tr>"+r.map((c,i)=> i===0 ? "<td>"+c+"</td>" : "<td><span class='form'>"+c+"</span></td>").join("")+"</tr>";
   });
   return h+"</table>";
 }
 
+function tablesBlock(tables){
+  if(!tables || !tables.length) return "";
+  if(tables.length>1) return "<div class='tbl-wrap'>"+tables.map(t=>"<div>"+tableHTML(t)+"</div>").join("")+"</div>";
+  return tableHTML(tables[0]);
+}
+
+function searchText(e){
+  let parts = [e.title, e.cat, e.def, e.form||""];
+  if(e.uses) e.uses.forEach(u=>parts.push(u.label, u.ex));
+  if(e.ex) parts = parts.concat(e.ex);
+  if(e.warn) parts.push(e.warn);
+  return strip(parts.join(" ")).toLowerCase().replace(/"/g,"");
+}
+
 function cardHTML(e, lvlId, idx){
-  const search = (e.title+" "+e.cat+" "+e.rule+" "+e.ex.join(" ")).toLowerCase()
-    .replace(/<[^>]+>/g,"");
-  let h = "<article class='card' id='card-"+lvlId+"-"+idx+"' data-search=\""+search.replace(/"/g,"")+"\" style='--lvl:"+colorById[e.lvl]+"'>";
+  let h = "<article class='card' id='card-"+lvlId+"-"+idx+"' data-search=\""+searchText(e)+"\" style='--lvl:"+colorById[e.lvl]+"'>";
   h += "<p class='card__cat'>"+e.cat+"</p>";
   h += "<h3 class='card__title'>"+e.title+"</h3>";
-  h += "<p class='card__rule'>"+e.rule+"</p>";
+  h += "<p class='card__def'>"+e.def+"</p>";
+
+  if(e.form || (e.tables && e.tables.length)){
+    h += "<div class='sec'><p class='sec__h'>Formazione</p>";
+    if(e.form) h += "<p class='sec__t'>"+e.form+"</p>";
+    h += tablesBlock(e.tables) + "</div>";
+  }
+  if(e.uses && e.uses.length){
+    h += "<div class='sec'><p class='sec__h'>Quando si usa</p><ul class='uses'>"
+      + e.uses.map(u=>"<li><span class='use-l'>"+u.label+"</span><span class='use-e'>"+u.ex+"</span></li>").join("")
+      + "</ul></div>";
+  }
   if(e.ex && e.ex.length){
-    h += "<div class='ex'>"+e.ex.map(x=>"<p>"+x+"</p>").join("")+"</div>";
+    h += "<div class='sec'><p class='sec__h'>Esempi</p><div class='ex'>"
+      + e.ex.map(x=>"<p>"+x+"</p>").join("") + "</div></div>";
   }
-  if(e.tables && e.tables.length){
-    if(e.tables.length>1){
-      h += "<div class='tbl-wrap'>"+e.tables.map(t=>"<div>"+tableHTML(t)+"</div>").join("")+"</div>";
-    } else {
-      h += tableHTML(e.tables[0]);
-    }
-  }
-  if(e.note) h += "<p class='note'>"+e.note+"</p>";
+  if(e.warn) h += "<p class='warn'>"+e.warn+"</p>";
   return h+"</article>";
 }
 
@@ -743,6 +1108,7 @@ function setupScroll(){
   totop.addEventListener("click", ()=>window.scrollTo({top:0, behavior:"smooth"}));
 }
 
+/* ===== Sottomenu a tendina ===== */
 function setupNav(){
   document.querySelectorAll(".nav-level").forEach(a=>{
     a.addEventListener("click",()=>{
