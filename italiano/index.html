@@ -139,7 +139,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .level__name{font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);font-weight:600;}
   .level__count{margin-left:auto;font-size:12.5px;color:var(--ink-faint);font-variant-numeric:tabular-nums;}
 
-  .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;padding:24px 0 8px;align-items:start;}
+  .grid{display:grid;grid-template-columns:minmax(0,980px);justify-content:center;gap:18px;padding:24px 0 8px;align-items:start;}
 
   .card{
     background:var(--card);border:1px solid var(--line);border-radius:12px;
@@ -197,6 +197,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .warn::before{content:"Attenzione — ";font-weight:700;color:var(--warn-ink);}
   .warn b{color:var(--ink);font-weight:600;}
   .warn i{font-family:var(--display);font-style:italic;}
+
+  /* ---------- esercizi ---------- */
+  .ex-block{
+    margin:12px 0 0;padding:14px 16px;
+    border:1px solid var(--line);border-radius:9px;background:var(--paper);
+  }
+  .ex-type{
+    font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;
+    color:var(--lvl);margin:0 0 5px;
+  }
+  .ex-instr{font-size:13.5px;color:var(--ink-soft);font-weight:500;margin:0 0 9px;}
+  .ex-items{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px;}
+  .ex-items li{font-size:14.5px;line-height:1.5;color:var(--ink);}
+  .ex-key{margin:11px 0 0;border-top:1px dashed var(--line);padding-top:9px;}
+  .ex-key summary{
+    font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;
+    color:var(--ink-faint);cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:7px;
+  }
+  .ex-key summary::-webkit-details-marker{display:none;}
+  .ex-key summary::before{content:"▸";font-size:10px;transition:transform .15s;}
+  .ex-key[open] summary::before{transform:rotate(90deg);}
+  .ex-key summary:hover{color:var(--ink-soft);}
+  .ex-key ol{margin:9px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:5px;}
+  .ex-key li{font-size:13.5px;line-height:1.45;color:var(--ink-soft);}
+  .ex-key li b{color:var(--lvl);font-weight:600;}
 
   .empty{display:none;padding:60px 56px;color:var(--ink-faint);font-size:16px;}
   .empty b{color:var(--ink);}
@@ -314,7 +339,12 @@ const ENTRIES = [
      {label:"avere — età", ex:"Quanti anni hai? — Ho trent'anni."},
      {label:"avere — sensazioni fisiche", ex:"Ho fame, ho sonno, ho freddo, ho paura."}
    ],
-   warn:"Per l'età e le sensazioni l'italiano usa sempre <b>avere</b>, mai essere: si dice «<i>ho</i> 30 anni» e «<i>ho</i> caldo». «Sono caldo» sarebbe un'altra cosa."},
+   warn:"Per l'età e le sensazioni l'italiano usa sempre <b>avere</b>, mai essere: si dice «<i>ho</i> 30 anni» e «<i>ho</i> caldo». «Sono caldo» sarebbe un'altra cosa.",
+   exercises:[
+     {type:"Riempimento", instr:"Completa con la forma giusta di essere o avere al presente.", items:["Io ___ italiano e ___ ventisei anni.","Tu ___ stanco? — Sì, ___ molto sonno.","Marco ___ di Napoli e ___ una sorella.","Noi ___ contenti perché non ___ lezione oggi.","Loro ___ spagnoli e ___ due figli.","Voi ___ pronti? Il treno ___ in ritardo.","Io ___ sete, e tu ___ fame?","La casa ___ vecchia ma ___ tre camere."], key:["sono / ho","sei / ho","è / ha","siamo / abbiamo","sono / hanno","siete / è","ho / hai","è / ha"]},
+     {type:"Correzione", instr:"Trova e correggi l'errore in ogni frase.", items:["Io sono fame.","Quanti anni sei?","Maria ha stanca.","Noi abbiamo di Roma.","Loro sono due cani.","Voi avete in ritardo.","Lui è caldo (= sensazione fisica).","Tu sei vent'anni."], key:["Io <b>ho</b> fame.","Quanti anni <b>hai</b>?","Maria <b>è</b> stanca.","Noi <b>siamo</b> di Roma.","Loro <b>hanno</b> due cani.","Voi <b>siete</b> in ritardo.","Lui <b>ha</b> caldo.","Tu <b>hai</b> vent'anni."]},
+     {type:"Trasformazione", instr:"Volgi le frasi dal singolare al plurale.", items:["Io ho freddo.","Tu sei simpatico.","Lui ha ragione.","Lei è francese.","Io sono in ritardo.","Tu hai sonno.","Lei è stanca.","Lui ha fretta."], key:["Noi <b>abbiamo</b> freddo.","Voi <b>siete simpatici</b>.","Loro <b>hanno</b> ragione.","Loro <b>sono francesi</b>.","Noi <b>siamo</b> in ritardo.","Voi <b>avete</b> sonno.","Loro <b>sono stanche</b>.","Loro <b>hanno</b> fretta."]}
+   ]},
 
   {lvl:"a", cat:"Articoli", title:"Articoli determinativi",
    def:"Accompagnano un nome già noto, specifico o unico. In italiano il nome quasi sempre vuole un articolo: automatizzarlo è uno degli scogli iniziali.",
@@ -332,7 +362,12 @@ const ENTRIES = [
      {label:"la / le — femminile + consonante", ex:"la casa → le case"},
      {label:"l' / le — femminile + vocale", ex:"l'amica → le amiche"}
    ],
-   warn:"L'articolo si accorda con la <b>prima parola</b> che segue, non col nome: «lo studente» ma «il bravo studente» (ora segue <i>bravo</i>)."},
+   warn:"L'articolo si accorda con la <b>prima parola</b> che segue, non col nome: «lo studente» ma «il bravo studente» (ora segue <i>bravo</i>).",
+   exercises:[
+     {type:"Riempimento", instr:"Inserisci l'articolo determinativo (il, lo, l', la, i, gli, le).", items:["___ zaino è pesante.","___ amiche di Sara sono qui.","___ studenti sono in aula.","___ casa di Marco è grande.","___ libri sono sul tavolo.","___ orologio non funziona.","___ zii di Paolo arrivano oggi.","___ studentessa parla tre lingue."], key:["<b>Lo</b> zaino","<b>Le</b> amiche","<b>Gli</b> studenti","<b>La</b> casa","<b>I</b> libri","<b>L'</b>orologio","<b>Gli</b> zii","<b>La</b> studentessa"]},
+     {type:"Trasformazione", instr:"Volgi al plurale (articolo + nome).", items:["il treno","lo specchio","l'amico","la stazione","l'isola","lo zaino","la chiave","l'albergo"], key:["<b>i</b> treni","<b>gli</b> specchi","<b>gli</b> amici","<b>le</b> stazioni","<b>le</b> isole","<b>gli</b> zaini","<b>le</b> chiavi","<b>gli</b> alberghi"]},
+     {type:"Correzione", instr:"Correggi l'articolo sbagliato.", items:["il studente","l'gatto","i amici","gli case","la albergo","il zaino","le studenti","lo libro"], key:["<b>lo</b> studente","<b>il</b> gatto","<b>gli</b> amici","<b>le</b> case","<b>l'</b>albergo","<b>lo</b> zaino","<b>gli</b> studenti","<b>il</b> libro"]}
+   ]},
 
   {lvl:"a", cat:"Articoli", title:"Articoli indeterminativi",
    def:"Introducono qualcosa di generico, non ancora identificato («uno qualsiasi»). Esistono <b>solo al singolare</b>; al plurale si usa il partitivo (dei, delle) o niente articolo.",
@@ -346,7 +381,12 @@ const ENTRIES = [
      {label:"una — femminile + consonante", ex:"una penna"},
      {label:"un' — femminile + vocale", ex:"un'amica"}
    ],
-   warn:"Maschile «un amico» <b>senza</b> apostrofo; femminile «un'amica» <b>con</b> apostrofo. L'apostrofo qui segnala il femminile davanti a vocale."},
+   warn:"Maschile «un amico» <b>senza</b> apostrofo; femminile «un'amica» <b>con</b> apostrofo. L'apostrofo qui segnala il femminile davanti a vocale.",
+   exercises:[
+     {type:"Riempimento", instr:"Inserisci l'articolo indeterminativo (un, uno, una, un').", items:["___ zaino","___ amica","___ amico","___ studentessa","___ studente","___ ora","___ zio","___ idea"], key:["<b>uno</b> zaino","<b>un'</b>amica","<b>un</b> amico","<b>una</b> studentessa","<b>uno</b> studente","<b>un'</b>ora","<b>uno</b> zio","<b>un'</b>idea"]},
+     {type:"Correzione", instr:"Correggi dove serve (alcune frasi sono già corrette).", items:["un'amico","uno libro","una amica","un zaino","una penna","un'ora","un studente","uno tavolo"], key:["<b>un</b> amico","<b>un</b> libro","<b>un'</b>amica","<b>uno</b> zaino","una penna <b>(già corretta)</b>","un'ora <b>(già corretta)</b>","<b>uno</b> studente","<b>un</b> tavolo"]},
+     {type:"Scelta multipla", instr:"Scegli l'articolo corretto tra i due.", items:["Ho (un / uno) problema.","C'è (una / un') sedia libera?","Prendo (un / uno) caffè.","È (un / un') idea geniale.","Lavora in (un / uno) studio legale.","Conosco (un / uno) bravo dentista.","Mi serve (un / uno) ombrello.","Aspetto (una / un') amica."], key:["<b>un</b> problema","<b>una</b> sedia","<b>un</b> caffè","<b>un'</b>idea","<b>uno</b> studio","<b>un</b> dentista","<b>un</b> ombrello","<b>un'</b>amica"]}
+   ]},
 
   {lvl:"a", cat:"Nomi", title:"Il plurale dei nomi",
    def:"Il nome cambia la vocale finale per passare dal singolare al plurale. È un meccanismo regolare con alcune eccezioni importanti.",
@@ -359,7 +399,12 @@ const ENTRIES = [
      {label:"femminili in -a → -e", ex:"porta → porte"},
      {label:"-e → -i (maschili e femminili)", ex:"studente → studenti, notte → notti"}
    ],
-   warn:"Restano <b>invariabili</b> i nomi tronchi (città, caffè), i monosillabi (re) e le parole straniere (bar, film). Irregolari: uomo → uomini, uovo → uova. I nomi in -co/-go, -ca/-ga seguono regole proprie (amico → amici, ma fuoco → fuochi)."},
+   warn:"Restano <b>invariabili</b> i nomi tronchi (città, caffè), i monosillabi (re) e le parole straniere (bar, film). Irregolari: uomo → uomini, uovo → uova. I nomi in -co/-go, -ca/-ga seguono regole proprie (amico → amici, ma fuoco → fuochi).",
+   exercises:[
+     {type:"Trasformazione", instr:"Volgi al plurale (articolo + nome).", items:["il libro","la chiave","lo studente","la notte","il treno","la mano","l'uomo","la città"], key:["i <b>libri</b>","le <b>chiavi</b>","gli <b>studenti</b>","le <b>notti</b>","i <b>treni</b>","le <b>mani</b>","gli <b>uomini</b>","le <b>città</b> (invariabile)"]},
+     {type:"Riempimento", instr:"Scrivi il plurale del nome tra parentesi.", items:["In centro ci sono molti ___ (bar).","Ho preso due ___ (caffè).","Le ___ italiane sono belle. (città)","Ieri sera ho visto tre ___ (film).","Per la frittata servono sei ___ (uovo).","In strada ci sono due ___ (autobus).","Ho due ___ a Milano. (zio)","Le ___ mi fanno male. (mano)"], key:["<b>bar</b>","<b>caffè</b>","<b>città</b>","<b>film</b>","<b>uova</b>","<b>autobus</b>","<b>zii</b>","<b>mani</b>"]},
+     {type:"Correzione", instr:"Correggi il plurale sbagliato.", items:["due cittàs","i bars","gli uomo","tre filmi","le universitàs","due uovi","le mano","i res"], key:["due <b>città</b>","i <b>bar</b>","gli <b>uomini</b>","tre <b>film</b>","le <b>università</b>","due <b>uova</b>","le <b>mani</b>","i <b>re</b>"]}
+   ]},
 
   {lvl:"a", cat:"Sintassi", title:"C'è / Ci sono",
    def:"Segnalano l'esistenza o la presenza di qualcosa in un luogo, come l'inglese <i>there is / there are</i>.",
@@ -368,7 +413,12 @@ const ENTRIES = [
      {label:"ci sono + nome plurale", ex:"Ci sono molte persone."}
    ],
    ex:["Quante stanze ci sono?","Scusi, c'è un bagno qui vicino?"],
-   warn:"Da non confondere con «è» (verbo essere): «Marco <i>è</i> qui» (dove si trova il soggetto) ≠ «Qui <i>c'è</i> Marco» (segnalo la sua presenza)."},
+   warn:"Da non confondere con «è» (verbo essere): «Marco <i>è</i> qui» (dove si trova il soggetto) ≠ «Qui <i>c'è</i> Marco» (segnalo la sua presenza).",
+   exercises:[
+     {type:"Riempimento", instr:"Completa con c'è o ci sono.", items:["In frigo ___ il latte.","Sul tavolo ___ due bicchieri.","___ un problema.","In classe ___ venti studenti.","Scusi, ___ un bagno qui vicino?","Non ___ posti liberi.","Davanti alla scuola ___ molti alberi.","Stasera ___ una festa in piazza."], key:["<b>c'è</b>","<b>ci sono</b>","<b>C'è</b>","<b>ci sono</b>","<b>c'è</b>","<b>ci sono</b>","<b>ci sono</b>","<b>c'è</b>"]},
+     {type:"Correzione", instr:"Correggi usando c'è, ci sono o è dove serve.", items:["In piazza c'è molte persone.","Ci sono un errore.","Marco c'è in ufficio.","Sul muro ci sono un quadro.","Quante stanze c'è?","Anna c'è la mia migliore amica.","Non ci sono niente da mangiare.","In strada c'è troppe macchine."], key:["In piazza <b>ci sono</b> molte persone.","<b>C'è</b> un errore.","Marco <b>è</b> in ufficio.","Sul muro <b>c'è</b> un quadro.","Quante stanze <b>ci sono</b>?","Anna <b>è</b> la mia migliore amica.","Non <b>c'è</b> niente da mangiare.","In strada <b>ci sono</b> troppe macchine."]},
+     {type:"Trasformazione", instr:"Riscrivi al plurale (usa il partitivo: dei, delle, degli).", items:["C'è una sedia.","C'è un problema.","C'è uno studente.","C'è un'idea interessante.","C'è un albero.","C'è una finestra aperta.","C'è un errore.","C'è una macchina parcheggiata."], key:["<b>Ci sono delle</b> sedie.","<b>Ci sono dei</b> problemi.","<b>Ci sono degli</b> studenti.","<b>Ci sono delle</b> idee interessanti.","<b>Ci sono degli</b> alberi.","<b>Ci sono delle</b> finestre aperte.","<b>Ci sono degli</b> errori.","<b>Ci sono delle</b> macchine parcheggiate."]}
+   ]},
 
   {lvl:"a", cat:"Aggettivi", title:"L'accordo dell'aggettivo",
    def:"In italiano l'aggettivo non è mai invariabile: si accorda in <b>genere</b> e <b>numero</b> con il nome a cui si riferisce.",
@@ -382,7 +432,12 @@ const ENTRIES = [
      {label:"classe in -e: 2 forme", ex:"un film interessante / una storia interessante"},
      {label:"posizione: di norma dopo il nome", ex:"una macchina veloce"}
    ],
-   warn:"Con un nome plurale di <b>genere misto</b> l'aggettivo va al maschile plurale: «Marco e Anna sono <i>simpatici</i>»."},
+   warn:"Con un nome plurale di <b>genere misto</b> l'aggettivo va al maschile plurale: «Marco e Anna sono <i>simpatici</i>».",
+   exercises:[
+     {type:"Riempimento", instr:"Accorda in genere e numero l'aggettivo tra parentesi.", items:["una macchina ___ (rosso)","due film ___ (interessante)","delle case ___ (bianco)","un ragazzo ___ (simpatico)","le scarpe ___ (nuovo)","Marco e Lucia sono ___ (alto)","una giornata ___ (lungo)","dei libri ___ (vecchio)"], key:["<b>rossa</b>","<b>interessanti</b>","<b>bianche</b>","<b>simpatico</b>","<b>nuove</b>","<b>alti</b>","<b>lunga</b>","<b>vecchi</b>"]},
+     {type:"Correzione", instr:"Correggi l'accordo dell'aggettivo.", items:["una borsa rosso","i libri italiane","una storia interessanti","le finestre aperto","Anna e Sara sono simpatico","dei fiori bianca","una macchina veloci","i ragazzi alta"], key:["una borsa <b>rossa</b>","i libri <b>italiani</b>","una storia <b>interessante</b>","le finestre <b>aperte</b>","Anna e Sara sono <b>simpatiche</b>","dei fiori <b>bianchi</b>","una macchina <b>veloce</b>","i ragazzi <b>alti</b>"]},
+     {type:"Trasformazione", instr:"Volgi al plurale l'intero gruppo (articolo + nome + aggettivo).", items:["il gatto nero","la borsa pesante","un film noioso","la stanza grande","il libro rosso","la ragazza simpatica","un esercizio difficile","la giornata lunga"], key:["i gatti <b>neri</b>","le borse <b>pesanti</b>","dei film <b>noiosi</b>","le stanze <b>grandi</b>","i libri <b>rossi</b>","le ragazze <b>simpatiche</b>","degli esercizi <b>difficili</b>","le giornate <b>lunghe</b>"]}
+   ]},
 
   {lvl:"a", cat:"Verbi", title:"Presente indicativo: verbi regolari",
    def:"Il tempo base per ciò che è abituale, vero in generale o in corso ora. È il primo sistema verbale completo che si impara.",
@@ -399,7 +454,12 @@ const ENTRIES = [
      {label:"azione nel presente", ex:"Adesso lavoro, ti chiamo dopo."},
      {label:"futuro programmato", ex:"Domani parto per Roma."}
    ],
-   warn:"I verbi in <b>-ire</b> si dividono in due gruppi: alcuni inseriscono <b>-isc-</b> in quattro persone su sei (capisco, capisci, capisce… capiscono). Non c'è regola sicura, vanno imparati: capire, finire, preferire, pulire, spedire, costruire."},
+   warn:"I verbi in <b>-ire</b> si dividono in due gruppi: alcuni inseriscono <b>-isc-</b> in quattro persone su sei (capisco, capisci, capisce… capiscono). Non c'è regola sicura, vanno imparati: capire, finire, preferire, pulire, spedire, costruire.",
+   exercises:[
+     {type:"Riempimento", instr:"Coniuga al presente indicativo il verbo tra parentesi.", items:["Ogni mattina io ___ (prendere) il caffè.","Voi ___ (parlare) italiano?","Loro ___ (dormire) fino a tardi.","Tu ___ (capire) la domanda?","Noi ___ (preferire) il tè.","Anna ___ (scrivere) una mail.","I bambini ___ (finire) i compiti.","Io ___ (aprire) la finestra."], key:["<b>prendo</b>","<b>parlate</b>","<b>dormono</b>","<b>capisci</b>","<b>preferiamo</b>","<b>scrive</b>","<b>finiscono</b>","<b>apro</b>"]},
+     {type:"Correzione", instr:"Correggi la coniugazione del verbo.", items:["Io capo l'italiano.","Tu parlate troppo.","Loro finiscano presto.","Voi dormete poco.","Lei preferisco il vino.","Noi scrivono una lettera.","Tu prendete il treno.","Io parli spagnolo."], key:["Io <b>capisco</b> l'italiano.","Tu <b>parli</b> troppo.","Loro <b>finiscono</b> presto.","Voi <b>dormite</b> poco.","Lei <b>preferisce</b> il vino.","Noi <b>scriviamo</b> una lettera.","Tu <b>prendi</b> il treno.","Io <b>parlo</b> spagnolo."]},
+     {type:"Trasformazione", instr:"Cambia il soggetto da io a noi.", items:["Io lavoro qui.","Io leggo il giornale.","Io capisco tutto.","Io parto domani.","Io preferisco restare.","Io scrivo una mail.","Io finisco alle sei.","Io dormo poco."], key:["Noi <b>lavoriamo</b> qui.","Noi <b>leggiamo</b> il giornale.","Noi <b>capiamo</b> tutto.","Noi <b>partiamo</b> domani.","Noi <b>preferiamo</b> restare.","Noi <b>scriviamo</b> una mail.","Noi <b>finiamo</b> alle sei.","Noi <b>dormiamo</b> poco."]}
+   ]},
 
   {lvl:"a", cat:"Sintassi", title:"La negazione",
    def:"Per rendere negativa una frase si mette <b>non</b> immediatamente prima del verbo.",
@@ -407,7 +467,12 @@ const ENTRIES = [
      {label:"non + verbo", ex:"Non capisco. / Non sono stanco."},
      {label:"doppia negazione (corretta in italiano)", ex:"Non ho visto nessuno. / Non c'è niente."}
    ],
-   warn:"A differenza di altre lingue, in italiano la <b>doppia negazione</b> è obbligatoria e non si annulla: «non… nessuno», «non… mai», «non… niente» restano frasi negative."},
+   warn:"A differenza di altre lingue, in italiano la <b>doppia negazione</b> è obbligatoria e non si annulla: «non… nessuno», «non… mai», «non… niente» restano frasi negative.",
+   exercises:[
+     {type:"Trasformazione", instr:"Rendi negative le frasi.", items:["Capisco la lezione.","Sono stanco.","Ho visto qualcuno.","C'è qualcosa nel frigo.","Vado sempre al cinema.","Conosco tutti qui.","Mangio ancora la carne.","Ho già finito."], key:["<b>Non</b> capisco la lezione.","<b>Non</b> sono stanco.","<b>Non</b> ho visto <b>nessuno</b>.","<b>Non</b> c'è <b>niente</b> nel frigo.","<b>Non</b> vado <b>mai</b> al cinema.","<b>Non</b> conosco <b>nessuno</b> qui.","<b>Non</b> mangio <b>più</b> la carne.","<b>Non</b> ho <b>ancora</b> finito."]},
+     {type:"Riempimento", instr:"Completa con la parola negativa giusta (nessuno, niente, mai, più, ancora).", items:["Non c'è ___ in casa.","Non mangio ___ di dolce.","Non vado ___ in palestra, la odio.","Non lavoro ___ qui, ho cambiato ufficio.","Non conosco ___ a questa festa.","Sono le tre e non ho ___ pranzato.","Non dico ___ a nessuno, promesso.","Dopo l'incidente non guida ___."], key:["<b>nessuno</b>","<b>niente</b>","<b>mai</b>","<b>più</b>","<b>nessuno</b>","<b>ancora</b>","<b>niente</b>","<b>più</b>"]},
+     {type:"Correzione", instr:"Correggi la frase negativa.", items:["Non ho visto qualcuno.","Ho niente da fare.","Non mai bevo caffè.","Nessuno non è venuto.","Non c'è nessuna problema.","Mai non esco di sera.","Non ho ancora visto mai quel film.","Niente è successo ieri."], key:["Non ho visto <b>nessuno</b>.","<b>Non</b> ho niente da fare.","Non bevo <b>mai</b> caffè.","<b>Non è venuto nessuno.</b>","Non c'è <b>nessun</b> problema.","Non esco <b>mai</b> di sera.","Non ho <b>mai</b> visto quel film.","<b>Non</b> è successo <b>niente</b> ieri."]}
+   ]},
 
   {lvl:"a", cat:"Verbi", title:"Modali: dovere, potere, volere",
    def:"Tre verbi che accompagnano un altro verbo all'infinito per esprimere obbligo, possibilità o volontà. Irregolari e frequentissimi.",
@@ -422,7 +487,12 @@ const ENTRIES = [
      {label:"potere — possibilità, permesso", ex:"Posso aiutarti. / Posso uscire?"},
      {label:"volere — volontà, desiderio", ex:"Voglio imparare l'italiano."}
    ],
-   warn:"Nei tempi composti l'ausiliare è di solito quello del verbo all'infinito: «<i>Sono</i> dovuto partire» (partire vuole essere), «<i>Ho</i> dovuto studiare» (studiare vuole avere)."},
+   warn:"Nei tempi composti l'ausiliare è di solito quello del verbo all'infinito: «<i>Sono</i> dovuto partire» (partire vuole essere), «<i>Ho</i> dovuto studiare» (studiare vuole avere).",
+   exercises:[
+     {type:"Riempimento", instr:"Completa con il modale al presente (persona e verbo tra parentesi).", items:["(io – dovere) ___ studiare per l'esame.","(tu – potere) ___ aiutarmi?","(noi – volere) ___ andare al mare.","(loro – dovere) ___ partire presto.","(lei – potere) ___ entrare, prego.","(voi – volere) ___ un caffè?","(io – potere) ___ usare il tuo telefono?","(tu – dovere) ___ riposare un po'."], key:["<b>devo</b>","<b>puoi</b>","<b>vogliamo</b>","<b>devono</b>","<b>può</b>","<b>volete</b>","<b>posso</b>","<b>devi</b>"]},
+     {type:"Correzione", instr:"Correggi la forma del modale o la costruzione.", items:["Devo a studiare.","Posso di uscire?","Noi vogliono partire.","Tu puoi vieni con me?","Loro deve lavorare.","Io posso a aiutarti.","Voi volete andate via?","Lei può di parlare?"], key:["Devo <b>studiare</b>. (niente preposizione)","Posso <b>uscire</b>?","Noi <b>vogliamo</b> partire.","Tu puoi <b>venire</b> con me?","Loro <b>devono</b> lavorare.","Io posso <b>aiutarti</b>.","Voi volete <b>andare</b> via?","Lei può <b>parlare</b>?"]},
+     {type:"Scelta multipla", instr:"Scegli il modale adatto al senso della frase.", items:["___ aprire la finestra? Ho caldo. (Posso / Devo)","È tardi, ___ andare a casa. (voglio / devo)","Non ___ venire, sono troppo stanco. (posso / devo)","___ imparare il cinese, è il mio sogno. (Voglio / Devo)","Qui non si ___ fumare. (può / vuole)","Per entrare ___ mostrare il documento. (vuoi / devi)","___ un gelato, ho proprio voglia. (Voglio / Devo)","___ ripetere, per favore? Non ho sentito. (Può / Vuole)"], key:["<b>Posso</b>","<b>devo</b>","<b>posso</b>","<b>Voglio</b>","<b>può</b>","<b>devi</b>","<b>Voglio</b>","<b>Può</b>"]}
+   ]},
 
   {lvl:"a", cat:"Preposizioni", title:"Le preposizioni semplici",
    def:"Parole brevi e invariabili che collegano elementi della frase ed esprimono relazioni di luogo, tempo, possesso, mezzo, scopo. L'uso è in gran parte idiomatico.",
@@ -434,7 +504,12 @@ const ENTRIES = [
      {label:"in — luogo (Paesi, ambienti), mezzo", ex:"in Italia, in treno"},
      {label:"con — compagnia, mezzo", ex:"esco con te, scrivo con la penna"}
    ],
-   warn:"Città contro Paesi: si va «<b>a</b> Roma» ma «<b>in</b> Italia». È una distinzione fissa, non logica, da memorizzare caso per caso."},
+   warn:"Città contro Paesi: si va «<b>a</b> Roma» ma «<b>in</b> Italia». È una distinzione fissa, non logica, da memorizzare caso per caso.",
+   exercises:[
+     {type:"Riempimento", instr:"Inserisci la preposizione semplice (di, a, da, in, con, su, per, tra/fra).", items:["Il libro ___ Anna.","Vado ___ Roma in treno.","Abito ___ Italia.","Vengo ___ Napoli.","Esco ___ i miei amici.","Questo regalo è ___ te.","Il treno parte ___ tre minuti.","Scrivo ___ la penna."], key:["<b>di</b>","<b>a</b>","<b>in</b>","<b>da</b>","<b>con</b>","<b>per</b>","<b>tra/fra</b>","<b>con</b>"]},
+     {type:"Correzione", instr:"Correggi la preposizione dove serve (alcune frasi sono già corrette).", items:["Vado in Roma.","Abito a Germania.","Parto da Roma domani.","Il regalo è per Anna.","Vengo a Lisbona (= provenienza).","Vivo a Spagna.","Il libro di Marco è qui.","Torno in Napoli stasera."], key:["Vado <b>a</b> Roma.","Abito <b>in</b> Germania.","Parto da Roma domani. <b>(già corretta)</b>","Il regalo è per Anna. <b>(già corretta)</b>","Vengo <b>da</b> Lisbona.","Vivo <b>in</b> Spagna.","Il libro di Marco è qui. <b>(già corretta)</b>","Torno <b>a</b> Napoli stasera."]},
+     {type:"Scelta multipla", instr:"Città o Paese? Scegli tra a e in.", items:["Abito ___ Madrid. (a / in)","Abito ___ Spagna. (a / in)","Vado ___ Portogallo. (a / in)","Vado ___ Lisbona. (a / in)","Studio ___ Italia. (a / in)","Lavoro ___ Siviglia. (a / in)","Mi trasferisco ___ Francia. (a / in)","Stasera ceno ___ Firenze. (a / in)"], key:["<b>a</b> Madrid","<b>in</b> Spagna","<b>in</b> Portogallo","<b>a</b> Lisbona","<b>in</b> Italia","<b>a</b> Siviglia","<b>in</b> Francia","<b>a</b> Firenze"]}
+   ]},
 
   {lvl:"a", cat:"Aggettivi", title:"Gli aggettivi possessivi",
    def:"Indicano a chi appartiene qualcosa. In italiano concordano con la <b>cosa posseduta</b>, non con chi possiede, e di norma vogliono l'articolo.",
@@ -450,7 +525,12 @@ const ENTRIES = [
      {label:"senza articolo: familiari singolari", ex:"mia madre, tuo fratello, sua zia"},
      {label:"loro: sempre con l'articolo", ex:"la loro casa, i loro figli"}
    ],
-   warn:"«suo/sua» vale sia <b>«di lui»</b> sia <b>«di lei»</b>: concorda con l'oggetto, non col proprietario. «Marco ama <i>sua</i> sorella» e «Anna ama <i>suo</i> fratello» usano la stessa radice."},
+   warn:"«suo/sua» vale sia <b>«di lui»</b> sia <b>«di lei»</b>: concorda con l'oggetto, non col proprietario. «Marco ama <i>sua</i> sorella» e «Anna ama <i>suo</i> fratello» usano la stessa radice.",
+   exercises:[
+     {type:"Riempimento", instr:"Completa con il possessivo, aggiungendo l'articolo dove serve (persona tra parentesi).", items:["Questo è ___ libro. (io)","___ madre è simpatica. (tu)","Dove sono ___ chiavi? (io)","___ casa è grande. (loro)","___ fratello studia a Roma. (lei)","___ amici arrivano domani. (noi)","___ sorella vive a Parigi. (io)","___ idee sono interessanti. (voi)"], key:["<b>il mio</b> libro","<b>Tua</b> madre","<b>le mie</b> chiavi","<b>La loro</b> casa","<b>Suo</b> fratello","<b>I nostri</b> amici","<b>Mia</b> sorella","<b>Le vostre</b> idee"]},
+     {type:"Correzione", instr:"Correggi l'errore (articolo o accordo).", items:["il mia idea","mio madre","loro casa è grande","i mie amici","la tuo macchina","il tuo sorelle","mia il fratello","le sue libri"], key:["<b>la mia</b> idea","<b>mia</b> madre","<b>la</b> loro casa è grande","i <b>miei</b> amici","la <b>tua</b> macchina","le <b>tue</b> sorelle","<b>mio</b> fratello","i <b>suoi</b> libri"]},
+     {type:"Trasformazione", instr:"Volgi al plurale la cosa posseduta (articolo + possessivo + nome).", items:["il mio amico","la tua chiave","il suo libro","la nostra idea","il vostro problema","la mia foto","il tuo errore","la sua amica"], key:["i <b>miei</b> amici","le <b>tue</b> chiavi","i <b>suoi</b> libri","le <b>nostre</b> idee","i <b>vostri</b> problemi","le <b>mie</b> foto (foto invariabile)","i <b>tuoi</b> errori","le <b>sue</b> amiche"]}
+   ]},
 
   {lvl:"a", cat:"Sintassi", title:"L'ora",
    def:"Per dire l'ora si usa il verbo essere, con una particolarità: singolare o plurale a seconda dell'ora.",
@@ -460,7 +540,12 @@ const ENTRIES = [
      {label:"ore «plurali»", ex:"Sono le otto."},
      {label:"minuti: «e» fino alla mezza, «meno» dopo", ex:"Sono le 9 e venti. / Sono le 9 meno un quarto."}
    ],
-   warn:"L'articolo femminile (l', le) è obbligatorio perché sottintende «ora/ore»: «sono <b>le</b> tre»."},
+   warn:"L'articolo femminile (l', le) è obbligatorio perché sottintende «ora/ore»: «sono <b>le</b> tre».",
+   exercises:[
+     {type:"Riempimento", instr:"Inserisci «È» o «Sono» e l'articolo (l' / le) dove serve.", items:["___ una.","___ sette.","___ mezzanotte.","___ dieci e venti.","___ mezzogiorno.","___ tre e un quarto.","___ una e mezza.","___ nove meno dieci."], key:["<b>È l'</b>una.","<b>Sono le</b> sette.","<b>È</b> mezzanotte.","<b>Sono le</b> dieci e venti.","<b>È</b> mezzogiorno.","<b>Sono le</b> tre e un quarto.","<b>È l'</b>una e mezza.","<b>Sono le</b> nove meno dieci."]},
+     {type:"Correzione", instr:"Correggi la frase sull'ora.", items:["Sono l'una.","È le otto.","Sono mezzogiorno.","Sono le tre meno mezza.","È le nove e un quarto.","Sono mezzanotte.","È le sette e dieci.","Sono l'una e venti."], key:["<b>È</b> l'una.","<b>Sono</b> le otto.","<b>È</b> mezzogiorno.","Sono le <b>due e mezza</b>.","<b>Sono</b> le nove e un quarto.","<b>È</b> mezzanotte.","<b>Sono</b> le sette e dieci.","<b>È</b> l'una e venti."]},
+     {type:"Trasformazione", instr:"Scrivi l'ora in lettere.", items:["1:00","8:20","12:00 (mezzogiorno)","7:45","15:30","00:00","10:15","18:50"], key:["È l'una.","Sono le otto e venti.","È mezzogiorno.","Sono le otto meno un quarto.","Sono le tre e mezza.","È mezzanotte.","Sono le dieci e un quarto.","Sono le sette meno dieci."]}
+   ]},
 
   {lvl:"a", cat:"Verbi", title:"Il verbo piacere",
    def:"Esprime gradimento, ma con una costruzione <b>rovesciata</b>: ciò che piace è il soggetto grammaticale, la persona che prova il gradimento è un complemento.",
@@ -477,7 +562,12 @@ const ENTRIES = [
      {label:"piacciono + nome plurale", ex:"Mi piacciono i gatti."},
      {label:"al passato (con essere)", ex:"Mi è piaciuto il film. / Mi sono piaciute le foto."}
    ],
-   warn:"L'accordo è con la <b>cosa che piace</b>: «mi <i>piacciono</i> i dolci» (plurale per «i dolci»). Stessa costruzione per: servire, mancare, bastare, interessare, sembrare."},
+   warn:"L'accordo è con la <b>cosa che piace</b>: «mi <i>piacciono</i> i dolci» (plurale per «i dolci»). Stessa costruzione per: servire, mancare, bastare, interessare, sembrare.",
+   exercises:[
+     {type:"Riempimento", instr:"Completa con piace o piacciono.", items:["Mi ___ la musica classica.","Ti ___ i gatti?","Non mi ___ aspettare.","Le ___ le tue scarpe nuove.","Ci ___ molto questo ristorante.","Vi ___ i dolci?","Gli ___ giocare a calcio.","Mi ___ le tue idee."], key:["<b>piace</b>","<b>piacciono</b>","<b>piace</b> (+ infinito)","<b>piacciono</b>","<b>piace</b>","<b>piacciono</b>","<b>piace</b> (+ infinito)","<b>piacciono</b>"]},
+     {type:"Correzione", instr:"Correggi l'accordo o il pronome.", items:["Mi piace i film d'azione.","Ti piacciono leggere?","A Marco piacciono la pizza.","Mi piaciono i cani.","A loro piacciono il calcio.","Ci piace le vacanze.","Mi piace gli spaghetti.","Vi piacciono la musica?"], key:["Mi <b>piacciono</b> i film d'azione.","Ti <b>piace</b> leggere?","A Marco <b>piace</b> la pizza.","Mi <b>piacciono</b> i cani.","A loro <b>piace</b> il calcio.","Ci <b>piacciono</b> le vacanze.","Mi <b>piacciono</b> gli spaghetti.","Vi <b>piace</b> la musica?"]},
+     {type:"Trasformazione", instr:"Riscrivi al passato prossimo (ausiliare essere, participio accordato).", items:["Mi piace il film.","Ti piacciono le foto.","Ci piace la cena.","Mi piacciono i regali.","Le piace la mostra.","Vi piace il concerto.","Gli piacciono le canzoni.","Ti piace la lezione."], key:["Mi <b>è piaciuto</b> il film.","Ti <b>sono piaciute</b> le foto.","Ci <b>è piaciuta</b> la cena.","Mi <b>sono piaciuti</b> i regali.","Le <b>è piaciuta</b> la mostra.","Vi <b>è piaciuto</b> il concerto.","Gli <b>sono piaciute</b> le canzoni.","Ti <b>è piaciuta</b> la lezione."]}
+   ]},
 
   /* ---------------- A2 ---------------- */
   {lvl:"a2", cat:"Pragmatica", title:"Tu e Lei: formale e informale",
@@ -488,7 +578,12 @@ const ENTRIES = [
      {label:"Lei — sconosciuti, contesti formali, superiori, clienti", ex:"Lei desidera?"},
      {label:"voi — plurale, per entrambi i registri", ex:"Voi cosa pensate?"}
    ],
-   warn:"Con il Lei <b>tutto</b> va alla 3ª persona, anche aggettivi e pronomi: «Lei è stanc<i>o</i>?» a un uomo, «Lei è stanc<i>a</i>?» a una donna. Passare al tu («darsi del tu») è un gesto sociale preciso."},
+   warn:"Con il Lei <b>tutto</b> va alla 3ª persona, anche aggettivi e pronomi: «Lei è stanc<i>o</i>?» a un uomo, «Lei è stanc<i>a</i>?» a una donna. Passare al tu («darsi del tu») è un gesto sociale preciso.",
+   exercises:[
+     {type:"Trasformazione", instr:"Riscrivi dal tu al Lei di cortesia.", items:["Tu cosa fai stasera?","Come ti chiami?","Da dove vieni?","Hai una prenotazione?","Vuoi un caffè?","Dove abiti?","Sei pronto?","Puoi aiutarmi?"], key:["Lei cosa <b>fa</b> stasera?","Come <b>si chiama</b>?","Da dove <b>viene</b>?","<b>Ha</b> una prenotazione?","<b>Vuole</b> un caffè?","Dove <b>abita</b>?","<b>È</b> pronto?","<b>Può</b> aiutarmi?"]},
+     {type:"Riempimento", instr:"Completa con la forma del Lei di cortesia (verbo tra parentesi).", items:["Buongiorno, ___ (desiderare)?","Signora, ___ (avere) una prenotazione?","Prego, ___ (accomodarsi).","___ (potere) ripetere, per favore?","___ (essere) il signor Rossi?","Come ___ (stare) oggi?","___ (sapere) dov'è la stazione?","Mi ___ (scusare), che ore sono?"], key:["<b>desidera</b>","<b>ha</b>","<b>si accomodi</b>","<b>Può</b>","<b>È</b>","<b>sta</b>","<b>Sa</b>","<b>scusi</b>"]},
+     {type:"Correzione", instr:"Sei in un contesto formale (Lei): correggi le frasi che danno del tu.", items:["Signor Rossi, come stai?","Dottoressa, sei stanca?","Prego, accomodati.","Scusa, mi puoi aiutare?","Cosa vuoi ordinare?","Da dove vieni?","Hai il documento?","Dimmi pure."], key:["Signor Rossi, come <b>sta</b>?","Dottoressa, <b>è</b> stanca?","Prego, <b>si accomodi</b>.","<b>Scusi</b>, mi <b>può</b> aiutare?","Cosa <b>vuole</b> ordinare?","Da dove <b>viene</b>?","<b>Ha</b> il documento?","<b>Mi dica</b> pure."]}
+   ]},
 
   {lvl:"a2", cat:"Preposizioni", title:"Le preposizioni articolate",
    def:"Quando una preposizione semplice incontra un articolo determinativo, le due parole si <b>fondono</b> in una sola.",
@@ -509,7 +604,12 @@ const ENTRIES = [
      {label:"in + art. — luogo", ex:"sono nello studio"},
      {label:"su + art. — sopra", ex:"il libro è sul tavolo"}
    ],
-   warn:"La fusione è <b>obbligatoria</b>: non «a il cinema» ma «al cinema». Davanti a vocale c'è l'apostrofo: dell'amico, all'università, nell'aula."},
+   warn:"La fusione è <b>obbligatoria</b>: non «a il cinema» ma «al cinema». Davanti a vocale c'è l'apostrofo: dell'amico, all'università, nell'aula.",
+   exercises:[
+     {type:"Riempimento", instr:"Unisci preposizione e articolo nella forma articolata (combinazione tra parentesi).", items:["Il colore ___ mare. (di + il)","Vado ___ stazione. (a + la)","Esco ___ lavoro. (da + il)","Il libro è ___ tavolo. (su + il)","Sono ___ studio. (in + lo)","La casa ___ amici. (di + gli)","Torno ___ tre. (a + le)","Vengo ___ università. (da + la)"], key:["<b>del</b> mare","<b>alla</b> stazione","<b>dal</b> lavoro","<b>sul</b> tavolo","<b>nello</b> studio","<b>degli</b> amici","<b>alle</b> tre","<b>dalla</b> università → dall'università"]},
+     {type:"Correzione", instr:"Correggi la preposizione articolata (la fusione è obbligatoria).", items:["Vado a il cinema.","Il libro è su il tavolo.","Esco da la palestra.","Sono in il giardino.","La porta de la casa.","Parlo a gli studenti.","Vengo da lo zoo.","L'acqua de il mare."], key:["Vado <b>al</b> cinema.","Il libro è <b>sul</b> tavolo.","Esco <b>dalla</b> palestra.","Sono <b>nel</b> giardino.","La porta <b>della</b> casa.","Parlo <b>agli</b> studenti.","Vengo <b>dallo</b> zoo.","L'acqua <b>del</b> mare."]},
+     {type:"Trasformazione", instr:"Volgi al plurale (preposizione articolata + nome).", items:["del libro","allo studente","dalla città","nel cassetto","sull'albero","della casa","al bambino","dallo zio"], key:["<b>dei</b> libri","<b>agli</b> studenti","<b>dalle</b> città","<b>nei</b> cassetti","<b>sugli</b> alberi","<b>delle</b> case","<b>ai</b> bambini","<b>dagli</b> zii"]}
+   ]},
 
   {lvl:"a2", cat:"Verbi", title:"Verbi irregolari comuni",
    def:"Un piccolo gruppo di verbi ad altissima frequenza che non seguono le terminazioni regolari al presente e vanno imparati a memoria.",
@@ -526,7 +626,12 @@ const ENTRIES = [
      {label:"stare — stato, salute, + gerundio", ex:"Come stai? — Sto bene."},
      {label:"dare — consegnare", ex:"Ti do il mio numero."}
    ],
-   warn:"«fa» (fare) si scrive senza accento, ma «dà» (dare) lo prende per distinguerlo da «da» preposizione. Stessa logia per «dì» (giorno) vs «di» preposizione."},
+   warn:"«fa» (fare) si scrive senza accento, ma «dà» (dare) lo prende per distinguerlo da «da» preposizione. Stessa logia per «dì» (giorno) vs «di» preposizione.",
+   exercises:[
+     {type:"Riempimento", instr:"Coniuga al presente il verbo irregolare tra parentesi.", items:["Io ___ (andare) a scuola.","Tu cosa ___ (fare) stasera?","Loro ___ (venire) alla festa.","Come ___ (stare) voi?","Lui mi ___ (dare) il libro.","Noi ___ (fare) i compiti.","Lei ___ (venire) da Roma.","Io ti ___ (dare) il mio numero."], key:["<b>vado</b>","<b>fai</b>","<b>vengono</b>","<b>state</b>","<b>dà</b>","<b>facciamo</b>","<b>viene</b>","<b>do</b>"]},
+     {type:"Correzione", instr:"Correggi la coniugazione del verbo irregolare.", items:["Io ando a casa.","Tu fa colazione.","Loro venono qui.","Noi stiano bene.","Lui da una mano.","Voi annate via.","Loro dano i regali.","Noi facemo tardi."], key:["Io <b>vado</b> a casa.","Tu <b>fai</b> colazione.","Loro <b>vengono</b> qui.","Noi <b>stiamo</b> bene.","Lui <b>dà</b> una mano.","Voi <b>andate</b> via.","Loro <b>danno</b> i regali.","Noi <b>facciamo</b> tardi."]},
+     {type:"Scelta multipla", instr:"andare (verso una meta) o venire (verso chi parla)? Scegli il verbo adatto.", items:["Domani ___ a Roma per lavoro. (vado / vengo)","___ alla mia festa sabato? (Vai / Vieni)","Stasera ___ al cinema con Luca. (vado / vengo)","Aspetta, ___ subito da te! (vado / vengo)","Ogni estate ___ in montagna. (andiamo / veniamo)","Se mi inviti, ___ volentieri. (vado / vengo)","I bambini ___ a scuola a piedi. (vanno / vengono)","Quando ___ a trovarmi? (vai / vieni)"], key:["<b>vado</b>","<b>Vieni</b>","<b>vado</b>","<b>vengo</b>","<b>andiamo</b>","<b>vengo</b>","<b>vanno</b>","<b>vieni</b>"]}
+   ]},
 
   {lvl:"a2", cat:"Verbi", title:"Il passato prossimo",
    def:"Il tempo del passato più usato nel parlato. Indica un'azione <b>conclusa</b>, vista nel suo risultato o come evento puntuale, anche se recentissima.",
@@ -541,7 +646,12 @@ const ENTRIES = [
      {label:"ausiliare AVERE — verbi transitivi", ex:"Ho letto un libro."},
      {label:"ausiliare ESSERE — movimento/stato e riflessivi", ex:"Sono partito. / Mi sono alzato."}
    ],
-   warn:"<b>Accordo del participio:</b> con essere concorda col soggetto (Maria è andat<i>a</i>, loro sono partit<i>i</i>); con avere è invariabile, ma concorda col pronome diretto che precede (Le mele? Le ho mangiat<i>e</i>). Altri participi da sapere: messo, chiesto, risposto, aperto, chiuso, offerto, perso, rimasto, venuto, nato, morto, stato."},
+   warn:"<b>Accordo del participio:</b> con essere concorda col soggetto (Maria è andat<i>a</i>, loro sono partit<i>i</i>); con avere è invariabile, ma concorda col pronome diretto che precede (Le mele? Le ho mangiat<i>e</i>). Altri participi da sapere: messo, chiesto, risposto, aperto, chiuso, offerto, perso, rimasto, venuto, nato, morto, stato.",
+   exercises:[
+     {type:"Riempimento", instr:"Completa con il passato prossimo (ausiliare + participio).", items:["Ieri (io) ___ (incontrare) Luca.","Maria ___ (andare) al mare.","(noi) ___ (mangiare) la pizza.","Loro ___ (partire) presto.","(tu) ___ (leggere) il libro?","(io) ___ (alzarsi) tardi.","Anna e Sara ___ (arrivare) ieri.","(voi) ___ (fare) i compiti?"], key:["<b>ho incontrato</b>","<b>è andata</b>","<b>abbiamo mangiato</b>","<b>sono partiti</b>","<b>hai letto</b>","<b>mi sono alzato/a</b>","<b>sono arrivate</b>","<b>avete fatto</b>"]},
+     {type:"Correzione", instr:"Correggi l'ausiliare o l'accordo del participio.", items:["Maria è andato a casa.","Ho andato al cinema.","Loro hanno partiti.","Mi ho svegliato presto.","Le ragazze sono arrivato.","Ha venuto Marco.","Abbiamo nato a Roma.","Le chiavi? Le ho perso."], key:["Maria è andat<b>a</b> a casa.","<b>Sono</b> andato al cinema.","Loro <b>sono</b> partiti.","Mi <b>sono</b> svegliato presto.","Le ragazze sono arrivat<b>e</b>.","<b>È</b> venuto Marco.","<b>Siamo nati</b> a Roma.","Le chiavi? Le ho pers<b>e</b>."]},
+     {type:"Trasformazione", instr:"Volgi dal presente al passato prossimo.", items:["Mangio una mela.","Vado a Roma.","Maria parte.","Leggiamo il giornale.","Mi alzo alle sette.","Loro arrivano tardi.","Scrivi una lettera.","Vediamo un film."], key:["<b>Ho mangiato</b> una mela.","<b>Sono andato</b> a Roma.","Maria <b>è partita</b>.","<b>Abbiamo letto</b> il giornale.","<b>Mi sono alzato</b> alle sette.","Loro <b>sono arrivati</b> tardi.","<b>Hai scritto</b> una lettera.","<b>Abbiamo visto</b> un film."]}
+   ]},
 
   {lvl:"a2", cat:"Verbi", title:"I verbi riflessivi",
    def:"Verbi in cui l'azione «torna» sul soggetto, che è insieme chi compie e chi subisce. All'infinito finiscono in <b>-si</b> (lavarsi, alzarsi).",
@@ -554,7 +664,12 @@ const ENTRIES = [
      {label:"riflessivi reciproci (plurale): «l'un l'altro»", ex:"Si amano. / Ci telefoniamo ogni giorno."},
      {label:"con le parti del corpo: niente possessivo", ex:"Mi lavo le mani (non «le mie mani»)."}
    ],
-   warn:"Ai tempi composti il riflessivo vuole <b>sempre essere</b>, con participio accordato: «mi sono lavat<i>o</i>/lavat<i>a</i>», «si sono divertit<i>i</i>»."},
+   warn:"Ai tempi composti il riflessivo vuole <b>sempre essere</b>, con participio accordato: «mi sono lavat<i>o</i>/lavat<i>a</i>», «si sono divertit<i>i</i>».",
+   exercises:[
+     {type:"Riempimento", instr:"Completa con il verbo riflessivo al presente (verbo tra parentesi).", items:["La mattina io ___ (svegliarsi) alle sette.","Tu ___ (lavarsi) le mani prima di mangiare.","Marco ___ (vestirsi) in fretta.","Noi ___ (alzarsi) presto.","Voi ___ (divertirsi) alla festa?","I bambini ___ (annoiarsi) facilmente.","(io) ___ (chiamarsi) Anna.","Lei ___ (truccarsi) ogni giorno."], key:["<b>mi sveglio</b>","<b>ti lavi</b>","<b>si veste</b>","<b>ci alziamo</b>","<b>vi divertite</b>","<b>si annoiano</b>","<b>Mi chiamo</b>","<b>si trucca</b>"]},
+     {type:"Correzione", instr:"Correggi il pronome riflessivo o la costruzione.", items:["Io lavo le mie mani.","Tu lavi i denti.","Noi alziamo presto.","Loro si diverte molto.","Io me chiamo Marco.","Voi vi annoia?","Lui veste in fretta.","Lei si trucca le sue labbra."], key:["<b>Mi lavo</b> le mani.","<b>Ti lavi</b> i denti.","<b>Ci alziamo</b> presto.","Loro <b>si divertono</b> molto.","Io <b>mi chiamo</b> Marco.","Voi <b>vi annoiate</b>?","Lui <b>si veste</b> in fretta.","Lei si trucca <b>le labbra</b>."]},
+     {type:"Trasformazione", instr:"Volgi al passato prossimo (riflessivo → essere, participio accordato).", items:["Mi sveglio tardi.","Ti lavi le mani.","Marco si veste.","Ci alziamo presto.","Vi divertite.","I bambini si annoiano.","Anna si trucca.","Mi riposo un po'."], key:["<b>Mi sono svegliato/a</b> tardi.","<b>Ti sei lavato/a</b> le mani.","Marco <b>si è vestito</b>.","<b>Ci siamo alzati/e</b> presto.","<b>Vi siete divertiti/e</b>.","I bambini <b>si sono annoiati</b>.","Anna <b>si è truccata</b>.","<b>Mi sono riposato/a</b> un po'."]}
+   ]},
 
   {lvl:"a2", cat:"Verbi", title:"L'imperativo",
    def:"Il modo di ordini, istruzioni, consigli e inviti. Ha forme solo per tu, noi, voi e per il Lei di cortesia (manca la 1ª persona singolare).",
@@ -571,7 +686,12 @@ const ENTRIES = [
      {label:"consigli", ex:"Riposati un po'."},
      {label:"forma di cortesia (Lei)", ex:"Si accomodi. / Mi dica."}
    ],
-   warn:"Il negativo del <b>tu</b> è speciale: non + infinito → «non parlare!», «non andare!». I pronomi si <b>attaccano</b> al verbo con tu/noi/voi (dimmi!, alzati!, andiamocene!), ma vanno <b>prima</b> col Lei (mi dica, si accomodi)."},
+   warn:"Il negativo del <b>tu</b> è speciale: non + infinito → «non parlare!», «non andare!». I pronomi si <b>attaccano</b> al verbo con tu/noi/voi (dimmi!, alzati!, andiamocene!), ma vanno <b>prima</b> col Lei (mi dica, si accomodi).",
+   exercises:[
+     {type:"Riempimento", instr:"Forma l'imperativo (verbo e persona tra parentesi).", items:["___ (aprire, tu) la finestra!","___ (parlare, voi) più piano!","___ (prendere, Lei) un caffè!","___ (dormire, tu) bene!","___ (girare, voi) a destra!","___ (accomodarsi, Lei)!","___ (riposarsi, tu) un po'!","___ (ascoltare, Lei) bene!"], key:["<b>Apri</b>","<b>Parlate</b>","<b>Prenda</b>","<b>Dormi</b>","<b>Girate</b>","<b>Si accomodi</b>","<b>Riposati</b>","<b>Ascolti</b>"]},
+     {type:"Correzione", instr:"Correggi l'imperativo (forma, negazione o posizione del pronome).", items:["Non corri! (tu)","Dici la verità! (tu)","Si accomodate! (Lei)","Parla più piano! (voi)","Non fai rumore! (tu)","Prendi pure! (Lei)","Va a casa! (tu)","Dica mi la verità! (Lei)"], key:["<b>Non correre</b>!","<b>Di'</b> la verità!","<b>Si accomodi</b>!","<b>Parlate</b> più piano!","<b>Non fare</b> rumore!","<b>Prenda</b> pure!","<b>Va'</b> a casa!","<b>Mi dica</b> la verità!"]},
+     {type:"Trasformazione", instr:"Volgi l'imperativo dal tu al Lei di cortesia.", items:["Apri la porta!","Prendi un caffè!","Parla più piano!","Aspetta un momento!","Scrivi qui il nome!","Accomodati!","Dimmi tutto!","Finisci il lavoro!"], key:["<b>Apra</b> la porta!","<b>Prenda</b> un caffè!","<b>Parli</b> più piano!","<b>Aspetti</b> un momento!","<b>Scriva</b> qui il nome!","<b>Si accomodi</b>!","<b>Mi dica</b> tutto!","<b>Finisca</b> il lavoro!"]}
+   ]},
 
   {lvl:"a2", cat:"Aggettivi", title:"Dimostrativi: questo e quello",
    def:"Indicano la distanza di qualcosa rispetto a chi parla: <b>questo</b> (vicino) e <b>quello</b> (lontano).",
@@ -585,7 +705,12 @@ const ENTRIES = [
      {label:"quello — lontano da chi parla", ex:"Quella montagna è alta."},
      {label:"come pronomi (senza nome)", ex:"Prendo questo, non quello."}
    ],
-   warn:"Come aggettivo, «quello» cambia secondo la parola che segue, esattamente come l'articolo: «quel ragazzo», «quello studente», «quegli amici», «quei libri»."},
+   warn:"Come aggettivo, «quello» cambia secondo la parola che segue, esattamente come l'articolo: «quel ragazzo», «quello studente», «quegli amici», «quei libri».",
+   exercises:[
+     {type:"Riempimento", instr:"Completa con la forma giusta di questo o quello (indicazione tra parentesi).", items:["___ caffè è ottimo. (questo)","___ montagna è alta. (quello, lontano)","___ studente è bravo. (quello)","___ amici sono simpatici. (quello)","___ libri sono nuovi. (quello)","___ idea mi piace. (questo)","___ zaino è pesante. (quello)","___ ragazze sono francesi. (quello)"], key:["<b>Questo</b> caffè","<b>Quella</b> montagna","<b>Quello</b> studente","<b>Quegli</b> amici","<b>Quei</b> libri","<b>Questa</b> idea","<b>Quello</b> zaino","<b>Quelle</b> ragazze"]},
+     {type:"Correzione", instr:"Correggi la forma di «quello» (si comporta come l'articolo determinativo).", items:["quel studente","quei amici","quello libro","quegli ragazzi","quella amica","quei zaini","quel albergo","quei case"], key:["<b>quello</b> studente","<b>quegli</b> amici","<b>quel</b> libro","<b>quei</b> ragazzi","<b>quell'</b>amica","<b>quegli</b> zaini","<b>quell'</b>albergo","<b>quelle</b> case"]},
+     {type:"Trasformazione", instr:"Volgi al plurale (dimostrativo + nome).", items:["questo libro","quella casa","quello studente","quest'amico","quel ragazzo","questa idea","quell'albero","quel film"], key:["<b>questi</b> libri","<b>quelle</b> case","<b>quegli</b> studenti","<b>questi</b> amici","<b>quei</b> ragazzi","<b>queste</b> idee","<b>quegli</b> alberi","<b>quei</b> film"]}
+   ]},
 
   {lvl:"a2", cat:"Aggettivi", title:"I comparativi",
    def:"Confrontano due elementi rispetto a una qualità, stabilendo se uno è superiore, inferiore o uguale all'altro.",
@@ -595,7 +720,12 @@ const ENTRIES = [
      {label:"che — tra due termini sullo stesso piano", ex:"È più furbo che intelligente. / Leggo più che scrivo."},
      {label:"uguaglianza", ex:"Sono alto come te."}
    ],
-   warn:"Comparativi <b>irregolari</b> accanto alle forme regolari: buono → migliore, cattivo → peggiore, grande → maggiore, piccolo → minore."},
+   warn:"Comparativi <b>irregolari</b> accanto alle forme regolari: buono → migliore, cattivo → peggiore, grande → maggiore, piccolo → minore.",
+   exercises:[
+     {type:"Riempimento", instr:"Completa con di o che.", items:["Marco è più alto ___ Luca.","È più furbo ___ intelligente.","Roma è più grande ___ Firenze.","Leggo più ___ scrivo.","Questo caffè è migliore ___ quello.","Ho più libri ___ quaderni.","Lei è più giovane ___ me.","È più facile dire ___ fare."], key:["<b>di</b> Luca","<b>che</b> intelligente","<b>di</b> Firenze","<b>che</b> scrivo","<b>di</b> quello","<b>che</b> quaderni","<b>di</b> me","<b>che</b> fare"]},
+     {type:"Correzione", instr:"Correggi il comparativo (scelta di/che o forma irregolare).", items:["Marco è più alto che Luca.","Sono più stanco che te.","Ho più amici di nemici.","È più bello che la foto.","Questo vino è più buono di quello.","Oggi sto più male di ieri.","È più grande che suo fratello.","Leggo più di scrivo."], key:["Marco è più alto <b>di</b> Luca.","Sono più stanco <b>di</b> te.","Ho più amici <b>che</b> nemici.","È più bello <b>della</b> foto.","Questo vino è <b>migliore</b> di quello.","Oggi sto <b>peggio</b> di ieri.","È più grande <b>di</b> suo fratello.","Leggo più <b>che</b> scrivo."]},
+     {type:"Scelta multipla", instr:"Scegli di o che.", items:["Sei più gentile (di / che) lui.","È più simpatico (di / che) bello.","Milano è più fredda (di / che) Roma.","Mangio più frutta (di / che) verdura.","Tu sei più veloce (di / che) me.","È meglio tardi (di / che) mai.","Ho meno tempo (di / che) te.","Preferisco viaggiare (di / che) restare a casa."], key:["<b>di</b> lui","<b>che</b> bello","<b>di</b> Roma","<b>che</b> verdura","<b>di</b> me","<b>che</b> mai","<b>di</b> te","<b>che</b> restare"]}
+   ]},
 
   {lvl:"a2", cat:"Pronomi", title:"I pronomi diretti",
    def:"Sostituiscono il <b>complemento oggetto</b> (la persona o cosa su cui ricade direttamente l'azione) per non ripeterlo.",
@@ -605,7 +735,12 @@ const ENTRIES = [
      {label:"posizione: prima del verbo coniugato", ex:"Ti aspetto."},
      {label:"si attaccano a infinito e imperativo", ex:"Voglio vederlo. / Chiamala!"}
    ],
-   warn:"Al passato prossimo lo/la/li/le fanno <b>concordare</b> il participio: «Hai visto i film? — Sì, li ho vist<i>i</i>». «Lo» e «la» davanti a ho/hai/ha si apostrofano: «l'ho visto»."},
+   warn:"Al passato prossimo lo/la/li/le fanno <b>concordare</b> il participio: «Hai visto i film? — Sì, li ho vist<i>i</i>». «Lo» e «la» davanti a ho/hai/ha si apostrofano: «l'ho visto».",
+   exercises:[
+     {type:"Riempimento", instr:"Completa con il pronome diretto giusto (mi, ti, lo, la, ci, vi, li, le).", items:["Conosci Maria? — Sì, ___ conosco.","Vedi i bambini? — Sì, ___ vedo.","Compri il pane? — Sì, ___ compro.","Inviti le ragazze? — Sì, ___ invito.","Mi chiami stasera? — Sì, ___ chiamo.","Prendi la macchina? — Sì, ___ prendo.","Leggi questi libri? — Sì, ___ leggo.","Mangi la mela? — Sì, ___ mangio."], key:["<b>la</b> conosco","<b>li</b> vedo","<b>lo</b> compro","<b>le</b> invito","<b>ti</b> chiamo","<b>la</b> prendo","<b>li</b> leggo","<b>la</b> mangio"]},
+     {type:"Correzione", instr:"Correggi posizione, apostrofo o accordo del participio.", items:["Conosco la.","I libri? Li ho letto.","Voglio vedere lo.","Le mele? Le ho mangiato.","Ti io aspetto.","Chiama la!","La ho vista.","Maria? Lo conosco bene."], key:["<b>La</b> conosco.","I libri? Li ho lett<b>i</b>.","Voglio veder<b>lo</b>.","Le mele? Le ho mangiat<b>e</b>.","Io <b>ti</b> aspetto.","Chiama<b>la</b>!","<b>L'</b>ho vista.","Maria? <b>La</b> conosco bene."]},
+     {type:"Trasformazione", instr:"Riscrivi sostituendo l'oggetto con il pronome diretto.", items:["Leggo il giornale.","Mangio la pizza.","Compro i biglietti.","Guardo le foto.","Voglio vedere il film.","Ho comprato la macchina.","Abbiamo invitato i vicini.","Ho letto le lettere."], key:["<b>Lo</b> leggo.","<b>La</b> mangio.","<b>Li</b> compro.","<b>Le</b> guardo.","Voglio veder<b>lo</b>. (/ <b>Lo</b> voglio vedere.)","<b>L'</b>ho comprata.","<b>Li</b> abbiamo invitati.","<b>Le</b> ho lette."]}
+   ]},
 
   {lvl:"a2", cat:"Verbi", title:"Condizionale di cortesia",
    def:"Una prima forma di condizionale, utile fin da subito perché rende qualsiasi richiesta più educata e meno brusca.",
@@ -615,7 +750,12 @@ const ENTRIES = [
      {label:"potrei / potresti — richiesta gentile", ex:"Potresti aiutarmi?"},
      {label:"dovresti — consiglio", ex:"Dovresti riposare di più."}
    ],
-   warn:"«Voglio un caffè» è corretto ma suona brusco; «<i>Vorrei</i> un caffè» è la forma che ci si aspetta da un adulto al bar o in negozio. È una questione di registro, non di grammatica."},
+   warn:"«Voglio un caffè» è corretto ma suona brusco; «<i>Vorrei</i> un caffè» è la forma che ci si aspetta da un adulto al bar o in negozio. È una questione di registro, non di grammatica.",
+   exercises:[
+     {type:"Riempimento", instr:"Completa con vorrei, potrei, dovrei, vorresti, potresti o dovresti (indicazione tra parentesi).", items:["___ un caffè, per favore. (io, desiderio)","___ aiutarmi? (tu, richiesta)","___ riposare di più. (tu, consiglio)","___ usare il bagno? (io, permesso)","___ studiare di più. (io, dovere)","___ venire alla festa? (tu, invito)","___ un'informazione. (io)","___ chiudere la finestra? (tu)"], key:["<b>Vorrei</b>","<b>Potresti</b>","<b>Dovresti</b>","<b>Potrei</b>","<b>Dovrei</b>","<b>Vorresti</b>","<b>Vorrei</b>","<b>Potresti</b>"]},
+     {type:"Correzione", instr:"Rendi più cortese la frase troppo brusca (usa il condizionale).", items:["Voglio un caffè.","Mi aiuti?","Devi riposare.","Posso entrare?","Voglio un'informazione.","Mi passi il sale?","Devo andare ora.","Vuoi un altro po' di vino?"], key:["<b>Vorrei</b> un caffè.","<b>Potresti</b> aiutarmi?","<b>Dovresti</b> riposare.","<b>Potrei</b> entrare?","<b>Vorrei</b> un'informazione.","<b>Potresti</b> passarmi il sale?","<b>Dovrei</b> andare ora.","<b>Vorresti</b> un altro po' di vino?"]},
+     {type:"Trasformazione", instr:"Trasforma dal presente al condizionale di cortesia.", items:["Voglio","Posso","Devo","Vuoi","Puoi","Devi","Mi dai una mano?","Mi presti la penna?"], key:["<b>Vorrei</b>","<b>Potrei</b>","<b>Dovrei</b>","<b>Vorresti</b>","<b>Potresti</b>","<b>Dovresti</b>","Mi <b>daresti</b> una mano?","Mi <b>presteresti</b> la penna?"]}
+   ]},
 
   {lvl:"a2", cat:"Verbi", title:"Sapere e potere",
    def:"Due verbi che in molte lingue si traducono allo stesso modo, ma in italiano coprono significati diversi: <b>capacità</b> contro <b>possibilità</b>.",
@@ -624,7 +764,12 @@ const ENTRIES = [
      {label:"sapere + nome/frase — conoscere un fatto", ex:"So la verità. / So che è tardi."},
      {label:"potere — possibilità concreta o permesso", ex:"Non posso venire (non ho tempo). / Posso entrare?"}
    ],
-   warn:"«So nuotare» = ne sono capace, ho imparato. «Posso nuotare» = ho la possibilità qui e ora (l'acqua è calda, non è vietato). Scambiarli cambia il senso della frase."},
+   warn:"«So nuotare» = ne sono capace, ho imparato. «Posso nuotare» = ho la possibilità qui e ora (l'acqua è calda, non è vietato). Scambiarli cambia il senso della frase.",
+   exercises:[
+     {type:"Riempimento", instr:"Completa con sapere o potere al presente.", items:["(io) ___ guidare, ho la patente.","Non (io) ___ venire stasera, ho da fare.","(tu) ___ nuotare?","___ entrare? (io, permesso)","(lei) ___ tre lingue.","Qui non si ___ fumare.","(noi) ___ cucinare bene.","___ ripetere, per favore? (tu)"], key:["<b>so</b>","<b>posso</b>","<b>Sai</b>","<b>Posso</b>","<b>sa</b>","<b>può</b>","<b>sappiamo</b>","<b>Puoi</b>"]},
+     {type:"Correzione", instr:"Correggi scegliendo tra sapere e potere (capacità vs possibilità/permesso).", items:["So venire domani (ho tempo libero).","Posso parlare francese (sono capace).","Non so aiutarti adesso, sono occupato.","Sai entrare? (chiedi permesso)","Puoi suonare il piano? (sei capace)","So uscire stasera? (è permesso)","Non posso il tedesco.","Puoi la verità?"], key:["<b>Posso</b> venire domani.","<b>So</b> parlare francese.","Non <b>posso</b> aiutarti adesso.","<b>Posso</b> entrare?","<b>Sai</b> suonare il piano?","<b>Posso</b> uscire stasera?","Non <b>so</b> il tedesco.","<b>Sai</b> la verità?"]},
+     {type:"Scelta multipla", instr:"Capacità appresa (sapere) o possibilità/permesso (potere)?", items:["___ andare in bici da quando avevo 5 anni. (So / Posso)","Oggi non ___ uscire, piove troppo. (so / posso)","___ parlare tre lingue. (So / Posso)","___ aprire la finestra? Fa caldo. (So / Posso)","Mio figlio ___ già leggere. (sa / può)","Qui non ___ parcheggiare. (sai / puoi)","___ cucinare benissimo. (Sa / Può)","___ ripetere? Non ho capito. (Sai / Puoi)"], key:["<b>So</b>","<b>posso</b>","<b>So</b>","<b>Posso</b>","<b>sa</b>","<b>puoi</b>","<b>Sa</b>","<b>Puoi</b>"]}
+   ]},
 
   /* ---------------- B1 ---------------- */
   {lvl:"b1", cat:"Verbi", title:"L'imperfetto",
@@ -640,7 +785,12 @@ const ENTRIES = [
      {label:"azione in corso, sfondo di un'altra", ex:"Dormivo quando hai chiamato."},
      {label:"età e ora nel passato", ex:"Avevo dieci anni. / Erano le tre."}
    ],
-   warn:"Pochissimi irregolari, quasi tutti dalla radice latina: essere → ero; fare → facevo; dire → dicevo; bere → bevevo."},
+   warn:"Pochissimi irregolari, quasi tutti dalla radice latina: essere → ero; fare → facevo; dire → dicevo; bere → bevevo.",
+   exercises:[
+     {type:"Riempimento", instr:"Coniuga all'imperfetto il verbo tra parentesi.", items:["Da bambino io ___ (giocare) a calcio.","La casa ___ (essere) grande.","Tu ___ (avere) i capelli lunghi.","Noi ___ (andare) al mare ogni estate.","___ (fare) freddo quel giorno.","I bambini ___ (dormire) già.","Voi ___ (abitare) a Roma?","Mentre lei ___ (leggere), io cucinavo."], key:["<b>giocavo</b>","<b>era</b>","<b>avevi</b>","<b>andavamo</b>","<b>Faceva</b>","<b>dormivano</b>","<b>abitavate</b>","<b>leggeva</b>"]},
+     {type:"Correzione", instr:"Correggi la coniugazione dell'imperfetto.", items:["Da bambino io giocava a calcio.","Loro erono simpatici.","Noi facevemo tardi.","Voi avevi ragione.","Mentre dormivo, lui guarda la TV.","Lei dicheva sempre la verità.","Ogni mattina io bevvo il latte.","Tu eravi molto giovane."], key:["Da bambino io <b>giocavo</b> a calcio.","Loro <b>erano</b> simpatici.","Noi <b>facevamo</b> tardi.","Voi <b>avevate</b> ragione.","Mentre dormivo, lui <b>guardava</b> la TV.","Lei <b>diceva</b> sempre la verità.","Ogni mattina io <b>bevevo</b> il latte.","Tu <b>eri</b> molto giovane."]},
+     {type:"Trasformazione", instr:"Volgi dal presente all'imperfetto.", items:["Gioco a tennis.","Siamo felici.","Fa caldo.","Hai ragione.","Dormono poco.","Bevo molto caffè.","Dico la verità.","Andate a scuola."], key:["<b>Giocavo</b> a tennis.","<b>Eravamo</b> felici.","<b>Faceva</b> caldo.","<b>Avevi</b> ragione.","<b>Dormivano</b> poco.","<b>Bevevo</b> molto caffè.","<b>Dicevo</b> la verità.","<b>Andavate</b> a scuola."]}
+   ]},
 
   {lvl:"b1", cat:"Verbi", title:"Imperfetto o passato prossimo?",
    def:"Il punto più delicato del passato italiano: i due tempi non sono intercambiabili, ma raccontano il passato da <b>due punti di vista diversi</b>.",
@@ -650,7 +800,12 @@ const ENTRIES = [
      {label:"insieme: sfondo + azione", ex:"Mentre cenavo (sfondo), è arrivato un messaggio (evento)."},
      {label:"abitudine vs volta singola", ex:"Andavo sempre al mare ≠ Sono andato al mare ieri."}
    ],
-   warn:"Spia utile (ma non assoluta): «mentre, ogni giorno, sempre» chiamano l'imperfetto; «ieri, una volta, all'improvviso» chiamano il passato prossimo. A decidere è comunque il <b>significato</b>, non la singola parola."},
+   warn:"Spia utile (ma non assoluta): «mentre, ogni giorno, sempre» chiamano l'imperfetto; «ieri, una volta, all'improvviso» chiamano il passato prossimo. A decidere è comunque il <b>significato</b>, non la singola parola.",
+   exercises:[
+     {type:"Riempimento", instr:"Scegli imperfetto o passato prossimo (verbo tra parentesi).", items:["Ieri ___ (incontrare) Marco al bar.","Da bambino ___ (andare) sempre al mare.","Mentre ___ (cenare), è arrivato un messaggio.","___ (essere) le tre quando sono uscito.","L'estate scorsa ___ (visitare) Roma.","La casa ___ (essere) grande e luminosa.","Quando ___ (entrare), tutti dormivano.","Ogni domenica ___ (mangiare, noi) dai nonni."], key:["<b>ho incontrato</b>","<b>andavo</b>","<b>cenavo</b>","<b>Erano</b>","<b>ho visitato</b>","<b>era</b>","<b>sono entrato</b>","<b>mangiavamo</b>"]},
+     {type:"Correzione", instr:"Correggi il tempo del verbo (imperfetto vs passato prossimo).", items:["Ieri andavo al cinema con Luca.","Da bambino ho giocato sempre a calcio.","Mentre ho camminato, ho visto Anna.","Erano le due e all'improvviso suonava il telefono.","La casa è stata grande e accogliente.","Ogni estate siamo andati in montagna.","Quando ero piccolo, ho avuto sempre paura del buio.","L'anno scorso visitavo Parigi."], key:["Ieri <b>sono andato</b> al cinema con Luca.","Da bambino <b>giocavo</b> sempre a calcio.","Mentre <b>camminavo</b>, ho visto Anna.","Erano le due e all'improvviso <b>è suonato</b> il telefono.","La casa <b>era</b> grande e accogliente.","Ogni estate <b>andavamo</b> in montagna.","Quando ero piccolo, <b>avevo</b> sempre paura del buio.","L'anno scorso <b>ho visitato</b> Parigi."]},
+     {type:"Trasformazione", instr:"Unisci le due azioni con «mentre»: lo sfondo all'imperfetto, l'evento al passato prossimo.", items:["(io dormire) + (il telefono squillare)","(lei cucinare) + (arrivare gli ospiti)","(noi guardare la TV) + (andare via la luce)","(tu studiare) + (io entrare)","(loro mangiare) + (cominciare a piovere)","(io leggere) + (suonare il campanello)","(lui camminare) + (cadere)","(noi dormire) + (scoppiare il temporale)"], key:["Mentre <b>dormivo</b>, il telefono <b>è squillato</b>.","Mentre <b>cucinava</b>, <b>sono arrivati</b> gli ospiti.","Mentre <b>guardavamo</b> la TV, <b>è andata</b> via la luce.","Mentre <b>studiavi</b>, <b>sono entrato</b>.","Mentre <b>mangiavano</b>, <b>ha cominciato</b> a piovere.","Mentre <b>leggevo</b>, <b>è suonato</b> il campanello.","Mentre <b>camminava</b>, <b>è caduto</b>.","Mentre <b>dormivamo</b>, <b>è scoppiato</b> il temporale."]}
+   ]},
 
   {lvl:"b1", cat:"Verbi", title:"Stare + gerundio",
    def:"La forma <b>progressiva</b> italiana: mette in primo piano un'azione còlta proprio nel suo svolgersi, ora o in un momento preciso del passato.",
@@ -659,7 +814,12 @@ const ENTRIES = [
      {label:"azione in corso ora", ex:"Sto leggendo, ti richiamo dopo."},
      {label:"azione in corso nel passato (con imperfetto)", ex:"Stavo uscendo quando è suonato il telefono."}
    ],
-   warn:"Non è obbligatoria come in inglese: per il presente abituale basta il presente semplice. «Lavoro in banca» (in generale) ≠ «Sto lavorando» (proprio ora). Diversa da «<b>stare per</b> + infinito» = azione imminente: «sto per uscire»."},
+   warn:"Non è obbligatoria come in inglese: per il presente abituale basta il presente semplice. «Lavoro in banca» (in generale) ≠ «Sto lavorando» (proprio ora). Diversa da «<b>stare per</b> + infinito» = azione imminente: «sto per uscire».",
+   exercises:[
+     {type:"Riempimento", instr:"Completa con stare + gerundio (presente o passato secondo il contesto).", items:["Non posso parlare, ___ (lavorare) ora.","Zitti! Il bambino ___ (dormire).","Cosa ___ (fare) tu in questo momento?","___ (uscire, io) quando è suonato il telefono.","Loro ___ (mangiare) proprio adesso.","Mentre ___ (piovere), siamo rimasti a casa.","Noi ___ (guardare) un film, ti richiamo dopo.","Lei ___ (leggere) quando l'ho vista."], key:["<b>sto lavorando</b>","<b>sta dormendo</b>","<b>stai facendo</b>","<b>Stavo uscendo</b>","<b>stanno mangiando</b>","<b>stava piovendo</b>","<b>stiamo guardando</b>","<b>stava leggendo</b>"]},
+     {type:"Correzione", instr:"Correggi la forma progressiva o il gerundio.", items:["Sto mangiare adesso.","Lui sta dormiendo.","Stavo usciendo.","Loro stanno andare via.","Sto leggiendo un libro.","Stai fando i compiti?","Lei sta beveendo un caffè.","Stavamo guardare la TV."], key:["Sto <b>mangiando</b> adesso.","Lui sta <b>dormendo</b>.","Stavo <b>uscendo</b>.","Loro stanno <b>andando</b> via.","Sto <b>leggendo</b> un libro.","Stai <b>facendo</b> i compiti?","Lei sta <b>bevendo</b> un caffè.","Stavamo <b>guardando</b> la TV."]},
+     {type:"Trasformazione", instr:"Volgi dal presente semplice alla forma progressiva (stare + gerundio).", items:["Mangio.","Leggi un libro.","Dormono.","Facciamo i compiti.","Lei beve un caffè.","Esco di casa.","Scrivete una mail.","Lui guarda la TV."], key:["<b>Sto mangiando</b>.","<b>Stai leggendo</b> un libro.","<b>Stanno dormendo</b>.","<b>Stiamo facendo</b> i compiti.","Lei <b>sta bevendo</b> un caffè.","<b>Sto uscendo</b> di casa.","<b>State scrivendo</b> una mail.","Lui <b>sta guardando</b> la TV."]}
+   ]},
 
   {lvl:"b1", cat:"Verbi", title:"Il futuro semplice",
    def:"Il tempo delle azioni che devono ancora avvenire, ma anche — tipicamente italiano — delle <b>supposizioni</b> sul presente.",
@@ -676,7 +836,12 @@ const ENTRIES = [
      {label:"previsioni", ex:"Domani pioverà."},
      {label:"supposizione/probabilità sul presente", ex:"Saranno le cinque. / Avrà trent'anni."}
    ],
-   warn:"Molti verbi hanno radice <b>contratta</b>: avere → avrò, andare → andrò, venire → verrò, vedere → vedrò, vivere → vivrò, bere → berrò. Vanno memorizzati."},
+   warn:"Molti verbi hanno radice <b>contratta</b>: avere → avrò, andare → andrò, venire → verrò, vedere → vedrò, vivere → vivrò, bere → berrò. Vanno memorizzati.",
+   exercises:[
+     {type:"Riempimento", instr:"Coniuga al futuro semplice il verbo tra parentesi.", items:["Domani ___ (andare, io) a Roma.","___ (essere) una bella giornata.","L'anno prossimo voi ___ (cambiare) casa?","Loro ___ (venire) alla festa.","Tu ___ (avere) successo, ne sono certo.","Noi ___ (vedere) cosa fare.","___ (potere, io) chiamarti più tardi?","Lei ___ (vivere) all'estero."], key:["<b>andrò</b>","<b>Sarà</b>","<b>cambierete</b>","<b>verranno</b>","<b>avrai</b>","<b>vedremo</b>","<b>Potrò</b>","<b>vivrà</b>"]},
+     {type:"Correzione", instr:"Correggi il futuro (radice contratta o terminazione).", items:["Domani anderò al mare.","Lui venirà tardi.","Io vederò un film.","Tu sarrai felice.","Voi vivirete a Milano.","Loro poteranno aiutarti.","Io berò un caffè.","Lei rimanerà a casa."], key:["Domani <b>andrò</b> al mare.","Lui <b>verrà</b> tardi.","Io <b>vedrò</b> un film.","Tu <b>sarai</b> felice.","Voi <b>vivrete</b> a Milano.","Loro <b>potranno</b> aiutarti.","Io <b>berrò</b> un caffè.","Lei <b>rimarrà</b> a casa."]},
+     {type:"Trasformazione", instr:"Volgi dal presente al futuro semplice.", items:["Vado a scuola.","Siamo in ritardo.","Hai ragione.","Vengono domani.","Bevo un caffè.","Lei rimane qui.","Possiamo venire.","Vedi i risultati."], key:["<b>Andrò</b> a scuola.","<b>Saremo</b> in ritardo.","<b>Avrai</b> ragione.","<b>Verranno</b> domani.","<b>Berrò</b> un caffè.","Lei <b>rimarrà</b> qui.","<b>Potremo</b> venire.","<b>Vedrai</b> i risultati."]}
+   ]},
 
   {lvl:"b1", cat:"Nomi", title:"Il partitivo",
    def:"Esprime una quantità imprecisata, «una parte di» qualcosa. Funziona come <b>plurale dell'articolo indeterminativo</b> (che non esiste).",
@@ -686,7 +851,12 @@ const ENTRIES = [
      {label:"«alcuni» numerabili (plurale di un/una)", ex:"Ho comprato delle mele."},
      {label:"alternative equivalenti", ex:"qualche amico / alcuni amici / un po' di tempo"}
    ],
-   warn:"Nelle frasi negative il partitivo di solito <b>sparisce</b>: «Ho del pane» → «Non ho pane» (non «non ho del pane»)."},
+   warn:"Nelle frasi negative il partitivo di solito <b>sparisce</b>: «Ho del pane» → «Non ho pane» (non «non ho del pane»).",
+   exercises:[
+     {type:"Riempimento", instr:"Completa con il partitivo (del, dello, della, dell', dei, degli, delle).", items:["Vorrei ___ pane.","Ho comprato ___ mele.","C'è ___ acqua nel frigo.","Mangio ___ formaggio.","Ci sono ___ studenti in aula.","Bevo ___ vino a cena.","Ho ___ amici a Milano.","Metti ___ zucchero nel caffè."], key:["<b>del</b> pane","<b>delle</b> mele","<b>dell'</b>acqua","<b>del</b> formaggio","<b>degli</b> studenti","<b>del</b> vino","<b>degli</b> amici","<b>dello</b> zucchero"]},
+     {type:"Correzione", instr:"Correggi la forma del partitivo o il suo uso nella frase negativa.", items:["Vorrei dei pane.","Ho comprato del mele.","Non ho del tempo.","C'è della latte.","Mangio degli formaggio.","Ci sono dei amiche.","Bevo dell'vino.","Non c'è dei problemi."], key:["Vorrei <b>del</b> pane.","Ho comprato <b>delle</b> mele.","Non ho <b>tempo</b>.","C'è <b>del</b> latte.","Mangio <b>del</b> formaggio.","Ci sono <b>delle</b> amiche.","Bevo <b>del</b> vino.","Non ci sono <b>problemi</b>."]},
+     {type:"Trasformazione", instr:"Riscrivi con un'alternativa equivalente (qualche + singolare oppure alcuni/e + plurale).", items:["Ho comprato delle mele.","Ho degli amici a Roma.","Ci sono dei problemi.","Ho letto dei libri.","Servono delle sedie.","Ho visto degli errori.","Abbiamo delle idee.","Mancano dei documenti."], key:["<b>qualche mela</b> / <b>alcune mele</b>","<b>qualche amico</b> / <b>alcuni amici</b>","<b>qualche problema</b> / <b>alcuni problemi</b>","<b>qualche libro</b> / <b>alcuni libri</b>","<b>qualche sedia</b> / <b>alcune sedie</b>","<b>qualche errore</b> / <b>alcuni errori</b>","<b>qualche idea</b> / <b>alcune idee</b>","<b>qualche documento</b> / <b>alcuni documenti</b>"]}
+   ]},
 
   {lvl:"b1", cat:"Verbi", title:"Il congiuntivo presente",
    def:"Il modo della <b>soggettività</b>. L'indicativo presenta i fatti come certi; il congiuntivo li filtra attraverso un'opinione, un dubbio, un desiderio o un'emozione. Si usa quasi solo nelle subordinate.",
@@ -704,7 +874,12 @@ const ENTRIES = [
      {label:"dopo espressioni impersonali", ex:"È importante che tu lo sappia."},
      {label:"dopo certe congiunzioni (benché, affinché, prima che)", ex:"Te lo dico affinché tu capisca."}
    ],
-   warn:"Serve il congiuntivo solo se i <b>due soggetti sono diversi</b>. Se il soggetto è lo stesso si usa «di + infinito»: «Penso che <i>tu</i> abbia ragione» ma «Penso <i>di</i> avere ragione» (io–io). Irregolari: essere (sia), avere (abbia), fare (faccia), andare (vada), venire (venga), dare (dia), stare (stia)."},
+   warn:"Serve il congiuntivo solo se i <b>due soggetti sono diversi</b>. Se il soggetto è lo stesso si usa «di + infinito»: «Penso che <i>tu</i> abbia ragione» ma «Penso <i>di</i> avere ragione» (io–io). Irregolari: essere (sia), avere (abbia), fare (faccia), andare (vada), venire (venga), dare (dia), stare (stia).",
+   exercises:[
+     {type:"Riempimento", instr:"Coniuga al congiuntivo presente il verbo tra parentesi.", items:["Penso che lui ___ (avere) ragione.","Voglio che tu ___ (studiare) di più.","È importante che voi ___ (essere) puntuali.","Dubito che loro ___ (venire).","Spero che ___ (fare) bel tempo.","Credo che Maria ___ (andare) via.","Bisogna che noi ___ (partire) presto.","Non penso che ___ (sapere, lui) la verità."], key:["<b>abbia</b>","<b>studi</b>","<b>siate</b>","<b>vengano</b>","<b>faccia</b>","<b>vada</b>","<b>partiamo</b>","<b>sappia</b>"]},
+     {type:"Correzione", instr:"Correggi: serve il congiuntivo, oppure «di + infinito» se il soggetto è lo stesso.", items:["Penso che lui ha ragione.","Spero che vieni.","Credo che sono le tre.","Penso che io abbia ragione.","È meglio che tu vai.","Voglio che tu fai i compiti.","Dubito che loro sanno.","Voglio di andare via."], key:["Penso che lui <b>abbia</b> ragione.","Spero che <b>venga</b>.","Credo che <b>siano</b> le tre.","Penso <b>di avere</b> ragione. (stesso soggetto)","È meglio che tu <b>vada</b>.","Voglio che tu <b>faccia</b> i compiti.","Dubito che loro <b>sappiano</b>.","Voglio <b>andare</b> via. (stesso soggetto)"]},
+     {type:"Scelta multipla", instr:"Indicativo (certezza) o congiuntivo (opinione/dubbio)? Scegli la forma corretta.", items:["So che (è / sia) tardi.","Penso che (è / sia) tardi.","È sicuro che (viene / venga).","Dubito che (viene / venga).","Vedo che (stai / stia) bene.","Spero che (stai / stia) bene.","Sono certo che (hai / abbia) ragione.","Mi sembra che (ha / abbia) ragione."], key:["<b>è</b> tardi","<b>sia</b> tardi","<b>viene</b>","<b>venga</b>","<b>stai</b> bene","<b>stia</b> bene","<b>hai</b> ragione","<b>abbia</b> ragione"]}
+   ]},
 
   {lvl:"b1", cat:"Verbi", title:"Il congiuntivo passato",
    def:"Esprime la stessa soggettività del congiuntivo presente, ma riferita a un fatto <b>già avvenuto</b> rispetto al momento in cui si parla.",
@@ -713,7 +888,12 @@ const ENTRIES = [
      {label:"opinione su un fatto passato", ex:"Credo che sia già partito."},
      {label:"emozione per qualcosa di accaduto", ex:"Mi dispiace che tu abbia avuto problemi."}
    ],
-   warn:"Valgono le regole dei tempi composti: con essere il participio <b>concorda</b> col soggetto (credo che sia partit<i>a</i> / siano partit<i>i</i>)."},
+   warn:"Valgono le regole dei tempi composti: con essere il participio <b>concorda</b> col soggetto (credo che sia partit<i>a</i> / siano partit<i>i</i>).",
+   exercises:[
+     {type:"Riempimento", instr:"Completa con il congiuntivo passato (sia/abbia + participio).", items:["Credo che lui ___ (partire) ieri.","Penso che voi ___ (capire) tutto.","Mi dispiace che tu ___ (avere) problemi.","Spero che loro ___ (arrivare) bene.","Dubito che Maria ___ (finire) il lavoro.","È strano che non ___ (chiamare, lui).","Non credo che ___ (succedere) niente.","Sono contento che voi ___ (venire)."], key:["<b>sia partito</b>","<b>abbiate capito</b>","<b>abbia avuto</b>","<b>siano arrivati</b>","<b>abbia finito</b>","<b>abbia chiamato</b>","<b>sia successo</b>","<b>siate venuti</b>"]},
+     {type:"Correzione", instr:"Correggi l'ausiliare o l'accordo del participio nel congiuntivo passato.", items:["Credo che Maria sia partito.","Penso che abbia andato via.","Spero che loro siano arrivato.","Mi dispiace che tu sia avuto problemi.","Dubito che lui abbia venuto.","È strano che le ragazze siano partito.","Penso che hai capito.","Credo che siano nato a Roma."], key:["Credo che Maria sia partit<b>a</b>.","Penso che <b>sia</b> andato via.","Spero che loro siano arrivat<b>i</b>.","Mi dispiace che tu <b>abbia</b> avuto problemi.","Dubito che lui <b>sia</b> venuto.","È strano che le ragazze siano partit<b>e</b>.","Penso che tu <b>abbia capito</b>.","Credo che siano nat<b>i</b> a Roma."]},
+     {type:"Trasformazione", instr:"Volgi dal congiuntivo presente (contemporaneità) al congiuntivo passato (anteriorità).", items:["Penso che venga.","Credo che parta.","Spero che capisca.","Dubito che lo faccia.","È strano che non risponda.","Penso che arrivino.","Mi dispiace che stia male.","Non credo che dica la verità."], key:["Penso che <b>sia venuto</b>.","Credo che <b>sia partito</b>.","Spero che <b>abbia capito</b>.","Dubito che lo <b>abbia fatto</b>.","È strano che non <b>abbia risposto</b>.","Penso che <b>siano arrivati</b>.","Mi dispiace che <b>sia stato</b> male.","Non credo che <b>abbia detto</b> la verità."]}
+   ]},
 
   {lvl:"b1", cat:"Verbi", title:"Il congiuntivo imperfetto",
    def:"Il congiuntivo riferito al passato o a ipotesi non reali. Regge il periodo ipotetico della possibilità e le frasi soggettive con reggente al passato.",
@@ -730,7 +910,12 @@ const ENTRIES = [
      {label:"desiderio", ex:"Vorrei che tu venissi."},
      {label:"ipotesi possibile (periodo ipotetico 2° tipo)", ex:"Se avessi tempo, viaggerei."}
    ],
-   warn:"Irregolari principali: essere → fossi; dare → dessi; stare → stessi; fare → facessi; dire → dicessi; bere → bevessi."},
+   warn:"Irregolari principali: essere → fossi; dare → dessi; stare → stessi; fare → facessi; dire → dicessi; bere → bevessi.",
+   exercises:[
+     {type:"Riempimento", instr:"Coniuga al congiuntivo imperfetto il verbo tra parentesi.", items:["Pensavo che tu ___ (essere) a casa.","Vorrei che lui ___ (venire) con noi.","Se ___ (avere, io) tempo, viaggerei.","Credevo che voi ___ (sapere) la verità.","Sarebbe bello se ___ (fare) bel tempo.","Volevo che loro ___ (partire) prima.","Se tu ___ (studiare) di più, passeresti.","Pensavo che noi ___ (potere) farcela."], key:["<b>fossi</b>","<b>venisse</b>","<b>avessi</b>","<b>sapeste</b>","<b>facesse</b>","<b>partissero</b>","<b>studiassi</b>","<b>potessimo</b>"]},
+     {type:"Correzione", instr:"Correggi (forma del congiuntivo imperfetto, o «se» che vuole il congiuntivo, non il condizionale).", items:["Se avrei tempo, viaggerei.","Pensavo che era facile.","Vorrei che tu venivi.","Se sarei ricco, comprerei una casa.","Credevo che loro facevano i compiti.","Se studierei di più, passerei.","Pensavo che voi eravate qui.","Sarebbe bello se avrei più tempo."], key:["Se <b>avessi</b> tempo, viaggerei.","Pensavo che <b>fosse</b> facile.","Vorrei che tu <b>venissi</b>.","Se <b>fossi</b> ricco, comprerei una casa.","Credevo che loro <b>facessero</b> i compiti.","Se <b>studiassi</b> di più, passerei.","Pensavo che voi <b>foste</b> qui.","Sarebbe bello se <b>avessi</b> più tempo."]},
+     {type:"Trasformazione", instr:"Volgi la reggente al passato (presente → imperfetto, congiuntivo presente → imperfetto).", items:["Penso che sia vero.","Credo che venga.","Spero che tu stia bene.","Voglio che lo facciano.","Dubito che parta.","È strano che non risponda.","Penso che abbiano ragione.","Mi sembra che sia tardi."], key:["<b>Pensavo</b> che <b>fosse</b> vero.","<b>Credevo</b> che <b>venisse</b>.","<b>Speravo</b> che tu <b>stessi</b> bene.","<b>Volevo</b> che lo <b>facessero</b>.","<b>Dubitavo</b> che <b>partisse</b>.","<b>Era</b> strano che non <b>rispondesse</b>.","<b>Pensavo</b> che <b>avessero</b> ragione.","Mi <b>sembrava</b> che <b>fosse</b> tardi."]}
+   ]},
 
   {lvl:"b1", cat:"Verbi", title:"Il condizionale semplice",
    def:"Il modo di ciò che dipende da una condizione, dei desideri e delle richieste cortesi. È la <b>conseguenza</b> del periodo ipotetico.",
@@ -747,7 +932,12 @@ const ENTRIES = [
      {label:"conseguenza di un'ipotesi", ex:"Con più tempo, finirei prima."},
      {label:"notizia non confermata (giornalismo)", ex:"Il ministro sarebbe pronto a dimettersi."}
    ],
-   warn:"Chi conosce il futuro è avvantaggiato: la radice è la stessa (andrò → andrei, avrò → avrei). Cambiano solo le terminazioni."},
+   warn:"Chi conosce il futuro è avvantaggiato: la radice è la stessa (andrò → andrei, avrò → avrei). Cambiano solo le terminazioni.",
+   exercises:[
+     {type:"Riempimento", instr:"Coniuga al condizionale semplice il verbo tra parentesi.", items:["___ (volere, io) un caffè.","Tu ___ (dovere) riposare.","Con più tempo, ___ (finire, io) prima.","___ (potere) aiutarmi? (tu)","Loro ___ (venire) volentieri.","Mi ___ (piacere) vivere al mare.","Noi ___ (essere) felici di aiutarti.","Lei ___ (avere) bisogno di riposo."], key:["<b>Vorrei</b>","<b>dovresti</b>","<b>finirei</b>","<b>Potresti</b>","<b>verrebbero</b>","<b>piacerebbe</b>","<b>saremmo</b>","<b>avrebbe</b>"]},
+     {type:"Correzione", instr:"Correggi il condizionale (radice contratta, terminazione, o futuro usato per errore).", items:["Io vorei un caffè.","Lui venirebbe volentieri.","Noi saremo felici di aiutarti.","Loro poterebbero aiutare.","Mi piacerebe viaggiare.","Io anderei volentieri.","Lei farebe meglio a studiare.","Noi vivremo al mare."], key:["Io <b>vorrei</b> un caffè.","Lui <b>verrebbe</b> volentieri.","Noi <b>saremmo</b> felici di aiutarti.","Loro <b>potrebbero</b> aiutare.","Mi <b>piacerebbe</b> viaggiare.","Io <b>andrei</b> volentieri.","Lei <b>farebbe</b> meglio a studiare.","Noi <b>vivremmo</b> al mare."]},
+     {type:"Trasformazione", instr:"Volgi dal futuro al condizionale semplice (stessa radice, cambiano le terminazioni).", items:["andrò","sarà","avranno","potremo","verrai","farete","vivrò","berrà"], key:["<b>andrei</b>","<b>sarebbe</b>","<b>avrebbero</b>","<b>potremmo</b>","<b>verresti</b>","<b>fareste</b>","<b>vivrei</b>","<b>berrebbe</b>"]}
+   ]},
 
   {lvl:"b1", cat:"Sintassi", title:"Il periodo ipotetico",
    def:"La struttura «se…, allora…». In italiano modo e tempo dei verbi cambiano a seconda di <b>quanto l'ipotesi è realistica</b>: si distinguono tre tipi.",
@@ -756,7 +946,12 @@ const ENTRIES = [
      {label:"2° tipo — possibilità: se + cong. imperfetto, condizionale presente", ex:"Se avessi tempo, viaggerei."},
      {label:"3° tipo — irrealtà nel passato: se + cong. trapassato, condizionale passato", ex:"Se avessi studiato, avrei superato l'esame."}
    ],
-   warn:"Errore classico: il condizionale dopo «se». <b>Non</b> «se avrei tempo» ma «se <i>avessi</i> tempo». Dopo «se» va il congiuntivo (tipi 2 e 3), mai il condizionale."},
+   warn:"Errore classico: il condizionale dopo «se». <b>Non</b> «se avrei tempo» ma «se <i>avessi</i> tempo». Dopo «se» va il congiuntivo (tipi 2 e 3), mai il condizionale.",
+   exercises:[
+     {type:"Riempimento", instr:"Completa il periodo ipotetico (verbo tra parentesi; il tipo è indicato).", items:["Se studi, ___ (passare) l'esame. (1° tipo)","Se ___ (avere, io) tempo, viaggerei. (2°)","Se piove, ___ (restare, io) a casa. (1°)","Se fossi ricco, ___ (comprare) una villa. (2°)","Se avessi studiato, ___ (superare) l'esame. (3°)","Se ___ (potere, tu), mi aiuteresti? (2°)","Se me l'avessi detto, ___ (venire, io). (3°)","Se ___ (fare) bel tempo domani, usciremo. (1°)"], key:["<b>passi</b> / <b>passerai</b>","<b>avessi</b>","<b>resto</b> / <b>resterò</b>","<b>comprerei</b>","<b>avrei superato</b>","<b>potessi</b>","<b>sarei venuto</b>","<b>fa</b> / <b>farà</b>"]},
+     {type:"Correzione", instr:"Correggi l'errore classico: niente condizionale dopo «se».", items:["Se avrei tempo, verrei.","Se sarei ricco, viaggerei.","Se studierei, passerei.","Se avresti fame, mangeremmo.","Se potrei, ti aiuterei.","Se l'avrei saputo, sarei venuto.","Se faresti silenzio, sentirei.","Se verrei, mi divertirei."], key:["Se <b>avessi</b> tempo, verrei.","Se <b>fossi</b> ricco, viaggerei.","Se <b>studiassi</b>, passerei.","Se <b>avessi</b> fame, mangeremmo.","Se <b>potessi</b>, ti aiuterei.","Se l'<b>avessi</b> saputo, sarei venuto.","Se <b>facessi</b> silenzio, sentirei.","Se <b>venissi</b>, mi divertirei."]},
+     {type:"Trasformazione", instr:"Trasforma dal 1° tipo (realtà) al 2° tipo (possibilità).", items:["Se ho tempo, viaggio.","Se studio, passo l'esame.","Se piove, resto a casa.","Se posso, ti aiuto.","Se vinco, festeggio.","Se sei libero, usciamo.","Se mangio troppo, sto male.","Se finisco presto, ti chiamo."], key:["Se <b>avessi</b> tempo, <b>viaggerei</b>.","Se <b>studiassi</b>, <b>passerei</b> l'esame.","Se <b>piovesse</b>, <b>resterei</b> a casa.","Se <b>potessi</b>, ti <b>aiuterei</b>.","Se <b>vincessi</b>, <b>festeggerei</b>.","Se <b>fossi</b> libero, <b>usciremmo</b>.","Se <b>mangiassi</b> troppo, <b>starei</b> male.","Se <b>finissi</b> presto, ti <b>chiamerei</b>."]}
+   ]},
 
   {lvl:"b1", cat:"Pronomi", title:"Pronomi relativi: che e cui",
    def:"Collegano due frasi riferendosi a un elemento già nominato, per non ripeterlo. Sono lo strumento principale per costruire <b>frasi complesse</b>.",
@@ -767,7 +962,12 @@ const ENTRIES = [
      {label:"cui = dopo preposizione", ex:"La persona a cui scrivo / il motivo per cui resto."},
      {label:"il/la/i/le cui = possesso («di cui»)", ex:"Lo scrittore il cui romanzo è famoso."}
    ],
-   warn:"Dopo una preposizione <b>non</b> si usa «che»: non «la casa in che vivo» ma «la casa in <i>cui</i> vivo». In alternativa, più formale: il quale / la quale / i quali / le quali."},
+   warn:"Dopo una preposizione <b>non</b> si usa «che»: non «la casa in che vivo» ma «la casa in <i>cui</i> vivo». In alternativa, più formale: il quale / la quale / i quali / le quali.",
+   exercises:[
+     {type:"Riempimento", instr:"Completa con che o cui (con la preposizione se serve).", items:["Il treno ___ parte alle 8 è in ritardo.","Il libro ___ leggo è bello.","La persona a ___ scrivo è mia zia.","Il motivo per ___ resto è semplice.","La città in ___ vivo è Siviglia.","L'amico ___ mi ha aiutato è Marco.","Lo scrittore il ___ romanzo è famoso.","La ragazza con ___ esco è spagnola."], key:["<b>che</b>","<b>che</b>","<b>cui</b>","<b>cui</b>","<b>cui</b>","<b>che</b>","<b>cui</b>","<b>cui</b>"]},
+     {type:"Correzione", instr:"Correggi: dopo una preposizione serve «cui», non «che».", items:["La casa in che vivo.","Il motivo per che resto.","La persona a che scrivo.","L'amico che esco con.","Il libro di che parli.","La città in che sono nato.","Il collega a che ho dato il file.","La ragione per che parto."], key:["La casa in <b>cui</b> vivo.","Il motivo per <b>cui</b> resto.","La persona a <b>cui</b> scrivo.","L'amico <b>con cui</b> esco.","Il libro di <b>cui</b> parli.","La città in <b>cui</b> sono nato.","Il collega a <b>cui</b> ho dato il file.","La ragione per <b>cui</b> parto."]},
+     {type:"Trasformazione", instr:"Unisci le due frasi con un pronome relativo (che o cui).", items:["Ho un amico. L'amico vive a Roma.","Questo è il libro. Ti ho parlato del libro.","C'è una ragazza. Esco con la ragazza.","Ecco la casa. Abito nella casa.","È un collega. Stimo il collega.","Ho un motivo. Resto per il motivo.","Questa è la persona. Ho dato il libro alla persona.","Conosco un medico. Il medico è bravo."], key:["Ho un amico <b>che</b> vive a Roma.","Questo è il libro <b>di cui</b> ti ho parlato.","C'è una ragazza <b>con cui</b> esco.","Ecco la casa <b>in cui</b> abito.","È un collega <b>che</b> stimo.","Ho un motivo <b>per cui</b> resto.","Questa è la persona <b>a cui</b> ho dato il libro.","Conosco un medico <b>che</b> è bravo."]}
+   ]},
 
   {lvl:"b1", cat:"Pronomi", title:"I pronomi indiretti",
    def:"Sostituiscono il <b>complemento di termine</b>, la persona «a cui» è diretta l'azione (a chi do, dico, scrivo, telefono…).",
@@ -777,7 +977,12 @@ const ENTRIES = [
      {label:"con telefonare, rispondere, piacere", ex:"Telefono a Maria → Le telefono."},
      {label:"posizione: come i diretti", ex:"Ti scrivo. / Voglio parlarti."}
    ],
-   warn:"Distinzione cruciale: «<i>La</i> vedo» (diretto = vedo lei) contro «<i>Le</i> parlo» (indiretto = parlo a lei). A differenza dei diretti, gli indiretti <b>non</b> fanno concordare il participio: «Le ho parlato» (non «parlata»)."},
+   warn:"Distinzione cruciale: «<i>La</i> vedo» (diretto = vedo lei) contro «<i>Le</i> parlo» (indiretto = parlo a lei). A differenza dei diretti, gli indiretti <b>non</b> fanno concordare il participio: «Le ho parlato» (non «parlata»).",
+   exercises:[
+     {type:"Riempimento", instr:"Sostituisci il complemento di termine con il pronome indiretto (mi, ti, gli, le, ci, vi, gli).", items:["Do un libro a Marco.","Telefono a Maria.","Scrivo ai miei genitori.","Rispondi a me?","Offro un caffè a voi.","Chiedo aiuto a te.","Mando una mail al cliente.","Spiego la regola agli studenti."], key:["<b>Gli</b> do un libro.","<b>Le</b> telefono.","<b>Gli</b> scrivo. (/ Scrivo <b>loro</b>)","<b>Mi</b> rispondi?","<b>Vi</b> offro un caffè.","<b>Ti</b> chiedo aiuto.","<b>Gli</b> mando una mail.","<b>Gli</b> spiego la regola."]},
+     {type:"Correzione", instr:"Correggi la scelta diretto/indiretto o l'accordo del participio.", items:["Telefono Maria.","Le ho parlata ieri.","Lo do un libro (a lui).","La rispondo subito (a lei).","Gli ho vista (lei, diretto).","Ti ho telefonata.","Le ho dato un regalo e le ho ringraziata.","Gli parlo a lei."], key:["<b>Le</b> telefono. (telefonare <b>a</b>)","Le ho <b>parlato</b> ieri.","<b>Gli</b> do un libro.","<b>Le</b> rispondo subito.","<b>L'</b>ho vista.","Ti ho <b>telefonato</b>.","...e <b>l'</b>ho ringraziata. (ringraziare è diretto)","<b>Le</b> parlo."]},
+     {type:"Scelta multipla", instr:"Diretto (oggetto) o indiretto (a chi)? Scegli il pronome corretto.", items:["___ vedo ogni giorno (lui). (Lo / Gli)","___ parlo spesso (a lui). (Lo / Gli)","___ telefono stasera (a lei). (La / Le)","___ conosco bene (lei). (La / Le)","___ ho dato il libro (a loro). (Li / Gli)","___ aspetto fuori (loro). (Li / Gli)","___ scrivo una mail (a lei). (La / Le)","___ invito alla festa (lei). (La / Le)"], key:["<b>Lo</b> vedo","<b>Gli</b> parlo","<b>Le</b> telefono","<b>La</b> conosco","<b>Gli</b> ho dato","<b>Li</b> aspetto","<b>Le</b> scrivo","<b>La</b> invito"]}
+   ]},
 
   {lvl:"b1", cat:"Pronomi", title:"I pronomi combinati",
    def:"Quando in una frase ci sono insieme un pronome <b>indiretto</b> e uno <b>diretto</b>, si fondono in un'unica forma con alcune trasformazioni.",
@@ -795,7 +1000,12 @@ const ENTRIES = [
      {label:"indiretto + diretto", ex:"Me lo dai? (a me + lo)"},
      {label:"glie- per lui e per lei", ex:"Glielo dico (a lui / a lei)."}
    ],
-   warn:"«gli» e «le» diventano <b>entrambi</b> «glie-»: «glielo dico» può valere sia «lo dico a lui» sia «lo dico a lei». Decide il contesto."},
+   warn:"«gli» e «le» diventano <b>entrambi</b> «glie-»: «glielo dico» può valere sia «lo dico a lui» sia «lo dico a lei». Decide il contesto.",
+   exercises:[
+     {type:"Riempimento", instr:"Sostituisci entrambi i complementi con il pronome combinato.", items:["Mi dai il libro?","Ti porto la borsa.","Do il regalo a lui.","Ci spiega la regola.","Vi mando le foto.","Compro i fiori a lei.","Mi presti la macchina?","Dico la verità a loro."], key:["<b>Me lo</b> dai?","<b>Te la</b> porto.","<b>Glielo</b> do.","<b>Ce la</b> spiega.","<b>Ve le</b> mando.","<b>Glieli</b> compro.","<b>Me la</b> presti?","<b>Gliela</b> dico."]},
+     {type:"Correzione", instr:"Correggi il pronome combinato (ordine, fusione o accordo col diretto).", items:["Lo me dai?","Gli lo dico.","Ve li mando le foto.","Glie la do.","Mi lo presti?","Te le porto la borsa.","Ce lo spiega la regola.","Gli li compro (i fiori, a lei)."], key:["<b>Me lo</b> dai?","<b>Glielo</b> dico.","<b>Ve le</b> mando.","<b>Gliela</b> do.","<b>Me lo</b> presti?","<b>Te la</b> porto.","<b>Ce la</b> spiega.","<b>Glieli</b> compro."]},
+     {type:"Trasformazione", instr:"Riscrivi sostituendo indiretto + diretto con il pronome combinato.", items:["Do il libro a te.","Mando la lettera a lui.","Porti i documenti a me?","Spieghiamo la regola a voi.","Regala i fiori a lei.","Presti la macchina a noi?","Dico le cose a loro.","Compri il pane a me?"], key:["<b>Te lo</b> do.","<b>Gliela</b> mando.","<b>Me li</b> porti?","<b>Ve la</b> spieghiamo.","<b>Glieli</b> regala.","<b>Ce la</b> presti?","<b>Gliele</b> dico.","<b>Me lo</b> compri?"]}
+   ]},
 
   {lvl:"b1", cat:"Verbi", title:"I verbi pronominali",
    def:"Verbi «incastonati» con uno o due pronomi che ne <b>cambiano il significato</b> rispetto al verbo di partenza. Frequentissimi nell'italiano parlato e idiomatico.",
@@ -806,7 +1016,12 @@ const ENTRIES = [
      {label:"volerci = essere necessario", ex:"Ci vogliono due ore."},
      {label:"metterci = impiegare (soggetto personale)", ex:"Ci metto dieci minuti."}
    ],
-   warn:"Occhio a <b>volerci</b> contro <b>metterci</b>: «ci vuole/vogliono» è impersonale e concorda con la cosa necessaria; «ci metto/metti…» ha un soggetto personale. «Ci vogliono 2 ore» ma «<i>Io</i> ci metto 2 ore»."},
+   warn:"Occhio a <b>volerci</b> contro <b>metterci</b>: «ci vuole/vogliono» è impersonale e concorda con la cosa necessaria; «ci metto/metti…» ha un soggetto personale. «Ci vogliono 2 ore» ma «<i>Io</i> ci metto 2 ore».",
+   exercises:[
+     {type:"Riempimento", instr:"Completa il verbo pronominale (andarsene, farcela, cavarsela, volerci, metterci).", items:["È tardi, (io) ___ vado.","È dura, ma (io) ce la ___.","Non parlo bene il tedesco, ma me la ___.","Per arrivare ___ due ore.","(Io) ci ___ dieci minuti a piedi.","Ragazzi, ___ andate già?","Quanto tempo ci ___ per cuocere la pasta?","Non ce la ___ più! (io)"], key:["<b>me ne</b> vado","ce la <b>faccio</b>","me la <b>cavo</b>","<b>ci vogliono</b> due ore","ci <b>metto</b> dieci minuti","<b>ve ne</b> andate","ci <b>vuole</b>","non ce la <b>faccio</b>"]},
+     {type:"Correzione", instr:"Correggi (forma del pronominale o volerci vs metterci).", items:["Io ci voglio due ore.","Ci mette tre ore per andare a Roma (in generale).","Ce la facio.","Me ne vo.","Ci vuole due ore.","Io ci metti dieci minuti.","Se ne va loro alle otto.","Non ce la faciamo più."], key:["Io ci <b>metto</b> due ore.","Ci <b>vogliono</b> tre ore.","Ce la <b>faccio</b>.","Me ne <b>vado</b>.","Ci <b>vogliono</b> due ore.","Io ci <b>metto</b> dieci minuti.","Se ne <b>vanno</b> alle otto.","Non ce la <b>facciamo</b> più."]},
+     {type:"Scelta multipla", instr:"volerci (impersonale, tempo/cosa necessaria) o metterci (soggetto personale)?", items:["___ due ore per arrivare. (Ci vogliono / Ci metto)","Io ___ due ore per arrivare. (ci vogliono / ci metto)","___ pazienza con i bambini. (Ci vuole / Ci metto)","Tu quanto ___ per finire? (ci vuoi / ci metti)","___ tre uova per la torta. (Ci vogliono / Ci mettono)","Noi ___ un'ora in treno. (ci vogliamo / ci mettiamo)","Per imparare ___ tempo. (ci vuole / ci metto)","Loro ___ troppo a rispondere. (ci vogliono / ci mettono)"], key:["<b>Ci vogliono</b>","<b>ci metto</b>","<b>Ci vuole</b>","<b>ci metti</b>","<b>Ci vogliono</b>","<b>ci mettiamo</b>","<b>ci vuole</b>","<b>ci mettono</b>"]}
+   ]},
 
   {lvl:"b1", cat:"Sintassi", title:"Si impersonale e si passivante",
    def:"Il «si» permette di parlare <b>senza indicare chi compie l'azione</b>: o perché il soggetto è generico («la gente»), o per spostare il focus sull'oggetto.",
@@ -815,7 +1030,12 @@ const ENTRIES = [
      {label:"impersonale: soggetto generico", ex:"In Italia si mangia bene. / Come si dice…?"},
      {label:"passivante: il verbo concorda con l'oggetto", ex:"Si vende una casa / Si vendono case."}
    ],
-   warn:"Nel «si» passivante il verbo si <b>accorda</b> con ciò che subisce l'azione: «si affitta<i>no</i> camere» (plurale), non «si affitta camere»."},
+   warn:"Nel «si» passivante il verbo si <b>accorda</b> con ciò che subisce l'azione: «si affitta<i>no</i> camere» (plurale), non «si affitta camere».",
+   exercises:[
+     {type:"Riempimento", instr:"Completa con il verbo alla forma corretta (singolare o plurale secondo l'oggetto).", items:["In Italia si ___ (mangiare) bene.","Si ___ (vendere) una casa.","Si ___ (vendere) appartamenti.","Come si ___ (dire) «ciao» in giapponese?","Qui si ___ (parlare) tre lingue.","In estate si ___ (fare) il bagno.","Si ___ (cercare) commessi.","Di domenica non si ___ (lavorare)."], key:["<b>mangia</b>","<b>vende</b>","<b>vendono</b>","<b>dice</b>","<b>parlano</b>","<b>fa</b>","<b>cercano</b>","<b>lavora</b>"]},
+     {type:"Correzione", instr:"Correggi l'accordo del «si» passivante (il verbo concorda con ciò che subisce l'azione).", items:["Si affitta camere.","Si vende biciclette.","Si cercano un cuoco.","In Italia si mangiano bene.","Si parlano italiano qui.","Si organizza eventi.","Si producono molto vino.","Si vendono questa casa."], key:["Si <b>affittano</b> camere.","Si <b>vendono</b> biciclette.","Si <b>cerca</b> un cuoco.","In Italia si <b>mangia</b> bene.","Si <b>parla</b> italiano qui.","Si <b>organizzano</b> eventi.","Si <b>produce</b> molto vino.","Si <b>vende</b> questa casa."]},
+     {type:"Trasformazione", instr:"Riscrivi con il «si» (impersonale o passivante).", items:["La gente mangia bene in Italia.","Vendono una casa.","Affittano appartamenti.","In Spagna le persone cenano tardi.","Producono ottimo vino qui.","Cercano commessi.","Come dicono «grazie»?","Costruiscono nuove case."], key:["In Italia <b>si mangia</b> bene.","<b>Si vende</b> una casa.","<b>Si affittano</b> appartamenti.","In Spagna <b>si cena</b> tardi.","Qui <b>si produce</b> ottimo vino.","<b>Si cercano</b> commessi.","Come <b>si dice</b> «grazie»?","<b>Si costruiscono</b> nuove case."]}
+   ]},
 
   {lvl:"b1", cat:"Sintassi", title:"La forma passiva",
    def:"Ribalta la prospettiva: ciò che <b>subisce</b> l'azione diventa soggetto, mentre chi la compie passa in secondo piano (o sparisce).",
@@ -825,7 +1045,12 @@ const ENTRIES = [
      {label:"con venire (tempi semplici, sottolinea l'azione)", ex:"Il pacco viene consegnato domani."},
      {label:"agente introdotto da «da»", ex:"Il quadro è stato dipinto da un artista locale."}
    ],
-   warn:"«Venire» come ausiliare passivo vale <b>solo nei tempi semplici</b> (viene fatto, veniva fatto), mai nei composti: non «è venuto fatto». Lì si usa solo essere."},
+   warn:"«Venire» come ausiliare passivo vale <b>solo nei tempi semplici</b> (viene fatto, veniva fatto), mai nei composti: non «è venuto fatto». Lì si usa solo essere.",
+   exercises:[
+     {type:"Riempimento", instr:"Completa la forma passiva (essere + participio accordato; tempo indicato).", items:["La lettera ___ (scrivere) da Marco. (passato)","Il quadro ___ (dipingere) da un artista. (passato)","Le case ___ (costruire) nel 1900. (passato)","La cena ___ (preparare) dalla mamma. (presente)","I documenti ___ (firmare) dal direttore. (presente)","La macchina ___ (riparare) dal meccanico. (passato)","Le mail ___ (inviare) ieri. (passato)","Il progetto ___ (approvare) dal capo. (passato)"], key:["<b>è stata scritta</b>","<b>è stato dipinto</b>","<b>sono state costruite</b>","<b>è preparata</b>","<b>sono firmati</b>","<b>è stata riparata</b>","<b>sono state inviate</b>","<b>è stato approvato</b>"]},
+     {type:"Correzione", instr:"Correggi l'accordo del participio o l'ausiliare passivo.", items:["La lettera è stato scritta.","Le case sono stato costruite.","Il pacco è venuto consegnato ieri.","La cena è stata preparato.","I libri sono stati venduto.","Le regole è stata spiegata.","Le foto sono state scattato.","Il quadro è stata dipinto."], key:["La lettera è stat<b>a</b> scritta.","Le case sono stat<b>e</b> costruite.","Il pacco è <b>stato</b> consegnato ieri. (composto → essere)","La cena è stata preparat<b>a</b>.","I libri sono stati vendut<b>i</b>.","Le regole <b>sono state spiegate</b>.","Le foto sono state scattat<b>e</b>.","Il quadro è stat<b>o</b> dipinto."]},
+     {type:"Trasformazione", instr:"Volgi dalla forma attiva alla passiva.", items:["Marco scrive la lettera.","Un artista ha dipinto il quadro.","La mamma prepara la cena.","Il meccanico ha riparato la macchina.","Tutti amano Maria.","Il direttore firma i documenti.","Gli operai hanno costruito le case.","Molti leggono questo giornale."], key:["La lettera <b>è scritta</b> da Marco.","Il quadro <b>è stato dipinto</b> da un artista.","La cena <b>è preparata</b> dalla mamma.","La macchina <b>è stata riparata</b> dal meccanico.","Maria <b>è amata</b> da tutti.","I documenti <b>sono firmati</b> dal direttore.","Le case <b>sono state costruite</b> dagli operai.","Questo giornale <b>è letto</b> da molti."]}
+   ]},
 
   {lvl:"b1", cat:"Aggettivi", title:"I superlativi",
    def:"Esprimono il <b>grado massimo</b> di una qualità: rispetto a un gruppo (relativo) o in assoluto (assoluto).",
@@ -835,7 +1060,12 @@ const ENTRIES = [
      {label:"assoluto con -issimo", ex:"Il caffè è buonissimo."},
      {label:"assoluto con «molto»", ex:"È molto interessante."}
    ],
-   warn:"Irregolari: ottimo (= buonissimo), pessimo (= cattivissimo), massimo, minimo. Dopo il superlativo relativo la frase che segue vuole spesso il congiuntivo: «È il film più bello che io <i>abbia</i> visto»."},
+   warn:"Irregolari: ottimo (= buonissimo), pessimo (= cattivissimo), massimo, minimo. Dopo il superlativo relativo la frase che segue vuole spesso il congiuntivo: «È il film più bello che io <i>abbia</i> visto».",
+   exercises:[
+     {type:"Riempimento", instr:"Forma il superlativo (relativo o assoluto, come indicato).", items:["È lo studente ___ (bravo, relativo) della classe.","Il caffè è ___ (buono, assoluto -issimo).","È la città ___ (grande, relativo) d'Italia.","Questo esame è ___ (difficile, assoluto).","Sei ___ (gentile, assoluto).","È il monumento ___ (visitato, relativo) di Roma.","La pizza qui è ___ (buono, irregolare).","È stata un'idea ___ (cattivo, irregolare)."], key:["il <b>più bravo</b>","<b>buonissimo</b>","la <b>più grande</b>","<b>difficilissimo</b>","<b>gentilissimo</b>","il <b>più visitato</b>","<b>ottima</b>","<b>pessima</b>"]},
+     {type:"Correzione", instr:"Correggi il superlativo (doppio grado, «molto» + -issimo, o congiuntivo dopo il relativo).", items:["È il più bravo studente che è in classe.","Il caffè è molto buonissimo.","È la più bella che ho mai visto.","È buonissimissimo.","È il più migliore.","Sono stanchissimissimo.","Questo vino è il più ottimo.","È il film più bello che ho visto."], key:["È il più bravo studente che <b>sia</b> in classe.","Il caffè è <b>buonissimo</b>. (no «molto»)","È la più bella che io <b>abbia</b> mai visto.","È <b>buonissimo</b>.","È il <b>migliore</b>.","Sono <b>stanchissimo</b>.","Questo vino è <b>ottimo</b>. (è già superlativo)","È il film più bello che io <b>abbia</b> visto."]},
+     {type:"Trasformazione", instr:"Volgi l'aggettivo al superlativo assoluto in -issimo (attenzione alle desinenze in -co/-go).", items:["buono","bello","grande","facile","stanco","lungo","simpatico","ricco"], key:["<b>buonissimo</b>","<b>bellissimo</b>","<b>grandissimo</b>","<b>facilissimo</b>","<b>stanchissimo</b>","<b>lunghissimo</b>","<b>simpaticissimo</b>","<b>ricchissimo</b>"]}
+   ]},
 
   {lvl:"b1", cat:"Verbi", title:"Il passato remoto",
    def:"Un tempo del passato che presenta l'azione come conclusa e <b>«staccata»</b> dal presente. È il tempo della narrazione storica e letteraria, e dell'uso parlato in molte regioni del Centro-Sud.",
@@ -849,7 +1079,12 @@ const ENTRIES = [
      {label:"eventi storici", ex:"Nel 1861 nacque il Regno d'Italia."},
      {label:"narrativa, fiabe, biografie", ex:"Il re chiamò il figlio e gli disse…"}
    ],
-   warn:"Molti verbi seguono lo schema <b>«1-3-3»</b> (irregolari io/lui/loro, regolari le altre): prendere → presi, prendesti, prese, prendemmo, prendeste, presero. Da riconoscere: fu/furono, ebbe/ebbero, fece, disse, venne."},
+   warn:"Molti verbi seguono lo schema <b>«1-3-3»</b> (irregolari io/lui/loro, regolari le altre): prendere → presi, prendesti, prese, prendemmo, prendeste, presero. Da riconoscere: fu/furono, ebbe/ebbero, fece, disse, venne.",
+   exercises:[
+     {type:"Riempimento", instr:"Coniuga al passato remoto (3ª persona singolare).", items:["Nel 1861 ___ (nascere) il Regno d'Italia.","Il re ___ (chiamare) il figlio.","Dante ___ (scrivere) la Divina Commedia.","Colombo ___ (arrivare) in America nel 1492.","Lei ___ (essere) una grande regina.","Cesare ___ (dire) «Veni, vidi, vici».","L'artista ___ (dipingere) il quadro.","Lui ___ (avere) molti figli."], key:["<b>nacque</b>","<b>chiamò</b>","<b>scrisse</b>","<b>arrivò</b>","<b>fu</b>","<b>disse</b>","<b>dipinse</b>","<b>ebbe</b>"]},
+     {type:"Correzione", instr:"Correggi il passato remoto (molti irregolari seguono lo schema «1-3-3»).", items:["Lui prendè il libro.","Loro scrivettero una lettera.","Lei essè felice.","Dante dicette molte cose.","Lui avè ragione.","Loro venettero a Roma.","Lei facè un viaggio.","Lui vedè il mare."], key:["Lui <b>prese</b> il libro.","Loro <b>scrissero</b> una lettera.","Lei <b>fu</b> felice.","Dante <b>disse</b> molte cose.","Lui <b>ebbe</b> ragione.","Loro <b>vennero</b> a Roma.","Lei <b>fece</b> un viaggio.","Lui <b>vide</b> il mare."]},
+     {type:"Trasformazione", instr:"Volgi dal passato prossimo al passato remoto (3ª persona singolare).", items:["ha parlato","è andato","ha scritto","è nato","ha detto","ha fatto","è venuto","ha avuto"], key:["<b>parlò</b>","<b>andò</b>","<b>scrisse</b>","<b>nacque</b>","<b>disse</b>","<b>fece</b>","<b>venne</b>","<b>ebbe</b>"]}
+   ]},
 
   {lvl:"b1", cat:"Sintassi", title:"Il discorso indiretto",
    def:"Riferire ciò che qualcuno ha detto senza citarlo testualmente. Se il verbo che introduce è al <b>passato</b>, scattano cambi di tempi, pronomi e parole di tempo/luogo.",
@@ -859,7 +1094,12 @@ const ENTRIES = [
      {label:"futuro → condizionale composto", ex:"«Verrò» → Disse che sarebbe venuto."},
      {label:"cambiano anche gli indicatori", ex:"oggi → quel giorno; ieri → il giorno prima; qui → lì."}
    ],
-   warn:"Il futuro nel discorso indiretto al passato diventa <b>condizionale passato</b> (sarebbe venuto), non presente: errore frequente «disse che verrebbe»."},
+   warn:"Il futuro nel discorso indiretto al passato diventa <b>condizionale passato</b> (sarebbe venuto), non presente: errore frequente «disse che verrebbe».",
+   exercises:[
+     {type:"Riempimento", instr:"Trasforma in discorso indiretto al passato (completa il verbo).", items:["«Sto bene» → Disse che ___ bene.","«Ho finito» → Disse che ___ finito.","«Verrò» → Disse che ___ venuto.","«Sono stanco» → Disse che ___ stanco.","«Posso aiutarti» → Disse che ___ aiutarmi.","«Ti ho chiamato» → Disse che mi ___ chiamato.","«Faremo una festa» → Dissero che ___ fatto una festa.","«Devo andare» → Disse che ___ andare."], key:["<b>stava</b>","<b>aveva</b>","<b>sarebbe</b>","<b>era</b>","<b>poteva</b>","<b>aveva</b>","<b>avrebbero</b>","<b>doveva</b>"]},
+     {type:"Correzione", instr:"Correggi il discorso indiretto (futuro → condizionale passato; concordanza dei tempi).", items:["Disse che verrebbe.","Disse che sta bene.","Disse che ha finito.","Disse che partirà domani.","Disse che mi chiamerebbe.","Disse che è stanco.","Promise che farebbe attenzione.","Disse che ci vedremo oggi."], key:["Disse che <b>sarebbe venuto</b>.","Disse che <b>stava</b> bene.","Disse che <b>aveva finito</b>.","Disse che <b>sarebbe partito</b> il giorno dopo.","Disse che mi <b>avrebbe chiamato</b>.","Disse che <b>era</b> stanco.","Promise che <b>avrebbe fatto</b> attenzione.","Disse che ci <b>saremmo visti</b> quel giorno."]},
+     {type:"Trasformazione", instr:"Volgi dal discorso diretto all'indiretto, con reggente al passato («Disse che…»).", items:["«Sono felice.»","«Ho capito.»","«Tornerò presto.»","«Sto lavorando.»","«Ti aiuterò.»","«Non posso venire.»","«Ho visto Maria ieri.»","«Domani sarò libero.»"], key:["Disse che <b>era</b> felice.","Disse che <b>aveva capito</b>.","Disse che <b>sarebbe tornato</b> presto.","Disse che <b>stava lavorando</b>.","Disse che mi <b>avrebbe aiutato</b>.","Disse che non <b>poteva</b> venire.","Disse che <b>aveva visto</b> Maria <b>il giorno prima</b>.","Disse che <b>il giorno dopo sarebbe stato</b> libero."]}
+   ]},
 
   /* ---------------- B2 ---------------- */
   {lvl:"b2", cat:"Verbi", title:"Il futuro anteriore",
@@ -1020,6 +1260,7 @@ function searchText(e){
   let parts = [e.title, e.cat, e.def, e.form||""];
   if(e.uses) e.uses.forEach(u=>parts.push(u.label, u.ex));
   if(e.ex) parts = parts.concat(e.ex);
+  if(e.exercises) e.exercises.forEach(x=>{parts.push(x.instr); parts = parts.concat(x.items);});
   if(e.warn) parts.push(e.warn);
   return strip(parts.join(" ")).toLowerCase().replace(/"/g,"");
 }
@@ -1045,6 +1286,19 @@ function cardHTML(e, lvlId, idx){
       + e.ex.map(x=>"<p>"+x+"</p>").join("") + "</div></div>";
   }
   if(e.warn) h += "<p class='warn'>"+e.warn+"</p>";
+  if(e.exercises && e.exercises.length){
+    h += "<div class='sec'><p class='sec__h'>Esercizi</p>";
+    e.exercises.forEach(x=>{
+      h += "<div class='ex-block'>"
+        + "<p class='ex-type'>"+x.type+"</p>"
+        + "<p class='ex-instr'>"+x.instr+"</p>"
+        + "<ol class='ex-items'>"+x.items.map(it=>"<li>"+it+"</li>").join("")+"</ol>"
+        + "<details class='ex-key'><summary>Soluzioni (docente)</summary><ol>"
+        + x.key.map(k=>"<li>"+k+"</li>").join("")+"</ol></details>"
+        + "</div>";
+    });
+    h += "</div>";
+  }
   return h+"</article>";
 }
 
