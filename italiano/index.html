@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NSF99TK8');</script>
+<!-- End Google Tag Manager -->
 <meta charset="UTF-8">
 <link rel="icon" href="favicon.png" type="image/png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -232,23 +239,47 @@
   a:focus-visible, button:focus-visible, .nav-level:focus-visible{outline:2px solid var(--c-b1);outline-offset:2px;}
 
   /* ---------- mobile ---------- */
+  /* ---------- hamburger + overlay (mobile) ---------- */
+  .menu-btn{
+    display:none;position:fixed;top:12px;left:12px;z-index:60;
+    width:44px;height:44px;border-radius:11px;
+    border:1px solid var(--spine-soft);background:var(--spine);
+    align-items:center;justify-content:center;cursor:pointer;
+    box-shadow:0 2px 12px rgba(0,0,0,.28);
+  }
+  .menu-btn span,.menu-btn span::before,.menu-btn span::after{
+    content:"";display:block;width:19px;height:2px;background:#fff;
+    border-radius:2px;transition:transform .22s ease,top .22s ease,background .22s ease;
+  }
+  .menu-btn span{position:relative;}
+  .menu-btn span::before,.menu-btn span::after{position:absolute;left:0;}
+  .menu-btn span::before{top:-6px;}
+  .menu-btn span::after{top:6px;}
+  .menu-btn.open span{background:transparent;}
+  .menu-btn.open span::before{top:0;transform:rotate(45deg);}
+  .menu-btn.open span::after{top:0;transform:rotate(-45deg);}
+  .overlay{
+    position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:40;
+    opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s ease;
+  }
+  .overlay.show{opacity:1;visibility:visible;}
+
   @media (max-width:1000px){
     .grid{grid-template-columns:1fr;}
   }
   @media (max-width:900px){
     .shell{grid-template-columns:1fr;}
-    .spine{position:sticky;top:0;height:auto;flex-direction:column;border-right:none;border-bottom:1px solid #000;z-index:10;}
-    .spine__head{padding:18px 20px 12px;}
-    .spine__title{font-size:20px;}
-    .search{padding:0 20px 14px;}
-    .nav{display:flex;gap:6px;overflow-x:auto;padding:0 14px 14px;flex:none;}
-    .nav-group{flex:none;}
-    .nav-level{flex:none;white-space:nowrap;padding:8px 13px;}
-    .nav-level .n{display:none;}
-    .subnav{display:none !important;}
-    .chevron{display:none;}
-    .spine__foot{display:none;}
-    .masthead{padding:30px 22px 22px;}
+    .menu-btn{display:flex;}
+    .spine{
+      position:fixed;top:0;left:0;bottom:0;height:100vh;
+      width:84%;max-width:330px;
+      transform:translateX(-100%);transition:transform .28s ease;
+      z-index:50;border-right:1px solid #000;overflow-y:auto;
+    }
+    .spine.open{transform:translateX(0);box-shadow:0 0 40px rgba(0,0,0,.55);}
+    .spine__head{padding:24px 24px 16px;}
+    .spine__title{font-size:22px;}
+    .masthead{padding:64px 22px 22px;}
     .masthead h1{font-size:29px;}
     .level{padding:0 22px;}
     .grid{gap:14px;padding:18px 0 4px;}
@@ -277,6 +308,12 @@
 </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSF99TK8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<button class="menu-btn" id="menuBtn" aria-label="Apri il menu" aria-expanded="false"><span></span></button>
+<div class="overlay" id="overlay"></div>
 <div class="shell">
   <aside class="spine">
     <div class="spine__head">
@@ -4988,6 +5025,106 @@ const ENTRIES = [
   },
   {
     "lvl": "b1",
+    "cat": "Pronomi",
+    "title": "Le particelle CI e NE",
+    "def": "Due piccole particelle che <b>sostituiscono</b> un luogo o un complemento già nominato, per non ripeterlo. <b>CI</b> rimanda a un luogo o a «a/su/in qualcosa»; <b>NE</b> a una quantità o a «di qualcosa».",
+    "form": "Di norma precedono il verbo (ci vado, ne parlo); con infinito, gerundio e imperativo si attaccano alla fine (andarci, parlandone, vacci, prendine).",
+    "uses": [
+      {
+        "label": "CI = luogo (a/in/su un posto)",
+        "ex": "Vai a Roma? — Sì, ci vado domani."
+      },
+      {
+        "label": "CI = a/su qualcosa (pensare a, credere a, contare su)",
+        "ex": "Pensi all'esame? — Sì, ci penso."
+      },
+      {
+        "label": "NE = partitivo (una parte di una quantità)",
+        "ex": "Quanti caffè? — Ne prendo due."
+      },
+      {
+        "label": "NE = di qualcosa (parlare di, aver bisogno di)",
+        "ex": "Parli del progetto? — Sì, ne parlo."
+      }
+    ],
+    "warn": "Con i tempi composti il participio si accorda con il <b>ne</b> partitivo: «Quante mele hai preso? — <i>Ne</i> ho pres<b>e</b> tre». Da non confondere con <b>ci</b> = «a noi» («ci telefona») o <b>ne</b> non partitivo: è la frase a chiarire.",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "instr": "Completa con ci o ne.",
+        "items": [
+          "Vai in palestra oggi? — Sì, ___ vado alle sei.",
+          "Quanto pane vuoi? — ___ voglio mezzo chilo.",
+          "Pensi spesso al futuro? — Sì, ___ penso spesso.",
+          "Parli mai di politica? — No, non ___ parlo mai.",
+          "Sei stato a Milano? — Sì, ___ sono stato l'anno scorso.",
+          "Hai bisogno di aiuto? — Sì, ___ ho bisogno.",
+          "Credi a quella storia? — No, non ___ credo.",
+          "Quanti fratelli hai? — ___ ho due."
+        ],
+        "key": [
+          "<b>ci</b> vado",
+          "<b>Ne</b> voglio",
+          "<b>ci</b> penso",
+          "<b>ne</b> parlo",
+          "<b>ci</b> sono stato",
+          "<b>ne</b> ho bisogno",
+          "<b>ci</b> credo",
+          "<b>Ne</b> ho due"
+        ]
+      },
+      {
+        "type": "Correzione",
+        "instr": "Correggi la particella (ci o ne) o la sua posizione.",
+        "items": [
+          "Vado ci domani.",
+          "Parlo ne spesso.",
+          "Vai a Roma? — Sì, ne vado.",
+          "Quante ne vuoi? — Voglio ci due.",
+          "Pensi all'esame? — Sì, ne penso.",
+          "Hai bisogno di soldi? — Sì, ci ho bisogno.",
+          "Sei stato in Italia? — Sì, ne sono stato.",
+          "Prendi del caffè? — Sì, ci prendo un po'."
+        ],
+        "key": [
+          "<b>Ci vado</b> domani.",
+          "<b>Ne parlo</b> spesso.",
+          "Sì, <b>ci</b> vado.",
+          "<b>Ne</b> voglio due.",
+          "Sì, <b>ci</b> penso.",
+          "Sì, <b>ne</b> ho bisogno.",
+          "Sì, <b>ci</b> sono stato.",
+          "Sì, <b>ne</b> prendo un po'."
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "instr": "Riscrivi la risposta sostituendo la parte tra parentesi con ci o ne.",
+        "items": [
+          "Vai a scuola? — Sì, (vado a scuola).",
+          "Quante mele vuoi? — (Voglio tre mele).",
+          "Pensi alla vacanza? — Sì, (penso alla vacanza).",
+          "Parli del problema? — Sì, (parlo del problema).",
+          "Sei andato al mare? — Sì, (sono andato al mare).",
+          "Hai comprato del vino? — Sì, (ho comprato del vino).",
+          "Credi a Marco? — No, (non credo a Marco).",
+          "Quanti libri hai letto? — (Ho letto due libri)."
+        ],
+        "key": [
+          "Sì, <b>ci vado</b>.",
+          "<b>Ne</b> voglio tre.",
+          "Sì, <b>ci penso</b>.",
+          "Sì, <b>ne parlo</b>.",
+          "Sì, <b>ci sono andato</b>.",
+          "Sì, <b>ne ho comprato</b>.",
+          "No, non <b>ci credo</b>.",
+          "<b>Ne</b> ho lett<b>i</b> due."
+        ]
+      }
+    ]
+  },
+  {
+    "lvl": "b1",
     "cat": "Verbi",
     "title": "I verbi pronominali",
     "def": "Verbi «incastonati» con uno o due pronomi che ne <b>cambiano il significato</b> rispetto al verbo di partenza. Frequentissimi nell'italiano parlato e idiomatico.",
@@ -7335,12 +7472,36 @@ function setupNav(){
       if(!isOpen){a.classList.add("open");subnav.classList.add("open");}
     });
   });
+  document.querySelectorAll(".subnav a").forEach(a=>{
+    a.addEventListener("click",()=>{
+      if(window.matchMedia("(max-width:900px)").matches){
+        document.querySelectorAll(".nav-level,.subnav").forEach(x=>x.classList.remove("open"));
+      }
+    });
+  });
+}
+
+function setupDrawer(){
+  const btn=document.getElementById("menuBtn");
+  const spine=document.querySelector(".spine");
+  const ov=document.getElementById("overlay");
+  if(!btn||!spine||!ov) return;
+  function open(){spine.classList.add("open");ov.classList.add("show");btn.classList.add("open");btn.setAttribute("aria-expanded","true");document.body.style.overflow="hidden";}
+  function close(){spine.classList.remove("open");ov.classList.remove("show");btn.classList.remove("open");btn.setAttribute("aria-expanded","false");document.body.style.overflow="";}
+  btn.addEventListener("click",()=>{spine.classList.contains("open")?close():open();});
+  ov.addEventListener("click",close);
+  document.addEventListener("keydown",e=>{if(e.key==="Escape")close();});
+  // toccando una struttura nel sottomenu, chiudi il drawer
+  document.querySelectorAll(".subnav a").forEach(a=>{
+    a.addEventListener("click",()=>{if(window.matchMedia("(max-width:900px)").matches)close();});
+  });
 }
 
 build();
 setupSearch();
 setupScroll();
 setupNav();
+setupDrawer();
 </script>
 </body>
 </html>
