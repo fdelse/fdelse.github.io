@@ -263,13 +263,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s ease;
   }
   .overlay.show{opacity:1;visibility:visible;}
+  .topbar{display:none;}
 
   @media (max-width:1000px){
     .grid{grid-template-columns:1fr;}
   }
   @media (max-width:900px){
     .shell{grid-template-columns:1fr;}
-    .menu-btn{display:flex;}
+    .topbar{
+      display:flex;align-items:center;gap:8px;
+      position:fixed;top:0;left:0;right:0;z-index:60;
+      padding:10px 12px;background:var(--spine);border-bottom:1px solid #000;
+    }
+    .menu-btn{display:flex;position:static;top:auto;left:auto;box-shadow:none;flex:none;}
+    .topsearch{
+      flex:1;min-width:0;height:42px;padding:0 14px;
+      border-radius:10px;border:1px solid var(--spine-soft);
+      background:var(--spine-soft);color:#fff;
+      font-family:var(--sans);font-size:15px;
+    }
+    .topsearch::placeholder{color:var(--spine-faint);}
+    .topsearch:focus{outline:2px solid var(--c-b1);outline-offset:1px;}
     .spine{
       position:fixed;top:0;left:0;bottom:0;height:100vh;
       width:84%;max-width:330px;
@@ -277,9 +291,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       z-index:50;border-right:1px solid #000;overflow-y:auto;
     }
     .spine.open{transform:translateX(0);box-shadow:0 0 40px rgba(0,0,0,.55);}
-    .spine__head{padding:24px 24px 16px;}
+    .spine__head{padding:74px 24px 16px;}
     .spine__title{font-size:22px;}
-    .masthead{padding:64px 22px 22px;}
+    .masthead{padding:72px 22px 22px;}
     .masthead h1{font-size:29px;}
     .level{padding:0 22px;}
     .grid{gap:14px;padding:18px 0 4px;}
@@ -312,7 +326,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSF99TK8"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<button class="menu-btn" id="menuBtn" aria-label="Apri il menu" aria-expanded="false"><span></span></button>
+<div class="topbar">
+  <button class="menu-btn" id="menuBtn" aria-label="Apri il menu" aria-expanded="false"><span></span></button>
+  <input id="q-m" type="search" class="topsearch" placeholder="Cerca una struttura…" aria-label="Cerca una struttura grammaticale" autocomplete="off">
+</div>
 <div class="overlay" id="overlay"></div>
 <div class="shell">
   <aside class="spine">
@@ -7417,24 +7434,32 @@ function build(){
 }
 
 /* ===== Ricerca ===== */
-function setupSearch(){
-  const q = document.getElementById("q");
+function applyFilter(term){
+  term = (term||"").trim().toLowerCase();
+  let anyVisible = false;
+  document.querySelectorAll(".card").forEach(c=>{
+    const match = !term || (c.dataset.search||"").includes(term);
+    c.style.display = match ? "" : "none";
+    if(match) anyVisible = true;
+  });
+  document.querySelectorAll(".level").forEach(sec=>{
+    const visible = sec.querySelectorAll(".card:not([style*='display: none'])").length;
+    sec.style.display = visible ? "" : "none";
+  });
   const empty = document.getElementById("empty");
+  if(empty) empty.style.display = (term && !anyVisible) ? "block" : "none";
   const emptyQ = document.getElementById("empty-q");
-  q.addEventListener("input", ()=>{
-    const term = q.value.trim().toLowerCase();
-    let anyVisible = false;
-    document.querySelectorAll(".card").forEach(c=>{
-      const match = !term || c.dataset.search.includes(term);
-      c.style.display = match ? "" : "none";
-      if(match) anyVisible = true;
+  if(emptyQ) emptyQ.textContent = "«"+term+"»";
+}
+
+function setupSearch(){
+  const inputs = [document.getElementById("q"), document.getElementById("q-m")].filter(Boolean);
+  inputs.forEach(inp=>{
+    inp.addEventListener("input", ()=>{
+      const v = inp.value;
+      inputs.forEach(o=>{ if(o!==inp) o.value = v; });
+      applyFilter(v);
     });
-    document.querySelectorAll(".level").forEach(sec=>{
-      const visible = sec.querySelectorAll(".card:not([style*='display: none'])").length;
-      sec.style.display = visible ? "" : "none";
-    });
-    empty.style.display = (term && !anyVisible) ? "block" : "none";
-    emptyQ.textContent = "«"+q.value.trim()+"»";
   });
 }
 
@@ -7497,11 +7522,12 @@ function setupDrawer(){
   });
 }
 
-build();
-setupSearch();
-setupScroll();
-setupNav();
-setupDrawer();
+function safe(fn,name){ try{ fn(); }catch(e){ console.error("Errore in "+name+":", e); } }
+safe(build,"build");
+safe(setupSearch,"setupSearch");
+safe(setupScroll,"setupScroll");
+safe(setupNav,"setupNav");
+safe(setupDrawer,"setupDrawer");
 </script>
 </body>
 </html>
