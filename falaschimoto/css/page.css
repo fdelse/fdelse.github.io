@@ -412,27 +412,18 @@
   text-align: left;
 }
 
-/* FORM + MAP GRID */
-.contact-main-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: start;
-}
-
-.contact-form-wrap h3,
-.contact-map-wrap h3 {
+/* MAP SECTION */
+.map-heading {
   font-size: 22px;
   font-weight: 700;
   color: #111;
   margin-bottom: 10px;
 }
 
-.contact-form-wrap > p,
-.contact-map-wrap > p {
+.map-intro {
   font-size: 16px;
   color: #111;
-  margin-bottom: 24px;
+  margin-bottom: 0;
   line-height: 1.7;
 }
 
