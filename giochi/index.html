@@ -117,7 +117,7 @@
         </button>
         <button class="mode" data-mode="articoli">
           <span class="ico">🎯</span>
-          <span><h3>L'articolo giusto</h3><p>Il, lo, la, gli, un, uno, un'… struttura di fascia A0–A1, utile come ripasso veloce.</p></span>
+          <span><h3>L'articolo giusto</h3><p>Articoli (il, lo, un, uno…) a A0–A1; preposizioni articolate (del, nello, agli…) a A2.</p></span>
         </button>
         <button class="mode" data-mode="abbina">
           <span class="ico">🧩</span>
@@ -290,7 +290,18 @@ const ARTICLES=[
   {lvl:"a",noun:"amico",ans:"un",opts:["un","uno","una","un'"],indet:true},
   {lvl:"a",noun:"amica",ans:"un'",opts:["un","uno","una","un'"],indet:true},
   {lvl:"a",noun:"casa",ans:"una",opts:["un","uno","una","un'"],indet:true},
-  {lvl:"a",noun:"ora",ans:"un'",opts:["un","uno","una","un'"],indet:true}
+  {lvl:"a",noun:"ora",ans:"un'",opts:["un","uno","una","un'"],indet:true},
+  // a2 — preposizioni articolate (di/a/da/in/su + articolo)
+  {lvl:"a2",prep:true,sent:"Vado ____ cinema.",ans:"al",opts:["al","allo","ai","alla"]},
+  {lvl:"a2",prep:true,sent:"Il libro ____ studente è nuovo.",ans:"dello",opts:["dello","del","dell'","degli"]},
+  {lvl:"a2",prep:true,sent:"Le chiavi sono ____ borsa.",ans:"nella",opts:["nella","nel","nelle","nello"]},
+  {lvl:"a2",prep:true,sent:"Parlo ____ amici di Marco.",ans:"agli",opts:["agli","ai","alle","degli"]},
+  {lvl:"a2",prep:true,sent:"Torno ____ ufficio alle sei.",ans:"dall'",opts:["dall'","dal","dallo","dell'"]},
+  {lvl:"a2",prep:true,sent:"I quadri ____ museo sono famosi.",ans:"del",opts:["del","dello","dei","della"]},
+  {lvl:"a2",prep:true,sent:"Metti i piatti ____ tavolo.",ans:"sul",opts:["sul","sullo","sui","sulla"]},
+  {lvl:"a2",prep:true,sent:"Vengo ____ Stati Uniti.",ans:"dagli",opts:["dagli","dai","degli","dallo"]},
+  {lvl:"a2",prep:true,sent:"La penna è ____ zaino.",ans:"nello",opts:["nello","nel","nella","negli"]},
+  {lvl:"a2",prep:true,sent:"Penso sempre ____ vacanze.",ans:"alle",opts:["alle","ai","agli","alla"]}
 ];
 
 /* ============ ABBINAMENTI (per fascia) ============ */
@@ -359,9 +370,15 @@ function renderQuiz(){
     }
     opts=shuffle([it.ans,...it.dist]);
   }else{
-    $("#qTense").textContent=it.indet?"articolo indeterminativo":"articolo determinativo";
-    $("#qHint").textContent="Quale articolo va con questa parola?";
-    $("#qText").innerHTML=`<span class="blank">___</span> ${it.noun}`;
+    if(it.prep){
+      $("#qTense").textContent="preposizione articolata";
+      $("#qHint").textContent="Scegli la preposizione articolata giusta.";
+      $("#qText").innerHTML=it.sent.replace("____",'<span class="blank">___</span>');
+    }else{
+      $("#qTense").textContent=it.indet?"articolo indeterminativo":"articolo determinativo";
+      $("#qHint").textContent="Quale articolo va con questa parola?";
+      $("#qText").innerHTML=`<span class="blank">___</span> ${it.noun}`;
+    }
     opts=shuffle(it.opts);
   }
   const box=$("#qOpts");box.innerHTML="";
