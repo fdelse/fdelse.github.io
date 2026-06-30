@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Palestra d'italiano — Giochi A0–C1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Albert+Sans:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F4EFE3;--grid:#C9D6DE;--ink:#1C3D5A;--ink-soft:#5A7184;
+    --red:#D33A2C;--green:#3E8E5A;--ochre:#D99A2B;--card:#FBF8F1;--line:#D8CFBC;--shadow:rgba(28,61,90,.14);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:'Albert Sans',system-ui,sans-serif;color:var(--ink);background-color:var(--paper);
+    background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+    background-size:26px 26px;background-position:center top;min-height:100vh;-webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:780px;margin:0 auto;padding:clamp(18px,4vw,40px) 18px 64px}
+  header{margin-bottom:26px}
+  .brand{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+  .brand h1{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(30px,7vw,52px);line-height:.95;margin:0;letter-spacing:-.01em;position:relative;display:inline-block}
+  .brand h1 .red{color:var(--red)}
+  .brand h1::after{content:"";position:absolute;left:-2px;right:-2px;bottom:-6px;height:10px;background:no-repeat center/100% 100%;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='12' viewBox='0 0 220 12'><path d='M3 8 C 60 2, 150 12, 217 4' stroke='%23D33A2C' stroke-width='3' fill='none' stroke-linecap='round'/></svg>");opacity:.85}
+  .tagline{font-family:'Caveat',cursive;color:var(--red);font-size:clamp(20px,4.5vw,26px);transform:rotate(-2deg);margin-top:14px;display:inline-block}
+  .sub{color:var(--ink-soft);font-size:15px;margin-top:2px;max-width:52ch}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:0 2px 0 var(--line),0 14px 30px -20px var(--shadow);margin-bottom:22px}
+  .eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 12px}
+  .levels{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{font-family:'Albert Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;border:1.5px solid var(--ink);background:transparent;color:var(--ink);border-radius:999px;padding:8px 16px;transition:transform .08s,background .15s,color .15s}
+  .chip:hover{transform:translateY(-1px)}
+  .chip[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+  .modes{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:6px}
+  .mode{text-align:left;cursor:pointer;background:var(--card);border:1.5px solid var(--line);border-radius:14px;padding:18px;transition:transform .1s,border-color .15s,box-shadow .15s;display:flex;gap:14px;align-items:flex-start;font:inherit;color:inherit}
+  .mode:hover{transform:translateY(-2px);border-color:var(--ink);box-shadow:0 12px 24px -16px var(--shadow)}
+  .mode .ico{font-size:30px;line-height:1;flex:none}
+  .mode h3{font-family:'Fraunces',serif;font-weight:600;font-size:20px;margin:0 0 4px}
+  .mode p{margin:0;font-size:13.5px;color:var(--ink-soft);line-height:1.4}
+  .hidden{display:none!important}
+  .topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+  .back{background:none;border:none;color:var(--ink-soft);font:inherit;font-weight:600;cursor:pointer;padding:6px 0;display:inline-flex;align-items:center;gap:6px}
+  .back:hover{color:var(--ink)}
+  .stats{display:flex;gap:18px;align-items:center}
+  .stat{text-align:center;line-height:1}
+  .stat b{font-family:'Fraunces',serif;font-size:22px;display:block}
+  .stat span{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-soft)}
+  .stat .streak b{color:var(--ochre)}
+  .progress{height:8px;background:#e7ddc8;border-radius:99px;overflow:hidden;margin-bottom:22px;border:1px solid var(--line)}
+  .progress i{display:block;height:100%;background:var(--ink);width:0;transition:width .3s}
+  .prompt{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:clamp(22px,5vw,34px);text-align:center;box-shadow:0 2px 0 var(--line),0 18px 34px -24px var(--shadow);margin-bottom:18px}
+  .prompt .meta{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:14px}
+  .prompt .meta .lvl{color:var(--red)}
+  .prompt .q{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(24px,5.4vw,38px);line-height:1.18}
+  .prompt .q .blank{color:var(--ochre);border-bottom:3px solid var(--ochre);padding:0 .35em}
+  .prompt .hint{font-size:14px;color:var(--ink-soft);margin-top:10px}
+  .options{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:480px){.options{grid-template-columns:1fr}}
+  .opt{font:inherit;font-weight:600;font-size:18px;cursor:pointer;background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:16px 40px 16px 14px;color:var(--ink);transition:transform .08s,border-color .12s,background .12s;position:relative}
+  .opt:hover:not(:disabled){transform:translateY(-2px);border-color:var(--ink)}
+  .opt:disabled{cursor:default}
+  .opt.correct{border-color:var(--green);background:#eaf4ec;color:var(--green)}
+  .opt.wrong{border-color:var(--red);background:#fbece9;color:var(--red)}
+  .opt.correct::after{content:"✓";position:absolute;right:12px;top:50%;transform:translateY(-50%);font-family:'Caveat',cursive;font-size:30px;color:var(--green)}
+  .opt.wrong::after{content:"✗";position:absolute;right:12px;top:50%;transform:translateY(-50%);font-family:'Caveat',cursive;font-size:30px;color:var(--red)}
+  .feedback{min-height:42px;text-align:center;margin-top:16px;font-family:'Caveat',cursive;font-size:26px}
+  .feedback.ok{color:var(--green)}
+  .feedback.no{color:var(--red)}
+  .nextbtn{display:block;margin:8px auto 0;background:var(--ink);color:var(--paper);border:none;border-radius:99px;font:inherit;font-weight:700;font-size:16px;padding:13px 30px;cursor:pointer;transition:transform .08s,opacity .15s}
+  .nextbtn:hover{transform:translateY(-1px)}
+  .match{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .col{display:flex;flex-direction:column;gap:10px}
+  .tile{font:inherit;font-weight:600;font-size:16px;text-align:left;cursor:pointer;background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:14px;color:var(--ink);transition:transform .08s,border-color .12s,background .12s,opacity .2s;line-height:1.3}
+  .tile:hover:not(:disabled){border-color:var(--ink);transform:translateY(-1px)}
+  .tile.sel{border-color:var(--ochre);background:#fbf2dd;box-shadow:0 0 0 3px rgba(217,154,43,.18)}
+  .tile.done{opacity:.35;cursor:default;border-style:dashed}
+  .tile.miss{border-color:var(--red);animation:shake .35s}
+  @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+  .pagella{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:clamp(26px,6vw,40px);text-align:center;box-shadow:0 2px 0 var(--line),0 18px 34px -24px var(--shadow)}
+  .pagella .label{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+  .voto{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(64px,18vw,110px);line-height:1;margin:6px 0;position:relative;display:inline-block}
+  .voto small{font-size:.3em;color:var(--ink-soft);font-weight:600}
+  .voto::after{content:"";position:absolute;inset:-6% -14%;border:3px solid var(--red);border-radius:50%;transform:rotate(-7deg);opacity:.8}
+  .nota{font-family:'Caveat',cursive;font-size:30px;color:var(--red);transform:rotate(-2deg);margin:14px 0 6px}
+  .recap{color:var(--ink-soft);font-size:15px;margin-bottom:22px}
+  .pagella .actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn-ghost{background:transparent;border:1.5px solid var(--ink);color:var(--ink);border-radius:99px;font:inherit;font-weight:700;padding:12px 24px;cursor:pointer}
+  .btn-ghost:hover{background:var(--ink);color:var(--paper)}
+  footer{text-align:center;color:var(--ink-soft);font-size:12.5px;margin-top:34px;line-height:1.5}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+  :focus-visible{outline:3px solid var(--ochre);outline-offset:2px;border-radius:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand"><h1>Palestra d'<span class="red">italiano</span></h1></div>
+    <div class="tagline">tre giochi, cinque fasce ✏️</div>
+    <p class="sub">Esercizi rapidi di grammatica e lessico con correzione immediata. I livelli seguono le fasce del tuo vademecum (A0–A1, A2, B1, B2, C1).</p>
+  </header>
+
+  <section id="home">
+    <div class="panel">
+      <p class="eyebrow">1 · Scegli il livello</p>
+      <div class="levels" id="levels" role="group" aria-label="Fascia di livello"></div>
+    </div>
+    <div class="panel">
+      <p class="eyebrow">2 · Scegli il gioco</p>
+      <div class="modes">
+        <button class="mode" data-mode="verbi">
+          <span class="ico">🔤</span>
+          <span><h3>Coniuga il verbo</h3><p>La forma giusta del verbo: dal presente al passato remoto. A C1 la scelta è dentro la frase.</p></span>
+        </button>
+        <button class="mode" data-mode="articoli">
+          <span class="ico">🎯</span>
+          <span><h3>L'articolo giusto</h3><p>Il, lo, la, gli, un, uno, un'… struttura di fascia A0–A1, utile come ripasso veloce.</p></span>
+        </button>
+        <button class="mode" data-mode="abbina">
+          <span class="ico">🧩</span>
+          <span><h3>Abbinamenti</h3><p>Collega ogni parola al suo significato, sinonimo o immagine, per fascia di livello.</p></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="quiz" class="hidden">
+    <div class="topbar">
+      <button class="back" data-home>← Torna ai giochi</button>
+      <div class="stats">
+        <div class="stat"><b id="qScore">0</b><span>punti</span></div>
+        <div class="stat streak"><b id="qStreak">0</b><span>di fila</span></div>
+        <div class="stat"><b id="qCount">1/8</b><span>domanda</span></div>
+      </div>
+    </div>
+    <div class="progress"><i id="qBar"></i></div>
+    <div class="prompt">
+      <div class="meta"><span class="lvl" id="qLvl">A0–A1</span> · <span id="qTense"></span></div>
+      <div class="q" id="qText"></div>
+      <div class="hint" id="qHint"></div>
+    </div>
+    <div class="options" id="qOpts"></div>
+    <div class="feedback" id="qFeed"></div>
+    <button class="nextbtn hidden" id="qNext">Avanti →</button>
+  </section>
+
+  <section id="abbina" class="hidden">
+    <div class="topbar">
+      <button class="back" data-home>← Torna ai giochi</button>
+      <div class="stats">
+        <div class="stat"><b id="aPairs">0/6</b><span>coppie</span></div>
+        <div class="stat"><b id="aErr">0</b><span>errori</span></div>
+      </div>
+    </div>
+    <div class="prompt" style="text-align:left">
+      <div class="meta"><span class="lvl" id="aLvl">A0–A1</span> · <span id="aTheme"></span></div>
+      <div class="q" style="font-size:clamp(18px,4vw,24px)">Tocca una parola a sinistra e il suo abbinamento a destra.</div>
+    </div>
+    <div class="match"><div class="col" id="aLeft"></div><div class="col" id="aRight"></div></div>
+    <div class="feedback" id="aFeed"></div>
+    <button class="nextbtn hidden" id="aDone">Vedi la pagella →</button>
+  </section>
+
+  <section id="result" class="hidden">
+    <div class="pagella">
+      <div class="label">Pagella</div>
+      <div class="voto" id="rVoto">—<small>/10</small></div>
+      <div class="nota" id="rNota"></div>
+      <div class="recap" id="rRecap"></div>
+      <div class="actions">
+        <button class="nextbtn" id="rAgain" style="margin:0">Rigioca</button>
+        <button class="btn-ghost" data-home>Altri giochi</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Strutture allineate al Vademecum di grammatica italiana (A0–C1) · funziona offline, in un unico file.<br>
+    Buon lavoro — e in bocca al lupo agli studenti. 🐺
+  </footer>
+</div>
+
+<script>
+/* ============ FASCE (come nel vademecum) ============ */
+const LEVELS=[
+  {code:"a", label:"A0–A1"},
+  {code:"a2",label:"A2"},
+  {code:"b1",label:"B1"},
+  {code:"b2",label:"B2"},
+  {code:"c1",label:"C1"}
+];
+const CODES=LEVELS.map(l=>l.code);
+const LBL=Object.fromEntries(LEVELS.map(l=>[l.code,l.label]));
+
+/* ============ VERBI ============
+   fascia "a"  : essere/avere, regolari -are/-ere/-ire (+isc), modali dovere/potere/volere
+   fascia a2   : irregolari comuni, passato prossimo, imperativo
+   fascia b1   : imperfetto, futuro semplice, condizionale presente, congiuntivo presente/passato
+   fascia b2   : passato remoto, cong. imperfetto/trapassato, futuro anteriore, trapassato prossimo, condizionale passato
+   fascia c1   : forma giusta NELLA FRASE (concordanza dei tempi, periodo ipotetico misto, concessive/temporali)
+*/
+const VERBS=[
+  // a — essere/avere + regolari + modali
+  {lvl:"a",pron:"io",inf:"essere",tense:"presente",ans:"sono",dist:["sei","è","siamo"]},
+  {lvl:"a",pron:"tu",inf:"avere",tense:"presente",ans:"hai",dist:["ho","ha","hanno"]},
+  {lvl:"a",pron:"lui",inf:"parlare",tense:"presente",ans:"parla",dist:["parli","parlo","parlano"]},
+  {lvl:"a",pron:"noi",inf:"parlare",tense:"presente",ans:"parliamo",dist:["parlate","parlano","parlo"]},
+  {lvl:"a",pron:"voi",inf:"prendere",tense:"presente",ans:"prendete",dist:["prendi","prende","prendono"]},
+  {lvl:"a",pron:"io",inf:"dormire",tense:"presente",ans:"dormo",dist:["dormi","dorme","dormiamo"]},
+  {lvl:"a",pron:"tu",inf:"finire",tense:"presente (-isc-)",ans:"finisci",dist:["finisce","finiamo","fini"]},
+  {lvl:"a",pron:"noi",inf:"dovere",tense:"presente (modale)",ans:"dobbiamo",dist:["dovete","devono","devo"]},
+  {lvl:"a",pron:"io",inf:"potere",tense:"presente (modale)",ans:"posso",dist:["puoi","può","possono"]},
+  {lvl:"a",pron:"lei",inf:"volere",tense:"presente (modale)",ans:"vuole",dist:["voglio","vuoi","vogliono"]},
+  // a2 — irregolari comuni + passato prossimo + imperativo
+  {lvl:"a2",pron:"noi",inf:"andare",tense:"presente (irregolare)",ans:"andiamo",dist:["andate","vanno","vado"]},
+  {lvl:"a2",pron:"loro",inf:"fare",tense:"presente (irregolare)",ans:"fanno",dist:["fa","fate","facciamo"]},
+  {lvl:"a2",pron:"tu",inf:"stare",tense:"presente (irregolare)",ans:"stai",dist:["sto","sta","stanno"]},
+  {lvl:"a2",pron:"lei",inf:"venire",tense:"presente (irregolare)",ans:"viene",dist:["vengo","vieni","vengono"]},
+  {lvl:"a2",pron:"io",inf:"dare",tense:"presente (irregolare)",ans:"do",dist:["dai","dà","danno"]},
+  {lvl:"a2",pron:"io",inf:"mangiare",tense:"passato prossimo",ans:"ho mangiato",dist:["sono mangiato","ho mangiando","avevo mangiato"]},
+  {lvl:"a2",pron:"lei",inf:"andare",tense:"passato prossimo",ans:"è andata",dist:["ha andato","è andato","ha andata"]},
+  {lvl:"a2",pron:"noi",inf:"partire",tense:"passato prossimo",ans:"siamo partiti",dist:["abbiamo partito","siamo partito","abbiamo partiti"]},
+  {lvl:"a2",pron:"voi",inf:"leggere",tense:"passato prossimo",ans:"avete letto",dist:["avete leggiuto","siete letti","avete legguto"]},
+  {lvl:"a2",pron:"tu",inf:"guardare",tense:"imperativo",ans:"guarda",dist:["guardi","guardare","guardate"]},
+  {lvl:"a2",pron:"Lei (formale)",inf:"venire",tense:"imperativo",ans:"venga",dist:["vieni","venghi","viene"]},
+  // b1 — imperfetto, futuro semplice, condizionale presente, congiuntivo presente/passato
+  {lvl:"b1",pron:"tu",inf:"essere",tense:"imperfetto",ans:"eri",dist:["eravi","era","eravate"]},
+  {lvl:"b1",pron:"loro",inf:"fare",tense:"imperfetto",ans:"facevano",dist:["facevate","faceva","facevamo"]},
+  {lvl:"b1",pron:"io",inf:"bere",tense:"imperfetto",ans:"bevevo",dist:["bevo","beveva","bevevi"]},
+  {lvl:"b1",pron:"lui",inf:"avere",tense:"imperfetto",ans:"aveva",dist:["aveeva","avevo","avevamo"]},
+  {lvl:"b1",pron:"io",inf:"essere",tense:"futuro semplice",ans:"sarò",dist:["serò","sarà","sarei"]},
+  {lvl:"b1",pron:"tu",inf:"andare",tense:"futuro semplice",ans:"andrai",dist:["anderai","andrei","vai"]},
+  {lvl:"b1",pron:"loro",inf:"fare",tense:"futuro semplice",ans:"faranno",dist:["farano","faceranno","faruanno"]},
+  {lvl:"b1",pron:"noi",inf:"volere",tense:"condizionale presente",ans:"vorremmo",dist:["vorremo","vorrebbero","vorreste"]},
+  {lvl:"b1",pron:"io",inf:"avere",tense:"condizionale presente",ans:"avrei",dist:["avrò","averei","avrebbe"]},
+  {lvl:"b1",pron:"che io",inf:"essere",tense:"congiuntivo presente",ans:"sia",dist:["sono","siamo","sii"]},
+  {lvl:"b1",pron:"che tu",inf:"avere",tense:"congiuntivo presente",ans:"abbia",dist:["hai","abbi","avessi"]},
+  {lvl:"b1",pron:"che lui",inf:"fare",tense:"congiuntivo presente",ans:"faccia",dist:["fa","facci","facesse"]},
+  {lvl:"b1",pron:"che loro",inf:"venire",tense:"congiuntivo presente",ans:"vengano",dist:["vengono","venghino","venissero"]},
+  {lvl:"b1",pron:"che voi",inf:"sapere",tense:"congiuntivo presente",ans:"sappiate",dist:["sapete","sapiate","sappiamo"]},
+  {lvl:"b1",pron:"che io",inf:"fare",tense:"congiuntivo passato",ans:"abbia fatto",dist:["ho fatto","avessi fatto","sia fatto"]},
+  {lvl:"b1",pron:"che lei",inf:"partire",tense:"congiuntivo passato",ans:"sia partita",dist:["è partita","sia partito","abbia partita"]},
+  // b2 — passato remoto, cong. impf/trapassato, futuro anteriore, trapassato prossimo, condizionale passato
+  {lvl:"b2",pron:"io",inf:"fare",tense:"passato remoto",ans:"feci",dist:["facei","fici","fei"]},
+  {lvl:"b2",pron:"lui",inf:"essere",tense:"passato remoto",ans:"fu",dist:["fue","era","fosse"]},
+  {lvl:"b2",pron:"loro",inf:"avere",tense:"passato remoto",ans:"ebbero",dist:["avettero","ebbono","avevano"]},
+  {lvl:"b2",pron:"tu",inf:"venire",tense:"passato remoto",ans:"venisti",dist:["venivi","veniste","vennesti"]},
+  {lvl:"b2",pron:"lui",inf:"vedere",tense:"passato remoto",ans:"vide",dist:["vidde","vedde","vedé"]},
+  {lvl:"b2",pron:"loro",inf:"dire",tense:"passato remoto",ans:"dissero",dist:["dicettero","dissono","dicevano"]},
+  {lvl:"b2",pron:"se io",inf:"essere",tense:"congiuntivo imperfetto",ans:"fossi",dist:["fui","fosse","ero"]},
+  {lvl:"b2",pron:"se io",inf:"avere",tense:"congiuntivo imperfetto",ans:"avessi",dist:["ebbi","avesse","avevo"]},
+  {lvl:"b2",pron:"che lui",inf:"fare",tense:"congiuntivo imperfetto",ans:"facesse",dist:["faccia","fece","facessi"]},
+  {lvl:"b2",pron:"che io",inf:"fare",tense:"congiuntivo trapassato",ans:"avessi fatto",dist:["avrei fatto","avevo fatto","ebbi fatto"]},
+  {lvl:"b2",pron:"io",inf:"fare",tense:"condizionale passato",ans:"avrei fatto",dist:["avrò fatto","avessi fatto","avrei fare"]},
+  {lvl:"b2",pron:"io",inf:"fare",tense:"trapassato prossimo",ans:"avevo fatto",dist:["ho fatto","avrò fatto","avevo fare"]},
+  {lvl:"b2",pron:"io",inf:"fare",tense:"futuro anteriore",ans:"avrò fatto",dist:["ho fatto","avrei fatto","avevo fatto"]},
+  // c1 — forma giusta nella frase (concordanza, ipotetico misto, concessive/temporali)
+  {lvl:"c1",tense:"periodo ipotetico misto",hint:"noi · essere",sent:"Se me l'avessi detto prima, ora ____ già a casa.",ans:"saremmo",dist:["saremo","fossimo","saremmo stati"]},
+  {lvl:"c1",tense:"concordanza dei tempi",hint:"tu · partire",sent:"Pensavo che ____ già a quest'ora.",ans:"fossi partito",dist:["sei partito","partissi","sia partito"]},
+  {lvl:"c1",tense:"concordanza dei tempi",hint:"tu · essere",sent:"Vorrei che tu ____ più sincero con me.",ans:"fossi",dist:["sei","sia","fossi stato"]},
+  {lvl:"c1",tense:"periodo ipotetico misto",hint:"tu · superare",sent:"Se avessi studiato di più, adesso ____ l'esame.",ans:"supereresti",dist:["avresti superato","superassi","supererai"]},
+  {lvl:"c1",tense:"concordanza dei tempi",hint:"lui · avere",sent:"Credevo che ____ ragione lui, non tu.",ans:"avesse",dist:["ha","abbia","avrebbe"]},
+  {lvl:"c1",tense:"periodo ipotetico misto",hint:"lui · essere",sent:"Se fosse partito in orario, ora ____ qui con noi.",ans:"sarebbe",dist:["sarà","fosse","è"]},
+  {lvl:"c1",tense:"proposizione concessiva",hint:"essere (impers.)",sent:"Nonostante ____ tardi, decise di uscire lo stesso.",ans:"fosse",dist:["era","sia","fu"]},
+  {lvl:"c1",tense:"proposizione temporale",hint:"io · ricevere",sent:"Ti chiamerò appena ____ la notizia.",ans:"avrò ricevuto",dist:["ricevo","ho ricevuto","riceverei"]}
+];
+
+/* ============ ARTICOLI (tutti fascia "a") ============ */
+const ARTICLES=[
+  {lvl:"a",noun:"libro",ans:"il",opts:["il","lo","la","l'"]},
+  {lvl:"a",noun:"casa",ans:"la",opts:["il","lo","la","l'"]},
+  {lvl:"a",noun:"zaino",ans:"lo",opts:["il","lo","la","l'"]},
+  {lvl:"a",noun:"amico",ans:"l'",opts:["il","lo","l'","gli"]},
+  {lvl:"a",noun:"studente",ans:"lo",opts:["il","lo","l'","gli"]},
+  {lvl:"a",noun:"psicologo",ans:"lo",opts:["il","lo","l'","gli"]},
+  {lvl:"a",noun:"gnomo",ans:"lo",opts:["il","lo","i","gli"]},
+  {lvl:"a",noun:"yogurt",ans:"lo",opts:["il","lo","l'","gli"]},
+  {lvl:"a",noun:"uovo",ans:"l'",opts:["il","lo","l'","gli"]},
+  {lvl:"a",noun:"libri",ans:"i",opts:["i","gli","le","l'"]},
+  {lvl:"a",noun:"zii",ans:"gli",opts:["i","gli","le","lo"]},
+  {lvl:"a",noun:"amici",ans:"gli",opts:["i","gli","le","l'"]},
+  {lvl:"a",noun:"amica",ans:"l'",opts:["la","le","l'","gli"]},
+  {lvl:"a",noun:"stazione",ans:"la",opts:["la","le","l'","lo"]},
+  {lvl:"a",noun:"case",ans:"le",opts:["la","le","i","gli"]},
+  {lvl:"a",noun:"zaino",ans:"uno",opts:["un","uno","una","un'"],indet:true},
+  {lvl:"a",noun:"studente",ans:"uno",opts:["un","uno","una","un'"],indet:true},
+  {lvl:"a",noun:"amico",ans:"un",opts:["un","uno","una","un'"],indet:true},
+  {lvl:"a",noun:"amica",ans:"un'",opts:["un","uno","una","un'"],indet:true},
+  {lvl:"a",noun:"casa",ans:"una",opts:["un","uno","una","un'"],indet:true},
+  {lvl:"a",noun:"ora",ans:"un'",opts:["un","uno","una","un'"],indet:true}
+];
+
+/* ============ ABBINAMENTI (per fascia) ============ */
+const MATCHES={
+  a:{theme:"Oggetti di casa",pairs:[["letto","🛏️"],["sedia","🪑"],["libro","📚"],["telefono","📱"],["orologio","⏰"],["chiave","🔑"]]},
+  a2:{theme:"Al mercato",pairs:[["pane","🍞"],["mela","🍎"],["caffè","☕"],["formaggio","🧀"],["pesce","🐟"],["uva","🍇"]]},
+  b1:{theme:"Sinonimi",pairs:[["iniziare","cominciare"],["veloce","rapido"],["felice","contento"],["parlare","conversare"],["casa","abitazione"],["lavoro","impiego"]]},
+  b2:{theme:"Mondo del lavoro",pairs:[["pendolare","chi viaggia ogni giorno per andare al lavoro"],["sciopero","astensione dal lavoro per protesta"],["bilancio","documento contabile dei conti di un'azienda"],["preventivo","stima dei costi prima di un lavoro"],["scadenza","termine ultimo per fare qualcosa"],["ferie","periodo di riposo retribuito dal lavoro"]]},
+  c1:{theme:"Espressioni idiomatiche",pairs:[["in bocca al lupo","augurio di buona fortuna"],["avere le mani in pasta","essere coinvolti in molte attività"],["non vedere l'ora","aspettare qualcosa con impazienza"],["costare un occhio della testa","essere molto caro"],["tagliare la corda","andarsene di nascosto"],["prendere due piccioni con una fava","ottenere due risultati con una sola azione"]]}
+};
+
+/* ============ UTILITÀ ============ */
+const $=s=>document.querySelector(s);
+const $$=s=>[...document.querySelectorAll(s)];
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
+const pick=(arr,n)=>shuffle(arr).slice(0,n);
+let currentLevel="a";
+const QN=8;
+
+function show(id){["home","quiz","abbina","result"].forEach(s=>$("#"+s).classList.toggle("hidden",s!==id));window.scrollTo({top:0,behavior:"smooth"});}
+function buildLevels(){
+  const box=$("#levels");box.innerHTML="";
+  LEVELS.forEach(l=>{
+    const b=document.createElement("button");
+    b.className="chip";b.textContent=l.label;b.dataset.code=l.code;b.setAttribute("aria-pressed",l.code===currentLevel);
+    b.onclick=()=>{currentLevel=l.code;$$("#levels .chip").forEach(c=>c.setAttribute("aria-pressed",c.dataset.code===l.code));};
+    box.appendChild(b);
+  });
+}
+$$("[data-home]").forEach(b=>b.onclick=()=>show("home"));
+$$(".mode").forEach(b=>b.onclick=()=>startGame(b.dataset.mode));
+
+let quiz={mode:null,items:[],idx:0,score:0,streak:0,correct:0};
+function poolForLevel(arr){
+  let p=arr.filter(x=>x.lvl===currentLevel);
+  if(p.length<QN){
+    const here=CODES.indexOf(currentLevel);
+    const order=CODES.slice().sort((a,b)=>Math.abs(CODES.indexOf(a)-here)-Math.abs(CODES.indexOf(b)-here));
+    for(const l of order){if(p.length>=QN)break;p=p.concat(arr.filter(x=>x.lvl===l&&!p.includes(x)));}
+  }
+  return p;
+}
+function startGame(mode){
+  if(mode==="abbina"){startMatch();return;}
+  quiz={mode,idx:0,score:0,streak:0,correct:0,items:pick(poolForLevel(mode==="verbi"?VERBS:ARTICLES),QN)};
+  show("quiz");renderQuiz();
+}
+function renderQuiz(){
+  const it=quiz.items[quiz.idx];
+  $("#qScore").textContent=quiz.score;
+  $("#qStreak").textContent=quiz.streak;
+  $("#qCount").textContent=`${quiz.idx+1}/${quiz.items.length}`;
+  $("#qBar").style.width=(quiz.idx/quiz.items.length*100)+"%";
+  $("#qLvl").textContent=LBL[it.lvl];
+  $("#qFeed").textContent="";$("#qFeed").className="feedback";
+  $("#qNext").classList.add("hidden");
+  let opts;
+  if(quiz.mode==="verbi"){
+    $("#qTense").textContent=it.tense;
+    if(it.sent){
+      $("#qHint").textContent=it.hint;
+      $("#qText").innerHTML=it.sent.replace("____",'<span class="blank">_____</span>');
+    }else{
+      $("#qHint").textContent=`pronome: ${it.pron} · verbo: ${it.inf}`;
+      $("#qText").innerHTML=`${it.pron} <span class="blank">_____</span>`;
+    }
+    opts=shuffle([it.ans,...it.dist]);
+  }else{
+    $("#qTense").textContent=it.indet?"articolo indeterminativo":"articolo determinativo";
+    $("#qHint").textContent="Quale articolo va con questa parola?";
+    $("#qText").innerHTML=`<span class="blank">___</span> ${it.noun}`;
+    opts=shuffle(it.opts);
+  }
+  const box=$("#qOpts");box.innerHTML="";
+  opts.forEach(o=>{
+    const b=document.createElement("button");
+    b.className="opt";b.textContent=o;b.onclick=()=>answer(b,o,it);
+    box.appendChild(b);
+  });
+}
+function answer(btn,choice,it){
+  $$("#qOpts .opt").forEach(b=>b.disabled=true);
+  const correct=choice===it.ans;
+  if(correct){
+    btn.classList.add("correct");
+    quiz.streak++;quiz.correct++;
+    quiz.score+=10+Math.max(0,(quiz.streak-1)*2);
+    $("#qFeed").textContent=pickMsg();$("#qFeed").className="feedback ok";
+  }else{
+    btn.classList.add("wrong");quiz.streak=0;
+    $$("#qOpts .opt").forEach(b=>{if(b.textContent===it.ans)b.classList.add("correct");});
+    $("#qFeed").textContent=`giusto è «${it.ans}»`;$("#qFeed").className="feedback no";
+  }
+  $("#qScore").textContent=quiz.score;$("#qStreak").textContent=quiz.streak;
+  const next=$("#qNext");next.classList.remove("hidden");
+  next.textContent=quiz.idx+1<quiz.items.length?"Avanti →":"Vedi la pagella →";
+  next.onclick=()=>{quiz.idx++;quiz.idx<quiz.items.length?renderQuiz():finishQuiz();};
+}
+const OKMSG=["Bravo!","Esatto!","Perfetto!","Ottimo!","Giusto!"];
+function pickMsg(){return OKMSG[Math.random()*OKMSG.length|0]}
+function finishQuiz(){
+  const tot=quiz.items.length,voto=Math.round(quiz.correct/tot*10);
+  showResult(voto,`${quiz.correct} risposte giuste su ${tot} · ${quiz.score} punti`,()=>startGame(quiz.mode));
+}
+
+let match={set:null,sel:null,solved:0,err:0};
+function startMatch(){
+  const data=MATCHES[currentLevel];
+  match={set:data,sel:null,solved:0,err:0};
+  $("#aLvl").textContent=LBL[currentLevel];
+  $("#aTheme").textContent=data.theme;
+  $("#aPairs").textContent=`0/${data.pairs.length}`;$("#aErr").textContent="0";
+  $("#aFeed").textContent="";$("#aFeed").className="feedback";$("#aDone").classList.add("hidden");
+  renderCol("#aLeft",shuffle(data.pairs.map((p,i)=>({t:p[0],i}))),"L");
+  renderCol("#aRight",shuffle(data.pairs.map((p,i)=>({t:p[1],i}))),"R");
+  show("abbina");
+}
+function renderCol(sel,items,side){
+  const c=$(sel);c.innerHTML="";
+  items.forEach(it=>{
+    const b=document.createElement("button");
+    b.className="tile";b.textContent=it.t;b.dataset.i=it.i;b.dataset.side=side;b.onclick=()=>tapTile(b);
+    c.appendChild(b);
+  });
+}
+function tapTile(b){
+  if(b.classList.contains("done"))return;
+  if(!match.sel){clearMiss();match.sel=b;b.classList.add("sel");return;}
+  if(b===match.sel){b.classList.remove("sel");match.sel=null;return;}
+  if(b.dataset.side===match.sel.dataset.side){match.sel.classList.remove("sel");match.sel=b;b.classList.add("sel");return;}
+  if(b.dataset.i===match.sel.dataset.i){
+    [b,match.sel].forEach(t=>{t.classList.remove("sel");t.classList.add("done");t.disabled=true;});
+    match.sel=null;match.solved++;
+    $("#aPairs").textContent=`${match.solved}/${match.set.pairs.length}`;
+    $("#aFeed").textContent=pickMsg();$("#aFeed").className="feedback ok";
+    if(match.solved===match.set.pairs.length)finishMatch();
+  }else{
+    match.err++;$("#aErr").textContent=match.err;
+    const wrong=[b,match.sel];match.sel.classList.remove("sel");match.sel=null;
+    wrong.forEach(t=>t.classList.add("miss"));
+    $("#aFeed").textContent="non si abbinano";$("#aFeed").className="feedback no";
+    setTimeout(clearMiss,400);
+  }
+}
+function clearMiss(){$$(".tile.miss").forEach(t=>t.classList.remove("miss"));}
+function finishMatch(){
+  const total=match.set.pairs.length,voto=Math.max(4,Math.round(10-match.err*1.2));
+  $("#aDone").classList.remove("hidden");
+  $("#aDone").onclick=()=>showResult(voto,`${total} coppie completate · ${match.err} errori`,startMatch);
+}
+
+function showResult(voto,recap,againFn){
+  $("#rVoto").innerHTML=`${voto}<small>/10</small>`;
+  $("#rRecap").textContent=recap;$("#rNota").textContent=note(voto);
+  $("#rAgain").onclick=againFn;show("result");
+}
+function note(v){
+  if(v>=10)return "Ottimo, lode! 🌟";
+  if(v>=8)return "Molto bene, bravo!";
+  if(v>=6)return "Sufficiente, si può fare di più.";
+  if(v>=5)return "Quasi… ripassa e riprova.";
+  return "Da rivedere: coraggio, riproviamo!";
+}
+
+buildLevels();show("home");
+</script>
+</body>
+</html>
