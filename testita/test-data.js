@@ -1,13 +1,7 @@
-/* ===================================================================
-   TEST-DATA.JS - Banca esercizi del TEST
-   Schema item per formato (campo fmt in ogni esercizio):
-     fill   -> { q:"... ___ ...", a:"risposta" }  (buco digitato; alt con |, buchi multipli con /)
-     buco   -> { q:"... ___ ...", options:[...], answer:idx }  (scelta multipla)
-     errore -> { q:"frase", wrong:"parola", fix:"corretta" }  (clicca lerrore)
-     giusta -> { q:"consegna", options:[frasi], answer:idx }  (scegli la frase giusta)
-   A0.A1: 13 strutture, 10 item/esercizio, formato misto.
-   C1: 5 strutture, 4 item/esercizio (fill, da espandere).
-   =================================================================== */
+/* TEST-DATA.JS — Banca esercizi del TEST
+   A0·A1: 13 strutture, 10 item/esercizio, SOLO formati sicuri (buco/errore): verdetto netto.
+   C1: 5 strutture, 4 item/esercizio, ancora fill (da convertire).
+   Formati: buco {q,options,answer} · errore {q,wrong,fix} · fill {q,a} (solo C1). */
 const TEST_STRUCTURES = [
   {
     "lvl": "a",
@@ -15,48 +9,98 @@ const TEST_STRUCTURES = [
     "exercises": [
       {
         "type": "Riempimento",
-        "fmt": "fill",
-        "instr": "Completa con la forma giusta di essere o avere al presente.",
+        "fmt": "buco",
+        "instr": "Scegli la forma giusta di essere o avere.",
         "items": [
           {
-            "q": "Lei ___ spagnola e ___ trent'anni.",
-            "a": "è / ha"
+            "q": "Lei ___ spagnola.",
+            "options": [
+              "è",
+              "ha",
+              "hai"
+            ],
+            "answer": 0
           },
           {
-            "q": "Noi ___ studenti e ___ molti libri.",
-            "a": "siamo / abbiamo"
+            "q": "Noi ___ molti libri.",
+            "options": [
+              "siamo",
+              "abbiamo",
+              "avete"
+            ],
+            "answer": 1
           },
           {
-            "q": "Loro ___ stanchi perché ___ molto lavoro.",
-            "a": "sono / hanno"
+            "q": "Loro ___ stanchi.",
+            "options": [
+              "hanno",
+              "sono",
+              "siete"
+            ],
+            "answer": 1
           },
           {
-            "q": "Voi ___ pronti? Sì, ___ solo bisogno di un minuto.",
-            "a": "siete / abbiamo"
+            "q": "Io ___ trent'anni.",
+            "options": [
+              "sono",
+              "ho",
+              "hai"
+            ],
+            "answer": 1
           },
           {
-            "q": "Io ___ italiano ma ___ una casa in Spagna.",
-            "a": "sono / ho"
+            "q": "Tu ___ molti amici.",
+            "options": [
+              "sei",
+              "hai",
+              "ha"
+            ],
+            "answer": 1
           },
           {
-            "q": "Tu ___ fortunato: ___ molti amici qui.",
-            "a": "sei / hai"
+            "q": "Marco ___ ingegnere.",
+            "options": [
+              "ha",
+              "è",
+              "hanno"
+            ],
+            "answer": 1
           },
           {
-            "q": "Marco ___ ingegnere e ___ due figli.",
-            "a": "è / ha"
+            "q": "Voi ___ in ritardo.",
+            "options": [
+              "avete",
+              "siete",
+              "sono"
+            ],
+            "answer": 1
           },
           {
-            "q": "Noi non ___ in ritardo, ___ ancora tempo.",
-            "a": "siamo / abbiamo"
+            "q": "Le ragazze ___ contente.",
+            "options": [
+              "hanno",
+              "sono",
+              "siamo"
+            ],
+            "answer": 1
           },
           {
-            "q": "Le ragazze ___ contente perché ___ un giorno libero.",
-            "a": "sono / hanno"
+            "q": "Noi ___ bisogno di aiuto.",
+            "options": [
+              "siamo",
+              "abbiamo",
+              "avete"
+            ],
+            "answer": 1
           },
           {
-            "q": "Voi ___ sicuri? Io ___ dei dubbi.",
-            "a": "siete / ho"
+            "q": "Tu ___ italiano?",
+            "options": [
+              "hai",
+              "sei",
+              "è"
+            ],
+            "answer": 1
           }
         ]
       },
@@ -119,48 +163,98 @@ const TEST_STRUCTURES = [
       },
       {
         "type": "Trasformazione",
-        "fmt": "fill",
-        "instr": "Volgi al plurale. Scrivi solo la parte che cambia (verbo + eventuale aggettivo).",
+        "fmt": "buco",
+        "instr": "Volgi al plurale: scegli la forma corretta.",
         "items": [
           {
             "q": "Lei è felice. → Loro ___.",
-            "a": "sono felici"
+            "options": [
+              "sono felici",
+              "sono felice",
+              "siamo felici"
+            ],
+            "answer": 0
           },
           {
             "q": "Io ho caldo. → Noi ___.",
-            "a": "abbiamo caldo"
+            "options": [
+              "abbiamo caldo",
+              "avete caldo",
+              "hanno caldo"
+            ],
+            "answer": 0
           },
           {
             "q": "Tu sei alto. → Voi ___.",
-            "a": "siete alti"
+            "options": [
+              "siete alti",
+              "siete alto",
+              "sono alti"
+            ],
+            "answer": 0
           },
           {
             "q": "Lui ha ragione. → Loro ___.",
-            "a": "hanno ragione"
+            "options": [
+              "hanno ragione",
+              "hanno ragioni",
+              "sono ragione"
+            ],
+            "answer": 0
           },
           {
             "q": "Io sono stanco. → Noi ___.",
-            "a": "siamo stanchi"
+            "options": [
+              "siamo stanchi",
+              "siamo stanco",
+              "abbiamo stanchi"
+            ],
+            "answer": 0
           },
           {
             "q": "Tu hai sonno. → Voi ___.",
-            "a": "avete sonno"
+            "options": [
+              "avete sonno",
+              "avete sonni",
+              "siete sonno"
+            ],
+            "answer": 0
           },
           {
             "q": "Lei è italiana. → Loro ___.",
-            "a": "sono italiane"
+            "options": [
+              "sono italiane",
+              "sono italiani",
+              "siete italiane"
+            ],
+            "answer": 0
           },
           {
             "q": "Lui è contento. → Loro ___.",
-            "a": "sono contenti"
+            "options": [
+              "sono contenti",
+              "sono contento",
+              "hanno contenti"
+            ],
+            "answer": 0
           },
           {
             "q": "Io ho fretta. → Noi ___.",
-            "a": "abbiamo fretta"
+            "options": [
+              "abbiamo fretta",
+              "abbiamo frette",
+              "siamo fretta"
+            ],
+            "answer": 0
           },
           {
             "q": "Tu sei gentile. → Voi ___.",
-            "a": "siete gentili"
+            "options": [
+              "siete gentili",
+              "siete gentile",
+              "sono gentili"
+            ],
+            "answer": 0
           }
         ]
       }
@@ -172,48 +266,98 @@ const TEST_STRUCTURES = [
     "exercises": [
       {
         "type": "Riempimento",
-        "fmt": "fill",
-        "instr": "Inserisci l'articolo determinativo (il, lo, l', la, i, gli, le).",
+        "fmt": "buco",
+        "instr": "Scegli l'articolo determinativo corretto.",
         "items": [
           {
             "q": "___ studente è bravo.",
-            "a": "Lo"
+            "options": [
+              "Lo",
+              "Il",
+              "L'"
+            ],
+            "answer": 0
           },
           {
             "q": "___ ragazze sono in classe.",
-            "a": "Le"
+            "options": [
+              "Le",
+              "I",
+              "Gli"
+            ],
+            "answer": 0
           },
           {
             "q": "___ zio di Marco abita qui.",
-            "a": "Lo"
+            "options": [
+              "Lo",
+              "Il",
+              "L'"
+            ],
+            "answer": 0
           },
           {
             "q": "___ ombrelli sono nuovi.",
-            "a": "Gli"
+            "options": [
+              "Gli",
+              "I",
+              "Le"
+            ],
+            "answer": 0
           },
           {
             "q": "___ amica di Anna è francese.",
-            "a": "L'"
+            "options": [
+              "L'",
+              "La",
+              "Le"
+            ],
+            "answer": 0
           },
           {
             "q": "___ problemi sono difficili.",
-            "a": "I"
+            "options": [
+              "I",
+              "Gli",
+              "Le"
+            ],
+            "answer": 0
           },
           {
             "q": "___ ora di pranzo è alle 13.",
-            "a": "L'"
+            "options": [
+              "L'",
+              "La",
+              "Il"
+            ],
+            "answer": 0
           },
           {
             "q": "___ psicologo lavora in ospedale.",
-            "a": "Lo"
+            "options": [
+              "Lo",
+              "Il",
+              "L'"
+            ],
+            "answer": 0
           },
           {
             "q": "___ studenti sono in ritardo.",
-            "a": "Gli"
+            "options": [
+              "Gli",
+              "I",
+              "Le"
+            ],
+            "answer": 0
           },
           {
             "q": "___ isole italiane sono belle.",
-            "a": "Le"
+            "options": [
+              "Le",
+              "I",
+              "Gli"
+            ],
+            "answer": 0
           }
         ]
       },
@@ -258,11 +402,6 @@ const TEST_STRUCTURES = [
             "fix": "le"
           },
           {
-            "q": "l' studente bravo",
-            "wrong": "l'",
-            "fix": "lo"
-          },
-          {
             "q": "i zii di Marco",
             "wrong": "i",
             "fix": "gli"
@@ -271,53 +410,108 @@ const TEST_STRUCTURES = [
             "q": "la elefante africano",
             "wrong": "la",
             "fix": "l'"
+          },
+          {
+            "q": "lo cane nero",
+            "wrong": "lo",
+            "fix": "il"
           }
         ]
       },
       {
         "type": "Trasformazione",
-        "fmt": "fill",
-        "instr": "Volgi al plurale (articolo + nome). Scrivi tutto il gruppo.",
+        "fmt": "buco",
+        "instr": "Volgi al plurale: scegli la forma corretta.",
         "items": [
           {
             "q": "la stazione",
-            "a": "le stazioni"
+            "options": [
+              "le stazioni",
+              "le stazione",
+              "i stazioni"
+            ],
+            "answer": 0
           },
           {
             "q": "lo zaino",
-            "a": "gli zaini"
+            "options": [
+              "gli zaini",
+              "i zaini",
+              "le zaini"
+            ],
+            "answer": 0
           },
           {
             "q": "l'amico",
-            "a": "gli amici"
+            "options": [
+              "gli amici",
+              "i amici",
+              "le amici"
+            ],
+            "answer": 0
           },
           {
             "q": "il problema",
-            "a": "i problemi"
+            "options": [
+              "i problemi",
+              "le probleme",
+              "i problema"
+            ],
+            "answer": 0
           },
           {
             "q": "la città",
-            "a": "le città"
+            "options": [
+              "le città",
+              "le cittàs",
+              "i città"
+            ],
+            "answer": 0
           },
           {
             "q": "lo studente",
-            "a": "gli studenti"
+            "options": [
+              "gli studenti",
+              "i studenti",
+              "le studenti"
+            ],
+            "answer": 0
           },
           {
             "q": "l'ora",
-            "a": "le ore"
+            "options": [
+              "le ore",
+              "le ora",
+              "gli ore"
+            ],
+            "answer": 0
           },
           {
             "q": "il libro",
-            "a": "i libri"
+            "options": [
+              "i libri",
+              "gli libri",
+              "le libri"
+            ],
+            "answer": 0
           },
           {
             "q": "la moglie",
-            "a": "le mogli"
+            "options": [
+              "le mogli",
+              "le moglie",
+              "i mogli"
+            ],
+            "answer": 0
           },
           {
             "q": "lo specchio",
-            "a": "gli specchi"
+            "options": [
+              "gli specchi",
+              "i specchi",
+              "le specchi"
+            ],
+            "answer": 0
           }
         ]
       }
@@ -460,11 +654,6 @@ const TEST_STRUCTURES = [
             "fix": "un"
           },
           {
-            "q": "una problema serio",
-            "wrong": "una",
-            "fix": "un"
-          },
-          {
             "q": "una ora fa",
             "wrong": "una",
             "fix": "un'"
@@ -478,6 +667,11 @@ const TEST_STRUCTURES = [
             "q": "uno orologio nuovo",
             "wrong": "uno",
             "fix": "un"
+          },
+          {
+            "q": "un aranciata fresca",
+            "wrong": "un",
+            "fix": "un'"
           }
         ]
       },
@@ -489,47 +683,47 @@ const TEST_STRUCTURES = [
           {
             "q": "Marco è ___ studente.",
             "options": [
-              "un",
               "uno",
-              "un'"
-            ],
-            "answer": 1
-          },
-          {
-            "q": "Anna è ___ amica.",
-            "options": [
               "un",
-              "una",
-              "un'"
-            ],
-            "answer": 2
-          },
-          {
-            "q": "Ho ___ zio a Roma.",
-            "options": [
-              "un",
-              "uno",
               "un'"
             ],
             "answer": 0
           },
           {
-            "q": "C'è ___ specchio in camera.",
+            "q": "Anna è ___ amica.",
             "options": [
-              "un",
+              "un'",
+              "una",
+              "un"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ho ___ zio a Roma.",
+            "options": [
               "uno",
+              "un",
               "un'"
             ],
             "answer": 1
           },
           {
-            "q": "Leggo ___ storia.",
+            "q": "C'è ___ specchio in camera.",
             "options": [
+              "uno",
               "un",
-              "una",
               "un'"
             ],
-            "answer": 1
+            "answer": 0
+          },
+          {
+            "q": "Leggo ___ storia.",
+            "options": [
+              "una",
+              "un",
+              "un'"
+            ],
+            "answer": 0
           },
           {
             "q": "Vedo ___ elefante.",
@@ -543,11 +737,11 @@ const TEST_STRUCTURES = [
           {
             "q": "Bevo ___ aranciata.",
             "options": [
-              "un",
+              "un'",
               "una",
-              "un'"
+              "un"
             ],
-            "answer": 2
+            "answer": 0
           },
           {
             "q": "Aspetto ___ autobus.",
@@ -562,7 +756,7 @@ const TEST_STRUCTURES = [
             "q": "Cerco ___ appartamento.",
             "options": [
               "un",
-              "una",
+              "uno",
               "un'"
             ],
             "answer": 0
@@ -570,11 +764,11 @@ const TEST_STRUCTURES = [
           {
             "q": "Ha ___ sorella.",
             "options": [
-              "un",
               "una",
+              "un",
               "un'"
             ],
-            "answer": 1
+            "answer": 0
           }
         ]
       }
@@ -586,95 +780,195 @@ const TEST_STRUCTURES = [
     "exercises": [
       {
         "type": "Trasformazione",
-        "fmt": "fill",
-        "instr": "Volgi al plurale (articolo + nome).",
+        "fmt": "buco",
+        "instr": "Volgi al plurale: scegli la forma corretta.",
         "items": [
           {
             "q": "la mano",
-            "a": "le mani"
+            "options": [
+              "le mani",
+              "le mano",
+              "i mani"
+            ],
+            "answer": 0
           },
           {
             "q": "il problema",
-            "a": "i problemi"
+            "options": [
+              "i problemi",
+              "le probleme",
+              "i problema"
+            ],
+            "answer": 0
           },
           {
             "q": "l'uovo",
-            "a": "le uova"
+            "options": [
+              "le uova",
+              "gli uovi",
+              "le uove"
+            ],
+            "answer": 0
           },
           {
             "q": "la moglie",
-            "a": "le mogli"
+            "options": [
+              "le mogli",
+              "le moglie",
+              "i mogli"
+            ],
+            "answer": 0
           },
           {
             "q": "il braccio",
-            "a": "le braccia"
+            "options": [
+              "le braccia",
+              "i bracci",
+              "le bracce"
+            ],
+            "answer": 0
           },
           {
             "q": "la casa",
-            "a": "le case"
+            "options": [
+              "le case",
+              "le casa",
+              "i case"
+            ],
+            "answer": 0
           },
           {
             "q": "lo zio",
-            "a": "gli zii"
+            "options": [
+              "gli zii",
+              "i zii",
+              "gli zi"
+            ],
+            "answer": 0
           },
           {
             "q": "l'amico",
-            "a": "gli amici"
+            "options": [
+              "gli amici",
+              "i amici",
+              "gli amichi"
+            ],
+            "answer": 0
           },
           {
             "q": "il dito",
-            "a": "le dita"
+            "options": [
+              "le dita",
+              "i diti",
+              "le dite"
+            ],
+            "answer": 0
           },
           {
             "q": "la radio",
-            "a": "le radio"
+            "options": [
+              "le radio",
+              "le radii",
+              "i radio"
+            ],
+            "answer": 0
           }
         ]
       },
       {
         "type": "Riempimento",
-        "fmt": "fill",
-        "instr": "Scrivi il plurale del nome tra parentesi (i nomi invariabili non cambiano).",
+        "fmt": "buco",
+        "instr": "Scegli il plurale corretto (i nomi invariabili non cambiano).",
         "items": [
           {
-            "q": "Ci sono due ___ in città. (università)",
-            "a": "università"
+            "q": "Ci sono due ___ in città.",
+            "options": [
+              "università",
+              "universitàs",
+              "universite"
+            ],
+            "answer": 0
           },
           {
-            "q": "Ho comprato tre ___. (kiwi)",
-            "a": "kiwi"
+            "q": "Ho comprato tre ___.",
+            "options": [
+              "kiwi",
+              "kiwis",
+              "kiwii"
+            ],
+            "answer": 0
           },
           {
-            "q": "Le ___ economiche sono difficili. (crisi)",
-            "a": "crisi"
+            "q": "Le ___ economiche sono difficili.",
+            "options": [
+              "crisi",
+              "crisis",
+              "crise"
+            ],
+            "answer": 0
           },
           {
-            "q": "Abbiamo visto molti ___. (film)",
-            "a": "film"
+            "q": "Abbiamo visto molti ___.",
+            "options": [
+              "film",
+              "filmi",
+              "films"
+            ],
+            "answer": 0
           },
           {
-            "q": "Bevo due ___ al giorno. (caffè)",
-            "a": "caffè"
+            "q": "Bevo due ___ al giorno.",
+            "options": [
+              "caffè",
+              "caffè s",
+              "caffei"
+            ],
+            "answer": 0
           },
           {
-            "q": "Ci sono molte ___ oggi. (città)",
-            "a": "città"
+            "q": "Ci sono molte ___ oggi.",
+            "options": [
+              "città",
+              "cittàs",
+              "citte"
+            ],
+            "answer": 0
           },
           {
-            "q": "Guardo due ___ diverse. (serie)",
-            "a": "serie"
+            "q": "Guardo due ___ diverse.",
+            "options": [
+              "serie",
+              "serii",
+              "series"
+            ],
+            "answer": 0
           },
           {
-            "q": "Compro delle ___ nuove. (foto)",
-            "a": "foto"
+            "q": "Compro delle ___ nuove.",
+            "options": [
+              "foto",
+              "fotos",
+              "foti"
+            ],
+            "answer": 0
           },
           {
-            "q": "Prendo tre ___. (tè)",
-            "a": "tè"
+            "q": "Prendo tre ___.",
+            "options": [
+              "tè",
+              "tès",
+              "tei"
+            ],
+            "answer": 0
           },
           {
-            "q": "Ci sono due ___ in classe. (computer)",
-            "a": "computer"
+            "q": "Ci sono due ___ in classe.",
+            "options": [
+              "computer",
+              "computers",
+              "computeri"
+            ],
+            "answer": 0
           }
         ]
       },
@@ -743,48 +1037,98 @@ const TEST_STRUCTURES = [
     "exercises": [
       {
         "type": "Riempimento",
-        "fmt": "fill",
-        "instr": "Accorda in genere e numero l'aggettivo tra parentesi.",
+        "fmt": "buco",
+        "instr": "Scegli la forma corretta dell'aggettivo.",
         "items": [
           {
-            "q": "una casa ___ (grande)",
-            "a": "grande"
+            "q": "una casa ___",
+            "options": [
+              "grande",
+              "granda",
+              "grandi"
+            ],
+            "answer": 0
           },
           {
-            "q": "due ragazzi ___ (simpatico)",
-            "a": "simpatici"
+            "q": "due ragazzi ___",
+            "options": [
+              "simpatici",
+              "simpatiche",
+              "simpatico"
+            ],
+            "answer": 0
           },
           {
-            "q": "le scarpe ___ (nuovo)",
-            "a": "nuove"
+            "q": "le scarpe ___",
+            "options": [
+              "nuove",
+              "nuovi",
+              "nuova"
+            ],
+            "answer": 0
           },
           {
-            "q": "un problema ___ (difficile)",
-            "a": "difficile"
+            "q": "un problema ___",
+            "options": [
+              "difficile",
+              "difficili",
+              "difficila"
+            ],
+            "answer": 0
           },
           {
-            "q": "delle idee ___ (interessante)",
-            "a": "interessanti"
+            "q": "delle idee ___",
+            "options": [
+              "interessanti",
+              "interessante",
+              "interessanta"
+            ],
+            "answer": 0
           },
           {
-            "q": "i libri ___ (rosso)",
-            "a": "rossi"
+            "q": "i libri ___",
+            "options": [
+              "rossi",
+              "rosse",
+              "rosso"
+            ],
+            "answer": 0
           },
           {
-            "q": "una storia ___ (bello)",
-            "a": "bella"
+            "q": "una storia ___",
+            "options": [
+              "bella",
+              "bello",
+              "belle"
+            ],
+            "answer": 0
           },
           {
-            "q": "gli studenti ___ (bravo)",
-            "a": "bravi"
+            "q": "gli studenti ___",
+            "options": [
+              "bravi",
+              "brave",
+              "bravo"
+            ],
+            "answer": 0
           },
           {
-            "q": "le città ___ (grande)",
-            "a": "grandi"
+            "q": "le città ___",
+            "options": [
+              "grandi",
+              "grande",
+              "granda"
+            ],
+            "answer": 0
           },
           {
-            "q": "una macchina ___ (veloce)",
-            "a": "veloce"
+            "q": "una macchina ___",
+            "options": [
+              "veloce",
+              "veloci",
+              "veloca"
+            ],
+            "answer": 0
           }
         ]
       },
@@ -847,48 +1191,98 @@ const TEST_STRUCTURES = [
       },
       {
         "type": "Trasformazione",
-        "fmt": "fill",
-        "instr": "Volgi al plurale l'intero gruppo (articolo + nome + aggettivo).",
+        "fmt": "buco",
+        "instr": "Volgi al plurale: scegli la forma corretta.",
         "items": [
           {
             "q": "la casa grande",
-            "a": "le case grandi"
+            "options": [
+              "le case grandi",
+              "le case grande",
+              "le casa grandi"
+            ],
+            "answer": 0
           },
           {
             "q": "il libro rosso",
-            "a": "i libri rossi"
+            "options": [
+              "i libri rossi",
+              "i libri rosso",
+              "i libri rosse"
+            ],
+            "answer": 0
           },
           {
             "q": "l'amica simpatica",
-            "a": "le amiche simpatiche"
+            "options": [
+              "le amiche simpatiche",
+              "le amiche simpatica",
+              "gli amici simpatiche"
+            ],
+            "answer": 0
           },
           {
             "q": "lo zaino pesante",
-            "a": "gli zaini pesanti"
+            "options": [
+              "gli zaini pesanti",
+              "gli zaini pesante",
+              "i zaini pesanti"
+            ],
+            "answer": 0
           },
           {
             "q": "la ragazza alta",
-            "a": "le ragazze alte"
+            "options": [
+              "le ragazze alte",
+              "le ragazze alta",
+              "le ragazza alte"
+            ],
+            "answer": 0
           },
           {
             "q": "il film interessante",
-            "a": "i film interessanti"
+            "options": [
+              "i film interessanti",
+              "i film interessante",
+              "i filmi interessanti"
+            ],
+            "answer": 0
           },
           {
             "q": "l'esercizio difficile",
-            "a": "gli esercizi difficili"
+            "options": [
+              "gli esercizi difficili",
+              "gli esercizi difficile",
+              "i esercizi difficili"
+            ],
+            "answer": 0
           },
           {
             "q": "la macchina veloce",
-            "a": "le macchine veloci"
+            "options": [
+              "le macchine veloci",
+              "le macchine veloce",
+              "le macchina veloci"
+            ],
+            "answer": 0
           },
           {
             "q": "il vestito nuovo",
-            "a": "i vestiti nuovi"
+            "options": [
+              "i vestiti nuovi",
+              "i vestiti nuovo",
+              "i vestiti nuove"
+            ],
+            "answer": 0
           },
           {
             "q": "la storia bella",
-            "a": "le storie belle"
+            "options": [
+              "le storie belle",
+              "le storie bella",
+              "le storia belle"
+            ],
+            "answer": 0
           }
         ]
       }
@@ -988,7 +1382,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca l'espressione sbagliata (c'è / ci sono).",
+        "instr": "Clicca la parola sbagliata.",
         "items": [
           {
             "q": "In città c'è molti turisti.",
@@ -996,24 +1390,9 @@ const TEST_STRUCTURES = [
             "fix": "ci sono"
           },
           {
-            "q": "Ci sono un gatto sul divano.",
-            "wrong": "sono",
-            "fix": "è (c'è)"
-          },
-          {
             "q": "Sul tavolo c'è due piatti.",
             "wrong": "c'è",
             "fix": "ci sono"
-          },
-          {
-            "q": "In strada ci sono molto rumore.",
-            "wrong": "sono",
-            "fix": "è (c'è)"
-          },
-          {
-            "q": "Nel bicchiere ci sono acqua.",
-            "wrong": "sono",
-            "fix": "è (c'è)"
           },
           {
             "q": "In classe c'è venti studenti.",
@@ -1026,66 +1405,131 @@ const TEST_STRUCTURES = [
             "fix": "ci sono"
           },
           {
-            "q": "Sul muro ci sono un quadro.",
-            "wrong": "sono",
-            "fix": "è (c'è)"
-          },
-          {
             "q": "In giardino c'è molti fiori.",
             "wrong": "c'è",
             "fix": "ci sono"
           },
           {
+            "q": "Ci sono un gatto sul divano.",
+            "wrong": "sono",
+            "fix": "è"
+          },
+          {
+            "q": "In strada ci sono molto rumore.",
+            "wrong": "sono",
+            "fix": "è"
+          },
+          {
+            "q": "Nel bicchiere ci sono acqua.",
+            "wrong": "sono",
+            "fix": "è"
+          },
+          {
+            "q": "Sul muro ci sono un quadro.",
+            "wrong": "sono",
+            "fix": "è"
+          },
+          {
             "q": "Davanti alla casa ci sono un albero.",
             "wrong": "sono",
-            "fix": "è (c'è)"
+            "fix": "è"
           }
         ]
       },
       {
         "type": "Trasformazione",
-        "fmt": "fill",
-        "instr": "Riscrivi al plurale usando il partitivo (dei, delle, degli). Scrivi la frase.",
+        "fmt": "buco",
+        "instr": "Volgi al plurale col partitivo: scegli la forma corretta.",
         "items": [
           {
-            "q": "C'è un libro.",
-            "a": "Ci sono dei libri."
+            "q": "C'è un libro. →",
+            "options": [
+              "Ci sono dei libri.",
+              "C'è dei libri.",
+              "Ci sono un libri."
+            ],
+            "answer": 0
           },
           {
-            "q": "C'è una mela.",
-            "a": "Ci sono delle mele."
+            "q": "C'è una mela. →",
+            "options": [
+              "Ci sono delle mele.",
+              "C'è delle mele.",
+              "Ci sono della mele."
+            ],
+            "answer": 0
           },
           {
-            "q": "C'è uno studente.",
-            "a": "Ci sono degli studenti."
+            "q": "C'è uno studente. →",
+            "options": [
+              "Ci sono degli studenti.",
+              "Ci sono dei studenti.",
+              "C'è degli studenti."
+            ],
+            "answer": 0
           },
           {
-            "q": "C'è un'amica.",
-            "a": "Ci sono delle amiche."
+            "q": "C'è un'amica. →",
+            "options": [
+              "Ci sono delle amiche.",
+              "Ci sono degli amiche.",
+              "C'è delle amiche."
+            ],
+            "answer": 0
           },
           {
-            "q": "C'è un problema.",
-            "a": "Ci sono dei problemi."
+            "q": "C'è un problema. →",
+            "options": [
+              "Ci sono dei problemi.",
+              "Ci sono degli problemi.",
+              "C'è dei problemi."
+            ],
+            "answer": 0
           },
           {
-            "q": "C'è una macchina.",
-            "a": "Ci sono delle macchine."
+            "q": "C'è una macchina. →",
+            "options": [
+              "Ci sono delle macchine.",
+              "C'è delle macchine.",
+              "Ci sono dei macchine."
+            ],
+            "answer": 0
           },
           {
-            "q": "C'è uno zaino.",
-            "a": "Ci sono degli zaini."
+            "q": "C'è uno zaino. →",
+            "options": [
+              "Ci sono degli zaini.",
+              "Ci sono dei zaini.",
+              "Ci sono delle zaini."
+            ],
+            "answer": 0
           },
           {
-            "q": "C'è un errore.",
-            "a": "Ci sono degli errori."
+            "q": "C'è un errore. →",
+            "options": [
+              "Ci sono degli errori.",
+              "Ci sono dei errori.",
+              "Ci sono delle errori."
+            ],
+            "answer": 0
           },
           {
-            "q": "C'è una sedia.",
-            "a": "Ci sono delle sedie."
+            "q": "C'è una sedia. →",
+            "options": [
+              "Ci sono delle sedie.",
+              "Ci sono dei sedie.",
+              "C'è delle sedie."
+            ],
+            "answer": 0
           },
           {
-            "q": "C'è un cane.",
-            "a": "Ci sono dei cani."
+            "q": "C'è un cane. →",
+            "options": [
+              "Ci sono dei cani.",
+              "Ci sono degli cani.",
+              "Ci sono delle cani."
+            ],
+            "answer": 0
           }
         ]
       }
@@ -1097,48 +1541,98 @@ const TEST_STRUCTURES = [
     "exercises": [
       {
         "type": "Riempimento",
-        "fmt": "fill",
-        "instr": "Coniuga al presente indicativo il verbo tra parentesi.",
+        "fmt": "buco",
+        "instr": "Scegli la coniugazione corretta al presente.",
         "items": [
           {
             "q": "Noi ___ una lettera. (scrivere)",
-            "a": "scriviamo"
+            "options": [
+              "scriviamo",
+              "scrivete",
+              "scrivono"
+            ],
+            "answer": 0
           },
           {
             "q": "Lei ___ molto. (dormire)",
-            "a": "dorme"
+            "options": [
+              "dorme",
+              "dormi",
+              "dormono"
+            ],
+            "answer": 0
           },
           {
             "q": "Tu ___ il lavoro? (finire)",
-            "a": "finisci"
+            "options": [
+              "finisci",
+              "finisce",
+              "finisco"
+            ],
+            "answer": 0
           },
           {
             "q": "Loro ___ a Milano. (abitare)",
-            "a": "abitano"
+            "options": [
+              "abitano",
+              "abitiamo",
+              "abitate"
+            ],
+            "answer": 0
           },
           {
             "q": "Io ___ il giornale. (leggere)",
-            "a": "leggo"
+            "options": [
+              "leggo",
+              "leggi",
+              "legge"
+            ],
+            "answer": 0
           },
           {
             "q": "Voi ___ spagnolo. (parlare)",
-            "a": "parlate"
+            "options": [
+              "parlate",
+              "parliamo",
+              "parlano"
+            ],
+            "answer": 0
           },
           {
             "q": "Noi ___ la porta. (aprire)",
-            "a": "apriamo"
+            "options": [
+              "apriamo",
+              "aprite",
+              "aprono"
+            ],
+            "answer": 0
           },
           {
             "q": "Lui ___ la domanda. (capire)",
-            "a": "capisce"
+            "options": [
+              "capisce",
+              "capisci",
+              "capisco"
+            ],
+            "answer": 0
           },
           {
             "q": "Tu ___ alle otto. (partire)",
-            "a": "parti"
+            "options": [
+              "parti",
+              "parte",
+              "parto"
+            ],
+            "answer": 0
           },
           {
             "q": "Loro ___ in centro. (vivere)",
-            "a": "vivono"
+            "options": [
+              "vivono",
+              "viviamo",
+              "vivete"
+            ],
+            "answer": 0
           }
         ]
       },
@@ -1201,48 +1695,98 @@ const TEST_STRUCTURES = [
       },
       {
         "type": "Trasformazione",
-        "fmt": "fill",
-        "instr": "Cambia il soggetto da «io» a «noi». Scrivi solo il verbo.",
+        "fmt": "buco",
+        "instr": "Cambia il soggetto a «noi»: scegli la forma corretta.",
         "items": [
           {
-            "q": "Io scrivo un'email. → Noi ___ un'email.",
-            "a": "scriviamo"
+            "q": "Io scrivo un'email. → Noi ___",
+            "options": [
+              "scriviamo",
+              "scrivete",
+              "scrivano"
+            ],
+            "answer": 0
           },
           {
-            "q": "Io parto domani. → Noi ___ domani.",
-            "a": "partiamo"
+            "q": "Io parto domani. → Noi ___",
+            "options": [
+              "partiamo",
+              "partite",
+              "partano"
+            ],
+            "answer": 0
           },
           {
-            "q": "Io capisco la domanda. → Noi ___ la domanda.",
-            "a": "capiamo"
+            "q": "Io capisco la domanda. → Noi ___",
+            "options": [
+              "capiamo",
+              "capite",
+              "capischiamo"
+            ],
+            "answer": 0
           },
           {
-            "q": "Io apro la finestra. → Noi ___ la finestra.",
-            "a": "apriamo"
+            "q": "Io apro la finestra. → Noi ___",
+            "options": [
+              "apriamo",
+              "aprite",
+              "apriano"
+            ],
+            "answer": 0
           },
           {
-            "q": "Io leggo il giornale. → Noi ___ il giornale.",
-            "a": "leggiamo"
+            "q": "Io leggo il giornale. → Noi ___",
+            "options": [
+              "leggiamo",
+              "leggete",
+              "legghiamo"
+            ],
+            "answer": 0
           },
           {
-            "q": "Io dormo poco. → Noi ___ poco.",
-            "a": "dormiamo"
+            "q": "Io dormo poco. → Noi ___",
+            "options": [
+              "dormiamo",
+              "dormite",
+              "dormimo"
+            ],
+            "answer": 0
           },
           {
-            "q": "Io finisco presto. → Noi ___ presto.",
-            "a": "finiamo"
+            "q": "Io finisco presto. → Noi ___",
+            "options": [
+              "finiamo",
+              "finite",
+              "finischiamo"
+            ],
+            "answer": 0
           },
           {
-            "q": "Io vivo a Roma. → Noi ___ a Roma.",
-            "a": "viviamo"
+            "q": "Io vivo a Roma. → Noi ___",
+            "options": [
+              "viviamo",
+              "vivete",
+              "vivimo"
+            ],
+            "answer": 0
           },
           {
-            "q": "Io parlo tre lingue. → Noi ___ tre lingue.",
-            "a": "parliamo"
+            "q": "Io parlo tre lingue. → Noi ___",
+            "options": [
+              "parliamo",
+              "parlate",
+              "parlamo"
+            ],
+            "answer": 0
           },
           {
-            "q": "Io preferisco il tè. → Noi ___ il tè.",
-            "a": "preferiamo"
+            "q": "Io preferisco il tè. → Noi ___",
+            "options": [
+              "preferiamo",
+              "preferite",
+              "preferischiamo"
+            ],
+            "answer": 0
           }
         ]
       }
@@ -1254,95 +1798,195 @@ const TEST_STRUCTURES = [
     "exercises": [
       {
         "type": "Trasformazione",
-        "fmt": "fill",
-        "instr": "Rendi negativa la frase. Scrivila per intero.",
+        "fmt": "buco",
+        "instr": "Rendi negativa la frase: scegli la versione corretta.",
         "items": [
           {
             "q": "Parlo francese.",
-            "a": "Non parlo francese."
+            "options": [
+              "Non parlo francese.",
+              "Parlo non francese.",
+              "No parlo francese."
+            ],
+            "answer": 0
           },
           {
             "q": "Lei abita qui.",
-            "a": "Lei non abita qui."
+            "options": [
+              "Lei non abita qui.",
+              "Lei abita non qui.",
+              "Non lei abita qui."
+            ],
+            "answer": 0
           },
           {
             "q": "Abbiamo tempo.",
-            "a": "Non abbiamo tempo."
+            "options": [
+              "Non abbiamo tempo.",
+              "Abbiamo non tempo.",
+              "No abbiamo tempo."
+            ],
+            "answer": 0
           },
           {
             "q": "Loro lavorano oggi.",
-            "a": "Loro non lavorano oggi."
+            "options": [
+              "Loro non lavorano oggi.",
+              "Loro lavorano non oggi.",
+              "Non loro lavorano oggi."
+            ],
+            "answer": 0
           },
           {
             "q": "Mangio la carne.",
-            "a": "Non mangio la carne."
+            "options": [
+              "Non mangio la carne.",
+              "Mangio non la carne.",
+              "No mangio la carne."
+            ],
+            "answer": 0
           },
           {
             "q": "Tu capisci tutto.",
-            "a": "Tu non capisci tutto."
+            "options": [
+              "Tu non capisci tutto.",
+              "Tu capisci non tutto.",
+              "Non tu capisci tutto."
+            ],
+            "answer": 0
           },
           {
             "q": "Vado al cinema.",
-            "a": "Non vado al cinema."
+            "options": [
+              "Non vado al cinema.",
+              "Vado non al cinema.",
+              "No vado al cinema."
+            ],
+            "answer": 0
           },
           {
             "q": "Lui beve il caffè.",
-            "a": "Lui non beve il caffè."
+            "options": [
+              "Lui non beve il caffè.",
+              "Lui beve non il caffè.",
+              "No lui beve il caffè."
+            ],
+            "answer": 0
           },
           {
             "q": "Studiamo insieme.",
-            "a": "Non studiamo insieme."
+            "options": [
+              "Non studiamo insieme.",
+              "Studiamo non insieme.",
+              "No studiamo insieme."
+            ],
+            "answer": 0
           },
           {
             "q": "Voi partite oggi.",
-            "a": "Voi non partite oggi."
+            "options": [
+              "Voi non partite oggi.",
+              "Voi partite non oggi.",
+              "Non voi partite oggi."
+            ],
+            "answer": 0
           }
         ]
       },
       {
         "type": "Riempimento",
-        "fmt": "fill",
-        "instr": "Completa con la parola negativa giusta (niente, nessuno, mai, più, ancora).",
+        "fmt": "buco",
+        "instr": "Scegli la parola negativa giusta.",
         "items": [
           {
             "q": "Non c'è ___ di interessante.",
-            "a": "niente"
-          },
-          {
-            "q": "Non vado ___ al cinema, costa troppo.",
-            "a": "più | mai"
-          },
-          {
-            "q": "Non ho ___ visto quel film, lo vedo stasera.",
-            "a": "ancora"
+            "options": [
+              "niente",
+              "nessuno",
+              "mai"
+            ],
+            "answer": 0
           },
           {
             "q": "Non c'è ___ in ufficio oggi.",
-            "a": "nessuno"
+            "options": [
+              "nessuno",
+              "niente",
+              "più"
+            ],
+            "answer": 0
           },
           {
-            "q": "Non mangio ___ la carne, sono vegetariano.",
-            "a": "mai"
+            "q": "Non sono ___ stato in Italia.",
+            "options": [
+              "mai",
+              "niente",
+              "nessuno"
+            ],
+            "answer": 0
           },
           {
-            "q": "Non conosco ___ qui.",
-            "a": "nessuno"
+            "q": "Non abito ___ a Roma.",
+            "options": [
+              "più",
+              "mai",
+              "niente"
+            ],
+            "answer": 0
           },
           {
             "q": "Non voglio ___, grazie.",
-            "a": "niente"
+            "options": [
+              "niente",
+              "nessuno",
+              "mai"
+            ],
+            "answer": 0
           },
           {
-            "q": "Non abito ___ a Roma, mi sono trasferito.",
-            "a": "più"
+            "q": "Non conosco ___ qui.",
+            "options": [
+              "nessuno",
+              "niente",
+              "più"
+            ],
+            "answer": 0
           },
           {
-            "q": "Non sono ___ stato in Italia, ci vado quest'anno.",
-            "a": "mai"
+            "q": "Non ho ___ finito, aspetta.",
+            "options": [
+              "ancora",
+              "mai",
+              "più"
+            ],
+            "answer": 0
           },
           {
-            "q": "Non ho ___ finito, dammi un minuto.",
-            "a": "ancora"
+            "q": "Non mangio ___ la carne.",
+            "options": [
+              "mai",
+              "niente",
+              "nessuno"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Non c'è ___ da fare.",
+            "options": [
+              "niente",
+              "nessuno",
+              "mai"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Non viene ___ alla festa.",
+            "options": [
+              "nessuno",
+              "niente",
+              "più"
+            ],
+            "answer": 0
           }
         ]
       },
@@ -1357,29 +2001,9 @@ const TEST_STRUCTURES = [
             "fix": "niente"
           },
           {
-            "q": "Ho mai visto Roma.",
-            "wrong": "Ho",
-            "fix": "Non ho"
-          },
-          {
-            "q": "Viene nessuno alla festa.",
-            "wrong": "Viene",
-            "fix": "Non viene"
-          },
-          {
-            "q": "C'è niente da mangiare.",
-            "wrong": "C'è",
-            "fix": "Non c'è"
-          },
-          {
             "q": "Non conosco qualcuno qui.",
             "wrong": "qualcuno",
             "fix": "nessuno"
-          },
-          {
-            "q": "Non voglio nulla di speciale.",
-            "wrong": "nulla",
-            "fix": "niente"
           },
           {
             "q": "Non vado sempre al mare.",
@@ -1392,14 +2016,34 @@ const TEST_STRUCTURES = [
             "fix": "niente"
           },
           {
-            "q": "Non vado sempre in palestra.",
+            "q": "Non voglio nulla di speciale.",
+            "wrong": "nulla",
+            "fix": "niente"
+          },
+          {
+            "q": "Non viene qualcuno stasera.",
+            "wrong": "qualcuno",
+            "fix": "nessuno"
+          },
+          {
+            "q": "Non bevo sempre il caffè la sera.",
             "wrong": "sempre",
             "fix": "mai"
           },
           {
-            "q": "Non mangio niente mai.",
-            "wrong": "mai",
-            "fix": "Non mangio mai niente (posizione)"
+            "q": "Non ho visto qualcuno.",
+            "wrong": "qualcuno",
+            "fix": "nessuno"
+          },
+          {
+            "q": "Non compro qualcosa oggi.",
+            "wrong": "qualcosa",
+            "fix": "niente"
+          },
+          {
+            "q": "Non parlo con qualcuno di questo.",
+            "wrong": "qualcuno",
+            "fix": "nessuno"
           }
         ]
       }
@@ -1555,48 +2199,98 @@ const TEST_STRUCTURES = [
       },
       {
         "type": "Trasformazione",
-        "fmt": "fill",
-        "instr": "Riscrivi al passato prossimo (essere + participio accordato). Scrivi la frase.",
+        "fmt": "buco",
+        "instr": "Volgi al passato prossimo: scegli la forma corretta.",
         "items": [
           {
             "q": "Mi piace la cena.",
-            "a": "Mi è piaciuta la cena."
+            "options": [
+              "Mi è piaciuta la cena.",
+              "Mi è piaciuto la cena.",
+              "Mi ha piaciuto la cena."
+            ],
+            "answer": 0
           },
           {
             "q": "Ti piacciono i regali.",
-            "a": "Ti sono piaciuti i regali."
+            "options": [
+              "Ti sono piaciuti i regali.",
+              "Ti è piaciuti i regali.",
+              "Ti hanno piaciuto i regali."
+            ],
+            "answer": 0
           },
           {
             "q": "Le piace la festa.",
-            "a": "Le è piaciuta la festa."
+            "options": [
+              "Le è piaciuta la festa.",
+              "Le è piaciuto la festa.",
+              "Le ha piaciuta la festa."
+            ],
+            "answer": 0
           },
           {
             "q": "Ci piacciono le vacanze.",
-            "a": "Ci sono piaciute le vacanze."
+            "options": [
+              "Ci sono piaciute le vacanze.",
+              "Ci è piaciute le vacanze.",
+              "Ci hanno piaciute le vacanze."
+            ],
+            "answer": 0
           },
           {
             "q": "Mi piace il film.",
-            "a": "Mi è piaciuto il film."
+            "options": [
+              "Mi è piaciuto il film.",
+              "Mi è piaciuta il film.",
+              "Mi ha piaciuto il film."
+            ],
+            "answer": 0
           },
           {
             "q": "Ti piace la pizza.",
-            "a": "Ti è piaciuta la pizza."
+            "options": [
+              "Ti è piaciuta la pizza.",
+              "Ti è piaciuto la pizza.",
+              "Ti ha piaciuta la pizza."
+            ],
+            "answer": 0
           },
           {
             "q": "Le piacciono i dolci.",
-            "a": "Le sono piaciuti i dolci."
+            "options": [
+              "Le sono piaciuti i dolci.",
+              "Le è piaciuti i dolci.",
+              "Le hanno piaciuti i dolci."
+            ],
+            "answer": 0
           },
           {
             "q": "Ci piace il concerto.",
-            "a": "Ci è piaciuto il concerto."
+            "options": [
+              "Ci è piaciuto il concerto.",
+              "Ci è piaciuta il concerto.",
+              "Ci ha piaciuto il concerto."
+            ],
+            "answer": 0
           },
           {
             "q": "Vi piacciono le foto.",
-            "a": "Vi sono piaciute le foto."
+            "options": [
+              "Vi sono piaciute le foto.",
+              "Vi è piaciute le foto.",
+              "Vi hanno piaciute le foto."
+            ],
+            "answer": 0
           },
           {
             "q": "Mi piacciono le canzoni.",
-            "a": "Mi sono piaciute le canzoni."
+            "options": [
+              "Mi sono piaciute le canzoni.",
+              "Mi è piaciute le canzoni.",
+              "Mi hanno piaciute le canzoni."
+            ],
+            "answer": 0
           }
         ]
       }
@@ -1608,48 +2302,98 @@ const TEST_STRUCTURES = [
     "exercises": [
       {
         "type": "Riempimento",
-        "fmt": "fill",
-        "instr": "Completa con il modale al presente (soggetto e verbo tra parentesi).",
+        "fmt": "buco",
+        "instr": "Scegli la forma corretta del modale.",
         "items": [
           {
-            "q": "___ un caffè, grazie. (noi – volere)",
-            "a": "vogliamo"
+            "q": "Noi ___ un caffè, grazie. (volere)",
+            "options": [
+              "vogliamo",
+              "volemo",
+              "volete"
+            ],
+            "answer": 0
           },
           {
-            "q": "___ partire presto. (lei – dovere)",
-            "a": "deve"
+            "q": "Lei ___ partire presto. (dovere)",
+            "options": [
+              "deve",
+              "dove",
+              "devono"
+            ],
+            "answer": 0
           },
           {
-            "q": "___ venire alla festa? (loro – potere)",
-            "a": "possono"
+            "q": "Loro ___ venire alla festa? (potere)",
+            "options": [
+              "possono",
+              "potono",
+              "possiamo"
+            ],
+            "answer": 0
           },
           {
-            "q": "___ imparare l'italiano. (io – volere)",
-            "a": "voglio"
+            "q": "Io ___ imparare l'italiano. (volere)",
+            "options": [
+              "voglio",
+              "volio",
+              "vuolo"
+            ],
+            "answer": 0
           },
           {
-            "q": "___ aiutarti domani. (io – potere)",
-            "a": "posso"
+            "q": "Io ___ aiutarti domani. (potere)",
+            "options": [
+              "posso",
+              "poto",
+              "puosso"
+            ],
+            "answer": 0
           },
           {
-            "q": "___ studiare di più. (tu – dovere)",
-            "a": "devi"
+            "q": "Tu ___ studiare di più. (dovere)",
+            "options": [
+              "devi",
+              "dovi",
+              "deve"
+            ],
+            "answer": 0
           },
           {
-            "q": "___ uscire stasera? (voi – volere)",
-            "a": "volete"
+            "q": "Voi ___ uscire stasera? (volere)",
+            "options": [
+              "volete",
+              "vogliete",
+              "volite"
+            ],
+            "answer": 0
           },
           {
-            "q": "___ finire il progetto. (noi – dovere)",
-            "a": "dobbiamo"
+            "q": "Noi ___ finire il progetto. (dovere)",
+            "options": [
+              "dobbiamo",
+              "devemo",
+              "dovemo"
+            ],
+            "answer": 0
           },
           {
-            "q": "___ parlare con te. (lui – volere)",
-            "a": "vuole"
+            "q": "Lui ___ parlare con te. (volere)",
+            "options": [
+              "vuole",
+              "vole",
+              "voglie"
+            ],
+            "answer": 0
           },
           {
-            "q": "___ entrare? (io – potere)",
-            "a": "posso"
+            "q": "Io ___ entrare? (potere)",
+            "options": [
+              "posso",
+              "poto",
+              "posst"
+            ],
+            "answer": 0
           }
         ]
       },
@@ -1661,12 +2405,12 @@ const TEST_STRUCTURES = [
           {
             "q": "Vogliamo di partire.",
             "wrong": "di",
-            "fix": "(niente)"
+            "fix": "(togliere)"
           },
           {
             "q": "Devi a finire i compiti.",
             "wrong": "a",
-            "fix": "(niente)"
+            "fix": "(togliere)"
           },
           {
             "q": "Lei pole aiutarmi?",
@@ -1681,7 +2425,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Posso di entrare?",
             "wrong": "di",
-            "fix": "(niente)"
+            "fix": "(togliere)"
           },
           {
             "q": "Dovemo studiare.",
@@ -1696,7 +2440,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Puoi a venire con me?",
             "wrong": "a",
-            "fix": "(niente)"
+            "fix": "(togliere)"
           },
           {
             "q": "Loro deve partire.",
@@ -1706,7 +2450,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Noi possiamo di aiutare.",
             "wrong": "di",
-            "fix": "(niente)"
+            "fix": "(togliere)"
           }
         ]
       },
@@ -1727,11 +2471,11 @@ const TEST_STRUCTURES = [
           {
             "q": "___ un po' d'acqua, per favore?",
             "options": [
-              "Devo",
               "Posso avere",
+              "Devo avere",
               "Voglio avere"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "q": "Sono stanco, ___ riposare.",
@@ -1754,54 +2498,54 @@ const TEST_STRUCTURES = [
           {
             "q": "È tardi, ___ andare a casa.",
             "options": [
-              "voglio",
               "devo",
+              "voglio",
               "posso"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "q": "___ aprire la finestra? Fa caldo.",
             "options": [
-              "Devo",
               "Posso",
+              "Devo",
               "Voglio"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "q": "Se vuoi dimagrire ___ mangiare meno.",
             "options": [
-              "puoi",
               "devi",
+              "puoi",
               "vuoi"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "q": "___ un gelato, ho voglia di dolce.",
             "options": [
+              "Voglio",
               "Devo",
-              "Posso",
-              "Voglio"
+              "Posso"
             ],
-            "answer": 2
+            "answer": 0
           },
           {
             "q": "Scusa, ___ ripetere? Non ho capito.",
             "options": [
-              "devi",
               "puoi",
+              "devi",
               "vuoi"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
-            "q": "Domani ___ lavorare, è festa.",
+            "q": "Domani è festa, non ___ lavorare.",
             "options": [
-              "non devo",
-              "non posso",
-              "non voglio"
+              "devo",
+              "posso",
+              "voglio"
             ],
             "answer": 0
           }
@@ -1902,48 +2646,98 @@ const TEST_STRUCTURES = [
       },
       {
         "type": "Riempimento",
-        "fmt": "fill",
-        "instr": "Inserisci la preposizione semplice (di, a, da, in, con, su, per, tra).",
+        "fmt": "buco",
+        "instr": "Scegli la preposizione semplice corretta.",
         "items": [
           {
             "q": "Questo regalo è ___ te.",
-            "a": "per"
+            "options": [
+              "per",
+              "di",
+              "a"
+            ],
+            "answer": 0
           },
           {
             "q": "Il gatto è ___ il tavolo.",
-            "a": "su"
+            "options": [
+              "su",
+              "in",
+              "a"
+            ],
+            "answer": 0
           },
           {
             "q": "Studio italiano ___ due anni.",
-            "a": "da"
+            "options": [
+              "da",
+              "per",
+              "in"
+            ],
+            "answer": 0
           },
           {
             "q": "Vado ___ scuola in autobus.",
-            "a": "a"
+            "options": [
+              "a",
+              "in",
+              "da"
+            ],
+            "answer": 0
           },
           {
             "q": "Parlo ___ mio fratello.",
-            "a": "con"
+            "options": [
+              "con",
+              "di",
+              "a"
+            ],
+            "answer": 0
           },
           {
             "q": "Il libro è ___ Marco.",
-            "a": "di"
+            "options": [
+              "di",
+              "da",
+              "a"
+            ],
+            "answer": 0
           },
           {
-            "q": "Parto ___ Milano domani.",
-            "a": "per | da"
+            "q": "Il treno parte ___ Milano.",
+            "options": [
+              "da",
+              "di",
+              "in"
+            ],
+            "answer": 0
           },
           {
             "q": "La lezione è ___ le tre e le quattro.",
-            "a": "tra"
-          },
-          {
-            "q": "Vengo ___ Spagna.",
-            "a": "dalla"
+            "options": [
+              "tra",
+              "in",
+              "a"
+            ],
+            "answer": 0
           },
           {
             "q": "Metto il libro ___ borsa.",
-            "a": "in"
+            "options": [
+              "in",
+              "a",
+              "su"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Questo è un regalo ___ Anna.",
+            "options": [
+              "per",
+              "di",
+              "a"
+            ],
+            "answer": 0
           }
         ]
       },
@@ -1963,11 +2757,6 @@ const TEST_STRUCTURES = [
             "fix": "a"
           },
           {
-            "q": "Studio per tre anni.",
-            "wrong": "per",
-            "fix": "da"
-          },
-          {
             "q": "Il regalo è di te.",
             "wrong": "di",
             "fix": "per"
@@ -1983,11 +2772,6 @@ const TEST_STRUCTURES = [
             "fix": "a"
           },
           {
-            "q": "Parlo di mio padre al telefono adesso.",
-            "wrong": "di",
-            "fix": "con"
-          },
-          {
             "q": "Il libro è su Marco.",
             "wrong": "su",
             "fix": "di"
@@ -1998,9 +2782,19 @@ const TEST_STRUCTURES = [
             "fix": "in"
           },
           {
-            "q": "Torno da Italia domani.",
-            "wrong": "da",
-            "fix": "dall'"
+            "q": "Studio per tre anni all'università... Studio per due ore.",
+            "wrong": "per",
+            "fix": "da"
+          },
+          {
+            "q": "Parto in Napoli domani.",
+            "wrong": "in",
+            "fix": "da"
+          },
+          {
+            "q": "Sono nato a Germania.",
+            "wrong": "a",
+            "fix": "in"
           }
         ]
       }
@@ -2012,48 +2806,98 @@ const TEST_STRUCTURES = [
     "exercises": [
       {
         "type": "Riempimento",
-        "fmt": "fill",
-        "instr": "Completa con il possessivo, con l'articolo dove serve (persona tra parentesi).",
+        "fmt": "buco",
+        "instr": "Scegli il possessivo corretto (con o senza articolo).",
         "items": [
           {
-            "q": "Questa è ___ casa. (noi)",
-            "a": "la nostra"
+            "q": "Questa è ___ casa. (di noi)",
+            "options": [
+              "la nostra",
+              "nostra",
+              "il nostro"
+            ],
+            "answer": 0
           },
           {
-            "q": "___ padre lavora molto. (lei)",
-            "a": "Suo"
+            "q": "___ padre lavora molto. (di lei)",
+            "options": [
+              "Suo",
+              "Il suo",
+              "Sua"
+            ],
+            "answer": 0
           },
           {
-            "q": "Dove sono ___ chiavi? (io)",
-            "a": "le mie"
+            "q": "Dove sono ___ chiavi? (di me)",
+            "options": [
+              "le mie",
+              "mie",
+              "i miei"
+            ],
+            "answer": 0
           },
           {
-            "q": "___ fratello è simpatico. (tu)",
-            "a": "Tuo"
+            "q": "___ fratello è simpatico. (di te)",
+            "options": [
+              "Tuo",
+              "Il tuo",
+              "Tua"
+            ],
+            "answer": 0
           },
           {
-            "q": "___ macchina è nuova. (loro)",
-            "a": "La loro"
+            "q": "___ macchina è nuova. (di loro)",
+            "options": [
+              "La loro",
+              "Loro",
+              "Il loro"
+            ],
+            "answer": 0
           },
           {
-            "q": "___ madre è gentile. (io)",
-            "a": "Mia"
+            "q": "___ madre è gentile. (di me)",
+            "options": [
+              "Mia",
+              "La mia",
+              "Mio"
+            ],
+            "answer": 0
           },
           {
-            "q": "Ecco ___ libri. (voi)",
-            "a": "i vostri"
+            "q": "Ecco ___ libri. (di voi)",
+            "options": [
+              "i vostri",
+              "vostri",
+              "le vostre"
+            ],
+            "answer": 0
           },
           {
-            "q": "___ sorella studia a Roma. (noi)",
-            "a": "Nostra"
+            "q": "___ sorella studia a Roma. (di noi)",
+            "options": [
+              "Nostra",
+              "La nostra",
+              "Nostro"
+            ],
+            "answer": 0
           },
           {
-            "q": "___ amici sono simpatici. (tu)",
-            "a": "I tuoi"
+            "q": "___ amici sono simpatici. (di te)",
+            "options": [
+              "I tuoi",
+              "Tuoi",
+              "Le tue"
+            ],
+            "answer": 0
           },
           {
-            "q": "___ cane è piccolo. (lei)",
-            "a": "Il suo"
+            "q": "___ cane è piccolo. (di lei)",
+            "options": [
+              "Il suo",
+              "Suo",
+              "La sua"
+            ],
+            "answer": 0
           }
         ]
       },
@@ -2063,9 +2907,9 @@ const TEST_STRUCTURES = [
         "instr": "Clicca la parola sbagliata (articolo di troppo/mancante o accordo).",
         "items": [
           {
-            "q": "il mia padre",
+            "q": "il mio padre",
             "wrong": "il",
-            "fix": "(niente: mio padre)"
+            "fix": "(togliere)"
           },
           {
             "q": "il sua libro",
@@ -2108,7 +2952,7 @@ const TEST_STRUCTURES = [
             "fix": "tue"
           },
           {
-            "q": "mio madre è qui",
+            "q": "mio madre",
             "wrong": "mio",
             "fix": "mia"
           }
@@ -2116,48 +2960,98 @@ const TEST_STRUCTURES = [
       },
       {
         "type": "Trasformazione",
-        "fmt": "fill",
-        "instr": "Volgi al plurale la cosa posseduta (articolo + possessivo + nome).",
+        "fmt": "buco",
+        "instr": "Volgi al plurale la cosa posseduta: scegli la forma corretta.",
         "items": [
           {
             "q": "la mia amica",
-            "a": "le mie amiche"
+            "options": [
+              "le mie amiche",
+              "le mie amica",
+              "le miei amiche"
+            ],
+            "answer": 0
           },
           {
             "q": "il tuo libro",
-            "a": "i tuoi libri"
+            "options": [
+              "i tuoi libri",
+              "i tue libri",
+              "i tuoi libro"
+            ],
+            "answer": 0
           },
           {
             "q": "il nostro problema",
-            "a": "i nostri problemi"
+            "options": [
+              "i nostri problemi",
+              "i nostre problemi",
+              "i nostri problema"
+            ],
+            "answer": 0
           },
           {
             "q": "la sua idea",
-            "a": "le sue idee"
+            "options": [
+              "le sue idee",
+              "le sue idea",
+              "le suoi idee"
+            ],
+            "answer": 0
           },
           {
             "q": "il mio amico",
-            "a": "i miei amici"
+            "options": [
+              "i miei amici",
+              "i mie amici",
+              "i miei amico"
+            ],
+            "answer": 0
           },
           {
             "q": "la tua chiave",
-            "a": "le tue chiavi"
+            "options": [
+              "le tue chiavi",
+              "le tue chiave",
+              "le tuoi chiavi"
+            ],
+            "answer": 0
           },
           {
             "q": "il vostro esame",
-            "a": "i vostri esami"
+            "options": [
+              "i vostri esami",
+              "i vostre esami",
+              "i vostri esame"
+            ],
+            "answer": 0
           },
           {
             "q": "la loro casa",
-            "a": "le loro case"
+            "options": [
+              "le loro case",
+              "le loro casa",
+              "i loro case"
+            ],
+            "answer": 0
           },
           {
             "q": "il suo cane",
-            "a": "i suoi cani"
+            "options": [
+              "i suoi cani",
+              "i sue cani",
+              "i suoi cane"
+            ],
+            "answer": 0
           },
           {
             "q": "la nostra macchina",
-            "a": "le nostre macchine"
+            "options": [
+              "le nostre macchine",
+              "le nostra macchine",
+              "le nostri macchine"
+            ],
+            "answer": 0
           }
         ]
       }
@@ -2184,29 +3078,29 @@ const TEST_STRUCTURES = [
           {
             "q": "___ tre del pomeriggio.",
             "options": [
-              "È",
               "Sono le",
+              "È",
               "È l'"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "q": "___ una e mezza.",
             "options": [
-              "Sono le",
               "È l'",
+              "Sono le",
               "È le"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "q": "___ dieci di sera.",
             "options": [
-              "È",
               "Sono le",
+              "È",
               "È l'"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "q": "___ mezzanotte.",
@@ -2220,47 +3114,47 @@ const TEST_STRUCTURES = [
           {
             "q": "___ cinque in punto.",
             "options": [
-              "È le",
               "Sono le",
+              "È le",
               "È l'"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "q": "___ una precisa.",
             "options": [
-              "Sono le",
               "È l'",
+              "Sono le",
               "È le"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "q": "___ sette e un quarto.",
             "options": [
-              "È le",
               "Sono le",
+              "È le",
               "È l'"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
-            "q": "___ ora di pranzo, è l'una.",
+            "q": "___ due e venti.",
             "options": [
               "Sono le",
-              "È l'",
-              "È le"
+              "È le",
+              "È l'"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "q": "___ nove meno un quarto.",
             "options": [
-              "È le",
               "Sono le",
+              "È le",
               "È l'"
             ],
-            "answer": 1
+            "answer": 0
           }
         ]
       },
@@ -2300,22 +3194,22 @@ const TEST_STRUCTURES = [
             "fix": "Sono"
           },
           {
-            "q": "Sono le una.",
-            "wrong": "le",
-            "fix": "l' (È l'una)"
-          },
-          {
             "q": "È sette in punto.",
             "wrong": "È",
             "fix": "Sono le"
           },
           {
-            "q": "È le una e dieci.",
-            "wrong": "le",
-            "fix": "l'"
+            "q": "È le dodici e mezza.",
+            "wrong": "È",
+            "fix": "Sono"
           },
           {
-            "q": "È le dodici e mezza.",
+            "q": "È le sei e mezza.",
+            "wrong": "È",
+            "fix": "Sono"
+          },
+          {
+            "q": "È le otto e dieci.",
             "wrong": "È",
             "fix": "Sono"
           }
@@ -2323,48 +3217,98 @@ const TEST_STRUCTURES = [
       },
       {
         "type": "Trasformazione",
-        "fmt": "fill",
-        "instr": "Scrivi l'ora in lettere (usa È / Sono le).",
+        "fmt": "buco",
+        "instr": "Scegli come si dice l'ora indicata.",
         "items": [
           {
             "q": "2:00",
-            "a": "Sono le due."
-          },
-          {
-            "q": "1:15",
-            "a": "È l'una e un quarto. | È l'una e quindici."
-          },
-          {
-            "q": "7:30",
-            "a": "Sono le sette e mezza. | Sono le sette e trenta."
-          },
-          {
-            "q": "12:00 (giorno)",
-            "a": "È mezzogiorno."
-          },
-          {
-            "q": "5:00",
-            "a": "Sono le cinque."
-          },
-          {
-            "q": "3:45",
-            "a": "Sono le quattro meno un quarto. | Sono le tre e quarantacinque."
+            "options": [
+              "Sono le due.",
+              "È le due.",
+              "È la due."
+            ],
+            "answer": 0
           },
           {
             "q": "1:00",
-            "a": "È l'una."
+            "options": [
+              "È l'una.",
+              "Sono l'una.",
+              "È le una."
+            ],
+            "answer": 0
           },
           {
-            "q": "10:30",
-            "a": "Sono le dieci e mezza. | Sono le dieci e trenta."
+            "q": "12:00 (giorno)",
+            "options": [
+              "È mezzogiorno.",
+              "Sono mezzogiorno.",
+              "È le mezzogiorno."
+            ],
+            "answer": 0
           },
           {
             "q": "00:00",
-            "a": "È mezzanotte."
+            "options": [
+              "È mezzanotte.",
+              "Sono mezzanotte.",
+              "È la mezzanotte."
+            ],
+            "answer": 0
           },
           {
-            "q": "8:15",
-            "a": "Sono le otto e un quarto. | Sono le otto e quindici."
+            "q": "5:00",
+            "options": [
+              "Sono le cinque.",
+              "È le cinque.",
+              "È cinque."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "7:30",
+            "options": [
+              "Sono le sette e mezza.",
+              "È le sette e mezza.",
+              "Sono sette e mezza."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "10:15",
+            "options": [
+              "Sono le dieci e un quarto.",
+              "È le dieci e un quarto.",
+              "Sono dieci e un quarto."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "3:00",
+            "options": [
+              "Sono le tre.",
+              "È le tre.",
+              "È la tre."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "1:30",
+            "options": [
+              "È l'una e mezza.",
+              "Sono l'una e mezza.",
+              "È le una e mezza."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "9:45",
+            "options": [
+              "Sono le dieci meno un quarto.",
+              "È le dieci meno un quarto.",
+              "Sono le nove e tre quarti."
+            ],
+            "answer": 0
           }
         ]
       }
