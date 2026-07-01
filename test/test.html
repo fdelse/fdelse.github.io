@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Test di italiano · Fabio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .pagewrap{display:none;}
+  .pagewrap.active{display:block;}
+  .navbar{
+    position:sticky;bottom:0;background:var(--paper);border-top:1px solid var(--line);
+    padding:16px 0;display:flex;justify-content:space-between;align-items:center;margin-top:8px;
+  }
+  .navbar .spacer{flex:1;}
+
+  /* scelta multipla a bottoni */
+  .opts{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
+  .opt{
+    font-family:var(--sans);font-size:14.5px;padding:8px 14px;border-radius:8px;
+    border:1.5px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;
+  }
+  .opt:hover{border-color:var(--lvl,var(--ink));}
+  .opt.sel{background:var(--lvl,var(--ink));color:#fff;border-color:var(--lvl,var(--ink));}
+
+  /* "individua l'errore": parole cliccabili */
+  .words{margin-top:6px;line-height:2.1;}
+  .word{
+    display:inline;padding:3px 6px;border-radius:6px;cursor:pointer;
+    border:1.5px solid transparent;
+  }
+  .word:hover{background:var(--line-soft);}
+  .word.sel{background:var(--lvl,var(--ink));color:#fff;}
+  .hint{font-size:12.5px;color:var(--ink-faint);margin-top:6px;font-style:italic;}
+</style>
+</head>
+<body>
+
+<div class="wrap" id="namegateWrap">
+  <div class="namegate">
+    <p class="kicker">Test di italiano</p>
+    <h1>Come ti chiami?</h1>
+    <input type="text" id="studentName" placeholder="Nome e cognome">
+    <br>
+    <button id="startBtn">Inizia il test</button>
+  </div>
+</div>
+
+<div class="wrap" id="testWrap" style="display:none;">
+  <div class="progress">
+    <div class="progress__bar"><div class="progress__fill" id="progFill" style="width:0%;"></div></div>
+    <div class="progress__label" id="progLabel"></div>
+  </div>
+  <div id="content"></div>
+  <div class="navbar">
+    <button class="ghost" id="prevBtn">← Indietro</button>
+    <div class="spacer"></div>
+    <button id="nextBtn">Avanti →</button>
+  </div>
+</div>
+
+<div class="wrap" id="doneWrap" style="display:none;">
+  <p class="kicker">Fatto</p>
+  <h1>Grazie, <span id="doneName"></span>!</h1>
+  <p class="sub">Il tuo test è stato inviato all'insegnante. Ecco il tuo risultato.</p>
+  <div class="score-banner">
+    <div class="num" id="scoreNum">–</div>
+    <div class="lbl">risposte corrette</div>
+  </div>
+  <div id="byStruct"></div>
+  <div id="fallbackBox"></div>
+</div>
+
+<script src="test-data.js"></script>
+<script src="env.js"></script>
+<script>
+const LVL_COLOR = {a:"var(--c-a)", a2:"var(--c-a2)", b1:"var(--c-b1)", b2:"var(--c-b2)", c1:"var(--c-c1)"};
+const LVL_TAG   = {a:"A0 · A1", a2:"A2", b1:"B1", b2:"B2", c1:"C1"};
+
+const params = new URLSearchParams(location.search);
+const nPick = parseInt(params.get('n') ?? '2');           // quanti item pescare per esercizio
+const seedParam = params.get('seed');                      // opzionale: fissa la pesca
+
+// strutture selezionate (nuovo formato s=0,3,7 ; retrocompat from/to)
+let indices;
+if (params.get('s')) {
+  indices = params.get('s').split(',').map(x => parseInt(x)).filter(x => !isNaN(x));
+} else {
+  const from = parseInt(params.get('from') ?? '0');
+  const to = parseInt(params.get('to') ?? (TEST_STRUCTURES.length - 1));
+  indices = [];
+  for (let i = from; i <= to; i++) indices.push(i);
+}
+
+/* ---------- PRNG con seed (così un link può essere riproducibile se serve) ---------- */
+function makeRng(seed){
+  let s = seed >>> 0;
+  return function(){ s = (s * 1664525 + 1013904223) >>> 0; return s / 4294967296; };
+}
+const rng = makeRng(seedParam ? parseInt(seedParam) : (Date.now() & 0xffffffff));
+function pickRandom(arr, k){
+  const copy = arr.slice();
+  for (let i = copy.length - 1; i > 0; i--){
+    const j = Math.floor(rng() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy.slice(0, Math.min(k, copy.length));
+}
+
+/* costruisce il test pescando nPick item a caso da ogni esercizio */
+const selected = indices.map(i => TEST_STRUCTURES[i]).filter(Boolean).map(s => ({
+  lvl: s.lvl,
+  title: s.title,
+  exercises: s.exercises.map(e => ({
+    type: e.type,
+    fmt: e.fmt || 'fill',
+    instr: e.instr,
+    items: pickRandom(e.items, nPick)
+  }))
+}));
+
+let studentName = '';
+let currentPage = 0;
+const totalPages = selected.length;
+
+/* ---------- normalizzazione per correzione fill ---------- */
+function normalizeText(str){
+  return str.toLowerCase()
+    .replace(/\([^)]*\)/g, '')
+    .replace(/[.,;:!?"'’]/g, '')
+    .replace(/\s+/g, ' ').trim();
+}
+function fillCorrect(userVal, ans){
+  // ans può avere alternative con "|" e/o buchi multipli con "/"
+  if (!userVal || !userVal.trim()) return null; // null = non risposto
+  const parts = ans.split('/').map(p => p.trim());          // buchi multipli
+  const userParts = userVal.split('/').map(p => p.trim());
+  if (parts.length > 1) {
+    if (userParts.length !== parts.length) return false;
+    return parts.every((p, i) => {
+      const alts = p.split('|').map(a => normalizeText(a));
+      return alts.includes(normalizeText(userParts[i]));
+    });
+  }
+  const alts = ans.split('|').map(a => normalizeText(a));
+  return alts.includes(normalizeText(userVal));
+}
+
+/* ---------- avvio ---------- */
+document.getElementById('startBtn').addEventListener('click', () => {
+  const val = document.getElementById('studentName').value.trim();
+  if (!val) { document.getElementById('studentName').focus(); return; }
+  studentName = val;
+  document.getElementById('namegateWrap').style.display = 'none';
+  document.getElementById('testWrap').style.display = 'block';
+  renderAllPages();
+  showPage(0);
+});
+
+/* ---------- rendering per formato ---------- */
+function renderItem(itemData, fmt, refId){
+  const box = document.createElement('div');
+  box.className = 'item';
+  box.dataset.fmt = fmt;
+  box.dataset.ref = refId;
+
+  const num = document.createElement('span');
+  num.className = 'item__num';
+  num.textContent = itemData._n;
+  box.appendChild(num);
+
+  const body = document.createElement('div');
+  body.className = 'item__body';
+
+  if (fmt === 'fill') {
+    box.dataset.answer = itemData.a;
+    const parts = itemData.q.split('___');
+    let html = '<div class="item__text">';
+    if (parts.length > 1) {
+      html += parts.map((p, i) => p + (i < parts.length - 1 ? '<input class="blank" type="text">' : '')).join('');
+    } else {
+      html += itemData.q + '<br><input class="blank" type="text" style="width:100%;max-width:340px;">';
+    }
+    html += '</div>';
+    body.innerHTML = html;
+  }
+  else if (fmt === 'buco') {
+    box.dataset.answer = itemData.answer;
+    const parts = itemData.q.split('___');
+    let html = '<div class="item__text">' + parts.join('<b class="gap">____</b>') + '</div>';
+    html += '<div class="opts">';
+    itemData.options.forEach((op, i) => {
+      html += '<button type="button" class="opt" data-i="' + i + '">' + op + '</button>';
+    });
+    html += '</div>';
+    body.innerHTML = html;
+  }
+  else if (fmt === 'errore') {
+    box.dataset.answer = itemData.wrong;
+    box.dataset.fix = itemData.fix;
+    // spezza la frase in parole cliccabili
+    const words = itemData.q.split(' ');
+    let html = '<div class="hint">Clicca la parola sbagliata:</div><div class="words">';
+    words.forEach((w) => {
+      const clean = w.replace(/[.,;:!?]$/, '');
+      const punct = w.slice(clean.length);
+      html += '<span class="word" data-w="' + clean.replace(/"/g,'&quot;') + '">' + clean + '</span>' + punct + ' ';
+    });
+    html += '</div>';
+    body.innerHTML = html;
+  }
+  else if (fmt === 'giusta') {
+    box.dataset.answer = itemData.answer;
+    let html = '<div class="item__text">' + itemData.q + '</div><div class="opts" style="flex-direction:column;align-items:stretch;">';
+    itemData.options.forEach((op, i) => {
+      html += '<button type="button" class="opt" data-i="' + i + '" style="text-align:left;">' + op + '</button>';
+    });
+    html += '</div>';
+    body.innerHTML = html;
+  }
+
+  box.appendChild(body);
+  return box;
+}
+
+function renderAllPages(){
+  const content = document.getElementById('content');
+  let refCounter = 0;
+  selected.forEach((struct, si) => {
+    const page = document.createElement('div');
+    page.className = 'pagewrap';
+    page.dataset.page = si;
+
+    const block = document.createElement('div');
+    block.className = 'struct-block';
+    block.style.setProperty('--lvl', LVL_COLOR[struct.lvl]);
+    block.innerHTML =
+      '<p class="struct-block__eyebrow">' + LVL_TAG[struct.lvl] + ' · esercizi</p>' +
+      '<h2 class="struct-title">' + struct.title + '</h2>';
+
+    struct.exercises.forEach(ex => {
+      const exDiv = document.createElement('div');
+      exDiv.className = 'exercise';
+      exDiv.innerHTML = '<span class="exercise__type">' + ex.type + '</span><p class="exercise__instr">' + ex.instr + '</p>';
+      ex.items.forEach((itemData, ii) => {
+        itemData._n = ii + 1;
+        const refId = 'r' + (refCounter++);
+        const itemBox = renderItem(itemData, ex.fmt, refId);
+        itemBox.dataset.struct = struct.title;
+        itemBox.dataset.type = ex.type;
+        // salva il testo "pulito" della domanda per il transcript
+        itemBox.dataset.q = itemData.q;
+        exDiv.appendChild(itemBox);
+      });
+      block.appendChild(exDiv);
+    });
+
+    page.appendChild(block);
+    content.appendChild(page);
+  });
+
+  // gestione click su opzioni (buco/giusta) e parole (errore)
+  content.addEventListener('click', e => {
+    if (e.target.classList.contains('opt')) {
+      const opts = e.target.parentElement.querySelectorAll('.opt');
+      opts.forEach(o => o.classList.remove('sel'));
+      e.target.classList.add('sel');
+      e.target.closest('.item').dataset.chosen = e.target.dataset.i;
+    }
+    if (e.target.classList.contains('word')) {
+      const words = e.target.parentElement.querySelectorAll('.word');
+      words.forEach(w => w.classList.remove('sel'));
+      e.target.classList.add('sel');
+      e.target.closest('.item').dataset.chosen = e.target.dataset.w;
+    }
+  });
+}
+
+function showPage(idx){
+  document.querySelectorAll('.pagewrap').forEach(p => p.classList.remove('active'));
+  document.querySelector('.pagewrap[data-page="' + idx + '"]').classList.add('active');
+  currentPage = idx;
+  document.getElementById('progFill').style.width = (((idx+1)/totalPages)*100) + '%';
+  document.getElementById('progLabel').textContent = 'Struttura ' + (idx+1) + ' di ' + totalPages + ' — ' + selected[idx].title;
+  document.getElementById('prevBtn').disabled = (idx === 0);
+  document.getElementById('nextBtn').textContent = (idx === totalPages - 1) ? 'Invia risultati' : 'Avanti →';
+  window.scrollTo({top:0, behavior:'instant'});
+}
+
+document.getElementById('prevBtn').addEventListener('click', () => { if (currentPage>0) showPage(currentPage-1); });
+document.getElementById('nextBtn').addEventListener('click', () => {
+  if (currentPage < totalPages - 1) showPage(currentPage + 1);
+  else submitTest();
+});
+
+/* ---------- correzione + invio ---------- */
+function checkItem(it){
+  const fmt = it.dataset.fmt;
+  if (fmt === 'fill') {
+    const inputs = it.querySelectorAll('.blank');
+    const vals = Array.from(inputs).map(i => i.value.trim());
+    const answer = vals.join(' / ') || '(vuoto)';
+    if (vals.every(v => !v)) return { state:'vuoto', answer:'(vuoto)', key: it.dataset.answer };
+    const res = fillCorrect(vals.length > 1 ? vals.join(' / ') : vals[0], it.dataset.answer);
+    return { state: res === true ? 'giusto' : (res === null ? 'vuoto' : 'verifica'), answer, key: it.dataset.answer };
+  }
+  if (fmt === 'buco') {
+    const chosen = it.dataset.chosen;
+    const opts = it.querySelectorAll('.opt');
+    if (chosen === undefined) return { state:'vuoto', answer:'(non risposto)', key: opts[it.dataset.answer]?.textContent };
+    const correct = parseInt(chosen) === parseInt(it.dataset.answer);
+    return { state: correct ? 'giusto':'sbagliato', answer: opts[parseInt(chosen)].textContent, key: opts[parseInt(it.dataset.answer)].textContent };
+  }
+  if (fmt === 'giusta') {
+    const chosen = it.dataset.chosen;
+    const opts = it.querySelectorAll('.opt');
+    if (chosen === undefined) return { state:'vuoto', answer:'(non risposto)', key: opts[it.dataset.answer]?.textContent };
+    const correct = parseInt(chosen) === parseInt(it.dataset.answer);
+    return { state: correct ? 'giusto':'sbagliato', answer: opts[parseInt(chosen)].textContent, key: opts[parseInt(it.dataset.answer)].textContent };
+  }
+  if (fmt === 'errore') {
+    const chosen = it.dataset.chosen;
+    if (chosen === undefined) return { state:'vuoto', answer:'(non risposto)', key: it.dataset.answer + ' → ' + it.dataset.fix };
+    const correct = normalizeText(chosen) === normalizeText(it.dataset.answer);
+    return { state: correct ? 'giusto':'sbagliato', answer: chosen, key: it.dataset.answer + ' → ' + it.dataset.fix };
+  }
+  return { state:'vuoto', answer:'?', key:'?' };
+}
+
+const STATE_LABEL = { giusto:'CORRETTO', sbagliato:'SBAGLIATO', verifica:'DA VERIFICARE', vuoto:'NON RISPOSTO' };
+
+function submitTest(){
+  const items = document.querySelectorAll('.item');
+  let ok=0, sbagliati=0, daVerif=0, nonRisp=0, tot=items.length;
+
+  // raccogli per struttura e la lista errori
+  const perStruct = {};   // titolo → {ok, tot}
+  const structOrder = [];
+  const errorLines = [];
+
+  items.forEach(it => {
+    const r = checkItem(it);
+    const st = it.dataset.struct;
+    if (!(st in perStruct)) { perStruct[st] = {ok:0, tot:0}; structOrder.push(st); }
+    perStruct[st].tot++;
+
+    if (r.state === 'giusto') { ok++; perStruct[st].ok++; }
+    else {
+      if (r.state === 'sbagliato') sbagliati++;
+      else if (r.state === 'verifica') daVerif++;
+      else if (r.state === 'vuoto') nonRisp++;
+      // dettaglio solo per gli errori (non i corretti)
+      errorLines.push(
+'• [' + st + '] ' + it.dataset.type + ' — ' + STATE_LABEL[r.state] + '\n' +
+'   Domanda: ' + it.dataset.q + '\n' +
+'   Risposta: ' + r.answer + '\n' +
+'   Corretta: ' + (r.key || ''));
+    }
+  });
+
+  const score = ok + ' / ' + tot;
+  const dateStr = new Date().toLocaleDateString('it-IT');
+
+  // ---- righe per struttura (usate sia per lo studente sia per l'email) ----
+  const structRows = structOrder.map(st =>
+    st + ': ' + perStruct[st].ok + '/' + perStruct[st].tot);
+
+  // ---- RIEPILOGO per l'insegnante (formato 1) ----
+  const summary =
+'RIEPILOGO TEST DI ITALIANO\n' +
+'Studente: ' + studentName + '\n' +
+'Data: ' + dateStr + '\n' +
+'────────────────────────\n' +
+'PUNTEGGIO: ' + score + '\n' +
+'  Corretti: ' + ok + '  ·  Sbagliati: ' + sbagliati +
+'  ·  Da verificare: ' + daVerif + '  ·  Non risposti: ' + nonRisp + '\n' +
+'  (gli item "da verificare" sono a risposta aperta: controllali a mano)\n' +
+'────────────────────────\n' +
+'PER STRUTTURA:\n' + structRows.map(r => '  ' + r).join('\n') + '\n' +
+'────────────────────────\n' +
+(errorLines.length
+  ? 'ERRORI DA RIVEDERE:\n\n' + errorLines.join('\n\n')
+  : 'Nessun errore: test completato tutto correttamente.');
+
+  // ---- mostra allo studente: SOLO voto + ripartizione per struttura ----
+  document.getElementById('testWrap').style.display = 'none';
+  document.getElementById('doneWrap').style.display = 'block';
+  document.getElementById('doneName').textContent = studentName;
+  document.getElementById('scoreNum').textContent = score;
+
+  const bs = document.getElementById('byStruct');
+  bs.innerHTML =
+    '<div class="card"><p class="kicker">Come sei andato, struttura per struttura</p>' +
+    structOrder.map(st => {
+      const p = perStruct[st];
+      const pct = Math.round((p.ok / p.tot) * 100);
+      return '<div class="summary-row"><span>' + st + '</span><b>' + p.ok + '/' + p.tot + '</b></div>';
+    }).join('') +
+    '</div>';
+
+  sendResults(summary, score);
+}
+
+function sendResults(summary, score){
+  const box = document.getElementById('fallbackBox');
+  const useEmailJS = EMAILJS_CONFIG.SERVICE_ID && EMAILJS_CONFIG.TEMPLATE_ID && EMAILJS_CONFIG.PUBLIC_KEY;
+  if (useEmailJS) {
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js';
+    script.onload = () => {
+      emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
+      emailjs.send(EMAILJS_CONFIG.SERVICE_ID, EMAILJS_CONFIG.TEMPLATE_ID,
+        { student_name: studentName, score: score, summary: summary })
+        .then(() => { /* invio riuscito: lo studente non vede nulla in più */ })
+        .catch(() => showFallback(box, summary));
+    };
+    script.onerror = () => showFallback(box, summary);
+    document.head.appendChild(script);
+  } else {
+    showFallback(box, summary);
+  }
+}
+
+// fallback: mostrato SOLO se l'invio automatico fallisce.
+// Il riepilogo (con soluzioni) è nascosto in un campo che lo studente
+// non deve leggere; serve solo per non perdere i dati in caso di guasto.
+function showFallback(box, summary){
+  const mailto = 'mailto:' + EMAILJS_CONFIG.TEACHER_EMAIL +
+    '?subject=' + encodeURIComponent('Risultati test italiano - ' + studentName) +
+    '&body=' + encodeURIComponent(summary);
+  box.innerHTML =
+    '<div class="card"><p class="note">Nota tecnica: l\'invio automatico non è andato a buon fine. ' +
+    'Premi il pulsante per inviare il risultato all\'insegnante.</p>' +
+    '<a class="btn" href="' + mailto + '" style="text-decoration:none;display:inline-block;">Invia all\'insegnante</a>' +
+    '<textarea id="summaryOut" style="position:absolute;left:-9999px;">' + summary + '</textarea>' +
+    '</div>';
+}
+</script>
+</body>
+</html>
