@@ -4899,61 +4899,81 @@ const ENTRIES = [
     "lvl": "b1",
     "cat": "Pronomi",
     "title": "I pronomi combinati",
-    "def": "Quando in una frase ci sono insieme un pronome <b>indiretto</b> e uno <b>diretto</b>, si fondono in un'unica forma con alcune trasformazioni.",
-    "form": "L'indiretto va per primo e cambia: mi/ti/ci/vi → me, te, ce, ve; gli e le → glie- (unito al diretto).",
+    "def": "Un pronome <b>indiretto</b> e uno <b>diretto</b> nella stessa frase si fondono in un'unica forma. Serve che <b>entrambi</b> siano pronomi: se uno resta esplicito o sottinteso, non si forma («Gli do il libro»).",
+    "form": "L'ordine è fisso: <b>indiretto + diretto</b>. Cambia solo l'indiretto: mi/ti/ci/vi → me, te, ce, ve; gli e le confluiscono in glie-, attaccato. Il diretto <b>resta invariato</b> e può essere solo lo, la, li, le o ne; con 1ª e 2ª persona si usa la forma tonica («mi presenta a lui»).",
     "tables": [
       {
         "headers": [
+          "",
           "+ lo",
           "+ la",
           "+ li",
-          "+ le"
+          "+ le",
+          "+ ne"
         ],
         "rows": [
           [
+            "mi (a me)",
             "me lo",
             "me la",
             "me li",
-            "me le"
+            "me le",
+            "me ne"
           ],
           [
+            "ti (a te)",
             "te lo",
             "te la",
             "te li",
-            "te le"
+            "te le",
+            "te ne"
           ],
           [
+            "gli / le (a lui, a lei)",
             "glielo",
             "gliela",
             "glieli",
-            "gliele"
+            "gliele",
+            "gliene"
           ],
           [
+            "ci (a noi)",
             "ce lo",
             "ce la",
             "ce li",
-            "ce le"
+            "ce le",
+            "ce ne"
           ],
           [
+            "vi (a voi)",
             "ve lo",
             "ve la",
             "ve li",
-            "ve le"
+            "ve le",
+            "ve ne"
           ]
         ]
       }
     ],
     "uses": [
       {
-        "label": "indiretto + diretto",
-        "ex": "Me lo dai? (a me + lo)"
-      },
-      {
         "label": "glie- per lui e per lei",
         "ex": "Glielo dico (a lui / a lei)."
+      },
+      {
+        "label": "con ne: quantità o argomento",
+        "ex": "Me ne dai due? / Gliene parlo domani."
+      },
+      {
+        "label": "posizione: prima del verbo, oppure attaccata a infinito e imperativo",
+        "ex": "Te lo voglio dare = Voglio dartelo. / Dammelo! Diglielo!"
+      },
+      {
+        "label": "nei tempi composti lo/la si elidono",
+        "ex": "Me l'ha detto ieri. / Gliel'ho già mandata."
       }
     ],
-    "warn": "«gli» e «le» diventano <b>entrambi</b> «glie-»: «glielo dico» può valere sia «lo dico a lui» sia «lo dico a lei». Decide il contesto.",
+    "warn": "«gli» e «le» diventano <b>entrambi</b> «glie-»: «glielo dico» vale per lui e per lei, decide il contesto. Nei tempi composti il participio si accorda con il <b>diretto</b>: «Me li ha portat<i>i</i>».",
     "exercises": [
       {
         "type": "Riempimento",
@@ -4966,7 +4986,7 @@ const ENTRIES = [
           "Vi mando le foto.",
           "Compro i fiori a lei.",
           "Mi presti la macchina?",
-          "Dico la verità a loro."
+          "Mi porti tre copie?"
         ],
         "key": [
           "<b>Me lo</b> dai?",
@@ -4976,7 +4996,7 @@ const ENTRIES = [
           "<b>Ve le</b> mando.",
           "<b>Glieli</b> compro.",
           "<b>Me la</b> presti?",
-          "<b>Gliela</b> dico."
+          "<b>Me ne</b> porti tre?"
         ]
       },
       {
@@ -4990,7 +5010,7 @@ const ENTRIES = [
           "Mi lo presti?",
           "Te le porto la borsa.",
           "Ce lo spiega la regola.",
-          "Gli li compro (i fiori, a lei)."
+          "Me l'ha dato, la chiave."
         ],
         "key": [
           "<b>Me lo</b> dai?",
@@ -5000,7 +5020,7 @@ const ENTRIES = [
           "<b>Me lo</b> presti?",
           "<b>Te la</b> porto.",
           "<b>Ce la</b> spiega.",
-          "<b>Glieli</b> compro."
+          "Me l'ha dat<b>a</b>."
         ]
       },
       {
@@ -5013,7 +5033,7 @@ const ENTRIES = [
           "Spieghiamo la regola a voi.",
           "Regala i fiori a lei.",
           "Presti la macchina a noi?",
-          "Dico le cose a loro.",
+          "Voglio dare il libro a lui.",
           "Compri il pane a me?"
         ],
         "key": [
@@ -5023,7 +5043,7 @@ const ENTRIES = [
           "<b>Ve la</b> spieghiamo.",
           "<b>Glieli</b> regala.",
           "<b>Ce la</b> presti?",
-          "<b>Gliele</b> dico.",
+          "Voglio dar<b>glielo</b> / <b>Glielo</b> voglio dare.",
           "<b>Me lo</b> compri?"
         ]
       }
@@ -7332,6 +7352,8 @@ const ENTRIES = [
 /* ===== Rendering ===== */
 const colorById = Object.fromEntries(LEVELS.map(l=>[l.id,l.color]));
 const strip = s => (s||"").replace(/<[^>]+>/g,"");
+const fold = s => (s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+const unapo = s => (s||"").replace(/['\u2019\u2018\u02bc\u00b4`]/g,"");
 
 function tableHTML(t){
   let h = "<table>";
@@ -7355,7 +7377,7 @@ function searchText(e){
   if(e.ex) parts = parts.concat(e.ex);
   if(e.exercises) e.exercises.forEach(x=>{parts.push(x.instr); parts = parts.concat(x.items);});
   if(e.warn) parts.push(e.warn);
-  return strip(parts.join(" ")).toLowerCase().replace(/"/g,"");
+  return unapo(fold(strip(parts.join(" ")).toLowerCase())).replace(/"/g,"");
 }
 
 function cardHTML(e, lvlId, idx){
@@ -7424,7 +7446,8 @@ function build(){
 
 /* ===== Ricerca ===== */
 function applyFilter(term){
-  term = (term||"").trim().toLowerCase();
+  const raw = (term||"").trim();
+  term = unapo(fold(raw.toLowerCase()));
   let anyVisible = false;
   document.querySelectorAll(".card").forEach(c=>{
     const match = !term || (c.dataset.search||"").includes(term);
@@ -7438,7 +7461,7 @@ function applyFilter(term){
   const empty = document.getElementById("empty");
   if(empty) empty.style.display = (term && !anyVisible) ? "block" : "none";
   const emptyQ = document.getElementById("empty-q");
-  if(emptyQ) emptyQ.textContent = "«"+term+"»";
+  if(emptyQ) emptyQ.textContent = "«"+raw+"»";
 }
 
 function setupSearch(){
