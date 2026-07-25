@@ -158,6 +158,18 @@
     color:var(--lvl);margin:0 0 8px;display:flex;align-items:center;gap:9px;
   }
   .sec__h::after{content:"";flex:1;height:1px;background:var(--line);}
+  .sec-eser > summary.eser-toggle{cursor:pointer;list-style:none;margin:0;user-select:none;}
+  .sec-eser > summary.eser-toggle::-webkit-details-marker{display:none;}
+  .sec-eser > summary.eser-toggle::before{
+    content:"\25B8";font-size:9px;transition:transform .15s ease;display:inline-block;
+  }
+  .sec-eser[open] > summary.eser-toggle::before{transform:rotate(90deg);}
+  .sec-eser > summary.eser-toggle:hover{opacity:.72;}
+  .eser-n{
+    order:3;font-size:9.5px;letter-spacing:.06em;font-weight:600;opacity:.6;
+    border:1px solid var(--line);border-radius:9px;padding:1px 6px;
+  }
+  .sec-eser[open] > summary.eser-toggle{margin-bottom:8px;}
   .sec__t{margin:0 0 2px;font-size:13.5px;color:var(--ink-soft);line-height:1.5;}
   .sec__t b{color:var(--ink);font-weight:600;}
 
@@ -2841,7 +2853,7 @@ const ENTRIES = [
     "cat": "Verbi",
     "title": "L'imperativo",
     "def": "Il modo di ordini, istruzioni, consigli e inviti. Ha forme solo per tu, noi, voi e per il Lei di cortesia (manca la 1ª persona singolare).",
-    "form": "Le forme di tu/noi/voi sono quasi uguali al presente; il <b>Lei</b> usa le forme del congiuntivo presente.",
+    "form": "Per il <b>tu</b> le due classi si comportano in modo opposto: i verbi in -are prendono la forma di lui/lei del presente (lui parla → <b>parla!</b>), quelli in -ere e -ire prendono la forma di tu (tu prendi → <b>prendi!</b>, tu dormi → <b>dormi!</b>). Noi e voi sono identiche al presente. Il <b>Lei</b> usa il congiuntivo presente (parli!, prenda!).",
     "tables": [
       {
         "headers": [
@@ -6481,7 +6493,7 @@ const ENTRIES = [
     "cat": "Verbi",
     "title": "Il gerundio: semplice e composto",
     "def": "Una forma <b>implicita</b> che collega due azioni esprimendo tempo, causa, modo, mezzo o condizione, senza congiunzioni.",
-    "form": "Semplice: -ando/-endo. Composto: avendo/essendo + participio passato.",
+    "form": "Semplice: si toglie la desinenza dell'infinito e si aggiunge -ando ai verbi in -are, -endo agli altri: parlare → <b>parlando</b>, prendere → <b>prendendo</b>, dormire → <b>dormendo</b>. Composto: avendo o essendo + participio passato: <b>avendo parlato</b>, <b>essendo partito</b>.",
     "uses": [
       {
         "label": "semplice — contemporaneità",
@@ -7406,7 +7418,8 @@ function cardHTML(e, lvlId, idx){
   }
   if(e.warn) h += "<p class='warn'>"+e.warn+"</p>";
   if(e.exercises && e.exercises.length){
-    h += "<div class='sec'><p class='sec__h'>Esercizi</p>";
+    h += "<details class='sec sec-eser'><summary class='sec__h eser-toggle'>Esercizi<span class='eser-n'>"
+      + e.exercises.reduce((n,x)=>n+x.items.length,0) + "</span></summary>";
     e.exercises.forEach(x=>{
       h += "<div class='ex-block'>"
         + "<p class='ex-type'>"+x.type+"</p>"
@@ -7416,7 +7429,7 @@ function cardHTML(e, lvlId, idx){
         + x.key.map(k=>"<li>"+k+"</li>").join("")+"</ol></details>"
         + "</div>";
     });
-    h += "</div>";
+    h += "</details>";
   }
   return h+"</article>";
 }
