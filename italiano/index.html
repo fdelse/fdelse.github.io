@@ -231,6 +231,17 @@
 
   .empty{display:none;padding:60px 56px;color:var(--ink-faint);font-size:16px;}
   .empty b{color:var(--ink);}
+  .cited{
+    margin:0 56px 22px;padding:11px 14px;border:1px dashed var(--line);border-radius:8px;
+    color:var(--ink-faint);font-size:12.5px;display:flex;flex-wrap:wrap;align-items:center;gap:10px;
+  }
+  .cited[hidden]{display:none;}
+  .cited button{
+    font:inherit;font-weight:600;cursor:pointer;background:none;color:var(--ink);
+    border:1px solid var(--line);border-radius:20px;padding:4px 12px;
+  }
+  .cited button:hover{background:rgba(0,0,0,.04);}
+  @media(max-width:820px){ .cited{margin:0 20px 18px;} }
 
   .totop{
     position:fixed;right:22px;bottom:22px;z-index:5;
@@ -351,6 +362,7 @@
       <div class="legend" id="legend"></div>
     </header>
     <div id="content"></div>
+    <div class="cited" id="cited" hidden><span id="cited-n"></span> <button type="button" id="cited-btn">mostra anche queste</button></div>
     <div class="empty" id="empty">Nessuna voce per <b id="empty-q"></b>. Prova con un altro termine.</div>
   </main>
 </div>
@@ -7397,7 +7409,7 @@ function searchText(e){
 }
 
 function cardHTML(e, lvlId, idx){
-  let h = "<article class='card' id='card-"+lvlId+"-"+idx+"' data-search=\""+searchText(e)+"\" style='--lvl:"+colorById[e.lvl]+"'>";
+  let h = "<article class='card' id='card-"+lvlId+"-"+idx+"' data-search=\""+searchText(e)+"\" data-t=\""+unapo(fold((e.title+" "+e.cat).toLowerCase()))+"\" style='--lvl:"+colorById[e.lvl]+"'>";
   h += "<p class='card__cat'>"+e.cat+"</p>";
   h += "<h3 class='card__title'>"+e.title+"</h3>";
   h += "<p class='card__def'>"+e.def+"</p>";
@@ -7462,19 +7474,47 @@ function build(){
 }
 
 /* ===== Ricerca ===== */
+let showCited = false;
+let lastTerm = null;
+
 function applyFilter(term){
   const raw = (term||"").trim();
   term = unapo(fold(raw.toLowerCase()));
+  if(term !== lastTerm){ showCited = false; lastTerm = term; }
+
+  const cards = Array.prototype.slice.call(document.querySelectorAll(".card"));
+  const hits = cards.map(c=>({
+    el: c,
+    match: !term || (c.dataset.search||"").includes(term),
+    inTitle: !!term && (c.dataset.t||"").includes(term)
+  }));
+  const strong = hits.filter(h=>h.match && h.inTitle).length;
+  const cited  = hits.filter(h=>h.match && !h.inTitle).length;
+  const split  = !!term && strong > 0 && cited > 0;
+
   let anyVisible = false;
-  document.querySelectorAll(".card").forEach(c=>{
-    const match = !term || (c.dataset.search||"").includes(term);
-    c.style.display = match ? "" : "none";
-    if(match) anyVisible = true;
+  hits.forEach(h=>{
+    const show = h.match && (!split || h.inTitle || showCited);
+    h.el.style.display = show ? "" : "none";
+    if(show) anyVisible = true;
   });
   document.querySelectorAll(".level").forEach(sec=>{
     const visible = sec.querySelectorAll(".card:not([style*='display: none'])").length;
     sec.style.display = visible ? "" : "none";
   });
+
+  const bar = document.getElementById("cited");
+  if(bar){
+    if(split){
+      bar.hidden = false;
+      document.getElementById("cited-n").textContent =
+        cited + (cited===1 ? " altra scheda cita" : " altre schede citano") + " «"+raw+"» senza trattarlo.";
+      document.getElementById("cited-btn").textContent = showCited ? "nascondi" : "mostra anche queste";
+    } else {
+      bar.hidden = true;
+    }
+  }
+
   const empty = document.getElementById("empty");
   if(empty) empty.style.display = (term && !anyVisible) ? "block" : "none";
   const emptyQ = document.getElementById("empty-q");
@@ -7489,6 +7529,11 @@ function setupSearch(){
       inputs.forEach(o=>{ if(o!==inp) o.value = v; });
       applyFilter(v);
     });
+  });
+  const btn = document.getElementById("cited-btn");
+  if(btn) btn.addEventListener("click", ()=>{
+    showCited = !showCited;
+    applyFilter(inputs.length ? inputs[0].value : "");
   });
 }
 
