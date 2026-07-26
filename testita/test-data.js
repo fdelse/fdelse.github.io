@@ -1,7 +1,7 @@
 /* TEST-DATA.JS — Banca esercizi del TEST
-   A0·A1: 13 strutture, 10 item/esercizio, SOLO formati sicuri (buco/errore): verdetto netto.
-   C1: 5 strutture, 4 item/esercizio, ancora fill (da convertire).
-   Formati: buco {q,options,answer} · errore {q,wrong,fix} · fill {q,a} (solo C1). */
+   A0·A1: 13 strutture · C1: 5 strutture — tutte 10 item/esercizio,
+   SOLO formati autocorreggibili al 100%: nessun campo di testo libero.
+   Formati: buco {q,options,answer} · errore {q,wrong,fix} */
 const TEST_STRUCTURES = [
   {
     "lvl": "a",
@@ -3320,70 +3320,252 @@ const TEST_STRUCTURES = [
     "exercises": [
       {
         "type": "Riempimento",
-        "fmt": "fill",
-        "instr": "Completa con la forma passiva indicata tra parentesi.",
+        "fmt": "buco",
+        "instr": "Scegli la forma passiva corretta.",
         "items": [
           {
-            "q": "La fattura ___ (andare + saldare) entro 30 giorni.",
-            "a": "va saldata"
+            "q": "La fattura ___ entro 30 giorni.",
+            "options": [
+              "va saldata",
+              "va saldato",
+              "viene saldare"
+            ],
+            "answer": 0
           },
           {
-            "q": "I risultati ___ (venire + pubblicare) domani.",
-            "a": "vengono pubblicati"
+            "q": "I risultati ___ domani.",
+            "options": [
+              "vengono pubblicati",
+              "viene pubblicati",
+              "vanno pubblicato"
+            ],
+            "answer": 0
           },
           {
-            "q": "In biblioteca non ___ (si + parlare) ad alta voce.",
-            "a": "si parla"
+            "q": "In biblioteca non ___ ad alta voce.",
+            "options": [
+              "si parla",
+              "si parlano",
+              "viene parlato"
+            ],
+            "answer": 0
           },
           {
-            "q": "Le chiavi ___ (andare + restituire) alla reception.",
-            "a": "vanno restituite"
+            "q": "Le chiavi ___ alla reception.",
+            "options": [
+              "vanno restituite",
+              "va restituite",
+              "vengono restituito"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il modulo ___ in stampatello.",
+            "options": [
+              "va compilato",
+              "va compilata",
+              "viene compilare"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Le domande ___ entro venerdì.",
+            "options": [
+              "vanno presentate",
+              "va presentate",
+              "vengono presentato"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Questo vino ___ freddo.",
+            "options": [
+              "va servito",
+              "va servita",
+              "viene servire"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "I documenti ___ dal direttore.",
+            "options": [
+              "vengono firmati",
+              "viene firmati",
+              "vanno firmato"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Qui ___ molto pesce.",
+            "options": [
+              "si mangia",
+              "si mangiano",
+              "viene mangiare"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Le finestre ___ ogni settimana.",
+            "options": [
+              "vengono pulite",
+              "viene pulite",
+              "va pulite"
+            ],
+            "answer": 0
           }
         ]
       },
       {
         "type": "Correzione",
-        "fmt": "fill",
-        "instr": "Correggi l'accordo o l'uso di «andare/venire + participio».",
+        "fmt": "errore",
+        "instr": "Clicca la parola sbagliata (accordo o ausiliare del passivo).",
         "items": [
           {
             "q": "La fattura va saldato entro 30 giorni.",
-            "a": "La fattura va saldata entro 30 giorni."
+            "wrong": "saldato",
+            "fix": "saldata"
           },
           {
             "q": "I risultati viene pubblicati domani.",
-            "a": "I risultati vengono pubblicati domani."
-          },
-          {
-            "q": "Le chiavi è andato restituite alla reception.",
-            "a": "Le chiavi sono state restituite alla reception. (composto → essere)"
+            "wrong": "viene",
+            "fix": "vengono"
           },
           {
             "q": "Le finestre si pulisce ogni settimana.",
-            "a": "Le finestre si puliscono ogni settimana."
+            "wrong": "pulisce",
+            "fix": "puliscono"
+          },
+          {
+            "q": "Il modulo va compilata in stampatello.",
+            "wrong": "compilata",
+            "fix": "compilato"
+          },
+          {
+            "q": "Le chiavi va restituite alla reception.",
+            "wrong": "va",
+            "fix": "vanno"
+          },
+          {
+            "q": "I documenti viene firmati oggi.",
+            "wrong": "viene",
+            "fix": "vengono"
+          },
+          {
+            "q": "Questo vino va servita freddo.",
+            "wrong": "servita",
+            "fix": "servito"
+          },
+          {
+            "q": "Le domande vanno presentato entro venerdì.",
+            "wrong": "presentato",
+            "fix": "presentate"
+          },
+          {
+            "q": "Qui si mangiano molto pesce.",
+            "wrong": "mangiano",
+            "fix": "mangia"
+          },
+          {
+            "q": "La lettera vengono spedita domani.",
+            "wrong": "vengono",
+            "fix": "viene"
           }
         ]
       },
       {
         "type": "Trasformazione",
-        "fmt": "fill",
-        "instr": "Riscrivi con la forma passiva indicata tra parentesi.",
+        "fmt": "buco",
+        "instr": "Volgi al passivo: scegli la versione corretta.",
         "items": [
           {
-            "q": "Bisogna saldare la fattura. (andare)",
-            "a": "La fattura va saldata."
+            "q": "Bisogna saldare la fattura.",
+            "options": [
+              "La fattura va saldata.",
+              "La fattura viene saldare.",
+              "La fattura va saldato."
+            ],
+            "answer": 0
           },
           {
-            "q": "Pubblicano i risultati domani. (venire)",
-            "a": "I risultati vengono pubblicati domani."
+            "q": "Pubblicano i risultati domani.",
+            "options": [
+              "I risultati vengono pubblicati domani.",
+              "I risultati viene pubblicati domani.",
+              "I risultati vanno pubblicato domani."
+            ],
+            "answer": 0
           },
           {
-            "q": "La gente beve molta acqua qui. (si)",
-            "a": "Qui si beve molta acqua."
+            "q": "La gente beve molta acqua qui.",
+            "options": [
+              "Qui si beve molta acqua.",
+              "Qui si bevono molta acqua.",
+              "Qui viene bevere molta acqua."
+            ],
+            "answer": 0
           },
           {
-            "q": "Un tecnico controlla gli impianti. (venire)",
-            "a": "Gli impianti vengono controllati da un tecnico."
+            "q": "Un tecnico controlla gli impianti.",
+            "options": [
+              "Gli impianti vengono controllati da un tecnico.",
+              "Gli impianti viene controllati da un tecnico.",
+              "Gli impianti vanno controllato da un tecnico."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Bisogna firmare i documenti.",
+            "options": [
+              "I documenti vanno firmati.",
+              "I documenti va firmati.",
+              "I documenti vengono firmare."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Servono il vino freddo.",
+            "options": [
+              "Il vino viene servito freddo.",
+              "Il vino viene servita freddo.",
+              "Il vino va servire freddo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Devono presentare le domande.",
+            "options": [
+              "Le domande vanno presentate.",
+              "Le domande va presentate.",
+              "Le domande vengono presentare."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Qualcuno ha rubato la macchina.",
+            "options": [
+              "La macchina è stata rubata.",
+              "La macchina è stato rubata.",
+              "La macchina viene stata rubata."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Puliscono le finestre ogni settimana.",
+            "options": [
+              "Le finestre vengono pulite ogni settimana.",
+              "Le finestre viene pulite ogni settimana.",
+              "Le finestre vanno pulito ogni settimana."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Bisogna compilare il modulo.",
+            "options": [
+              "Il modulo va compilato.",
+              "Il modulo va compilata.",
+              "Il modulo viene compilare."
+            ],
+            "answer": 0
           }
         ]
       }
@@ -3395,70 +3577,252 @@ const TEST_STRUCTURES = [
     "exercises": [
       {
         "type": "Riempimento",
-        "fmt": "fill",
-        "instr": "Completa con il congiuntivo (o l'indicativo dopo «anche se»).",
+        "fmt": "buco",
+        "instr": "Scegli il modo corretto (congiuntivo con benché/nonostante/sebbene; indicativo con «anche se»).",
         "items": [
           {
-            "q": "Benché ___ (essere) stanco, ha finito il lavoro.",
-            "a": "fosse"
+            "q": "Benché ___ stanco, ha finito il lavoro.",
+            "options": [
+              "fosse",
+              "era",
+              "sarebbe"
+            ],
+            "answer": 0
           },
           {
-            "q": "Nonostante ___ (nevicare), sono andati a sciare.",
-            "a": "nevicasse"
+            "q": "Nonostante ___, sono andati a sciare.",
+            "options": [
+              "nevicasse",
+              "nevicava",
+              "nevicherebbe"
+            ],
+            "answer": 0
           },
           {
-            "q": "Anche se ___ (costare, lui) molto, lo comprerò.",
-            "a": "costa"
+            "q": "Anche se ___ molto, lo comprerò.",
+            "options": [
+              "costa",
+              "costi",
+              "costasse"
+            ],
+            "answer": 0
           },
           {
-            "q": "Per quanto ___ (insistere, loro), non ho cambiato idea.",
-            "a": "insistessero"
+            "q": "Per quanto ___, non ho cambiato idea.",
+            "options": [
+              "insistessero",
+              "insistevano",
+              "insisterebbero"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Sebbene ___ poco, ha superato l'esame.",
+            "options": [
+              "abbia studiato",
+              "ha studiato",
+              "avrebbe studiato"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Benché ___ tardi, sono usciti.",
+            "options": [
+              "fosse",
+              "era",
+              "sarà"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Anche se ___ freddo, esco.",
+            "options": [
+              "fa",
+              "faccia",
+              "facesse"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Nonostante ___ giovane, è molto competente.",
+            "options": [
+              "sia",
+              "è",
+              "sarebbe"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Per quanto ___, non riesco a capire.",
+            "options": [
+              "mi sforzi",
+              "mi sforzo",
+              "mi sforzerei"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Sebbene ___ ragione, non ha insistito.",
+            "options": [
+              "avesse",
+              "aveva",
+              "avrebbe"
+            ],
+            "answer": 0
           }
         ]
       },
       {
         "type": "Correzione",
-        "fmt": "fill",
-        "instr": "Correggi il modo (concessive «colte» → congiuntivo; «anche se» → indicativo).",
+        "fmt": "errore",
+        "instr": "Clicca il verbo con il modo sbagliato.",
         "items": [
           {
             "q": "Benché è stanco, lavora.",
-            "a": "Benché sia stanco, lavora."
+            "wrong": "è",
+            "fix": "sia"
           },
           {
             "q": "Nonostante nevica, sono usciti.",
-            "a": "Nonostante nevicasse, sono usciti."
+            "wrong": "nevica",
+            "fix": "nevichi"
           },
           {
             "q": "Anche se sia tardi, vengo lo stesso.",
-            "a": "Anche se è tardi, vengo lo stesso."
+            "wrong": "sia",
+            "fix": "è"
           },
           {
             "q": "Sebbene ha studiato poco, ha superato l'esame.",
-            "a": "Sebbene abbia studiato poco, ha superato l'esame."
+            "wrong": "ha",
+            "fix": "abbia"
+          },
+          {
+            "q": "Benché era giovane, era competente.",
+            "wrong": "era",
+            "fix": "fosse"
+          },
+          {
+            "q": "Anche se faccia freddo, esco.",
+            "wrong": "faccia",
+            "fix": "fa"
+          },
+          {
+            "q": "Nonostante è ricco, vive con poco.",
+            "wrong": "è",
+            "fix": "sia"
+          },
+          {
+            "q": "Per quanto mi sforzo, non ci riesco più.",
+            "wrong": "sforzo",
+            "fix": "sforzi"
+          },
+          {
+            "q": "Sebbene aveva ragione, non ha insistito.",
+            "wrong": "aveva",
+            "fix": "avesse"
+          },
+          {
+            "q": "Anche se piova, partiamo.",
+            "wrong": "piova",
+            "fix": "piove"
           }
         ]
       },
       {
         "type": "Trasformazione",
-        "fmt": "fill",
-        "instr": "Riscrivi con la concessiva indicata tra parentesi.",
+        "fmt": "buco",
+        "instr": "Riscrivi con la concessiva: scegli la versione corretta.",
         "items": [
           {
             "q": "È stanco, ma lavora. (benché)",
-            "a": "Benché sia stanco, lavora."
+            "options": [
+              "Benché sia stanco, lavora.",
+              "Benché è stanco, lavora.",
+              "Benché fosse stanco, lavora."
+            ],
+            "answer": 0
           },
           {
             "q": "Nevica, ma escono. (nonostante)",
-            "a": "Nonostante nevichi, escono."
+            "options": [
+              "Nonostante nevichi, escono.",
+              "Nonostante nevica, escono.",
+              "Nonostante nevicasse, escono."
+            ],
+            "answer": 0
           },
           {
             "q": "Costa molto, ma lo comprerò. (anche se)",
-            "a": "Anche se costa molto, lo comprerò. (indicativo)"
+            "options": [
+              "Anche se costa molto, lo comprerò.",
+              "Anche se costi molto, lo comprerò.",
+              "Anche se costasse molto, lo comprerò."
+            ],
+            "answer": 0
           },
           {
             "q": "Ha studiato poco, ma ha superato l'esame. (sebbene)",
-            "a": "Sebbene abbia studiato poco, ha superato l'esame."
+            "options": [
+              "Sebbene abbia studiato poco, ha superato l'esame.",
+              "Sebbene ha studiato poco, ha superato l'esame.",
+              "Sebbene avesse studiava poco, ha superato l'esame."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Fa freddo, ma esco. (anche se)",
+            "options": [
+              "Anche se fa freddo, esco.",
+              "Anche se faccia freddo, esco.",
+              "Anche se facesse freddo, esco."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "È giovane, ma è competente. (nonostante)",
+            "options": [
+              "Nonostante sia giovane, è competente.",
+              "Nonostante è giovane, è competente.",
+              "Nonostante fosse giovane, è competente."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Era tardi, ma sono usciti. (benché)",
+            "options": [
+              "Benché fosse tardi, sono usciti.",
+              "Benché era tardi, sono usciti.",
+              "Benché sia tardi, sono usciti."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Piove, ma partiamo. (anche se)",
+            "options": [
+              "Anche se piove, partiamo.",
+              "Anche se piova, partiamo.",
+              "Anche se piovesse, partiamo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Aveva ragione, ma non ha insistito. (sebbene)",
+            "options": [
+              "Sebbene avesse ragione, non ha insistito.",
+              "Sebbene aveva ragione, non ha insistito.",
+              "Sebbene abbia ragione, non ha insistito."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "È ricco, ma vive con poco. (nonostante)",
+            "options": [
+              "Nonostante sia ricco, vive con poco.",
+              "Nonostante è ricco, vive con poco.",
+              "Nonostante fosse ricco, vive con poco."
+            ],
+            "answer": 0
           }
         ]
       }
@@ -3470,70 +3834,252 @@ const TEST_STRUCTURES = [
     "exercises": [
       {
         "type": "Riempimento",
-        "fmt": "fill",
-        "instr": "Completa con il modo giusto (congiuntivo dopo «prima che»; indicativo dopo «dopo che»; infinito dopo «prima di»).",
+        "fmt": "buco",
+        "instr": "Scegli la forma corretta (congiuntivo con «prima che», infinito con «prima di», indicativo con «dopo che»).",
         "items": [
           {
-            "q": "Avvisami prima che ___ (iniziare) la riunione.",
-            "a": "inizi"
+            "q": "Avvisami prima che ___ la riunione.",
+            "options": [
+              "inizi",
+              "inizia",
+              "iniziasse"
+            ],
+            "answer": 0
           },
           {
-            "q": "Prima di ___ (firmare), leggi bene il contratto.",
-            "a": "firmare"
+            "q": "Prima di ___, leggi bene il contratto.",
+            "options": [
+              "firmare",
+              "firmi",
+              "firmare tu"
+            ],
+            "answer": 0
           },
           {
-            "q": "Dopo che ___ (arrivare, loro), abbiamo cenato.",
-            "a": "sono arrivati / arrivarono"
+            "q": "Dopo che ___, abbiamo cenato.",
+            "options": [
+              "sono arrivati",
+              "siano arrivati",
+              "arrivassero"
+            ],
+            "answer": 0
           },
           {
-            "q": "Resta finché non ___ (finire, io).",
-            "a": "finisco"
+            "q": "Resta finché non ___.",
+            "options": [
+              "finisco",
+              "finisca",
+              "finissi"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Prima che tu ___, ti spiego tutto.",
+            "options": [
+              "parta",
+              "parti",
+              "partissi"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Prima di ___, spegni la luce.",
+            "options": [
+              "uscire",
+              "esci",
+              "che esci"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Dopo che ___ la notizia, ha chiamato.",
+            "options": [
+              "ha saputo",
+              "abbia saputo",
+              "sapesse"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Aspetta qui finché non ___ il treno.",
+            "options": [
+              "arriva",
+              "arrivi",
+              "arrivasse"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Prima che ___ troppo tardi, decidiamo.",
+            "options": [
+              "sia",
+              "è",
+              "fosse"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Prima di ___ una decisione, riflettici.",
+            "options": [
+              "prendere",
+              "prendi",
+              "che prendi"
+            ],
+            "answer": 0
           }
         ]
       },
       {
         "type": "Correzione",
-        "fmt": "fill",
-        "instr": "Correggi (prima che + congiuntivo; stesso soggetto → prima di + infinito; dopo che + indicativo).",
+        "fmt": "errore",
+        "instr": "Clicca la parola sbagliata (modo verbale o costruzione).",
         "items": [
           {
             "q": "Avvisami prima che inizia la riunione.",
-            "a": "Avvisami prima che inizi la riunione."
-          },
-          {
-            "q": "Prima che tu firmi, leggi il contratto. (stesso soggetto: tu)",
-            "a": "Prima di firmare, leggi il contratto. (stesso soggetto → infinito)"
+            "wrong": "inizia",
+            "fix": "inizi"
           },
           {
             "q": "Dopo che fosse arrivato, ci siamo salutati.",
-            "a": "Dopo che era arrivato, ci siamo salutati."
+            "wrong": "fosse",
+            "fix": "era"
           },
           {
             "q": "Aspetta finché non torni io.",
-            "a": "Aspetta finché non torno."
+            "wrong": "torni",
+            "fix": "torno"
+          },
+          {
+            "q": "Prima che io parta, chiamami tu.",
+            "wrong": "parta",
+            "fix": "parto (prima di partire)"
+          },
+          {
+            "q": "Prima di firmi, leggi il contratto.",
+            "wrong": "firmi",
+            "fix": "firmare"
+          },
+          {
+            "q": "Dopo che abbia mangiato, è uscito.",
+            "wrong": "abbia",
+            "fix": "aveva"
+          },
+          {
+            "q": "Prima che sarà tardi, decidiamo.",
+            "wrong": "sarà",
+            "fix": "sia"
+          },
+          {
+            "q": "Resta qui finché non arrivi il treno stasera.",
+            "wrong": "arrivi",
+            "fix": "arriva"
+          },
+          {
+            "q": "Prima di che parli, ascolta.",
+            "wrong": "che",
+            "fix": "(togliere: prima di parlare)"
+          },
+          {
+            "q": "Dopo che sarebbe partito, ha telefonato.",
+            "wrong": "sarebbe",
+            "fix": "era"
           }
         ]
       },
       {
         "type": "Trasformazione",
-        "fmt": "fill",
-        "instr": "Unisci le due azioni: stesso soggetto → «prima di + infinito»; soggetti diversi → «prima che + congiuntivo».",
+        "fmt": "buco",
+        "instr": "Unisci le due azioni: scegli la costruzione corretta.",
         "items": [
           {
             "q": "(tu – firmare) + (tu – leggere il contratto)",
-            "a": "Prima di firmare, leggi il contratto."
+            "options": [
+              "Prima di firmare, leggi il contratto.",
+              "Prima che firmi, leggi il contratto.",
+              "Prima che tu firmi, leggi il contratto."
+            ],
+            "answer": 0
           },
           {
             "q": "(io – uscire) + (la riunione – iniziare)",
-            "a": "Esco prima che la riunione inizi."
+            "options": [
+              "Esco prima che la riunione inizi.",
+              "Esco prima di la riunione inizia.",
+              "Esco prima che la riunione inizia."
+            ],
+            "answer": 0
           },
           {
             "q": "(noi – arrivare) + (noi – salutarci)",
-            "a": "Dopo che siamo arrivati, ci siamo salutati."
+            "options": [
+              "Dopo che siamo arrivati, ci siamo salutati.",
+              "Dopo che siamo arrivati, ci salutiamo prima.",
+              "Dopo di arrivare, ci siamo salutati."
+            ],
+            "answer": 0
           },
           {
             "q": "(voi – partire) + (io – tornare)",
-            "a": "Partite prima che io torni."
+            "options": [
+              "Partite prima che io torni.",
+              "Partite prima di io torno.",
+              "Partite prima che io torno."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(tu – decidere) + (tu – riflettere)",
+            "options": [
+              "Prima di decidere, rifletti.",
+              "Prima che decidi, rifletti.",
+              "Prima di che decidi, rifletti."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(lui – uscire) + (lui – spegnere la luce)",
+            "options": [
+              "Prima di uscire, spegne la luce.",
+              "Prima che esca, spegne la luce.",
+              "Prima di esce, spegne la luce."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(io – parlare) + (tu – ascoltare)",
+            "options": [
+              "Ascolta prima che io parli.",
+              "Ascolta prima di io parlo.",
+              "Ascolta prima che io parlo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(lei – sapere la notizia) + (lei – chiamare)",
+            "options": [
+              "Dopo che ha saputo la notizia, ha chiamato.",
+              "Dopo che abbia saputo la notizia, ha chiamato.",
+              "Dopo di sapere la notizia, ha chiamato."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(noi – mangiare) + (noi – lavarci le mani)",
+            "options": [
+              "Prima di mangiare, ci laviamo le mani.",
+              "Prima che mangiamo, ci laviamo le mani.",
+              "Prima di che mangiamo, ci laviamo le mani."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(loro – arrivare) + (noi – preparare tutto)",
+            "options": [
+              "Prepariamo tutto prima che arrivino.",
+              "Prepariamo tutto prima di arrivano.",
+              "Prepariamo tutto prima che arrivano."
+            ],
+            "answer": 0
           }
         ]
       }
@@ -3545,70 +4091,252 @@ const TEST_STRUCTURES = [
     "exercises": [
       {
         "type": "Riempimento",
-        "fmt": "fill",
-        "instr": "Completa il periodo ipotetico misto (causa passata → effetto presente).",
+        "fmt": "buco",
+        "instr": "Scegli la forma corretta (ipotesi sul passato → effetto sul presente).",
         "items": [
           {
-            "q": "Se ___ (lavorare, io) di più da giovane, ora avrei più risparmi.",
-            "a": "avessi lavorato"
+            "q": "Se ___ di più da giovane, ora avrei più risparmi.",
+            "options": [
+              "avessi lavorato",
+              "lavoravo",
+              "avrei lavorato"
+            ],
+            "answer": 0
           },
           {
-            "q": "Se tu ___ (ascoltare) i consigli, ora non saresti in difficoltà.",
-            "a": "avessi ascoltato"
+            "q": "Se tu ___ i consigli, ora non saresti in difficoltà.",
+            "options": [
+              "avessi ascoltato",
+              "ascoltavi",
+              "avresti ascoltato"
+            ],
+            "answer": 0
           },
           {
-            "q": "Se non ___ (perdere, noi) quel treno, ora saremmo già arrivati.",
-            "a": "avessimo perso"
+            "q": "Se non ___ quel treno, ora saremmo già arrivati.",
+            "options": [
+              "avessimo perso",
+              "perdevamo",
+              "avremmo perso"
+            ],
+            "answer": 0
           },
           {
-            "q": "Se fossi stato più attento, ora ___ (avere, tu) meno problemi.",
-            "a": "avresti"
+            "q": "Se fossi stato più attento, ora ___ meno problemi.",
+            "options": [
+              "avresti",
+              "avrai",
+              "avessi"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Se ___ di più, ora avrei un buon lavoro.",
+            "options": [
+              "avessi studiato",
+              "studiavo",
+              "avrei studiato"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Se non ___ così tardi, ora non sarei stanco.",
+            "options": [
+              "fossi andato a letto",
+              "andavo a letto",
+              "sarei andato a letto"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Se avessimo prenotato, ora ___ un tavolo.",
+            "options": [
+              "avremmo",
+              "avremo",
+              "avessimo"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Se ___ l'italiano prima, ora parlerei meglio.",
+            "options": [
+              "avessi imparato",
+              "imparavo",
+              "avrei imparato"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Se lui ___ la verità, ora ci fideremmo di lui.",
+            "options": [
+              "avesse detto",
+              "diceva",
+              "avrebbe detto"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Se non avessi mangiato tanto, ora ___ meglio.",
+            "options": [
+              "starei",
+              "starò",
+              "stessi"
+            ],
+            "answer": 0
           }
         ]
       },
       {
         "type": "Correzione",
-        "fmt": "fill",
-        "instr": "Correggi l'incrocio dei tempi (cong. trapassato ↔ condizionale presente/passato).",
+        "fmt": "errore",
+        "instr": "Clicca il verbo con il tempo sbagliato.",
         "items": [
           {
             "q": "Se lavoravo di più da giovane, ora avrei più risparmi.",
-            "a": "Se avessi lavorato di più da giovane, ora avrei più risparmi."
+            "wrong": "lavoravo",
+            "fix": "avessi lavorato"
           },
           {
             "q": "Se tu ascoltavi i consigli, non saresti in difficoltà.",
-            "a": "Se tu avessi ascoltato i consigli, non saresti in difficoltà."
+            "wrong": "ascoltavi",
+            "fix": "avessi ascoltato"
           },
           {
             "q": "Se non perdevamo il treno, ora saremmo arrivati.",
-            "a": "Se non avessimo perso il treno, ora saremmo arrivati."
+            "wrong": "perdevamo",
+            "fix": "avessimo perso"
           },
           {
             "q": "Se fossi stato più attento, ora avrai meno problemi.",
-            "a": "Se fossi stato più attento, ora avresti meno problemi."
+            "wrong": "avrai",
+            "fix": "avresti"
+          },
+          {
+            "q": "Se avrei studiato, ora avrei un buon lavoro.",
+            "wrong": "avrei",
+            "fix": "avessi"
+          },
+          {
+            "q": "Se studiavo di più, ora parlerei meglio.",
+            "wrong": "studiavo",
+            "fix": "avessi studiato"
+          },
+          {
+            "q": "Se avessimo prenotato, ora avremo un tavolo.",
+            "wrong": "avremo",
+            "fix": "avremmo"
+          },
+          {
+            "q": "Se lui diceva la verità, ora ci fideremmo.",
+            "wrong": "diceva",
+            "fix": "avesse detto"
+          },
+          {
+            "q": "Se non avessi mangiato tanto, ora starò meglio.",
+            "wrong": "starò",
+            "fix": "starei"
+          },
+          {
+            "q": "Se sarei partito prima, ora sarei già là.",
+            "wrong": "sarei",
+            "fix": "fossi"
           }
         ]
       },
       {
         "type": "Trasformazione",
-        "fmt": "fill",
-        "instr": "Costruisci il periodo ipotetico misto (ipotesi sul passato → effetto sul presente).",
+        "fmt": "buco",
+        "instr": "Costruisci il periodo ipotetico misto: scegli la versione corretta.",
         "items": [
           {
             "q": "(lavorare di più da giovane) → ora (avere più risparmi)",
-            "a": "Se avessi lavorato di più da giovane, ora avrei più risparmi."
+            "options": [
+              "Se avessi lavorato di più da giovane, ora avrei più risparmi.",
+              "Se lavoravo di più da giovane, ora avrei più risparmi.",
+              "Se avrei lavorato di più, ora avessi più risparmi."
+            ],
+            "answer": 0
           },
           {
             "q": "(ascoltare i consigli) → ora (non essere in difficoltà)",
-            "a": "Se avessi ascoltato i consigli, ora non saresti in difficoltà."
+            "options": [
+              "Se avessi ascoltato i consigli, ora non sarei in difficoltà.",
+              "Se ascoltavo i consigli, ora non sarei in difficoltà.",
+              "Se avrei ascoltato i consigli, ora non fossi in difficoltà."
+            ],
+            "answer": 0
           },
           {
             "q": "(non perdere il treno) → ora (essere già arrivati)",
-            "a": "Se non avessimo perso il treno, ora saremmo già arrivati."
+            "options": [
+              "Se non avessimo perso il treno, ora saremmo già arrivati.",
+              "Se non perdevamo il treno, ora saremmo già arrivati.",
+              "Se non avremmo perso il treno, ora fossimo già arrivati."
+            ],
+            "answer": 0
           },
           {
             "q": "(studiare di più) → ora (avere un buon lavoro)",
-            "a": "Se avessi studiato di più, ora avrei un buon lavoro."
+            "options": [
+              "Se avessi studiato di più, ora avrei un buon lavoro.",
+              "Se studiavo di più, ora avrei un buon lavoro.",
+              "Se avrei studiato di più, ora avessi un buon lavoro."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(prenotare) → ora (avere un tavolo)",
+            "options": [
+              "Se avessimo prenotato, ora avremmo un tavolo.",
+              "Se prenotavamo, ora avremmo un tavolo.",
+              "Se avremmo prenotato, ora avessimo un tavolo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(imparare l'italiano prima) → ora (parlare meglio)",
+            "options": [
+              "Se avessi imparato l'italiano prima, ora parlerei meglio.",
+              "Se imparavo l'italiano prima, ora parlerei meglio.",
+              "Se avrei imparato l'italiano, ora parlassi meglio."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(non andare a letto tardi) → ora (non essere stanco)",
+            "options": [
+              "Se non fossi andato a letto tardi, ora non sarei stanco.",
+              "Se non andavo a letto tardi, ora non sarei stanco.",
+              "Se non sarei andato a letto tardi, ora non fossi stanco."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(dire la verità) → ora (fidarsi di lui)",
+            "options": [
+              "Se avesse detto la verità, ora ci fideremmo di lui.",
+              "Se diceva la verità, ora ci fideremmo di lui.",
+              "Se avrebbe detto la verità, ora ci fidassimo di lui."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(partire prima) → ora (essere già là)",
+            "options": [
+              "Se fossi partito prima, ora sarei già là.",
+              "Se partivo prima, ora sarei già là.",
+              "Se sarei partito prima, ora fossi già là."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(non mangiare tanto) → ora (stare meglio)",
+            "options": [
+              "Se non avessi mangiato tanto, ora starei meglio.",
+              "Se non mangiavo tanto, ora starei meglio.",
+              "Se non avrei mangiato tanto, ora stessi meglio."
+            ],
+            "answer": 0
           }
         ]
       }
@@ -3620,70 +4348,252 @@ const TEST_STRUCTURES = [
     "exercises": [
       {
         "type": "Riempimento",
-        "fmt": "fill",
-        "instr": "Completa con un connettivo adatto alla relazione logica (banca: pertanto, inoltre, poiché, tuttavia, in definitiva, di conseguenza, d'altra parte).",
+        "fmt": "buco",
+        "instr": "Scegli il connettivo adatto alla relazione logica.",
         "items": [
           {
             "q": "Si è preparato bene; ___, ha superato il colloquio.",
-            "a": "pertanto / di conseguenza"
+            "options": [
+              "pertanto",
+              "tuttavia",
+              "inoltre"
+            ],
+            "answer": 0
           },
           {
             "q": "È competente; ___, è anche disponibile.",
-            "a": "inoltre"
+            "options": [
+              "inoltre",
+              "tuttavia",
+              "pertanto"
+            ],
+            "answer": 0
           },
           {
             "q": "Rimango a casa ___ piove forte.",
-            "a": "poiché / dato che"
+            "options": [
+              "poiché",
+              "tuttavia",
+              "inoltre"
+            ],
+            "answer": 0
           },
           {
             "q": "Il progetto è ambizioso; ___, è realizzabile.",
-            "a": "tuttavia"
+            "options": [
+              "tuttavia",
+              "pertanto",
+              "inoltre"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ha lavorato poco; ___, i risultati sono scarsi.",
+            "options": [
+              "di conseguenza",
+              "tuttavia",
+              "d'altra parte"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Costa molto; ___, la qualità è ottima.",
+            "options": [
+              "d'altra parte",
+              "pertanto",
+              "poiché"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Abbiamo valutato tutto; ___, la scelta è chiara.",
+            "options": [
+              "in definitiva",
+              "tuttavia",
+              "poiché"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Non è venuto ___ era malato.",
+            "options": [
+              "poiché",
+              "tuttavia",
+              "inoltre"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il servizio è lento; ___, il personale è gentile.",
+            "options": [
+              "tuttavia",
+              "pertanto",
+              "di conseguenza"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ha studiato molto; ___ merita il voto.",
+            "options": [
+              "pertanto",
+              "tuttavia",
+              "d'altra parte"
+            ],
+            "answer": 0
           }
         ]
       },
       {
         "type": "Riempimento",
-        "fmt": "fill",
-        "instr": "Riformula introducendo un marcatore di opinione (a mio avviso, secondo me, dal mio punto di vista, a mio parere, personalmente...).",
+        "fmt": "buco",
+        "instr": "Scegli il marcatore di opinione corretto.",
         "items": [
           {
-            "q": "Questo metodo è efficace.",
-            "a": "A mio avviso, questo metodo è efficace."
+            "q": "___, questo metodo è efficace.",
+            "options": [
+              "A mio avviso",
+              "Secondo mio",
+              "Per mio parere"
+            ],
+            "answer": 0
           },
           {
-            "q": "Conviene aspettare.",
-            "a": "Secondo me, conviene aspettare."
+            "q": "___, conviene aspettare.",
+            "options": [
+              "Secondo me",
+              "Secondo mio",
+              "A mio vedere"
+            ],
+            "answer": 0
           },
           {
-            "q": "La decisione è sbagliata.",
-            "a": "A mio parere, la decisione è sbagliata."
+            "q": "___, la decisione è sbagliata.",
+            "options": [
+              "A mio parere",
+              "Al mio parere",
+              "Per mio avviso"
+            ],
+            "answer": 0
           },
           {
-            "q": "Vale la pena rischiare.",
-            "a": "Personalmente, vale la pena rischiare."
+            "q": "___, vale la pena rischiare.",
+            "options": [
+              "Personalmente",
+              "Personale",
+              "In persona"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "___, il progetto va rivisto.",
+            "options": [
+              "Dal mio punto di vista",
+              "Del mio punto di vista",
+              "Da mio punto di vista"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "___, non è la scelta migliore.",
+            "options": [
+              "A mio giudizio",
+              "Al mio giudizio",
+              "Per mio giudizio"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "___, bisogna intervenire subito.",
+            "options": [
+              "Secondo me",
+              "Secondo mio",
+              "Come me"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "___, la proposta è interessante.",
+            "options": [
+              "A mio avviso",
+              "In mio avviso",
+              "Per mio avviso"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "___, preferirei rimandare.",
+            "options": [
+              "Personalmente",
+              "Personale",
+              "Di persona"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "___, i dati non sono affidabili.",
+            "options": [
+              "A mio parere",
+              "Al mio parere",
+              "Nel mio parere"
+            ],
+            "answer": 0
           }
         ]
       },
       {
         "type": "Correzione",
-        "fmt": "fill",
-        "instr": "Il connettivo esprime la relazione logica sbagliata: correggilo.",
+        "fmt": "errore",
+        "instr": "Clicca il connettivo che esprime la relazione logica sbagliata.",
         "items": [
           {
             "q": "Ha lavorato poco, pertanto ha ottenuto buoni risultati.",
-            "a": "Ha lavorato poco, tuttavia ha ottenuto buoni risultati."
+            "wrong": "pertanto",
+            "fix": "tuttavia"
           },
           {
             "q": "Fa caldo, inoltre resto in casa.",
-            "a": "Fa caldo, quindi resto in casa."
+            "wrong": "inoltre",
+            "fix": "quindi"
           },
           {
             "q": "È simpatico, tuttavia è gentile.",
-            "a": "È simpatico, inoltre è gentile."
+            "wrong": "tuttavia",
+            "fix": "inoltre"
           },
           {
             "q": "Sono le cinque, poiché dobbiamo andare.",
-            "a": "Sono le cinque, quindi dobbiamo andare."
+            "wrong": "poiché",
+            "fix": "quindi"
+          },
+          {
+            "q": "Piove molto, inoltre non esco.",
+            "wrong": "inoltre",
+            "fix": "quindi"
+          },
+          {
+            "q": "Ha studiato tanto, tuttavia ha passato l'esame.",
+            "wrong": "tuttavia",
+            "fix": "pertanto"
+          },
+          {
+            "q": "È tardi, poiché devo andare.",
+            "wrong": "poiché",
+            "fix": "quindi"
+          },
+          {
+            "q": "Costa poco, tuttavia è conveniente.",
+            "wrong": "tuttavia",
+            "fix": "quindi"
+          },
+          {
+            "q": "Non è venuto, pertanto era malato.",
+            "wrong": "pertanto",
+            "fix": "poiché"
+          },
+          {
+            "q": "Il servizio è ottimo, tuttavia lo consiglio.",
+            "wrong": "tuttavia",
+            "fix": "pertanto"
           }
         ]
       }
