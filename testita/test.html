@@ -251,6 +251,7 @@ function renderAllPages(){
         const refId = 'r' + (refCounter++);
         const itemBox = renderItem(itemData, ex.fmt, refId);
         itemBox.dataset.struct = struct.title;
+        itemBox.dataset.lvl = struct.lvl;
         itemBox.dataset.type = ex.type;
         // salva il testo "pulito" della domanda per il transcript
         itemBox.dataset.q = itemData.q;
@@ -333,22 +334,55 @@ function checkItem(it){
 
 const STATE_LABEL = { giusto:'CORRETTO', sbagliato:'SBAGLIATO', verifica:'DA VERIFICARE', vuoto:'NON RISPOSTO' };
 
+/* ---------- stima del livello (solo per test che coprono più livelli) ----------
+   Soglia 70%: standard nei test di piazzamento. Tre fasce:
+     >= 70%  → livello consolidato
+     40-69%  → livello in corso (è qui che conviene iniziare a insegnare)
+     < 40%   → livello non raggiunto
+   Il livello stimato è l'ultimo consolidato; se il successivo è "in corso"
+   viene segnalato come punto di partenza per le lezioni. */
+const LVL_SEQ = ['a','a2','b1','b2','c1'];
+
+function fasciaLivello(pct){
+  if (pct >= 70) return 'consolidato';
+  if (pct >= 40) return 'in corso';
+  return 'non raggiunto';
+}
+
+function stimaLivello(perLvl){
+  // considera solo i livelli effettivamente presenti nel test, in ordine
+  const presenti = LVL_SEQ.filter(l => perLvl[l]);
+  let ultimoConsolidato = null, primoInCorso = null;
+  presenti.forEach(l => {
+    const p = perLvl[l];
+    const pct = (p.ok / p.tot) * 100;
+    const f = fasciaLivello(pct);
+    if (f === 'consolidato') ultimoConsolidato = l;
+    else if (f === 'in corso' && !primoInCorso) primoInCorso = l;
+  });
+  return { presenti, ultimoConsolidato, primoInCorso };
+}
+
 function submitTest(){
   const items = document.querySelectorAll('.item');
   let ok=0, sbagliati=0, daVerif=0, nonRisp=0, tot=items.length;
 
-  // raccogli per struttura e la lista errori
+  // raccogli per struttura, per livello, e la lista errori
   const perStruct = {};   // titolo → {ok, tot}
   const structOrder = [];
+  const perLvl = {};      // livello → {ok, tot}
   const errorLines = [];
 
   items.forEach(it => {
     const r = checkItem(it);
     const st = it.dataset.struct;
+    const lv = it.dataset.lvl;
     if (!(st in perStruct)) { perStruct[st] = {ok:0, tot:0}; structOrder.push(st); }
     perStruct[st].tot++;
+    if (!(lv in perLvl)) perLvl[lv] = {ok:0, tot:0};
+    perLvl[lv].tot++;
 
-    if (r.state === 'giusto') { ok++; perStruct[st].ok++; }
+    if (r.state === 'giusto') { ok++; perStruct[st].ok++; perLvl[lv].ok++; }
     else {
       if (r.state === 'sbagliato') sbagliati++;
       else if (r.state === 'verifica') daVerif++;
@@ -369,7 +403,28 @@ function submitTest(){
   const structRows = structOrder.map(st =>
     st + ': ' + perStruct[st].ok + '/' + perStruct[st].tot);
 
-  // ---- RIEPILOGO per l'insegnante (formato 1) ----
+  // ---- livelli: la stima ha senso solo se il test copre più di un livello ----
+  const stima = stimaLivello(perLvl);
+  const multiLivello = stima.presenti.length > 1;
+
+  let lvlRows = [], lvlVerdict = '';
+  if (multiLivello) {
+    lvlRows = stima.presenti.map(l => {
+      const p = perLvl[l];
+      const pct = Math.round((p.ok / p.tot) * 100);
+      return LVL_TAG[l] + ': ' + p.ok + '/' + p.tot + ' (' + pct + '%) — ' + fasciaLivello(pct);
+    });
+    if (stima.ultimoConsolidato && stima.primoInCorso)
+      lvlVerdict = LVL_TAG[stima.ultimoConsolidato] + ' consolidato, ' + LVL_TAG[stima.primoInCorso] + ' in corso';
+    else if (stima.ultimoConsolidato)
+      lvlVerdict = LVL_TAG[stima.ultimoConsolidato] + ' consolidato';
+    else if (stima.primoInCorso)
+      lvlVerdict = LVL_TAG[stima.primoInCorso] + ' in corso (base da consolidare)';
+    else
+      lvlVerdict = 'sotto il livello più basso testato';
+  }
+
+  // ---- RIEPILOGO per l'insegnante ----
   const summary =
 'RIEPILOGO TEST DI ITALIANO\n' +
 'Studente: ' + studentName + '\n' +
@@ -378,7 +433,13 @@ function submitTest(){
 'PUNTEGGIO: ' + score + '\n' +
 '  Corretti: ' + ok + '  ·  Sbagliati: ' + sbagliati +
 '  ·  Da verificare: ' + daVerif + '  ·  Non risposti: ' + nonRisp + '\n' +
-'  (gli item "da verificare" sono a risposta aperta: controllali a mano)\n' +
+(daVerif ? '  (gli item "da verificare" sono a risposta aperta: controllali a mano)\n' : '') +
+(multiLivello
+  ? '────────────────────────\n' +
+    'LIVELLO STIMATO: ' + lvlVerdict + '\n' +
+    '  (soglia: 70% = consolidato, 40-69% = in corso)\n' +
+    'PER LIVELLO:\n' + lvlRows.map(r => '  ' + r).join('\n') + '\n'
+  : '') +
 '────────────────────────\n' +
 'PER STRUTTURA:\n' + structRows.map(r => '  ' + r).join('\n') + '\n' +
 '────────────────────────\n' +
@@ -386,21 +447,32 @@ function submitTest(){
   ? 'ERRORI DA RIVEDERE:\n\n' + errorLines.join('\n\n')
   : 'Nessun errore: test completato tutto correttamente.');
 
-  // ---- mostra allo studente: SOLO voto + ripartizione per struttura ----
+  // ---- vista studente: voto + livello (se multi-livello) + ripartizione ----
   document.getElementById('testWrap').style.display = 'none';
   document.getElementById('doneWrap').style.display = 'block';
   document.getElementById('doneName').textContent = studentName;
   document.getElementById('scoreNum').textContent = score;
 
-  const bs = document.getElementById('byStruct');
-  bs.innerHTML =
+  let html = '';
+  if (multiLivello) {
+    html +=
+      '<div class="card"><p class="kicker">Livello stimato</p>' +
+      '<p style="font-family:var(--display);font-size:22px;margin:4px 0 14px;">' + lvlVerdict + '</p>' +
+      stima.presenti.map(l => {
+        const p = perLvl[l];
+        const pct = Math.round((p.ok / p.tot) * 100);
+        return '<div class="summary-row"><span>' + LVL_TAG[l] + '</span><b>' + p.ok + '/' + p.tot + ' · ' + pct + '%</b></div>';
+      }).join('') +
+      '</div>';
+  }
+  html +=
     '<div class="card"><p class="kicker">Come sei andato, struttura per struttura</p>' +
     structOrder.map(st => {
       const p = perStruct[st];
-      const pct = Math.round((p.ok / p.tot) * 100);
       return '<div class="summary-row"><span>' + st + '</span><b>' + p.ok + '/' + p.tot + '</b></div>';
     }).join('') +
     '</div>';
+  document.getElementById('byStruct').innerHTML = html;
 
   sendResults(summary, score);
 }
