@@ -252,8 +252,10 @@ function renderAllPages(){
     block.className = 'struct-block';
     block.style.setProperty('--lvl', LVL_COLOR[struct.lvl]);
     block.innerHTML =
-      '<p class="struct-block__eyebrow">' + LVL_TAG[struct.lvl] + ' · esercizi</p>' +
-      '<h2 class="struct-title">' + struct.title + '</h2>';
+    // Nessun nome di struttura né livello durante il test: sarebbero un indizio
+    // (e nel piazzamento un'etichetta tipo "C1" scoraggia). I nomi compaiono
+    // solo nei risultati finali, dove sono informazione utile.
+      '<p class="struct-block__eyebrow">Sezione ' + (si + 1) + ' di ' + selected.length + '</p>';
 
     struct.exercises.forEach(ex => {
       const exDiv = document.createElement('div');
@@ -306,7 +308,7 @@ function showPage(idx){
   document.querySelector('.pagewrap[data-page="' + idx + '"]').classList.add('active');
   currentPage = idx;
   document.getElementById('progFill').style.width = (((idx+1)/totalPages)*100) + '%';
-  document.getElementById('progLabel').textContent = 'Struttura ' + (idx+1) + ' di ' + totalPages + ' — ' + selected[idx].title;
+  document.getElementById('progLabel').textContent = 'Sezione ' + (idx+1) + ' di ' + totalPages;
   document.getElementById('prevBtn').disabled = (idx === 0);
   document.getElementById('nextBtn').textContent = (idx === totalPages - 1) ? 'Invia risultati' : 'Avanti →';
   window.scrollTo({top:0, behavior:'instant'});
