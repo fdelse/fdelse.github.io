@@ -91,7 +91,7 @@ button, .btn{
   background:var(--ink);color:#fff;border:none;border-radius:9px;
   padding:12px 20px;cursor:pointer;
 }
-button:hover, .btn:hover{background:var(--spine-soft);}
+button:hover, .btn:hover{background:#1f7a80;}
 button.ghost{background:transparent;color:var(--ink);border:1px solid var(--line);}
 button.ghost:hover{background:var(--line-soft);}
 button:disabled{opacity:.4;cursor:not-allowed;}
@@ -172,10 +172,13 @@ button:disabled{opacity:.4;cursor:not-allowed;}
 .summary-row b{font-variant-numeric:tabular-nums;}
 
 .score-banner{
-  text-align:center;padding:28px 20px;border-radius:14px;background:var(--ink);color:#fff;margin-bottom:24px;
+  text-align:center;padding:30px 20px;border-radius:14px;
+  background:linear-gradient(135deg,#2f8f7d 0%,#1f7a80 100%);
+  color:#fff;margin-bottom:24px;
+  box-shadow:0 2px 10px rgba(31,122,128,.18);
 }
-.score-banner .num{font-family:var(--display);font-size:42px;font-weight:600;}
-.score-banner .lbl{font-size:13px;color:var(--spine-faint);text-transform:uppercase;letter-spacing:.1em;}
+.score-banner .num{font-family:var(--display);font-size:44px;font-weight:600;letter-spacing:-.01em;}
+.score-banner .lbl{font-size:13px;color:rgba(255,255,255,.82);text-transform:uppercase;letter-spacing:.1em;}
 
 .note{font-size:13px;color:var(--ink-faint);margin-top:6px;}
 
