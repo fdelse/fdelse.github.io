@@ -314,9 +314,37 @@ function showPage(idx){
   window.scrollTo({top:0, behavior:'instant'});
 }
 
+/* Conta gli item senza risposta: nella pagina indicata, oppure in tutto il
+   test se idx è null (usato al momento dell'invio).
+   Avviso superabile: intercetta le domande saltate per distrazione, ma non
+   costringe a indovinare — una casella vuota è informazione più onesta di
+   una risposta tirata a caso. */
+function senzaRisposta(idx){
+  const scope = (idx === null)
+    ? document
+    : document.querySelector('.pagewrap[data-page="' + idx + '"]');
+  return Array.from(scope.querySelectorAll('.item'))
+    .filter(it => it.dataset.chosen === undefined).length;
+}
+
+function confermaProsegui(ultima){
+  // sull'ultima pagina guarda tutto il test: è l'ultima occasione per rimediare
+  const n = ultima ? senzaRisposta(null) : senzaRisposta(currentPage);
+  if (n === 0) return true;
+  const quante = (n === 1) ? 'una domanda' : n + ' domande';
+  return ultima
+    ? confirm('Hai lasciato ' + quante + ' senza risposta in tutto il test.' +
+              '\n\nPuoi tornare indietro con «Indietro» per completarle.' +
+              '\n\nVuoi inviare comunque?')
+    : confirm('Hai lasciato ' + quante + ' senza risposta in questa sezione.' +
+              '\n\nVuoi continuare comunque?');
+}
+
 document.getElementById('prevBtn').addEventListener('click', () => { if (currentPage>0) showPage(currentPage-1); });
 document.getElementById('nextBtn').addEventListener('click', () => {
-  if (currentPage < totalPages - 1) showPage(currentPage + 1);
+  const ultima = (currentPage === totalPages - 1);
+  if (!confermaProsegui(ultima)) return;
+  if (!ultima) showPage(currentPage + 1);
   else submitTest();
 });
 

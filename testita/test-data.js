@@ -1,6 +1,7 @@
 /* TEST-DATA.JS — Banca esercizi del TEST
    A0·A1: 13 strutture · C1: 5 strutture — tutte 10 item/esercizio,
    SOLO formati autocorreggibili al 100%: nessun campo di testo libero.
+   Nessuna frase si ripete tra esercizi diversi della stessa struttura.
    Formati: buco {q,options,answer} · errore {q,wrong,fix} */
 const TEST_STRUCTURES = [
   {
@@ -1385,7 +1386,7 @@ const TEST_STRUCTURES = [
         "instr": "Clicca la parola sbagliata.",
         "items": [
           {
-            "q": "In città c'è molti turisti.",
+            "q": "Nel museo c'è molti quadri.",
             "wrong": "c'è",
             "fix": "ci sono"
           },
@@ -1962,7 +1963,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Non mangio ___ la carne.",
+            "q": "Non guardo ___ la televisione.",
             "options": [
               "mai",
               "niente",
@@ -2772,7 +2773,7 @@ const TEST_STRUCTURES = [
             "fix": "a"
           },
           {
-            "q": "Il libro è su Marco.",
+            "q": "La borsa è su Anna.",
             "wrong": "su",
             "fix": "di"
           },
@@ -2792,7 +2793,7 @@ const TEST_STRUCTURES = [
             "fix": "da"
           },
           {
-            "q": "Sono nato a Germania.",
+            "q": "Sono stato a Grecia l'anno scorso.",
             "wrong": "a",
             "fix": "in"
           }
@@ -3426,7 +3427,7 @@ const TEST_STRUCTURES = [
             "fix": "saldata"
           },
           {
-            "q": "I risultati viene pubblicati domani.",
+            "q": "Le foto viene stampate oggi.",
             "wrong": "viene",
             "fix": "vengono"
           },
@@ -3735,92 +3736,92 @@ const TEST_STRUCTURES = [
         "instr": "Riscrivi con la concessiva: scegli la versione corretta.",
         "items": [
           {
-            "q": "È stanco, ma lavora. (benché)",
+            "q": "Ha poco tempo, ma ci aiuta. (benché)",
             "options": [
-              "Benché sia stanco, lavora.",
-              "Benché è stanco, lavora.",
-              "Benché fosse stanco, lavora."
+              "Benché abbia poco tempo, ci aiuta.",
+              "Benché ha poco tempo, ci aiuta.",
+              "Benché avesse poco tempo, ci aiuta."
             ],
             "answer": 0
           },
           {
-            "q": "Nevica, ma escono. (nonostante)",
+            "q": "Il film è lungo, ma non annoia. (nonostante)",
             "options": [
-              "Nonostante nevichi, escono.",
-              "Nonostante nevica, escono.",
-              "Nonostante nevicasse, escono."
+              "Nonostante sia lungo, il film non annoia.",
+              "Nonostante è lungo, il film non annoia.",
+              "Nonostante fosse lungo, il film non annoia."
             ],
             "answer": 0
           },
           {
-            "q": "Costa molto, ma lo comprerò. (anche se)",
+            "q": "Guadagna bene, ma non è felice. (sebbene)",
             "options": [
-              "Anche se costa molto, lo comprerò.",
-              "Anche se costi molto, lo comprerò.",
-              "Anche se costasse molto, lo comprerò."
+              "Sebbene guadagni bene, non è felice.",
+              "Sebbene guadagna bene, non è felice.",
+              "Sebbene guadagnasse bene, non è felice."
             ],
             "answer": 0
           },
           {
-            "q": "Ha studiato poco, ma ha superato l'esame. (sebbene)",
+            "q": "Parla piano, ma si sente. (anche se)",
             "options": [
-              "Sebbene abbia studiato poco, ha superato l'esame.",
-              "Sebbene ha studiato poco, ha superato l'esame.",
-              "Sebbene avesse studiava poco, ha superato l'esame."
+              "Anche se parla piano, si sente.",
+              "Anche se parli piano, si sente.",
+              "Anche se parlasse piano, si sente."
             ],
             "answer": 0
           },
           {
-            "q": "Fa freddo, ma esco. (anche se)",
+            "q": "Conosce la città, ma si perde. (benché)",
             "options": [
-              "Anche se fa freddo, esco.",
-              "Anche se faccia freddo, esco.",
-              "Anche se facesse freddo, esco."
+              "Benché conosca la città, si perde.",
+              "Benché conosce la città, si perde.",
+              "Benché conoscesse la città, si perde."
             ],
             "answer": 0
           },
           {
-            "q": "È giovane, ma è competente. (nonostante)",
+            "q": "Il lavoro è duro, ma lo fa volentieri. (nonostante)",
             "options": [
-              "Nonostante sia giovane, è competente.",
-              "Nonostante è giovane, è competente.",
-              "Nonostante fosse giovane, è competente."
+              "Nonostante sia duro, fa il lavoro volentieri.",
+              "Nonostante è duro, fa il lavoro volentieri.",
+              "Nonostante fosse duro, fa il lavoro volentieri."
             ],
             "answer": 0
           },
           {
-            "q": "Era tardi, ma sono usciti. (benché)",
+            "q": "Dormo poco, ma non sono stanco. (anche se)",
             "options": [
-              "Benché fosse tardi, sono usciti.",
-              "Benché era tardi, sono usciti.",
-              "Benché sia tardi, sono usciti."
+              "Anche se dormo poco, non sono stanco.",
+              "Anche se dorma poco, non sono stanco.",
+              "Anche se dormissi poco, non sono stanco."
             ],
             "answer": 0
           },
           {
-            "q": "Piove, ma partiamo. (anche se)",
+            "q": "Sono in ritardo, ma nessuno si lamenta. (sebbene)",
             "options": [
-              "Anche se piove, partiamo.",
-              "Anche se piova, partiamo.",
-              "Anche se piovesse, partiamo."
+              "Sebbene sia in ritardo, nessuno si lamenta.",
+              "Sebbene sono in ritardo, nessuno si lamenta.",
+              "Sebbene fossi in ritardo, nessuno si lamenta."
             ],
             "answer": 0
           },
           {
-            "q": "Aveva ragione, ma non ha insistito. (sebbene)",
+            "q": "Costa poco, ma funziona bene. (benché)",
             "options": [
-              "Sebbene avesse ragione, non ha insistito.",
-              "Sebbene aveva ragione, non ha insistito.",
-              "Sebbene abbia ragione, non ha insistito."
+              "Benché costi poco, funziona bene.",
+              "Benché costa poco, funziona bene.",
+              "Benché costasse poco, funziona bene."
             ],
             "answer": 0
           },
           {
-            "q": "È ricco, ma vive con poco. (nonostante)",
+            "q": "Vive lontano, ma viene ogni giorno. (nonostante)",
             "options": [
-              "Nonostante sia ricco, vive con poco.",
-              "Nonostante è ricco, vive con poco.",
-              "Nonostante fosse ricco, vive con poco."
+              "Nonostante viva lontano, viene ogni giorno.",
+              "Nonostante vive lontano, viene ogni giorno.",
+              "Nonostante vivesse lontano, viene ogni giorno."
             ],
             "answer": 0
           }
@@ -3955,9 +3956,9 @@ const TEST_STRUCTURES = [
             "fix": "parto (prima di partire)"
           },
           {
-            "q": "Prima di firmi, leggi il contratto.",
-            "wrong": "firmi",
-            "fix": "firmare"
+            "q": "Prima di esci, chiudi la finestra.",
+            "wrong": "esci",
+            "fix": "uscire"
           },
           {
             "q": "Dopo che abbia mangiato, è uscito.",
@@ -3975,9 +3976,9 @@ const TEST_STRUCTURES = [
             "fix": "arriva"
           },
           {
-            "q": "Prima di che parli, ascolta.",
+            "q": "Prima di che chiami, pensa bene.",
             "wrong": "che",
-            "fix": "(togliere: prima di parlare)"
+            "fix": "(togliere: prima di chiamare)"
           },
           {
             "q": "Dopo che sarebbe partito, ha telefonato.",
@@ -4192,9 +4193,9 @@ const TEST_STRUCTURES = [
         "instr": "Clicca il verbo con il tempo sbagliato.",
         "items": [
           {
-            "q": "Se lavoravo di più da giovane, ora avrei più risparmi.",
-            "wrong": "lavoravo",
-            "fix": "avessi lavorato"
+            "q": "Se risparmiavo prima, ora comprerei la casa.",
+            "wrong": "risparmiavo",
+            "fix": "avessi risparmiato"
           },
           {
             "q": "Se tu ascoltavi i consigli, non saresti in difficoltà.",
@@ -4202,9 +4203,9 @@ const TEST_STRUCTURES = [
             "fix": "avessi ascoltato"
           },
           {
-            "q": "Se non perdevamo il treno, ora saremmo arrivati.",
-            "wrong": "perdevamo",
-            "fix": "avessimo perso"
+            "q": "Se prendevamo l'aereo, ora saremmo in Italia.",
+            "wrong": "prendevamo",
+            "fix": "avessimo preso"
           },
           {
             "q": "Se fossi stato più attento, ora avrai meno problemi.",
@@ -4227,9 +4228,9 @@ const TEST_STRUCTURES = [
             "fix": "avremmo"
           },
           {
-            "q": "Se lui diceva la verità, ora ci fideremmo.",
-            "wrong": "diceva",
-            "fix": "avesse detto"
+            "q": "Se lei accettava l'offerta, ora lavorerebbe qui.",
+            "wrong": "accettava",
+            "fix": "avesse accettato"
           },
           {
             "q": "Se non avessi mangiato tanto, ora starò meglio.",
