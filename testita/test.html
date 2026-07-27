@@ -92,7 +92,7 @@
 <script src="env.js"></script>
 <script>
 const LVL_COLOR = {a:"var(--c-a)", a2:"var(--c-a2)", b1:"var(--c-b1)", b2:"var(--c-b2)", c1:"var(--c-c1)"};
-const LVL_TAG   = {a:"A0 · A1", a2:"A2", b1:"B1", b2:"B2", c1:"C1"};
+const LVL_TAG   = {a:"A1", a2:"A2", b1:"B1", b2:"B2", c1:"C1"};
 
 const params = new URLSearchParams(location.search);
 const nPick = parseInt(params.get('n') ?? '2');           // quanti item pescare per esercizio
@@ -477,8 +477,15 @@ function fasciaLivello(pct){
    Si scorrono i livelli in ordine e ci si ferma al primo non solido:
      - se quel livello è "in corso" (40-69%)  →  "<livello> base"
      - se è "non raggiunto" (<40%)            →  "<ultimo solido> solido"
+   Se nemmeno il livello più basso del test è raggiunto si nomina il livello
+   precedente: sotto A1 c'è A0, quindi il verdetto è "A0". Se però il test
+   parte da un livello alto (es. solo B1 in su), i livelli sotto non sono
+   stati verificati: in quel caso si scrive "A2 o inferiore", che è onesto.
    Esempio: A2 solido + B1 al 50%  →  "B1 base"
-            A2 solido + B1 al 20%  →  "A2 solido"                    */
+            A2 solido + B1 al 20%  →  "A2 solido"
+            A1 al 20% (test da A1) →  "A0"                            */
+const LVL_PRECEDENTE = { a:'A0', a2:'A1', b1:'A2', b2:'B1', c1:'B2' };
+
 function stimaLivello(perLvl){
   const presenti = LVL_SEQ.filter(l => perLvl[l]);
   const pctDi = l => (perLvl[l].ok / perLvl[l].tot) * 100;
@@ -495,7 +502,12 @@ function stimaLivello(perLvl){
   } else if (ultimoSolido) {
     verdetto = LVL_TAG[ultimoSolido] + ' solido';
   } else {
-    verdetto = 'sotto il livello ' + LVL_TAG[presenti[0]];
+    // nessun livello raggiunto: si nomina quello precedente al più basso testato
+    const piuBasso = presenti[0];
+    const prec = LVL_PRECEDENTE[piuBasso];
+    // se il test parte dal livello più basso in assoluto, il precedente è certo (A0);
+    // altrimenti i livelli inferiori non sono stati verificati
+    verdetto = (piuBasso === LVL_SEQ[0]) ? prec : prec + ' o inferiore';
   }
 
   return { presenti, ultimoSolido, bloccante, verdetto };
