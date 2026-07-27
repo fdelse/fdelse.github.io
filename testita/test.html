@@ -81,8 +81,8 @@
   <h1>Grazie, <span id="doneName"></span>!</h1>
   <p class="sub">Il tuo test è stato inviato all'insegnante. Ecco il tuo risultato.</p>
   <div class="score-banner">
-    <div class="num" id="scoreNum">–</div>
-    <div class="lbl">risposte corrette</div>
+    <div class="num" id="bannerNum">–</div>
+    <div class="lbl" id="bannerLbl">risposte corrette</div>
   </div>
   <div id="byStruct"></div>
   <div id="fallbackBox"></div>
@@ -124,17 +124,73 @@ function pickRandom(arr, k){
   return copy.slice(0, Math.min(k, copy.length));
 }
 
+/* ---------- anti-collisione tra esercizi ----------
+   I tre esercizi di una struttura sono costruiti su frasi affini: se il
+   sorteggio pesca la stessa frase in due esercizi diversi, uno rivela la
+   risposta dell'altro (es. il buco "Se ___ di più..." e, tra le opzioni
+   della Trasformazione, la stessa frase già completata).
+   Qui si confrontano le frasi degli item e si scartano quelle troppo simili
+   a una già scelta nella stessa struttura. Con 10 item in banca e 2-3 da
+   pescare c'è sempre margine; se proprio non bastasse si ripiega sugli
+   scarti, così il test non resta mai incompleto. */
+const SOGLIA_SOMIGLIANZA = 0.6;
+
+function paroleDi(txt){
+  return txt.toLowerCase()
+    .replace(/___+/g, ' ').replace(/→/g, ' ')
+    .replace(/\([^)]*\)/g, ' ')
+    .replace(/[.,;:!?«»'’"]/g, ' ')
+    .split(/\s+/).filter(Boolean);
+}
+function frasiDi(item){
+  const f = [item.q];
+  if (item.options) item.options.forEach(o => { if (paroleDi(o).length >= 3) f.push(o); });
+  return f.map(t => new Set(paroleDi(t)));
+}
+function jaccard(a, b){
+  let inter = 0;
+  a.forEach(w => { if (b.has(w)) inter++; });
+  return inter / (a.size + b.size - inter);
+}
+// quanto un item somiglia al più simile di quelli già scelti (0 = nessuna affinità)
+function somiglianzaMax(cand, giaScelti){
+  const fc = frasiDi(cand);
+  let max = 0;
+  for (const altro of giaScelti) {
+    for (const y of frasiDi(altro)) {
+      for (const x of fc) {
+        const s = jaccard(x, y);
+        if (s > max) max = s;
+      }
+    }
+  }
+  return max;
+}
+function pescaSenzaCollisioni(pool, k, giaScelti){
+  const mescolato = pickRandom(pool, pool.length);   // stesso PRNG: resta riproducibile col seed
+  const scelti = [];
+  for (let n = 0; n < k && mescolato.length; n++) {
+    let idxMigliore = 0, peggiore = Infinity;
+    for (let i = 0; i < mescolato.length; i++) {
+      const s = somiglianzaMax(mescolato[i], giaScelti.concat(scelti));
+      if (s < peggiore) { peggiore = s; idxMigliore = i; }
+      if (peggiore === 0) break;      // nessuna affinità: non si può fare meglio
+    }
+    scelti.push(mescolato.splice(idxMigliore, 1)[0]);
+  }
+  return scelti;
+}
+
 /* costruisce il test pescando nPick item a caso da ogni esercizio */
-const selected = indices.map(i => TEST_STRUCTURES[i]).filter(Boolean).map(s => ({
-  lvl: s.lvl,
-  title: s.title,
-  exercises: s.exercises.map(e => ({
-    type: e.type,
-    fmt: e.fmt || 'fill',
-    instr: e.instr,
-    items: pickRandom(e.items, nPick)
-  }))
-}));
+const selected = indices.map(i => TEST_STRUCTURES[i]).filter(Boolean).map(s => {
+  const usati = [];   // item già scelti in questa struttura, per evitare doppioni
+  const exercises = s.exercises.map(e => {
+    const items = pescaSenzaCollisioni(e.items, nPick, usati);
+    usati.push(...items);
+    return { type: e.type, fmt: e.fmt || 'fill', instr: e.instr, items: items };
+  });
+  return { lvl: s.lvl, title: s.title, exercises: exercises };
+});
 
 let studentName = '';
 let currentPage = 0;
@@ -522,17 +578,30 @@ function submitTest(){
   ? 'ERRORI DA RIVEDERE:\n\n' + errorLines.join('\n\n')
   : 'Nessun errore: test completato tutto correttamente.');
 
-  // ---- vista studente: voto + livello (se multi-livello) + ripartizione ----
+  // ---- vista studente ----
+  // Nel riquadro grande va il dato più significativo: il livello stimato se il
+  // test copre più livelli, altrimenti il punteggio (su un test mono-livello
+  // un'etichetta di livello non avrebbe senso).
   document.getElementById('testWrap').style.display = 'none';
   document.getElementById('doneWrap').style.display = 'block';
   document.getElementById('doneName').textContent = studentName;
-  document.getElementById('scoreNum').textContent = score;
+
+  const bannerNum = document.getElementById('bannerNum');
+  if (multiLivello) {
+    bannerNum.textContent = lvlVerdict;
+    bannerNum.classList.add('num--testo');
+    document.getElementById('bannerLbl').textContent = 'livello stimato';
+  } else {
+    bannerNum.textContent = score;
+    bannerNum.classList.remove('num--testo');
+    document.getElementById('bannerLbl').textContent = 'risposte corrette';
+  }
 
   let html = '';
   if (multiLivello) {
     html +=
-      '<div class="card"><p class="kicker">Livello stimato</p>' +
-      '<p style="font-family:var(--display);font-size:22px;margin:4px 0 14px;">' + lvlVerdict + '</p>' +
+      '<div class="card"><p class="kicker">Risposte corrette</p>' +
+      '<p style="font-family:var(--display);font-size:26px;margin:2px 0 14px;">' + score + '</p>' +
       stima.presenti.map(l => {
         const p = perLvl[l];
         const pct = Math.round((p.ok / p.tot) * 100);

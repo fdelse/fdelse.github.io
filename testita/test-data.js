@@ -1,7 +1,8 @@
 /* TEST-DATA.JS — Banca esercizi del TEST
    A0·A1: 13 strutture · C1: 5 strutture — tutte 10 item/esercizio,
    SOLO formati autocorreggibili al 100%: nessun campo di testo libero.
-   Nessuna frase si ripete tra esercizi diversi della stessa struttura.
+   Gli esercizi di una stessa struttura usano frasi distinte, così un
+   esercizio non rivela la risposta di un altro.
    Formati: buco {q,options,answer} · errore {q,wrong,fix} */
 const TEST_STRUCTURES = [
   {
@@ -3993,92 +3994,92 @@ const TEST_STRUCTURES = [
         "instr": "Unisci le due azioni: scegli la costruzione corretta.",
         "items": [
           {
-            "q": "(tu – firmare) + (tu – leggere il contratto)",
+            "q": "(tu – ordinare) + (tu – guardare il menù)",
             "options": [
-              "Prima di firmare, leggi il contratto.",
-              "Prima che firmi, leggi il contratto.",
-              "Prima che tu firmi, leggi il contratto."
+              "Prima di ordinare, guarda il menù.",
+              "Prima che ordini, guarda il menù.",
+              "Prima di che ordini, guarda il menù."
             ],
             "answer": 0
           },
           {
-            "q": "(io – uscire) + (la riunione – iniziare)",
+            "q": "(io – andare via) + (il concerto – finire)",
             "options": [
-              "Esco prima che la riunione inizi.",
-              "Esco prima di la riunione inizia.",
-              "Esco prima che la riunione inizia."
+              "Vado via prima che il concerto finisca.",
+              "Vado via prima che il concerto finisce.",
+              "Vado via prima di il concerto finisce."
             ],
             "answer": 0
           },
           {
-            "q": "(noi – arrivare) + (noi – salutarci)",
+            "q": "(loro – tornare) + (noi – preparare la cena)",
             "options": [
-              "Dopo che siamo arrivati, ci siamo salutati.",
-              "Dopo che siamo arrivati, ci salutiamo prima.",
-              "Dopo di arrivare, ci siamo salutati."
+              "Prepariamo la cena prima che tornino.",
+              "Prepariamo la cena prima che tornano.",
+              "Prepariamo la cena prima di tornano."
             ],
             "answer": 0
           },
           {
-            "q": "(voi – partire) + (io – tornare)",
+            "q": "(lei – pagare) + (lei – controllare il conto)",
             "options": [
-              "Partite prima che io torni.",
-              "Partite prima di io torno.",
-              "Partite prima che io torno."
+              "Prima di pagare, controlla il conto.",
+              "Prima che paghi, controlla il conto.",
+              "Prima di che paga, controlla il conto."
             ],
             "answer": 0
           },
           {
-            "q": "(tu – decidere) + (tu – riflettere)",
+            "q": "(noi – finire il lavoro) + (noi – festeggiare)",
             "options": [
-              "Prima di decidere, rifletti.",
-              "Prima che decidi, rifletti.",
-              "Prima di che decidi, rifletti."
+              "Dopo che abbiamo finito il lavoro, abbiamo festeggiato.",
+              "Dopo che avessimo finito il lavoro, abbiamo festeggiato.",
+              "Dopo di finire il lavoro, abbiamo festeggiato."
             ],
             "answer": 0
           },
           {
-            "q": "(lui – uscire) + (lui – spegnere la luce)",
+            "q": "(voi – entrare) + (voi – togliere le scarpe)",
             "options": [
-              "Prima di uscire, spegne la luce.",
-              "Prima che esca, spegne la luce.",
-              "Prima di esce, spegne la luce."
+              "Prima di entrare, toglietevi le scarpe.",
+              "Prima che entriate, toglietevi le scarpe.",
+              "Prima di che entrate, toglietevi le scarpe."
             ],
             "answer": 0
           },
           {
-            "q": "(io – parlare) + (tu – ascoltare)",
+            "q": "(il film – cominciare) + (io – comprare i popcorn)",
             "options": [
-              "Ascolta prima che io parli.",
-              "Ascolta prima di io parlo.",
-              "Ascolta prima che io parlo."
+              "Compro i popcorn prima che il film cominci.",
+              "Compro i popcorn prima che il film comincia.",
+              "Compro i popcorn prima di il film comincia."
             ],
             "answer": 0
           },
           {
-            "q": "(lei – sapere la notizia) + (lei – chiamare)",
+            "q": "(lui – rispondere) + (lui – riflettere)",
             "options": [
-              "Dopo che ha saputo la notizia, ha chiamato.",
-              "Dopo che abbia saputo la notizia, ha chiamato.",
-              "Dopo di sapere la notizia, ha chiamato."
+              "Prima di rispondere, riflette.",
+              "Prima che risponda, riflette.",
+              "Prima di che risponde, riflette."
             ],
             "answer": 0
           },
           {
-            "q": "(noi – mangiare) + (noi – lavarci le mani)",
+            "q": "(lei – ricevere la lettera) + (lei – scrivere)",
             "options": [
-              "Prima di mangiare, ci laviamo le mani.",
-              "Prima che mangiamo, ci laviamo le mani.",
-              "Prima di che mangiamo, ci laviamo le mani."
+              "Dopo che ha ricevuto la lettera, ha scritto.",
+              "Dopo che abbia ricevuto la lettera, ha scritto.",
+              "Dopo di ricevere la lettera, ha scritto."
             ],
             "answer": 0
           },
           {
-            "q": "(loro – arrivare) + (noi – preparare tutto)",
+            "q": "(noi – uscire) + (voi – svegliarvi)",
             "options": [
-              "Prepariamo tutto prima che arrivino.",
-              "Prepariamo tutto prima di arrivano.",
-              "Prepariamo tutto prima che arrivano."
+              "Usciamo prima che vi svegliate.",
+              "Usciamo prima che vi svegliato.",
+              "Usciamo prima di vi svegliate."
             ],
             "answer": 0
           }
@@ -4250,92 +4251,92 @@ const TEST_STRUCTURES = [
         "instr": "Costruisci il periodo ipotetico misto: scegli la versione corretta.",
         "items": [
           {
-            "q": "(lavorare di più da giovane) → ora (avere più risparmi)",
+            "q": "(fare sport da ragazzo) → ora (essere in forma)",
             "options": [
-              "Se avessi lavorato di più da giovane, ora avrei più risparmi.",
-              "Se lavoravo di più da giovane, ora avrei più risparmi.",
-              "Se avrei lavorato di più, ora avessi più risparmi."
+              "Se avessi fatto sport da ragazzo, ora sarei in forma.",
+              "Se facevo sport da ragazzo, ora sarei in forma.",
+              "Se avrei fatto sport da ragazzo, ora fossi in forma."
             ],
             "answer": 0
           },
           {
-            "q": "(ascoltare i consigli) → ora (non essere in difficoltà)",
+            "q": "(comprare quella casa) → ora (non pagare l'affitto)",
             "options": [
-              "Se avessi ascoltato i consigli, ora non sarei in difficoltà.",
-              "Se ascoltavo i consigli, ora non sarei in difficoltà.",
-              "Se avrei ascoltato i consigli, ora non fossi in difficoltà."
+              "Se avessimo comprato quella casa, ora non pagheremmo l'affitto.",
+              "Se compravamo quella casa, ora non pagheremmo l'affitto.",
+              "Se avremmo comprato quella casa, ora non pagassimo l'affitto."
             ],
             "answer": 0
           },
           {
-            "q": "(non perdere il treno) → ora (essere già arrivati)",
+            "q": "(accettare quel posto) → ora (guadagnare di più)",
             "options": [
-              "Se non avessimo perso il treno, ora saremmo già arrivati.",
-              "Se non perdevamo il treno, ora saremmo già arrivati.",
-              "Se non avremmo perso il treno, ora fossimo già arrivati."
+              "Se avessi accettato quel posto, ora guadagnerei di più.",
+              "Se accettavo quel posto, ora guadagnerei di più.",
+              "Se avrei accettato quel posto, ora guadagnassi di più."
             ],
             "answer": 0
           },
           {
-            "q": "(studiare di più) → ora (avere un buon lavoro)",
+            "q": "(venire alla riunione) → ora (sapere tutto)",
             "options": [
-              "Se avessi studiato di più, ora avrei un buon lavoro.",
-              "Se studiavo di più, ora avrei un buon lavoro.",
-              "Se avrei studiato di più, ora avessi un buon lavoro."
+              "Se fossi venuto alla riunione, ora sapresti tutto.",
+              "Se venivi alla riunione, ora sapresti tutto.",
+              "Se saresti venuto alla riunione, ora sapessi tutto."
             ],
             "answer": 0
           },
           {
-            "q": "(prenotare) → ora (avere un tavolo)",
+            "q": "(chiedere aiuto) → ora (non essere nei guai)",
             "options": [
-              "Se avessimo prenotato, ora avremmo un tavolo.",
-              "Se prenotavamo, ora avremmo un tavolo.",
-              "Se avremmo prenotato, ora avessimo un tavolo."
+              "Se avesse chiesto aiuto, ora non sarebbe nei guai.",
+              "Se chiedeva aiuto, ora non sarebbe nei guai.",
+              "Se avrebbe chiesto aiuto, ora non fosse nei guai."
             ],
             "answer": 0
           },
           {
-            "q": "(imparare l'italiano prima) → ora (parlare meglio)",
+            "q": "(vendere la moto) → ora (avere i soldi)",
             "options": [
-              "Se avessi imparato l'italiano prima, ora parlerei meglio.",
-              "Se imparavo l'italiano prima, ora parlerei meglio.",
-              "Se avrei imparato l'italiano, ora parlassi meglio."
+              "Se avessi venduto la moto, ora avrei i soldi.",
+              "Se vendevo la moto, ora avrei i soldi.",
+              "Se avrei venduto la moto, ora avessi i soldi."
             ],
             "answer": 0
           },
           {
-            "q": "(non andare a letto tardi) → ora (non essere stanco)",
+            "q": "(iscriversi al corso) → ora (avere il diploma)",
             "options": [
-              "Se non fossi andato a letto tardi, ora non sarei stanco.",
-              "Se non andavo a letto tardi, ora non sarei stanco.",
-              "Se non sarei andato a letto tardi, ora non fossi stanco."
+              "Se mi fossi iscritto al corso, ora avrei il diploma.",
+              "Se mi iscrivevo al corso, ora avrei il diploma.",
+              "Se mi sarei iscritto al corso, ora avessi il diploma."
             ],
             "answer": 0
           },
           {
-            "q": "(dire la verità) → ora (fidarsi di lui)",
+            "q": "(dare retta al medico) → ora (stare bene)",
             "options": [
-              "Se avesse detto la verità, ora ci fideremmo di lui.",
-              "Se diceva la verità, ora ci fideremmo di lui.",
-              "Se avrebbe detto la verità, ora ci fidassimo di lui."
+              "Se avessi dato retta al medico, ora starei bene.",
+              "Se davo retta al medico, ora starei bene.",
+              "Se avrei dato retta al medico, ora stessi bene."
             ],
             "answer": 0
           },
           {
-            "q": "(partire prima) → ora (essere già là)",
+            "q": "(comprare i biglietti prima) → ora (spendere meno)",
             "options": [
-              "Se fossi partito prima, ora sarei già là.",
-              "Se partivo prima, ora sarei già là.",
-              "Se sarei partito prima, ora fossi già là."
+              "Se avessimo comprato i biglietti prima, ora spenderemmo meno.",
+              "Se compravamo i biglietti prima, ora spenderemmo meno.",
+              "Se avremmo comprato i biglietti prima, ora spendessimo meno."
             ],
             "answer": 0
           },
           {
-            "q": "(non mangiare tanto) → ora (stare meglio)",
+            "q": "(finire gli studi) → ora (lavorare in banca)",
             "options": [
-              "Se non avessi mangiato tanto, ora starei meglio.",
-              "Se non mangiavo tanto, ora starei meglio.",
-              "Se non avrei mangiato tanto, ora stessi meglio."
+              "Se avesse finito gli studi, ora lavorerebbe in banca.",
+              "Se finiva gli studi, ora lavorerebbe in banca.",
+              "Se avrebbe finito gli studi, ora lavorasse in banca."
             ],
             "answer": 0
           }
