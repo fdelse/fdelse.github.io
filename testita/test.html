@@ -138,6 +138,7 @@ const selected = indices.map(i => TEST_STRUCTURES[i]).filter(Boolean).map(s => (
 
 let studentName = '';
 let currentPage = 0;
+let rangeDomande = [];   // per ogni pagina: {da, a, tot} — numerazione progressiva
 const totalPages = selected.length;
 
 /* ---------- normalizzazione per correzione fill ---------- */
@@ -243,26 +244,36 @@ function renderItem(itemData, fmt, refId){
 function renderAllPages(){
   const content = document.getElementById('content');
   let refCounter = 0;
+  // numero totale di domande del test e intervallo coperto da ogni pagina
+  const totDomande = selected.reduce((s, st) =>
+    s + st.exercises.reduce((k, e) => k + e.items.length, 0), 0);
+  rangeDomande = [];   // per pagina: {da, a}
+
+  let nProg = 0;       // numerazione progressiva su tutto il test
+
   selected.forEach((struct, si) => {
     const page = document.createElement('div');
     page.className = 'pagewrap';
     page.dataset.page = si;
 
+    const daQui = nProg + 1;
+
     const block = document.createElement('div');
     block.className = 'struct-block';
     block.style.setProperty('--lvl', LVL_COLOR[struct.lvl]);
-    block.innerHTML =
     // Nessun nome di struttura né livello durante il test: sarebbero un indizio
     // (e nel piazzamento un'etichetta tipo "C1" scoraggia). I nomi compaiono
     // solo nei risultati finali, dove sono informazione utile.
-      '<p class="struct-block__eyebrow">Sezione ' + (si + 1) + ' di ' + selected.length + '</p>';
+    const eyebrow = document.createElement('p');
+    eyebrow.className = 'struct-block__eyebrow';
+    block.appendChild(eyebrow);
 
     struct.exercises.forEach(ex => {
       const exDiv = document.createElement('div');
       exDiv.className = 'exercise';
       exDiv.innerHTML = '<span class="exercise__type">' + ex.type + '</span><p class="exercise__instr">' + ex.instr + '</p>';
-      ex.items.forEach((itemData, ii) => {
-        itemData._n = ii + 1;
+      ex.items.forEach(itemData => {
+        itemData._n = ++nProg;          // numero progressivo, non riparte da 1
         const refId = 'r' + (refCounter++);
         const itemBox = renderItem(itemData, ex.fmt, refId);
         itemBox.dataset.struct = struct.title;
@@ -274,6 +285,9 @@ function renderAllPages(){
       });
       block.appendChild(exDiv);
     });
+
+    rangeDomande[si] = { da: daQui, a: nProg, tot: totDomande };
+    eyebrow.textContent = 'Domande ' + daQui + '-' + nProg + ' di ' + totDomande;
 
     page.appendChild(block);
     content.appendChild(page);
@@ -307,8 +321,12 @@ function showPage(idx){
   document.querySelectorAll('.pagewrap').forEach(p => p.classList.remove('active'));
   document.querySelector('.pagewrap[data-page="' + idx + '"]').classList.add('active');
   currentPage = idx;
-  document.getElementById('progFill').style.width = (((idx+1)/totalPages)*100) + '%';
-  document.getElementById('progLabel').textContent = 'Sezione ' + (idx+1) + ' di ' + totalPages;
+  const r = rangeDomande[idx];
+  document.getElementById('progFill').style.width = ((r.a / r.tot) * 100) + '%';
+  document.getElementById('progLabel').textContent =
+    (r.da === r.a)
+      ? 'Domanda ' + r.da + ' di ' + r.tot
+      : 'Domande ' + r.da + '-' + r.a + ' di ' + r.tot;
   document.getElementById('prevBtn').disabled = (idx === 0);
   document.getElementById('nextBtn').textContent = (idx === totalPages - 1) ? 'Invia risultati' : 'Avanti →';
   window.scrollTo({top:0, behavior:'instant'});
