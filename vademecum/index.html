@@ -192,6 +192,11 @@
   th{font-weight:600;color:var(--ink-soft);font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;}
   td:first-child{color:var(--ink-soft);font-weight:500;white-space:nowrap;}
   td b, td .form{color:var(--ink);font-weight:600;}
+  td.ex-cell{
+    font-family:var(--display);font-style:italic;font-weight:400;
+    color:var(--ink);white-space:normal;line-height:1.4;
+  }
+  td.ex-cell b{font-style:normal;font-weight:600;color:var(--lvl);}
   .tbl-wrap{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:4px;}
   .tbl-wrap > div{flex:1 1 130px;}
 
@@ -4260,7 +4265,8 @@ const ENTRIES = [
             "<b>superlativi e parole di unicità</b> — l'unico, il solo, il primo: la relativa che segue va al congiuntivo",
             "È il film più bello che io <b>abbia</b> visto."
           ]
-        ]
+        ],
+        "plain": true
       }
     ],
     "uses": [
@@ -7530,7 +7536,7 @@ function tableHTML(t){
   if(t.caption) h += "<caption>"+t.caption+"</caption>";
   if(t.headers) h += "<tr>"+t.headers.map(x=>"<th>"+x+"</th>").join("")+"</tr>";
   t.rows.forEach(r=>{
-    h += "<tr>"+r.map((c,i)=> i===0 ? "<td>"+c+"</td>" : "<td><span class='form'>"+c+"</span></td>").join("")+"</tr>";
+    h += "<tr>"+r.map((c,i)=> i===0 ? "<td>"+c+"</td>" : (t.plain ? "<td class='ex-cell'>"+c+"</td>" : "<td><span class='form'>"+c+"</span></td>")).join("")+"</tr>";
   });
   return h+"</table>";
 }
