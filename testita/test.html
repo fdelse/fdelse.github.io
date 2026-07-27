@@ -394,23 +394,37 @@ const STATE_LABEL = { giusto:'CORRETTO', sbagliato:'SBAGLIATO', verifica:'DA VER
 const LVL_SEQ = ['a','a2','b1','b2','c1'];
 
 function fasciaLivello(pct){
-  if (pct >= 70) return 'consolidato';
+  if (pct >= 70) return 'solido';
   if (pct >= 40) return 'in corso';
   return 'non raggiunto';
 }
 
+/* Il livello dichiarato è l'ultimo SOLIDO (>=70%).
+   Si scorrono i livelli in ordine e ci si ferma al primo non solido:
+     - se quel livello è "in corso" (40-69%)  →  "<livello> base"
+     - se è "non raggiunto" (<40%)            →  "<ultimo solido> solido"
+   Esempio: A2 solido + B1 al 50%  →  "B1 base"
+            A2 solido + B1 al 20%  →  "A2 solido"                    */
 function stimaLivello(perLvl){
-  // considera solo i livelli effettivamente presenti nel test, in ordine
   const presenti = LVL_SEQ.filter(l => perLvl[l]);
-  let ultimoConsolidato = null, primoInCorso = null;
-  presenti.forEach(l => {
-    const p = perLvl[l];
-    const pct = (p.ok / p.tot) * 100;
-    const f = fasciaLivello(pct);
-    if (f === 'consolidato') ultimoConsolidato = l;
-    else if (f === 'in corso' && !primoInCorso) primoInCorso = l;
-  });
-  return { presenti, ultimoConsolidato, primoInCorso };
+  const pctDi = l => (perLvl[l].ok / perLvl[l].tot) * 100;
+
+  let ultimoSolido = null, bloccante = null;
+  for (const l of presenti) {
+    if (fasciaLivello(pctDi(l)) === 'solido') ultimoSolido = l;
+    else { bloccante = l; break; }   // primo livello non solido: ci si ferma qui
+  }
+
+  let verdetto;
+  if (bloccante && fasciaLivello(pctDi(bloccante)) === 'in corso') {
+    verdetto = LVL_TAG[bloccante] + ' base';
+  } else if (ultimoSolido) {
+    verdetto = LVL_TAG[ultimoSolido] + ' solido';
+  } else {
+    verdetto = 'sotto il livello ' + LVL_TAG[presenti[0]];
+  }
+
+  return { presenti, ultimoSolido, bloccante, verdetto };
 }
 
 function submitTest(){
@@ -464,14 +478,7 @@ function submitTest(){
       const pct = Math.round((p.ok / p.tot) * 100);
       return LVL_TAG[l] + ': ' + p.ok + '/' + p.tot + ' (' + pct + '%) — ' + fasciaLivello(pct);
     });
-    if (stima.ultimoConsolidato && stima.primoInCorso)
-      lvlVerdict = LVL_TAG[stima.ultimoConsolidato] + ' consolidato, ' + LVL_TAG[stima.primoInCorso] + ' in corso';
-    else if (stima.ultimoConsolidato)
-      lvlVerdict = LVL_TAG[stima.ultimoConsolidato] + ' consolidato';
-    else if (stima.primoInCorso)
-      lvlVerdict = LVL_TAG[stima.primoInCorso] + ' in corso (base da consolidare)';
-    else
-      lvlVerdict = 'sotto il livello più basso testato';
+    lvlVerdict = stima.verdetto;
   }
 
   // ---- RIEPILOGO per l'insegnante ----
@@ -487,7 +494,7 @@ function submitTest(){
 (multiLivello
   ? '────────────────────────\n' +
     'LIVELLO STIMATO: ' + lvlVerdict + '\n' +
-    '  (soglia: 70% = consolidato, 40-69% = in corso)\n' +
+    '  (soglie: 70% = solido, 40-69% = in corso, sotto 40% = non raggiunto)\n' +
     'PER LIVELLO:\n' + lvlRows.map(r => '  ' + r).join('\n') + '\n'
   : '') +
 '────────────────────────\n' +
