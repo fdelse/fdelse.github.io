@@ -35,12 +35,14 @@
   .check-row .exn{font-size:11.5px;color:var(--ink-faint);}
   .counter-bar{
     position:sticky;top:0;z-index:10;background:var(--paper);
-    padding:14px 0;border-bottom:1px solid var(--line);margin-bottom:24px;
-    display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+    padding:14px 0 16px;border-bottom:1px solid var(--line);margin-bottom:24px;
+    display:flex;flex-direction:column;gap:12px;
   }
+  .counter-bar__riga{display:flex;align-items:center;gap:18px;flex-wrap:wrap;}
+  .counter-bar__riga--controlli{gap:20px;}
   .counter-bar .stat b{font-family:var(--display);font-size:20px;font-weight:600;}
   .counter-bar .stat span{font-size:12px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.07em;margin-left:5px;}
-  .counter-bar .n-select{margin-left:auto;display:flex;align-items:center;gap:8px;}
+  .counter-bar .n-select{display:flex;align-items:center;gap:8px;}
   .counter-bar .n-select label{font-size:12px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.07em;}
   .counter-bar .n-select select{font-family:var(--sans);font-size:14px;padding:7px 9px;border-radius:8px;border:1px solid var(--line);background:var(--card);}
   .warn-long{color:var(--warn-ink);font-size:12.5px;font-weight:600;display:none;}
@@ -54,18 +56,21 @@
   <p class="sub">Spunta le strutture da includere — anche non consecutive. Poi genera il link e mandalo allo studente.</p>
 
   <div class="counter-bar">
-    <div class="stat"><b id="cStruct">0</b><span>strutture</span></div>
-    <div class="stat"><b id="cItems">0</b><span>item</span></div>
-    <div class="stat"><span class="warn-long" id="warnLong">test lungo — valuta di spezzarlo</span></div>
+    <div class="counter-bar__riga">
+      <div class="stat"><b id="cStruct">0</b><span>strutture</span></div>
+      <div class="stat"><b id="cItems">0</b><span>item</span></div>
+      <div class="stat"><span class="warn-long" id="warnLong">test lungo — valuta di spezzarlo</span></div>
+    </div>
+    <div class="counter-bar__riga counter-bar__riga--controlli">
     <div class="n-select">
       <label for="da">Dalla lezione</label>
       <select id="da"><option value="">inizio</option></select>
     </div>
-    <div class="n-select" style="margin-left:10px;">
+    <div class="n-select">
       <label for="a">Alla lezione</label>
       <select id="a"><option value="">fine</option></select>
     </div>
-    <div class="n-select" style="margin-left:14px;">
+    <div class="n-select">
       <label for="n">Item per esercizio</label>
       <select id="n">
         <option value="1">1</option>
@@ -73,6 +78,7 @@
         <option value="3">3</option>
         <option value="4">4</option>
       </select>
+    </div>
     </div>
   </div>
 
