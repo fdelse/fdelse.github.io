@@ -58,8 +58,12 @@
     <div class="stat"><b id="cItems">0</b><span>item</span></div>
     <div class="stat"><span class="warn-long" id="warnLong">test lungo — valuta di spezzarlo</span></div>
     <div class="n-select">
-      <label for="fino">Fino alla lezione</label>
-      <select id="fino"><option value="">—</option></select>
+      <label for="da">Dalla lezione</label>
+      <select id="da"><option value="">inizio</option></select>
+    </div>
+    <div class="n-select" style="margin-left:10px;">
+      <label for="a">Alla lezione</label>
+      <select id="a"><option value="">fine</option></select>
     </div>
     <div class="n-select" style="margin-left:14px;">
       <label for="n">Item per esercizio</label>
@@ -167,21 +171,34 @@ const lezioniDisponibili = (() => {
   return Array.from(m.entries()).sort((a,b) => a[0]-b[0]);
 })();
 
-const finoSel = document.getElementById('fino');
+const daSel = document.getElementById('da');
+const aSel  = document.getElementById('a');
 lezioniDisponibili.forEach(([peso, etichetta]) => {
-  const o = document.createElement('option');
-  o.value = peso; o.textContent = etichetta;
-  finoSel.appendChild(o);
+  [daSel, aSel].forEach(sel => {
+    const o = document.createElement('option');
+    o.value = peso; o.textContent = etichetta;
+    sel.appendChild(o);
+  });
 });
-finoSel.addEventListener('change', () => {
-  if (!finoSel.value) return;
-  const limite = parseInt(finoSel.value);
+
+/* Spunta le strutture introdotte nell'intervallo scelto.
+   «Dalla lezione» vuoto = dall'inizio; «Alla lezione» vuoto = fino alla fine.
+   Così si può fare sia un piazzamento (dall'inizio a una lezione alta) sia un
+   test di progresso su un blocco (es. dalla A2 L10 alla A2 L20). */
+function applicaIntervallo(){
+  if (!daSel.value && !aSel.value) return;
+  let min = daSel.value ? parseInt(daSel.value) : -Infinity;
+  let max = aSel.value  ? parseInt(aSel.value)  : Infinity;
+  if (min > max) { const t = min; min = max; max = t; }   // se invertiti, li scambia
   checkboxes().forEach(c => {
     const s = TEST_STRUCTURES[parseInt(c.dataset.gi)];
-    c.checked = introDi(s) <= limite;
+    const p = introDi(s);
+    c.checked = (p >= min && p <= max);
   });
   update();
-});
+}
+daSel.addEventListener('change', applicaIntervallo);
+aSel.addEventListener('change', applicaIntervallo);
 
 
 
