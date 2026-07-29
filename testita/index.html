@@ -45,6 +45,10 @@
   .counter-bar .n-select{display:flex;align-items:center;gap:8px;}
   .counter-bar .n-select label{font-size:12px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.07em;}
   .counter-bar .n-select select{font-family:var(--sans);font-size:14px;padding:7px 9px;border-radius:8px;border:1px solid var(--line);background:var(--card);}
+  .mini--preset{
+    border-color:var(--ink);color:var(--ink);font-weight:700;padding:8px 14px;
+  }
+  .mini--preset:hover{background:var(--ink);color:#fff;}
   .warn-long{color:var(--warn-ink);font-size:12.5px;font-weight:600;display:none;}
   .warn-long.show{display:inline;}
 </style>
@@ -69,6 +73,9 @@
     <div class="n-select">
       <label for="a">Alla lezione</label>
       <select id="a"><option value="">fine</option></select>
+    </div>
+    <div class="n-select" style="margin-left:auto;">
+      <button class="mini mini--preset" id="preset">Test di posizionamento</button>
     </div>
     <div class="n-select">
       <label for="n">Item per esercizio</label>
@@ -204,6 +211,25 @@ function applicaIntervallo(){
   update();
 }
 daSel.addEventListener('change', applicaIntervallo);
+
+/* ---------- preset «Test di posizionamento» ----------
+   Un test d'ingresso deve essere corto e diagnostico: non serve coprire tutto
+   il programma, servono poche strutture per livello scelte fra quelle che
+   separano davvero i livelli (es. l'accordo dell'aggettivo, il -ISC-, piacere,
+   a/in con città e paesi, il congiuntivo nelle concessive, l'ipotetico misto).
+   Le strutture adatte sono marcate con diag:true nella banca.
+   Il preset imposta anche 1 item per esercizio: serve collocare, non misurare
+   a fondo, e un test breve si porta a termine con più attenzione. */
+document.getElementById('preset').addEventListener('click', e => {
+  e.preventDefault();
+  daSel.value = ''; aSel.value = '';
+  checkboxes().forEach(c => {
+    c.checked = !!TEST_STRUCTURES[parseInt(c.dataset.gi)].diag;
+  });
+  nSel.value = '1';
+  update();
+});
+
 aSel.addEventListener('change', applicaIntervallo);
 
 
