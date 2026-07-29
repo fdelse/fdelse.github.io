@@ -58,6 +58,10 @@
     <div class="stat"><b id="cItems">0</b><span>item</span></div>
     <div class="stat"><span class="warn-long" id="warnLong">test lungo — valuta di spezzarlo</span></div>
     <div class="n-select">
+      <label for="fino">Fino alla lezione</label>
+      <select id="fino"><option value="">—</option></select>
+    </div>
+    <div class="n-select" style="margin-left:14px;">
       <label for="n">Item per esercizio</label>
       <select id="n">
         <option value="1">1</option>
@@ -119,17 +123,67 @@ LVL_ORDER.forEach(lvl => {
     row.className = 'check-row';
     row.style.setProperty('--lvl', LVL_COLOR[lvl]);
     const exCount = s.exercises.length;
+    const lez = (s.lez && s.lez.length) ? s.lez.join(' · ') : '—';
     row.innerHTML =
       '<input type="checkbox" data-gi="' + gi + '" data-ex="' + exCount + '">' +
       '<span class="num">' + (gi + 1) + '</span>' +
       '<span class="ttl">' + s.title + '</span>' +
-      '<span class="exn">' + exCount + ' eserc.</span>';
+      '<span class="exn">' + lez + '</span>';
     section.appendChild(row);
   });
   list.appendChild(section);
 });
 
 const checkboxes = () => Array.from(document.querySelectorAll('input[type=checkbox]'));
+
+/* ---------- selettore «fino alla lezione X» ----------
+   Ogni struttura porta le lezioni in cui la insegni (campo lez, es. "A1 L5").
+   La lezione di INTRODUZIONE è la più bassa fra quelle elencate: è lì che la
+   struttura va considerata "vista". Scegliendo una lezione si spuntano tutte
+   le strutture introdotte fino a quel punto — comprese quelle dei livelli
+   precedenti, perché lo studente le ha già incontrate. */
+const ORD_LIV = { 'A0':0, 'A1':1, 'A2':2, 'B1':3, 'B2':4, 'C1':5 };
+
+function leggiLezione(txt){
+  const m = /^([ABC][012])\s*L\s*(\d+)$/i.exec(txt.trim());
+  if (!m) return null;
+  const liv = m[1].toUpperCase();
+  if (!(liv in ORD_LIV)) return null;
+  return { liv: liv, n: parseInt(m[2]), peso: ORD_LIV[liv] * 1000 + parseInt(m[2]) };
+}
+function introDi(s){
+  const l = (s.lez || []).map(leggiLezione).filter(Boolean);
+  if (!l.length) return Infinity;
+  return Math.min.apply(null, l.map(x => x.peso));
+}
+
+// elenco ordinato delle lezioni presenti nella banca
+const lezioniDisponibili = (() => {
+  const m = new Map();
+  TEST_STRUCTURES.forEach(s => (s.lez || []).forEach(t => {
+    const p = leggiLezione(t);
+    if (p) m.set(p.peso, p.liv + ' L' + p.n);
+  }));
+  return Array.from(m.entries()).sort((a,b) => a[0]-b[0]);
+})();
+
+const finoSel = document.getElementById('fino');
+lezioniDisponibili.forEach(([peso, etichetta]) => {
+  const o = document.createElement('option');
+  o.value = peso; o.textContent = etichetta;
+  finoSel.appendChild(o);
+});
+finoSel.addEventListener('change', () => {
+  if (!finoSel.value) return;
+  const limite = parseInt(finoSel.value);
+  checkboxes().forEach(c => {
+    const s = TEST_STRUCTURES[parseInt(c.dataset.gi)];
+    c.checked = introDi(s) <= limite;
+  });
+  update();
+});
+
+
 
 function update(){
   const n = parseInt(nSel.value);
