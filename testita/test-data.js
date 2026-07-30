@@ -1,5 +1,8 @@
 /* TEST-DATA.JS — Banca esercizi del TEST
    Strutture mappate sulle lezioni dell indice standard (campo "lez").
+   Campo "stima": livello a cui la struttura pesa nel calcolo del livello,
+   se diverso da quello di raggruppamento (strutture introdotte presto e
+   controllate tardi, es. il congiuntivo).
    Campo "diag": struttura diagnostica, usata dal preset «Test di posizionamento».
    A1: 18 · A2: 17 · C1: 5 — 10 item per esercizio, 3 esercizi per struttura.
    Solo formati autocorreggibili: buco {q,options,answer} · errore {q,wrong,fix}.
@@ -3108,7 +3111,8 @@ const TEST_STRUCTURES = [
         ]
       }
     ],
-    "diag": true
+    "diag": true,
+    "stima": "a2"
   },
   {
     "lvl": "a",
@@ -7018,8 +7022,7 @@ const TEST_STRUCTURES = [
           }
         ]
       }
-    ],
-    "diag": true
+    ]
   },
   {
     "lvl": "a2",

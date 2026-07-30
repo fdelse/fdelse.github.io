@@ -141,11 +141,13 @@ LVL_ORDER.forEach(lvl => {
     row.style.setProperty('--lvl', LVL_COLOR[lvl]);
     const exCount = s.exercises.length;
     const lez = (s.lez && s.lez.length) ? s.lez.join(' · ') : '—';
+    // se la struttura pesa su un livello diverso nel calcolo, lo segnalo
+    const nota = s.stima ? ' · conta come ' + LVL_TAG[s.stima] : '';
     row.innerHTML =
       '<input type="checkbox" data-gi="' + gi + '" data-ex="' + exCount + '">' +
       '<span class="num">' + (gi + 1) + '</span>' +
       '<span class="ttl">' + s.title + '</span>' +
-      '<span class="exn">' + lez + '</span>';
+      '<span class="exn">' + lez + nota + '</span>';
     section.appendChild(row);
   });
   list.appendChild(section);
@@ -210,7 +212,7 @@ function applicaIntervallo(){
   });
   update();
 }
-daSel.addEventListener('change', applicaIntervallo);
+daSel.addEventListener('change', () => { presetAttivo = false; applicaIntervallo(); });
 
 /* ---------- preset «Test di posizionamento» ----------
    Un test d'ingresso deve essere corto e diagnostico: non serve coprire tutto
@@ -220,6 +222,10 @@ daSel.addEventListener('change', applicaIntervallo);
    Le strutture adatte sono marcate con diag:true nella banca.
    Il preset imposta anche 1 item per esercizio: serve collocare, non misurare
    a fondo, e un test breve si porta a termine con più attenzione. */
+/* presetAttivo: se il link nasce dal preset, il test avrà l'arresto anticipato
+   (adatt=1). Qualsiasi modifica manuale lo disattiva, perché in un test di
+   progresso l'interruzione falserebbe il confronto fra due sessioni. */
+let presetAttivo = false;
 document.getElementById('preset').addEventListener('click', e => {
   e.preventDefault();
   daSel.value = ''; aSel.value = '';
@@ -227,10 +233,11 @@ document.getElementById('preset').addEventListener('click', e => {
     c.checked = !!TEST_STRUCTURES[parseInt(c.dataset.gi)].diag;
   });
   nSel.value = '1';
+  presetAttivo = true;
   update();
 });
 
-aSel.addEventListener('change', applicaIntervallo);
+aSel.addEventListener('change', () => { presetAttivo = false; applicaIntervallo(); });
 
 
 
@@ -247,7 +254,7 @@ function update(){
 }
 
 list.addEventListener('change', e => {
-  if (e.target.matches('input[type=checkbox]')) update();
+  if (e.target.matches('input[type=checkbox]')) { presetAttivo = false; update(); }
 });
 list.addEventListener('click', e => {
   if (e.target.dataset.all !== undefined) {
@@ -261,7 +268,7 @@ list.addEventListener('click', e => {
     update();
   }
 });
-nSel.addEventListener('change', update);
+nSel.addEventListener('change', () => { presetAttivo = false; update(); });
 
 genBtn.addEventListener('click', () => {
   const n = nSel.value;
@@ -269,10 +276,11 @@ genBtn.addEventListener('click', () => {
   // costruisce l'URL di test.html nella stessa cartella,
   // qualunque sia il nome di questa pagina (index.html, builder.html, ecc.)
   const base = location.href.split('?')[0].split('#')[0].replace(/[^\/]*$/, '') + 'test.html';
-  const url = base + '?s=' + ids.join(',') + '&n=' + n;
+  const url = base + '?s=' + ids.join(',') + '&n=' + n + (presetAttivo ? '&adatt=1' : '');
   document.getElementById('linkOut').value = url;
   document.getElementById('linkNote').textContent =
-    ids.length + ' strutture \u00b7 ' + document.getElementById('cItems').textContent + ' item totali.';
+    ids.length + ' strutture \u00b7 ' + document.getElementById('cItems').textContent + ' item totali.' +
+    (presetAttivo ? ' Test di posizionamento: si interrompe quando un livello scende sotto il 50%.' : '');
   document.getElementById('linkCard').style.display = 'block';
   document.getElementById('linkCard').scrollIntoView({behavior:'smooth', block:'center'});
 });

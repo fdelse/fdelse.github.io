@@ -79,7 +79,7 @@
 <div class="wrap" id="doneWrap" style="display:none;">
   <p class="kicker">Fatto</p>
   <h1>Grazie, <span id="doneName"></span>!</h1>
-  <p class="sub">Il tuo test è stato inviato all'insegnante. Ecco il tuo risultato.</p>
+  <p class="sub" id="doneSub">Il tuo test è stato inviato all'insegnante. Ecco il tuo risultato.</p>
   <div class="score-banner">
     <div class="num" id="bannerNum">–</div>
     <div class="lbl" id="bannerLbl">risposte corrette</div>
@@ -96,6 +96,11 @@ const LVL_TAG   = {a:"A1", a2:"A2", b1:"B1", b2:"B2", c1:"C1"};
 
 const params = new URLSearchParams(location.search);
 const nPick = parseInt(params.get('n') ?? '2');           // quanti item pescare per esercizio
+/* adatt=1 → arresto anticipato: il test si chiude quando un livello scende sotto
+   la soglia. Lo attiva solo il preset «Test di posizionamento»: in un test di
+   progresso servono sempre tutte le domande, altrimenti i punteggi di due
+   sessioni diverse non sono confrontabili. */
+const adattivo = params.get('adatt') === '1';
 const seedParam = params.get('seed');                      // opzionale: fissa la pesca
 
 // strutture selezionate (nuovo formato s=0,3,7 ; retrocompat from/to)
@@ -189,12 +194,15 @@ const selected = indices.map(i => TEST_STRUCTURES[i]).filter(Boolean).map(s => {
     usati.push(...items);
     return { type: e.type, fmt: e.fmt || 'fill', instr: e.instr, items: items };
   });
-  return { lvl: s.lvl, title: s.title, exercises: exercises };
+  // NB: va copiata anche stima, altrimenti il livello di calcolo si perde
+  return { lvl: s.lvl, stima: s.stima, title: s.title, exercises: exercises };
 });
 
 let studentName = '';
 let currentPage = 0;
 let rangeDomande = [];   // per ogni pagina: {da, a, tot} — numerazione progressiva
+let pagineViste = new Set();   // pagine effettivamente mostrate (per l'arresto anticipato)
+let arrestoAnticipato = null;  // livello su cui il test si è fermato
 const totalPages = selected.length;
 
 /* ---------- normalizzazione per correzione fill ---------- */
@@ -311,6 +319,8 @@ function renderAllPages(){
     const page = document.createElement('div');
     page.className = 'pagewrap';
     page.dataset.page = si;
+    page.dataset.lvl = struct.lvl;
+    page.dataset.slvl = livelloStima(struct);
 
     const daQui = nProg + 1;
 
@@ -334,6 +344,7 @@ function renderAllPages(){
         const itemBox = renderItem(itemData, ex.fmt, refId);
         itemBox.dataset.struct = struct.title;
         itemBox.dataset.lvl = struct.lvl;
+        itemBox.dataset.slvl = livelloStima(struct);
         itemBox.dataset.type = ex.type;
         // salva il testo "pulito" della domanda per il transcript
         itemBox.dataset.q = itemData.q;
@@ -377,6 +388,7 @@ function showPage(idx){
   document.querySelectorAll('.pagewrap').forEach(p => p.classList.remove('active'));
   document.querySelector('.pagewrap[data-page="' + idx + '"]').classList.add('active');
   currentPage = idx;
+  pagineViste.add(idx);
   const r = rangeDomande[idx];
   document.getElementById('progFill').style.width = ((r.a / r.tot) * 100) + '%';
   document.getElementById('progLabel').textContent =
@@ -414,12 +426,55 @@ function confermaProsegui(ultima){
               '\n\nVuoi continuare comunque?');
 }
 
+/* L'arresto ragiona sui livelli di STIMA, non sull'ordine delle pagine: una
+   struttura può stare nell'elenco sotto B1 e contare come B2, quindi le pagine
+   di un livello non sono necessariamente contigue. Un livello si considera
+   concluso quando tutte le sue pagine sono state mostrate. */
+function pagineDelLivello(slvl){
+  return Array.from(document.querySelectorAll('.pagewrap'))
+    .filter(p => p.dataset.slvl === slvl);
+}
+function livelloConcluso(slvl){
+  return pagineDelLivello(slvl).every(p => pagineViste.has(parseInt(p.dataset.page)));
+}
+function contaLivello(slvl){
+  let ok = 0, tot = 0;
+  pagineDelLivello(slvl).forEach(p => {
+    if (!pagineViste.has(parseInt(p.dataset.page))) return;
+    p.querySelectorAll('.item').forEach(it => {
+      tot++;
+      if (checkItem(it).state === 'giusto') ok++;
+    });
+  });
+  return { ok: ok, tot: tot, pct: tot ? (ok / tot) * 100 : 0 };
+}
+/* Restituisce il livello su cui fermarsi, se ce n'è uno: concluso, con
+   abbastanza domande da essere attendibile, e sotto la soglia. */
+function livelloDaArrestare(){
+  const visti = new Set();
+  document.querySelectorAll('.pagewrap').forEach(p => visti.add(p.dataset.slvl));
+  for (const l of LVL_SEQ) {
+    if (!visti.has(l)) continue;
+    if (!livelloConcluso(l)) continue;
+    const c = contaLivello(l);
+    if (c.tot >= MIN_ITEM_LIVELLO && c.pct < SOGLIA_MINIMA) return l;
+  }
+  return null;
+}
+
 document.getElementById('prevBtn').addEventListener('click', () => { if (currentPage>0) showPage(currentPage-1); });
 document.getElementById('nextBtn').addEventListener('click', () => {
   const ultima = (currentPage === totalPages - 1);
   if (!confermaProsegui(ultima)) return;
-  if (!ultima) showPage(currentPage + 1);
-  else submitTest();
+  if (ultima) { submitTest(); return; }
+
+  // arresto anticipato: se un livello è concluso e sotto la soglia, i livelli
+  // successivi darebbero solo zeri prevedibili
+  if (adattivo) {
+    const stop = livelloDaArrestare();
+    if (stop) { arrestoAnticipato = stop; submitTest(); return; }
+  }
+  showPage(currentPage + 1);
 });
 
 /* ---------- correzione + invio ---------- */
@@ -467,16 +522,33 @@ const STATE_LABEL = { giusto:'CORRETTO', sbagliato:'SBAGLIATO', verifica:'DA VER
    viene segnalato come punto di partenza per le lezioni. */
 const LVL_SEQ = ['a','a2','b1','b2','c1'];
 
+/* Livello usato per la STIMA, che può differire da quello di raggruppamento.
+   Alcune strutture si introducono presto ma si controllano tardi: il congiuntivo
+   si insegna a B1 ma un B1 autentico non lo padroneggia. Se contassero come B1,
+   il test sottostimerebbe sistematicamente. Con "stima" restano dove le cerchi
+   nell'elenco, ma pesano sul livello giusto nel calcolo. */
+function livelloStima(s){ return s.stima || s.lvl; }
+
+/* Un livello con pochissime domande dà percentuali rumorose: con 3 item e tre
+   opzioni, chi indovina può fare 33% o 67% per caso. Sotto questa soglia il
+   livello non viene valutato. */
+const MIN_ITEM_LIVELLO = 6;
+
+/* Soglia inferiore al 50% e non al 40%: con tre opzioni chi tira a indovinare
+   prende in media il 33%, e su pochi item può arrivare al 40-45% per fortuna.
+   Il 50% sta ragionevolmente sopra il caso, mentre chi conosce il livello lo
+   supera senza difficoltà. */
 function fasciaLivello(pct){
   if (pct >= 70) return 'solido';
-  if (pct >= 40) return 'in corso';
+  if (pct >= 50) return 'in corso';
   return 'non raggiunto';
 }
+const SOGLIA_MINIMA = 50;   // usata anche dall'arresto anticipato
 
 /* Il livello dichiarato è l'ultimo SOLIDO (>=70%).
    Si scorrono i livelli in ordine e ci si ferma al primo non solido:
-     - se quel livello è "in corso" (40-69%)  →  "<livello> base"
-     - se è "non raggiunto" (<40%)            →  "<ultimo solido> solido"
+     - se quel livello è "in corso" (50-69%)  →  "<livello> base"
+     - se è "non raggiunto" (<50%)            →  "<ultimo solido> solido"
    Se nemmeno il livello più basso del test è raggiunto si nomina il livello
    precedente: sotto A1 c'è A0, quindi il verdetto è "A0". Se però il test
    parte da un livello alto (es. solo B1 in su), i livelli sotto non sono
@@ -487,7 +559,14 @@ function fasciaLivello(pct){
 const LVL_PRECEDENTE = { a:'A0', a2:'A1', b1:'A2', b2:'B1', c1:'B2' };
 
 function stimaLivello(perLvl){
-  const presenti = LVL_SEQ.filter(l => perLvl[l]);
+  /* Si valutano solo i livelli con almeno MIN_ITEM_LIVELLO domande: sotto quella
+     soglia la percentuale è dominata dal caso e darebbe verdetti inventati.
+     I livelli scartati restano visibili nel riepilogo, marcati come non valutati. */
+  const presenti = LVL_SEQ.filter(l => perLvl[l] && perLvl[l].tot >= MIN_ITEM_LIVELLO);
+  if (!presenti.length) {
+    return { presenti: [], ultimoSolido: null, bloccante: null,
+             verdetto: 'domande insufficienti per stimare il livello' };
+  }
   const pctDi = l => (perLvl[l].ok / perLvl[l].tot) * 100;
 
   let ultimoSolido = null, bloccante = null;
@@ -514,7 +593,13 @@ function stimaLivello(perLvl){
 }
 
 function submitTest(){
-  const items = document.querySelectorAll('.item');
+  /* Con l'arresto anticipato si contano solo le domande delle pagine mostrate:
+     quelle mai viste non sono "sbagliate", semplicemente non sono state poste. */
+  const items = Array.from(document.querySelectorAll('.item')).filter(it => {
+    const p = it.closest('.pagewrap');
+    return pagineViste.has(parseInt(p.dataset.page));
+  });
+  const nonPoste = document.querySelectorAll('.item').length - items.length;
   let ok=0, sbagliati=0, daVerif=0, nonRisp=0, tot=items.length;
 
   // raccogli per struttura, per livello, e la lista errori
@@ -526,7 +611,7 @@ function submitTest(){
   items.forEach(it => {
     const r = checkItem(it);
     const st = it.dataset.struct;
-    const lv = it.dataset.lvl;
+    const lv = it.dataset.slvl;
     if (!(st in perStruct)) { perStruct[st] = {ok:0, tot:0}; structOrder.push(st); }
     perStruct[st].tot++;
     if (!(lv in perLvl)) perLvl[lv] = {ok:0, tot:0};
@@ -555,14 +640,19 @@ function submitTest(){
 
   // ---- livelli: la stima ha senso solo se il test copre più di un livello ----
   const stima = stimaLivello(perLvl);
-  const multiLivello = stima.presenti.length > 1;
+  /* Di norma la stima ha senso solo se il test copre più livelli. Ma se il test
+     si è fermato per arresto anticipato, il livello va sempre dichiarato: il
+     fatto stesso di essersi fermato lì è il risultato. */
+  const livelliPresenti = LVL_SEQ.filter(l => perLvl[l]);
+  const multiLivello = livelliPresenti.length > 1 || !!arrestoAnticipato;
 
   let lvlRows = [], lvlVerdict = '';
   if (multiLivello) {
-    lvlRows = stima.presenti.map(l => {
+    lvlRows = LVL_SEQ.filter(l => perLvl[l]).map(l => {
       const p = perLvl[l];
       const pct = Math.round((p.ok / p.tot) * 100);
-      return LVL_TAG[l] + ': ' + p.ok + '/' + p.tot + ' (' + pct + '%) — ' + fasciaLivello(pct);
+      return LVL_TAG[l] + ': ' + p.ok + '/' + p.tot + ' (' + pct + '%) — ' +
+        (p.tot >= MIN_ITEM_LIVELLO ? fasciaLivello(pct) : 'domande insufficienti, non valutato');
     });
     lvlVerdict = stima.verdetto;
   }
@@ -573,14 +663,19 @@ function submitTest(){
 'Studente: ' + studentName + '\n' +
 'Data: ' + dateStr + '\n' +
 '────────────────────────\n' +
+(arrestoAnticipato
+  ? 'Test chiuso in anticipo: il livello ' + LVL_TAG[arrestoAnticipato] +
+    ' è sotto la soglia, i livelli successivi non sono stati proposti.\n' +
+    '  (' + nonPoste + ' domande non poste, escluse dal punteggio)\n'
+  : '') +
 'PUNTEGGIO: ' + score + '\n' +
 '  Corretti: ' + ok + '  ·  Sbagliati: ' + sbagliati +
 '  ·  Da verificare: ' + daVerif + '  ·  Non risposti: ' + nonRisp + '\n' +
 (daVerif ? '  (gli item "da verificare" sono a risposta aperta: controllali a mano)\n' : '') +
 (multiLivello
   ? '────────────────────────\n' +
-    'LIVELLO STIMATO: ' + lvlVerdict + '\n' +
-    '  (soglie: 70% = solido, 40-69% = in corso, sotto 40% = non raggiunto)\n' +
+    'LIVELLO GRAMMATICALE STIMATO: ' + lvlVerdict + '\n' +
+    '  (soglie: 70% = solido, 50-69% = in corso, sotto 50% = non raggiunto)\n' +
     'PER LIVELLO:\n' + lvlRows.map(r => '  ' + r).join('\n') + '\n'
   : '') +
 '────────────────────────\n' +
@@ -597,12 +692,16 @@ function submitTest(){
   document.getElementById('testWrap').style.display = 'none';
   document.getElementById('doneWrap').style.display = 'block';
   document.getElementById('doneName').textContent = studentName;
+  if (arrestoAnticipato) {
+    document.getElementById('doneSub').textContent =
+      'Il test si conclude qui: hai completato le sezioni adatte al tuo livello. Ecco il tuo risultato.';
+  }
 
   const bannerNum = document.getElementById('bannerNum');
   if (multiLivello) {
     bannerNum.textContent = lvlVerdict;
     bannerNum.classList.add('num--testo');
-    document.getElementById('bannerLbl').textContent = 'livello stimato';
+    document.getElementById('bannerLbl').textContent = 'livello grammaticale stimato';
   } else {
     bannerNum.textContent = score;
     bannerNum.classList.remove('num--testo');
@@ -614,7 +713,7 @@ function submitTest(){
     html +=
       '<div class="card"><p class="kicker">Risposte corrette</p>' +
       '<p style="font-family:var(--display);font-size:26px;margin:2px 0 14px;">' + score + '</p>' +
-      stima.presenti.map(l => {
+      LVL_SEQ.filter(l => perLvl[l]).map(l => {
         const p = perLvl[l];
         const pct = Math.round((p.ok / p.tot) * 100);
         return '<div class="summary-row"><span>' + LVL_TAG[l] + '</span><b>' + p.ok + '/' + p.tot + ' · ' + pct + '%</b></div>';
