@@ -24,7 +24,7 @@
     font-family:var(--sans);font-size:14.5px;padding:8px 14px;border-radius:8px;
     border:1.5px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;
   }
-  .opt:hover{background:#eaf4f2;border-color:var(--lvl,var(--ink));color:var(--ink);}
+  .opt:hover{background:#fbeee7;border-color:var(--lvl,var(--ink));color:var(--ink);}
   .opt.sel, .opt.sel:hover{background:var(--lvl,var(--ink));color:#fff;border-color:var(--lvl,var(--ink));}
 
   /* "individua l'errore": parole cliccabili */
@@ -49,7 +49,7 @@
     font-family:var(--sans);font-size:14.5px;padding:7px 13px;border-radius:8px;
     border:1.5px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;
   }
-  .tok:hover{background:#eaf4f2;border-color:var(--lvl,var(--ink));}
+  .tok:hover{background:#fbeee7;border-color:var(--lvl,var(--ink));}
   .tok--messa{background:var(--lvl,var(--ink));color:#fff;border-color:var(--lvl,var(--ink));}
   .tok--messa:hover{background:var(--lvl,var(--ink));color:#fff;}
   .mini-annulla{
@@ -416,6 +416,7 @@ function renderAllPages(){
         const refId = 'r' + (refCounter++);
         const itemBox = renderItem(itemData, ex.fmt, refId);
         itemBox.dataset.struct = struct.title;
+        itemBox.dataset.lez = (struct.lez || []).join(', ');
         itemBox.dataset.lvl = struct.lvl;
         itemBox.dataset.slvl = livelloStima(struct);
         itemBox.dataset.type = ex.type;
@@ -683,51 +684,87 @@ function fasciaLivello(pct){
 }
 const SOGLIA_MINIMA = 50;   // usata anche dall'arresto anticipato
 
-/* Il livello dichiarato è l'ultimo SOLIDO (>=70%).
-   Si scorrono i livelli in ordine e ci si ferma al primo non solido:
-     - se quel livello è "in corso" (50-69%)  →  "<livello> base"
-     - se è "non raggiunto" (<50%)            →  "<ultimo solido> solido"
-   Se nemmeno il livello più basso del test è raggiunto si nomina il livello
-   precedente: sotto A1 c'è A0, quindi il verdetto è "A0". Se però il test
-   parte da un livello alto (es. solo B1 in su), i livelli sotto non sono
-   stati verificati: in quel caso si scrive "A2 o inferiore", che è onesto.
-   Esempio: A2 solido + B1 al 50%  →  "B1 base"
-            A2 solido + B1 al 20%  →  "A2 solido"
-            A1 al 20% (test da A1) →  "A0"                            */
+/* ---------- stima del livello ----------
+   La regola precedente scorreva i livelli dal basso e si fermava al primo che
+   non arrivava al 70%. Funziona solo se il rendimento cala salendo di livello,
+   ma non è sempre così: uno studente può fare 67% su A1 e 83% su A2 (distrazione
+   sulle basi, o item A1 più insidiosi). In quel caso il verdetto «A1 base»
+   ignorava che i livelli superiori erano andati meglio.
+
+   Regola attuale:
+     1. si cerca il CROLLO, cioè il primo livello sotto il 50%: da lì in su
+        i risultati non si considerano, perché senza le fondamenta non regge
+        nulla di superiore;
+     2. fra i livelli prima del crollo, il verdetto è il PIÙ ALTO solido (>=70%);
+     3. se nessuno è solido, si prende il più alto «in corso» (50-69%) → «X base»;
+     4. se non c'è nemmeno quello, si nomina il livello precedente (A0).
+   Se un livello INFERIORE a quello dichiarato non è solido, si segnala come
+   lacuna: è informazione che serve per impostare le lezioni. */
 const LVL_PRECEDENTE = { a:'A0', a2:'A1', b1:'A2', b2:'B1', c1:'B2' };
 
 function stimaLivello(perLvl){
   /* Si valutano solo i livelli con almeno MIN_ITEM_LIVELLO domande: sotto quella
-     soglia la percentuale è dominata dal caso e darebbe verdetti inventati.
-     I livelli scartati restano visibili nel riepilogo, marcati come non valutati. */
+     soglia la percentuale è dominata dal caso e darebbe verdetti inventati. */
   const presenti = LVL_SEQ.filter(l => perLvl[l] && perLvl[l].tot >= MIN_ITEM_LIVELLO);
   if (!presenti.length) {
-    return { presenti: [], ultimoSolido: null, bloccante: null,
+    return { presenti: [], ultimoSolido: null, bloccante: null, lacune: [],
              verdetto: 'domande insufficienti per stimare il livello' };
   }
   const pctDi = l => (perLvl[l].ok / perLvl[l].tot) * 100;
 
-  let ultimoSolido = null, bloccante = null;
-  for (const l of presenti) {
-    if (fasciaLivello(pctDi(l)) === 'solido') ultimoSolido = l;
-    else { bloccante = l; break; }   // primo livello non solido: ci si ferma qui
+  // 1. il crollo: primo livello sotto il 50%
+  const iCrollo = presenti.findIndex(l => pctDi(l) < 50);
+  const validi = (iCrollo === -1) ? presenti : presenti.slice(0, iCrollo);
+  const bloccante = (iCrollo === -1) ? null : presenti[iCrollo];
+
+  // 2. il più alto solido fra quelli validi
+  let ultimoSolido = null;
+  validi.forEach(l => { if (fasciaLivello(pctDi(l)) === 'solido') ultimoSolido = l; });
+
+  // 3. altrimenti il più alto «in corso»
+  let piuAltoInCorso = null;
+  validi.forEach(l => { if (fasciaLivello(pctDi(l)) === 'in corso') piuAltoInCorso = l; });
+
+  // lacune: livelli non solidi sotto l'ultimo solido
+  const lacune = [];
+  if (ultimoSolido) {
+    const fino = presenti.indexOf(ultimoSolido);
+    for (let i = 0; i < fino; i++) {
+      if (fasciaLivello(pctDi(presenti[i])) !== 'solido') lacune.push(presenti[i]);
+    }
   }
 
+  /* Se il livello subito sopra l'ultimo solido è «in corso», il verdetto sale
+     a «<quello> base»: lo studente lo ha cominciato. Ma solo se sotto non ci
+     sono lacune — non si dichiara avviato un livello alto a chi ha buchi nelle
+     basi. */
   let verdetto;
-  if (bloccante && fasciaLivello(pctDi(bloccante)) === 'in corso') {
-    verdetto = LVL_TAG[bloccante] + ' base';
+  const iSolido = ultimoSolido ? presenti.indexOf(ultimoSolido) : -1;
+  const successivo = presenti[iSolido + 1];
+  const successivoInCorso = successivo && fasciaLivello(pctDi(successivo)) === 'in corso'
+                            && validi.indexOf(successivo) !== -1;
+
+  if (ultimoSolido && successivoInCorso && !lacune.length) {
+    verdetto = LVL_TAG[successivo] + ' base';
   } else if (ultimoSolido) {
     verdetto = LVL_TAG[ultimoSolido] + ' solido';
+  } else if (piuAltoInCorso) {
+    verdetto = LVL_TAG[piuAltoInCorso] + ' base';
   } else {
-    // nessun livello raggiunto: si nomina quello precedente al più basso testato
     const piuBasso = presenti[0];
     const prec = LVL_PRECEDENTE[piuBasso];
-    // se il test parte dal livello più basso in assoluto, il precedente è certo (A0);
-    // altrimenti i livelli inferiori non sono stati verificati
     verdetto = (piuBasso === LVL_SEQ[0]) ? prec : prec + ' o inferiore';
   }
+  /* Le lacune non si elencano per livello — il programma è a spirale e quelle
+     strutture tornano comunque più avanti — ma si segnalano con una parola:
+     «B1 con lacune» vuol dire B1 raggiunto, con qualche buco sotto. Il dettaglio
+     di quali strutture sia resta nella ripartizione per struttura.
+     Le tre etichette per livello sono quindi: base · con lacune · solido. */
+  if (lacune.length && / solido$/.test(verdetto)) {
+    verdetto = verdetto.replace(/ solido$/, ' con lacune');
+  }
 
-  return { presenti, ultimoSolido, bloccante, verdetto };
+  return { presenti, ultimoSolido, bloccante, lacune, verdetto };
 }
 
 function submitTest(){
@@ -750,7 +787,7 @@ function submitTest(){
     const r = checkItem(it);
     const st = it.dataset.struct;
     const lv = it.dataset.slvl;
-    if (!(st in perStruct)) { perStruct[st] = {ok:0, tot:0}; structOrder.push(st); }
+    if (!(st in perStruct)) { perStruct[st] = {ok:0, tot:0, lez: it.dataset.lez || ''}; structOrder.push(st); }
     perStruct[st].tot++;
     if (!(lv in perLvl)) perLvl[lv] = {ok:0, tot:0};
     perLvl[lv].tot++;
@@ -818,6 +855,7 @@ function submitTest(){
   : '') +
 '────────────────────────\n' +
 'PER STRUTTURA:\n' + structRows.map(r => '  ' + r).join('\n') + '\n' +
+
 '────────────────────────\n' +
 (errorLines.length
   ? 'ERRORI DA RIVEDERE:\n\n' + errorLines.join('\n\n')

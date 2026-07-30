@@ -18,7 +18,12 @@
   --bad-bg:#fbeceb;
   --bad-line:#c44536;
 
-  --neutro:#3f7d78;   /* colore unico durante il test, non rivela il livello */
+  /* Colore d'azione fuori dalla scala dei livelli (verde, turchese, blu, viola,
+     magenta): un terracotta caldo non si confonde con nessun livello, né nel
+     test né nell'elenco del builder. */
+  --azione:#c2542f;
+  --azione-scuro:#a3441f;
+  --neutro:#c2542f;   /* stesso colore nel test: non rivela il livello */
   --c-a:#2e9e6b;
   --c-a2:#10a3a8;
   --c-b1:#2f6cdf;
@@ -89,10 +94,10 @@ h1 em{font-style:italic;font-weight:400;}
 
 button, .btn{
   font-family:var(--sans);font-size:14.5px;font-weight:600;
-  background:var(--ink);color:#fff;border:none;border-radius:9px;
+  background:var(--azione);color:#fff;border:none;border-radius:9px;
   padding:12px 20px;cursor:pointer;
 }
-button:hover, .btn:hover{background:#1f7a80;}
+button:hover, .btn:hover{background:var(--azione-scuro);}
 button.ghost{background:transparent;color:var(--ink);border:1px solid var(--line);}
 button.ghost:hover{background:var(--line-soft);}
 button:disabled{opacity:.4;cursor:not-allowed;}
@@ -160,7 +165,7 @@ button:disabled{opacity:.4;cursor:not-allowed;}
   border-bottom:1px solid var(--line);margin-bottom:24px;
 }
 .progress__bar{height:5px;background:var(--line-soft);border-radius:3px;overflow:hidden;}
-.progress__fill{height:100%;background:var(--ink);transition:width .25s;}
+.progress__fill{height:100%;background:var(--azione);transition:width .25s;}
 .progress__label{font-size:12px;color:var(--ink-faint);margin-top:6px;}
 
 .namegate{text-align:center;padding:60px 0;}
@@ -174,9 +179,9 @@ button:disabled{opacity:.4;cursor:not-allowed;}
 
 .score-banner{
   text-align:center;padding:30px 20px;border-radius:14px;
-  background:linear-gradient(135deg,#2f8f7d 0%,#1f7a80 100%);
+  background:linear-gradient(135deg,#d0663c 0%,#a3441f 100%);
   color:#fff;margin-bottom:24px;
-  box-shadow:0 2px 10px rgba(31,122,128,.18);
+  box-shadow:0 2px 12px rgba(163,68,31,.22);
 }
 .score-banner .num{font-family:var(--display);font-size:44px;font-weight:600;letter-spacing:-.01em;}
 .score-banner .num--testo{font-size:30px;line-height:1.15;}
