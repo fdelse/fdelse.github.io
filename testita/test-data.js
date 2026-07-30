@@ -1,12 +1,11 @@
 /* TEST-DATA.JS — Banca esercizi del TEST
    Strutture mappate sulle lezioni dell indice standard (campo "lez").
-   Campo "stima": livello a cui la struttura pesa nel calcolo del livello,
-   se diverso da quello di raggruppamento (strutture introdotte presto e
-   controllate tardi, es. il congiuntivo).
+   Campo "stima": livello a cui la struttura pesa nel calcolo, se diverso da quello
+   di raggruppamento (strutture introdotte presto e controllate tardi).
    Campo "diag": struttura diagnostica, usata dal preset «Test di posizionamento».
-   A1: 18 · A2: 17 · C1: 5 — 10 item per esercizio, 3 esercizi per struttura.
-   Solo formati autocorreggibili: buco {q,options,answer} · errore {q,wrong,fix}.
-   Nessuna frase si ripete tra esercizi diversi della stessa struttura. */
+   A1: 18 · A2: 17 · B1: 25 · C1: 5 — 10 item per esercizio, 3 esercizi per struttura.
+   Formati: buco {q,options,answer} · errore {q,wrong,fix} · fill {q,a,no} · ordina {q,sol}.
+   Nessuna frase si ripete tra esercizi diversi, né tra strutture imparentate. */
 const TEST_STRUCTURES = [
   {
     "lvl": "a",
@@ -75,7 +74,7 @@ const TEST_STRUCTURES = [
             "answer": 1
           },
           {
-            "q": "Voi ___ in ritardo.",
+            "q": "Voi ___ simpatici.",
             "options": [
               "avete",
               "siete",
@@ -1894,7 +1893,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Io ___ la porta. (chiudere)",
+            "q": "Io ___ il cancello. (chiudere)",
             "options": [
               "chiudo",
               "chiude",
@@ -2101,7 +2100,7 @@ const TEST_STRUCTURES = [
         "instr": "Scegli la forma corretta: alcuni verbi prendono -ISC-.",
         "items": [
           {
-            "q": "Io ___ alle sette. (partire)",
+            "q": "Io ___ alle nove di sera. (partire)",
             "options": [
               "parto",
               "partisco",
@@ -4532,8 +4531,11 @@ const TEST_STRUCTURES = [
           },
           {
             "q": "Ho mai visto quel documentario.",
-            "wrong": "mai",
-            "fix": "non ho mai"
+            "wrong": [
+              "Ho",
+              "mai"
+            ],
+            "fix": "Non ho mai (serve la negazione)"
           },
           {
             "q": "Lei va mai in ufficio ogni giorno.",
@@ -6293,11 +6295,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Voi ___ dopo cena. (riposarsi)",
+            "q": "Voi ___ prima di uscire. (pettinarsi)",
             "options": [
-              "vi riposate",
-              "si riposate",
-              "vi riposa"
+              "vi pettinate",
+              "si pettinate",
+              "vi pettina"
             ],
             "answer": 0
           },
@@ -8268,11 +8270,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "È tardi. Devo andare.",
+            "q": "Ho finito. Posso uscire.",
             "options": [
-              "È tardi e devo andare.",
-              "È tardi ma devo andare.",
-              "È tardi o devo andare."
+              "Ho finito e posso uscire.",
+              "Ho finito ma posso uscire.",
+              "Ho finito o posso uscire."
             ],
             "answer": 0
           },
@@ -9093,11 +9095,4438 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Ha finito il lavoro in anticipo. (possibilità)",
+            "q": "Ha terminato il turno prima. (possibilità)",
             "options": [
-              "Può andare a casa.",
-              "Sa andare a casa.",
-              "È andare a casa."
+              "Può rientrare a casa.",
+              "Sa rientrare a casa.",
+              "È rientrare a casa."
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lvl": "b1",
+    "lez": [
+      "B1 L4"
+    ],
+    "title": "Il partitivo",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "buco",
+        "instr": "Scegli il partitivo corretto.",
+        "items": [
+          {
+            "q": "Compro ___ pane.",
+            "options": [
+              "del",
+              "dei",
+              "della"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Vorrei ___ acqua.",
+            "options": [
+              "dell'",
+              "del",
+              "delle"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ho comprato ___ mele.",
+            "options": [
+              "delle",
+              "dei",
+              "degli"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Servono ___ zucchero e ___ uova.",
+            "options": [
+              "dello / delle",
+              "del / dei",
+              "della / degli"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Mangio ___ formaggio.",
+            "options": [
+              "del",
+              "della",
+              "dei"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ci sono ___ studenti in aula.",
+            "options": [
+              "degli",
+              "dei",
+              "delle"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Prendo ___ latte.",
+            "options": [
+              "del",
+              "dello",
+              "della"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Metti ___ olio nell'insalata.",
+            "options": [
+              "dell'",
+              "del",
+              "dello"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ho visto ___ amici ieri.",
+            "options": [
+              "degli",
+              "dei",
+              "delle"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Vorrei ___ patate, per favore.",
+            "options": [
+              "delle",
+              "dei",
+              "degli"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca il partitivo sbagliato.",
+        "items": [
+          {
+            "q": "Compro dei pane fresco.",
+            "wrong": "dei",
+            "fix": "del"
+          },
+          {
+            "q": "Vorrei della acqua naturale.",
+            "wrong": "della",
+            "fix": "dell'"
+          },
+          {
+            "q": "Ho preso dei mele rosse.",
+            "wrong": "dei",
+            "fix": "delle"
+          },
+          {
+            "q": "Serve del zucchero di canna.",
+            "wrong": "del",
+            "fix": "dello"
+          },
+          {
+            "q": "Ci sono dei studenti stranieri.",
+            "wrong": "dei",
+            "fix": "degli"
+          },
+          {
+            "q": "Metti del olio d'oliva.",
+            "wrong": "del",
+            "fix": "dell'"
+          },
+          {
+            "q": "Ho comprato della patate.",
+            "wrong": "della",
+            "fix": "delle"
+          },
+          {
+            "q": "Prendo della latte fresco.",
+            "wrong": "della",
+            "fix": "del"
+          },
+          {
+            "q": "Vedo dei amiche in piazza.",
+            "wrong": "dei",
+            "fix": "delle"
+          },
+          {
+            "q": "Aggiungi dei sale.",
+            "wrong": "dei",
+            "fix": "del"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Sostituisci «un po' di» con il partitivo.",
+        "items": [
+          {
+            "q": "Vorrei un po' di vino. →",
+            "options": [
+              "Vorrei del vino.",
+              "Vorrei dei vino.",
+              "Vorrei della vino."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Prendo un po' di insalata. →",
+            "options": [
+              "Prendo dell'insalata.",
+              "Prendo del insalata.",
+              "Prendo dello insalata."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Serve un po' di burro. →",
+            "options": [
+              "Serve del burro.",
+              "Serve dello burro.",
+              "Serve della burro."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Compro un po' di frutta. →",
+            "options": [
+              "Compro della frutta.",
+              "Compro del frutta.",
+              "Compro dei frutta."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Aggiungi un po' di spezie. →",
+            "options": [
+              "Aggiungi delle spezie.",
+              "Aggiungi dei spezie.",
+              "Aggiungi degli spezie."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Voglio un po' di zucchero. →",
+            "options": [
+              "Voglio dello zucchero.",
+              "Voglio del zucchero.",
+              "Voglio della zucchero."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Metti un po' di erbe. →",
+            "options": [
+              "Metti delle erbe.",
+              "Metti dei erbe.",
+              "Metti degli erbe."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Bevo un po' di succo. →",
+            "options": [
+              "Bevo del succo.",
+              "Bevo dello succo.",
+              "Bevo dei succo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ho un po' di dubbi. →",
+            "options": [
+              "Ho dei dubbi.",
+              "Ho delle dubbi.",
+              "Ho degli dubbi."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Serve un po' di aceto. →",
+            "options": [
+              "Serve dell'aceto.",
+              "Serve del aceto.",
+              "Serve dello aceto."
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lvl": "b1",
+    "stima": "a2",
+    "lez": [
+      "B1 L4"
+    ],
+    "title": "L'infinito istruttivo",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "fill",
+        "instr": "Scrivi l'infinito del verbo indicato, come nelle ricette.",
+        "items": [
+          {
+            "q": "___ le uova in una ciotola. (sbattere)",
+            "a": "Sbattere",
+            "no": [
+              "Sbatti",
+              "Sbatte",
+              "Sbattete"
+            ]
+          },
+          {
+            "q": "___ la farina poco a poco. (aggiungere)",
+            "a": "Aggiungere",
+            "no": [
+              "Aggiungi",
+              "Aggiunge",
+              "Aggiungete"
+            ]
+          },
+          {
+            "q": "___ il tutto per dieci minuti. (mescolare)",
+            "a": "Mescolare",
+            "no": [
+              "Mescola",
+              "Mescolate",
+              "Mescoli"
+            ]
+          },
+          {
+            "q": "___ in forno a 180 gradi. (cuocere)",
+            "a": "Cuocere",
+            "no": [
+              "Cuoci",
+              "Cuocete",
+              "Cuoce"
+            ]
+          },
+          {
+            "q": "___ le verdure a pezzetti. (tagliare)",
+            "a": "Tagliare",
+            "no": [
+              "Taglia",
+              "Tagliate",
+              "Tagli"
+            ]
+          },
+          {
+            "q": "___ il sale a piacere. (unire)",
+            "a": "Unire",
+            "no": [
+              "Unisci",
+              "Unite",
+              "Unisce"
+            ]
+          },
+          {
+            "q": "___ riposare l'impasto. (lasciare)",
+            "a": "Lasciare",
+            "no": [
+              "Lascia",
+              "Lasciate",
+              "Lascio"
+            ]
+          },
+          {
+            "q": "___ con olio e limone. (condire)",
+            "a": "Condire",
+            "no": [
+              "Condisci",
+              "Condite",
+              "Condisce"
+            ]
+          },
+          {
+            "q": "___ a fuoco lento. (scaldare)",
+            "a": "Scaldare",
+            "no": [
+              "Scalda",
+              "Scaldate",
+              "Scaldi"
+            ]
+          },
+          {
+            "q": "___ prima di servire. (raffreddare)",
+            "a": "Raffreddare",
+            "no": [
+              "Raffredda",
+              "Raffreddate",
+              "Raffreddi"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Nelle istruzioni scritte si usa l'infinito: clicca la forma sbagliata.",
+        "items": [
+          {
+            "q": "Versa il latte nella pentola.",
+            "wrong": "Versa",
+            "fix": "Versare"
+          },
+          {
+            "q": "Fate bollire l'acqua salata.",
+            "wrong": "Fate",
+            "fix": "Far"
+          },
+          {
+            "q": "Sbucci le patate con cura.",
+            "wrong": "Sbucci",
+            "fix": "Sbucciare"
+          },
+          {
+            "q": "Mettete il composto in frigo.",
+            "wrong": "Mettete",
+            "fix": "Mettere"
+          },
+          {
+            "q": "Gira lentamente con il cucchiaio.",
+            "wrong": "Gira",
+            "fix": "Girare"
+          },
+          {
+            "q": "Cospargete di zucchero a velo.",
+            "wrong": "Cospargete",
+            "fix": "Cospargere"
+          },
+          {
+            "q": "Friggi in olio caldo.",
+            "wrong": "Friggi",
+            "fix": "Friggere"
+          },
+          {
+            "q": "Servite ben caldo.",
+            "wrong": "Servite",
+            "fix": "Servire"
+          },
+          {
+            "q": "Copri con un panno umido.",
+            "wrong": "Copri",
+            "fix": "Coprire"
+          },
+          {
+            "q": "Frullate fino a ottenere una crema.",
+            "wrong": "Frullate",
+            "fix": "Frullare"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Trasforma l'istruzione parlata in istruzione scritta.",
+        "items": [
+          {
+            "q": "Metti la pasta nell'acqua. →",
+            "options": [
+              "Mettere la pasta nell'acqua.",
+              "Metta la pasta nell'acqua.",
+              "Mettendo la pasta nell'acqua."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Aggiungi il sale. →",
+            "options": [
+              "Aggiungere il sale.",
+              "Aggiunga il sale.",
+              "Aggiungendo il sale."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Fai cuocere per otto minuti. →",
+            "options": [
+              "Far cuocere per otto minuti.",
+              "Faccia cuocere per otto minuti.",
+              "Facendo cuocere per otto minuti."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Scola la pasta. →",
+            "options": [
+              "Scolare la pasta.",
+              "Scoli la pasta.",
+              "Scolando la pasta."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Trita il prezzemolo. →",
+            "options": [
+              "Tritare il prezzemolo.",
+              "Triti il prezzemolo.",
+              "Tritando il prezzemolo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Sciogli il burro. →",
+            "options": [
+              "Sciogliere il burro.",
+              "Sciolga il burro.",
+              "Sciogliendo il burro."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Monta la panna. →",
+            "options": [
+              "Montare la panna.",
+              "Monti la panna.",
+              "Montando la panna."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Spegni il fuoco. →",
+            "options": [
+              "Spegnere il fuoco.",
+              "Spenga il fuoco.",
+              "Spegnendo il fuoco."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Distribuisci il ripieno. →",
+            "options": [
+              "Distribuire il ripieno.",
+              "Distribuisca il ripieno.",
+              "Distribuendo il ripieno."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Inforna per venti minuti. →",
+            "options": [
+              "Infornare per venti minuti.",
+              "Inforni per venti minuti.",
+              "Infornando per venti minuti."
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lvl": "b1",
+    "lez": [
+      "B1 L5"
+    ],
+    "title": "I participi passati irregolari",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "fill",
+        "instr": "Scrivi il participio passato del verbo tra parentesi.",
+        "items": [
+          {
+            "q": "Ho ___ una mail al direttore. (scrivere)",
+            "a": "scritto",
+            "no": [
+              "scrivuto",
+              "scriveto",
+              "scrivato"
+            ]
+          },
+          {
+            "q": "Abbiamo ___ un film ieri sera. (vedere)",
+            "a": "visto",
+            "no": [
+              "vedato",
+              "veduto",
+              "vedito"
+            ]
+          },
+          {
+            "q": "Hai ___ il pacco? (aprire)",
+            "a": "aperto",
+            "no": [
+              "aprito",
+              "apruto",
+              "aprato"
+            ]
+          },
+          {
+            "q": "Hanno ___ la porta a chiave. (chiudere)",
+            "a": "chiuso",
+            "no": [
+              "chiudito",
+              "chiuduto",
+              "chiudato"
+            ]
+          },
+          {
+            "q": "Ho ___ una decisione difficile. (prendere)",
+            "a": "preso",
+            "no": [
+              "prenduto",
+              "prendito",
+              "prendato"
+            ]
+          },
+          {
+            "q": "Abbiamo ___ molte cose. (dire)",
+            "a": "detto",
+            "no": [
+              "dicuto",
+              "dito",
+              "diciuto"
+            ]
+          },
+          {
+            "q": "Ha ___ il compito in tempo. (fare)",
+            "a": "fatto",
+            "no": [
+              "facuto",
+              "fato",
+              "facciuto"
+            ]
+          },
+          {
+            "q": "Hanno ___ le chiavi in ufficio. (perdere)",
+            "a": "perso",
+            "no": [
+              "perdito",
+              "perdato",
+              "perduto2"
+            ]
+          },
+          {
+            "q": "Ho ___ un caffè al bar. (bere)",
+            "a": "bevuto",
+            "no": [
+              "beuto",
+              "bevito",
+              "bevato"
+            ]
+          },
+          {
+            "q": "Abbiamo ___ tardi ieri. (rimanere)",
+            "a": "rimasto",
+            "no": [
+              "rimanuto",
+              "rimanito",
+              "rimanato"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca il participio sbagliato.",
+        "items": [
+          {
+            "q": "Ho scrivuto una lettera lunga.",
+            "wrong": "scrivuto",
+            "fix": "scritto"
+          },
+          {
+            "q": "Abbiamo vedato un bel film.",
+            "wrong": "vedato",
+            "fix": "visto"
+          },
+          {
+            "q": "Hai aprito la finestra?",
+            "wrong": "aprito",
+            "fix": "aperto"
+          },
+          {
+            "q": "Hanno chiudito il negozio.",
+            "wrong": "chiudito",
+            "fix": "chiuso"
+          },
+          {
+            "q": "Ho prenduto l'autobus.",
+            "wrong": "prenduto",
+            "fix": "preso"
+          },
+          {
+            "q": "Abbiamo dicuto la verità.",
+            "wrong": "dicuto",
+            "fix": "detto"
+          },
+          {
+            "q": "Ha facuto un errore.",
+            "wrong": "facuto",
+            "fix": "fatto"
+          },
+          {
+            "q": "Hanno perdito il treno.",
+            "wrong": "perdito",
+            "fix": "perso"
+          },
+          {
+            "q": "Ho beuto troppo caffè.",
+            "wrong": "beuto",
+            "fix": "bevuto"
+          },
+          {
+            "q": "Siamo rimanuti a casa.",
+            "wrong": "rimanuti",
+            "fix": "rimasti"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Metti al passato prossimo: scegli la forma corretta.",
+        "items": [
+          {
+            "q": "Metto la giacca. →",
+            "options": [
+              "Ho messo la giacca.",
+              "Ho mettuto la giacca.",
+              "Sono messo la giacca."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Leggo il giornale. →",
+            "options": [
+              "Ho letto il giornale.",
+              "Ho leggiuto il giornale.",
+              "Sono letto il giornale."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Rispondo alla mail. →",
+            "options": [
+              "Ho risposto alla mail.",
+              "Ho rispondito alla mail.",
+              "Sono risposto alla mail."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Scelgo il colore. →",
+            "options": [
+              "Ho scelto il colore.",
+              "Ho scegliuto il colore.",
+              "Sono scelto il colore."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Vinco la partita. →",
+            "options": [
+              "Ho vinto la partita.",
+              "Ho vinciuto la partita.",
+              "Sono vinto la partita."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Offro il caffè. →",
+            "options": [
+              "Ho offerto il caffè.",
+              "Ho offrito il caffè.",
+              "Sono offerto il caffè."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Spengo la luce. →",
+            "options": [
+              "Ho spento la luce.",
+              "Ho spegnuto la luce.",
+              "Sono spento la luce."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Traduco il testo. →",
+            "options": [
+              "Ho tradotto il testo.",
+              "Ho traducuto il testo.",
+              "Sono tradotto il testo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Rompo il bicchiere. →",
+            "options": [
+              "Ho rotto il bicchiere.",
+              "Ho romputo il bicchiere.",
+              "Sono rotto il bicchiere."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Chiedo un favore. →",
+            "options": [
+              "Ho chiesto un favore.",
+              "Ho chieduto un favore.",
+              "Sono chiesto un favore."
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lvl": "b1",
+    "lez": [
+      "B1 L7",
+      "B1 L11",
+      "B1 L12"
+    ],
+    "title": "Il futuro semplice",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "fill",
+        "instr": "Scrivi il futuro semplice del verbo tra parentesi.",
+        "items": [
+          {
+            "q": "Domani ___ a Milano. (io – andare)",
+            "a": "andrò",
+            "no": [
+              "andarò",
+              "anderò",
+              "andrò io"
+            ]
+          },
+          {
+            "q": "L'anno prossimo ___ una casa. (noi – comprare)",
+            "a": "compreremo",
+            "no": [
+              "compriremo",
+              "comprearemo",
+              "compraremo"
+            ]
+          },
+          {
+            "q": "___ tu alla riunione? (venire)",
+            "a": "verrai",
+            "no": [
+              "venirai",
+              "vieni",
+              "verai"
+            ]
+          },
+          {
+            "q": "Loro ___ tutto in tempo. (fare)",
+            "a": "faranno",
+            "no": [
+              "fareranno",
+              "facaranno",
+              "farano"
+            ]
+          },
+          {
+            "q": "Lei ___ la risposta domani. (sapere)",
+            "a": "saprà",
+            "no": [
+              "saperà",
+              "sapirà",
+              "saprai"
+            ]
+          },
+          {
+            "q": "Voi ___ contenti del risultato. (essere)",
+            "a": "sarete",
+            "no": [
+              "essarete",
+              "serete",
+              "sareste"
+            ]
+          },
+          {
+            "q": "Io ___ più tempo libero. (avere)",
+            "a": "avrò",
+            "no": [
+              "averò",
+              "avrei",
+              "avrà"
+            ]
+          },
+          {
+            "q": "Noi ___ presto la decisione. (prendere)",
+            "a": "prenderemo",
+            "no": [
+              "prendaremo",
+              "prendiremo",
+              "prendremo"
+            ]
+          },
+          {
+            "q": "Tu ___ molto in questo lavoro. (imparare)",
+            "a": "imparerai",
+            "no": [
+              "imparirai",
+              "impararai",
+              "imparerà"
+            ]
+          },
+          {
+            "q": "Loro ___ a casa alle otto. (rimanere)",
+            "a": "rimarranno",
+            "no": [
+              "rimaneranno",
+              "rimanaranno",
+              "rimarano"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca il futuro coniugato in modo sbagliato.",
+        "items": [
+          {
+            "q": "Domani anderò in ufficio.",
+            "wrong": "anderò",
+            "fix": "andrò"
+          },
+          {
+            "q": "Noi compraremo il biglietto.",
+            "wrong": "compraremo",
+            "fix": "compreremo"
+          },
+          {
+            "q": "Tu venirai con noi?",
+            "wrong": "venirai",
+            "fix": "verrai"
+          },
+          {
+            "q": "Loro fareranno il possibile.",
+            "wrong": "fareranno",
+            "fix": "faranno"
+          },
+          {
+            "q": "Lei saperà la verità.",
+            "wrong": "saperà",
+            "fix": "saprà"
+          },
+          {
+            "q": "Voi essarete stanchi.",
+            "wrong": "essarete",
+            "fix": "sarete"
+          },
+          {
+            "q": "Io averò una risposta domani.",
+            "wrong": "averò",
+            "fix": "avrò"
+          },
+          {
+            "q": "Noi vedaremo cosa succede.",
+            "wrong": "vedaremo",
+            "fix": "vedremo"
+          },
+          {
+            "q": "Loro rimaneranno qui.",
+            "wrong": "rimaneranno",
+            "fix": "rimarranno"
+          },
+          {
+            "q": "Tu potirai partire domani.",
+            "wrong": "potirai",
+            "fix": "potrai"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Trasforma il presente in futuro semplice.",
+        "items": [
+          {
+            "q": "Parto domani. →",
+            "options": [
+              "Partirò domani.",
+              "Parterò domani.",
+              "Partarò domani."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Finiamo il lavoro. →",
+            "options": [
+              "Finiremo il lavoro.",
+              "Finiramo il lavoro.",
+              "Finaremo il lavoro."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Vai in vacanza? →",
+            "options": [
+              "Andrai in vacanza?",
+              "Anderai in vacanza?",
+              "Vaderai in vacanza?"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Beviamo un caffè. →",
+            "options": [
+              "Berremo un caffè.",
+              "Beveremo un caffè.",
+              "Bevaremo un caffè."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Vengono alle otto. →",
+            "options": [
+              "Verranno alle otto.",
+              "Veniranno alle otto.",
+              "Venaranno alle otto."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Devo studiare. →",
+            "options": [
+              "Dovrò studiare.",
+              "Doverò studiare.",
+              "Devrò studiare."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Puoi aiutarmi? →",
+            "options": [
+              "Potrai aiutarmi?",
+              "Poterai aiutarmi?",
+              "Puoterai aiutarmi?"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Vogliamo partire. →",
+            "options": [
+              "Vorremo partire.",
+              "Voleremo partire.",
+              "Volaremo partire."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Sta bene. →",
+            "options": [
+              "Starà bene.",
+              "Staverà bene.",
+              "Sterà bene."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Diamo una mano. →",
+            "options": [
+              "Daremo una mano.",
+              "Diaremo una mano.",
+              "Daramo una mano."
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lvl": "b1",
+    "lez": [
+      "B1 L7",
+      "B1 L22"
+    ],
+    "title": "Volerci e metterci",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "buco",
+        "instr": "Scegli tra «volerci» (tempo necessario) e «metterci» (tempo impiegato da qualcuno).",
+        "items": [
+          {
+            "q": "___ due ore per arrivare a Roma.",
+            "options": [
+              "Ci vogliono",
+              "Ci mettono",
+              "Ci vuole"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Io ___ venti minuti per prepararmi.",
+            "options": [
+              "ci metto",
+              "ci voglio",
+              "ci mette"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "___ molta pazienza in questo lavoro.",
+            "options": [
+              "Ci vuole",
+              "Ci mette",
+              "Ci vogliono"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Quanto tempo ___ per finire? (tu)",
+            "options": [
+              "ci metti",
+              "ci vuoi",
+              "ci vuole"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "___ tre uova per questa torta.",
+            "options": [
+              "Ci vogliono",
+              "Ci mettono",
+              "Ci vuole"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Noi ___ un'ora ad arrivare.",
+            "options": [
+              "ci mettiamo",
+              "ci vogliamo",
+              "ci mette"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "___ tanto coraggio per dirlo.",
+            "options": [
+              "Ci vuole",
+              "Ci mette",
+              "Ci vogliono"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Loro ___ sempre troppo tempo.",
+            "options": [
+              "ci mettono",
+              "ci vogliono",
+              "ci mette"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "___ dieci minuti a piedi da qui.",
+            "options": [
+              "Ci vogliono",
+              "Ci mettono",
+              "Ci vuole"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Lei ___ poco a capire le cose.",
+            "options": [
+              "ci mette",
+              "ci vuole",
+              "ci mettono"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca la parola sbagliata.",
+        "items": [
+          {
+            "q": "Ci vuole due ore per andare a Napoli.",
+            "wrong": "vuole",
+            "fix": "vogliono"
+          },
+          {
+            "q": "Io ci voglio mezz'ora per vestirmi.",
+            "wrong": "voglio",
+            "fix": "metto"
+          },
+          {
+            "q": "Ci vogliono molta pazienza qui.",
+            "wrong": "vogliono",
+            "fix": "vuole"
+          },
+          {
+            "q": "Quanto ci vuoi per finire il compito?",
+            "wrong": "vuoi",
+            "fix": "metti"
+          },
+          {
+            "q": "Ci mette tre ingredienti per la ricetta.",
+            "wrong": "mette",
+            "fix": "vogliono"
+          },
+          {
+            "q": "Noi ci vogliamo due giorni a finire.",
+            "wrong": "vogliamo",
+            "fix": "mettiamo"
+          },
+          {
+            "q": "Ci vogliono tanto coraggio.",
+            "wrong": "vogliono",
+            "fix": "vuole"
+          },
+          {
+            "q": "Loro ci vogliono un secolo a rispondere.",
+            "wrong": "vogliono",
+            "fix": "mettono"
+          },
+          {
+            "q": "Ci vuole dieci minuti a piedi.",
+            "wrong": "vuole",
+            "fix": "vogliono"
+          },
+          {
+            "q": "Lei ci vuole poco a capire.",
+            "wrong": "vuole",
+            "fix": "mette"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Riscrivi con volerci o metterci.",
+        "items": [
+          {
+            "q": "Sono necessarie due ore. →",
+            "options": [
+              "Ci vogliono due ore.",
+              "Ci mettono due ore.",
+              "Ci vuole due ore."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Impiego venti minuti. →",
+            "options": [
+              "Ci metto venti minuti.",
+              "Ci voglio venti minuti.",
+              "Mi mette venti minuti."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "È necessaria molta calma. →",
+            "options": [
+              "Ci vuole molta calma.",
+              "Ci vogliono molta calma.",
+              "Ci mette molta calma."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Impieghiamo un'ora. →",
+            "options": [
+              "Ci mettiamo un'ora.",
+              "Ci vogliamo un'ora.",
+              "Ci mette un'ora."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Sono necessari tre giorni. →",
+            "options": [
+              "Ci vogliono tre giorni.",
+              "Ci mettono tre giorni.",
+              "Ci vuole tre giorni."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Impieghi troppo tempo. →",
+            "options": [
+              "Ci metti troppo tempo.",
+              "Ci vuoi troppo tempo.",
+              "Ti metti troppo tempo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "È necessario un documento. →",
+            "options": [
+              "Ci vuole un documento.",
+              "Ci vogliono un documento.",
+              "Ci mette un documento."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Impiegano due settimane. →",
+            "options": [
+              "Ci mettono due settimane.",
+              "Ci vogliono loro due settimane.",
+              "Ci mette due settimane."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Sono necessarie molte prove. →",
+            "options": [
+              "Ci vogliono molte prove.",
+              "Ci vuole molte prove.",
+              "Ci mettono molte prove."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Impiego poco a decidere. →",
+            "options": [
+              "Ci metto poco a decidere.",
+              "Ci voglio poco a decidere.",
+              "Mi metto poco a decidere."
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lvl": "b1",
+    "lez": [
+      "B1 L8",
+      "B1 L11"
+    ],
+    "title": "L'imperfetto",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "fill",
+        "instr": "Scrivi l'imperfetto del verbo tra parentesi.",
+        "items": [
+          {
+            "q": "Da bambino ___ molto. (io – giocare)",
+            "a": "giocavo",
+            "no": [
+              "giocai",
+              "giocavi",
+              "giocavano"
+            ]
+          },
+          {
+            "q": "Mia nonna ___ ogni domenica. (cucinare)",
+            "a": "cucinava",
+            "no": [
+              "cucinò",
+              "cucinavo",
+              "cucinavano"
+            ]
+          },
+          {
+            "q": "Noi ___ in campagna d'estate. (andare)",
+            "a": "andavamo",
+            "no": [
+              "andammo",
+              "andavate",
+              "andavo"
+            ]
+          },
+          {
+            "q": "Voi ___ sempre in ritardo. (arrivare)",
+            "a": "arrivavate",
+            "no": [
+              "arrivaste",
+              "arrivavamo",
+              "arrivavano"
+            ]
+          },
+          {
+            "q": "Loro ___ vicino al mare. (vivere)",
+            "a": "vivevano",
+            "no": [
+              "vissero",
+              "vivevamo",
+              "viveva"
+            ]
+          },
+          {
+            "q": "Tu ___ molto da piccolo. (leggere)",
+            "a": "leggevi",
+            "no": [
+              "leggesti",
+              "leggeva",
+              "leggevo"
+            ]
+          },
+          {
+            "q": "Lui si ___ ogni mattina alle sei. (svegliarsi)",
+            "a": "svegliava",
+            "no": [
+              "svegliò",
+              "svegliavo",
+              "svegliavano"
+            ]
+          },
+          {
+            "q": "Io ___ i compiti dopo cena. (fare)",
+            "a": "facevo",
+            "no": [
+              "feci",
+              "faceva",
+              "facevano"
+            ]
+          },
+          {
+            "q": "Noi ___ tanti amici allora. (avere)",
+            "a": "avevamo",
+            "no": [
+              "avemmo",
+              "avevate",
+              "aveva"
+            ]
+          },
+          {
+            "q": "Lei ___ una bambina timida. (essere)",
+            "a": "era",
+            "no": [
+              "fu",
+              "ero",
+              "erano"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca il verbo coniugato in modo sbagliato.",
+        "items": [
+          {
+            "q": "Da piccolo io giocavamo in cortile.",
+            "wrong": "giocavamo",
+            "fix": "giocavo"
+          },
+          {
+            "q": "Mia zia cucinavano ogni festa.",
+            "wrong": "cucinavano",
+            "fix": "cucinava"
+          },
+          {
+            "q": "Noi andavate al mare ogni anno.",
+            "wrong": "andavate",
+            "fix": "andavamo"
+          },
+          {
+            "q": "Voi arrivavamo sempre tardi.",
+            "wrong": "arrivavamo",
+            "fix": "arrivavate"
+          },
+          {
+            "q": "Loro viveva in centro.",
+            "wrong": "viveva",
+            "fix": "vivevano"
+          },
+          {
+            "q": "Tu leggeva molti libri.",
+            "wrong": "leggeva",
+            "fix": "leggevi"
+          },
+          {
+            "q": "Io facevi sempre gli stessi errori.",
+            "wrong": "facevi",
+            "fix": "facevo"
+          },
+          {
+            "q": "Noi avevate una casa grande.",
+            "wrong": "avevate",
+            "fix": "avevamo"
+          },
+          {
+            "q": "Lei erano molto simpatica.",
+            "wrong": "erano",
+            "fix": "era"
+          },
+          {
+            "q": "Voi bevevo troppo caffè.",
+            "wrong": "bevevo",
+            "fix": "bevevate"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Trasforma dal presente all'imperfetto.",
+        "items": [
+          {
+            "q": "Abito in centro. →",
+            "options": [
+              "Abitavo in centro.",
+              "Abitai in centro.",
+              "Abitavi in centro."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Facciamo colazione al bar. →",
+            "options": [
+              "Facevamo colazione al bar.",
+              "Facemmo colazione al bar.",
+              "Facevate colazione al bar."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Bevi molto tè? →",
+            "options": [
+              "Bevevi molto tè?",
+              "Bevesti molto tè?",
+              "Beveva molto tè?"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Dicono sempre di sì. →",
+            "options": [
+              "Dicevano sempre di sì.",
+              "Dissero sempre di sì.",
+              "Diceva sempre di sì."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Sono contento. →",
+            "options": [
+              "Ero contento.",
+              "Fui contento.",
+              "Era contento."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Andate a scuola a piedi. →",
+            "options": [
+              "Andavate a scuola a piedi.",
+              "Andaste a scuola a piedi.",
+              "Andavamo a scuola a piedi."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ha molti amici. →",
+            "options": [
+              "Aveva molti amici.",
+              "Ebbe molti amici.",
+              "Avevo molti amici."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Traduciamo dal francese. →",
+            "options": [
+              "Traducevamo dal francese.",
+              "Traducemmo dal francese.",
+              "Traducevate dal francese."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Stai bene? →",
+            "options": [
+              "Stavi bene?",
+              "Stesti bene?",
+              "Stava bene?"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Escono ogni sera. →",
+            "options": [
+              "Uscivano ogni sera.",
+              "Uscirono ogni sera.",
+              "Usciva ogni sera."
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lvl": "b1",
+    "lez": [
+      "B1 L8",
+      "B1 L12",
+      "B1 L27"
+    ],
+    "title": "Imperfetto o passato prossimo?",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "buco",
+        "instr": "Scegli il tempo adatto: descrizione e abitudine → imperfetto; fatto concluso → passato prossimo.",
+        "items": [
+          {
+            "q": "Mentre ___ , è suonato il telefono.",
+            "options": [
+              "dormivo",
+              "ho dormito",
+              "dormii"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ieri ___ un bel film al cinema.",
+            "options": [
+              "ho visto",
+              "vedevo",
+              "vedrò"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Da bambino ___ sempre in bicicletta.",
+            "options": [
+              "andavo",
+              "sono andato",
+              "andrò"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "L'anno scorso ___ in Spagna per un mese.",
+            "options": [
+              "sono stato",
+              "ero",
+              "sarò"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "___ le otto quando è arrivato.",
+            "options": [
+              "Erano",
+              "Sono state",
+              "Furono"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Stamattina ___ presto per il treno.",
+            "options": [
+              "mi sono alzato",
+              "mi alzavo",
+              "mi alzerò"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Quando ero piccolo ___ i cartoni.",
+            "options": [
+              "guardavo",
+              "ho guardato",
+              "guarderò"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ieri sera ___ tre volte ma non rispondevi.",
+            "options": [
+              "ho chiamato",
+              "chiamavo",
+              "chiamerò"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "La casa ___ grande e luminosa.",
+            "options": [
+              "era",
+              "è stata",
+              "fu"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Improvvisamente ___ a piovere.",
+            "options": [
+              "ha cominciato",
+              "cominciava",
+              "comincerà"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca il verbo con il tempo sbagliato.",
+        "items": [
+          {
+            "q": "Mentre ho camminato, ho incontrato Luca.",
+            "wrong": "camminato",
+            "fix": "camminavo"
+          },
+          {
+            "q": "Ieri vedevo un film bellissimo.",
+            "wrong": "vedevo",
+            "fix": "ho visto"
+          },
+          {
+            "q": "Da bambina sono andata sempre al parco.",
+            "wrong": "andata",
+            "fix": "andavo"
+          },
+          {
+            "q": "L'anno scorso ero in Francia due settimane.",
+            "wrong": "ero",
+            "fix": "sono stato"
+          },
+          {
+            "q": "Sono state le nove quando è uscito.",
+            "wrong": "state",
+            "fix": "Erano"
+          },
+          {
+            "q": "Stamattina mi alzavo alle sei in punto.",
+            "wrong": "alzavo",
+            "fix": "sono alzato"
+          },
+          {
+            "q": "Quando ero piccolo ho giocato ogni giorno.",
+            "wrong": "giocato",
+            "fix": "giocavo"
+          },
+          {
+            "q": "Ieri sera ti chiamavo tre volte.",
+            "wrong": "chiamavo",
+            "fix": "ho chiamato"
+          },
+          {
+            "q": "La stanza è stata piccola e buia.",
+            "wrong": "stata",
+            "fix": "era"
+          },
+          {
+            "q": "Improvvisamente nevicava molto forte.",
+            "wrong": "nevicava",
+            "fix": "ha cominciato a nevicare"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Completa il racconto scegliendo la coppia di tempi giusta.",
+        "items": [
+          {
+            "q": "(essere) tardi quando (arrivare, noi).",
+            "options": [
+              "Era tardi quando siamo arrivati.",
+              "È stato tardi quando arrivavamo.",
+              "Fu tardi quando arrivavamo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Mentre (leggere, io), (bussare) qualcuno.",
+            "options": [
+              "Mentre leggevo, ha bussato qualcuno.",
+              "Mentre ho letto, bussava qualcuno.",
+              "Mentre leggevo, bussava qualcuno."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(fare) freddo, così (restare, noi) a casa.",
+            "options": [
+              "Faceva freddo, così siamo restati a casa.",
+              "Ha fatto freddo, così restavamo a casa.",
+              "Faceva freddo, così restavamo a casa."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(conoscere, io) Anna mentre (lavorare) a Roma.",
+            "options": [
+              "Ho conosciuto Anna mentre lavoravo a Roma.",
+              "Conoscevo Anna mentre ho lavorato a Roma.",
+              "Ho conosciuto Anna mentre ho lavorato a Roma."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(essere) stanchi, perciò (andare, noi) a dormire.",
+            "options": [
+              "Eravamo stanchi, perciò siamo andati a dormire.",
+              "Siamo stati stanchi, perciò andavamo a dormire.",
+              "Eravamo stanchi, perciò andavamo a dormire."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ogni estate (andare, noi) al lago.",
+            "options": [
+              "Ogni estate andavamo al lago.",
+              "Ogni estate siamo andati al lago.",
+              "Ogni estate andammo al lago."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(vivere, lei) a Torino per tre anni.",
+            "options": [
+              "Ha vissuto a Torino per tre anni.",
+              "Viveva a Torino per tre anni.",
+              "Vivrà a Torino per tre anni."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Mentre (cucinare, lei), (bruciarsi) un dito.",
+            "options": [
+              "Mentre cucinava, si è bruciata un dito.",
+              "Mentre ha cucinato, si bruciava un dito.",
+              "Mentre cucinava, si bruciava un dito."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(avere, io) fame, così (mangiare) un panino.",
+            "options": [
+              "Avevo fame, così ho mangiato un panino.",
+              "Ho avuto fame, così mangiavo un panino.",
+              "Avevo fame, così mangiavo un panino."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(piovere) quando (uscire, noi).",
+            "options": [
+              "Pioveva quando siamo usciti.",
+              "Ha piovuto quando uscivamo.",
+              "Pioveva quando uscivamo."
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ],
+    "diag": true
+  },
+  {
+    "lvl": "b1",
+    "lez": [
+      "B1 L9"
+    ],
+    "title": "I superlativi assoluto e relativo",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "fill",
+        "instr": "Scrivi il superlativo assoluto in -ISSIMO.",
+        "items": [
+          {
+            "q": "È un lavoro ___ . (difficile)",
+            "a": "difficilissimo",
+            "no": [
+              "difficilmente",
+              "difficilissima",
+              "molto difficile"
+            ]
+          },
+          {
+            "q": "La torta è ___ . (buono)",
+            "a": "buonissima",
+            "no": [
+              "buonissimo",
+              "bonissima",
+              "molto buona"
+            ]
+          },
+          {
+            "q": "Sono ___ oggi. (stanco)",
+            "a": "stanchissimo",
+            "no": [
+              "stancissimo",
+              "stanchissima",
+              "molto stanco"
+            ]
+          },
+          {
+            "q": "Le scarpe sono ___ . (caro)",
+            "a": "carissime",
+            "no": [
+              "carissimi",
+              "carissima",
+              "molto care"
+            ]
+          },
+          {
+            "q": "Il film era ___ . (lungo)",
+            "a": "lunghissimo",
+            "no": [
+              "lungissimo",
+              "lunghissima",
+              "molto lungo"
+            ]
+          },
+          {
+            "q": "La casa è ___ . (grande)",
+            "a": "grandissima",
+            "no": [
+              "grandissimo",
+              "grandissime",
+              "molto grande"
+            ]
+          },
+          {
+            "q": "I bambini sono ___ . (simpatico)",
+            "a": "simpaticissimi",
+            "no": [
+              "simpaticissime",
+              "simpaticissimo",
+              "molto simpatici"
+            ]
+          },
+          {
+            "q": "L'esame è stato ___ . (facile)",
+            "a": "facilissimo",
+            "no": [
+              "facilissima",
+              "facillissimo",
+              "molto facile"
+            ]
+          },
+          {
+            "q": "La stanza è ___ . (piccolo)",
+            "a": "piccolissima",
+            "no": [
+              "piccolissimo",
+              "piccolissime",
+              "molto piccola"
+            ]
+          },
+          {
+            "q": "Le vacanze sono state ___ . (bello)",
+            "a": "bellissime",
+            "no": [
+              "bellissimi",
+              "bellissima",
+              "molto belle"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Riempimento",
+        "fmt": "buco",
+        "instr": "Scegli il superlativo relativo corretto.",
+        "items": [
+          {
+            "q": "È ___ ristorante della città.",
+            "options": [
+              "il migliore",
+              "il più migliore",
+              "più buono"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Marco è ___ alto della classe.",
+            "options": [
+              "il più",
+              "più di",
+              "il molto"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Questa è ___ soluzione di tutte.",
+            "options": [
+              "la peggiore",
+              "la più peggiore",
+              "più cattiva"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Sono ___ giorni dell'anno.",
+            "options": [
+              "i più freddi",
+              "i molto freddi",
+              "più freddi di"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "È ___ film che abbia visto.",
+            "options": [
+              "il più bello",
+              "il molto bello",
+              "più bello di"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Anna è ___ brava del gruppo.",
+            "options": [
+              "la più",
+              "più della",
+              "la molto"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Sono ___ scarpe del negozio.",
+            "options": [
+              "le meno care",
+              "le più meno care",
+              "meno care di"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "È ___ esercizio del libro.",
+            "options": [
+              "il più difficile",
+              "il molto difficile",
+              "più difficile di"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Queste sono ___ foto della serie.",
+            "options": [
+              "le più belle",
+              "le molto belle",
+              "più belle di"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Lui è ___ giovane della squadra.",
+            "options": [
+              "il più",
+              "più il",
+              "il molto"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca la parola sbagliata nel superlativo.",
+        "items": [
+          {
+            "q": "Il caffè è amarissima stamattina.",
+            "wrong": "amarissima",
+            "fix": "amarissimo"
+          },
+          {
+            "q": "Le strade sono strettissimi qui.",
+            "wrong": "strettissimi",
+            "fix": "strettissime"
+          },
+          {
+            "q": "I compiti erano noiosissima.",
+            "wrong": "noiosissima",
+            "fix": "noiosissimi"
+          },
+          {
+            "q": "È il più ottimo albergo della zona.",
+            "wrong": "più",
+            "fix": "(togliere: il migliore)"
+          },
+          {
+            "q": "Questa valigia è molto pesantissima.",
+            "wrong": "molto",
+            "fix": "(togliere: pesantissima)"
+          },
+          {
+            "q": "Anna è più giovane del gruppo.",
+            "wrong": "più",
+            "fix": "la più"
+          },
+          {
+            "q": "È la più pessima scelta possibile.",
+            "wrong": "più",
+            "fix": "(togliere: la peggiore)"
+          },
+          {
+            "q": "Sono i molto lunghi giorni dell'estate.",
+            "wrong": "molto",
+            "fix": "più"
+          },
+          {
+            "q": "La piazza è affollatissimo di sera.",
+            "wrong": "affollatissimo",
+            "fix": "affollatissima"
+          },
+          {
+            "q": "Sono le esercizi più difficili del corso.",
+            "wrong": "le",
+            "fix": "gli"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lvl": "b1",
+    "lez": [
+      "B1 L10"
+    ],
+    "title": "Stare + gerundio",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "fill",
+        "instr": "Scrivi il gerundio del verbo tra parentesi.",
+        "items": [
+          {
+            "q": "Sto ___ la posta. (leggere)",
+            "a": "leggendo",
+            "no": [
+              "leggando",
+              "leggiendo",
+              "legendo"
+            ]
+          },
+          {
+            "q": "Stiamo ___ la cena. (preparare)",
+            "a": "preparando",
+            "no": [
+              "preparendo",
+              "preparanto",
+              "preparendo2"
+            ]
+          },
+          {
+            "q": "Stai ___ ? (dormire)",
+            "a": "dormendo",
+            "no": [
+              "dormando",
+              "dormiendo",
+              "dormento"
+            ]
+          },
+          {
+            "q": "Stanno ___ una casa nuova. (costruire)",
+            "a": "costruendo",
+            "no": [
+              "costruando",
+              "costruiendo",
+              "costrundo"
+            ]
+          },
+          {
+            "q": "Sta ___ molto forte. (piovere)",
+            "a": "piovendo",
+            "no": [
+              "piovando",
+              "piovenno",
+              "piuvendo"
+            ]
+          },
+          {
+            "q": "Sto ___ un caffè. (bere)",
+            "a": "bevendo",
+            "no": [
+              "berendo",
+              "bevando",
+              "bevendo2"
+            ]
+          },
+          {
+            "q": "Stiamo ___ il problema. (risolvere)",
+            "a": "risolvendo",
+            "no": [
+              "risolvando",
+              "risolviendo",
+              "risolgendo"
+            ]
+          },
+          {
+            "q": "Stai ___ troppo. (lavorare)",
+            "a": "lavorando",
+            "no": [
+              "lavorendo",
+              "lavoranto",
+              "laborando"
+            ]
+          },
+          {
+            "q": "Sta ___ la verità. (dire)",
+            "a": "dicendo",
+            "no": [
+              "direndo",
+              "dicando",
+              "dicenno"
+            ]
+          },
+          {
+            "q": "Stanno ___ i compiti. (fare)",
+            "a": "facendo",
+            "no": [
+              "farendo",
+              "facando",
+              "faciendo"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca la parola sbagliata.",
+        "items": [
+          {
+            "q": "Sto scrivando una relazione.",
+            "wrong": "scrivando",
+            "fix": "scrivendo"
+          },
+          {
+            "q": "Stiamo aspettendo il treno.",
+            "wrong": "aspettendo",
+            "fix": "aspettando"
+          },
+          {
+            "q": "Stai guardendo la partita?",
+            "wrong": "guardendo",
+            "fix": "guardando"
+          },
+          {
+            "q": "Sono correndo verso casa.",
+            "wrong": "Sono",
+            "fix": "Sto"
+          },
+          {
+            "q": "Sta nevicanto sulle montagne.",
+            "wrong": "nevicanto",
+            "fix": "nevicando"
+          },
+          {
+            "q": "Sto cucinendo la cena.",
+            "wrong": "cucinendo",
+            "fix": "cucinando"
+          },
+          {
+            "q": "Stiamo di uscire adesso.",
+            "wrong": "di",
+            "fix": "(togliere)"
+          },
+          {
+            "q": "Sta traducando un articolo.",
+            "wrong": "traducando",
+            "fix": "traducendo"
+          },
+          {
+            "q": "Stanno pulando la casa.",
+            "wrong": "pulando",
+            "fix": "pulendo"
+          },
+          {
+            "q": "Siamo salendo le scale.",
+            "wrong": "Siamo",
+            "fix": "Stiamo"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Trasforma il presente in azione in corso.",
+        "items": [
+          {
+            "q": "Mangio adesso. →",
+            "options": [
+              "Sto mangiando adesso.",
+              "Sono mangiando adesso.",
+              "Sto a mangiare adesso."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Studiamo per l'esame. →",
+            "options": [
+              "Stiamo studiando per l'esame.",
+              "Siamo studiando per l'esame.",
+              "Stiamo a studiare per l'esame."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Che cosa fai? →",
+            "options": [
+              "Che cosa stai facendo?",
+              "Che cosa sei facendo?",
+              "Che cosa stai fare?"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Scrivono una mail. →",
+            "options": [
+              "Stanno scrivendo una mail.",
+              "Sono scrivendo una mail.",
+              "Stanno a scrivere una mail."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Piove forte. →",
+            "options": [
+              "Sta piovendo forte.",
+              "È piovendo forte.",
+              "Sta a piovere forte."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Aspetto il treno. →",
+            "options": [
+              "Sto aspettando il treno.",
+              "Sono aspettando il treno.",
+              "Sto ad aspettare il treno."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Cucinate voi? →",
+            "options": [
+              "State cucinando voi?",
+              "Siete cucinando voi?",
+              "State a cucinare voi?"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Dorme ancora. →",
+            "options": [
+              "Sta ancora dormendo.",
+              "È ancora dormendo.",
+              "Sta ancora a dormire."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Leggiamo il contratto. →",
+            "options": [
+              "Stiamo leggendo il contratto.",
+              "Siamo leggendo il contratto.",
+              "Stiamo a leggere il contratto."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Parlano al telefono. →",
+            "options": [
+              "Stanno parlando al telefono.",
+              "Sono parlando al telefono.",
+              "Stanno a parlare al telefono."
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lvl": "b1",
+    "lez": [
+      "B1 L13"
+    ],
+    "title": "Il congiuntivo presente: forme regolari",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "fill",
+        "instr": "Scrivi il congiuntivo presente del verbo tra parentesi.",
+        "items": [
+          {
+            "q": "Penso che lui ___ ragione. (avere)",
+            "a": "abbia",
+            "no": [
+              "ha",
+              "avesse",
+              "abbi"
+            ]
+          },
+          {
+            "q": "Credo che loro ___ stanchi. (essere)",
+            "a": "siano",
+            "no": [
+              "sono",
+              "fossero",
+              "sia"
+            ]
+          },
+          {
+            "q": "Spero che tu ___ presto. (arrivare)",
+            "a": "arrivi",
+            "no": [
+              "arrivo",
+              "arriva",
+              "arrivassi"
+            ]
+          },
+          {
+            "q": "Penso che voi ___ troppo. (lavorare)",
+            "a": "lavoriate",
+            "no": [
+              "lavorate",
+              "lavoraste",
+              "lavorate2"
+            ]
+          },
+          {
+            "q": "Credo che noi ___ in tempo. (finire)",
+            "a": "finiamo",
+            "no": [
+              "finiremo",
+              "finissimo",
+              "finite"
+            ]
+          },
+          {
+            "q": "Spero che lei ___ la lezione. (capire)",
+            "a": "capisca",
+            "no": [
+              "capisce",
+              "capissi",
+              "capisci"
+            ]
+          },
+          {
+            "q": "Penso che loro ___ presto. (partire)",
+            "a": "partano",
+            "no": [
+              "partono",
+              "partissero",
+              "parta"
+            ]
+          },
+          {
+            "q": "Credo che tu ___ bene. (dormire)",
+            "a": "dorma",
+            "no": [
+              "dormi",
+              "dormissi",
+              "dorme"
+            ]
+          },
+          {
+            "q": "Spero che voi ___ contenti. (essere)",
+            "a": "siate",
+            "no": [
+              "siete",
+              "foste",
+              "siano"
+            ]
+          },
+          {
+            "q": "Penso che lui ___ la risposta. (sapere)",
+            "a": "sappia",
+            "no": [
+              "sa",
+              "sapesse",
+              "sappi"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca il verbo che dovrebbe essere al congiuntivo.",
+        "items": [
+          {
+            "q": "Mi sembra che Marco esce troppo.",
+            "wrong": "esce",
+            "fix": "esca"
+          },
+          {
+            "q": "È probabile che loro rispondono domani.",
+            "wrong": "rispondono",
+            "fix": "rispondano"
+          },
+          {
+            "q": "Dubito che tu ricorda il nome.",
+            "wrong": "ricorda",
+            "fix": "ricordi"
+          },
+          {
+            "q": "Immagino che voi preferite il mare.",
+            "wrong": "preferite",
+            "fix": "preferiate"
+          },
+          {
+            "q": "Non credo che noi arriveremo puntuali.",
+            "wrong": "arriveremo",
+            "fix": "arriviamo"
+          },
+          {
+            "q": "Mi auguro che lei guarisce presto.",
+            "wrong": "guarisce",
+            "fix": "guarisca"
+          },
+          {
+            "q": "Sembra che i vicini traslocano.",
+            "wrong": "traslocano",
+            "fix": "traslochino"
+          },
+          {
+            "q": "Temo che tu ti annoia.",
+            "wrong": "annoia",
+            "fix": "annoi"
+          },
+          {
+            "q": "È meglio che voi restate a casa.",
+            "wrong": "restate",
+            "fix": "restiate\" "
+          },
+          {
+            "q": "Bisogna che lui firma il modulo.",
+            "wrong": "firma",
+            "fix": "firmi"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Trasforma la frase con «Penso che».",
+        "items": [
+          {
+            "q": "Marco è in ritardo. →",
+            "options": [
+              "Penso che Marco sia in ritardo.",
+              "Penso che Marco è in ritardo.",
+              "Penso che Marco fosse in ritardo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Loro hanno fretta. →",
+            "options": [
+              "Penso che loro abbiano fretta.",
+              "Penso che loro hanno fretta.",
+              "Penso che loro avessero fretta."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Tu studi molto. →",
+            "options": [
+              "Penso che tu studi molto.",
+              "Penso che tu studia molto.",
+              "Penso che tu studiassi molto."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Voi capite il problema. →",
+            "options": [
+              "Penso che voi capiate il problema.",
+              "Penso che voi capite il problema.",
+              "Penso che voi capiste il problema."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Noi arriviamo presto. →",
+            "options": [
+              "Penso che noi arriviamo presto.",
+              "Penso che noi arriveremo presto.",
+              "Penso che noi arrivassimo presto."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Lei parte domani. →",
+            "options": [
+              "Penso che lei parta domani.",
+              "Penso che lei parte domani.",
+              "Penso che lei partisse domani."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il negozio apre alle nove. →",
+            "options": [
+              "Penso che il negozio apra alle nove.",
+              "Penso che il negozio apre alle nove.",
+              "Penso che il negozio aprisse alle nove."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Loro sanno tutto. →",
+            "options": [
+              "Penso che loro sappiano tutto.",
+              "Penso che loro sanno tutto.",
+              "Penso che loro sapessero tutto."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Tu puoi venire. →",
+            "options": [
+              "Penso che tu possa venire.",
+              "Penso che tu puoi venire.",
+              "Penso che tu potessi venire."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Fa freddo fuori. →",
+            "options": [
+              "Penso che faccia freddo fuori.",
+              "Penso che fa freddo fuori.",
+              "Penso che facesse freddo fuori."
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ],
+    "diag": true
+  },
+  {
+    "lvl": "b1",
+    "lez": [
+      "B1 L14",
+      "B1 L15"
+    ],
+    "title": "Il condizionale presente",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "fill",
+        "instr": "Scrivi il condizionale presente del verbo tra parentesi.",
+        "items": [
+          {
+            "q": "___ un caffè, grazie. (io – volere)",
+            "a": "Vorrei",
+            "no": [
+              "Voglierei",
+              "Volerei",
+              "Vorrebbe"
+            ]
+          },
+          {
+            "q": "___ aiutarmi? (tu – potere)",
+            "a": "Potresti",
+            "no": [
+              "Poteresti",
+              "Potrei",
+              "Puoteresti"
+            ]
+          },
+          {
+            "q": "Noi ___ partire prima. (dovere)",
+            "a": "dovremmo",
+            "no": [
+              "doveremmo",
+              "dovremo",
+              "dovressimo"
+            ]
+          },
+          {
+            "q": "Lei ___ volentieri. (venire)",
+            "a": "verrebbe",
+            "no": [
+              "venirebbe",
+              "verebbe",
+              "verrebbero"
+            ]
+          },
+          {
+            "q": "Loro ___ una casa più grande. (comprare)",
+            "a": "comprerebbero",
+            "no": [
+              "compriremmo",
+              "comprarebbero",
+              "compreranno"
+            ]
+          },
+          {
+            "q": "Io ___ in Italia volentieri. (vivere)",
+            "a": "vivrei",
+            "no": [
+              "viverei",
+              "vivrebbe",
+              "vivirei"
+            ]
+          },
+          {
+            "q": "Voi ___ un consiglio? (avere)",
+            "a": "avreste",
+            "no": [
+              "avereste",
+              "avrete",
+              "avresti"
+            ]
+          },
+          {
+            "q": "Tu ___ contento di vederlo. (essere)",
+            "a": "saresti",
+            "no": [
+              "essaresti",
+              "sarai",
+              "sareste"
+            ]
+          },
+          {
+            "q": "Noi ___ un tavolo per due. (prenotare)",
+            "a": "prenoteremmo",
+            "no": [
+              "prenotaremmo",
+              "prenoteremo",
+              "prenotiremmo"
+            ]
+          },
+          {
+            "q": "Lui ___ la verità. (dire)",
+            "a": "direbbe",
+            "no": [
+              "dicerebbe",
+              "dirà",
+              "dirrebbe"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca il condizionale coniugato in modo sbagliato.",
+        "items": [
+          {
+            "q": "Io mangierei volentieri una pizza.",
+            "wrong": "mangierei",
+            "fix": "mangerei"
+          },
+          {
+            "q": "Tu legerresti quel libro?",
+            "wrong": "legerresti",
+            "fix": "leggeresti"
+          },
+          {
+            "q": "Noi restaremmo un altro giorno.",
+            "wrong": "restaremmo",
+            "fix": "resteremmo"
+          },
+          {
+            "q": "Lei uscerebbe più spesso.",
+            "wrong": "uscerebbe",
+            "fix": "uscirebbe"
+          },
+          {
+            "q": "Loro pagarebbero subito.",
+            "wrong": "pagarebbero",
+            "fix": "pagherebbero"
+          },
+          {
+            "q": "Voi partereste domani?",
+            "wrong": "partereste",
+            "fix": "partireste"
+          },
+          {
+            "q": "Io cercarei un altro lavoro.",
+            "wrong": "cercarei",
+            "fix": "cercherei"
+          },
+          {
+            "q": "Tu rimaneresti ancora un po'?",
+            "wrong": "rimaneresti",
+            "fix": "rimarresti"
+          },
+          {
+            "q": "Noi tenaremmo la casa.",
+            "wrong": "tenaremmo",
+            "fix": "terremmo"
+          },
+          {
+            "q": "Lui berebbe volentieri un tè.",
+            "wrong": "berebbe",
+            "fix": "berrebbe"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Rendi la richiesta o il desiderio più cortese col condizionale.",
+        "items": [
+          {
+            "q": "Voglio un bicchiere d'acqua. →",
+            "options": [
+              "Vorrei un bicchiere d'acqua.",
+              "Volerei un bicchiere d'acqua.",
+              "Vorrebbe un bicchiere d'acqua."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Puoi ripetere? →",
+            "options": [
+              "Potresti ripetere?",
+              "Poteresti ripetere?",
+              "Potrei ripetere?"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Devi riposare di più. →",
+            "options": [
+              "Dovresti riposare di più.",
+              "Doveresti riposare di più.",
+              "Dovrei riposare di più."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Mi piace andare al mare. →",
+            "options": [
+              "Mi piacerebbe andare al mare.",
+              "Mi piacerei andare al mare.",
+              "Mi piacerebbero andare al mare."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Vengo volentieri. →",
+            "options": [
+              "Verrei volentieri.",
+              "Venirei volentieri.",
+              "Verrebbe volentieri."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Mi dai una mano? →",
+            "options": [
+              "Mi daresti una mano?",
+              "Mi dareresti una mano?",
+              "Mi darei una mano?"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "È meglio partire presto. →",
+            "options": [
+              "Sarebbe meglio partire presto.",
+              "Sarei meglio partire presto.",
+              "Essarebbe meglio partire presto."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Preferiamo un tavolo fuori. →",
+            "options": [
+              "Preferiremmo un tavolo fuori.",
+              "Preferiremo un tavolo fuori.",
+              "Preferiressimo un tavolo fuori."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Sai dirmi l'orario? →",
+            "options": [
+              "Sapresti dirmi l'orario?",
+              "Saperesti dirmi l'orario?",
+              "Saprei dirmi l'orario?"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Voglio parlare col direttore. →",
+            "options": [
+              "Vorrei parlare col direttore.",
+              "Vorrebbe parlare col direttore.",
+              "Volerei parlare col direttore."
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ],
+    "diag": true
+  },
+  {
+    "lvl": "b1",
+    "stima": "b2",
+    "lez": [
+      "B1 L16"
+    ],
+    "title": "Il congiuntivo passato",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "fill",
+        "instr": "Scrivi l'ausiliare al congiuntivo presente.",
+        "items": [
+          {
+            "q": "Penso che lui ___ già partito.",
+            "a": "sia",
+            "no": [
+              "è",
+              "fosse",
+              "abbia"
+            ]
+          },
+          {
+            "q": "Credo che loro ___ finito il lavoro.",
+            "a": "abbiano",
+            "no": [
+              "hanno",
+              "avessero",
+              "abbia"
+            ]
+          },
+          {
+            "q": "Spero che tu ___ capito bene.",
+            "a": "abbia",
+            "no": [
+              "hai",
+              "avessi",
+              "abbi"
+            ]
+          },
+          {
+            "q": "Penso che lei ___ tornata ieri.",
+            "a": "sia",
+            "no": [
+              "è",
+              "fosse",
+              "abbia"
+            ]
+          },
+          {
+            "q": "Credo che voi ___ studiato molto.",
+            "a": "abbiate",
+            "no": [
+              "avete",
+              "aveste",
+              "abbiano"
+            ]
+          },
+          {
+            "q": "Mi pare che noi ___ sbagliato strada.",
+            "a": "abbiamo",
+            "no": [
+              "avevamo",
+              "avessimo",
+              "abbiate"
+            ]
+          },
+          {
+            "q": "Penso che i ragazzi ___ usciti.",
+            "a": "siano",
+            "no": [
+              "sono",
+              "fossero",
+              "sia"
+            ]
+          },
+          {
+            "q": "Spero che il pacco ___ arrivato.",
+            "a": "sia",
+            "no": [
+              "è",
+              "fosse",
+              "abbia"
+            ]
+          },
+          {
+            "q": "Credo che tu ___ scelto giusto.",
+            "a": "abbia",
+            "no": [
+              "hai",
+              "avessi",
+              "abbi"
+            ]
+          },
+          {
+            "q": "Mi sembra che loro ___ già mangiato.",
+            "a": "abbiano",
+            "no": [
+              "hanno",
+              "avessero",
+              "abbia"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca l'ausiliare sbagliato.",
+        "items": [
+          {
+            "q": "Mi sembra che Marco ha traslocato.",
+            "wrong": "ha",
+            "fix": "abbia"
+          },
+          {
+            "q": "È probabile che loro sono rientrati.",
+            "wrong": "sono",
+            "fix": "siano"
+          },
+          {
+            "q": "Dubito che tu hai letto il contratto.",
+            "wrong": "hai",
+            "fix": "abbia"
+          },
+          {
+            "q": "Immagino che lei è guarita.",
+            "wrong": "è",
+            "fix": "sia"
+          },
+          {
+            "q": "Non credo che voi avete prenotato.",
+            "wrong": "avete",
+            "fix": "abbiate"
+          },
+          {
+            "q": "Temo che noi avevamo dimenticato tutto.",
+            "wrong": "avevamo",
+            "fix": "abbiamo"
+          },
+          {
+            "q": "Sembra che i vicini hanno venduto casa.",
+            "wrong": "hanno",
+            "fix": "abbiano"
+          },
+          {
+            "q": "Peccato che il negozio ha chiuso.",
+            "wrong": "ha",
+            "fix": "abbia"
+          },
+          {
+            "q": "Mi auguro che tu ti sei divertito.",
+            "wrong": "sei",
+            "fix": "sia"
+          },
+          {
+            "q": "È strano che loro non hanno risposto.",
+            "wrong": "hanno",
+            "fix": "abbiano"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Trasforma con «Credo che».",
+        "items": [
+          {
+            "q": "Hanno chiuso il locale. →",
+            "options": [
+              "Credo che abbiano chiuso il locale.",
+              "Credo che hanno chiuso il locale.",
+              "Credo che avessero chiuso il locale."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il pacco è stato consegnato. →",
+            "options": [
+              "Credo che il pacco sia stato consegnato.",
+              "Credo che il pacco è stato consegnato.",
+              "Credo che il pacco fosse stato consegnato."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Avete prenotato il volo. →",
+            "options": [
+              "Credo che abbiate prenotato il volo.",
+              "Credo che avete prenotato il volo.",
+              "Credo che aveste prenotato il volo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Luca si è trasferito. →",
+            "options": [
+              "Credo che Luca si sia trasferito.",
+              "Credo che Luca si è trasferito.",
+              "Credo che Luca si fosse trasferito."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Hai spedito la lettera. →",
+            "options": [
+              "Credo che tu abbia spedito la lettera.",
+              "Credo che tu hai spedito la lettera.",
+              "Credo che tu avessi spedito la lettera."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Le ragazze sono uscite. →",
+            "options": [
+              "Credo che le ragazze siano uscite.",
+              "Credo che le ragazze sono uscite.",
+              "Credo che le ragazze fossero uscite."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Abbiamo dimenticato le chiavi. →",
+            "options": [
+              "Credo che abbiamo dimenticato le chiavi.",
+              "Credo che avevamo dimenticato le chiavi.",
+              "Credo che avessimo dimenticato le chiavi."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ha vinto il concorso. →",
+            "options": [
+              "Credo che abbia vinto il concorso.",
+              "Credo che ha vinto il concorso.",
+              "Credo che avesse vinto il concorso."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Vi siete divertiti. →",
+            "options": [
+              "Credo che vi siate divertiti.",
+              "Credo che vi siete divertiti.",
+              "Credo che vi foste divertiti."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Hanno cambiato idea. →",
+            "options": [
+              "Credo che abbiano cambiato idea.",
+              "Credo che hanno cambiato idea.",
+              "Credo che avessero cambiato idea."
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lvl": "b1",
+    "stima": "a2",
+    "lez": [
+      "B1 L17"
+    ],
+    "title": "Stare per + infinito",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "buco",
+        "instr": "Scegli la forma corretta di «stare per».",
+        "items": [
+          {
+            "q": "Il treno ___ partire.",
+            "options": [
+              "sta per",
+              "è per",
+              "sta a"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "___ uscire quando ha telefonato. (io)",
+            "options": [
+              "Stavo per",
+              "Ero per",
+              "Stavo a"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Noi ___ cenare, vieni?",
+            "options": [
+              "stiamo per",
+              "siamo per",
+              "stiamo a"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il film ___ cominciare.",
+            "options": [
+              "sta per",
+              "è per",
+              "sta a"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "___ chiamarti proprio adesso. (io)",
+            "options": [
+              "Stavo per",
+              "Ero per",
+              "Stavo a"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Loro ___ arrivare, li aspettiamo.",
+            "options": [
+              "stanno per",
+              "sono per",
+              "stanno a"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "___ piovere, prendi l'ombrello.",
+            "options": [
+              "Sta per",
+              "È per",
+              "Sta a"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Voi ___ partire? Vi accompagno.",
+            "options": [
+              "state per",
+              "siete per",
+              "state a"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il negozio ___ chiudere.",
+            "options": [
+              "sta per",
+              "è per",
+              "sta a"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "___ dirtelo ma mi hai interrotto. (io)",
+            "options": [
+              "Stavo per",
+              "Ero per",
+              "Stavo a"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca la parola sbagliata.",
+        "items": [
+          {
+            "q": "Il concerto è per cominciare.",
+            "wrong": "è",
+            "fix": "sta"
+          },
+          {
+            "q": "Sto per mangiando qualcosa.",
+            "wrong": "mangiando",
+            "fix": "mangiare"
+          },
+          {
+            "q": "Noi siamo per traslocare.",
+            "wrong": "siamo",
+            "fix": "stiamo"
+          },
+          {
+            "q": "Sta a chiudere il museo.",
+            "wrong": "a",
+            "fix": "per"
+          },
+          {
+            "q": "Ero per addormentarmi.",
+            "wrong": "Ero",
+            "fix": "Stavo"
+          },
+          {
+            "q": "Loro sono per laurearsi.",
+            "wrong": "sono",
+            "fix": "stanno"
+          },
+          {
+            "q": "Sta per tramonta il sole.",
+            "wrong": "tramonta",
+            "fix": "tramontare"
+          },
+          {
+            "q": "Voi siete per rientrare?",
+            "wrong": "siete",
+            "fix": "state"
+          },
+          {
+            "q": "Il corso sta di iniziare.",
+            "wrong": "di",
+            "fix": "per"
+          },
+          {
+            "q": "Stavo per chiamato il medico.",
+            "wrong": "chiamato",
+            "fix": "chiamare"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Riscrivi indicando un'azione imminente.",
+        "items": [
+          {
+            "q": "La riunione finisce fra poco. →",
+            "options": [
+              "La riunione sta per finire.",
+              "La riunione è per finire.",
+              "La riunione sta finendo per."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ordiniamo adesso. →",
+            "options": [
+              "Stiamo per ordinare.",
+              "Siamo per ordinare.",
+              "Stiamo a ordinare."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il contratto scade a giorni. →",
+            "options": [
+              "Il contratto sta per scadere.",
+              "Il contratto è per scadere.",
+              "Il contratto sta a scadere."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Rispondevo proprio ora. →",
+            "options": [
+              "Stavo per rispondere.",
+              "Ero per rispondere.",
+              "Stavo a rispondere."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Firmano fra un attimo. →",
+            "options": [
+              "Stanno per firmare.",
+              "Sono per firmare.",
+              "Stanno a firmare."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Nevica sulle Alpi tra poco. →",
+            "options": [
+              "Sta per nevicare sulle Alpi.",
+              "È per nevicare sulle Alpi.",
+              "Sta a nevicare sulle Alpi."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Atterrate fra cinque minuti? →",
+            "options": [
+              "State per atterrare?",
+              "Siete per atterrare?",
+              "State ad atterrare?"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "La banca apre adesso. →",
+            "options": [
+              "La banca sta per aprire.",
+              "La banca è per aprire.",
+              "La banca sta ad aprire."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Spedivo il pacco proprio ora. →",
+            "options": [
+              "Stavo per spedire il pacco.",
+              "Ero per spedire il pacco.",
+              "Stavo a spedire il pacco."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Esco fra un minuto. →",
+            "options": [
+              "Sto per uscire.",
+              "Sono per uscire.",
+              "Sto a uscire."
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lvl": "b1",
+    "lez": [
+      "B1 L17",
+      "B1 L18"
+    ],
+    "title": "I connettivi logici",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "buco",
+        "instr": "Scegli il connettivo adatto alla relazione logica.",
+        "items": [
+          {
+            "q": "Ho studiato molto, ___ ho superato l'esame.",
+            "options": [
+              "quindi",
+              "invece",
+              "anche se"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Volevo uscire, ___ è cominciato a piovere.",
+            "options": [
+              "però",
+              "quindi",
+              "perciò"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Non ha risposto ___ era occupato.",
+            "options": [
+              "perché",
+              "quindi",
+              "invece"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Lui preferisce il mare, io ___ la montagna.",
+            "options": [
+              "invece",
+              "quindi",
+              "perciò"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il locale era pieno, ___ siamo andati altrove.",
+            "options": [
+              "perciò",
+              "perché",
+              "invece"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "___ fosse stanco, ha continuato.",
+            "options": [
+              "Anche se",
+              "Quindi",
+              "Perciò"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ho perso il treno, ___ sono arrivato tardi.",
+            "options": [
+              "così",
+              "perché",
+              "invece"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Non solo è bravo, ___ è anche simpatico.",
+            "options": [
+              "ma",
+              "quindi",
+              "perché"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Studia molto, ___ non ottiene buoni voti.",
+            "options": [
+              "eppure",
+              "quindi",
+              "perciò"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "___ del ritardo, siamo arrivati in tempo.",
+            "options": [
+              "Nonostante",
+              "Quindi",
+              "Perché"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca il connettivo che esprime la relazione sbagliata.",
+        "items": [
+          {
+            "q": "Ho studiato poco, quindi ho preso un bel voto.",
+            "wrong": "quindi",
+            "fix": "eppure"
+          },
+          {
+            "q": "Era tardi, perché siamo tornati a casa.",
+            "wrong": "perché",
+            "fix": "perciò"
+          },
+          {
+            "q": "Non è uscito quindi era malato.",
+            "wrong": "quindi",
+            "fix": "perché"
+          },
+          {
+            "q": "Piove forte, invece prendo l'ombrello.",
+            "wrong": "invece",
+            "fix": "quindi"
+          },
+          {
+            "q": "È molto bravo, perciò non lo assumono.",
+            "wrong": "perciò",
+            "fix": "eppure"
+          },
+          {
+            "q": "Ho fame, però mangio qualcosa.",
+            "wrong": "però",
+            "fix": "quindi"
+          },
+          {
+            "q": "Nonostante il sole, siamo andati al mare per il caldo.",
+            "wrong": "Nonostante",
+            "fix": "Grazie a"
+          },
+          {
+            "q": "Non ho soldi, così compro la macchina.",
+            "wrong": "così",
+            "fix": "perciò non"
+          },
+          {
+            "q": "Lui ama il calcio, quindi io preferisco il tennis.",
+            "wrong": "quindi",
+            "fix": "invece"
+          },
+          {
+            "q": "Era stanco, anche se è andato a dormire.",
+            "wrong": [
+              "anche",
+              "se"
+            ],
+            "fix": "perciò"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Unisci le due frasi con il connettivo adatto.",
+        "items": [
+          {
+            "q": "Ho fretta. Prendo un taxi.",
+            "options": [
+              "Ho fretta, quindi prendo un taxi.",
+              "Ho fretta, però prendo un taxi.",
+              "Ho fretta, perché prendo un taxi."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Volevo aiutarti. Non avevo tempo.",
+            "options": [
+              "Volevo aiutarti, però non avevo tempo.",
+              "Volevo aiutarti, quindi non avevo tempo.",
+              "Volevo aiutarti, perché non avevo tempo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Resto a casa. Sono raffreddato.",
+            "options": [
+              "Resto a casa perché sono raffreddato.",
+              "Resto a casa quindi sono raffreddato.",
+              "Resto a casa invece sono raffreddato."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Lei studia legge. Io studio medicina.",
+            "options": [
+              "Lei studia legge, io invece medicina.",
+              "Lei studia legge, io quindi medicina.",
+              "Lei studia legge, io perché medicina."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Era stanco. Ha finito il lavoro.",
+            "options": [
+              "Anche se era stanco, ha finito il lavoro.",
+              "Perché era stanco, ha finito il lavoro.",
+              "Quindi era stanco, ha finito il lavoro."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ha nevicato. Le strade sono chiuse.",
+            "options": [
+              "Ha nevicato, perciò le strade sono chiuse.",
+              "Ha nevicato, però le strade sono chiuse.",
+              "Ha nevicato, invece le strade sono chiuse."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "È tardi. Non è ancora arrivato.",
+            "options": [
+              "È tardi eppure non è ancora arrivato.",
+              "È tardi quindi non è ancora arrivato.",
+              "È tardi perché non è ancora arrivato."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il corso è utile. Il corso è costoso.",
+            "options": [
+              "Il corso è utile ma costoso.",
+              "Il corso è utile perciò costoso.",
+              "Il corso è utile perché costoso."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Piove. Portiamo l'ombrello.",
+            "options": [
+              "Piove, così portiamo l'ombrello.",
+              "Piove, però portiamo l'ombrello.",
+              "Piove, invece portiamo l'ombrello."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Non conosce la città. Si orienta bene.",
+            "options": [
+              "Non conosce la città, eppure si orienta bene.",
+              "Non conosce la città, quindi si orienta bene.",
+              "Non conosce la città, perché si orienta bene."
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lvl": "b1",
+    "lez": [
+      "B1 L18",
+      "B1 L23"
+    ],
+    "title": "L'imperativo con i pronomi",
+    "exercises": [
+      {
+        "type": "Composizione",
+        "fmt": "ordina",
+        "instr": "Clicca le parole nell'ordine giusto.",
+        "items": [
+          {
+            "q": "All'imperativo affermativo il pronome si attacca al verbo.",
+            "sol": [
+              "Dammelo",
+              "subito"
+            ]
+          },
+          {
+            "q": "Il pronome si attacca anche qui.",
+            "sol": [
+              "Portami",
+              "il",
+              "conto"
+            ]
+          },
+          {
+            "q": "Con l'imperativo negativo il pronome può stare prima.",
+            "sol": [
+              "Non",
+              "me",
+              "lo",
+              "dire"
+            ]
+          },
+          {
+            "q": "Attenzione alla posizione del pronome.",
+            "sol": [
+              "Aspettami",
+              "fuori"
+            ]
+          },
+          {
+            "q": "Il pronome combinato si attacca al verbo.",
+            "sol": [
+              "Diglielo",
+              "tu"
+            ]
+          },
+          {
+            "q": "Nella forma di cortesia il pronome sta prima.",
+            "sol": [
+              "Mi",
+              "dia",
+              "il",
+              "documento"
+            ]
+          },
+          {
+            "q": "Il pronome resta attaccato all'imperativo.",
+            "sol": [
+              "Scrivimi",
+              "presto"
+            ]
+          },
+          {
+            "q": "Con il Lei il pronome precede il verbo.",
+            "sol": [
+              "Si",
+              "accomodi",
+              "prego"
+            ]
+          },
+          {
+            "q": "Il pronome combinato si attacca all'imperativo.",
+            "sol": [
+              "Mandamela",
+              "per",
+              "favore"
+            ]
+          },
+          {
+            "q": "Nell'imperativo negativo con «tu» si usa l'infinito.",
+            "sol": [
+              "Non",
+              "farlo",
+              "adesso"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca la parola sbagliata.",
+        "items": [
+          {
+            "q": "Mi dai il libro subito!",
+            "wrong": "dai",
+            "fix": "Dammi"
+          },
+          {
+            "q": "Lo dire a Marco!",
+            "wrong": "dire",
+            "fix": "Diglielo"
+          },
+          {
+            "q": "Signora, accomodati pure!",
+            "wrong": "accomodati",
+            "fix": "si accomodi"
+          },
+          {
+            "q": "Non dammelo adesso!",
+            "wrong": "dammelo",
+            "fix": "me lo dare"
+          },
+          {
+            "q": "Mi aspetta fuori, per favore! (a un amico)",
+            "wrong": "aspetta",
+            "fix": "Aspettami"
+          },
+          {
+            "q": "Signore, dammi il documento!",
+            "wrong": "dammi",
+            "fix": "mi dia"
+          },
+          {
+            "q": "Scrivi mi presto!",
+            "wrong": "mi",
+            "fix": "Scrivimi (attaccato)"
+          },
+          {
+            "q": "Signora, alzati per favore!",
+            "wrong": "alzati",
+            "fix": "si alzi"
+          },
+          {
+            "q": "Manda mela per favore!",
+            "wrong": "mela",
+            "fix": "Mandamela (attaccato)"
+          },
+          {
+            "q": "Non fare lo adesso!",
+            "wrong": "lo",
+            "fix": "farlo (attaccato)"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Trasforma con il pronome attaccato.",
+        "items": [
+          {
+            "q": "Presta la penna a me. →",
+            "options": [
+              "Prestamela.",
+              "Mi prestala.",
+              "Presta mela."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Racconta la storia a noi. →",
+            "options": [
+              "Raccontacela.",
+              "Ci raccontala.",
+              "Racconta cela."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Mostra le foto a lui. →",
+            "options": [
+              "Mostragliele.",
+              "Gli mostrale.",
+              "Mostra gliele."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Chiama me più tardi. →",
+            "options": [
+              "Chiamami più tardi.",
+              "Mi chiama più tardi.",
+              "Chiama mi più tardi."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Restituisci il libro a lei. →",
+            "options": [
+              "Restituisciglielo.",
+              "Le restituiscilo.",
+              "Restituisci glielo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Prepara il caffè per noi. →",
+            "options": [
+              "Preparacelo.",
+              "Ci preparalo.",
+              "Prepara celo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Non regalare questo a me. →",
+            "options": [
+              "Non regalarmelo.",
+              "Non mi regalalo.",
+              "Non regala melo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ripeti la domanda a loro. →",
+            "options": [
+              "Ripetigliela.",
+              "Gli ripetila.",
+              "Ripeti gliela."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Aiuta noi adesso. →",
+            "options": [
+              "Aiutaci adesso.",
+              "Ci aiuta adesso.",
+              "Aiuta ci adesso."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Non dire questo a lui. →",
+            "options": [
+              "Non dirglielo.",
+              "Non gli dillo.",
+              "Non dire glielo."
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lvl": "b1",
+    "lez": [
+      "B1 L19"
+    ],
+    "title": "Il pronome relativo «che»",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "buco",
+        "instr": "Scegli il pronome relativo corretto.",
+        "items": [
+          {
+            "q": "Il libro ___ ho letto è bellissimo.",
+            "options": [
+              "che",
+              "cui",
+              "chi"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "La ragazza ___ abita qui è mia cugina.",
+            "options": [
+              "che",
+              "cui",
+              "chi"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "L'amico di ___ ti ho parlato arriva domani.",
+            "options": [
+              "cui",
+              "che",
+              "chi"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il film ___ abbiamo visto era noioso.",
+            "options": [
+              "che",
+              "cui",
+              "chi"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "La città in ___ vivo è tranquilla.",
+            "options": [
+              "cui",
+              "che",
+              "chi"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Le persone ___ lavorano qui sono gentili.",
+            "options": [
+              "che",
+              "cui",
+              "chi"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il motivo per ___ sono venuto è semplice.",
+            "options": [
+              "cui",
+              "che",
+              "chi"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "La casa ___ abbiamo comprato è grande.",
+            "options": [
+              "che",
+              "cui",
+              "chi"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il collega con ___ lavoro è bravo.",
+            "options": [
+              "cui",
+              "che",
+              "chi"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "I documenti ___ servono sono pronti.",
+            "options": [
+              "che",
+              "cui",
+              "chi"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca il pronome relativo sbagliato.",
+        "items": [
+          {
+            "q": "Il quadro cui ho comprato è antico.",
+            "wrong": "cui",
+            "fix": "che"
+          },
+          {
+            "q": "Il vicino cui abita sopra è rumoroso.",
+            "wrong": "cui",
+            "fix": "che"
+          },
+          {
+            "q": "La collega di che ti ho scritto è brava.",
+            "wrong": "che",
+            "fix": "cui"
+          },
+          {
+            "q": "Il paese in che sono nato è piccolo.",
+            "wrong": "che",
+            "fix": "cui"
+          },
+          {
+            "q": "Gli operai cui lavorano qui sono esperti.",
+            "wrong": "cui",
+            "fix": "che"
+          },
+          {
+            "q": "La ragione per che ho rifiutato è chiara.",
+            "wrong": "che",
+            "fix": "cui"
+          },
+          {
+            "q": "L'amico con che studio è tedesco.",
+            "wrong": "che",
+            "fix": "cui"
+          },
+          {
+            "q": "Le pratiche cui mancano sono due.",
+            "wrong": "cui",
+            "fix": "che"
+          },
+          {
+            "q": "La ditta chi ha vinto l'appalto è locale.",
+            "wrong": "chi",
+            "fix": "che"
+          },
+          {
+            "q": "La città da che arrivo è lontana.",
+            "wrong": "che",
+            "fix": "cui"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Unisci le due frasi con «che».",
+        "items": [
+          {
+            "q": "Ho un amico. Lui abita a Roma.",
+            "options": [
+              "Ho un amico che abita a Roma.",
+              "Ho un amico cui abita a Roma.",
+              "Ho un amico chi abita a Roma."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ho letto un libro. Il libro era interessante.",
+            "options": [
+              "Il libro che ho letto era interessante.",
+              "Il libro cui ho letto era interessante.",
+              "Il libro chi ho letto era interessante."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Conosco una ragazza. La ragazza parla cinese.",
+            "options": [
+              "Conosco una ragazza che parla cinese.",
+              "Conosco una ragazza cui parla cinese.",
+              "Conosco una ragazza chi parla cinese."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ho comprato una macchina. La macchina consuma poco.",
+            "options": [
+              "Ho comprato una macchina che consuma poco.",
+              "Ho comprato una macchina cui consuma poco.",
+              "Ho comprato una macchina chi consuma poco."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ci sono studenti. Gli studenti studiano molto.",
+            "options": [
+              "Ci sono studenti che studiano molto.",
+              "Ci sono studenti cui studiano molto.",
+              "Ci sono studenti chi studiano molto."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ho visto un film. Il film mi è piaciuto.",
+            "options": [
+              "Il film che ho visto mi è piaciuto.",
+              "Il film cui ho visto mi è piaciuto.",
+              "Il film chi ho visto mi è piaciuto."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ho una collega. La collega parla tedesco.",
+            "options": [
+              "Ho una collega che parla tedesco.",
+              "Ho una collega cui parla tedesco.",
+              "Ho una collega chi parla tedesco."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Aspetto un pacco. Il pacco arriva domani.",
+            "options": [
+              "Il pacco che aspetto arriva domani.",
+              "Il pacco cui aspetto arriva domani.",
+              "Il pacco chi aspetto arriva domani."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "C'è una strada. La strada porta al mare.",
+            "options": [
+              "C'è una strada che porta al mare.",
+              "C'è una strada cui porta al mare.",
+              "C'è una strada chi porta al mare."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ho scritto una mail. La mail non è arrivata.",
+            "options": [
+              "La mail che ho scritto non è arrivata.",
+              "La mail cui ho scritto non è arrivata.",
+              "La mail chi ho scritto non è arrivata."
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ],
+    "diag": true
+  },
+  {
+    "lvl": "b1",
+    "lez": [
+      "B1 L20"
+    ],
+    "title": "I pronomi indiretti",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "buco",
+        "instr": "Scegli il pronome indiretto corretto.",
+        "items": [
+          {
+            "q": "Scrivo a Marco. → ___ scrivo.",
+            "options": [
+              "Gli",
+              "Le",
+              "Lo"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Telefono a Sara. → ___ telefono.",
+            "options": [
+              "Le",
+              "Gli",
+              "La"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Regalo un libro ai bambini. → ___ regalo un libro.",
+            "options": [
+              "Gli",
+              "Le",
+              "Li"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Chiedo un favore a te. → ___ chiedo un favore.",
+            "options": [
+              "Ti",
+              "Te",
+              "Tu"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Dico la verità a voi. → ___ dico la verità.",
+            "options": [
+              "Vi",
+              "Ve",
+              "Voi"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Rispondo a mia madre. → ___ rispondo.",
+            "options": [
+              "Le",
+              "Gli",
+              "La"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Mandano una mail a noi. → ___ mandano una mail.",
+            "options": [
+              "Ci",
+              "Ce",
+              "Noi"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Spiego la regola agli studenti. → ___ spiego la regola.",
+            "options": [
+              "Gli",
+              "Le",
+              "Li"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Presto la macchina a Luca. → ___ presto la macchina.",
+            "options": [
+              "Gli",
+              "Le",
+              "Lo"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Offro un caffè a te. → ___ offro un caffè.",
+            "options": [
+              "Ti",
+              "Te",
+              "Tu"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca il pronome sbagliato (diretto invece di indiretto o viceversa).",
+        "items": [
+          {
+            "q": "Lo telefono stasera.",
+            "wrong": "Lo",
+            "fix": "Gli"
+          },
+          {
+            "q": "La scrivo una mail.",
+            "wrong": "La",
+            "fix": "Le"
+          },
+          {
+            "q": "Li regalo un libro.",
+            "wrong": "Li",
+            "fix": "Gli"
+          },
+          {
+            "q": "Te porto una buona notizia.",
+            "wrong": "Te",
+            "fix": "Ti"
+          },
+          {
+            "q": "Ve dico la verità.",
+            "wrong": "Ve",
+            "fix": "Vi"
+          },
+          {
+            "q": "La rispondo subito.",
+            "wrong": "La",
+            "fix": "Le"
+          },
+          {
+            "q": "Ce mandano una mail.",
+            "wrong": "Ce",
+            "fix": "Ci"
+          },
+          {
+            "q": "Le spiego la regola ai ragazzi.",
+            "wrong": "Le",
+            "fix": "Gli"
+          },
+          {
+            "q": "Lo presto la macchina.",
+            "wrong": "Lo",
+            "fix": "Gli"
+          },
+          {
+            "q": "Le offro un caffè a Marco.",
+            "wrong": "Le",
+            "fix": "Gli"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Sostituisci con il pronome indiretto.",
+        "items": [
+          {
+            "q": "Telefono a mio padre. →",
+            "options": [
+              "Gli telefono.",
+              "Lo telefono.",
+              "Le telefono."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Scrivo a mia sorella. →",
+            "options": [
+              "Le scrivo.",
+              "La scrivo.",
+              "Gli scrivo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Parlo ai colleghi. →",
+            "options": [
+              "Gli parlo.",
+              "Li parlo.",
+              "Le parlo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Do un consiglio a te. →",
+            "options": [
+              "Ti do un consiglio.",
+              "Te do un consiglio.",
+              "Tu do un consiglio."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Chiedo aiuto a voi. →",
+            "options": [
+              "Vi chiedo aiuto.",
+              "Ve chiedo aiuto.",
+              "Voi chiedo aiuto."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Rispondo alla direttrice. →",
+            "options": [
+              "Le rispondo.",
+              "La rispondo.",
+              "Gli rispondo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Mandano un pacco a noi. →",
+            "options": [
+              "Ci mandano un pacco.",
+              "Ce mandano un pacco.",
+              "Noi mandano un pacco."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Insegno l'italiano agli stranieri. →",
+            "options": [
+              "Gli insegno l'italiano.",
+              "Li insegno l'italiano.",
+              "Le insegno l'italiano."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Presto i libri a Marco. →",
+            "options": [
+              "Gli presto i libri.",
+              "Lo presto i libri.",
+              "Le presto i libri."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Offro la cena a mia moglie. →",
+            "options": [
+              "Le offro la cena.",
+              "La offro la cena.",
+              "Gli offro la cena."
             ],
             "answer": 0
           }
@@ -9238,13 +13667,19 @@ const TEST_STRUCTURES = [
           },
           {
             "q": "Gli lo ho già detto.",
-            "wrong": "Gli",
-            "fix": "Glielo"
+            "wrong": [
+              "Gli",
+              "lo"
+            ],
+            "fix": "Glielo (si fondono in una parola)"
           },
           {
             "q": "Lo me presti un momento?",
-            "wrong": "Lo",
-            "fix": "Me (me lo presti)"
+            "wrong": [
+              "Lo",
+              "me"
+            ],
+            "fix": "Me lo (l'indiretto viene prima)"
           },
           {
             "q": "Mi ne ha parlato ieri.",
@@ -9355,6 +13790,1830 @@ const TEST_STRUCTURES = [
               "l'ha",
               "detto"
             ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lvl": "b1",
+    "stima": "b2",
+    "lez": [
+      "B1 L21"
+    ],
+    "title": "L'accordo del participio con il pronome diretto",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "fill",
+        "instr": "Scrivi il participio passato accordato con il pronome.",
+        "items": [
+          {
+            "q": "La borsa? L'ho ___ in treno. (dimenticare)",
+            "a": "dimenticata",
+            "no": [
+              "dimenticato",
+              "dimenticate",
+              "dimenticati"
+            ]
+          },
+          {
+            "q": "I regali? Li ho ___ ieri. (incartare)",
+            "a": "incartati",
+            "no": [
+              "incartato",
+              "incartate",
+              "incartata"
+            ]
+          },
+          {
+            "q": "Le camicie? Le ho ___ in lavanderia. (portare)",
+            "a": "portate",
+            "no": [
+              "portato",
+              "portati",
+              "portata"
+            ]
+          },
+          {
+            "q": "Il conto? L'ho ___ io. (pagare)",
+            "a": "pagato",
+            "no": [
+              "pagata",
+              "pagati",
+              "pagate"
+            ]
+          },
+          {
+            "q": "Le mele? Le ho ___ al mercato. (scegliere)",
+            "a": "scelte",
+            "no": [
+              "scelto",
+              "scelti",
+              "scelta"
+            ]
+          },
+          {
+            "q": "I passaporti? Li ho ___ nel cassetto. (mettere)",
+            "a": "messi",
+            "no": [
+              "messo",
+              "messe",
+              "messa"
+            ]
+          },
+          {
+            "q": "La finestra? L'ho ___ io. (rompere)",
+            "a": "rotta",
+            "no": [
+              "rotto",
+              "rotte",
+              "rotti"
+            ]
+          },
+          {
+            "q": "Le risposte? Le ho ___ tutte. (correggere)",
+            "a": "corrette",
+            "no": [
+              "corretto",
+              "corretti",
+              "corretta"
+            ]
+          },
+          {
+            "q": "Il modulo? L'ho ___ online. (inviare)",
+            "a": "inviato",
+            "no": [
+              "inviata",
+              "inviati",
+              "inviate"
+            ]
+          },
+          {
+            "q": "Le bottiglie? Le ho ___ in cantina. (nascondere)",
+            "a": "nascoste",
+            "no": [
+              "nascosto",
+              "nascosti",
+              "nascosta"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca il participio con l'accordo sbagliato.",
+        "items": [
+          {
+            "q": "Il maglione? L'ho comprata in saldo.",
+            "wrong": "comprata",
+            "fix": "comprato"
+          },
+          {
+            "q": "Gli occhiali? Li ho perso al mare.",
+            "wrong": "perso",
+            "fix": "persi"
+          },
+          {
+            "q": "Le lenzuola? Le ho steso al sole.",
+            "wrong": "steso",
+            "fix": "stese"
+          },
+          {
+            "q": "Le fotografie? Le ho stampato ieri.",
+            "wrong": "stampato",
+            "fix": "stampate"
+          },
+          {
+            "q": "I bicchieri? Li ho asciugato adesso.",
+            "wrong": "asciugato",
+            "fix": "asciugati"
+          },
+          {
+            "q": "Lo scontrino? L ho conservata in tasca.",
+            "wrong": "conservata",
+            "fix": "conservato"
+          },
+          {
+            "q": "Le poltrone? Le ho coperto con un telo.",
+            "wrong": "coperto",
+            "fix": "coperte"
+          },
+          {
+            "q": "I fiori? Li ho raccolta in giardino.",
+            "wrong": "raccolta",
+            "fix": "raccolti"
+          },
+          {
+            "q": "La torta? L'ho decorato con la panna.",
+            "wrong": "decorato",
+            "fix": "decorata"
+          },
+          {
+            "q": "Le lampadine? Le ho cambiato tutte.",
+            "wrong": "cambiato",
+            "fix": "cambiate"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Riscrivi con il pronome diretto e l'accordo.",
+        "items": [
+          {
+            "q": "Ho stirato la camicia. →",
+            "options": [
+              "L'ho stirata.",
+              "L'ho stirato.",
+              "La ho stirato."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ho prenotato i biglietti. →",
+            "options": [
+              "Li ho prenotati.",
+              "Li ho prenotato.",
+              "Le ho prenotati."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ho lavato le tende. →",
+            "options": [
+              "Le ho lavate.",
+              "Le ho lavato.",
+              "Li ho lavate."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ho spostato le sedie. →",
+            "options": [
+              "Le ho spostate.",
+              "Le ho spostato.",
+              "Li ho spostate."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ho appeso i quadri. →",
+            "options": [
+              "Li ho appesi.",
+              "Li ho appeso.",
+              "Le ho appesi."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ho venduto la bici. →",
+            "options": [
+              "L'ho venduta.",
+              "L'ho venduto.",
+              "La ho venduto."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ho copiato le ricette. →",
+            "options": [
+              "Le ho copiate.",
+              "Le ho copiato.",
+              "Li ho copiate."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ho annaffiato le piante. →",
+            "options": [
+              "Le ho annaffiate.",
+              "Le ho annaffiato.",
+              "Li ho annaffiate."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ho consegnato la pratica. →",
+            "options": [
+              "L'ho consegnata.",
+              "L'ho consegnato.",
+              "La ho consegnato."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ho compilato i moduli. →",
+            "options": [
+              "Li ho compilati.",
+              "Li ho compilato.",
+              "Le ho compilati."
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lvl": "b1",
+    "stima": "b2",
+    "lez": [
+      "B1 L22"
+    ],
+    "title": "I verbi pronominali (andarsene, farcela, cavarsela)",
+    "exercises": [
+      {
+        "type": "Composizione",
+        "fmt": "ordina",
+        "instr": "Clicca le parole nell'ordine giusto.",
+        "items": [
+          {
+            "q": "I pronomi restano prima del verbo.",
+            "sol": [
+              "Me",
+              "ne",
+              "vado",
+              "ora"
+            ]
+          },
+          {
+            "q": "Attenzione all'ordine delle particelle.",
+            "sol": [
+              "Non",
+              "ce",
+              "la",
+              "faccio"
+            ]
+          },
+          {
+            "q": "La negazione sta all'inizio.",
+            "sol": [
+              "Non",
+              "me",
+              "ne",
+              "pento"
+            ]
+          },
+          {
+            "q": "Al passato l'ausiliare è essere.",
+            "sol": [
+              "Te",
+              "ne",
+              "sei",
+              "andato"
+            ]
+          },
+          {
+            "q": "L'ordine è fisso.",
+            "sol": [
+              "Ce",
+              "la",
+              "siamo",
+              "presa"
+            ]
+          },
+          {
+            "q": "Con «tu» il pronome cambia.",
+            "sol": [
+              "Te",
+              "la",
+              "prendi",
+              "sempre"
+            ]
+          },
+          {
+            "q": "Il pronome precede il verbo.",
+            "sol": [
+              "Se",
+              "ne",
+              "vergogna",
+              "molto"
+            ]
+          },
+          {
+            "q": "Attenzione alla posizione.",
+            "sol": [
+              "Ce",
+              "ne",
+              "siamo",
+              "pentiti"
+            ]
+          },
+          {
+            "q": "L'ordine delle particelle è obbligato.",
+            "sol": [
+              "Ve",
+              "la",
+              "prendete",
+              "con",
+              "me"
+            ]
+          },
+          {
+            "q": "Il pronome resta prima.",
+            "sol": [
+              "Se",
+              "ne",
+              "stanno",
+              "zitti"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Riempimento",
+        "fmt": "buco",
+        "instr": "Scegli la forma corretta del verbo pronominale.",
+        "items": [
+          {
+            "q": "Il progetto è enorme: non ___ da soli. (farcela)",
+            "options": [
+              "ce la facciamo",
+              "ci la facciamo",
+              "ce lo facciamo"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "In viaggio lei ___ sempre benissimo. (cavarsela)",
+            "options": [
+              "se la cava",
+              "si la cava",
+              "se lo cava"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Dei pettegolezzi non ___ nulla. (importarsene)",
+            "options": [
+              "ce ne importa",
+              "ci ne importa",
+              "ce lo importa"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Voi ___ del guasto? (accorgersene)",
+            "options": [
+              "ve ne siete accorti",
+              "vi ne siete accorti",
+              "ve ne avete accorto"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Loro ___ del nostro aiuto. (approfittarsene)",
+            "options": [
+              "se ne approfittano",
+              "si ne approfittano",
+              "se lo approfittano"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Io ___ con lo spagnolo. (cavarsela)",
+            "options": [
+              "me la cavo",
+              "mi la cavo",
+              "me lo cavo"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Alla fine tu ___ da solo. (farcela)",
+            "options": [
+              "ce l'hai fatta",
+              "ci l'hai fatta",
+              "ce l'hai fatto"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Lui ___ senza salutare. (andarsene)",
+            "options": [
+              "se n'è andato",
+              "si n'è andato",
+              "se ne ha andato"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Noi non ___ mai del tempo. (lamentarsene)",
+            "options": [
+              "ce ne lamentiamo",
+              "ci ne lamentiamo",
+              "ce lo lamentiamo"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Voi ___ subito dopo cena. (andarsene)",
+            "options": [
+              "ve ne andate",
+              "vi ne andate",
+              "ve lo andate"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca la particella o l'ausiliare sbagliato.",
+        "items": [
+          {
+            "q": "Questo compito è duro, non ci la faccio.",
+            "wrong": "ci",
+            "fix": "ce"
+          },
+          {
+            "q": "Con i clienti lui si la cava bene.",
+            "wrong": "si",
+            "fix": "se"
+          },
+          {
+            "q": "Della critica non mi ne importa.",
+            "wrong": "mi",
+            "fix": "me"
+          },
+          {
+            "q": "Loro se ne hanno accorti tardi.",
+            "wrong": "hanno",
+            "fix": "sono"
+          },
+          {
+            "q": "Noi non ci ne approfittiamo mai.",
+            "wrong": "ci",
+            "fix": "ce"
+          },
+          {
+            "q": "Tu ti la cavi bene in cucina.",
+            "wrong": "ti",
+            "fix": "te"
+          },
+          {
+            "q": "Alla fine loro ci l'hanno fatta.",
+            "wrong": "ci",
+            "fix": "ce"
+          },
+          {
+            "q": "Voi vi ne siete andati subito.",
+            "wrong": "vi",
+            "fix": "ve"
+          },
+          {
+            "q": "Lei si ne lamenta sempre.",
+            "wrong": "si",
+            "fix": "se"
+          },
+          {
+            "q": "Io mi la cavo con il tedesco.",
+            "wrong": "mi",
+            "fix": "me"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lvl": "b1",
+    "lez": [
+      "B1 L23"
+    ],
+    "title": "Il «si» impersonale",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "buco",
+        "instr": "Scegli la forma impersonale corretta.",
+        "items": [
+          {
+            "q": "In Italia ___ molto caffè.",
+            "options": [
+              "si beve",
+              "si bevono",
+              "si bere"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Qui ___ bene e ___ poco.",
+            "options": [
+              "si mangia / si spende",
+              "si mangiano / si spendono",
+              "si mangia / si spendono"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "In biblioteca non ___ .",
+            "options": [
+              "si parla",
+              "si parlano",
+              "si parlare"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "D'estate ___ tardi la sera.",
+            "options": [
+              "si cena",
+              "si cenano",
+              "si cenare"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "In montagna ___ aria pulita.",
+            "options": [
+              "si respira",
+              "si respirano",
+              "si respirare"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Come ___ questa parola?",
+            "options": [
+              "si scrive",
+              "si scrivono",
+              "si scrivere"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "In questo paese ___ presto.",
+            "options": [
+              "si lavora",
+              "si lavorano",
+              "si lavorare"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Al mare ___ e ___ .",
+            "options": [
+              "si nuota / si riposa",
+              "si nuotano / si riposano",
+              "si nuota / si riposano"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Non ___ mai abbastanza.",
+            "options": [
+              "si studia",
+              "si studiano",
+              "si studiare"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Qui ___ in fretta.",
+            "options": [
+              "si vive",
+              "si vivono",
+              "si vivere"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca il verbo sbagliato nella forma impersonale.",
+        "items": [
+          {
+            "q": "In quel paese si dormono poco.",
+            "wrong": "dormono",
+            "fix": "dorme"
+          },
+          {
+            "q": "Al museo non si fotografano.",
+            "wrong": "fotografano",
+            "fix": "fotografa"
+          },
+          {
+            "q": "D'inverno si sciano volentieri.",
+            "wrong": "sciano",
+            "fix": "scia"
+          },
+          {
+            "q": "In ospedale si aspettano molto.",
+            "wrong": "aspettano",
+            "fix": "aspetta"
+          },
+          {
+            "q": "Qui si guadagnano bene.",
+            "wrong": "guadagnano",
+            "fix": "guadagna"
+          },
+          {
+            "q": "In treno si leggono comodamente.",
+            "wrong": "leggono",
+            "fix": "legge"
+          },
+          {
+            "q": "Nei musei si camminano tanto.",
+            "wrong": "camminano",
+            "fix": "cammina"
+          },
+          {
+            "q": "In quel corso si imparano in fretta.",
+            "wrong": "imparano",
+            "fix": "impara"
+          },
+          {
+            "q": "A quest'ora si telefonano raramente.",
+            "wrong": "telefonano",
+            "fix": "telefona"
+          },
+          {
+            "q": "In montagna si sudano molto.",
+            "wrong": "sudano",
+            "fix": "suda"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Rendi impersonale la frase.",
+        "items": [
+          {
+            "q": "La gente parte presto il lunedì. →",
+            "options": [
+              "Il lunedì si parte presto.",
+              "Il lunedì si partono presto.",
+              "Il lunedì ci si parte presto."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "In quel ristorante le persone spendono poco. →",
+            "options": [
+              "In quel ristorante si spende poco.",
+              "In quel ristorante si spendono poco.",
+              "In quel ristorante ci si spende poco."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Al mare la gente si abbronza. →",
+            "options": [
+              "Al mare ci si abbronza.",
+              "Al mare si abbronza.",
+              "Al mare si abbronzano."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "In città le persone corrono sempre. →",
+            "options": [
+              "In città si corre sempre.",
+              "In città si corrono sempre.",
+              "In città ci si corre sempre."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "In quel corso la gente ride molto. →",
+            "options": [
+              "In quel corso si ride molto.",
+              "In quel corso si ridono molto.",
+              "In quel corso ci si ride molto."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Di domenica le persone si riposano. →",
+            "options": [
+              "Di domenica ci si riposa.",
+              "Di domenica si riposa.",
+              "Di domenica si riposano."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "In biblioteca la gente studia in silenzio. →",
+            "options": [
+              "In biblioteca si studia in silenzio.",
+              "In biblioteca si studiano in silenzio.",
+              "In biblioteca ci si studia in silenzio."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "In aereo le persone si annoiano. →",
+            "options": [
+              "In aereo ci si annoia.",
+              "In aereo si annoia.",
+              "In aereo si annoiano."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "In quel paese la gente vota a maggio. →",
+            "options": [
+              "In quel paese si vota a maggio.",
+              "In quel paese si votano a maggio.",
+              "In quel paese ci si vota a maggio."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "D'estate le persone si svegliano presto. →",
+            "options": [
+              "D'estate ci si sveglia presto.",
+              "D'estate si sveglia presto.",
+              "D'estate si svegliano presto."
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lvl": "b1",
+    "lez": [
+      "B1 L25"
+    ],
+    "title": "Il periodo ipotetico del 1° tipo",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "buco",
+        "instr": "Scegli i tempi corretti: la condizione è reale.",
+        "items": [
+          {
+            "q": "Se ___ bel tempo, andremo al mare.",
+            "options": [
+              "farà",
+              "facesse",
+              "avesse fatto"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Se studi, ___ l'esame.",
+            "options": [
+              "passerai",
+              "passeresti",
+              "passassi"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Se ___ presto, arriviamo in tempo.",
+            "options": [
+              "partiamo",
+              "partissimo",
+              "fossimo partiti"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Se nevica, le strade ___ chiuse.",
+            "options": [
+              "saranno",
+              "sarebbero",
+              "fossero"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Se ___ tempo, ti aiuto volentieri.",
+            "options": [
+              "ho",
+              "avessi",
+              "avrei"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Se prenoti oggi, ___ meno.",
+            "options": [
+              "spenderai",
+              "spenderesti",
+              "spendessi"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Se ___ il treno, prenderemo il pullman.",
+            "options": [
+              "perdiamo",
+              "perdessimo",
+              "avessimo perso"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Se piove, ___ a casa.",
+            "options": [
+              "restiamo",
+              "resteremmo",
+              "restassimo"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Se ___ questa strada, arrivi prima.",
+            "options": [
+              "prendi",
+              "prendessi",
+              "prenderesti"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Se non ___ , chiamami.",
+            "options": [
+              "capisci",
+              "capissi",
+              "capiresti"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca il verbo con il tempo sbagliato.",
+        "items": [
+          {
+            "q": "Se ci sarà il sole, faremmo una gita.",
+            "wrong": "faremmo",
+            "fix": "faremo"
+          },
+          {
+            "q": "Se ti allenassi, migliorerai presto.",
+            "wrong": "allenassi",
+            "fix": "alleni"
+          },
+          {
+            "q": "Se uscissimo adesso, evitiamo la coda.",
+            "wrong": "uscissimo",
+            "fix": "usciamo"
+          },
+          {
+            "q": "Se gela, le tubature sarebbero rotte.",
+            "wrong": "sarebbero",
+            "fix": "saranno"
+          },
+          {
+            "q": "Se avessi fame, ti preparo qualcosa.",
+            "wrong": "avessi",
+            "fix": "hai"
+          },
+          {
+            "q": "Se compri online, risparmieresti tempo.",
+            "wrong": "risparmieresti",
+            "fix": "risparmierai"
+          },
+          {
+            "q": "Se saltassimo la riunione, ci chiamano.",
+            "wrong": "saltassimo",
+            "fix": "saltiamo"
+          },
+          {
+            "q": "Se nevica, chiuderebbero le scuole.",
+            "wrong": "chiuderebbero",
+            "fix": "chiuderanno"
+          },
+          {
+            "q": "Se leggessi il manuale, capisci meglio.",
+            "wrong": "leggessi",
+            "fix": "leggi"
+          },
+          {
+            "q": "Se non ti sbrighi, perderemmo il volo.",
+            "wrong": "perderemmo",
+            "fix": "perderemo"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Costruisci il periodo ipotetico della realtà.",
+        "items": [
+          {
+            "q": "(voi – prenotare adesso) → (voi – trovare posto)",
+            "options": [
+              "Se prenotate adesso, troverete posto.",
+              "Se prenotaste adesso, trovereste posto.",
+              "Se prenotate adesso, trovereste posto."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(lui – insistere) → (loro – cedere)",
+            "options": [
+              "Se insiste, cederanno.",
+              "Se insistesse, cederebbero.",
+              "Se insiste, cederebbero."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(il pacco – arrivare oggi) → (io – aprirlo subito)",
+            "options": [
+              "Se il pacco arriva oggi, lo apro subito.",
+              "Se il pacco arrivasse oggi, lo aprirei subito.",
+              "Se il pacco arriva oggi, lo aprirei subito."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(noi – vincere) → (noi – festeggiare)",
+            "options": [
+              "Se vinciamo, festeggeremo.",
+              "Se vincessimo, festeggeremmo.",
+              "Se vinciamo, festeggeremmo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(tu – bere troppo caffè) → (tu – dormire male)",
+            "options": [
+              "Se bevi troppo caffè, dormirai male.",
+              "Se bevessi troppo caffè, dormiresti male.",
+              "Se bevi troppo caffè, dormiresti male."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(loro – accettare) → (noi – firmare domani)",
+            "options": [
+              "Se accettano, firmiamo domani.",
+              "Se accettassero, firmeremmo domani.",
+              "Se accettano, firmeremmo domani."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(esserci sciopero) → (io – lavorare da casa)",
+            "options": [
+              "Se c'è sciopero, lavoro da casa.",
+              "Se ci fosse sciopero, lavorerei da casa.",
+              "Se c'è sciopero, lavorerei da casa."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(voi – studiare insieme) → (voi – finire prima)",
+            "options": [
+              "Se studiate insieme, finirete prima.",
+              "Se studiaste insieme, finireste prima.",
+              "Se studiate insieme, finireste prima."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(il negozio – essere chiuso) → (noi – tornare domani)",
+            "options": [
+              "Se il negozio è chiuso, torniamo domani.",
+              "Se il negozio fosse chiuso, torneremmo domani.",
+              "Se il negozio è chiuso, torneremmo domani."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(tu – dimenticare il codice) → (tu – chiamare la banca)",
+            "options": [
+              "Se dimentichi il codice, chiama la banca.",
+              "Se dimenticassi il codice, chiameresti la banca.",
+              "Se dimentichi il codice, chiameresti la banca."
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lvl": "b1",
+    "lez": [
+      "B1 L26"
+    ],
+    "title": "La forma passiva con essere e venire",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "buco",
+        "instr": "Scegli la forma passiva corretta.",
+        "items": [
+          {
+            "q": "La cena ___ preparata da mia madre.",
+            "options": [
+              "è",
+              "ha",
+              "viene stata"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "I pacchi ___ consegnati ogni mattina.",
+            "options": [
+              "vengono",
+              "viene",
+              "hanno"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "La lettera ___ scritta ieri.",
+            "options": [
+              "è stata",
+              "ha stata",
+              "viene stata"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Le aule ___ pulite ogni sera.",
+            "options": [
+              "vengono",
+              "viene",
+              "sono state pulite ogni sera"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il museo ___ visitato da molti turisti.",
+            "options": [
+              "è",
+              "ha",
+              "viene stato"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Gli elenchi ___ affissi domani.",
+            "options": [
+              "saranno",
+              "avranno",
+              "verrà"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "La casa ___ costruita nel 1920.",
+            "options": [
+              "è stata",
+              "ha stata",
+              "viene stata"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Le regole ___ rispettate da tutti.",
+            "options": [
+              "vanno",
+              "va",
+              "viene"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il contratto ___ firmato dal direttore.",
+            "options": [
+              "è stato",
+              "ha stato",
+              "viene stato"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Gli errori ___ corretti dall'insegnante.",
+            "options": [
+              "vengono",
+              "viene",
+              "hanno"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca la parola sbagliata (ausiliare o accordo).",
+        "items": [
+          {
+            "q": "Il giardino è curata dal nonno.",
+            "wrong": "curata",
+            "fix": "curato"
+          },
+          {
+            "q": "Le finestre viene lavate ogni mese.",
+            "wrong": "viene",
+            "fix": "vengono"
+          },
+          {
+            "q": "Il quadro ha stato dipinto nel 1800.",
+            "wrong": "ha",
+            "fix": "è"
+          },
+          {
+            "q": "I marciapiedi viene puliti di notte.",
+            "wrong": "viene",
+            "fix": "vengono"
+          },
+          {
+            "q": "La biblioteca è chiuso alle otto.",
+            "wrong": "chiuso",
+            "fix": "chiusa"
+          },
+          {
+            "q": "Gli inviti avranno spediti lunedì.",
+            "wrong": "avranno",
+            "fix": "saranno"
+          },
+          {
+            "q": "Il ponte ha costruito dieci anni fa.",
+            "wrong": "ha",
+            "fix": "è stato"
+          },
+          {
+            "q": "La domanda è respinto dall ufficio.",
+            "wrong": "respinto",
+            "fix": "respinta"
+          },
+          {
+            "q": "I compiti viene corretti dalla maestra.",
+            "wrong": "viene",
+            "fix": "vengono"
+          },
+          {
+            "q": "Le scadenze vengono rispettato da tutti.",
+            "wrong": "rispettato",
+            "fix": "rispettate"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Trasforma dall'attivo al passivo.",
+        "items": [
+          {
+            "q": "Il sindaco inaugura la scuola. →",
+            "options": [
+              "La scuola è inaugurata dal sindaco.",
+              "La scuola ha inaugurata dal sindaco.",
+              "La scuola viene stata inaugurata."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Servono la colazione dalle sette. →",
+            "options": [
+              "La colazione viene servita dalle sette.",
+              "La colazione viene servito dalle sette.",
+              "La colazione ha servita dalle sette."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Un tecnico ha riparato la caldaia. →",
+            "options": [
+              "La caldaia è stata riparata da un tecnico.",
+              "La caldaia ha riparata da un tecnico.",
+              "La caldaia viene stata riparata."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Annaffiano le piante ogni due giorni. →",
+            "options": [
+              "Le piante vengono annaffiate ogni due giorni.",
+              "Le piante viene annaffiate ogni due giorni.",
+              "Le piante hanno annaffiate ogni due giorni."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Premieranno i vincitori sabato. →",
+            "options": [
+              "I vincitori saranno premiati sabato.",
+              "I vincitori avranno premiati sabato.",
+              "I vincitori verranno stati premiati."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Hanno restaurato la chiesa nel 2019. →",
+            "options": [
+              "La chiesa è stata restaurata nel 2019.",
+              "La chiesa ha restaurata nel 2019.",
+              "La chiesa viene restaurata nel 2019."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "La commissione ha respinto il ricorso. →",
+            "options": [
+              "Il ricorso è stato respinto dalla commissione.",
+              "Il ricorso ha respinto dalla commissione.",
+              "Il ricorso viene stato respinto."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il custode chiude il cancello alle nove. →",
+            "options": [
+              "Il cancello viene chiuso dal custode alle nove.",
+              "Il cancello viene chiusa dal custode.",
+              "Il cancello ha chiuso dal custode."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Tutti apprezzano il suo lavoro. →",
+            "options": [
+              "Il suo lavoro è apprezzato da tutti.",
+              "Il suo lavoro ha apprezzato da tutti.",
+              "Il suo lavoro viene stato apprezzato."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Consegneranno le chiavi domani. →",
+            "options": [
+              "Le chiavi saranno consegnate domani.",
+              "Le chiavi avranno consegnate domani.",
+              "Le chiavi verranno state consegnate."
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lvl": "b1",
+    "lez": [
+      "B1 L26"
+    ],
+    "title": "Il «si» passivante",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "buco",
+        "instr": "Scegli la forma corretta: il verbo si accorda con il soggetto.",
+        "items": [
+          {
+            "q": "In questo negozio ___ scarpe italiane.",
+            "options": [
+              "si vendono",
+              "si vende",
+              "si vendere"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Qui ___ un ottimo caffè.",
+            "options": [
+              "si beve",
+              "si bevono",
+              "si bevere"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "___ molte lingue in questa scuola.",
+            "options": [
+              "Si insegnano",
+              "Si insegna",
+              "Si insegnare"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "In estate ___ molta frutta.",
+            "options": [
+              "si mangia",
+              "si mangiano",
+              "si mangiare"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "___ appartamenti in centro.",
+            "options": [
+              "Si affittano",
+              "Si affitta",
+              "Si affittare"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "In quel bar ___ ottimi dolci.",
+            "options": [
+              "si trovano",
+              "si trova",
+              "si trovare"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "___ il pane fresco ogni mattina.",
+            "options": [
+              "Si compra",
+              "Si comprano",
+              "Si comprare"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "In questa zona ___ case antiche.",
+            "options": [
+              "si restaurano",
+              "si restaura",
+              "si restaurare"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "___ molto vino in questa regione.",
+            "options": [
+              "Si produce",
+              "Si producono",
+              "Si produrre"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "___ nuovi corsi ogni anno.",
+            "options": [
+              "Si organizzano",
+              "Si organizza",
+              "Si organizzare"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca il verbo che non concorda con il soggetto.",
+        "items": [
+          {
+            "q": "In quel mercato si compra prodotti locali.",
+            "wrong": "compra",
+            "fix": "comprano"
+          },
+          {
+            "q": "Nella sala si proiettano un documentario.",
+            "wrong": "proiettano",
+            "fix": "proietta"
+          },
+          {
+            "q": "Si costruisce nuovi edifici in periferia.",
+            "wrong": "costruisce",
+            "fix": "costruiscono"
+          },
+          {
+            "q": "In cantina si conservano il vino buono.",
+            "wrong": "conservano",
+            "fix": "conserva"
+          },
+          {
+            "q": "Si ripara biciclette in questa officina.",
+            "wrong": "ripara",
+            "fix": "riparano"
+          },
+          {
+            "q": "In quel laboratorio si analizza i campioni.",
+            "wrong": "analizza",
+            "fix": "analizzano"
+          },
+          {
+            "q": "Si stampano il giornale ogni notte.",
+            "wrong": "stampano",
+            "fix": "stampa"
+          },
+          {
+            "q": "Nel forno si prepara torte artigianali.",
+            "wrong": "prepara",
+            "fix": "preparano"
+          },
+          {
+            "q": "Si raccolgono la frutta a settembre.",
+            "wrong": "raccolgono",
+            "fix": "raccoglie"
+          },
+          {
+            "q": "In quel negozio si ripara orologi antichi.",
+            "wrong": "ripara",
+            "fix": "riparano"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Riscrivi con il «si» passivante.",
+        "items": [
+          {
+            "q": "Servono il pesce il venerdì. →",
+            "options": [
+              "Il pesce si serve il venerdì.",
+              "Il pesce si servono il venerdì.",
+              "Il pesce ci si serve il venerdì."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Noleggiano ombrelloni sulla spiaggia. →",
+            "options": [
+              "Sulla spiaggia si noleggiano ombrelloni.",
+              "Sulla spiaggia si noleggia ombrelloni.",
+              "Sulla spiaggia ci si noleggiano ombrelloni."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Coltivano olive in collina. →",
+            "options": [
+              "In collina si coltivano olive.",
+              "In collina si coltiva olive.",
+              "In collina ci si coltivano olive."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Espongono quadri moderni. →",
+            "options": [
+              "Si espongono quadri moderni.",
+              "Si espone quadri moderni.",
+              "Ci si espongono quadri moderni."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Firmano il contratto in ufficio. →",
+            "options": [
+              "Il contratto si firma in ufficio.",
+              "Il contratto si firmano in ufficio.",
+              "Il contratto ci si firma in ufficio."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Distribuiscono i volantini in piazza. →",
+            "options": [
+              "In piazza si distribuiscono i volantini.",
+              "In piazza si distribuisce i volantini.",
+              "In piazza ci si distribuiscono i volantini."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Traducono il manuale in tre lingue. →",
+            "options": [
+              "Il manuale si traduce in tre lingue.",
+              "Il manuale si traducono in tre lingue.",
+              "Il manuale ci si traduce in tre lingue."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Restituiscono i libri entro un mese. →",
+            "options": [
+              "I libri si restituiscono entro un mese.",
+              "I libri si restituisce entro un mese.",
+              "I libri ci si restituiscono entro un mese."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Cuociono la pizza nel forno a legna. →",
+            "options": [
+              "La pizza si cuoce nel forno a legna.",
+              "La pizza si cuociono nel forno a legna.",
+              "La pizza ci si cuoce nel forno a legna."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Spediscono i pacchi ogni lunedì. →",
+            "options": [
+              "I pacchi si spediscono ogni lunedì.",
+              "I pacchi si spedisce ogni lunedì.",
+              "I pacchi ci si spediscono ogni lunedì."
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lvl": "b1",
+    "stima": "b2",
+    "lez": [
+      "B1 L27"
+    ],
+    "title": "Il discorso indiretto",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "buco",
+        "instr": "Scegli la forma corretta nel discorso indiretto.",
+        "items": [
+          {
+            "q": "«Sono stanco» → Ha detto che ___ stanco.",
+            "options": [
+              "era",
+              "è",
+              "sarà"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "«Arrivo domani» → Ha detto che ___ il giorno dopo.",
+            "options": [
+              "arrivava",
+              "arriva",
+              "arriverà"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "«Ho finito» → Ha detto che ___ finito.",
+            "options": [
+              "aveva",
+              "ha",
+              "avrà"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "«Vengo con voi» → Ha detto che ___ con noi.",
+            "options": [
+              "veniva",
+              "viene",
+              "verrà"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "«Non lo so» → Ha detto che non lo ___ .",
+            "options": [
+              "sapeva",
+              "sa",
+              "saprà"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "«Ti chiamo stasera» → Ha detto che mi ___ quella sera.",
+            "options": [
+              "chiamava",
+              "chiama",
+              "chiamerà"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "«Siamo pronti» → Hanno detto che ___ pronti.",
+            "options": [
+              "erano",
+              "sono",
+              "saranno"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "«Ho comprato la casa» → Ha detto che ___ comprato la casa.",
+            "options": [
+              "aveva",
+              "ha",
+              "avrà"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "«Devo partire» → Ha detto che ___ partire.",
+            "options": [
+              "doveva",
+              "deve",
+              "dovrà"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "«Non posso venire» → Ha detto che non ___ venire.",
+            "options": [
+              "poteva",
+              "può",
+              "potrà"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca il verbo con il tempo sbagliato nel discorso indiretto.",
+        "items": [
+          {
+            "q": "Ha detto che sta male da giorni.",
+            "wrong": "sta",
+            "fix": "stava"
+          },
+          {
+            "q": "Ha risposto che parte la settimana dopo.",
+            "wrong": "parte",
+            "fix": "partiva"
+          },
+          {
+            "q": "Ha spiegato che ha capito tutto.",
+            "wrong": "ha",
+            "fix": "aveva"
+          },
+          {
+            "q": "Ha aggiunto che torna presto.",
+            "wrong": "torna",
+            "fix": "tornava"
+          },
+          {
+            "q": "Ha ammesso che non ricorda niente.",
+            "wrong": "ricorda",
+            "fix": "ricordava"
+          },
+          {
+            "q": "Hanno confermato che vengono anche loro.",
+            "wrong": "vengono",
+            "fix": "venivano"
+          },
+          {
+            "q": "Ha promesso che paga il conto.",
+            "wrong": "paga",
+            "fix": "avrebbe pagato"
+          },
+          {
+            "q": "Ha raccontato che ha visitato il museo.",
+            "wrong": "ha",
+            "fix": "aveva"
+          },
+          {
+            "q": "Ha avvertito che vuole cambiare data.",
+            "wrong": "vuole",
+            "fix": "voleva"
+          },
+          {
+            "q": "Ha scritto che sarà in ufficio lunedì.",
+            "wrong": "sarà",
+            "fix": "sarebbe stato"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Trasforma in discorso indiretto.",
+        "items": [
+          {
+            "q": "«Ho perso le chiavi», ha detto. →",
+            "options": [
+              "Ha detto che aveva perso le chiavi.",
+              "Ha detto che ha perso le chiavi.",
+              "Ha detto che avrà perso le chiavi."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "«Non conosco nessuno qui», ha mormorato. →",
+            "options": [
+              "Ha mormorato che non conosceva nessuno lì.",
+              "Ha mormorato che non conosce nessuno lì.",
+              "Ha mormorato che non conoscerà nessuno lì."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "«Siamo in ritardo», hanno esclamato. →",
+            "options": [
+              "Hanno esclamato che erano in ritardo.",
+              "Hanno esclamato che sono in ritardo.",
+              "Hanno esclamato che saranno in ritardo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "«Studio ingegneria», ha precisato. →",
+            "options": [
+              "Ha precisato che studiava ingegneria.",
+              "Ha precisato che studia ingegneria.",
+              "Ha precisato che studierà ingegneria."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "«Abbiamo già mangiato», hanno replicato. →",
+            "options": [
+              "Hanno replicato che avevano già mangiato.",
+              "Hanno replicato che hanno già mangiato.",
+              "Hanno replicato che avranno già mangiato."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "«Ti aiuterò», ha assicurato. →",
+            "options": [
+              "Ha assicurato che mi avrebbe aiutato.",
+              "Ha assicurato che mi aiuterà.",
+              "Ha assicurato che mi aiutava."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "«Abito in periferia», ha specificato. →",
+            "options": [
+              "Ha specificato che abitava in periferia.",
+              "Ha specificato che abita in periferia.",
+              "Ha specificato che abiterà in periferia."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "«Ho scritto al direttore», ha comunicato. →",
+            "options": [
+              "Ha comunicato che aveva scritto al direttore.",
+              "Ha comunicato che ha scritto al direttore.",
+              "Ha comunicato che avrà scritto al direttore."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "«Non firmo nulla», ha protestato. →",
+            "options": [
+              "Ha protestato che non firmava nulla.",
+              "Ha protestato che non firma nulla.",
+              "Ha protestato che non firmerà nulla."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "«Chiuderemo alle sei», hanno annunciato. →",
+            "options": [
+              "Hanno annunciato che avrebbero chiuso alle sei.",
+              "Hanno annunciato che chiuderanno alle sei.",
+              "Hanno annunciato che chiudevano alle sei."
+            ],
+            "answer": 0
           }
         ]
       }
@@ -9497,7 +15756,7 @@ const TEST_STRUCTURES = [
             "fix": "vengono"
           },
           {
-            "q": "Questa pasta va cotta al dente... va cotto al dente.",
+            "q": "Questa pasta va cotto al dente.",
             "wrong": "cotto",
             "fix": "cotta"
           },

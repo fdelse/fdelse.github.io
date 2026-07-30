@@ -55,6 +55,7 @@
   .mini-annulla{
     font-size:12px;font-weight:600;padding:5px 11px;border-radius:7px;margin-top:8px;
     background:transparent;border:1px solid var(--line);color:var(--ink-soft);cursor:pointer;
+    display:block;margin-left:auto;   /* allineato a destra */
   }
   .mini-annulla:hover{background:var(--line-soft);}
 
@@ -343,7 +344,10 @@ function renderItem(itemData, fmt, refId){
     body.innerHTML = html;
   }
   else if (fmt === 'errore') {
-    box.dataset.answer = itemData.wrong;
+    /* "wrong" può essere una parola o un elenco: alcuni errori coinvolgono due
+       parole (es. «gli lo» da fondere in «glielo», o l'ordine «lo me»), e in
+       quei casi il clic su una qualsiasi delle due va accettato. */
+    box.dataset.answer = Array.isArray(itemData.wrong) ? itemData.wrong.join('|') : itemData.wrong;
     box.dataset.fix = itemData.fix;
     // spezza la frase in parole cliccabili
     const words = itemData.q.split(' ');
@@ -631,9 +635,12 @@ function checkItem(it){
   }
   if (fmt === 'errore') {
     const chosen = it.dataset.chosen;
-    if (chosen === undefined) return { state:'vuoto', answer:'(non risposto)', key: it.dataset.answer + ' → ' + it.dataset.fix };
-    const correct = normalizeText(chosen) === normalizeText(it.dataset.answer);
-    return { state: correct ? 'giusto':'sbagliato', answer: chosen, key: it.dataset.answer + ' → ' + it.dataset.fix };
+    if (chosen === undefined) return { state:'vuoto', answer:'(non risposto)',
+      key: it.dataset.answer.split('|').join(' / ') + ' → ' + it.dataset.fix };
+    const accettate = it.dataset.answer.split('|');
+    const correct = accettate.some(a => normalizeText(chosen) === normalizeText(a));
+    return { state: correct ? 'giusto':'sbagliato', answer: chosen,
+             key: accettate.join(' / ') + ' → ' + it.dataset.fix };
   }
   return { state:'vuoto', answer:'?', key:'?' };
 }
