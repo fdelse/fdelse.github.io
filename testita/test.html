@@ -395,7 +395,11 @@ function renderAllPages(){
 
     const block = document.createElement('div');
     block.className = 'struct-block';
-    block.style.setProperty('--lvl', LVL_COLOR[struct.lvl]);
+    /* Colore neutro durante il test: i colori di livello (verde A1, blu B1…)
+       rivelerebbero a che livello sta rispondendo lo studente, vanificando la
+       scelta di nascondere nomi ed etichette. I colori di livello restano nei
+       risultati, dove sono informazione utile. */
+    block.style.setProperty('--lvl', 'var(--neutro)');
     // Nessun nome di struttura né livello durante il test: sarebbero un indizio
     // (e nel piazzamento un'etichetta tipo "C1" scoraggia). I nomi compaiono
     // solo nei risultati finali, dove sono informazione utile.
@@ -844,14 +848,22 @@ function submitTest(){
 
   let html = '';
   if (multiLivello) {
+    /* La ripartizione per livello si mostra solo se i livelli con domande sono
+       più d'uno: se il test si è fermato al primo, quella riga ripeterebbe il
+       punteggio già scritto sopra (4/15 due volte) senza aggiungere nulla.
+       Nel riepilogo all'insegnante resta sempre: lì è la prova del verdetto. */
+    const conDomande = LVL_SEQ.filter(l => perLvl[l]);
     html +=
       '<div class="card"><p class="kicker">Risposte corrette</p>' +
-      '<p style="font-family:var(--display);font-size:26px;margin:2px 0 14px;">' + score + '</p>' +
-      LVL_SEQ.filter(l => perLvl[l]).map(l => {
-        const p = perLvl[l];
-        const pct = Math.round((p.ok / p.tot) * 100);
-        return '<div class="summary-row"><span>' + LVL_TAG[l] + '</span><b>' + p.ok + '/' + p.tot + ' · ' + pct + '%</b></div>';
-      }).join('') +
+      '<p style="font-family:var(--display);font-size:26px;margin:2px 0 ' +
+      (conDomande.length > 1 ? '14px' : '2px') + ';">' + score + '</p>' +
+      (conDomande.length > 1
+        ? conDomande.map(l => {
+            const p = perLvl[l];
+            const pct = Math.round((p.ok / p.tot) * 100);
+            return '<div class="summary-row"><span>domande di livello ' + LVL_TAG[l] + '</span><b>' + p.ok + '/' + p.tot + ' · ' + pct + '%</b></div>';
+          }).join('')
+        : '') +
       '</div>';
   }
   html +=
