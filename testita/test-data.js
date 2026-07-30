@@ -9106,6 +9106,261 @@ const TEST_STRUCTURES = [
     ]
   },
   {
+    "lvl": "b1",
+    "stima": "b2",
+    "lez": [
+      "B1 L21",
+      "B2 L7"
+    ],
+    "title": "I pronomi combinati",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "fill",
+        "instr": "Scrivi il pronome combinato che sostituisce le parti sottolineate.",
+        "items": [
+          {
+            "q": "Do il libro a Marco. → ___ do.",
+            "a": "Glielo",
+            "no": [
+              "Gli lo",
+              "Lo gli",
+              "Glielà"
+            ]
+          },
+          {
+            "q": "Porto la torta a Sara. → ___ porto.",
+            "a": "Gliela",
+            "no": [
+              "Gli la",
+              "La gli",
+              "Glielo"
+            ]
+          },
+          {
+            "q": "Mando le foto a Luca. → ___ mando.",
+            "a": "Gliele",
+            "no": [
+              "Gli le",
+              "Le gli",
+              "Glieli"
+            ]
+          },
+          {
+            "q": "Presto i libri ai ragazzi. → ___ presto.",
+            "a": "Glieli",
+            "no": [
+              "Gli li",
+              "Li gli",
+              "Gliele"
+            ]
+          },
+          {
+            "q": "Parlo del problema a Anna. → ___ parlo.",
+            "a": "Gliene",
+            "no": [
+              "Gli ne",
+              "Ne gli",
+              "Glielo"
+            ]
+          },
+          {
+            "q": "Mi dai il numero? → ___ dai?",
+            "a": "Me lo",
+            "no": [
+              "Mi lo",
+              "Lo mi",
+              "Mi il"
+            ]
+          },
+          {
+            "q": "Ti mando la mail. → ___ mando.",
+            "a": "Te la",
+            "no": [
+              "Ti la",
+              "La ti",
+              "Te lo"
+            ]
+          },
+          {
+            "q": "Ci spiega le regole. → ___ spiega.",
+            "a": "Ce le",
+            "no": [
+              "Ci le",
+              "Le ci",
+              "Ce li"
+            ]
+          },
+          {
+            "q": "Vi porto i documenti. → ___ porto.",
+            "a": "Ve li",
+            "no": [
+              "Vi li",
+              "Li vi",
+              "Ve le"
+            ]
+          },
+          {
+            "q": "Mi parla dei suoi viaggi. → ___ parla.",
+            "a": "Me ne",
+            "no": [
+              "Mi ne",
+              "Ne mi",
+              "Me li"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca la parola sbagliata nella frase.",
+        "items": [
+          {
+            "q": "Mi lo dai domani?",
+            "wrong": "Mi",
+            "fix": "Me (me lo)"
+          },
+          {
+            "q": "Ti la restituisco domani.",
+            "wrong": "Ti",
+            "fix": "Te (te la)"
+          },
+          {
+            "q": "Ci le spiega il professore.",
+            "wrong": "Ci",
+            "fix": "Ce (ce le)"
+          },
+          {
+            "q": "Vi li porto io.",
+            "wrong": "Vi",
+            "fix": "Ve (ve li)"
+          },
+          {
+            "q": "Gli lo ho già detto.",
+            "wrong": "Gli",
+            "fix": "Glielo"
+          },
+          {
+            "q": "Lo me presti un momento?",
+            "wrong": "Lo",
+            "fix": "Me (me lo presti)"
+          },
+          {
+            "q": "Mi ne ha parlato ieri.",
+            "wrong": "Mi",
+            "fix": "Me (me ne)"
+          },
+          {
+            "q": "Te lo ho comprate ieri.",
+            "wrong": "comprate",
+            "fix": "comprato"
+          },
+          {
+            "q": "Ce li ha portato Marco.",
+            "wrong": "portato",
+            "fix": "portati"
+          },
+          {
+            "q": "Gliela ho spedite la settimana scorsa.",
+            "wrong": "spedite",
+            "fix": "spedita"
+          }
+        ]
+      },
+      {
+        "type": "Composizione",
+        "fmt": "ordina",
+        "instr": "Clicca le parole nell'ordine giusto per formare la frase.",
+        "items": [
+          {
+            "q": "Il pronome combinato va prima del verbo.",
+            "sol": [
+              "Me",
+              "lo",
+              "dai"
+            ]
+          },
+          {
+            "q": "Attenzione all'ordine dei due pronomi.",
+            "sol": [
+              "Te",
+              "la",
+              "porto"
+            ]
+          },
+          {
+            "q": "Con i tempi composti il pronome resta prima.",
+            "sol": [
+              "Glielo",
+              "ho",
+              "detto"
+            ]
+          },
+          {
+            "q": "Il pronome indiretto viene per primo.",
+            "sol": [
+              "Ce",
+              "li",
+              "mandano"
+            ]
+          },
+          {
+            "q": "Con «ne» vale la stessa regola.",
+            "sol": [
+              "Ve",
+              "ne",
+              "parlo"
+            ]
+          },
+          {
+            "q": "All'imperativo negativo il pronome sta prima.",
+            "sol": [
+              "Non",
+              "me",
+              "lo",
+              "dare"
+            ]
+          },
+          {
+            "q": "Il participio si accorda con il pronome diretto.",
+            "sol": [
+              "Te",
+              "li",
+              "ho",
+              "comprati"
+            ]
+          },
+          {
+            "q": "Attenzione all'accordo del participio.",
+            "sol": [
+              "Gliele",
+              "abbiamo",
+              "spedite"
+            ]
+          },
+          {
+            "q": "Il pronome combinato precede il verbo.",
+            "sol": [
+              "Me",
+              "ne",
+              "ha",
+              "parlato"
+            ]
+          },
+          {
+            "q": "Con «lo» davanti a vocale si usa l'apostrofo.",
+            "sol": [
+              "Ce",
+              "l'ha",
+              "detto"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "lvl": "c1",
     "title": "La forma passiva: tutte le forme",
     "exercises": [

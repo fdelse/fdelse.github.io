@@ -37,6 +37,27 @@
   .word.sel{background:var(--lvl,var(--ink));color:#fff;}
   .hint{font-size:12.5px;color:var(--ink-faint);margin-top:6px;font-style:italic;}
 
+  /* formato "clicca per comporre" */
+  .composta{
+    min-height:46px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;
+    border:1.5px dashed var(--line);border-radius:9px;padding:9px 11px;margin:8px 0 10px;
+    background:var(--paper);
+  }
+  .composta__vuota{color:var(--ink-faint);font-style:italic;}
+  .parole-tray{display:flex;flex-wrap:wrap;gap:7px;}
+  .tok{
+    font-family:var(--sans);font-size:14.5px;padding:7px 13px;border-radius:8px;
+    border:1.5px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;
+  }
+  .tok:hover{background:#eaf4f2;border-color:var(--lvl,var(--ink));}
+  .tok--messa{background:var(--lvl,var(--ink));color:#fff;border-color:var(--lvl,var(--ink));}
+  .tok--messa:hover{background:var(--lvl,var(--ink));color:#fff;}
+  .mini-annulla{
+    font-size:12px;font-weight:600;padding:5px 11px;border-radius:7px;margin-top:8px;
+    background:transparent;border:1px solid var(--line);color:var(--ink-soft);cursor:pointer;
+  }
+  .mini-annulla:hover{background:var(--line-soft);}
+
   /* spazio vuoto nella frase: vuoto = tratteggiato, riempito = parola evidenziata */
   .gap{
     display:inline-block;min-width:96px;text-align:center;
@@ -212,20 +233,48 @@ function normalizeText(str){
     .replace(/[.,;:!?"'’]/g, '')
     .replace(/\s+/g, ' ').trim();
 }
-function fillCorrect(userVal, ans){
+/* ---------- correzione dei buchi digitati ----------
+   Un refuso non deve valere come errore di grammatica, ma in italiano la
+   desinenza È la grammatica: parlo/parla, fosse/fossi, dico/dice differiscono
+   di una lettera e sono forme diverse. Quindi:
+     · l'errore dentro la parola si perdona (finamo, prefeisco, dorimamo)
+     · la differenza nelle ultime due lettere no
+     · le forme errate note (campo "no" dell'item) sono respinte comunque
+     · gli accenti si ignorano, per non penalizzare chi non ha la tastiera italiana */
+function normParola(s){
+  return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+          .replace(/[^a-z']/g,'');
+}
+// distanza di Damerau-Levenshtein: conta anche lo scambio di due lettere vicine
+function distanza(a, b){
+  const d = [];
+  for (let i = 0; i <= a.length; i++){ d[i] = []; for (let j = 0; j <= b.length; j++) d[i][j] = (i===0? j : (j===0? i : 0)); }
+  for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++){
+    const c = a[i-1] === b[j-1] ? 0 : 1;
+    d[i][j] = Math.min(d[i-1][j]+1, d[i][j-1]+1, d[i-1][j-1]+c);
+    if (i>1 && j>1 && a[i-1]===b[j-2] && a[i-2]===b[j-1]) d[i][j] = Math.min(d[i][j], d[i-2][j-2]+1);
+  }
+  return d[a.length][b.length];
+}
+function parolaCorretta(scritto, giusta, forme){
+  const a = normParola(scritto), b = normParola(giusta);
+  if (!a) return false;
+  if (a === b) return true;
+  if ((forme||[]).some(f => normParola(f) === a)) return false;   // forma errata nota
+  if (b.length >= 5 && distanza(a,b) <= 1 && a.slice(-2) === b.slice(-2)) return true;
+  return false;
+}
+function fillCorrect(userVal, ans, forme){
   // ans può avere alternative con "|" e/o buchi multipli con "/"
   if (!userVal || !userVal.trim()) return null; // null = non risposto
-  const parts = ans.split('/').map(p => p.trim());          // buchi multipli
+  const parts = ans.split('/').map(p => p.trim());
   const userParts = userVal.split('/').map(p => p.trim());
   if (parts.length > 1) {
     if (userParts.length !== parts.length) return false;
-    return parts.every((p, i) => {
-      const alts = p.split('|').map(a => normalizeText(a));
-      return alts.includes(normalizeText(userParts[i]));
-    });
+    return parts.every((p, i) =>
+      p.split('|').some(alt => parolaCorretta(userParts[i], alt, forme)));
   }
-  const alts = ans.split('|').map(a => normalizeText(a));
-  return alts.includes(normalizeText(userVal));
+  return ans.split('|').some(alt => parolaCorretta(userVal, alt, forme));
 }
 
 /* ---------- avvio ---------- */
@@ -256,6 +305,7 @@ function renderItem(itemData, fmt, refId){
 
   if (fmt === 'fill') {
     box.dataset.answer = itemData.a;
+    if (itemData.no) box.dataset.no = JSON.stringify(itemData.no);   // forme errate note
     const parts = itemData.q.split('___');
     let html = '<div class="item__text">';
     if (parts.length > 1) {
@@ -275,6 +325,21 @@ function renderItem(itemData, fmt, refId){
       html += '<button type="button" class="opt" data-i="' + i + '">' + op + '</button>';
     });
     html += '</div>';
+    body.innerHTML = html;
+  }
+  else if (fmt === 'ordina') {
+    box.dataset.answer = JSON.stringify(itemData.sol);
+    if (itemData.alt) box.dataset.alt = JSON.stringify(itemData.alt);
+    // le parole si mescolano con lo stesso PRNG del test: col seed resta riproducibile
+    const mescolate = pickRandom(itemData.sol.slice(), itemData.sol.length);
+    let html = '<div class="hint">' + (itemData.q || 'Clicca le parole nell\'ordine giusto:') + '</div>';
+    html += '<div class="composta" data-composta><span class="composta__vuota">…</span></div>';
+    html += '<div class="parole-tray">';
+    mescolate.forEach((p, i) => {
+      html += '<button type="button" class="tok" data-tok="' + i + '">' + p + '</button>';
+    });
+    html += '</div>';
+    html += '<button type="button" class="mini-annulla" data-annulla>Ricomincia</button>';
     body.innerHTML = html;
   }
   else if (fmt === 'errore') {
@@ -375,6 +440,28 @@ function renderAllPages(){
         gap.classList.add('filled');
       }
     }
+    // formato "ordina": clic sulla parola nel serbatoio → la aggiunge alla frase;
+    // clic sulla parola nella frase → la rimanda nel serbatoio
+    if (e.target.classList.contains('tok')) {
+      const item = e.target.closest('.item');
+      const comp = item.querySelector('[data-composta]');
+      const vuota = comp.querySelector('.composta__vuota');
+      if (vuota) vuota.remove();
+      comp.appendChild(e.target);
+      e.target.classList.add('tok--messa');
+      aggiornaComposta(item);
+      return;
+    }
+    if (e.target.dataset.annulla !== undefined) {
+      e.preventDefault();
+      const item = e.target.closest('.item');
+      const tray = item.querySelector('.parole-tray');
+      item.querySelectorAll('[data-composta] .tok').forEach(t => {
+        t.classList.remove('tok--messa'); tray.appendChild(t);
+      });
+      aggiornaComposta(item);
+      return;
+    }
     if (e.target.classList.contains('word')) {
       const words = e.target.parentElement.querySelectorAll('.word');
       words.forEach(w => w.classList.remove('sel'));
@@ -382,6 +469,22 @@ function renderAllPages(){
       e.target.closest('.item').dataset.chosen = e.target.dataset.w;
     }
   });
+}
+
+/* Aggiorna lo stato di un item "ordina": salva la sequenza costruita e
+   ripristina il segnaposto se la frase è vuota. */
+function aggiornaComposta(item){
+  const comp = item.querySelector('[data-composta]');
+  const scelte = Array.from(comp.querySelectorAll('.tok')).map(t => t.textContent);
+  if (scelte.length) item.dataset.chosen = JSON.stringify(scelte);
+  else {
+    delete item.dataset.chosen;
+    if (!comp.querySelector('.composta__vuota')) {
+      const v = document.createElement('span');
+      v.className = 'composta__vuota'; v.textContent = '…';
+      comp.appendChild(v);
+    }
+  }
 }
 
 function showPage(idx){
@@ -405,12 +508,19 @@ function showPage(idx){
    Avviso superabile: intercetta le domande saltate per distrazione, ma non
    costringe a indovinare — una casella vuota è informazione più onesta di
    una risposta tirata a caso. */
+/* Un item è "risposto" in modo diverso secondo il formato: i buchi digitati
+   non usano dataset.chosen ma il contenuto dei campi. */
+function haRisposta(it){
+  if (it.dataset.fmt === 'fill') {
+    return Array.from(it.querySelectorAll('.blank')).some(i => i.value.trim() !== '');
+  }
+  return it.dataset.chosen !== undefined;
+}
 function senzaRisposta(idx){
   const scope = (idx === null)
     ? document
     : document.querySelector('.pagewrap[data-page="' + idx + '"]');
-  return Array.from(scope.querySelectorAll('.item'))
-    .filter(it => it.dataset.chosen === undefined).length;
+  return Array.from(scope.querySelectorAll('.item')).filter(it => !haRisposta(it)).length;
 }
 
 function confermaProsegui(ultima){
@@ -485,8 +595,14 @@ function checkItem(it){
     const vals = Array.from(inputs).map(i => i.value.trim());
     const answer = vals.join(' / ') || '(vuoto)';
     if (vals.every(v => !v)) return { state:'vuoto', answer:'(vuoto)', key: it.dataset.answer };
-    const res = fillCorrect(vals.length > 1 ? vals.join(' / ') : vals[0], it.dataset.answer);
-    return { state: res === true ? 'giusto' : (res === null ? 'vuoto' : 'verifica'), answer, key: it.dataset.answer };
+    const forme = it.dataset.no ? JSON.parse(it.dataset.no) : [];
+    const res = fillCorrect(vals.length > 1 ? vals.join(' / ') : vals[0], it.dataset.answer, forme);
+    /* Se l'item elenca le forme errate note (campo "no"), l'autore sta dicendo che
+       la risposta è obbligata: una risposta diversa è sbagliata, non "da verificare".
+       Senza quell'elenco resta la prudenza di prima, perché potrebbero esserci
+       formulazioni valide non previste. */
+    const esitoErrato = forme.length ? 'sbagliato' : 'verifica';
+    return { state: res === true ? 'giusto' : (res === null ? 'vuoto' : esitoErrato), answer, key: it.dataset.answer };
   }
   if (fmt === 'buco') {
     const chosen = it.dataset.chosen;
@@ -501,6 +617,17 @@ function checkItem(it){
     if (chosen === undefined) return { state:'vuoto', answer:'(non risposto)', key: opts[it.dataset.answer]?.textContent };
     const correct = parseInt(chosen) === parseInt(it.dataset.answer);
     return { state: correct ? 'giusto':'sbagliato', answer: opts[parseInt(chosen)].textContent, key: opts[parseInt(it.dataset.answer)].textContent };
+  }
+  if (fmt === 'ordina') {
+    const sol = JSON.parse(it.dataset.answer);
+    const alt = it.dataset.alt ? JSON.parse(it.dataset.alt) : [];
+    const chiave = sol.join(' ');
+    if (it.dataset.chosen === undefined) return { state:'vuoto', answer:'(non risposto)', key: chiave };
+    const scelte = JSON.parse(it.dataset.chosen);
+    const dato = scelte.join(' ');
+    const conf = s => s.map(x => x.toLowerCase()).join(' ');
+    const ok = conf(scelte) === conf(sol) || alt.some(a => conf(scelte) === conf(a));
+    return { state: ok ? 'giusto' : 'sbagliato', answer: dato, key: chiave };
   }
   if (fmt === 'errore') {
     const chosen = it.dataset.chosen;
