@@ -5049,28 +5049,43 @@ const TEST_STRUCTURES = [
         "items": [
           {
             "q": "Vado a il cinema stasera.",
-            "wrong": "a",
-            "fix": "al (a+il)"
+            "wrong": [
+              "a",
+              "il"
+            ],
+            "fix": "al (a + il si fondono)"
           },
           {
             "q": "Il quaderno è su la sedia.",
-            "wrong": "su",
-            "fix": "sulla (su+la)"
+            "wrong": [
+              "su",
+              "la"
+            ],
+            "fix": "sulla (su + la)"
           },
           {
             "q": "Esco da lo studio adesso.",
-            "wrong": "da",
-            "fix": "dallo (da+lo)"
+            "wrong": [
+              "da",
+              "lo"
+            ],
+            "fix": "dallo (da + lo)"
           },
           {
             "q": "I nomi di gli studenti sono qui.",
-            "wrong": "di",
-            "fix": "degli (di+gli)"
+            "wrong": [
+              "di",
+              "gli"
+            ],
+            "fix": "degli (di + gli)"
           },
           {
             "q": "Entro in la stanza.",
-            "wrong": "in",
-            "fix": "nella (in+la)"
+            "wrong": [
+              "in",
+              "la"
+            ],
+            "fix": "nella (in + la)"
           },
           {
             "q": "Il regalo è per il bambini.",
@@ -5079,23 +5094,35 @@ const TEST_STRUCTURES = [
           },
           {
             "q": "Scrivo a le mie amiche.",
-            "wrong": "a",
-            "fix": "alle (a+le)"
+            "wrong": [
+              "a",
+              "le"
+            ],
+            "fix": "alle (a + le)"
           },
           {
             "q": "Vengo da l'aeroporto.",
-            "wrong": "da",
-            "fix": "dall' (da+l')"
+            "wrong": [
+              "da",
+              "l'aeroporto"
+            ],
+            "fix": "dall'aeroporto (da + l')"
           },
           {
             "q": "La foto è su lo scaffale.",
-            "wrong": "su",
-            "fix": "sullo (su+lo)"
+            "wrong": [
+              "su",
+              "lo"
+            ],
+            "fix": "sullo (su + lo)"
           },
           {
             "q": "Penso a i miei genitori.",
-            "wrong": "a",
-            "fix": "ai (a+i)"
+            "wrong": [
+              "a",
+              "i"
+            ],
+            "fix": "ai (a + i)"
           }
         ]
       },
@@ -9378,96 +9405,96 @@ const TEST_STRUCTURES = [
       {
         "type": "Riempimento",
         "fmt": "fill",
-        "instr": "Scrivi l'infinito del verbo indicato, come nelle ricette.",
+        "instr": "Le ricette impersonali usano l'infinito: scrivi l'infinito del verbo indicato.",
         "items": [
           {
             "q": "___ le uova in una ciotola. (sbattere)",
             "a": "Sbattere",
             "no": [
-              "Sbatti",
-              "Sbatte",
-              "Sbattete"
+              "Sbattendo",
+              "Sbattuto",
+              "Sbatter"
             ]
           },
           {
             "q": "___ la farina poco a poco. (aggiungere)",
             "a": "Aggiungere",
             "no": [
-              "Aggiungi",
-              "Aggiunge",
-              "Aggiungete"
+              "Aggiungendo",
+              "Aggiunto",
+              "Aggiunger"
             ]
           },
           {
             "q": "___ il tutto per dieci minuti. (mescolare)",
             "a": "Mescolare",
             "no": [
-              "Mescola",
-              "Mescolate",
-              "Mescoli"
+              "Mescolando",
+              "Mescolato",
+              "Mescolar"
             ]
           },
           {
             "q": "___ in forno a 180 gradi. (cuocere)",
             "a": "Cuocere",
             "no": [
-              "Cuoci",
-              "Cuocete",
-              "Cuoce"
+              "Cuocendo",
+              "Cotto",
+              "Cuocer"
             ]
           },
           {
             "q": "___ le verdure a pezzetti. (tagliare)",
             "a": "Tagliare",
             "no": [
-              "Taglia",
-              "Tagliate",
-              "Tagli"
+              "Tagliando",
+              "Tagliato",
+              "Tagliar"
             ]
           },
           {
             "q": "___ il sale a piacere. (unire)",
             "a": "Unire",
             "no": [
-              "Unisci",
-              "Unite",
-              "Unisce"
+              "Unendo",
+              "Unito",
+              "Unir"
             ]
           },
           {
             "q": "___ riposare l'impasto. (lasciare)",
             "a": "Lasciare",
             "no": [
-              "Lascia",
-              "Lasciate",
-              "Lascio"
+              "Lasciando",
+              "Lasciato",
+              "Lasciar"
             ]
           },
           {
             "q": "___ con olio e limone. (condire)",
             "a": "Condire",
             "no": [
-              "Condisci",
-              "Condite",
-              "Condisce"
+              "Condendo",
+              "Condito",
+              "Condir"
             ]
           },
           {
             "q": "___ a fuoco lento. (scaldare)",
             "a": "Scaldare",
             "no": [
-              "Scalda",
-              "Scaldate",
-              "Scaldi"
+              "Scaldando",
+              "Scaldato",
+              "Scaldar"
             ]
           },
           {
             "q": "___ prima di servire. (raffreddare)",
             "a": "Raffreddare",
             "no": [
-              "Raffredda",
-              "Raffreddate",
-              "Raffreddi"
+              "Raffreddando",
+              "Raffreddato",
+              "Raffreddar"
             ]
           }
         ]
@@ -9475,71 +9502,71 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Nelle istruzioni scritte si usa l'infinito: clicca la forma sbagliata.",
+        "instr": "La ricetta comincia con l'infinito: clicca il verbo che cambia registro.",
         "items": [
           {
-            "q": "Versa il latte nella pentola.",
-            "wrong": "Versa",
-            "fix": "Versare"
+            "q": "Versare il latte e poi mescola bene.",
+            "wrong": "mescola",
+            "fix": "mescolare"
           },
           {
-            "q": "Fate bollire l'acqua salata.",
-            "wrong": "Fate",
-            "fix": "Far"
+            "q": "Sbucciare le patate e tagliatele a fette.",
+            "wrong": "tagliatele",
+            "fix": "tagliarle"
           },
           {
-            "q": "Sbucci le patate con cura.",
-            "wrong": "Sbucci",
-            "fix": "Sbucciare"
+            "q": "Scaldare il forno e infornate la teglia.",
+            "wrong": "infornate",
+            "fix": "infornare"
           },
           {
-            "q": "Mettete il composto in frigo.",
-            "wrong": "Mettete",
-            "fix": "Mettere"
+            "q": "Unire le uova e sbatti il composto.",
+            "wrong": "sbatti",
+            "fix": "sbattere"
           },
           {
-            "q": "Gira lentamente con il cucchiaio.",
-            "wrong": "Gira",
-            "fix": "Girare"
+            "q": "Lasciare riposare e servite freddo.",
+            "wrong": "servite",
+            "fix": "servire"
           },
           {
-            "q": "Cospargete di zucchero a velo.",
-            "wrong": "Cospargete",
-            "fix": "Cospargere"
+            "q": "Tritare il prezzemolo e aggiungilo alla salsa.",
+            "wrong": "aggiungilo",
+            "fix": "aggiungerlo"
           },
           {
-            "q": "Friggi in olio caldo.",
-            "wrong": "Friggi",
-            "fix": "Friggere"
+            "q": "Cuocere a fuoco lento e girate spesso.",
+            "wrong": "girate",
+            "fix": "girare"
           },
           {
-            "q": "Servite ben caldo.",
-            "wrong": "Servite",
-            "fix": "Servire"
+            "q": "Sciogliere il burro e versalo nella ciotola.",
+            "wrong": "versalo",
+            "fix": "versarlo"
           },
           {
-            "q": "Copri con un panno umido.",
-            "wrong": "Copri",
-            "fix": "Coprire"
+            "q": "Montare la panna e mettila in frigo.",
+            "wrong": "mettila",
+            "fix": "metterla"
           },
           {
-            "q": "Frullate fino a ottenere una crema.",
-            "wrong": "Frullate",
-            "fix": "Frullare"
+            "q": "Salare l'acqua e calate la pasta.",
+            "wrong": "calate",
+            "fix": "calare"
           }
         ]
       },
       {
         "type": "Trasformazione",
         "fmt": "buco",
-        "instr": "Trasforma l'istruzione parlata in istruzione scritta.",
+        "instr": "Riscrivi l'istruzione con l'infinito, il registro impersonale delle ricette scritte.",
         "items": [
           {
             "q": "Metti la pasta nell'acqua. →",
             "options": [
               "Mettere la pasta nell'acqua.",
-              "Metta la pasta nell'acqua.",
-              "Mettendo la pasta nell'acqua."
+              "Mettendo la pasta nell'acqua.",
+              "Messo la pasta nell'acqua."
             ],
             "answer": 0
           },
@@ -9547,8 +9574,8 @@ const TEST_STRUCTURES = [
             "q": "Aggiungi il sale. →",
             "options": [
               "Aggiungere il sale.",
-              "Aggiunga il sale.",
-              "Aggiungendo il sale."
+              "Aggiungendo il sale.",
+              "Aggiunto il sale."
             ],
             "answer": 0
           },
@@ -9556,8 +9583,8 @@ const TEST_STRUCTURES = [
             "q": "Fai cuocere per otto minuti. →",
             "options": [
               "Far cuocere per otto minuti.",
-              "Faccia cuocere per otto minuti.",
-              "Facendo cuocere per otto minuti."
+              "Facendo cuocere per otto minuti.",
+              "Fatto cuocere per otto minuti."
             ],
             "answer": 0
           },
@@ -9565,8 +9592,8 @@ const TEST_STRUCTURES = [
             "q": "Scola la pasta. →",
             "options": [
               "Scolare la pasta.",
-              "Scoli la pasta.",
-              "Scolando la pasta."
+              "Scolando la pasta.",
+              "Scolato la pasta."
             ],
             "answer": 0
           },
@@ -9574,8 +9601,8 @@ const TEST_STRUCTURES = [
             "q": "Trita il prezzemolo. →",
             "options": [
               "Tritare il prezzemolo.",
-              "Triti il prezzemolo.",
-              "Tritando il prezzemolo."
+              "Tritando il prezzemolo.",
+              "Tritato il prezzemolo."
             ],
             "answer": 0
           },
@@ -9583,8 +9610,8 @@ const TEST_STRUCTURES = [
             "q": "Sciogli il burro. →",
             "options": [
               "Sciogliere il burro.",
-              "Sciolga il burro.",
-              "Sciogliendo il burro."
+              "Sciogliendo il burro.",
+              "Sciolto il burro."
             ],
             "answer": 0
           },
@@ -9592,8 +9619,8 @@ const TEST_STRUCTURES = [
             "q": "Monta la panna. →",
             "options": [
               "Montare la panna.",
-              "Monti la panna.",
-              "Montando la panna."
+              "Montando la panna.",
+              "Montato la panna."
             ],
             "answer": 0
           },
@@ -9601,8 +9628,8 @@ const TEST_STRUCTURES = [
             "q": "Spegni il fuoco. →",
             "options": [
               "Spegnere il fuoco.",
-              "Spenga il fuoco.",
-              "Spegnendo il fuoco."
+              "Spegnendo il fuoco.",
+              "Spento il fuoco."
             ],
             "answer": 0
           },
@@ -9610,8 +9637,8 @@ const TEST_STRUCTURES = [
             "q": "Distribuisci il ripieno. →",
             "options": [
               "Distribuire il ripieno.",
-              "Distribuisca il ripieno.",
-              "Distribuendo il ripieno."
+              "Distribuendo il ripieno.",
+              "Distribuito il ripieno."
             ],
             "answer": 0
           },
@@ -9619,8 +9646,8 @@ const TEST_STRUCTURES = [
             "q": "Inforna per venti minuti. →",
             "options": [
               "Infornare per venti minuti.",
-              "Inforni per venti minuti.",
-              "Infornando per venti minuti."
+              "Infornando per venti minuti.",
+              "Infornato per venti minuti."
             ],
             "answer": 0
           }
