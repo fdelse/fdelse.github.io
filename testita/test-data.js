@@ -1,7 +1,9 @@
 /* TEST-DATA.JS — Banca esercizi del TEST
    Strutture mappate sulle lezioni dell indice standard (campo "lez").
-   Campo "stima": livello a cui la struttura pesa nel calcolo, se diverso da quello
-   di raggruppamento (strutture introdotte presto e controllate tardi).
+   Campo "stima": livello a cui la struttura pesa nel calcolo. Si mette SOLO
+   dove l indice mostra un ripasso reale a un livello superiore: se una
+   struttura non viene ripresa, dire che si acquisisce dopo significherebbe
+   affermare che lo studente ci arriva da solo.
    Campo "diag": struttura diagnostica, usata dal preset «Test di posizionamento».
    A1: 18 · A2: 17 · B1: 25 · C1: 5 — 10 item per esercizio, 3 esercizi per struttura.
    Formati: buco {q,options,answer} · errore {q,wrong,fix} · fill {q,a,no} · ordina {q,sol}.
@@ -3110,8 +3112,7 @@ const TEST_STRUCTURES = [
         ]
       }
     ],
-    "diag": true,
-    "stima": "a2"
+    "diag": true
   },
   {
     "lvl": "a",
@@ -4284,9 +4285,9 @@ const TEST_STRUCTURES = [
             "fix": "prossimo"
           },
           {
-            "q": "Stamattina presto vedo Anna alle nove di sera.",
-            "wrong": "Stamattina",
-            "fix": "Stasera"
+            "q": "Il weekend passato vado in montagna.",
+            "wrong": "passato",
+            "fix": "prossimo"
           },
           {
             "q": "Il mese scorso comincio il corso.",
@@ -6531,7 +6532,8 @@ const TEST_STRUCTURES = [
           }
         ]
       }
-    ]
+    ],
+    "diag": true
   },
   {
     "lvl": "a2",
@@ -8209,12 +8211,12 @@ const TEST_STRUCTURES = [
             "fix": "quindi/e"
           },
           {
-            "q": "Volevo telefonare e non avevo credito.",
+            "q": "Volevo uscire e sono rimasto a casa.",
             "wrong": "e",
             "fix": "ma"
           },
           {
-            "q": "Salto la cena ma non ho fame.",
+            "q": "Salto la cena ma sono a dieta.",
             "wrong": "ma",
             "fix": "perché"
           },
@@ -8224,17 +8226,17 @@ const TEST_STRUCTURES = [
             "fix": "ma"
           },
           {
-            "q": "È presto e sono già stanco.",
+            "q": "Ho studiato molto e non ho passato l'esame.",
             "wrong": "e",
             "fix": "ma"
           },
           {
-            "q": "Mi alleno ogni giorno ma voglio migliorare.",
+            "q": "Mi alleno ogni giorno ma sono in forma.",
             "wrong": "ma",
-            "fix": "perché"
+            "fix": "quindi"
           },
           {
-            "q": "Il biglietto costa poco ma non lo prendo.",
+            "q": "Il biglietto costa poco ma lo compro.",
             "wrong": "ma",
             "fix": "quindi"
           },
@@ -8731,12 +8733,12 @@ const TEST_STRUCTURES = [
           {
             "q": "Devi aprirmi la porta.",
             "wrong": "Devi",
-            "fix": "Potrebbe"
+            "fix": "Potresti (col tu)"
           },
           {
             "q": "Dammi il conto.",
             "wrong": "Dammi",
-            "fix": "Mi darebbe"
+            "fix": "Mi daresti (col tu)"
           },
           {
             "q": "Voglio prenotare un tavolo.",
@@ -8746,7 +8748,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Devi ripetere più piano.",
             "wrong": "Devi",
-            "fix": "Potrebbe"
+            "fix": "Potresti (col tu)"
           },
           {
             "q": "Voglio sapere il prezzo.",
@@ -8756,7 +8758,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Aiutami subito, per favore.",
             "wrong": "Aiutami",
-            "fix": "Mi potrebbe aiutare"
+            "fix": "Mi aiuteresti (col tu)"
           },
           {
             "q": "Voglio due biglietti.",
@@ -8766,7 +8768,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Devi chiamare un taxi per me.",
             "wrong": "Devi",
-            "fix": "Potrebbe"
+            "fix": "Potresti (col tu)"
           },
           {
             "q": "Voglio parlare con il responsabile.",
@@ -9396,7 +9398,6 @@ const TEST_STRUCTURES = [
   },
   {
     "lvl": "b1",
-    "stima": "a2",
     "lez": [
       "B1 L4"
     ],
@@ -10856,9 +10857,9 @@ const TEST_STRUCTURES = [
             "fix": "era"
           },
           {
-            "q": "Improvvisamente nevicava molto forte.",
-            "wrong": "nevicava",
-            "fix": "ha cominciato a nevicare"
+            "q": "Ieri mattina faceva colazione al bar alle otto.",
+            "wrong": "faceva",
+            "fix": "ha fatto"
           }
         ]
       },
@@ -12009,7 +12010,10 @@ const TEST_STRUCTURES = [
     "lvl": "b1",
     "stima": "b2",
     "lez": [
-      "B1 L16"
+      "B1 L16",
+      "B2 L13",
+      "B2 L18",
+      "C1 L2"
     ],
     "title": "Il congiuntivo passato",
     "exercises": [
@@ -12268,7 +12272,6 @@ const TEST_STRUCTURES = [
   },
   {
     "lvl": "b1",
-    "stima": "a2",
     "lez": [
       "B1 L17"
     ],
@@ -12668,14 +12671,14 @@ const TEST_STRUCTURES = [
             "fix": "quindi"
           },
           {
-            "q": "Nonostante il sole, siamo andati al mare per il caldo.",
+            "q": "Nonostante il bel tempo, siamo andati al mare.",
             "wrong": "Nonostante",
-            "fix": "Grazie a"
+            "fix": "Grazie al"
           },
           {
-            "q": "Non ho soldi, così compro la macchina.",
-            "wrong": "così",
-            "fix": "perciò non"
+            "q": "Ho pochissimo tempo, quindi mi fermo a lungo.",
+            "wrong": "quindi",
+            "fix": "eppure"
           },
           {
             "q": "Lui ama il calcio, quindi io preferisco il tennis.",
@@ -13824,7 +13827,6 @@ const TEST_STRUCTURES = [
   },
   {
     "lvl": "b1",
-    "stima": "b2",
     "lez": [
       "B1 L21"
     ],
@@ -14087,7 +14089,8 @@ const TEST_STRUCTURES = [
     "lvl": "b1",
     "stima": "b2",
     "lez": [
-      "B1 L22"
+      "B1 L22",
+      "B2 L8"
     ],
     "title": "I verbi pronominali (andarsene, farcela, cavarsela)",
     "exercises": [
@@ -15389,7 +15392,10 @@ const TEST_STRUCTURES = [
     "lvl": "b1",
     "stima": "b2",
     "lez": [
-      "B1 L27"
+      "B1 L27",
+      "B2 L22",
+      "C1 L8",
+      "C1 L20"
     ],
     "title": "Il discorso indiretto",
     "exercises": [
