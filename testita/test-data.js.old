@@ -382,52 +382,52 @@ const TEST_STRUCTURES = [
           {
             "q": "Il amico di Luca",
             "wrong": "Il",
-            "fix": "L'"
+            "fix": "l'"
           },
           {
             "q": "I studenti americani",
             "wrong": "I",
-            "fix": "Gli"
+            "fix": "gli"
           },
           {
             "q": "La ora di cena",
             "wrong": "La",
-            "fix": "L'"
+            "fix": "l'"
           },
           {
             "q": "Lo libro nuovo",
             "wrong": "Lo",
-            "fix": "Il"
+            "fix": "il"
           },
           {
             "q": "Il zaino pesante",
             "wrong": "Il",
-            "fix": "Lo"
+            "fix": "lo"
           },
           {
             "q": "Le amici simpatici",
             "wrong": "Le",
-            "fix": "Gli"
+            "fix": "gli"
           },
           {
             "q": "Gli ragazze italiane",
             "wrong": "Gli",
-            "fix": "Le"
+            "fix": "le"
           },
           {
             "q": "I zii di Marco",
             "wrong": "I",
-            "fix": "Gli"
+            "fix": "gli"
           },
           {
             "q": "La elefante africano",
             "wrong": "La",
-            "fix": "L'"
+            "fix": "l'"
           },
           {
             "q": "Lo cane nero",
             "wrong": "Lo",
-            "fix": "Il"
+            "fix": "il"
           }
         ]
       },
@@ -439,90 +439,90 @@ const TEST_STRUCTURES = [
           {
             "q": "La stazione",
             "options": [
-              "Le stazioni",
-              "Le stazione",
-              "I stazioni"
+              "le stazioni",
+              "le stazione",
+              "i stazioni"
             ],
             "answer": 0
           },
           {
             "q": "Lo specchio",
             "options": [
-              "Gli specchi",
-              "I specchi",
-              "Le specchi"
+              "gli specchi",
+              "i specchi",
+              "le specchi"
             ],
             "answer": 0
           },
           {
             "q": "L'albergo",
             "options": [
-              "Gli alberghi",
-              "I alberghi",
-              "Le alberghi"
+              "gli alberghi",
+              "i alberghi",
+              "le alberghi"
             ],
             "answer": 0
           },
           {
             "q": "Il giornale",
             "options": [
-              "I giornali",
-              "Gli giornali",
-              "Le giornali"
+              "i giornali",
+              "gli giornali",
+              "le giornali"
             ],
             "answer": 0
           },
           {
             "q": "La chiave",
             "options": [
-              "Le chiavi",
-              "Le chiave",
-              "I chiavi"
+              "le chiavi",
+              "le chiave",
+              "i chiavi"
             ],
             "answer": 0
           },
           {
             "q": "Lo sport",
             "options": [
-              "Gli sport",
-              "I sport",
-              "Le sport"
+              "gli sport",
+              "i sport",
+              "le sport"
             ],
             "answer": 0
           },
           {
             "q": "L'esame",
             "options": [
-              "Gli esami",
-              "I esami",
-              "Le esami"
+              "gli esami",
+              "i esami",
+              "le esami"
             ],
             "answer": 0
           },
           {
             "q": "Il fiore",
             "options": [
-              "I fiori",
-              "Gli fiori",
-              "Le fiori"
+              "i fiori",
+              "gli fiori",
+              "le fiori"
             ],
             "answer": 0
           },
           {
             "q": "La notte",
             "options": [
-              "Le notti",
-              "Le notte",
-              "I notti"
+              "le notti",
+              "le notte",
+              "i notti"
             ],
             "answer": 0
           },
           {
             "q": "Lo studio",
             "options": [
-              "Gli studi",
-              "I studi",
-              "Le studi"
+              "gli studi",
+              "i studi",
+              "le studi"
             ],
             "answer": 0
           }
@@ -644,52 +644,52 @@ const TEST_STRUCTURES = [
           {
             "q": "Uno amico simpatico",
             "wrong": "Uno",
-            "fix": "Un"
+            "fix": "un"
           },
           {
             "q": "Una uomo alto",
             "wrong": "Una",
-            "fix": "Un"
+            "fix": "un"
           },
           {
             "q": "Un studente straniero",
             "wrong": "Un",
-            "fix": "Uno"
+            "fix": "uno"
           },
           {
             "q": "Una informazione utile",
             "wrong": "Una",
-            "fix": "Un'"
+            "fix": "un'"
           },
           {
             "q": "Un zaino rosso",
             "wrong": "Un",
-            "fix": "Uno"
+            "fix": "uno"
           },
           {
             "q": "Uno caffè caldo",
             "wrong": "Uno",
-            "fix": "Un"
+            "fix": "un"
           },
           {
             "q": "Una ora fa",
             "wrong": "Una",
-            "fix": "Un'"
+            "fix": "un'"
           },
           {
             "q": "Uno tavolo grande",
             "wrong": "Uno",
-            "fix": "Un"
+            "fix": "un"
           },
           {
             "q": "Uno orologio nuovo",
             "wrong": "Uno",
-            "fix": "Un"
+            "fix": "un"
           },
           {
             "q": "Un aranciata fresca",
             "wrong": "Un",
-            "fix": "Un'"
+            "fix": "un'"
           }
         ]
       },
@@ -701,90 +701,90 @@ const TEST_STRUCTURES = [
           {
             "q": "___ specchio",
             "options": [
-              "Uno",
-              "Un",
-              "Un'"
+              "uno",
+              "un",
+              "un'"
             ],
             "answer": 0
           },
           {
             "q": "___ elefante",
             "options": [
-              "Un",
-              "Uno",
-              "Un'"
+              "un",
+              "uno",
+              "un'"
             ],
             "answer": 0
           },
           {
             "q": "___ aranciata",
             "options": [
-              "Un'",
-              "Una",
-              "Un"
+              "un'",
+              "una",
+              "un"
             ],
             "answer": 0
           },
           {
             "q": "___ autobus",
             "options": [
-              "Un",
-              "Uno",
-              "Un'"
+              "un",
+              "uno",
+              "un'"
             ],
             "answer": 0
           },
           {
             "q": "___ sorella",
             "options": [
-              "Una",
-              "Un",
-              "Un'"
+              "una",
+              "un",
+              "un'"
             ],
             "answer": 0
           },
           {
             "q": "___ studio",
             "options": [
-              "Uno",
-              "Un",
-              "Un'"
+              "uno",
+              "un",
+              "un'"
             ],
             "answer": 0
           },
           {
             "q": "___ arancia",
             "options": [
-              "Un'",
-              "Una",
-              "Un"
+              "un'",
+              "una",
+              "un"
             ],
             "answer": 0
           },
           {
             "q": "___ appartamento",
             "options": [
-              "Un",
-              "Uno",
-              "Un'"
+              "un",
+              "uno",
+              "un'"
             ],
             "answer": 0
           },
           {
             "q": "___ zia",
             "options": [
-              "Una",
-              "Un'",
-              "Uno"
+              "una",
+              "un'",
+              "uno"
             ],
             "answer": 0
           },
           {
             "q": "___ sbaglio",
             "options": [
-              "Uno",
-              "Un",
-              "Un'"
+              "uno",
+              "un",
+              "un'"
             ],
             "answer": 0
           }
@@ -807,90 +807,90 @@ const TEST_STRUCTURES = [
           {
             "q": "La mano",
             "options": [
-              "Le mani",
-              "Le mano",
-              "I mani"
+              "le mani",
+              "le mano",
+              "i mani"
             ],
             "answer": 0
           },
           {
             "q": "Il problema",
             "options": [
-              "I problemi",
-              "Le probleme",
-              "I problema"
+              "i problemi",
+              "le probleme",
+              "i problema"
             ],
             "answer": 0
           },
           {
             "q": "L'uovo",
             "options": [
-              "Le uova",
-              "Gli uovi",
-              "Le uove"
+              "le uova",
+              "gli uovi",
+              "le uove"
             ],
             "answer": 0
           },
           {
             "q": "La moglie",
             "options": [
-              "Le mogli",
-              "Le moglie",
-              "I mogli"
+              "le mogli",
+              "le moglie",
+              "i mogli"
             ],
             "answer": 0
           },
           {
             "q": "Il braccio",
             "options": [
-              "Le braccia",
-              "I bracci",
-              "Le bracce"
+              "le braccia",
+              "i bracci",
+              "le bracce"
             ],
             "answer": 0
           },
           {
             "q": "La casa",
             "options": [
-              "Le case",
-              "Le casa",
-              "I case"
+              "le case",
+              "le casa",
+              "i case"
             ],
             "answer": 0
           },
           {
             "q": "Lo zio",
             "options": [
-              "Gli zii",
-              "I zii",
-              "Gli zi"
+              "gli zii",
+              "i zii",
+              "gli zi"
             ],
             "answer": 0
           },
           {
             "q": "L'amico",
             "options": [
-              "Gli amici",
-              "I amici",
-              "Gli amichi"
+              "gli amici",
+              "i amici",
+              "gli amichi"
             ],
             "answer": 0
           },
           {
             "q": "Il dito",
             "options": [
-              "Le dita",
-              "I diti",
-              "Le dite"
+              "le dita",
+              "i diti",
+              "le dite"
             ],
             "answer": 0
           },
           {
             "q": "La radio",
             "options": [
-              "Le radio",
-              "Le radii",
-              "I radio"
+              "le radio",
+              "le radii",
+              "i radio"
             ],
             "answer": 0
           }
@@ -1473,90 +1473,90 @@ const TEST_STRUCTURES = [
           {
             "q": "La finestra aperta",
             "options": [
-              "Le finestre aperte",
-              "Le finestre aperta",
-              "Le finestra aperte"
+              "le finestre aperte",
+              "le finestre aperta",
+              "le finestra aperte"
             ],
             "answer": 0
           },
           {
             "q": "Il quaderno verde",
             "options": [
-              "I quaderni verdi",
-              "I quaderni verde",
-              "I quaderni verdo"
+              "i quaderni verdi",
+              "i quaderni verde",
+              "i quaderni verdo"
             ],
             "answer": 0
           },
           {
             "q": "L'esercizio facile",
             "options": [
-              "Gli esercizi facili",
-              "Gli esercizi facile",
-              "I esercizi facili"
+              "gli esercizi facili",
+              "gli esercizi facile",
+              "i esercizi facili"
             ],
             "answer": 0
           },
           {
             "q": "Lo studente straniero",
             "options": [
-              "Gli studenti stranieri",
-              "Gli studenti straniero",
-              "I studenti stranieri"
+              "gli studenti stranieri",
+              "gli studenti straniero",
+              "i studenti stranieri"
             ],
             "answer": 0
           },
           {
             "q": "La giacca pesante",
             "options": [
-              "Le giacche pesanti",
-              "Le giacche pesante",
-              "Le giacca pesanti"
+              "le giacche pesanti",
+              "le giacche pesante",
+              "le giacca pesanti"
             ],
             "answer": 0
           },
           {
             "q": "Il ponte antico",
             "options": [
-              "I ponti antichi",
-              "I ponti antico",
-              "I ponti antici"
+              "i ponti antichi",
+              "i ponti antico",
+              "i ponti antici"
             ],
             "answer": 0
           },
           {
             "q": "L'amica gentile",
             "options": [
-              "Le amiche gentili",
-              "Le amiche gentile",
-              "Gli amici gentili"
+              "le amiche gentili",
+              "le amiche gentile",
+              "gli amici gentili"
             ],
             "answer": 0
           },
           {
             "q": "La stanza piccola",
             "options": [
-              "Le stanze piccole",
-              "Le stanze piccola",
-              "Le stanza piccole"
+              "le stanze piccole",
+              "le stanze piccola",
+              "le stanza piccole"
             ],
             "answer": 0
           },
           {
             "q": "Il fiore giallo",
             "options": [
-              "I fiori gialli",
-              "I fiori giallo",
-              "I fiori gialle"
+              "i fiori gialli",
+              "i fiori giallo",
+              "i fiori gialle"
             ],
             "answer": 0
           },
           {
             "q": "La borsa leggera",
             "options": [
-              "Le borse leggere",
-              "Le borse leggera",
-              "Le borsa leggere"
+              "le borse leggere",
+              "le borse leggera",
+              "le borsa leggere"
             ],
             "answer": 0
           }
@@ -3126,90 +3126,90 @@ const TEST_STRUCTURES = [
           {
             "q": "Il direttore",
             "options": [
-              "La direttrice",
-              "La direttora",
-              "La direttoressa"
+              "la direttrice",
+              "la direttora",
+              "la direttoressa"
             ],
             "answer": 0
           },
           {
             "q": "Lo studente",
             "options": [
-              "La studentessa",
-              "La studenta",
-              "La studentrice"
+              "la studentessa",
+              "la studenta",
+              "la studentrice"
             ],
             "answer": 0
           },
           {
             "q": "Il cameriere",
             "options": [
-              "La cameriera",
-              "La camerierice",
-              "La camerieressa"
+              "la cameriera",
+              "la camerierice",
+              "la camerieressa"
             ],
             "answer": 0
           },
           {
             "q": "Il dottore",
             "options": [
-              "La dottoressa",
-              "La dottrice",
-              "La dottora"
+              "la dottoressa",
+              "la dottrice",
+              "la dottora"
             ],
             "answer": 0
           },
           {
             "q": "L'attore",
             "options": [
-              "L'attrice",
-              "L'attora",
-              "L'attoressa"
+              "l'attrice",
+              "l'attora",
+              "l'attoressa"
             ],
             "answer": 0
           },
           {
             "q": "Il professore",
             "options": [
-              "La professoressa",
-              "La professora",
-              "La professrice"
+              "la professoressa",
+              "la professora",
+              "la professrice"
             ],
             "answer": 0
           },
           {
             "q": "Il maestro",
             "options": [
-              "La maestra",
-              "La maestressa",
-              "La maestrice"
+              "la maestra",
+              "la maestressa",
+              "la maestrice"
             ],
             "answer": 0
           },
           {
             "q": "Lo scrittore",
             "options": [
-              "La scrittrice",
-              "La scrittora",
-              "La scrittoressa"
+              "la scrittrice",
+              "la scrittora",
+              "la scrittoressa"
             ],
             "answer": 0
           },
           {
             "q": "Il pittore",
             "options": [
-              "La pittrice",
-              "La pittora",
-              "La pittoressa"
+              "la pittrice",
+              "la pittora",
+              "la pittoressa"
             ],
             "answer": 0
           },
           {
             "q": "Il commesso",
             "options": [
-              "La commessa",
-              "La commessrice",
-              "La commessoressa"
+              "la commessa",
+              "la commessrice",
+              "la commessoressa"
             ],
             "answer": 0
           }
@@ -3758,7 +3758,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Tuo sorella",
             "wrong": "Tuo",
-            "fix": "Tua"
+            "fix": "tua"
           },
           {
             "q": "La nostro casa",
@@ -3768,7 +3768,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Mia fratello",
             "wrong": "Mia",
-            "fix": "Mio"
+            "fix": "mio"
           },
           {
             "q": "I sue amici",
@@ -3778,7 +3778,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Il loro macchina",
             "wrong": "Il",
-            "fix": "La"
+            "fix": "la"
           },
           {
             "q": "Le tuo chiavi",
@@ -3788,7 +3788,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Mio madre",
             "wrong": "Mio",
-            "fix": "Mia"
+            "fix": "mia"
           }
         ]
       },
@@ -3800,90 +3800,90 @@ const TEST_STRUCTURES = [
           {
             "q": "La mia amica",
             "options": [
-              "Le mie amiche",
-              "Le mie amica",
-              "Le miei amiche"
+              "le mie amiche",
+              "le mie amica",
+              "le miei amiche"
             ],
             "answer": 0
           },
           {
             "q": "Il tuo libro",
             "options": [
-              "I tuoi libri",
-              "I tue libri",
-              "I tuoi libro"
+              "i tuoi libri",
+              "i tue libri",
+              "i tuoi libro"
             ],
             "answer": 0
           },
           {
             "q": "Il nostro problema",
             "options": [
-              "I nostri problemi",
-              "I nostre problemi",
-              "I nostri problema"
+              "i nostri problemi",
+              "i nostre problemi",
+              "i nostri problema"
             ],
             "answer": 0
           },
           {
             "q": "La sua idea",
             "options": [
-              "Le sue idee",
-              "Le sue idea",
-              "Le suoi idee"
+              "le sue idee",
+              "le sue idea",
+              "le suoi idee"
             ],
             "answer": 0
           },
           {
             "q": "Il mio quaderno",
             "options": [
-              "I miei quaderni",
-              "I mie quaderni",
-              "I miei quaderno"
+              "i miei quaderni",
+              "i mie quaderni",
+              "i miei quaderno"
             ],
             "answer": 0
           },
           {
             "q": "La tua penna",
             "options": [
-              "Le tue penne",
-              "Le tue penna",
-              "Le tuoi penne"
+              "le tue penne",
+              "le tue penna",
+              "le tuoi penne"
             ],
             "answer": 0
           },
           {
             "q": "Il vostro esame",
             "options": [
-              "I vostri esami",
-              "I vostre esami",
-              "I vostri esame"
+              "i vostri esami",
+              "i vostre esami",
+              "i vostri esame"
             ],
             "answer": 0
           },
           {
             "q": "La loro valigia",
             "options": [
-              "Le loro valigie",
-              "Le loro valigia",
-              "I loro valigie"
+              "le loro valigie",
+              "le loro valigia",
+              "i loro valigie"
             ],
             "answer": 0
           },
           {
             "q": "Il suo gatto",
             "options": [
-              "I suoi gatti",
-              "I sue gatti",
-              "I suoi gatto"
+              "i suoi gatti",
+              "i sue gatti",
+              "i suoi gatto"
             ],
             "answer": 0
           },
           {
             "q": "La nostra lezione",
             "options": [
-              "Le nostre lezioni",
-              "Le nostra lezioni",
-              "Le nostri lezioni"
+              "le nostre lezioni",
+              "le nostra lezioni",
+              "le nostri lezioni"
             ],
             "answer": 0
           }
@@ -4523,9 +4523,9 @@ const TEST_STRUCTURES = [
         "instr": "Clicca l'avverbio fuori posto o incoerente con il senso della frase.",
         "items": [
           {
-            "q": "Io faccio mai colazione al bar, ogni mattina.",
-            "wrong": "mai",
-            "fix": "sempre"
+            "q": "Sempre io faccio colazione al bar.",
+            "wrong": "Sempre",
+            "fix": "Io faccio sempre"
           },
           {
             "q": "Adoro i documentari e li guardo mai.",
@@ -5102,90 +5102,90 @@ const TEST_STRUCTURES = [
           {
             "q": "Di + il →",
             "options": [
-              "Del",
-              "Dil",
-              "Dello"
+              "del",
+              "dil",
+              "dello"
             ],
             "answer": 0
           },
           {
             "q": "A + lo →",
             "options": [
-              "Allo",
-              "Alo",
-              "Al"
+              "allo",
+              "alo",
+              "al"
             ],
             "answer": 0
           },
           {
             "q": "Da + le →",
             "options": [
-              "Dalle",
-              "Dale",
-              "Dai"
+              "dalle",
+              "dale",
+              "dai"
             ],
             "answer": 0
           },
           {
             "q": "In + i →",
             "options": [
-              "Nei",
-              "Ni",
-              "Negli"
+              "nei",
+              "ni",
+              "negli"
             ],
             "answer": 0
           },
           {
             "q": "Su + gli →",
             "options": [
-              "Sugli",
-              "Sugl'",
-              "Sui"
+              "sugli",
+              "sugl'",
+              "sui"
             ],
             "answer": 0
           },
           {
             "q": "Di + gli →",
             "options": [
-              "Degli",
-              "Digli",
-              "Dei"
+              "degli",
+              "digli",
+              "dei"
             ],
             "answer": 0
           },
           {
             "q": "A + la →",
             "options": [
-              "Alla",
-              "Ala",
-              "Al"
+              "alla",
+              "ala",
+              "al"
             ],
             "answer": 0
           },
           {
             "q": "Da + lo →",
             "options": [
-              "Dallo",
-              "Dalo",
-              "Dal"
+              "dallo",
+              "dalo",
+              "dal"
             ],
             "answer": 0
           },
           {
             "q": "In + la →",
             "options": [
-              "Nella",
-              "Nla",
-              "Nel"
+              "nella",
+              "nla",
+              "nel"
             ],
             "answer": 0
           },
           {
             "q": "Su + i →",
             "options": [
-              "Sui",
-              "Si",
-              "Sugli"
+              "sui",
+              "si",
+              "sugli"
             ],
             "answer": 0
           }
@@ -7191,90 +7191,90 @@ const TEST_STRUCTURES = [
           {
             "q": "Questo libro →",
             "options": [
-              "Quel libro",
-              "Quello libro",
-              "Quei libro"
+              "quel libro",
+              "quello libro",
+              "quei libro"
             ],
             "answer": 0
           },
           {
             "q": "Questo studente →",
             "options": [
-              "Quello studente",
-              "Quel studente",
-              "Quegli studente"
+              "quello studente",
+              "quel studente",
+              "quegli studente"
             ],
             "answer": 0
           },
           {
             "q": "Questa casa →",
             "options": [
-              "Quella casa",
-              "Quel casa",
-              "Quelle casa"
+              "quella casa",
+              "quel casa",
+              "quelle casa"
             ],
             "answer": 0
           },
           {
             "q": "Questi ragazzi →",
             "options": [
-              "Quei ragazzi",
-              "Quegli ragazzi",
-              "Quelli ragazzi"
+              "quei ragazzi",
+              "quegli ragazzi",
+              "quelli ragazzi"
             ],
             "answer": 0
           },
           {
             "q": "Questi alberi →",
             "options": [
-              "Quegli alberi",
-              "Quei alberi",
-              "Quelli alberi"
+              "quegli alberi",
+              "quei alberi",
+              "quelli alberi"
             ],
             "answer": 0
           },
           {
             "q": "Queste scarpe →",
             "options": [
-              "Quelle scarpe",
-              "Quei scarpe",
-              "Quegli scarpe"
+              "quelle scarpe",
+              "quei scarpe",
+              "quegli scarpe"
             ],
             "answer": 0
           },
           {
             "q": "Questo zaino →",
             "options": [
-              "Quello zaino",
-              "Quel zaino",
-              "Quegli zaino"
+              "quello zaino",
+              "quel zaino",
+              "quegli zaino"
             ],
             "answer": 0
           },
           {
             "q": "Quest'amica →",
             "options": [
-              "Quell'amica",
-              "Quella amica",
-              "Quel amica"
+              "quell'amica",
+              "quella amica",
+              "quel amica"
             ],
             "answer": 0
           },
           {
             "q": "Questo bambino →",
             "options": [
-              "Quel bambino",
-              "Quello bambino",
-              "Quei bambino"
+              "quel bambino",
+              "quello bambino",
+              "quei bambino"
             ],
             "answer": 0
           },
           {
             "q": "Questi zii →",
             "options": [
-              "Quegli zii",
-              "Quei zii",
-              "Quelli zii"
+              "quegli zii",
+              "quei zii",
+              "quelli zii"
             ],
             "answer": 0
           }
@@ -9917,11 +9917,11 @@ const TEST_STRUCTURES = [
           },
           {
             "q": "___ tu alla riunione? (venire)",
-            "a": "Verrai",
+            "a": "verrai",
             "no": [
-              "Venirai",
-              "Vieni",
-              "Verai"
+              "venirai",
+              "vieni",
+              "verai"
             ]
           },
           {
@@ -11154,22 +11154,22 @@ const TEST_STRUCTURES = [
           {
             "q": "È il più ottimo albergo della zona.",
             "wrong": "più",
-            "fix": "togliere «più»: si dice «il migliore»"
+            "fix": "(togliere: il migliore)"
           },
           {
             "q": "Questa valigia è molto pesantissima.",
             "wrong": "molto",
-            "fix": "togliere «molto»: «pesantissima» è già superlativo"
+            "fix": "(togliere: pesantissima)"
           },
           {
-            "q": "Anna è molto giovane del gruppo.",
-            "wrong": "molto",
+            "q": "Anna è più giovane del gruppo.",
+            "wrong": "più",
             "fix": "la più"
           },
           {
             "q": "È la più pessima scelta possibile.",
             "wrong": "più",
-            "fix": "togliere «più»: si dice «la peggiore»"
+            "fix": "(togliere: la peggiore)"
           },
           {
             "q": "Sono i molto lunghi giorni dell'estate.",
@@ -15983,37 +15983,37 @@ const TEST_STRUCTURES = [
           {
             "q": "Questo caffè è il più ottimo del bar.",
             "wrong": "più",
-            "fix": "togliere «più»: «ottimo» è già superlativo"
+            "fix": "(togliere: ottimo)"
           },
           {
             "q": "È la più pessima idea che abbia sentito.",
             "wrong": "più",
-            "fix": "togliere «più»: «pessima» è già superlativo"
+            "fix": "(togliere: pessima)"
           },
           {
             "q": "Ha raggiunto il più massimo punteggio.",
             "wrong": "più",
-            "fix": "togliere «più»: «massimo» è già superlativo"
+            "fix": "(togliere: massimo)"
           },
           {
             "q": "Non ha fatto il meno minimo sforzo.",
             "wrong": "meno",
-            "fix": "togliere «meno»: «minimo» è già superlativo"
+            "fix": "(togliere: minimo)"
           },
           {
             "q": "Mio fratello più maggiore vive a Roma.",
             "wrong": "più",
-            "fix": "togliere «più»: «maggiore» è già comparativo"
+            "fix": "(togliere: maggiore)"
           },
           {
             "q": "È la sorella più minore della famiglia.",
             "wrong": "più",
-            "fix": "togliere «più»: «minore» è già comparativo"
+            "fix": "(togliere: minore)"
           },
           {
             "q": "Questa torta è buonissima ottima.",
             "wrong": "buonissima",
-            "fix": "togliere «buonissima»: basta «ottima»"
+            "fix": "(togliere: ottima)"
           },
           {
             "q": "Ha ottenuto risultati massimissimi.",
@@ -16023,7 +16023,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Non ho la più minima idea di cosa dire.",
             "wrong": "più",
-            "fix": "togliere «più»: «minima» è già superlativo"
+            "fix": "(togliere: minima)"
           },
           {
             "q": "È stato un anno pessimissimo per l'azienda.",
@@ -16040,90 +16040,90 @@ const TEST_STRUCTURES = [
           {
             "q": "Un pranzo molto buono →",
             "options": [
-              "Un pranzo ottimo",
-              "Un pranzo più buono",
-              "Un pranzo buonissimo ottimo"
+              "un pranzo ottimo",
+              "un pranzo più buono",
+              "un pranzo buonissimo ottimo"
             ],
             "answer": 0
           },
           {
             "q": "Un servizio molto cattivo →",
             "options": [
-              "Un servizio pessimo",
-              "Un servizio più cattivo",
-              "Un servizio cattivissimo pessimo"
+              "un servizio pessimo",
+              "un servizio più cattivo",
+              "un servizio cattivissimo pessimo"
             ],
             "answer": 0
           },
           {
             "q": "Il livello più alto →",
             "options": [
-              "Il livello massimo",
-              "Il livello più massimo",
-              "Il livello altissimo massimo"
+              "il livello massimo",
+              "il livello più massimo",
+              "il livello altissimo massimo"
             ],
             "answer": 0
           },
           {
             "q": "La quantità più bassa →",
             "options": [
-              "La quantità minima",
-              "La quantità più minima",
-              "La quantità bassissima minima"
+              "la quantità minima",
+              "la quantità più minima",
+              "la quantità bassissima minima"
             ],
             "answer": 0
           },
           {
             "q": "Il figlio più grande →",
             "options": [
-              "Il figlio maggiore",
-              "Il figlio più maggiore",
-              "Il figlio grandissimo"
+              "il figlio maggiore",
+              "il figlio più maggiore",
+              "il figlio grandissimo"
             ],
             "answer": 0
           },
           {
             "q": "La figlia più piccola →",
             "options": [
-              "La figlia minore",
-              "La figlia più minore",
-              "La figlia piccolissima minore"
+              "la figlia minore",
+              "la figlia più minore",
+              "la figlia piccolissima minore"
             ],
             "answer": 0
           },
           {
             "q": "Una prestazione molto buona →",
             "options": [
-              "Una prestazione ottima",
-              "Una prestazione più buona",
-              "Una prestazione ottimissima"
+              "una prestazione ottima",
+              "una prestazione più buona",
+              "una prestazione ottimissima"
             ],
             "answer": 0
           },
           {
             "q": "Un periodo molto cattivo →",
             "options": [
-              "Un periodo pessimo",
-              "Un periodo più cattivo",
-              "Un periodo pessimissimo"
+              "un periodo pessimo",
+              "un periodo più cattivo",
+              "un periodo pessimissimo"
             ],
             "answer": 0
           },
           {
             "q": "Lo sforzo più piccolo →",
             "options": [
-              "Lo sforzo minimo",
-              "Lo sforzo più minimo",
-              "Lo sforzo minimissimo"
+              "lo sforzo minimo",
+              "lo sforzo più minimo",
+              "lo sforzo minimissimo"
             ],
             "answer": 0
           },
           {
             "q": "Il valore più elevato →",
             "options": [
-              "Il valore massimo",
-              "Il valore più massimo",
-              "Il valore massimissimo"
+              "il valore massimo",
+              "il valore più massimo",
+              "il valore massimissimo"
             ],
             "answer": 0
           }
@@ -19889,14 +19889,14 @@ const TEST_STRUCTURES = [
         "instr": "Clicca la preposizione di luogo sbagliata.",
         "items": [
           {
-            "q": "Il libro è sopra il tavolo e la lampada.",
-            "wrong": "sopra",
-            "fix": "tra"
+            "q": "Il libro è in mezzo il tavolo e la lampada.",
+            "wrong": "il",
+            "fix": "al (in mezzo al)"
           },
           {
-            "q": "Vado verso della stazione a piedi.",
-            "wrong": "della",
-            "fix": "alla"
+            "q": "Vado in direzione a la stazione.",
+            "wrong": "a",
+            "fix": "della"
           },
           {
             "q": "Ho messo la valigia dentro il letto.",
@@ -19904,9 +19904,9 @@ const TEST_STRUCTURES = [
             "fix": "sotto"
           },
           {
-            "q": "Il museo è accanto della stazione.",
-            "wrong": "della",
-            "fix": "alla"
+            "q": "Il museo è vicino la stazione.",
+            "wrong": "vicino",
+            "fix": "vicino alla"
           },
           {
             "q": "Siamo passati sotto il parco a piedi.",
@@ -19914,23 +19914,23 @@ const TEST_STRUCTURES = [
             "fix": "attraverso"
           },
           {
-            "q": "Il negozio è di fronte la piazza principale.",
-            "wrong": "la",
-            "fix": "alla"
+            "q": "Il negozio è davanti la piazza.",
+            "wrong": "davanti",
+            "fix": "davanti alla"
           },
           {
-            "q": "Il gatto dorme davanti il divano.",
-            "wrong": "il",
-            "fix": "al (davanti al)"
+            "q": "Il gatto è saltato su l'armadio.",
+            "wrong": "su",
+            "fix": "sull'"
           },
           {
-            "q": "Cammina dietro a me, ti apro la strada.",
-            "wrong": "dietro",
-            "fix": "davanti"
+            "q": "Cammina avanti di me, ti seguo.",
+            "wrong": "avanti",
+            "fix": "davanti a"
           },
           {
-            "q": "L'ufficio si trova nel terzo piano.",
-            "wrong": "nel",
+            "q": "L'ufficio si trova a il terzo piano.",
+            "wrong": "a",
             "fix": "al"
           },
           {
@@ -20179,9 +20179,9 @@ const TEST_STRUCTURES = [
             "fix": "bere"
           },
           {
-            "q": "Prima di uscendo, spegni tutto.",
-            "wrong": "uscendo",
-            "fix": "uscire"
+            "q": "Prima di aver uscito, spegni tutto.",
+            "wrong": "aver",
+            "fix": "(togliere: prima di uscire)"
           },
           {
             "q": "Dopo rientrare, ha chiamato la madre.",
@@ -23317,7 +23317,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Prima di che chiami, pensa bene.",
             "wrong": "che",
-            "fix": "togliere «che»: «prima di chiamare»"
+            "fix": "(togliere: prima di chiamare)"
           },
           {
             "q": "Dopo che sarebbe rientrato, ha cenato.",
@@ -24605,8 +24605,8 @@ const TEST_STRUCTURES = [
             "fix": "Saremmo dovuti"
           },
           {
-            "q": "È stata una riunione breve, ma è durata cinque ore.",
-            "wrong": "È",
+            "q": "Sarebbe una riunione breve, ma è durata cinque ore.",
+            "wrong": "Sarebbe",
             "fix": "Sarebbe dovuta essere"
           },
           {
@@ -24847,7 +24847,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Ispezionato che il carico, si emette il certificato.",
             "wrong": "che",
-            "fix": "togliere «che»: «ispezionando il carico»"
+            "fix": "(togliere: ispezionando)"
           },
           {
             "q": "Ritiene di essere commesso un errore.",
@@ -24867,7 +24867,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Applicato che le norme, il marchio è valido.",
             "wrong": "che",
-            "fix": "togliere «che»: «applicando le norme»"
+            "fix": "(togliere: applicando)"
           },
           {
             "q": "Nega di avendo alterato le etichette.",
@@ -24887,7 +24887,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Emerso che dai controlli, il lotto è irregolare.",
             "wrong": "che",
-            "fix": "togliere «che»: «emergendo dai controlli»"
+            "fix": "(togliere: emergendo)"
           }
         ]
       },
