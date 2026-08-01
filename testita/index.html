@@ -72,6 +72,7 @@
     font-variant-numeric:tabular-nums;line-height:1;
   }
   .counter-bar .stat span{font-size:11.5px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.08em;}
+  .counter-bar .conto{font-size:12.5px;color:var(--ink-soft);font-style:italic;}
   .counter-bar .n-select{display:flex;align-items:center;gap:8px;}
   .counter-bar .n-select label{font-size:12px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.07em;}
   .counter-bar .n-select select{font-family:var(--sans);font-size:14px;padding:7px 9px;border-radius:8px;border:1px solid var(--line);background:var(--card);}
@@ -94,6 +95,7 @@
       <div class="stat"><b id="cStruct">0</b><span>strutture</span></div>
       <div class="stat"><b id="cItems">0</b><span>item</span></div>
       <div class="stat"><span class="warn-long" id="warnLong">test lungo — valuta di spezzarlo</span></div>
+      <div class="stat conto" id="contoSpieg"></div>
     </div>
     <div class="counter-bar__riga counter-bar__riga--controlli">
     <div class="n-select">
@@ -108,12 +110,12 @@
       <button class="mini mini--preset" id="preset">Test di posizionamento</button>
     </div>
     <div class="n-select">
-      <label for="n">Item per esercizio</label>
-      <select id="n">
-        <option value="1">1</option>
-        <option value="2" selected>2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
+      <label for="n">Domande per esercizio</label>
+      <select id="n" title="Ogni struttura ha 3 esercizi. Questo numero dice quante domande pescare da ciascuno: con 2 fanno 6 domande per struttura. Le domande sono estratte a caso da 10 disponibili, così due sessioni dello stesso test non hanno le stesse frasi.">
+        <option value="1">1 — test rapido</option>
+        <option value="2" selected>2 — equilibrato</option>
+        <option value="3">3 — approfondito</option>
+        <option value="4">4 — molto esteso</option>
       </select>
     </div>
     </div>
@@ -283,6 +285,11 @@ function update(){
   document.getElementById('cStruct').textContent = nStruct;
   document.getElementById('cItems').textContent = nItems;
   document.getElementById('warnLong').classList.toggle('show', nItems > 60);
+  /* Il conto esplicito: senza, «2 item per esercizio» non dice quante domande
+     lo studente si troverà davvero davanti. */
+  document.getElementById('contoSpieg').textContent = nStruct
+    ? nStruct + ' strutture × 3 esercizi × ' + n + ' = ' + nItems + ' domande'
+    : '';
   genBtn.disabled = (nStruct === 0);
   checkboxes().forEach(c => c.closest('.check-row').classList.toggle('on', c.checked));
 
