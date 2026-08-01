@@ -12,5 +12,5 @@ const EMAILJS_CONFIG = {
   SERVICE_ID: "service_acaxxfk",
   TEMPLATE_ID: "template_598sr84",
   PUBLIC_KEY: "kmbK9y0HseBzJlyhT",
-  TEACHER_EMAIL: "tuaemail@gmail.com"  // usata solo dal fallback "scrivi email"
+  TEACHER_EMAIL: "f.delse@gmail.com"  // usata solo dal fallback "scrivi email"
 };
