@@ -72,7 +72,10 @@
     font-variant-numeric:tabular-nums;line-height:1;
   }
   .counter-bar .stat span{font-size:11.5px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.08em;}
-  .counter-bar .conto{font-size:12.5px;color:var(--ink-soft);font-style:italic;}
+  .conto{
+    font-size:12.5px;color:var(--ink-soft);font-style:italic;
+    margin:-4px 0 2px;font-variant-numeric:tabular-nums;
+  }
   .counter-bar .n-select{display:flex;align-items:center;gap:8px;}
   .counter-bar .n-select label{font-size:12px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.07em;}
   .counter-bar .n-select select{font-family:var(--sans);font-size:14px;padding:7px 9px;border-radius:8px;border:1px solid var(--line);background:var(--card);}
@@ -93,10 +96,10 @@
   <div class="counter-bar">
     <div class="counter-bar__riga">
       <div class="stat"><b id="cStruct">0</b><span>strutture</span></div>
-      <div class="stat"><b id="cItems">0</b><span>item</span></div>
+      <div class="stat"><b id="cItems">0</b><span>domande</span></div>
       <div class="stat"><span class="warn-long" id="warnLong">test lungo — valuta di spezzarlo</span></div>
-      <div class="stat conto" id="contoSpieg"></div>
     </div>
+    <div class="conto" id="contoSpieg"></div>
     <div class="counter-bar__riga counter-bar__riga--controlli">
     <div class="n-select">
       <label for="da">Dalla lezione</label>
@@ -330,7 +333,7 @@ genBtn.addEventListener('click', () => {
   const url = base + '?s=' + ids.join(',') + '&n=' + n + (presetAttivo ? '&adatt=1' : '');
   document.getElementById('linkOut').value = url;
   document.getElementById('linkNote').textContent =
-    ids.length + ' strutture \u00b7 ' + document.getElementById('cItems').textContent + ' item totali.' +
+    ids.length + ' strutture \u00b7 ' + document.getElementById('cItems').textContent + ' domande in tutto.' +
     (presetAttivo ? ' Test di posizionamento: si interrompe quando un livello scende sotto il 50%.' : '');
   document.getElementById('linkCard').style.display = 'block';
   document.getElementById('linkCard').scrollIntoView({behavior:'smooth', block:'center'});
