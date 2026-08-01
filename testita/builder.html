@@ -10,29 +10,55 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <style>
-  .lvl-section{margin-bottom:26px;}
-  .lvl-section__head{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
-  .lvl-section__title{
-    font-family:var(--display);font-weight:600;font-size:17px;color:var(--lvl,var(--ink));margin:0;
-    display:flex;align-items:center;gap:8px;
+  /* I cinque livelli come i dorsi di una collana: ogni sezione ha la sua banda
+     verticale colorata, e a colpo d'occhio si vede quanta parte del percorso
+     il test sta coprendo. Il colore non decora, identifica. */
+  .lvl-section{
+    margin-bottom:30px;
+    border-left:4px solid var(--lvl,var(--line));
+    padding-left:16px;
   }
-  .lvl-section__title .dot{width:9px;height:9px;border-radius:50%;background:var(--lvl,var(--ink));}
+  .lvl-section__head{
+    display:flex;align-items:center;gap:12px;margin:0 0 12px -20px;
+  }
+  .lvl-section__title{
+    font-family:var(--display);font-weight:600;font-size:15.5px;margin:0;
+    display:inline-flex;align-items:baseline;gap:8px;
+    background:var(--lvl,var(--ink));color:#fff;
+    padding:6px 14px 7px;border-radius:0 8px 8px 0;
+    letter-spacing:.01em;
+  }
+  .lvl-section__title .sigla{
+    font-family:var(--sans);font-weight:700;font-size:12.5px;
+    letter-spacing:.09em;opacity:.85;
+  }
   .lvl-section__actions{margin-left:auto;display:flex;gap:6px;}
+  .lvl-section__conta{
+    font-size:12px;color:var(--ink-faint);font-variant-numeric:tabular-nums;
+  }
   .mini{
     font-size:12px;font-weight:600;padding:5px 11px;border-radius:7px;
     background:transparent;border:1px solid var(--line);color:var(--ink-soft);cursor:pointer;
   }
   .mini:hover{background:var(--line-soft);}
   .check-row{
-    display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:9px;
-    cursor:pointer;border:1px solid var(--line);background:var(--card);margin-bottom:6px;
+    display:flex;align-items:center;gap:12px;padding:10px 13px;border-radius:8px;
+    cursor:pointer;border:1px solid var(--line);background:var(--card);margin-bottom:5px;
+    transition:background .12s, border-color .12s;
   }
   .check-row:hover{border-color:var(--lvl,var(--ink-faint));}
-  .check-row.on{background:var(--line-soft);border-color:var(--lvl,var(--ink));}
+  /* La riga scelta si tinge del colore del suo livello: la selezione si legge
+     senza dover cercare la casella spuntata. */
+  .check-row.on{
+    background:var(--velo,var(--line-soft));
+    border-color:var(--lvl,var(--ink));
+  }
+  .check-row.on .num{color:var(--lvl,var(--ink));font-weight:700;}
+  .check-row.on .ttl{font-weight:600;}
   .check-row input{width:18px;height:18px;accent-color:var(--lvl,var(--ink));cursor:pointer;flex:none;}
-  .check-row .num{font-variant-numeric:tabular-nums;color:var(--ink-faint);font-size:12.5px;width:24px;flex:none;}
+  .check-row .num{font-variant-numeric:tabular-nums;color:var(--ink-faint);font-size:12.5px;width:26px;flex:none;}
   .check-row .ttl{font-size:14.5px;flex:1;}
-  .check-row .exn{font-size:11.5px;color:var(--ink-faint);}
+  .check-row .exn{font-size:11.5px;color:var(--ink-faint);white-space:nowrap;}
   .counter-bar{
     position:sticky;top:0;z-index:10;background:var(--paper);
     padding:14px 0 16px;border-bottom:1px solid var(--line);margin-bottom:24px;
@@ -40,15 +66,19 @@
   }
   .counter-bar__riga{display:flex;align-items:center;gap:18px;flex-wrap:wrap;}
   .counter-bar__riga--controlli{gap:20px;}
-  .counter-bar .stat b{font-family:var(--display);font-size:20px;font-weight:600;}
-  .counter-bar .stat span{font-size:12px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.07em;margin-left:5px;}
+  .counter-bar .stat{display:flex;align-items:baseline;gap:6px;}
+  .counter-bar .stat b{
+    font-family:var(--display);font-size:26px;font-weight:600;color:var(--ink);
+    font-variant-numeric:tabular-nums;line-height:1;
+  }
+  .counter-bar .stat span{font-size:11.5px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.08em;}
   .counter-bar .n-select{display:flex;align-items:center;gap:8px;}
   .counter-bar .n-select label{font-size:12px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.07em;}
   .counter-bar .n-select select{font-family:var(--sans);font-size:14px;padding:7px 9px;border-radius:8px;border:1px solid var(--line);background:var(--card);}
   .mini--preset{
-    border-color:var(--ink);color:var(--ink);font-weight:700;padding:8px 14px;
+    border-color:var(--azione);color:var(--azione);font-weight:700;padding:8px 14px;
   }
-  .mini--preset:hover{background:var(--ink);color:#fff;}
+  .mini--preset:hover{background:var(--azione);color:#fff;border-color:var(--azione);}
   .warn-long{color:var(--warn-ink);font-size:12.5px;font-weight:600;display:none;}
   .warn-long.show{display:inline;}
 </style>
@@ -108,6 +138,7 @@
 <script src="test-data.js"></script>
 <script>
 const LVL_COLOR = {a:"var(--c-a)", a2:"var(--c-a2)", b1:"var(--c-b1)", b2:"var(--c-b2)", c1:"var(--c-c1)"};
+const LVL_VELO  = {a:"var(--c-a-velo)", a2:"var(--c-a2-velo)", b1:"var(--c-b1-velo)", b2:"var(--c-b2-velo)", c1:"var(--c-c1-velo)"};
 const LVL_TAG   = {a:"A1", a2:"A2", b1:"B1", b2:"B2", c1:"C1"};
 const LVL_NAME  = {a:"Fondamenta", a2:"Elementare", b1:"Intermedio", b2:"Intermedio-avanzato", c1:"Avanzato"};
 const LVL_ORDER = ["a","a2","b1","b2","c1"];
@@ -126,10 +157,12 @@ LVL_ORDER.forEach(lvl => {
   const section = document.createElement('div');
   section.className = 'lvl-section';
   section.style.setProperty('--lvl', LVL_COLOR[lvl]);
+  section.style.setProperty('--velo', LVL_VELO[lvl]);
   const head = document.createElement('div');
   head.className = 'lvl-section__head';
   head.innerHTML =
-    '<h2 class="lvl-section__title"><span class="dot"></span> ' + LVL_TAG[lvl] + ' \u00b7 ' + LVL_NAME[lvl] + '</h2>' +
+    '<h2 class="lvl-section__title"><span class="sigla">' + LVL_TAG[lvl] + '</span> ' + LVL_NAME[lvl] + '</h2>' +
+    '<span class="lvl-section__conta" data-conta="' + lvl + '"></span>' +
     '<div class="lvl-section__actions">' +
       '<button class="mini" data-all="' + lvl + '">Spunta tutto</button>' +
       '<button class="mini" data-none="' + lvl + '">Togli tutto</button>' +
@@ -139,6 +172,7 @@ LVL_ORDER.forEach(lvl => {
     const row = document.createElement('label');
     row.className = 'check-row';
     row.style.setProperty('--lvl', LVL_COLOR[lvl]);
+    row.style.setProperty('--velo', LVL_VELO[lvl]);
     const exCount = s.exercises.length;
     const lez = (s.lez && s.lez.length) ? s.lez.join(' · ') : '—';
     // se la struttura pesa su un livello diverso nel calcolo, lo segnalo
@@ -251,6 +285,16 @@ function update(){
   document.getElementById('warnLong').classList.toggle('show', nItems > 60);
   genBtn.disabled = (nStruct === 0);
   checkboxes().forEach(c => c.closest('.check-row').classList.toggle('on', c.checked));
+
+  /* Quante strutture per livello: dice se il test è bilanciato o pende tutto
+     da una parte — cosa che il totale da solo non mostra. */
+  document.querySelectorAll('[data-conta]').forEach(el => {
+    const lvl = el.dataset.conta;
+    const tot = byLevel[lvl].length;
+    const sel = byLevel[lvl].filter(({ gi }) =>
+      document.querySelector('input[data-gi="' + gi + '"]').checked).length;
+    el.textContent = sel ? sel + ' di ' + tot : '';
+  });
 }
 
 list.addEventListener('change', e => {

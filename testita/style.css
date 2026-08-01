@@ -30,6 +30,13 @@
   --c-b1:#2f6cdf;
   --c-b2:#6e4ad8;
   --c-c1:#b62a6e;
+  /* Versioni tenui per i fondi: stesso colore, molto diluito nella carta.
+     Servono a tingere le righe selezionate senza perdere leggibilità. */
+  --c-a-velo:#e8f5ee;
+  --c-a2-velo:#e4f4f5;
+  --c-b1-velo:#e8effc;
+  --c-b2-velo:#efeafb;
+  --c-c1-velo:#fae9f1;
 
   --display:"Fraunces", Georgia, "Times New Roman", serif;
   --sans:"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
