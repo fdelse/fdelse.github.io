@@ -13,6 +13,7 @@
   --warn-bg:#fbf3e8;
   --warn-line:#d98a2b;
   --warn-ink:#9a5e12;
+  --good-ink:#2e7d5b;   /* esito positivo nei test di progresso */
   --ok-bg:#eaf6ef;
   --ok-line:#2e9e6b;
   --bad-bg:#fbeceb;

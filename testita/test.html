@@ -807,6 +807,21 @@ function submitTest(){
   });
 
   const score = ok + ' / ' + tot;
+
+  /* ---------- voto in decimi ----------
+     Una sola cifra decimale: «7,3» e non «7,25», che darebbe una falsa
+     impressione di precisione. Il totale cambia da un test all'altro, il voto
+     no: è quello che rende confrontabili due sessioni diverse. */
+  const voto = tot ? (ok / tot * 10) : 0;
+  const votoTxt = voto.toFixed(1).replace('.', ',');
+
+  /* La soglia di sufficienza vale solo nei test di PROGRESSO: lì hai scelto tu
+     le strutture e il 6 significa «ha imparato quello che abbiamo fatto».
+     In un piazzamento non c'è nulla da superare — chi prende 4 non ha fallito,
+     è semplicemente un principiante — quindi la soglia non compare. */
+  const SOGLIA_VOTO = 6;
+  const eProgresso = !adattivo;
+  const superato = voto >= SOGLIA_VOTO;
   const dateStr = new Date().toLocaleDateString('it-IT');
 
   // ---- righe per struttura (usate sia per lo studente sia per l'email) ----
@@ -843,6 +858,8 @@ function submitTest(){
     ' è sotto la soglia, i livelli successivi non sono stati proposti.\n' +
     '  (' + nonPoste + ' domande non poste, escluse dal punteggio)\n'
   : '') +
+'VOTO: ' + votoTxt + ' / 10' +
+  (eProgresso ? '   → ' + (superato ? 'SUPERATO' : 'NON SUPERATO') + ' (soglia ' + SOGLIA_VOTO + ')' : '') + '\n' +
 'PUNTEGGIO: ' + score + '\n' +
 '  Corretti: ' + ok + '  ·  Sbagliati: ' + sbagliati +
 '  ·  Da verificare: ' + daVerif + '  ·  Non risposti: ' + nonRisp + '\n' +
@@ -873,18 +890,27 @@ function submitTest(){
       'Il test si conclude qui: hai completato le sezioni adatte al tuo livello. Ecco il tuo risultato.';
   }
 
+  /* Nel riquadro grande va il dato che conta per il tipo di test:
+     - piazzamento (multi-livello): il livello, perché è il motivo del test
+     - progresso: il voto in decimi, che è confrontabile fra due sessioni
+       anche quando cambia il numero di domande. */
   const bannerNum = document.getElementById('bannerNum');
   if (multiLivello) {
     bannerNum.textContent = lvlVerdict;
     bannerNum.classList.add('num--testo');
     document.getElementById('bannerLbl').textContent = 'livello grammaticale stimato';
   } else {
-    bannerNum.textContent = score;
+    bannerNum.textContent = votoTxt;
     bannerNum.classList.remove('num--testo');
-    document.getElementById('bannerLbl').textContent = 'risposte corrette';
+    document.getElementById('bannerLbl').textContent = 'voto su 10';
   }
 
   let html = '';
+
+  /* Allo studente va solo il voto: 4,7 dice già tutto senza bisogno di
+     aggiungere «non superata», che non informa e scoraggia. L'esito rispetto
+     alla soglia serve all'insegnante e resta nel riepilogo via email. */
+
   if (multiLivello) {
     /* La ripartizione per livello si mostra solo se i livelli con domande sono
        più d'uno: se il test si è fermato al primo, quella riga ripeterebbe il
