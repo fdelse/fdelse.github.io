@@ -4543,9 +4543,9 @@ const TEST_STRUCTURES = [
             "fix": "mai"
           },
           {
-            "q": "Spesso non sono stato in Grecia.",
-            "wrong": "Spesso",
-            "fix": "Non sono mai"
+            "q": "Non sono spesso stato in Grecia: mai una volta.",
+            "wrong": "spesso",
+            "fix": "mai"
           },
           {
             "q": "Raramente mangio la verdura tutti i giorni.",
@@ -6376,7 +6376,7 @@ const TEST_STRUCTURES = [
             "fix": "si"
           },
           {
-            "q": "Voi si riposano dopo pranzo.",
+            "q": "Voi si riposate dopo pranzo.",
             "wrong": "si",
             "fix": "vi"
           },
@@ -16767,9 +16767,9 @@ const TEST_STRUCTURES = [
             "fix": "Avrei voluto"
           },
           {
-            "q": "Dovremmo partire ieri sera.",
+            "q": "Dovremmo consegnare il progetto ieri.",
             "wrong": "Dovremmo",
-            "fix": "Saremmo dovuti partire"
+            "fix": "Avremmo dovuto"
           },
           {
             "q": "Verrebbe alla festa, ma era malato.",
@@ -19889,9 +19889,9 @@ const TEST_STRUCTURES = [
         "instr": "Clicca la preposizione di luogo sbagliata.",
         "items": [
           {
-            "q": "Il libro è sopra il tavolo e la lampada.",
-            "wrong": "sopra",
-            "fix": "tra"
+            "q": "Il quadro è appeso sopra del camino.",
+            "wrong": "del",
+            "fix": "al (sopra al) o «sopra il camino»"
           },
           {
             "q": "Vado verso della stazione a piedi.",
@@ -19899,9 +19899,9 @@ const TEST_STRUCTURES = [
             "fix": "alla"
           },
           {
-            "q": "Ho messo la valigia dentro il letto.",
-            "wrong": "dentro",
-            "fix": "sotto"
+            "q": "Ho messo la valigia sotto del letto.",
+            "wrong": "del",
+            "fix": "al (sotto al) o «sotto il letto»"
           },
           {
             "q": "Il museo è accanto della stazione.",
@@ -19909,9 +19909,9 @@ const TEST_STRUCTURES = [
             "fix": "alla"
           },
           {
-            "q": "Siamo passati sotto il parco a piedi.",
-            "wrong": "sotto",
-            "fix": "attraverso"
+            "q": "Ci siamo fermati fuori il museo.",
+            "wrong": "il",
+            "fix": "dal (fuori dal museo)"
           },
           {
             "q": "Il negozio è di fronte la piazza principale.",
@@ -19919,14 +19919,14 @@ const TEST_STRUCTURES = [
             "fix": "alla"
           },
           {
-            "q": "Il gatto dorme davanti il divano.",
-            "wrong": "il",
-            "fix": "al (davanti al)"
+            "q": "La fontana è in mezzo la piazza.",
+            "wrong": "la",
+            "fix": "alla (in mezzo alla)"
           },
           {
-            "q": "Cammina dietro a me, ti apro la strada.",
-            "wrong": "dietro",
-            "fix": "davanti"
+            "q": "Cammina davanti di me, ti seguo.",
+            "wrong": "di",
+            "fix": "a (davanti a me)"
           },
           {
             "q": "L'ufficio si trova nel terzo piano.",
@@ -19934,9 +19934,9 @@ const TEST_STRUCTURES = [
             "fix": "al"
           },
           {
-            "q": "Il confine passa attraverso le due regioni.",
-            "wrong": "attraverso",
-            "fix": "tra"
+            "q": "Il bar si trova vicino il teatro.",
+            "wrong": "il",
+            "fix": "al (vicino al teatro)"
           }
         ]
       },
@@ -24861,8 +24861,8 @@ const TEST_STRUCTURES = [
           },
           {
             "q": "Dichiara di avere stato presente al controllo.",
-            "wrong": "stato",
-            "fix": "(togliere: di essere stato)"
+            "wrong": "avere",
+            "fix": "essere"
           },
           {
             "q": "Applicato che le norme, il marchio è valido.",
