@@ -2775,7 +2775,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Tu vieni con me. → Voi ___",
+            "q": "Lui viene a pranzo. → Voi ___",
             "options": [
               "venite",
               "veniamo",
@@ -9113,95 +9113,95 @@ const TEST_STRUCTURES = [
       {
         "type": "Riempimento",
         "fmt": "buco",
-        "instr": "Scegli il partitivo corretto.",
+        "instr": "Scegli la forma corretta: attenzione ai casi in cui il partitivo non si usa.",
         "items": [
           {
-            "q": "Compro ___ pane.",
+            "q": "Non ho comprato ___ frutta, era finita.",
             "options": [
-              "del",
-              "dei",
-              "della"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Vorrei ___ acqua.",
-            "options": [
-              "dell'",
-              "del",
-              "delle"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Ho comprato ___ mele.",
-            "options": [
-              "delle",
-              "dei",
-              "degli"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Servono ___ zucchero e ___ uova.",
-            "options": [
-              "dello / delle",
-              "del / dei",
-              "della / degli"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Mangio ___ formaggio.",
-            "options": [
-              "del",
+              "—",
               "della",
-              "dei"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Ci sono ___ studenti in aula.",
-            "options": [
-              "degli",
-              "dei",
               "delle"
             ],
             "answer": 0
           },
           {
-            "q": "Prendo ___ latte.",
+            "q": "Ho preso ___ pomodori maturi al mercato.",
             "options": [
-              "del",
-              "dello",
-              "della"
+              "dei",
+              "qualche",
+              "alcuno"
             ],
             "answer": 0
           },
           {
-            "q": "Metti ___ olio nell'insalata.",
+            "q": "___ negozio è ancora aperto a quest'ora?",
             "options": [
-              "dell'",
+              "Qualche",
+              "Dei",
+              "Alcuni"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Prendo mezzo litro ___ latte fresco.",
+            "options": [
+              "di",
               "del",
               "dello"
             ],
             "answer": 0
           },
           {
-            "q": "Ho visto ___ amici ieri.",
+            "q": "Al banco non è rimasto ___ pesce.",
             "options": [
-              "degli",
-              "dei",
-              "delle"
+              "—",
+              "del",
+              "dei"
             ],
             "answer": 0
           },
           {
-            "q": "Vorrei ___ patate, per favore.",
+            "q": "Ho parlato con ___ commessi del reparto.",
             "options": [
-              "delle",
+              "alcuni",
+              "qualche",
+              "del"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Non compro mai ___ surgelati.",
+            "options": [
+              "—",
               "dei",
               "degli"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Mi servono due etti ___ prosciutto.",
+            "options": [
+              "di",
+              "del",
+              "dello"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Al banco c'erano ___ persone in attesa.",
+            "options": [
+              "alcune",
+              "qualche",
+              "della"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Hai ___ spiccioli per il carrello?",
+            "options": [
+              "degli",
+              "qualche",
+              "alcuno"
             ],
             "answer": 0
           }
@@ -9210,152 +9210,152 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il partitivo sbagliato.",
+        "instr": "Clicca la parola sbagliata: il partitivo non regge in tutti i contesti.",
         "items": [
           {
-            "q": "Compro dei pane fresco.",
-            "wrong": "dei",
-            "fix": "del"
+            "q": "Non ho preso delle uova al mercato.",
+            "wrong": "delle",
+            "fix": "(togliere «delle»: nella negazione il partitivo cade)"
           },
           {
-            "q": "Vorrei della acqua naturale.",
-            "wrong": "della",
-            "fix": "dell'"
+            "q": "Vorrei un chilo delle arance, per favore.",
+            "wrong": "delle",
+            "fix": "di (dopo una quantità precisa)"
           },
           {
-            "q": "Ho preso dei mele rosse.",
-            "wrong": "dei",
-            "fix": "delle"
+            "q": "Qualche clienti aspettavano alla cassa.",
+            "wrong": "clienti",
+            "fix": "cliente (qualche vuole il singolare)"
           },
           {
-            "q": "Serve del zucchero di canna.",
+            "q": "Alcuni pane era ancora caldo.",
+            "wrong": "Alcuni",
+            "fix": "Del (alcuni vuole il plurale)"
+          },
+          {
+            "q": "Non c'era del cliente in negozio.",
             "wrong": "del",
-            "fix": "dello"
+            "fix": "nessun"
           },
           {
-            "q": "Ci sono dei studenti stranieri.",
-            "wrong": "dei",
-            "fix": "degli"
-          },
-          {
-            "q": "Metti del olio d'oliva.",
+            "q": "Ho comprato due etti del formaggio stagionato.",
             "wrong": "del",
-            "fix": "dell'"
+            "fix": "di"
           },
           {
-            "q": "Ho comprato della patate.",
+            "q": "Non mangio mai della carne rossa.",
             "wrong": "della",
-            "fix": "delle"
+            "fix": "(togliere «della»: nella negazione il partitivo cade)"
           },
           {
-            "q": "Prendo della latte fresco.",
-            "wrong": "della",
-            "fix": "del"
+            "q": "Qualche verdure erano già finite.",
+            "wrong": "verdure",
+            "fix": "verdura (qualche vuole il singolare)"
           },
           {
-            "q": "Vedo dei amiche in piazza.",
-            "wrong": "dei",
-            "fix": "delle"
+            "q": "Mi dia mezzo chilo delle olive.",
+            "wrong": "delle",
+            "fix": "di"
           },
           {
-            "q": "Aggiungi dei sale.",
-            "wrong": "dei",
-            "fix": "del"
+            "q": "Alcuno negozio apre la domenica.",
+            "wrong": "Alcuno",
+            "fix": "Qualche"
           }
         ]
       },
       {
         "type": "Trasformazione",
         "fmt": "buco",
-        "instr": "Sostituisci «un po' di» con il partitivo.",
+        "instr": "Riscrivi la frase al negativo o con la quantità indicata.",
         "items": [
           {
-            "q": "Vorrei un po' di vino. →",
+            "q": "Ho comprato del pane. → (al negativo)",
             "options": [
-              "Vorrei del vino.",
-              "Vorrei dei vino.",
-              "Vorrei della vino."
+              "Non ho comprato pane.",
+              "Non ho comprato del pane.",
+              "Non ho comprato dei pane."
             ],
             "answer": 0
           },
           {
-            "q": "Prendo un po' di insalata. →",
+            "q": "Ho preso delle mele. → (un chilo)",
             "options": [
-              "Prendo dell'insalata.",
-              "Prendo del insalata.",
-              "Prendo dello insalata."
+              "Ho preso un chilo di mele.",
+              "Ho preso un chilo delle mele.",
+              "Ho preso un chilo di delle mele."
             ],
             "answer": 0
           },
           {
-            "q": "Serve un po' di burro. →",
+            "q": "Ci sono dei clienti. → (al negativo)",
             "options": [
-              "Serve del burro.",
-              "Serve dello burro.",
-              "Serve della burro."
+              "Non c'è nessun cliente.",
+              "Non ci sono dei clienti.",
+              "Non c'è del cliente."
             ],
             "answer": 0
           },
           {
-            "q": "Compro un po' di frutta. →",
+            "q": "Ho visto degli amici. → (con «alcuni»)",
             "options": [
-              "Compro della frutta.",
-              "Compro del frutta.",
-              "Compro dei frutta."
+              "Ho visto alcuni amici.",
+              "Ho visto alcuno amico.",
+              "Ho visto qualche amici."
             ],
             "answer": 0
           },
           {
-            "q": "Aggiungi un po' di spezie. →",
+            "q": "Vorrei del prosciutto. → (due etti)",
             "options": [
-              "Aggiungi delle spezie.",
-              "Aggiungi dei spezie.",
-              "Aggiungi degli spezie."
+              "Vorrei due etti di prosciutto.",
+              "Vorrei due etti del prosciutto.",
+              "Vorrei due etti dei prosciutto."
             ],
             "answer": 0
           },
           {
-            "q": "Voglio un po' di zucchero. →",
+            "q": "Bevo del vino a cena. → (al negativo)",
             "options": [
-              "Voglio dello zucchero.",
-              "Voglio del zucchero.",
-              "Voglio della zucchero."
+              "Non bevo vino a cena.",
+              "Non bevo del vino a cena.",
+              "Non bevo dei vino a cena."
             ],
             "answer": 0
           },
           {
-            "q": "Metti un po' di erbe. →",
+            "q": "Ci sono delle offerte. → (con «qualche»)",
             "options": [
-              "Metti delle erbe.",
-              "Metti dei erbe.",
-              "Metti degli erbe."
+              "C'è qualche offerta.",
+              "Ci sono qualche offerte.",
+              "C'è qualche offerte."
             ],
             "answer": 0
           },
           {
-            "q": "Bevo un po' di succo. →",
+            "q": "Ho comprato dello zucchero. → (un pacco)",
             "options": [
-              "Bevo del succo.",
-              "Bevo dello succo.",
-              "Bevo dei succo."
+              "Ho comprato un pacco di zucchero.",
+              "Ho comprato un pacco dello zucchero.",
+              "Ho comprato un pacco di dello zucchero."
             ],
             "answer": 0
           },
           {
-            "q": "Ho un po' di dubbi. →",
+            "q": "Mangio della verdura. → (al negativo)",
             "options": [
-              "Ho dei dubbi.",
-              "Ho delle dubbi.",
-              "Ho degli dubbi."
+              "Non mangio verdura.",
+              "Non mangio della verdura.",
+              "Non mangio delle verdura."
             ],
             "answer": 0
           },
           {
-            "q": "Serve un po' di aceto. →",
+            "q": "Ci sono dei problemi. → (con «qualche»)",
             "options": [
-              "Serve dell'aceto.",
-              "Serve del aceto.",
-              "Serve dello aceto."
+              "C'è qualche problema.",
+              "Ci sono qualche problemi.",
+              "C'è qualche problemi."
             ],
             "answer": 0
           }
@@ -9566,29 +9566,29 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Trita il prezzemolo. →",
+            "q": "Grattugia il formaggio. →",
             "options": [
-              "Tritare il prezzemolo.",
-              "Tritando il prezzemolo.",
-              "Tritato il prezzemolo."
+              "Grattugiare il formaggio.",
+              "Grattugiando il formaggio.",
+              "Grattugiato il formaggio."
             ],
             "answer": 0
           },
           {
-            "q": "Sciogli il burro. →",
+            "q": "Rosola la cipolla. →",
             "options": [
-              "Sciogliere il burro.",
-              "Sciogliendo il burro.",
-              "Sciolto il burro."
+              "Rosolare la cipolla.",
+              "Rosolando la cipolla.",
+              "Rosolato la cipolla."
             ],
             "answer": 0
           },
           {
-            "q": "Monta la panna. →",
+            "q": "Frulla la zuppa. →",
             "options": [
-              "Montare la panna.",
-              "Montando la panna.",
-              "Montato la panna."
+              "Frullare la zuppa.",
+              "Frullando la zuppa.",
+              "Frullato la zuppa."
             ],
             "answer": 0
           },
@@ -19789,95 +19789,95 @@ const TEST_STRUCTURES = [
       {
         "type": "Riempimento",
         "fmt": "buco",
-        "instr": "Scegli la preposizione di luogo o movimento corretta.",
+        "instr": "Scegli la locuzione o la preposizione adatta alla sfumatura.",
         "items": [
           {
-            "q": "Il gatto è ___ il tavolo e la sedia.",
+            "q": "La cinepresa si muove ___ del corridoio.",
             "options": [
-              "tra",
-              "su",
-              "verso"
+              "lungo",
+              "attraverso",
+              "presso"
             ],
             "answer": 0
           },
           {
-            "q": "Cammina ___ la stazione, è di là.",
+            "q": "La scena è girata ___ degli studi di Cinecittà.",
             "options": [
+              "presso",
               "verso",
-              "tra",
-              "sotto"
+              "lungo"
             ],
             "answer": 0
           },
           {
-            "q": "Le scarpe sono ___ il letto.",
+            "q": "I protagonisti fuggono ___ il confine.",
             "options": [
-              "sotto",
-              "tra",
-              "verso"
+              "oltre",
+              "presso",
+              "lungo"
             ],
             "answer": 0
           },
           {
-            "q": "Il quadro è ___ al divano.",
+            "q": "Il set si trova ___ del centro storico.",
             "options": [
-              "accanto",
-              "tra",
-              "verso"
+              "nei pressi",
+              "oltre",
+              "lungo"
             ],
             "answer": 0
           },
           {
-            "q": "Passiamo ___ il parco per accorciare.",
+            "q": "La macchina da presa passa ___ la folla.",
             "options": [
               "attraverso",
-              "sotto",
-              "accanto"
+              "presso",
+              "oltre"
             ],
             "answer": 0
           },
           {
-            "q": "La farmacia è ___ alla banca.",
+            "q": "Il regista è ___ di girare la scena finale.",
             "options": [
-              "di fronte",
-              "attraverso",
-              "tra"
+              "sul punto",
+              "nei pressi",
+              "al di là"
             ],
             "answer": 0
           },
           {
-            "q": "Il cane si è nascosto ___ l'armadio.",
+            "q": "La troupe si sposta ___ della periferia.",
             "options": [
-              "dietro",
-              "verso",
-              "attraverso"
+              "alla volta",
+              "per mezzo",
+              "a ridosso"
             ],
             "answer": 0
           },
           {
-            "q": "Vieni ___ di me, ti faccio strada.",
+            "q": "Il pubblico si accalcava ___ del palco.",
             "options": [
-              "dietro",
-              "sotto",
-              "tra"
+              "a ridosso",
+              "sul punto",
+              "alla volta"
             ],
             "answer": 0
           },
           {
-            "q": "L'ufficio è ___ al terzo piano.",
+            "q": "Le riprese proseguono ___ a mezzanotte.",
             "options": [
-              "su",
-              "tra",
-              "verso"
+              "fino",
+              "entro",
+              "presso"
             ],
             "answer": 0
           },
           {
-            "q": "Il fiume passa ___ i due paesi.",
+            "q": "Il montaggio va consegnato ___ venerdì.",
             "options": [
-              "tra",
-              "verso",
-              "sotto"
+              "entro",
+              "fino a",
+              "presso"
             ],
             "answer": 0
           }
@@ -19886,152 +19886,152 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la preposizione di luogo sbagliata.",
+        "instr": "Clicca la preposizione o la locuzione sbagliata.",
         "items": [
           {
-            "q": "Il quadro è appeso sopra del camino.",
-            "wrong": "del",
-            "fix": "al (sopra al) o «sopra il camino»"
+            "q": "La camera scorre attraverso il muro esterno dell'edificio.",
+            "wrong": "attraverso",
+            "fix": "lungo"
           },
           {
-            "q": "Vado verso della stazione a piedi.",
-            "wrong": "della",
-            "fix": "alla"
+            "q": "Ha studiato regia oltre l'Accademia di Roma.",
+            "wrong": "oltre",
+            "fix": "presso"
           },
           {
-            "q": "Ho messo la valigia sotto del letto.",
-            "wrong": "del",
-            "fix": "al (sotto al) o «sotto il letto»"
+            "q": "I fuggitivi corrono lungo il confine e lo superano.",
+            "wrong": "lungo",
+            "fix": "oltre"
           },
           {
-            "q": "Il museo è accanto della stazione.",
-            "wrong": "della",
-            "fix": "alla"
+            "q": "Lo studio si trova oltre il centro, a due passi.",
+            "wrong": "oltre",
+            "fix": "nei pressi del"
           },
           {
-            "q": "Ci siamo fermati fuori il museo.",
-            "wrong": "il",
-            "fix": "dal (fuori dal museo)"
+            "q": "La luce filtra lungo le tende della finestra.",
+            "wrong": "lungo",
+            "fix": "attraverso"
           },
           {
-            "q": "Il negozio è di fronte la piazza principale.",
-            "wrong": "la",
-            "fix": "alla"
+            "q": "Erano nei pressi di iniziare le riprese.",
+            "wrong": "pressi",
+            "fix": "sul punto"
           },
           {
-            "q": "La fontana è in mezzo la piazza.",
-            "wrong": "la",
-            "fix": "alla (in mezzo alla)"
+            "q": "La troupe partì presso Napoli in mattinata.",
+            "wrong": "presso",
+            "fix": "alla volta di"
           },
           {
-            "q": "Cammina davanti di me, ti seguo.",
-            "wrong": "di",
-            "fix": "a (davanti a me)"
+            "q": "Il senso del film sta lungo le apparenze.",
+            "wrong": "lungo",
+            "fix": "al di là"
           },
           {
-            "q": "L'ufficio si trova nel terzo piano.",
-            "wrong": "nel",
-            "fix": "al"
+            "q": "Abbiamo girato entro le tre di notte, senza fermarci.",
+            "wrong": "entro",
+            "fix": "fino alle"
           },
           {
-            "q": "Il bar si trova vicino il teatro.",
-            "wrong": "il",
-            "fix": "al (vicino al teatro)"
+            "q": "Consegnate il montaggio fino a venerdì prossimo.",
+            "wrong": "fino",
+            "fix": "entro"
           }
         ]
       },
       {
         "type": "Trasformazione",
         "fmt": "buco",
-        "instr": "Scegli la frase che descrive la posizione indicata.",
+        "instr": "Scegli la frase che rende la sfumatura indicata.",
         "items": [
           {
-            "q": "Il libro / il tavolo (sopra)",
+            "q": "movimento che segue un percorso (la strada)",
             "options": [
-              "Il libro è sul tavolo.",
-              "Il libro è tra il tavolo.",
-              "Il libro è verso il tavolo."
+              "La macchina procede lungo la strada.",
+              "La macchina procede attraverso la strada.",
+              "La macchina procede presso la strada."
             ],
             "answer": 0
           },
           {
-            "q": "La palla / il divano (nella parte inferiore)",
+            "q": "movimento da parte a parte (la piazza)",
             "options": [
-              "La palla è sotto il divano.",
-              "La palla è sopra il divano.",
-              "La palla è verso il divano."
+              "Attraversiamo la piazza.",
+              "Procediamo lungo la piazza.",
+              "Andiamo presso la piazza."
             ],
             "answer": 0
           },
           {
-            "q": "La scuola / la chiesa (di fianco)",
+            "q": "destinazione di un viaggio (Milano)",
             "options": [
-              "La scuola è accanto alla chiesa.",
-              "La scuola è tra la chiesa.",
-              "La scuola è attraverso la chiesa."
+              "Partiamo alla volta di Milano.",
+              "Partiamo a ridosso di Milano.",
+              "Partiamo lungo Milano."
             ],
             "answer": 0
           },
           {
-            "q": "Io / la porta (direzione)",
+            "q": "superare un limite (il confine)",
             "options": [
-              "Vado verso la porta.",
-              "Vado tra la porta.",
-              "Vado sotto la porta."
+              "Sono andati oltre il confine.",
+              "Sono andati lungo il confine.",
+              "Sono andati presso il confine."
             ],
             "answer": 0
           },
           {
-            "q": "Il bar / la banca (dirimpetto)",
+            "q": "nelle vicinanze (lo stadio)",
             "options": [
-              "Il bar è di fronte alla banca.",
-              "Il bar è attraverso la banca.",
-              "Il bar è sotto la banca."
+              "Abita nei pressi dello stadio.",
+              "Abita alla volta dello stadio.",
+              "Abita oltre lo stadio, molto vicino."
             ],
             "answer": 0
           },
           {
-            "q": "Il cane / la poltrona (parte posteriore)",
+            "q": "sede istituzionale (l'università)",
             "options": [
-              "Il cane è dietro la poltrona.",
-              "Il cane è davanti la poltrona.",
-              "Il cane è tra la poltrona."
+              "Lavora presso l'università.",
+              "Lavora lungo l'università.",
+              "Lavora oltre l'università."
             ],
             "answer": 0
           },
           {
-            "q": "Il tunnel / la montagna (da parte a parte)",
+            "q": "azione che sta per cominciare (girare)",
             "options": [
-              "Il tunnel passa attraverso la montagna.",
-              "Il tunnel passa tra la montagna.",
-              "Il tunnel passa sotto verso la montagna."
+              "È sul punto di girare.",
+              "È nei pressi di girare.",
+              "È lungo il girare."
             ],
             "answer": 0
           },
           {
-            "q": "La casa / due alberi (in mezzo)",
+            "q": "limite di tempo da rispettare (venerdì)",
             "options": [
-              "La casa è tra due alberi.",
-              "La casa è verso due alberi.",
-              "La casa è attraverso due alberi."
+              "Consegna entro venerdì.",
+              "Consegna fino a venerdì.",
+              "Consegna presso venerdì."
             ],
             "answer": 0
           },
           {
-            "q": "Le chiavi / la borsa (all'interno)",
+            "q": "durata continuata (le tre)",
             "options": [
-              "Le chiavi sono nella borsa.",
-              "Le chiavi sono su la borsa.",
-              "Le chiavi sono verso la borsa."
+              "Abbiamo lavorato fino alle tre.",
+              "Abbiamo lavorato entro le tre.",
+              "Abbiamo lavorato presso le tre."
             ],
             "answer": 0
           },
           {
-            "q": "La fermata / il cinema (a poca distanza)",
+            "q": "guardare più a fondo (le apparenze)",
             "options": [
-              "La fermata è vicino al cinema.",
-              "La fermata è tra il cinema.",
-              "La fermata è attraverso il cinema."
+              "Bisogna guardare al di là delle apparenze.",
+              "Bisogna guardare lungo le apparenze.",
+              "Bisogna guardare presso le apparenze."
             ],
             "answer": 0
           }

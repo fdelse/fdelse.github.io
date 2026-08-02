@@ -318,12 +318,19 @@ function renderItem(itemData, fmt, refId){
     body.innerHTML = html;
   }
   else if (fmt === 'buco') {
-    box.dataset.answer = itemData.answer;
+    /* Le opzioni si mescolano: in banca la risposta giusta è quasi sempre la
+       prima, e senza mescolamento basterebbe cliccare sempre il primo bottone.
+       Stesso PRNG del resto del test: col seed la sequenza resta riproducibile. */
+    const mescolate = pickRandom(
+      itemData.options.map((op, i) => ({ op, i })),
+      itemData.options.length
+    );
+    box.dataset.answer = mescolate.findIndex(o => o.i === itemData.answer);
     const parts = itemData.q.split('___');
     let html = '<div class="item__text">' + parts.join('<span class="gap" data-gap>_____</span>') + '</div>';
     html += '<div class="opts">';
-    itemData.options.forEach((op, i) => {
-      html += '<button type="button" class="opt" data-i="' + i + '">' + op + '</button>';
+    mescolate.forEach((o, i) => {
+      html += '<button type="button" class="opt" data-i="' + i + '">' + o.op + '</button>';
     });
     html += '</div>';
     body.innerHTML = html;
@@ -361,10 +368,15 @@ function renderItem(itemData, fmt, refId){
     body.innerHTML = html;
   }
   else if (fmt === 'giusta') {
-    box.dataset.answer = itemData.answer;
+    /* Mescolamento come nel formato «buco»: vedi la nota lì sopra. */
+    const mescolate = pickRandom(
+      itemData.options.map((op, i) => ({ op, i })),
+      itemData.options.length
+    );
+    box.dataset.answer = mescolate.findIndex(o => o.i === itemData.answer);
     let html = '<div class="item__text">' + itemData.q + '</div><div class="opts" style="flex-direction:column;align-items:stretch;">';
-    itemData.options.forEach((op, i) => {
-      html += '<button type="button" class="opt" data-i="' + i + '" style="text-align:left;">' + op + '</button>';
+    mescolate.forEach((o, i) => {
+      html += '<button type="button" class="opt" data-i="' + i + '" style="text-align:left;">' + o.op + '</button>';
     });
     html += '</div>';
     body.innerHTML = html;
