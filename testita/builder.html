@@ -83,6 +83,10 @@
     border-color:var(--azione);color:var(--azione);font-weight:700;padding:8px 14px;
   }
   .mini--preset:hover{background:var(--azione);color:#fff;border-color:var(--azione);}
+  /* Contorno più marcato del grigio chiaro degli altri «mini»: è un comando
+     distruttivo, deve leggersi come tale senza per questo gridare in colore. */
+  .mini--clear{border-color:var(--ink-faint);color:var(--ink);}
+  .mini--clear:hover{border-color:var(--ink-soft);background:var(--line-soft);}
   /* I due comandi che agiscono sull'intera selezione stanno insieme, impilati
      e spinti a destra: sono di natura diversa dai selettori a sinistra, che
      riguardano una porzione del programma. */
@@ -117,7 +121,7 @@
     </div>
     <div class="n-select n-select--globali">
       <button class="mini mini--preset" id="preset">Test di posizionamento</button>
-      <button class="mini" id="clearAll">Togli in tutti i livelli</button>
+      <button class="mini mini--clear" id="clearAll">Togli in tutti i livelli</button>
     </div>
     <div class="n-select">
       <label for="n">Domande per esercizio</label>
