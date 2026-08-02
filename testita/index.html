@@ -83,6 +83,12 @@
     border-color:var(--azione);color:var(--azione);font-weight:700;padding:8px 14px;
   }
   .mini--preset:hover{background:var(--azione);color:#fff;border-color:var(--azione);}
+  /* I due comandi che agiscono sull'intera selezione stanno insieme, impilati
+     e spinti a destra: sono di natura diversa dai selettori a sinistra, che
+     riguardano una porzione del programma. */
+  .counter-bar .n-select--globali{
+    flex-direction:column;align-items:stretch;gap:6px;margin-left:auto;
+  }
   .warn-long{color:var(--warn-ink);font-size:12.5px;font-weight:600;display:none;}
   .warn-long.show{display:inline;}
 </style>
@@ -109,10 +115,8 @@
       <label for="a">Alla lezione</label>
       <select id="a"><option value="">fine</option></select>
     </div>
-    <div class="n-select" style="margin-left:auto;">
+    <div class="n-select n-select--globali">
       <button class="mini mini--preset" id="preset">Test di posizionamento</button>
-    </div>
-    <div class="n-select">
       <button class="mini" id="clearAll">Togli in tutti i livelli</button>
     </div>
     <div class="n-select">
