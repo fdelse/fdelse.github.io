@@ -855,16 +855,25 @@ function submitTest(){
   const structRows = structOrder.map(st =>
     st + ': ' + perStruct[st].ok + '/' + perStruct[st].tot);
 
-  // ---- livelli: la stima ha senso solo se il test copre più di un livello ----
+  /* ---- livelli: si dichiarano SOLO nel piazzamento ----
+     Il verdetto di livello risponde alla domanda «da dove faccio partire questo
+     studente»: ha senso quando il test è stato costruito per rispondere, cioè
+     nel piazzamento, dove ogni livello riceve 12 domande e i livelli si
+     escludono a vicenda salendo.
+
+     In un test di progresso le strutture le sceglie l'insegnante, che il loro
+     livello lo sa già: lì servono il voto, gli errori e dove sono caduti. Un
+     «B1 solido» calcolato su tre strutture scelte a mano direbbe soltanto che
+     quelle tre sono andate bene, ma lo direbbe con le parole di un piazzamento.
+
+     Il criterio è dunque il TIPO di test, non quanti livelli tocca: un test di
+     progresso su due livelli resta un test di progresso. */
   const stima = stimaLivello(perLvl);
-  /* Di norma la stima ha senso solo se il test copre più livelli. Ma se il test
-     si è fermato per arresto anticipato, il livello va sempre dichiarato: il
-     fatto stesso di essersi fermato lì è il risultato. */
   const livelliPresenti = LVL_SEQ.filter(l => perLvl[l]);
-  const multiLivello = livelliPresenti.length > 1 || !!arrestoAnticipato;
+  const mostraLivelli = adattivo;
 
   let lvlRows = [], lvlVerdict = '';
-  if (multiLivello) {
+  if (mostraLivelli) {
     lvlRows = LVL_SEQ.filter(l => perLvl[l]).map(l => {
       const p = perLvl[l];
       const pct = Math.round((p.ok / p.tot) * 100);
@@ -892,7 +901,7 @@ function submitTest(){
   (daVerif ? '  \u00b7  Da verificare: ' + daVerif : '') +
   (nonRisp ? '  \u00b7  Non risposti: ' + nonRisp : '') + '\n' +
 (daVerif ? '  (gli item "da verificare" sono a risposta aperta: controllali a mano)\n' : '') +
-(multiLivello
+(mostraLivelli
   ? '────────────────────────\n' +
     'LIVELLO GRAMMATICALE STIMATO: ' + lvlVerdict + '\n' +
     '  (soglie: 70% = solido, 50-69% = base, sotto 50% = non raggiunto)\n' +
@@ -924,11 +933,11 @@ function submitTest(){
   }
 
   /* Nel riquadro grande va il dato che conta per il tipo di test:
-     - piazzamento (multi-livello): il livello, perché è il motivo del test
-     - progresso: il voto in decimi, che è confrontabile fra due sessioni
-       anche quando cambia il numero di domande. */
+     - piazzamento: il livello, perché è il motivo per cui il test esiste
+     - progresso: il voto in decimi, confrontabile fra due sessioni anche
+       quando cambia il numero di domande. */
   const bannerNum = document.getElementById('bannerNum');
-  if (multiLivello) {
+  if (mostraLivelli) {
     bannerNum.textContent = lvlVerdict;
     bannerNum.classList.add('num--testo');
     document.getElementById('bannerLbl').textContent = 'livello grammaticale stimato';
@@ -944,11 +953,12 @@ function submitTest(){
      aggiungere «non superata», che non informa e scoraggia. L'esito rispetto
      alla soglia serve all'insegnante e resta nel riepilogo via email. */
 
-  if (multiLivello) {
-    /* La ripartizione per livello si mostra solo se i livelli con domande sono
-       più d'uno: se il test si è fermato al primo, quella riga ripeterebbe il
-       punteggio già scritto sopra (4/15 due volte) senza aggiungere nulla.
-       Nel riepilogo all'insegnante resta sempre: lì è la prova del verdetto. */
+  if (mostraLivelli) {
+    /* Anche dentro il piazzamento, la ripartizione per livello si mostra solo
+       se i livelli con domande sono più d'uno: se il test si è fermato al primo
+       per arresto anticipato, quella riga ripeterebbe il punteggio già scritto
+       sopra (4/15 due volte) senza aggiungere nulla. Nel riepilogo
+       all'insegnante resta sempre: lì è la prova del verdetto. */
     const conDomande = LVL_SEQ.filter(l => perLvl[l]);
     html +=
       '<div class="card"><p class="kicker">Risposte corrette</p>' +
