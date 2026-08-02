@@ -103,6 +103,7 @@
   <h1>Grazie, <span id="doneName"></span>!</h1>
   <p class="sub" id="doneSub">Il tuo test è stato inviato all'insegnante. Ecco il tuo risultato.</p>
   <div class="score-banner">
+    <div class="lbl" id="bannerTop"></div>
     <div class="num" id="bannerNum">–</div>
     <div class="lbl" id="bannerLbl">risposte corrette</div>
   </div>
@@ -937,14 +938,20 @@ function submitTest(){
      - progresso: il voto in decimi, confrontabile fra due sessioni anche
        quando cambia il numero di domande. */
   const bannerNum = document.getElementById('bannerNum');
+  const bannerTop = document.getElementById('bannerTop');
   if (mostraLivelli) {
+    bannerTop.textContent = '';
     bannerNum.textContent = lvlVerdict;
     bannerNum.classList.add('num--testo');
     document.getElementById('bannerLbl').textContent = 'livello grammaticale stimato';
   } else {
+    /* Il voto si legge su tre righe — «voto / 8,9 / decimi» — così la cifra
+       grande resta la cifra e basta, e chi guarda capisce subito su quale
+       scala sta. */
+    bannerTop.textContent = 'voto';
     bannerNum.textContent = votoTxt;
     bannerNum.classList.remove('num--testo');
-    document.getElementById('bannerLbl').textContent = 'voto su 10';
+    document.getElementById('bannerLbl').textContent = 'decimi';
   }
 
   let html = '';

@@ -123,7 +123,7 @@ const TEST_STRUCTURES = [
             "fix": "abbiamo"
           },
           {
-            "q": "Loro sono tre figli.",
+            "q": "Loro sono freddo.",
             "wrong": "sono",
             "fix": "hanno"
           },
@@ -133,7 +133,7 @@ const TEST_STRUCTURES = [
             "fix": "ho"
           },
           {
-            "q": "Tu hai francese?",
+            "q": "Tu hai bravo.",
             "wrong": "hai",
             "fix": "sei"
           },
@@ -3540,90 +3540,90 @@ const TEST_STRUCTURES = [
           {
             "q": "Io devo uscire. → Noi ___",
             "options": [
-              "dobbiamo uscire",
-              "dovete uscire",
-              "devono uscire"
+              "dobbiamo uscire.",
+              "dovete uscire.",
+              "devono uscire."
             ],
             "answer": 0
           },
           {
             "q": "Tu devi studiare. → Voi ___",
             "options": [
-              "dovete studiare",
-              "dobbiamo studiare",
-              "devono studiare"
+              "dovete studiare.",
+              "dobbiamo studiare.",
+              "devono studiare."
             ],
             "answer": 0
           },
           {
             "q": "Lui deve lavorare. → Loro ___",
             "options": [
-              "devono lavorare",
-              "dobbiamo lavorare",
-              "dovete lavorare"
+              "devono lavorare.",
+              "dobbiamo lavorare.",
+              "dovete lavorare."
             ],
             "answer": 0
           },
           {
             "q": "Noi dobbiamo partire. → Io ___",
             "options": [
-              "devo partire",
-              "deve partire",
-              "devi partire"
+              "devo partire.",
+              "deve partire.",
+              "devi partire."
             ],
             "answer": 0
           },
           {
             "q": "Voi dovete pagare. → Tu ___",
             "options": [
-              "devi pagare",
-              "deve pagare",
-              "devo pagare"
+              "devi pagare.",
+              "deve pagare.",
+              "devo pagare."
             ],
             "answer": 0
           },
           {
             "q": "Loro devono aspettare. → Lei ___",
             "options": [
-              "deve aspettare",
-              "devo aspettare",
-              "devi aspettare"
+              "deve aspettare.",
+              "devo aspettare.",
+              "devi aspettare."
             ],
             "answer": 0
           },
           {
             "q": "Io devo tornare. → Loro ___",
             "options": [
-              "devono tornare",
-              "dobbiamo tornare",
-              "dovete tornare"
+              "devono tornare.",
+              "dobbiamo tornare.",
+              "dovete tornare."
             ],
             "answer": 0
           },
           {
             "q": "Tu devi chiamare. → Noi ___",
             "options": [
-              "dobbiamo chiamare",
-              "dovete chiamare",
-              "devono chiamare"
+              "dobbiamo chiamare.",
+              "dovete chiamare.",
+              "devono chiamare."
             ],
             "answer": 0
           },
           {
             "q": "Lei deve prenotare. → Voi ___",
             "options": [
-              "dovete prenotare",
-              "dobbiamo prenotare",
-              "devono prenotare"
+              "dovete prenotare.",
+              "dobbiamo prenotare.",
+              "devono prenotare."
             ],
             "answer": 0
           },
           {
             "q": "Noi dobbiamo scrivere. → Lui ___",
             "options": [
-              "deve scrivere",
-              "devo scrivere",
-              "devi scrivere"
+              "deve scrivere.",
+              "devo scrivere.",
+              "devi scrivere."
             ],
             "answer": 0
           }
@@ -5886,90 +5886,90 @@ const TEST_STRUCTURES = [
           {
             "q": "Oggi telefono a Sara. → Ieri ___",
             "options": [
-              "ho telefonato a Sara",
-              "sono telefonato a Sara",
-              "telefonavo a Sara"
+              "ho telefonato a Sara.",
+              "sono telefonato a Sara.",
+              "telefonavo a Sara."
             ],
             "answer": 0
           },
           {
             "q": "Stamattina beviamo una spremuta. → Ieri mattina ___",
             "options": [
-              "abbiamo bevuto una spremuta",
-              "siamo bevuti una spremuta",
-              "bevevamo una spremuta"
+              "abbiamo bevuto una spremuta.",
+              "siamo bevuti una spremuta.",
+              "bevevamo una spremuta."
             ],
             "answer": 0
           },
           {
             "q": "Adesso finisci il lavoro. → Un'ora fa ___",
             "options": [
-              "hai finito il lavoro",
-              "sei finito il lavoro",
-              "finivi il lavoro"
+              "hai finito il lavoro.",
+              "sei finito il lavoro.",
+              "finivi il lavoro."
             ],
             "answer": 0
           },
           {
             "q": "Oggi guardano la partita. → Domenica scorsa ___",
             "options": [
-              "hanno guardato la partita",
-              "sono guardati la partita",
-              "guardavano la partita"
+              "hanno guardato la partita.",
+              "sono guardati la partita.",
+              "guardavano la partita."
             ],
             "answer": 0
           },
           {
             "q": "Questa settimana studio molto. → La settimana scorsa ___",
             "options": [
-              "ho studiato molto",
-              "sono studiato molto",
-              "studiavo molto"
+              "ho studiato molto.",
+              "sono studiato molto.",
+              "studiavo molto."
             ],
             "answer": 0
           },
           {
             "q": "Oggi pulisce la casa. → Sabato scorso ___",
             "options": [
-              "ha pulito la casa",
-              "è pulita la casa",
-              "puliva la casa"
+              "ha pulito la casa.",
+              "è pulita la casa.",
+              "puliva la casa."
             ],
             "answer": 0
           },
           {
             "q": "Ora prendiamo l'autobus. → Poco fa ___",
             "options": [
-              "abbiamo preso l'autobus",
-              "siamo presi l'autobus",
-              "prendevamo l'autobus"
+              "abbiamo preso l'autobus.",
+              "siamo presi l'autobus.",
+              "prendevamo l'autobus."
             ],
             "answer": 0
           },
           {
             "q": "Quest'anno vendono la macchina. → L'anno scorso ___",
             "options": [
-              "hanno venduto la macchina",
-              "sono venduti la macchina",
-              "vendevano la macchina"
+              "hanno venduto la macchina.",
+              "sono venduti la macchina.",
+              "vendevano la macchina."
             ],
             "answer": 0
           },
           {
             "q": "Oggi ricevo un pacco. → Due giorni fa ___",
             "options": [
-              "ho ricevuto un pacco",
-              "sono ricevuto un pacco",
-              "ricevevo un pacco"
+              "ho ricevuto un pacco.",
+              "sono ricevuto un pacco.",
+              "ricevevo un pacco."
             ],
             "answer": 0
           },
           {
             "q": "Stasera cucini tu. → Ieri sera ___",
             "options": [
-              "hai cucinato tu",
-              "sei cucinato tu",
-              "cucinavi tu"
+              "hai cucinato tu.",
+              "sei cucinato tu.",
+              "cucinavi tu."
             ],
             "answer": 0
           }
@@ -6148,36 +6148,36 @@ const TEST_STRUCTURES = [
           {
             "q": "Paolo è andato via. → Le ragazze ___",
             "options": [
-              "sono andate via",
-              "sono andati via",
-              "sono andata via"
+              "sono andate via.",
+              "sono andati via.",
+              "sono andata via."
             ],
             "answer": 0
           },
           {
             "q": "Anna è partita. → I miei fratelli ___",
             "options": [
-              "sono partiti",
-              "sono partite",
-              "sono partita"
+              "sono partiti.",
+              "sono partite.",
+              "sono partita."
             ],
             "answer": 0
           },
           {
             "q": "I turisti sono arrivati. → La guida ___",
             "options": [
-              "è arrivata",
-              "è arrivati",
-              "sono arrivata"
+              "è arrivata.",
+              "è arrivati.",
+              "sono arrivata."
             ],
             "answer": 0
           },
           {
             "q": "Luca è uscito presto. → Noi (ragazze) ___",
             "options": [
-              "siamo uscite",
-              "siamo usciti",
-              "siamo uscita"
+              "siamo uscite.",
+              "siamo usciti.",
+              "siamo uscita."
             ],
             "answer": 0
           },
@@ -6202,18 +6202,18 @@ const TEST_STRUCTURES = [
           {
             "q": "I colleghi sono venuti. → Mia sorella ___",
             "options": [
-              "è venuta",
-              "è venuti",
-              "sono venuta"
+              "è venuta.",
+              "è venuti.",
+              "sono venuta."
             ],
             "answer": 0
           },
           {
             "q": "Il bambino è caduto. → Le bambine ___",
             "options": [
-              "sono cadute",
-              "sono caduti",
-              "è cadute"
+              "sono cadute.",
+              "sono caduti.",
+              "è cadute."
             ],
             "answer": 0
           },

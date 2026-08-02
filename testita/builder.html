@@ -113,6 +113,9 @@
       <button class="mini mini--preset" id="preset">Test di posizionamento</button>
     </div>
     <div class="n-select">
+      <button class="mini" id="clearAll">Togli in tutti i livelli</button>
+    </div>
+    <div class="n-select">
       <label for="n">Domande per esercizio</label>
       <select id="n" title="Ogni struttura ha 3 esercizi. Questo numero dice quante domande pescare da ciascuno: con 2 fanno 6 domande per struttura. Le domande sono estratte a caso da 10 disponibili, così due sessioni dello stesso test non hanno le stesse frasi.">
         <option value="1">1 — test rapido</option>
@@ -169,8 +172,7 @@ LVL_ORDER.forEach(lvl => {
     '<h2 class="lvl-section__title"><span class="sigla">' + LVL_TAG[lvl] + '</span> ' + LVL_NAME[lvl] + '</h2>' +
     '<span class="lvl-section__conta" data-conta="' + lvl + '"></span>' +
     '<div class="lvl-section__actions">' +
-      '<button class="mini" data-all="' + lvl + '">Spunta tutto</button>' +
-      '<button class="mini" data-none="' + lvl + '">Togli tutto</button>' +
+      '<button class="mini" data-toggle="' + lvl + '">Spunta tutto ' + LVL_TAG[lvl] + '</button>' +
     '</div>';
   section.appendChild(head);
   byLevel[lvl].forEach(({ s, gi }) => {
@@ -311,16 +313,27 @@ list.addEventListener('change', e => {
   if (e.target.matches('input[type=checkbox]')) { presetAttivo = false; update(); }
 });
 list.addEventListener('click', e => {
-  if (e.target.dataset.all !== undefined) {
-    e.preventDefault();
-    byLevel[e.target.dataset.all].forEach(({ gi }) => { document.querySelector('input[data-gi="' + gi + '"]').checked = true; });
-    update();
-  }
-  if (e.target.dataset.none !== undefined) {
-    e.preventDefault();
-    byLevel[e.target.dataset.none].forEach(({ gi }) => { document.querySelector('input[data-gi="' + gi + '"]').checked = false; });
-    update();
-  }
+  /* Un solo pulsante per livello, che funziona a interruttore: se il livello è
+     già tutto spuntato lo svuota, altrimenti lo riempie. Prima erano due
+     pulsanti per sezione; con il «togli» generale spostato nella barra in alto,
+     tenere qui anche un «togli» per livello avrebbe fatto tre comandi per una
+     scelta che è binaria. */
+  const lvl = e.target.dataset.toggle;
+  if (lvl === undefined) return;
+  e.preventDefault();
+  const caselle = byLevel[lvl].map(({ gi }) => document.querySelector('input[data-gi="' + gi + '"]'));
+  const tutteSpuntate = caselle.every(c => c.checked);
+  caselle.forEach(c => { c.checked = !tutteSpuntate; });
+  presetAttivo = false;
+  update();
+});
+
+/* Svuota l'intera selezione, tutti i livelli insieme: sta nella barra in alto
+   perché è un comando che agisce su tutto, come il preset. */
+document.getElementById('clearAll').addEventListener('click', () => {
+  document.querySelectorAll('#list input[type=checkbox]').forEach(c => { c.checked = false; });
+  presetAttivo = false;
+  update();
 });
 nSel.addEventListener('change', () => { presetAttivo = false; update(); });
 
