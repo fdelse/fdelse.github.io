@@ -420,6 +420,7 @@ function renderAllPages(){
         itemBox.dataset.lvl = struct.lvl;
         itemBox.dataset.slvl = livelloStima(struct);
         itemBox.dataset.type = ex.type;
+        itemBox.dataset.instr = ex.instr || '';   // serve al riepilogo raggruppato
         // salva il testo "pulito" della domanda per il transcript
         itemBox.dataset.q = itemData.q;
         exDiv.appendChild(itemBox);
@@ -677,9 +678,11 @@ const MIN_ITEM_LIVELLO = 6;
    prende in media il 33%, e su pochi item può arrivare al 40-45% per fortuna.
    Il 50% sta ragionevolmente sopra il caso, mentre chi conosce il livello lo
    supera senza difficoltà. */
+/* Le etichette sono le stesse del verdetto — «base» e non «in corso» — così
+   la ripartizione per livello e la riga finale parlano la stessa lingua. */
 function fasciaLivello(pct){
   if (pct >= 70) return 'solido';
-  if (pct >= 50) return 'in corso';
+  if (pct >= 50) return 'base';
   return 'non raggiunto';
 }
 const SOGLIA_MINIMA = 50;   // usata anche dall'arresto anticipato
@@ -723,7 +726,7 @@ function stimaLivello(perLvl){
 
   // 3. altrimenti il più alto «in corso»
   let piuAltoInCorso = null;
-  validi.forEach(l => { if (fasciaLivello(pctDi(l)) === 'in corso') piuAltoInCorso = l; });
+  validi.forEach(l => { if (fasciaLivello(pctDi(l)) === 'base') piuAltoInCorso = l; });
 
   // lacune: livelli non solidi sotto l'ultimo solido
   const lacune = [];
@@ -741,7 +744,7 @@ function stimaLivello(perLvl){
   let verdetto;
   const iSolido = ultimoSolido ? presenti.indexOf(ultimoSolido) : -1;
   const successivo = presenti[iSolido + 1];
-  const successivoInCorso = successivo && fasciaLivello(pctDi(successivo)) === 'in corso'
+  const successivoInCorso = successivo && fasciaLivello(pctDi(successivo)) === 'base'
                             && validi.indexOf(successivo) !== -1;
 
   if (ultimoSolido && successivoInCorso && !lacune.length) {
@@ -781,7 +784,8 @@ function submitTest(){
   const perStruct = {};   // titolo → {ok, tot}
   const structOrder = [];
   const perLvl = {};      // livello → {ok, tot}
-  const errorLines = [];
+  const perEsercizio = {};    // chiave struttura+tipo → errori di quell'esercizio
+  const ordineEsercizi = [];
 
   items.forEach(it => {
     const r = checkItem(it);
@@ -797,12 +801,19 @@ function submitTest(){
       if (r.state === 'sbagliato') sbagliati++;
       else if (r.state === 'verifica') daVerif++;
       else if (r.state === 'vuoto') nonRisp++;
-      // dettaglio solo per gli errori (non i corretti)
-      errorLines.push(
-'• [' + st + '] ' + it.dataset.type + ' — ' + STATE_LABEL[r.state] + '\n' +
-'   Domanda: ' + it.dataset.q + '\n' +
-'   Risposta: ' + r.answer + '\n' +
-'   Corretta: ' + (r.key || ''));
+      /* Gli errori si raggruppano per esercizio: la consegna compare una volta
+         come intestazione invece di ripetersi su ogni riga, e si vede a colpo
+         d'occhio se gli sbagli si concentrano in un esercizio solo. */
+      const chiave = st + '||' + it.dataset.type;
+      if (!perEsercizio[chiave]) {
+        perEsercizio[chiave] = { struct: st, tipo: it.dataset.type,
+                                 consegna: it.dataset.instr || '', righe: [] };
+        ordineEsercizi.push(chiave);
+      }
+      perEsercizio[chiave].righe.push(
+'   \u00b7 ' + it.dataset.q + '\n' +
+'     Risposta: ' + r.answer + '  \u2014  Corretta: ' + (r.key || '') +
+'  [' + STATE_LABEL[r.state] + ']');
     }
   });
 
@@ -865,21 +876,27 @@ function submitTest(){
 'VOTO: ' + votoTxt + ' / 10' +
   (eProgresso ? '   → ' + (superato ? 'SUPERATO' : 'NON SUPERATO') + ' (soglia ' + SOGLIA_VOTO + ')' : '') + '\n' +
 'PUNTEGGIO: ' + score + '\n' +
-'  Corretti: ' + ok + '  ·  Sbagliati: ' + sbagliati +
-'  ·  Da verificare: ' + daVerif + '  ·  Non risposti: ' + nonRisp + '\n' +
+'  Corretti: ' + ok + '  \u00b7  Sbagliati: ' + sbagliati +
+  (daVerif ? '  \u00b7  Da verificare: ' + daVerif : '') +
+  (nonRisp ? '  \u00b7  Non risposti: ' + nonRisp : '') + '\n' +
 (daVerif ? '  (gli item "da verificare" sono a risposta aperta: controllali a mano)\n' : '') +
 (multiLivello
   ? '────────────────────────\n' +
     'LIVELLO GRAMMATICALE STIMATO: ' + lvlVerdict + '\n' +
-    '  (soglie: 70% = solido, 50-69% = in corso, sotto 50% = non raggiunto)\n' +
+    '  (soglie: 70% = solido, 50-69% = base, sotto 50% = non raggiunto)\n' +
+    '\n' +
     'PER LIVELLO:\n' + lvlRows.map(r => '  ' + r).join('\n') + '\n'
   : '') +
 '────────────────────────\n' +
 'PER STRUTTURA:\n' + structRows.map(r => '  ' + r).join('\n') + '\n' +
-
 '────────────────────────\n' +
-(errorLines.length
-  ? 'ERRORI DA RIVEDERE:\n\n' + errorLines.join('\n\n')
+(ordineEsercizi.length
+  ? 'ERRORI DA RIVEDERE:\n\n' + ordineEsercizi.map(function(k){
+      const b = perEsercizio[k];
+      return '\u2022 [' + b.struct + '] ' + b.tipo +
+             (b.consegna ? '\n   Consegna: ' + b.consegna : '') + '\n' +
+             b.righe.join('\n');
+    }).join('\n\n')
   : 'Nessun errore: test completato tutto correttamente.');
 
   // ---- vista studente ----
