@@ -8208,8 +8208,8 @@ const TEST_STRUCTURES = [
             "fix": "quindi"
           },
           {
-            "q": "Nevica o vado in bici lo stesso.",
-            "wrong": "o",
+            "q": "Nevica quindi vado in bici lo stesso.",
+            "wrong": "quindi",
             "fix": "ma"
           },
           {
