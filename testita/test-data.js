@@ -1147,60 +1147,60 @@ const TEST_STRUCTURES = [
           }
         ]
       },
+     {
+    "type": "Correzione",
+    "fmt": "errore",
+    "instr": "Clicca la parola o la forma sbagliata.",
+    "items": [
       {
-        "type": "Correzione",
-        "fmt": "errore",
-        "instr": "Clicca la forma sbagliata.",
-        "items": [
-          {
-            "q": "In città c'è molti turisti.",
-            "wrong": "c'è",
-            "fix": "ci sono"
-          },
-          {
-            "q": "Sul tavolo c'è due piatti.",
-            "wrong": "c'è",
-            "fix": "ci sono"
-          },
-          {
-            "q": "In classe c'è venti studenti.",
-            "wrong": "c'è",
-            "fix": "ci sono"
-          },
-          {
-            "q": "Qui c'è tre ristoranti.",
-            "wrong": "c'è",
-            "fix": "ci sono"
-          },
-          {
-            "q": "In giardino c'è molti fiori.",
-            "wrong": "c'è",
-            "fix": "ci sono"
-          },
-          {
-            "q": "Ci sono un gatto sul divano.",
-            "wrong": "Ci sono",
-            "fix": "C'è"
-          },
-          {
-            "q": "In strada ci sono molto rumore.",
-            "wrong": "Ci sono",
-            "fix": "C'è"
-          },
-          {
-            "q": "Nel bicchiere ci sono acqua.",
-            "wrong": "Ci sono",
-            "fix": "C'è"
-          },
-          {
-            "q": "Sul muro ci sono un quadro.",
-            "wrong": "Ci sono",
-            "fix": "C'è"
-          },
-          {
-            "q": "Davanti alla casa ci sono un albero.",
-            "wrong": "Ci sono",
-            "fix": "è"
+        "q": "In città c'è molti turisti.",
+        "wrong": "c'è",
+        "fix": "ci sono"
+      },
+      {
+        "q": "Sul tavolo c'è due piatti.",
+        "wrong": "c'è",
+        "fix": "ci sono"
+      },
+      {
+        "q": "In classe c'è venti studenti.",
+        "wrong": "c'è",
+        "fix": "ci sono"
+      },
+      {
+        "q": "Qui c'è tre ristoranti.",
+        "wrong": "c'è",
+        "fix": "ci sono"
+      },
+      {
+        "q": "In giardino c'è molti fiori.",
+        "wrong": "c'è",
+        "fix": "ci sono"
+      },
+      {
+        "q": "Ci sono un gatto sul divano.",
+        "wrong": "Ci sono",
+        "fix": "C'è"
+      },
+      {
+        "q": "In strada ci sono molto rumore.",
+        "wrong": "ci sono",
+        "fix": "c'è"
+      },
+      {
+        "q": "Nel bicchiere ci sono acqua.",
+        "wrong": "ci sono",
+        "fix": "c'è"
+      },
+      {
+        "q": "Sul muro ci sono un quadro.",
+        "wrong": "ci sono",
+        "fix": "c'è"
+      },
+      {
+        "q": "Davanti alla casa ci sono un albero.",
+        "wrong": "ci sono",
+        "fix": "c'è"
           }
         ]
       },
@@ -3338,32 +3338,32 @@ const TEST_STRUCTURES = [
             "fix": "attrice"
           },
           {
-            "q": "Mio zio è una cameriera.",
-            "wrong": "cameriera",
-            "fix": "cameriere"
+            "q": "Mio zio è una cameriere.", 
+            "wrong": "una",
+            "fix": "un"
           },
           {
-            "q": "Paolo è una professoressa.",
-            "wrong": "professoressa",
-            "fix": "professore"
+            "q": "Paolo è una professore.",
+            "wrong": "una",
+            "fix": "un"
           },
           {
-            "q": "Elena è un maestro simpatico.",
+            "q": "Elena è una maestro famosa.",
             "wrong": "maestro",
             "fix": "maestra"
           },
           {
-            "q": "Carla è uno scrittore bravo.",
+            "q": "Carla è una scrittore brava.",
             "wrong": "scrittore",
             "fix": "scrittrice"
           },
           {
-            "q": "Luca è una commessa.",
-            "wrong": "commessa",
-            "fix": "commesso"
+            "q": "Luca è una commesso.",
+            "wrong": "una",
+            "fix": "un"
           },
           {
-            "q": "Sara è un pittore famoso.",
+            "q": "Sara è una pittore famosa.",
             "wrong": "pittore",
             "fix": "pittrice"
           }
