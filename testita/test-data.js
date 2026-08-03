@@ -1150,7 +1150,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata.",
+        "instr": "Clicca la parola o la forma sbagliata.",
         "items": [
           {
             "q": "In città c'è molti turisti.",
@@ -1179,27 +1179,27 @@ const TEST_STRUCTURES = [
           },
           {
             "q": "Ci sono un gatto sul divano.",
-            "wrong": "sono",
-            "fix": "è"
+            "wrong": "Ci sono",
+            "fix": "C'è"
           },
           {
             "q": "In strada ci sono molto rumore.",
-            "wrong": "sono",
-            "fix": "è"
+            "wrong": "Ci sono",
+            "fix": "C'è"
           },
           {
             "q": "Nel bicchiere ci sono acqua.",
-            "wrong": "sono",
-            "fix": "è"
+            "wrong": "Ci sono",
+            "fix": "C'è"
           },
           {
             "q": "Sul muro ci sono un quadro.",
-            "wrong": "sono",
-            "fix": "è"
+            "wrong": "Ci sono",
+            "fix": "C'è"
           },
           {
             "q": "Davanti alla casa ci sono un albero.",
-            "wrong": "sono",
+            "wrong": "Ci sono",
             "fix": "è"
           }
         ]
@@ -2445,7 +2445,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata.",
+        "instr": "Clicca la parola o la forma sbagliata.",
         "items": [
           {
             "q": "Mi piacciono la pizza.",
@@ -3738,7 +3738,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata.",
+        "instr": "Clicca la parola o la forma sbagliata.",
         "items": [
           {
             "q": "Il mio padre",
@@ -10253,7 +10253,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata.",
+        "instr": "Clicca la parola o la forma sbagliata.",
         "items": [
           {
             "q": "Ci vuole due ore per andare a Napoli.",
@@ -11297,7 +11297,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata.",
+        "instr": "Clicca la parola o la forma sbagliata.",
         "items": [
           {
             "q": "Sto scrivando una relazione.",
@@ -12344,7 +12344,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata.",
+        "instr": "Clicca la parola o la forma sbagliata.",
         "items": [
           {
             "q": "Il concerto è per cominciare.",
@@ -12854,7 +12854,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata.",
+        "instr": "Clicca la parola o la forma sbagliata.",
         "items": [
           {
             "q": "Mi dai il libro subito!",
