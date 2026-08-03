@@ -4293,7 +4293,7 @@ const TEST_STRUCTURES = [
           },
           {
             "q": "Poco fa parto per Napoli.",
-            "wrong": "fa",
+            "wrong": "Poco fa",
             "fix": "fra poco"
           },
           {
@@ -4304,7 +4304,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Un'ora fa ti chiamo.",
             "wrong": "fa",
-            "fix": "fra un'ora"
+            "fix": "Fra un'ora"
           },
           {
             "q": "L'estate scorsa andiamo in Grecia.",
