@@ -9216,7 +9216,51 @@ const TEST_STRUCTURES = [
             "q": "Non ho preso delle uova al mercato.",
             "wrong": "delle",
             "fix": "(togliere «delle»: nella negazione il partitivo cade)"
-          }
+          },
+          {
+            "q": "Vorrei un chilo delle arance, per favore.",
+            "wrong": "delle",
+            "fix": "di (dopo una quantità precisa)"
+          },
+          {
+            "q": "Qualche clienti aspettavano alla cassa.",
+            "wrong": "clienti",
+            "fix": "cliente (qualche vuole il singolare)"
+          },
+          {
+            "q": "Alcuni pane era ancora caldo.",
+            "wrong": "Alcuni",
+            "fix": "Del (alcuni vuole il plurale)"
+          },
+          {
+            "q": "Non c'era del cliente in negozio.",
+            "wrong": "del",
+            "fix": "nessun"
+          },
+          {
+            "q": "Ho comprato due etti del formaggio stagionato.",
+            "wrong": "del",
+            "fix": "di"
+          },
+          {
+            "q": "Non mangio mai della carne rossa.",
+            "wrong": "della",
+            "fix": "(togliere «della»: nella negazione il partitivo cade)"
+          },
+          {
+            "q": "Qualche verdure erano già finite.",
+            "wrong": "verdure",
+            "fix": "verdura (qualche vuole il singolare)"
+          },
+          {
+            "q": "Mi dia mezzo chilo delle olive.",
+            "wrong": "delle",
+            "fix": "di"
+          },
+          {
+            "q": "Alcuno negozio apre la domenica.",
+            "wrong": "Alcuno",
+            "fix": "Qualche"
           }
         ]
       },
