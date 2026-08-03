@@ -2255,7 +2255,7 @@ const TEST_STRUCTURES = [
         "instr": "Cambia il soggetto: scegli la forma corretta.",
         "items": [
           {
-            "q": "Io capisco tutto. → Noi ___",
+            "q": "Io capisco tutto. → Noi ___.",
             "options": [
               "capiamo",
               "capite",
@@ -2264,7 +2264,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Tu parti presto. → Voi ___",
+            "q": "Tu parti presto. → Voi ___.",
             "options": [
               "partite",
               "partiamo",
@@ -2273,7 +2273,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Lei finisce ora. → Loro ___",
+            "q": "Lei finisce ora. → Loro ___.",
             "options": [
               "finiscono",
               "finiamo",
@@ -2282,7 +2282,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Noi apriamo il negozio. → Io ___",
+            "q": "Noi apriamo il negozio. → Io ___.",
             "options": [
               "apro",
               "apre",
@@ -2291,7 +2291,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Voi dormite tardi. → Tu ___",
+            "q": "Voi dormite tardi. → Tu ___.",
             "options": [
               "dormi",
               "dorme",
@@ -2300,7 +2300,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Loro preferiscono il tè. → Lui ___",
+            "q": "Loro preferiscono il tè. → Lui ___.",
             "options": [
               "preferisce",
               "preferisco",
@@ -2309,7 +2309,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Io pulisco la cucina. → Loro ___",
+            "q": "Io pulisco la cucina. → Loro ___.",
             "options": [
               "puliscono",
               "puliamo",
@@ -2318,7 +2318,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Tu senti la musica. → Noi ___",
+            "q": "Tu senti la musica. → Noi ___.",
             "options": [
               "sentiamo",
               "sentite",
@@ -2327,7 +2327,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Lui offre un gelato. → Voi ___",
+            "q": "Lui offre un gelato. → Voi ___.",
             "options": [
               "offrite",
               "offriamo",
@@ -2336,7 +2336,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Noi seguiamo il corso. → Lei ___",
+            "q": "Noi seguiamo il corso. → Lei ___.",
             "options": [
               "segue",
               "seguo",
@@ -2766,7 +2766,7 @@ const TEST_STRUCTURES = [
         "instr": "Cambia il soggetto: scegli la forma corretta.",
         "items": [
           {
-            "q": "Io vado in centro. → Noi ___",
+            "q": "Io vado in centro. → Noi ___.",
             "options": [
               "andiamo",
               "andate",
@@ -2775,7 +2775,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Lui viene a pranzo. → Voi ___",
+            "q": "Lui viene a pranzo. → Voi ___.",
             "options": [
               "venite",
               "veniamo",
@@ -2784,7 +2784,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Lui va al lavoro. → Loro ___",
+            "q": "Lui va al lavoro. → Loro ___.",
             "options": [
               "vanno",
               "andiamo",
@@ -2793,7 +2793,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Noi veniamo stasera. → Io ___",
+            "q": "Noi veniamo stasera. → Io ___.",
             "options": [
               "vengo",
               "vieni",
@@ -2802,7 +2802,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Voi andate al mare. → Tu ___",
+            "q": "Voi andate al mare. → Tu ___.",
             "options": [
               "vai",
               "va",
@@ -2811,7 +2811,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Loro vengono presto. → Lei ___",
+            "q": "Loro vengono presto. → Lei ___.",
             "options": [
               "viene",
               "vengo",
@@ -2820,7 +2820,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Io vengo a piedi. → Loro ___",
+            "q": "Io vengo a piedi. → Loro ___.",
             "options": [
               "vengono",
               "veniamo",
@@ -2829,7 +2829,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Tu vai in treno. → Noi ___",
+            "q": "Tu vai in treno. → Noi ___.",
             "options": [
               "andiamo",
               "andate",
@@ -2838,7 +2838,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Lei viene con noi. → Voi ___",
+            "q": "Lei viene con noi. → Voi ___.",
             "options": [
               "venite",
               "veniamo",
@@ -2847,7 +2847,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Noi andiamo domani. → Lui ___",
+            "q": "Noi andiamo domani. → Lui ___.",
             "options": [
               "va",
               "vado",
@@ -4165,11 +4165,11 @@ const TEST_STRUCTURES = [
         "instr": "Scegli il verbo al presente per parlare di un piano futuro.",
         "items": [
           {
-            "q": "Domani ___ a Roma. (io – partire)",
+            "q": "Domani ___ a Roma. (io – andare)",
             "options": [
-              "parto",
-              "partirò",
-              "partivo"
+              "vado",
+              "andrò",
+              "andavo"
             ],
             "answer": 0
           },
