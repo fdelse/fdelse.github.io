@@ -117,6 +117,18 @@
 const LVL_COLOR = {a:"var(--c-a)", a2:"var(--c-a2)", b1:"var(--c-b1)", b2:"var(--c-b2)", c1:"var(--c-c1)"};
 const LVL_TAG   = {a:"A1", a2:"A2", b1:"B1", b2:"B2", c1:"C1"};
 
+/* Locuzioni che nel formato «errore» valgono come un blocco unico: cliccandone
+   una parola si selezionano tutte. Metà servono al meccanismo (là dove la
+   correzione cambia il numero di parole), metà a fare da zavorra, perché un
+   blocco che comparisse solo sugli errori sarebbe la risposta.
+   Prima di aggiungerne una, verificare che non sia bersaglio in nessun item. */
+const LOCUZIONI = [
+  'due giorni fa', "l'anno scorso",
+  'ci sono', 'ci sarà', 'poco fa', 'ogni giorno', 'in fretta', 'per favore',
+  'a piedi', 'a casa', 'in centro', 'al mare',
+  'prima che', 'dopo che', 'prima di'
+];
+
 const params = new URLSearchParams(location.search);
 const nPick = parseInt(params.get('n') ?? '2');           // quanti item pescare per esercizio
 /* adatt=1 → arresto anticipato: il test si chiude quando un livello scende sotto
@@ -359,11 +371,46 @@ function renderItem(itemData, fmt, refId){
     box.dataset.fix = itemData.fix;
     // spezza la frase in parole cliccabili
     const words = itemData.q.split(' ');
-    let html = '<div class="hint">Clicca la parola sbagliata:</div><div class="words">';
-    words.forEach((w) => {
+    /* Alcune locuzioni sono un blocco unico anche se contengono uno spazio:
+       «ci sono» non si può correggere cliccando solo «sono», perché la forma
+       giusta è «c'è» e non «ci è». Il clic su una qualunque delle parole
+       seleziona l'intero blocco.
+
+       Perché la lista contiene anche locuzioni sempre corrette: se unissi
+       soltanto quelle sbagliate, il blocco sarebbe la risposta. Con questa
+       lista un blocco unito è l'errore nel 10% dei casi, meno di una parola
+       presa a caso — quindi non è un indizio. Chi la allunga controlli prima
+       che la locuzione aggiunta non sia bersaglio in nessun item: «ci vuole»
+       e «la settimana scorsa» sono state escluse per questo. */
+    const gruppi = new Array(words.length).fill(null);
+    LOCUZIONI.forEach(loc => {
+      const parti = loc.split(' ');
+      for (let i = 0; i <= words.length - parti.length; i++) {
+        if (gruppi[i] !== null) continue;
+        let combacia = true;
+        for (let j = 0; j < parti.length; j++) {
+          const p = words[i + j].replace(/[.,;:!?]$/, '').toLowerCase();
+          if (p !== parti[j]) { combacia = false; break; }
+        }
+        if (!combacia) continue;
+        const testo = parti.map((_, j) => words[i + j].replace(/[.,;:!?]$/, '')).join(' ');
+        for (let j = 0; j < parti.length; j++) gruppi[i + j] = { id: i, testo: testo };
+      }
+    });
+    /* Avviso volutamente neutro: l'istruzione vera sta in cima all'esercizio ed
+       è specifica («clicca l'articolo sbagliato», «la frase è rivolta a un
+       cliente…»). Questo si limita a ricordare cosa si deve fare quando gli item
+       in colonna allontanano dall'istruzione, senza contraddirla e senza dire
+       «parola», che con le locuzioni raggruppate non sarebbe sempre esatto. */
+    let html = '<div class="hint">Clicca dove c\'è l\'errore:</div><div class="words">';
+    words.forEach((w, i) => {
       const clean = w.replace(/[.,;:!?]$/, '');
       const punct = w.slice(clean.length);
-      html += '<span class="word" data-w="' + clean.replace(/"/g,'&quot;') + '">' + clean + '</span>' + punct + ' ';
+      /* Il gruppo NON si vede finché non lo si clicca: nessuna cornice, nessuno
+         spazio diverso. Altrimenti l'occhio lo troverebbe prima della lettura. */
+      const g = gruppi[i] ? ' data-g="' + gruppi[i].id + '"' : '';
+      const val = (gruppi[i] ? gruppi[i].testo : clean).replace(/"/g, '&quot;');
+      html += '<span class="word" data-w="' + val + '"' + g + '>' + clean + '</span>' + punct + ' ';
     });
     html += '</div>';
     body.innerHTML = html;
@@ -486,9 +533,11 @@ function renderAllPages(){
       return;
     }
     if (e.target.classList.contains('word')) {
-      const words = e.target.parentElement.querySelectorAll('.word');
-      words.forEach(w => w.classList.remove('sel'));
-      e.target.classList.add('sel');
+      const cont = e.target.parentElement;
+      cont.querySelectorAll('.word').forEach(w => w.classList.remove('sel'));
+      const g = e.target.dataset.g;
+      if (g !== undefined) cont.querySelectorAll('.word[data-g="' + g + '"]').forEach(w => w.classList.add('sel'));
+      else e.target.classList.add('sel');
       e.target.closest('.item').dataset.chosen = e.target.dataset.w;
     }
   });
