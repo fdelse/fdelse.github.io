@@ -1711,8 +1711,8 @@ const TEST_STRUCTURES = [
             "fix": "torniamo"
           },
           {
-            "q": "Tu compra il pane.",
-            "wrong": "compra",
+            "q": "Tu comprate il pane.",
+            "wrong": "comprate",
             "fix": "compri"
           },
           {
@@ -2976,14 +2976,14 @@ const TEST_STRUCTURES = [
             "fix": "in"
           },
           {
-            "q": "Abito in Roma.",
-            "wrong": "in",
-            "fix": "a"
+            "q": "Abito a Germania.",
+            "wrong": "a",
+            "fix": "in"
           },
           {
-            "q": "Il regalo è di te.",
+            "q": "Sono qui di due giorni.",
             "wrong": "di",
-            "fix": "per"
+            "fix": "da"
           },
           {
             "q": "Vivo a Italia.",
@@ -2991,13 +2991,13 @@ const TEST_STRUCTURES = [
             "fix": "in"
           },
           {
-            "q": "Torno in Firenze.",
-            "wrong": "in",
-            "fix": "a"
+            "q": "Studio a Francia.",
+            "wrong": "a",
+            "fix": "in"
           },
           {
-            "q": "La penna è su Anna.",
-            "wrong": "su",
+            "q": "Il quaderno è a Sara.",
+            "wrong": "a",
             "fix": "di"
           },
           {
@@ -3006,9 +3006,9 @@ const TEST_STRUCTURES = [
             "fix": "in"
           },
           {
-            "q": "Studio per tre anni.",
+            "q": "Parto per treno alle otto.",
             "wrong": "per",
-            "fix": "da"
+            "fix": "in"
           },
           {
             "q": "Parto in Napoli domani.",
@@ -4257,59 +4257,99 @@ const TEST_STRUCTURES = [
         ]
       },
       {
-        "type": "Correzione",
-        "fmt": "errore",
-        "instr": "Clicca l'espressione di tempo che non va con un piano futuro.",
+        "type": "Scelta",
+        "fmt": "buco",
+        "instr": "Il tempo è futuro: scegli la forma del verbo.",
         "items": [
           {
-            "q": "Ieri parto per Milano.",
-            "wrong": "Ieri",
-            "fix": "Domani"
+            "q": "Domani ___ il contratto. (io – firmare)",
+            "options": [
+              "firmo",
+              "ho firmato",
+              "firmavo"
+            ],
+            "answer": 0
           },
           {
-            "q": "La settimana scorsa andiamo al mare.",
-            "wrong": "scorsa",
-            "fix": "prossima"
+            "q": "La settimana prossima ___ il museo. (noi – visitare)",
+            "options": [
+              "visitiamo",
+              "abbiamo visitato",
+              "visitavamo"
+            ],
+            "answer": 0
           },
           {
-            "q": "Due giorni fa arriva mia sorella.",
-            "wrong": "Due giorni fa",
-            "fix": "Fra due giorni"
+            "q": "Fra due giorni ___ mia sorella. (arrivare)",
+            "options": [
+              "arriva",
+              "è arrivata",
+              "arrivava"
+            ],
+            "answer": 0
           },
           {
-            "q": "L'anno passato cambio casa.",
-            "wrong": "passato",
-            "fix": "prossimo"
+            "q": "L'anno prossimo ___ casa. (io – cambiare)",
+            "options": [
+              "cambio",
+              "ho cambiato",
+              "cambiavo"
+            ],
+            "answer": 0
           },
           {
-            "q": "Il weekend passato vado in montagna.",
-            "wrong": "passato",
-            "fix": "prossimo"
+            "q": "Il weekend prossimo ___ la macchina. (io – lavare)",
+            "options": [
+              "lavo",
+              "ho lavato",
+              "lavavo"
+            ],
+            "answer": 0
           },
           {
-            "q": "Il mese scorso comincio il corso.",
-            "wrong": "scorso",
-            "fix": "prossimo"
+            "q": "Il mese prossimo ___ il negozio. (loro – aprire)",
+            "options": [
+              "aprono",
+              "hanno aperto",
+              "aprivano"
+            ],
+            "answer": 0
           },
           {
-            "q": "Poco fa parto per Napoli.",
-            "wrong": "Poco fa",
-            "fix": "fra poco"
+            "q": "Fra poco ___ la riunione. (finire)",
+            "options": [
+              "finisce",
+              "è finita",
+              "finiva"
+            ],
+            "answer": 0
           },
           {
-            "q": "Domenica passata pranziamo insieme.",
-            "wrong": "passata",
-            "fix": "prossima"
+            "q": "Venerdì prossimo ___ insieme. (noi – festeggiare)",
+            "options": [
+              "festeggiamo",
+              "abbiamo festeggiato",
+              "festeggiavamo"
+            ],
+            "answer": 0
           },
           {
-            "q": "Un'ora fa ti chiamo.",
-            "wrong": "fa",
-            "fix": "Fra un'ora"
+            "q": "Fra un'ora ti ___ . (io – scrivere)",
+            "options": [
+              "scrivo",
+              "ho scritto",
+              "scrivevo"
+            ],
+            "answer": 0
           },
           {
-            "q": "L'estate scorsa andiamo in Grecia.",
-            "wrong": "scorsa",
-            "fix": "prossima"
+            "q": "L'estate prossima ___ una casa al mare. (noi – affittare)",
+            "options": [
+              "affittiamo",
+              "abbiamo affittato",
+              "affittavamo"
+            ],
+            "answer": 0
           }
         ]
       },
@@ -4520,12 +4560,12 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca l'avverbio fuori posto o incoerente con il senso della frase.",
+        "instr": "Clicca la parola sbagliata.",
         "items": [
           {
-            "q": "Io faccio mai colazione al bar, ogni mattina.",
+            "q": "Io nuoto mai in estate.",
             "wrong": "mai",
-            "fix": "sempre"
+            "fix": "spesso"
           },
           {
             "q": "Adoro i documentari e li guardo mai.",
@@ -4538,29 +4578,29 @@ const TEST_STRUCTURES = [
             "fix": "sempre"
           },
           {
-            "q": "Non bevo sempre alcol, non mi piace per niente.",
-            "wrong": "sempre",
-            "fix": "mai"
+            "q": "Vado in piscina ogni settimane.",
+            "wrong": "settimane",
+            "fix": "settimana"
           },
           {
-            "q": "Non sono spesso stato in Grecia: mai una volta.",
-            "wrong": "spesso",
-            "fix": "mai"
+            "q": "Prendo la medicina due volta al giorno.",
+            "wrong": "volta",
+            "fix": "volte"
           },
           {
-            "q": "Raramente mangio la verdura tutti i giorni.",
-            "wrong": "Raramente",
-            "fix": "Sempre"
+            "q": "Studio ogni pomeriggi.",
+            "wrong": "pomeriggi",
+            "fix": "pomeriggio"
           },
           {
-            "q": "Guardo raramente la TV tutte le sere.",
-            "wrong": "raramente",
-            "fix": "sempre"
+            "q": "Ci sentiamo tre volta al mese.",
+            "wrong": "volta",
+            "fix": "volte"
           },
           {
-            "q": "Ho sempre visitato il Giappone una sola volta.",
-            "wrong": "sempre",
-            "fix": "solo"
+            "q": "Lui viaggia ogni estati.",
+            "wrong": "estati",
+            "fix": "estate"
           },
           {
             "q": "Mangio mai il pesce ogni venerdì.",
@@ -4568,9 +4608,9 @@ const TEST_STRUCTURES = [
             "fix": "sempre"
           },
           {
-            "q": "Lui non arriva spesso puntuale: è sempre in orario.",
-            "wrong": "spesso",
-            "fix": "mai"
+            "q": "Facciamo la spesa ogni sabati.",
+            "wrong": "sabati",
+            "fix": "sabato"
           }
         ]
       },
@@ -12857,14 +12897,14 @@ const TEST_STRUCTURES = [
         "instr": "Clicca la parola sbagliata.",
         "items": [
           {
-            "q": "Mi dai il libro subito!",
-            "wrong": "dai",
-            "fix": "Dammi"
+            "q": "Dottore, siediti pure!",
+            "wrong": "siediti",
+            "fix": "si sieda"
           },
           {
-            "q": "Lo dire a Marco!",
-            "wrong": "dire",
-            "fix": "Diglielo"
+            "q": "Professore, spiegamelo di nuovo!",
+            "wrong": "spiegamelo",
+            "fix": "me lo spieghi"
           },
           {
             "q": "Signora, accomodati pure!",
@@ -12877,9 +12917,9 @@ const TEST_STRUCTURES = [
             "fix": "me lo dare"
           },
           {
-            "q": "Mi aspetta fuori, per favore! (a un amico)",
-            "wrong": "aspetta",
-            "fix": "Aspettami"
+            "q": "Dottoressa, ascoltami un momento!",
+            "wrong": "ascoltami",
+            "fix": "mi ascolti"
           },
           {
             "q": "Signore, dammi il documento!",
@@ -12887,9 +12927,9 @@ const TEST_STRUCTURES = [
             "fix": "mi dia"
           },
           {
-            "q": "Scrivi mi presto!",
-            "wrong": "mi",
-            "fix": "Scrivimi (attaccato)"
+            "q": "Signore, seguimi in ufficio!",
+            "wrong": "seguimi",
+            "fix": "mi segua"
           },
           {
             "q": "Signora, alzati per favore!",
@@ -12897,14 +12937,14 @@ const TEST_STRUCTURES = [
             "fix": "si alzi"
           },
           {
-            "q": "Manda mela per favore!",
-            "wrong": "mela",
-            "fix": "Mandamela (attaccato)"
+            "q": "Avvocato, telefonami domani!",
+            "wrong": "telefonami",
+            "fix": "mi telefoni"
           },
           {
-            "q": "Non fare lo adesso!",
-            "wrong": "lo",
-            "fix": "farlo (attaccato)"
+            "q": "Signora, salutalo da parte mia!",
+            "wrong": "salutalo",
+            "fix": "lo saluti"
           }
         ]
       },
@@ -19674,9 +19714,9 @@ const TEST_STRUCTURES = [
             "fix": "Insistendo"
           },
           {
-            "q": "Restando in silenzio, non vi capite.",
-            "wrong": "Restando",
-            "fix": "(corretto: il gerundio giusto è restando — clicca comunque)"
+            "q": "Chiudando il cancello, sveglio tutti.",
+            "wrong": "Chiudando",
+            "fix": "Chiudendo"
           }
         ]
       },
@@ -21313,9 +21353,9 @@ const TEST_STRUCTURES = [
             "fix": "sono"
           },
           {
-            "q": "Non ci fare preoccupare inutilmente.",
-            "wrong": "ci",
-            "fix": "farci (attaccato)"
+            "q": "Ho fatto lavata l'auto dal carrozziere.",
+            "wrong": "lavata",
+            "fix": "lavare"
           },
           {
             "q": "Mi fa sapere qualcosa? Fammi lei sapere.",
@@ -23315,9 +23355,9 @@ const TEST_STRUCTURES = [
             "fix": "suona"
           },
           {
-            "q": "Prima di che chiami, pensa bene.",
-            "wrong": "che",
-            "fix": "togliere «che»: «prima di chiamare»"
+            "q": "Prima che voi decidete, parliamone.",
+            "wrong": "decidete",
+            "fix": "decidiate"
           },
           {
             "q": "Dopo che sarebbe rientrato, ha cenato.",
@@ -24865,9 +24905,9 @@ const TEST_STRUCTURES = [
             "fix": "essere"
           },
           {
-            "q": "Applicato che le norme, il marchio è valido.",
-            "wrong": "che",
-            "fix": "togliere «che»: «applicando le norme»"
+            "q": "Applicato le norme, il marchio è valido.",
+            "wrong": "Applicato",
+            "fix": "Applicate"
           },
           {
             "q": "Nega di avendo alterato le etichette.",
