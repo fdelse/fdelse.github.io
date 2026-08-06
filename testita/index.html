@@ -191,7 +191,7 @@ LVL_ORDER.forEach(lvl => {
     const exCount = s.exercises.length;
     const lez = (s.lez && s.lez.length) ? s.lez.join(' · ') : '—';
     // se la struttura pesa su un livello diverso nel calcolo, lo segnalo
-    const nota = s.stima ? ' · conta come ' + LVL_TAG[s.stima] : '';
+    const nota = s.stima ? ' · calcolato come ' + LVL_TAG[s.stima] : '';
     row.innerHTML =
       '<input type="checkbox" data-gi="' + gi + '" data-ex="' + exCount + '">' +
       '<span class="num">' + (gi + 1) + '</span>' +
