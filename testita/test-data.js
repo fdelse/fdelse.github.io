@@ -3756,7 +3756,7 @@ const TEST_STRUCTURES = [
             "fix": "mie"
           },
           {
-            "q": "Tuo sorella",
+            "q": "Tuo sorella è simpatica.",
             "wrong": "Tuo",
             "fix": "Tua"
           },
@@ -3766,7 +3766,7 @@ const TEST_STRUCTURES = [
             "fix": "nostra"
           },
           {
-            "q": "Mia fratello",
+            "q": "Mia fratello è simpatico.",
             "wrong": "Mia",
             "fix": "Mio"
           },
@@ -3776,7 +3776,7 @@ const TEST_STRUCTURES = [
             "fix": "suoi"
           },
           {
-            "q": "Il loro macchina",
+            "q": "Il loro bicicletta è rotta.",
             "wrong": "Il",
             "fix": "La"
           },
@@ -3786,7 +3786,7 @@ const TEST_STRUCTURES = [
             "fix": "tue"
           },
           {
-            "q": "Mio madre",
+            "q": "Mio madre è stanca.",
             "wrong": "Mio",
             "fix": "Mia"
           }
@@ -4016,9 +4016,8 @@ const TEST_STRUCTURES = [
             "fix": "È"
           },
           {
-            "q": "È le nove e un quarto.",
-            "wrong": "È",
-            "fix": "Sono"
+            "q": "Manca un quarto alle le nove.",
+            "wrong": "le","fix": "(togliere)"
           },
           {
             "q": "Sono mezzogiorno.",
@@ -4026,9 +4025,9 @@ const TEST_STRUCTURES = [
             "fix": "È"
           },
           {
-            "q": "È le tre e mezza.",
-            "wrong": "È",
-            "fix": "Sono"
+            "q": "Sono gli tre e mezza.",
+            "wrong": "gli",
+            "fix": "le"
           },
           {
             "q": "È sette in punto.",
@@ -4036,19 +4035,19 @@ const TEST_STRUCTURES = [
             "fix": "Sono le"
           },
           {
-            "q": "È le dodici e mezza.",
-            "wrong": "È",
-            "fix": "Sono"
+            "q": "Sono i dodici e mezza.",
+            "wrong": "i",
+            "fix": "le"
           },
           {
-            "q": "È le sei e venti.",
-            "wrong": "È",
-            "fix": "Sono"
+            "q": "Sono la sei e venti.",
+            "wrong": "la",
+            "fix": "le"
           },
           {
-            "q": "È le otto e dieci.",
-            "wrong": "È",
-            "fix": "Sono"
+            "q": "Sono le otto e diece.",
+            "wrong": "diece",
+            "fix": "dieci"
           }
         ]
       },
@@ -5447,7 +5446,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "___ aprire la finestra? Fa caldo.",
+            "q": "___ aprire la finestra? Non vorrei disturbare.",
             "options": [
               "Posso",
               "Devo",
@@ -5505,7 +5504,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Riempimento",
         "fmt": "buco",
-        "instr": "Scegli la forma irregolare corretta.",
+        "instr": "Scegli la forma corretta del verbo irregolare fra parentesi.",
         "items": [
           {
             "q": "Io ___ colazione alle otto. (fare)",
@@ -6657,27 +6656,27 @@ const TEST_STRUCTURES = [
             "fix": "chiudi"
           },
           {
-            "q": "Luca, parli più forte!",
-            "wrong": "parli",
-            "fix": "parla"
+            "q": "Parli più forte, Luca!",
+            "wrong": "Parli",
+            "fix": "Parla"
           },
           {
-            "q": "Anna, legga questo!",
+            "q": "Anna, per favore legga questo!",
             "wrong": "legga",
             "fix": "leggi"
           },
           {
-            "q": "Sara, venga qui!",
+            "q": "Sara, venga a casa mia!",
             "wrong": "venga",
             "fix": "vieni"
           },
           {
-            "q": "Paolo, faccia presto!",
-            "wrong": "faccia",
-            "fix": "fa'"
+            "q": "Faccia presto, Paolo!",
+            "wrong": "Faccia",
+            "fix": "Fa'"
           },
           {
-            "q": "Giulia, dica la verità!",
+            "q": "Giulia, ti prego, dica la verità!",
             "wrong": "dica",
             "fix": "di'"
           },
@@ -6687,17 +6686,17 @@ const TEST_STRUCTURES = [
             "fix": "sta'"
           },
           {
-            "q": "Anna, apra la finestra!",
-            "wrong": "apra",
-            "fix": "apri"
+            "q": "Apra la finestra, Anna!",
+            "wrong": "Apra",
+            "fix": "Apri"
           },
           {
-            "q": "Marco, prenda un caffè!",
+            "q": "Marco, prenda un caffè con me!",
             "wrong": "prenda",
             "fix": "prendi"
           },
           {
-            "q": "Sara, scriva a Luca!",
+            "q": "Sara, adesso scriva a Luca!",
             "wrong": "scriva",
             "fix": "scrivi"
           }
@@ -7014,42 +7013,42 @@ const TEST_STRUCTURES = [
             "fix": "si sieda"
           },
           {
-            "q": "Dottore, aspetta un momento!",
-            "wrong": "aspetta",
-            "fix": "aspetti"
+            "q": "Aspetta un momento, dottore!",
+            "wrong": "Aspetta",
+            "fix": "Aspetti"
           },
           {
-            "q": "Signor Rossi, firma qui!",
+            "q": "Signor Rossi, firma qui in basso!",
             "wrong": "firma",
             "fix": "firmi"
           },
           {
-            "q": "Professore, vieni con me!",
+            "q": "Professore, per favore vieni con me!",
             "wrong": "vieni",
             "fix": "venga"
           },
           {
-            "q": "Signora, ascolta bene!",
-            "wrong": "ascolta",
-            "fix": "ascolti"
+            "q": "Ascolta bene, signora!",
+            "wrong": "Ascolta",
+            "fix": "Ascolti"
           },
           {
-            "q": "Dottoressa, fa' attenzione!",
+            "q": "Dottoressa, fa' presto per favore!",
             "wrong": "fa'",
             "fix": "faccia"
           },
           {
-            "q": "Signore, sta' tranquillo!",
+            "q": "Signore, la prego, sta' tranquillo!",
             "wrong": "sta'",
             "fix": "stia"
           },
           {
-            "q": "Signora, gira a destra!",
-            "wrong": "gira",
-            "fix": "giri"
+            "q": "Gira a destra, signora!",
+            "wrong": "Gira",
+            "fix": "Giri"
           },
           {
-            "q": "Avvocato, prendi posto!",
+            "q": "Avvocato, adesso prendi posto!",
             "wrong": "prendi",
             "fix": "prenda"
           },
@@ -7177,14 +7176,14 @@ const TEST_STRUCTURES = [
             "fix": "Questa"
           },
           {
-            "q": "Quelli libri sono nuovi.",
-            "wrong": "Quelli",
-            "fix": "Quei"
+            "q": "Ho comprato quelli libri.",
+            "wrong": "quelli",
+            "fix": "quei"
           },
           {
-            "q": "Quello ragazzo è simpatico.",
-            "wrong": "Quello",
-            "fix": "Quel"
+            "q": "Non conosco quello ragazzo.",
+            "wrong": "quello",
+            "fix": "quel"
           },
           {
             "q": "Questi ragazze sono brave.",
@@ -7192,14 +7191,14 @@ const TEST_STRUCTURES = [
             "fix": "Queste"
           },
           {
-            "q": "Quel studente studia molto.",
-            "wrong": "Quel",
-            "fix": "Quello"
+            "q": "Parlo spesso con quel studente.",
+            "wrong": "quel",
+            "fix": "quello"
           },
           {
-            "q": "Quei zaini sono pesanti.",
-            "wrong": "Quei",
-            "fix": "Quegli"
+            "q": "Porta via quei zaini pesanti.",
+            "wrong": "quei",
+            "fix": "quegli"
           },
           {
             "q": "Questa problema è serio.",
@@ -7207,19 +7206,19 @@ const TEST_STRUCTURES = [
             "fix": "Questo"
           },
           {
-            "q": "Quelle quadri sono famosi.",
-            "wrong": "Quelle",
-            "fix": "Quei"
+            "q": "Hai visto quelle quadri all'asta?",
+            "wrong": "quelle",
+            "fix": "quei"
           },
           {
-            "q": "Quel zaino è tuo?",
-            "wrong": "Quel",
-            "fix": "Quello"
+            "q": "È tuo quel zaino?",
+            "wrong": "quel",
+            "fix": "quello"
           },
           {
-            "q": "Queste tavolo è sporco.",
-            "wrong": "Queste",
-            "fix": "Questo"
+            "q": "Guarda, queste piatto è sporco.",
+            "wrong": "queste",
+            "fix": "questo"
           }
         ]
       },
@@ -8523,9 +8522,9 @@ const TEST_STRUCTURES = [
             "fix": "arrivare"
           },
           {
-            "q": "Noi bisogniamo ripassare la lezione.",
-            "wrong": "bisogniamo",
-            "fix": "bisogna"
+            "q": "Bisogniamo ripassare la lezione.",
+            "wrong": "Bisogniamo",
+            "fix": "Bisogna"
           },
           {
             "q": "Bisogna di consegnare il modulo.",
@@ -8936,11 +8935,11 @@ const TEST_STRUCTURES = [
         "instr": "Scegli tra sapere (capacità appresa) e potere (possibilità).",
         "items": [
           {
-            "q": "___ nuotare molto bene. (io)",
+            "q": "___ nuotare bene: ha fatto un corso da piccola. (lei)",
             "options": [
-              "So",
-              "Posso",
-              "Sono"
+              "Sa",
+              "Può",
+              "Sta"
             ],
             "answer": 0
           },
@@ -8954,7 +8953,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "___ parlare tre lingue. (lei)",
+            "q": "___ parlare tre lingue perché le ha studiate. (lei)",
             "options": [
               "Sa",
               "Può",
@@ -9078,7 +9077,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Mia nonna ___ cucire benissimo. (lei)",
+            "q": "Mia nonna ___ cucire: gliel'ha insegnato sua madre. (lei)",
             "options": [
               "sa",
               "può",
@@ -9096,7 +9095,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "___ andare in bicicletta senza mani? (voi)",
+            "q": "___ andare in bicicletta senza mani, o non avete imparato? (voi)",
             "options": [
               "Sapete",
               "Potete",
