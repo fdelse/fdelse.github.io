@@ -528,8 +528,7 @@ const TEST_STRUCTURES = [
           }
         ]
       }
-    ],
-    "diag": true
+    ]
   },
   {
     "lvl": "a",
@@ -2346,7 +2345,8 @@ const TEST_STRUCTURES = [
           }
         ]
       }
-    ]
+    ],
+    "diag": true
   },
   {
     "lvl": "a",
