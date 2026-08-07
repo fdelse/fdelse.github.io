@@ -305,7 +305,7 @@ document.getElementById('startBtn').addEventListener('click', () => {
 });
 
 /* ---------- rendering per formato ---------- */
-function renderItem(itemData, fmt, refId){
+function renderItem(itemData, fmt, refId, posBersaglio){
   const box = document.createElement('div');
   box.className = 'item';
   box.dataset.fmt = fmt;
@@ -340,6 +340,15 @@ function renderItem(itemData, fmt, refId){
       itemData.options.map((op, i) => ({ op, i })),
       itemData.options.length
     );
+    /* Il solo mescolamento casuale, su tre o quattro item, ammucchia spesso la
+       risposta giusta sullo stesso bottone. Se l'esercizio ha assegnato una
+       posizione bersaglio, ce la si porta con uno scambio: i distrattori
+       restano mescolati, ma le posizioni giuste risultano distribuite. */
+    if (typeof posBersaglio === 'number') {
+      const dov = mescolate.findIndex(o => o.i === itemData.answer);
+      const p = posBersaglio % mescolate.length;
+      if (dov !== p) { const t = mescolate[dov]; mescolate[dov] = mescolate[p]; mescolate[p] = t; }
+    }
     box.dataset.answer = mescolate.findIndex(o => o.i === itemData.answer);
     const parts = itemData.q.split('___');
     let html = '<div class="item__text">' + parts.join('<span class="gap" data-gap>_____</span>') + '</div>';
@@ -481,10 +490,16 @@ function renderAllPages(){
         t.innerHTML = ex.testo.split('\n').filter(Boolean).map(p => '<p>' + p.trim() + '</p>').join('');
         exDiv.appendChild(t);
       }
-      ex.items.forEach(itemData => {
+      /* Posizioni della risposta giusta distribuite sugli item di questo
+         esercizio: una rotazione che parte da un punto casuale, così non
+         capita che tre item su quattro abbiano la giusta sullo stesso
+         bottone. Stesso PRNG: col seed resta riproducibile. */
+      const nOpz = (ex.items[0] && ex.items[0].options) ? ex.items[0].options.length : 3;
+      const partenza = Math.floor(rng() * nOpz);
+      ex.items.forEach((itemData, idx) => {
         itemData._n = ++nProg;          // numero progressivo, non riparte da 1
         const refId = 'r' + (refCounter++);
-        const itemBox = renderItem(itemData, ex.fmt, refId);
+        const itemBox = renderItem(itemData, ex.fmt, refId, (partenza + idx) % nOpz);
         itemBox.dataset.struct = struct.title;
         itemBox.dataset.lez = (struct.lez || []).join(', ');
         itemBox.dataset.lvl = struct.lvl;
