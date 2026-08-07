@@ -197,3 +197,23 @@ button:disabled{opacity:.4;cursor:not-allowed;}
 @media (max-width:520px){ .score-banner .num--testo{font-size:24px;} }
 
 .note{font-size:13px;color:var(--ink-faint);margin-top:6px;}
+
+/* Brano dell'esercizio di comprensione: si legge, non si risponde.
+   Card bianca come gli item — è contenuto, non contenitore — ma in serif:
+   nel resto della pagina il serif è riservato ai titoli, quindi qui segnala
+   «documento da leggere» e non si confonde con una domanda da compilare.
+   Niente pallino numerato a sinistra: al suo posto il filetto di livello. */
+.exercise__testo{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-left:4px solid var(--lvl,var(--ink));
+  border-radius:10px;
+  padding:16px 18px;
+  margin:0 0 18px;
+  font-family:var(--display);
+  font-size:15.5px;
+  line-height:1.72;
+  color:var(--ink);
+}
+.exercise__testo p{margin:0 0 .8em;}
+.exercise__testo p:last-child{margin-bottom:0;}

@@ -227,7 +227,9 @@ const selected = indices.map(i => TEST_STRUCTURES[i]).filter(Boolean).map(s => {
   const exercises = s.exercises.map(e => {
     const items = pescaSenzaCollisioni(e.items, nPick, usati);
     usati.push(...items);
-    return { type: e.type, fmt: e.fmt || 'fill', instr: e.instr, items: items };
+    // «testo» va portato dietro: è il brano dell'esercizio di comprensione,
+    // stampato una volta sola in cima e non ripetuto su ogni item.
+    return { type: e.type, fmt: e.fmt || 'fill', instr: e.instr, testo: e.testo, items: items };
   });
   // NB: va copiata anche stima, altrimenti il livello di calcolo si perde
   return { lvl: s.lvl, stima: s.stima, title: s.title, exercises: exercises };
@@ -471,6 +473,14 @@ function renderAllPages(){
       const exDiv = document.createElement('div');
       exDiv.className = 'exercise';
       exDiv.innerHTML = '<span class="exercise__type">' + ex.type + '</span><p class="exercise__instr">' + ex.instr + '</p>';
+      // Esercizi di comprensione: il brano si stampa una volta sola, in cima,
+      // e le domande sotto contengono soltanto la domanda.
+      if (ex.testo) {
+        const t = document.createElement('div');
+        t.className = 'exercise__testo';
+        t.innerHTML = ex.testo.split('\n').filter(Boolean).map(p => '<p>' + p.trim() + '</p>').join('');
+        exDiv.appendChild(t);
+      }
       ex.items.forEach(itemData => {
         itemData._n = ++nProg;          // numero progressivo, non riparte da 1
         const refId = 'r' + (refCounter++);

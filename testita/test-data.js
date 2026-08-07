@@ -115,7 +115,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata nella frase.",
+        "instr": "Clicca la parola sbagliata.",
         "items": [
           {
             "q": "Noi siamo sete.",
@@ -123,39 +123,29 @@ const TEST_STRUCTURES = [
             "fix": "abbiamo"
           },
           {
-            "q": "Loro sono freddo.",
+            "q": "Anna e Luca sono freddo.",
             "wrong": "sono",
             "fix": "hanno"
           },
           {
-            "q": "Io sono venticinque anni.",
-            "wrong": "sono",
-            "fix": "ho"
-          },
-          {
-            "q": "Tu hai bravo.",
-            "wrong": "hai",
-            "fix": "sei"
-          },
-          {
-            "q": "Lei ha molto simpatica.",
-            "wrong": "ha",
-            "fix": "è"
-          },
-          {
-            "q": "Voi avete in ufficio.",
-            "wrong": "avete",
-            "fix": "siete"
-          },
-          {
-            "q": "Marco è fame.",
+            "q": "Mia sorella è vent'anni.",
             "wrong": "è",
             "fix": "ha"
           },
           {
-            "q": "Noi abbiamo felici oggi.",
-            "wrong": "abbiamo",
-            "fix": "siamo"
+            "q": "Il fratello di Marco è fame.",
+            "wrong": "è",
+            "fix": "ha"
+          },
+          {
+            "q": "Oggi la maestra ha molto occupata.",
+            "wrong": "ha",
+            "fix": "è"
+          },
+          {
+            "q": "Anche voi avete in ufficio?",
+            "wrong": "avete",
+            "fix": "siete"
           },
           {
             "q": "I bambini hanno piccoli.",
@@ -163,9 +153,19 @@ const TEST_STRUCTURES = [
             "fix": "sono"
           },
           {
-            "q": "Tu sei ragione.",
-            "wrong": "sei",
-            "fix": "hai"
+            "q": "Loro sono mal di testa.",
+            "wrong": "sono",
+            "fix": "hanno"
+          },
+          {
+            "q": "Stamattina il treno ha in ritardo.",
+            "wrong": "ha",
+            "fix": "è"
+          },
+          {
+            "q": "Il mio cane ha nero.",
+            "wrong": "ha",
+            "fix": "è"
           }
         ]
       },
@@ -377,55 +377,55 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca l'articolo sbagliato.",
+        "instr": "In ogni riga ci sono due gruppi: clicca l'unico articolo sbagliato.",
         "items": [
           {
-            "q": "Il amico di Luca",
+            "q": "Il amico di Luca e la macchina rossa",
             "wrong": "Il",
             "fix": "L'"
           },
           {
-            "q": "I studenti americani",
-            "wrong": "I",
-            "fix": "Gli"
+            "q": "Gli zii di Marco e i studenti americani",
+            "wrong": "i",
+            "fix": "gli"
           },
           {
-            "q": "La ora di cena",
-            "wrong": "La",
-            "fix": "L'"
+            "q": "Lo zaino pesante e la ora di cena",
+            "wrong": "la",
+            "fix": "l'"
           },
           {
-            "q": "Lo libro nuovo",
-            "wrong": "Lo",
-            "fix": "Il"
+            "q": "Tutti i uomini e le donne",
+            "wrong": "i",
+            "fix": "gli"
           },
           {
-            "q": "Il zaino pesante",
-            "wrong": "Il",
-            "fix": "Lo"
+            "q": "Il libro nuovo e lo quaderno rosso",
+            "wrong": "lo",
+            "fix": "il"
           },
           {
-            "q": "Le amici simpatici",
-            "wrong": "Le",
-            "fix": "Gli"
-          },
-          {
-            "q": "Gli ragazze italiane",
+            "q": "Gli ragazze italiane e le amiche simpatiche",
             "wrong": "Gli",
             "fix": "Le"
           },
           {
-            "q": "I zii di Marco",
-            "wrong": "I",
+            "q": "La casa di Roma e il orologio nuovo",
+            "wrong": "il",
+            "fix": "l'"
+          },
+          {
+            "q": "I bambini piccoli e il psicologo bravo",
+            "wrong": "il",
+            "fix": "lo"
+          },
+          {
+            "q": "Le amici simpatici e i fiori gialli",
+            "wrong": "Le",
             "fix": "Gli"
           },
           {
-            "q": "La elefante africano",
-            "wrong": "La",
-            "fix": "L'"
-          },
-          {
-            "q": "Lo cane nero",
+            "q": "Lo cane nero e le isole italiane",
             "wrong": "Lo",
             "fix": "Il"
           }
@@ -638,55 +638,55 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca l'articolo sbagliato.",
+        "instr": "In ogni riga ci sono due gruppi: clicca l'unico articolo sbagliato.",
         "items": [
           {
-            "q": "Uno amico simpatico",
+            "q": "Uno amico simpatico e una casa grande",
             "wrong": "Uno",
             "fix": "Un"
           },
           {
-            "q": "Una uomo alto",
-            "wrong": "Una",
-            "fix": "Un"
+            "q": "Un tavolo grande e uno libro nuovo",
+            "wrong": "uno",
+            "fix": "un"
           },
           {
-            "q": "Un studente straniero",
+            "q": "Un studente straniero e una sedia rossa",
             "wrong": "Un",
             "fix": "Uno"
           },
           {
-            "q": "Una informazione utile",
-            "wrong": "Una",
-            "fix": "Un'"
+            "q": "Una macchina nuova e un informazione utile",
+            "wrong": "un",
+            "fix": "un'"
           },
           {
-            "q": "Un zaino rosso",
+            "q": "Un zaino rosso e una sciarpa verde",
             "wrong": "Un",
             "fix": "Uno"
           },
           {
-            "q": "Uno caffè caldo",
-            "wrong": "Uno",
-            "fix": "Un"
+            "q": "Un film italiano e uno caffè caldo",
+            "wrong": "uno",
+            "fix": "un"
           },
           {
-            "q": "Una ora fa",
+            "q": "Una ora di lezione e un problema difficile",
             "wrong": "Una",
             "fix": "Un'"
           },
           {
-            "q": "Uno tavolo grande",
-            "wrong": "Uno",
-            "fix": "Un"
+            "q": "Un ragazzo di Napoli e uno orologio nuovo",
+            "wrong": "uno",
+            "fix": "un"
           },
           {
-            "q": "Uno orologio nuovo",
-            "wrong": "Uno",
-            "fix": "Un"
+            "q": "Un cane piccolo e una idea interessante",
+            "wrong": "una",
+            "fix": "un'"
           },
           {
-            "q": "Un aranciata fresca",
+            "q": "Un aranciata fresca e una borsa nera",
             "wrong": "Un",
             "fix": "Un'"
           }
@@ -898,14 +898,14 @@ const TEST_STRUCTURES = [
       {
         "type": "Riempimento",
         "fmt": "buco",
-        "instr": "Scegli il plurale corretto (i nomi invariabili non cambiano).",
+        "instr": "Scegli il plurale corretto.",
         "items": [
           {
-            "q": "Ci sono due ___ in città.",
+            "q": "Passano due ___ ogni ora.",
             "options": [
-              "università",
-              "universitàs",
-              "universite"
+              "autobus",
+              "autobusi",
+              "autobuse"
             ],
             "answer": 0
           },
@@ -913,8 +913,8 @@ const TEST_STRUCTURES = [
             "q": "Ho comprato tre ___.",
             "options": [
               "kiwi",
-              "kiwis",
-              "kiwii"
+              "kiwii",
+              "kiwie"
             ],
             "answer": 0
           },
@@ -922,8 +922,8 @@ const TEST_STRUCTURES = [
             "q": "Le ___ economiche sono difficili.",
             "options": [
               "crisi",
-              "crisis",
-              "crise"
+              "crise",
+              "crisii"
             ],
             "answer": 0
           },
@@ -932,34 +932,34 @@ const TEST_STRUCTURES = [
             "options": [
               "film",
               "filmi",
-              "films"
+              "filme"
             ],
             "answer": 0
           },
           {
-            "q": "Bevo due ___ al giorno.",
+            "q": "Al corso ci sono due ___.",
             "options": [
-              "caffè",
-              "caffés",
-              "caffei"
+              "greci",
+              "grechi",
+              "grecci"
             ],
             "answer": 0
           },
           {
-            "q": "Ci sono molte ___ oggi.",
+            "q": "Ci sono due ___ in questa regione.",
             "options": [
-              "città",
-              "cittàs",
-              "citte"
+              "università",
+              "universite",
+              "universiti"
             ],
             "answer": 0
           },
           {
-            "q": "Guardo due ___ diverse.",
+            "q": "Pratico due ___ diversi.",
             "options": [
-              "serie",
-              "serii",
-              "series"
+              "sport",
+              "sporti",
+              "sporte"
             ],
             "answer": 0
           },
@@ -967,17 +967,17 @@ const TEST_STRUCTURES = [
             "q": "Compro delle ___ nuove.",
             "options": [
               "foto",
-              "fotos",
-              "foti"
+              "foti",
+              "fote"
             ],
             "answer": 0
           },
           {
-            "q": "Prendo tre ___.",
+            "q": "Ho due ___ molto simpatiche.",
             "options": [
-              "tè",
-              "tès",
-              "tei"
+              "amiche",
+              "amice",
+              "amici"
             ],
             "answer": 0
           },
@@ -985,8 +985,8 @@ const TEST_STRUCTURES = [
             "q": "Ci sono due ___ in classe.",
             "options": [
               "computer",
-              "computers",
-              "computeri"
+              "computeri",
+              "computere"
             ],
             "answer": 0
           }
@@ -995,55 +995,55 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola con il plurale sbagliato.",
+        "instr": "In ogni riga ci sono due gruppi: clicca l'unico plurale sbagliato.",
         "items": [
           {
-            "q": "Tre sportes diversi",
-            "wrong": "sportes",
+            "q": "Tre libri nuovi e due sporti diversi",
+            "wrong": "sporti",
             "fix": "sport"
           },
           {
-            "q": "Due manos piccole",
-            "wrong": "manos",
+            "q": "Due gambe lunghe e tre mane piccole",
+            "wrong": "mane",
             "fix": "mani"
           },
           {
-            "q": "I problemas seri",
-            "wrong": "problemas",
+            "q": "I problema seri e le domande facili",
+            "wrong": "problema",
             "fix": "problemi"
           },
           {
-            "q": "Le universitàs italiane",
-            "wrong": "universitàs",
+            "q": "I licei privati e le universite italiane",
+            "wrong": "universite",
             "fix": "università"
           },
           {
-            "q": "Molti filmi belli",
+            "q": "Molti filmi belli e poche serie nuove",
             "wrong": "filmi",
             "fix": "film"
           },
           {
-            "q": "Due camice bianche",
+            "q": "Tre gonne nere e due camice bianche",
             "wrong": "camice",
             "fix": "camicie"
           },
           {
-            "q": "Due amice greche",
+            "q": "Le amice di Anna e i colleghi di Marco",
             "wrong": "amice",
             "fix": "amiche"
           },
           {
-            "q": "Tre baris aperti",
-            "wrong": "baris",
+            "q": "Due negozi chiusi e tre bari aperti",
+            "wrong": "bari",
             "fix": "bar"
           },
           {
-            "q": "I medicos bravi",
-            "wrong": "medicos",
+            "q": "I medichi bravi e le infermiere gentili",
+            "wrong": "medichi",
             "fix": "medici"
           },
           {
-            "q": "Le citte italiane",
+            "q": "Le citte italiane e i paesi vicini",
             "wrong": "citte",
             "fix": "città"
           }
@@ -1146,60 +1146,60 @@ const TEST_STRUCTURES = [
           }
         ]
       },
-     {
-    "type": "Correzione",
-    "fmt": "errore",
-    "instr": "Clicca la parola o la forma sbagliata.",
-    "items": [
       {
-        "q": "In città c'è molti turisti.",
-        "wrong": "c'è",
-        "fix": "ci sono"
-      },
-      {
-        "q": "Sul tavolo c'è due piatti.",
-        "wrong": "c'è",
-        "fix": "ci sono"
-      },
-      {
-        "q": "In classe c'è venti studenti.",
-        "wrong": "c'è",
-        "fix": "ci sono"
-      },
-      {
-        "q": "Qui c'è tre ristoranti.",
-        "wrong": "c'è",
-        "fix": "ci sono"
-      },
-      {
-        "q": "In giardino c'è molti fiori.",
-        "wrong": "c'è",
-        "fix": "ci sono"
-      },
-      {
-        "q": "Ci sono un gatto sul divano.",
-        "wrong": "Ci sono",
-        "fix": "C'è"
-      },
-      {
-        "q": "In strada ci sono molto rumore.",
-        "wrong": "ci sono",
-        "fix": "c'è"
-      },
-      {
-        "q": "Nel bicchiere ci sono acqua.",
-        "wrong": "ci sono",
-        "fix": "c'è"
-      },
-      {
-        "q": "Sul muro ci sono un quadro.",
-        "wrong": "ci sono",
-        "fix": "c'è"
-      },
-      {
-        "q": "Davanti alla casa ci sono un albero.",
-        "wrong": "ci sono",
-        "fix": "c'è"
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Clicca la parola o la forma sbagliata.",
+        "items": [
+          {
+            "q": "In città c'è molti turisti.",
+            "wrong": "c'è",
+            "fix": "ci sono"
+          },
+          {
+            "q": "Sul tavolo c'è due piatti.",
+            "wrong": "c'è",
+            "fix": "ci sono"
+          },
+          {
+            "q": "In classe c'è venti studenti.",
+            "wrong": "c'è",
+            "fix": "ci sono"
+          },
+          {
+            "q": "Qui c'è tre ristoranti.",
+            "wrong": "c'è",
+            "fix": "ci sono"
+          },
+          {
+            "q": "In giardino c'è molti fiori.",
+            "wrong": "c'è",
+            "fix": "ci sono"
+          },
+          {
+            "q": "Ci sono un gatto sul divano.",
+            "wrong": "Ci sono",
+            "fix": "C'è"
+          },
+          {
+            "q": "In strada ci sono molto rumore.",
+            "wrong": "ci sono",
+            "fix": "c'è"
+          },
+          {
+            "q": "Nel bicchiere ci sono acqua.",
+            "wrong": "ci sono",
+            "fix": "c'è"
+          },
+          {
+            "q": "Sul muro ci sono un quadro.",
+            "wrong": "ci sono",
+            "fix": "c'è"
+          },
+          {
+            "q": "Davanti alla casa ci sono un albero.",
+            "wrong": "ci sono",
+            "fix": "c'è"
           }
         ]
       },
@@ -1410,57 +1410,57 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca l'aggettivo con l'accordo sbagliato.",
+        "instr": "In ogni riga ci sono due gruppi: clicca l'unico aggettivo con l'accordo sbagliato.",
         "items": [
           {
-            "q": "Un cappotto rossa",
+            "q": "Un cappotto rossa e una sciarpa verde",
             "wrong": "rossa",
             "fix": "rosso"
           },
           {
-            "q": "Le sedie bianco",
-            "wrong": "bianco",
-            "fix": "bianche"
-          },
-          {
-            "q": "I piatti sporca",
+            "q": "Le due sedie bianche e i tavoli sporca",
             "wrong": "sporca",
             "fix": "sporchi"
           },
           {
-            "q": "Una lettera lungo",
+            "q": "Una lettera molto lungo e un messaggio corto",
             "wrong": "lungo",
             "fix": "lunga"
           },
           {
-            "q": "Gli occhiali nuova",
+            "q": "Il maglione pesante e gli occhiali nuova",
             "wrong": "nuova",
             "fix": "nuovi"
           },
           {
-            "q": "Un maglione pesanti",
-            "wrong": "pesanti",
-            "fix": "pesante"
-          },
-          {
-            "q": "Il giardino grandi",
+            "q": "Il giardino grandi e la casa vecchia",
             "wrong": "grandi",
             "fix": "grande"
           },
           {
-            "q": "Delle foto bellissimo",
+            "q": "Delle foto bellissimo e dei fiori freschi",
             "wrong": "bellissimo",
             "fix": "bellissime"
           },
           {
-            "q": "Un albero alta",
+            "q": "Le tre porte chiuse e i muri bianco",
+            "wrong": "bianco",
+            "fix": "bianchi"
+          },
+          {
+            "q": "Un albero molto alta e una pianta piccola",
             "wrong": "alta",
             "fix": "alto"
           },
           {
-            "q": "Le porte chiuso",
-            "wrong": "chiuso",
-            "fix": "chiuse"
+            "q": "I piatti puliti e le camicie sporco",
+            "wrong": "sporco",
+            "fix": "sporche"
+          },
+          {
+            "q": "Una macchina veloci e un treno lento",
+            "wrong": "veloci",
+            "fix": "veloce"
           }
         ]
       },
@@ -1675,54 +1675,54 @@ const TEST_STRUCTURES = [
         "instr": "Clicca il verbo coniugato in modo sbagliato.",
         "items": [
           {
-            "q": "Noi parlate spagnolo.",
-            "wrong": "parlate",
-            "fix": "parliamo"
+            "q": "Noi guardate la televisione.",
+            "wrong": "guardate",
+            "fix": "guardiamo"
           },
           {
-            "q": "Io lavorano in ufficio.",
-            "wrong": "lavorano",
-            "fix": "lavoro"
+            "q": "Mia madre cucinano molto bene.",
+            "wrong": "cucinano",
+            "fix": "cucina"
           },
           {
-            "q": "Tu abitiamo a Roma.",
-            "wrong": "abitiamo",
-            "fix": "abiti"
+            "q": "I miei amici gioca a calcio.",
+            "wrong": "gioca",
+            "fix": "giocano"
           },
           {
-            "q": "Voi studia molto.",
-            "wrong": "studia",
-            "fix": "studiate"
+            "q": "Voi ascolta la radio.",
+            "wrong": "ascolta",
+            "fix": "ascoltate"
           },
           {
-            "q": "Lei cantano bene.",
-            "wrong": "cantano",
-            "fix": "canta"
+            "q": "Il professore chiamano gli studenti.",
+            "wrong": "chiamano",
+            "fix": "chiama"
           },
           {
-            "q": "Loro mangia alle otto.",
-            "wrong": "mangia",
-            "fix": "mangiano"
+            "q": "Ogni sera io telefoniamo a mia madre.",
+            "wrong": "telefoniamo",
+            "fix": "telefono"
           },
           {
-            "q": "Noi torno domani.",
-            "wrong": "torno",
-            "fix": "torniamo"
+            "q": "Anna e Marco cammina nel parco.",
+            "wrong": "cammina",
+            "fix": "camminano"
           },
           {
-            "q": "Tu comprate il pane.",
-            "wrong": "comprate",
-            "fix": "compri"
+            "q": "Domani tu paghiamo il conto.",
+            "wrong": "paghiamo",
+            "fix": "paghi"
           },
           {
-            "q": "Io aspettiamo Anna.",
-            "wrong": "aspettiamo",
-            "fix": "aspetto"
+            "q": "Noi impara il francese.",
+            "wrong": "impara",
+            "fix": "impariamo"
           },
           {
-            "q": "Voi nuotano bene.",
-            "wrong": "nuotano",
-            "fix": "nuotate"
+            "q": "Le mie amiche porta i bambini a scuola.",
+            "wrong": "porta",
+            "fix": "portano"
           }
         ]
       },
@@ -1936,54 +1936,54 @@ const TEST_STRUCTURES = [
         "instr": "Clicca il verbo coniugato in modo sbagliato.",
         "items": [
           {
-            "q": "Io leggiamo il giornale.",
-            "wrong": "leggiamo",
-            "fix": "leggo"
+            "q": "Mia zia rispondono sempre al telefono.",
+            "wrong": "rispondono",
+            "fix": "risponde"
           },
           {
-            "q": "Tu prende il treno.",
+            "q": "Voi chiede troppe cose.",
+            "wrong": "chiede",
+            "fix": "chiedete"
+          },
+          {
+            "q": "I miei fratelli spende molti soldi.",
+            "wrong": "spende",
+            "fix": "spendono"
+          },
+          {
+            "q": "Noi corre nel parco la domenica.",
+            "wrong": "corre",
+            "fix": "corriamo"
+          },
+          {
+            "q": "Il negozio di Anna vendono scarpe.",
+            "wrong": "vendono",
+            "fix": "vende"
+          },
+          {
+            "q": "Ogni mattina io ripetiamo le parole nuove.",
+            "wrong": "ripetiamo",
+            "fix": "ripeto"
+          },
+          {
+            "q": "Tu conosciamo bene questa città.",
+            "wrong": "conosciamo",
+            "fix": "conosci"
+          },
+          {
+            "q": "Marta e Sara crede a tutto.",
+            "wrong": "crede",
+            "fix": "credono"
+          },
+          {
+            "q": "Anche noi prende il treno delle otto.",
             "wrong": "prende",
-            "fix": "prendi"
+            "fix": "prendiamo"
           },
           {
-            "q": "Lei scrivo una lettera.",
-            "wrong": "scrivo",
-            "fix": "scrive"
-          },
-          {
-            "q": "Noi vivete a Milano.",
-            "wrong": "vivete",
-            "fix": "viviamo"
-          },
-          {
-            "q": "Voi ricevono molti messaggi.",
-            "wrong": "ricevono",
-            "fix": "ricevete"
-          },
-          {
-            "q": "Loro chiude la finestra.",
-            "wrong": "chiude",
-            "fix": "chiudono"
-          },
-          {
-            "q": "Io vedete bene.",
-            "wrong": "vedete",
-            "fix": "vedo"
-          },
-          {
-            "q": "Tu mettiamo la giacca.",
-            "wrong": "mettiamo",
-            "fix": "metti"
-          },
-          {
-            "q": "Noi perde sempre le chiavi.",
-            "wrong": "perde",
-            "fix": "perdiamo"
-          },
-          {
-            "q": "Voi accendo la luce.",
-            "wrong": "accendo",
-            "fix": "accendete"
+            "q": "Loro legge il giornale la sera.",
+            "wrong": "legge",
+            "fix": "leggono"
           }
         ]
       },
@@ -2197,54 +2197,54 @@ const TEST_STRUCTURES = [
         "instr": "Clicca il verbo coniugato in modo sbagliato.",
         "items": [
           {
-            "q": "Tu finisco il lavoro.",
-            "wrong": "finisco",
-            "fix": "finisci"
-          },
-          {
-            "q": "Noi capisce tutto.",
-            "wrong": "capisce",
-            "fix": "capiamo"
-          },
-          {
-            "q": "Voi partono domani.",
-            "wrong": "partono",
-            "fix": "partite"
-          },
-          {
-            "q": "Lei dormo poco.",
-            "wrong": "dormo",
+            "q": "Mia nonna dormono poco la notte.",
+            "wrong": "dormono",
             "fix": "dorme"
           },
           {
-            "q": "Loro pulisce la stanza.",
+            "q": "Voi finisco sempre tardi.",
+            "wrong": "finisco",
+            "fix": "finite"
+          },
+          {
+            "q": "I bambini capisce tutto.",
+            "wrong": "capisce",
+            "fix": "capiscono"
+          },
+          {
+            "q": "Il bar di Luca apriamo alle sette.",
+            "wrong": "apriamo",
+            "fix": "apre"
+          },
+          {
+            "q": "Ogni estate noi partite per la Grecia.",
+            "wrong": "partite",
+            "fix": "partiamo"
+          },
+          {
+            "q": "Tu preferiscono il tè o il caffè?",
+            "wrong": "preferiscono",
+            "fix": "preferisci"
+          },
+          {
+            "q": "Anna e Paolo pulisce la casa il sabato.",
             "wrong": "pulisce",
             "fix": "puliscono"
           },
           {
-            "q": "Io capite la domanda.",
-            "wrong": "capite",
-            "fix": "capisco"
+            "q": "Domani io spedisce il pacco.",
+            "wrong": "spedisce",
+            "fix": "spedisco"
           },
           {
-            "q": "Tu preferisce il mare.",
-            "wrong": "preferisce",
-            "fix": "preferisci"
+            "q": "Anche voi sentiamo questo rumore?",
+            "wrong": "sentiamo",
+            "fix": "sentite"
           },
           {
-            "q": "Noi sentite un rumore.",
-            "wrong": "sentite",
-            "fix": "sentiamo"
-          },
-          {
-            "q": "Voi offro il caffè.",
+            "q": "Le mie amiche offro il caffè.",
             "wrong": "offro",
-            "fix": "offrite"
-          },
-          {
-            "q": "Lui partiamo stasera.",
-            "wrong": "partiamo",
-            "fix": "parte"
+            "fix": "offrono"
           }
         ]
       },
@@ -2448,54 +2448,54 @@ const TEST_STRUCTURES = [
         "instr": "Clicca la parola sbagliata.",
         "items": [
           {
-            "q": "Mi piacciono la pizza.",
+            "q": "Mi piacciono il silenzio della notte.",
             "wrong": "piacciono",
             "fix": "piace"
           },
           {
-            "q": "Ti piace gli animali?",
+            "q": "A Marco piace gli spaghetti.",
             "wrong": "piace",
             "fix": "piacciono"
           },
           {
-            "q": "Mi piace i biscotti.",
-            "wrong": "piace",
-            "fix": "piacciono"
-          },
-          {
-            "q": "Ci piacciono studiare.",
+            "q": "Ai bambini piacciono il latte.",
             "wrong": "piacciono",
             "fix": "piace"
           },
           {
-            "q": "Le piacciono il gelato.",
+            "q": "Ci piacciono viaggiare in treno.",
             "wrong": "piacciono",
             "fix": "piace"
           },
           {
-            "q": "Vi piace le vacanze?",
+            "q": "A mia sorella piace le vacanze al mare.",
             "wrong": "piace",
             "fix": "piacciono"
           },
           {
-            "q": "Mi piacciono nuotare.",
+            "q": "Non mi piacciono il traffico di Milano.",
             "wrong": "piacciono",
             "fix": "piace"
           },
           {
-            "q": "Ti piace i tuoi regali?",
+            "q": "Ti piacciono nuotare in piscina?",
+            "wrong": "piacciono",
+            "fix": "piace"
+          },
+          {
+            "q": "Alla mia amica piace i capelli lunghi.",
             "wrong": "piace",
             "fix": "piacciono"
           },
           {
-            "q": "Ci piace le canzoni italiane.",
+            "q": "A voi piace i pantaloni neri?",
             "wrong": "piace",
             "fix": "piacciono"
           },
           {
-            "q": "Le piace i fiori.",
-            "wrong": "piace",
-            "fix": "piacciono"
+            "q": "Ai miei genitori piacciono il vino rosso.",
+            "wrong": "piacciono",
+            "fix": "piace"
           }
         ]
       },
@@ -2675,7 +2675,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Tu ___ spesso al mare?",
+            "q": "Tu ___ spesso in montagna?",
             "options": [
               "vai",
               "va",
@@ -2709,54 +2709,54 @@ const TEST_STRUCTURES = [
         "instr": "Clicca il verbo sbagliato.",
         "items": [
           {
-            "q": "Io vai a casa.",
-            "wrong": "vai",
-            "fix": "vado"
-          },
-          {
-            "q": "Tu vengo con me?",
-            "wrong": "vengo",
-            "fix": "vieni"
-          },
-          {
-            "q": "Noi vanno al parco.",
+            "q": "Mio padre vanno al mercato ogni sabato.",
             "wrong": "vanno",
-            "fix": "andiamo"
+            "fix": "va"
           },
           {
-            "q": "Voi veniamo domani?",
+            "q": "Voi veniamo a teatro con noi?",
             "wrong": "veniamo",
             "fix": "venite"
           },
           {
-            "q": "Lei vado in centro.",
+            "q": "I miei nonni viene a cena domenica.",
+            "wrong": "viene",
+            "fix": "vengono"
+          },
+          {
+            "q": "Domani noi vanno in montagna.",
+            "wrong": "vanno",
+            "fix": "andiamo"
+          },
+          {
+            "q": "La mia amica vado dal dentista.",
             "wrong": "vado",
             "fix": "va"
           },
           {
-            "q": "Loro venite alla riunione.",
-            "wrong": "venite",
-            "fix": "vengono"
+            "q": "Tu veniamo alla stazione con me?",
+            "wrong": "veniamo",
+            "fix": "vieni"
           },
           {
-            "q": "Io viene subito.",
-            "wrong": "viene",
-            "fix": "vengo"
-          },
-          {
-            "q": "Tu andiamo a scuola.",
+            "q": "Anna e Luca andiamo in biblioteca.",
             "wrong": "andiamo",
-            "fix": "vai"
+            "fix": "vanno"
           },
           {
-            "q": "Noi vieni con voi.",
-            "wrong": "vieni",
-            "fix": "veniamo"
+            "q": "Ogni anno io va in vacanza a giugno.",
+            "wrong": "va",
+            "fix": "vado"
           },
           {
-            "q": "Voi va in vacanza.",
+            "q": "Anche voi va a trovare i nonni?",
             "wrong": "va",
             "fix": "andate"
+          },
+          {
+            "q": "I treni delle otto viene da Milano.",
+            "wrong": "viene",
+            "fix": "vengono"
           }
         ]
       },
@@ -2883,7 +2883,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Il gatto è ___ il tavolo.",
+            "q": "Il gatto dorme ___ una sedia.",
             "options": [
               "su",
               "in",
@@ -2971,14 +2971,9 @@ const TEST_STRUCTURES = [
         "instr": "Clicca la preposizione sbagliata.",
         "items": [
           {
-            "q": "Vado a Portogallo.",
+            "q": "Il quaderno è a Sara.",
             "wrong": "a",
-            "fix": "in"
-          },
-          {
-            "q": "Abito a Germania.",
-            "wrong": "a",
-            "fix": "in"
+            "fix": "di"
           },
           {
             "q": "Sono qui di due giorni.",
@@ -2986,37 +2981,42 @@ const TEST_STRUCTURES = [
             "fix": "da"
           },
           {
-            "q": "Vivo a Italia.",
-            "wrong": "a",
-            "fix": "in"
-          },
-          {
-            "q": "Studio a Francia.",
-            "wrong": "a",
-            "fix": "in"
-          },
-          {
-            "q": "Il quaderno è a Sara.",
-            "wrong": "a",
-            "fix": "di"
-          },
-          {
-            "q": "Lavoro a Spagna.",
-            "wrong": "a",
-            "fix": "in"
-          },
-          {
             "q": "Parto per treno alle otto.",
             "wrong": "per",
             "fix": "in"
           },
           {
-            "q": "Parto in Napoli domani.",
-            "wrong": "in",
+            "q": "Vado a Portogallo con Marco.",
+            "wrong": "a",
+            "fix": "in"
+          },
+          {
+            "q": "Questa lettera è di te.",
+            "wrong": "di",
+            "fix": "per"
+          },
+          {
+            "q": "Vengo con piedi.",
+            "wrong": "con",
+            "fix": "a"
+          },
+          {
+            "q": "L'autobus arriva di Roma alle nove.",
+            "wrong": "di",
             "fix": "da"
           },
           {
-            "q": "Sono stato a Grecia.",
+            "q": "Le chiavi sono su tasca.",
+            "wrong": "su",
+            "fix": "in"
+          },
+          {
+            "q": "Abito in Roma da tre anni.",
+            "wrong": "in",
+            "fix": "a"
+          },
+          {
+            "q": "Vivo a Italia da due anni.",
             "wrong": "a",
             "fix": "in"
           }
@@ -3257,11 +3257,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "La moglie di Paolo è ___.",
+            "q": "La zia di Marco è una brava ___.",
             "options": [
-              "avvocata",
-              "avvocato",
-              "avvocatrice"
+              "traduttrice",
+              "traduttora",
+              "traduttoressa"
             ],
             "answer": 0
           },
@@ -3328,22 +3328,22 @@ const TEST_STRUCTURES = [
             "fix": "direttrice"
           },
           {
-            "q": "Mia cugina è un studentessa.",
+            "q": "Mia cugina Chiara è un studentessa.",
             "wrong": "un",
             "fix": "una"
           },
           {
-            "q": "Lucia è una attore famosa.",
+            "q": "Lucia e Anna sono due attore famose.",
             "wrong": "attore",
-            "fix": "attrice"
+            "fix": "attrici"
           },
           {
-            "q": "Mio zio è una cameriere.", 
+            "q": "Mio zio Giorgio è una cameriere.",
             "wrong": "una",
             "fix": "un"
           },
           {
-            "q": "Paolo è una professore.",
+            "q": "Il marito di Sara è una professore.",
             "wrong": "una",
             "fix": "un"
           },
@@ -3358,7 +3358,7 @@ const TEST_STRUCTURES = [
             "fix": "scrittrice"
           },
           {
-            "q": "Luca è una commesso.",
+            "q": "Il fratello di Luca è una commesso.",
             "wrong": "una",
             "fix": "un"
           },
@@ -3429,7 +3429,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Loro ___ tornare a casa.",
+            "q": "Loro ___ finire il progetto.",
             "options": [
               "devono",
               "dobbiamo",
@@ -3478,7 +3478,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata (forma del verbo o preposizione di troppo).",
+        "instr": "Clicca la parola di troppo o sbagliata (forma del verbo o preposizione).",
         "items": [
           {
             "q": "Devi a finire i compiti.",
@@ -3486,47 +3486,47 @@ const TEST_STRUCTURES = [
             "fix": "(togliere)"
           },
           {
+            "q": "I miei genitori deve partire presto.",
+            "wrong": "deve",
+            "fix": "devono"
+          },
+          {
+            "q": "Domani noi dovete cambiare treno.",
+            "wrong": "dovete",
+            "fix": "dobbiamo"
+          },
+          {
+            "q": "Mia sorella devo portare i documenti.",
+            "wrong": "devo",
+            "fix": "deve"
+          },
+          {
             "q": "Dovemo studiare di più.",
             "wrong": "Dovemo",
             "fix": "Dobbiamo"
           },
           {
-            "q": "Loro deve partire subito.",
-            "wrong": "deve",
-            "fix": "devono"
-          },
-          {
-            "q": "Io devi lavorare domani.",
-            "wrong": "devi",
-            "fix": "devo"
-          },
-          {
-            "q": "Noi dovete pagare adesso.",
-            "wrong": "dovete",
-            "fix": "dobbiamo"
-          },
-          {
-            "q": "Devo di andare a casa.",
+            "q": "Loro devono di andare a casa.",
             "wrong": "di",
             "fix": "(togliere)"
           },
           {
-            "q": "Voi devono aspettare fuori.",
+            "q": "Anche voi devono aspettare fuori?",
             "wrong": "devono",
             "fix": "dovete"
           },
           {
-            "q": "Tu dobbiamo chiamare Anna.",
+            "q": "Tu dobbiamo rispondere a questa mail.",
             "wrong": "dobbiamo",
             "fix": "devi"
           },
           {
-            "q": "Lei devo prenotare il volo.",
+            "q": "Anche il medico devo firmare la ricetta.",
             "wrong": "devo",
             "fix": "deve"
           },
           {
-            "q": "Dobbiamo per uscire presto.",
+            "q": "Domani mattina dobbiamo per uscire presto.",
             "wrong": "per",
             "fix": "(togliere)"
           }
@@ -3738,57 +3738,57 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata.",
+        "instr": "In ogni riga ci sono due gruppi: clicca l'unica parola di troppo o sbagliata.",
         "items": [
           {
-            "q": "Il mio padre",
-            "wrong": "Il",
+            "q": "La mia scrivania e il mio padre",
+            "wrong": "il",
             "fix": "(togliere)"
           },
           {
-            "q": "Il sua libro",
-            "wrong": "sua",
-            "fix": "suo"
-          },
-          {
-            "q": "Le miei scarpe",
-            "wrong": "miei",
-            "fix": "mie"
-          },
-          {
-            "q": "Tuo sorella è simpatica.",
+            "q": "Tuo sorella e il mio telefono",
             "wrong": "Tuo",
             "fix": "Tua"
           },
           {
-            "q": "La nostro casa",
+            "q": "Il mio ombrello e la mia zia",
+            "wrong": "la",
+            "fix": "(togliere)"
+          },
+          {
+            "q": "I mie fratelli e mia cugina",
+            "wrong": "mie",
+            "fix": "miei"
+          },
+          {
+            "q": "Le tue scarpe e i mie occhiali",
+            "wrong": "mie",
+            "fix": "miei"
+          },
+          {
+            "q": "Il suo lavoro e la sua moglie",
+            "wrong": "la",
+            "fix": "(togliere)"
+          },
+          {
+            "q": "La nostro cucina e il vostro giardino",
             "wrong": "nostro",
             "fix": "nostra"
           },
           {
-            "q": "Mia fratello è simpatico.",
-            "wrong": "Mia",
-            "fix": "Mio"
+            "q": "Il mio orologio e la tuo borsa",
+            "wrong": "tuo",
+            "fix": "tua"
           },
           {
-            "q": "I sue amici",
+            "q": "I sue documenti e le nostre foto",
             "wrong": "sue",
             "fix": "suoi"
           },
           {
-            "q": "Il loro bicicletta è rotta.",
+            "q": "Il loro bicicletta e la nostra camera",
             "wrong": "Il",
             "fix": "La"
-          },
-          {
-            "q": "Le tuo chiavi",
-            "wrong": "tuo",
-            "fix": "tue"
-          },
-          {
-            "q": "Mio madre è stanca.",
-            "wrong": "Mio",
-            "fix": "Mia"
           }
         ]
       },
@@ -3998,7 +3998,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata nella frase sull'ora.",
+        "instr": "Clicca la parola di troppo o sbagliata nella frase sull'ora.",
         "items": [
           {
             "q": "È le cinque.",
@@ -4017,7 +4017,8 @@ const TEST_STRUCTURES = [
           },
           {
             "q": "Manca un quarto alle le nove.",
-            "wrong": "le","fix": "(togliere)"
+            "wrong": "le",
+            "fix": "(togliere)"
           },
           {
             "q": "Sono mezzogiorno.",
@@ -4161,95 +4162,95 @@ const TEST_STRUCTURES = [
       {
         "type": "Riempimento",
         "fmt": "buco",
-        "instr": "Scegli il verbo al presente per parlare di un piano futuro.",
+        "instr": "Il verbo è al presente ma il fatto non è ancora avvenuto: scegli l'espressione di tempo adatta.",
         "items": [
           {
-            "q": "Domani ___ a Roma. (io – andare)",
+            "q": "Ho già il biglietto: ___ parto per Roma.",
             "options": [
-              "vado",
-              "andrò",
-              "andavo"
+              "domani",
+              "ieri",
+              "la settimana scorsa"
             ],
             "answer": 0
           },
           {
-            "q": "La settimana prossima ___ un esame. (noi – avere)",
+            "q": "Il contratto è pronto: lo firmiamo ___.",
             "options": [
-              "abbiamo",
-              "avremo",
-              "avevamo"
+              "lunedì prossimo",
+              "lunedì scorso",
+              "l'anno scorso"
             ],
             "answer": 0
           },
           {
-            "q": "Stasera ___ al cinema. (loro – andare)",
+            "q": "Ho preso l'appuntamento: ___ vado dal dentista.",
             "options": [
-              "vanno",
-              "andranno",
-              "andavano"
+              "giovedì",
+              "giovedì scorso",
+              "due giorni fa"
             ],
             "answer": 0
           },
           {
-            "q": "Sabato ___ i miei amici. (io – vedere)",
+            "q": "Le valigie sono già in macchina: ___ partiamo.",
             "options": [
-              "vedo",
-              "vedrò",
-              "vedevo"
+              "fra un'ora",
+              "un'ora fa",
+              "l'estate scorsa"
             ],
             "answer": 0
           },
           {
-            "q": "L'anno prossimo ci ___ in Spagna. (noi – trasferirsi)",
+            "q": "Abbiamo prenotato il tavolo: ___ ceniamo fuori.",
             "options": [
-              "trasferiamo",
-              "trasferiremo",
-              "trasferivamo"
+              "stasera",
+              "ieri sera",
+              "sabato scorso"
             ],
             "answer": 0
           },
           {
-            "q": "Domenica ___ a casa dei nonni. (voi – pranzare)",
+            "q": "Ho già pagato l'iscrizione: il corso comincia ___.",
             "options": [
-              "pranzate",
-              "pranzerete",
-              "pranzavate"
+              "a settembre",
+              "il mese scorso",
+              "l'anno scorso"
             ],
             "answer": 0
           },
           {
-            "q": "Fra due giorni ___ il risultato. (tu – sapere)",
+            "q": "Ho l'esame ___, quindi stasera studio.",
             "options": [
-              "sai",
-              "saprai",
-              "sapevi"
+              "venerdì",
+              "venerdì scorso",
+              "il mese scorso"
             ],
             "answer": 0
           },
           {
-            "q": "Lunedì ___ il nuovo lavoro. (lei – cominciare)",
+            "q": "Il volo è prenotato: ___ arriviamo a Madrid.",
             "options": [
-              "comincia",
-              "comincerà",
-              "cominciava"
+              "sabato mattina",
+              "sabato scorso",
+              "la settimana scorsa"
             ],
             "answer": 0
           },
           {
-            "q": "Stanotte ___ dai miei. (io – dormire)",
+            "q": "Te lo prometto: ci vediamo ___.",
             "options": [
-              "dormo",
-              "dormirò",
-              "dormivo"
+              "fra due giorni",
+              "due giorni fa",
+              "la settimana scorsa"
             ],
             "answer": 0
           },
           {
-            "q": "Ad agosto ___ le vacanze. (noi – prendere)",
+            "q": "La riunione è già in calendario: ___ decidiamo tutto.",
             "options": [
-              "prendiamo",
-              "prenderemo",
-              "prendevamo"
+              "lunedì",
+              "lunedì scorso",
+              "il mese scorso"
             ],
             "answer": 0
           }
@@ -4703,8 +4704,8 @@ const TEST_STRUCTURES = [
             "q": "Hanno finito il lavoro. (appena)",
             "options": [
               "Hanno appena finito il lavoro.",
-              "Hanno finito il appena lavoro.",
-              "Hanno finito il lavoro appena il."
+              "Hanno finito appena il lavoro.",
+              "Hanno finito il lavoro appena."
             ],
             "answer": 0
           }
@@ -4827,12 +4828,12 @@ const TEST_STRUCTURES = [
             "fix": "sta"
           },
           {
-            "q": "Signora, hai una prenotazione?",
+            "q": "Signora, oggi hai una prenotazione?",
             "wrong": "hai",
             "fix": "ha"
           },
           {
-            "q": "Dottore, puoi aspettare qui?",
+            "q": "Dottore, adesso puoi aspettare qui?",
             "wrong": "puoi",
             "fix": "può"
           },
@@ -4842,17 +4843,17 @@ const TEST_STRUCTURES = [
             "fix": "lavora"
           },
           {
-            "q": "Professoressa, vuoi un tè?",
+            "q": "Professoressa, forse vuoi un tè?",
             "wrong": "vuoi",
             "fix": "vuole"
           },
           {
-            "q": "Signora, devi compilare il modulo.",
+            "q": "Signora, prima di uscire devi compilare il modulo.",
             "wrong": "devi",
             "fix": "deve"
           },
           {
-            "q": "Avvocato, sai il numero?",
+            "q": "Avvocato, per caso sai il numero?",
             "wrong": "sai",
             "fix": "sa"
           },
@@ -4862,12 +4863,12 @@ const TEST_STRUCTURES = [
             "fix": "venga"
           },
           {
-            "q": "Dottoressa, parli inglese?",
+            "q": "Dottoressa, in azienda parli inglese?",
             "wrong": "parli",
             "fix": "parla"
           },
           {
-            "q": "Signora, conosci questo posto?",
+            "q": "Signora, conosci già questo posto?",
             "wrong": "conosci",
             "fix": "conosce"
           }
@@ -5341,20 +5342,20 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata (forma del modale o preposizione di troppo).",
+        "instr": "Clicca la parola di troppo o sbagliata (forma del modale o preposizione).",
         "items": [
           {
-            "q": "Vogliamo di partire subito.",
+            "q": "Domani mattina vogliamo di partire subito.",
             "wrong": "di",
             "fix": "(togliere)"
           },
           {
-            "q": "Lei pole aiutarmi?",
+            "q": "Oggi pomeriggio lei pole aiutarmi?",
             "wrong": "pole",
             "fix": "può"
           },
           {
-            "q": "Loro vuoglio uscire.",
+            "q": "Stasera loro vuoglio uscire.",
             "wrong": "vuoglio",
             "fix": "vogliono"
           },
@@ -5369,7 +5370,7 @@ const TEST_STRUCTURES = [
             "fix": "Voglio"
           },
           {
-            "q": "Puoi a venire con me?",
+            "q": "Domenica puoi a venire con me?",
             "wrong": "a",
             "fix": "(togliere)"
           },
@@ -5379,17 +5380,17 @@ const TEST_STRUCTURES = [
             "fix": "(togliere)"
           },
           {
-            "q": "Loro pote arrivare tardi.",
+            "q": "In treno loro pote arrivare tardi.",
             "wrong": "pote",
             "fix": "possono"
           },
           {
-            "q": "Voi volite un dolce?",
+            "q": "Dopo cena voi volite un dolce?",
             "wrong": "volite",
             "fix": "volete"
           },
           {
-            "q": "Vuoi per uscire adesso?",
+            "q": "Davvero vuoi per uscire adesso?",
             "wrong": "per",
             "fix": "(togliere)"
           }
@@ -5604,17 +5605,17 @@ const TEST_STRUCTURES = [
         "instr": "Clicca il verbo irregolare sbagliato.",
         "items": [
           {
-            "q": "Io fao i compiti.",
+            "q": "La sera io fao i compiti.",
             "wrong": "fao",
             "fix": "faccio"
           },
           {
-            "q": "Tu stae bene?",
+            "q": "Adesso tu stae bene?",
             "wrong": "stae",
             "fix": "stai"
           },
           {
-            "q": "Noi dicemo tutto al capo.",
+            "q": "In riunione noi dicemo tutto al capo.",
             "wrong": "dicemo",
             "fix": "diciamo"
           },
@@ -5624,12 +5625,12 @@ const TEST_STRUCTURES = [
             "fix": "escono"
           },
           {
-            "q": "Lei da un consiglio utile.",
+            "q": "Ogni tanto lei da un consiglio utile.",
             "wrong": "da",
             "fix": "dà"
           },
           {
-            "q": "Voi facete troppo rumore.",
+            "q": "Stasera voi facete troppo rumore.",
             "wrong": "facete",
             "fix": "fate"
           },
@@ -5639,17 +5640,17 @@ const TEST_STRUCTURES = [
             "fix": "dico"
           },
           {
-            "q": "Tu usci con noi?",
+            "q": "Domani tu usci con noi?",
             "wrong": "usci",
             "fix": "esci"
           },
           {
-            "q": "Noi stamo a Roma.",
+            "q": "In agosto noi stamo a Roma.",
             "wrong": "stamo",
             "fix": "stiamo"
           },
           {
-            "q": "Loro dano una festa.",
+            "q": "Sabato loro dano una festa.",
             "wrong": "dano",
             "fix": "danno"
           }
@@ -6648,7 +6649,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "La frase è rivolta a un amico: clicca la forma sbagliata.",
+        "instr": "La frase è rivolta a un amico: clicca la parola sbagliata.",
         "items": [
           {
             "q": "Marco, chiuda la porta!",
@@ -7005,7 +7006,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "La frase è rivolta a un cliente: clicca la forma sbagliata.",
+        "instr": "La frase è rivolta a un cliente: clicca la parola sbagliata.",
         "items": [
           {
             "q": "Signora, siediti qui!",
@@ -7952,22 +7953,22 @@ const TEST_STRUCTURES = [
         "instr": "Clicca il verbo con l'accordo sbagliato.",
         "items": [
           {
-            "q": "Mi interessano la musica classica.",
+            "q": "In generale mi interessano la musica classica.",
             "wrong": "interessano",
             "fix": "interessa"
           },
           {
-            "q": "Ti serve le chiavi di casa?",
+            "q": "Stasera ti serve le chiavi di casa?",
             "wrong": "serve",
             "fix": "servono"
           },
           {
-            "q": "Le mancano la sua città.",
+            "q": "Ogni tanto le mancano la sua città.",
             "wrong": "mancano",
             "fix": "manca"
           },
           {
-            "q": "Ci basta cinque euro.",
+            "q": "Per il caffè ci basta cinque euro.",
             "wrong": "basta",
             "fix": "bastano"
           },
@@ -7977,17 +7978,17 @@ const TEST_STRUCTURES = [
             "fix": "interessano"
           },
           {
-            "q": "Mi servono una firma.",
+            "q": "Adesso mi servono una firma.",
             "wrong": "servono",
             "fix": "serve"
           },
           {
-            "q": "Gli manca i vecchi colleghi.",
+            "q": "Dopo il trasloco gli manca i vecchi colleghi.",
             "wrong": "manca",
             "fix": "mancano"
           },
           {
-            "q": "Ti bastano mezz'ora?",
+            "q": "Secondo te ti bastano mezz'ora?",
             "wrong": "bastano",
             "fix": "basta"
           },
@@ -7997,7 +7998,7 @@ const TEST_STRUCTURES = [
             "fix": "interessa"
           },
           {
-            "q": "Le serve tre bicchieri.",
+            "q": "In cucina le serve tre bicchieri.",
             "wrong": "serve",
             "fix": "servono"
           }
@@ -8209,7 +8210,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Scelta",
         "fmt": "buco",
-        "instr": "Scegli il connettivo che lega bene le due parti.",
+        "instr": "Scegli il connettivo adatto al senso.",
         "items": [
           {
             "q": "Ho comprato il pane ___ ho dimenticato il latte.",
@@ -8509,7 +8510,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata (bisogna è invariabile e regge l'infinito).",
+        "instr": "Clicca la parola di troppo o sbagliata (bisogna è invariabile e regge l'infinito).",
         "items": [
           {
             "q": "Bisognano confermare la prenotazione.",
@@ -9589,20 +9590,20 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Nella ricetta all'infinito, clicca il pronome che non concorda.",
+        "instr": "Nella ricetta all'infinito, clicca la parola in cui il pronome non concorda.",
         "items": [
           {
-            "q": "Tagliare le verdure e aggiungerli al soffritto.",
+            "q": "Poi tagliare le verdure e aggiungerli al soffritto.",
             "wrong": "aggiungerli",
             "fix": "aggiungerle"
           },
           {
-            "q": "Sbucciare le patate e tagliarle a fette sottile.",
-            "wrong": "sottile",
-            "fix": "sottili"
+            "q": "Dopo aver lavato i pomodori, tagliarle a metà.",
+            "wrong": "tagliarle",
+            "fix": "tagliarli"
           },
           {
-            "q": "Montare gli albumi e incorporarlo all'impasto.",
+            "q": "Infine montare gli albumi e incorporarlo all'impasto.",
             "wrong": "incorporarlo",
             "fix": "incorporarli"
           },
@@ -9617,7 +9618,7 @@ const TEST_STRUCTURES = [
             "fix": "versarlo"
           },
           {
-            "q": "Tritare le erbe e unirlo alla salsa.",
+            "q": "Tritare subito le erbe e unirlo alla salsa.",
             "wrong": "unirlo",
             "fix": "unirle"
           },
@@ -9627,7 +9628,7 @@ const TEST_STRUCTURES = [
             "fix": "scolarla"
           },
           {
-            "q": "Preparare i crostini e servirle caldi.",
+            "q": "Nel frattempo preparare i crostini e servirle caldi.",
             "wrong": "servirle",
             "fix": "servirli"
           },
@@ -9637,7 +9638,7 @@ const TEST_STRUCTURES = [
             "fix": "aggiungerla"
           },
           {
-            "q": "Bollire i legumi e frullarle con il brodo.",
+            "q": "Prima di tutto bollire i legumi e frullarle con il brodo.",
             "wrong": "frullarle",
             "fix": "frullarli"
           }
@@ -9852,12 +9853,12 @@ const TEST_STRUCTURES = [
         "instr": "Clicca il participio sbagliato.",
         "items": [
           {
-            "q": "Ho scrivuto una lettera lunga.",
+            "q": "Ieri ho scrivuto una lettera lunga.",
             "wrong": "scrivuto",
             "fix": "scritto"
           },
           {
-            "q": "Abbiamo vedato un bel film.",
+            "q": "Sabato sera abbiamo vedato un bel film.",
             "wrong": "vedato",
             "fix": "visto"
           },
@@ -9867,27 +9868,27 @@ const TEST_STRUCTURES = [
             "fix": "aperto"
           },
           {
-            "q": "Hanno chiudito il negozio.",
+            "q": "Alle otto hanno chiudito il negozio.",
             "wrong": "chiudito",
             "fix": "chiuso"
           },
           {
-            "q": "Ho prenduto l'autobus.",
+            "q": "Stamattina ho prenduto l'autobus.",
             "wrong": "prenduto",
             "fix": "preso"
           },
           {
-            "q": "Abbiamo dicuto la verità.",
+            "q": "Alla fine abbiamo dicuto la verità.",
             "wrong": "dicuto",
             "fix": "detto"
           },
           {
-            "q": "Ha facuto un errore.",
+            "q": "Purtroppo ha facuto un errore.",
             "wrong": "facuto",
             "fix": "fatto"
           },
           {
-            "q": "Hanno perdito il treno.",
+            "q": "Di nuovo hanno perdito il treno.",
             "wrong": "perdito",
             "fix": "perso"
           },
@@ -9897,7 +9898,7 @@ const TEST_STRUCTURES = [
             "fix": "bevuto"
           },
           {
-            "q": "Siamo rimanuti a casa.",
+            "q": "Domenica siamo rimanuti a casa.",
             "wrong": "rimanuti",
             "fix": "rimasti"
           }
@@ -10119,27 +10120,27 @@ const TEST_STRUCTURES = [
             "fix": "andrò"
           },
           {
-            "q": "Noi compraremo il biglietto.",
+            "q": "Stasera noi compraremo il biglietto.",
             "wrong": "compraremo",
             "fix": "compreremo"
           },
           {
-            "q": "Tu venirai con noi?",
+            "q": "Sabato tu venirai con noi?",
             "wrong": "venirai",
             "fix": "verrai"
           },
           {
-            "q": "Loro fareranno il possibile.",
+            "q": "Sicuramente loro fareranno il possibile.",
             "wrong": "fareranno",
             "fix": "faranno"
           },
           {
-            "q": "Lei saperà la verità.",
+            "q": "Prima o poi lei saperà la verità.",
             "wrong": "saperà",
             "fix": "saprà"
           },
           {
-            "q": "Voi essarete stanchi.",
+            "q": "Dopo il viaggio voi essarete stanchi.",
             "wrong": "essarete",
             "fix": "sarete"
           },
@@ -10149,17 +10150,17 @@ const TEST_STRUCTURES = [
             "fix": "avrò"
           },
           {
-            "q": "Noi vedaremo cosa succede.",
+            "q": "Fra poco noi vedaremo cosa succede.",
             "wrong": "vedaremo",
             "fix": "vedremo"
           },
           {
-            "q": "Loro rimaneranno qui.",
+            "q": "Anche stanotte loro rimaneranno qui.",
             "wrong": "rimaneranno",
             "fix": "rimarranno"
           },
           {
-            "q": "Tu potirai partire domani.",
+            "q": "Forse tu potirai partire domani.",
             "wrong": "potirai",
             "fix": "potrai"
           }
@@ -10641,27 +10642,27 @@ const TEST_STRUCTURES = [
             "fix": "giocavo"
           },
           {
-            "q": "Mia zia cucinavano ogni festa.",
+            "q": "In passato mia zia cucinavano ogni festa.",
             "wrong": "cucinavano",
             "fix": "cucinava"
           },
           {
-            "q": "Noi andavate al mare ogni anno.",
+            "q": "Una volta noi andavate al mare ogni anno.",
             "wrong": "andavate",
             "fix": "andavamo"
           },
           {
-            "q": "Voi arrivavamo sempre tardi.",
+            "q": "In ufficio voi arrivavamo sempre tardi.",
             "wrong": "arrivavamo",
             "fix": "arrivavate"
           },
           {
-            "q": "Loro viveva in centro.",
+            "q": "A quei tempi loro viveva in centro.",
             "wrong": "viveva",
             "fix": "vivevano"
           },
           {
-            "q": "Tu leggeva molti libri.",
+            "q": "Prima tu leggeva molti libri.",
             "wrong": "leggeva",
             "fix": "leggevi"
           },
@@ -10671,17 +10672,17 @@ const TEST_STRUCTURES = [
             "fix": "facevo"
           },
           {
-            "q": "Noi avevate una casa grande.",
+            "q": "Al paese noi avevate una casa grande.",
             "wrong": "avevate",
             "fix": "avevamo"
           },
           {
-            "q": "Lei erano molto simpatica.",
+            "q": "Anche lei erano molto simpatica.",
             "wrong": "erano",
             "fix": "era"
           },
           {
-            "q": "Voi bevevo troppo caffè.",
+            "q": "Allora voi bevevo troppo caffè.",
             "wrong": "bevevo",
             "fix": "bevevate"
           }
@@ -11253,7 +11254,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata nel superlativo.",
+        "instr": "Clicca la parola di troppo o sbagliata nel superlativo.",
         "items": [
           {
             "q": "Il caffè è amarissima stamattina.",
@@ -11416,15 +11417,15 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata.",
+        "instr": "Clicca la parola di troppo o sbagliata.",
         "items": [
           {
-            "q": "Sto scrivando una relazione.",
+            "q": "Da un'ora sto scrivando una relazione.",
             "wrong": "scrivando",
             "fix": "scrivendo"
           },
           {
-            "q": "Stiamo aspettendo il treno.",
+            "q": "In stazione stiamo aspettendo il treno.",
             "wrong": "aspettendo",
             "fix": "aspettando"
           },
@@ -11439,27 +11440,27 @@ const TEST_STRUCTURES = [
             "fix": "Sto"
           },
           {
-            "q": "Sta nevicanto sulle montagne.",
+            "q": "Da stamattina sta nevicanto sulle montagne.",
             "wrong": "nevicanto",
             "fix": "nevicando"
           },
           {
-            "q": "Sto cucinendo la cena.",
+            "q": "Stasera sto cucinendo la cena.",
             "wrong": "cucinendo",
             "fix": "cucinando"
           },
           {
             "q": "Stiamo di uscire adesso.",
             "wrong": "di",
-            "fix": "(togliere)"
+            "fix": "per"
           },
           {
-            "q": "Sta traducando un articolo.",
+            "q": "In questo momento sta traducando un articolo.",
             "wrong": "traducando",
             "fix": "traducendo"
           },
           {
-            "q": "Stanno pulando la casa.",
+            "q": "Di sopra stanno pulando la casa.",
             "wrong": "pulando",
             "fix": "pulendo"
           },
@@ -11946,27 +11947,27 @@ const TEST_STRUCTURES = [
             "fix": "mangerei"
           },
           {
-            "q": "Tu legerresti quel libro?",
+            "q": "Domani tu legerresti quel libro?",
             "wrong": "legerresti",
             "fix": "leggeresti"
           },
           {
-            "q": "Noi restaremmo un altro giorno.",
+            "q": "Volentieri noi restaremmo un altro giorno.",
             "wrong": "restaremmo",
             "fix": "resteremmo"
           },
           {
-            "q": "Lei uscerebbe più spesso.",
+            "q": "Forse lei uscerebbe più spesso.",
             "wrong": "uscerebbe",
             "fix": "uscirebbe"
           },
           {
-            "q": "Loro pagarebbero subito.",
+            "q": "Sicuramente loro pagarebbero subito.",
             "wrong": "pagarebbero",
             "fix": "pagherebbero"
           },
           {
-            "q": "Voi partereste domani?",
+            "q": "Con calma voi partereste domani?",
             "wrong": "partereste",
             "fix": "partireste"
           },
@@ -11981,12 +11982,12 @@ const TEST_STRUCTURES = [
             "fix": "rimarresti"
           },
           {
-            "q": "Noi tenaremmo la casa.",
+            "q": "In centro noi tenaremmo la casa.",
             "wrong": "tenaremmo",
             "fix": "terremmo"
           },
           {
-            "q": "Lui berebbe volentieri un tè.",
+            "q": "Adesso lui berebbe volentieri un tè.",
             "wrong": "berebbe",
             "fix": "berrebbe"
           }
@@ -12627,7 +12628,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Riempimento",
         "fmt": "buco",
-        "instr": "Scegli il connettivo adatto alla relazione logica.",
+        "instr": "Scegli il connettivo adatto alla relazione.",
         "items": [
           {
             "q": "Ho studiato molto, ___ ho superato l'esame.",
@@ -12724,7 +12725,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Scelta",
         "fmt": "buco",
-        "instr": "Scegli il connettivo adatto.",
+        "instr": "Scegli il connettivo adatto alla relazione.",
         "items": [
           {
             "q": "Volevo prenotare online; ___ il sito non funzionava.",
@@ -12933,14 +12934,14 @@ const TEST_STRUCTURES = [
           {
             "q": "All'imperativo affermativo il pronome si attacca al verbo.",
             "sol": [
-              "Dammelo",
+              "dammelo",
               "subito"
             ]
           },
           {
             "q": "Il pronome si attacca anche qui.",
             "sol": [
-              "Portami",
+              "portami",
               "il",
               "conto"
             ]
@@ -12948,7 +12949,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Con l'imperativo negativo il pronome può stare prima.",
             "sol": [
-              "Non",
+              "non",
               "me",
               "lo",
               "dire"
@@ -12957,21 +12958,21 @@ const TEST_STRUCTURES = [
           {
             "q": "Attenzione alla posizione del pronome.",
             "sol": [
-              "Aspettami",
+              "aspettami",
               "fuori"
             ]
           },
           {
             "q": "Con il pronome combinato la fusione è obbligata.",
             "sol": [
-              "Diglielo",
+              "diglielo",
               "tu"
             ]
           },
           {
             "q": "Nella forma di cortesia il pronome sta prima.",
             "sol": [
-              "Mi",
+              "mi",
               "dia",
               "il",
               "documento"
@@ -12980,14 +12981,14 @@ const TEST_STRUCTURES = [
           {
             "q": "Il pronome resta attaccato all'imperativo.",
             "sol": [
-              "Scrivimi",
+              "scrivimi",
               "presto"
             ]
           },
           {
             "q": "Con il Lei il pronome precede il verbo.",
             "sol": [
-              "Si",
+              "si",
               "accomodi",
               "prego"
             ]
@@ -12995,7 +12996,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Il pronome combinato si attacca all'imperativo.",
             "sol": [
-              "Mandamela",
+              "mandamela",
               "per",
               "favore"
             ]
@@ -13003,7 +13004,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Nell'imperativo negativo con «tu» si usa l'infinito.",
             "sol": [
-              "Non",
+              "non",
               "farlo",
               "adesso"
             ]
@@ -13016,54 +13017,54 @@ const TEST_STRUCTURES = [
         "instr": "Clicca la parola sbagliata.",
         "items": [
           {
-            "q": "Dottore, siediti pure!",
-            "wrong": "siediti",
-            "fix": "si sieda"
-          },
-          {
-            "q": "Professore, spiegamelo di nuovo!",
-            "wrong": "spiegamelo",
-            "fix": "me lo spieghi"
-          },
-          {
-            "q": "Signora, accomodati pure!",
-            "wrong": "accomodati",
-            "fix": "si accomodi"
-          },
-          {
-            "q": "Non dammelo adesso!",
+            "q": "Non dammelo adesso, per favore.",
             "wrong": "dammelo",
-            "fix": "me lo dare"
+            "fix": "darmelo"
           },
           {
-            "q": "Dottoressa, ascoltami un momento!",
-            "wrong": "ascoltami",
+            "q": "Per favore dami il tuo numero.",
+            "wrong": "dami",
+            "fix": "dammi"
+          },
+          {
+            "q": "Adesso dimmilo senza girarci intorno.",
+            "wrong": "dimmilo",
+            "fix": "dimmelo"
+          },
+          {
+            "q": "Diami il documento, la prego.",
+            "wrong": "Diami",
+            "fix": "Mi dia"
+          },
+          {
+            "q": "Non fammi aspettare troppo.",
+            "wrong": "fammi",
+            "fix": "farmi"
+          },
+          {
+            "q": "Quando arrivi, fammilo sapere.",
+            "wrong": "fammilo",
+            "fix": "fammelo"
+          },
+          {
+            "q": "La prego, ascoltimi un momento.",
+            "wrong": "ascoltimi",
             "fix": "mi ascolti"
           },
           {
-            "q": "Signore, dammi il documento!",
-            "wrong": "dammi",
-            "fix": "mi dia"
+            "q": "Non dimmi che hai dimenticato!",
+            "wrong": "dimmi",
+            "fix": "dirmi"
           },
           {
-            "q": "Signore, seguimi in ufficio!",
-            "wrong": "seguimi",
-            "fix": "mi segua"
+            "q": "Prima di uscire stami a sentire.",
+            "wrong": "stami",
+            "fix": "stammi"
           },
           {
-            "q": "Signora, alzati per favore!",
-            "wrong": "alzati",
-            "fix": "si alzi"
-          },
-          {
-            "q": "Avvocato, telefonami domani!",
-            "wrong": "telefonami",
-            "fix": "mi telefoni"
-          },
-          {
-            "q": "Signora, salutalo da parte mia!",
-            "wrong": "salutalo",
-            "fix": "lo saluti"
+            "q": "Se vai in centro, vaci a piedi.",
+            "wrong": "vaci",
+            "fix": "vacci"
           }
         ]
       },
@@ -13537,19 +13538,19 @@ const TEST_STRUCTURES = [
         "instr": "Clicca il pronome sbagliato (diretto invece di indiretto o viceversa).",
         "items": [
           {
-            "q": "Lo telefono stasera.",
-            "wrong": "Lo",
-            "fix": "Gli"
+            "q": "Stasera lo telefono.",
+            "wrong": "lo",
+            "fix": "gli"
           },
           {
-            "q": "La scrivo una mail.",
-            "wrong": "La",
-            "fix": "Le"
+            "q": "Domani la scrivo una mail.",
+            "wrong": "la",
+            "fix": "le"
           },
           {
-            "q": "Li regalo un libro.",
-            "wrong": "Li",
-            "fix": "Gli"
+            "q": "Per il compleanno li regalo un libro.",
+            "wrong": "li",
+            "fix": "gli"
           },
           {
             "q": "Te porto una buona notizia.",
@@ -13562,9 +13563,9 @@ const TEST_STRUCTURES = [
             "fix": "Vi"
           },
           {
-            "q": "La rispondo subito.",
-            "wrong": "La",
-            "fix": "Le"
+            "q": "Appena posso la rispondo.",
+            "wrong": "la",
+            "fix": "le"
           },
           {
             "q": "Ce mandano una mail.",
@@ -13572,19 +13573,19 @@ const TEST_STRUCTURES = [
             "fix": "Ci"
           },
           {
-            "q": "Le spiego la regola ai ragazzi.",
-            "wrong": "Le",
-            "fix": "Gli"
+            "q": "In classe le spiego la regola ai ragazzi.",
+            "wrong": "le",
+            "fix": "gli"
           },
           {
-            "q": "Lo presto la macchina.",
-            "wrong": "Lo",
-            "fix": "Gli"
+            "q": "Ogni tanto lo presto la macchina.",
+            "wrong": "lo",
+            "fix": "gli"
           },
           {
-            "q": "Le offro un caffè a Marco.",
-            "wrong": "Le",
-            "fix": "Gli"
+            "q": "Dopo pranzo le offro un caffè a Marco.",
+            "wrong": "le",
+            "fix": "gli"
           }
         ]
       },
@@ -13796,7 +13797,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata nella frase.",
+        "instr": "Clicca la parola sbagliata.",
         "items": [
           {
             "q": "Mi lo dai domani?",
@@ -13853,12 +13854,12 @@ const TEST_STRUCTURES = [
       {
         "type": "Composizione",
         "fmt": "ordina",
-        "instr": "Clicca le parole nell'ordine giusto per formare la frase.",
+        "instr": "Clicca le parole nell'ordine giusto.",
         "items": [
           {
             "q": "Il pronome combinato va prima del verbo.",
             "sol": [
-              "Me",
+              "me",
               "lo",
               "dai"
             ]
@@ -13866,7 +13867,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Attenzione all'ordine dei due pronomi.",
             "sol": [
-              "Te",
+              "te",
               "la",
               "porto"
             ]
@@ -13874,7 +13875,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Con i tempi composti il pronome resta prima.",
             "sol": [
-              "Glielo",
+              "glielo",
               "ho",
               "detto"
             ]
@@ -13882,7 +13883,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Il pronome indiretto viene per primo.",
             "sol": [
-              "Ce",
+              "ce",
               "li",
               "mandano"
             ]
@@ -13890,7 +13891,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Con «ne» vale la stessa regola.",
             "sol": [
-              "Ve",
+              "ve",
               "ne",
               "parlo"
             ]
@@ -13898,7 +13899,7 @@ const TEST_STRUCTURES = [
           {
             "q": "All'imperativo negativo il pronome sta prima.",
             "sol": [
-              "Non",
+              "non",
               "me",
               "lo",
               "dare"
@@ -13907,7 +13908,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Il participio si accorda con il pronome diretto.",
             "sol": [
-              "Te",
+              "te",
               "li",
               "ho",
               "comprati"
@@ -13916,7 +13917,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Attenzione all'accordo del participio.",
             "sol": [
-              "Gliele",
+              "gliele",
               "abbiamo",
               "spedite"
             ]
@@ -13924,7 +13925,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Il pronome combinato precede il verbo.",
             "sol": [
-              "Me",
+              "me",
               "ne",
               "ha",
               "parlato"
@@ -13933,7 +13934,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Con «lo» davanti a vocale si usa l'apostrofo.",
             "sol": [
-              "Ce",
+              "ce",
               "l'ha",
               "detto"
             ]
@@ -14219,7 +14220,7 @@ const TEST_STRUCTURES = [
           {
             "q": "I pronomi restano prima del verbo.",
             "sol": [
-              "Me",
+              "me",
               "ne",
               "vado",
               "ora"
@@ -14228,7 +14229,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Attenzione all'ordine delle particelle.",
             "sol": [
-              "Non",
+              "non",
               "ce",
               "la",
               "faccio"
@@ -14237,7 +14238,7 @@ const TEST_STRUCTURES = [
           {
             "q": "La negazione sta all'inizio.",
             "sol": [
-              "Non",
+              "non",
               "me",
               "ne",
               "pento"
@@ -14246,7 +14247,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Al passato l'ausiliare è essere.",
             "sol": [
-              "Te",
+              "te",
               "ne",
               "sei",
               "andato"
@@ -14255,16 +14256,16 @@ const TEST_STRUCTURES = [
           {
             "q": "L'ordine è fisso.",
             "sol": [
-              "Ce",
+              "ce",
               "la",
               "siamo",
               "presa"
             ]
           },
           {
-            "q": "Con «farcela» l ordine è fisso.",
+            "q": "Con «farcela» l'ordine è fisso.",
             "sol": [
-              "Ce",
+              "ce",
               "la",
               "fai",
               "da",
@@ -14274,7 +14275,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Il pronome precede il verbo.",
             "sol": [
-              "Se",
+              "se",
               "ne",
               "vergogna",
               "molto"
@@ -14283,7 +14284,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Attenzione alla posizione.",
             "sol": [
-              "Ce",
+              "ce",
               "ne",
               "siamo",
               "pentiti"
@@ -14292,7 +14293,7 @@ const TEST_STRUCTURES = [
           {
             "q": "L'ordine delle particelle è obbligato.",
             "sol": [
-              "Ve",
+              "ve",
               "la",
               "prendete",
               "con",
@@ -14302,7 +14303,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Il pronome resta prima.",
             "sol": [
-              "Se",
+              "se",
               "ne",
               "stanno",
               "zitti"
@@ -16177,57 +16178,57 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola di troppo o sbagliata nel superlativo irregolare.",
+        "instr": "Clicca la parola di troppo.",
         "items": [
           {
-            "q": "Questo caffè è il più ottimo del bar.",
-            "wrong": "più",
-            "fix": "togliere «più»: «ottimo» è già superlativo"
+            "q": "L'anno scorso è stato molto pessimo, il più difficile di sempre.",
+            "wrong": "molto",
+            "fix": "togliere «molto»"
           },
           {
-            "q": "È la più pessima idea che abbia sentito.",
-            "wrong": "più",
-            "fix": "togliere «più»: «pessima» è già superlativo"
+            "q": "Il servizio è assai ottimo, anche se il locale è il più caro della zona.",
+            "wrong": "assai",
+            "fix": "togliere «assai»"
           },
           {
-            "q": "Ha raggiunto il più massimo punteggio.",
+            "q": "Ha ottenuto il più massimo punteggio della classe.",
             "wrong": "più",
-            "fix": "togliere «più»: «massimo» è già superlativo"
-          },
-          {
-            "q": "Non ha fatto il meno minimo sforzo.",
-            "wrong": "meno",
-            "fix": "togliere «meno»: «minimo» è già superlativo"
+            "fix": "togliere «più»"
           },
           {
             "q": "Mio fratello più maggiore vive a Roma.",
             "wrong": "più",
-            "fix": "togliere «più»: «maggiore» è già comparativo"
+            "fix": "togliere «più»"
           },
           {
             "q": "È la sorella più minore della famiglia.",
             "wrong": "più",
-            "fix": "togliere «più»: «minore» è già comparativo"
+            "fix": "togliere «più»"
           },
           {
-            "q": "Questa torta è buonissima ottima.",
-            "wrong": "buonissima",
-            "fix": "togliere «buonissima»: basta «ottima»"
+            "q": "La dose è molto minima, ben più bassa del previsto.",
+            "wrong": "molto",
+            "fix": "togliere «molto»"
           },
           {
-            "q": "Ha ottenuto risultati massimissimi.",
-            "wrong": "massimissimi",
-            "fix": "massimi"
-          },
-          {
-            "q": "Non ho la più minima idea di cosa dire.",
+            "q": "Il pranzo di domenica era più ottimo.",
             "wrong": "più",
-            "fix": "togliere «più»: «minima» è già superlativo"
+            "fix": "togliere «più»"
           },
           {
-            "q": "È stato un anno pessimissimo per l'azienda.",
-            "wrong": "pessimissimo",
-            "fix": "pessimo"
+            "q": "Non ha fatto il meno minimo sforzo, pur essendo il più giovane.",
+            "wrong": "meno",
+            "fix": "togliere «meno»"
+          },
+          {
+            "q": "Ieri il caldo ha toccato il più massimo storico.",
+            "wrong": "più",
+            "fix": "togliere «più»"
+          },
+          {
+            "q": "La sua proposta è molto pessima, peggiore di tutte.",
+            "wrong": "molto",
+            "fix": "togliere «molto»"
           }
         ]
       },
@@ -16440,7 +16441,7 @@ const TEST_STRUCTURES = [
         "instr": "Clicca il relativo sbagliato.",
         "items": [
           {
-            "q": "La società per che lavoro è francese.",
+            "q": "Anche la società per che lavoro è francese.",
             "wrong": "che",
             "fix": "cui"
           },
@@ -16455,17 +16456,17 @@ const TEST_STRUCTURES = [
             "fix": "cui"
           },
           {
-            "q": "Il ragazzo che padre conosco è simpatico.",
-            "wrong": "che",
-            "fix": "il cui"
+            "q": "Il ragazzo il quale padre conosco è simpatico.",
+            "wrong": "quale",
+            "fix": "cui"
           },
           {
-            "q": "Il tema di che discutiamo è complesso.",
+            "q": "Non capisco il tema di che discutiamo.",
             "wrong": "che",
             "fix": "cui"
           },
           {
-            "q": "La persona con che collaboro è brava.",
+            "q": "La nuova persona con che collaboro è brava.",
             "wrong": "che",
             "fix": "cui"
           },
@@ -16475,19 +16476,19 @@ const TEST_STRUCTURES = [
             "fix": "la cui"
           },
           {
-            "q": "Il momento da che aspetto è vicino.",
+            "q": "La persona da che aspetto una risposta è in ritardo.",
             "wrong": "che",
             "fix": "cui"
           },
           {
-            "q": "La ragione per che ho rifiutato è ovvia.",
+            "q": "Adesso la ragione per che ho rifiutato è ovvia.",
             "wrong": "che",
             "fix": "cui"
           },
           {
-            "q": "Lo scrittore che romanzi amo è russo.",
-            "wrong": "che",
-            "fix": "i cui"
+            "q": "Conosco lo scrittore i quali romanzi amo.",
+            "wrong": "quali",
+            "fix": "cui"
           }
         ]
       },
@@ -16606,7 +16607,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Con «prendersela» le particelle non si separano.",
             "sol": [
-              "Me",
+              "me",
               "la",
               "sono",
               "presa"
@@ -16615,7 +16616,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Con «rendersene conto» la sequenza è fissa.",
             "sol": [
-              "Se",
+              "se",
               "ne",
               "rende",
               "conto"
@@ -16624,16 +16625,16 @@ const TEST_STRUCTURES = [
           {
             "q": "Con «avercela» la sequenza è obbligata.",
             "sol": [
-              "Ce",
+              "ce",
               "l'ho",
               "con",
               "lui"
             ]
           },
           {
-            "q": "Con «prendersela comoda» l ordine non cambia.",
+            "q": "Con «prendersela comoda» l'ordine non cambia.",
             "sol": [
-              "Se",
+              "se",
               "la",
               "prende",
               "comoda"
@@ -16642,7 +16643,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Con «mettercela tutta» le particelle sono fisse.",
             "sol": [
-              "Ce",
+              "ce",
               "la",
               "metto",
               "tutta"
@@ -16651,7 +16652,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Con «intendersene» la sequenza non cambia.",
             "sol": [
-              "Te",
+              "te",
               "ne",
               "intendi",
               "poco"
@@ -16660,7 +16661,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Con «andarsene» le particelle non si separano.",
             "sol": [
-              "Se",
+              "se",
               "ne",
               "sono",
               "andati"
@@ -16669,7 +16670,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Con «passarsela» il pronome resta davanti.",
             "sol": [
-              "Se",
+              "se",
               "la",
               "passa",
               "bene"
@@ -16678,7 +16679,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Con «vantarsene» la particella segue.",
             "sol": [
-              "Ve",
+              "ve",
               "ne",
               "vantate",
               "troppo"
@@ -16687,7 +16688,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Con «rimetterci» la sequenza è fissa.",
             "sol": [
-              "Ci",
+              "ci",
               "ho",
               "rimesso",
               "molto"
@@ -16819,7 +16820,8 @@ const TEST_STRUCTURES = [
           },
           {
             "q": "Ci l'ha con tutto il reparto.",
-            "wrong": "Ci","fix": "Ce"
+            "wrong": "Ci",
+            "fix": "Ce"
           },
           {
             "q": "Lei se l'ha passata brutta.",
@@ -16890,7 +16892,7 @@ const TEST_STRUCTURES = [
             ]
           },
           {
-            "q": "___ potuto aiutarti. (tu – avere)",
+            "q": "___ potuto aiutarmi. (tu – avere)",
             "a": "Avresti",
             "no": [
               "Avereste",
@@ -16960,54 +16962,54 @@ const TEST_STRUCTURES = [
         "instr": "Clicca il verbo sbagliato: l'azione non si è realizzata.",
         "items": [
           {
-            "q": "Vorrei aiutarti ieri, ma non c'ero.",
-            "wrong": "Vorrei",
-            "fix": "Avrei voluto"
+            "q": "Ieri pomeriggio vorrei aiutarti, ma non c'ero.",
+            "wrong": "vorrei",
+            "fix": "avrei potuto"
           },
           {
-            "q": "Dovremmo consegnare il progetto ieri.",
-            "wrong": "Dovremmo",
-            "fix": "Avremmo dovuto"
+            "q": "Secondo il piano dovremmo consegnare il progetto ieri.",
+            "wrong": "dovremmo",
+            "fix": "avremmo dovuto"
           },
           {
-            "q": "Verrebbe alla festa, ma era malato.",
-            "wrong": "Verrebbe",
-            "fix": "Sarebbe venuto"
+            "q": "Il collega verrebbe alla festa, ma era malato.",
+            "wrong": "verrebbe",
+            "fix": "sarebbe venuto"
           },
           {
-            "q": "Potresti avvisarmi, invece hai taciuto.",
-            "wrong": "Potresti",
-            "fix": "Avresti potuto"
+            "q": "In quel caso potresti avvisarmi, invece hai taciuto.",
+            "wrong": "potresti",
+            "fix": "avresti potuto"
           },
           {
-            "q": "Partirebbero prima, ma pioveva.",
-            "wrong": "Partirebbero",
-            "fix": "Sarebbero partite"
+            "q": "Le ragazze partirebbero prima, ma pioveva.",
+            "wrong": "partirebbero",
+            "fix": "sarebbero partite"
           },
           {
-            "q": "Preferireste restare, invece siete usciti.",
-            "wrong": "Preferireste",
-            "fix": "Avreste preferito"
+            "q": "Probabilmente preferireste restare, invece siete usciti.",
+            "wrong": "preferireste",
+            "fix": "avreste preferito"
           },
           {
-            "q": "Arriverebbe in tempo, ma c'era traffico.",
-            "wrong": "Arriverebbe",
-            "fix": "Sarebbe arrivata"
+            "q": "La dottoressa arriverebbe in tempo, ma c'era traffico.",
+            "wrong": "arriverebbe",
+            "fix": "sarebbe arrivata"
           },
           {
-            "q": "Chiamerei prima, ma non avevo credito.",
-            "wrong": "Chiamerei",
-            "fix": "Avrei chiamato"
+            "q": "Ti chiamerei prima, ma non avevo credito.",
+            "wrong": "chiamerei",
+            "fix": "avrei chiamato"
           },
           {
-            "q": "Resteremmo volentieri, ma era tardi.",
-            "wrong": "Resteremmo",
-            "fix": "Saremmo rimasti"
+            "q": "Volentieri resteremmo ancora, ma era tardi.",
+            "wrong": "resteremmo",
+            "fix": "saremmo rimasti"
           },
           {
-            "q": "Scriverebbero subito, invece hanno tardato.",
-            "wrong": "Scriverebbero",
-            "fix": "Avrebbero scritto"
+            "q": "I clienti scriverebbero subito, invece hanno tardato.",
+            "wrong": "scriverebbero",
+            "fix": "avrebbero scritto"
           }
         ]
       },
@@ -17055,9 +17057,9 @@ const TEST_STRUCTURES = [
           {
             "q": "Speravano di vincere, non è successo. →",
             "options": [
-              "Avrebbero sperato di vincere.",
-              "Spererebbero di vincere.",
-              "Avessero sperato di vincere."
+              "Avrebbero voluto vincere.",
+              "Vorrebbero vincere.",
+              "Avessero voluto vincere."
             ],
             "answer": 0
           },
@@ -17275,95 +17277,95 @@ const TEST_STRUCTURES = [
       {
         "type": "Trasformazione",
         "fmt": "buco",
-        "instr": "Trasforma dopo la congiunzione indicata.",
+        "instr": "Unisci le due parti con la congiunzione indicata.",
         "items": [
           {
-            "q": "Lui ha ragione. (benché)",
+            "q": "Lui ha ragione, ma non insiste. (benché)",
             "options": [
-              "Benché abbia ragione…",
-              "Benché ha ragione…",
-              "Benché avesse ragione…"
+              "Benché abbia ragione, non insiste.",
+              "Benché ha ragione, non insiste.",
+              "Benché avesse ragione, non insiste."
             ],
             "answer": 0
           },
           {
-            "q": "Loro sono in ritardo. (nonostante)",
+            "q": "Loro sono in ritardo, ma nessuno protesta. (nonostante)",
             "options": [
-              "Nonostante siano in ritardo…",
-              "Nonostante sono in ritardo…",
-              "Nonostante fossero in ritardo…"
+              "Nonostante siano in ritardo, nessuno protesta.",
+              "Nonostante sono in ritardo, nessuno protesta.",
+              "Nonostante fossero in ritardo, nessuno protesta."
             ],
             "answer": 0
           },
           {
-            "q": "Tu fai il possibile. (affinché)",
+            "q": "Tu fai il possibile: te lo dico. (affinché)",
             "options": [
-              "Affinché tu faccia il possibile…",
-              "Affinché tu fai il possibile…",
-              "Affinché tu facessi il possibile…"
+              "Te lo dico affinché tu faccia il possibile.",
+              "Te lo dico affinché tu fai il possibile.",
+              "Te lo dico affinché tu facessi il possibile."
             ],
             "answer": 0
           },
           {
-            "q": "Lei va in ufficio. (prima che)",
+            "q": "Lei va in ufficio: la chiamo. (prima che)",
             "options": [
-              "Prima che vada in ufficio…",
-              "Prima che va in ufficio…",
-              "Prima che andasse in ufficio…"
+              "La chiamo prima che vada in ufficio.",
+              "La chiamo prima che va in ufficio.",
+              "La chiamo prima che andasse in ufficio."
             ],
             "answer": 0
           },
           {
-            "q": "Voi dite la verità. (a patto che)",
+            "q": "Voi dite la verità: vi credo. (a patto che)",
             "options": [
-              "A patto che diciate la verità…",
-              "A patto che dite la verità…",
-              "A patto che diceste la verità…"
+              "Vi credo a patto che diciate la verità.",
+              "Vi credo a patto che dite la verità.",
+              "Vi credo a patto che diceste la verità."
             ],
             "answer": 0
           },
           {
-            "q": "Loro vengono presto. (purché)",
+            "q": "Loro vengono presto: li aspetto. (purché)",
             "options": [
-              "Purché vengano presto…",
-              "Purché vengono presto…",
-              "Purché venissero presto…"
+              "Li aspetto purché vengano presto.",
+              "Li aspetto purché vengono presto.",
+              "Li aspetto purché venissero presto."
             ],
             "answer": 0
           },
           {
-            "q": "Noi possiamo entrare. (sebbene)",
+            "q": "Noi possiamo entrare, ma restiamo fuori. (sebbene)",
             "options": [
-              "Sebbene possiamo entrare…",
-              "Sebbene potiamo entrare…",
-              "Sebbene potessimo entrare…"
+              "Sebbene possiamo entrare, restiamo fuori.",
+              "Sebbene potiamo entrare, restiamo fuori.",
+              "Sebbene potessimo entrare, restiamo fuori."
             ],
             "answer": 0
           },
           {
-            "q": "Tu sai tutto. (a meno che non)",
+            "q": "Tu sai tutto: non ti spiego niente. (a meno che non)",
             "options": [
-              "A meno che tu non sappia tutto…",
-              "A meno che tu non sai tutto…",
-              "A meno che tu non sapessi tutto…"
+              "Non ti spiego niente, a meno che tu non sappia tutto.",
+              "Non ti spiego niente, a meno che tu non sai tutto.",
+              "Non ti spiego niente, a meno che tu non sapessi tutto."
             ],
             "answer": 0
           },
           {
-            "q": "Lui sta bene. (purché)",
+            "q": "Lui sta bene: parte domani. (purché)",
             "options": [
-              "Purché stia bene…",
-              "Purché sta bene…",
-              "Purché stesse bene…"
+              "Parte domani purché stia bene.",
+              "Parte domani purché sta bene.",
+              "Parte domani purché stesse bene."
             ],
             "answer": 0
           },
           {
-            "q": "Loro devono rientrare. (nel caso in cui)",
+            "q": "Loro devono rientrare: avvisami. (nel caso in cui)",
             "options": [
-              "Nel caso in cui debbano rientrare…",
-              "Nel caso in cui devono rientrare…",
-              "Nel caso in cui devessero rientrare…"
+              "Avvisami nel caso in cui debbano rientrare.",
+              "Avvisami nel caso in cui devono rientrare.",
+              "Avvisami nel caso in cui devessero rientrare."
             ],
             "answer": 0
           }
@@ -17517,7 +17519,8 @@ const TEST_STRUCTURES = [
           },
           {
             "q": "Trovarono il tesoro e lo esponevano al museo.",
-            "wrong": "esponevano","fix": "esposero"
+            "wrong": "esponevano",
+            "fix": "esposero"
           },
           {
             "q": "Il poeta scrisse le rime e le pubblicava a Venezia.",
@@ -17740,52 +17743,52 @@ const TEST_STRUCTURES = [
         "instr": "Clicca il verbo che dovrebbe essere al congiuntivo imperfetto.",
         "items": [
           {
-            "q": "Mi illudevo che lui cambiava idea.",
+            "q": "Mi illudevo che lui cambiava.",
             "wrong": "cambiava",
             "fix": "cambiasse"
           },
           {
-            "q": "Ignoravo che loro si conoscevano già.",
+            "q": "Ignoravo che loro si conoscevano già da anni.",
             "wrong": "conoscevano",
             "fix": "conoscessero"
           },
           {
-            "q": "Desideravo che tu tornavi presto.",
+            "q": "Desideravo che tu tornavi presto a casa.",
             "wrong": "tornavi",
             "fix": "tornassi"
           },
           {
-            "q": "Preferivo che voi guidavate voi.",
+            "q": "Preferivo che guidavate voi stasera.",
             "wrong": "guidavate",
             "fix": "guidaste"
           },
           {
-            "q": "Supponevo che noi vincevamo facilmente.",
+            "q": "Supponevo che vincevamo facilmente la partita.",
             "wrong": "vincevamo",
             "fix": "vincessimo"
           },
           {
-            "q": "Sospettavo che lei nascondeva qualcosa.",
+            "q": "Sospettavo che nascondeva qualcosa di importante.",
             "wrong": "nascondeva",
             "fix": "nascondesse"
           },
           {
-            "q": "Pareva che l'ascensore funzionava male.",
+            "q": "Pareva che funzionava male l'ascensore del palazzo.",
             "wrong": "funzionava",
             "fix": "funzionasse"
           },
           {
-            "q": "Avevo paura che loro sbagliavano strada.",
+            "q": "Avevo paura che sbagliavano strada di nuovo.",
             "wrong": "sbagliavano",
             "fix": "sbagliassero"
           },
           {
-            "q": "Insistevo perché tu firmavi subito.",
+            "q": "Insistevo perché firmavi subito il documento.",
             "wrong": "firmavi",
             "fix": "firmassi"
           },
           {
-            "q": "Non immaginavo che lui rinunciava così.",
+            "q": "Non immaginavo che rinunciava così in fretta.",
             "wrong": "rinunciava",
             "fix": "rinunciasse"
           }
@@ -18538,7 +18541,7 @@ const TEST_STRUCTURES = [
             "fix": "venissi"
           },
           {
-            "q": "Mi sembra che ieri fosse successo qualcosa.",
+            "q": "Credo che domani fosse festa in paese.",
             "wrong": "fosse",
             "fix": "sia"
           },
@@ -18568,7 +18571,7 @@ const TEST_STRUCTURES = [
             "fix": "arrivassimo"
           },
           {
-            "q": "Immagino che allora tu sia stato stanco.",
+            "q": "Immaginavo che allora tu sia stato stanco.",
             "wrong": "sia",
             "fix": "fossi"
           }
@@ -18794,7 +18797,7 @@ const TEST_STRUCTURES = [
             "fix": "avessi"
           },
           {
-            "q": "Se avrebbe controllato i conti, non avrebbe sbagliato.",
+            "q": "Se avrebbe controllato i conti, l'errore sarebbe emerso subito.",
             "wrong": "avrebbe",
             "fix": "avesse"
           },
@@ -19305,7 +19308,7 @@ const TEST_STRUCTURES = [
         "instr": "Clicca il relativo composto con l'accordo sbagliato.",
         "items": [
           {
-            "q": "Il responsabile, alla quale ho scritto, è assente.",
+            "q": "Il responsabile del reparto, alla quale ho scritto, è assente.",
             "wrong": "alla",
             "fix": "al"
           },
@@ -19315,7 +19318,7 @@ const TEST_STRUCTURES = [
             "fix": "alla"
           },
           {
-            "q": "I tecnici, alle quali ho telefonato, arrivano.",
+            "q": "Anche i tecnici, alle quali ho telefonato, arrivano.",
             "wrong": "alle",
             "fix": "ai"
           },
@@ -19325,17 +19328,17 @@ const TEST_STRUCTURES = [
             "fix": "sulle"
           },
           {
-            "q": "Il piano, alla quale lavoriamo, è ambizioso.",
+            "q": "Il piano di lavoro, alla quale lavoriamo, è ambizioso.",
             "wrong": "alla",
             "fix": "al"
           },
           {
-            "q": "La ditta, dal quale dipendiamo, è estera.",
+            "q": "La piccola ditta, dal quale dipendiamo, è estera.",
             "wrong": "dal",
             "fix": "dalla"
           },
           {
-            "q": "Gli attrezzi, con le quali lavoro, sono vecchi.",
+            "q": "Gli attrezzi da giardino, con le quali lavoro, sono vecchi.",
             "wrong": "le",
             "fix": "i"
           },
@@ -19345,12 +19348,12 @@ const TEST_STRUCTURES = [
             "fix": "dalla"
           },
           {
-            "q": "I documenti, delle quali parliamo, sono qui.",
+            "q": "Tutti i documenti, delle quali parliamo, sono qui.",
             "wrong": "delle",
             "fix": "dei"
           },
           {
-            "q": "L'assemblea, al quale ho partecipato, è finita.",
+            "q": "L'assemblea di ieri, al quale ho partecipato, è finita.",
             "wrong": "al",
             "fix": "alla"
           }
@@ -19823,37 +19826,37 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola che non va con il gerundio.",
+        "instr": "Qui ci vuole il gerundio: clicca il verbo che ha la forma sbagliata.",
         "items": [
           {
-            "q": "Con viaggiando spesso, impari le lingue.",
-            "wrong": "Con",
-            "fix": "(togliere «con»: il gerundio non vuole preposizione)"
+            "q": "Si imparano le lingue viaggiare spesso.",
+            "wrong": "viaggiare",
+            "fix": "viaggiando"
           },
           {
-            "q": "Nel scendendo le scale, sono scivolato.",
-            "wrong": "Nel",
-            "fix": "(togliere «nel»)"
+            "q": "Scendere le scale di corsa, sono scivolato.",
+            "wrong": "Scendere",
+            "fix": "Scendendo"
           },
           {
-            "q": "Salire di corsa, mi manca il fiato.",
-            "wrong": "Salire",
-            "fix": "Salendo"
+            "q": "Mi manca il fiato salire con le valigie.",
+            "wrong": "salire",
+            "fix": "salendo"
           },
           {
-            "q": "Per bevendo poca acqua, ti disidrati.",
-            "wrong": "Per",
-            "fix": "(togliere «per»)"
+            "q": "Bere poca acqua, ci si disidrata.",
+            "wrong": "Bere",
+            "fix": "Bevendo"
           },
           {
-            "q": "Camminare tutti i giorni, si dimagrisce.",
-            "wrong": "Camminare",
-            "fix": "Camminando"
+            "q": "Si dimagrisce camminare tutti i giorni.",
+            "wrong": "camminare",
+            "fix": "camminando"
           },
           {
-            "q": "Dopo mangiando troppo, mi sento male.",
-            "wrong": "Dopo",
-            "fix": "(togliere «dopo»)"
+            "q": "Mi sento male mangiare troppo in fretta.",
+            "wrong": "mangiare",
+            "fix": "mangiando"
           },
           {
             "q": "Dormire poco, si lavora male.",
@@ -19861,14 +19864,14 @@ const TEST_STRUCTURES = [
             "fix": "Dormendo"
           },
           {
-            "q": "Con ridendo troppo, mi è venuto mal di pancia.",
-            "wrong": "Con",
-            "fix": "(togliere «con»)"
+            "q": "Mi è venuto mal di pancia ridere a lungo.",
+            "wrong": "ridere",
+            "fix": "ridendo"
           },
           {
-            "q": "Perdere il treno, sono arrivato tardi.",
-            "wrong": "Perdere",
-            "fix": "Perdendo"
+            "q": "Sono arrivato tardi perdere il treno.",
+            "wrong": "perdere",
+            "fix": "perdendo"
           },
           {
             "q": "Uscire senza ombrello, mi sono bagnato.",
@@ -20025,11 +20028,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "La macchina da presa passa ___ la folla.",
+            "q": "La macchina da presa passa ___ il tunnel, da un capo all'altro.",
             "options": [
               "attraverso",
               "presso",
-              "oltre"
+              "lungo"
             ],
             "answer": 0
           },
@@ -20083,7 +20086,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola che non regge la locuzione di luogo.",
+        "instr": "Clicca l'articolo o la preposizione che la locuzione non regge.",
         "items": [
           {
             "q": "La cinepresa si muove lungo del corridoio.",
@@ -20346,17 +20349,17 @@ const TEST_STRUCTURES = [
         "instr": "Clicca la forma sbagliata dell'infinito.",
         "items": [
           {
-            "q": "Dopo cenare, siamo usciti a passeggiare.",
+            "q": "Ieri dopo cenare, siamo usciti a passeggiare.",
             "wrong": "cenare",
             "fix": "aver cenato"
           },
           {
-            "q": "Il correndo al mattino mi rilassa.",
+            "q": "Anche il correndo al mattino mi rilassa.",
             "wrong": "correndo",
             "fix": "correre"
           },
           {
-            "q": "Dopo discutere, hanno trovato un accordo.",
+            "q": "Solo dopo discutere, hanno trovato un accordo.",
             "wrong": "discutere",
             "fix": "aver discusso"
           },
@@ -20366,7 +20369,7 @@ const TEST_STRUCTURES = [
             "fix": "dipingere"
           },
           {
-            "q": "Dopo alzarsi, ha aperto le finestre.",
+            "q": "Ha aperto le finestre dopo alzarsi.",
             "wrong": "alzarsi",
             "fix": "essersi alzato"
           },
@@ -20381,12 +20384,12 @@ const TEST_STRUCTURES = [
             "fix": "uscire"
           },
           {
-            "q": "Dopo rientrare, ha chiamato la madre.",
+            "q": "Subito dopo rientrare, ha chiamato la madre.",
             "wrong": "rientrare",
             "fix": "essere rientrato"
           },
           {
-            "q": "Il nuotando fa bene alla schiena.",
+            "q": "Secondo i medici il nuotando fa bene.",
             "wrong": "nuotando",
             "fix": "nuotare"
           },
@@ -21126,7 +21129,7 @@ const TEST_STRUCTURES = [
         "instr": "Clicca il verbo con il modo sbagliato.",
         "items": [
           {
-            "q": "Cerco un collaboratore che parla il cinese.",
+            "q": "Cerco da tempo un collaboratore che parla il cinese.",
             "wrong": "parla",
             "fix": "parli"
           },
@@ -21136,7 +21139,7 @@ const TEST_STRUCTURES = [
             "fix": "parla"
           },
           {
-            "q": "Voglio una casa che ha il giardino, ma non l'ho trovata.",
+            "q": "Voglio da anni una casa che ha il giardino, ma non l'ho trovata.",
             "wrong": "ha",
             "fix": "abbia"
           },
@@ -21156,7 +21159,7 @@ const TEST_STRUCTURES = [
             "fix": "sa"
           },
           {
-            "q": "Cerco un corso che comincia a settembre, se esiste.",
+            "q": "Cerco un buon corso che comincia a settembre, se esiste.",
             "wrong": "comincia",
             "fix": "cominci"
           },
@@ -21166,12 +21169,12 @@ const TEST_STRUCTURES = [
             "fix": "comincia"
           },
           {
-            "q": "È il solo amico che mi capisce davvero fino in fondo.",
-            "wrong": "capisce",
-            "fix": "capisca"
+            "q": "Non c'è niente che mi piace in questo menù.",
+            "wrong": "piace",
+            "fix": "piaccia"
           },
           {
-            "q": "Ho una vicina che sia molto gentile.",
+            "q": "Ho una vicina di casa che sia molto gentile.",
             "wrong": "sia",
             "fix": "è"
           }
@@ -21291,7 +21294,7 @@ const TEST_STRUCTURES = [
           {
             "q": "L'infinito segue subito «fare».",
             "sol": [
-              "Ho",
+              "ho",
               "fatto",
               "riparare",
               "la",
@@ -21301,7 +21304,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Con «farsi» il pronome viene prima.",
             "sol": [
-              "Mi",
+              "mi",
               "sono",
               "fatto",
               "tagliare",
@@ -21312,7 +21315,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Il pronome precede il verbo.",
             "sol": [
-              "Gliel'ho",
+              "gliel'ho",
               "fatto",
               "vedere"
             ]
@@ -21320,7 +21323,7 @@ const TEST_STRUCTURES = [
           {
             "q": "L'ordine è obbligato.",
             "sol": [
-              "Fammi",
+              "fammi",
               "vedere",
               "la",
               "foto"
@@ -21329,7 +21332,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Con «lasciare» vale la stessa regola.",
             "sol": [
-              "Lascia",
+              "lascia",
               "stare",
               "le",
               "mie",
@@ -21339,7 +21342,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Il pronome si attacca all'imperativo.",
             "sol": [
-              "Fatelo",
+              "fatelo",
               "entrare",
               "subito"
             ]
@@ -21347,7 +21350,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Attenzione alla posizione del pronome.",
             "sol": [
-              "Se",
+              "se",
               "l'è",
               "fatta",
               "prestare"
@@ -21356,7 +21359,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Il causativo regge l'infinito.",
             "sol": [
-              "Faremo",
+              "faremo",
               "costruire",
               "una",
               "casa"
@@ -21365,7 +21368,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Il pronome resta prima.",
             "sol": [
-              "Ci",
+              "ci",
               "hanno",
               "fatto",
               "aspettare",
@@ -21375,7 +21378,7 @@ const TEST_STRUCTURES = [
           {
             "q": "L'ordine delle parole è fisso.",
             "sol": [
-              "Non",
+              "non",
               "farmi",
               "ridere"
             ]
@@ -21433,11 +21436,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Non ___ preoccupare, è tutto a posto.",
+            "q": "Non ___ aspettare troppo, per favore.",
             "options": [
-              "farci",
-              "ci fare",
-              "fare ci"
+              "farmi",
+              "mi fare",
+              "fare mi"
             ],
             "answer": 0
           },
@@ -21495,9 +21498,9 @@ const TEST_STRUCTURES = [
             "fix": "sono"
           },
           {
-            "q": "L'allenatore ci ha fatti correre per un'ora.",
-            "wrong": "fatti",
-            "fix": "fatto"
+            "q": "L'allenatore ci ha fatto correndo per un'ora.",
+            "wrong": "correndo",
+            "fix": "correre"
           },
           {
             "q": "Faccia accomodata gli ospiti, prego.",
@@ -21505,7 +21508,7 @@ const TEST_STRUCTURES = [
             "fix": "accomodare"
           },
           {
-            "q": "Si hanno fatti installare il condizionatore.",
+            "q": "Si hanno fatti montare le tende nuove.",
             "wrong": "hanno",
             "fix": "sono"
           },
@@ -21545,7 +21548,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Riempimento",
         "fmt": "buco",
-        "instr": "Scegli il connettivo che esprime la relazione logica giusta.",
+        "instr": "Scegli il connettivo adatto alla relazione.",
         "items": [
           {
             "q": "L'ipotesi è suggestiva; ___, mancano prove sperimentali.",
@@ -21642,7 +21645,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Scelta",
         "fmt": "buco",
-        "instr": "Scegli il connettivo adatto al passaggio argomentativo.",
+        "instr": "Scegli il connettivo adatto alla relazione.",
         "items": [
           {
             "q": "Il romanzo è avvincente; ___ , lo stile è molto originale.",
@@ -22212,29 +22215,29 @@ const TEST_STRUCTURES = [
         "instr": "Clicca la forma implicita sbagliata.",
         "items": [
           {
-            "q": "Riciclato la carta, si salvano alberi.",
-            "wrong": "Riciclato",
-            "fix": "Riciclando"
+            "q": "Solo riciclato la carta, si salvano alberi.",
+            "wrong": "riciclato",
+            "fix": "riciclando"
           },
           {
-            "q": "Differenziato i rifiuti, si riduce lo spreco.",
-            "wrong": "Differenziato",
-            "fix": "Differenziando"
+            "q": "Anche solo differenziato i rifiuti, si riduce lo spreco.",
+            "wrong": "differenziato",
+            "fix": "differenziando"
           },
           {
-            "q": "Concludendo la riunione, la sala è rimasta vuota.",
-            "wrong": "Concludendo",
-            "fix": "Conclusa"
+            "q": "Una volta concludendo la riunione, la sala è rimasta vuota.",
+            "wrong": "concludendo",
+            "fix": "conclusa"
           },
           {
-            "q": "Consumato meno energia, la bolletta scende.",
-            "wrong": "Consumato",
-            "fix": "Consumando"
+            "q": "Anche consumato meno energia, la bolletta scende.",
+            "wrong": "consumato",
+            "fix": "consumando"
           },
           {
-            "q": "Terminando i lavori, la strada ha riaperto.",
-            "wrong": "Terminando",
-            "fix": "Terminati"
+            "q": "Una volta terminando i lavori, la strada ha riaperto.",
+            "wrong": "terminando",
+            "fix": "terminati"
           },
           {
             "q": "Camminato ogni giorno, si sta meglio.",
@@ -22242,9 +22245,9 @@ const TEST_STRUCTURES = [
             "fix": "Camminando"
           },
           {
-            "q": "Firmando il contratto, le assunzioni sono partite subito.",
-            "wrong": "Firmando",
-            "fix": "Firmato"
+            "q": "Una volta firmando il contratto, le assunzioni sono partite subito.",
+            "wrong": "firmando",
+            "fix": "firmato"
           },
           {
             "q": "Piantato più alberi, la città respira meglio.",
@@ -22257,7 +22260,7 @@ const TEST_STRUCTURES = [
             "fix": "Ricevuta"
           },
           {
-            "q": "Evitato gli sprechi, si risparmia molto.",
+            "q": "Evitato semplicemente gli sprechi, si risparmia molto.",
             "wrong": "Evitato",
             "fix": "Evitando"
           }
@@ -23548,7 +23551,8 @@ const TEST_STRUCTURES = [
           },
           {
             "q": "Aspetta qui finché non suonerebbe la campana.",
-            "wrong": "suonerebbe","fix": "suona"
+            "wrong": "suonerebbe",
+            "fix": "suona"
           },
           {
             "q": "Prima che voi decidete, parliamone.",
@@ -24337,7 +24341,7 @@ const TEST_STRUCTURES = [
             "fix": "sarei"
           },
           {
-            "q": "Se sarei uscito prima, ora sarei già là.",
+            "q": "Se sarei uscito prima, adesso avrei già finito.",
             "wrong": "sarei",
             "fix": "fossi"
           }
@@ -24737,7 +24741,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Bravo davvero: ___ rovinare tutto anche meglio.",
+            "q": "Bravo davvero: non ___ rovinare tutto meglio di così.",
             "options": [
               "avresti potuto",
               "puoi",
@@ -24816,38 +24820,39 @@ const TEST_STRUCTURES = [
         "instr": "Il rimprovero riguarda il passato: clicca il verbo sbagliato.",
         "items": [
           {
-            "q": "Potresti chiamarmi ieri sera, invece niente.",
-            "wrong": "Potresti",
-            "fix": "Avresti potuto"
+            "q": "Almeno potresti chiamarmi ieri sera, invece niente.",
+            "wrong": "potresti",
+            "fix": "avresti potuto"
           },
           {
-            "q": "Dovresti controllare i dati prima di inviarli, ormai è tardi.",
-            "wrong": "Dovresti",
-            "fix": "Avresti dovuto"
+            "q": "Forse dovresti controllare i dati prima di inviarli, ormai è tardi.",
+            "wrong": "dovresti",
+            "fix": "avresti dovuto"
           },
           {
-            "q": "Puoi rovinare tutto anche meglio, complimenti.",
+            "q": "Puoi prenotare il tavolo per tempo, ormai è tutto pieno.",
             "wrong": "Puoi",
             "fix": "Avresti potuto"
           },
           {
-            "q": "Deve ammettere lo sbaglio allora, e invece tacque.",
-            "wrong": "Deve",
-            "fix": "Avrebbe dovuto"
+            "q": "A quel punto deve ammettere lo sbaglio, e invece tacque.",
+            "wrong": "deve",
+            "fix": "avrebbe dovuto"
           },
           {
-            "q": "Dobbiamo partire alle otto e siamo partiti a mezzogiorno.",
-            "wrong": "Dobbiamo",
-            "fix": "Saremmo dovuti"
+            "q": "Secondo il programma dobbiamo partire alle otto e siamo partiti a mezzogiorno.",
+            "wrong": "dobbiamo",
+            "fix": "saremmo dovuti"
           },
           {
             "q": "Doveva essere una riunione breve, ma è durata cinque ore.",
-            "wrong": "Doveva","fix": "Sarebbe dovuta"
+            "wrong": "Doveva",
+            "fix": "Sarebbe dovuta"
           },
           {
-            "q": "Spetta a loro decidere, e invece decisi io.",
-            "wrong": "Spetta",
-            "fix": "Sarebbe spettato"
+            "q": "In teoria spetta a loro decidere, e invece decisi io.",
+            "wrong": "spetta",
+            "fix": "sarebbe spettato"
           },
           {
             "q": "Bisogna avvisare il cliente, ormai ha già disdetto.",
@@ -25072,7 +25077,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola che rende la forma implicita scorretta.",
+        "instr": "Clicca la parola di troppo o sbagliata nella forma implicita.",
         "items": [
           {
             "q": "Sostiene di avendo ispezionato il magazzino.",
@@ -25486,5 +25491,308 @@ const TEST_STRUCTURES = [
       }
     ],
     "diag": true
+  },
+  {
+    "lvl": "c1",
+    "lez": [
+      "C1 L18"
+    ],
+    "title": "Comprensione: chi parla e chi agisce",
+    "exercises": [
+      {
+        "type": "Comprensione",
+        "fmt": "buco",
+        "instr": "Leggi il testo e rispondi.",
+        "testo": "Secondo quanto riferito dalla direzione, l'impianto sarebbe stato fermato la settimana precedente, e i tecnici avrebbero segnalato l'anomalia con largo anticipo.\nNel verbale si legge soltanto che l'intervento è stato disposto il giorno del sopralluogo. Non si precisa chi lo abbia autorizzato.\nL'ispettore ha chiesto di parlare con un operaio che avesse assistito alla fermata. Gli è stato risposto che il giorno prima non era presente nessuno.\nIl responsabile ha dichiarato che avrebbe consegnato la documentazione entro la settimana. A oggi il fascicolo risulta incompleto.",
+        "items": [
+          {
+            "q": "Chi dice che l'impianto era già fermo?",
+            "options": [
+              "la direzione",
+              "il verbale",
+              "l'ispettore"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Secondo chi i tecnici avrebbero segnalato l'anomalia?",
+            "options": [
+              "la direzione",
+              "il verbale",
+              "l'ispettore"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Secondo il verbale, quando è stato disposto l'intervento?",
+            "options": [
+              "il giorno del sopralluogo",
+              "la settimana precedente",
+              "il giorno prima"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il verbale dice chi ha autorizzato l'intervento?",
+            "options": [
+              "no",
+              "sì, la direzione",
+              "sì, il responsabile"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "L'ispettore aveva già individuato l'operaio?",
+            "options": [
+              "no",
+              "sì",
+              "in parte"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il testo dice chi ha risposto all'ispettore?",
+            "options": [
+              "no",
+              "la direzione",
+              "il responsabile"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "«Il giorno prima» rispetto a quando?",
+            "options": [
+              "al sopralluogo",
+              "a oggi",
+              "alla fermata"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Al momento della dichiarazione, la documentazione era già consegnata?",
+            "options": [
+              "non ancora",
+              "sì",
+              "in parte"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Chi doveva consegnare la documentazione?",
+            "options": [
+              "il responsabile",
+              "la direzione",
+              "l'ispettore"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il testo dice chi ha fermato l'impianto?",
+            "options": [
+              "no",
+              "i tecnici",
+              "la direzione"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "type": "Comprensione",
+        "fmt": "buco",
+        "instr": "Leggi il testo e rispondi.",
+        "testo": "L'incendio sarebbe divampato poco dopo le tre, e le fiamme avrebbero raggiunto il magazzino attiguo nel giro di pochi minuti. Non risultano feriti.\nSul posto è intervenuta una squadra specializzata. L'intervento si è concluso all'alba.\nUn portavoce ha assicurato che l'azienda avrebbe risarcito i danni entro trenta giorni. Ha aggiunto che il giorno seguente sarebbe stata diffusa una nota ufficiale.\nAl momento la nota non è stata pubblicata. Si ignora se l'impianto verrà riattivato.",
+        "items": [
+          {
+            "q": "L'orario dell'incendio è confermato?",
+            "options": [
+              "no",
+              "sì",
+              "in parte"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Ci sono stati feriti?",
+            "options": [
+              "no",
+              "sì",
+              "non è chiaro"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Chi è intervenuto sul posto?",
+            "options": [
+              "una squadra specializzata",
+              "i tecnici dell'azienda",
+              "il portavoce"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Quando è finito l'intervento?",
+            "options": [
+              "all'alba",
+              "dopo le tre",
+              "dopo trenta giorni"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il testo dice chi ha chiamato la squadra?",
+            "options": [
+              "no",
+              "l'azienda",
+              "il portavoce"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Chi promette il risarcimento?",
+            "options": [
+              "l'azienda",
+              "il portavoce",
+              "i tecnici"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Chi riferisce la promessa?",
+            "options": [
+              "un portavoce",
+              "l'azienda",
+              "un tecnico"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Al momento della dichiarazione, i danni erano già risarciti?",
+            "options": [
+              "non ancora",
+              "sì",
+              "in parte"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "«Il giorno seguente» rispetto a quando?",
+            "options": [
+              "alla dichiarazione",
+              "a oggi",
+              "all'incendio"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Si sa se l'impianto ripartirà?",
+            "options": [
+              "no",
+              "sì, ripartirà",
+              "no, resterà chiuso"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "type": "Comprensione",
+        "fmt": "buco",
+        "instr": "Leggi il testo e rispondi.",
+        "testo": "Si comunica che la richiesta è stata esaminata dall'ufficio competente. La documentazione risulta pervenuta oltre il termine previsto.\nL'interessato aveva dichiarato di aver inviato il modulo entro la scadenza. Non è stato possibile verificare la data di trasmissione.\nSi precisa che la decisione è stata assunta a maggioranza. Non si riporta il nome dei componenti che si sono espressi a sfavore.\nL'ufficio ha comunicato che avrebbe riesaminato il caso su richiesta scritta. Nulla risulta pervenuto a oggi.",
+        "items": [
+          {
+            "q": "Chi ha esaminato la richiesta?",
+            "options": [
+              "l'ufficio competente",
+              "l'interessato",
+              "la commissione"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il testo dice chi comunica la decisione?",
+            "options": [
+              "no",
+              "l'ufficio competente",
+              "l'interessato"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Secondo il testo, quando è arrivata la documentazione?",
+            "options": [
+              "oltre il termine",
+              "entro il termine",
+              "il giorno del termine"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Chi afferma di aver inviato il modulo entro la scadenza?",
+            "options": [
+              "l'interessato",
+              "l'ufficio",
+              "la commissione"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il testo dice chi non ha potuto fare la verifica?",
+            "options": [
+              "no",
+              "l'ufficio",
+              "l'interessato"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "La decisione è stata unanime?",
+            "options": [
+              "no",
+              "sì",
+              "in parte"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il testo dice chi ha votato contro?",
+            "options": [
+              "no",
+              "la maggioranza",
+              "l'ufficio competente"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Chi dovrebbe riesaminare il caso?",
+            "options": [
+              "l'ufficio",
+              "l'interessato",
+              "la commissione"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Al momento della comunicazione, il caso era già stato riesaminato?",
+            "options": [
+              "non ancora",
+              "sì",
+              "in parte"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Che cosa serve per ottenere il riesame?",
+            "options": [
+              "una richiesta scritta",
+              "una nuova domanda",
+              "un colloquio"
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ]
   }
 ];
