@@ -163,12 +163,18 @@ S.forEach(s => s.exercises.forEach((e, i) => {
   if (e.fmt !== 'errore') return;
   const sx = {}, dx = {};
   e.items.forEach(it => {
-    const w = Array.isArray(it.wrong) ? it.wrong[0] : it.wrong;
+    const w = Array.isArray(it.wrong) ? it.wrong[0] : String(it.wrong || '');
     const ws = (it.q || '').replace(/[.,;:!?«»"]/g, '').split(' ').filter(Boolean);
-    const p = ws.indexOf(w);
+    /* Il bersaglio può essere una locuzione raggruppata («ci sono»): cercarlo
+       con indexOf su parole singole non lo trova, e l'item sparisce dal
+       conteggio — così interi esercizi restavano fuori dal controllo. */
+    const nw = w.trim().split(/\s+/).length;
+    let p = -1;
+    for (let j = 0; j <= ws.length - nw; j++)
+      if (ws.slice(j, j + nw).join(' ') === w) { p = j; break; }
     if (p < 0) return;
     sx[p + 1] = (sx[p + 1] || 0) + 1;
-    dx[ws.length - p] = (dx[ws.length - p] || 0) + 1;
+    dx[ws.length - p - nw + 1] = (dx[ws.length - p - nw + 1] || 0) + 1;
   });
   const maxSx = Math.max(...Object.values(sx), 0);
   const maxDx = Math.max(...Object.values(dx), 0);

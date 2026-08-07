@@ -964,7 +964,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Compro delle ___ nuove.",
+            "q": "Ho stampato delle ___ bellissime.",
             "options": [
               "foto",
               "foti",
@@ -1152,52 +1152,52 @@ const TEST_STRUCTURES = [
         "instr": "Clicca la parola o la forma sbagliata.",
         "items": [
           {
-            "q": "In città c'è molti turisti.",
+            "q": "In città ci sono molti negozi ma c'è molti turisti.",
             "wrong": "c'è",
             "fix": "ci sono"
           },
           {
-            "q": "Sul tavolo c'è due piatti.",
+            "q": "Sul tavolo c'è due piatti e ci sono tre bicchieri.",
             "wrong": "c'è",
             "fix": "ci sono"
           },
           {
-            "q": "In classe c'è venti studenti.",
+            "q": "In classe c'è venti studenti ma ci sono pochi banchi.",
             "wrong": "c'è",
             "fix": "ci sono"
           },
           {
-            "q": "Qui c'è tre ristoranti.",
+            "q": "Qui ci sono tre ristoranti buoni e c'è due bar.",
             "wrong": "c'è",
             "fix": "ci sono"
           },
           {
-            "q": "In giardino c'è molti fiori.",
+            "q": "In giardino c'è molti fiori e ci sono due alberi.",
             "wrong": "c'è",
             "fix": "ci sono"
           },
           {
-            "q": "Ci sono un gatto sul divano.",
-            "wrong": "Ci sono",
-            "fix": "C'è"
-          },
-          {
-            "q": "In strada ci sono molto rumore.",
+            "q": "C'è un gatto sul divano e ci sono un cuscino.",
             "wrong": "ci sono",
             "fix": "c'è"
           },
           {
-            "q": "Nel bicchiere ci sono acqua.",
+            "q": "In strada ci sono molto rumore ma c'è poca gente.",
             "wrong": "ci sono",
             "fix": "c'è"
           },
           {
-            "q": "Sul muro ci sono un quadro.",
+            "q": "Nel bicchiere ci sono acqua e c'è del ghiaccio.",
             "wrong": "ci sono",
             "fix": "c'è"
           },
           {
-            "q": "Davanti alla casa ci sono un albero.",
+            "q": "Sul muro ci sono un quadro e c'è una mensola grande.",
+            "wrong": "ci sono",
+            "fix": "c'è"
+          },
+          {
+            "q": "Davanti alla casa ci sono un albero e c'è un cancello.",
             "wrong": "ci sono",
             "fix": "c'è"
           }
@@ -2910,11 +2910,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Parlo ___ mio fratello.",
+            "q": "Questo film parla ___ sport.",
             "options": [
-              "con",
               "di",
-              "a"
+              "a",
+              "per"
             ],
             "answer": 0
           },
@@ -4031,9 +4031,9 @@ const TEST_STRUCTURES = [
             "fix": "le"
           },
           {
-            "q": "È sette in punto.",
+            "q": "È le sette in punto.",
             "wrong": "È",
-            "fix": "Sono le"
+            "fix": "Sono"
           },
           {
             "q": "Sono i dodici e mezza.",
@@ -4259,7 +4259,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Scelta",
         "fmt": "buco",
-        "instr": "Il tempo è futuro: scegli la forma del verbo.",
+        "instr": "L'azione è futura: scegli la forma del verbo.",
         "items": [
           {
             "q": "Domani ___ il contratto. (io – firmare)",
@@ -4450,7 +4450,8 @@ const TEST_STRUCTURES = [
           }
         ]
       }
-    ]
+    ],
+    "stima": "a2"
   },
   {
     "lvl": "a",
@@ -4711,7 +4712,8 @@ const TEST_STRUCTURES = [
           }
         ]
       }
-    ]
+    ],
+    "stima": "a2"
   },
   {
     "lvl": "a2",
