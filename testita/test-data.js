@@ -1675,54 +1675,54 @@ const TEST_STRUCTURES = [
         "instr": "Clicca il verbo coniugato in modo sbagliato.",
         "items": [
           {
-            "q": "Noi guardate la televisione.",
-            "wrong": "guardate",
-            "fix": "guardiamo"
-          },
-          {
-            "q": "Mia madre cucinano molto bene.",
-            "wrong": "cucinano",
-            "fix": "cucina"
-          },
-          {
-            "q": "I miei amici gioca a calcio.",
-            "wrong": "gioca",
-            "fix": "giocano"
-          },
-          {
-            "q": "Voi ascolta la radio.",
+            "q": "Noi guardiamo la televisione e voi ascolta la radio.",
             "wrong": "ascolta",
             "fix": "ascoltate"
           },
           {
-            "q": "Il professore chiamano gli studenti.",
+            "q": "Mia madre cucinano bene ma non balla mai.",
+            "wrong": "cucinano",
+            "fix": "cucina"
+          },
+          {
+            "q": "I miei amici gioca a calcio e noi camminiamo.",
+            "wrong": "gioca",
+            "fix": "giocano"
+          },
+          {
+            "q": "Voi telefonate spesso ma Anna non chiamano mai.",
             "wrong": "chiamano",
             "fix": "chiama"
           },
           {
-            "q": "Ogni sera io telefoniamo a mia madre.",
-            "wrong": "telefoniamo",
-            "fix": "telefono"
+            "q": "Il professore chiamano gli studenti e loro entrano.",
+            "wrong": "chiamano",
+            "fix": "chiama"
           },
           {
-            "q": "Anna e Marco cammina nel parco.",
+            "q": "Io imparo il francese e tu insegna lo spagnolo.",
+            "wrong": "insegna",
+            "fix": "insegni"
+          },
+          {
+            "q": "Anna e Marco cammina nel parco e poi cenano fuori.",
             "wrong": "cammina",
             "fix": "camminano"
           },
           {
-            "q": "Domani tu paghiamo il conto.",
-            "wrong": "paghiamo",
-            "fix": "paghi"
+            "q": "Tu paghi il conto e noi lascia la mancia.",
+            "wrong": "lascia",
+            "fix": "lasciamo"
           },
           {
-            "q": "Noi impara il francese.",
-            "wrong": "impara",
-            "fix": "impariamo"
+            "q": "Le mie amiche portano i bambini e io li aspetta.",
+            "wrong": "aspetta",
+            "fix": "aspetto"
           },
           {
-            "q": "Le mie amiche porta i bambini a scuola.",
-            "wrong": "porta",
-            "fix": "portano"
+            "q": "Noi suoniamo la chitarra mentre voi disegna.",
+            "wrong": "disegna",
+            "fix": "disegnate"
           }
         ]
       },
@@ -3318,52 +3318,52 @@ const TEST_STRUCTURES = [
         "instr": "Clicca la parola con il genere sbagliato.",
         "items": [
           {
-            "q": "Maria è una brava dottore.",
+            "q": "Maria è una brava dottore e Luca un bravo infermiere.",
             "wrong": "dottore",
             "fix": "dottoressa"
           },
           {
-            "q": "Anna è la direttore della scuola.",
+            "q": "Anna è la direttore della scuola e Marco il vicepreside.",
             "wrong": "direttore",
             "fix": "direttrice"
           },
           {
-            "q": "Mia cugina Chiara è un studentessa.",
-            "wrong": "un",
-            "fix": "una"
+            "q": "Mia cugina è una studente e mio fratello un operaio.",
+            "wrong": "studente",
+            "fix": "studentessa"
           },
           {
-            "q": "Lucia e Anna sono due attore famose.",
+            "q": "Lucia e Anna sono due attore famose e i mariti due registi.",
             "wrong": "attore",
             "fix": "attrici"
           },
           {
-            "q": "Mio zio Giorgio è una cameriere.",
-            "wrong": "una",
-            "fix": "un"
+            "q": "Mio zio è un cameriera e mia zia una cuoca.",
+            "wrong": "cameriera",
+            "fix": "cameriere"
           },
           {
-            "q": "Il marito di Sara è una professore.",
-            "wrong": "una",
-            "fix": "un"
+            "q": "Il marito di Sara è un professoressa e lei una maestra.",
+            "wrong": "professoressa",
+            "fix": "professore"
           },
           {
-            "q": "Elena è una maestro famosa.",
+            "q": "Elena è una maestro famosa e Paolo un bravo medico.",
             "wrong": "maestro",
             "fix": "maestra"
           },
           {
-            "q": "Carla è una scrittore brava.",
+            "q": "Carla è una scrittore brava e suo figlio un pittore.",
             "wrong": "scrittore",
             "fix": "scrittrice"
           },
           {
-            "q": "Il fratello di Luca è una commesso.",
-            "wrong": "una",
-            "fix": "un"
+            "q": "Il fratello di Luca è un commessa e la cugina una parrucchiera.",
+            "wrong": "commessa",
+            "fix": "commesso"
           },
           {
-            "q": "Sara è una pittore famosa.",
+            "q": "Sara è una pittore famosa e suo marito un architetto.",
             "wrong": "pittore",
             "fix": "pittrice"
           }
@@ -7432,52 +7432,52 @@ const TEST_STRUCTURES = [
         "instr": "Clicca la parola sbagliata nel confronto.",
         "items": [
           {
-            "q": "Paolo è più forte che Gianni.",
+            "q": "Paolo è il più forte del gruppo ma è meno veloce che Gianni.",
             "wrong": "che",
             "fix": "di"
           },
           {
-            "q": "È più sano mangiare di bere.",
+            "q": "È più sano mangiare di bere, come dice il medico.",
             "wrong": "di",
             "fix": "che"
           },
           {
-            "q": "Sara è meno veloce che me.",
+            "q": "Sara è veloce come Anna ma è meno alta che me.",
             "wrong": "che",
             "fix": "di"
           },
           {
-            "q": "Ho più penne di matite.",
+            "q": "Ho più penne di matite, e tutte nuove.",
             "wrong": "di",
             "fix": "che"
           },
           {
-            "q": "Questo quadro è più caro che quello.",
+            "q": "Questo quadro è meno caro che quello, però è il più antico della sala.",
             "wrong": "che",
             "fix": "di"
           },
           {
-            "q": "Lei è più giovane come me.",
+            "q": "Lei è più giovane come me, anche se sembra grande.",
             "wrong": "come",
             "fix": "di"
           },
           {
-            "q": "È meglio correre di camminare.",
+            "q": "È meglio correre di camminare, dice l'allenatore.",
             "wrong": "di",
             "fix": "che"
           },
           {
-            "q": "Mio cugino è più magro che suo padre.",
+            "q": "Mio cugino è alto quanto me ma è più magro che suo padre.",
             "wrong": "che",
             "fix": "di"
           },
           {
-            "q": "Bevo più acqua di succo.",
+            "q": "Bevo più acqua di succo e non metto zucchero.",
             "wrong": "di",
             "fix": "che"
           },
           {
-            "q": "Il mare è più calmo che ieri.",
+            "q": "Il mare oggi è il più calmo dell'anno, più tranquillo che ieri.",
             "wrong": "che",
             "fix": "di"
           }
@@ -7692,54 +7692,54 @@ const TEST_STRUCTURES = [
         "instr": "Clicca il pronome diretto sbagliato.",
         "items": [
           {
-            "q": "Il vino? La bevo rosso.",
+            "q": "Il vino? La bevo rosso, e i dolci li mangio dopo.",
             "wrong": "La",
             "fix": "Lo"
           },
           {
-            "q": "Anna? Lo incontro domani.",
-            "wrong": "Lo",
-            "fix": "La"
+            "q": "Le foto le guardo dopo, ma Anna lo saluto domani.",
+            "wrong": "lo",
+            "fix": "la"
           },
           {
-            "q": "I quaderni? Le porto io.",
+            "q": "I quaderni? Le porto io, e i libri li lascio qui.",
             "wrong": "Le",
             "fix": "Li"
           },
           {
-            "q": "Le lettere? Li spedisco oggi.",
+            "q": "Le lettere le spedisco oggi, ma il pacco Li mando domani.",
             "wrong": "Li",
-            "fix": "Le"
+            "fix": "Lo"
           },
           {
-            "q": "Paolo? La ringrazio dopo.",
+            "q": "Paolo? La ringrazio dopo, e le colleghe le saluto ora.",
             "wrong": "La",
             "fix": "Lo"
           },
           {
-            "q": "La bicicletta? Lo uso ogni giorno.",
+            "q": "La bicicletta la prendo ogni giorno, ma i pattini Lo metto via.",
             "wrong": "Lo",
-            "fix": "La"
+            "fix": "Li"
           },
           {
-            "q": "I colleghi? Le avviso subito.",
+            "q": "I colleghi? Le avviso subito, e la segretaria la chiamo dopo.",
             "wrong": "Le",
             "fix": "Li"
           },
           {
-            "q": "Le mie cugine? Li vedo raramente.",
+            "q": "Le mie cugine le vedo raramente, ma mio zio Li chiamo spesso.",
             "wrong": "Li",
-            "fix": "Le"
+            "fix": "Lo"
           },
           {
-            "q": "Il tè? La preferisco freddo.",
+            "q": "Il tè? La preferisco freddo, e i biscotti li tengo qui.",
             "wrong": "La",
             "fix": "Lo"
           },
           {
-            "q": "Mia madre? Lo accompagno io.",
+            "q": "Mia madre la sento ogni giorno, ma i nonni Lo vedo di rado.",
             "wrong": "Lo",
-            "fix": "La"
+            "fix": "Li"
           }
         ]
       },
@@ -11420,17 +11420,17 @@ const TEST_STRUCTURES = [
         "instr": "Clicca la parola di troppo o sbagliata.",
         "items": [
           {
-            "q": "Da un'ora sto scrivando una relazione.",
+            "q": "Da un'ora sto scrivando una relazione e Anna sta telefonando.",
             "wrong": "scrivando",
             "fix": "scrivendo"
           },
           {
-            "q": "In stazione stiamo aspettendo il treno.",
+            "q": "In stazione stiamo aspettendo il treno mentre leggiamo.",
             "wrong": "aspettendo",
             "fix": "aspettando"
           },
           {
-            "q": "Stai guardendo la partita?",
+            "q": "Mentre tu stai dormendo, io sto guardendo la partita.",
             "wrong": "guardendo",
             "fix": "guardando"
           },
@@ -11440,32 +11440,32 @@ const TEST_STRUCTURES = [
             "fix": "Sto"
           },
           {
-            "q": "Da stamattina sta nevicanto sulle montagne.",
+            "q": "Da stamattina sta nevicanto e sta scendendo la temperatura.",
             "wrong": "nevicanto",
             "fix": "nevicando"
           },
           {
-            "q": "Stasera sto cucinendo la cena.",
+            "q": "Loro stanno bevendo un aperitivo e io sto cucinendo.",
             "wrong": "cucinendo",
             "fix": "cucinando"
           },
           {
-            "q": "Stiamo di uscire adesso.",
+            "q": "Loro stanno arrivando e noi stiamo di uscire.",
             "wrong": "di",
             "fix": "per"
           },
           {
-            "q": "In questo momento sta traducando un articolo.",
+            "q": "In questo momento sta traducando un articolo e sta ascoltando musica.",
             "wrong": "traducando",
             "fix": "traducendo"
           },
           {
-            "q": "Di sopra stanno pulando la casa.",
+            "q": "Di sopra stanno pulando la casa e giù stanno lavorando.",
             "wrong": "pulando",
             "fix": "pulendo"
           },
           {
-            "q": "Siamo salendo le scale.",
+            "q": "Siamo salendo le scale con le valigie.",
             "wrong": "Siamo",
             "fix": "Stiamo"
           }
@@ -14577,52 +14577,52 @@ const TEST_STRUCTURES = [
         "instr": "Clicca il verbo sbagliato nella forma impersonale.",
         "items": [
           {
-            "q": "In quel paese si dormono poco.",
+            "q": "In quel paese si dormono poco e si mangiano molte spezie.",
             "wrong": "dormono",
             "fix": "dorme"
           },
           {
-            "q": "Al museo non si entrano senza biglietto.",
+            "q": "Al museo si comprano i biglietti online ma non si entrano senza.",
             "wrong": "entrano",
             "fix": "entra"
           },
           {
-            "q": "D'inverno si sciano volentieri.",
+            "q": "D'inverno si affittano gli sci e si sciano molto volentieri.",
             "wrong": "sciano",
             "fix": "scia"
           },
           {
-            "q": "In ospedale si aspettano molto.",
+            "q": "In ospedale si aspettano molto ma si trovano riviste.",
             "wrong": "aspettano",
             "fix": "aspetta"
           },
           {
-            "q": "Qui si guadagnano bene.",
+            "q": "Qui si pagano poche tasse e si guadagnano davvero bene.",
             "wrong": "guadagnano",
             "fix": "guadagna"
           },
           {
-            "q": "In treno si leggono comodamente.",
+            "q": "In treno si ascoltano podcast e si leggono molto comodamente.",
             "wrong": "leggono",
             "fix": "legge"
           },
           {
-            "q": "Nei musei si camminano tanto.",
+            "q": "Nei musei si vedono molte opere e si camminano tanto.",
             "wrong": "camminano",
             "fix": "cammina"
           },
           {
-            "q": "In quel corso si imparano in fretta.",
+            "q": "In quel corso si imparano in fretta e si fanno esercizi.",
             "wrong": "imparano",
             "fix": "impara"
           },
           {
-            "q": "A quest'ora si telefonano raramente.",
+            "q": "A quest'ora si telefonano raramente ma si mandano messaggi.",
             "wrong": "telefonano",
             "fix": "telefona"
           },
           {
-            "q": "In montagna si sudano molto.",
+            "q": "In montagna si bevono litri d'acqua e si sudano molto.",
             "wrong": "sudano",
             "fix": "suda"
           }
@@ -17223,52 +17223,52 @@ const TEST_STRUCTURES = [
         "instr": "Clicca il congiuntivo irregolare sbagliato.",
         "items": [
           {
-            "q": "Mi pare che lui abbi torto.",
+            "q": "Mi pare che lui abbi torto e che non voglia ammetterlo.",
             "wrong": "abbi",
             "fix": "abbia"
           },
           {
-            "q": "Non credo che loro sono pronti.",
+            "q": "Non credo che loro sono pronti, benché lo vogliano.",
             "wrong": "sono",
             "fix": "siano"
           },
           {
-            "q": "Dubito che tu fa il necessario.",
+            "q": "Dubito che tu fa il necessario e che tu rimanga calmo.",
             "wrong": "fa",
             "fix": "faccia"
           },
           {
-            "q": "Immagino che lei vadi in ufficio.",
+            "q": "Immagino che lei vadi in ufficio e che esca tardi.",
             "wrong": "vadi",
             "fix": "vada"
           },
           {
-            "q": "Temo che voi dicate bugie.",
+            "q": "Temo che voi dicate bugie e che non vi piaccia ammetterlo.",
             "wrong": "dicate",
             "fix": "diciate"
           },
           {
-            "q": "È meglio che loro venghino subito.",
+            "q": "È meglio che loro venghino subito e che scelgano bene.",
             "wrong": "venghino",
             "fix": "vengano"
           },
           {
-            "q": "Bisogna che noi potiamo entrare.",
+            "q": "Bisogna che noi potiamo entrare e che ci diano il permesso.",
             "wrong": "potiamo",
             "fix": "possiamo"
           },
           {
-            "q": "Non credo che tu sappi tutto.",
+            "q": "Non credo che tu sappi tutto, benché tu rimanga sicuro.",
             "wrong": "sappi",
             "fix": "sappia"
           },
           {
-            "q": "Spero che lui stii meglio.",
+            "q": "Spero che lui stii meglio e che esca presto.",
             "wrong": "stii",
             "fix": "stia"
           },
           {
-            "q": "Pare che loro debbino rientrare.",
+            "q": "Pare che loro debbino rientrare e che diano spiegazioni.",
             "wrong": "debbino",
             "fix": "debbano"
           }
@@ -17488,9 +17488,9 @@ const TEST_STRUCTURES = [
             "fix": "morì"
           },
           {
-            "q": "Colombo partì da Palos e arrivava in America.",
-            "wrong": "arrivava",
-            "fix": "arrivò"
+            "q": "Colombo partiva da Palos e arrivò in America.",
+            "wrong": "partiva",
+            "fix": "partì"
           },
           {
             "q": "I Romani costruirono le strade e fondavano le colonie.",
@@ -17498,9 +17498,9 @@ const TEST_STRUCTURES = [
             "fix": "fondarono"
           },
           {
-            "q": "Il re salì al trono e regnava per trent'anni.",
-            "wrong": "regnava",
-            "fix": "regnò"
+            "q": "Il re saliva al trono e regnò per trent'anni.",
+            "wrong": "saliva",
+            "fix": "salì"
           },
           {
             "q": "L'artista dipinse la volta e riceveva molti onori.",
@@ -17508,9 +17508,9 @@ const TEST_STRUCTURES = [
             "fix": "ricevette"
           },
           {
-            "q": "Garibaldi sbarcò a Marsala e conquistava l'isola.",
-            "wrong": "conquistava",
-            "fix": "conquistò"
+            "q": "Garibaldi sbarcava a Marsala e conquistò l'isola.",
+            "wrong": "sbarcava",
+            "fix": "sbarcò"
           },
           {
             "q": "La città cadde nel 1453 e diventava ottomana.",
@@ -17518,9 +17518,9 @@ const TEST_STRUCTURES = [
             "fix": "diventò"
           },
           {
-            "q": "Trovarono il tesoro e lo esponevano al museo.",
-            "wrong": "esponevano",
-            "fix": "esposero"
+            "q": "Trovavano il tesoro e lo esposero al museo.",
+            "wrong": "Trovavano",
+            "fix": "Trovarono"
           },
           {
             "q": "Il poeta scrisse le rime e le pubblicava a Venezia.",
@@ -17528,9 +17528,9 @@ const TEST_STRUCTURES = [
             "fix": "pubblicò"
           },
           {
-            "q": "L'esercito attraversò le Alpi e sconfiggeva i nemici.",
-            "wrong": "sconfiggeva",
-            "fix": "sconfisse"
+            "q": "L'esercito attraversava le Alpi e sconfisse i nemici.",
+            "wrong": "attraversava",
+            "fix": "attraversò"
           }
         ]
       },
@@ -18526,52 +18526,52 @@ const TEST_STRUCTURES = [
         "instr": "Clicca il verbo che non concorda con la reggente.",
         "items": [
           {
-            "q": "Pensavo che lui abbia sbagliato strada.",
+            "q": "Pensavo che lui abbia sbagliato strada e che fosse in ritardo.",
             "wrong": "abbia",
             "fix": "avesse"
           },
           {
-            "q": "Credo che loro fossero già rientrati.",
+            "q": "Credo che loro fossero già rientrati e che stiano bene.",
             "wrong": "fossero",
             "fix": "siano"
           },
           {
-            "q": "Speravo che tu venga con noi.",
+            "q": "Speravo che tu venga con noi e che restassi a cena.",
             "wrong": "venga",
             "fix": "venissi"
           },
           {
-            "q": "Credo che domani fosse festa in paese.",
+            "q": "Credo che domani fosse festa e che i negozi chiudano.",
             "wrong": "fosse",
             "fix": "sia"
           },
           {
-            "q": "Temevo che voi non capiate il problema.",
+            "q": "Temevo che voi non capiate il problema e che vi arrabbiaste.",
             "wrong": "capiate",
             "fix": "capiste"
           },
           {
-            "q": "È possibile che avessero dimenticato tutto.",
+            "q": "È possibile che avessero dimenticato tutto e che siano confusi.",
             "wrong": "avessero",
             "fix": "abbiano"
           },
           {
-            "q": "Volevo che tu mi dica la verità.",
+            "q": "Volevo che tu mi dica la verità e che non mentissi.",
             "wrong": "dica",
             "fix": "dicessi"
           },
           {
-            "q": "Dubito che lui fosse partito stamattina.",
+            "q": "Dubito che lui fosse partito stamattina e che sia già arrivato.",
             "wrong": "fosse",
             "fix": "sia"
           },
           {
-            "q": "Bisognava che noi arriviamo prima.",
+            "q": "Bisognava che noi arriviamo prima e che avvisassimo.",
             "wrong": "arriviamo",
             "fix": "arrivassimo"
           },
           {
-            "q": "Immaginavo che allora tu sia stato stanco.",
+            "q": "Immaginavo che allora tu sia stato stanco e che dormissi.",
             "wrong": "sia",
             "fix": "fossi"
           }

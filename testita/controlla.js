@@ -153,21 +153,30 @@ fuoriLivello.length
   ? ko('«ordina» fuori da B1/B2', fuoriLivello)
   : ok('«ordina» solo su B1 e B2');
 
-/* ---------- 5. posizione dell'errore troppo concentrata ---------- */
+/* ---------- 5. posizione dell'errore troppo concentrata ----------
+   Si conta da sinistra E da destra: allungando la frase a sinistra
+   l'indice cambia, ma se l'errore resta incollato alla fine la
+   regolarità è intatta — e lo studente la vede. */
 sez('5. Posizione dell\'errore negli esercizi «errore»');
 const concentrati = [];
 S.forEach(s => s.exercises.forEach((e, i) => {
   if (e.fmt !== 'errore') return;
-  const pos = {};
+  const sx = {}, dx = {};
   e.items.forEach(it => {
     const w = Array.isArray(it.wrong) ? it.wrong[0] : it.wrong;
-    const ws = (it.q || '').replace(/[.,;:!?«»"]/g, '').split(' ');
-    const p = ws.indexOf(w) + 1;
-    if (p > 0) pos[p] = (pos[p] || 0) + 1;
+    const ws = (it.q || '').replace(/[.,;:!?«»"]/g, '').split(' ').filter(Boolean);
+    const p = ws.indexOf(w);
+    if (p < 0) return;
+    sx[p + 1] = (sx[p + 1] || 0) + 1;
+    dx[ws.length - p] = (dx[ws.length - p] || 0) + 1;
   });
-  const max = Math.max(...Object.values(pos), 0);
-  if (max >= 8) concentrati.push('[' + N[s.lvl] + '] ' + s.title + ' es' + i +
-    ' — ' + max + ' item su 10 in posizione ' + Object.keys(pos).find(p => pos[p] === max));
+  const maxSx = Math.max(...Object.values(sx), 0);
+  const maxDx = Math.max(...Object.values(dx), 0);
+  const dove = '[' + N[s.lvl] + '] ' + s.title + ' es' + i;
+  if (maxSx >= 8) concentrati.push(dove + ' — ' + maxSx +
+    '/10 in posizione ' + Object.keys(sx).find(p => sx[p] === maxSx) + ' da sinistra');
+  else if (maxDx >= 8) concentrati.push(dove + ' — ' + maxDx +
+    '/10 in posizione ' + Object.keys(dx).find(p => dx[p] === maxDx) + ' DA DESTRA');
 }));
 concentrati.length
   ? ko(concentrati.length + ' esercizi con l\'errore quasi sempre nella stessa posizione', concentrati)
