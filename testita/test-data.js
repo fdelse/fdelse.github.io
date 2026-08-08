@@ -1152,7 +1152,7 @@ const TEST_STRUCTURES = [
         "instr": "Clicca la parola o la forma sbagliata.",
         "items": [
           {
-            "q": "In città ci sono molti negozi ma c'è molti turisti.",
+            "q": "In città ci sono molti negozi e c'è molti turisti.",
             "wrong": "c'è",
             "fix": "ci sono"
           },
@@ -1675,9 +1675,9 @@ const TEST_STRUCTURES = [
         "instr": "Clicca il verbo coniugato in modo sbagliato.",
         "items": [
           {
-            "q": "Noi guardiamo la televisione e voi ascolta la radio.",
-            "wrong": "ascolta",
-            "fix": "ascoltate"
+            "q": "Noi guarda la televisione e voi ascoltate la radio.",
+            "wrong": "guarda",
+            "fix": "guardiamo"
           },
           {
             "q": "Mia madre cucinano bene ma non balla mai.",
@@ -1695,9 +1695,9 @@ const TEST_STRUCTURES = [
             "fix": "chiama"
           },
           {
-            "q": "Il professore chiamano gli studenti e loro entrano.",
-            "wrong": "chiamano",
-            "fix": "chiama"
+            "q": "Il professore salutano gli studenti e loro entrano.",
+            "wrong": "salutano",
+            "fix": "saluta"
           },
           {
             "q": "Io imparo il francese e tu insegna lo spagnolo.",
@@ -8515,7 +8515,7 @@ const TEST_STRUCTURES = [
         "instr": "Clicca la parola di troppo o sbagliata (bisogna è invariabile e regge l'infinito).",
         "items": [
           {
-            "q": "Bisognano confermare la prenotazione.",
+            "q": "Bisognano confermare la prenotazione entro domani.",
             "wrong": "Bisognano",
             "fix": "Bisogna"
           },
@@ -8540,9 +8540,9 @@ const TEST_STRUCTURES = [
             "fix": "Bisogna"
           },
           {
-            "q": "Io bisogno rientrare adesso.",
-            "wrong": "bisogno",
-            "fix": "devo"
+            "q": "Bisogna rientriamo adesso.",
+            "wrong": "rientriamo",
+            "fix": "rientrare"
           },
           {
             "q": "Bisogna a controllare i documenti.",
@@ -8560,9 +8560,9 @@ const TEST_STRUCTURES = [
             "fix": "scendere"
           },
           {
-            "q": "Voi bisognate consegnare il compito.",
-            "wrong": "bisognate",
-            "fix": "dovete"
+            "q": "Bisognate consegnare il compito in segreteria.",
+            "wrong": "Bisognate",
+            "fix": "Bisogna"
           }
         ]
       },
