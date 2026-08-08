@@ -10926,9 +10926,9 @@ const TEST_STRUCTURES = [
             "fix": "Erano"
           },
           {
-            "q": "Stamattina alzavo alle sei in punto.",
+            "q": "Stamattina mi alzavo alle sei in punto.",
             "wrong": "alzavo",
-            "fix": "mi sono alzato"
+            "fix": "sono alzato"
           },
           {
             "q": "Quando ero piccolo giocai ogni giorno in cortile.",
@@ -13555,14 +13555,14 @@ const TEST_STRUCTURES = [
             "fix": "gli"
           },
           {
-            "q": "Te porto una buona notizia.",
-            "wrong": "Te",
-            "fix": "Ti"
+            "q": "Domani te porto il pacco in ufficio.",
+            "wrong": "te",
+            "fix": "ti"
           },
           {
-            "q": "Ve regalo un libro nuovo.",
-            "wrong": "Ve",
-            "fix": "Vi"
+            "q": "Stasera ve preparo la cena.",
+            "wrong": "ve",
+            "fix": "vi"
           },
           {
             "q": "Appena posso la rispondo.",
@@ -13570,7 +13570,7 @@ const TEST_STRUCTURES = [
             "fix": "le"
           },
           {
-            "q": "Ce mandano una mail.",
+            "q": "Ce hanno dato una risposta ieri.",
             "wrong": "Ce",
             "fix": "Ci"
           },
@@ -24323,9 +24323,9 @@ const TEST_STRUCTURES = [
             "fix": "avessi"
           },
           {
-            "q": "Se allenavo di più, ora correrei meglio.",
+            "q": "Se mi allenavo di più, ora correrei meglio.",
             "wrong": "allenavo",
-            "fix": "mi fossi allenato"
+            "fix": "fossi allenato"
           },
           {
             "q": "Se avessimo insistito, ora avremo la risposta.",
@@ -25497,7 +25497,7 @@ const TEST_STRUCTURES = [
   {
     "lvl": "c1",
     "lez": [
-      "C1 L18"
+      "C1 L25"
     ],
     "title": "Comprensione: chi parla e chi agisce",
     "exercises": [
