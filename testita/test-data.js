@@ -4266,7 +4266,7 @@ const TEST_STRUCTURES = [
             "options": [
               "firmo",
               "ho firmato",
-              "firmavo"
+              "firmi"
             ],
             "answer": 0
           },
@@ -4275,7 +4275,7 @@ const TEST_STRUCTURES = [
             "options": [
               "visitiamo",
               "abbiamo visitato",
-              "visitavamo"
+              "visitate"
             ],
             "answer": 0
           },
@@ -4284,7 +4284,7 @@ const TEST_STRUCTURES = [
             "options": [
               "arriva",
               "è arrivata",
-              "arrivava"
+              "arrivano"
             ],
             "answer": 0
           },
@@ -4293,7 +4293,7 @@ const TEST_STRUCTURES = [
             "options": [
               "cambio",
               "ho cambiato",
-              "cambiavo"
+              "cambi"
             ],
             "answer": 0
           },
@@ -4302,7 +4302,7 @@ const TEST_STRUCTURES = [
             "options": [
               "lavo",
               "ho lavato",
-              "lavavo"
+              "lava"
             ],
             "answer": 0
           },
@@ -4311,7 +4311,7 @@ const TEST_STRUCTURES = [
             "options": [
               "aprono",
               "hanno aperto",
-              "aprivano"
+              "apre"
             ],
             "answer": 0
           },
@@ -4320,7 +4320,7 @@ const TEST_STRUCTURES = [
             "options": [
               "finisce",
               "è finita",
-              "finiva"
+              "finiscono"
             ],
             "answer": 0
           },
@@ -4329,7 +4329,7 @@ const TEST_STRUCTURES = [
             "options": [
               "festeggiamo",
               "abbiamo festeggiato",
-              "festeggiavamo"
+              "festeggiate"
             ],
             "answer": 0
           },
@@ -4338,7 +4338,7 @@ const TEST_STRUCTURES = [
             "options": [
               "scrivo",
               "ho scritto",
-              "scrivevo"
+              "scrive"
             ],
             "answer": 0
           },
@@ -4347,7 +4347,7 @@ const TEST_STRUCTURES = [
             "options": [
               "affittiamo",
               "abbiamo affittato",
-              "affittavamo"
+              "affittano"
             ],
             "answer": 0
           }
@@ -4362,7 +4362,7 @@ const TEST_STRUCTURES = [
             "q": "Ho intenzione di partire domani.",
             "options": [
               "Domani parto.",
-              "Domani partivo.",
+              "Domani parte.",
               "Domani sono partito."
             ],
             "answer": 0
@@ -4371,17 +4371,17 @@ const TEST_STRUCTURES = [
             "q": "Ho intenzione di vedere Luca sabato.",
             "options": [
               "Sabato vedo Luca.",
-              "Sabato vedevo Luca.",
+              "Sabato vede Luca.",
               "Sabato ho visto Luca."
             ],
             "answer": 0
           },
           {
-            "q": "Abbiamo intenzione di traslocare a giugno.",
+            "q": "Abbiamo intenzione di comprare la macchina a giugno.",
             "options": [
-              "A giugno traslochiamo.",
-              "A giugno traslocavamo.",
-              "A giugno abbiamo traslocato."
+              "A giugno compriamo la macchina.",
+              "A giugno comprano la macchina.",
+              "A giugno abbiamo comprato la macchina."
             ],
             "answer": 0
           },
@@ -4389,7 +4389,7 @@ const TEST_STRUCTURES = [
             "q": "Hanno intenzione di sposarsi in primavera.",
             "options": [
               "In primavera si sposano.",
-              "In primavera si sposavano.",
+              "In primavera si sposa.",
               "In primavera si sono sposati."
             ],
             "answer": 0
@@ -4398,7 +4398,7 @@ const TEST_STRUCTURES = [
             "q": "Ho intenzione di cominciare lunedì.",
             "options": [
               "Lunedì comincio.",
-              "Lunedì cominciavo.",
+              "Lunedì cominci.",
               "Lunedì ho cominciato."
             ],
             "answer": 0
@@ -4407,7 +4407,7 @@ const TEST_STRUCTURES = [
             "q": "Hai intenzione di uscire stasera?",
             "options": [
               "Stasera esci?",
-              "Stasera uscivi?",
+              "Stasera esce?",
               "Stasera sei uscito?"
             ],
             "answer": 0
@@ -4416,7 +4416,7 @@ const TEST_STRUCTURES = [
             "q": "Abbiamo intenzione di cenare fuori.",
             "options": [
               "Stasera ceniamo fuori.",
-              "Stasera cenavamo fuori.",
+              "Stasera cenate fuori.",
               "Stasera abbiamo cenato fuori."
             ],
             "answer": 0
@@ -4425,7 +4425,7 @@ const TEST_STRUCTURES = [
             "q": "Ha intenzione di tornare a settembre.",
             "options": [
               "A settembre torna.",
-              "A settembre tornava.",
+              "A settembre tornano.",
               "A settembre è tornato."
             ],
             "answer": 0
@@ -4434,7 +4434,7 @@ const TEST_STRUCTURES = [
             "q": "Avete intenzione di studiare domani?",
             "options": [
               "Domani studiate?",
-              "Domani studiavate?",
+              "Domani studiamo?",
               "Domani avete studiato?"
             ],
             "answer": 0
@@ -4443,7 +4443,7 @@ const TEST_STRUCTURES = [
             "q": "Ho intenzione di chiamarti più tardi.",
             "options": [
               "Più tardi ti chiamo.",
-              "Più tardi ti chiamavo.",
+              "Più tardi ti chiama.",
               "Più tardi ti ho chiamato."
             ],
             "answer": 0
@@ -8974,7 +8974,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "___ guidare la moto? (tu)",
+            "q": "___ guidare la moto? Chi te l'ha insegnato? (tu)",
             "options": [
               "Sai",
               "Puoi",
@@ -8992,7 +8992,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "___ suonare il pianoforte. (loro)",
+            "q": "___ suonare il pianoforte: hanno studiato dieci anni. (loro)",
             "options": [
               "Sanno",
               "Possono",
@@ -9062,7 +9062,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "___ stirare bene le camicie? (tu)",
+            "q": "___ stirare bene le camicie? Le tue sono perfette. (tu)",
             "options": [
               "Sai",
               "Puoi",
@@ -15983,7 +15983,7 @@ const TEST_STRUCTURES = [
             "q": "Prima finisco la relazione, poi esco. →",
             "options": [
               "Quando avrò finito la relazione, uscirò.",
-              "Quando finirò la relazione, uscirò.",
+              "Quando sarò finito la relazione, uscirò.",
               "Quando avrei finito la relazione, uscirò."
             ],
             "answer": 0
@@ -15992,7 +15992,7 @@ const TEST_STRUCTURES = [
             "q": "Prima ricevono l'ordine, poi spediscono. →",
             "options": [
               "Appena avranno ricevuto l'ordine, spediranno.",
-              "Appena riceveranno l'ordine, spediranno.",
+              "Appena saranno ricevuto l'ordine, spediranno.",
               "Appena avrebbero ricevuto l'ordine, spediranno."
             ],
             "answer": 0
@@ -16001,7 +16001,7 @@ const TEST_STRUCTURES = [
             "q": "Prima si laurea, poi cerca lavoro. →",
             "options": [
               "Dopo che si sarà laureata, cercherà lavoro.",
-              "Dopo che si laurea, cercherà lavoro.",
+              "Dopo che si avrà laureata, cercherà lavoro.",
               "Dopo che si sarebbe laureata, cercherà lavoro."
             ],
             "answer": 0
@@ -16010,7 +16010,7 @@ const TEST_STRUCTURES = [
             "q": "Prima riposiamo, poi ripartiamo. →",
             "options": [
               "Quando avremo riposato, ripartiremo.",
-              "Quando riposeremo, ripartiremo.",
+              "Quando saremo riposato, ripartiremo.",
               "Quando avremmo riposato, ripartiremo."
             ],
             "answer": 0
@@ -16019,7 +16019,7 @@ const TEST_STRUCTURES = [
             "q": "Prima controlli i dati, poi mi rispondi. →",
             "options": [
               "Appena avrai controllato i dati, mi risponderai.",
-              "Appena controllerai i dati, mi risponderai.",
+              "Appena sarai controllato i dati, mi risponderai.",
               "Appena avresti controllato i dati, mi risponderai."
             ],
             "answer": 0
@@ -16028,7 +16028,7 @@ const TEST_STRUCTURES = [
             "q": "Prima escono tutti, poi spengo le luci. →",
             "options": [
               "Quando saranno usciti tutti, spegnerò le luci.",
-              "Quando usciranno tutti, spegnerò le luci.",
+              "Quando avranno usciti tutti, spegnerò le luci.",
               "Quando sarebbero usciti tutti, spegnerò le luci."
             ],
             "answer": 0
@@ -16037,7 +16037,7 @@ const TEST_STRUCTURES = [
             "q": "Prima paghiamo, poi ritiriamo il pacco. →",
             "options": [
               "Dopo che avremo pagato, ritireremo il pacco.",
-              "Dopo che pagheremo, ritireremo il pacco.",
+              "Dopo che saremo pagato, ritireremo il pacco.",
               "Dopo che avremmo pagato, ritireremo il pacco."
             ],
             "answer": 0
@@ -16046,7 +16046,7 @@ const TEST_STRUCTURES = [
             "q": "Prima si sistemano, poi visitano la città. →",
             "options": [
               "Appena si saranno sistemati, visiteranno la città.",
-              "Appena si sistemeranno, visiteranno la città.",
+              "Appena si avranno sistemati, visiteranno la città.",
               "Appena si sarebbero sistemati, visiteranno la città."
             ],
             "answer": 0
@@ -16055,7 +16055,7 @@ const TEST_STRUCTURES = [
             "q": "Prima mi rispondi, poi decido. →",
             "options": [
               "Quando mi avrai risposto, deciderò.",
-              "Quando mi risponderai, deciderò.",
+              "Quando mi sarai risposto, deciderò.",
               "Quando mi avresti risposto, deciderò."
             ],
             "answer": 0
@@ -16064,7 +16064,7 @@ const TEST_STRUCTURES = [
             "q": "Prima chiudono il bilancio, poi assumono. →",
             "options": [
               "Dopo che avranno chiuso il bilancio, assumeranno.",
-              "Dopo che chiuderanno il bilancio, assumeranno.",
+              "Dopo che saranno chiuso il bilancio, assumeranno.",
               "Dopo che avrebbero chiuso il bilancio, assumeranno."
             ],
             "answer": 0
