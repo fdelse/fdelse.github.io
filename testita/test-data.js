@@ -3348,7 +3348,7 @@ const TEST_STRUCTURES = [
             "fix": "professore"
           },
           {
-            "q": "Elena è una maestro famosa e Paolo un bravo medico.",
+            "q": "Elena è una maestro paziente.",
             "wrong": "maestro",
             "fix": "maestra"
           },
@@ -8410,100 +8410,100 @@ const TEST_STRUCTURES = [
     "lez": [
       "A2 L18"
     ],
-    "title": "Bisogna (impersonale)",
+    "title": "Bisogna o dovere: impersonale e personale",
     "exercises": [
       {
         "type": "Riempimento",
         "fmt": "buco",
-        "instr": "Scegli la forma corretta dell'espressione impersonale.",
+        "instr": "Scegli la forma corretta.",
         "items": [
           {
-            "q": "___ prenotare in anticipo.",
+            "q": "Anche voi ___ compilare il modulo.",
             "options": [
-              "Bisogna",
-              "Bisognano",
-              "Bisogno"
+              "dovete",
+              "bisogna",
+              "bisognate"
             ],
             "answer": 0
           },
           {
-            "q": "Per entrare ___ mostrare il documento.",
+            "q": "Prima di entrare ___ togliersi le scarpe.",
             "options": [
               "bisogna",
-              "bisognano",
+              "devi",
+              "dovete"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Marco ___ arrivare puntuale domani.",
+            "options": [
+              "deve",
+              "bisogna",
               "bisogni"
             ],
             "answer": 0
           },
           {
-            "q": "___ arrivare puntuali alla riunione.",
+            "q": "___ prepararsi con calma.",
             "options": [
               "Bisogna",
-              "Bisognano",
-              "Bisogniamo"
+              "Devi",
+              "Dovete"
             ],
             "answer": 0
           },
           {
-            "q": "Non ___ preoccuparsi troppo.",
+            "q": "I ragazzi ___ portare il documento.",
             "options": [
+              "devono",
               "bisogna",
-              "bisognano",
+              "bisognano"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "___ svegliarsi presto per prendere il treno.",
+            "options": [
+              "Bisogna",
+              "Devi",
+              "Puoi"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Tu ___ chiamare il medico.",
+            "options": [
+              "devi",
+              "bisogna",
               "bisogni"
             ],
             "answer": 0
           },
           {
-            "q": "___ studiare ogni giorno.",
+            "q": "___ iscriversi entro venerdì.",
             "options": [
               "Bisogna",
-              "Bisognano",
-              "Bisogno"
+              "Dovete",
+              "Potete"
             ],
             "answer": 0
           },
           {
-            "q": "Per guidare ___ avere la patente.",
+            "q": "Noi ___ prenotare un tavolo.",
             "options": [
+              "dobbiamo",
               "bisogna",
-              "bisognano",
               "bisogniamo"
             ],
             "answer": 0
           },
           {
-            "q": "___ chiamare prima di passare.",
+            "q": "___ vestirsi bene per la cerimonia.",
             "options": [
               "Bisogna",
-              "Bisognano",
-              "Bisogni"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Non ___ fumare qui.",
-            "options": [
-              "bisogna",
-              "bisognano",
-              "bisogniamo"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "___ pagare alla cassa.",
-            "options": [
-              "Bisogna",
-              "Bisognano",
-              "Bisogno"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Per iscriversi ___ compilare il modulo.",
-            "options": [
-              "bisogna",
-              "bisognano",
-              "bisogni"
+              "Devi",
+              "Dovete"
             ],
             "answer": 0
           }
@@ -8515,9 +8515,34 @@ const TEST_STRUCTURES = [
         "instr": "Clicca la parola di troppo o sbagliata (bisogna è invariabile e regge l'infinito).",
         "items": [
           {
-            "q": "Bisognano confermare la prenotazione entro domani.",
-            "wrong": "Bisognano",
+            "q": "Prima di uscire bisogna a controllare i documenti.",
+            "wrong": "a",
+            "fix": "togliere «a»"
+          },
+          {
+            "q": "In aereo bisognano allacciare le cinture.",
+            "wrong": "bisognano",
+            "fix": "bisogna"
+          },
+          {
+            "q": "Bisogni rispondere entro venerdì mattina.",
+            "wrong": "Bisogni",
             "fix": "Bisogna"
+          },
+          {
+            "q": "Per la cena bisognano confermare la prenotazione.",
+            "wrong": "bisognano",
+            "fix": "bisogna"
+          },
+          {
+            "q": "Bisogniamo ripassare tutta la lezione.",
+            "wrong": "Bisogniamo",
+            "fix": "Bisogna"
+          },
+          {
+            "q": "Entro domani bisognate consegnare il compito.",
+            "wrong": "bisognate",
+            "fix": "bisogna"
           },
           {
             "q": "Bisogna arrivi puntuale.",
@@ -8525,19 +8550,9 @@ const TEST_STRUCTURES = [
             "fix": "arrivare"
           },
           {
-            "q": "Bisogniamo ripassare la lezione.",
-            "wrong": "Bisogniamo",
-            "fix": "Bisogna"
-          },
-          {
-            "q": "Bisogna di consegnare il modulo.",
-            "wrong": "di",
-            "fix": "(togliere)"
-          },
-          {
-            "q": "Bisognano allacciare le cinture.",
-            "wrong": "Bisognano",
-            "fix": "Bisogna"
+            "q": "Alla prossima fermata bisogna scendiamo.",
+            "wrong": "scendiamo",
+            "fix": "scendere"
           },
           {
             "q": "Bisogna rientriamo adesso.",
@@ -8545,24 +8560,9 @@ const TEST_STRUCTURES = [
             "fix": "rientrare"
           },
           {
-            "q": "Bisogna a controllare i documenti.",
-            "wrong": "a",
-            "fix": "(togliere)"
-          },
-          {
-            "q": "Bisogni rispondere entro venerdì.",
-            "wrong": "Bisogni",
-            "fix": "Bisogna"
-          },
-          {
-            "q": "Bisogna scendiamo alla prossima.",
-            "wrong": "scendiamo",
-            "fix": "scendere"
-          },
-          {
-            "q": "Bisognate consegnare il compito in segreteria.",
-            "wrong": "Bisognate",
-            "fix": "Bisogna"
+            "q": "In segreteria bisogna di consegnare il modulo.",
+            "wrong": "di",
+            "fix": "togliere «di»"
           }
         ]
       },
