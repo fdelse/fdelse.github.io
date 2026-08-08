@@ -5467,7 +5467,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "___ un gelato, ho voglia di dolce.",
+            "q": "___ andare al mare quest'estate.",
             "options": [
               "Voglio",
               "Devo",
@@ -6115,7 +6115,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Le studentesse sono ___ in classe. (scendere)",
+            "q": "Le studentesse sono ___ dall'autobus. (scendere)",
             "options": [
               "scese",
               "scesi",
