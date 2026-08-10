@@ -130,7 +130,8 @@ const LOCUZIONI = [
 ];
 
 const params = new URLSearchParams(location.search);
-const nPick = parseInt(params.get('n') ?? '2');           // quanti item pescare per esercizio
+const nRaw = parseInt(params.get('n') ?? '2');
+const nPick = Number.isFinite(nRaw) ? Math.max(1, Math.min(4, nRaw)) : 2; // il builder usa 1-4
 /* adatt=1 → arresto anticipato: il test si chiude quando un livello scende sotto
    la soglia. Lo attiva solo il preset «Test di posizionamento»: in un test di
    progresso servono sempre tutte le domande, altrimenti i punteggi di due
@@ -170,11 +171,9 @@ function pickRandom(arr, k){
    risposta dell'altro (es. il buco "Se ___ di più..." e, tra le opzioni
    della Trasformazione, la stessa frase già completata).
    Qui si confrontano le frasi degli item e si scartano quelle troppo simili
-   a una già scelta nella stessa struttura. Con 10 item in banca e 2-3 da
-   pescare c'è sempre margine; se proprio non bastasse si ripiega sugli
-   scarti, così il test non resta mai incompleto. */
-const SOGLIA_SOMIGLIANZA = 0.6;
-
+   a una già scelta nella stessa struttura. Con 6 item in banca c'è un buon
+   margine soprattutto quando se ne pescano 1-3; con 4 il margine si riduce.
+   Se proprio non bastasse si ripiega sugli scarti, così il test non resta mai incompleto. */
 function paroleDi(txt){
   return txt.toLowerCase()
     .replace(/___+/g, ' ').replace(/→/g, ' ')
@@ -231,8 +230,8 @@ const selected = indices.map(i => TEST_STRUCTURES[i]).filter(Boolean).map(s => {
     // stampato una volta sola in cima e non ripetuto su ogni item.
     return { type: e.type, fmt: e.fmt || 'fill', instr: e.instr, testo: e.testo, items: items };
   });
-  // NB: va copiata anche stima, altrimenti il livello di calcolo si perde
-  return { lvl: s.lvl, stima: s.stima, title: s.title, exercises: exercises };
+  // NB: vanno copiati anche stima e lez: servono al calcolo e al riepilogo finale.
+  return { lvl: s.lvl, stima: s.stima, lez: s.lez, title: s.title, exercises: exercises };
 });
 
 let studentName = '';

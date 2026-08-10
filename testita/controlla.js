@@ -63,11 +63,11 @@ const strane = [];
 S.forEach(s => {
   if (s.exercises.length !== 3) strane.push(s.title + ': ' + s.exercises.length + ' esercizi');
   s.exercises.forEach((e, i) => {
-    if (e.items.length !== 10) strane.push(s.title + ' es' + i + ': ' + e.items.length + ' item');
+    if (e.items.length !== 6) strane.push(s.title + ' es' + i + ': ' + e.items.length + ' item');
   });
 });
-strane.length ? ko('Esercizi o item fuori dallo schema 3×10', strane)
-              : ok('Tutte le strutture hanno 3 esercizi da 10 item');
+strane.length ? ko('Esercizi o item fuori dallo schema 3×6', strane)
+              : ok('Tutte le strutture hanno 3 esercizi da 6 item');
 
 const perLvl = {};
 S.forEach(s => perLvl[s.lvl] = (perLvl[s.lvl] || 0) + 1);
