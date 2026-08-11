@@ -30,7 +30,7 @@
   /* "individua l'errore": parole cliccabili */
   .words{margin-top:6px;line-height:2.1;word-spacing:-2px;}
   .word{
-    display:inline;padding:3px 4px;border-radius:6px;cursor:pointer;
+    display:inline;padding:3px 2px;border-radius:6px;cursor:pointer;
     border:1.5px solid transparent;
   }
   .word:hover{background:var(--line-soft);}
@@ -583,6 +583,27 @@ function aggiornaComposta(item){
   }
 }
 
+/* Su smartphone i campi di riempimento sono il 25% più stretti.
+   La misura viene calcolata sulla larghezza effettiva originale, così vale
+   sia per i campi dentro una frase sia per quelli su una riga separata.
+   Su desktop non cambia nulla. */
+function riduciCampiRiempimentoMobile(){
+  if (!window.matchMedia('(max-width: 600px)').matches) return;
+
+  const pagina = document.querySelector('.pagewrap.active');
+  if (!pagina) return;
+
+  pagina.querySelectorAll('.blank').forEach(input => {
+    if (input.dataset.mobileRidotto === '1') return;
+
+    const larghezza = input.getBoundingClientRect().width;
+    if (larghezza > 0) {
+      input.style.width = (larghezza * 0.75) + 'px';
+      input.dataset.mobileRidotto = '1';
+    }
+  });
+}
+
 function showPage(idx){
   document.querySelectorAll('.pagewrap').forEach(p => p.classList.remove('active'));
   document.querySelector('.pagewrap[data-page="' + idx + '"]').classList.add('active');
@@ -596,6 +617,9 @@ function showPage(idx){
       : 'Domande ' + r.da + '-' + r.a + ' di ' + r.tot;
   document.getElementById('prevBtn').disabled = (idx === 0);
   document.getElementById('nextBtn').textContent = (idx === totalPages - 1) ? 'Invia risultati' : 'Avanti →';
+
+  riduciCampiRiempimentoMobile();
+
   window.scrollTo({top:0, behavior:'instant'});
 }
 

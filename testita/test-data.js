@@ -1,4 +1,4 @@
-/* TEST-DATA.JS — Banca esercizi del TEST — revisione definitiva progressione grammaticale + contesto, 10 agosto 2026. */
+/* TEST-DATA.JS — Banca esercizi del TEST — versione aggiornata. */
 const TEST_STRUCTURES = [
   {
     "lvl": "a",
@@ -71,7 +71,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Marco è trent'anni.",
@@ -241,7 +241,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca l'articolo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "In aula c'è la studente nuovo.",
@@ -410,7 +410,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca l'articolo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Stasera c'è uno amico di Marco a casa.",
@@ -639,7 +639,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il plurale sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "In soggiorno ho due posto.",
@@ -741,7 +741,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola o la forma sbagliata.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "In città c'è molti negozi e una banca.",
@@ -910,7 +910,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca l'aggettivo con l'accordo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Per l'inverno il cappotto è rossa.",
@@ -923,7 +923,7 @@ const TEST_STRUCTURES = [
             "fix": "bianche"
           },
           {
-            "q": "Marco ha una lettera molto lungo.",
+            "q": "Marco ha una matita molto lungo.",
             "wrong": "lungo",
             "fix": "lunga"
           },
@@ -1080,7 +1080,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo coniugato in modo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "La sera noi guarda la televisione e voi ascoltate la radio.",
@@ -1117,7 +1117,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Trasformazione",
         "fmt": "buco",
-        "instr": "Cambia il soggetto: scegli la forma corretta.",
+        "instr": "Scegli la forma corretta con il nuovo soggetto.",
         "items": [
           {
             "q": "Io parlo italiano. → Noi ___",
@@ -1249,7 +1249,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo coniugato in modo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Ogni sera mia zia rispondono al telefono.",
@@ -1286,7 +1286,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Trasformazione",
         "fmt": "buco",
-        "instr": "Cambia il soggetto: scegli la forma corretta.",
+        "instr": "Scegli la forma corretta con il nuovo soggetto.",
         "items": [
           {
             "q": "Io scrivo una mail. → Noi ___",
@@ -1418,7 +1418,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo coniugato in modo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "La notte Anna dormono poco.",
@@ -1455,7 +1455,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Trasformazione",
         "fmt": "buco",
-        "instr": "Cambia il soggetto: scegli la forma corretta.",
+        "instr": "Scegli la forma corretta con il nuovo soggetto.",
         "items": [
           {
             "q": "Io capisco tutto. → Noi ___.",
@@ -1494,7 +1494,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Voi dormite tardi. → Tu ___.",
+            "q": "Voi dormite molto. → Tu ___ molto.",
             "options": [
               "dormi",
               "dorme",
@@ -1503,7 +1503,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Loro preferiscono il tè. → Lui ___.",
+            "q": "Loro preferiscono il tè. → Lui ___ il tè.",
             "options": [
               "preferisce",
               "preferisco",
@@ -1529,7 +1529,7 @@ const TEST_STRUCTURES = [
         "instr": "Scegli tra piace e piacciono.",
         "items": [
           {
-            "q": "Ho un cane: il cane mi ___ molto.",
+            "q": "Ho un cane e mi ___ molto.",
             "options": [
               "piace",
               "piacciono"
@@ -1553,7 +1553,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Ho due conigli: i conigli mi ___ molto.",
+            "q": "Ho due conigli e mi ___ molto.",
             "options": [
               "piacciono",
               "piace"
@@ -1581,10 +1581,10 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
-            "q": "Ho un pesce rosso: mi piacciono il pesce rosso.",
+            "q": "Ho un pesce rosso e mi piacciono molto.",
             "wrong": "piacciono",
             "fix": "piace"
           },
@@ -1594,7 +1594,7 @@ const TEST_STRUCTURES = [
             "fix": "piacciono"
           },
           {
-            "q": "In fattoria c'è un maiale: mi piacciono molto il maiale.",
+            "q": "In fattoria c'è un maiale e mi piacciono molto.",
             "wrong": "piacciono",
             "fix": "piace"
           },
@@ -1750,7 +1750,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Per comprare la frutta mio padre vanno al mercato ogni sabato.",
@@ -1763,7 +1763,7 @@ const TEST_STRUCTURES = [
             "fix": "venite"
           },
           {
-            "q": "Domenica preparo la pasta: Marco e Anna viene a cena.",
+            "q": "Domenica preparo la pasta e Marco e Anna viene a cena.",
             "wrong": "viene",
             "fix": "vengono"
           },
@@ -1787,7 +1787,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Trasformazione",
         "fmt": "buco",
-        "instr": "Cambia il soggetto: scegli la forma corretta.",
+        "instr": "Scegli la forma corretta con il nuovo soggetto.",
         "items": [
           {
             "q": "Io vado in centro. → Noi ___.",
@@ -1920,7 +1920,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la preposizione sbagliata.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Il quaderno è a Sara.",
@@ -2143,7 +2143,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola con il genere sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "In ospedale Maria è una brava dottore e Luca è un bravo infermiere.",
@@ -2250,7 +2250,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola di troppo o sbagliata (forma del verbo o preposizione).",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Per il test di domani devi a finire i compiti stasera.",
@@ -2287,7 +2287,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Trasformazione",
         "fmt": "buco",
-        "instr": "Cambia il soggetto: scegli la forma corretta.",
+        "instr": "Scegli la forma corretta con il nuovo soggetto.",
         "items": [
           {
             "q": "Io devo uscire. → Noi ___",
@@ -2418,7 +2418,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il possessivo con l’accordo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Sul tavolo ci sono il mio telefono e le mia chiavi.",
@@ -2586,7 +2586,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola di troppo o sbagliata nella frase sull'ora.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Guardo l'orologio e vedo che è le cinque.",
@@ -2949,7 +2949,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Luca va raramente in palestra. Va tutti i giorni.",
@@ -2962,22 +2962,22 @@ const TEST_STRUCTURES = [
             "fix": "sempre"
           },
           {
-            "q": "Vedo i cugini una volta ogni anno: vedo spesso i cugini.",
+            "q": "Vedo i cugini una volta ogni anno e vedo spesso i cugini.",
             "wrong": "spesso",
             "fix": "raramente"
           },
           {
-            "q": "Faccio colazione tutti i giorni: faccio raramente colazione.",
+            "q": "Faccio colazione tutti i giorni e faccio raramente colazione.",
             "wrong": "raramente",
             "fix": "sempre"
           },
           {
-            "q": "Paolo gioca a tennis due volte a settimana: gioca raramente.",
+            "q": "Paolo gioca a tennis due volte a settimana e gioca raramente.",
             "wrong": "raramente",
             "fix": "spesso"
           },
           {
-            "q": "Anna prende il treno una volta ogni due anni: prende spesso il treno.",
+            "q": "Anna prende il treno una volta ogni due anni e prende spesso il treno.",
             "wrong": "spesso",
             "fix": "raramente"
           }
@@ -3118,7 +3118,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "La frase è rivolta a un cliente: clicca la parola troppo informale.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Buonasera, signore, dove lavori?",
@@ -3286,7 +3286,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la preposizione articolata sbagliata.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Stasera vado all cinema per vedere un film nuovo.",
@@ -3456,7 +3456,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola di troppo o sbagliata (forma del modale o preposizione).",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Domani mattina vogliamo di partire subito.",
@@ -3624,7 +3624,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo irregolare sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Dopo cena io fa una passeggiata nel quartiere.",
@@ -3661,7 +3661,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Trasformazione",
         "fmt": "buco",
-        "instr": "Cambia il soggetto: scegli la forma corretta.",
+        "instr": "Scegli la forma corretta con il nuovo soggetto.",
         "items": [
           {
             "q": "Io faccio la spesa. → Noi ___",
@@ -3794,7 +3794,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata (ausiliare o participio).",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Durante la pausa sono mangiato una mela.",
@@ -3964,7 +3964,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata (ausiliare o accordo).",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Maria ha andata al mercato per comprare la frutta.",
@@ -4001,7 +4001,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Trasformazione",
         "fmt": "buco",
-        "instr": "Cambia il soggetto e accorda il participio.",
+        "instr": "Scegli la forma corretta e accorda il participio con il nuovo soggetto.",
         "items": [
           {
             "q": "Paolo è andato via. → Le ragazze ___",
@@ -4134,7 +4134,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il pronome o il verbo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Per andare al lavoro io si alzo alle sei.",
@@ -4171,7 +4171,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Trasformazione",
         "fmt": "buco",
-        "instr": "Cambia il soggetto: scegli il pronome riflessivo e la forma corretta al presente.",
+        "instr": "Scegli il pronome riflessivo e la forma verbale corretti con il nuovo soggetto.",
         "items": [
           {
             "q": "Io mi alzo presto. → Noi ___",
@@ -4304,7 +4304,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "La frase è rivolta a un amico: clicca la parola sbagliata.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Prima di cucinare, tagli le carote a pezzi.",
@@ -4534,7 +4534,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "La frase è rivolta a un cliente: clicca la parola sbagliata.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Signora, fai una passeggiata ogni giorno!",
@@ -4641,7 +4641,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il dimostrativo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "In centro questo casa è grande.",
@@ -4810,7 +4810,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata nel confronto.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Paolo è forte ma è meno veloce che Gianni.",
@@ -4978,7 +4978,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il pronome diretto sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Il vino la compro io; i dolci li porta Marta.",
@@ -5147,7 +5147,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo con l'accordo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Quando scelgo un concerto, mi interessano soprattutto la musica classica.",
@@ -5507,7 +5507,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola di troppo o sbagliata (bisogna è invariabile e regge l'infinito).",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Prima di uscire bisogna a controllare i documenti.",
@@ -5675,7 +5675,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la forma di cortesia sbagliata.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Sono al bar e vorei un caffè, per favore.",
@@ -5830,7 +5830,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "La porta è chiusa: lei non ___ entrare. (potere)",
+            "q": "La porta è chiusa e lei non ___ entrare. (potere)",
             "options": [
               "può",
               "sa",
@@ -5891,7 +5891,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "La strada è chiusa: non ___ passare di qui. (loro)",
+            "q": "La strada è chiusa e non ___ passare di qui. (loro)",
             "options": [
               "possono",
               "sanno",
@@ -6035,7 +6035,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la forma sbagliata del partitivo o dell’espressione di quantità.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Al mercato ho comprato del pane e delle latte.",
@@ -6203,7 +6203,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la forma verbale sbagliata: nelle istruzioni della ricetta usa l’infinito.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Per la frittata, sbatti le uova e aggiungere il formaggio.",
@@ -6371,7 +6371,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il participio sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Ieri ho scrivuto una lettera lunga.",
@@ -6542,7 +6542,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il futuro coniugato in modo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Domani anderò in ufficio.",
@@ -6711,7 +6711,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Ci vuole due ore per andare a Napoli.",
@@ -6881,7 +6881,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo coniugato in modo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Da piccolo io giocavamo in cortile.",
@@ -7052,7 +7052,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo con il tempo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Ieri finivo il libro che mi hai prestato la settimana scorsa.",
@@ -7283,7 +7283,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola di troppo o sbagliata nel superlativo.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Stamattina il caffè è amarissima.",
@@ -7390,7 +7390,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola di troppo o sbagliata.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Da un'ora sto scrivando una relazione e Anna sta telefonando.",
@@ -7558,7 +7558,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo che dovrebbe essere al congiuntivo.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "È probabile che loro rispondono domani.",
@@ -7730,7 +7730,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il condizionale coniugato in modo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Mangierei volentieri una pizza.",
@@ -7903,7 +7903,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca l'ausiliare sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Mi sembra che Marco ha traslocato.",
@@ -8071,7 +8071,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata o di troppo.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "La partita è per iniziare.",
@@ -8428,7 +8428,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Non dammelo adesso, per favore.",
@@ -8596,7 +8596,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il pronome relativo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Il quadro cui ho comprato è antico.",
@@ -8765,7 +8765,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il pronome sbagliato (diretto invece di indiretto o viceversa).",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Marco aspetta una risposta, quindi stasera lo telefono.",
@@ -8935,7 +8935,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Visto che hai il mio libro, mi lo dai domani?",
@@ -9097,7 +9097,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il participio con l'accordo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Il maglione che ho visto in vetrina l'ho comprata in saldo.",
@@ -9324,7 +9324,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la particella o l'ausiliare sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Questo compito è duro, non ci la faccio.",
@@ -9431,7 +9431,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo sbagliato nella forma impersonale.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "In quel paese si dormono poco durante la settimana.",
@@ -9600,7 +9600,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo con il tempo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Se ci sarà il sole, faremmo una gita.",
@@ -9769,7 +9769,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata (ausiliare o accordo).",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Il giardino è curata dal nonno.",
@@ -9937,7 +9937,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo che non concorda con il soggetto.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "In quel mercato si compra prodotti locali.",
@@ -10109,7 +10109,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola che non è stata adattata correttamente nel discorso indiretto.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Anna dice: «Mi piace questa commedia». → Anna dice che mi piace questa commedia.",
@@ -10277,7 +10277,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca l'ausiliare o il participio che non va.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Quando sarò finito il lavoro, ti chiamerò.",
@@ -10445,7 +10445,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola di troppo.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Questa è una soluzione più pessima.",
@@ -10613,7 +10613,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il relativo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "La società per che lavoro è francese.",
@@ -10839,7 +10839,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la particella sbagliata.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Lui si la prende per ogni critica.",
@@ -10946,7 +10946,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo sbagliato: l'azione non si è realizzata.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Ieri pomeriggio vorrei aiutarti, ma non c'ero.",
@@ -11115,7 +11115,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il congiuntivo irregolare sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Mi pare che Marco abbi torto, ma non vuole ammetterlo.",
@@ -11283,7 +11283,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "In queste frasi entrambe le azioni sono presentate come fatti storici conclusi: clicca il verbo al tempo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Dante nacque a Firenze e moriva in esilio.",
@@ -11454,7 +11454,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo che dovrebbe essere al congiuntivo imperfetto.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Mi illudevo che lui cambiava.",
@@ -11624,7 +11624,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo con il tempo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Se avrei una barca, andrei a pescare.",
@@ -11793,7 +11793,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca l'ausiliare sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Immaginavo che si era già iscritto al corso.",
@@ -11962,7 +11962,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo che non concorda con la reggente.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Pensavo che Marco abbia sbagliato strada e che fosse in ritardo.",
@@ -12134,7 +12134,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo con il tempo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Se saremmo usciti prima, avremmo visto l'alba.",
@@ -12303,7 +12303,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Nel racconto al passato, trasforma il futuro originario nel futuro nel passato: clicca la forma incoerente.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Disse che mi scriverà appena possibile.",
@@ -12471,7 +12471,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il relativo composto con l'accordo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Il responsabile del reparto, alla quale ho scritto, è assente.",
@@ -12640,7 +12640,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo impersonale sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Si narrano che il castello sia infestato.",
@@ -12808,7 +12808,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la forma del gerundio incoerente con il rapporto temporale espresso.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Nello stesso momento, camminare verso casa, parlavo al telefono.",
@@ -12976,7 +12976,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca l'articolo o la preposizione che la locuzione non regge.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Marco cammina lungo del corridoio.",
@@ -13144,7 +13144,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la forma sbagliata dell'infinito.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Ieri, dopo cenare, siamo usciti a passeggiare.",
@@ -13312,7 +13312,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo con il modo sbagliato dopo il connettivo causale.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Poiché fosse già tardi, siamo rientrati subito.",
@@ -13480,7 +13480,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo sbagliato: l'azione precede l'altra nel passato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Appena entrai in sala, il concerto è già iniziato.",
@@ -13648,7 +13648,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo con il modo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Cerco da tempo un collaboratore che parla cinese, ma non l'ho ancora trovato.",
@@ -13877,7 +13877,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata nel costrutto causativo.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Ho fatto dipinta la parete dall'imbianchino.",
@@ -14179,7 +14179,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo con il tempo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Se avrei un centesimo per ogni ritardo, comprerei una casa.",
@@ -14347,7 +14347,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la forma implicita sbagliata.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Solo riciclato la carta, si salvano alberi.",
@@ -14512,7 +14512,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la forma verbale che usa il tempo sbagliato nel passivo.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "La merce è consegnata ieri mattina.",
@@ -14684,7 +14684,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Riferisci oggi, da un momento o luogo diverso, parole pronunciate ieri: clicca il deittico o tempo incoerente.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "La responsabile disse che avrebbe risposto oggi stesso.",
@@ -14852,7 +14852,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo che colloca male l'azione nel racconto al passato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Ci avvertì che il fornitore ha cambiato le condizioni.",
@@ -15017,7 +15017,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo con il modo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Benché è tardi, continuano a lavorare.",
@@ -15187,7 +15187,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata (modo verbale o costruzione).",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Chiamami prima che arriva il treno.",
@@ -15358,7 +15358,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca l'ausiliare con il modo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Benché aveva controllato i dati, sbagliò il calcolo.",
@@ -15527,7 +15527,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola sbagliata nel costrutto passivo.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "La ricetta va tramandato di generazione in generazione.",
@@ -15692,7 +15692,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo con il tempo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Se risparmiavo prima, ora comprerei la casa.",
@@ -15864,7 +15864,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo con il modo o il tempo sbagliato nella finale al passato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Rifecero le facciate affinché il quartiere sembrava più curato.",
@@ -16032,7 +16032,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Il rimprovero riguarda il passato: clicca il verbo sbagliato.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Almeno potresti chiamarmi ieri sera, invece niente.",
@@ -16200,7 +16200,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca la parola di troppo o sbagliata nella forma implicita.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Sostiene di avendo ispezionato il magazzino.",
@@ -16313,7 +16313,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Un turista che conoscesse solo gli stereotipi ___ l'Italia come un paese uniforme.",
             "options": [
-              "vedrebbe",
+              "immaginerebbe",
               "vede",
               "vedesse"
             ],
@@ -16369,7 +16369,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Clicca il verbo che dovrebbe essere al condizionale nella situazione ipotetica.",
+        "instr": "Individua e clicca l'errore nella frase.",
         "items": [
           {
             "q": "Se visitasse il paese solo in estate, Paolo pensa che il clima sia sempre mite.",
