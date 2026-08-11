@@ -84,7 +84,7 @@ const TEST_STRUCTURES = [
             "fix": "è"
           },
           {
-            "q": "A Roma io e Sara siamo una macchina.",
+            "q": "Io e Sara siamo una macchina.",
             "wrong": "siamo",
             "fix": "abbiamo"
           },
