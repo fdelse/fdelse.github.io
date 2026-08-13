@@ -156,12 +156,22 @@ fuoriLivello.length
 /* ---------- 5. posizione dell'errore troppo concentrata ----------
    Si conta da sinistra E da destra: allungando la frase a sinistra
    l'indice cambia, ma se l'errore resta incollato alla fine la
-   regolarità è intatta — e lo studente la vede. */
+   regolarità è intatta — e lo studente la vede.
+
+   La soglia è UNA PROPORZIONE, non un numero fisso: con la vecchia
+   soglia «>= 8» e sei item per esercizio il controllo non poteva più
+   scattare, e stampava «✓» anche su un esercizio con l'errore sempre
+   in ultima posizione. Ora scatta all'80% degli item CONTATI (5 su 6,
+   8 su 10), così regge qualunque numero di item si decida in futuro.
+   Il denominatore sono gli item in cui il bersaglio è stato trovato,
+   non tutti: se un item sfugge, non deve diluire la percentuale. */
+const QUOTA_POSIZIONE = 0.8;
 sez('5. Posizione dell\'errore negli esercizi «errore»');
 const concentrati = [];
 S.forEach(s => s.exercises.forEach((e, i) => {
   if (e.fmt !== 'errore') return;
   const sx = {}, dx = {};
+  let contati = 0;
   e.items.forEach(it => {
     const w = Array.isArray(it.wrong) ? it.wrong[0] : String(it.wrong || '');
     const ws = (it.q || '').replace(/[.,;:!?«»"]/g, '').split(' ').filter(Boolean);
@@ -173,16 +183,19 @@ S.forEach(s => s.exercises.forEach((e, i) => {
     for (let j = 0; j <= ws.length - nw; j++)
       if (ws.slice(j, j + nw).join(' ') === w) { p = j; break; }
     if (p < 0) return;
+    contati++;
     sx[p + 1] = (sx[p + 1] || 0) + 1;
     dx[ws.length - p - nw + 1] = (dx[ws.length - p - nw + 1] || 0) + 1;
   });
+  if (contati < 3) return;            // troppo pochi per parlare di concentrazione
+  const soglia = Math.ceil(contati * QUOTA_POSIZIONE);
   const maxSx = Math.max(...Object.values(sx), 0);
   const maxDx = Math.max(...Object.values(dx), 0);
   const dove = '[' + N[s.lvl] + '] ' + s.title + ' es' + i;
-  if (maxSx >= 8) concentrati.push(dove + ' — ' + maxSx +
-    '/10 in posizione ' + Object.keys(sx).find(p => sx[p] === maxSx) + ' da sinistra');
-  else if (maxDx >= 8) concentrati.push(dove + ' — ' + maxDx +
-    '/10 in posizione ' + Object.keys(dx).find(p => dx[p] === maxDx) + ' DA DESTRA');
+  if (maxSx >= soglia) concentrati.push(dove + ' — ' + maxSx + '/' + contati +
+    ' in posizione ' + Object.keys(sx).find(p => sx[p] === maxSx) + ' da sinistra');
+  else if (maxDx >= soglia) concentrati.push(dove + ' — ' + maxDx + '/' + contati +
+    ' in posizione ' + Object.keys(dx).find(p => dx[p] === maxDx) + ' DA DESTRA');
 }));
 concentrati.length
   ? ko(concentrati.length + ' esercizi con l\'errore quasi sempre nella stessa posizione', concentrati)
@@ -233,26 +246,43 @@ gesto.length
   ? ko(gesto.length + ' istruzioni chiedono un gesto che il formato non permette', gesto)
   : ok('Ogni istruzione chiede il gesto che il suo formato permette');
 
-/* ---------- 5-quinquies. bersaglio di più parole e istruzione ----------
-   Dove il bersaglio è una locuzione raggruppata («ci sono»), lo studente
-   clicca un blocco, non una parola: l'istruzione deve dirlo. Nasce da una
-   distinzione vera che era stata scambiata per un doppione e appiattita. */
+/* ---------- 5-quinquies. bersagli di più parole ----------
+   La consegna del formato Correzione è unica per tutta la banca e dice
+   «parola». Con un bersaglio come «ci sono» lo studente clicca due
+   parole, ma questo NON è un difetto: test.html tiene una lista di
+   LOCUZIONI, e su quelle cliccarne una seleziona il blocco intero;
+   l'avviso sotto ogni item dice «Clicca dove c'è l'errore», senza mai
+   dire «parola». Il meccanismo regge, e la consegna unica resta.
+
+   Il difetto vero è un altro, e prima nessuno lo sorvegliava: un
+   bersaglio di più parole che NON sia fra le LOCUZIONI. In quel caso il
+   blocco non esiste, lo studente può cliccare una parola sola e non
+   riesce a selezionare l'errore. Il controllo legge la lista da
+   test.html invece di tenerne una copia, così le due non divergono. */
 sez('5-quinquies. Bersagli di più parole');
+const mLoc = HTML.match(/const LOCUZIONI = \[([\s\S]*?)\];/);
+const LOCUZIONI = mLoc
+  ? [...mLoc[1].matchAll(/'([^']*)'|"([^"]*)"/g)]
+      .map(m => (m[1] !== undefined ? m[1] : m[2]))
+      .filter(x => x && x.trim())
+      .map(x => x.toLowerCase())
+  : [];
 const blocchi = [];
 S.forEach(s => s.exercises.forEach((e, i) => {
   if (e.fmt !== 'errore') return;
-  const n = e.items.filter(it => {
-    const w = Array.isArray(it.wrong) ? it.wrong.join(' ') : String(it.wrong || '');
-    return /\s/.test(w.trim());
-  }).length;
-  if (!n) return;
-  if (!/forma|locuzione|espressione|gruppo/i.test(e.instr || ''))
-    blocchi.push('[' + N[s.lvl] + '] ' + s.title + ' es' + i + ' — ' + n +
-      '/10 bersagli sono blocchi di più parole, ma l\'istruzione dice solo «parola»');
+  e.items.forEach((it, k) => {
+    const w = (Array.isArray(it.wrong) ? it.wrong.join(' ') : String(it.wrong || '')).trim();
+    if (!/\s/.test(w)) return;
+    if (!LOCUZIONI.includes(w.toLowerCase()))
+      blocchi.push('[' + N[s.lvl] + '] ' + s.title + ' es' + i + '#' + k +
+        ' — bersaglio «' + w + '»: più parole, ma non è fra le LOCUZIONI di test.html, quindi non è cliccabile come blocco');
+  });
 }));
+if (!LOCUZIONI.length)
+  blocchi.push('Lista LOCUZIONI non trovata in test.html: controllo non eseguito');
 blocchi.length
-  ? ko(blocchi.length + ' esercizi con bersaglio di più parole non annunciato', blocchi)
-  : ok('Dove si clicca un blocco, l\'istruzione lo dice');
+  ? ko(blocchi.length + ' bersagli di più parole non raggruppabili', blocchi)
+  : ok('Ogni bersaglio di più parole è una locuzione raggruppata in test.html');
 
 /* ---------- 6. la correzione deve essere sostituibile ---------- */
 sez('6. Correzioni sostituibili');
@@ -271,7 +301,22 @@ nonSost.length
   ? ko(nonSost.length + ' correzioni molto più lunghe del bersaglio: verificare che la sostituzione funzioni', nonSost)
   : ok('Tutte le correzioni sono sostituibili');
 
-/* ---------- 7. rivelazioni fra esercizi ---------- */
+/* ---------- 7. rivelazioni fra esercizi ----------
+   La frase corretta si ricostruisce sostituendo il bersaglio con la
+   correzione. Attenzione: `q.replace(wrong, fix)` prende la prima
+   occorrenza DI TESTO, non la prima parola — con bersagli brevi («a»,
+   «di», «le», «mi», «si») finisce dentro un'altra parola e produce
+   frasi inesistenti («In aula c'è la studente» → «In aulo c'è la
+   studente»). Sedici item della banca ricadono in questo caso, e su
+   quelli il controllo confrontava stringhe storpiate: passava a vuoto.
+   Qui si sostituisce solo dove il bersaglio è delimitato da
+   non-lettere. */
+const escapeRe = t => String(t).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const sostituisci = (frase, bersaglio, correzione) => {
+  const re = new RegExp('(^|[^\\p{L}])' + escapeRe(bersaglio) + '([^\\p{L}]|$)', 'u');
+  if (!re.test(frase)) return frase.replace(bersaglio, correzione);   // ripiego
+  return frase.replace(re, (m, a, b) => (a || '') + correzione + (b || ''));
+};
 sez('7. Rivelazioni fra esercizi della stessa struttura');
 const rivel = [];
 S.forEach(s => {
@@ -281,7 +326,7 @@ S.forEach(s => {
     if ((e.fmt === 'buco' || e.fmt === 'fill') && /___/.test(it.q))
       risolta = it.q.replace('___', soluzione(e, it));
     else if (e.fmt === 'errore' && !Array.isArray(it.wrong))
-      risolta = it.q.replace(it.wrong, it.fix);
+      risolta = sostituisci(it.q, it.wrong, it.fix);
     else risolta = String(soluzione(e, it) || '');
     all.push({ ei, k, it, risolta: (risolta || '').toLowerCase().replace(/[.,;:!?«»"()→]/g, '').trim() });
   }));
