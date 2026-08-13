@@ -686,13 +686,14 @@ const TEST_STRUCTURES = [
       {
         "type": "Riempimento",
         "fmt": "buco",
-        "instr": "Scegli tra c'è e ci sono.",
+        "instr": "Scegli la forma corretta.",
         "items": [
           {
             "q": "In giardino ___ due bambini.",
             "options": [
               "ci sono",
-              "c'è"
+              "c'è",
+              "ci è"
             ],
             "answer": 0
           },
@@ -700,7 +701,8 @@ const TEST_STRUCTURES = [
             "q": "In borsa ___ una penna per Anna.",
             "options": [
               "c'è",
-              "ci sono"
+              "ci sono",
+              "ci è"
             ],
             "answer": 0
           },
@@ -708,7 +710,8 @@ const TEST_STRUCTURES = [
             "q": "In cucina ___ quattro uova per la cena.",
             "options": [
               "ci sono",
-              "c'è"
+              "c'è",
+              "ci è"
             ],
             "answer": 0
           },
@@ -716,7 +719,8 @@ const TEST_STRUCTURES = [
             "q": "In centro ___ una farmacia.",
             "options": [
               "c'è",
-              "ci sono"
+              "ci sono",
+              "ci è"
             ],
             "answer": 0
           },
@@ -724,7 +728,8 @@ const TEST_STRUCTURES = [
             "q": "In cucina ___ un panino per Luca.",
             "options": [
               "c'è",
-              "ci sono"
+              "ci sono",
+              "ci è"
             ],
             "answer": 0
           },
@@ -732,7 +737,8 @@ const TEST_STRUCTURES = [
             "q": "Davanti alla scuola ___ tre alberi.",
             "options": [
               "ci sono",
-              "c'è"
+              "c'è",
+              "ci è"
             ],
             "answer": 0
           }
@@ -1529,10 +1535,11 @@ const TEST_STRUCTURES = [
         "instr": "Scegli tra piace e piacciono.",
         "items": [
           {
-            "q": "Ho un cane e mi ___ molto.",
+            "q": "Il cane bianco mi ___ molto.",
             "options": [
               "piace",
-              "piacciono"
+              "piacciono",
+              "piaci"
             ],
             "answer": 0
           },
@@ -1540,7 +1547,8 @@ const TEST_STRUCTURES = [
             "q": "Hai due gatti. Ti ___ molto?",
             "options": [
               "piacciono",
-              "piace"
+              "piace",
+              "piaci"
             ],
             "answer": 0
           },
@@ -1548,7 +1556,8 @@ const TEST_STRUCTURES = [
             "q": "Mi ___ molto il cavallo di Marco.",
             "options": [
               "piace",
-              "piacciono"
+              "piacciono",
+              "piaci"
             ],
             "answer": 0
           },
@@ -1556,7 +1565,8 @@ const TEST_STRUCTURES = [
             "q": "Ho due conigli e mi ___ molto.",
             "options": [
               "piacciono",
-              "piace"
+              "piace",
+              "piaci"
             ],
             "answer": 0
           },
@@ -1564,7 +1574,8 @@ const TEST_STRUCTURES = [
             "q": "Ti ___ la mucca della fattoria?",
             "options": [
               "piace",
-              "piacciono"
+              "piacciono",
+              "piaci"
             ],
             "answer": 0
           },
@@ -1572,7 +1583,8 @@ const TEST_STRUCTURES = [
             "q": "Ti ___ molto le pecore della fattoria?",
             "options": [
               "piacciono",
-              "piace"
+              "piace",
+              "piaci"
             ],
             "answer": 0
           }
@@ -1584,7 +1596,7 @@ const TEST_STRUCTURES = [
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
         "items": [
           {
-            "q": "In casa ho un pesce rosso e mi piacciono.",
+            "q": "Ho un pesce rosso e mi piacciono molto.",
             "wrong": "piacciono",
             "fix": "piace"
           },
@@ -1618,53 +1630,59 @@ const TEST_STRUCTURES = [
       {
         "type": "Trasformazione",
         "fmt": "buco",
-        "instr": "Scegli tra piace e piacciono.",
+        "instr": "Trasforma la frase: scegli la forma corretta.",
         "items": [
           {
-            "q": "A Sara ___ molto i cavalli della fattoria.",
+            "q": "Mi piace il gatto. → Mi ___ i gatti.",
             "options": [
               "piacciono",
-              "piace"
+              "piace",
+              "piaci"
             ],
             "answer": 0
           },
           {
-            "q": "A Luca non ___ il pesce rosso.",
+            "q": "Ti piacciono gli uccelli? → Ti ___ l'uccello?",
             "options": [
               "piace",
-              "piacciono"
+              "piacciono",
+              "piaci"
             ],
             "answer": 0
           },
           {
-            "q": "A Marco ___ le tartarughe di sua sorella.",
+            "q": "Non mi piace la pecora. → Non mi ___ le pecore.",
             "options": [
               "piacciono",
-              "piace"
+              "piace",
+              "piaci"
             ],
             "answer": 0
           },
           {
-            "q": "A Maria non ___ i maiali.",
-            "options": [
-              "piacciono",
-              "piace"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "A Paolo ___ molto la gallina bianca.",
+            "q": "Mi piacciono le mucche. → Mi ___ la mucca.",
             "options": [
               "piace",
-              "piacciono"
+              "piacciono",
+              "piaci"
             ],
             "answer": 0
           },
           {
-            "q": "A Elena non ___ gli uccelli in gabbia.",
+            "q": "Ti piace il coniglio? → Ti ___ i conigli?",
             "options": [
               "piacciono",
-              "piace"
+              "piace",
+              "piaci"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Non mi piacciono i cavalli. → Non mi ___ il cavallo.",
+            "options": [
+              "piace",
+              "piacciono",
+              "piaci"
             ],
             "answer": 0
           }
@@ -1951,13 +1969,14 @@ const TEST_STRUCTURES = [
       {
         "type": "Trasformazione",
         "fmt": "buco",
-        "instr": "Città o Paese? Scegli tra «a» e «in».",
+        "instr": "Scegli la preposizione corretta.",
         "items": [
           {
             "q": "Da tre anni vivo ___ Lisbona per lavoro.",
             "options": [
               "a",
-              "in"
+              "in",
+              "da"
             ],
             "answer": 0
           },
@@ -1965,7 +1984,8 @@ const TEST_STRUCTURES = [
             "q": "Da tre anni vivo ___ Portogallo per lavoro.",
             "options": [
               "in",
-              "a"
+              "a",
+              "da"
             ],
             "answer": 0
           },
@@ -1973,7 +1993,8 @@ const TEST_STRUCTURES = [
             "q": "Da gennaio lavoro ___ Italia in un albergo.",
             "options": [
               "in",
-              "a"
+              "a",
+              "da"
             ],
             "answer": 0
           },
@@ -1981,7 +2002,8 @@ const TEST_STRUCTURES = [
             "q": "Da gennaio lavoro ___ Firenze in un albergo.",
             "options": [
               "a",
-              "in"
+              "in",
+              "da"
             ],
             "answer": 0
           },
@@ -1989,7 +2011,8 @@ const TEST_STRUCTURES = [
             "q": "Abito ___ Spagna con la famiglia.",
             "options": [
               "in",
-              "a"
+              "a",
+              "da"
             ],
             "answer": 0
           },
@@ -1997,7 +2020,8 @@ const TEST_STRUCTURES = [
             "q": "Da settembre studio ___ Bologna per un corso.",
             "options": [
               "a",
-              "in"
+              "in",
+              "da"
             ],
             "answer": 0
           }
