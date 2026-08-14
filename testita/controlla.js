@@ -388,6 +388,23 @@ st.length
   : console.log('  nessuna');
 ok('Ricorda: «stima» solo dove l\'indice mostra un ripasso reale a un livello superiore');
 
+/* ---------- 12. «diag» e «stima» insieme ----------
+   Le due etichette lavorano su assi diversi e si annullano a vicenda:
+   «diag» decide in quale livello la struttura viene PESCATA dal preset di
+   piazzamento, «stima» decide in quale livello i suoi item vengono CONTATI.
+   Se stanno sulla stessa struttura, il preset la sceglie come diagnostica di
+   un livello e poi ne accredita il punteggio a quello successivo: il livello
+   di partenza resta con tre strutture invece di quattro e quello di arrivo
+   con cinque, gonfiato per giunta da materiale che lì è facile. È l'opposto
+   di ciò per cui «stima» esiste, e non se ne accorgerebbe nessuno finché i
+   verdetti non cominciassero a essere strani. */
+sez('12. «diag» e «stima» sulla stessa struttura');
+const doppie = S.filter(s => s.diag && s.stima);
+doppie.length
+  ? ko('Strutture diagnostiche con etichetta di calcolo: il preset le pesca a un livello e le conta a un altro',
+       doppie.map(s => s.title + ' — diagnostica di ' + N[s.lvl] + ', calcolata come ' + N[s.stima]))
+  : ok('Nessuna struttura è insieme diagnostica e spostata di livello');
+
 /* ---------- esito ---------- */
 console.log('\n' + '─'.repeat(60));
 if (problemi === 0) console.log('\x1b[32mTutti i controlli superati.\x1b[0m');
