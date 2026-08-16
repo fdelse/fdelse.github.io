@@ -6000,160 +6000,19 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "buco",
         "instr": "Scegli la forma corretta del partitivo o dell’espressione di quantità.",
-        "items": [
-          {
-            "q": "Per la cena ho comprato ___ verdura fresca.",
-            "options": [
-              "della",
-              "delle",
-              "dei"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Ho preso ___ pomodori maturi al mercato.",
-            "options": [
-              "dei",
-              "qualche",
-              "alcuno"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "A colazione bevo una tazza ___ latte fresco.",
-            "options": [
-              "di",
-              "del",
-              "dello"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Per merenda prendo ___ yogurt naturale.",
-            "options": [
-              "dello",
-              "del",
-              "della"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Al banco ci sono ___ persone in attesa.",
-            "options": [
-              "alcune",
-              "qualche",
-              "della"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Oggi non ho comprato ___ perché il fruttivendolo era chiuso.",
-            "options": [
-              "frutta",
-              "della frutta",
-              "qualche frutta"
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"Nel carrello ho messo ___ zucchero di canna.","options":["dello","del","dei"],"answer":0},{"q":"Per il condimento serve ___ buono.","options":["dell'olio","del olio","dello olio"],"answer":0},{"q":"Ho preso ___ spinaci freschi al banco.","options":["degli","dei","delle"],"answer":0},{"q":"In frigo ci sono ancora ___ uova.","options":["delle","degli","dei"],"answer":0},{"q":"Per la torta serve ancora ___ farina.","options":["della","dello","delle"],"answer":0},{"q":"Oggi non ho comprato ___ perché il fruttivendolo era chiuso.","options":["frutta","della frutta","qualche frutta"],"answer":0}]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [
-          {
-            "q": "Al mercato ho comprato del pane e delle formaggio.",
-            "wrong": "delle",
-            "fix": "del"
-          },
-          {
-            "q": "Vorrei un chilo delle arance, per favore.",
-            "wrong": "delle",
-            "fix": "di"
-          },
-          {
-            "q": "Sul tavolo c'è ancora alcuni pane caldo.",
-            "wrong": "alcuni",
-            "fix": "del"
-          },
-          {
-            "q": "Per la torta ho comprato della zucchero e delle uova.",
-            "wrong": "della",
-            "fix": "dello"
-          },
-          {
-            "q": "Ho messo nel carrello qualche bottiglie d’acqua minerale.",
-            "wrong": "bottiglie",
-            "fix": "bottiglia"
-          },
-          {
-            "q": "Mi dia mezzo chilo delle olive.",
-            "wrong": "delle",
-            "fix": "di"
-          }
-        ]
+        "items": [{"q":"Al mercato ho comprato del pane e delle formaggio.","wrong":"delle","fix":"del"},{"q":"Vorrei un chilo delle arance, per favore.","wrong":"delle","fix":"di"},{"q":"Sul tavolo c'è ancora alcuni pane caldo.","wrong":"alcuni","fix":"del"},{"q":"Per la torta ho comprato della zucchero e delle uova.","wrong":"della","fix":"dello"},{"q":"Ho messo nel carrello qualche bottiglie d’acqua minerale.","wrong":"bottiglie","fix":"bottiglia"},{"q":"Al mercato ho preso dei asparagi e delle zucchine.","wrong":"dei","fix":"degli"}]
       },
       {
         "type": "Trasformazione",
         "fmt": "buco",
         "instr": "Riscrivi la frase con la quantità o l’espressione indicata.",
-        "items": [
-          {
-            "q": "Al forno ho comprato del pane. → (mezzo chilo)",
-            "options": [
-              "Al forno ho comprato mezzo chilo di pane.",
-              "Al forno ho comprato mezzo chilo del pane.",
-              "Al forno ho comprato mezzo chilo dei pane."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Stamattina ho preso delle mele. → (un chilo)",
-            "options": [
-              "Stamattina ho preso un chilo di mele.",
-              "Stamattina ho preso un chilo delle mele.",
-              "Stamattina ho preso un chilo dei mele."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Davanti alla cassa ci sono dei clienti. → (con «alcuni»)",
-            "options": [
-              "Davanti alla cassa ci sono alcuni clienti.",
-              "Davanti alla cassa c’è alcuni clienti.",
-              "Davanti alla cassa ci sono qualche clienti."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Buongiorno, vorrei del prosciutto. → (due etti)",
-            "options": [
-              "Buongiorno, vorrei due etti di prosciutto.",
-              "Buongiorno, vorrei due etti del prosciutto.",
-              "Buongiorno, vorrei due etti prosciutto."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Questa settimana ci sono delle offerte. → (con «qualche»)",
-            "options": [
-              "Questa settimana c’è qualche offerta.",
-              "Questa settimana ci sono qualche offerte.",
-              "Questa settimana c’è qualche offerte."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "A cena mangio della verdura. → (un po’)",
-            "options": [
-              "A cena mangio un po’ di verdura.",
-              "A cena mangio un po’ della verdura.",
-              "A cena mangio un po’ verdura."
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"Al forno ho comprato del pane. → (mezzo chilo)","options":["Al forno ho comprato mezzo chilo di pane.","Al forno ho comprato mezzo chilo del pane.","Al forno ho comprato mezzo chilo dei pane."],"answer":0},{"q":"Stamattina ho preso delle mele. → (un chilo)","options":["Stamattina ho preso un chilo di mele.","Stamattina ho preso un chilo delle mele.","Stamattina ho preso un chilo dei mele."],"answer":0},{"q":"Davanti alla cassa ci sono dei clienti. → (con «alcuni»)","options":["Davanti alla cassa ci sono alcuni clienti.","Davanti alla cassa c’è alcuni clienti.","Davanti alla cassa ci sono qualche clienti."],"answer":0},{"q":"Per la festa prendiamo dell'aranciata. → (tre bottiglie)","options":["Per la festa prendiamo tre bottiglie di aranciata.","Per la festa prendiamo tre bottiglie dell'aranciata.","Per la festa prendiamo tre bottiglie aranciata."],"answer":0},{"q":"Questa settimana ci sono delle offerte. → (con «qualche»)","options":["Questa settimana c’è qualche offerta.","Questa settimana ci sono qualche offerte.","Questa settimana c’è qualche offerte."],"answer":0},{"q":"A cena mangio della verdura. → (un po’)","options":["A cena mangio un po’ di verdura.","A cena mangio un po’ della verdura.","A cena mangio un po’ verdura."],"answer":0}]
       }
     ]
   },
@@ -6168,99 +6027,13 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "fill",
         "instr": "Completa l'istruzione con l'infinito del verbo indicato.",
-        "items": [
-          {
-            "q": "___ le uova in una ciotola. (sbattere)",
-            "a": "Sbattere",
-            "no": [
-              "Sbattendo",
-              "Sbattuto",
-              "Sbatter"
-            ]
-          },
-          {
-            "q": "___ la farina poco a poco. (aggiungere)",
-            "a": "Aggiungere",
-            "no": [
-              "Aggiungendo",
-              "Aggiunto",
-              "Aggiunger"
-            ]
-          },
-          {
-            "q": "___ in forno a 180 gradi. (cuocere)",
-            "a": "Cuocere",
-            "no": [
-              "Cuocendo",
-              "Cotto",
-              "Cuocer"
-            ]
-          },
-          {
-            "q": "___ le verdure a pezzetti. (tagliare)",
-            "a": "Tagliare",
-            "no": [
-              "Tagliando",
-              "Tagliato",
-              "Tagliar"
-            ]
-          },
-          {
-            "q": "___ riposare l'impasto. (lasciare)",
-            "a": "Lasciare",
-            "no": [
-              "Lasciando",
-              "Lasciato",
-              "Lasciar"
-            ]
-          },
-          {
-            "q": "___ con olio e limone. (condire)",
-            "a": "Condire",
-            "no": [
-              "Condendo",
-              "Condito",
-              "Condir"
-            ]
-          }
-        ]
+        "items": [{"q":"___ il coperchio prima di mescolare. (togliere)","a":"Togliere","no":["Togliendo","Tolto"]},{"q":"___ le istruzioni prima dell'uso. (leggere)","a":"Leggere","no":["Leggendo","Letto"]},{"q":"___ il tappo con forza. (spingere)","a":"Spingere","no":["Spingendo","Spinto"]},{"q":"Non ___ l'apparecchio con le mani bagnate. (toccare)","a":"toccare","no":["toccando","toccato"]},{"q":"___ la ricevuta per due anni. (tenere)","a":"Tenere","no":["Tenendo","Tenuto"]},{"q":"___ il modulo in due copie. (produrre)","a":"Produrre","no":["Producendo","Prodotto","Produre"]}]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [
-          {
-            "q": "Per il sugo, tritando l’aglio con un coltello affilato e scaldare l’olio.",
-            "wrong": "tritando",
-            "fix": "tritare"
-          },
-          {
-            "q": "Scaldare l’olio nella padella e soffriggendo l’aglio a fuoco medio.",
-            "wrong": "soffriggendo",
-            "fix": "soffriggere"
-          },
-          {
-            "q": "Quando l’acqua bolle, buttare gli spaghetti e mescolato subito con cura.",
-            "wrong": "mescolato",
-            "fix": "mescolare"
-          },
-          {
-            "q": "Riempito una pentola d’acqua e portarla a ebollizione.",
-            "wrong": "Riempito",
-            "fix": "Riempire"
-          },
-          {
-            "q": "Scolare la pasta e versandola nella padella con il sugo caldo.",
-            "wrong": "versandola",
-            "fix": "versarla"
-          },
-          {
-            "q": "Spegnere il fuoco e servito subito con il parmigiano.",
-            "wrong": "servito",
-            "fix": "servire"
-          }
-        ]
+        "items": [{"q":"Per il montaggio, appoggiando il pannello a terra e avvitare le gambe.","wrong":"appoggiando","fix":"appoggiare"},{"q":"Inserire la spina e premendo il tasto per tre secondi.","wrong":"premendo","fix":"premere"},{"q":"Quando la spia si accende, aprire lo sportello ed estratto il filtro.","wrong":"estratto","fix":"estrarre"},{"q":"Compilato il modulo e allegare una copia del documento.","wrong":"Compilato","fix":"Compilare"},{"q":"Staccare la corrente e aspettando che il motore si fermi.","wrong":"aspettando","fix":"aspettare"},{"q":"Chiudere il rubinetto e avvisato subito l'amministratore.","wrong":"avvisato","fix":"avvisare"}]
       },
       {
         "type": "Trasformazione",
@@ -6434,62 +6207,7 @@ const TEST_STRUCTURES = [
         "type": "Trasformazione",
         "fmt": "buco",
         "instr": "Riscrivi la frase al passato prossimo.",
-        "items": [
-          {
-            "q": "Leggo il giornale in treno. →",
-            "options": [
-              "Ho letto il giornale in treno.",
-              "Ho leggiuto il giornale in treno.",
-              "Letto il giornale in treno."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Vengo in ufficio con la metropolitana. →",
-            "options": [
-              "Sono venuto in ufficio con la metropolitana.",
-              "Ho venuto in ufficio con la metropolitana.",
-              "Sono venuti in ufficio con la metropolitana."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Sono in ritardo per il traffico. →",
-            "options": [
-              "Sono stato in ritardo per il traffico.",
-              "Ho stato in ritardo per il traffico.",
-              "Sono essuto in ritardo per il traffico."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Apro la finestra della cucina. →",
-            "options": [
-              "Ho aperto la finestra della cucina.",
-              "Ho aprito la finestra della cucina.",
-              "Ho aprire la finestra della cucina."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Prendi il treno delle sette. →",
-            "options": [
-              "Hai preso il treno delle sette.",
-              "Hai prenduto il treno delle sette.",
-              "Sei preso il treno delle sette."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Metto le chiavi sul tavolo. →",
-            "options": [
-              "Ho messo le chiavi sul tavolo.",
-              "Sono messo le chiavi sul tavolo.",
-              "Messo le chiavi sul tavolo."
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"Leggo il giornale in treno. →","options":["Ho letto il giornale in treno.","Ho leggiuto il giornale in treno.","Letto il giornale in treno."],"answer":0},{"q":"Vengo in ufficio con la metropolitana. →","options":["Sono venuto in ufficio con la metropolitana.","Ho venuto in ufficio con la metropolitana.","Sono venuti in ufficio con la metropolitana."],"answer":0},{"q":"Sono in ritardo per il traffico. →","options":["Sono stato in ritardo per il traffico.","Ho stato in ritardo per il traffico.","Sono essuto in ritardo per il traffico."],"answer":0},{"q":"Esco di casa alle sette. →","options":["Sono uscito di casa alle sette.","Ho uscito di casa alle sette.","Sono uscite di casa alle sette."],"answer":0},{"q":"Rimani in ufficio fino alle otto. →","options":["Sei rimasto in ufficio fino alle otto.","Hai rimasto in ufficio fino alle otto.","Sei rimanuto in ufficio fino alle otto."],"answer":0},{"q":"I ragazzi scendono in cortile dopo cena. →","options":["I ragazzi sono scesi in cortile dopo cena.","I ragazzi hanno sceso in cortile dopo cena.","I ragazzi sono sceso in cortile dopo cena."],"answer":0}]
       }
     ]
   },
@@ -6568,99 +6286,13 @@ const TEST_STRUCTURES = [
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [
-          {
-            "q": "Noi essaremo in stazione alle sei e aspetteremo sul binario.",
-            "wrong": "essaremo",
-            "fix": "saremo"
-          },
-          {
-            "q": "Domani spiegherò tutto al direttore e poi parlarò con te.",
-            "wrong": "parlarò",
-            "fix": "parlerò"
-          },
-          {
-            "q": "Se vieni con noi, ti daramo un passaggio e torneremo insieme.",
-            "wrong": "daramo",
-            "fix": "daremo"
-          },
-          {
-            "q": "Il corso finerà a giugno e riprenderà a settembre.",
-            "wrong": "finerà",
-            "fix": "finirà"
-          },
-          {
-            "q": "Loro arriveranno alle sei e noi partaremo subito dopo.",
-            "wrong": "partaremo",
-            "fix": "partiremo"
-          },
-          {
-            "q": "Chi prenota adesso aspettarà meno e pagherà di meno.",
-            "wrong": "aspettarà",
-            "fix": "aspetterà"
-          }
-        ]
+        "items": [{"q":"Noi cominciaremo alle sei e aspetteremo gli altri sul binario.","wrong":"cominciaremo","fix":"cominceremo"},{"q":"Domani spiegherò tutto al direttore e poi parlarò con te.","wrong":"parlarò","fix":"parlerò"},{"q":"Se vieni con noi, ti accompagnaremo alla stazione e torneremo insieme.","wrong":"accompagnaremo","fix":"accompagneremo"},{"q":"Il corso finerà a giugno e riprenderà a settembre.","wrong":"finerà","fix":"finirà"},{"q":"Loro arriveranno alle sei e noi partaremo subito dopo.","wrong":"partaremo","fix":"partiremo"},{"q":"Chi prenota adesso aspettarà meno e pagherà di meno.","wrong":"aspettarà","fix":"aspetterà"}]
       },
       {
         "type": "Trasformazione",
         "fmt": "buco",
         "instr": "Trasforma il presente in futuro semplice.",
-        "items": [
-          {
-            "q": "Parto domani con il primo treno. →",
-            "options": [
-              "Partirò domani con il primo treno.",
-              "Parterò domani con il primo treno.",
-              "Partarò domani con il primo treno."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Vai in vacanza ad agosto? →",
-            "options": [
-              "Andrai in vacanza ad agosto?",
-              "Anderai in vacanza ad agosto?",
-              "Andrerai in vacanza ad agosto?"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Vengono alle otto per la riunione. →",
-            "options": [
-              "Verranno alle otto per la riunione.",
-              "Veniranno alle otto per la riunione.",
-              "Venaranno alle otto per la riunione."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Faccio la spesa prima di cena. →",
-            "options": [
-              "Farò la spesa prima di cena.",
-              "Facerò la spesa prima di cena.",
-              "Farerò la spesa prima di cena."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Hai tempo domani pomeriggio? →",
-            "options": [
-              "Avrai tempo domani pomeriggio?",
-              "Averai tempo domani pomeriggio?",
-              "Avarai tempo domani pomeriggio?"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Diamo una mano ai colleghi nuovi. →",
-            "options": [
-              "Daremo una mano ai colleghi nuovi.",
-              "Diaremo una mano ai colleghi nuovi.",
-              "Dararemo una mano ai colleghi nuovi."
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"Alle sei c’è la riunione di reparto. →","options":["Alle sei ci sarà la riunione di reparto.","Alle sei ci saranno la riunione di reparto.","Alle sei ci sarebbe la riunione di reparto."],"answer":0},{"q":"In sala ci sono venti posti liberi. →","options":["In sala ci saranno venti posti liberi.","In sala ci sarà venti posti liberi.","In sala ci saremo venti posti liberi."],"answer":0},{"q":"Sabato non c’è nessuno in ufficio. →","options":["Sabato non ci sarà nessuno in ufficio.","Sabato non ci saranno nessuno in ufficio.","Sabato non ci sarebbe nessuno in ufficio."],"answer":0},{"q":"Ci vuole il permesso del proprietario. →","options":["Ci vorrà il permesso del proprietario.","Ci vorranno il permesso del proprietario.","Ci volerà il permesso del proprietario."],"answer":0},{"q":"Ci vogliono due settimane per la risposta. →","options":["Ci vorranno due settimane per la risposta.","Ci vorrà due settimane per la risposta.","Ci voleranno due settimane per la risposta."],"answer":0},{"q":"Ci metto poco a preparare la sala. →","options":["Ci metterò poco a preparare la sala.","Ci metteranno poco a preparare la sala.","Ci mettarò poco a preparare la sala."],"answer":0}]
       }
     ]
   },
@@ -6676,160 +6308,19 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "buco",
         "instr": "Scegli la forma corretta di volerci o metterci.",
-        "items": [
-          {
-            "q": "___ due ore per arrivare a Roma.",
-            "options": [
-              "Ci vogliono",
-              "Ci mettono",
-              "Ci vuole"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "___ venti minuti a prepararmi.",
-            "options": [
-              "Ci metto",
-              "Ci voglio",
-              "Ci mette"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "___ molta pazienza in questo lavoro.",
-            "options": [
-              "Ci vuole",
-              "Ci mette",
-              "Ci vogliono"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il treno ___ tre ore da Milano a Roma.",
-            "options": [
-              "ci mette",
-              "ci vuole",
-              "ci mettono"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Noi ___ un'ora ad arrivare.",
-            "options": [
-              "ci mettiamo",
-              "ci vogliamo",
-              "ci mette"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Tu quanto ___ ad arrivare in ufficio?",
-            "options": [
-              "ci metti",
-              "ci vuole",
-              "ci mettete"
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"___ tre ore per attraversare la città in tangenziale.","options":["Ci vogliono","Ci mettono","Ci vuole"],"answer":0},{"q":"___ venti minuti a prepararmi.","options":["Ci metto","Ci voglio","Ci mette"],"answer":0},{"q":"___ molta calma per parlare con quel cliente.","options":["Ci vuole","Ci mette","Ci vogliono"],"answer":0},{"q":"Il treno ___ tre ore da Milano a Roma.","options":["ci mette","ci vuole","ci mettono"],"answer":0},{"q":"Noi ___ un'ora ad arrivare.","options":["ci mettiamo","ci vogliamo","ci mette"],"answer":0},{"q":"Tu quanto ___ ad arrivare in ufficio?","options":["ci metti","ci vuole","ci mettete"],"answer":0}]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [
-          {
-            "q": "Per il concorso ci vuole due certificati, ma li abbiamo già.",
-            "wrong": "vuole",
-            "fix": "vogliono"
-          },
-          {
-            "q": "In autobus ci vuole mezz’ora, ma a piedi ci voglio il doppio.",
-            "wrong": "voglio",
-            "fix": "metto"
-          },
-          {
-            "q": "Sara ci vogliono due giorni a finire la relazione.",
-            "wrong": "vogliono",
-            "fix": "mette"
-          },
-          {
-            "q": "Per superare l’esame ci vuole costanza e metodo.",
-            "wrong": "vuole",
-            "fix": "vogliono"
-          },
-          {
-            "q": "Voi quanto ci mettono a rispondere alle email?",
-            "wrong": "mettono",
-            "fix": "mettete"
-          },
-          {
-            "q": "Da casa mia alla stazione ci mettono dieci minuti a piedi.",
-            "wrong": "mettono",
-            "fix": "vogliono"
-          }
-        ]
+        "items": [{"q":"Per il concorso ci vuole due certificati, ma li abbiamo già.","wrong":"vuole","fix":"vogliono"},{"q":"In autobus ci vuole mezz’ora, ma a piedi ci voglio il doppio.","wrong":"voglio","fix":"metto"},{"q":"Sara ci vogliono due giorni a finire la relazione.","wrong":"vogliono","fix":"mette"},{"q":"Da qui al centro ci mette un quarto d’ora a piedi, se cammini svelto.","wrong":"mette","fix":"vuole"},{"q":"Voi quanto ci mettono a rispondere alle email?","wrong":"mettono","fix":"mettete"},{"q":"Con la nebbia e il traffico ci mette il doppio, ma io in bici ci metto sempre lo stesso tempo.","wrong":"mette","fix":"vuole"}]
       },
       {
         "type": "Trasformazione",
         "fmt": "buco",
         "instr": "Riscrivi la frase al passato prossimo.",
-        "items": [
-          {
-            "q": "Sul contratto ci vogliono due firme. →",
-            "options": [
-              "Sul contratto ci sono volute due firme.",
-              "Sul contratto ci hanno voluto due firme.",
-              "Sul contratto ci sono voluti due firme."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Ci metto un anno a finire la tesi. →",
-            "options": [
-              "Ci ho messo un anno a finire la tesi.",
-              "Ci sono messo un anno a finire la tesi.",
-              "Ci ho messa un anno a finire la tesi."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Per cambiare città ci vuole molto coraggio. →",
-            "options": [
-              "Per cambiare città c’è voluto molto coraggio.",
-              "Per cambiare città ci ha voluto molto coraggio.",
-              "Per cambiare città c’è voluta molto coraggio."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Ci mettiamo tutto il pomeriggio a montare l’armadio. →",
-            "options": [
-              "Ci abbiamo messo tutto il pomeriggio a montare l’armadio.",
-              "Ci siamo messi tutto il pomeriggio a montare l’armadio.",
-              "Ci abbiamo messi tutto il pomeriggio a montare l’armadio."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Per il permesso di soggiorno ci vuole una settimana. →",
-            "options": [
-              "Per il permesso di soggiorno c’è voluta una settimana.",
-              "Per il permesso di soggiorno ci ha voluto una settimana.",
-              "Per il permesso di soggiorno c’è voluto una settimana."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Per consegnare il divano ci mettono due mesi. →",
-            "options": [
-              "Per consegnare il divano ci hanno messo due mesi.",
-              "Per consegnare il divano ci sono messi due mesi.",
-              "Per consegnare il divano ci hanno messi due mesi."
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"Sul contratto ci vogliono due firme. →","options":["Sul contratto ci sono volute due firme.","Sul contratto ci hanno voluto due firme.","Sul contratto ci sono voluti due firme."],"answer":0},{"q":"Ci metto mezza giornata a sistemare il garage. →","options":["Ci ho messo mezza giornata a sistemare il garage.","Ci sono messo mezza giornata a sistemare il garage.","Ci ho messa mezza giornata a sistemare il garage."],"answer":0},{"q":"Per organizzare la festa ci vuole molto impegno. →","options":["Per organizzare la festa c’è voluto molto impegno.","Per organizzare la festa ci ha voluto molto impegno.","Per organizzare la festa ci sono voluti molto impegno."],"answer":0},{"q":"Ci mettiamo tutto il pomeriggio a montare l’armadio. →","options":["Ci abbiamo messo tutto il pomeriggio a montare l’armadio.","Ci siamo messi tutto il pomeriggio a montare l’armadio.","Ci abbiamo messi tutto il pomeriggio a montare l’armadio."],"answer":0},{"q":"Per il rinnovo della carta d'identità ci vuole una settimana. →","options":["Per il rinnovo della carta d'identità c’è voluta una settimana.","Per il rinnovo della carta d'identità ci ha voluto una settimana.","Per il rinnovo della carta d'identità c’è voluto una settimana."],"answer":0},{"q":"Per consegnare il divano ci mettono due mesi. →","options":["Per consegnare il divano ci hanno messo due mesi.","Per consegnare il divano ci sono messi due mesi.","Per consegnare il divano ci hanno messi due mesi."],"answer":0}]
       }
     ]
   },
@@ -6846,62 +6337,7 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "fill",
         "instr": "Scrivi l'imperfetto del verbo tra parentesi.",
-        "items": [
-          {
-            "q": "Da bambino ___ molto. (io – giocare)",
-            "a": "giocavo",
-            "no": [
-              "giocai",
-              "giocavi",
-              "giocavano"
-            ]
-          },
-          {
-            "q": "D'estate io e i miei cugini ___ in campagna. (andare)",
-            "a": "andavamo",
-            "no": [
-              "andammo",
-              "andavate",
-              "andavo"
-            ]
-          },
-          {
-            "q": "Marco e Anna ___ vicino al mare. (vivere)",
-            "a": "vivevano",
-            "no": [
-              "vissero",
-              "vivevamo",
-              "viveva"
-            ]
-          },
-          {
-            "q": "Mio padre si ___ ogni mattina alle sei. (svegliarsi)",
-            "a": "svegliava",
-            "no": [
-              "svegliò",
-              "svegliavo",
-              "svegliavano"
-            ]
-          },
-          {
-            "q": "Dopo cena io ___ i compiti in cucina. (fare)",
-            "a": "facevo",
-            "no": [
-              "feci",
-              "faceva",
-              "facevano"
-            ]
-          },
-          {
-            "q": "Marta ___ una bambina timida. (essere)",
-            "a": "era",
-            "no": [
-              "fu",
-              "ero",
-              "erano"
-            ]
-          }
-        ]
+        "items": [{"q":"Da bambino ___ molto. (io – giocare)","a":"giocavo","no":["giocai","giocavi","giocavano"]},{"q":"D'estate io e i miei cugini ___ in campagna. (andare)","a":"andavamo","no":["andammo","andavate","andavo"]},{"q":"Marco e Anna ___ vicino al mare. (vivere)","a":"vivevano","no":["vissero","vivevamo","viveva"]},{"q":"Mio padre si ___ ogni mattina alle sei. (svegliarsi)","a":"svegliava","no":["svegliò","svegliavo","svegliavano"]},{"q":"Da ragazzo ___ sempre la verità ai miei genitori. (io – dire)","a":"dicevo","no":["dicavo","dicievo","diceva"]},{"q":"Da piccoli non ___ mai le spiegazioni della maestra. (noi – capire)","a":"capivamo","no":["capevamo","capivano"]}]
       },
       {
         "type": "Correzione",
@@ -7017,160 +6453,19 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "buco",
         "instr": "Scegli tra imperfetto e passato prossimo.",
-        "items": [
-          {
-            "q": "Mentre ___ la doccia, è saltata la luce.",
-            "options": [
-              "facevo",
-              "ho fatto",
-              "faceva"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Ieri ___ un bel film al cinema con Sara.",
-            "options": [
-              "ho visto",
-              "vedevo",
-              "sono visto"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Da bambino ___ sempre in bicicletta fino al fiume.",
-            "options": [
-              "andavo",
-              "sono andato",
-              "ho andato"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "___ le otto quando è arrivato il taxi.",
-            "options": [
-              "Erano",
-              "Sono state",
-              "Era"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Ieri sera ti ___ tre volte ma non rispondevi.",
-            "options": [
-              "ho chiamato",
-              "chiamavo",
-              "sono chiamato"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Improvvisamente ___ a piovere e siamo entrati in un bar.",
-            "options": [
-              "ha cominciato",
-              "cominciava",
-              "cominciavo"
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"Mentre ___ la doccia, è saltata la luce.","options":["facevo","ho fatto","faceva"],"answer":0},{"q":"Ieri ___ un bel film al cinema con Sara.","options":["ho visto","vedevo","abbiamo visto"],"answer":0},{"q":"Da bambino ___ sempre in bicicletta fino al fiume.","options":["andavo","sono andato","andavamo"],"answer":0},{"q":"___ le otto quando è arrivato il taxi.","options":["Erano","Sono state","Era"],"answer":0},{"q":"Ieri sera ti ___ tre volte ma non rispondevi.","options":["ho chiamato","chiamavo","hai chiamato"],"answer":0},{"q":"Improvvisamente ___ a piovere e siamo entrati in un bar.","options":["ha cominciato","cominciava","cominciavo"],"answer":0}]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [
-          {
-            "q": "Ieri finivo il libro che mi hai prestato la settimana scorsa.",
-            "wrong": "finivo",
-            "fix": "ho finito"
-          },
-          {
-            "q": "Ieri andavo al parco ogni domenica con mia sorella.",
-            "wrong": "Ieri",
-            "fix": "Prima"
-          },
-          {
-            "q": "Nel 2025 visitavo Parigi una sola volta durante un viaggio di lavoro.",
-            "wrong": "visitavo",
-            "fix": "ho visitato"
-          },
-          {
-            "q": "Stamattina la sveglia ha suonato alle sei e mi alzavo subito.",
-            "wrong": "alzavo",
-            "fix": "sono alzato"
-          },
-          {
-            "q": "Ieri i miei nonni scrivevano lettere ogni settimana ai parenti lontani.",
-            "wrong": "Ieri",
-            "fix": "Prima"
-          },
-          {
-            "q": "Ieri sera ti chiamavo tre volte mentre aspettavo una tua risposta.",
-            "wrong": "chiamavo",
-            "fix": "ho chiamato"
-          }
-        ]
+        "items": [{"q":"Ieri finivo il libro che mi hai prestato la settimana scorsa.","wrong":"finivo","fix":"ho finito"},{"q":"Ieri andavo al parco ogni domenica con mia sorella.","wrong":"Ieri","fix":"Prima"},{"q":"Nel 2025 visitavo Parigi una sola volta durante un viaggio di lavoro.","wrong":"visitavo","fix":"ho visitato"},{"q":"Stamattina la sveglia ha suonato alle sei e mi alzavo subito.","wrong":"alzavo","fix":"sono alzato"},{"q":"Stamattina mio nonno leggeva il giornale tutti i giorni prima di uscire.","wrong":"Stamattina","fix":"Una volta"},{"q":"Ieri sera ti chiamavo tre volte mentre aspettavo una tua risposta.","wrong":"chiamavo","fix":"ho chiamato"}]
       },
       {
         "type": "Trasformazione",
         "fmt": "buco",
         "instr": "Completa il racconto scegliendo la coppia di tempi giusta.",
-        "items": [
-          {
-            "q": "(essere) tardi quando (arrivare, noi).",
-            "options": [
-              "Era tardi quando siamo arrivati.",
-              "È stato tardi quando arrivavamo.",
-              "Era tardi quando arrivavamo."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Mentre (leggere, io), qualcuno (bussare).",
-            "options": [
-              "Mentre leggevo, ha bussato qualcuno.",
-              "Mentre ho letto, bussava qualcuno.",
-              "Mentre ho letto, ha bussato qualcuno."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "(fare) freddo, così (restare, noi) a casa.",
-            "options": [
-              "Faceva freddo, così siamo restati a casa.",
-              "Ha fatto freddo, così restavamo a casa.",
-              "Faceva freddo, così restavamo a casa."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "(conoscere, io) Anna mentre (lavorare) a Roma.",
-            "options": [
-              "Ho conosciuto Anna mentre lavoravo a Roma.",
-              "Conoscevo Anna mentre ho lavorato a Roma.",
-              "Ho conosciuto Anna mentre ho lavorato a Roma."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Mentre (cucinare, lei), (bruciarsi) un dito.",
-            "options": [
-              "Mentre cucinava, si è bruciata un dito.",
-              "Mentre ha cucinato, si bruciava un dito.",
-              "Mentre cucinava, si bruciava un dito."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "(piovere) quando (uscire, noi) dal cinema.",
-            "options": [
-              "Pioveva quando siamo usciti dal cinema.",
-              "Ha piovuto quando uscivamo dal cinema.",
-              "Ha piovuto quando siamo usciti dal cinema."
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"(essere) tardi quando (arrivare, noi).","options":["Era tardi quando siamo arrivati.","È stato tardi quando arrivavamo.","Era tardi quando arrivavamo."],"answer":0},{"q":"Mentre (leggere, io), qualcuno (bussare).","options":["Mentre leggevo, ha bussato qualcuno.","Mentre ho letto, bussava qualcuno.","Mentre ho letto, ha bussato qualcuno."],"answer":0},{"q":"(fare) freddo, così (restare, noi) a casa.","options":["Faceva freddo, così siamo restati a casa.","Ha fatto freddo, così restavamo a casa.","Faceva freddo, così restavamo a casa."],"answer":0},{"q":"(conoscere, io) Anna mentre (lavorare) a Roma.","options":["Ho conosciuto Anna mentre lavoravo a Roma.","Conoscevo Anna mentre ho lavorato a Roma.","Ho conosciuto Anna mentre ho lavorato a Roma."],"answer":0},{"q":"Mentre (cucinare, lei), (bruciarsi) un dito.","options":["Mentre cucinava, si è bruciata un dito.","Mentre ha cucinato, si bruciava un dito.","Mentre cucinava, si bruciava un dito."],"answer":0},{"q":"(nevicare) quando (finire, noi) la partita.","options":["Nevicava quando abbiamo finito la partita.","Ha nevicato quando finivamo la partita.","Ha nevicato quando abbiamo finito la partita."],"answer":0}]
       }
     ],
     "diag": true
@@ -7355,88 +6650,13 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "fill",
         "instr": "Scrivi il gerundio del verbo tra parentesi.",
-        "items": [
-          {
-            "q": "Adesso l'inquilino sta ___ il contratto davanti al proprietario. (firmare)",
-            "a": "firmando",
-            "no": [
-              "firmendo"
-            ]
-          },
-          {
-            "q": "Il tubo sotto il lavandino sta ___ acqua da stamattina. (perdere)",
-            "a": "perdendo",
-            "no": [
-              "perdando"
-            ]
-          },
-          {
-            "q": "Sto ___ i documenti richiesti all'agenzia. (spedire)",
-            "a": "spedendo",
-            "no": [
-              "spedando",
-              "spediscendo"
-            ]
-          },
-          {
-            "q": "In cucina stiamo ___ la cena per gli ospiti. (preparare)",
-            "a": "preparando",
-            "no": [
-              "preparendo"
-            ]
-          },
-          {
-            "q": "Fuori sta ___ da tre ore e il tetto non tiene. (piovere)",
-            "a": "piovendo",
-            "no": [
-              "piovando"
-            ]
-          },
-          {
-            "q": "Da ieri sto ___ un rumore strano in bagno. (sentire)",
-            "a": "sentendo",
-            "no": [
-              "sentando"
-            ]
-          }
-        ]
+        "items": [{"q":"In questo momento la maestra sta ___ i compiti. (correggere)","a":"correggendo","no":["correggando","corregendo"]},{"q":"Sto ___ una mail al mio professore. (scrivere)","a":"scrivendo","no":["scrivando"]},{"q":"I bambini stanno ___ in giardino. (giocare)","a":"giocando","no":["giocendo"]},{"q":"Stiamo ___ il treno delle sei. (aspettare)","a":"aspettando","no":["aspettendo"]},{"q":"Solo adesso sto ___ il problema. (capire)","a":"capendo","no":["capiscendo","capando"]},{"q":"L'acqua sta ___ nella pentola. (bollire)","a":"bollendo","no":["bollando"]}]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [
-          {
-            "q": "Sto telefonendo all'amministratore perché continua a mancare la corrente e i vicini stanno protestando.",
-            "wrong": "telefonendo",
-            "fix": "telefonando"
-          },
-          {
-            "q": "L'idraulico sta scendando in cantina e il portiere lo sta accompagnando.",
-            "wrong": "scendando",
-            "fix": "scendendo"
-          },
-          {
-            "q": "Gli operai stanno pulando il cortile mentre il custode sta chiudendo il cancello.",
-            "wrong": "pulando",
-            "fix": "pulendo"
-          },
-          {
-            "q": "Il muratore sta farendo un preventivo mentre l'amministratore sta prendendo appunti.",
-            "wrong": "farendo",
-            "fix": "facendo"
-          },
-          {
-            "q": "Al bar sotto casa sto berendo un caffè mentre l'idraulico sta finendo il lavoro.",
-            "wrong": "berendo",
-            "fix": "bevendo"
-          },
-          {
-            "q": "Adesso il tecnico mi sta direndo qualcosa mentre sta smontando il termosifone.",
-            "wrong": "direndo",
-            "fix": "dicendo"
-          }
-        ]
+        "items": [{"q":"Sto telefonendo all'amministratore perché continua a mancare la corrente e i vicini stanno protestando.","wrong":"telefonendo","fix":"telefonando"},{"q":"L'idraulico sta scendando in cantina e il portiere lo sta accompagnando.","wrong":"scendando","fix":"scendendo"},{"q":"Gli operai stanno puliscendo il cortile mentre il custode sta chiudendo il cancello.","wrong":"puliscendo","fix":"pulendo"},{"q":"Il muratore sta farendo un preventivo mentre l'amministratore sta prendendo appunti.","wrong":"farendo","fix":"facendo"},{"q":"Al bar sotto casa sto berendo un caffè mentre l'idraulico sta finendo il lavoro.","wrong":"berendo","fix":"bevendo"},{"q":"Adesso il tecnico mi sta direndo qualcosa mentre sta smontando il termosifone.","wrong":"direndo","fix":"dicendo"}]
       },
       {
         "type": "Trasformazione",
@@ -7630,7 +6850,7 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "fill",
         "instr": "Scrivi il congiuntivo passato del verbo tra parentesi.",
-        "items": [{"q":"Penso che Marta ___ di casa prima delle sette. (uscire)","a":"sia uscita","no":["è uscita"]},{"q":"Dubito che voi ___ la ricevuta del pagamento. (conservare)","a":"abbiate conservato","no":["avete conservato"]},{"q":"Mi dispiace che i tuoi amici ___ senza salutare. (partire)","a":"siano partiti","no":["sono partiti"]},{"q":"Sospetto che tu ___ la password a qualcuno. (dare)","a":"abbia dato","no":["hai dato"]},{"q":"È strano che il tecnico non ___ ancora in officina. (tornare)","a":"sia tornato","no":["è tornato"]},{"q":"È possibile che io ___ la data dell'appuntamento. (sbagliare)","a":"abbia sbagliato","no":["ho sbagliato"]}]
+        "items": [{"q":"Penso che Marta ___ di casa prima delle sette. (uscire)","a":"sia uscita","no":["è uscita"]},{"q":"Dubito che voi ___ la ricevuta del pagamento. (conservare)","a":"abbiate conservato","no":["avete conservato"]},{"q":"Mi dispiace che i tuoi amici ___ senza salutare. (partire)","a":"siano partiti","no":["sono partiti"]},{"q":"Sospetto che tu ___ la password a qualcuno. (dare)","a":"abbia dato","no":["hai dato"]},{"q":"Mi sembra che il capo ___ per un ritardo di cinque minuti. (arrabbiarsi)","a":"si sia arrabbiato","no":["si è arrabbiato"]},{"q":"È possibile che io ___ la data dell'appuntamento. (sbagliare)","a":"abbia sbagliato","no":["ho sbagliato"]}]
       },
       {
         "type": "Correzione",
@@ -7642,7 +6862,7 @@ const TEST_STRUCTURES = [
         "type": "Trasformazione",
         "fmt": "buco",
         "instr": "Scegli la forma corretta.",
-        "items": [{"q":"Penso che Marco ___ il treno delle sette ieri mattina.","options":["abbia preso","prenda","ha preso"],"answer":0},{"q":"Spero che tu ___ meglio domani.","options":["sia stato","starai","stia"],"answer":2},{"q":"Mi sembra che stamattina Anna ___ l'ombrello sul tram.","options":["dimentichi","abbia dimenticato","ha dimenticato"],"answer":1},{"q":"È probabile che lui ___ ogni sera dopo cena.","options":["studi","sia studiato","studia"],"answer":0},{"q":"Credo che la settimana scorsa loro ___ in ufficio anche di sabato.","options":["vengano","sono venuti","siano venuti"],"answer":2},{"q":"Dubito che adesso lui ___ fame.","options":["ha","abbia","abbia avuto"],"answer":1}]
+        "items": [{"q":"Non credo che Sara ___ il conto: era senza portafoglio.","options":["abbia pagato","paghi","ha pagato"],"answer":0},{"q":"Non mi pare che adesso ___ ancora.","options":["sia piovuto","piove","piova"],"answer":2},{"q":"È strano che il riscaldamento ___ solo di notte.","options":["funzioni","abbia funzionato","funziona"],"answer":0},{"q":"Mi stupisce che ieri nessuno ___ la finestra del bagno.","options":["apra","abbia aperto","ha aperto"],"answer":1},{"q":"Sono contento che ieri l'idraulico ___ il problema in mezz'ora.","options":["risolva","ha risolto","abbia risolto"],"answer":2},{"q":"Temo che questo cappotto ___ troppo per le mie tasche.","options":["sia costato","costi","costa"],"answer":1}]
       }
     ]
   },
@@ -7657,7 +6877,7 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "fill",
         "instr": "Completa con la forma corretta di «stare».",
-        "items": [{"q":"Il treno ___ per partire: sbrigati!","a":"sta","no":["è"]},{"q":"Ieri io ___ per addormentarmi quando è saltata la corrente.","a":"stavo","no":["ero"]},{"q":"Noi ___ per sederci a tavola: arrivi in tempo.","a":"stiamo","no":["siamo"]},{"q":"I bambini ___ per aprire i regali quando è suonato il campanello.","a":"stavano","no":["erano"]},{"q":"Voi ___ per atterrare o siete ancora in volo?","a":"state","no":["siete","stiate"]},{"q":"Tu ___ per chiedermi qualcosa, poi ti sei fermato.","a":"stavi","no":["eri"]}]
+        "items": [{"q":"Il treno ___ per partire: sbrigati!","a":"sta","no":["è"]},{"q":"Ieri io ___ per addormentarmi quando è saltata la corrente.","a":"stavo","no":["ero"]},{"q":"Noi ___ per firmare il contratto: manca solo la tua copia.","a":"stiamo","no":["siamo"]},{"q":"I nonni ___ per spegnere la televisione quando ha squillato il telefono.","a":"stavano","no":["erano"]},{"q":"Voi ___ per atterrare o siete ancora in volo?","a":"state","no":["siete","stiate"]},{"q":"Tu ___ per chiedermi qualcosa, poi ti sei fermato.","a":"stavi","no":["eri"]}]
       },
       {
         "type": "Correzione",
@@ -7669,7 +6889,7 @@ const TEST_STRUCTURES = [
         "type": "Trasformazione",
         "fmt": "buco",
         "instr": "Scegli la forma corretta.",
-        "items": [{"q":"Copriti: il vento ___ da un momento all'altro.","options":["sta per alzarsi","sta alzandosi","sta per alzandosi"],"answer":0},{"q":"Non disturbarmi: in questo momento ___ con un cliente.","options":["sto per parlare","sto parlando","ero per parlare"],"answer":1},{"q":"Sbrigati, l'aereo ___ fra pochi minuti.","options":["sta per decollare","sta decollando","è per decollare"],"answer":0},{"q":"In questo momento i tecnici ___ l'impianto elettrico.","options":["stanno per controllare","stanno controllando","stanno per controllando"],"answer":1},{"q":"Non ho ancora finito: ___ la risposta in questo momento.","options":["sto per scrivere","sto scrivendo","sono per scrivere"],"answer":1},{"q":"Mancano due minuti: ___ i fuochi d'artificio.","options":["stanno per cominciare","stanno cominciando","sono per cominciare"],"answer":0}]
+        "items": [{"q":"Andiamo a casa: il vento ___ da un momento all'altro.","options":["sta per alzarsi","sta alzandosi","stava per alzarsi"],"answer":0},{"q":"Non disturbarmi: in questo momento ___ con un cliente.","options":["sto parlando","sto per parlare","sto per parlando"],"answer":0},{"q":"Allacciate le cinture: l'aereo ___ fra pochi minuti.","options":["sta per decollare","sta decollando","stava decollando"],"answer":0},{"q":"In questo momento i tecnici ___ l'impianto elettrico.","options":["stanno controllando","stanno per controllare","sta controllando"],"answer":0},{"q":"Non ho ancora finito: ___ la risposta in questo momento.","options":["sto scrivendo","sto per scrivere","stavo scrivendo"],"answer":0},{"q":"Attento, la pentola ___: abbassa il fuoco.","options":["sta per bollire","sta bollendo","stava per bollire"],"answer":0}]
       }
     ]
   },
@@ -7686,19 +6906,19 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "buco",
         "instr": "Scegli il connettivo adatto.",
-        "items": [{"q":"Ho letto le recensioni negative, ___ non ho scaricato l'app.","options":["quindi","però","prima di tutto"],"answer":0},{"q":"___ la password era troppo semplice, è stata indovinata subito.","options":["Siccome","Perciò","Inoltre"],"answer":0},{"q":"Il sito non funzionava; ___ ho telefonato all'assistenza.","options":["di conseguenza","nel frattempo","cioè"],"answer":0},{"q":"Non ho aperto l'allegato ___ il mittente era sconosciuto.","options":["perché","quindi","invece"],"answer":0},{"q":"___ il pacco è in ritardo, chiedo un rimborso.","options":["Dato che","Tuttavia","In particolare"],"answer":0},{"q":"L'ufficio è chiuso per ferie; ___ le pratiche restano ferme.","options":["perciò","cioè","poi"],"answer":0}]
+        "items": [{"q":"La stampante non aveva più inchiostro, ___ ho mandato il file in copisteria.","options":["quindi","invece","infatti"],"answer":0},{"q":"___ la palestra ha chiuso senza preavviso, ho disdetto l'abbonamento.","options":["Siccome","Perciò","Inoltre"],"answer":0},{"q":"Il sito non funzionava; ___ ho telefonato all'assistenza.","options":["di conseguenza","invece","cioè"],"answer":0},{"q":"Non ho aperto l'allegato ___ il mittente era sconosciuto.","options":["perché","quindi","invece"],"answer":0},{"q":"___ il pacco è in ritardo, chiedo un rimborso.","options":["Dato che","Tuttavia","In particolare"],"answer":0},{"q":"L'ufficio è chiuso per ferie; ___ le pratiche restano ferme.","options":["perciò","cioè","poi"],"answer":0}]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [{"q":"Ho attivato l'antivirus e in particolare ho cambiato la password, quindi il computer era già infetto.","wrong":"quindi","fix":"però"},{"q":"Il sito era lento e nel frattempo la connessione cadeva; infatti ho chiuso la pagina.","wrong":"infatti","fix":"infine"},{"q":"Il museo era chiuso; poi era lunedì, tuttavia il cartello non c'era.","wrong":"poi","fix":"infatti"},{"q":"Marta prende sempre il treno, perché io vado in ufficio in bici; alla fine arriviamo insieme.","wrong":"perché","fix":"invece"},{"q":"Siccome sia stanco, continuo a lavorare e successivamente finisco la relazione.","wrong":"Siccome","fix":"Nonostante"},{"q":"Innanzitutto scegli una password lunga; cioè attiva la verifica in due passaggi.","wrong":"cioè","fix":"poi"}]
+        "items": [{"q":"Ho attivato l'antivirus e inoltre ho cambiato la password, quindi il computer era già infetto.","wrong":"quindi","fix":"però"},{"q":"Il sito era lento e nel frattempo la connessione cadeva; infatti ho chiuso la pagina.","wrong":"infatti","fix":"infine"},{"q":"Il traghetto non è partito; poi il mare era troppo mosso, però nessuno ci ha avvisati.","wrong":"poi","fix":"infatti"},{"q":"Marta prende sempre il treno, perché io vado in ufficio in bici; alla fine arriviamo insieme.","wrong":"perché","fix":"invece"},{"q":"Siccome abbia poco tempo, riesco comunque a finire la relazione entro stasera.","wrong":"Siccome","fix":"Nonostante"},{"q":"Innanzitutto compila il modulo online; cioè porta la ricevuta allo sportello.","wrong":"cioè","fix":"successivamente"}]
       },
       {
         "type": "Trasformazione",
         "fmt": "buco",
         "instr": "Unisci le due frasi con il connettivo adatto.",
-        "items": [{"q":"Ho cambiato la password. Ho attivato le notifiche.","options":["Ho cambiato la password e inoltre ho attivato le notifiche.","Ho cambiato la password e infatti ho attivato le notifiche.","Ho cambiato la password e invece ho attivato le notifiche."],"answer":0},{"q":"Il social era nuovo. Aveva già milioni di utenti.","options":["Il social era nuovo, però aveva già milioni di utenti.","Il social era nuovo, quindi aveva già milioni di utenti.","Il social era nuovo, poi aveva già milioni di utenti."],"answer":0},{"q":"Lui usa i social tutti i giorni. Io scrivo solo email.","options":["Lui usa i social tutti i giorni, io invece scrivo solo email.","Lui usa i social tutti i giorni, io infatti scrivo solo email.","Lui usa i social tutti i giorni, io inoltre scrivo solo email."],"answer":0},{"q":"Apri le impostazioni. Seleziona la privacy. Salva le modifiche.","options":["Prima di tutto apri le impostazioni, poi seleziona la privacy, infine salva le modifiche.","Infine apri le impostazioni, poi seleziona la privacy, prima di tutto salva le modifiche.","Poi apri le impostazioni, prima di tutto seleziona la privacy, infine salva le modifiche."],"answer":0},{"q":"Non ha risposto al messaggio. Ha bloccato il contatto.","options":["Non solo non ha risposto al messaggio, ma ha anche bloccato il contatto.","Non ha risposto al messaggio, cioè ha bloccato il contatto.","Non ha risposto al messaggio, nel frattempo ha bloccato il contatto."],"answer":0},{"q":"L'app chiede molte autorizzazioni. Accede alla fotocamera e ai contatti.","options":["L'app chiede molte autorizzazioni: infatti accede alla fotocamera e ai contatti.","L'app chiede molte autorizzazioni: però accede alla fotocamera e ai contatti.","L'app chiede molte autorizzazioni: prima di tutto accede alla fotocamera e ai contatti."],"answer":0}]
+        "items": [{"q":"Il ristorante era pieno. Abbiamo prenotato per giovedì.","options":["Il ristorante era pieno, perciò abbiamo prenotato per giovedì.","Il ristorante era pieno, invece abbiamo prenotato per giovedì.","Il ristorante era pieno, cioè abbiamo prenotato per giovedì."],"answer":0},{"q":"Mio fratello cucina ogni sera. Io mangio quasi sempre fuori.","options":["Mio fratello cucina ogni sera, io invece mangio quasi sempre fuori.","Mio fratello cucina ogni sera, io infatti mangio quasi sempre fuori.","Mio fratello cucina ogni sera, io inoltre mangio quasi sempre fuori."],"answer":0},{"q":"Sciogli il lievito nel latte. Aggiungi la farina. Lascia riposare l'impasto.","options":["Prima di tutto sciogli il lievito nel latte, poi aggiungi la farina, infine lascia riposare l'impasto.","Infine sciogli il lievito nel latte, poi aggiungi la farina, prima di tutto lascia riposare l'impasto.","Poi sciogli il lievito nel latte, prima di tutto aggiungi la farina, infine lascia riposare l'impasto."],"answer":0},{"q":"Il museo è chiuso il lunedì. Non c'era nessun cartello all'ingresso.","options":["Il museo è chiuso il lunedì, però non c'era nessun cartello all'ingresso.","Il museo è chiuso il lunedì, infatti non c'era nessun cartello all'ingresso.","Il museo è chiuso il lunedì, quindi non c'era nessun cartello all'ingresso."],"answer":0},{"q":"Il dentista ha rimandato l'appuntamento. Ha cambiato lo studio.","options":["Non solo il dentista ha rimandato l'appuntamento, ma ha anche cambiato lo studio.","Il dentista ha rimandato l'appuntamento, cioè ha cambiato lo studio.","Il dentista ha rimandato l'appuntamento, però ha cambiato lo studio."],"answer":0},{"q":"Il candidato conosceva bene l'azienda. Aveva letto tutti i bilanci.","options":["Il candidato conosceva bene l'azienda: infatti aveva letto tutti i bilanci.","Il candidato conosceva bene l'azienda: però aveva letto tutti i bilanci.","Il candidato conosceva bene l'azienda: prima di tutto aveva letto tutti i bilanci."],"answer":0}]
       }
     ]
   },
@@ -7713,7 +6933,7 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "fill",
         "instr": "Riscrivi l'imperativo con il pronome attaccato.",
-        "items": [{"q":"Lava la frutta. → ___ con acqua fredda.","a":"Lavala","no":["Lavarla"]},{"q":"Prendi i pomodori. → ___ dal cesto in cucina.","a":"Prendili","no":["Prenderli"]},{"q":"Pulisci le verdure. → ___ sotto l'acqua corrente.","a":"Puliscile","no":["Pulile"]},{"q":"Mescola il sugo. → ___ con il cucchiaio di legno.","a":"Mescolalo","no":["Mescolarlo"]},{"q":"Aggiungi del pepe. → ___ solo un pizzico.","a":"Aggiungine","no":["Aggiungilo"]},{"q":"Compra le mele. → ___ due chili al mercato.","a":"Comprane","no":["Comprarne"]}]
+        "items": [{"q":"Chiama il tecnico. → ___ prima di mezzogiorno.","a":"Chiamalo","no":["Chiamarlo"]},{"q":"Porta i documenti. → ___ allo sportello domani.","a":"Portali","no":["Portarli"]},{"q":"Finisci la relazione. → ___ entro venerdì.","a":"Finiscila","no":["Finirla","Finila"]},{"q":"Spegni le luci. → ___ prima di uscire.","a":"Spegnile","no":["Spegnerle"]},{"q":"Ordina delle penne. → ___ almeno venti.","a":"Ordinane","no":["Ordinarne"]},{"q":"Restituisci il libro. → ___ entro lunedì.","a":"Restituiscilo","no":["Restituirlo","Restituilo"]}]
       },
       {
         "type": "Correzione",
@@ -7725,7 +6945,7 @@ const TEST_STRUCTURES = [
         "type": "Trasformazione",
         "fmt": "buco",
         "instr": "Scegli la forma corretta.",
-        "items": [{"q":"Ecco il pesce fresco: ___ in forno per venti minuti.","options":["cuocilo","cuocila","cuocine"],"answer":0},{"q":"Le uova sono nel frigo: ___ con la forchetta.","options":["sbattile","sbattili","sbattilo"],"answer":0},{"q":"Il brodo è insipido: ___ ancora un poco.","options":["salalo","salali","salane"],"answer":0},{"q":"Il pane è di ieri: ___ a fette piccole.","options":["taglialo","tagliala","tagliali"],"answer":0},{"q":"Il parmigiano è nel frigo: ___ sulla pasta.","options":["grattugialo","grattugiali","grattugiale"],"answer":0},{"q":"Le lasagne sono pronte: ___ subito.","options":["infornale","infornali","infornalo"],"answer":0}]
+        "items": [{"q":"Ci sono ancora dei biscotti: ___ solo due.","options":["prendine","prendili","prendilo"],"answer":0},{"q":"Il pacco è arrivato: ___ subito.","options":["aprilo","aprine","aprili"],"answer":0},{"q":"Abbiamo troppe sedie in sala: ___ tre in magazzino.","options":["spostane","spostale","spostalo"],"answer":0},{"q":"Le fotocopie sono pronte: ___ in sala riunioni.","options":["lasciale","lasciane","lasciali"],"answer":0},{"q":"Se hai bisogno di monete, ___ un po' alla cassa.","options":["chiedine","chiedile","chiedilo"],"answer":0},{"q":"Il contratto è sul tavolo: ___ con attenzione.","options":["leggilo","leggine","leggili"],"answer":0}]
       }
     ]
   },
@@ -7740,160 +6960,19 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "buco",
         "instr": "Scegli il pronome relativo corretto.",
-        "items": [
-          {
-            "q": "Il libro ___ ho letto è bellissimo.",
-            "options": [
-              "che",
-              "cui",
-              "chi"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "La ragazza ___ abita qui è mia cugina.",
-            "options": [
-              "che",
-              "cui",
-              "chi"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "L'amico di ___ ti ho parlato arriva domani.",
-            "options": [
-              "cui",
-              "che",
-              "chi"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "La città in ___ vivo è tranquilla.",
-            "options": [
-              "cui",
-              "che",
-              "chi"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il motivo per ___ sono venuto è semplice.",
-            "options": [
-              "cui",
-              "che",
-              "chi"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Ho incontrato una scrittrice ___ romanzo ha vinto un premio.",
-            "options": [
-              "il cui",
-              "che",
-              "cui"
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"Il collega ___ mi ha sostituito è in ferie.","options":["che","a cui","con cui"],"answer":0},{"q":"L'ospedale ___ mi hanno portato è fuori città.","options":["in cui","che","di cui"],"answer":0},{"q":"La ditta ___ ho ordinato il materiale non risponde.","options":["a cui","che","di cui"],"answer":0},{"q":"Il ponte ___ passa il tram è chiuso.","options":["su cui","che","di cui"],"answer":0},{"q":"I documenti ___ hai firmato ieri sono già in archivio.","options":["che","a cui","di cui"],"answer":0},{"q":"La riunione ___ siamo usciti è durata tre ore.","options":["da cui","che","con cui"],"answer":0}]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [
-          {
-            "q": "Il quadro cui ho comprato è antico.",
-            "wrong": "cui",
-            "fix": "che"
-          },
-          {
-            "q": "Il vicino cui abita sopra è rumoroso.",
-            "wrong": "cui",
-            "fix": "che"
-          },
-          {
-            "q": "La collega di che ti ho scritto è brava.",
-            "wrong": "che",
-            "fix": "cui"
-          },
-          {
-            "q": "Il paese in che sono nato è piccolo.",
-            "wrong": "che",
-            "fix": "cui"
-          },
-          {
-            "q": "L'amico con che studio è tedesco.",
-            "wrong": "che",
-            "fix": "cui"
-          },
-          {
-            "q": "La scrittrice cui romanzo ha vinto il premio vive qui.",
-            "wrong": "cui",
-            "fix": "il cui"
-          }
-        ]
+        "items": [{"q":"Ho conosciuto un ingegnere il cui azienda produce turbine per navi.","wrong":"il","fix":"la"},{"q":"Da settembre lavoro in una scuola la cui insegnanti vengono da mezza provincia.","wrong":"la","fix":"le"},{"q":"Abbiamo un vicino il cui cani abbaiano tutta la notte.","wrong":"il","fix":"i"},{"q":"Ho comprato un quadro cui cornice era già rovinata.","wrong":"cui","fix":"la cui"},{"q":"Ho una collega la cui figli giocano a rugby.","wrong":"la","fix":"i"},{"q":"In vacanza ho letto un romanzo cui autore è sconosciuto.","wrong":"cui","fix":"il cui"}]
       },
       {
         "type": "Trasformazione",
         "fmt": "buco",
         "instr": "Unisci le due frasi con il pronome relativo adatto.",
-        "items": [
-          {
-            "q": "Ho un amico. Lui abita a Roma.",
-            "options": [
-              "Ho un amico che abita a Roma.",
-              "Ho un amico cui abita a Roma.",
-              "Ho un amico chi abita a Roma."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Ho ascoltato un concerto. Il concerto era bellissimo.",
-            "options": [
-              "Il concerto che ho ascoltato era bellissimo.",
-              "Il concerto cui ho ascoltato era bellissimo.",
-              "Il concerto chi ho ascoltato era bellissimo."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Conosco una ragazza. La ragazza parla cinese.",
-            "options": [
-              "Conosco una ragazza che parla cinese.",
-              "Conosco una ragazza cui parla cinese.",
-              "Conosco una ragazza chi parla cinese."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Ho un collega. Lavoro con lui.",
-            "options": [
-              "Ho un collega con cui lavoro.",
-              "Ho un collega che lavoro con.",
-              "Ho un collega con che lavoro."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Ho visto un film. Il film mi è piaciuto.",
-            "options": [
-              "Il film che ho visto mi è piaciuto.",
-              "Il film cui ho visto mi è piaciuto.",
-              "Il film chi ho visto mi è piaciuto."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Conosco un medico. Suo figlio studia con me.",
-            "options": [
-              "Conosco un medico il cui figlio studia con me.",
-              "Conosco un medico cui figlio studia con me.",
-              "Conosco un medico che il figlio studia con me."
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"Ho un vicino. Gioco a tennis con lui.","options":["Ho un vicino con cui gioco a tennis.","Ho un vicino che gioco a tennis con.","Ho un vicino con che gioco a tennis."],"answer":0},{"q":"Questa è la scuola. Mio figlio va in questa scuola.","options":["Questa è la scuola in cui va mio figlio.","Questa è la scuola che va mio figlio in.","Questa è la scuola in che va mio figlio."],"answer":0},{"q":"Ecco il modulo. Ti avevo scritto del modulo.","options":["Ecco il modulo di cui ti avevo scritto.","Ecco il modulo che ti avevo scritto di.","Ecco il modulo di che ti avevo scritto."],"answer":0},{"q":"Il corso è finito. Mi ero iscritto al corso.","options":["Il corso a cui mi ero iscritto è finito.","Il corso che mi ero iscritto è finito.","Il corso al che mi ero iscritto è finito."],"answer":0},{"q":"Ho un cugino. Suo fratello lavora in Germania.","options":["Ho un cugino il cui fratello lavora in Germania.","Ho un cugino che suo fratello lavora in Germania.","Ho un cugino cui fratello lavora in Germania."],"answer":0},{"q":"Ho perso l'ombrello. Mi avevi regalato l'ombrello.","options":["Ho perso l'ombrello che mi avevi regalato.","Ho perso l'ombrello che me lo avevi regalato.","Ho perso l'ombrello che mi avevi regalato l'ombrello."],"answer":0}]
       }
     ],
     "diag": true
@@ -7909,160 +6988,19 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "buco",
         "instr": "Scegli il pronome indiretto corretto.",
-        "items": [
-          {
-            "q": "Scrivo a Marco. → ___ scrivo.",
-            "options": [
-              "Gli",
-              "Le",
-              "Lo"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Telefono a Sara. → ___ telefono.",
-            "options": [
-              "Le",
-              "Gli",
-              "La"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Regalo un libro a Luca. → ___ regalo un libro.",
-            "options": [
-              "Gli",
-              "Le",
-              "Li"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Chiedo un favore a te. → ___ chiedo un favore.",
-            "options": [
-              "Ti",
-              "Te",
-              "Tu"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Dico la verità a voi. → ___ dico la verità.",
-            "options": [
-              "Vi",
-              "Ve",
-              "Voi"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Mandano una mail a noi. → ___ mandano una mail.",
-            "options": [
-              "Ci",
-              "Ce",
-              "Noi"
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"Aspetto Elena da mezz'ora: ___ vedo arrivare adesso.","options":["la","le","gli"],"answer":0},{"q":"Chiara ha bisogno di un consiglio: ___ rispondo domani.","options":["le","la","lo"],"answer":0},{"q":"Ho fatto vedere la giacca a Marco, ma non ___ piace per niente.","options":["gli","lo","la"],"answer":0},{"q":"Il tuo amico ___ ho chiamato tre volte, ma non risponde.","options":["lo","gli","le"],"answer":0},{"q":"Ai clienti ___ sembra tutto troppo caro.","options":["gli","li","le"],"answer":0},{"q":"Le tue colleghe ___ conosco da anni.","options":["le","gli","loro"],"answer":0}]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [
-          {
-            "q": "Marco aspetta una risposta, quindi stasera lo telefono.",
-            "wrong": "lo",
-            "fix": "gli"
-          },
-          {
-            "q": "Sara aspetta notizie, quindi domani la scrivo una mail.",
-            "wrong": "la",
-            "fix": "le"
-          },
-          {
-            "q": "Luca compie dieci anni, quindi li regalo un libro per il compleanno.",
-            "wrong": "li",
-            "fix": "gli"
-          },
-          {
-            "q": "Domani te porto il pacco in ufficio.",
-            "wrong": "te",
-            "fix": "ti"
-          },
-          {
-            "q": "Stasera ve preparo la cena perché arrivate tardi.",
-            "wrong": "ve",
-            "fix": "vi"
-          },
-          {
-            "q": "Ieri ce hanno dato una risposta dopo una lunga attesa.",
-            "wrong": "ce",
-            "fix": "ci"
-          }
-        ]
+        "items": [{"q":"Le ho promessa una risposta entro sera, ma Valeria aspetta ancora.","wrong":"promessa","fix":"promesso"},{"q":"I ragazzi erano in ritardo e gli abbiamo telefonati due volte.","wrong":"telefonati","fix":"telefonato"},{"q":"Marta è tornata ieri e le ho scritta una mail lunghissima.","wrong":"scritta","fix":"scritto"},{"q":"Quando ho visto Giulia in corridoio davanti all'ascensore, le ho sorrisa senza parlare.","wrong":"sorrisa","fix":"sorriso"},{"q":"Ai vicini di sotto gli abbiamo parlate ieri sera.","wrong":"parlate","fix":"parlato"},{"q":"Ieri gli ho lasciate un messaggio in segreteria, ma il direttore non ha richiamato.","wrong":"lasciate","fix":"lasciato"}]
       },
       {
         "type": "Trasformazione",
         "fmt": "buco",
         "instr": "Sostituisci con il pronome indiretto.",
-        "items": [
-          {
-            "q": "Telefono a mio padre. →",
-            "options": [
-              "Gli telefono.",
-              "Lo telefono.",
-              "Le telefono."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Scrivo a mia sorella. →",
-            "options": [
-              "Le scrivo.",
-              "La scrivo.",
-              "Gli scrivo."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Parlo al collega. →",
-            "options": [
-              "Gli parlo.",
-              "Li parlo.",
-              "Le parlo."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Do un consiglio a te. →",
-            "options": [
-              "Ti do un consiglio.",
-              "Te do un consiglio.",
-              "Tu do un consiglio."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Chiedo aiuto a voi. →",
-            "options": [
-              "Vi chiedo aiuto.",
-              "Ve chiedo aiuto.",
-              "Voi chiedo aiuto."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Mandano un pacco a noi. →",
-            "options": [
-              "Ci mandano un pacco.",
-              "Ce mandano un pacco.",
-              "Noi mandano un pacco."
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"Prima di ___, controlla bene l'indirizzo.","options":["scrivergli","gli scrivere","scriveregli"],"answer":0},{"q":"Non ho tempo di ___ adesso.","options":["rispondergli","gli rispondere","risponderegli"],"answer":0},{"q":"Voglio ___ la verità prima che la scopra da sola.","options":["dirle","le dire","direle"],"answer":0},{"q":"___ subito che l'incontro è rimandato!","options":["Digli","Gli di'","Di' gli"],"answer":0},{"q":"___ se ha ancora la ricevuta del bonifico.","options":["Chiedile","Le chiedi","Chiedi le"],"answer":0},{"q":"___ appena arrivi a casa.","options":["Telefonami","Mi telefona","Telefona mi"],"answer":0}]
       }
     ]
   },
@@ -8079,154 +7017,19 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "fill",
         "instr": "Completa la seconda frase con il pronome combinato corretto.",
-        "items": [
-          {
-            "q": "Do il libro a Marco. → ___ do.",
-            "a": "Glielo",
-            "no": [
-              "Gli lo",
-              "Lo gli",
-              "Glielà"
-            ]
-          },
-          {
-            "q": "Porto la torta a Sara. → ___ porto.",
-            "a": "Gliela",
-            "no": [
-              "Gli la",
-              "La gli",
-              "Glielo"
-            ]
-          },
-          {
-            "q": "Mando le foto a Luca. → ___ mando.",
-            "a": "Gliele",
-            "no": [
-              "Gli le",
-              "Le gli",
-              "Glieli"
-            ]
-          },
-          {
-            "q": "Parlo del problema ad Anna. → ___ parlo.",
-            "a": "Gliene",
-            "no": [
-              "Gli ne",
-              "Ne gli",
-              "Glielo"
-            ]
-          },
-          {
-            "q": "Ci spiega le regole. → ___ spiega.",
-            "a": "Ce le",
-            "no": [
-              "Ci le",
-              "Le ci",
-              "Ce li"
-            ]
-          },
-          {
-            "q": "Mi parla dei suoi viaggi. → ___ parla.",
-            "a": "Me ne",
-            "no": [
-              "Mi ne",
-              "Ne mi",
-              "Me li"
-            ]
-          }
-        ]
+        "items": [{"q":"Sofia mi ha chiesto le chiavi. → ___ restituisco stasera.","a":"Gliele","no":["Gli le"]},{"q":"Hai bisogno dei documenti? → ___ porto domani.","a":"Te li","no":["Ti li"]},{"q":"Il proprietario deve mandarci le bollette. → ___ manda ogni due mesi.","a":"Ce le","no":["Ci le"]},{"q":"Non riesco a salire la spesa. → ___ tu, per favore!","a":"Portamela","no":["Portamila"]},{"q":"Luca non sa quanto costa. → ___ tu!","a":"Diglielo","no":["Digli lo"]},{"q":"Hai ancora il mio casco. → ___ domani!","a":"Dammelo","no":["Dammilo"]}]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [
-          {
-            "q": "Visto che hai il mio libro, mi lo dai domani?",
-            "wrong": "mi",
-            "fix": "me"
-          },
-          {
-            "q": "Le regole sono complicate, quindi domani il professore ci le spiega.",
-            "wrong": "ci",
-            "fix": "ce"
-          },
-          {
-            "q": "Marco è già informato perché glil'ho già detto.",
-            "wrong": "glil'ho",
-            "fix": "gliel'ho"
-          },
-          {
-            "q": "Luca conosce bene il progetto e ieri mi ne ha parlato.",
-            "wrong": "mi",
-            "fix": "me"
-          },
-          {
-            "q": "Domani ve gli porto perché i biglietti sono per voi.",
-            "wrong": "gli",
-            "fix": "li"
-          },
-          {
-            "q": "La lettera era per Sara, quindi ieri glil'ho spedita.",
-            "wrong": "glil'ho",
-            "fix": "gliel'ho"
-          }
-        ]
+        "items": [{"q":"Il caricatore è tuo, quindi domani ti lo riporto.","wrong":"ti","fix":"te"},{"q":"Le fotocopie sono pronte, ma la segreteria vi le consegna domani.","wrong":"vi","fix":"ve"},{"q":"Sofia voleva la ricetta e gliel'ho scritto su un foglio.","wrong":"scritto","fix":"scritta"},{"q":"I coinquilini avevano le mie chiavi e me le hanno restituito solo ieri.","wrong":"restituito","fix":"restituite"},{"q":"I biglietti sono per voi: domani ve gli porto in ufficio.","wrong":"gli","fix":"li"},{"q":"Il tecnico voleva le foto del guasto e glielo ho mandate ieri sera.","wrong":"glielo","fix":"gliele"}]
       },
       {
         "type": "Composizione",
         "fmt": "ordina",
         "instr": "Clicca le parole nell'ordine giusto.",
-        "items": [
-          {
-            "q": "Un amico ha il mio libro e io lo voglio indietro.",
-            "sol": [
-              "me",
-              "lo",
-              "dai"
-            ]
-          },
-          {
-            "q": "Ti dico che la porto io visto che hai dimenticato la torta.",
-            "sol": [
-              "te",
-              "la",
-              "porto"
-            ]
-          },
-          {
-            "q": "Il mio collega sa già tutto.",
-            "sol": [
-              "gliel'ho",
-              "detto"
-            ]
-          },
-          {
-            "q": "Volete informazioni sul nuovo progetto.",
-            "sol": [
-              "ve",
-              "ne",
-              "parlo"
-            ]
-          },
-          {
-            "q": "Mi chiedi se ho comprato per te i biglietti.",
-            "sol": [
-              "te",
-              "li",
-              "ho",
-              "comprati"
-            ]
-          },
-          {
-            "q": "Il professore ha già comunicato il risultato a noi.",
-            "sol": [
-              "ce",
-              "l'ha",
-              "detto"
-            ]
-          }
-        ]
+        "items": [{"q":"Il vicino ha il trapano e a me serve.","sol":["me","lo","presta"]},{"q":"Vuoi le foto della festa?","sol":["te","le","mando"]},{"q":"Marco voleva vedere il contratto.","sol":["gliel'ho","mostrato"]},{"q":"Non abbiamo ancora ricevuto il conteggio delle spese.","sol":["ce","lo","mandano"]},{"q":"Volete la fattura per email?","sol":["ve","la","spediamo"]},{"q":"Questi bicchieri erano di mia nonna.","sol":["me","li","ha","regalati"]}]
       }
     ]
   },
@@ -8302,38 +7105,7 @@ const TEST_STRUCTURES = [
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [
-          {
-            "q": "Il maglione che ho visto in vetrina l'ho comprata in saldo.",
-            "wrong": "comprata",
-            "fix": "comprato"
-          },
-          {
-            "q": "Gli occhiali li ho perso.",
-            "wrong": "perso",
-            "fix": "persi"
-          },
-          {
-            "q": "Le lenzuola le ho steso ieri mattina al sole.",
-            "wrong": "steso",
-            "fix": "stese"
-          },
-          {
-            "q": "Lo scontrino che mi hanno dato l'ho conservata in tasca.",
-            "wrong": "conservata",
-            "fix": "conservato"
-          },
-          {
-            "q": "I fiori li ho raccolta.",
-            "wrong": "raccolta",
-            "fix": "raccolti"
-          },
-          {
-            "q": "La torta che ho preparato l'ho decorato con la panna.",
-            "wrong": "decorato",
-            "fix": "decorata"
-          }
-        ]
+        "items": [{"q":"Quel maglione l'ho comprata in saldo l'inverno scorso.","wrong":"comprata","fix":"comprato"},{"q":"Mia sorella cercava la ricevuta dell'affitto e l'ha trovato in un cassetto.","wrong":"trovato","fix":"trovata"},{"q":"Le lenzuola le ho steso ieri mattina al sole.","wrong":"steso","fix":"stese"},{"q":"Ieri ho firmate tutte le pagine del contratto.","wrong":"firmate","fix":"firmato"},{"q":"Prima di uscire di casa ho spente le luci del corridoio.","wrong":"spente","fix":"spento"},{"q":"Gli occhiali nuovi li ho perso al mare la settimana scorsa.","wrong":"perso","fix":"persi"}]
       },
       {
         "type": "Trasformazione",
@@ -8345,7 +7117,7 @@ const TEST_STRUCTURES = [
             "options": [
               "L'ho stirata.",
               "L'ho stirato.",
-              "La ho stirato."
+              "La ho stirata."
             ],
             "answer": 0
           },
@@ -8372,7 +7144,7 @@ const TEST_STRUCTURES = [
             "options": [
               "L'ho venduta.",
               "L'ho venduto.",
-              "La ho venduto."
+              "La ho venduta."
             ],
             "answer": 0
           },
@@ -8390,7 +7162,7 @@ const TEST_STRUCTURES = [
             "options": [
               "L'ho consegnata in segreteria.",
               "L'ho consegnato in segreteria.",
-              "La ho consegnato in segreteria."
+              "La ho consegnata in segreteria."
             ],
             "answer": 0
           }
@@ -8411,156 +7183,19 @@ const TEST_STRUCTURES = [
         "type": "Composizione",
         "fmt": "ordina",
         "instr": "Clicca le parole nell'ordine giusto.",
-        "items": [
-          {
-            "q": "È tardi e decido di andare via.",
-            "sol": [
-              "me",
-              "ne",
-              "vado"
-            ]
-          },
-          {
-            "q": "Il compito è troppo difficile per me.",
-            "sol": [
-              "non",
-              "ce",
-              "la",
-              "faccio"
-            ]
-          },
-          {
-            "q": "Luca, ti chiedo se sei già andato via dalla festa.",
-            "sol": [
-              "te",
-              "ne",
-              "sei",
-              "andato"
-            ]
-          },
-          {
-            "q": "Ti chiedo se riesci a finire questo compito.",
-            "sol": [
-              "ce",
-              "la",
-              "fai"
-            ]
-          },
-          {
-            "q": "Marco riesce a gestire bene le situazioni difficili.",
-            "sol": [
-              "se",
-              "la",
-              "cava"
-            ]
-          },
-          {
-            "q": "Con l’italiano riesco a gestirmi abbastanza bene.",
-            "sol": [
-              "me",
-              "la",
-              "cavo"
-            ]
-          }
-        ]
+        "items": [{"q":"È tardi e decido di lasciare la riunione.","sol":["me","ne","vado"]},{"q":"Voglio sapere se riesci a spostare il divano da solo.","sol":["ce","la","fai"]},{"q":"I vicini lasciano il condominio alla fine del mese.","sol":["se","ne","vanno"]},{"q":"Con i turni di notte i miei colleghi non riescono più.","sol":["non","ce","la","fanno"]},{"q":"In montagna noi due ci arrangiamo senza problemi.","sol":["ce","la","caviamo"]},{"q":"Voi due riuscite a gestire il negozio da soli?","sol":["ve","la","cavate"]}]
       },
       {
         "type": "Riempimento",
         "fmt": "buco",
         "instr": "Scegli la forma corretta del verbo pronominale.",
-        "items": [
-          {
-            "q": "Dato che il progetto è enorme, non ___ da soli. (farcela)",
-            "options": [
-              "ce la facciamo",
-              "ci la facciamo",
-              "ce lo facciamo"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Quando viaggia da sola, Marta ___ benissimo. (cavarsela)",
-            "options": [
-              "se la cava",
-              "si la cava",
-              "se lo cava"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "___ con lo spagnolo. (cavarsela)",
-            "options": [
-              "Me la cavo",
-              "Mi la cavo",
-              "Me lo cavo"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Alla fine ___ da solo. (farcela)",
-            "options": [
-              "ce l'hai fatta",
-              "ci l'hai fatta",
-              "ce l'hai fatto"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Lui ___ senza salutare. (andarsene)",
-            "options": [
-              "se n'è andato",
-              "si n'è andato",
-              "se ne ha andato"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "___ subito dopo cena. (andarsene)",
-            "options": [
-              "Ve ne andate",
-              "Vi ne andate",
-              "Ve lo andate"
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"Dopo il secondo tempo ___ perché faceva troppo freddo.","options":["ce ne siamo andati","ce ne siamo andata","ce ne abbiamo andati"],"answer":0},{"q":"Il trasloco è durato tutto il giorno, ma alla fine ___.","options":["ce l'abbiamo fatta","ce l'abbiamo fatti","ce l'abbiamo fatto"],"answer":0},{"q":"I ragazzi hanno montato l'armadio da soli e ___ benissimo.","options":["se la sono cavata","se la sono cavati","se l'hanno cavata"],"answer":0},{"q":"Marta era stanchissima e ___ senza aspettare il dolce.","options":["se n'è andata","se n'è andato","se ne ha andata"],"answer":0},{"q":"La salita era ripida, ma ___ senza fermarmi.","options":["ce l'ho fatta","ce l'ho fatto","ce la sono fatta"],"answer":0},{"q":"Non avevamo la cartina, però ___ lo stesso.","options":["ce la siamo cavata","ce la siamo cavati","ce l'abbiamo cavata"],"answer":0}]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [
-          {
-            "q": "Questo compito è duro, non ci la faccio.",
-            "wrong": "ci",
-            "fix": "ce"
-          },
-          {
-            "q": "Con i clienti lui si la cava bene.",
-            "wrong": "si",
-            "fix": "se"
-          },
-          {
-            "q": "Ti la cavi bene in cucina.",
-            "wrong": "Ti",
-            "fix": "Te"
-          },
-          {
-            "q": "Alla fine loro ci l'hanno fatta.",
-            "wrong": "ci",
-            "fix": "ce"
-          },
-          {
-            "q": "Vi ne siete andati subito.",
-            "wrong": "Vi",
-            "fix": "Ve"
-          },
-          {
-            "q": "Mi la cavo con il tedesco.",
-            "wrong": "Mi",
-            "fix": "Me"
-          }
-        ]
+        "items": [{"q":"Questo turno è troppo pesante e non ci la faccio ad arrivare a mezzanotte.","wrong":"ci","fix":"ce"},{"q":"Il nuovo commesso si la cava benissimo con i clienti difficili.","wrong":"si","fix":"se"},{"q":"Allo sportello ti la cavi meglio tu, io mi innervosisco subito.","wrong":"ti","fix":"te"},{"q":"Dopo tre tentativi loro ci l'hanno fatta a montare la tenda.","wrong":"ci","fix":"ce"},{"q":"Appena è finito il temporale vi ne siete andati di corsa.","wrong":"vi","fix":"ve"},{"q":"Non sono bravo con le lingue, ma con i numeri mi la cavo.","wrong":"mi","fix":"me"}]
       }
     ]
   },
@@ -8575,160 +7210,19 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "buco",
         "instr": "Scegli la forma impersonale corretta.",
-        "items": [
-          {
-            "q": "In Italia ___ molto caffè.",
-            "options": [
-              "si beve",
-              "si bevono",
-              "si bere"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Qui ___ bene e si spende poco.",
-            "options": [
-              "si mangia",
-              "si mangiano",
-              "si mangi"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "In biblioteca non ___.",
-            "options": [
-              "si parla",
-              "si parlano",
-              "si parlare"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "In montagna ___ aria pulita.",
-            "options": [
-              "si respira",
-              "si respirano",
-              "si respirare"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Come ___ questa parola?",
-            "options": [
-              "si scrive",
-              "si scrivono",
-              "si scrivere"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Al mare ___ e si prende il sole.",
-            "options": [
-              "si nuota",
-              "si nuotano",
-              "si nuoti"
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"La domenica ___ tardi e non si fa colazione. (alzarsi)","options":["ci si alza","si alza","si alzano"],"answer":0},{"q":"Con questo caldo ___ molto male. (dormire)","options":["si dorme","ci si dorme","si dormono"],"answer":0},{"q":"Prima di un colloquio ___ sempre un po'. (agitarsi)","options":["ci si agita","si agita","si agitano"],"answer":0},{"q":"D'estate ___ molto più tardi. (cenare)","options":["si cena","ci si cena","si cenano"],"answer":0},{"q":"Con i colleghi nuovi ___ in fretta. (abituarsi)","options":["ci si abitua","si abitua","si abituano"],"answer":0},{"q":"Nei giorni di sciopero ___ per ore. (camminare)","options":["si cammina","ci si cammina","si camminano"],"answer":0}]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [
-          {
-            "q": "In quel paese si dormono poco durante la settimana.",
-            "wrong": "dormono",
-            "fix": "dorme"
-          },
-          {
-            "q": "Al museo non si entrano senza prenotazione.",
-            "wrong": "entrano",
-            "fix": "entra"
-          },
-          {
-            "q": "D’inverno sulle piste si sciano molto volentieri.",
-            "wrong": "sciano",
-            "fix": "scia"
-          },
-          {
-            "q": "In ospedale a volte si aspettano molto prima della visita.",
-            "wrong": "aspettano",
-            "fix": "aspetta"
-          },
-          {
-            "q": "Durante una visita al museo si camminano molto.",
-            "wrong": "camminano",
-            "fix": "cammina"
-          },
-          {
-            "q": "A quest’ora si telefonano raramente agli amici.",
-            "wrong": "telefonano",
-            "fix": "telefona"
-          }
-        ]
+        "items": [{"q":"Ieri sera si è tornato tardi e stamattina nessuno era in forma.","wrong":"tornato","fix":"tornati"},{"q":"Alla festa si ha mangiato troppo e si è bevuto poco.","wrong":"ha","fix":"è"},{"q":"In quella riunione si ha discusso per tre ore senza decidere niente.","wrong":"ha","fix":"è"},{"q":"Domenica ci si è alzato alle sei per prendere il traghetto.","wrong":"alzato","fix":"alzati"},{"q":"Alla stazione si è aspettati per due ore sotto la pioggia.","wrong":"aspettati","fix":"aspettato"},{"q":"Quest'anno si è stato in vacanza due volte.","wrong":"stato","fix":"stati"}]
       },
       {
         "type": "Trasformazione",
         "fmt": "buco",
         "instr": "Rendi impersonale la frase.",
-        "items": [
-          {
-            "q": "La gente parte presto il lunedì. →",
-            "options": [
-              "Il lunedì si parte presto.",
-              "Il lunedì si partono presto.",
-              "Il lunedì ci si parte presto."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "In quel ristorante le persone spendono poco. →",
-            "options": [
-              "In quel ristorante si spende poco.",
-              "In quel ristorante si spendono poco.",
-              "In quel ristorante ci si spende poco."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Al mare la gente si abbronza. →",
-            "options": [
-              "Al mare ci si abbronza.",
-              "Al mare si abbronza.",
-              "Al mare si abbronzano."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "In città le persone corrono sempre. →",
-            "options": [
-              "In città si corre sempre.",
-              "In città si corrono sempre.",
-              "In città ci si corre sempre."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Di domenica le persone si riposano. →",
-            "options": [
-              "Di domenica ci si riposa.",
-              "Di domenica si riposa.",
-              "Di domenica si riposano."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "In biblioteca la gente studia in silenzio. →",
-            "options": [
-              "In biblioteca si studia in silenzio.",
-              "In biblioteca si studiano in silenzio.",
-              "In biblioteca ci si studia in silenzio."
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"Dopo dodici ore di viaggio ___ e non si ha voglia di parlare.","options":["si è stanchi","si è stanco","si è stanche"],"answer":0},{"q":"Con una guida brava ___ e si capisce meglio.","options":["si è più tranquilli","si è più tranquillo","si è più tranquille"],"answer":0},{"q":"Dopo una brutta notizia ___ per giorni.","options":["si resta nervosi","si resta nervoso","si resta nervose"],"answer":0},{"q":"Quando si lavora da casa ___ per molti giorni.","options":["si resta soli","si resta solo","si resta sole"],"answer":0},{"q":"Fino a trent'anni ___, almeno da noi.","options":["si è ancora ragazzi","si è ancora ragazzo","si è ancora ragazze"],"answer":0},{"q":"Con quel capo non ___.","options":["si è mai contenti","si è mai contento","si è mai contente"],"answer":0}]
       }
     ]
   },
@@ -8744,160 +7238,19 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "buco",
         "instr": "Scegli i tempi corretti: la condizione è reale.",
-        "items": [
-          {
-            "q": "Se ___ bel tempo, andremo al mare.",
-            "options": [
-              "farà",
-              "farebbe",
-              "farò"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Se studi, ___ l'esame.",
-            "options": [
-              "passerai",
-              "passeresti",
-              "passerà"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Se ___ presto, arriviamo in tempo.",
-            "options": [
-              "partiamo",
-              "partiremmo",
-              "partirò"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Se io ___ tempo, ti aiuto volentieri.",
-            "options": [
-              "ho",
-              "avrei",
-              "hai"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Se prenoti oggi, ___ meno.",
-            "options": [
-              "spenderai",
-              "spenderesti",
-              "spenderà"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Se ___ questa strada, arrivi prima.",
-            "options": [
-              "prendi",
-              "prenderesti",
-              "prende"
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"Se il concerto ___ alle nove, ceneremo prima.","options":["comincia","comincerebbe","cominci"],"answer":0},{"q":"Se il volo parte in orario, ___ a Milano per cena.","options":["saremo","saremmo","sarete"],"answer":0},{"q":"Se ___ adesso il biglietto, spenderai molto meno.","options":["compri","compreresti","comprassi"],"answer":0},{"q":"Se io ___ tempo domani, ti darò una mano con il trasloco.","options":["ho","avrei","abbia"],"answer":0},{"q":"Se la strada resta chiusa, ___ dal paese vecchio.","options":["passeremo","passeremmo","passerete"],"answer":0},{"q":"Se ___ questa scorciatoia, risparmierai venti minuti.","options":["prendi","prenderesti","prendessi"],"answer":0}]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [
-          {
-            "q": "Se ci sarà il sole, faremmo una gita.",
-            "wrong": "faremmo",
-            "fix": "faremo"
-          },
-          {
-            "q": "Se ti alleneresti, migliorerai presto.",
-            "wrong": "alleneresti",
-            "fix": "alleni"
-          },
-          {
-            "q": "Se usciremmo adesso, evitiamo la coda.",
-            "wrong": "usciremmo",
-            "fix": "usciamo"
-          },
-          {
-            "q": "Se avrei fame, ti preparo qualcosa.",
-            "wrong": "avrei",
-            "fix": "ho"
-          },
-          {
-            "q": "Se compri online, risparmieresti tempo.",
-            "wrong": "risparmieresti",
-            "fix": "risparmierai"
-          },
-          {
-            "q": "Se leggeresti il manuale, capisci meglio.",
-            "wrong": "leggeresti",
-            "fix": "leggi"
-          }
-        ]
+        "items": [{"q":"Se domani ci sarebbe il sole, faremo una gita al mare.","wrong":"sarebbe","fix":"sarà"},{"q":"Se tu fossi libero sabato, andiamo a vedere la mostra.","wrong":"fossi","fix":"sei"},{"q":"Se il ristorante è aperto, ci fermeremmo a cena.","wrong":"fermeremmo","fix":"fermeremo"},{"q":"Se prenderesti il treno delle sei, risparmi un'ora.","wrong":"prenderesti","fix":"prendi"},{"q":"Se Marco avesse tempo domani, viene volentieri con noi.","wrong":"avesse","fix":"ha"},{"q":"Se arrivate entro le otto, trovereste ancora posto.","wrong":"trovereste","fix":"troverete"}]
       },
       {
         "type": "Trasformazione",
         "fmt": "buco",
-        "instr": "Costruisci il periodo ipotetico della realtà.",
-        "items": [
-          {
-            "q": "(voi – prenotare adesso) → (voi – trovare posto)",
-            "options": [
-              "Se prenotate adesso, troverete posto.",
-              "Se prenotereste adesso, troverete posto.",
-              "Se prenotate adesso, troverà posto."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "(lui – insistere) → (loro – accettare)",
-            "options": [
-              "Se insiste, accetteranno.",
-              "Se insisterebbe, accetteranno.",
-              "Se insiste, accetterà."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "(il pacco – arrivare oggi) → (io – aprirlo subito)",
-            "options": [
-              "Se il pacco arriva oggi, lo apro subito.",
-              "Se il pacco arriverebbe oggi, lo apro subito.",
-              "Se il pacco arriva oggi, lo apriamo subito."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "(tu – bere troppo caffè) → (tu – dormire male)",
-            "options": [
-              "Se bevi troppo caffè, dormirai male.",
-              "Se berresti troppo caffè, dormirai male.",
-              "Se bevi troppo caffè, dormirà male."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "(esserci uno sciopero) → (io – lavorare da casa)",
-            "options": [
-              "Se c'è sciopero, lavoro da casa.",
-              "Se ci sarebbe sciopero, lavoro da casa.",
-              "Se c'è sciopero, lavoriamo da casa."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "(il negozio – essere chiuso) → (noi – tornare domani)",
-            "options": [
-              "Se il negozio è chiuso, torniamo domani.",
-              "Se il negozio sarebbe chiuso, torniamo domani.",
-              "Se il negozio è chiuso, torno domani."
-            ],
-            "answer": 0
-          }
-        ]
+        "instr": "Costruisci il periodo ipotetico mettendo per prima la conseguenza.",
+        "items": [{"q":"(il treno – essere in orario) → (noi – arrivare per cena)","options":["Arriveremo per cena se il treno è in orario.","Arriveremo per cena se il treno sarebbe in orario.","Arriveremmo per cena se il treno è in orario."],"answer":0},{"q":"(tu – finire i compiti) → (io – accompagnarti al cinema)","options":["Ti accompagnerò al cinema se finisci i compiti.","Ti accompagnerò al cinema se finiresti i compiti.","Ti accompagnerei al cinema se finisci i compiti."],"answer":0},{"q":"(piovere) → (noi – restare a casa)","options":["Resteremo a casa se piove.","Resteremo a casa se piovesse.","Resteremmo a casa se piove."],"answer":0},{"q":"(voi – prenotare adesso) → (voi – trovare posto)","options":["Troverete posto se prenotate adesso.","Troverete posto se prenotereste adesso.","Trovereste posto se prenotate adesso."],"answer":0},{"q":"(il capo – approvare) → (noi – cominciare lunedì)","options":["Cominceremo lunedì se il capo approva.","Cominceremo lunedì se il capo approvasse.","Cominceremmo lunedì se il capo approva."],"answer":0},{"q":"(tu – bere troppo caffè) → (tu – dormire male)","options":["Dormirai male se bevi troppo caffè.","Dormirai male se berresti troppo caffè.","Dormiresti male se bevi troppo caffè."],"answer":0}]
       }
     ]
   },
@@ -8913,62 +7266,7 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "buco",
         "instr": "Scegli la forma passiva coerente con il tempo e con il contesto.",
-        "items": [
-          {
-            "q": "Ieri la cena ___ preparata da mia madre.",
-            "options": [
-              "è stata",
-              "ha",
-              "viene"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Ogni mattina i pacchi ___ consegnati dal corriere.",
-            "options": [
-              "vengono",
-              "sono stati",
-              "ha"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "La lettera ___ scritta ieri pomeriggio.",
-            "options": [
-              "è stata",
-              "viene",
-              "ha"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Durante la visita guidata, ogni sala ___ presentata da un esperto.",
-            "options": [
-              "viene",
-              "è stata",
-              "ha"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "La casa ___ costruita nel 1920.",
-            "options": [
-              "è stata",
-              "viene",
-              "ha"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il contratto ___ firmato ieri dal direttore.",
-            "options": [
-              "è stato",
-              "viene",
-              "ha"
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"Ieri la cena ___ preparata da mia madre.","options":["è stata","viene","è stato"],"answer":0},{"q":"Ogni mattina i pacchi ___ consegnati dal corriere.","options":["vengono","sono stati","viene"],"answer":0},{"q":"La lettera ___ scritta ieri pomeriggio.","options":["è stata","viene","sono state"],"answer":0},{"q":"Durante la visita guidata, ogni sala ___ presentata da un esperto.","options":["viene","è stata","vengono"],"answer":0},{"q":"Il museo ___ restaurato nel 1920.","options":["è stato","viene","è stata"],"answer":0},{"q":"I documenti ___ firmati ieri dal notaio.","options":["sono stati","vengono","è stato"],"answer":0}]
       },
       {
         "type": "Correzione",
@@ -9011,62 +7309,7 @@ const TEST_STRUCTURES = [
         "type": "Trasformazione",
         "fmt": "buco",
         "instr": "Trasforma dall'attivo al passivo usando l'ausiliare indicato.",
-        "items": [
-          {
-            "q": "Il direttore presenta il progetto. (essere) →",
-            "options": [
-              "Il progetto è presentato dal direttore.",
-              "Il progetto viene presentato dal direttore.",
-              "Il progetto ha presentato dal direttore."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Servono la colazione dalle sette. (venire) →",
-            "options": [
-              "La colazione viene servita dalle sette.",
-              "La colazione è servita dalle sette.",
-              "La colazione ha servita dalle sette."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Marco ha riparato la bicicletta. (essere) →",
-            "options": [
-              "La bicicletta è stata riparata da Marco.",
-              "La bicicletta viene riparata da Marco.",
-              "La bicicletta ha riparata da Marco."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Gli impiegati controllano i biglietti all’ingresso. (venire) →",
-            "options": [
-              "I biglietti vengono controllati dagli impiegati all’ingresso.",
-              "I biglietti sono stati controllati dagli impiegati all’ingresso.",
-              "I biglietti hanno controllati dagli impiegati all’ingresso."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il professore ha corretto il test. (essere) →",
-            "options": [
-              "Il test è stato corretto dal professore.",
-              "Il test viene corretto dal professore.",
-              "Il test ha corretto dal professore."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Gli insegnanti controllano i compiti ogni giorno. (venire) →",
-            "options": [
-              "I compiti vengono controllati dagli insegnanti ogni giorno.",
-              "I compiti sono stati controllati dagli insegnanti ogni giorno.",
-              "I compiti hanno controllati dagli insegnanti ogni giorno."
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"Il direttore presenta il progetto. (essere) →","options":["Il progetto è presentato dal direttore.","Il progetto viene presentato dal direttore.","Il progetto è stato presentato dal direttore."],"answer":0},{"q":"Servono la colazione dalle sette. (venire) →","options":["La colazione viene servita dalle sette.","La colazione è servita dalle sette.","La colazione è stata servita dalle sette."],"answer":0},{"q":"Marco ha riparato la bicicletta. (essere) →","options":["La bicicletta è stata riparata da Marco.","La bicicletta viene riparata da Marco.","La bicicletta è venuta riparata da Marco."],"answer":0},{"q":"Gli operai posano il nuovo pavimento. (venire) →","options":["Il nuovo pavimento viene posato dagli operai.","Il nuovo pavimento è posato dagli operai.","Il nuovo pavimento viene posati dagli operai."],"answer":0},{"q":"Il professore ha corretto il test. (essere) →","options":["Il test è stato corretto dal professore.","Il test viene corretto dal professore.","Il test è stato corretta dal professore."],"answer":0},{"q":"Gli insegnanti controllano i compiti ogni giorno. (venire) →","options":["I compiti vengono controllati dagli insegnanti ogni giorno.","I compiti sono controllati dagli insegnanti ogni giorno.","I compiti viene controllati dagli insegnanti ogni giorno."],"answer":0}]
       }
     ]
   },
@@ -9081,160 +7324,19 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "buco",
         "instr": "Scegli la forma corretta con il «si» passivante.",
-        "items": [
-          {
-            "q": "In questo negozio ___ scarpe italiane.",
-            "options": [
-              "si vendono",
-              "si vende",
-              "si vendere"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Qui ___ un ottimo caffè.",
-            "options": [
-              "si beve",
-              "si bevono",
-              "si bevere"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "___ molte lingue in questa scuola.",
-            "options": [
-              "Si insegnano",
-              "Si insegna",
-              "Si insegnare"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "___ appartamenti in centro.",
-            "options": [
-              "Si affittano",
-              "Si affitta",
-              "Si affittare"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "___ il pane fresco ogni mattina.",
-            "options": [
-              "Si compra",
-              "Si comprano",
-              "Si comprare"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "___ nuovi corsi ogni anno.",
-            "options": [
-              "Si organizzano",
-              "Si organizza",
-              "Si organizzare"
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"In questo negozio ___ scarpe italiane.","options":["si vendono","si vende","si è venduto"],"answer":0},{"q":"Qui ___ un ottimo caffè.","options":["si beve","si bevono","si sono bevuti"],"answer":0},{"q":"___ molte lingue in questa scuola.","options":["Si insegnano","Si insegna","Si è insegnato"],"answer":0},{"q":"___ appartamenti anche per brevi periodi.","options":["Si affittano","Si affitta","Si è affittato"],"answer":0},{"q":"In quel forno ___ il pane tutte le mattine.","options":["si compra","si comprano","si sono comprati"],"answer":0},{"q":"___ nuovi corsi ogni anno.","options":["Si organizzano","Si organizza","Si è organizzato"],"answer":0}]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [
-          {
-            "q": "In quel mercato si compra prodotti locali.",
-            "wrong": "compra",
-            "fix": "comprano"
-          },
-          {
-            "q": "Nella sala si proiettano un documentario.",
-            "wrong": "proiettano",
-            "fix": "proietta"
-          },
-          {
-            "q": "Si costruisce nuovi edifici in periferia.",
-            "wrong": "costruisce",
-            "fix": "costruiscono"
-          },
-          {
-            "q": "Si ripara biciclette in questa officina.",
-            "wrong": "ripara",
-            "fix": "riparano"
-          },
-          {
-            "q": "In questa scuola si corregge i test.",
-            "wrong": "corregge",
-            "fix": "correggono"
-          },
-          {
-            "q": "In quel negozio si ripara orologi antichi.",
-            "wrong": "ripara",
-            "fix": "riparano"
-          }
-        ]
+        "items": [{"q":"In quel mercato si compra prodotti locali.","wrong":"compra","fix":"comprano"},{"q":"Nella sala si proiettano un documentario.","wrong":"proiettano","fix":"proietta"},{"q":"Si costruisce nuovi edifici in periferia.","wrong":"costruisce","fix":"costruiscono"},{"q":"In fondo al corridoio si riparano il telefono aziendale.","wrong":"riparano","fix":"ripara"},{"q":"In questa scuola si corregge i test entro una settimana.","wrong":"corregge","fix":"correggono"},{"q":"All'ingresso si controllano il biglietto e basta.","wrong":"controllano","fix":"controlla"}]
       },
       {
         "type": "Trasformazione",
         "fmt": "buco",
         "instr": "Riscrivi con il «si» passivante.",
-        "items": [
-          {
-            "q": "Servono il pesce il venerdì. →",
-            "options": [
-              "Il pesce si serve il venerdì.",
-              "Il pesce si servono il venerdì.",
-              "Il pesce ci si serve il venerdì."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Noleggiano ombrelloni sulla spiaggia. →",
-            "options": [
-              "Sulla spiaggia si noleggiano ombrelloni.",
-              "Sulla spiaggia si noleggia ombrelloni.",
-              "Sulla spiaggia ci si noleggiano ombrelloni."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Coltivano olive in collina. →",
-            "options": [
-              "In collina si coltivano olive.",
-              "In collina si coltiva olive.",
-              "In collina ci si coltivano olive."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Firmano il contratto in ufficio. →",
-            "options": [
-              "Il contratto si firma in ufficio.",
-              "Il contratto si firmano in ufficio.",
-              "Il contratto ci si firma in ufficio."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Traducono il manuale in tre lingue. →",
-            "options": [
-              "Il manuale si traduce in tre lingue.",
-              "Il manuale si traducono in tre lingue.",
-              "Il manuale ci si traduce in tre lingue."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Cuociono la pizza nel forno a legna. →",
-            "options": [
-              "La pizza si cuoce nel forno a legna.",
-              "La pizza si cuociono nel forno a legna.",
-              "La pizza ci si cuoce nel forno a legna."
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"Servono il pesce il venerdì. →","options":["Il pesce si serve il venerdì.","Il pesce si servono il venerdì.","Il pesce servono il venerdì."],"answer":0},{"q":"Noleggiano ombrelloni sulla spiaggia. →","options":["Sulla spiaggia si noleggiano ombrelloni.","Sulla spiaggia si noleggia ombrelloni.","Sulla spiaggia noleggiano si ombrelloni."],"answer":0},{"q":"Coltivano olive in collina. →","options":["In collina si coltivano olive.","In collina si coltiva olive.","In collina coltivano le olive."],"answer":0},{"q":"Firmano il contratto in ufficio. →","options":["Il contratto si firma in ufficio.","Il contratto si firmano in ufficio.","Il contratto firmano in ufficio."],"answer":0},{"q":"Stampano le istruzioni in quattro lingue. →","options":["Le istruzioni si stampano in quattro lingue.","Le istruzioni si stampa in quattro lingue.","Le istruzioni stampano in quattro lingue."],"answer":0},{"q":"Cuociono la pizza nel forno a legna. →","options":["La pizza si cuoce nel forno a legna.","La pizza si cuociono nel forno a legna.","La pizza cuociono nel forno a legna."],"answer":0}]
       }
     ]
   },
@@ -9252,63 +7354,8 @@ const TEST_STRUCTURES = [
       {
         "type": "Riempimento",
         "fmt": "buco",
-        "instr": "Riporta le parole con un verbo dichiarativo al presente: scegli la forma corretta.",
-        "items": [
-          {
-            "q": "Marco: «Il film è divertente». → Marco dice che il film ___ divertente.",
-            "options": [
-              "è",
-              "era",
-              "sia"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Sara: «Non mi piace il finale». → Sara dice che non ___ piace il finale.",
-            "options": [
-              "le",
-              "mi",
-              "gli"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Luca e Anna: «Preferiamo il teatro». → Luca e Anna dicono che ___ il teatro.",
-            "options": [
-              "preferiscono",
-              "preferiamo",
-              "preferivano"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Paolo: «Vado al cinema ogni sabato». → Paolo dice che ___ al cinema ogni sabato.",
-            "options": [
-              "va",
-              "andava",
-              "vada"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Giulia: «Ho due biglietti». → Giulia dice che ___ due biglietti.",
-            "options": [
-              "ha",
-              "ho",
-              "aveva"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Marta: «Non conosco il regista». → Marta dice che non ___ il regista.",
-            "options": [
-              "conosce",
-              "conosceva",
-              "conosca"
-            ],
-            "answer": 0
-          }
-        ]
+        "instr": "Riporta le parole con un verbo dichiarativo al passato: scegli la forma corretta.",
+        "items": [{"q":"«La sala è troppo fredda» → Marco si è lamentato perché la sala ___ troppo fredda.","options":["era","fu","sarebbe stato"],"answer":0},{"q":"«Ho letto il romanzo prima del film» → Il critico ha scritto che ___ il romanzo prima del film.","options":["aveva letto","avrebbe letto","leggeva"],"answer":0},{"q":"«Andrò a teatro sabato» → Giulia ha risposto che ___ a teatro il sabato dopo.","options":["sarebbe andata","sarebbe andato","andò"],"answer":0},{"q":"«Non conosco bene la parte» → L’attore ha ammesso che non ___ bene la parte.","options":["conosceva","conobbe","avrebbe conosciuto"],"answer":0},{"q":"«Spegnete il telefono!» → Il personale ci ha chiesto ___ il telefono.","options":["di spegnere","che spegniamo","spegnere"],"answer":0},{"q":"«Torneremo prima di mezzanotte» → I ragazzi hanno spiegato che ___ prima di mezzanotte.","options":["sarebbero tornati","torneranno","sarebbero tornate"],"answer":0}]
       },
       {
         "type": "Correzione",
@@ -9350,63 +7397,8 @@ const TEST_STRUCTURES = [
       {
         "type": "Trasformazione",
         "fmt": "buco",
-        "instr": "Trasforma in discorso indiretto mantenendo il resoconto nel presente.",
-        "items": [
-          {
-            "q": "«Adoro questo film», dice Elena. →",
-            "options": [
-              "Elena dice che adora questo film.",
-              "Elena dice che adorava questo film.",
-              "Elena dice che adori questo film."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Non capisco il finale», dice Carlo. →",
-            "options": [
-              "Carlo dice che non capisce il finale.",
-              "Carlo dice che non capivo il finale.",
-              "Carlo dice che non capisca il finale."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Andiamo spesso a teatro», dicono Marta e Leo. →",
-            "options": [
-              "Marta e Leo dicono che vanno spesso a teatro.",
-              "Marta e Leo dicono che andiamo spesso a teatro.",
-              "Marta e Leo dicono che vadano spesso a teatro."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Il mio posto è in prima fila», dice Anna. →",
-            "options": [
-              "Anna dice che il suo posto è in prima fila.",
-              "Anna dice che il mio posto è in prima fila.",
-              "Anna dice che il suo posto era in prima fila."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Ti consiglio la commedia», dice Luca a Sara. →",
-            "options": [
-              "Luca dice a Sara che le consiglia la commedia.",
-              "Luca dice a Sara che mi consiglia la commedia.",
-              "Luca dice a Sara che le consigliava la commedia."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Siamo soddisfatti dello spettacolo», dicono i clienti. →",
-            "options": [
-              "I clienti dicono che sono soddisfatti dello spettacolo.",
-              "I clienti dicono che siamo soddisfatti dello spettacolo.",
-              "I clienti dicono che fossero soddisfatti dello spettacolo."
-            ],
-            "answer": 0
-          }
-        ]
+        "instr": "Trasforma in discorso indiretto: attenzione ai tempi e alle parole che indicano tempo e luogo.",
+        "items": [{"q":"«Ho conosciuto questo attore a Venezia», ha raccontato Elena. →","options":["Elena ha raccontato che aveva conosciuto quell’attore a Venezia.","Elena ha raccontato che ha conosciuto quell’attore a Venezia.","Elena ha raccontato che aveva conosciuto questo attore a Venezia."],"answer":0},{"q":"«Domani il cinema è chiuso», ha detto Sara. →","options":["Sara ha detto che il giorno dopo il cinema era chiuso.","Sara ha detto che domani il cinema era chiuso.","Sara ha detto che il giorno dopo il cinema è chiuso."],"answer":0},{"q":"«Non ho mai visto questo attore», ha ammesso Luca. →","options":["Luca ha ammesso che non aveva mai visto quell’attore.","Luca ha ammesso che non ha mai visto quell’attore.","Luca ha ammesso che non aveva mai visto questo attore."],"answer":0},{"q":"«Prenota i posti prima di venerdì!», mi ha detto Elena. →","options":["Elena mi ha detto di prenotare i posti prima di venerdì.","Elena mi ha detto che prenoto i posti prima di venerdì.","Elena mi ha detto prenotare i posti prima di venerdì."],"answer":0},{"q":"«Qui si vede meglio», ha detto Anna. →","options":["Anna ha detto che lì si vedeva meglio.","Anna ha detto che qui si vedeva meglio.","Anna ha detto che lì si vede meglio."],"answer":0},{"q":"«Il nostro spettacolo finirà tardi», hanno avvisato gli attori. →","options":["Gli attori hanno avvisato che il loro spettacolo sarebbe finito tardi.","Gli attori hanno avvisato che il nostro spettacolo sarebbe finito tardi.","Gli attori hanno avvisato che il loro spettacolo finirà tardi."],"answer":0}]
       }
     ]
   },
@@ -9756,161 +7748,20 @@ const TEST_STRUCTURES = [
       {
         "type": "Riempimento",
         "fmt": "buco",
-        "instr": "Scegli il pronome relativo corretto.",
-        "items": [
-          {
-            "q": "L'azienda per ___ lavoro è tedesca.",
-            "options": [
-              "cui",
-              "che",
-              "chi"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il collega a ___ ho scritto è in ferie.",
-            "options": [
-              "cui",
-              "che",
-              "chi"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "La città in ___ sono nato è sul mare.",
-            "options": [
-              "cui",
-              "che",
-              "chi"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il progetto ___ abbiamo presentato ieri è pronto.",
-            "options": [
-              "che",
-              "cui",
-              "chi"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "La collega con ___ lavoro vive a Bari.",
-            "options": [
-              "cui",
-              "che",
-              "chi"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il libro ___ mi hai consigliato è interessante.",
-            "options": [
-              "che",
-              "cui",
-              "chi"
-            ],
-            "answer": 0
-          }
-        ]
+        "instr": "Scegli la preposizione corretta davanti a «cui».",
+        "items": [{"q":"Il ritardo ___ si lamentano tutti dura ormai da mesi.","options":["di cui","per cui","a cui"],"answer":0},{"q":"Il torneo ___ ha partecipato mio figlio è finito ieri.","options":["a cui","in cui","di cui"],"answer":0},{"q":"Il ragazzo ___ contavamo per il turno di notte non si è presentato.","options":["su cui","con cui","di cui"],"answer":0},{"q":"Il rumore ___ non riusciamo a difenderci comincia ogni sera alle undici.","options":["da cui","a cui","con cui"],"answer":0},{"q":"Il regalo ___ abbiamo speso tanto non le è piaciuto.","options":["per cui","con cui","di cui"],"answer":0},{"q":"Il coltello ___ ha tagliato il pane era troppo piccolo.","options":["con cui","per cui","da cui"],"answer":0}]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [
-          {
-            "q": "La società per che lavoro è francese.",
-            "wrong": "che",
-            "fix": "cui"
-          },
-          {
-            "q": "Il direttore a che ho parlato è nuovo.",
-            "wrong": "che",
-            "fix": "cui"
-          },
-          {
-            "q": "Il paese in che vivo è tranquillo.",
-            "wrong": "che",
-            "fix": "cui"
-          },
-          {
-            "q": "La relazione cui abbiamo consegnato ieri è lunga.",
-            "wrong": "cui",
-            "fix": "che"
-          },
-          {
-            "q": "La collega con che lavoro ogni giorno è molto precisa.",
-            "wrong": "che",
-            "fix": "cui"
-          },
-          {
-            "q": "Il libro cui ho comprato ieri è sul tavolo.",
-            "wrong": "cui",
-            "fix": "che"
-          }
-        ]
+        "items": [{"q":"Il consolato di cui mi sono rivolto non ha risposto.","wrong":"di","fix":"a"},{"q":"Ho perso il foglio su che avevo segnato l'indirizzo.","wrong":"che","fix":"cui"},{"q":"Non trovo più la mail cui ho mandato ieri.","wrong":"cui","fix":"che"},{"q":"Il paese in cui provengono questi vini è la Francia.","wrong":"in","fix":"da"},{"q":"L'articolo cui ho letto stamattina diceva un'altra cosa.","wrong":"cui","fix":"che"},{"q":"Il numero a che hai telefonato non esiste più.","wrong":"che","fix":"cui"}]
       },
       {
-        "type": "Trasformazione",
-        "fmt": "buco",
-        "instr": "Unisci le due frasi con «che» o «cui».",
-        "items": [
-          {
-            "q": "Ecco il libro. Ne abbiamo parlato ieri.",
-            "options": [
-              "Ecco il libro di cui abbiamo parlato ieri.",
-              "Ecco il libro che abbiamo parlato ieri.",
-              "Ecco il libro di chi abbiamo parlato ieri."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Questo è il museo. Ci vado spesso.",
-            "options": [
-              "Questo è il museo in cui vado spesso.",
-              "Questo è il museo che vado spesso.",
-              "Questo è il museo in chi vado spesso."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Ho una collega. Lavoro con lei.",
-            "options": [
-              "Ho una collega con cui lavoro.",
-              "Ho una collega che lavoro.",
-              "Ho una collega con chi lavoro."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Ho letto un articolo. L'articolo era interessante.",
-            "options": [
-              "L'articolo che ho letto era interessante.",
-              "L'articolo cui ho letto era interessante.",
-              "L'articolo chi ho letto era interessante."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Conosco un tecnico. Il tecnico lavora qui.",
-            "options": [
-              "Conosco un tecnico che lavora qui.",
-              "Conosco un tecnico cui lavora qui.",
-              "Conosco un tecnico chi lavora qui."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Questo è il paese. Sono cresciuto qui.",
-            "options": [
-              "Questo è il paese in cui sono cresciuto.",
-              "Questo è il paese che sono cresciuto.",
-              "Questo è il paese in chi sono cresciuto."
-            ],
-            "answer": 0
-          }
-        ]
+        "type": "Riempimento",
+        "fmt": "fill",
+        "instr": "Scrivi la preposizione + «cui».",
+        "items": [{"q":"La pratica ___ si occupa mia sorella è ferma da mesi.","a":"di cui","no":["che","a cui","con cui"]},{"q":"Il progetto ___ tengo di più è ancora nel cassetto.","a":"a cui","no":["che","di cui","per cui"]},{"q":"Ricordo ancora il giorno ___ ci siamo conosciuti.","a":"in cui","no":["che","a cui","su cui"]},{"q":"La finestra ___ entra tutta quella luce dà sul giardino.","a":"da cui","no":["che","di cui","in cui"]},{"q":"La panchina ___ ci sedevamo da ragazzi non c'è più.","a":"su cui","no":["che","in cui","di cui"]},{"q":"L'amico ___ sono partito per il Portogallo si è ammalato subito.","a":"con cui","no":["che","da cui","a cui"]}]
       }
     ]
   },
@@ -9924,157 +7775,20 @@ const TEST_STRUCTURES = [
       {
         "type": "Composizione",
         "fmt": "ordina",
-        "instr": "Clicca le parole nell'ordine giusto.",
-        "items": [
-          {
-            "q": "Marco si offende facilmente anche per piccole critiche.",
-            "sol": [
-              "se",
-              "la",
-              "prende"
-            ]
-          },
-          {
-            "q": "A Luca non importa affatto del giudizio degli altri.",
-            "sol": [
-              "se",
-              "ne",
-              "frega"
-            ]
-          },
-          {
-            "q": "Oggi non ho il coraggio di affrontare il capo.",
-            "sol": [
-              "non",
-              "me",
-              "la",
-              "sento"
-            ]
-          },
-          {
-            "q": "Per superare l’esame, promettiamo il massimo impegno.",
-            "sol": [
-              "ce",
-              "la",
-              "mettiamo",
-              "tutta"
-            ]
-          },
-          {
-            "q": "A me non importa affatto di quelle critiche.",
-            "sol": [
-              "me",
-              "ne",
-              "frego"
-            ]
-          },
-          {
-            "q": "Ti chiedo se hai il coraggio di ricominciare da capo.",
-            "sol": [
-              "te",
-              "la",
-              "senti"
-            ]
-          }
-        ]
+        "instr": "Componi la parte che manca: clicca le parole nell'ordine giusto.",
+        "items": [{"q":"Non era niente di grave, eppure i miei fratelli ___ e adesso non mi rispondono più.","sol":["se","la","sono","presa"]},{"q":"Gliel'abbiamo detto mille volte, ma ___ e hanno fatto di testa loro.","sol":["se","ne","sono","fregati"]},{"q":"Stasera restiamo a casa: ___ in centro.","sol":["non","ce","la","sentiamo","di","guidare"]},{"q":"Alla fine non ha vinto nessuno, però ___ fino all'ultimo minuto.","sol":["ce","l'abbiamo","messa","tutta"]},{"q":"Da quando abbiamo cambiato l'orario, la portinaia ___ e non ci saluta più.","sol":["ce","l'ha","con","noi"]},{"q":"Ogni volta che qualcosa va storto in ufficio, ___ pur sapendo che non c'entro niente.","sol":["se","la","prende","con","me"]}]
       },
       {
         "type": "Riempimento",
         "fmt": "buco",
-        "instr": "Scegli la forma corretta del verbo pronominale.",
-        "items": [
-          {
-            "q": "___ per una battuta e ha reagito male. (prendersela)",
-            "options": [
-              "Se l'è presa",
-              "Si l'è presa",
-              "Se l'ha presa"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "___ del giudizio altrui e fa sempre di testa sua. (fregarsene)",
-            "options": [
-              "Se ne frega",
-              "Si ne frega",
-              "Se lo frega"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Non ___ di affrontare il viaggio. (sentirsela)",
-            "options": [
-              "me la sento",
-              "mi la sento",
-              "me lo sento"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Per la maratona ___ tutta. (mettercela)",
-            "options": [
-              "ce l'ho messa",
-              "ci l'ho messa",
-              "ce l'ho messo"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Marco ___ con il vicino da mesi. (avercela)",
-            "options": [
-              "ce l'ha",
-              "ci l'ha",
-              "ce lo ha"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Non ___ di ricominciare. (sentirsela)",
-            "options": [
-              "ve la sentite",
-              "vi la sentite",
-              "ve lo sentite"
-            ],
-            "answer": 0
-          }
-        ]
+        "instr": "Completa con la parola corretta.",
+        "items": [{"q":"Dopo quella telefonata non me la sono sentita ___ insistere.","options":["di","a","per"],"answer":0},{"q":"Se l'è presa ___ me perché non l'ho avvisata.","options":["con","a","di"],"answer":0},{"q":"Mio cognato se ne frega ___ quello che pensano i parenti.","options":["di","a","per"],"answer":0},{"q":"In cucina ce la sta mettendo ___ per non far tardi.","options":["tutta","tutto","tutte"],"answer":0},{"q":"Da settimane l'allenatore ce l'ha ___ mio figlio e non lo fa giocare.","options":["con","per","a"],"answer":0},{"q":"Te la senti ___ affrontarlo da solo?","options":["di","a","per"],"answer":0}]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [
-          {
-            "q": "Lui si la prende per ogni critica.",
-            "wrong": "si",
-            "fix": "se"
-          },
-          {
-            "q": "Dei commenti mi ne frego completamente.",
-            "wrong": "mi",
-            "fix": "me"
-          },
-          {
-            "q": "Oggi non ci la sentiamo di uscire.",
-            "wrong": "ci",
-            "fix": "ce"
-          },
-          {
-            "q": "Per il progetto ce lo mettiamo tutta.",
-            "wrong": "lo",
-            "fix": "la"
-          },
-          {
-            "q": "Dopo il litigio, Anna ci l'ha ancora con me.",
-            "wrong": "ci",
-            "fix": "ce"
-          },
-          {
-            "q": "Davanti a una nuova sfida, non vi la sentite di provarci.",
-            "wrong": "vi",
-            "fix": "ve"
-          }
-        ]
+        "items": [{"q":"Dopo la riunione loro se la hanno presa moltissimo.","wrong":"hanno","fix":"sono"},{"q":"Le mie colleghe non se la sono sentite di protestare.","wrong":"sentite","fix":"sentita"},{"q":"Le ragazze se ne sono fregata delle regole.","wrong":"fregata","fix":"fregate"},{"q":"Da lunedì ce la mette tutto per recuperare le lezioni perse.","wrong":"tutto","fix":"tutta"},{"q":"Da mesi ci l'ha con il suo ex socio.","wrong":"ci","fix":"ce"},{"q":"Se la prende sempre a chi gli sta vicino.","wrong":"a","fix":"con"}]
       }
     ]
   },
@@ -10260,160 +7974,19 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "fill",
         "instr": "Scrivi il congiuntivo presente irregolare.",
-        "items": [
-          {
-            "q": "Penso che Marco ___ ragione. (avere)",
-            "a": "abbia",
-            "no": [
-              "ha",
-              "abbi",
-              "abbiano"
-            ]
-          },
-          {
-            "q": "Credo che Marco e Luca ___ in ritardo. (essere)",
-            "a": "siano",
-            "no": [
-              "sono",
-              "sia",
-              "è"
-            ]
-          },
-          {
-            "q": "Spero che tu ___ i compiti. (fare)",
-            "a": "faccia",
-            "no": [
-              "fai",
-              "fa",
-              "facciamo"
-            ]
-          },
-          {
-            "q": "Penso che Marta ___ a casa. (andare)",
-            "a": "vada",
-            "no": [
-              "va",
-              "vadi",
-              "vanno"
-            ]
-          },
-          {
-            "q": "Spero che Marco e Luca ___ presto. (venire)",
-            "a": "vengano",
-            "no": [
-              "vengono",
-              "venghino",
-              "venga"
-            ]
-          },
-          {
-            "q": "Credo che tu ___ la risposta. (sapere)",
-            "a": "sappia",
-            "no": [
-              "sai",
-              "sappi",
-              "sa"
-            ]
-          }
-        ]
+        "items": [{"q":"Non credo che il direttore ___ ancora in ufficio a quest'ora. (stare)","a":"stia","no":["sta","stiano"]},{"q":"È possibile che i vicini ___ una mano con il trasloco. (dare)","a":"diano","no":["danno","dino"]},{"q":"Dubito che il tecnico ___ la verità sul guasto. (dire)","a":"dica","no":["dice","dicano"]},{"q":"Temo che i ragazzi non ___ arrivare in tempo. (potere)","a":"possano","no":["possono","possino"]},{"q":"Mi sembra che tua sorella ___ molto d'accordo. (essere)","a":"sia","no":["è","siano"]},{"q":"È meglio che i documenti ___ direttamente in archivio. (andare)","a":"vadano","no":["vanno","vadino"]}]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [
-          {
-            "q": "Mi pare che Marco abbi torto, ma non vuole ammetterlo.",
-            "wrong": "abbi",
-            "fix": "abbia"
-          },
-          {
-            "q": "Non credo che Marco e Luca sono pronti per partire.",
-            "wrong": "sono",
-            "fix": "siano"
-          },
-          {
-            "q": "Dubito che tu fa tutto da solo.",
-            "wrong": "fa",
-            "fix": "faccia"
-          },
-          {
-            "q": "Immagino che Marta vadi spesso in quell’ufficio.",
-            "wrong": "vadi",
-            "fix": "vada"
-          },
-          {
-            "q": "Spero che gli ospiti venghino alla riunione in orario.",
-            "wrong": "venghino",
-            "fix": "vengano"
-          },
-          {
-            "q": "È improbabile che tu sappi già tutti i dettagli.",
-            "wrong": "sappi",
-            "fix": "sappia"
-          }
-        ]
+        "items": [{"q":"Non credo che voi siete pronti per un viaggio così lungo.","wrong":"siete","fix":"siate"},{"q":"Temo che i vicini stieno per traslocare senza avvisare.","wrong":"stieno","fix":"stiano"},{"q":"È meglio che voi fate una copia del contratto.","wrong":"fate","fix":"facciate"},{"q":"Immagino che il tecnico possi venire domani mattina.","wrong":"possi","fix":"possa"},{"q":"Spero che voi sapete già come arrivare.","wrong":"sapete","fix":"sappiate"},{"q":"È probabile che i ragazzi dichino la verità ai genitori.","wrong":"dichino","fix":"dicano"}]
       },
       {
         "type": "Trasformazione",
         "fmt": "buco",
         "instr": "Riformula la frase con l’espressione indicata e il congiuntivo presente.",
-        "items": [
-          {
-            "q": "Marco ha un buon motivo. (Non credo che...)",
-            "options": [
-              "Non credo che Marco abbia un buon motivo.",
-              "Non credo che Marco ha un buon motivo.",
-              "Non credo che Marco abbiano un buon motivo."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "I ragazzi sono già pronti. (Dubito che...)",
-            "options": [
-              "Dubito che i ragazzi siano già pronti.",
-              "Dubito che i ragazzi sono già pronti.",
-              "Dubito che i ragazzi sia già pronti."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Tu fai abbastanza. (Penso che...)",
-            "options": [
-              "Penso che tu faccia abbastanza.",
-              "Penso che tu fai abbastanza.",
-              "Penso che tu facciamo abbastanza."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Laura va spesso in ufficio. (Non credo che...)",
-            "options": [
-              "Non credo che Laura vada spesso in ufficio.",
-              "Non credo che Laura va spesso in ufficio.",
-              "Non credo che Laura vanno spesso in ufficio."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Gli ospiti vengono stasera. (Spero che...)",
-            "options": [
-              "Spero che gli ospiti vengano stasera.",
-              "Spero che gli ospiti vengono stasera.",
-              "Spero che gli ospiti venga stasera."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Tu sai già tutto. (Dubito che...)",
-            "options": [
-              "Dubito che tu sappia già tutto.",
-              "Dubito che tu sai già tutto.",
-              "Dubito che tu sa già tutto."
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"Tu hai già tutti i documenti. (Non sono sicuro che...)","options":["Non sono sicuro che tu abbia già tutti i documenti.","Non sono sicuro che tu hai già tutti i documenti.","Non sono sicuro che tu abbiate già tutti i documenti."],"answer":0},{"q":"Voi venite in macchina. (È meglio che...)","options":["È meglio che voi veniate in macchina.","È meglio che voi venite in macchina.","È meglio che voi vengano in macchina."],"answer":0},{"q":"Io vado a prenderlo in stazione. (Preferisci che...)","options":["Preferisci che io vada a prenderlo in stazione?","Preferisci che io vado a prenderlo in stazione?","Preferisci che io vadano a prenderlo in stazione?"],"answer":0},{"q":"Lei sa dove sono le chiavi. (Dubito che...)","options":["Dubito che lei sappia dove sono le chiavi.","Dubito che lei sa dove sono le chiavi.","Dubito che lei sappiano dove sono le chiavi."],"answer":0},{"q":"Tu stai bene con questo caldo. (Non mi pare che...)","options":["Non mi pare che tu stia bene con questo caldo.","Non mi pare che tu stai bene con questo caldo.","Non mi pare che tu stiate bene con questo caldo."],"answer":0},{"q":"Loro danno l'esame a giugno. (È possibile che...)","options":["È possibile che loro diano l'esame a giugno.","È possibile che loro danno l'esame a giugno.","È possibile che loro dia l'esame a giugno."],"answer":0}]
       }
     ]
   },
@@ -11442,166 +9015,25 @@ const TEST_STRUCTURES = [
     "lez": [
       "B2 L22"
     ],
-    "title": "Il discorso indiretto al passato",
+    "title": "Il futuro nel passato",
     "exercises": [
       {
         "type": "Riempimento",
         "fmt": "buco",
         "instr": "Riporta la frase al passato: scegli la forma corretta.",
-        "items": [
-          {
-            "q": "«Arriveremo tardi» → Dissero che ___ tardi.",
-            "options": [
-              "sarebbero arrivati",
-              "arriveranno",
-              "arrivassero"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Partirò lunedì» → Annunciò che ___ il lunedì successivo.",
-            "options": [
-              "sarebbe partito",
-              "partirà",
-              "partisse"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Vi chiameremo» → Promisero che ci ___.",
-            "options": [
-              "avrebbero chiamato",
-              "chiameranno",
-              "chiamassero"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Finirò domani» → Assicurò che ___ il giorno dopo.",
-            "options": [
-              "avrebbe finito",
-              "finirà",
-              "finisse"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Ci penseremo» → Dissero che ci ___.",
-            "options": [
-              "avrebbero pensato",
-              "penseranno",
-              "pensassero"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Torneranno presto» → Comunicò che ___ presto.",
-            "options": [
-              "sarebbero tornati",
-              "torneranno",
-              "tornassero"
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"Mia sorella ci aveva promesso che ci ___ un passaggio, e invece siamo andati in autobus.","options":["avrebbe dato","darebbe","darà"],"answer":0},{"q":"Prima dell'esame l'insegnante ci aveva avvisati che la prova ___ due ore.","options":["sarebbe durata","durerebbe","durerà"],"answer":0},{"q":"Giulia ci ha fatto sapere che ___ direttamente al ristorante, così l'abbiamo aspettata lì.","options":["sarebbe venuta","sarebbe venuto","verrà"],"answer":0},{"q":"I ragazzi avevano giurato che ___ per cena, e infatti alle otto erano a tavola.","options":["sarebbero rientrati","sarebbe rientrato","rientreranno"],"answer":0},{"q":"Mio nonno ripeteva sempre che un giorno ___ a vivere al mare, ma non si è mai mosso dal paese.","options":["sarebbe andato","andrebbe","andrà"],"answer":0},{"q":"Il proprietario mi aveva assicurato che ___ lui le spese del riscaldamento, poi è arrivata la bolletta.","options":["avrebbe pagato","pagherebbe","pagherà"],"answer":0}]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [
-          {
-            "q": "Disse che mi scriverà appena possibile.",
-            "wrong": "scriverà",
-            "fix": "avrebbe scritto"
-          },
-          {
-            "q": "Rispose che ci penserà lui.",
-            "wrong": "penserà",
-            "fix": "avrebbe pensato"
-          },
-          {
-            "q": "Assicurò che finirà il lavoro entro sera.",
-            "wrong": "finirà",
-            "fix": "avrebbe finito"
-          },
-          {
-            "q": "Avvertì che non verrà alla riunione.",
-            "wrong": "verrà",
-            "fix": "sarebbe venuto"
-          },
-          {
-            "q": "Garantì che mi aiuterà con il progetto.",
-            "wrong": "aiuterà",
-            "fix": "avrebbe aiutato"
-          },
-          {
-            "q": "Scrisse che manderà i documenti in giornata.",
-            "wrong": "manderà",
-            "fix": "avrebbe mandato"
-          }
-        ]
+        "items": [{"q":"Anna mi aveva promesso che mi presterebbe la bici, ma se l'è dimenticata a casa.","wrong":"presterebbe","fix":"avrebbe prestato"},{"q":"L'agenzia ci aveva comunicato che il volo partirà con tre ore di ritardo, e invece siamo decollati puntuali.","wrong":"partirà","fix":"sarebbe partito"},{"q":"Marta dice che ci raggiungerebbe alle sette.","wrong":"raggiungerebbe","fix":"raggiungerà"},{"q":"Mia madre aveva promesso che sarebbe venuto con noi al mare.","wrong":"venuto","fix":"venuta"},{"q":"L'elettricista ci ha assicurato che ripasserebbe il giorno dopo, e invece non si è più fatto vivo.","wrong":"ripasserebbe","fix":"sarebbe ripassato"},{"q":"Eravamo sicuri che la festa finirà presto, e invece è andata avanti fino all'alba.","wrong":"finirà","fix":"sarebbe finita"}]
       },
       {
         "type": "Trasformazione",
         "fmt": "buco",
         "instr": "Riporta la frase al passato: scegli la versione corretta.",
-        "items": [
-          {
-            "q": "«Arriveremo per le otto», dissero. →",
-            "options": [
-              "Dissero che sarebbero arrivati per le otto.",
-              "Dissero che arriveranno per le otto.",
-              "Dissero che arrivavano per le otto."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Me ne occuperò io», rispose. →",
-            "options": [
-              "Rispose che se ne sarebbe occupato lui.",
-              "Rispose che se ne occuperà lui.",
-              "Rispose che se ne occupava lui."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Partirò la settimana prossima», annunciò. →",
-            "options": [
-              "Annunciò che sarebbe partito la settimana dopo.",
-              "Annunciò che partirà la settimana dopo.",
-              "Annunciò che partiva la settimana dopo."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Vi avviseremo», promisero. →",
-            "options": [
-              "Promisero che ci avrebbero avvisati.",
-              "Promisero che ci avviseranno.",
-              "Promisero che ci avvisavano."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Rientreranno a giugno», comunicò. →",
-            "options": [
-              "Comunicò che sarebbero rientrati a giugno.",
-              "Comunicò che rientreranno a giugno.",
-              "Comunicò che rientravano a giugno."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Pagheremo il saldo», scrissero. →",
-            "options": [
-              "Scrissero che avrebbero pagato il saldo.",
-              "Scrissero che pagheranno il saldo.",
-              "Scrissero che pagavano il saldo."
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"«Domani ti riporto il trapano», mi ha detto Federico. →","options":["Federico mi ha detto che il giorno dopo mi avrebbe riportato il trapano.","Federico mi ha detto che il giorno dopo mi riporterebbe il trapano.","Federico mi ha detto che domani mi avrebbe riportato il trapano."],"answer":0},{"q":"«Passerò a prendervi alle otto», ci ha scritto Chiara. →","options":["Chiara ci ha scritto che sarebbe passata a prenderci alle otto.","Chiara ci ha scritto che passerebbe a prenderci alle otto.","Chiara ci ha scritto che sarebbe passata a prendervi alle otto."],"answer":0},{"q":"«Stasera non uscirò», ha detto Ilaria. →","options":["Ilaria ha detto che quella sera non sarebbe uscita.","Ilaria ha detto che quella sera non uscirebbe.","Ilaria ha detto che quella sera non sarebbe uscito."],"answer":0},{"q":"«Ci penseremo noi al giardino», hanno detto i miei cugini. →","options":["I miei cugini hanno detto che ci avrebbero pensato loro al giardino.","I miei cugini hanno detto che ci penserebbero loro al giardino.","I miei cugini hanno detto che ci avrebbero pensato noi al giardino."],"answer":0},{"q":"«Ne parleremo la settimana prossima», ha risposto la preside. →","options":["La preside ha risposto che ne avrebbero parlato la settimana successiva.","La preside ha risposto che ne parlerebbero la settimana successiva.","La preside ha risposto che ne avrebbero parlato la settimana prossima."],"answer":0},{"q":"«Non lo dimenticherò mai», ripeteva mia zia. →","options":["Mia zia ripeteva che non lo avrebbe dimenticato mai.","Mia zia ripeteva che non lo dimenticherebbe mai.","Mia zia ripeteva che non lo dimenticherà mai."],"answer":0}]
       }
     ],
     "diag": true
@@ -11617,160 +9049,19 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "buco",
         "instr": "Scegli la forma corretta.",
-        "items": [
-          {
-            "q": "Il direttore, ___ ho parlato, è tedesco.",
-            "options": [
-              "al quale",
-              "alla quale",
-              "ai quali"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "La dottoressa, ___ mi sono rivolto, è brava.",
-            "options": [
-              "alla quale",
-              "al quale",
-              "alle quali"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "I colleghi, ___ ho scritto, non rispondono.",
-            "options": [
-              "ai quali",
-              "alle quali",
-              "al quale"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Le ricerche, ___ si basa il testo, sono recenti.",
-            "options": [
-              "sulle quali",
-              "sui quali",
-              "sul quale"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Gli strumenti ___ misuriamo la temperatura sono precisi.",
-            "options": [
-              "con i quali",
-              "con le quali",
-              "con il quale"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "I dati, ___ discutiamo, sono riservati.",
-            "options": [
-              "dei quali",
-              "delle quali",
-              "del quale"
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"È stato firmato un appello, ___ il sindaco non ha ancora risposto.","options":["al quale","del quale","sul quale"],"answer":0},{"q":"Il comune ha allestito due aree verdi, ___ è vietato l'ingresso ai cani.","options":["nelle quali","sulle quali","dalle quali"],"answer":0},{"q":"La giunta ha stanziato una somma, ___ verranno pagati i lavori del tetto.","options":["con la quale","dalla quale","nella quale"],"answer":0},{"q":"La relazione cita due ricerche recenti, ___ però non indica gli autori.","options":["delle quali","alle quali","dalle quali"],"answer":0},{"q":"Il contratto contiene una clausola ___ nessuno si era soffermato.","options":["sulla quale","della quale","alla quale"],"answer":0},{"q":"Il consiglio ha approvato il progetto, ___ sono stati stanziati due milioni.","options":["per il quale","dal quale","nel quale"],"answer":0}]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [
-          {
-            "q": "Il responsabile del reparto, alla quale ho scritto, è assente.",
-            "wrong": "alla",
-            "fix": "al"
-          },
-          {
-            "q": "La collega, al quale ho parlato, è brava.",
-            "wrong": "al",
-            "fix": "alla"
-          },
-          {
-            "q": "I tecnici alle quali ho telefonato arriveranno tra poco.",
-            "wrong": "alle",
-            "fix": "ai"
-          },
-          {
-            "q": "Le prove, sui quali si basa, sono deboli.",
-            "wrong": "sui",
-            "fix": "sulle"
-          },
-          {
-            "q": "Gli attrezzi da giardino, con le quali lavoro, sono vecchi.",
-            "wrong": "le",
-            "fix": "i"
-          },
-          {
-            "q": "Tutti i documenti, delle quali parliamo, sono qui.",
-            "wrong": "delle",
-            "fix": "dei"
-          }
-        ]
+        "items": [{"q":"Le circolari alle quale il personale deve attenersi sono due.","wrong":"quale","fix":"quali"},{"q":"Il bando per la quale abbiamo presentato domanda l'anno scorso è scaduto.","wrong":"la","fix":"il"},{"q":"Le aule nei quali si tengono gli esami sono al secondo piano.","wrong":"nei","fix":"nelle"},{"q":"Nella relazione ci sono due tabelle sui quali si basa tutta la conclusione.","wrong":"sui","fix":"sulle"},{"q":"Le associazioni ai quali il comune ha dato il contributo sono cinque.","wrong":"ai","fix":"alle"},{"q":"I documenti con le quali si presenta la domanda vanno firmati.","wrong":"le","fix":"i"}]
       },
       {
-        "type": "Trasformazione",
+        "type": "Riempimento",
         "fmt": "buco",
-        "instr": "Riscrivi la frase sostituendo «cui» con una forma di «il quale».",
-        "items": [
-          {
-            "q": "Il collega a cui ho scritto. →",
-            "options": [
-              "Il collega al quale ho scritto.",
-              "Il collega alla quale ho scritto.",
-              "Il collega ai quali ho scritto."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "La persona con cui lavoro. →",
-            "options": [
-              "La persona con la quale lavoro.",
-              "La persona con il quale lavoro.",
-              "La persona con le quali lavoro."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Gli amici di cui parlo. →",
-            "options": [
-              "Gli amici dei quali parlo.",
-              "Gli amici delle quali parlo.",
-              "Gli amici del quale parlo."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Le regole su cui insistiamo. →",
-            "options": [
-              "Le regole sulle quali insistiamo.",
-              "Le regole sui quali insistiamo.",
-              "Le regole sul quale insistiamo."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "I motivi per cui rifiuto. →",
-            "options": [
-              "I motivi per i quali rifiuto.",
-              "I motivi per le quali rifiuto.",
-              "I motivi per il quale rifiuto."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Le amiche a cui scrivo. →",
-            "options": [
-              "Le amiche alle quali scrivo.",
-              "Le amiche ai quali scrivo.",
-              "Le amiche alla quale scrivo."
-            ],
-            "answer": 0
-          }
-        ]
+        "instr": "Scegli la forma corretta: fra parentesi è indicato a chi o a che cosa si riferisce.",
+        "items": [{"q":"Ho conosciuto il marito della professoressa, ___ non avevo mai sentito parlare. (del marito)","options":["del quale","della quale","dei quali"],"answer":0},{"q":"Sabato ho rivisto il fratello di Sonia, ___ non parlavo da anni. (con Sonia)","options":["con la quale","con il quale","con i quali"],"answer":0},{"q":"Mi ha risposto l'assistente del direttore, ___ era in riunione. (il direttore)","options":["il quale","la quale","i quali"],"answer":0},{"q":"Ho restituito il libro alla sorella di Marco, ___ avevo scritto il mio nome. (sul libro)","options":["sul quale","sulla quale","sui quali"],"answer":0},{"q":"Hanno licenziato la figlia del proprietario, ___ non si presentava mai in cantiere. (la figlia)","options":["la quale","il quale","le quali"],"answer":0},{"q":"Abbiamo ospitato l'amico dei miei cugini, ___ non vedevo da dieci anni. (i cugini)","options":["i quali","il quale","le quali"],"answer":0}]
       }
     ]
   },
@@ -11954,160 +9245,19 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "buco",
         "instr": "Scegli la forma corretta del gerundio.",
-        "items": [
-          {
-            "q": "___ verso casa, ho incontrato Anna. (camminare: azione simultanea)",
-            "options": [
-              "Camminando",
-              "Avendo camminato",
-              "Camminato"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "___ il contratto, ho notato un errore. (leggere: azione simultanea)",
-            "options": [
-              "Leggendo",
-              "Avendo letto",
-              "Letto"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "___ con metodo, ottieni risultati migliori. (studiare: azione simultanea)",
-            "options": [
-              "Studiando",
-              "Avendo studiato",
-              "Studiato"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "___ già quel film, ne abbiamo scelto un altro. (vedere: azione precedente)",
-            "options": [
-              "Avendo visto",
-              "Vedendo",
-              "Visto"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "___ tardi alla stazione, Luca ha perso il treno. (arrivare: azione precedente)",
-            "options": [
-              "Essendo arrivato",
-              "Arrivando",
-              "Avendo arrivato"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "___ il lavoro, siamo andati a casa. (finire: azione precedente)",
-            "options": [
-              "Avendo finito",
-              "Finendo",
-              "Essendo finito"
-            ],
-            "answer": 0
-          }
-        ]
+        "items": [{"q":"Ha imparato il tedesco ___ le serie in lingua originale.","options":["guardando","avendo guardato","avendo guardate"],"answer":0},{"q":"___ l'ultimo treno, ha dormito in stazione.","options":["Avendo perso","Perdendo","Avendo persa"],"answer":0},{"q":"Si è storta la caviglia ___ giù per le scale.","options":["correndo","essendo corsa","avendo corso"],"answer":0},{"q":"___ in ritardo alla cerimonia, si sono seduti in fondo.","options":["Essendo arrivati","Arrivando","Essendo arrivate"],"answer":0},{"q":"Ci siamo conosciuti ___ in fila alla posta.","options":["aspettando","avendo aspettato","essendo aspettati"],"answer":0},{"q":"___ tutte le scatole in cantina, adesso Marco non trova più i libri.","options":["Avendo messo","Mettendo","Avendo messe"],"answer":0}]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [
-          {
-            "q": "Nello stesso momento, camminare verso casa, parlavo al telefono.",
-            "wrong": "camminare",
-            "fix": "camminando"
-          },
-          {
-            "q": "Nello stesso momento, ascoltare la musica, preparavo la cena.",
-            "wrong": "ascoltare",
-            "fix": "ascoltando"
-          },
-          {
-            "q": "Per questo motivo, sapere la risposta, Luca alza subito la mano.",
-            "wrong": "sapere",
-            "fix": "sapendo"
-          },
-          {
-            "q": "Subito dopo, finendo il lavoro, è uscito.",
-            "wrong": "finendo",
-            "fix": "avendo finito"
-          },
-          {
-            "q": "Essendo appena arrivando, Marta ha parlato subito con noi.",
-            "wrong": "arrivando",
-            "fix": "arrivata"
-          },
-          {
-            "q": "Subito dopo, leggendo il messaggio, abbiamo risposto.",
-            "wrong": "leggendo",
-            "fix": "avendo letto"
-          }
-        ]
+        "items": [{"q":"Marta, avendo uscita di casa più tardi del solito, ha perso il treno.","wrong":"avendo","fix":"essendo"},{"q":"Essendo perso le chiavi, ha dovuto chiamare il fabbro.","wrong":"Essendo","fix":"avendo"},{"q":"Essendo arrivato in anticipo, mia sorella ha aspettato al bar.","wrong":"arrivato","fix":"arrivata"},{"q":"Studiando in Germania per due anni, adesso parla benissimo il tedesco.","wrong":"Studiando","fix":"avendo studiato"},{"q":"La sera non ha cenato, mangiando troppo a pranzo.","wrong":"mangiando","fix":"avendo mangiato"},{"q":"Mio fratello, essendosi trasferita a Milano, viene a trovarci raramente.","wrong":"trasferita","fix":"trasferito"}]
       },
       {
-        "type": "Trasformazione",
+        "type": "Riempimento",
         "fmt": "buco",
-        "instr": "Riscrivi la frase usando il gerundio semplice o composto.",
-        "items": [
-          {
-            "q": "Mentre tornavo a casa, ho incontrato Anna. →",
-            "options": [
-              "Tornando a casa, ho incontrato Anna.",
-              "Avendo tornato a casa, ho incontrato Anna.",
-              "Tornato a casa, ho incontrato Anna."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Dopo che avevo letto il messaggio, ho risposto. →",
-            "options": [
-              "Avendo letto il messaggio, ho risposto.",
-              "Leggendo il messaggio, ho risposto.",
-              "Essendo letto il messaggio, ho risposto."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Poiché sapeva la risposta, ha alzato la mano. →",
-            "options": [
-              "Sapendo la risposta, ha alzato la mano.",
-              "Avendo saputo la risposta, ha alzato la mano.",
-              "Saputo la risposta, ha alzato la mano."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Dopo che era uscita dall’ufficio, Marta ha chiamato un taxi. →",
-            "options": [
-              "Essendo uscita dall’ufficio, Marta ha chiamato un taxi.",
-              "Uscendo dall’ufficio, Marta ha chiamato un taxi.",
-              "Avendo uscita dall’ufficio, Marta ha chiamato un taxi."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Se studi con metodo, impari più in fretta. →",
-            "options": [
-              "Studiando con metodo, impari più in fretta.",
-              "Avendo studiato con metodo, impari più in fretta.",
-              "Studiato con metodo, impari più in fretta."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Dopo che avevano finito la riunione, sono usciti. →",
-            "options": [
-              "Avendo finito la riunione, sono usciti.",
-              "Finendo la riunione, sono usciti.",
-              "Essendo finito la riunione, sono usciti."
-            ],
-            "answer": 0
-          }
-        ]
+        "instr": "Scegli il gerundio composto corretto.",
+        "items": [{"q":"___ tardi, le ragazze hanno trovato il portone chiuso.","options":["Essendo tornate","Essendo tornati","Essendo tornata"],"answer":0},{"q":"___ il turno, i due infermieri sono andati a casa.","options":["Avendo finito","Avendo finiti","Essendo finiti"],"answer":0},{"q":"___ in fretta, mia zia ha dimenticato il telefono sul comodino.","options":["Essendosi vestita","Essendosi vestito","Essendo vestita"],"answer":0},{"q":"___ dal treno, i turisti hanno cercato subito un taxi.","options":["Essendo scesi","Essendo scese","Essendo sceso"],"answer":0},{"q":"___ tutti i documenti, l'avvocato ha chiuso la pratica.","options":["Avendo raccolto","Avendo raccolti","Essendo raccolti"],"answer":0},{"q":"___ presto, mio fratello è riuscito a prendere il primo treno.","options":["Essendosi alzato","Essendosi alzata","Essendo alzato"],"answer":0}]
       }
     ]
   },
@@ -12121,161 +9271,20 @@ const TEST_STRUCTURES = [
       {
         "type": "Riempimento",
         "fmt": "buco",
-        "instr": "Scegli la locuzione o la preposizione adatta alla sfumatura.",
-        "items": [
-          {
-            "q": "Camminiamo ___ il fiume.",
-            "options": [
-              "lungo",
-              "attraverso",
-              "presso"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "La biblioteca si trova ___ l'università.",
-            "options": [
-              "presso",
-              "verso",
-              "lungo"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "I protagonisti fuggono ___ il confine.",
-            "options": [
-              "oltre",
-              "presso",
-              "lungo"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "L'albergo si trova ___ del centro storico.",
-            "options": [
-              "nei pressi",
-              "oltre",
-              "lungo"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il treno passa ___ il tunnel.",
-            "options": [
-              "attraverso",
-              "presso",
-              "lungo"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il gruppo parte ___ della campagna.",
-            "options": [
-              "alla volta",
-              "per mezzo",
-              "a ridosso"
-            ],
-            "answer": 0
-          }
-        ]
+        "instr": "Scegli la preposizione corretta.",
+        "items": [{"q":"Mia sorella insegna ___ una scuola di montagna.","options":["in","a","su"],"answer":0},{"q":"La libreria nuova sta ___ parete di fondo.","options":["sulla","nella","alla"],"answer":0},{"q":"D'inverno i miei nonni vivono ___ Puglia.","options":["in","a","da"],"answer":0},{"q":"Ci vediamo ___ Bergamo, sotto i portici.","options":["a","in","da"],"answer":0},{"q":"Sono ___ dentista, ti richiamo dopo.","options":["dal","al","da"],"answer":0},{"q":"Il distributore è ___ il ponte e la rotonda.","options":["tra","verso","oltre"],"answer":0}]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [
-          {
-            "q": "Marco cammina lungo del corridoio.",
-            "wrong": "del",
-            "fix": "il"
-          },
-          {
-            "q": "Passiamo attraverso della piazza centrale.",
-            "wrong": "della",
-            "fix": "la"
-          },
-          {
-            "q": "L'albergo è nei pressi la fermata del bus.",
-            "wrong": "la",
-            "fix": "della"
-          },
-          {
-            "q": "Sono andati oltre del confine di notte.",
-            "wrong": "del",
-            "fix": "il"
-          },
-          {
-            "q": "Lo studio si trova al di là la piazza.",
-            "wrong": "la",
-            "fix": "della"
-          },
-          {
-            "q": "Il gruppo partì alla volta a Roma.",
-            "wrong": "a",
-            "fix": "di"
-          }
-        ]
+        "items": [{"q":"Studia medicina in Bologna da tre anni.","wrong":"in","fix":"a"},{"q":"L'anno prossimo andremo a Danimarca per il matrimonio.","wrong":"a","fix":"in"},{"q":"Il sabato porto i bambini al nonno.","wrong":"al","fix":"dal"},{"q":"Il corteo si è diretto per il municipio.","wrong":"per","fix":"verso"},{"q":"Ho lasciato la borsa nella sedia dell'ingresso.","wrong":"nella","fix":"sulla"},{"q":"Sono passato per te ma non c'eri.","wrong":"per","fix":"da"}]
       },
       {
-        "type": "Trasformazione",
+        "type": "Riempimento",
         "fmt": "buco",
-        "instr": "Scegli la frase che rende la sfumatura indicata.",
-        "items": [
-          {
-            "q": "La macchina segue il percorso della strada senza attraversarla.",
-            "options": [
-              "La macchina procede lungo la strada.",
-              "La macchina procede attraverso la strada.",
-              "La macchina procede presso la strada."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Passiamo da un lato all’altro della piazza.",
-            "options": [
-              "Attraversiamo la piazza.",
-              "Procediamo lungo la piazza.",
-              "Andiamo presso la piazza."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il nostro viaggio ha Milano come destinazione.",
-            "options": [
-              "Partiamo alla volta di Milano.",
-              "Partiamo a ridosso di Milano.",
-              "Partiamo lungo Milano."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "I protagonisti superano il confine e proseguono il viaggio.",
-            "options": [
-              "Sono andati oltre il confine.",
-              "Sono andati lungo il confine.",
-              "Sono andati presso il confine."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Marco vive vicino allo stadio.",
-            "options": [
-              "Abita nei pressi dello stadio.",
-              "Abita alla volta dello stadio.",
-              "Abita oltre lo stadio, molto vicino."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Giulia lavora nella sede dell’università.",
-            "options": [
-              "Lavora presso l'università.",
-              "Lavora lungo l'università.",
-              "Lavora oltre l'università."
-            ],
-            "answer": 0
-          }
-        ]
+        "instr": "Scegli la preposizione corretta.",
+        "items": [{"q":"Quest'estate andiamo ___ Norvegia in camper.","options":["in","a","per"],"answer":0},{"q":"Domani partiamo ___ Genova, dove ci aspetta mia zia.","options":["per","a","verso"],"answer":0},{"q":"Prima del lago si passa ___ un tunnel lungo tre chilometri.","options":["per","in","su"],"answer":0},{"q":"Appena finito il turno è tornato ___ suoi in campagna.","options":["dai","ai","nei"],"answer":0},{"q":"Ha fatto qualche passo ___ porta, poi si è fermato.","options":["verso la","alla","dalla"],"answer":0},{"q":"Vengo ___ una famiglia di panettieri.","options":["da","di","per"],"answer":0}]
       }
     ]
   },
@@ -15879,100 +12888,14 @@ const TEST_STRUCTURES = [
       {
         "type": "Scelta",
         "fmt": "buco",
-        "instr": "Scegli la forma corretta del passato remoto.",
-        "items": [
-          {
-            "q": "Leonardo ___ la Gioconda a Firenze.",
-            "options": [
-              "dipinse",
-              "dipingé",
-              "dipingette"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Michelangelo ___ la Pietà in marmo bianco.",
-            "options": [
-              "scolpì",
-              "scolpette",
-              "scolpiò"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Brunelleschi ___ la cupola del Duomo.",
-            "options": [
-              "fece",
-              "facé",
-              "facette"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Botticelli ___ a Firenze nel 1445.",
-            "options": [
-              "nacque",
-              "nascì",
-              "nascé"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Raffaello ___ a Roma a trentasette anni.",
-            "options": [
-              "morì",
-              "morette",
-              "moriò"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Vasari ___ le biografie dei grandi artisti.",
-            "options": [
-              "scrisse",
-              "scrivé",
-              "scrivette"
-            ],
-            "answer": 0
-          }
-        ]
+        "instr": "Il testo usa il passato remoto: scegli come si direbbe parlando.",
+        "items": [{"q":"Il maestro lavorò molti anni alla corte del duca. → Il maestro ___ molti anni alla corte del duca.","options":["ha lavorato","lavorava","aveva lavorato"],"answer":0},{"q":"Il giovane si trasferì a Roma nel 1490. → Il giovane ___ a Roma nel 1490.","options":["si è trasferito","si trasferiva","si era trasferito"],"answer":0},{"q":"L’allievo copiò i disegni del maestro per cinque anni. → L’allievo ___ i disegni del maestro per cinque anni.","options":["ha copiato","copiava","aveva copiato"],"answer":0},{"q":"Il committente rifiutò il primo bozzetto. → Il committente ___ il primo bozzetto.","options":["ha rifiutato","rifiutava","aveva rifiutato"],"answer":0},{"q":"L’artista partì per la Francia in autunno. → L’artista ___ per la Francia in autunno.","options":["è partito","partiva","era partito"],"answer":0},{"q":"Il maestro tornò a Firenze dopo dieci anni. → Il maestro ___ a Firenze dopo dieci anni.","options":["è tornato","tornava","era tornato"],"answer":0}]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [
-          {
-            "q": "Giotto dipingiò la cappella di Padova con grande cura.",
-            "wrong": "dipingiò",
-            "fix": "dipinse"
-          },
-          {
-            "q": "Dopo il processo il pittore andiede a Napoli in cerca di lavoro.",
-            "wrong": "andiede",
-            "fix": "andò"
-          },
-          {
-            "q": "Canova scolpé due statue per il palazzo del principe.",
-            "wrong": "scolpé",
-            "fix": "scolpì"
-          },
-          {
-            "q": "Il maestro faciò molti disegni prima di cominciare la tela.",
-            "wrong": "faciò",
-            "fix": "fece"
-          },
-          {
-            "q": "Nel 1520 morié a Roma il pittore più famoso della sua epoca.",
-            "wrong": "morié",
-            "fix": "morì"
-          },
-          {
-            "q": "L'artista vivette a Venezia per quasi vent'anni.",
-            "wrong": "vivette",
-            "fix": "visse"
-          }
-        ]
+        "items": [{"q":"Il pittore nacque a Ferrara, studiò a Firenze e moriva a Roma molto giovane.","wrong":"moriva","fix":"morì"},{"q":"Il maestro apriva una bottega, prese tre allievi e insegnò a tutti il disegno.","wrong":"apriva","fix":"aprì"},{"q":"L’artista dipinse la volta, scolpiva il portale e scrisse anche dei versi.","wrong":"scolpiva","fix":"scolpì"},{"q":"Il mercante comprò il quadro, lo portò a Venezia e lo vende al doge.","wrong":"vende","fix":"vendette"},{"q":"Il duca ordina la statua, pagò l’anticipo e poi cambiò idea.","wrong":"ordina","fix":"ordinò"},{"q":"Il giovane arrivò a Roma, resta senza lavoro per mesi e poi trovò un posto.","wrong":"resta","fix":"restò"}]
       },
       {
         "type": "Scelta",
