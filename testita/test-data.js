@@ -9802,161 +9802,161 @@ const TEST_STRUCTURES = [
       {
         "type": "Riempimento",
         "fmt": "buco",
-        "instr": "Scegli la forma verbale corretta.",
+        "instr": "Scegli la forma corretta del verbo.",
         "items": [
-          {
-            "q": "Cerco una segretaria che ___ il tedesco. (non so se esiste)",
-            "options": [
-              "sappia",
-              "sa",
-              "saprebbe"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Ho una segretaria che ___ il tedesco. (esiste)",
-            "options": [
-              "sa",
-              "sappia",
-              "sapesse"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Voglio un ufficio che ___ luminoso. (ancora da trovare)",
-            "options": [
-              "sia",
-              "è",
-              "sarebbe"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Ho un ufficio che ___ luminoso. (ce l'ho)",
-            "options": [
-              "è",
-              "sia",
-              "fosse"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Non c'è nessuno che ___ risolvere il problema.",
-            "options": [
-              "sappia",
-              "sa",
-              "saprebbe"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "C'è una persona che ___ risolvere il problema.",
-            "options": [
-              "sa",
-              "sappia",
-              "sapesse"
-            ],
-            "answer": 0
-          }
-        ]
+  {
+    "q": "Cerco da settimane un centro sportivo che ___ anche di notte, ma tutti quelli della zona chiudono alle nove.",
+    "options": [
+      "apra",
+      "apre",
+      "aprisse"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Ai miei genitori serve un'assicurazione che ___ anche i danni dell'acqua, ma quelle che ci hanno proposto lo escludono.",
+    "options": [
+      "copra",
+      "copre",
+      "coprisse"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Alla fine ho ritrovato il vivaio che ___ quelle rose antiche: era in fondo alla provinciale.",
+    "options": [
+      "vende",
+      "venda",
+      "vendesse"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Vorremmo un corso serale che ___ prima delle otto, ma in città non ne organizzano.",
+    "options": [
+      "finisca",
+      "finisce",
+      "finisse"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "La clinica dove lavoro ha un veterinario che ___ anche i conigli: lo fa da vent'anni.",
+    "options": [
+      "visita",
+      "visiti",
+      "visitasse"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Il torneo è stato salvato dall'arbitro che ___ alle ferie per venire.",
+    "options": [
+      "ha rinunciato",
+      "abbia rinunciato",
+      "rinunciasse"
+    ],
+    "answer": 0
+  }
+]
+      },
+      {
+        "type": "Comprensione",
+        "fmt": "buco",
+        "instr": "Scegli l'interpretazione corretta della frase.",
+        "items": [
+  {
+    "q": "«Gli abbonati che hanno rinnovato entro marzo pagano la vecchia tariffa.»",
+    "options": [
+      "Solo una parte degli abbonati paga la vecchia tariffa.",
+      "Tutti gli abbonati pagano la vecchia tariffa.",
+      "La vecchia tariffa vale per chiunque fino a marzo."
+    ],
+    "answer": 0
+  },
+  {
+    "q": "«Non ho avvisato i corsisti, che erano già andati via.»",
+    "options": [
+      "Non ho avvisato nessun corsista.",
+      "Ho avvisato solo i corsisti che erano ancora presenti.",
+      "Ho avvisato i corsisti prima che andassero via."
+    ],
+    "answer": 0
+  },
+  {
+    "q": "«I passeggeri, che avevano cambiato treno a Verona, hanno perso la coincidenza.»",
+    "options": [
+      "Tutti i passeggeri hanno perso la coincidenza, e tutti avevano cambiato treno a Verona.",
+      "Solo i passeggeri che avevano cambiato treno a Verona hanno perso la coincidenza.",
+      "I passeggeri hanno cambiato treno a Verona perché avevano perso la coincidenza."
+    ],
+    "answer": 0
+  },
+  {
+    "q": "«Non ho premiato i tesserati che si sono iscritti in ritardo.»",
+    "options": [
+      "La frase non dice niente sui tesserati iscritti in tempo.",
+      "Nessun tesserato è stato premiato.",
+      "Tutti i tesserati si sono iscritti in ritardo."
+    ],
+    "answer": 0
+  },
+  {
+    "q": "«I candidati che avevano presentato la domanda incompleta sono stati richiamati.»",
+    "options": [
+      "Solo una parte dei candidati è stata richiamata.",
+      "Tutti i candidati sono stati richiamati, perché avevano presentato la domanda incompleta.",
+      "I candidati sono stati richiamati prima di presentare la domanda."
+    ],
+    "answer": 0
+  },
+  {
+    "q": "«Ho ringraziato i volontari, che avevano lavorato fino a tarda sera.»",
+    "options": [
+      "Ho ringraziato tutti i volontari.",
+      "Ho ringraziato solo i volontari che avevano lavorato fino a tarda sera.",
+      "I volontari hanno lavorato fino a tarda sera per essere ringraziati."
+    ],
+    "answer": 0
+  }
+]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
-          {
-            "q": "Cerco da tempo un collaboratore che parla cinese, ma non l'ho ancora trovato.",
-            "wrong": "parla",
-            "fix": "parli"
-          },
-          {
-            "q": "Conosco personalmente un tecnico che ripari le caldaie.",
-            "wrong": "ripari",
-            "fix": "ripara"
-          },
-          {
-            "q": "Da anni cerco una casa che ha un giardino, ma non l’ho ancora trovata.",
-            "wrong": "ha",
-            "fix": "abbia"
-          },
-          {
-            "q": "Vivo già in un palazzo che abbia l’ascensore.",
-            "wrong": "abbia",
-            "fix": "ha"
-          },
-          {
-            "q": "Non conosco nessuno che sa rispondere.",
-            "wrong": "sa",
-            "fix": "sappia"
-          },
-          {
-            "q": "Ho un amico che sappia risolvere questo tipo di problema.",
-            "wrong": "sappia",
-            "fix": "sa"
-          }
-        ]
-      },
-      {
-        "type": "Trasformazione",
-        "fmt": "buco",
-        "instr": "Scegli la frase adatta alla situazione.",
-        "items": [
-          {
-            "q": "Sto cercando un idraulico disponibile la domenica, ma non so se esista.",
-            "options": [
-              "Cerco un idraulico che sia disponibile la domenica.",
-              "Cerco un idraulico che è disponibile la domenica.",
-              "Cerco un idraulico che fosse disponibile."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Ho già trovato un idraulico disponibile la domenica.",
-            "options": [
-              "Ho un idraulico che è disponibile la domenica.",
-              "Ho un idraulico che sia disponibile la domenica.",
-              "Ho un idraulico che fosse disponibile."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Non esiste nessuno capace di tradurre subito.",
-            "options": [
-              "Non c'è nessuno che sappia tradurre subito.",
-              "Non c'è nessuno che sa tradurre subito.",
-              "Non c'è nessuno che saprebbe tradurre."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Qui c'è qualcuno capace di tradurre subito.",
-            "options": [
-              "C'è una persona che sa tradurre subito.",
-              "C'è una persona che sappia tradurre subito.",
-              "C'è una persona che sapesse tradurre."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Sto ancora cercando un appartamento con terrazzo.",
-            "options": [
-              "Cerco un appartamento che abbia il terrazzo.",
-              "Cerco un appartamento che ha il terrazzo.",
-              "Cerco un appartamento che avesse il terrazzo."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Abito già in un appartamento con terrazzo.",
-            "options": [
-              "Abito in un appartamento che ha il terrazzo.",
-              "Abito in un appartamento che abbia il terrazzo.",
-              "Abito in un appartamento che avesse il terrazzo."
-            ],
-            "answer": 0
-          }
-        ]
+  {
+    "q": "La direttrice della piscina, che arrivi ogni mattina alle sette, controlla di persona l'acqua.",
+    "wrong": "arrivi",
+    "fix": "arriva"
+  },
+  {
+    "q": "Da mesi cerchiamo un traduttore che consegna in giornata, ma nessuna agenzia ce ne ha proposto uno.",
+    "wrong": "consegna",
+    "fix": "consegni"
+  },
+  {
+    "q": "In questa zona non c'è un ambulatorio che fa i prelievi il sabato mattina.",
+    "wrong": "fa",
+    "fix": "faccia"
+  },
+  {
+    "q": "Ho scritto al presidente del circolo, che conosca bene la situazione da anni.",
+    "wrong": "conosca",
+    "fix": "conosce"
+  },
+  {
+    "q": "Vorrei una valigia che entra nella cappelliera, ma non ne trovo una abbastanza piccola.",
+    "wrong": "entra",
+    "fix": "entri"
+  },
+  {
+    "q": "L'apicoltore del paese, che abbia trecento arnie, vende il miele al mercato.",
+    "wrong": "abbia",
+    "fix": "ha"
+  }
+]
       }
     ]
   },
@@ -9970,161 +9970,157 @@ const TEST_STRUCTURES = [
       {
         "type": "Composizione",
         "fmt": "ordina",
-        "instr": "Clicca le parole nell'ordine giusto.",
+        "instr": "Componi la parte che manca: clicca le parole nell'ordine giusto.",
         "items": [
-          {
-            "q": "La macchina era guasta e l’ho portata dal meccanico.",
-            "sol": [
-              "ho",
-              "fatto",
-              "riparare",
-              "la",
-              "macchina"
-            ]
-          },
-          {
-            "q": "Sono andato dal parrucchiere perché avevo i capelli troppo lunghi.",
-            "sol": [
-              "mi",
-              "sono",
-              "fatto",
-              "tagliare",
-              "i",
-              "capelli"
-            ]
-          },
-          {
-            "q": "Marco doveva vedere il documento che avevo con me.",
-            "sol": [
-              "gliel'ho",
-              "fatto",
-              "vedere"
-            ]
-          },
-          {
-            "q": "Voglio vedere la foto che hai sul telefono.",
-            "sol": [
-              "fammi",
-              "vedere",
-              "la",
-              "foto"
-            ]
-          },
-          {
-            "q": "I genitori permettono ai bambini di giocare fuori.",
-            "sol": [
-              "li",
-              "lasciano",
-              "giocare"
-            ]
-          },
-          {
-            "q": "Il capo ci dà il permesso di uscire prima.",
-            "sol": [
-              "ci",
-              "lascia",
-              "uscire"
-            ]
-          }
-        ]
+  {
+    "q": "Il menù era tutto in giapponese, così ___ dal cameriere.",
+    "sol": [
+      "me",
+      "lo",
+      "sono",
+      "fatto",
+      "tradurre"
+    ]
+  },
+  {
+    "q": "L'orologio di mio nonno si era fermato e ___ da un artigiano.",
+    "sol": [
+      "l'ho",
+      "fatto",
+      "riparare"
+    ]
+  },
+  {
+    "q": "So che hai una foto di quella sera: ___, sono curioso.",
+    "sol": [
+      "fammela",
+      "vedere"
+    ]
+  },
+  {
+    "q": "I bambini non hanno ancora finito: ___ altri dieci minuti.",
+    "sol": [
+      "lasciali",
+      "giocare"
+    ]
+  },
+  {
+    "q": "Il pullman era in ritardo e ___ mezz'ora sotto il sole.",
+    "sol": [
+      "ci",
+      "ha",
+      "fatto",
+      "aspettare"
+    ]
+  },
+  {
+    "q": "Non voglio scegliere io il film: ___.",
+    "sol": [
+      "lascia",
+      "che",
+      "decida",
+      "lui"
+    ]
+  }
+]
       },
       {
         "type": "Riempimento",
         "fmt": "buco",
-        "instr": "Scegli la forma corretta del causativo.",
+        "instr": "Scegli la costruzione adatta alla situazione.",
         "items": [
-          {
-            "q": "___ dipingere le pareti dall'imbianchino. (io)",
-            "options": [
-              "Ho fatto",
-              "Ho fatta",
-              "Sono fatto"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "___ fare un vestito su misura. (io, uomo, da un sarto)",
-            "options": [
-              "Mi sono fatto",
-              "Mi ho fatto",
-              "Ho fatto mi"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il maestro ___ ripetere la poesia.",
-            "options": [
-              "ci ha fatto",
-              "ci ha fatti",
-              "ci è fatto"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "___ installare il condizionatore. (loro, uomini)",
-            "options": [
-              "Si sono fatti",
-              "Si hanno fatti",
-              "Hanno fatti si"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il direttore ci ___ andare via alle quattro.",
-            "options": [
-              "lascia",
-              "fa",
-              "lascia di"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "I genitori lo ___ usare il computer dopo cena.",
-            "options": [
-              "lasciano",
-              "fanno a",
-              "lasciano di"
-            ],
-            "answer": 0
-          }
-        ]
+  {
+    "q": "Il cuoco sa quello che fa: preferisco ___ in pace e non stargli addosso.",
+    "options": [
+      "lasciarlo lavorare",
+      "farlo lavorare",
+      "lasciargli lavorare"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Quel parcheggio è carissimo: ___ pagare dieci euro anche per mezz'ora.",
+    "options": [
+      "fanno",
+      "lasciano",
+      "si fanno"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "I ragazzi hanno finito i compiti, così stasera ___ fino a tardi.",
+    "options": [
+      "li lasciamo uscire",
+      "li facciamo uscire",
+      "gli lasciamo uscire"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Il ventilatore non parte più: domani ___ da un tecnico.",
+    "options": [
+      "lo faccio controllare",
+      "lo lascio controllare",
+      "me lo lascio controllare"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Non sapevo a chi rivolgermi, così ___ il nome di un fotografo da un'amica.",
+    "options": [
+      "mi sono fatto dare",
+      "ho fatto dare",
+      "mi sono lasciato dare"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Ho fatto stampare gli inviti ___ un tipografo del centro.",
+    "options": [
+      "da",
+      "con",
+      "per"
+    ],
+    "answer": 0
+  }
+]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
-          {
-            "q": "Ho fatto dipinta la parete dall'imbianchino.",
-            "wrong": "dipinta",
-            "fix": "dipingere"
-          },
-          {
-            "q": "Mi ho fatto fare un vestito nuovo.",
-            "wrong": "ho",
-            "fix": "sono"
-          },
-          {
-            "q": "L'allenatore ci ha fatto correndo per un'ora.",
-            "wrong": "correndo",
-            "fix": "correre"
-          },
-          {
-            "q": "Il responsabile ci lascia usciti prima quando il lavoro è finito.",
-            "wrong": "usciti",
-            "fix": "uscire"
-          },
-          {
-            "q": "I genitori lasciano giocando i bambini in giardino.",
-            "wrong": "giocando",
-            "fix": "giocare"
-          },
-          {
-            "q": "Si l'è fatto spedire dal corriere.",
-            "wrong": "Si",
-            "fix": "Se"
-          }
-        ]
+  {
+    "q": "Ogni due anni faccio potare gli alberi il giardiniere del paese.",
+    "wrong": "il",
+    "fix": "al"
+  },
+  {
+    "q": "Mi ho fatto spiegare il percorso da un passante.",
+    "wrong": "ho",
+    "fix": "sono"
+  },
+  {
+    "q": "Conosce meglio la zona: lascia che decide lui il locale.",
+    "wrong": "decide",
+    "fix": "decida"
+  },
+  {
+    "q": "Il numero? Mi lo sono fatto ripetere due volte.",
+    "wrong": "Mi",
+    "fix": "Me"
+  },
+  {
+    "q": "La guida ci ha fatto camminando per tre ore sotto il sole.",
+    "wrong": "camminando",
+    "fix": "camminare"
+  },
+  {
+    "q": "Mi sono fatto prestare il caricabatterie a un ragazzo del campeggio.",
+    "wrong": "a",
+    "fix": "da"
+  }
+]
       }
     ]
   },
@@ -10133,183 +10129,159 @@ const TEST_STRUCTURES = [
     "title": "Connettivi argomentativi avanzati",
     "exercises": [
       {
-        "type": "Riempimento",
-        "fmt": "buco",
-        "instr": "Scegli il connettivo adatto alla relazione.",
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
-            "q": "L'ipotesi è suggestiva; ___, mancano prove sperimentali.",
-            "options": [
-              "tuttavia",
-              "pertanto",
-              "anzi"
-            ],
-            "answer": 0
+            "q": "Ha ragione lui; d'altronde chi altro sappia come funziona quella vecchia caldaia del seminterrato?",
+            "wrong": "sappia",
+            "fix": "sa"
           },
           {
-            "q": "Non si è limitato a rifiutare; ___, ha criticato l'intero progetto.",
-            "options": [
-              "anzi",
-              "tuttavia",
-              "dunque"
-            ],
-            "answer": 0
+            "q": "Il museo ha ridotto gli orari; nondimeno i visitatori restino gli stessi dell'anno scorso.",
+            "wrong": "restino",
+            "fix": "restano"
           },
           {
-            "q": "I dati sono parziali; ___, meritano attenzione.",
-            "options": [
-              "nondimeno",
-              "pertanto",
-              "ossia"
-            ],
-            "answer": 0
+            "q": "Il testimone aveva cambiato versione tre volte; tuttavia il giudice gli abbia creduto fino in fondo.",
+            "wrong": "abbia",
+            "fix": "ha"
           },
           {
-            "q": "Mancavano fondi; ___, il progetto fu sospeso.",
-            "options": [
-              "di conseguenza",
-              "tuttavia",
-              "ossia"
-            ],
-            "answer": 0
+            "q": "Piove da ieri sera; peraltro nessuno in valle se ne lamenti più di tanto.",
+            "wrong": "lamenti",
+            "fix": "lamenta"
           },
           {
-            "q": "È un termine specialistico, ___ appartiene al linguaggio tecnico.",
-            "options": [
-              "ossia",
-              "tuttavia",
-              "dunque"
-            ],
-            "answer": 0
+            "q": "Costa poco; per di più le lezioni si tengano a duecento metri dalla fermata del tram.",
+            "wrong": "tengano",
+            "fix": "tengono"
           },
           {
-            "q": "Il saggio elenca molti dati; ___, non li interpreta.",
-            "options": [
-              "peraltro",
-              "quindi",
-              "cioè"
-            ],
-            "answer": 0
+            "q": "L'ascensore funzionava; eppure quasi nessuno sia salito fino all'ultimo piano.",
+            "wrong": "sia",
+            "fix": "è"
           }
         ]
       },
       {
         "type": "Scelta",
         "fmt": "buco",
-        "instr": "Scegli il connettivo adatto alla relazione.",
+        "instr": "Scegli il connettivo adatto alla relazione fra i due enunciati.",
         "items": [
           {
-            "q": "Se hai già letto la lista dei finalisti, ___ dovresti sapere chi è il vincitore.",
+            "q": "Il vicolo è chiuso al traffico dalle otto alle venti: ___, di giorno non ci passano automobili.",
             "options": [
-              "a maggior ragione",
-              "ciononostante",
-              "in altre parole"
+              "in altre parole",
+              "più precisamente",
+              "a ben vedere"
             ],
             "answer": 0
           },
           {
-            "q": "Le sue opere sono tradotte in quaranta lingue; ___, è l’autrice italiana più letta.",
+            "q": "Il problema riguarda tutto il personale amministrativo; ___, i tre addetti al protocollo.",
             "options": [
-              "non a caso",
-              "tuttavia",
+              "più precisamente",
+              "in altre parole",
+              "per così dire"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Sorride a tutti e ricorda il nome di ognuno: ___, non ha mai fatto un favore a nessuno.",
+            "options": [
+              "a ben vedere",
+              "in altre parole",
               "più precisamente"
             ],
             "answer": 0
           },
           {
-            "q": "Tutti dicevano che era un capolavoro; ___, a me non è piaciuto.",
+            "q": "Ha lavorato all'estero per anni; ___, sette anni fra Lione e Marsiglia.",
             "options": [
-              "eppure",
-              "non a caso",
-              "in definitiva"
+              "più precisamente",
+              "a ben vedere",
+              "in altre parole"
             ],
             "answer": 0
           },
           {
-            "q": "___, il libro merita di essere letto nonostante i difetti.",
-            "options": [
-              "In definitiva",
-              "Per di più",
-              "D'altronde"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Usa un narratore inattendibile; ___, chi racconta non dice tutta la verità.",
+            "q": "Il verbale parla di «differimento dei termini»: ___, la scadenza è stata spostata.",
             "options": [
               "in altre parole",
-              "a maggior ragione",
-              "non a caso"
+              "più precisamente",
+              "per così dire"
             ],
             "answer": 0
           },
           {
-            "q": "Sembra un romanzo leggero; ___, affronta temi molto profondi.",
+            "q": "L'offerta sembrava conveniente. ___, il prezzo pieno scattava dal secondo anno.",
             "options": [
-              "a ben vedere",
-              "in particolare",
-              "in definitiva"
+              "A ben vedere",
+              "In altre parole",
+              "Per così dire"
             ],
             "answer": 0
           }
         ]
       },
       {
-        "type": "Trasformazione",
+        "type": "Comprensione",
         "fmt": "buco",
-        "instr": "Collega le due frasi con il connettivo adatto alla relazione indicata.",
+        "instr": "Leggi la frase e scegli l'affermazione vera.",
         "items": [
           {
-            "q": "Non ha taciuto. Ha parlato apertamente. (rafforzamento)",
+            "q": "«Il seminario è stato annullato; d'altronde si erano iscritte solo tre persone.»",
             "options": [
-              "Non ha taciuto; anzi, ha parlato apertamente.",
-              "Non ha taciuto; tuttavia, ha parlato apertamente.",
-              "Non ha taciuto; ossia, ha parlato apertamente."
+              "Chi parla considera l'annullamento comprensibile.",
+              "Chi parla trova sorprendente l'annullamento.",
+              "Il seminario è stato annullato malgrado le molte iscrizioni."
             ],
             "answer": 0
           },
           {
-            "q": "La ricerca è costosa. I risultati sono però molto promettenti. (contrapposizione)",
+            "q": "«La ditta ha vinto l'appalto. Non a caso il titolare è cugino dell'assessore.»",
             "options": [
-              "La ricerca è costosa; per contro, i risultati sono molto promettenti.",
-              "La ricerca è costosa; difatti, i risultati sono molto promettenti.",
-              "La ricerca è costosa; ossia, i risultati sono molto promettenti."
+              "Chi parla suggerisce che la parentela spieghi la vittoria.",
+              "Chi parla esclude che la parentela abbia avuto peso.",
+              "Chi parla si stupisce che la ditta abbia vinto."
             ],
             "answer": 0
           },
           {
-            "q": "Mancavano risorse. Il piano fu abbandonato. (conseguenza)",
+            "q": "«Se non ti fidi di lui da sobrio, a maggior ragione non fidarti quando ha bevuto.»",
             "options": [
-              "Mancavano risorse; di conseguenza, il piano fu abbandonato.",
-              "Mancavano risorse; semmai, il piano fu abbandonato.",
-              "Mancavano risorse; peraltro, il piano fu abbandonato."
+              "La seconda raccomandazione è più forte della prima.",
+              "Chi parla ritira la prima raccomandazione.",
+              "Chi parla lo ritiene più affidabile dopo che ha bevuto."
             ],
             "answer": 0
           },
           {
-            "q": "Era impreparato. Ha superato la prova. (opposizione forte)",
+            "q": "«A conti fatti, ci conveniva noleggiare il furgone.»",
             "options": [
-              "Era impreparato; ciononostante, ha superato la prova.",
-              "Era impreparato; pertanto, ha superato la prova.",
-              "Era impreparato; difatti, ha superato la prova."
+              "Chi parla è arrivato alla conclusione confrontando dei costi.",
+              "Chi parla ha deciso di getto, senza calcolare.",
+              "Chi parla deve ancora decidere."
             ],
             "answer": 0
           },
           {
-            "q": "Si tratta di un refuso. È un errore di stampa. (riformulazione)",
+            "q": "«Aveva studiato pochissimo; eppure ha superato la selezione.»",
             "options": [
-              "Si tratta di un refuso, ossia di un errore di stampa.",
-              "Si tratta di un refuso, tuttavia di un errore di stampa.",
-              "Si tratta di un refuso, semmai di un errore di stampa."
+              "L'esito va contro le aspettative.",
+              "L'esito conferma le aspettative.",
+              "Chi parla spiega perché ha superato la selezione."
             ],
             "answer": 0
           },
           {
-            "q": "L'analisi è rigorosa. Le conclusioni sono affidabili. (conseguenza logica)",
+            "q": "«Tutto sommato, la giornata è andata bene.»",
             "options": [
-              "L'analisi è rigorosa; pertanto, le conclusioni sono affidabili.",
-              "L'analisi è rigorosa; semmai, le conclusioni sono affidabili.",
-              "L'analisi è rigorosa; per contro, le conclusioni sono affidabili."
+              "Chi parla mette in conto anche qualcosa che è andato storto.",
+              "Per chi parla non è successo niente di negativo.",
+              "Chi parla dice che la giornata è andata male."
             ],
             "answer": 0
           }
@@ -10317,9 +10289,7 @@ const TEST_STRUCTURES = [
       }
     ],
     "lez": [
-      "C1 L1",
       "C1 L9",
-      "C1 L16",
       "C1 L21"
     ]
   },
@@ -10331,159 +10301,183 @@ const TEST_STRUCTURES = [
     "title": "Il periodo ipotetico nell'iperbole e nel parlato",
     "exercises": [
       {
-        "type": "Riempimento",
+        "type": "Comprensione",
         "fmt": "buco",
-        "instr": "Scegli i tempi corretti nell'espressione iperbolica.",
+        "instr": "Leggi la frase e scegli che cosa vuole dire chi parla.",
         "items": [
           {
-            "q": "Se te lo ___ mille volte, non cambierebbe nulla.",
+            "q": "«Se avessi le chiavi di sotto, ti aprirei io.»",
             "options": [
-              "dicessi",
-              "dico",
-              "direi"
+              "Chi parla non ha quelle chiavi.",
+              "Chi parla sta esagerando per far capire che è seccato.",
+              "Chi parla ha le chiavi ma preferisce non aprire."
             ],
             "answer": 0
           },
           {
-            "q": "Se avessi un euro per ogni scusa, ___ ricco.",
+            "q": "«Se dovessi elencare tutte le volte che ha cambiato idea, faremmo notte.»",
             "options": [
-              "sarei",
-              "fossi",
-              "sarò"
+              "Chi parla dice che cambia idea di continuo.",
+              "Chi parla si offre di preparare quell’elenco.",
+              "Chi parla calcola che servirebbe una notte di lavoro."
             ],
             "answer": 0
           },
           {
-            "q": "Se ___ per lui, staremmo ancora qui a discutere.",
+            "q": "«Se glielo ripetessi cento volte, non cambierebbe niente.»",
             "options": [
-              "fosse",
-              "sarebbe",
-              "è"
+              "Chi parla ritiene inutile insistere.",
+              "Chi parla ha intenzione di ripeterlo cento volte.",
+              "Chi parla dice che dopo cento volte capirebbe."
             ],
             "answer": 0
           },
           {
-            "q": "Se dovessi aspettare te, ___ sempre al palo.",
+            "q": "«Se il primo autobus passasse alle sei, faremmo in tempo.»",
             "options": [
-              "sarei",
-              "fossi",
-              "sarò"
+              "Chi parla sta valutando un orario possibile.",
+              "Chi parla dice che quell’autobus non passa mai.",
+              "Chi parla esagera per dire che è tutto inutile."
             ],
             "answer": 0
           },
           {
-            "q": "Se le parole ___ oro, sarebbe milionario.",
+            "q": "«Se mi desse retta una volta su dieci, sarebbe già un miracolo.»",
             "options": [
-              "fossero",
-              "sarebbero",
-              "sono"
+              "Chi parla dice che non gli dà mai retta.",
+              "Chi parla chiede di essere ascoltato una volta su dieci.",
+              "Chi parla dice che gli dà retta abbastanza spesso."
             ],
             "answer": 0
           },
           {
-            "q": "Se ci fosse un premio per i ritardi, lo ___ lui.",
+            "q": "«Se ti fermassi un attimo, ti spiegherei la faccenda.»",
             "options": [
-              "vincerebbe",
-              "vincesse",
-              "vince"
+              "Chi parla chiede davvero di fermarsi un momento.",
+              "Chi parla esagera la fretta dell’altro.",
+              "Chi parla dice che non ha voglia di spiegare."
             ],
             "answer": 0
           }
         ]
       },
       {
-        "type": "Correzione",
-        "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "type": "Scelta",
+        "fmt": "buco",
+        "instr": "Nel parlato molto informale si usa l’imperfetto. Scegli la versione di registro sorvegliato che corrisponde.",
         "items": [
           {
-            "q": "Se avrei un centesimo per ogni ritardo, comprerei una casa.",
-            "wrong": "avrei",
-            "fix": "avessi"
+            "q": "Appena entrato alla festa: «Se lo sapevo che c’era anche lui, non venivo.»",
+            "options": [
+              "Se l’avessi saputo, non sarei venuto.",
+              "Se lo sapessi, non verrei.",
+              "Se lo saprò, non verrò."
+            ],
+            "answer": 0
           },
           {
-            "q": "Se glielo spiegassi in dieci lingue, non capissi comunque.",
-            "wrong": "capissi",
-            "fix": "capirebbe"
+            "q": "Al telefono, ancora a casa: «Se avevo la macchina ti venivo a prendere, ma è dal meccanico.»",
+            "options": [
+              "Se avessi la macchina, ti verrei a prendere.",
+              "Se avessi avuto la macchina, ti sarei venuto a prendere.",
+              "Se avrò la macchina, ti verrò a prendere."
+            ],
+            "answer": 0
           },
           {
-            "q": "Se sarebbe per mia madre, mangerei ogni due ore.",
-            "wrong": "sarebbe",
-            "fix": "fosse"
+            "q": "Uscendo dal teatro: «Se me lo dicevano prima, sceglievo un altro spettacolo.»",
+            "options": [
+              "Se me l’avessero detto prima, avrei scelto un altro spettacolo.",
+              "Se me lo dicessero prima, sceglierei un altro spettacolo.",
+              "Se me lo diranno prima, sceglierò un altro spettacolo."
+            ],
+            "answer": 0
           },
           {
-            "q": "Se dovrei riordinare tutta questa roba, ci vorrebbe un mese.",
-            "wrong": "dovrei",
-            "fix": "dovessi"
+            "q": "Seduto in ufficio di sabato: «Se non c’era questa consegna, oggi ero al mare.»",
+            "options": [
+              "Se non ci fosse questa consegna, oggi sarei al mare.",
+              "Se non ci fosse stata questa consegna, oggi sarei stato al mare.",
+              "Se non ci sarà questa consegna, domani sarò al mare."
+            ],
+            "answer": 0
           },
           {
-            "q": "Se le scuse sarebbero medaglie, ne avrebbe un cassetto pieno.",
-            "wrong": "sarebbero",
-            "fix": "fossero"
+            "q": "Rientrando dopo aver perso l’appuntamento: «Se partivo prima, arrivavo in tempo.»",
+            "options": [
+              "Se fossi partito prima, sarei arrivato in tempo.",
+              "Se partissi prima, arriverei in tempo.",
+              "Se parto prima, arrivo in tempo."
+            ],
+            "answer": 0
           },
           {
-            "q": "Se esistesse un record di distrazione, lo detenesse lui.",
-            "wrong": "detenesse",
-            "fix": "deterrebbe"
+            "q": "Davanti alla vetrina, con la borsa ancora in mano: «Se costava meno la prendevo.»",
+            "options": [
+              "Se costasse meno, la prenderei.",
+              "Se fosse costata meno, l’avrei presa.",
+              "Se costerà meno, la prenderò."
+            ],
+            "answer": 0
           }
         ]
       },
       {
         "type": "Trasformazione",
         "fmt": "buco",
-        "instr": "Rendi l'esagerazione con il periodo ipotetico.",
+        "instr": "Scegli la conclusione che rende l’esagerazione.",
         "items": [
           {
-            "q": "Si lamenta continuamente. (una moneta per ogni lamentela)",
+            "q": "Se le sue scuse fossero mattoni, ___.",
             "options": [
-              "Se avessi una moneta per ogni sua lamentela, sarei ricco.",
-              "Se avrei una moneta per ogni lamentela, sarei ricco.",
-              "Se ho una moneta per ogni lamentela, sarò ricco."
+              "ci costruiremmo un palazzo",
+              "ne avremmo parecchie in più",
+              "peserebbero abbastanza"
             ],
             "answer": 0
           },
           {
-            "q": "Non capisce mai. (ripeterlo cento volte)",
+            "q": "Se ci fosse un campionato di indecisione, ___.",
             "options": [
-              "Se glielo ripetessi cento volte, non capirebbe lo stesso.",
-              "Se glielo ripeterei cento volte, non capirebbe.",
-              "Se glielo ripeto cento volte, non capisce."
+              "lui giocherebbe in nazionale",
+              "lui parteciperebbe volentieri",
+              "sarebbe una gara lunga"
             ],
             "answer": 0
           },
           {
-            "q": "Decide sempre lui. (dipendesse da lui)",
+            "q": "Se la coda alle casse si allungasse ancora, ___.",
             "options": [
-              "Se dipendesse da lui, non cambieremmo mai nulla.",
-              "Se dipenderebbe da lui, non cambieremmo nulla.",
-              "Se dipende da lui, non cambiamo nulla."
+              "girerebbe l’isolato tre volte",
+              "uscirebbe dalla porta",
+              "ci vorrebbe tutta la mattina"
             ],
             "answer": 0
           },
           {
-            "q": "Ha mille difetti. (doverli elencare)",
+            "q": "Se camminasse un po’ più piano, ___.",
             "options": [
-              "Se dovessi elencare i suoi difetti, non finirei più.",
-              "Se dovrei elencare i suoi difetti, non finirei.",
-              "Se devo elencare i suoi difetti, non finisco."
+              "lo supererebbero le lumache",
+              "arriverebbe più tardi",
+              "farebbe meno fatica"
             ],
             "answer": 0
           },
           {
-            "q": "Promette e non mantiene. (le promesse come soldi)",
+            "q": "Se mettessimo in fila tutte le sue promesse, ___.",
             "options": [
-              "Se le promesse fossero soldi, sarebbe milionario.",
-              "Se le promesse sarebbero soldi, sarebbe milionario.",
-              "Se le promesse sono soldi, è milionario."
+              "arriveremmo dall’altra parte della città",
+              "ne verrebbe fuori un bell’elenco",
+              "ci vorrebbe un foglio grande"
             ],
             "answer": 0
           },
           {
-            "q": "È lentissimo. (una gara di lentezza)",
+            "q": "Se tutti guidassero come lui, ___.",
             "options": [
-              "Se ci fosse una gara di lentezza, la vincerebbe lui.",
-              "Se ci sarebbe una gara di lentezza, la vincerebbe.",
-              "Se c'è una gara di lentezza, la vince lui."
+              "le assicurazioni chiuderebbero",
+              "ci sarebbero più incidenti",
+              "sarebbe pericoloso"
             ],
             "answer": 0
           }
@@ -10499,61 +10493,61 @@ const TEST_STRUCTURES = [
     "title": "Gerundio e participio con valore di causa, tempo e condizione",
     "exercises": [
       {
-        "type": "Riempimento",
+        "type": "Comprensione",
         "fmt": "buco",
-        "instr": "Scegli la forma corretta per esprimere il significato indicato.",
+        "instr": "Leggi la frase e scegli che cosa aggiunge la parte implicita.",
         "items": [
           {
-            "q": "___ meno plastica, si riduce l'inquinamento. (condizione)",
+            "q": "«Non avendo trovato posto davanti alla scuola, ha lasciato la macchina in seconda fila.»",
             "options": [
-              "Usando",
-              "Usato",
-              "Uso"
+              "Dice perché è successo.",
+              "Dice quando è successo.",
+              "Dice a quale condizione succederebbe."
             ],
             "answer": 0
           },
           {
-            "q": "___ la raccolta, il quartiere è più pulito. (causa)",
+            "q": "«Scendendo le scale, ha incontrato il ragazzo del terzo piano.»",
             "options": [
-              "Essendo migliorata",
-              "Migliorando",
-              "Migliorata essendo"
+              "Dice quando è successo.",
+              "Dice perché è successo.",
+              "Dice in che modo è successo."
             ],
             "answer": 0
           },
           {
-            "q": "___ l'etichetta, ho capito la provenienza. (tempo)",
+            "q": "«Ha risolto tutto telefonando direttamente all’ufficio tecnico.»",
             "options": [
-              "Letta",
-              "Leggente",
-              "Legge"
+              "Dice in che modo è successo.",
+              "Dice quando è successo.",
+              "Dice perché è successo."
             ],
             "answer": 0
           },
           {
-            "q": "___ in bicicletta, inquini meno. (condizione)",
+            "q": "«Aumentando di due unità il personale, l’ufficio smaltirebbe l’arretrato in un mese.»",
             "options": [
-              "Andando",
-              "Andato",
-              "Andare"
+              "Dice a quale condizione succederebbe.",
+              "Dice in che modo è successo.",
+              "Dice quando è successo."
             ],
             "answer": 0
           },
           {
-            "q": "___ pochi rifiuti, l’impianto riduce i costi di smaltimento. (causa)",
+            "q": "«Pur avendo ricevuto l’avviso, non si è presentata all’appuntamento.»",
             "options": [
-              "Producendo",
-              "Prodotto",
-              "Produrre"
+              "Ammette un fatto contrario.",
+              "Dice perché è successo.",
+              "Dice quando è successo."
             ],
             "answer": 0
           },
           {
-            "q": "Una volta ___ il progetto, hanno chiesto i fondi. (tempo)",
+            "q": "«Avendo dimenticato il badge, ha dovuto farsi aprire dal portiere.»",
             "options": [
-              "Approvato",
-              "Approvando essere",
-              "Approvare"
+              "Dice perché è successo.",
+              "Dice in che modo è successo.",
+              "Ammette un fatto contrario."
             ],
             "answer": 0
           }
@@ -10562,96 +10556,96 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
-            "q": "Solo riciclato la carta, si salvano alberi.",
-            "wrong": "riciclato",
-            "fix": "riciclando"
+            "q": "Ratificando l’intesa, la seduta si è chiusa alle undici.",
+            "wrong": "Ratificando",
+            "fix": "Ratificata"
           },
           {
-            "q": "Una volta concludendo la riunione, la sala è rimasta vuota.",
-            "wrong": "concludendo",
-            "fix": "conclusa"
+            "q": "Gli atti sono passati alla procura, chiudendo le indagini.",
+            "wrong": "chiudendo",
+            "fix": "chiuse"
           },
           {
-            "q": "Una volta terminando i lavori, la strada è stata riaperta al traffico.",
-            "wrong": "terminando",
-            "fix": "terminati"
+            "q": "Smontando i ponteggi, la piazza è tornata percorribile.",
+            "wrong": "Smontando",
+            "fix": "Smontati"
           },
           {
-            "q": "Camminato ogni giorno, si sta meglio.",
-            "wrong": "Camminato",
-            "fix": "Camminando"
+            "q": "Il telefono dell’ufficio non ha più smesso di squillare, diffondendo la notizia.",
+            "wrong": "diffondendo",
+            "fix": "diffusa"
           },
           {
-            "q": "Ricevendo la conferma, abbiamo prenotato subito il viaggio.",
-            "wrong": "Ricevendo",
-            "fix": "Ricevuta"
+            "q": "Raccogliendo le firme, la proposta è arrivata in consiglio comunale.",
+            "wrong": "Raccogliendo",
+            "fix": "Raccolte"
           },
           {
-            "q": "Evitato semplicemente gli sprechi, si risparmia molto.",
-            "wrong": "Evitato",
-            "fix": "Evitando"
+            "q": "Le scale sono rimaste l’unica via per una settimana, sostituendo il vecchio ascensore.",
+            "wrong": "sostituendo",
+            "fix": "sostituito"
           }
         ]
       },
       {
         "type": "Trasformazione",
         "fmt": "buco",
-        "instr": "Riscrivi la frase usando un gerundio o un participio.",
+        "instr": "Si vuole dire questo. Scegli l’unica formulazione corretta.",
         "items": [
           {
-            "q": "Se separi i rifiuti, aiuti l'ambiente. →",
+            "q": "Chi parla ha notato l’errore mentre confrontava i due elenchi.",
             "options": [
-              "Separando i rifiuti, aiuti l'ambiente.",
-              "Separato i rifiuti, aiuti l'ambiente.",
-              "Separare i rifiuti, aiuti l'ambiente."
+              "Confrontando i due elenchi, ho notato l’errore.",
+              "Confrontando i due elenchi, l’errore è saltato fuori subito.",
+              "Confrontando i due elenchi, l’errore mi è parso evidente."
             ],
             "answer": 0
           },
           {
-            "q": "Dopo che ebbe letto la relazione, firmò. →",
+            "q": "Il telefono ha squillato mentre chi parla rientrava a casa.",
             "options": [
-              "Letta la relazione, firmò.",
-              "Leggendo la relazione, firmò.",
-              "Leggere la relazione, firmò."
+              "Mentre rientravo a casa, il telefono ha squillato.",
+              "Rientrando a casa, il telefono ha squillato.",
+              "Rientrando a casa, il telefono squillava già."
             ],
             "answer": 0
           },
           {
-            "q": "Poiché abita lontano, parte presto. →",
+            "q": "Chiunque legga il resoconto capisce che la decisione era già presa.",
             "options": [
-              "Abitando lontano, parte presto.",
-              "Abitato lontano, parte presto.",
-              "Abitare lontano, parte presto."
+              "Leggendo il resoconto, si capisce che la decisione era già presa.",
+              "Leggendo il resoconto, la decisione risulta già presa.",
+              "Leggendo il resoconto, era chiaro che la decisione fosse già presa."
             ],
             "answer": 0
           },
           {
-            "q": "Dopo che ebbero terminato la cena, uscirono. →",
+            "q": "La commissione ha rinviato la seduta perché mancava il numero legale.",
             "options": [
-              "Terminata la cena, uscirono.",
-              "Terminando la cena, uscirono.",
-              "Terminare la cena, uscirono."
+              "Non avendo il numero legale, la commissione ha rinviato la seduta.",
+              "Non avendo il numero legale, la seduta è stata rinviata.",
+              "Non avendo il numero legale, il rinvio è stato inevitabile."
             ],
             "answer": 0
           },
           {
-            "q": "Poiché non aveva l'auto, prese il treno. →",
+            "q": "L’ospite ha rovesciato il bicchiere mentre si alzava da tavola.",
             "options": [
-              "Non avendo l'auto, prese il treno.",
-              "Non avuto l'auto, prese il treno.",
-              "Non avere l'auto, prese il treno."
+              "Alzandosi da tavola, l’ospite ha rovesciato il bicchiere.",
+              "Alzandosi da tavola, il bicchiere si è rovesciato.",
+              "Alzandosi da tavola, il bicchiere è finito per terra."
             ],
             "answer": 0
           },
           {
-            "q": "Se usi meno l'auto, risparmi carburante. →",
+            "q": "L’allarme è scattato mentre il custode chiudeva le finestre.",
             "options": [
-              "Usando meno l'auto, risparmi carburante.",
-              "Usato meno l'auto, risparmi carburante.",
-              "Usare meno l'auto, risparmi carburante."
+              "Mentre il custode chiudeva le finestre, l’allarme è scattato.",
+              "Chiudendo le finestre, l’allarme è scattato.",
+              "Chiudendo le finestre, il custode ha fatto scattare l’allarme."
             ],
             "answer": 0
           }
@@ -10664,61 +10658,61 @@ const TEST_STRUCTURES = [
     "title": "La forma passiva: tutte le forme",
     "exercises": [
       {
-        "type": "Riempimento",
+        "type": "Comprensione",
         "fmt": "buco",
-        "instr": "Scegli la forma passiva corretta nel tempo richiesto dal contesto.",
+        "instr": "Leggi la frase e scegli l’affermazione vera.",
         "items": [
           {
-            "q": "Ogni mattina i documenti ___ dal responsabile.",
+            "q": "«La richiesta di trasferimento è stata respinta.»",
             "options": [
-              "sono controllati",
-              "erano controllati",
-              "saranno controllati"
+              "La frase non dice chi ha respinto.",
+              "La frase dice che nessuno ha esaminato la richiesta.",
+              "La frase dice che ha respinto chi ha ricevuto la richiesta."
             ],
             "answer": 0
           },
           {
-            "q": "Ieri la proposta ___ dalla commissione.",
+            "q": "«Le è stato comunicato che il contratto non sarà rinnovato.»",
             "options": [
-              "è stata approvata",
-              "era approvata",
-              "sarà approvata"
+              "Non si sa chi glielo abbia comunicato.",
+              "È stata lei a comunicarlo.",
+              "Il contratto è stato comunicato a lei."
             ],
             "answer": 0
           },
           {
-            "q": "Quando lavoravo lì, le richieste ___ entro due giorni.",
+            "q": "«Il turno di notte è stato assegnato a tre dipendenti dal caposquadra.»",
             "options": [
-              "erano esaminate",
-              "sono esaminate",
-              "saranno esaminate"
+              "A decidere è stato il caposquadra.",
+              "A decidere sono stati i tre dipendenti.",
+              "Il caposquadra farà il turno di notte."
             ],
             "answer": 0
           },
           {
-            "q": "I risultati ___ sul sito domani mattina.",
+            "q": "«Alla dipendente è stato offerto un inquadramento superiore.»",
             "options": [
-              "saranno pubblicati",
-              "sono stati pubblicati",
-              "erano pubblicati"
+              "A ricevere l’offerta è la dipendente.",
+              "A fare l’offerta è la dipendente.",
+              "Non si sa che cosa sia stato offerto."
             ],
             "answer": 0
           },
           {
-            "q": "Con più personale, il lavoro ___ in meno tempo.",
+            "q": "«Sono state riscontrate irregolarità nella compilazione dei registri.»",
             "options": [
-              "sarebbe completato",
-              "sarà completato",
-              "era completato"
+              "Chi ha riscontrato le irregolarità non è indicato.",
+              "Chi ha compilato i registri ha riscontrato le irregolarità.",
+              "Le irregolarità sono state commesse da chi ha fatto il controllo."
             ],
             "answer": 0
           },
           {
-            "q": "È possibile che il contratto ___ entro oggi.",
+            "q": "«La proposta è stata accolta con qualche riserva dal consiglio.»",
             "options": [
-              "sia firmato",
-              "è firmato",
-              "sarebbe firmato"
+              "A esprimere riserve è il consiglio.",
+              "A esprimere riserve è chi ha fatto la proposta.",
+              "La proposta è stata respinta."
             ],
             "answer": 0
           }
@@ -10727,104 +10721,101 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
-            "q": "La merce è consegnata ieri mattina.",
-            "wrong": "è",
-            "fix": "è stata"
+            "q": "Con due mesi di ritardo il dipendente è stato comunicato l’esito.",
+            "wrong": "il",
+            "fix": "al"
           },
           {
-            "q": "Durante gli anni Novanta, molte pratiche sono archiviate su carta.",
-            "wrong": "sono",
-            "fix": "erano"
+            "q": "La candidata è stata offerta una promozione in un’altra sede.",
+            "wrong": "La",
+            "fix": "Alla"
           },
           {
-            "q": "La prossima settimana, le nuove regole sono applicate in tutti gli uffici.",
-            "wrong": "sono",
-            "fix": "saranno"
+            "q": "Nella cerimonia di giovedì gli studenti sono stati consegnati i diplomi.",
+            "wrong": "gli",
+            "fix": "agli"
           },
           {
-            "q": "Senza il guasto di ieri, il ponte sarà stato riaperto già ieri sera.",
-            "wrong": "sarà",
-            "fix": "sarebbe"
+            "q": "Le famiglie sono state promesse nuove case entro giugno.",
+            "wrong": "Le",
+            "fix": "Alle"
           },
           {
-            "q": "Non credo che la sala è stata prenotata per domani.",
-            "wrong": "è",
-            "fix": "sia"
+            "q": "Dopo l’ispezione Marco è stato chiesto un chiarimento sulla fattura.",
+            "wrong": "Marco",
+            "fix": "A Marco"
           },
           {
-            "q": "Quando tornammo, le finestre sono già state chiuse.",
-            "wrong": "sono",
-            "fix": "erano"
+            "q": "L’inquilina è stata negata la proroga senza motivazione.",
+            "wrong": "L’inquilina",
+            "fix": "All’inquilina"
           }
         ]
       },
       {
-        "type": "Trasformazione",
+        "type": "Comprensione",
         "fmt": "buco",
-        "instr": "Volgi al passivo mantenendo lo stesso tempo verbale.",
+        "instr": "La frase descrive uno stato o un’azione? Scegli l’affermazione vera.",
         "items": [
           {
-            "q": "Gli addetti puliscono le sale ogni sera. →",
+            "q": "«Quando siamo arrivati, la sala era già preparata.»",
             "options": [
-              "Le sale sono pulite dagli addetti ogni sera.",
-              "Le sale erano pulite dagli addetti ogni sera.",
-              "Le sale saranno pulite dagli addetti ogni sera."
+              "Descrive come si trovava la sala.",
+              "Descrive qualcuno che in quel momento la stava preparando.",
+              "Dice che la sala è stata preparata dopo il nostro arrivo."
             ],
             "answer": 0
           },
           {
-            "q": "I tecnici hanno riparato l'ascensore ieri. →",
+            "q": "«Il cancello è chiuso ogni sera alle venti dal custode.»",
             "options": [
-              "L'ascensore è stato riparato dai tecnici ieri.",
-              "L'ascensore era riparato dai tecnici ieri.",
-              "L'ascensore sarà riparato dai tecnici ieri."
+              "Descrive un’operazione che si ripete.",
+              "Descrive lo stato in cui si trova il cancello la sera.",
+              "Dice che il cancello resta chiuso tutto il giorno."
             ],
             "answer": 0
           },
           {
-            "q": "Un custode chiudeva il cancello alle ventidue. →",
+            "q": "«Da martedì la pratica è sospesa.»",
             "options": [
-              "Il cancello era chiuso da un custode alle ventidue.",
-              "Il cancello è chiuso da un custode alle ventidue.",
-              "Il cancello sarà chiuso da un custode alle ventidue."
+              "Descrive una situazione che dura ancora.",
+              "Indica il momento preciso in cui qualcuno l’ha sospesa.",
+              "Dice che è stata sospesa martedì e poi ripresa."
             ],
             "answer": 0
           },
           {
-            "q": "Il comune inaugurerà la biblioteca domani. →",
+            "q": "«Le domande sono controllate una per una prima dell’archiviazione.»",
             "options": [
-              "La biblioteca sarà inaugurata dal comune domani.",
-              "La biblioteca è stata inaugurata dal comune domani.",
-              "La biblioteca era inaugurata dal comune domani."
+              "Descrive un’operazione che qualcuno compie.",
+              "Descrive lo stato in cui si trovano le domande.",
+              "Dice che le domande sono già state archiviate."
             ],
             "answer": 0
           },
           {
-            "q": "Con un budget maggiore, l'impresa restaurerebbe la facciata. →",
+            "q": "«Alle sette la serranda era ancora abbassata.»",
             "options": [
-              "Con un budget maggiore, la facciata sarebbe restaurata dall'impresa.",
-              "Con un budget maggiore, la facciata sarà restaurata dall'impresa.",
-              "Con un budget maggiore, la facciata era restaurata dall'impresa."
+              "Descrive come si presentava la serranda.",
+              "Descrive qualcuno che alle sette la stava abbassando.",
+              "Dice che la serranda è stata abbassata alle sette."
             ],
             "answer": 0
           },
           {
-            "q": "È probabile che la giuria scelga il vincitore oggi. →",
+            "q": "«Alle nove in punto l’asta è aperta dal banditore.»",
             "options": [
-              "È probabile che il vincitore sia scelto oggi dalla giuria.",
-              "È probabile che il vincitore è scelto oggi dalla giuria.",
-              "È probabile che il vincitore sarebbe scelto oggi dalla giuria."
+              "Descrive l’atto con cui l’asta comincia.",
+              "Descrive lo stato in cui si trova l’asta alle nove.",
+              "Dice che l’asta era già cominciata prima delle nove."
             ],
             "answer": 0
           }
         ]
       }
-    ],
-    "lez": [
-      "C1 L7"
     ]
   },
   {
@@ -10838,161 +10829,161 @@ const TEST_STRUCTURES = [
       {
         "type": "Riempimento",
         "fmt": "buco",
-        "instr": "Riferisci oggi, da un momento successivo, parole dette ieri in ambito professionale: scegli la forma coerente.",
+        "instr": "Scegli la forma coerente con il momento in cui si riferisce.",
         "items": [
-          {
-            "q": "«Consegnerò domani» → Scrisse che ___ il giorno dopo.",
-            "options": [
-              "avrebbe consegnato",
-              "consegnerà",
-              "consegnasse"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Il progetto è in ritardo» → Ammise che il progetto ___ in ritardo.",
-            "options": [
-              "era",
-              "è",
-              "fosse"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Abbiamo risolto il problema» → Comunicarono che ___ il problema.",
-            "options": [
-              "avevano risolto",
-              "hanno risolto",
-              "avessero risolto"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Non posso partecipare» → Rispose che non ___ partecipare.",
-            "options": [
-              "poteva",
-              "può",
-              "potesse"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Vi manderò il preventivo» → Assicurò che ci ___ il preventivo.",
-            "options": [
-              "avrebbe mandato",
-              "manderà",
-              "mandasse"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Rispondete entro martedì» → Sollecitò una risposta entro il martedì ___.",
-            "options": [
-              "successivo",
-              "prossimo",
-              "scorso"
-            ],
-            "answer": 0
-          }
-        ]
+  {
+    "q": "«La sala è già prenotata» → L'albergo rispose che la sala ___ già prenotata per quel fine settimana.",
+    "options": [
+      "era",
+      "è",
+      "fosse"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "«Vi faremo sapere entro venerdì» → La commissione scrisse che ci ___ sapere entro il venerdì successivo.",
+    "options": [
+      "avrebbe fatto",
+      "farà",
+      "facesse"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "«Abbiamo spedito i referti» → Il laboratorio comunicò che ___ i referti il giorno prima.",
+    "options": [
+      "aveva spedito",
+      "ha spedito",
+      "avesse spedito"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "«Credo che l'archivio sia incompleto» → L'impiegato disse che credeva che l'archivio ___ incompleto.",
+    "options": [
+      "fosse",
+      "sia",
+      "era"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "«Non possiamo garantire la data» → Il corriere ammise che non ___ garantire la data.",
+    "options": [
+      "potevano",
+      "possono",
+      "potessero"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "«Non capisco perché siete in ritardo» → Il cliente ripeté che non ___ perché eravamo in ritardo.",
+    "options": [
+      "capiva",
+      "capisce",
+      "capisse"
+    ],
+    "answer": 0
+  }
+]
+      },
+      {
+        "type": "Riempimento",
+        "fmt": "buco",
+        "instr": "Scegli il verbo che riporta fedelmente quello che è stato detto.",
+        "items": [
+  {
+    "q": "Il portiere dell'hotel: «Quella prenotazione non ci è mai arrivata.»",
+    "options": [
+      "negò",
+      "ammise",
+      "precisò"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Mia sorella: «Te l'ho ripetuto tre volte, il treno parte alle sei.»",
+    "options": [
+      "ribadì",
+      "obiettò",
+      "riconobbe"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Il cuoco: «La colpa è mia, ho tenuto il forno troppo alto.»",
+    "options": [
+      "ammise",
+      "sostenne",
+      "contestò"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Il tecnico: «Attenzione, la perdita è nel tubo esterno, non in bagno.»",
+    "options": [
+      "precisò",
+      "negò",
+      "ribadì"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "La professoressa: «Non credo affatto che abbiate letto il libro.»",
+    "options": [
+      "contestò",
+      "precisò",
+      "riconobbe"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "L'idraulico: «Sì, in effetti potevo avvisarvi prima.»",
+    "options": [
+      "riconobbe",
+      "negò",
+      "sostenne"
+    ],
+    "answer": 0
+  }
+]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
-          {
-            "q": "La responsabile disse che avrebbe risposto oggi stesso.",
-            "wrong": "oggi",
-            "fix": "quel giorno"
-          },
-          {
-            "q": "Segnalò che il pagamento è arrivato il mese prima.",
-            "wrong": "è",
-            "fix": "era"
-          },
-          {
-            "q": "Scrisse che sarebbe passato qui in mattinata.",
-            "wrong": "qui",
-            "fix": "lì"
-          },
-          {
-            "q": "Garantì che consegnerà il materiale entro la fine del mese.",
-            "wrong": "consegnerà",
-            "fix": "avrebbe consegnato"
-          },
-          {
-            "q": "Riconobbe che il preventivo è troppo alto per il cliente.",
-            "wrong": "è",
-            "fix": "era"
-          },
-          {
-            "q": "Verificò che hanno registrato tutte le fatture fino ad allora.",
-            "wrong": "hanno",
-            "fix": "avevano"
-          }
-        ]
-      },
-      {
-        "type": "Trasformazione",
-        "fmt": "buco",
-        "instr": "Trasforma in discorso indiretto collocando il resoconto in un momento successivo.",
-        "items": [
-          {
-            "q": "«Invierò il rapporto domani», scrisse il responsabile. →",
-            "options": [
-              "Il responsabile scrisse che avrebbe inviato il rapporto il giorno dopo.",
-              "Il responsabile scrisse che invierà il rapporto domani.",
-              "Il responsabile scrisse che inviava il rapporto domani."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Il budget è insufficiente», ammise il direttore. →",
-            "options": [
-              "Il direttore ammise che il budget era insufficiente.",
-              "Il direttore ammise che il budget è insufficiente.",
-              "Il direttore ammise che il budget fosse insufficiente."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Abbiamo chiuso il contratto ieri», comunicarono. →",
-            "options": [
-              "Comunicarono che avevano chiuso il contratto il giorno prima.",
-              "Comunicarono che hanno chiuso il contratto ieri.",
-              "Comunicarono che chiudevano il contratto ieri."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Ci occuperemo noi della spedizione», assicurarono. →",
-            "options": [
-              "Assicurarono che si sarebbero occupati loro della spedizione.",
-              "Assicurarono che si occuperanno loro della spedizione.",
-              "Assicurarono che si occupavano loro della spedizione."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Questo preventivo è troppo alto», obiettò. →",
-            "options": [
-              "Obiettò che quel preventivo era troppo alto.",
-              "Obiettò che questo preventivo è troppo alto.",
-              "Obiettò che quel preventivo fosse troppo alto."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "«Il fornitore ha sbagliato l'ordine», riferì. →",
-            "options": [
-              "Riferì che il fornitore aveva sbagliato l'ordine.",
-              "Riferì che il fornitore ha sbagliato l'ordine.",
-              "Riferì che il fornitore avesse sbagliato l'ordine."
-            ],
-            "answer": 0
-          }
-        ]
+  {
+    "q": "Il proprietario negò che ci era un problema di umidità nelle pareti.",
+    "wrong": "era",
+    "fix": "fosse"
+  },
+  {
+    "q": "Il tecnico sostenne che l'impianto fosse a norma da almeno dieci anni.",
+    "wrong": "fosse",
+    "fix": "era"
+  },
+  {
+    "q": "La società contestò che i lavori erano stati eseguiti a regola d'arte.",
+    "wrong": "erano",
+    "fix": "fossero"
+  },
+  {
+    "q": "L'ispettore precisò che il controllo fosse stato fatto in mattinata.",
+    "wrong": "fosse",
+    "fix": "era"
+  },
+  {
+    "q": "Il medico dubitò che la terapia aveva funzionato davvero.",
+    "wrong": "aveva",
+    "fix": "avesse"
+  },
+  {
+    "q": "Il testimone ribadì che quella sera avesse visto due persone.",
+    "wrong": "avesse",
+    "fix": "aveva"
+  }
+]
       }
     ]
   },
@@ -11006,161 +10997,161 @@ const TEST_STRUCTURES = [
       {
         "type": "Riempimento",
         "fmt": "buco",
-        "instr": "Nel racconto al passato, scegli la forma verbale corretta.",
+        "instr": "Scegli la forma verbale coerente con l'ordine dei fatti.",
         "items": [
-          {
-            "q": "Ci spiegò che il ritardo ___ da un guasto. (causa anteriore)",
-            "options": [
-              "era dipeso",
-              "dipende",
-              "dipenderà"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Disse che il giorno dopo ___ una soluzione. (posteriore)",
-            "options": [
-              "avrebbe proposto",
-              "proporrà",
-              "proponeva"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Raccontò che in quel momento ___ i dati. (contemporanea)",
-            "options": [
-              "stava controllando",
-              "sta controllando",
-              "avrebbe controllato"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Ammise che ___ un errore nel preventivo. (anteriore)",
-            "options": [
-              "aveva commesso",
-              "ha commesso",
-              "commetterà"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Aggiunse che ___ tutti entro sera. (posteriore)",
-            "options": [
-              "avrebbe avvisato",
-              "avviserà",
-              "avvisava"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Riferì che in quei giorni il team ___ molto. (contemporanea)",
-            "options": [
-              "lavorava",
-              "lavora",
-              "avrebbe lavorato"
-            ],
-            "answer": 0
-          }
-        ]
+  {
+    "q": "Il temporale è arrivato alle sei; a quell'ora noi ___ ancora in spiaggia, e la tenda l'avevamo già smontata.",
+    "options": [
+      "eravamo",
+      "siamo stati",
+      "eravamo stati"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Quando finalmente ho aperto la scatola, ho capito perché era così leggera: qualcuno ___ il contenuto prima ancora che il pacco lasciasse il deposito.",
+    "options": [
+      "aveva tolto",
+      "ha tolto",
+      "toglieva"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Alle otto la sala era ancora vuota; alle nove, quando finalmente ___, gli altri erano già andati via.",
+    "options": [
+      "sono entrato",
+      "ero entrato",
+      "entravo"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Quando il passaporto è saltato fuori, ___ già tutti i cassetti e in questura mi aspettavano per le tre.",
+    "options": [
+      "avevo svuotato",
+      "ho svuotato",
+      "svuotavo"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Il pacco è arrivato a metà mattina, mentre ___ ancora la stanza che avevo cominciato a sistemare all'alba.",
+    "options": [
+      "riordinavo",
+      "ho riordinato",
+      "avevo riordinato"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Per settimane il forno faceva un rumore strano; poi una sera ___ del tutto, proprio mentre cuocevo la torta di compleanno.",
+    "options": [
+      "si è fermato",
+      "si fermava",
+      "si era fermato"
+    ],
+    "answer": 0
+  }
+]
+      },
+      {
+        "type": "Comprensione",
+        "fmt": "buco",
+        "instr": "Che cosa dice davvero la frase? Scegli l'interpretazione corretta.",
+        "items": [
+  {
+    "q": "«Quando sono arrivato, il tecnico controllava il contatore.»",
+    "options": [
+      "Il controllo era già cominciato prima del mio arrivo.",
+      "Il tecnico ha cominciato a controllare dopo il mio arrivo.",
+      "Il tecnico aveva già finito il controllo."
+    ],
+    "answer": 0
+  },
+  {
+    "q": "«Quella mattina partivo per Genova, ma la nebbia ha bloccato tutto.»",
+    "options": [
+      "Alla fine non è partita.",
+      "È partita con qualche ora di ritardo.",
+      "È partita e poi è tornata indietro."
+    ],
+    "answer": 0
+  },
+  {
+    "q": "«Ho scoperto solo ieri che si erano separati in primavera.»",
+    "options": [
+      "La separazione è avvenuta prima che lo scoprissi.",
+      "Si sono separati dopo che l'ho scoperto.",
+      "L'ho saputo in primavera."
+    ],
+    "answer": 0
+  },
+  {
+    "q": "«Il tram non passava, così dopo mezz'ora me ne sono andato a piedi.»",
+    "options": [
+      "Il tram non è mai arrivato.",
+      "Il tram è arrivato dopo mezz'ora.",
+      "Il tram passava ma non si fermava."
+    ],
+    "answer": 0
+  },
+  {
+    "q": "«Quando l'ho conosciuto, lavorava in una libreria da tre anni.»",
+    "options": [
+      "Aveva cominciato tre anni prima e continuava a lavorarci.",
+      "Ha cominciato a lavorare in libreria dopo che l'ho conosciuto.",
+      "Aveva lavorato in libreria tre anni e poi aveva smesso."
+    ],
+    "answer": 0
+  },
+  {
+    "q": "«Sapevo che la farmacia chiudeva alle cinque, e infatti alle cinque e un quarto era tutto spento.»",
+    "options": [
+      "La farmacia chiudeva ogni giorno alle cinque.",
+      "Quel giorno la farmacia ha chiuso prima del solito.",
+      "La farmacia ha chiuso alle cinque e un quarto."
+    ],
+    "answer": 0
+  }
+]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
-          {
-            "q": "Ci avvertì che il fornitore ha cambiato le condizioni.",
-            "wrong": "ha",
-            "fix": "aveva"
-          },
-          {
-            "q": "Annunciò che presenterà il bilancio il mese dopo.",
-            "wrong": "presenterà",
-            "fix": "avrebbe presentato"
-          },
-          {
-            "q": "Spiegò che in quel periodo il reparto sta crescendo.",
-            "wrong": "sta",
-            "fix": "stava"
-          },
-          {
-            "q": "Confessò che ha ignorato i primi segnali.",
-            "wrong": "ha",
-            "fix": "aveva"
-          },
-          {
-            "q": "Promise che invierà il verbale entro sera.",
-            "wrong": "invierà",
-            "fix": "avrebbe inviato"
-          },
-          {
-            "q": "Ricordò che in quei mesi l'ufficio resta aperto di sabato.",
-            "wrong": "resta",
-            "fix": "restava"
-          }
-        ]
-      },
-      {
-        "type": "Trasformazione",
-        "fmt": "buco",
-        "instr": "Scegli la frase corretta nel racconto al passato.",
-        "items": [
-          {
-            "q": "Il guasto era avvenuto prima. Ce lo spiegò dopo. →",
-            "options": [
-              "Ci spiegò che il guasto era avvenuto.",
-              "Ci spiegò che il guasto è avvenuto.",
-              "Ci spiegò che il guasto sarebbe avvenuto."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Avrebbe risolto dopo. Lo disse prima. →",
-            "options": [
-              "Disse che avrebbe risolto il problema.",
-              "Disse che risolverà il problema.",
-              "Disse che risolveva il problema."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Lavorava in quel momento. Lo raccontò. →",
-            "options": [
-              "Raccontò che stava lavorando al progetto.",
-              "Raccontò che sta lavorando al progetto.",
-              "Raccontò che avrebbe lavorato al progetto."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Aveva sbagliato prima. Lo ammise dopo. →",
-            "options": [
-              "Ammise che aveva sbagliato i calcoli.",
-              "Ammise che ha sbagliato i calcoli.",
-              "Ammise che avrebbe sbagliato i calcoli."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Avrebbe avvisato più tardi. Lo aggiunse. →",
-            "options": [
-              "Aggiunse che avrebbe avvisato i colleghi.",
-              "Aggiunse che avviserà i colleghi.",
-              "Aggiunse che avvisava i colleghi."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il team era sotto pressione allora. Lo riferì. →",
-            "options": [
-              "Riferì che il team era sotto pressione.",
-              "Riferì che il team è sotto pressione.",
-              "Riferì che il team sarebbe stato sotto pressione."
-            ],
-            "answer": 0
-          }
-        ]
+  {
+    "q": "Quando ho aperto lo zaino, ho visto che qualcuno ci ha frugato dentro e non me lo aveva detto.",
+    "wrong": "ha",
+    "fix": "aveva"
+  },
+  {
+    "q": "Per tutta la settimana ha piovuto e sabato, quando finalmente usciva il sole, eravamo già ripartiti.",
+    "wrong": "usciva",
+    "fix": "è uscito"
+  },
+  {
+    "q": "Quando siamo usciti dal teatro, la pioggia smetteva già da un pezzo.",
+    "wrong": "smetteva",
+    "fix": "aveva smesso"
+  },
+  {
+    "q": "Ho riconosciuto la voce subito: quella donna mi telefonava due volte il giorno prima.",
+    "wrong": "telefonava",
+    "fix": "aveva telefonato"
+  },
+  {
+    "q": "Quando è squillato il telefono, mi ero alzato di scatto e avevo rovesciato il caffè.",
+    "wrong": "ero",
+    "fix": "sono"
+  },
+  {
+    "q": "Da ragazzo mio nonno si era alzato ogni mattina alle cinque per andare nei campi.",
+    "wrong": "era",
+    "fix": "si alzava"
+  }
+]
       }
     ]
   },
@@ -11171,166 +11162,165 @@ const TEST_STRUCTURES = [
       {
         "type": "Riempimento",
         "fmt": "buco",
-        "instr": "Scegli la forma verbale corretta.",
+        "instr": "Scegli la forma verbale richiesta dalla congiunzione.",
         "items": [
-          {
-            "q": "Benché ___ stanco, ha finito il lavoro.",
-            "options": [
-              "fosse",
-              "era",
-              "sarebbe"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Nonostante ___ molto, sono partiti in macchina.",
-            "options": [
-              "nevicasse",
-              "nevicava",
-              "nevicherebbe"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Anche se ___ molto, l’ho comprato perché mi serviva.",
-            "options": [
-              "costava",
-              "costasse",
-              "costerebbe"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Per quanto ___, non ho cambiato idea.",
-            "options": [
-              "insistessero",
-              "insistevano",
-              "insisterebbero"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Sebbene ___ poco, ha superato l'esame.",
-            "options": [
-              "abbia studiato",
-              "ha studiato",
-              "avrebbe studiato"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Sebbene ___ ragione, non ha insistito.",
-            "options": [
-              "avesse",
-              "aveva",
-              "avrebbe"
-            ],
-            "answer": 0
-          }
-        ]
+  {
+    "q": "Benché il negozio ___ in pieno centro, quasi tutti i clienti ordinano online.",
+    "options": [
+      "sia",
+      "è",
+      "fosse"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Sebbene il sindaco ___ contrario, il consiglio approvò il progetto in mezz'ora.",
+    "options": [
+      "fosse",
+      "era",
+      "sia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Per quanto ___ presto, in quel periodo trovavamo sempre la fila alla posta.",
+    "options": [
+      "uscissimo",
+      "uscivamo",
+      "usciamo"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Malgrado ___ ancora buio, i pescatori escono ogni mattina alle quattro.",
+    "options": [
+      "sia",
+      "è",
+      "fosse"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Quantunque ___ bene la lingua, preferì rivolgersi a un interprete.",
+    "options": [
+      "conoscesse",
+      "conosceva",
+      "conosca"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Per quanto ___ molto, quel modello resta il più venduto della categoria.",
+    "options": [
+      "costi",
+      "costa",
+      "costasse"
+    ],
+    "answer": 0
+  }
+]
+      },
+      {
+        "type": "Riempimento",
+        "fmt": "buco",
+        "instr": "Scegli la forma che il connettivo concessivo richiede.",
+        "items": [
+  {
+    "q": "Pur ___ tutti i documenti richiesti, non ottenne il permesso di soggiorno.",
+    "options": [
+      "presentando",
+      "presentasse",
+      "la presentazione"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Benché ___ a dirotto, il concerto si è tenuto lo stesso.",
+    "options": [
+      "piovesse",
+      "la pioggia",
+      "piovendo"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Con tutta ___ , non siamo riusciti a finire entro la scadenza.",
+    "options": [
+      "la buona volontà",
+      "volessimo",
+      "volendo"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Malgrado ___ degli operai, la mostra ha aperto puntuale.",
+    "options": [
+      "i ritardi",
+      "ritardassero",
+      "ritardando"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Pur ___ che avesse ragione, non gliel'ho mai detto apertamente.",
+    "options": [
+      "riconoscendo",
+      "riconosca",
+      "riconoscevo"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Sebbene ___ di poche righe, quella lettera cambiò tutto.",
+    "options": [
+      "si trattasse",
+      "si trattava",
+      "trattandosi"
+    ],
+    "answer": 0
+  }
+]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
-          {
-            "q": "Benché è tardi, continuano a lavorare.",
-            "wrong": "è",
-            "fix": "sia"
-          },
-          {
-            "q": "Nonostante piove, escono lo stesso.",
-            "wrong": "piove",
-            "fix": "piova"
-          },
-          {
-            "q": "L'ufficio è aperto anche se oggi sia domenica.",
-            "wrong": "sia",
-            "fix": "è"
-          },
-          {
-            "q": "Sebbene ha dormito poco, è in forma.",
-            "wrong": "ha",
-            "fix": "abbia"
-          },
-          {
-            "q": "Per quanto ci provo, non ci riesco.",
-            "wrong": "provo",
-            "fix": "provi"
-          },
-          {
-            "q": "Sebbene sapeva la risposta, è stato zitto.",
-            "wrong": "sapeva",
-            "fix": "sapesse"
-          }
-        ]
-      },
-      {
-        "type": "Trasformazione",
-        "fmt": "buco",
-        "instr": "Riscrivi la frase usando la parola tra parentesi.",
-        "items": [
-          {
-            "q": "Ha poco tempo, ma ci aiuta. (benché)",
-            "options": [
-              "Benché abbia poco tempo, ci aiuta.",
-              "Benché ha poco tempo, ci aiuta.",
-              "Benché avesse poco tempo, ci aiuta."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il film è lungo, ma non annoia. (nonostante)",
-            "options": [
-              "Nonostante sia lungo, il film non annoia.",
-              "Nonostante è lungo, il film non annoia.",
-              "Nonostante fosse lungo, il film non annoia."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Guadagna bene, ma non è felice. (sebbene)",
-            "options": [
-              "Sebbene guadagni bene, non è felice.",
-              "Sebbene guadagna bene, non è felice.",
-              "Sebbene guadagnasse bene, non è felice."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Parla piano, ma si sente bene. (anche se)",
-            "options": [
-              "Anche se parla piano, si sente bene.",
-              "Anche se parli piano, si sente bene.",
-              "Anche se parlasse piano, si sente bene."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Dormo poco, ma non sono stanco. (anche se)",
-            "options": [
-              "Anche se dormo poco, non sono stanco.",
-              "Anche se dorma poco, non sono stanco.",
-              "Anche se dormissi poco, non sono stanco."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Vive lontano, ma viene ogni giorno. (nonostante)",
-            "options": [
-              "Nonostante viva lontano, viene ogni giorno.",
-              "Nonostante vive lontano, viene ogni giorno.",
-              "Nonostante vivesse lontano, viene ogni giorno."
-            ],
-            "answer": 0
-          }
-        ]
+  {
+    "q": "La trattativa era finita male. Nonostante, le due parti si sono riviste il mese dopo.",
+    "wrong": "Nonostante",
+    "fix": "Ciononostante"
+  },
+  {
+    "q": "Il danno per l'azienda resta enorme, anche ammettendo che le intenzioni erano buone.",
+    "wrong": "erano",
+    "fix": "fossero"
+  },
+  {
+    "q": "I lavori del cantiere non sono ancora partiti, malgrado avevano firmato a marzo.",
+    "wrong": "avevano",
+    "fix": "avessero"
+  },
+  {
+    "q": "Si è offerto di accompagnarci tutto il giorno, pur non conosceva bene la zona.",
+    "wrong": "conosceva",
+    "fix": "conoscendo"
+  },
+  {
+    "q": "Sebbene la neve caduta di notte, la strada del passo è rimasta aperta.",
+    "wrong": "Sebbene",
+    "fix": "Nonostante"
+  },
+  {
+    "q": "Fermo restando che il calendario sia già stato approvato, resta un dubbio sulle date.",
+    "wrong": "sia",
+    "fix": "è"
+  }
+]
       }
     ],
     "lez": [
       "C1 L11",
-      "C1 L13",
       "C1 L21"
     ]
   },
@@ -11339,61 +11329,61 @@ const TEST_STRUCTURES = [
     "title": "Le proposizioni temporali avanzate",
     "exercises": [
       {
-        "type": "Riempimento",
+        "type": "Scelta",
         "fmt": "buco",
-        "instr": "Scegli la forma corretta con «prima che», «prima di», «dopo che», «finché» e «non appena».",
+        "instr": "Scegli il connettivo adatto al rapporto fra i due fatti. Tutte le forme verbali sono corrette.",
         "items": [
           {
-            "q": "Avvisami prima che ___ la riunione.",
+            "q": "Amir ha diviso l'appartamento con altri tre operai ___ ha lavorato al cantiere di Rho.",
             "options": [
-              "inizi",
-              "inizia",
-              "iniziasse"
+              "finché",
+              "dopo che",
+              "non appena"
             ],
             "answer": 0
           },
           {
-            "q": "Prima di ___, leggi bene il contratto.",
+            "q": "___ ha ricevuto l'esito del concorso, Elena ha aspettato tre giorni per dirlo ai suoi.",
             "options": [
-              "firmare",
-              "firmi",
-              "firmare tu"
+              "Dopo che",
+              "Non appena",
+              "Finché"
             ],
             "answer": 0
           },
           {
-            "q": "Dopo che ___, abbiamo cenato.",
+            "q": "I ragazzi smettono di correre e si siedono a bordo campo ___ l'allenatore fischia.",
             "options": [
-              "sono arrivati",
-              "siano arrivati",
-              "arrivassero"
+              "ogni volta che",
+              "da quando",
+              "finché"
             ],
             "answer": 0
           },
           {
-            "q": "Ogni sera resto qui finché non ___ il mio turno.",
+            "q": "Il cane si è piazzato davanti alla porta ___ ha sentito girare la chiave.",
             "options": [
-              "finisco",
-              "finisca",
-              "finissi"
+              "non appena",
+              "da quando",
+              "ogni volta che"
             ],
             "answer": 0
           },
           {
-            "q": "Prima che tu ___, ti spiego tutto.",
+            "q": "Il postino bussa alla finestra della cucina ___ si è rotto il campanello.",
             "options": [
-              "parta",
-              "parti",
-              "partissi"
+              "da quando",
+              "ogni volta che",
+              "non appena"
             ],
             "answer": 0
           },
           {
-            "q": "Non appena ___ la notizia, ha chiamato.",
+            "q": "___ il notaio leggeva ad alta voce, i due fratelli si guardavano senza dire una parola.",
             "options": [
-              "ha saputo",
-              "abbia saputo",
-              "sapesse"
+              "Mentre",
+              "Dopo che",
+              "Non appena"
             ],
             "answer": 0
           }
@@ -11402,96 +11392,96 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
-            "q": "Chiamami prima che arriva il treno.",
-            "wrong": "arriva",
-            "fix": "arrivi"
+            "q": "Avvisami prima che tuo fratello parte per Berlino.",
+            "wrong": "parte",
+            "fix": "parta"
           },
           {
-            "q": "Dopo che fosse uscito, ho chiuso a chiave.",
-            "wrong": "fosse",
-            "fix": "era"
+            "q": "Dopo che abbiano finito i compiti, i bambini possono uscire in cortile.",
+            "wrong": "abbiano",
+            "fix": "hanno"
           },
           {
-            "q": "Rimani qui finché non arriverei io.",
-            "wrong": "arriverei",
-            "fix": "arrivo"
+            "q": "Non appena il tecnico sia entrato nel sottotetto, la luce si è spenta di colpo.",
+            "wrong": "sia",
+            "fix": "è"
           },
           {
-            "q": "Salutami prima che io esco.",
-            "wrong": "esco",
-            "fix": "esca"
+            "q": "Chiudi bene la finestra prima che comincerà a piovere.",
+            "wrong": "comincerà",
+            "fix": "cominci"
           },
           {
-            "q": "Prima di esci, chiudi la finestra.",
-            "wrong": "esci",
-            "fix": "uscire"
+            "q": "Mentre l'idraulico controllasse il contatore, ho aspettato sul pianerottolo.",
+            "wrong": "controllasse",
+            "fix": "controllava"
           },
           {
-            "q": "Dopo che abbia cenato, è uscito.",
-            "wrong": "abbia",
-            "fix": "aveva"
+            "q": "Ho spento il forno prima che la crostata diventava nera.",
+            "wrong": "diventava",
+            "fix": "diventasse"
           }
         ]
       },
       {
-        "type": "Trasformazione",
+        "type": "Comprensione",
         "fmt": "buco",
-        "instr": "Unisci le due azioni: scegli la costruzione corretta.",
+        "instr": "Leggi la frase e scegli l'affermazione vera.",
         "items": [
           {
-            "q": "Vuoi ordinare, ma prima devi guardare il menù.",
+            "q": "«Ho staccato la spina prima che l'aggiornamento arrivasse in fondo.»",
             "options": [
-              "Prima di ordinare, guarda il menù.",
-              "Prima che il cameriere ordini, guarda il menù.",
-              "Prima di che ordini, guarda il menù."
+              "L'aggiornamento non si è concluso.",
+              "L'aggiornamento era già finito.",
+              "L'aggiornamento è andato a buon fine lo stesso."
             ],
             "answer": 0
           },
           {
-            "q": "Voglio andare via prima della fine del concerto.",
+            "q": "«Marco ha riattaccato prima di sentire la risposta.»",
             "options": [
-              "Vado via prima che il concerto finisca.",
-              "Vado via prima che il concerto finisce.",
-              "Vado via prima di il concerto finisce."
+              "Marco non conosce la risposta.",
+              "Marco ha sentito la risposta e poi ha riattaccato.",
+              "Marco ha richiamato per farsi dare la risposta."
             ],
             "answer": 0
           },
           {
-            "q": "Vogliamo preparare la cena prima del ritorno degli amici.",
+            "q": "«Il sindaco ha inaugurato la piscina prima che i lavori fossero terminati.»",
             "options": [
-              "Prepariamo la cena prima che tornino.",
-              "Prepariamo la cena prima che tornano.",
-              "Prepariamo la cena prima di tornano."
+              "Al momento dell'inaugurazione i lavori erano ancora in corso.",
+              "I lavori erano terminati da poco.",
+              "I lavori non sono mai stati terminati."
             ],
             "answer": 0
           },
           {
-            "q": "Lei deve controllare il conto prima di pagare.",
+            "q": "«Ti avviso prima che scada l'abbonamento.»",
             "options": [
-              "Prima di pagare, controlli il conto.",
-              "Prima che il cameriere paghi, controlli il conto.",
-              "Prima di che paghi, controlli il conto."
+              "L'abbonamento non è ancora scaduto.",
+              "L'abbonamento è già scaduto.",
+              "L'avviso arriverà dopo la scadenza."
             ],
             "answer": 0
           },
           {
-            "q": "Abbiamo finito il lavoro e poi abbiamo festeggiato.",
+            "q": "«Chiudi tu il gas prima che esca tua sorella.»",
             "options": [
-              "Dopo che abbiamo finito il lavoro, abbiamo festeggiato.",
-              "Dopo che avessimo finito il lavoro, abbiamo festeggiato.",
-              "Dopo di finire il lavoro, abbiamo festeggiato."
+              "A uscire sarà tua sorella.",
+              "Uscirete tutti e due insieme.",
+              "A uscire sarai tu."
             ],
             "answer": 0
           },
           {
-            "q": "Voglio comprare i popcorn prima dell’inizio del film.",
+            "q": "«Il treno è ripartito prima che salissero tutti.»",
             "options": [
-              "Compro i popcorn prima che il film cominci.",
-              "Compro i popcorn prima che il film comincia.",
-              "Compro i popcorn prima di il film comincia."
+              "Qualcuno è rimasto a terra.",
+              "Sono saliti tutti e poi il treno è ripartito.",
+              "Nessuno è riuscito a salire."
             ],
             "answer": 0
           }
@@ -11514,159 +11504,159 @@ const TEST_STRUCTURES = [
         "fmt": "fill",
         "instr": "Completa il congiuntivo trapassato con la forma corretta dell'ausiliare.",
         "items": [
-          {
-            "q": "Benché ___ studiato il caso, non trovò la causa. (avere)",
-            "a": "avesse",
-            "no": [
-              "aveva",
-              "abbia",
-              "avessi"
-            ]
-          },
-          {
-            "q": "Sebbene ___ arrivati in anticipo, non trovarono posto. (essere)",
-            "a": "fossero",
-            "no": [
-              "erano",
-              "siano",
-              "fosse"
-            ]
-          },
-          {
-            "q": "Nonostante ___ ripetuto l'esperimento, il dato non tornò. (avere)",
-            "a": "avesse",
-            "no": [
-              "aveva",
-              "abbia",
-              "avessi"
-            ]
-          },
-          {
-            "q": "Prima che ___ pubblicato lo studio, la notizia circolava già. (essere)",
-            "a": "fosse",
-            "no": [
-              "era",
-              "sia",
-              "fossi"
-            ]
-          },
-          {
-            "q": "Sebbene ___ verificato tutto, restava un dubbio. (avere)",
-            "a": "avessero",
-            "no": [
-              "avevano",
-              "abbiano",
-              "avesse"
-            ]
-          },
-          {
-            "q": "Sebbene tu ___ avvisato tutti, nessuno reagì. (avere)",
-            "a": "avessi",
-            "no": [
-              "avevi",
-              "abbia",
-              "avesse"
-            ]
-          }
-        ]
+  {
+    "q": "Benché la segreteria ___ avvisato tutti con una settimana di anticipo, alla riunione non venne nessuno. (avere)",
+    "a": "avesse",
+    "no": [
+      "aveva",
+      "abbia",
+      "avessi"
+    ]
+  },
+  {
+    "q": "Sebbene i ragazzi ___ partiti all'alba, arrivarono al rifugio dopo il tramonto. (essere)",
+    "a": "fossero",
+    "no": [
+      "erano",
+      "siano",
+      "fosse"
+    ]
+  },
+  {
+    "q": "Nonostante i tecnici ___ arrivati puntuali, l'impianto restò fermo fino a sera. (essere)",
+    "a": "fossero",
+    "no": [
+      "erano",
+      "siano",
+      "fosse"
+    ]
+  },
+  {
+    "q": "Prima che il bando ___ pubblicato, la voce girava già in tutto il paese. (essere)",
+    "a": "fosse",
+    "no": [
+      "era",
+      "sia",
+      "fossi"
+    ]
+  },
+  {
+    "q": "Malgrado noi ___ prenotato con mesi di anticipo, ci diedero una stanza sul retro. (avere)",
+    "a": "avessimo",
+    "no": [
+      "avevamo",
+      "abbiamo",
+      "avesse"
+    ]
+  },
+  {
+    "q": "La partita finì senza che nessuno ___ segnato. (avere)",
+    "a": "avesse",
+    "no": [
+      "aveva",
+      "abbia",
+      "avessero"
+    ]
+  }
+]
+      },
+      {
+        "type": "Riempimento",
+        "fmt": "buco",
+        "instr": "Scegli il tempo del congiuntivo richiesto dal rapporto fra i due fatti.",
+        "items": [
+  {
+    "q": "Benché ___ la password la settimana prima, non riusciva più a entrare nel portale.",
+    "options": [
+      "avesse cambiato",
+      "cambiasse",
+      "abbia cambiato"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Benché ___ poco il tedesco, in quel viaggio se la cavò benissimo.",
+    "options": [
+      "conoscesse",
+      "avesse conosciuto",
+      "conosca"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Sebbene il pacco ___ due giorni prima, nessuno se n'era accorto.",
+    "options": [
+      "fosse arrivato",
+      "arrivasse",
+      "sia arrivato"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Nonostante ___ ogni sera fino a tardi, quell'anno non superò l'esame.",
+    "options": [
+      "studiasse",
+      "avesse studiato",
+      "studi"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Era strano che il negozio ___ tutto il magazzino già prima dei saldi.",
+    "options": [
+      "avesse svenduto",
+      "svendesse",
+      "abbia svenduto"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Non capivo perché la pratica ___ respinta senza nemmeno una spiegazione.",
+    "options": [
+      "fosse stata",
+      "fosse",
+      "sia stata"
+    ],
+    "answer": 0
+  }
+]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
-          {
-            "q": "Benché aveva controllato i dati, sbagliò il calcolo.",
-            "wrong": "aveva",
-            "fix": "avesse"
-          },
-          {
-            "q": "Sebbene erano usciti prima, persero il treno.",
-            "wrong": "erano",
-            "fix": "fossero"
-          },
-          {
-            "q": "Nonostante aveva firmato, cambiò idea.",
-            "wrong": "aveva",
-            "fix": "avesse"
-          },
-          {
-            "q": "Prima che era finito il congresso, se ne andò.",
-            "wrong": "era",
-            "fix": "fosse"
-          },
-          {
-            "q": "Sebbene avevano insistito, non ottennero nulla.",
-            "wrong": "avevano",
-            "fix": "avessero"
-          },
-          {
-            "q": "Sebbene tu avevi promesso di aiutarmi, non l'hai fatto.",
-            "wrong": "avevi",
-            "fix": "avessi"
-          }
-        ]
-      },
-      {
-        "type": "Trasformazione",
-        "fmt": "buco",
-        "instr": "Unisci le due frasi usando la parola tra parentesi.",
-        "items": [
-          {
-            "q": "Aveva ripetuto la prova. Il risultato non cambiò. (benché)",
-            "options": [
-              "Benché avesse ripetuto la prova, il risultato non cambiò.",
-              "Benché aveva ripetuto la prova, il risultato non cambiò.",
-              "Benché abbia ripetuto la prova, il risultato non cambiò."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Erano partiti presto. Arrivarono in ritardo. (sebbene)",
-            "options": [
-              "Sebbene fossero partiti presto, arrivarono in ritardo.",
-              "Sebbene erano partiti presto, arrivarono in ritardo.",
-              "Sebbene siano partiti presto, arrivarono in ritardo."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Aveva letto tutto. Non ricordava nulla. (nonostante)",
-            "options": [
-              "Nonostante avesse letto tutto, non ricordava nulla.",
-              "Nonostante aveva letto tutto, non ricordava nulla.",
-              "Nonostante abbia letto tutto, non ricordava nulla."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Avevano promesso aiuto. Nessuno intervenne. (sebbene)",
-            "options": [
-              "Sebbene avessero promesso aiuto, nessuno intervenne.",
-              "Sebbene avevano promesso aiuto, nessuno intervenne.",
-              "Sebbene abbiano promesso aiuto, nessuno intervenne."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Si era preparata a lungo. Non superò la prova. (benché)",
-            "options": [
-              "Benché si fosse preparata a lungo, non superò la prova.",
-              "Benché si era preparata a lungo, non superò la prova.",
-              "Benché si sia preparata a lungo, non superò la prova."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Lo studio era stato pubblicato. Nessuno lo lesse. (nonostante)",
-            "options": [
-              "Nonostante lo studio fosse stato pubblicato, nessuno lo lesse.",
-              "Nonostante lo studio era stato pubblicato, nessuno lo lesse.",
-              "Nonostante lo studio sia stato pubblicato, nessuno lo lesse."
-            ],
-            "answer": 0
-          }
-        ]
+  {
+    "q": "Sembrava strano che nessuno si era accorto della perdita in cantina.",
+    "wrong": "era",
+    "fix": "fosse"
+  },
+  {
+    "q": "La riunione si chiuse senza che nessuno aveva sollevato obiezioni.",
+    "wrong": "aveva",
+    "fix": "avesse"
+  },
+  {
+    "q": "Non capivo come avevano fatto a finire tutto in una sola giornata.",
+    "wrong": "avevano",
+    "fix": "avessero"
+  },
+  {
+    "q": "Riuscimmo a entrare nel cortile prima che il portone veniva chiuso.",
+    "wrong": "veniva",
+    "fix": "venisse"
+  },
+  {
+    "q": "Mi dispiacque che i colleghi non erano stati avvisati del cambio di orario.",
+    "wrong": "erano",
+    "fix": "fossero"
+  },
+  {
+    "q": "Trovai assurdo che nessuno aveva controllato le uscite di sicurezza.",
+    "wrong": "aveva",
+    "fix": "avesse"
+  }
+]
       }
     ],
     "diag": true
@@ -11679,61 +11669,61 @@ const TEST_STRUCTURES = [
     "title": "I tre costrutti passivi: venire, andare e si passivante",
     "exercises": [
       {
-        "type": "Riempimento",
+        "type": "Comprensione",
         "fmt": "buco",
-        "instr": "Scegli il costrutto passivo adatto al contesto.",
+        "instr": "Leggi la frase e scegli l’affermazione vera.",
         "items": [
           {
-            "q": "Il modulo ___ compilato in ogni sua parte. (obbligo)",
+            "q": "«La domanda va firmata anche sul retro.»",
             "options": [
-              "va",
-              "viene",
-              "si"
+              "Chi la presenta è tenuto a firmarla anche sul retro.",
+              "In quel momento qualcuno la sta firmando sul retro.",
+              "Di solito la gente la firma anche sul retro."
             ],
             "answer": 0
           },
           {
-            "q": "La cerimonia ___ celebrata ogni anno a giugno. (azione)",
+            "q": "«La sala viene pulita ogni sera dopo la chiusura.»",
             "options": [
-              "viene",
-              "va",
-              "si"
+              "Qualcuno la pulisce ogni sera.",
+              "Qualcuno è tenuto a pulirla ogni sera.",
+              "La sala si trova pulita ogni sera."
             ],
             "answer": 0
           },
           {
-            "q": "In queste zone ___ ancora il dialetto. (consuetudine)",
+            "q": "«In questo quartiere si cena tardi.»",
             "options": [
-              "si parla",
-              "viene parlato",
-              "va parlato"
+              "È l’abitudine di chi abita lì.",
+              "C’è una regola che impone di cenare tardi.",
+              "Una persona in particolare cena tardi."
             ],
             "answer": 0
           },
           {
-            "q": "Le domande ___ presentate entro venerdì. (obbligo)",
+            "q": "«I biglietti venivano staccati all’ingresso.»",
             "options": [
-              "vanno",
-              "vengono",
-              "si presentano"
+              "Qualcuno li staccava all’ingresso.",
+              "Era obbligatorio staccarli all’ingresso.",
+              "I biglietti si trovavano già staccati."
             ],
             "answer": 0
           },
           {
-            "q": "Il premio ___ consegnato dal sindaco. (azione)",
+            "q": "«I resi vanno effettuati entro quattordici giorni.»",
             "options": [
-              "viene",
-              "va",
-              "si"
+              "Chi vuole restituire deve farlo entro quattordici giorni.",
+              "Di solito i resi si fanno entro quattordici giorni.",
+              "In questo momento qualcuno sta effettuando i resi."
             ],
             "answer": 0
           },
           {
-            "q": "Da noi ___ piatti tradizionali ogni domenica. (consuetudine)",
+            "q": "«Da queste parti si comprano ancora le uova dal contadino.»",
             "options": [
-              "si preparano",
-              "vengono preparati",
-              "vanno preparati"
+              "È quello che fa abitualmente la gente del posto.",
+              "È quello che la gente del posto è obbligata a fare.",
+              "È quello che sta facendo adesso una persona del posto."
             ],
             "answer": 0
           }
@@ -11742,98 +11732,98 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
-            "q": "La ricetta va tramandato di generazione in generazione.",
-            "wrong": "tramandato",
-            "fix": "tramandata"
+            "q": "Quando si è stanco non si ragiona bene.",
+            "wrong": "stanco",
+            "fix": "stanchi"
           },
           {
-            "q": "I costumi viene indossati durante la sfilata.",
-            "wrong": "viene",
-            "fix": "vengono"
+            "q": "A quell’età si è molto più ottimista di adesso.",
+            "wrong": "ottimista",
+            "fix": "ottimisti"
           },
           {
-            "q": "Nel borgo si racconta molte leggende.",
-            "wrong": "racconta",
-            "fix": "raccontano"
+            "q": "Dopo un viaggio così lungo si arriva sempre distrutto.",
+            "wrong": "distrutto",
+            "fix": "distrutti"
           },
           {
-            "q": "Le foto di famiglia va custodite con cura.",
-            "wrong": "va",
-            "fix": "vanno"
+            "q": "Quando si è ospite in casa d’altri conviene non insistere.",
+            "wrong": "ospite",
+            "fix": "ospiti"
           },
           {
-            "q": "La processione vengono aperta dal parroco.",
-            "wrong": "vengono",
-            "fix": "viene"
+            "q": "Quell’anno si è partito con due settimane di ritardo.",
+            "wrong": "partito",
+            "fix": "partiti"
           },
           {
-            "q": "Questi riti va celebrati in primavera.",
-            "wrong": "va",
-            "fix": "vanno"
+            "q": "Non si è mai stato così vicini a un accordo.",
+            "wrong": "stato",
+            "fix": "stati"
           }
         ]
       },
       {
-        "type": "Trasformazione",
-        "fmt": "buco",
-        "instr": "Scegli il costrutto che rende il senso indicato.",
+        "type": "Riempimento",
+        "fmt": "fill",
+        "instr": "Completa con il tempo composto del verbo indicato.",
         "items": [
           {
-            "q": "Bisogna consegnare la relazione entro lunedì. (obbligo)",
-            "options": [
-              "La relazione va consegnata entro lunedì.",
-              "La relazione viene consegnata entro lunedì.",
-              "La relazione si consegna entro lunedì."
-            ],
-            "answer": 0
+            "q": "In quegli anni si ___ moltissimo e si guadagnava poco. (lavorare)",
+            "a": "è lavorato",
+            "no": [
+              "sono lavorati",
+              "è lavorata",
+              "ha lavorato"
+            ]
           },
           {
-            "q": "Il direttore apre la mostra ogni anno. (azione)",
-            "options": [
-              "La mostra viene aperta dal direttore ogni anno.",
-              "La mostra va aperta dal direttore ogni anno.",
-              "La mostra si apre ogni anno."
-            ],
-            "answer": 0
+            "q": "Le prime copie si ___ in meno di una settimana. (esaurire)",
+            "a": "sono esaurite",
+            "no": [
+              "è esaurito",
+              "sono esauriti",
+              "hanno esaurito"
+            ]
           },
           {
-            "q": "Da queste parti la gente mangia il pesce il venerdì. (consuetudine)",
-            "options": [
-              "Da queste parti si mangia il pesce il venerdì.",
-              "Da queste parti viene mangiato il pesce.",
-              "Da queste parti va mangiato il pesce."
-            ],
-            "answer": 0
+            "q": "Alla fine i fascicoli si ___ tutti in due giorni. (esaminare)",
+            "a": "sono esaminati",
+            "no": [
+              "è esaminato",
+              "sono esaminate",
+              "hanno esaminato"
+            ]
           },
           {
-            "q": "Bisogna firmare i moduli in due copie. (obbligo)",
-            "options": [
-              "I moduli vanno firmati in due copie.",
-              "I moduli vengono firmati in due copie.",
-              "I moduli si firmano in due copie."
-            ],
-            "answer": 0
+            "q": "Quella sera si ___ fino a tardi, nonostante la pioggia. (ballare)",
+            "a": "è ballato",
+            "no": [
+              "sono ballati",
+              "è ballata",
+              "ha ballato"
+            ]
           },
           {
-            "q": "Una giuria assegna il premio ogni giugno. (azione)",
-            "options": [
-              "Il premio viene assegnato da una giuria ogni giugno.",
-              "Il premio va assegnato da una giuria ogni giugno.",
-              "Il premio si assegna ogni giugno."
-            ],
-            "answer": 0
+            "q": "Il guasto si ___ soltanto dopo tre giorni. (notare)",
+            "a": "è notato",
+            "no": [
+              "sono notati",
+              "è notata",
+              "ha notato"
+            ]
           },
           {
-            "q": "In questa regione la gente produce diversi tipi di olio. (consuetudine)",
-            "options": [
-              "In questa regione si produce molto olio.",
-              "In questa regione viene prodotto molto olio da tutti.",
-              "In questa regione va prodotto molto olio."
-            ],
-            "answer": 0
+            "q": "Quell’anno si ___ in vacanza soltanto a settembre. (andare)",
+            "a": "è andati",
+            "no": [
+              "è andato",
+              "sono andati",
+              "è andata"
+            ]
           }
         ]
       }
@@ -11845,160 +11835,160 @@ const TEST_STRUCTURES = [
     "exercises": [
       {
         "type": "Riempimento",
-        "fmt": "buco",
-        "instr": "Scegli la forma corretta (ipotesi sul passato → effetto sul presente).",
+        "fmt": "fill",
+        "instr": "Ipotesi sul passato, effetto sul presente. Completa con la forma corretta.",
         "items": [
           {
-            "q": "Se ___ di più da giovane, ora avrei più risparmi.",
-            "options": [
-              "avessi lavorato",
-              "lavoravo",
-              "avrei lavorato"
-            ],
-            "answer": 0
+            "q": "Se avessi accettato quel posto nel duemiladiciannove, ora ___ a Berlino da tre anni. (io – vivere)",
+            "a": "vivrei",
+            "no": [
+              "avrei vissuto",
+              "vivessi",
+              "vivevo"
+            ]
           },
           {
-            "q": "Se tu ___ i consigli, ora non saresti in difficoltà.",
-            "options": [
-              "avessi ascoltato",
-              "ascoltavi",
-              "avresti ascoltato"
-            ],
-            "answer": 0
+            "q": "Se ___ a studiare due anni fa, adesso parlerei già bene il tedesco. (io – cominciare)",
+            "a": "avessi cominciato",
+            "no": [
+              "cominciassi",
+              "avrei cominciato",
+              "cominciavo"
+            ]
           },
           {
-            "q": "Se non ___ quel treno, ora saremmo già a destinazione.",
-            "options": [
-              "avessimo perso",
-              "perdevamo",
-              "avremmo perso"
-            ],
-            "answer": 0
+            "q": "Se quella sera non ___ l’ultimo treno, adesso non saremmo bloccati qui. (noi – perdere)",
+            "a": "avessimo perso",
+            "no": [
+              "perdessimo",
+              "avremmo perso",
+              "perdevamo"
+            ]
           },
           {
-            "q": "Se fossi stato più attento, ora ___ meno problemi.",
-            "options": [
-              "avrei",
-              "avrò",
-              "avessi"
-            ],
-            "answer": 0
+            "q": "Se il tribunale avesse accolto il ricorso a marzo, oggi lei ___ ancora il suo posto. (avere)",
+            "a": "avrebbe",
+            "no": [
+              "avrebbe avuto",
+              "avesse",
+              "aveva"
+            ]
           },
           {
-            "q": "Se non ___ così tardi, ora non sarei stanco.",
-            "options": [
-              "fossi andato a letto",
-              "andavo a letto",
-              "sarei andato a letto"
-            ],
-            "answer": 0
+            "q": "Se non gli avessero tagliato i fondi nel duemilaventuno, quel reparto ___ ancora aperto. (essere)",
+            "a": "sarebbe",
+            "no": [
+              "sarebbe stato",
+              "fosse",
+              "era"
+            ]
           },
           {
-            "q": "Se Marco ___ la verità, ora ci fideremmo di lui.",
-            "options": [
-              "avesse detto",
-              "diceva",
-              "avrebbe detto"
-            ],
-            "answer": 0
+            "q": "Se ___ più attenzione al contratto allora, adesso non ci troveremmo in questa situazione. (tu – fare)",
+            "a": "avessi fatto",
+            "no": [
+              "facessi",
+              "avresti fatto",
+              "facevi"
+            ]
           }
         ]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola di troppo.",
         "items": [
           {
-            "q": "Se risparmiavo prima, ora comprerei la casa.",
-            "wrong": "risparmiavo",
-            "fix": "avessi risparmiato"
+            "q": "Se avessi dato retta al medico, adesso sarei stato molto più tranquillo.",
+            "wrong": "stato",
+            "fix": "(togliere)"
           },
           {
-            "q": "Se prendevamo l'aereo, ora saremmo in Italia.",
-            "wrong": "prendevamo",
-            "fix": "avessimo preso"
+            "q": "Adesso avremmo avuto una sede tutta nostra, se avessimo firmato allora.",
+            "wrong": "avuto",
+            "fix": "(togliere)"
           },
           {
-            "q": "Se fosse partito prima, oggi era a Roma.",
-            "wrong": "era",
-            "fix": "sarebbe"
+            "q": "Se avesse accettato quel trasferimento, adesso sarebbero stati tutti più sereni.",
+            "wrong": "stati",
+            "fix": "(togliere)"
           },
           {
-            "q": "Se avrei firmato ieri, oggi sarei tranquillo.",
-            "wrong": "avrei",
-            "fix": "avessi"
+            "q": "Ora avresti avuto un contratto stabile, se ti fossi iscritto in tempo.",
+            "wrong": "avuto",
+            "fix": "(togliere)"
           },
           {
-            "q": "Se avessimo insistito, ora avremo la risposta.",
-            "wrong": "avremo",
-            "fix": "avremmo"
+            "q": "Se avessero riparato il tetto in estate, adesso la palestra sarebbe stata agibile.",
+            "wrong": "stata",
+            "fix": "(togliere)"
           },
           {
-            "q": "Se Marta accettava l'offerta, ora lavorerebbe qui.",
-            "wrong": "accettava",
-            "fix": "avesse accettato"
+            "q": "Ora avrei avuto molte più possibilità, se avessi imparato il tedesco da ragazzo.",
+            "wrong": "avuto",
+            "fix": "(togliere)"
           }
         ]
       },
       {
-        "type": "Trasformazione",
-        "fmt": "buco",
-        "instr": "Costruisci il periodo ipotetico misto: scegli la versione corretta.",
+        "type": "Riempimento",
+        "fmt": "fill",
+        "instr": "Caratteristica permanente, conseguenza nel passato. Completa con la forma corretta.",
         "items": [
           {
-            "q": "Da ragazzo non facevo sport; oggi non sono in forma.",
-            "options": [
-              "Se avessi fatto sport da ragazzo, ora sarei in forma.",
-              "Se facevo sport da ragazzo, ora sarei in forma.",
-              "Se avrei fatto sport da ragazzo, ora fossi in forma."
-            ],
-            "answer": 0
+            "q": "Se ___ meno impulsivo, non avrei accettato la prima offerta. (io – essere)",
+            "a": "fossi",
+            "no": [
+              "fossi stato",
+              "sarei",
+              "ero"
+            ]
           },
           {
-            "q": "Non abbiamo comprato quella casa e oggi viviamo in affitto.",
-            "options": [
-              "Se avessimo comprato quella casa, oggi non vivremmo in affitto.",
-              "Se compravamo quella casa, oggi non vivremmo in affitto.",
-              "Se avremmo comprato quella casa, oggi non vivessimo in affitto."
-            ],
-            "answer": 0
+            "q": "Se tu fossi più paziente, ___ molto di più da quella trattativa. (tu – ottenere)",
+            "a": "avresti ottenuto",
+            "no": [
+              "otterresti",
+              "ottenessi",
+              "avessi ottenuto"
+            ]
           },
           {
-            "q": "Non ho accettato quel posto; oggi guadagno meno.",
-            "options": [
-              "Se avessi accettato quel posto, ora guadagnerei di più.",
-              "Se accettavo quel posto, ora guadagnerei di più.",
-              "Se avrei accettato quel posto, ora guadagnassi di più."
-            ],
-            "answer": 0
+            "q": "Se Marta ___ meno diffidente, avrebbe accettato l’invito senza pensarci. (essere)",
+            "a": "fosse",
+            "no": [
+              "fosse stata",
+              "sarebbe",
+              "era"
+            ]
           },
           {
-            "q": "Non sei venuto alla riunione; adesso non sai tutto.",
-            "options": [
-              "Se fossi venuto alla riunione, ora sapresti tutto.",
-              "Se venivi alla riunione, ora sapresti tutto.",
-              "Se saresti venuto alla riunione, ora sapessi tutto."
-            ],
-            "answer": 0
+            "q": "Se ___ più esperienza, non avremmo cambiato fornitore tre volte. (noi – avere)",
+            "a": "avessimo",
+            "no": [
+              "avessimo avuto",
+              "avremmo",
+              "avevamo"
+            ]
           },
           {
-            "q": "Non ha chiesto aiuto; adesso è nei guai.",
-            "options": [
-              "Se avesse chiesto aiuto, ora non sarebbe nei guai.",
-              "Se chiedeva aiuto, ora non sarebbe nei guai.",
-              "Se avrebbe chiesto aiuto, ora non fosse nei guai."
-            ],
-            "answer": 0
+            "q": "Se non fossi così pignolo, non ___ tutto tre volte. (io – rileggere)",
+            "a": "avrei riletto",
+            "no": [
+              "rileggerei",
+              "rileggessi",
+              "avessi riletto"
+            ]
           },
           {
-            "q": "Non ho dato retta al medico; adesso non sto bene.",
-            "options": [
-              "Se avessi dato retta al medico, ora starei bene.",
-              "Se davo retta al medico, ora starei bene.",
-              "Se avrei dato retta al medico, ora stessi bene."
-            ],
-            "answer": 0
+            "q": "Se mio fratello fosse più prudente, non ___ tutti i risparmi in quel progetto. (lui – investire)",
+            "a": "avrebbe investito",
+            "no": [
+              "investirebbe",
+              "investisse",
+              "avesse investito"
+            ]
           }
         ]
       }
@@ -12018,161 +12008,161 @@ const TEST_STRUCTURES = [
       {
         "type": "Riempimento",
         "fmt": "fill",
-        "instr": "Scrivi la forma corretta del verbo tra parentesi.",
+        "instr": "Scrivi il congiuntivo nel tempo richiesto dal verbo reggente.",
         "items": [
-          {
-            "q": "Ristrutturarono le case perché il quartiere ___ più attraente. (diventare)",
-            "a": "diventasse",
-            "no": [
-              "diventava",
-              "diventi",
-              "diventerebbe"
-            ]
-          },
-          {
-            "q": "Chiusero la strada affinché i pedoni ___ più al sicuro. (essere)",
-            "a": "fossero",
-            "no": [
-              "erano",
-              "siano",
-              "sarebbero"
-            ]
-          },
-          {
-            "q": "Costruirono il parco perché i bambini ___ giocare. (potere)",
-            "a": "potessero",
-            "no": [
-              "potevano",
-              "possano",
-              "potrebbero"
-            ]
-          },
-          {
-            "q": "Spostarono il mercato affinché il traffico ___. (diminuire)",
-            "a": "diminuisse",
-            "no": [
-              "diminuiva",
-              "diminuisca",
-              "diminuirebbe"
-            ]
-          },
-          {
-            "q": "Illuminarono le piazze affinché la gente si ___ più sicura. (sentirsi)",
-            "a": "sentisse",
-            "no": [
-              "sentiva",
-              "senta",
-              "sentirebbe"
-            ]
-          },
-          {
-            "q": "Piantarono alberi affinché l'aria ___ più pulita. (essere)",
-            "a": "fosse",
-            "no": [
-              "era",
-              "sia",
-              "sarebbe"
-            ]
-          }
-        ]
+  {
+    "q": "Il preside anticipa l'uscita affinché gli studenti ___ prendere l'autobus delle due. (potere)",
+    "a": "possano",
+    "no": [
+      "potessero",
+      "possono",
+      "potrebbero"
+    ]
+  },
+  {
+    "q": "L'anno scorso spostarono la partita perché i tifosi ospiti ___ arrivare in tempo. (riuscire)",
+    "a": "riuscissero",
+    "no": [
+      "riuscivano",
+      "riescano",
+      "riuscirebbero"
+    ]
+  },
+  {
+    "q": "La clinica aprì un secondo sportello al fine che le file ___ più corte. (essere)",
+    "a": "fossero",
+    "no": [
+      "erano",
+      "siano",
+      "sarebbero"
+    ]
+  },
+  {
+    "q": "Metteremo due lampioni nel vialetto in modo che gli ospiti ___ dove mettere i piedi. (vedere)",
+    "a": "vedano",
+    "no": [
+      "vedessero",
+      "vedono",
+      "vedrebbero"
+    ]
+  },
+  {
+    "q": "Ogni sera lascio la luce accesa perché mia figlia ___ la porta senza cercare l'interruttore. (trovare)",
+    "a": "trovi",
+    "no": [
+      "trovasse",
+      "trova",
+      "troverebbe"
+    ]
+  },
+  {
+    "q": "Il museo prolungò gli orari estivi in modo che anche i pendolari lo ___ dopo il lavoro. (visitare)",
+    "a": "visitassero",
+    "no": [
+      "visitavano",
+      "visitino",
+      "visiterebbero"
+    ]
+  }
+]
+      },
+      {
+        "type": "Riempimento",
+        "fmt": "buco",
+        "instr": "Scegli come introdurre lo scopo.",
+        "items": [
+  {
+    "q": "Ho lasciato la macchina fuori città ___ il parcheggio in centro.",
+    "options": [
+      "per non pagare",
+      "affinché non pagassi",
+      "perché non pagassi"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Hanno spostato la fermata ___ gli anziani facessero meno strada.",
+    "options": [
+      "affinché",
+      "per",
+      "allo scopo di"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Il tecnico ha lasciato le istruzioni sul tavolo ___ chiunque potesse riavviare il sistema.",
+    "options": [
+      "in modo che",
+      "per",
+      "allo scopo di"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Sono uscito mezz'ora prima ___ posto in prima fila.",
+    "options": [
+      "per trovare",
+      "affinché trovassi",
+      "in modo che trovassi"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "La scuola ha allungato il doposcuola ___ i genitori riuscissero a passare dopo il lavoro.",
+    "options": [
+      "al fine che",
+      "per",
+      "allo scopo di"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Abbiamo telefonato il giorno prima ___ il tavolo vicino alla finestra.",
+    "options": [
+      "per riservare",
+      "affinché riservassimo",
+      "al fine che riservassimo"
+    ],
+    "answer": 0
+  }
+]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
-          {
-            "q": "Rifecero le facciate affinché il quartiere sembrava più curato.",
-            "wrong": "sembrava",
-            "fix": "sembrasse"
-          },
-          {
-            "q": "Vietarono il transito affinché i bambini potevano giocare in sicurezza.",
-            "wrong": "potevano",
-            "fix": "potessero"
-          },
-          {
-            "q": "Aprirono un asilo affinché le famiglie restano in centro.",
-            "wrong": "restano",
-            "fix": "restassero"
-          },
-          {
-            "q": "Aumentarono i controlli affinché nessuno abusava degli spazi comuni.",
-            "wrong": "abusava",
-            "fix": "abusasse"
-          },
-          {
-            "q": "Sgomberarono l’area affinché i lavori possano iniziare subito.",
-            "wrong": "possano",
-            "fix": "potessero"
-          },
-          {
-            "q": "Interrarono i cavi affinché la piazza è più bella.",
-            "wrong": "è",
-            "fix": "fosse"
-          }
-        ]
-      },
-      {
-        "type": "Trasformazione",
-        "fmt": "buco",
-        "instr": "Unisci le due frasi scegliendo la versione corretta.",
-        "items": [
-          {
-            "q": "Aprirono un centro civico. Volevano che il quartiere si animasse.",
-            "options": [
-              "Aprirono un centro civico affinché il quartiere si animasse.",
-              "Aprirono un centro civico affinché il quartiere si anima.",
-              "Aprirono un centro civico affinché il quartiere si sarebbe animato."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Restaurarono il teatro. Volevano che i cittadini potessero usarlo.",
-            "options": [
-              "Restaurarono il teatro perché la città lo usasse.",
-              "Restaurarono il teatro perché la città lo usa.",
-              "Restaurarono il teatro perché la città lo userebbe."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Piantarono siepi. Volevano che il rumore diminuisse.",
-            "options": [
-              "Piantarono siepi affinché il rumore diminuisse.",
-              "Piantarono siepi affinché il rumore diminuisce.",
-              "Piantarono siepi affinché il rumore diminuirebbe."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Spostarono la fermata. Volevano che gli anziani facessero meno strada.",
-            "options": [
-              "Spostarono la fermata perché gli anziani facessero meno strada.",
-              "Spostarono la fermata perché gli anziani fanno meno strada.",
-              "Spostarono la fermata perché gli anziani farebbero meno strada."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Illuminarono i vicoli. Volevano che fossero più sicuri.",
-            "options": [
-              "Illuminarono i vicoli affinché fossero più sicuri.",
-              "Illuminarono i vicoli affinché sono più sicuri.",
-              "Illuminarono i vicoli affinché sarebbero più sicuri."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Comprarono l'area. Volevano che nessuno ci costruisse.",
-            "options": [
-              "Comprarono l'area perché nessuno ci costruisse.",
-              "Comprarono l'area perché nessuno ci costruisce.",
-              "Comprarono l'area perché nessuno ci costruirebbe."
-            ],
-            "answer": 0
-          }
-        ]
+  {
+    "q": "Hanno chiuso la strada cosicché i bambini potessero giocare in sicurezza.",
+    "wrong": "cosicché",
+    "fix": "affinché"
+  },
+  {
+    "q": "Hanno montato le tende affinché la sala non si scaldava troppo.",
+    "wrong": "scaldava",
+    "fix": "scaldasse"
+  },
+  {
+    "q": "In virtù del fatto che la strada fosse chiusa, il negozio perse metà dei clienti.",
+    "wrong": "fosse",
+    "fix": "era"
+  },
+  {
+    "q": "Il rumore aumentò tanto che gli inquilini si lamentassero con l'amministratore.",
+    "wrong": "lamentassero",
+    "fix": "lamentarono"
+  },
+  {
+    "q": "Abbiamo anticipato la partenza per il traffico fosse meno intenso.",
+    "wrong": "per",
+    "fix": "affinché"
+  },
+  {
+    "q": "Il servizio scuolabus fu soppresso, con il risultato che molte famiglie dovessero cambiare scuola.",
+    "wrong": "dovessero",
+    "fix": "dovettero"
+  }
+]
       }
     ]
   },
@@ -12184,61 +12174,61 @@ const TEST_STRUCTURES = [
     "title": "Il condizionale passato nell'ironia e nel rimprovero",
     "exercises": [
       {
-        "type": "Riempimento",
+        "type": "Comprensione",
         "fmt": "buco",
-        "instr": "Scegli la forma che esprime rimprovero o aspettativa delusa.",
+        "instr": "Leggi la frase e scegli l’affermazione vera.",
         "items": [
           {
-            "q": "___ almeno rispondere al messaggio, non credi?",
+            "q": "«Secondo le prime ricostruzioni, l’incendio sarebbe partito dal seminterrato.»",
             "options": [
-              "Avrebbe potuto",
-              "Può",
-              "Potrebbe"
+              "Chi scrive riferisce senza garantire che sia andata così.",
+              "Chi scrive afferma che è andata così.",
+              "Chi scrive esclude che sia andata così."
             ],
             "answer": 0
           },
           {
-            "q": "___ verificare le fonti prima di pubblicare.",
+            "q": "«Il filmato conferma che il portone è rimasto aperto tutta la notte.»",
             "options": [
-              "Avresti dovuto",
-              "Dovresti",
-              "Devi"
+              "Chi scrive dà il fatto per accertato.",
+              "Chi scrive riferisce una voce non verificata.",
+              "Chi scrive mette in dubbio il filmato."
             ],
             "answer": 0
           },
           {
-            "q": "Non ___ rovinare tutto meglio di così, bravo davvero.",
+            "q": "«Mi aveva assicurato che sarebbe passato in ufficio prima di mezzogiorno.»",
             "options": [
-              "avresti potuto",
-              "puoi",
-              "potrai"
+              "Si riferisce una promessa fatta per un momento successivo.",
+              "Si mette in dubbio che sia passato.",
+              "Si rimprovera qualcuno di non essere passato."
             ],
             "answer": 0
           },
           {
-            "q": "___ essere una riunione breve, ma siamo andati via a notte fonda.",
+            "q": "«Stando ai sindacati, l’azienda avrebbe già deciso i trasferimenti.»",
             "options": [
-              "Sarebbe dovuta",
-              "È",
-              "Sarà"
+              "La notizia circola ma chi scrive non la garantisce.",
+              "L’azienda ha deciso i trasferimenti, ed è certo.",
+              "L’azienda deciderà i trasferimenti più avanti."
             ],
             "answer": 0
           },
           {
-            "q": "___ ammettere l'errore, e invece ha incolpato gli altri.",
+            "q": "«Sapevo che non ce l’avrebbe fatta da solo.»",
             "options": [
-              "Avrebbe dovuto",
-              "Deve",
-              "Dovrebbe"
+              "Si riferisce una previsione fatta in passato.",
+              "Si riferisce una voce non confermata.",
+              "Si esprime un rimprovero verso di lui."
             ],
             "answer": 0
           },
           {
-            "q": "A giudicare dal curriculum, ___ il più esperto, ma ha commesso più errori di tutti.",
+            "q": "«I dati del comune provano che il consumo è calato del venti per cento.»",
             "options": [
-              "sarebbe dovuto essere",
-              "doveva essere",
-              "sarà stato"
+              "Chi scrive dà il calo per accertato.",
+              "Chi scrive riferisce un calo di cui non risponde.",
+              "Chi scrive prevede un calo futuro."
             ],
             "answer": 0
           }
@@ -12247,96 +12237,96 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
-            "q": "Almeno potresti chiamarmi ieri sera, invece niente.",
-            "wrong": "potresti",
-            "fix": "avresti potuto"
+            "q": "La perizia ha stabilito che l’auto sarebbe passata con il rosso all’incrocio poco dopo le nove.",
+            "wrong": "sarebbe",
+            "fix": "era"
           },
           {
-            "q": "Forse dovresti controllare i dati prima di inviarli, ormai è tardi.",
-            "wrong": "dovresti",
-            "fix": "avresti dovuto"
+            "q": "Le analisi hanno dimostrato che il metallo avrebbe superato il limite di legge.",
+            "wrong": "avrebbe",
+            "fix": "aveva"
           },
           {
-            "q": "Puoi prenotare il tavolo per tempo, ormai è tutto pieno.",
-            "wrong": "Puoi",
-            "fix": "Avresti potuto"
+            "q": "Il filmato conferma che il portone sarebbe rimasto aperto per tutta la notte fino alle sei del mattino.",
+            "wrong": "sarebbe",
+            "fix": "era"
           },
           {
-            "q": "A quel punto deve ammettere lo sbaglio, e invece tacque.",
-            "wrong": "deve",
-            "fix": "avrebbe dovuto"
+            "q": "Abbiamo verificato di persona che il contatore avrebbe segnato zero.",
+            "wrong": "avrebbe",
+            "fix": "aveva"
           },
           {
-            "q": "Il viaggio dovrebbe durare due ore, ma ne è durato cinque.",
-            "wrong": "dovrebbe",
-            "fix": "sarebbe dovuto"
+            "q": "La sentenza ha accertato che l’azienda avrebbe versato i contributi con quattro mesi di ritardo.",
+            "wrong": "avrebbe",
+            "fix": "aveva"
           },
           {
-            "q": "In teoria spetterebbe a loro decidere, e invece ho deciso io.",
-            "wrong": "spetterebbe",
-            "fix": "sarebbe spettato"
+            "q": "I dati del comune provano che il consumo sarebbe calato del venti per cento.",
+            "wrong": "sarebbe",
+            "fix": "era"
           }
         ]
       },
       {
-        "type": "Trasformazione",
+        "type": "Comprensione",
         "fmt": "buco",
-        "instr": "Esprimi il rimprovero, l'ironia o l'aspettativa delusa con il condizionale passato.",
+        "instr": "Che cosa sta facendo chi parla? Scegli l’affermazione vera.",
         "items": [
           {
-            "q": "Non ci ha avvisati. (rimprovero)",
+            "q": "«Avresti potuto avvisarmi che non venivi.»",
             "options": [
-              "Avrebbe potuto avvisarci.",
-              "Potrebbe avvisarci.",
-              "Può avvisarci."
+              "Rimprovera l’altro per non averlo fatto.",
+              "Chiede di essere avvisato la prossima volta.",
+              "Constata un fatto senza giudicarlo."
             ],
             "answer": 0
           },
           {
-            "q": "Non ci hai pensato prima. (rimprovero)",
+            "q": "«Sarebbe dovuta essere una gita di mezza giornata: siamo rientrati a mezzanotte.»",
             "options": [
-              "Avresti dovuto pensarci prima.",
-              "Dovresti pensarci prima.",
-              "Devi pensarci prima."
+              "Sottolinea il contrasto fra la previsione e come è andata.",
+              "Rimprovera chi ha organizzato la gita.",
+              "Dice che la gita non è mai avvenuta."
             ],
             "answer": 0
           },
           {
-            "q": "È arrivato con solo due ore di ritardo. (ironia)",
+            "q": "«Avrei voluto salutarti prima di partire, ma il volo era alle sei.»",
             "options": [
-              "Avrebbe potuto arrivare anche più tardi.",
-              "Potrebbe arrivare più tardi.",
-              "Può arrivare più tardi."
+              "Esprime un rammarico, senza accusare nessuno.",
+              "Rimprovera l’altro di non essersi fatto trovare.",
+              "Dice che alla fine non è partito."
             ],
             "answer": 0
           },
           {
-            "q": "Non ha chiesto scusa. (rimprovero)",
+            "q": "«Non avresti potuto scegliere un momento peggiore.»",
             "options": [
-              "Avrebbe dovuto chiedere scusa.",
-              "Dovrebbe chiedere scusa.",
-              "Deve chiedere scusa."
+              "Sta ironizzando: il momento è pessimo.",
+              "Dice che il momento scelto era buono.",
+              "Dice che non c’era altra scelta possibile."
             ],
             "answer": 0
           },
           {
-            "q": "Siamo finiti alle nove invece che alle sei. (aspettativa delusa)",
+            "q": "«Il “restauro lampo” sarebbe dovuto durare due settimane; siamo al quarto mese.»",
             "options": [
-              "Avremmo dovuto finire alle sei.",
-              "Dovremmo finire alle sei.",
-              "Dobbiamo finire alle sei."
+              "Usa il condizionale per ironizzare sulla durata.",
+              "Non sa quanto sia durato davvero il restauro.",
+              "Dice che il restauro non è mai cominciato."
             ],
             "answer": 0
           },
           {
-            "q": "La festa doveva essere una sorpresa, ma lo sapevano tutti. (ironia)",
+            "q": "«Avrebbe dovuto avvisarci lui, non toccava certo a noi.»",
             "options": [
-              "Sarebbe dovuta essere una sorpresa.",
-              "Sarebbe una sorpresa.",
-              "È una sorpresa."
+              "Rimprovera una terza persona.",
+              "Si assume la responsabilità di non aver avvisato.",
+              "Dice che nessuno era tenuto ad avvisare."
             ],
             "answer": 0
           }
@@ -12349,162 +12339,186 @@ const TEST_STRUCTURES = [
     "lez": [
       "C1 L24"
     ],
-    "title": "Le forme implicite",
+    "title": "Le forme implicite con i pronomi",
     "exercises": [
       {
-        "type": "Riempimento",
-        "fmt": "buco",
-        "instr": "Scegli la forma corretta.",
+        "type": "Trasformazione",
+        "fmt": "fill",
+        "instr": "Riscrivi con il gerundio semplice, attaccando il pronome.",
         "items": [
           {
-            "q": "___ il marchio, si riconosce l'origine del prodotto.",
-            "options": [
-              "Controllando",
-              "Controllato che",
-              "Controllare"
-            ],
-            "answer": 0
+            "q": "Quando lo rileggi con calma, ti accorgi subito dell’errore. → ___ con calma, ti accorgi subito dell’errore.",
+            "a": "Rileggendolo",
+            "no": [
+              "Lo rileggendo",
+              "Rileggendo lo",
+              "Avendolo riletto"
+            ]
           },
           {
-            "q": "Il produttore dichiara di ___ solo materie locali.",
-            "options": [
-              "usare",
-              "usando",
-              "uso"
-            ],
-            "answer": 0
+            "q": "Se ne parli con lei, capisci meglio la situazione. → ___ con lei, capisci meglio la situazione.",
+            "a": "Parlandone",
+            "no": [
+              "Ne parlando",
+              "Parlando ne",
+              "Avendone parlato"
+            ]
           },
           {
-            "q": "Sostiene di ___ ricevuto la certificazione.",
-            "options": [
-              "aver",
-              "avendo",
-              "avere stato"
-            ],
-            "answer": 0
+            "q": "Mentre li ascoltava, prendeva appunti. → ___, prendeva appunti.",
+            "a": "Ascoltandoli",
+            "no": [
+              "Li ascoltando",
+              "Ascoltando li",
+              "Avendoli ascoltati"
+            ]
           },
           {
-            "q": "___ analizzato il campione, hanno pubblicato i dati.",
-            "options": [
-              "Avendo",
-              "Avuto di",
-              "Avere"
-            ],
-            "answer": 0
+            "q": "Poiché mi fidavo di lui, non ho controllato niente. → ___ di lui, non ho controllato niente.",
+            "a": "Fidandomi",
+            "no": [
+              "Mi fidando",
+              "Fidando mi",
+              "Essendomi fidato"
+            ]
           },
           {
-            "q": "___ verificata la provenienza, il carico è partito.",
-            "options": [
-              "Una volta",
-              "Avendo di",
-              "Essere"
-            ],
-            "answer": 0
+            "q": "Quando la incontro per strada, cambio marciapiede. → ___ per strada, cambio marciapiede.",
+            "a": "Incontrandola",
+            "no": [
+              "La incontrando",
+              "Incontrando la",
+              "Avendola incontrata"
+            ]
           },
           {
-            "q": "Ammette di ___ trascurato un passaggio.",
-            "options": [
-              "aver",
-              "avendo",
-              "avere stato"
-            ],
-            "answer": 0
-          }
-        ]
-      },
-      {
-        "type": "Correzione",
-        "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [
-          {
-            "q": "Sostiene di avendo ispezionato il magazzino.",
-            "wrong": "avendo",
-            "fix": "aver"
-          },
-          {
-            "q": "Una volta ispezionando il carico, si emette il certificato.",
-            "wrong": "ispezionando",
-            "fix": "ispezionato"
-          },
-          {
-            "q": "Ritiene di essere commesso un errore.",
-            "wrong": "essere",
-            "fix": "aver"
-          },
-          {
-            "q": "Avendo di ispezionato i locali, hanno chiuso il caso.",
-            "wrong": "di",
-            "fix": "(togliere)"
-          },
-          {
-            "q": "Rispettato tutte le norme, il prodotto può ottenere il marchio.",
-            "wrong": "Rispettato",
-            "fix": "Rispettate"
-          },
-          {
-            "q": "Una volta ispezionando il magazzino, se ne andarono.",
-            "wrong": "ispezionando",
-            "fix": "ispezionato"
+            "q": "Se ci pensi bene, la soluzione è più semplice di così. → ___ bene, la soluzione è più semplice di così.",
+            "a": "Pensandoci",
+            "no": [
+              "Ci pensando",
+              "Pensando ci",
+              "Avendoci pensato"
+            ]
           }
         ]
       },
       {
         "type": "Trasformazione",
-        "fmt": "buco",
-        "instr": "Riscrivi la frase scegliendo la versione corretta.",
+        "fmt": "fill",
+        "instr": "Riscrivi con il gerundio composto, attaccando il pronome dove va.",
         "items": [
           {
-            "q": "Afferma che ha firmato il contratto. →",
+            "q": "Dopo che l’ho controllata, ho firmato la ricevuta. → ___, ho firmato la ricevuta.",
+            "a": "Avendola controllata",
+            "no": [
+              "Avendo controllatala",
+              "Avendo la controllata",
+              "La avendo controllata"
+            ]
+          },
+          {
+            "q": "Dopo che ne avevo parlato con lui, ho cambiato idea. → ___ con lui, ho cambiato idea.",
+            "a": "Avendone parlato",
+            "no": [
+              "Avendo parlatone",
+              "Avendo ne parlato",
+              "Ne avendo parlato"
+            ]
+          },
+          {
+            "q": "Poiché li avevo già visti la settimana prima, non sono entrato. → ___ la settimana prima, non sono entrato.",
+            "a": "Avendoli già visti",
+            "no": [
+              "Avendo già vistili",
+              "Avendo li già visti",
+              "Li avendo già visti"
+            ]
+          },
+          {
+            "q": "Dopo che mi ero alzato alle cinque, ero stanchissimo. → ___ alle cinque, ero stanchissimo.",
+            "a": "Essendomi alzato",
+            "no": [
+              "Essendo alzatomi",
+              "Essendo mi alzato",
+              "Mi essendo alzato"
+            ]
+          },
+          {
+            "q": "Poiché non ci aveva pensato prima, ha dovuto rifare tutto. → ___ prima, ha dovuto rifare tutto.",
+            "a": "Non avendoci pensato",
+            "no": [
+              "Non avendo pensatoci",
+              "Non avendo ci pensato",
+              "Non ci avendo pensato"
+            ]
+          },
+          {
+            "q": "Dopo che l’avevo perso una volta, sto molto più attento. → ___ una volta, sto molto più attento.",
+            "a": "Avendolo perso",
+            "no": [
+              "Avendo persolo",
+              "Avendo lo perso",
+              "Lo avendo perso"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Scelta",
+        "fmt": "buco",
+        "instr": "Scegli la versione corretta.",
+        "items": [
+          {
+            "q": "Dopo che l’ho aperta, la finestra non si è più chiusa. →",
             "options": [
-              "Afferma di aver firmato il contratto.",
-              "Afferma di avendo firmato il contratto.",
-              "Afferma di essere firmato il contratto."
+              "Avendola aperta, la finestra non si è più chiusa.",
+              "Avendo apertala, la finestra non si è più chiusa.",
+              "Avendo la aperta, la finestra non si è più chiusa."
             ],
             "answer": 0
           },
           {
-            "q": "Poiché aveva letto le clausole, rifiutò. →",
+            "q": "Mentre lo guardavo, mi sono ricordato di lui. →",
             "options": [
-              "Avendo letto le clausole, rifiutò.",
-              "Avendo di letto le clausole, rifiutò.",
-              "Letto che le clausole, rifiutò."
+              "Guardandolo, mi sono ricordato di lui.",
+              "Lo guardando, mi sono ricordato di lui.",
+              "Guardando lo, mi sono ricordato di lui."
             ],
             "answer": 0
           },
           {
-            "q": "Sostiene che ha rispettato i termini. →",
+            "q": "Poiché me ne ero accorto in tempo, ho evitato il peggio. →",
             "options": [
-              "Sostiene di aver rispettato i termini.",
-              "Sostiene di avendo rispettato i termini.",
-              "Sostiene di essere rispettato i termini."
+              "Essendomene accorto in tempo, ho evitato il peggio.",
+              "Essendo accortomene in tempo, ho evitato il peggio.",
+              "Mi essendone accorto in tempo, ho evitato il peggio."
             ],
             "answer": 0
           },
           {
-            "q": "Dopo che fu stipulato l'accordo, iniziarono i lavori. →",
+            "q": "Se gli scrivi adesso, forse fai in tempo. →",
             "options": [
-              "Stipulato l'accordo, iniziarono i lavori.",
-              "Stipulando l'accordo, iniziarono i lavori.",
-              "Stipulare l'accordo, iniziarono i lavori."
+              "Scrivendogli adesso, forse fai in tempo.",
+              "Gli scrivendo adesso, forse fai in tempo.",
+              "Scrivendo gli adesso, forse fai in tempo."
             ],
             "answer": 0
           },
           {
-            "q": "Mentre mescoli il sugo, aggiungi sale. →",
+            "q": "Dopo che ce lo avevano spiegato, tutto è sembrato semplice. →",
             "options": [
-              "Mescolando il sugo, aggiungi sale.",
-              "Mescolato il sugo, aggiungi sale.",
-              "Mescolare il sugo, aggiungi sale."
+              "Avendocelo spiegato, tutto è sembrato semplice.",
+              "Avendo spiegatocelo, tutto è sembrato semplice.",
+              "Ce lo avendo spiegato, tutto è sembrato semplice."
             ],
             "answer": 0
           },
           {
-            "q": "Poiché non aveva la licenza, sospese la vendita. →",
+            "q": "Mentre ci pensavo, ho perso la fermata. →",
             "options": [
-              "Non avendo la licenza, sospese la vendita.",
-              "Non avuto la licenza, sospese la vendita.",
-              "Non avere la licenza, sospese la vendita."
+              "Pensandoci, ho perso la fermata.",
+              "Ci pensando, ho perso la fermata.",
+              "Avendoci pensato, ho perso la fermata."
             ],
             "answer": 0
           }
@@ -12522,160 +12536,160 @@ const TEST_STRUCTURES = [
     "exercises": [
       {
         "type": "Riempimento",
-        "fmt": "buco",
-        "instr": "Scegli il condizionale adatto a presentare una percezione o una reazione ipotetica.",
+        "fmt": "fill",
+        "instr": "Completa con la forma corretta del verbo fra parentesi.",
         "items": [
           {
-            "q": "Un turista che conoscesse solo gli stereotipi ___ l'Italia come un paese uniforme.",
-            "options": [
-              "immaginerebbe",
-              "vede",
-              "vedesse"
-            ],
-            "answer": 0
+            "q": "Sembrerebbe che la consegna ___ stata rinviata a lunedì. (essere)",
+            "a": "sia",
+            "no": [
+              "è",
+              "fosse",
+              "sarebbe"
+            ]
           },
           {
-            "q": "Se cenasse per la prima volta alle dieci, Marta ___ sorpresa.",
-            "options": [
-              "rimarrebbe",
-              "rimane",
-              "rimanesse"
-            ],
-            "answer": 0
+            "q": "Si direbbe che nessuno ___ fretta di rispondere. (avere)",
+            "a": "abbia",
+            "no": [
+              "ha",
+              "avesse",
+              "avrebbe"
+            ]
           },
           {
-            "q": "Chi visitasse regioni diverse ___ quanto cambiano cucina e abitudini.",
-            "options": [
-              "noterebbe",
-              "nota",
-              "notasse"
-            ],
-            "answer": 0
+            "q": "Non mi aspetterei che ___ una proposta del genere. (loro – accettare)",
+            "a": "accettino",
+            "no": [
+              "accettano",
+              "accettassero",
+              "accetterebbero"
+            ]
           },
           {
-            "q": "Senza conoscere la cultura, qualcuno ___ male certi gesti italiani.",
-            "options": [
-              "potrebbe interpretare",
-              "interpreta",
-              "interpretasse"
-            ],
-            "answer": 0
+            "q": "Parrebbe che i lavori ___ più lentamente del previsto. (procedere)",
+            "a": "procedano",
+            "no": [
+              "procedono",
+              "procedessero",
+              "procederebbero"
+            ]
           },
           {
-            "q": "Dopo un’esperienza positiva, un visitatore ___ facilmente idea sul paese.",
-            "options": [
-              "cambierebbe",
-              "cambia",
-              "cambiasse"
-            ],
-            "answer": 0
+            "q": "Sembrerebbe che il nuovo orario non ___ a nessuno. (piacere)",
+            "a": "piaccia",
+            "no": [
+              "piace",
+              "piacesse",
+              "piacerebbe"
+            ]
           },
           {
-            "q": "Di fronte a un commento offensivo basato su uno stereotipo del proprio paese, un italiano all'estero ___ male.",
-            "options": [
-              "reagirebbe",
-              "reagisce",
-              "reagisse"
-            ],
-            "answer": 0
+            "q": "Non direi che questo ___ il momento migliore per chiedere un aumento. (essere)",
+            "a": "sia",
+            "no": [
+              "è",
+              "fosse",
+              "sarebbe"
+            ]
           }
         ]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
-            "q": "Se visitasse il paese solo in estate, Paolo pensa che il clima sia sempre mite.",
-            "wrong": "pensa",
-            "fix": "penserebbe"
+            "q": "A giudicare dai risultati, si direbbe che il metodo non funziona affatto.",
+            "wrong": "funziona",
+            "fix": "funzioni"
           },
           {
-            "q": "Se entrasse in un negozio durante la pausa pranzo, Anna trova strano che sia chiuso.",
-            "wrong": "trova",
-            "fix": "troverebbe"
+            "q": "Sembrerebbe che i tecnici hanno rinunciato a cercare il guasto.",
+            "wrong": "hanno",
+            "fix": "abbiano"
           },
           {
-            "q": "Chi parlasse con persone di età diverse scopre abitudini molto varie.",
-            "wrong": "scopre",
-            "fix": "scoprirebbe"
+            "q": "Parrebbe che nessuno vuole assumersi la responsabilità della decisione.",
+            "wrong": "vuole",
+            "fix": "voglia"
           },
           {
-            "q": "Senza aver mai visto una festa locale, qualcuno giudica eccessivi certi rituali.",
-            "wrong": "giudica",
-            "fix": "giudicherebbe"
+            "q": "Da come si comportano, non mi aspetterei che cambiano idea all’ultimo momento.",
+            "wrong": "cambiano",
+            "fix": "cambino"
           },
           {
-            "q": "Se Paul passasse un mese in Italia, modifica la sua opinione iniziale.",
-            "wrong": "modifica",
-            "fix": "modificherebbe"
+            "q": "Sembrerebbe che la linea telefonica è caduta di nuovo stanotte.",
+            "wrong": "è",
+            "fix": "sia"
           },
           {
-            "q": "Se sentisse una battuta sul proprio paese, Marco risponde con fastidio.",
-            "wrong": "risponde",
-            "fix": "risponderebbe"
+            "q": "Non direi che vale la pena insistere ancora.",
+            "wrong": "vale",
+            "fix": "valga"
           }
         ]
       },
       {
-        "type": "Trasformazione",
-        "fmt": "buco",
-        "instr": "Riformula la situazione come ipotesi usando il condizionale.",
+        "type": "Riempimento",
+        "fmt": "fill",
+        "instr": "Il condizionale è al passato. Completa con la forma corretta.",
         "items": [
           {
-            "q": "Una studentessa vede solo film ambientati in piccoli borghi e immagina un’Italia tutta tradizionale.",
-            "options": [
-              "Una studentessa che vedesse solo film ambientati in piccoli borghi immaginerebbe un’Italia tutta tradizionale.",
-              "Una studentessa che vede solo film ambientati in piccoli borghi immagina un’Italia tutta tradizionale.",
-              "Una studentessa che vedesse solo film ambientati in piccoli borghi immaginasse un’Italia tutta tradizionale."
-            ],
-            "answer": 0
+            "q": "Avrei pensato che l’ufficio ___ già da un’ora. (chiudere)",
+            "a": "avesse chiuso",
+            "no": [
+              "chiudesse",
+              "ha chiuso",
+              "chiuda"
+            ]
           },
           {
-            "q": "Un viaggiatore arriva in una città dove i negozi chiudono a pranzo e si stupisce.",
-            "options": [
-              "Un viaggiatore si stupirebbe trovando i negozi chiusi a pranzo.",
-              "Un viaggiatore si stupisce trovando i negozi chiusi a pranzo.",
-              "Un viaggiatore si stupisse trovando i negozi chiusi a pranzo."
-            ],
-            "answer": 0
+            "q": "Avrei giurato che il locale ___ prima delle undici. (chiudere)",
+            "a": "chiudesse",
+            "no": [
+              "chiude",
+              "avesse chiuso",
+              "chiuda"
+            ]
           },
           {
-            "q": "Una persona visita il nord e il sud e percepisce forti differenze.",
-            "options": [
-              "Una persona che visitasse il nord e il sud percepirebbe forti differenze.",
-              "Una persona che visita il nord e il sud percepisce forti differenze.",
-              "Una persona che visitasse il nord e il sud percepisse forti differenze."
-            ],
-            "answer": 0
+            "q": "Non avrei mai immaginato che ___ tanta gente. (esserci)",
+            "a": "ci fosse",
+            "no": [
+              "c’era",
+              "ci sia",
+              "ci fosse stata"
+            ]
           },
           {
-            "q": "Un turista non conosce le regole sociali locali e fraintende un comportamento.",
-            "options": [
-              "Un turista che non conoscesse le regole sociali locali potrebbe fraintendere un comportamento.",
-              "Un turista che non conosce le regole sociali locali fraintende un comportamento.",
-              "Un turista che non conoscesse le regole sociali locali fraintendesse un comportamento."
-            ],
-            "answer": 0
+            "q": "Avrei detto che la risposta ___ già la settimana scorsa. (arrivare)",
+            "a": "fosse arrivata",
+            "no": [
+              "arrivasse",
+              "è arrivata",
+              "sia arrivata"
+            ]
           },
           {
-            "q": "Dopo alcune settimane nel paese, un visitatore rivede molti pregiudizi.",
-            "options": [
-              "Dopo alcune settimane nel paese, un visitatore rivedrebbe molti pregiudizi.",
-              "Dopo alcune settimane nel paese, un visitatore rivede molti pregiudizi.",
-              "Dopo alcune settimane nel paese, un visitatore rivedesse molti pregiudizi."
-            ],
-            "answer": 0
+            "q": "Avrei scommesso che nessuno ___ la differenza. (notare)",
+            "a": "notasse",
+            "no": [
+              "nota",
+              "avesse notato",
+              "noti"
+            ]
           },
           {
-            "q": "Un italiano sente all’estero una generalizzazione sul proprio paese e protesta.",
-            "options": [
-              "Un italiano protesterebbe sentendo all’estero una generalizzazione sul proprio paese.",
-              "Un italiano protesta sentendo all’estero una generalizzazione sul proprio paese.",
-              "Un italiano protestasse sentendo all’estero una generalizzazione sul proprio paese."
-            ],
-            "answer": 0
+            "q": "Non avrei creduto che ___ prima di sera. (loro – finire)",
+            "a": "finissero",
+            "no": [
+              "finiscono",
+              "avessero finito",
+              "finiscano"
+            ]
           }
         ]
       }
