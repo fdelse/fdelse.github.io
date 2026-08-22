@@ -133,11 +133,12 @@
     </div>
     <div class="n-select">
       <label for="n">Domande per esercizio</label>
-      <select id="n" title="Ogni struttura ha 3 esercizi. Questo numero dice quante domande pescare da ciascuno: con 2 fanno 6 domande per struttura. Le domande sono estratte a caso da 6 disponibili, così due sessioni dello stesso test possono presentare combinazioni diverse.">
+      <select id="n" title="Ogni struttura ha 3 esercizi da 6 item. Questo numero dice quante domande pescare da ciascuno: con 2 fanno 6 domande per struttura. Le domande sono estratte a caso, così due sessioni dello stesso test non hanno le stesse frasi. Con «tutti i quesiti» l'estrazione non avviene: escono tutti e 6, ed è il modo per rileggere la banca dallo schermo dello studente.">
         <option value="1">1 — test rapido</option>
         <option value="2" selected>2 — equilibrato</option>
         <option value="3">3 — approfondito</option>
         <option value="4">4 — molto esteso</option>
+        <option value="6">6 — tutti i quesiti (per correggere)</option>
       </select>
     </div>
     </div>
@@ -202,7 +203,11 @@ LVL_ORDER.forEach(lvl => {
     const nota = s.stima ? ' · calcolato come ' + LVL_TAG[s.stima] : '';
     row.innerHTML =
       '<input type="checkbox" data-gi="' + gi + '" data-ex="' + exCount + '">' +
-      '<span class="num">' + (gi + 1) + '</span>' +
+      // Numero = indice interno della banca, non posizione nell'elenco: è lo
+      // stesso che compare nel campo «s=» del link e che usano dump.js e
+      // controlla.js. Prima qui c'era «gi + 1», e le due numerazioni sfasate
+      // di uno portavano a spuntare la struttura sbagliata.
+      '<span class="num">' + gi + '</span>' +
       '<span class="ttl">' + s.title + '</span>' +
       '<span class="exn">' + lez + nota + '</span>';
     section.appendChild(row);
