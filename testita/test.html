@@ -131,7 +131,7 @@ const LOCUZIONI = [
 
 const params = new URLSearchParams(location.search);
 const nRaw = parseInt(params.get('n') ?? '2');
-const nPick = Number.isFinite(nRaw) ? Math.max(1, Math.min(4, nRaw)) : 2; // il builder usa 1-4
+const nPick = Number.isFinite(nRaw) ? Math.max(1, Math.min(6, nRaw)) : 2; // il builder usa 1-4, più 6 = tutti i quesiti
 /* adatt=1 → arresto anticipato: il test si chiude quando un livello scende sotto
    la soglia. Lo attiva solo il preset «Test di posizionamento»: in un test di
    progresso servono sempre tutte le domande, altrimenti i punteggi di due
@@ -363,7 +363,15 @@ function renderItem(itemData, fmt, refId, posBersaglio){
     if (itemData.alt) box.dataset.alt = JSON.stringify(itemData.alt);
     // le parole si mescolano con lo stesso PRNG del test: col seed resta riproducibile
     const mescolate = pickRandom(itemData.sol.slice(), itemData.sol.length);
-    let html = '<div class="hint">' + (itemData.q || 'Clicca le parole nell\'ordine giusto:') + '</div>';
+    /* Il buco si allunga in fase di resa, non nella banca: nei dati la
+       convenzione resta «___» come in tutti gli altri formati. Tre trattini
+       in mezzo a una frase si leggono a fatica — sembrano un trattino lungo,
+       non uno spazio da riempire — e qui il vuoto va occupato da più parole,
+       quindi deve sembrare largo. Stesso criterio del formato «buco», che
+       già rende «___» come uno spazio più lungo. */
+    let html = '<div class="hint">' +
+      (itemData.q || 'Clicca le parole nell\'ordine giusto:').replace(/___+/g, '_________') +
+      '</div>';
     html += '<div class="composta" data-composta><span class="composta__vuota">…</span></div>';
     html += '<div class="parole-tray">';
     mescolate.forEach((p, i) => {
