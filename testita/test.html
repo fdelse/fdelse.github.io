@@ -970,14 +970,32 @@ function submitTest(){
   const livelliPresenti = LVL_SEQ.filter(l => perLvl[l]);
   const mostraLivelli = adattivo;
 
+  /* Generatore unico della riga di livello: la usano sia il riepilogo per
+     l'insegnante sia la vista dello studente, e devono dire la stessa cosa.
+     Prima divergevano: l'insegnante leggeva «A2: 8/12 (67%) — base», lo
+     studente «8/12 · 67%» e basta. Lo studente restava quindi con un verdetto
+     («B1 base», nel riquadro grande) di cui le righe sotto non spiegavano
+     l'origine. Tenere la riga in un posto solo è l'unico modo perché i due
+     lati non tornino a divergere alla prossima modifica. */
+  function rigaLivello(l){
+    const p = perLvl[l];
+    const pct = Math.round((p.ok / p.tot) * 100);
+    return {
+      tag: LVL_TAG[l],
+      dato: p.ok + '/' + p.tot + ' \u00b7 ' + pct + '%',
+      fascia: (p.tot >= MIN_ITEM_LIVELLO)
+              ? fasciaLivello(pct)
+              : 'domande insufficienti, non valutato'
+    };
+  }
+  const rigaLivelloTesto = l => {
+    const r = rigaLivello(l);
+    return r.tag + ': ' + r.dato + ' — ' + r.fascia;
+  };
+
   let lvlRows = [], lvlVerdict = '';
   if (mostraLivelli) {
-    lvlRows = LVL_SEQ.filter(l => perLvl[l]).map(l => {
-      const p = perLvl[l];
-      const pct = Math.round((p.ok / p.tot) * 100);
-      return LVL_TAG[l] + ': ' + p.ok + '/' + p.tot + ' (' + pct + '%) — ' +
-        (p.tot >= MIN_ITEM_LIVELLO ? fasciaLivello(pct) : 'domande insufficienti, non valutato');
-    });
+    lvlRows = LVL_SEQ.filter(l => perLvl[l]).map(rigaLivelloTesto);
     lvlVerdict = stima.verdetto;
   }
 
@@ -992,8 +1010,14 @@ function submitTest(){
     ' è sotto la soglia, i livelli successivi non sono stati proposti.\n' +
     '  (' + nonPoste + ' domande non poste, escluse dal punteggio)\n'
   : '') +
+/* Nel piazzamento il voto resta, ma dichiarato per quello che è: allo studente
+   non viene mostrato (lì il dato che conta è il livello) e non c'è nessuna
+   soglia da superare. Serve a chi legge il riepilogo come unico numero continuo
+   fra due verdetti uguali — due «B1 base» possono essere 5,4 e 6,9. */
 'VOTO: ' + votoTxt + ' / 10' +
-  (eProgresso ? '   → ' + (superato ? 'SUPERATO' : 'NON SUPERATO') + ' (soglia ' + SOGLIA_VOTO + ')' : '') + '\n' +
+  (eProgresso
+    ? '   → ' + (superato ? 'SUPERATO' : 'NON SUPERATO') + ' (soglia ' + SOGLIA_VOTO + ')'
+    : '   (dato grezzo, non mostrato allo studente: il verdetto è il livello)') + '\n' +
 'PUNTEGGIO: ' + score + '\n' +
 '  Corretti: ' + ok + '  \u00b7  Sbagliati: ' + sbagliati +
   (daVerif ? '  \u00b7  Da verificare: ' + daVerif : '') +
@@ -1070,9 +1094,9 @@ function submitTest(){
       (conDomande.length > 1 ? '14px' : '2px') + ';">' + score + '</p>' +
       (conDomande.length > 1
         ? conDomande.map(l => {
-            const p = perLvl[l];
-            const pct = Math.round((p.ok / p.tot) * 100);
-            return '<div class="summary-row"><span>domande di livello ' + LVL_TAG[l] + '</span><b>' + p.ok + '/' + p.tot + ' · ' + pct + '%</b></div>';
+            const r = rigaLivello(l);
+            return '<div class="summary-row"><span>domande di livello ' + r.tag +
+                   '</span><b>' + r.dato + ' — ' + r.fascia + '</b></div>';
           }).join('')
         : '') +
       '</div>';
