@@ -3078,7 +3078,7 @@ const TEST_STRUCTURES = [
         "instr": "Scegli la forma adatta alla situazione formale (Lei).",
         "items": [
           {
-            "q": "Signor Rossi, in che zona ___ a Roma?",
+            "q": "Signor Rossi, in che zona ___ a Milano?",
             "options": [
               "abita",
               "abiti",
@@ -3461,7 +3461,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Ragazzi, ___ prenotare prima perché il ristorante è sempre pieno.",
+            "q": "Ragazzi, ___ prenotare prima se non volete aspettare in piedi.",
             "options": [
               "dovete",
               "dobbiamo",
@@ -3532,7 +3532,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Ho fame e ___ una fetta di torta.",
+            "q": "Ho fame e ___ mangiare una fetta di torta.",
             "options": [
               "voglio",
               "devo",
@@ -4103,7 +4103,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Lavori alle otto e tu ___ presto ogni mattina?",
+            "q": "Lavori alle otto e ___ presto ogni mattina?",
             "options": [
               "ti svegli",
               "si svegli",
@@ -4901,7 +4901,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "8 sedie — 4 tavoli (più)",
+            "q": "8 sedie — 4 tavoli (più sedie)",
             "options": [
               "Ci sono più sedie che tavoli.",
               "Ci sono più sedie di tavoli.",
@@ -5006,7 +5006,7 @@ const TEST_STRUCTURES = [
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
         "items": [
           {
-            "q": "Il vino la compro io; i dolci li porta Marta.",
+            "q": "Il vino la compro io e i dolci li porta Marta.",
             "wrong": "la",
             "fix": "lo"
           },
@@ -5016,22 +5016,22 @@ const TEST_STRUCTURES = [
             "fix": "la"
           },
           {
-            "q": "I quaderni le porto io; i libri li lasci qui.",
+            "q": "I quaderni le porto io e i libri li lasci qui.",
             "wrong": "le",
             "fix": "li"
           },
           {
-            "q": "Le lettere le spedisco oggi; il pacco li mando domani.",
+            "q": "Le lettere le spedisco oggi e il pacco li mando domani.",
             "wrong": "li",
             "fix": "lo"
           },
           {
-            "q": "I colleghi le avviso subito; la segretaria la chiamo dopo.",
+            "q": "I colleghi le avviso subito e la segretaria la chiamo dopo.",
             "wrong": "le",
             "fix": "li"
           },
           {
-            "q": "Le mie cugine le vedo raramente; mio zio li chiamo spesso.",
+            "q": "Le mie cugine le vedo raramente e mio zio li chiamo spesso.",
             "wrong": "li",
             "fix": "lo"
           }
@@ -5159,7 +5159,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Il lavoro è quasi pronto e ti ___ un'ora per finirlo?",
+            "q": "Il lavoro è quasi pronto, ti ___ un’ora per finirlo?",
             "options": [
               "basta",
               "bastano",
@@ -5545,9 +5545,9 @@ const TEST_STRUCTURES = [
             "fix": "bisogna"
           },
           {
-            "q": "Per questa richiesta Bisogni rispondere entro venerdì mattina.",
-            "wrong": "Bisogni",
-            "fix": "Bisogna"
+            "q": "Per questa richiesta bisogni rispondere entro venerdì mattina.",
+            "wrong": "bisogni",
+            "fix": "bisogna"
           },
           {
             "q": "Bisogniamo ripassare tutta la lezione prima del test.",
@@ -5723,7 +5723,7 @@ const TEST_STRUCTURES = [
             "fix": "(togliere)"
           },
           {
-            "q": "In negozio potrei a provare la giacca?",
+            "q": "Potrei a provare la giacca in una taglia più grande?",
             "wrong": "a",
             "fix": "(togliere)"
           },
