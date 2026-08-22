@@ -192,7 +192,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "In aula ___ ragazze sono già qui.",
+            "q": "La maestra apre ___ finestre della classe.",
             "options": [
               "le",
               "i",
@@ -269,7 +269,7 @@ const TEST_STRUCTURES = [
             "fix": "lo"
           },
           {
-            "q": "A casa lo cane è in giardino.",
+            "q": "A casa lo gatto dorme tutto il giorno.",
             "wrong": "lo",
             "fix": "il"
           }
@@ -867,7 +867,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Marco e Paolo sono due amici ___.",
+            "q": "Marco e Paolo sono due ragazzi ___.",
             "options": [
               "simpatici",
               "simpatiche",
@@ -924,7 +924,7 @@ const TEST_STRUCTURES = [
             "fix": "rosso"
           },
           {
-            "q": "In cucina le sedie sono bianco.",
+            "q": "Le sedie della cucina sono bianco e molto comode.",
             "wrong": "bianco",
             "fix": "bianche"
           },
@@ -944,7 +944,7 @@ const TEST_STRUCTURES = [
             "fix": "nuove"
           },
           {
-            "q": "I ragazzi della squadra sono alto.",
+            "q": "I ragazzi della squadra sono alto quasi come me.",
             "wrong": "alto",
             "fix": "alti"
           }
@@ -1028,7 +1028,7 @@ const TEST_STRUCTURES = [
         "instr": "Scegli la coniugazione corretta al presente.",
         "items": [
           {
-            "q": "Mi chiamo Luca e ___ in centro, vicino alla stazione. (abitare)",
+            "q": "Mi chiamo Luca e ___ in centro, vicino alla stazione.",
             "options": [
               "abito",
               "abita",
@@ -1037,7 +1037,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Paolo, ___ una canzone per Anna? (cantare)",
+            "q": "Paolo, ___ una canzone per Anna?",
             "options": [
               "canti",
               "canta",
@@ -1046,7 +1046,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Marta ___ in banca dal lunedì al venerdì. (lavorare)",
+            "q": "Marta ___ in banca dal lunedì al venerdì.",
             "options": [
               "lavora",
               "lavori",
@@ -1055,7 +1055,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Io e Sara ___ italiano ogni giorno. (studiare)",
+            "q": "Io e Sara ___ italiano ogni giorno.",
             "options": [
               "studiamo",
               "studiate",
@@ -1064,7 +1064,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Ragazzi, ___ la pizza ogni venerdì sera? (mangiare)",
+            "q": "Ragazzi, ___ la pizza ogni venerdì sera?",
             "options": [
               "mangiate",
               "mangiamo",
@@ -1073,7 +1073,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Marco e Luca ___ a casa tardi ogni sera. (tornare)",
+            "q": "Marco e Luca ___ a casa tardi ogni sera.",
             "options": [
               "tornano",
               "torniamo",
@@ -1094,7 +1094,7 @@ const TEST_STRUCTURES = [
             "fix": "guardiamo"
           },
           {
-            "q": "A casa Anna cucinano la cena.",
+            "q": "Anna cucinano la cena a casa.",
             "wrong": "cucinano",
             "fix": "cucina"
           },
@@ -1215,7 +1215,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Ogni mattina Marco ___ una mail prima di iniziare il lavoro. (scrivere)",
+            "q": "Ogni mattina Marco ___ una mail prima di iniziare il lavoro.",
             "options": [
               "scrive",
               "scrivi",
@@ -1224,7 +1224,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Ogni mattina, a colazione, io e Sara ___ la radio. (accendere)",
+            "q": "Ogni mattina, a colazione, io e Sara ___ la radio.",
             "options": [
               "accendiamo",
               "accendete",
@@ -1233,7 +1233,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Ragazzi, ___ in centro o in periferia? (vivere)",
+            "q": "Ragazzi, ___ in centro o in periferia?",
             "options": [
               "vivete",
               "viviamo",
@@ -1242,7 +1242,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Quando entrano in classe, gli studenti ___ la borsa accanto alla sedia. (mettere)",
+            "q": "Quando entrano in classe, gli studenti ___ la borsa accanto alla sedia.",
             "options": [
               "mettono",
               "mettiamo",
@@ -1384,7 +1384,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "In aula Luca ___ la finestra ogni mattina. (aprire)",
+            "q": "In aula Luca ___ la finestra ogni mattina.",
             "options": [
               "apre",
               "aprisce",
@@ -1402,7 +1402,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Quando siete in vacanza, ___ fino a tardi la mattina? (dormire)",
+            "q": "Quando siete in vacanza, ___ fino a tardi la mattina?",
             "options": [
               "dormite",
               "dormisce",
@@ -1411,7 +1411,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Al bar Marco e Anna ___ una bibita fresca. (preferire)",
+            "q": "Al bar Marco e Anna ___ una bibita fresca.",
             "options": [
               "preferiscono",
               "preferono",
@@ -1633,7 +1633,7 @@ const TEST_STRUCTURES = [
         "instr": "Trasforma la frase: scegli la forma corretta.",
         "items": [
           {
-            "q": "Mi piace il gatto. → Mi ___ i gatti.",
+            "q": "Mi piace il gelato al limone. → Mi ___ i gelati al limone.",
             "options": [
               "piacciono",
               "piace",
@@ -1642,7 +1642,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Ti piacciono gli uccelli? → Ti ___ l'uccello?",
+            "q": "Non mi piacciono i fiori gialli. → Non mi ___ il fiore giallo.",
             "options": [
               "piace",
               "piacciono",
@@ -1651,16 +1651,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Non mi piace la pecora. → Non mi ___ le pecore.",
-            "options": [
-              "piacciono",
-              "piace",
-              "piaci"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Mi piacciono le mucche. → Mi ___ la mucca.",
+            "q": "Ti piacciono le canzoni italiane? → Ti ___ la canzone italiana?",
             "options": [
               "piace",
               "piacciono",
@@ -1669,7 +1660,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Ti piace il coniglio? → Ti ___ i conigli?",
+            "q": "Mi piace la foto di Roma. → Mi ___ le foto di Roma.",
             "options": [
               "piacciono",
               "piace",
@@ -1678,7 +1669,16 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Non mi piacciono i cavalli. → Non mi ___ il cavallo.",
+            "q": "Non mi piace il film lungo. → Non mi ___ i film lunghi.",
+            "options": [
+              "piacciono",
+              "piace",
+              "piaci"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Mi piacciono le città piccole. → Mi ___ la città piccola.",
             "options": [
               "piace",
               "piacciono",
@@ -2228,7 +2228,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Marta lavora lontano e ___ partire presto. (dovere)",
+            "q": "Marta lavora lontano e ___ partire presto.",
             "options": [
               "deve",
               "devi",
@@ -2237,7 +2237,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Il cameriere porta il conto e noi ___ pagare. (dovere)",
+            "q": "Il cameriere porta il conto e noi ___ pagare.",
             "options": [
               "dobbiamo",
               "dovete",
@@ -2246,7 +2246,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Ragazzi, il dottore non c'è ancora e ___ aspettare qui. (dovere)",
+            "q": "Ragazzi, il dottore non c'è ancora e ___ aspettare qui.",
             "options": [
               "dovete",
               "dobbiamo",
@@ -2255,7 +2255,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Marco e Sara hanno molto lavoro e ___ finire tutto oggi. (dovere)",
+            "q": "Marco e Sara hanno molto lavoro e ___ finire tutto oggi.",
             "options": [
               "devono",
               "dobbiamo",
@@ -2308,56 +2308,56 @@ const TEST_STRUCTURES = [
         "instr": "Scegli la forma corretta con il nuovo soggetto.",
         "items": [
           {
-            "q": "Io devo uscire. → Noi ___",
+            "q": "Io devo uscire. → Noi ___.",
             "options": [
-              "dobbiamo uscire.",
-              "dovete uscire.",
-              "devono uscire."
+              "dobbiamo uscire",
+              "dovete uscire",
+              "devono uscire"
             ],
             "answer": 0
           },
           {
-            "q": "Tu devi studiare. → Voi ___",
+            "q": "Tu devi studiare. → Voi ___.",
             "options": [
-              "dovete studiare.",
-              "dobbiamo studiare.",
-              "devono studiare."
+              "dovete studiare",
+              "dobbiamo studiare",
+              "devono studiare"
             ],
             "answer": 0
           },
           {
-            "q": "Lui deve lavorare. → Loro ___",
+            "q": "Lui deve lavorare. → Loro ___.",
             "options": [
-              "devono lavorare.",
-              "dobbiamo lavorare.",
-              "dovete lavorare."
+              "devono lavorare",
+              "dobbiamo lavorare",
+              "dovete lavorare"
             ],
             "answer": 0
           },
           {
-            "q": "Noi dobbiamo partire. → Io ___",
+            "q": "Noi dobbiamo partire. → Io ___.",
             "options": [
-              "devo partire.",
-              "deve partire.",
-              "devi partire."
+              "devo partire",
+              "deve partire",
+              "devi partire"
             ],
             "answer": 0
           },
           {
-            "q": "Voi dovete pagare. → Tu ___",
+            "q": "Voi dovete pagare. → Tu ___.",
             "options": [
-              "devi pagare.",
-              "deve pagare.",
-              "devo pagare."
+              "devi pagare",
+              "deve pagare",
+              "devo pagare"
             ],
             "answer": 0
           },
           {
-            "q": "Loro devono aspettare. → Lei ___",
+            "q": "Loro devono aspettare. → Lei ___.",
             "options": [
-              "deve aspettare.",
-              "devo aspettare.",
-              "devi aspettare."
+              "deve aspettare",
+              "devo aspettare",
+              "devi aspettare"
             ],
             "answer": 0
           }
@@ -2837,56 +2837,56 @@ const TEST_STRUCTURES = [
         "instr": "Riscrivi il piano futuro usando il presente: scegli la frase corretta.",
         "items": [
           {
-            "q": "Oggi parto per Roma. → Domani ___",
+            "q": "Oggi parto per Roma. → Domani ___.",
             "options": [
-              "parto per Roma.",
-              "parte per Roma.",
-              "partiamo per Roma."
+              "parto per Roma",
+              "parte per Roma",
+              "partiamo per Roma"
             ],
             "answer": 0
           },
           {
-            "q": "Oggi compriamo la macchina. → A giugno ___",
+            "q": "Oggi compriamo la macchina. → A giugno ___.",
             "options": [
-              "compriamo la macchina.",
-              "comprano la macchina.",
-              "compra la macchina."
+              "compriamo la macchina",
+              "comprano la macchina",
+              "compra la macchina"
             ],
             "answer": 0
           },
           {
-            "q": "Oggi partono per Milano. → In primavera ___",
+            "q": "Oggi partono per Milano. → In primavera ___.",
             "options": [
-              "partono per Milano.",
-              "parte per Milano.",
-              "partiamo per Milano."
+              "partono per Milano",
+              "parte per Milano",
+              "partiamo per Milano"
             ],
             "answer": 0
           },
           {
-            "q": "Oggi esci? → Stasera ___",
+            "q": "Oggi esci? → Stasera ___?",
             "options": [
-              "esci?",
-              "esce?",
-              "uscite?"
+              "esci",
+              "esce",
+              "uscite"
             ],
             "answer": 0
           },
           {
-            "q": "Oggi torna a casa. → A settembre ___",
+            "q": "Oggi torna a casa. → A settembre ___.",
             "options": [
-              "torna a casa.",
-              "tornano a casa.",
-              "torno a casa."
+              "torna a casa",
+              "tornano a casa",
+              "torno a casa"
             ],
             "answer": 0
           },
           {
-            "q": "Oggi studiate? → Domani ___",
+            "q": "Oggi studiate? → Domani ___?",
             "options": [
-              "studiate?",
-              "studiamo?",
-              "studiano?"
+              "studiate",
+              "studiamo",
+              "studiano"
             ],
             "answer": 0
           }
@@ -2936,7 +2936,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Bevo ___ il caffè.",
+            "q": "Bevo ___ il caffè. (una volta al mese)",
             "options": [
               "raramente",
               "spesso",
@@ -3078,7 +3078,7 @@ const TEST_STRUCTURES = [
         "instr": "Scegli la forma adatta alla situazione formale (Lei).",
         "items": [
           {
-            "q": "Signor Rossi, dove ___ a Roma?",
+            "q": "Signor Rossi, in che zona ___ a Roma?",
             "options": [
               "abita",
               "abiti",
@@ -3096,7 +3096,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Signor Bianchi, ___ inglese con i clienti stranieri? (parlare)",
+            "q": "Signor Bianchi, ___ inglese con i clienti stranieri?",
             "options": [
               "parla",
               "parli",
@@ -3105,7 +3105,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Signora, ___ a Roma da molto tempo? (vivere)",
+            "q": "Signora, ___ a Roma da molto tempo?",
             "options": [
               "vive",
               "vivi",
@@ -3114,7 +3114,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Ingegnere, ___ il treno ogni mattina? (prendere)",
+            "q": "Ingegnere, ___ il treno ogni mattina?",
             "options": [
               "prende",
               "prendi",
@@ -3123,7 +3123,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Dottoressa, ___ bene lo spagnolo? (capire)",
+            "q": "Dottoressa, ___ bene lo spagnolo?",
             "options": [
               "capisce",
               "capisci",
@@ -3136,7 +3136,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata o la parola di troppo in un contesto formale.",
         "items": [
           {
             "q": "Buonasera, signore, dove lavori?",
@@ -3144,9 +3144,9 @@ const TEST_STRUCTURES = [
             "fix": "lavora"
           },
           {
-            "q": "Signora, leggi questo libro?",
-            "wrong": "leggi",
-            "fix": "legge"
+            "q": "Signora, mi lasci il tuo numero di telefono.",
+            "wrong": "tuo",
+            "fix": "Suo"
           },
           {
             "q": "Professore, insegni anche il sabato?",
@@ -3154,9 +3154,9 @@ const TEST_STRUCTURES = [
             "fix": "insegna"
           },
           {
-            "q": "Dottoressa, prendi il caffè senza zucchero?",
-            "wrong": "prendi",
-            "fix": "prende"
+            "q": "Dottoressa, grazie per la ricetta che mi hai dato.",
+            "wrong": "hai",
+            "fix": "ha"
           },
           {
             "q": "Signor Rossi, scrivi molte mail?",
@@ -3164,9 +3164,9 @@ const TEST_STRUCTURES = [
             "fix": "scrive"
           },
           {
-            "q": "Ingegnere, parli inglese?",
-            "wrong": "parli",
-            "fix": "parla"
+            "q": "Ingegnere, posso offrirti un caffè?",
+            "wrong": "offrirti",
+            "fix": "offrirLe"
           }
         ]
       },
@@ -3312,7 +3312,7 @@ const TEST_STRUCTURES = [
             "fix": "al"
           },
           {
-            "q": "Dopo la visita esco dal studio.",
+            "q": "Dopo la visita esco dal studio medico.",
             "wrong": "dal",
             "fix": "dallo"
           },
@@ -3416,7 +3416,7 @@ const TEST_STRUCTURES = [
         "instr": "Scegli la forma corretta del modale.",
         "items": [
           {
-            "q": "Marco e Anna ___ venire alla festa? (potere)",
+            "q": "Marco e Anna ___ venire alla festa?",
             "options": [
               "possono",
               "può",
@@ -3425,7 +3425,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Vivo a Roma da poco e ___ imparare l'italiano. (volere)",
+            "q": "Vivo a Roma da poco e ___ imparare l'italiano.",
             "options": [
               "voglio",
               "vuole",
@@ -3434,7 +3434,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Luca, ___ portare questa scatola? (potere)",
+            "q": "Luca, ___ portare questa scatola?",
             "options": [
               "puoi",
               "può",
@@ -3443,7 +3443,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Io e Marco ___ finire il progetto entro domani. (dovere)",
+            "q": "Io e Marco ___ finire il progetto entro domani.",
             "options": [
               "dobbiamo",
               "dovete",
@@ -3452,7 +3452,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Luca ___ parlare con te perché ha una domanda importante. (volere)",
+            "q": "Luca ___ parlare con te perché ha una domanda importante.",
             "options": [
               "vuole",
               "voglio",
@@ -3461,7 +3461,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Ragazzi, ___ prenotare prima perché il ristorante è sempre pieno. (dovere)",
+            "q": "Ragazzi, ___ prenotare prima perché il ristorante è sempre pieno.",
             "options": [
               "dovete",
               "dobbiamo",
@@ -3602,7 +3602,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Stasera Marco ___ a cena da noi. (venire)",
+            "q": "Stasera Marco ___ a cena da noi.",
             "options": [
               "viene",
               "vengo",
@@ -3611,7 +3611,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Oggi io e Sara ___ a casa perché aspettiamo un pacco. (stare)",
+            "q": "Oggi io e Sara ___ a casa perché aspettiamo un pacco.",
             "options": [
               "stiamo",
               "sto",
@@ -3629,7 +3629,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Nel fine settimana Marco e Anna ___ spesso sport. (fare)",
+            "q": "Nel fine settimana Marco e Anna ___ spesso sport.",
             "options": [
               "fanno",
               "fate",
@@ -3763,7 +3763,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Prima di uscire abbiamo ___ la porta a chiave. (chiudere)",
+            "q": "Prima di uscire abbiamo ___ la porta a chiave.",
             "options": [
               "chiuso",
               "chiudato",
@@ -3772,7 +3772,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Hai ___ il libro per la lezione di domani? (leggere)",
+            "q": "Hai ___ il libro per la lezione di domani?",
             "options": [
               "letto",
               "leggiuto",
@@ -3790,7 +3790,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Sono in ritardo perché ho ___ una mail al capo. (scrivere)",
+            "q": "Sono in ritardo perché ho ___ una mail al capo.",
             "options": [
               "scritto",
               "scrivuto",
@@ -3799,7 +3799,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "È molto stanco perché ha ___ tutto il giorno. (lavorare)",
+            "q": "È molto stanco perché ha ___ tutto il giorno.",
             "options": [
               "lavorato",
               "lavorata",
@@ -3852,56 +3852,56 @@ const TEST_STRUCTURES = [
         "instr": "Riscrivi la frase al passato prossimo usando l'espressione di tempo indicata.",
         "items": [
           {
-            "q": "Oggi telefono a Sara. → Ieri ___",
+            "q": "Oggi telefono a Sara. → Ieri ___.",
             "options": [
-              "ho telefonato a Sara.",
-              "hai telefonato a Sara.",
-              "ha telefonato a Sara."
+              "ho telefonato a Sara",
+              "hai telefonato a Sara",
+              "ha telefonato a Sara"
             ],
             "answer": 0
           },
           {
-            "q": "Stamattina beviamo una spremuta. → Ieri mattina ___",
+            "q": "Stamattina beviamo una spremuta. → Ieri mattina ___.",
             "options": [
-              "abbiamo bevuto una spremuta.",
-              "avete bevuto una spremuta.",
-              "hanno bevuto una spremuta."
+              "abbiamo bevuto una spremuta",
+              "avete bevuto una spremuta",
+              "hanno bevuto una spremuta"
             ],
             "answer": 0
           },
           {
-            "q": "Adesso finisci il lavoro. → Un'ora fa ___",
+            "q": "Adesso finisci il lavoro. → Un'ora fa ___.",
             "options": [
-              "hai finito il lavoro.",
-              "ha finito il lavoro.",
-              "ho finito il lavoro."
+              "hai finito il lavoro",
+              "ha finito il lavoro",
+              "ho finito il lavoro"
             ],
             "answer": 0
           },
           {
-            "q": "Oggi guardano la partita. → Domenica scorsa ___",
+            "q": "Oggi guardano la partita. → Domenica scorsa ___.",
             "options": [
-              "hanno guardato la partita.",
-              "abbiamo guardato la partita.",
-              "avete guardato la partita."
+              "hanno guardato la partita",
+              "abbiamo guardato la partita",
+              "avete guardato la partita"
             ],
             "answer": 0
           },
           {
-            "q": "Ora prendiamo l'autobus. → Poco fa ___",
+            "q": "Ora prendiamo l'autobus. → Poco fa ___.",
             "options": [
-              "abbiamo preso l'autobus.",
-              "avete preso l'autobus.",
-              "hanno preso l'autobus."
+              "abbiamo preso l'autobus",
+              "avete preso l'autobus",
+              "hanno preso l'autobus"
             ],
             "answer": 0
           },
           {
-            "q": "Oggi ricevo un pacco. → Due giorni fa ___",
+            "q": "Oggi ricevo un pacco. → Due giorni fa ___.",
             "options": [
-              "ho ricevuto un pacco.",
-              "hai ricevuto un pacco.",
-              "ha ricevuto un pacco."
+              "ho ricevuto un pacco",
+              "hai ricevuto un pacco",
+              "ha ricevuto un pacco"
             ],
             "answer": 0
           }
@@ -3924,7 +3924,7 @@ const TEST_STRUCTURES = [
         "instr": "Scegli il participio con l'accordo giusto.",
         "items": [
           {
-            "q": "Per il weekend Maria è ___ a Roma con due amiche. (andare)",
+            "q": "Per il weekend Maria è ___ a Roma con due amiche.",
             "options": [
               "andata",
               "andato",
@@ -3933,7 +3933,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Ieri, dopo il concerto, i ragazzi sono ___ tardi. (arrivare)",
+            "q": "Ieri, dopo il concerto, i ragazzi sono ___ tardi.",
             "options": [
               "arrivati",
               "arrivate",
@@ -3942,7 +3942,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Le mie amiche sono ___ ieri per andare in vacanza. (partire)",
+            "q": "Le mie amiche sono ___ ieri per andare in vacanza.",
             "options": [
               "partite",
               "partiti",
@@ -3951,11 +3951,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Gli altri sono usciti. Marco è ___ in ufficio. (restare)",
+            "q": "Gli altri sono usciti. Marco è ___ in ufficio.",
             "options": [
-              "restato",
-              "restata",
-              "restati"
+              "rimasto",
+              "rimasta",
+              "rimasti"
             ],
             "answer": 0
           },
@@ -3969,7 +3969,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Ragazzi, siete ___ alla riunione ieri sera? (venire)",
+            "q": "Ragazzi, siete ___ alla riunione ieri sera?",
             "options": [
               "venuti",
               "venute",
@@ -4022,47 +4022,47 @@ const TEST_STRUCTURES = [
         "instr": "Scegli la forma corretta e accorda il participio con il nuovo soggetto.",
         "items": [
           {
-            "q": "Paolo è andato via. → Le ragazze ___",
+            "q": "Paolo è andato via. → Le ragazze ___.",
             "options": [
-              "sono andate via.",
-              "sono andati via.",
-              "sono andata via."
+              "sono andate via",
+              "sono andati via",
+              "sono andata via"
             ],
             "answer": 0
           },
           {
-            "q": "Anna è partita. → I miei fratelli ___",
+            "q": "Anna è partita. → I miei fratelli ___.",
             "options": [
-              "sono partiti.",
-              "sono partite.",
-              "sono partita."
+              "sono partiti",
+              "sono partite",
+              "sono partita"
             ],
             "answer": 0
           },
           {
-            "q": "I turisti sono arrivati. → La guida ___",
+            "q": "I turisti sono arrivati. → La guida ___.",
             "options": [
-              "è arrivata.",
-              "è arrivati.",
-              "sono arrivata."
+              "è arrivata",
+              "è arrivati",
+              "sono arrivata"
             ],
             "answer": 0
           },
           {
-            "q": "Luca è uscito presto. → Noi (ragazze) ___",
+            "q": "Luca è uscito presto. → Noi (ragazze) ___.",
             "options": [
-              "siamo uscite.",
-              "siamo usciti.",
-              "siamo uscita."
+              "siamo uscite",
+              "siamo usciti",
+              "siamo uscita"
             ],
             "answer": 0
           },
           {
-            "q": "I colleghi sono venuti. → Mia sorella ___",
+            "q": "I colleghi sono venuti. → Mia sorella ___.",
             "options": [
-              "è venuta.",
-              "è venuti.",
-              "sono venuta."
+              "è venuta",
+              "è venuti",
+              "sono venuta"
             ],
             "answer": 0
           },
@@ -4103,7 +4103,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Lavori alle otto e tu ___ presto ogni mattina? (svegliarsi)",
+            "q": "Lavori alle otto e tu ___ presto ogni mattina?",
             "options": [
               "ti svegli",
               "si svegli",
@@ -4112,7 +4112,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Prima di uscire per la festa lei ___ i capelli. (lavarsi)",
+            "q": "Prima di uscire per la festa lei ___ i capelli.",
             "options": [
               "si lava",
               "ti lava",
@@ -4121,7 +4121,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Siamo in ritardo e ___ in fretta. (vestirsi)",
+            "q": "Siamo in ritardo e ___ in fretta.",
             "options": [
               "ci vestiamo",
               "si vestiamo",
@@ -4130,7 +4130,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Prima della festa, tu e Luca ___ davanti allo specchio. (pettinarsi)",
+            "q": "Prima della festa, tu e Luca ___ davanti allo specchio.",
             "options": [
               "vi pettinate",
               "si pettinate",
@@ -4139,7 +4139,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Dopo il film i bambini ___ sul divano alle undici. (addormentarsi)",
+            "q": "Dopo il film i bambini ___ sul divano alle undici.",
             "options": [
               "si addormentano",
               "ci addormentano",
@@ -4160,7 +4160,7 @@ const TEST_STRUCTURES = [
             "fix": "mi"
           },
           {
-            "q": "La domenica, quando non lavori, tu si svegli tardi.",
+            "q": "La domenica, quando non lavori, si svegli tardi.",
             "wrong": "si",
             "fix": "ti"
           },
@@ -4192,56 +4192,56 @@ const TEST_STRUCTURES = [
         "instr": "Scegli il pronome riflessivo e la forma verbale corretti con il nuovo soggetto.",
         "items": [
           {
-            "q": "Io mi alzo presto. → Noi ___",
+            "q": "Io mi alzo presto. → Noi ___.",
             "options": [
-              "ci alziamo presto.",
-              "si alziamo presto.",
-              "ci alzano presto."
+              "ci alziamo presto",
+              "si alziamo presto",
+              "ci alzano presto"
             ],
             "answer": 0
           },
           {
-            "q": "Anna si veste in fretta. → Tu ___",
+            "q": "Anna si veste in fretta. → Tu ___.",
             "options": [
-              "ti vesti in fretta.",
-              "si vesti in fretta.",
-              "ti veste in fretta."
+              "ti vesti in fretta",
+              "si vesti in fretta",
+              "ti veste in fretta"
             ],
             "answer": 0
           },
           {
-            "q": "I bambini si lavano le mani. → Io ___",
+            "q": "I bambini si lavano le mani. → Io ___.",
             "options": [
-              "mi lavo le mani.",
-              "si lavo le mani.",
-              "mi lava le mani."
+              "mi lavo le mani",
+              "si lavo le mani",
+              "mi lava le mani"
             ],
             "answer": 0
           },
           {
-            "q": "Noi ci divertiamo molto. → Loro ___",
+            "q": "Noi ci divertiamo molto. → Loro ___.",
             "options": [
-              "si divertono molto.",
-              "ci divertono molto.",
-              "si divertiamo molto."
+              "si divertono molto",
+              "ci divertono molto",
+              "si divertiamo molto"
             ],
             "answer": 0
           },
           {
-            "q": "Tu ti riposi un’ora. → Voi ___",
+            "q": "Tu ti riposi un’ora. → Voi ___.",
             "options": [
-              "vi riposate un’ora.",
-              "si riposate un’ora.",
-              "vi riposa un’ora."
+              "vi riposate un’ora",
+              "si riposate un’ora",
+              "vi riposa un’ora"
             ],
             "answer": 0
           },
           {
-            "q": "Voi vi scusate. → Lei ___",
+            "q": "Voi vi scusate. → Lei ___.",
             "options": [
-              "si scusa.",
-              "vi scusa.",
-              "si scusano."
+              "si scusa",
+              "vi scusa",
+              "si scusano"
             ],
             "answer": 0
           }
@@ -4285,7 +4285,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Quando la minestra è quasi pronta, ___ un po’ di sale. (aggiungere)",
+            "q": "Quando la minestra è quasi pronta, ___ un po’ di sale.",
             "options": [
               "aggiungi",
               "aggiunge",
@@ -4294,7 +4294,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Quando l'acqua bolle, ___ la pasta nella pentola. (mettere)",
+            "q": "Quando l'acqua bolle, ___ la pasta nella pentola.",
             "options": [
               "metti",
               "mette",
@@ -4303,7 +4303,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Quando il forno è caldo, ___ la torta. (infornare)",
+            "q": "Quando il forno è caldo, ___ la torta.",
             "options": [
               "inforna",
               "inforni",
@@ -4312,7 +4312,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Prima di cucinare, ___ le verdure. (lavare)",
+            "q": "Prima di cucinare, ___ le verdure.",
             "options": [
               "lava",
               "lavi",
@@ -4439,7 +4439,7 @@ const TEST_STRUCTURES = [
         "instr": "Scegli l'imperativo formale con «Lei».",
         "items": [
           {
-            "q": "Signora, ___ questa medicina dopo pranzo. (prendere)",
+            "q": "Signora, ___ questa medicina dopo pranzo.",
             "options": [
               "prenda",
               "prendi",
@@ -4448,7 +4448,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Signore, con questo caldo ___ molta acqua. (bere)",
+            "q": "Signore, con questo caldo ___ molta acqua.",
             "options": [
               "beva",
               "bevi",
@@ -4457,7 +4457,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Signora, mentre preparo i documenti ___ qui un momento. (sedersi)",
+            "q": "Signora, mentre preparo i documenti ___ qui un momento.",
             "options": [
               "si sieda",
               "si siede",
@@ -4466,7 +4466,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Signore, per il controllo ___ bene la bocca. (aprire)",
+            "q": "Signore, per il controllo ___ bene la bocca.",
             "options": [
               "apra",
               "apri",
@@ -4475,7 +4475,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Signora, durante l’esame ___ lentamente. (respirare)",
+            "q": "Signora, durante l’esame ___ lentamente.",
             "options": [
               "respiri",
               "respira",
@@ -4484,7 +4484,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Signore, ha la febbre, quindi ___ a letto oggi. (restare)",
+            "q": "Signore, ha la febbre, quindi ___ a letto oggi.",
             "options": [
               "resti",
               "resta",
@@ -4500,7 +4500,7 @@ const TEST_STRUCTURES = [
         "instr": "Scegli la forma corretta dell'imperativo negativo.",
         "items": [
           {
-            "q": "Marco, non ___ troppi dolci! (mangiare)",
+            "q": "Marco, non ___ troppi dolci!",
             "options": [
               "mangiare",
               "mangia",
@@ -4509,7 +4509,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Luca, non ___ caffè stasera! (bere)",
+            "q": "Luca, non ___ caffè stasera!",
             "options": [
               "bere",
               "bevi",
@@ -4518,7 +4518,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Paolo, non ___ con la febbre! (uscire)",
+            "q": "Paolo, non ___ con la febbre!",
             "options": [
               "uscire",
               "esci",
@@ -4527,7 +4527,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Giulia, non ___ questa medicina prima di mangiare! (prendere)",
+            "q": "Giulia, non ___ questa medicina prima di mangiare!",
             "options": [
               "prendere",
               "prendi",
@@ -4536,7 +4536,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Anna, non ___ fino a tardi! (lavorare)",
+            "q": "Anna, non ___ fino a tardi!",
             "options": [
               "lavorare",
               "lavora",
@@ -4545,7 +4545,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Luca, non ___ qui! (fumare)",
+            "q": "Luca, non ___ qui!",
             "options": [
               "fumare",
               "fuma",
@@ -5660,7 +5660,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Le dispiace ___ un attimo qui fuori? (aspettare)",
+            "q": "Le dispiace ___ un attimo qui fuori?",
             "options": [
               "aspettare",
               "aspetta",
@@ -5669,7 +5669,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Anna, ti dispiace ___ la porta? (chiudere)",
+            "q": "Anna, ti dispiace ___ la porta?",
             "options": [
               "chiudere",
               "chiudi",
@@ -5678,7 +5678,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Signore, Le dispiace ___ più lentamente? (parlare)",
+            "q": "Signore, Le dispiace ___ più lentamente?",
             "options": [
               "parlare",
               "parla",
@@ -5687,7 +5687,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Luca, ti dispiace ___ con me in banca? (venire)",
+            "q": "Luca, ti dispiace ___ con me in banca?",
             "options": [
               "venire",
               "vieni",
@@ -5855,7 +5855,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "La porta è chiusa e lei non ___ entrare. (potere)",
+            "q": "La porta è chiusa e lei non ___ entrare.",
             "options": [
               "può",
               "sa",
@@ -6453,13 +6453,13 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "buco",
         "instr": "Scegli tra imperfetto e passato prossimo.",
-        "items": [{"q":"Mentre ___ la doccia, è saltata la luce.","options":["facevo","ho fatto","faceva"],"answer":0},{"q":"Ieri ___ un bel film al cinema con Sara.","options":["ho visto","vedevo","abbiamo visto"],"answer":0},{"q":"Da bambino ___ sempre in bicicletta fino al fiume.","options":["andavo","sono andato","andavamo"],"answer":0},{"q":"___ le otto quando è arrivato il taxi.","options":["Erano","Sono state","Era"],"answer":0},{"q":"Ieri sera ti ___ tre volte ma non rispondevi.","options":["ho chiamato","chiamavo","hai chiamato"],"answer":0},{"q":"Improvvisamente ___ a piovere e siamo entrati in un bar.","options":["ha cominciato","cominciava","cominciavo"],"answer":0}]
+        "items": [{"q":"Mentre ___ la doccia, è saltata la luce e sono rimasto al buio.","options":["facevo","ho fatto","faceva"],"answer":0},{"q":"Ieri ___ un bel film al cinema con Sara.","options":["ho visto","vedevo","abbiamo visto"],"answer":0},{"q":"Da bambino ___ sempre in bicicletta fino al fiume.","options":["andavo","sono andato","andavamo"],"answer":0},{"q":"___ le otto quando è arrivato il taxi.","options":["Erano","Sono state","Era"],"answer":0},{"q":"Ieri sera ti ___ tre volte ma non rispondevi.","options":["ho chiamato","chiamavo","hai chiamato"],"answer":0},{"q":"Improvvisamente ___ a piovere e siamo entrati in un bar.","options":["ha cominciato","cominciava","cominciavo"],"answer":0}]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [{"q":"Ieri finivo il libro che mi hai prestato la settimana scorsa.","wrong":"finivo","fix":"ho finito"},{"q":"Ieri andavo al parco ogni domenica con mia sorella.","wrong":"Ieri","fix":"Prima"},{"q":"Nel 2025 visitavo Parigi una sola volta durante un viaggio di lavoro.","wrong":"visitavo","fix":"ho visitato"},{"q":"Stamattina la sveglia ha suonato alle sei e mi alzavo subito.","wrong":"alzavo","fix":"sono alzato"},{"q":"Stamattina mio nonno leggeva il giornale tutti i giorni prima di uscire.","wrong":"Stamattina","fix":"Una volta"},{"q":"Ieri sera ti chiamavo tre volte mentre aspettavo una tua risposta.","wrong":"chiamavo","fix":"ho chiamato"}]
+        "items": [{"q":"Ieri finivo il libro che mi hai prestato la settimana scorsa.","wrong":"finivo","fix":"ho finito"},{"q":"Ieri andavo al parco ogni domenica con mia sorella.","wrong":"Ieri","fix":"Prima"},{"q":"Nel 2025 visitavo Parigi una sola volta durante un viaggio di lavoro.","wrong":"visitavo","fix":"ho visitato"},{"q":"Stamattina la sveglia ha suonato alle sei e mi alzavo subito.","wrong":"alzavo","fix":"sono alzato"},{"q":"Stamattina mio nonno leggeva il giornale tutti i giorni prima di uscire.","wrong":"Stamattina","fix":"Una volta"},{"q":"Mio zio ci portava sabato al mare tutte le domeniche d’estate.","wrong":"sabato","fix":"(togliere)"}]
       },
       {
         "type": "Trasformazione",
@@ -6824,7 +6824,7 @@ const TEST_STRUCTURES = [
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [{"q":"Noi lavoraremmo anche di sabato, ma preferiremmo riposare.","wrong":"lavoraremmo","fix":"lavoreremmo"},{"q":"Domani chiederei il permesso e poi parterei presto.","wrong":"parterei","fix":"partirei"},{"q":"Chiameresti un taxi o prendiresti l'autobus?","wrong":"prendiresti","fix":"prenderesti"},{"q":"Loro aspetterebbe volentieri, ma con questo freddo nessuno resterebbe fuori.","wrong":"aspetterebbe","fix":"aspetterebbero"},{"q":"In vacanza noi dormiremmo fino a tardi e camminaremmo sulla spiaggia.","wrong":"camminaremmo","fix":"cammineremmo"},{"q":"Il tecnico finerebbe il lavoro in due giorni e chiederebbe un anticipo.","wrong":"finerebbe","fix":"finirebbe"}]
+        "items": [{"q":"Noi lavoraremmo anche di sabato, ma preferiremmo riposare.","wrong":"lavoraremmo","fix":"lavoreremmo"},{"q":"Domani chiederei il permesso e poi parterei presto.","wrong":"parterei","fix":"partirei"},{"q":"Chiameresti un taxi o prendiresti l'autobus?","wrong":"prendiresti","fix":"prenderesti"},{"q":"Loro aspetterebbe volentieri, ma con questo freddo nessuno resterebbe fuori.","wrong":"aspetterebbe","fix":"aspetterebbero"},{"q":"In vacanza noi dormiremmo fino a tardi e non saperemmo nemmeno che giorno è.","wrong":"saperemmo","fix":"sapremmo"},{"q":"Il tecnico finerebbe il lavoro in due giorni e chiederebbe un anticipo.","wrong":"finerebbe","fix":"finirebbe"}]
       },
       {
         "type": "Trasformazione",
@@ -6972,7 +6972,7 @@ const TEST_STRUCTURES = [
         "type": "Trasformazione",
         "fmt": "buco",
         "instr": "Unisci le due frasi con il pronome relativo adatto.",
-        "items": [{"q":"Ho un vicino. Gioco a tennis con lui.","options":["Ho un vicino con cui gioco a tennis.","Ho un vicino che gioco a tennis con.","Ho un vicino con che gioco a tennis."],"answer":0},{"q":"Questa è la scuola. Mio figlio va in questa scuola.","options":["Questa è la scuola in cui va mio figlio.","Questa è la scuola che va mio figlio in.","Questa è la scuola in che va mio figlio."],"answer":0},{"q":"Ecco il modulo. Ti avevo scritto del modulo.","options":["Ecco il modulo di cui ti avevo scritto.","Ecco il modulo che ti avevo scritto di.","Ecco il modulo di che ti avevo scritto."],"answer":0},{"q":"Il corso è finito. Mi ero iscritto al corso.","options":["Il corso a cui mi ero iscritto è finito.","Il corso che mi ero iscritto è finito.","Il corso al che mi ero iscritto è finito."],"answer":0},{"q":"Ho un cugino. Suo fratello lavora in Germania.","options":["Ho un cugino il cui fratello lavora in Germania.","Ho un cugino che suo fratello lavora in Germania.","Ho un cugino cui fratello lavora in Germania."],"answer":0},{"q":"Ho perso l'ombrello. Mi avevi regalato l'ombrello.","options":["Ho perso l'ombrello che mi avevi regalato.","Ho perso l'ombrello che me lo avevi regalato.","Ho perso l'ombrello che mi avevi regalato l'ombrello."],"answer":0}]
+        "items": [{"q":"Ho un coinquilino. Gioco a tennis con lui.","options":["Ho un coinquilino con cui gioco a tennis.","Ho un coinquilino che gioco a tennis.","Ho un coinquilino cui gioco a tennis."],"answer":0},{"q":"Questa è la scuola. Mio figlio va in questa scuola.","options":["Questa è la scuola in cui va mio figlio.","Questa è la scuola cui va mio figlio.","Questa è la scuola di cui va mio figlio."],"answer":0},{"q":"Ecco il certificato. Ti avevo scritto del certificato.","options":["Ecco il certificato di cui ti avevo scritto.","Ecco il certificato che ti avevo scritto.","Ecco il certificato a cui ti avevo scritto."],"answer":0},{"q":"Il corso è finito. Mi ero iscritto al corso.","options":["Il corso a cui mi ero iscritto è finito.","Il corso che mi ero iscritto è finito.","Il corso al che mi ero iscritto è finito."],"answer":0},{"q":"Ho un cugino. Suo fratello lavora in Germania.","options":["Ho un cugino il cui fratello lavora in Germania.","Ho un cugino che suo fratello lavora in Germania.","Ho un cugino cui fratello lavora in Germania."],"answer":0},{"q":"Ho perso l'ombrello. Mi avevi regalato l'ombrello.","options":["Ho perso l'ombrello che mi avevi regalato.","Ho perso l'ombrello che me lo avevi regalato.","Ho perso l'ombrello che mi avevi regalato l'ombrello."],"answer":0}]
       }
     ],
     "diag": true
@@ -7210,7 +7210,7 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "buco",
         "instr": "Scegli la forma impersonale corretta.",
-        "items": [{"q":"La domenica ___ tardi e non si fa colazione. (alzarsi)","options":["ci si alza","si alza","si alzano"],"answer":0},{"q":"Con questo caldo ___ molto male. (dormire)","options":["si dorme","ci si dorme","si dormono"],"answer":0},{"q":"Prima di un colloquio ___ sempre un po'. (agitarsi)","options":["ci si agita","si agita","si agitano"],"answer":0},{"q":"D'estate ___ molto più tardi. (cenare)","options":["si cena","ci si cena","si cenano"],"answer":0},{"q":"Con i colleghi nuovi ___ in fretta. (abituarsi)","options":["ci si abitua","si abitua","si abituano"],"answer":0},{"q":"Nei giorni di sciopero ___ per ore. (camminare)","options":["si cammina","ci si cammina","si camminano"],"answer":0}]
+        "items": [{"q":"La domenica ___ tardi e non si fa colazione.","options":["ci si alza","si alza","si alzano"],"answer":0},{"q":"Con questo caldo ___ molto male.","options":["si dorme","ci si dorme","si dormono"],"answer":0},{"q":"Prima di un colloquio ___ sempre un po'.","options":["ci si agita","si agita","si agitano"],"answer":0},{"q":"D'estate ___ molto più tardi.","options":["si cena","ci si cena","si cenano"],"answer":0},{"q":"Con i colleghi nuovi ___ in fretta.","options":["ci si abitua","si abitua","si abituano"],"answer":0},{"q":"Nei giorni di sciopero ___ per ore.","options":["si cammina","ci si cammina","si camminano"],"answer":0}]
       },
       {
         "type": "Correzione",
@@ -7355,7 +7355,7 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "buco",
         "instr": "Riporta le parole con un verbo dichiarativo al passato: scegli la forma corretta.",
-        "items": [{"q":"«La sala è troppo fredda» → Marco si è lamentato perché la sala ___ troppo fredda.","options":["era","fu","sarebbe stato"],"answer":0},{"q":"«Ho letto il romanzo prima del film» → Il critico ha scritto che ___ il romanzo prima del film.","options":["aveva letto","avrebbe letto","leggeva"],"answer":0},{"q":"«Andrò a teatro sabato» → Giulia ha risposto che ___ a teatro il sabato dopo.","options":["sarebbe andata","sarebbe andato","andò"],"answer":0},{"q":"«Non conosco bene la parte» → L’attore ha ammesso che non ___ bene la parte.","options":["conosceva","conobbe","avrebbe conosciuto"],"answer":0},{"q":"«Spegnete il telefono!» → Il personale ci ha chiesto ___ il telefono.","options":["di spegnere","che spegniamo","spegnere"],"answer":0},{"q":"«Torneremo prima di mezzanotte» → I ragazzi hanno spiegato che ___ prima di mezzanotte.","options":["sarebbero tornati","torneranno","sarebbero tornate"],"answer":0}]
+        "items": [{"q":"«La sala è troppo fredda» → Marco si è lamentato perché la sala ___ troppo fredda.","options":["era","fu","sarebbe stato"],"answer":0},{"q":"«Ho letto il romanzo prima del film» → La giornalista ha scritto che ___ il romanzo prima del film.","options":["aveva letto","avrebbe letto","leggeva"],"answer":0},{"q":"«Andrò a teatro sabato» → Giulia ha risposto che ___ a teatro il sabato dopo.","options":["sarebbe andata","sarebbe andato","andò"],"answer":0},{"q":"«Non conosco bene la parte» → L’attore ha ammesso che non ___ bene la parte.","options":["conosceva","conobbe","avrebbe conosciuto"],"answer":0},{"q":"«Spegnete il telefono!» → Il personale ci ha chiesto ___ il telefono.","options":["di spegnere","che spegniamo","spegnere"],"answer":0},{"q":"«Torneremo prima di mezzanotte» → I ragazzi hanno spiegato che ___ prima di mezzanotte.","options":["sarebbero tornati","torneranno","sarebbero tornate"],"answer":0}]
       },
       {
         "type": "Correzione",
@@ -7398,7 +7398,7 @@ const TEST_STRUCTURES = [
         "type": "Trasformazione",
         "fmt": "buco",
         "instr": "Trasforma in discorso indiretto: attenzione ai tempi e alle parole che indicano tempo e luogo.",
-        "items": [{"q":"«Ho conosciuto questo attore a Venezia», ha raccontato Elena. →","options":["Elena ha raccontato che aveva conosciuto quell’attore a Venezia.","Elena ha raccontato che ha conosciuto quell’attore a Venezia.","Elena ha raccontato che aveva conosciuto questo attore a Venezia."],"answer":0},{"q":"«Domani il cinema è chiuso», ha detto Sara. →","options":["Sara ha detto che il giorno dopo il cinema era chiuso.","Sara ha detto che domani il cinema era chiuso.","Sara ha detto che il giorno dopo il cinema è chiuso."],"answer":0},{"q":"«Non ho mai visto questo attore», ha ammesso Luca. →","options":["Luca ha ammesso che non aveva mai visto quell’attore.","Luca ha ammesso che non ha mai visto quell’attore.","Luca ha ammesso che non aveva mai visto questo attore."],"answer":0},{"q":"«Prenota i posti prima di venerdì!», mi ha detto Elena. →","options":["Elena mi ha detto di prenotare i posti prima di venerdì.","Elena mi ha detto che prenoto i posti prima di venerdì.","Elena mi ha detto prenotare i posti prima di venerdì."],"answer":0},{"q":"«Qui si vede meglio», ha detto Anna. →","options":["Anna ha detto che lì si vedeva meglio.","Anna ha detto che qui si vedeva meglio.","Anna ha detto che lì si vede meglio."],"answer":0},{"q":"«Il nostro spettacolo finirà tardi», hanno avvisato gli attori. →","options":["Gli attori hanno avvisato che il loro spettacolo sarebbe finito tardi.","Gli attori hanno avvisato che il nostro spettacolo sarebbe finito tardi.","Gli attori hanno avvisato che il loro spettacolo finirà tardi."],"answer":0}]
+        "items": [{"q":"«Ho conosciuto questo attore a Venezia», ha raccontato Elena. →","options":["Elena ha raccontato che aveva conosciuto quell’attore a Venezia.","Elena ha raccontato che ha conosciuto quell’attore a Venezia.","Elena ha raccontato che aveva conosciuto questo attore a Venezia."],"answer":0},{"q":"«Domani la piscina è chiusa», ha detto Vera. →","options":["Vera ha detto che il giorno dopo la piscina era chiusa.","Vera ha detto che domani la piscina era chiusa.","Vera ha detto che il giorno dopo la piscina è chiusa."],"answer":0},{"q":"«Non ho mai visto questo attore», ha ammesso Luca. →","options":["Luca ha ammesso che non aveva mai visto quell’attore.","Luca ha ammesso che non ha mai visto quell’attore.","Luca ha ammesso che non aveva mai visto questo attore."],"answer":0},{"q":"«Prenota i posti prima di venerdì!», mi ha detto Elena. →","options":["Elena mi ha detto di prenotare i posti prima di venerdì.","Elena mi ha detto che prenoto i posti prima di venerdì.","Elena mi ha detto prenotare i posti prima di venerdì."],"answer":0},{"q":"«Qui si vede meglio», ha detto Anna. →","options":["Anna ha detto che lì si vedeva meglio.","Anna ha detto che qui si vedeva meglio.","Anna ha detto che lì si vede meglio."],"answer":0},{"q":"«Il nostro spettacolo finirà tardi», hanno avvisato gli attori. →","options":["Gli attori hanno avvisato che il loro spettacolo sarebbe finito tardi.","Gli attori hanno avvisato che il nostro spettacolo sarebbe finito tardi.","Gli attori hanno avvisato che il loro spettacolo finirà tardi."],"answer":0}]
       }
     ]
   },
@@ -8192,7 +8192,7 @@ const TEST_STRUCTURES = [
             ]
           },
           {
-            "q": "Volevo che ___ con noi. (venire)",
+            "q": "Volevo che voi ___ con noi. (venire)",
             "a": "veniste",
             "no": [
               "venivate",
@@ -8219,7 +8219,7 @@ const TEST_STRUCTURES = [
             ]
           },
           {
-            "q": "Pensavo che Marco ___ aiutarci. (potere)",
+            "q": "Immaginavo che Sofia ___ aiutarci. (potere)",
             "a": "potesse",
             "no": [
               "poteva",
@@ -8245,8 +8245,8 @@ const TEST_STRUCTURES = [
             "fix": "tornassi"
           },
           {
-            "q": "Preferivo che guidavate voi stasera.",
-            "wrong": "guidavate",
+            "q": "Preferivo che guidiate voi stasera.",
+            "wrong": "guidiate",
             "fix": "guidaste"
           },
           {
@@ -8255,8 +8255,8 @@ const TEST_STRUCTURES = [
             "fix": "nascondesse"
           },
           {
-            "q": "Avevo paura che sbagliavano strada di nuovo.",
-            "wrong": "sbagliavano",
+            "q": "Avevo paura che i ragazzi sbagliasse strada di nuovo.",
+            "wrong": "sbagliasse",
             "fix": "sbagliassero"
           },
           {
@@ -8682,7 +8682,7 @@ const TEST_STRUCTURES = [
         "instr": "Scegli la forma verbale corretta.",
         "items": [
           {
-            "q": "Penso che ___ ragione. (adesso)",
+            "q": "Penso che in questo momento ___ ragione lui, non tu.",
             "options": [
               "abbia",
               "avesse",
@@ -8691,11 +8691,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Pensavo che ___ ragione. (allora)",
+            "q": "All’epoca nessuno immaginava che il quartiere ___ così caro.",
             "options": [
-              "avesse",
-              "abbia",
-              "abbia avuto"
+              "diventasse",
+              "diventi",
+              "sia diventato"
             ],
             "answer": 0
           },
@@ -8709,11 +8709,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Credevo che ___ partito il giorno prima.",
+            "q": "Dubitavo che qualcuno ___ entrato dopo la chiusura.",
             "options": [
               "fosse",
               "sia",
-              "sarà"
+              "era"
             ],
             "answer": 0
           },
@@ -8727,11 +8727,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Mi pareva che ___ tutto bene fino a quel momento.",
+            "q": "Temevo che tu ___ già in viaggio quando ho telefonato.",
             "options": [
-              "fosse andato",
-              "sia andato",
-              "vada"
+              "fossi",
+              "sia",
+              "eri"
             ],
             "answer": 0
           }
@@ -9049,7 +9049,7 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "buco",
         "instr": "Scegli la forma corretta.",
-        "items": [{"q":"È stato firmato un appello, ___ il sindaco non ha ancora risposto.","options":["al quale","del quale","sul quale"],"answer":0},{"q":"Il comune ha allestito due aree verdi, ___ è vietato l'ingresso ai cani.","options":["nelle quali","sulle quali","dalle quali"],"answer":0},{"q":"La giunta ha stanziato una somma, ___ verranno pagati i lavori del tetto.","options":["con la quale","dalla quale","nella quale"],"answer":0},{"q":"La relazione cita due ricerche recenti, ___ però non indica gli autori.","options":["delle quali","alle quali","dalle quali"],"answer":0},{"q":"Il contratto contiene una clausola ___ nessuno si era soffermato.","options":["sulla quale","della quale","alla quale"],"answer":0},{"q":"Il consiglio ha approvato il progetto, ___ sono stati stanziati due milioni.","options":["per il quale","dal quale","nel quale"],"answer":0}]
+        "items": [{"q":"È stato firmato un appello, ___ il sindaco non ha ancora risposto.","options":["al quale","del quale","sul quale"],"answer":0},{"q":"Il comune ha allestito due aree verdi, ___ è vietato l'ingresso ai cani.","options":["nelle quali","sulle quali","dalle quali"],"answer":0},{"q":"La giunta ha stanziato una somma, ___ verranno pagati i lavori del tetto.","options":["con la quale","dalla quale","nella quale"],"answer":0},{"q":"La relazione cita due ricerche recenti, ___ però non indica gli autori.","options":["delle quali","alle quali","dalle quali"],"answer":0},{"q":"Il contratto contiene una clausola ___ nessuno si era soffermato.","options":["sulla quale","della quale","alla quale"],"answer":0},{"q":"Il consiglio ha approvato il restauro, ___ sono stati stanziati due milioni.","options":["per il quale","dal quale","nel quale"],"answer":0}]
       },
       {
         "type": "Correzione",
@@ -9310,7 +9310,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Dopo ___, siamo usciti. (mangiare)",
+            "q": "Dopo ___, siamo usciti.",
             "options": [
               "aver mangiato",
               "mangiare",
@@ -9337,7 +9337,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Dopo ___, si è sentito meglio. (riposarsi)",
+            "q": "Dopo ___, si è sentito meglio.",
             "options": [
               "essersi riposato",
               "riposarsi",
@@ -9346,7 +9346,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Dopo ___ in hotel, sono usciti a cena. (arrivare)",
+            "q": "Dopo ___ in hotel, sono usciti a cena.",
             "options": [
               "essere arrivati",
               "arrivare",
@@ -10655,6 +10655,9 @@ const TEST_STRUCTURES = [
   },
   {
     "lvl": "c1",
+    "lez": [
+      "C1 L7"
+    ],
     "title": "La forma passiva: tutte le forme",
     "exercises": [
       {
@@ -10681,11 +10684,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "«Il turno di notte è stato assegnato a tre dipendenti dal caposquadra.»",
+            "q": "«La data del concerto è stata spostata dagli organizzatori senza avvisare nessuno.»",
             "options": [
-              "A decidere è stato il caposquadra.",
-              "A decidere sono stati i tre dipendenti.",
-              "Il caposquadra farà il turno di notte."
+              "A spostare la data sono stati gli organizzatori.",
+              "Gli organizzatori hanno saputo dello spostamento dopo.",
+              "La frase non dice chi ha spostato la data."
             ],
             "answer": 0
           },
@@ -10699,20 +10702,20 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "«Sono state riscontrate irregolarità nella compilazione dei registri.»",
+            "q": "«Il vecchio ponte è stato demolito in una sola notte.»",
             "options": [
-              "Chi ha riscontrato le irregolarità non è indicato.",
-              "Chi ha compilato i registri ha riscontrato le irregolarità.",
-              "Le irregolarità sono state commesse da chi ha fatto il controllo."
+              "La frase non dice chi ha demolito il ponte.",
+              "Il ponte è crollato da solo.",
+              "Chi ha demolito il ponte ci ha messo più di una notte."
             ],
             "answer": 0
           },
           {
-            "q": "«La proposta è stata accolta con qualche riserva dal consiglio.»",
+            "q": "«L’ultima scena è stata tagliata dal regista poco prima dell’uscita.»",
             "options": [
-              "A esprimere riserve è il consiglio.",
-              "A esprimere riserve è chi ha fatto la proposta.",
-              "La proposta è stata respinta."
+              "A tagliare la scena è stato il regista.",
+              "A tagliare la scena è stato chi l’aveva girata.",
+              "La scena è stata tagliata dopo l’uscita."
             ],
             "answer": 0
           }
@@ -10724,12 +10727,12 @@ const TEST_STRUCTURES = [
         "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
-            "q": "Con due mesi di ritardo il dipendente è stato comunicato l’esito.",
-            "wrong": "il",
-            "fix": "al"
+            "q": "I nonni è stato spiegato due volte come si usa la videochiamata.",
+            "wrong": "I",
+            "fix": "Ai"
           },
           {
-            "q": "La candidata è stata offerta una promozione in un’altra sede.",
+            "q": "La tirocinante è stata permessa un’uscita anticipata per l’esame.",
             "wrong": "La",
             "fix": "Alla"
           },
@@ -10832,11 +10835,11 @@ const TEST_STRUCTURES = [
         "instr": "Scegli la forma coerente con il momento in cui si riferisce.",
         "items": [
   {
-    "q": "«La sala è già prenotata» → L'albergo rispose che la sala ___ già prenotata per quel fine settimana.",
+    "q": "«La merce parte domani» → Il magazziniere assicurò che la merce sarebbe partita ___.",
     "options": [
-      "era",
-      "è",
-      "fosse"
+      "il giorno dopo",
+      "domani",
+      "il giorno prima"
     ],
     "answer": 0
   },
@@ -10868,20 +10871,20 @@ const TEST_STRUCTURES = [
     "answer": 0
   },
   {
-    "q": "«Non possiamo garantire la data» → Il corriere ammise che non ___ garantire la data.",
+    "q": "«Vengo io in stazione a prendere Marta» → Rientrata in ufficio, spiegai che ___ lui in stazione.",
     "options": [
-      "potevano",
-      "possono",
-      "potessero"
+      "sarebbe andato",
+      "sarebbe venuto",
+      "veniva"
     ],
     "answer": 0
   },
   {
-    "q": "«Non capisco perché siete in ritardo» → Il cliente ripeté che non ___ perché eravamo in ritardo.",
+    "q": "«Chiudiamo oggi alle sei» → Il farmacista mi ha appena detto che chiudono ___ alle sei.",
     "options": [
-      "capiva",
-      "capisce",
-      "capisse"
+      "oggi",
+      "quel giorno",
+      "il giorno prima"
     ],
     "answer": 0
   }
@@ -10954,7 +10957,7 @@ const TEST_STRUCTURES = [
         "instr": "Individua e clicca la parola sbagliata.",
         "items": [
   {
-    "q": "Il proprietario negò che ci era un problema di umidità nelle pareti.",
+    "q": "Il vivaista negò che la serra era stata lasciata aperta durante la notte.",
     "wrong": "era",
     "fix": "fosse"
   },
@@ -11244,11 +11247,11 @@ const TEST_STRUCTURES = [
     "answer": 0
   },
   {
-    "q": "Con tutta ___ , non siamo riusciti a finire entro la scadenza.",
+    "q": "Con tutta ___ del mondo, non saremmo riusciti a montare la libreria in un pomeriggio.",
     "options": [
-      "la buona volontà",
-      "volessimo",
-      "volendo"
+      "la pazienza",
+      "pazientassimo",
+      "pazientando"
     ],
     "answer": 0
   },
@@ -11292,9 +11295,9 @@ const TEST_STRUCTURES = [
     "fix": "Ciononostante"
   },
   {
-    "q": "Il danno per l'azienda resta enorme, anche ammettendo che le intenzioni erano buone.",
-    "wrong": "erano",
-    "fix": "fossero"
+    "q": "La multa resta dovuta, anche ammettendo che il cartello era coperto dai rami.",
+    "wrong": "era",
+    "fix": "fosse"
   },
   {
     "q": "I lavori del cantiere non sono ancora partiti, malgrado avevano firmato a marzo.",
@@ -11312,7 +11315,7 @@ const TEST_STRUCTURES = [
     "fix": "Nonostante"
   },
   {
-    "q": "Fermo restando che il calendario sia già stato approvato, resta un dubbio sulle date.",
+    "q": "Fermo restando che il pagamento sia arrivato il tre marzo, non si capisce perché non risulta a sistema.",
     "wrong": "sia",
     "fix": "è"
   }
@@ -11532,12 +11535,12 @@ const TEST_STRUCTURES = [
     ]
   },
   {
-    "q": "Prima che il bando ___ pubblicato, la voce girava già in tutto il paese. (essere)",
-    "a": "fosse",
+    "q": "Benché le previsioni ___ annunciato pioggia per tutta la settimana, non cadde una goccia. (avere)",
+    "a": "avessero",
     "no": [
-      "era",
-      "sia",
-      "fossi"
+      "avevano",
+      "abbiano",
+      "avesse"
     ]
   },
   {
@@ -11642,9 +11645,9 @@ const TEST_STRUCTURES = [
     "fix": "avessero"
   },
   {
-    "q": "Riuscimmo a entrare nel cortile prima che il portone veniva chiuso.",
-    "wrong": "veniva",
-    "fix": "venisse"
+    "q": "Nonostante avevamo provato il finale decine di volte, alla recita nessuno ricordò le battute.",
+    "wrong": "avevamo",
+    "fix": "avessimo"
   },
   {
     "q": "Mi dispiacque che i colleghi non erano stati avvisati del cambio di orario.",
