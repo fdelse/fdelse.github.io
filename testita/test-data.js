@@ -6909,13 +6909,13 @@ const TEST_STRUCTURES = [
         "type": "Riempimento",
         "fmt": "buco",
         "instr": "Scegli il connettivo adatto.",
-        "items": [{"q":"La stampante non aveva più inchiostro, ___ ho mandato il file in copisteria.","options":["quindi","invece","infatti"],"answer":0},{"q":"___ la palestra ha chiuso senza preavviso, ho disdetto l'abbonamento.","options":["Siccome","Perciò","Inoltre"],"answer":0},{"q":"Il sito non funzionava; ___ ho telefonato all'assistenza.","options":["di conseguenza","invece","cioè"],"answer":0},{"q":"Non ho aperto l'allegato ___ il mittente era sconosciuto.","options":["perché","quindi","invece"],"answer":0},{"q":"___ il pacco è in ritardo, chiedo un rimborso.","options":["Dato che","Tuttavia","In particolare"],"answer":0},{"q":"L'ufficio è chiuso per ferie; ___ le pratiche restano ferme.","options":["perciò","cioè","poi"],"answer":0}]
+        "items": [{"q":"La stampante non aveva più inchiostro, ___ ho mandato il file in copisteria.","options":["quindi","invece","infatti"],"answer":0},{"q":"___ la palestra ha chiuso senza preavviso, ho disdetto l'abbonamento.","options":["Siccome","Perciò","Inoltre"],"answer":0},{"q":"Il sito non funzionava, ___ ho telefonato all'assistenza.","options":["di conseguenza","invece","cioè"],"answer":0},{"q":"Non ho aperto l'allegato ___ il mittente era sconosciuto.","options":["perché","quindi","invece"],"answer":0},{"q":"___ il pacco è in ritardo, chiedo un rimborso.","options":["Dato che","Tuttavia","In particolare"],"answer":0},{"q":"L'ufficio è chiuso per ferie, ___ le pratiche restano ferme.","options":["perciò","cioè","poi"],"answer":0}]
       },
       {
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
-        "items": [{"q":"Ho attivato l'antivirus e inoltre ho cambiato la password, quindi il computer era già infetto.","wrong":"quindi","fix":"però"},{"q":"Il sito era lento e nel frattempo la connessione cadeva; infatti ho chiuso la pagina.","wrong":"infatti","fix":"infine"},{"q":"Il traghetto non è partito; poi il mare era troppo mosso, però nessuno ci ha avvisati.","wrong":"poi","fix":"infatti"},{"q":"Marta prende sempre il treno, perché io vado in ufficio in bici; alla fine arriviamo insieme.","wrong":"perché","fix":"invece"},{"q":"Siccome abbia poco tempo, riesco comunque a finire la relazione entro stasera.","wrong":"Siccome","fix":"Nonostante"},{"q":"Innanzitutto compila il modulo online, cioè porta la ricevuta allo sportello.","wrong":"cioè","fix":"poi"}]
+        "items": [{"q":"Ho attivato l'antivirus e inoltre ho cambiato la password, quindi il computer era già infetto.","wrong":"quindi","fix":"però"},{"q":"Il sito era lento e nel frattempo la connessione cadeva, infatti ho chiuso la pagina.","wrong":"infatti","fix":"infine"},{"q":"Il traghetto non è partito, poi il mare era troppo mosso, però nessuno ci ha avvisati.","wrong":"poi","fix":"infatti"},{"q":"Marta prende sempre il treno, perché io vado in ufficio in bici, alla fine arriviamo insieme.","wrong":"perché","fix":"invece"},{"q":"Siccome abbia poco tempo, riesco comunque a finire la relazione entro stasera.","wrong":"Siccome","fix":"Nonostante"},{"q":"Innanzitutto compila il modulo online, cioè porta la ricevuta allo sportello.","wrong":"cioè","fix":"poi"}]
       },
       {
         "type": "Trasformazione",
@@ -10013,32 +10013,32 @@ const TEST_STRUCTURES = [
         "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
-            "q": "Ha ragione lui; d'altronde chi altro sappia come funziona quella vecchia caldaia del seminterrato?",
+            "q": "Ha ragione lui, d'altronde chi altro sappia come funziona quella vecchia caldaia del seminterrato?",
             "wrong": "sappia",
             "fix": "sa"
           },
           {
-            "q": "Il museo ha ridotto gli orari; nondimeno i visitatori restino gli stessi dell'anno scorso.",
+            "q": "Il museo ha ridotto gli orari, nondimeno i visitatori restino gli stessi dell'anno scorso.",
             "wrong": "restino",
             "fix": "restano"
           },
           {
-            "q": "Il testimone aveva cambiato versione tre volte; tuttavia il giudice gli abbia creduto fino in fondo.",
+            "q": "Il testimone aveva cambiato versione tre volte, tuttavia il giudice gli abbia creduto fino in fondo.",
             "wrong": "abbia",
             "fix": "ha"
           },
           {
-            "q": "Piove da ieri sera; peraltro nessuno in valle se ne lamenti più di tanto.",
+            "q": "Piove da ieri sera, peraltro nessuno in valle se ne lamenti più di tanto.",
             "wrong": "lamenti",
             "fix": "lamenta"
           },
           {
-            "q": "Costa poco; per di più le lezioni si tengano a duecento metri dalla fermata del tram.",
+            "q": "Costa poco, per di più le lezioni si tengano a duecento metri dalla fermata del tram.",
             "wrong": "tengano",
             "fix": "tengono"
           },
           {
-            "q": "L'ascensore funzionava; eppure quasi nessuno sia salito fino all'ultimo piano.",
+            "q": "L'ascensore funzionava, eppure quasi nessuno sia salito fino all'ultimo piano.",
             "wrong": "sia",
             "fix": "è"
           }
@@ -10059,7 +10059,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Il problema riguarda tutto il personale amministrativo; ___, i tre addetti al protocollo.",
+            "q": "Il problema riguarda tutto il personale amministrativo, ___, i tre addetti al protocollo.",
             "options": [
               "più precisamente",
               "in altre parole",
@@ -10068,7 +10068,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Sorride a tutti e ricorda il nome di ognuno: ___, non ha mai fatto un favore a nessuno.",
+            "q": "Tutti lo descrivono come una persona generosa: ___, non ha mai fatto un favore a nessuno.",
             "options": [
               "a ben vedere",
               "in altre parole",
@@ -10077,7 +10077,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Ha lavorato all'estero per anni; ___, sette anni fra Lione e Marsiglia.",
+            "q": "Ha lavorato all'estero per anni, ___, sette anni fra Lione e Marsiglia.",
             "options": [
               "più precisamente",
               "a ben vedere",
@@ -10111,7 +10111,7 @@ const TEST_STRUCTURES = [
         "instr": "Leggi la frase e scegli l'affermazione vera.",
         "items": [
           {
-            "q": "«Il seminario è stato annullato; d'altronde si erano iscritte solo tre persone.»",
+            "q": "«Il seminario è stato annullato, d'altronde si erano iscritte solo tre persone.»",
             "options": [
               "Chi parla considera l'annullamento comprensibile.",
               "Chi parla trova sorprendente l'annullamento.",
@@ -10147,7 +10147,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "«Aveva studiato pochissimo; eppure ha superato la selezione.»",
+            "q": "«Aveva studiato pochissimo, eppure ha superato la selezione.»",
             "options": [
               "L'esito va contro le aspettative.",
               "L'esito conferma le aspettative.",
@@ -10882,7 +10882,7 @@ const TEST_STRUCTURES = [
         "instr": "Scegli la forma verbale coerente con l'ordine dei fatti.",
         "items": [
   {
-    "q": "Il temporale è arrivato alle sei; a quell'ora noi ___ ancora in spiaggia, e la tenda l'avevamo già smontata.",
+    "q": "Il temporale è arrivato alle sei, a quell'ora noi ___ ancora in spiaggia, e la tenda l'avevamo già smontata.",
     "options": [
       "eravamo",
       "siamo stati",
@@ -10900,7 +10900,7 @@ const TEST_STRUCTURES = [
     "answer": 0
   },
   {
-    "q": "Alle otto la sala era ancora vuota; alle nove, quando finalmente ___, gli altri erano già andati via.",
+    "q": "Alle otto la sala era ancora vuota, alle nove, quando finalmente ___, gli altri erano già andati via.",
     "options": [
       "sono entrato",
       "ero entrato",
@@ -10927,7 +10927,7 @@ const TEST_STRUCTURES = [
     "answer": 0
   },
   {
-    "q": "Per settimane il forno faceva un rumore strano; poi una sera ___ del tutto, proprio mentre cuocevo la torta di compleanno.",
+    "q": "Per settimane il forno faceva un rumore strano, poi una sera ___ del tutto, proprio mentre cuocevo la torta di compleanno.",
     "options": [
       "si è fermato",
       "si fermava",
@@ -12195,7 +12195,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "«Il “restauro lampo” sarebbe dovuto durare due settimane; siamo al quarto mese.»",
+            "q": "«Il “restauro lampo” sarebbe dovuto durare due settimane, siamo al quarto mese.»",
             "options": [
               "Usa il condizionale per ironizzare sulla durata.",
               "Non sa quanto sia durato davvero il restauro.",
@@ -12589,7 +12589,7 @@ const TEST_STRUCTURES = [
         "type": "Comprensione",
         "fmt": "buco",
         "instr": "Leggi il testo e rispondi.",
-        "testo": "Un istituto europeo ha pubblicato un'indagine sull'immagine internazionale dell'Italia. Il 68% degli intervistati associa il paese a cucina, arte e clima: il dato è confermato da tre rilevazioni successive. La ricercatrice che ha coordinato il lavoro resta prudente: «Sembrerebbe che l'Italia sia percepita soprattutto come luogo di vacanza, ma il campione è ancora ristretto». Un intervistato tedesco racconta che, prima di trasferirsi, avrebbe pensato che gli orari di lavoro italiani fossero più brevi dei suoi; oggi sa che gli italiani lavorano in media più ore dei tedeschi. Benché il luogo comune sulla lentezza sia ancora diffuso, l'indagine non lo conferma. Sulle differenze regionali la ricercatrice aggiunge soltanto: «Direi che contano più della nazionalità».",
+        "testo": "Un istituto europeo ha pubblicato un'indagine sull'immagine internazionale dell'Italia. Il 68% degli intervistati associa il paese a cucina, arte e clima: il dato è confermato da tre rilevazioni successive. La ricercatrice che ha coordinato il lavoro resta prudente: «Sembrerebbe che l'Italia sia percepita soprattutto come luogo di vacanza, ma il campione è ancora ristretto». Un intervistato tedesco racconta che, prima di trasferirsi, avrebbe pensato che gli orari di lavoro italiani fossero più brevi dei suoi, oggi sa che gli italiani lavorano in media più ore dei tedeschi. Benché il luogo comune sulla lentezza sia ancora diffuso, l'indagine non lo conferma. Sulle differenze regionali la ricercatrice aggiunge soltanto: «Direi che contano più della nazionalità».",
         "items": [
           {
             "q": "Il testo dà per certo che l'Italia è percepita soprattutto come luogo di vacanza?",
@@ -12713,7 +12713,7 @@ const TEST_STRUCTURES = [
         "type": "Comprensione",
         "fmt": "buco",
         "instr": "Leggi il testo e rispondi.",
-        "testo": "Un articolo universitario ha confrontato gli spot turistici sull'Italia con una serie di interviste a giovani italiani. Negli spot prevalgono borghi, cucina tradizionale e ritmi lenti; nelle interviste compaiono pendolarismo, lavoro digitale e costi abitativi. L'autrice registra il contrasto senza schierarsi: «Direi che nessuna delle due immagini sia completa». Un dato invece lo dà per acquisito: chi resta nel paese più di un mese usa meno generalizzazioni assolute di chi si ferma un giorno; il campione, scrive, è ampio e il risultato si ripete da cinque anni. In chiusura avanza un'ipotesi: un contatto prolungato favorirebbe una percezione più sfumata del paese. Benché l'ipotesi sia plausibile, l'articolo non la verifica.",
+        "testo": "Un articolo universitario ha confrontato gli spot turistici sull'Italia con una serie di interviste a giovani italiani. Negli spot prevalgono borghi, cucina tradizionale e ritmi lenti, nelle interviste compaiono pendolarismo, lavoro digitale e costi abitativi. L'autrice registra il contrasto senza schierarsi: «Direi che nessuna delle due immagini sia completa». Un dato invece lo dà per acquisito: chi resta nel paese più di un mese usa meno generalizzazioni assolute di chi si ferma un giorno, il campione, scrive, è ampio e il risultato si ripete da cinque anni. In chiusura avanza un'ipotesi: un contatto prolungato favorirebbe una percezione più sfumata del paese. Benché l'ipotesi sia plausibile, l'articolo non la verifica.",
         "items": [
           {
             "q": "Che valore ha il giudizio dell'autrice sulle due immagini?",
