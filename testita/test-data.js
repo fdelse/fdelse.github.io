@@ -10593,7 +10593,7 @@ const TEST_STRUCTURES = [
             "q": "«L’ultima scena è stata tagliata dal regista poco prima dell’uscita.»",
             "options": [
               "A tagliare l’ultima scena è stato il regista.",
-              "L’ultima scena è stata tagliata da chi l’aveva girata.",
+              "L’ultima scena è stata tagliata dal produttore.",
               "La scena è stata tagliata dopo l’uscita."
             ],
             "answer": 0
@@ -10604,38 +10604,7 @@ const TEST_STRUCTURES = [
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata.",
-        "items": [
-          {
-            "q": "I nonni è stato spiegato due volte come si usa la videochiamata.",
-            "wrong": "I",
-            "fix": "Ai"
-          },
-          {
-            "q": "La tirocinante è stata permessa un’uscita anticipata per l’esame.",
-            "wrong": "La",
-            "fix": "Alla"
-          },
-          {
-            "q": "Nella cerimonia di giovedì gli studenti sono stati consegnati i diplomi.",
-            "wrong": "gli",
-            "fix": "agli"
-          },
-          {
-            "q": "Le famiglie sono state promesse nuove case entro giugno.",
-            "wrong": "Le",
-            "fix": "Alle"
-          },
-          {
-            "q": "Dopo l’ispezione Marco è stato chiesto un chiarimento sulla fattura.",
-            "wrong": "Marco",
-            "fix": "A Marco"
-          },
-          {
-            "q": "L’inquilina è stata negata la proroga senza motivazione.",
-            "wrong": "L’inquilina",
-            "fix": "All’inquilina"
-          }
-        ]
+        "items": [{"q":"I nonni è stato spiegato due volte come si usa la videochiamata.","wrong":"I","fix":"Ai"},{"q":"Tutte le pratiche arretrate sono stati esaminate entro venerdì sera.","wrong":"stati","fix":"state"},{"q":"Il verbale è firmato ieri sera dal presidente uscente.","wrong":"è","fix":"è stato"},{"q":"Le famiglie sono state promesse nuove case entro giugno.","wrong":"Le","fix":"Alle"},{"q":"Alla riunione di lunedì sono stati partecipati tutti i responsabili.","wrong":"partecipati","fix":"convocati"},{"q":"La delibera ha stata approvata con due soli voti contrari.","wrong":"ha","fix":"è"}]
       },
       {
         "type": "Comprensione",
@@ -10688,11 +10657,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "«Alle nove in punto l’asta è aperta dal banditore.»",
+            "q": "«Ogni lunedì mattina il magazzino è controllato dal responsabile.»",
             "options": [
-              "Descrive l’atto con cui l’asta comincia.",
-              "Descrive lo stato in cui si trova l’asta alle nove.",
-              "Dice che l’asta era già cominciata prima delle nove."
+              "Descrive un controllo che qualcuno esegue.",
+              "Descrive lo stato in cui si trova il magazzino.",
+              "Dice che il magazzino resta chiuso il lunedì."
             ],
             "answer": 0
           }
@@ -10714,7 +10683,7 @@ const TEST_STRUCTURES = [
         "instr": "Scegli la forma coerente con il momento in cui si riferisce.",
         "items": [
   {
-    "q": "«La merce parte domani» → Il magazziniere assicurò che la merce sarebbe partita ___.",
+    "q": "«La merce parte domani» → La settimana scorsa il magazziniere assicurò che la merce sarebbe partita ___.",
     "options": [
       "il giorno dopo",
       "domani",
@@ -10841,7 +10810,7 @@ const TEST_STRUCTURES = [
     "fix": "fosse"
   },
   {
-    "q": "Il tecnico sostenne che l'impianto fosse a norma da almeno dieci anni.",
+    "q": "Dal sopralluogo risultò che l'impianto fosse fuori norma da anni.",
     "wrong": "fosse",
     "fix": "era"
   },
@@ -10851,7 +10820,7 @@ const TEST_STRUCTURES = [
     "fix": "fossero"
   },
   {
-    "q": "L'ispettore precisò che il controllo fosse stato fatto in mattinata.",
+    "q": "Il verbale attestò che il controllo fosse stato fatto in mattinata.",
     "wrong": "fosse",
     "fix": "era"
   },
@@ -10861,9 +10830,9 @@ const TEST_STRUCTURES = [
     "fix": "avesse"
   },
   {
-    "q": "Il testimone ribadì che quella sera avesse visto due persone.",
-    "wrong": "avesse",
-    "fix": "aveva"
+    "q": "Dagli atti emerse che quella sera ci fossero due persone nel cortile.",
+    "wrong": "fossero",
+    "fix": "erano"
   }
 ]
       }
@@ -11024,14 +10993,14 @@ const TEST_STRUCTURES = [
     "fix": "aveva telefonato"
   },
   {
-    "q": "Quando è squillato il telefono, mi ero alzato di scatto e avevo rovesciato il caffè.",
-    "wrong": "ero",
-    "fix": "sono"
+    "q": "Quando è squillato il telefono, mi sono alzato di scatto e avevo rovesciato il caffè.",
+    "wrong": "avevo",
+    "fix": "ho"
   },
   {
-    "q": "Da ragazzo mio nonno si era alzato ogni mattina alle cinque per andare nei campi.",
-    "wrong": "era",
-    "fix": "si alzava"
+    "q": "Da ragazzo mio nonno si alzò ogni mattina alle cinque per andare nei campi.",
+    "wrong": "alzò",
+    "fix": "alzava"
   }
 ]
       }
@@ -11169,9 +11138,9 @@ const TEST_STRUCTURES = [
         "instr": "Individua e clicca la parola sbagliata.",
         "items": [
   {
-    "q": "La trattativa era finita male. Nonostante, le due parti si sono riviste il mese dopo.",
-    "wrong": "Nonostante",
-    "fix": "Ciononostante"
+    "q": "Benché aveva piovuto tutta la notte, la gara si è disputata regolarmente.",
+    "wrong": "aveva",
+    "fix": "avesse"
   },
   {
     "q": "La multa resta dovuta, anche ammettendo che il cartello era coperto dai rami.",
@@ -11179,9 +11148,9 @@ const TEST_STRUCTURES = [
     "fix": "fosse"
   },
   {
-    "q": "I lavori del cantiere non sono ancora partiti, malgrado avevano firmato a marzo.",
-    "wrong": "avevano",
-    "fix": "avessero"
+    "q": "I lavori del cantiere non sono ancora partiti, malgrado l'impresa aveva firmato il contratto a marzo.",
+    "wrong": "aveva",
+    "fix": "avesse"
   },
   {
     "q": "Si è offerto di accompagnarci tutto il giorno, pur non conosceva bene la zona.",
@@ -11194,9 +11163,9 @@ const TEST_STRUCTURES = [
     "fix": "Nonostante"
   },
   {
-    "q": "Fermo restando che il pagamento sia arrivato il tre marzo, non si capisce perché non risulta a sistema.",
-    "wrong": "sia",
-    "fix": "è"
+    "q": "Sebbene lavorando da vent'anni nel settore, non è stato ammesso al concorso.",
+    "wrong": "lavorando",
+    "fix": "lavorasse"
   }
 ]
       }
@@ -11507,38 +11476,7 @@ const TEST_STRUCTURES = [
         "type": "Correzione",
         "fmt": "errore",
         "instr": "Individua e clicca la parola sbagliata.",
-        "items": [
-  {
-    "q": "Sembrava strano che nessuno si era accorto della perdita in cantina.",
-    "wrong": "era",
-    "fix": "fosse"
-  },
-  {
-    "q": "La riunione si chiuse senza che nessuno aveva sollevato obiezioni.",
-    "wrong": "aveva",
-    "fix": "avesse"
-  },
-  {
-    "q": "Non capivo come avevano fatto a finire tutto in una sola giornata.",
-    "wrong": "avevano",
-    "fix": "avessero"
-  },
-  {
-    "q": "Nonostante avevamo provato il finale decine di volte, alla recita nessuno ricordò le battute.",
-    "wrong": "avevamo",
-    "fix": "avessimo"
-  },
-  {
-    "q": "Mi dispiacque che i colleghi non erano stati avvisati del cambio di orario.",
-    "wrong": "erano",
-    "fix": "fossero"
-  },
-  {
-    "q": "Trovai assurdo che nessuno aveva controllato le uscite di sicurezza.",
-    "wrong": "aveva",
-    "fix": "avesse"
-  }
-]
+        "items": [{"q":"Sembrava strano che nessuno si era accorto della perdita in cantina.","wrong":"era","fix":"fosse"},{"q":"Mi dispiacque che i colleghi non siano stati avvisati del cambio di orario.","wrong":"siano","fix":"fossero"},{"q":"Nonostante avrebbe provato il finale decine di volte, alla recita nessuno ricordò le battute.","wrong":"avrebbe","fix":"avesse"},{"q":"Sebbene fossero uscito di casa prestissimo, i due fratelli persero il traghetto.","wrong":"uscito","fix":"usciti"},{"q":"La riunione si chiuse senza che nessuno aveva sollevato obiezioni.","wrong":"aveva","fix":"avesse"},{"q":"Benché avesse rientrato in sede prima del previsto, il direttore non firmò nulla.","wrong":"avesse","fix":"fosse"}]
       }
     ],
     "diag": true
