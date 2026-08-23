@@ -10185,7 +10185,7 @@ const TEST_STRUCTURES = [
         "instr": "Leggi la frase e scegli che cosa vuole dire chi parla.",
         "items": [
           {
-            "q": "«Se avessi le chiavi di sotto, ti aprirei io.»",
+            "q": "«Se avessi le chiavi del portone, ti aprirei io.»",
             "options": [
               "Chi parla non ha quelle chiavi.",
               "Chi parla sta esagerando per far capire che è seccato.",
@@ -10243,7 +10243,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Scelta",
         "fmt": "buco",
-        "instr": "Nel parlato molto informale si usa l’imperfetto. Scegli la versione di registro sorvegliato che corrisponde.",
+        "instr": "Nel parlato molto informale si usa l’imperfetto. Scegli come si direbbe la stessa cosa in una situazione formale, per esempio scrivendo.",
         "items": [
           {
             "q": "Appena entrato alla festa: «Se lo sapevo che c’era anche lui, non venivo.»",
@@ -10304,7 +10304,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Trasformazione",
         "fmt": "buco",
-        "instr": "Scegli la conclusione che rende l’esagerazione.",
+        "instr": "Scegli la conclusione che esprime l’esagerazione.",
         "items": [
           {
             "q": "Se le sue scuse fossero mattoni, ___.",
@@ -10493,11 +10493,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Chiunque legga il resoconto capisce che la decisione era già presa.",
+            "q": "Il revisore ha firmato il verbale dopo aver riletto tutti gli allegati.",
             "options": [
-              "Leggendo il resoconto, si capisce che la decisione era già presa.",
-              "Leggendo il resoconto, la decisione risulta già presa.",
-              "Leggendo il resoconto, era chiaro che la decisione fosse già presa."
+              "Riletti tutti gli allegati, il revisore ha firmato il verbale.",
+              "Rileggendo tutti gli allegati, il verbale convinse il revisore.",
+              "Riletti tutti gli allegati, il verbale ha firmato il revisore."
             ],
             "answer": 0
           },
@@ -10592,8 +10592,8 @@ const TEST_STRUCTURES = [
           {
             "q": "«L’ultima scena è stata tagliata dal regista poco prima dell’uscita.»",
             "options": [
-              "A tagliare la scena è stato il regista.",
-              "A tagliare la scena è stato chi l’aveva girata.",
+              "A tagliare l’ultima scena è stato il regista.",
+              "L’ultima scena è stata tagliata da chi l’aveva girata.",
               "La scena è stata tagliata dopo l’uscita."
             ],
             "answer": 0
