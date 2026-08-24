@@ -724,12 +724,21 @@ function checkItem(it){
     const answer = vals.join(' / ') || '(vuoto)';
     if (vals.every(v => !v)) return { state:'vuoto', answer:'(vuoto)', key: it.dataset.answer };
     const forme = it.dataset.no ? JSON.parse(it.dataset.no) : [];
-    const res = fillCorrect(vals.length > 1 ? vals.join(' / ') : vals[0], it.dataset.answer, forme);
-    /* Se l'item elenca le forme errate note (campo "no"), l'autore sta dicendo che
-       la risposta è obbligata: una risposta diversa è sbagliata, non "da verificare".
-       Senza quell'elenco resta la prudenza di prima, perché potrebbero esserci
-       formulazioni valide non previste. */
-    const esitoErrato = forme.length ? 'sbagliato' : 'verifica';
+    const dato = vals.length > 1 ? vals.join(' / ') : vals[0];
+    const res = fillCorrect(dato, it.dataset.answer, forme);
+    /* Il campo "no" elenca le forme errate che l'autore ha PREVISTO: se la
+       risposta è una di quelle, è sbagliata e basta. Ma il campo non autorizza
+       a bocciare tutto il resto: in un esercizio di trasformazione lo studente
+       può comporre una sequenza valida che l'autore non aveva immaginato
+       («Avendoli visti» per «Avendoli già visti»), e segnarla SBAGLIATO è un
+       errore di correzione, non dello studente. Quindi:
+         · risposta fra le forme note  → sbagliato
+         · risposta diversa e imprevista → da verificare, la giudica l'insegnante
+       Le «verifica» non contano come giuste nel punteggio: il voto resta severo,
+       e ogni riga segnalata dice dove la banca ha bisogno di un'alternativa
+       nel campo «a» (sintassi «forma1|forma2»). */
+    const prevista = forme.some(f => normParola(f) === normParola(dato));
+    const esitoErrato = prevista ? 'sbagliato' : 'verifica';
     return { state: res === true ? 'giusto' : (res === null ? 'vuoto' : esitoErrato), answer, key: it.dataset.answer };
   }
   if (fmt === 'buco') {
@@ -770,6 +779,9 @@ function checkItem(it){
 }
 
 const STATE_LABEL = { giusto:'CORRETTO', sbagliato:'SBAGLIATO', verifica:'DA VERIFICARE', vuoto:'NON RISPOSTO' };
+/* Marcatore davanti alla domanda: nell'email in solo testo un simbolo fa
+   scorrere l'occhio piu' in fretta di un'etichetta a fine riga. */
+const STATE_MARK = { giusto:'\u2713', sbagliato:'\u2717', verifica:'?', vuoto:'\u2014' };
 
 /* ---------- stima del livello (solo per test che coprono più livelli) ----------
    Soglia 70%: standard nei test di piazzamento. Tre fasce:
@@ -928,10 +940,14 @@ function submitTest(){
                                  consegna: it.dataset.instr || '', righe: [] };
         ordineEsercizi.push(chiave);
       }
+      /* Una riga per informazione, con le etichette incolonnate: nella vecchia
+         resa domanda ed esiti stavano schiacciati su due righe e non si
+         distingueva a colpo d'occhio la risposta data da quella attesa. */
       perEsercizio[chiave].righe.push(
-'   \u00b7 ' + it.dataset.q + '\n' +
-'     Risposta: ' + r.answer + '  \u2014  Corretta: ' + (r.key || '') +
-'  [' + STATE_LABEL[r.state] + ']');
+'   ' + STATE_MARK[r.state] + ' ' + it.dataset.q + '\n' +
+'      ha scritto : ' + r.answer + '\n' +
+'      corretta   : ' + (r.key || '') + '\n' +
+'      esito      : ' + STATE_LABEL[r.state]);
     }
   });
 
@@ -1044,10 +1060,11 @@ function submitTest(){
 (ordineEsercizi.length
   ? 'ERRORI DA RIVEDERE:\n\n' + ordineEsercizi.map(function(k){
       const b = perEsercizio[k];
-      return '\u2022 [' + b.struct + '] ' + b.tipo +
-             (b.consegna ? '\n   Consegna: ' + b.consegna : '') + '\n' +
-             b.righe.join('\n');
-    }).join('\n\n')
+      return b.struct + '  \u2014  ' + b.tipo + '\n' +
+             (b.consegna ? '   consegna: ' + b.consegna + '\n' : '') +
+             '   ' + '\u2500'.repeat(40) + '\n' +
+             b.righe.join('\n\n');
+    }).join('\n\n\n')
   : 'Nessun errore: test completato tutto correttamente.');
 
   // ---- vista studente ----
