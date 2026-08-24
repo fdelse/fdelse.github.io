@@ -12075,7 +12075,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Trasformazione",
         "fmt": "fill",
-        "instr": "Riscrivi con una forma implicita: scrivi solo la parte che va nel buco.",
+        "instr": "Riscrivi con una forma implicita: scrivi solo la parte che va nello spazio.",
         "items": [{"q":"Dopo che l’ho controllata, ho firmato la ricevuta. → ___, ho firmato la ricevuta.","a":"Avendola controllata","no":["Controllandola","Avendo controllatala","La avendo controllata"]},{"q":"Mentre ne discutevo con lui, ho capito il mio errore. → ___ con lui, ho capito il mio errore.","a":"Discutendone","no":["Avendone discusso","Ne discutendo","Discutendo ne"]},{"q":"Poiché li avevo già visti, non sono entrato. → ___, non sono entrato.","a":"Avendoli già visti","no":["Vedendoli già","Avendo già vistili","Li avendo già visti"]},{"q":"Mentre mi alzavo dalla sedia, ho sentito uno scricchiolio. → ___ dalla sedia, ho sentito uno scricchiolio.","a":"Alzandomi","no":["Essendomi alzato","Mi alzando","Alzando mi"]},{"q":"Poiché non ci aveva pensato prima, ha dovuto rifare tutto. → ___ prima, ha dovuto rifare tutto.","a":"Non avendoci pensato","no":["Non pensandoci","Non avendo pensatoci","Non ci avendo pensato"]},{"q":"Mentre la osservavo dalla finestra, ho notato che si è girata di scatto. → ___ dalla finestra, ho notato che si è girata di scatto.","a":"Osservandola","no":["Avendola osservata","La osservando","Osservando la"]}]
       },
       {
