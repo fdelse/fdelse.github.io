@@ -361,8 +361,14 @@ function renderItem(itemData, fmt, refId, posBersaglio){
   else if (fmt === 'ordina') {
     box.dataset.answer = JSON.stringify(itemData.sol);
     if (itemData.alt) box.dataset.alt = JSON.stringify(itemData.alt);
+    /* Il campo «extra» aggiunge parole che NON entrano nella soluzione: senza
+       distrattori il serbatoio contiene solo le parole giuste e la frase si
+       ricostruisce per tentativi, senza conoscere la regola. Le extra si
+       mescolano insieme alle altre ma restano fuori dal confronto finale, che
+       continua a misurare la sequenza contro «sol». */
+    const serbatoio = itemData.sol.concat(itemData.extra || []);
     // le parole si mescolano con lo stesso PRNG del test: col seed resta riproducibile
-    const mescolate = pickRandom(itemData.sol.slice(), itemData.sol.length);
+    const mescolate = pickRandom(serbatoio, serbatoio.length);
     /* Il buco si allunga in fase di resa, non nella banca: nei dati la
        convenzione resta «___» come in tutti gli altri formati. Tre trattini
        in mezzo a una frase si leggono a fatica — sembrano un trattino lungo,
