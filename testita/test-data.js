@@ -2591,7 +2591,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Adesso ___ nove meno un quarto e la lezione comincia alle nove.",
+            "q": "Adesso ___ undici meno un quarto e la lezione comincia alle undici.",
             "options": [
               "sono le",
               "è le",
@@ -5248,7 +5248,7 @@ const TEST_STRUCTURES = [
         "instr": "Scegli il connettivo adatto al senso.",
         "items": [
           {
-            "q": "Sono stanco ___ vado a dormire perché è mezzanotte.",
+            "q": "È tardi ___ prendo un taxi per tornare a casa.",
             "options": [
               "e",
               "ma",
@@ -5608,7 +5608,7 @@ const TEST_STRUCTURES = [
         "instr": "Scegli la forma corretta per chiedere un favore.",
         "items": [
           {
-            "q": "Signora, ___ chiudere la finestra?",
+            "q": "Signore, ___ abbassare un po' il volume?",
             "options": [
               "Le dispiace",
               "Le dispiacciono",
@@ -5617,7 +5617,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Marco, ___ prestarmi la penna un attimo?",
+            "q": "Marco, ___ accompagnarmi alla fermata?",
             "options": [
               "ti dispiace",
               "ti dispiaci",
@@ -5626,20 +5626,20 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Le dispiace ___ un attimo qui fuori?",
+            "q": "Le dispiace ___ qui il Suo nome?",
             "options": [
-              "aspettare",
-              "aspetta",
-              "aspetti"
+              "scrivere",
+              "scrivi",
+              "scriva"
             ],
             "answer": 0
           },
           {
-            "q": "Anna, ti dispiace ___ la porta?",
+            "q": "Anna, ti dispiace ___ le piante del balcone?",
             "options": [
-              "chiudere",
-              "chiudi",
-              "chiuda"
+              "annaffiare",
+              "annaffi",
+              "annaffia"
             ],
             "answer": 0
           },
@@ -5669,7 +5669,7 @@ const TEST_STRUCTURES = [
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
         "items": [
           {
-            "q": "Vorrebbe un cappuccino, per favore.",
+            "q": "Vorrebbe due etti di prosciutto, per favore.",
             "wrong": "Vorrebbe",
             "fix": "Vorrei"
           },
@@ -5724,11 +5724,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Hai un problema e dici: «Devo parlare con un impiegato.» →",
+            "q": "Dal dentista dici: «Devo spostare la visita di giovedì.» →",
             "options": [
-              "Dovrei parlare con un impiegato.",
-              "Dovrei parlo con un impiegato.",
-              "Dovrei di parlare con un impiegato."
+              "Dovrei spostare la visita di giovedì.",
+              "Dovrei sposto la visita di giovedì.",
+              "Dovrei di spostare la visita di giovedì."
             ],
             "answer": 0
           },
@@ -7383,7 +7383,7 @@ const TEST_STRUCTURES = [
             "fix": "sto"
           },
           {
-            "q": "Finalmente sto capire perché il riscaldamento non funziona.",
+            "q": "Finalmente sto capire perché la lavatrice perde acqua.",
             "wrong": "capire",
             "fix": "capendo"
           },
@@ -10234,34 +10234,34 @@ const TEST_STRUCTURES = [
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
         "items": [
           {
-            "q": "Quando sarò finito il lavoro, ti chiamerò.",
-            "wrong": "sarò",
-            "fix": "avrò"
+            "q": "Quando l'aereo avrà atterrato, accenderemo i telefoni.",
+            "wrong": "avrà",
+            "fix": "sarà"
           },
           {
-            "q": "Appena avranno partiti, chiuderemo il cancello.",
-            "wrong": "avranno",
-            "fix": "saranno"
+            "q": "Appena sarete scelto la meta, compreremo i biglietti.",
+            "wrong": "sarete",
+            "fix": "avrete"
           },
           {
-            "q": "Quando Anna sarà uscito, chiuderemo noi.",
-            "wrong": "uscito",
-            "fix": "uscita"
+            "q": "Quando la direttrice sarà rientrato dalla pausa, riprenderemo.",
+            "wrong": "rientrato",
+            "fix": "rientrata"
           },
           {
-            "q": "Quando avrò partito, ti scriverò un messaggio.",
-            "wrong": "avrò",
-            "fix": "sarò"
+            "q": "Serviremo il dolce in terrazza appena saremo sparecchiato la tavola.",
+            "wrong": "saremo",
+            "fix": "avremo"
           },
           {
-            "q": "Quando saranno tornate i ragazzi, ceneremo.",
-            "wrong": "tornate",
-            "fix": "tornati"
+            "q": "Quando saranno cresciute i cuccioli, li daremo in adozione.",
+            "wrong": "cresciute",
+            "fix": "cresciuti"
           },
           {
-            "q": "Appena saranno arrivato le scatole, apritele.",
-            "wrong": "arrivato",
-            "fix": "arrivate"
+            "q": "Dopo che gli escursionisti saranno salite in vetta, potranno fotografare la valle.",
+            "wrong": "salite",
+            "fix": "saliti"
           }
         ]
       },
@@ -10407,7 +10407,7 @@ const TEST_STRUCTURES = [
             "fix": "(togliere)"
           },
           {
-            "q": "Il risultato finale è molto ottimo.",
+            "q": "Il caffè di quel bar è molto ottimo.",
             "wrong": "molto",
             "fix": "(togliere)"
           },
@@ -10774,7 +10774,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Se l'è presa ___ me perché non l'ho avvisata.",
+            "q": "Se l'è presa ___ noi perché nessuno l'ha aspettata.",
             "options": [
               "con",
               "a",
@@ -10836,7 +10836,7 @@ const TEST_STRUCTURES = [
             "fix": "sentita"
           },
           {
-            "q": "Le ragazze se ne sono fregata delle regole.",
+            "q": "Le gemelle se ne sono fregata del divieto.",
             "wrong": "fregata",
             "fix": "fregate"
           },
@@ -10933,29 +10933,29 @@ const TEST_STRUCTURES = [
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
         "items": [
           {
-            "q": "Ieri pomeriggio vorrei aiutarti, ma non c'ero.",
-            "wrong": "vorrei",
-            "fix": "avrei voluto"
+            "q": "Quella domenica al mare ordineremmo il pesce, ma la cucina aveva già chiuso.",
+            "wrong": "ordineremmo",
+            "fix": "avremmo ordinato"
           },
           {
-            "q": "Dovremmo consegnare il progetto ieri, ma non abbiamo finito in tempo.",
-            "wrong": "Dovremmo",
-            "fix": "Avremmo dovuto"
+            "q": "L'autunno scorso i volontari pianterebbero la siepe, ma il terreno era già gelato.",
+            "wrong": "pianterebbero",
+            "fix": "avrebbero piantato"
           },
           {
-            "q": "Il collega verrebbe alla festa, ma era malato.",
-            "wrong": "verrebbe",
-            "fix": "sarebbe venuto"
+            "q": "Quel giorno Paola salirebbe volentieri fin lassù, ma il sentiero era ghiacciato.",
+            "wrong": "salirebbe",
+            "fix": "sarebbe salita"
           },
           {
-            "q": "In quel caso potresti avvisarmi, invece hai taciuto.",
-            "wrong": "potresti",
-            "fix": "avresti potuto"
+            "q": "Quel pomeriggio guardereste la finale con noi, ma la televisione smise di funzionare.",
+            "wrong": "guardereste",
+            "fix": "avreste guardato"
           },
           {
-            "q": "Le ragazze partirebbero prima, ma il maltempo le ha fermate.",
-            "wrong": "partirebbero",
-            "fix": "sarebbero partite"
+            "q": "Le mie sorelle uscirebbero con noi, ma hanno perso l'ultimo autobus.",
+            "wrong": "uscirebbero",
+            "fix": "sarebbero uscite"
           },
           {
             "q": "Ti chiamerei prima, ma non avevo credito.",
@@ -11205,7 +11205,7 @@ const TEST_STRUCTURES = [
         "instr": "Scrivi il passato remoto del verbo tra parentesi.",
         "items": [
           {
-            "q": "Dante ___ la Divina Commedia. (scrivere)",
+            "q": "Manzoni ___ i Promessi Sposi. (scrivere)",
             "a": "scrisse",
             "no": [
               "scriveva",
@@ -11266,7 +11266,7 @@ const TEST_STRUCTURES = [
         "instr": "La narrazione è al passato remoto: individua e clicca la parola sbagliata o la parola di troppo.",
         "items": [
           {
-            "q": "Dante nacque a Firenze e moriva in esilio.",
+            "q": "Galileo insegnò a Padova e moriva ad Arcetri.",
             "wrong": "moriva",
             "fix": "morì"
           },
@@ -11945,7 +11945,7 @@ const TEST_STRUCTURES = [
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
         "items": [
           {
-            "q": "Pensavo che Marco abbia sbagliato strada e che fosse in ritardo.",
+            "q": "Pensavo che Marco abbia sbagliato strada e che fosse ancora lontano.",
             "wrong": "abbia",
             "fix": "avesse"
           },
@@ -12286,9 +12286,9 @@ const TEST_STRUCTURES = [
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
         "items": [
           {
-            "q": "Anna mi aveva promesso che mi presterebbe la bici, ma se l'è dimenticata a casa.",
-            "wrong": "presterebbe",
-            "fix": "avrebbe prestato"
+            "q": "Anna mi aveva garantito che mi restituirebbe il dizionario entro venerdì, ma non me l'ha mai riportato.",
+            "wrong": "restituirebbe",
+            "fix": "avrebbe restituito"
           },
           {
             "q": "L'agenzia ci aveva comunicato che il volo partirà con tre ore di ritardo, e invece siamo decollati puntuali.",
@@ -13128,7 +13128,7 @@ const TEST_STRUCTURES = [
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
         "items": [
           {
-            "q": "Ieri, dopo cenare, siamo usciti a passeggiare.",
+            "q": "Ieri, dopo cenare, abbiamo giocato a carte tutta la sera.",
             "wrong": "cenare",
             "fix": "aver cenato"
           },
@@ -14915,7 +14915,7 @@ const TEST_STRUCTURES = [
         "instr": "Individua e clicca la parola che rompe la coerenza temporale del racconto.",
         "items": [
           {
-            "q": "Quando ho aperto lo zaino, ho visto che qualcuno ci ha frugato dentro e non me lo aveva detto.",
+            "q": "Il giorno del trasloco trovammo l'armadio vuoto: qualcuno ha portato via tutto durante la notte.",
             "wrong": "ha",
             "fix": "aveva"
           },
@@ -15193,7 +15193,7 @@ const TEST_STRUCTURES = [
             "fix": "ebbe"
           },
           {
-            "q": "Avremmo dovuto intervenire prima che la situazione diventava irreversibile.",
+            "q": "Avremmo dovuto agire prima che la situazione diventava irreversibile.",
             "wrong": "diventava",
             "fix": "diventasse"
           },
@@ -15404,7 +15404,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Non capivo perché la pratica ___ respinta il giorno prima, senza nemmeno una spiegazione.",
+            "q": "Nessuno mi disse perché la pratica ___ respinta il giorno prima, senza nemmeno una spiegazione.",
             "options": [
               "fosse stata",
               "fosse",
@@ -15528,34 +15528,34 @@ const TEST_STRUCTURES = [
         "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
-            "q": "Quando si è stanco non si ragiona bene.",
-            "wrong": "stanco",
-            "fix": "stanchi"
+            "q": "Sulla confezione c’è scritto che il farmaco viene conservato in frigorifero, ma nessuno lo fa.",
+            "wrong": "viene",
+            "fix": "va"
           },
           {
-            "q": "A quell’età si è molto più ottimista di adesso.",
-            "wrong": "ottimista",
-            "fix": "ottimisti"
+            "q": "La scuola va ricostruita dopo il terremoto e riaprì nel 1978.",
+            "wrong": "va",
+            "fix": "fu"
           },
           {
-            "q": "Dopo un viaggio così lungo si arriva sempre distrutto.",
-            "wrong": "distrutto",
-            "fix": "distrutti"
+            "q": "I rifiuti vengono ritirati entro le nove, ma restano sui marciapiedi per giorni.",
+            "wrong": "vengono",
+            "fix": "vanno"
           },
           {
-            "q": "Quando si è ospite in casa d’altri conviene non insistere.",
-            "wrong": "ospite",
-            "fix": "ospiti"
+            "q": "Nel 1961 la tratta per il porto va elettrificata e da allora nessuno l’ha più toccata.",
+            "wrong": "va",
+            "fix": "fu"
           },
           {
-            "q": "Quell’anno si è partito con due settimane di ritardo.",
-            "wrong": "partito",
-            "fix": "partiti"
+            "q": "Le assenze vengono comunicate entro le otto, ma molte famiglie non avvisano.",
+            "wrong": "vengono",
+            "fix": "vanno"
           },
           {
-            "q": "Non si è mai stato così vicini a un accordo.",
-            "wrong": "stato",
-            "fix": "stati"
+            "q": "Nel 1994 il borgo va evacuato in una notte e molti non tornarono più.",
+            "wrong": "va",
+            "fix": "fu"
           }
         ]
       },
@@ -15701,7 +15701,7 @@ const TEST_STRUCTURES = [
             "fix": "avremmo"
           },
           {
-            "q": "Se avrei accettato quel trasferimento, oggi sarebbero tutti più sereni.",
+            "q": "Se avrei ascoltato i suoi consigli, oggi sarebbero tutti più sereni.",
             "wrong": "avrei",
             "fix": "avessi"
           },
