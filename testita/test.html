@@ -1060,9 +1060,11 @@ function submitTest(){
 (ordineEsercizi.length
   ? 'ERRORI DA RIVEDERE:\n\n' + ordineEsercizi.map(function(k){
       const b = perEsercizio[k];
-      return b.struct + '  \u2014  ' + b.tipo + '\n' +
-             (b.consegna ? '   consegna: ' + b.consegna + '\n' : '') +
-             '   ' + '\u2500'.repeat(40) + '\n' +
+      /* Il filetto apre il blocco: separa un esercizio dal precedente, non la
+         consegna dai suoi item. */
+      return '\u2500'.repeat(46) + '\n' +
+             b.struct + '  \u2014  ' + b.tipo + '\n' +
+             (b.consegna ? '   consegna: ' + b.consegna + '\n' : '') + '\n' +
              b.righe.join('\n\n');
     }).join('\n\n\n')
   : 'Nessun errore: test completato tutto correttamente.');

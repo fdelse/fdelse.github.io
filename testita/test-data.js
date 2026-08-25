@@ -1740,7 +1740,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Quest'estate, ragazzi, ___ in Italia con alcuni amici.",
+            "q": "Chiara e Simone, ___ allo stadio senza di me?",
             "options": [
               "andate",
               "andiamo",
@@ -1775,7 +1775,7 @@ const TEST_STRUCTURES = [
             "fix": "venite"
           },
           {
-            "q": "Domenica preparo la pasta e Marco e Anna viene a cena.",
+            "q": "Domenica Elena e Davide viene a prendermi in stazione.",
             "wrong": "viene",
             "fix": "vengono"
           },
@@ -1785,7 +1785,7 @@ const TEST_STRUCTURES = [
             "fix": "andiamo"
           },
           {
-            "q": "Luca, veniamo al cinema con me stasera?",
+            "q": "Giulia, veniamo in pizzeria con me sabato?",
             "wrong": "veniamo",
             "fix": "vieni"
           },
@@ -2546,7 +2546,7 @@ const TEST_STRUCTURES = [
         "instr": "Scegli la forma corretta per dire l'ora.",
         "items": [
           {
-            "q": "Guardo l'orologio: ___ mezzogiorno.",
+            "q": "Guardo l'orologio e vedo che ___ mezzogiorno.",
             "options": [
               "è",
               "sono le",
@@ -2607,7 +2607,7 @@ const TEST_STRUCTURES = [
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
         "items": [
           {
-            "q": "Alla stazione controllo il tabellone e vedo che è le cinque.",
+            "q": "Alla stazione controllo il tabellone e leggo che è le cinque.",
             "wrong": "è",
             "fix": "sono"
           },
@@ -2689,7 +2689,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Il mio turno è lungo e comincio ___ per finire alle nove.",
+            "q": "Il mio turno è lungo e comincio ___ per finire alle sette.",
             "options": [
               "all'una",
               "alle una",
@@ -3406,7 +3406,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Io e Marco ___ finire il progetto entro domani.",
+            "q": "Io e Silvia ___ finire il progetto entro domani.",
             "options": [
               "dobbiamo",
               "dovete",
@@ -3415,7 +3415,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Luca ___ parlare con te perché ha una domanda importante.",
+            "q": "Elena ___ parlare con te perché ha una domanda importante.",
             "options": [
               "vuole",
               "voglio",
@@ -3445,7 +3445,7 @@ const TEST_STRUCTURES = [
             "fix": "(togliere)"
           },
           {
-            "q": "Oggi Marta puoi venire al cinema con noi.",
+            "q": "Oggi Marta puoi venire al cinema perché ha finito presto.",
             "wrong": "puoi",
             "fix": "può"
           },
@@ -3460,7 +3460,7 @@ const TEST_STRUCTURES = [
             "fix": "(togliere)"
           },
           {
-            "q": "Marco e Anna può arrivare tardi perché c'è traffico.",
+            "q": "Giulia e Davide può arrivare tardi perché c'è traffico.",
             "wrong": "può",
             "fix": "possono"
           },
@@ -3495,7 +3495,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Ho fame e ___ mangiare una fetta di torta.",
+            "q": "Non ho fame, ma ___ mangiare un'altra fetta di torta.",
             "options": [
               "voglio",
               "devo",
@@ -3522,7 +3522,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Dopo un anno di lavoro, quest'estate ___ andare al mare.",
+            "q": "L'anno scorso sono stato in montagna, quest'estate ___ andare al mare.",
             "options": [
               "voglio",
               "devo",
@@ -3592,7 +3592,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Nel fine settimana Marco e Anna ___ spesso sport.",
+            "q": "Nel fine settimana Elena e Davide ___ spesso sport.",
             "options": [
               "fanno",
               "fate",
@@ -3613,7 +3613,7 @@ const TEST_STRUCTURES = [
             "fix": "faccio"
           },
           {
-            "q": "Paolo, va al lavoro a piedi ogni mattina?",
+            "q": "Matteo, va al lavoro a piedi o preferisci la bicicletta?",
             "wrong": "va",
             "fix": "vai"
           },
@@ -3623,19 +3623,19 @@ const TEST_STRUCTURES = [
             "fix": "vengono"
           },
           {
-            "q": "Questa settimana io e Sara sta a casa.",
+            "q": "Questa settimana io e Chiara sta in ufficio fino a tardi.",
             "wrong": "sta",
             "fix": "stiamo"
           },
           {
-            "q": "Se un amico ha un dubbio, Marco do un consiglio.",
+            "q": "Se un amico ha un dubbio, Giulia do un consiglio.",
             "wrong": "do",
             "fix": "dà"
           },
           {
-            "q": "Ragazzi, il sabato fanno la spesa al mercato.",
-            "wrong": "fanno",
-            "fix": "fate"
+            "q": "Ragazzi, il sabato va al mercato con i vostri genitori?",
+            "wrong": "va",
+            "fix": "andate"
           }
         ]
       },
@@ -3789,9 +3789,9 @@ const TEST_STRUCTURES = [
             "fix": "visto"
           },
           {
-            "q": "Al telefono hai chiedato il numero della prenotazione?",
-            "wrong": "chiedato",
-            "fix": "chiesto"
+            "q": "Hai spendito molto per il biglietto del treno?",
+            "wrong": "spendito",
+            "fix": "speso"
           },
           {
             "q": "Dopo anni di risparmi Marco e Anna sono comprato una casa.",
@@ -3799,7 +3799,7 @@ const TEST_STRUCTURES = [
             "fix": "hanno"
           },
           {
-            "q": "Ragazzi, ieri sera al ristorante siete bevuto un bicchiere di vino?",
+            "q": "Ragazzi, alla festa di Elena siete bevuto lo spumante?",
             "wrong": "siete",
             "fix": "avete"
           },
@@ -3889,7 +3889,7 @@ const TEST_STRUCTURES = [
         "instr": "Scegli il participio con l'accordo giusto.",
         "items": [
           {
-            "q": "Alla fermata del centro Chiara è ___ con la valigia.",
+            "q": "Chiara è ___ dal treno con la valigia.",
             "options": [
               "scesa",
               "sceso",
@@ -3936,9 +3936,9 @@ const TEST_STRUCTURES = [
           {
             "q": "Ragazzi, siete ___ alla riunione ieri sera?",
             "options": [
-              "venuti",
-              "venute",
-              "venuto"
+              "andati",
+              "andate",
+              "andato"
             ],
             "answer": 0
           }
@@ -3955,12 +3955,12 @@ const TEST_STRUCTURES = [
             "fix": "è"
           },
           {
-            "q": "Per il torneo i ragazzi sono arrivate ieri.",
+            "q": "Gli atleti sono arrivate sabato mattina per il torneo.",
             "wrong": "arrivate",
             "fix": "arrivati"
           },
           {
-            "q": "Dopo il concerto Anna è tornato tardi.",
+            "q": "Dopo cena Silvia è tornato a piedi.",
             "wrong": "tornato",
             "fix": "tornata"
           },
@@ -3970,12 +3970,12 @@ const TEST_STRUCTURES = [
             "fix": "siamo"
           },
           {
-            "q": "Ieri Marco è rimasta in ufficio fino a tardi.",
+            "q": "Sabato Lorenzo è rimasta in biblioteca fino a sera.",
             "wrong": "rimasta",
             "fix": "rimasto"
           },
           {
-            "q": "Ieri Marco e Luca hanno venuti alla festa con alcuni amici.",
+            "q": "Ieri Matteo e Davide hanno venuti alla festa con alcuni amici.",
             "wrong": "hanno",
             "fix": "sono"
           }
@@ -4242,7 +4242,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "___ bene la salsa nella pentola.",
+            "q": "Marta, ___ bene la salsa nella pentola.",
             "options": [
               "Mescola",
               "Mescoli",
@@ -4294,34 +4294,34 @@ const TEST_STRUCTURES = [
         "instr": "Le persone si danno del tu. Individua e clicca la parola sbagliata.",
         "items": [
           {
-            "q": "Marco, prima di tutto prenda una pentola grande.",
-            "wrong": "prenda",
-            "fix": "prendi"
+            "q": "Prenda una pentola grande e mettila sul fuoco.",
+            "wrong": "Prenda",
+            "fix": "Prendi"
           },
           {
-            "q": "Anna, accenda il fuoco sotto la padella.",
+            "q": "Metti il pane sul tagliere e tagli le fette sottili.",
+            "wrong": "tagli",
+            "fix": "taglia"
+          },
+          {
+            "q": "Apri la finestra e accenda il fuoco sotto la padella.",
             "wrong": "accenda",
             "fix": "accendi"
           },
           {
-            "q": "In cucina, Luca, apra la finestra.",
-            "wrong": "apra",
-            "fix": "apri"
+            "q": "Serva la pasta ben calda e portala subito in tavola.",
+            "wrong": "Serva",
+            "fix": "Servi"
           },
           {
-            "q": "Sara, serva la pasta ben calda.",
-            "wrong": "serva",
-            "fix": "servi"
-          },
-          {
-            "q": "Adesso, Giulia, finisca di cuocere le uova.",
+            "q": "Controlla le uova e finisca di cuocerle piano.",
             "wrong": "finisca",
             "fix": "finisci"
           },
           {
-            "q": "Paolo, faccia bollire l'acqua con il sale.",
-            "wrong": "faccia",
-            "fix": "fai"
+            "q": "Faccia scaldare il brodo e uniscilo al risotto.",
+            "wrong": "Faccia",
+            "fix": "Fai"
           }
         ]
       },
@@ -4634,9 +4634,9 @@ const TEST_STRUCTURES = [
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
         "items": [
           {
-            "q": "In centro questo casa è grande.",
-            "wrong": "questo",
-            "fix": "questa"
+            "q": "Questo casa vicino alla spiaggia è costosa.",
+            "wrong": "Questo",
+            "fix": "Questa"
           },
           {
             "q": "Ieri ho comprato quelli libri in libreria.",
@@ -4649,9 +4649,9 @@ const TEST_STRUCTURES = [
             "fix": "quello"
           },
           {
-            "q": "Vicino alla porta quei zaini sono pesanti.",
-            "wrong": "quei",
-            "fix": "quegli"
+            "q": "Quei zaini vicino alla porta sono pesanti.",
+            "wrong": "Quei",
+            "fix": "Quegli"
           },
           {
             "q": "Oggi dobbiamo risolvere questa problema serio.",
@@ -4751,7 +4751,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Prima dell’esame studiare è più utile ___ dormire.",
+            "q": "La notte prima dell'esame dormire è più utile ___ studiare.",
             "options": [
               "che",
               "di",
@@ -4818,7 +4818,7 @@ const TEST_STRUCTURES = [
             "fix": "che"
           },
           {
-            "q": "In ufficio Anna è più giovane come me.",
+            "q": "Anna è più giovane come me, ma lavora qui da più tempo.",
             "wrong": "come",
             "fix": "di"
           },
@@ -4885,11 +4885,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Questo corso / quel corso (meno utile)",
+            "q": "Il mio telefono 2019 — il tuo 2023 (meno recente)",
             "options": [
-              "Questo corso è meno utile di quello.",
-              "Questo corso è meno utile che quello.",
-              "Questo corso è meno utile come quello."
+              "Il mio telefono è meno recente del tuo.",
+              "Il mio telefono è meno recente che il tuo.",
+              "Il mio telefono è meno recente come il tuo."
             ],
             "answer": 0
           }
@@ -5151,7 +5151,7 @@ const TEST_STRUCTURES = [
             "fix": "servono"
           },
           {
-            "q": "Da quando Anna vive lontano da casa, le mancano la sua città.",
+            "q": "Anna si è trasferita a Torino e le mancano il vecchio quartiere.",
             "wrong": "mancano",
             "fix": "manca"
           },
@@ -5161,7 +5161,7 @@ const TEST_STRUCTURES = [
             "fix": "bastano"
           },
           {
-            "q": "Marco vive a Milano e gli manca i vecchi colleghi.",
+            "q": "Da settembre Marta studia a Bologna e le manca i suoi fratelli.",
             "wrong": "manca",
             "fix": "mancano"
           },
@@ -5327,7 +5327,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Non voglio la pizza, ___ voglio la pasta.",
+            "q": "Luca va in palestra la mattina presto, io ___ ci vado la sera.",
             "options": [
               "invece",
               "quindi",
@@ -5345,20 +5345,20 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Domani il museo è chiuso, ___ andiamo sabato.",
+            "q": "Domani il museo è chiuso, ___ sabato è aperto tutto il giorno.",
             "options": [
-              "quindi",
               "però",
+              "quindi",
               "anche"
             ],
             "answer": 0
           },
           {
-            "q": "Marco non viene al cinema, ___ resta a casa a studiare.",
+            "q": "Marco ha un esame difficile domani, ___ resta a casa a studiare.",
             "options": [
+              "quindi",
               "invece",
-              "anche",
-              "quindi"
+              "anche"
             ],
             "answer": 0
           }
@@ -5476,9 +5476,9 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Hai ancora la febbre e ___ chiamare il medico.",
+            "q": "Con questa febbre Anna ___ chiamare il medico.",
             "options": [
-              "devi",
+              "deve",
               "bisogna",
               "bisogni"
             ],
@@ -5521,12 +5521,12 @@ const TEST_STRUCTURES = [
             "fix": "Bisogna"
           },
           {
-            "q": "Per la visita di domani bisogna arrivi in orario.",
+            "q": "Per l'iscrizione bisogna arrivi con i documenti pronti.",
             "wrong": "arrivi",
             "fix": "arrivare"
           },
           {
-            "q": "In segreteria bisogna di consegnare il modulo.",
+            "q": "Bisogna di consegnare il modulo in segreteria.",
             "wrong": "di",
             "fix": "(togliere)"
           }
@@ -5565,11 +5565,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Devono presentare la domanda entro venerdì.",
+            "q": "Devono presentare la domanda entro il termine.",
             "options": [
-              "Bisogna presentare la domanda entro venerdì.",
-              "Bisogna presentano la domanda entro venerdì.",
-              "Hanno bisogno di presentare la domanda entro venerdì."
+              "Bisogna presentare la domanda entro il termine.",
+              "Bisogna presentano la domanda entro il termine.",
+              "Hanno bisogno di presentare la domanda entro il termine."
             ],
             "answer": 0
           },
@@ -5669,17 +5669,17 @@ const TEST_STRUCTURES = [
         "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
         "items": [
           {
-            "q": "Io vorrebbe un cappuccino, per favore.",
-            "wrong": "vorrebbe",
-            "fix": "vorrei"
+            "q": "Vorrebbe un cappuccino, per favore.",
+            "wrong": "Vorrebbe",
+            "fix": "Vorrei"
           },
           {
-            "q": "Al telefono io potrebbe parlare con il direttore?",
+            "q": "Buongiorno, potrebbe parlare con il direttore? Sono Elena Ferri.",
             "wrong": "potrebbe",
             "fix": "potrei"
           },
           {
-            "q": "Il medico dice che io dovrebbe mangiare meno sale.",
+            "q": "Il medico dice che dovrebbe mangiare meno sale, ma il sale mi piace.",
             "wrong": "dovrebbe",
             "fix": "dovrei"
           },
@@ -5689,7 +5689,7 @@ const TEST_STRUCTURES = [
             "fix": "(togliere)"
           },
           {
-            "q": "Potrei a provare la giacca in una taglia più grande?",
+            "q": "Potrei a lasciare il cappotto al guardaroba?",
             "wrong": "a",
             "fix": "(togliere)"
           },
@@ -5715,7 +5715,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Sei in un ufficio e chiedi: «Posso usare il bagno?» →",
+            "q": "Sei a casa di un'amica e chiedi: «Posso usare il bagno?» →",
             "options": [
               "Potrei usare il bagno?",
               "Potrei uso il bagno?",
@@ -5751,11 +5751,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Hai mal di testa e dici: «Devo andare in farmacia.» →",
+            "q": "Dici al medico: «Devo prenotare un altro appuntamento.» →",
             "options": [
-              "Dovrei andare in farmacia.",
-              "Dovrei vado in farmacia.",
-              "Dovrei di andare in farmacia."
+              "Dovrei prenotare un altro appuntamento.",
+              "Dovrei prenoto un altro appuntamento.",
+              "Dovrei di prenotare un altro appuntamento."
             ],
             "answer": 0
           }
@@ -5776,7 +5776,7 @@ const TEST_STRUCTURES = [
         "instr": "Scegli il verbo corretto.",
         "items": [
           {
-            "q": "___ nuotare bene perché ha fatto un corso da piccola. (lei)",
+            "q": "Ha fatto un corso di nuoto da piccola e ora ___ nuotare bene. (lei)",
             "options": [
               "Sa",
               "Può",
@@ -5794,11 +5794,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "___ guidare la moto o non hai mai imparato? (tu)",
+            "q": "Non ha mai preso lezioni, quindi non ___ guidare la moto. (lui)",
             "options": [
-              "Sai",
-              "Puoi",
-              "Sa"
+              "sa",
+              "può",
+              "sta"
             ],
             "answer": 0
           },
@@ -5812,11 +5812,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "___ suonare il pianoforte perché hanno studiato pianoforte per dieci anni. (loro)",
+            "q": "Hanno studiato dieci anni al conservatorio e ___ suonare il pianoforte. (loro)",
             "options": [
-              "Sanno",
-              "Possono",
-              "Stanno"
+              "sanno",
+              "possono",
+              "stanno"
             ],
             "answer": 0
           },
@@ -5898,7 +5898,7 @@ const TEST_STRUCTURES = [
         "instr": "Scegli la frase che esprime il senso indicato.",
         "items": [
           {
-            "q": "Ha imparato a sciare. (capacità)",
+            "q": "Ha imparato a sciare con un maestro. (capacità)",
             "options": [
               "Sa sciare.",
               "Può sciare.",
@@ -5916,11 +5916,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Ha studiato il tedesco per anni. (capacità)",
+            "q": "Non ha mai studiato il tedesco. (capacità)",
             "options": [
-              "Sa parlare tedesco.",
-              "Può parlare tedesco.",
-              "Vuole parlare tedesco."
+              "Non sa parlare tedesco.",
+              "Non può parlare tedesco.",
+              "Non vuole parlare tedesco."
             ],
             "answer": 0
           },
@@ -5934,7 +5934,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Ha imparato a guidare. (capacità)",
+            "q": "Ha superato l'esame di scuola guida. (capacità)",
             "options": [
               "Sa guidare.",
               "Può guidare.",
