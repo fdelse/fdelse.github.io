@@ -70,7 +70,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Marco è trent'anni.",
@@ -240,7 +240,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "In aula c'è la studente nuovo.",
@@ -409,7 +409,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Stasera c'è uno amico di Marco a casa.",
@@ -639,7 +639,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "In soggiorno ho alcuni posto per gli ospiti.",
@@ -747,7 +747,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Oggi in città c'è molti negozi e una banca.",
@@ -916,7 +916,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Il cappotto è rossa e molto caldo.",
@@ -1086,7 +1086,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "La sera noi guarda la televisione e voi ascoltate la radio.",
@@ -1255,7 +1255,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Ogni sera mia zia rispondono al telefono.",
@@ -1424,7 +1424,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "La notte Anna dormono poco.",
@@ -1593,7 +1593,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Mi piacciono molto il pesce rosso di Luca.",
@@ -1762,7 +1762,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Per comprare la frutta mio padre vanno al mercato ogni sabato.",
@@ -1932,7 +1932,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Il quaderno è a Sara.",
@@ -2161,7 +2161,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "In ospedale Maria è una brava dottore e Luca è un bravo infermiere.",
@@ -2436,7 +2436,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Sul tavolo ci sono il mio telefono e le mia chiavi.",
@@ -3099,7 +3099,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo in un contesto formale.",
+        "instr": "Individua e clicca la parola sbagliata in un contesto formale.",
         "items": [
           {
             "q": "Buonasera, signore, dove lavori?",
@@ -3267,7 +3267,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Stasera vado alla cinema per vedere un film nuovo.",
@@ -3605,7 +3605,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Dopo cena io fa una passeggiata nel quartiere.",
@@ -3776,7 +3776,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Durante la pausa sono mangiato una mela.",
@@ -3947,7 +3947,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Maria ha andata al mercato per comprare la frutta.",
@@ -4118,7 +4118,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Per andare al lavoro io si alzo alle sei.",
@@ -4524,7 +4524,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Signora, fai una passeggiata ogni giorno!",
@@ -4631,7 +4631,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Questo casa vicino alla spiaggia è costosa.",
@@ -4800,7 +4800,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Paolo è forte ma è meno veloce che Gianni.",
@@ -4969,7 +4969,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Il vino la compro io e i dolci li porta Marta.",
@@ -5138,7 +5138,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Quando scelgo un concerto, mi interessano soprattutto la musica classica.",
@@ -6026,7 +6026,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Al mercato ho comprato del pane e delle formaggio.",
@@ -6194,7 +6194,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Per il montaggio, appoggiando il pannello a terra e avvitare le gambe.",
@@ -6362,7 +6362,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Ieri sono andato in banca e ho chiedato un appuntamento.",
@@ -6533,7 +6533,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Noi cominciaremo alle sei e aspetteremo gli altri sul binario.",
@@ -6702,7 +6702,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Per il concorso ci vuole due certificati, ma li abbiamo già.",
@@ -7042,7 +7042,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Ieri finivo il libro che mi hai prestato la settimana scorsa.",
@@ -7370,7 +7370,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Gli operai sta pulendo il cortile davanti al portone.",
@@ -7538,7 +7538,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "So che Paolo sia in riunione, ma non credo che torni presto.",
@@ -7698,7 +7698,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Noi lavoraremmo anche di sabato, ma preferiremmo riposare.",
@@ -7859,7 +7859,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Credo che Marco sia dormito male e che tu abbia fatto tardi.",
@@ -8016,7 +8016,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Lo spettacolo è per iniziare e gli spettatori stanno per entrare.",
@@ -8186,7 +8186,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Il computer si è infettato con un virus, invece l'ho portato dal tecnico.",
@@ -8344,7 +8344,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Scegli le patate, sbucciala bene e mettile in padella.",
@@ -8512,7 +8512,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Ho conosciuto un ingegnere il cui azienda produce turbine per navi.",
@@ -8681,7 +8681,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Le ho promessa una risposta entro sera, ma Valeria aspetta ancora.",
@@ -8842,7 +8842,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Il caricatore è tuo, quindi domani ti lo riporto.",
@@ -9028,7 +9028,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Quel maglione l'ho comprata in saldo l'inverno scorso.",
@@ -9278,7 +9278,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Questo turno è troppo pesante e non ci la faccio ad arrivare a mezzanotte.",
@@ -9385,7 +9385,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Ieri sera si è tornato tardi e stamattina nessuno era in forma.",
@@ -9554,7 +9554,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Se la settimana prossima ci sarebbe il sole, faremo una gita al mare.",
@@ -9723,7 +9723,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Il giardino è curata dal nonno.",
@@ -9891,7 +9891,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "In quel mercato si compra prodotti locali.",
@@ -10063,7 +10063,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Anna dice: «Mi piace questa commedia». → Anna dice che mi piace questa commedia.",
@@ -10231,10 +10231,10 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
-            "q": "Quando l'aereo avrà atterrato, accenderemo i telefoni.",
+            "q": "Appena l'odore di vernice avrà sparito, potremo rientrare in casa.",
             "wrong": "avrà",
             "fix": "sarà"
           },
@@ -10268,7 +10268,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Trasformazione",
         "fmt": "buco",
-        "instr": "Scegli la versione con il futuro anteriore.",
+        "instr": "Scegli la versione corretta.",
         "items": [
           {
             "q": "Prima finisco la relazione, poi esco. →",
@@ -10443,7 +10443,7 @@ const TEST_STRUCTURES = [
             "options": [
               "Un pranzo ottimo",
               "Un pranzo più buono",
-              "Un pranzo buonissimo ottimo"
+              "Un pranzo buonissimo"
             ],
             "answer": 0
           },
@@ -10452,7 +10452,7 @@ const TEST_STRUCTURES = [
             "options": [
               "Un servizio pessimo",
               "Un servizio più cattivo",
-              "Un servizio cattivissimo pessimo"
+              "Un servizio cattivissimo"
             ],
             "answer": 0
           },
@@ -10461,7 +10461,7 @@ const TEST_STRUCTURES = [
             "options": [
               "Il livello massimo",
               "Il livello più massimo",
-              "Il livello altissimo massimo"
+              "Il livello altissimo"
             ],
             "answer": 0
           },
@@ -10470,7 +10470,7 @@ const TEST_STRUCTURES = [
             "options": [
               "La quantità minima",
               "La quantità più minima",
-              "La quantità bassissima minima"
+              "La quantità bassissima"
             ],
             "answer": 0
           },
@@ -10479,7 +10479,7 @@ const TEST_STRUCTURES = [
             "options": [
               "Il figlio maggiore",
               "Il figlio più maggiore",
-              "Il figlio grandissimo"
+              "Il figlio anzianissimo"
             ],
             "answer": 0
           },
@@ -10488,7 +10488,7 @@ const TEST_STRUCTURES = [
             "options": [
               "La figlia minore",
               "La figlia più minore",
-              "La figlia piccolissima minore"
+              "La figlia piccolissima"
             ],
             "answer": 0
           }
@@ -10512,7 +10512,7 @@ const TEST_STRUCTURES = [
             "q": "Il ritardo ___ si lamentano tutti dura ormai da mesi.",
             "options": [
               "di cui",
-              "per cui",
+              "su cui",
               "a cui"
             ],
             "answer": 0
@@ -10567,7 +10567,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Il consolato di cui mi sono rivolto non ha risposto.",
@@ -10713,7 +10713,7 @@ const TEST_STRUCTURES = [
               "guidare"
             ],
             "extra": [
-              "ci",
+              "si",
               "lo"
             ]
           },
@@ -10727,7 +10727,7 @@ const TEST_STRUCTURES = [
             ],
             "extra": [
               "ci",
-              "l'ho"
+              "messo"
             ]
           },
           {
@@ -10823,7 +10823,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Dopo la riunione loro se la hanno presa moltissimo.",
@@ -10930,7 +10930,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Quella domenica al mare ordineremmo il pesce, ma la cucina aveva già chiuso.",
@@ -10953,12 +10953,12 @@ const TEST_STRUCTURES = [
             "fix": "avreste guardato"
           },
           {
-            "q": "Le mie sorelle uscirebbero con noi, ma hanno perso l'ultimo autobus.",
+            "q": "Ieri sera le mie sorelle uscirebbero con noi, ma avevano perso l'ultimo autobus.",
             "wrong": "uscirebbero",
             "fix": "sarebbero uscite"
           },
           {
-            "q": "Ti chiamerei prima, ma non avevo credito.",
+            "q": "Ieri ti chiamerei prima, ma non avevo credito.",
             "wrong": "chiamerei",
             "fix": "avrei chiamato"
           }
@@ -11095,7 +11095,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Non credo che voi siete pronti per un viaggio così lungo.",
@@ -11250,7 +11250,7 @@ const TEST_STRUCTURES = [
             ]
           },
           {
-            "q": "Gli antichi Greci ___ sacrifici agli dèi. (fare)",
+            "q": "Dopo la vittoria i Greci ___ un grande sacrificio agli dèi. (fare)",
             "a": "fecero",
             "no": [
               "facevano",
@@ -11286,12 +11286,12 @@ const TEST_STRUCTURES = [
             "fix": "ricevette"
           },
           {
-            "q": "Nel 1861 l'Italia diventava un regno unito.",
+            "q": "Nel 1861 l'Italia diventava un regno unito, ma Venezia arrivò solo nel 1866.",
             "wrong": "diventava",
             "fix": "diventò"
           },
           {
-            "q": "Leonardo lasciò Milano nel 1499 e si trasferirono in Francia.",
+            "q": "Leonardo lasciò Milano nel 1516 e si trasferirono in Francia.",
             "wrong": "trasferirono",
             "fix": "trasferì"
           }
@@ -11350,7 +11350,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Umberto II è diventato re d'Italia nel 1946. →",
             "options": [
-              "Umberto II divenne re d'Italia nel 1946.",
+              "Umberto II diventò re d'Italia nel 1946.",
               "Umberto II diventava re d'Italia nel 1946.",
               "Umberto II diventette re d'Italia nel 1946."
             ],
@@ -11434,7 +11434,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Mi illudevo che lui cambiava.",
@@ -11447,7 +11447,7 @@ const TEST_STRUCTURES = [
             "fix": "tornassi"
           },
           {
-            "q": "Preferivo che guidiate voi stasera.",
+            "q": "Preferivo che guidiate voi, ma alla fine ha guidato Marco.",
             "wrong": "guidiate",
             "fix": "guidaste"
           },
@@ -11604,7 +11604,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Se avrei una barca, andrei a pescare.",
@@ -11751,7 +11751,7 @@ const TEST_STRUCTURES = [
             ]
           },
           {
-            "q": "Credevo che ___ arrivati prima. (essere)",
+            "q": "Credevo che ___ arrivati prima. (noi – essere)",
             "a": "fossimo",
             "no": [
               "eravamo",
@@ -11773,7 +11773,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Immaginavo che si era già iscritto al corso.",
@@ -11786,7 +11786,7 @@ const TEST_STRUCTURES = [
             "fix": "avessi"
           },
           {
-            "q": "Dubitavo che voi avessero letto il regolamento.",
+            "q": "Dubitavo che voi avessero letto il regolamento, e infatti non sapevate niente.",
             "wrong": "avessero",
             "fix": "aveste"
           },
@@ -11801,7 +11801,7 @@ const TEST_STRUCTURES = [
             "fix": "uscita"
           },
           {
-            "q": "Credeva che avessero consegnati i documenti in tempo.",
+            "q": "Credeva che i corrieri avessero consegnati i documenti in tempo.",
             "wrong": "consegnati",
             "fix": "consegnato"
           }
@@ -11942,7 +11942,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Pensavo che Marco abbia sbagliato strada e che fosse ancora lontano.",
@@ -12114,7 +12114,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Se saremmo usciti prima, avremmo visto l'alba.",
@@ -12283,7 +12283,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Anna mi aveva garantito che mi restituirebbe il dizionario entro venerdì, ma non me l'ha mai riportato.",
@@ -12370,7 +12370,7 @@ const TEST_STRUCTURES = [
           {
             "q": "«Non lo dimenticherò mai», ripeteva mia zia. →",
             "options": [
-              "Mia zia ripeteva che non lo avrebbe dimenticato mai.",
+              "Mia zia ripeteva che non lo avrebbe mai dimenticato.",
               "Mia zia ripeteva che non lo dimenticherebbe mai.",
               "Mia zia ripeteva che non lo dimenticherà mai."
             ],
@@ -12452,7 +12452,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Le circolari alle quale il personale deve attenersi sono due.",
@@ -12510,7 +12510,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Mi ha risposto l'assistente del direttore, ___ era in riunione. (il direttore)",
+            "q": "Mi ha risposto la segretaria del direttore, ___ era in riunione. (il direttore)",
             "options": [
               "il quale",
               "la quale",
@@ -12519,7 +12519,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Ho restituito il libro alla sorella di Marco, ___ avevo scritto il mio nome. (sul libro)",
+            "q": "Ho restituito il libro alla sorella di Lucia, ___ avevo scritto il mio nome. (sul libro)",
             "options": [
               "sul quale",
               "sulla quale",
@@ -12537,7 +12537,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Abbiamo ospitato l'amico dei miei cugini, ___ non vedevo da dieci anni. (i cugini)",
+            "q": "Abbiamo ospitato l'amico dei miei cugini, ___ non venivano in Italia da dieci anni. (i cugini)",
             "options": [
               "i quali",
               "il quale",
@@ -12621,7 +12621,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Si narrano che il castello sia infestato.",
@@ -12758,7 +12758,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "___ in ritardo alla cerimonia, si sono seduti in fondo.",
+            "q": "___ in ritardo alla cerimonia, adesso sono in fondo e non vedono quasi niente.",
             "options": [
               "Essendo arrivati",
               "Arrivando",
@@ -12776,7 +12776,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "___ tutte le scatole in cantina, adesso Marco non trova più i libri.",
+            "q": "___ tutti gli scatoloni in cantina, adesso Marco non trova più i libri.",
             "options": [
               "Avendo messo",
               "Mettendo",
@@ -12789,7 +12789,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Marta, avendo uscita di casa più tardi del solito, ha perso il treno.",
@@ -12868,8 +12868,8 @@ const TEST_STRUCTURES = [
             "q": "___ tutti i documenti, l'avvocato ha chiuso la pratica.",
             "options": [
               "Avendo raccolto",
-              "Avendo raccolti",
-              "Essendo raccolti"
+              "Avendo raccolta",
+              "Essendo raccolto"
             ],
             "answer": 0
           },
@@ -12908,7 +12908,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "La libreria nuova sta ___ parete di fondo.",
+            "q": "La mensola nuova sta ___ parete di fondo.",
             "options": [
               "sulla",
               "nella",
@@ -12957,7 +12957,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Studia medicina in Bologna da tre anni.",
@@ -12970,7 +12970,7 @@ const TEST_STRUCTURES = [
             "fix": "in"
           },
           {
-            "q": "Il sabato porto i bambini al nonno.",
+            "q": "Il sabato accompagno i bambini al nonno.",
             "wrong": "al",
             "fix": "dal"
           },
@@ -13125,7 +13125,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Ieri, dopo cenare, abbiamo giocato a carte tutta la sera.",
@@ -13378,11 +13378,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Le vendite sono aumentate. L'azienda ha aperto due nuove filiali.",
+            "q": "Il portatile si è rotto. Abbiamo perso tutti i file.",
             "options": [
-              "Le vendite sono aumentate, di conseguenza l'azienda ha aperto due nuove filiali.",
-              "Le vendite sono aumentate, poiché l'azienda ha aperto due nuove filiali.",
-              "Le vendite sono aumentate, grazie a due nuove filiali."
+              "Il portatile si è rotto, di conseguenza abbiamo perso tutti i file.",
+              "Il portatile si è rotto, poiché abbiamo perso tutti i file.",
+              "Il portatile si è rotto, grazie a tutti i file persi."
             ],
             "answer": 0
           }
@@ -13461,7 +13461,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Appena entrai in sala, il concerto è già iniziato.",
@@ -13598,7 +13598,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Vorremmo un corso serale che ___ prima delle otto, ma in città non ne organizzano.",
+            "q": "Cerchiamo un corso serale che ___ prima delle otto, ma in città non ne organizzano.",
             "options": [
               "finisca",
               "finisce",
@@ -13833,7 +13833,7 @@ const TEST_STRUCTURES = [
             "options": [
               "fanno",
               "lasciano",
-              "si fanno"
+              "obbligano"
             ],
             "answer": 0
           },
@@ -16753,7 +16753,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Il racconto è tutto al passato remoto: individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Il racconto è tutto al passato remoto: individua e clicca la parola sbagliata.",
         "items": [
           {
             "q": "Il pittore nacque a Ferrara, studiò a Firenze e moriva a Roma molto giovane.",
@@ -16864,7 +16864,7 @@ const TEST_STRUCTURES = [
         "type": "Comprensione",
         "fmt": "buco",
         "instr": "Leggi il testo e rispondi.",
-        "testo": "Paolo ha lavorato per vent'anni come cuoco nel ristorante di un albergo. Il suo progetto però era un altro: aprire una piccola trattoria di pesce vicino al porto, con pochi tavoli e il menù scritto a mano. Aveva anche trovato il locale: se il proprietario non avesse cambiato idea all'ultimo momento, la trattoria avrebbe aperto nella primavera del 2019. Il socio di allora pensava che Paolo avesse messo da parte abbastanza soldi per ripartire da solo; in realtà i risparmi coprivano appena l'affitto di un anno. Oggi Paolo dice che, se avesse versato la caparra un mese prima, il proprietario non avrebbe potuto tirarsi indietro. Sua moglie la vede diversamente: era convinta che quell'attività li avrebbe portati a lavorare sette giorni su sette, e non lo nasconde: «Se la trattoria avesse aperto, non avremmo mai più fatto una vacanza». Del vecchio progetto resta una cartella: il menù, i conti e la lista dei fornitori che Paolo aveva già contattato.",
+        "testo": "Paolo ha lavorato per vent'anni come cuoco nel ristorante di un albergo. Il suo progetto però era un altro: aprire una piccola trattoria di pesce vicino al porto, con pochi tavoli e il menù scritto a mano. Aveva anche trovato il locale: se il proprietario non avesse cambiato idea all'ultimo momento, la trattoria avrebbe aperto nella primavera del 2019. La caparra, Paolo non fece in tempo a versarla. Il socio di allora pensava che Paolo avesse messo da parte abbastanza soldi per ripartire da solo; in realtà i risparmi coprivano appena l'affitto di un anno. Oggi Paolo dice che, se avesse versato la caparra un mese prima, il proprietario non avrebbe potuto tirarsi indietro. Sua moglie la vede diversamente: era convinta che quell'attività li avrebbe portati a lavorare sette giorni su sette, e non lo nasconde: «Se la trattoria avesse aperto, non avremmo mai più fatto una vacanza». Del vecchio progetto resta una cartella: il menù, i conti e la lista dei fornitori che Paolo aveva già contattato.",
         "items": [
           {
             "q": "La trattoria alla fine ha aperto?",
@@ -17149,7 +17149,7 @@ const TEST_STRUCTURES = [
             "fix": "invece"
           },
           {
-            "q": "Il quartiere è servito male; infatti tre linee di autobus passano ogni dieci minuti.",
+            "q": "Gli abitanti si lamentano dei collegamenti; infatti tre linee di autobus passano ogni dieci minuti.",
             "wrong": "infatti",
             "fix": "tuttavia"
           }
