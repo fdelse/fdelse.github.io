@@ -10399,7 +10399,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "In un testo scritto formale, individua e clicca la parola sbagliata o la parola di troppo.",
         "items": [
           {
             "q": "Questa è una soluzione più pessima.",
@@ -10407,12 +10407,12 @@ const TEST_STRUCTURES = [
             "fix": "(togliere)"
           },
           {
-            "q": "Il caffè di quel bar è molto ottimo.",
+            "q": "La qualità dei materiali è molto ottima.",
             "wrong": "molto",
             "fix": "(togliere)"
           },
           {
-            "q": "Il pranzo di ieri era meglio di quello di domenica.",
+            "q": "La seconda stesura del testo era meglio della prima.",
             "wrong": "meglio",
             "fix": "migliore"
           },
