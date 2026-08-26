@@ -1034,6 +1034,11 @@ function submitTest(){
 'RIEPILOGO TEST DI ITALIANO\n' +
 'Studente: ' + studentName + '\n' +
 'Data: ' + dateStr + '\n' +
+/* Il link del test: la fotografia esatta della selezione. Con questa riga,
+   dall'email si riapre lo stesso identico test con un clic — per ripeterlo
+   allo stesso studente e confrontare i voti, o per darlo a un altro —
+   senza ricostruirlo a mano nel builder. */
+'Test: ' + location.href + '\n' +
 '────────────────────────\n' +
 (arrestoAnticipato
   ? 'Test chiuso in anticipo: il livello ' + LVL_TAG[arrestoAnticipato] +
