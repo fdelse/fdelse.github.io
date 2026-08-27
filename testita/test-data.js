@@ -7286,8 +7286,8 @@ const TEST_STRUCTURES = [
             "fix": "peggiore"
           },
           {
-            "q": "In quella pasticceria le torte sono le più migliori della città e anche i cornetti sono ottimi.",
-            "wrong": "più",
+            "q": "In quella pasticceria le torte sono le più buone della città e anche i cornetti sono buonissimi molto.",
+            "wrong": "molto",
             "fix": "(togliere)"
           },
           {
@@ -10402,14 +10402,14 @@ const TEST_STRUCTURES = [
         "instr": "In un testo scritto formale, individua e clicca dove c'è l'errore.",
         "items": [
           {
-            "q": "Questa è una soluzione più pessima.",
+            "q": "Fra tutte quelle proposte, questa è una soluzione più pessima.",
             "wrong": "più",
             "fix": "(togliere)"
           },
           {
-            "q": "La qualità dei materiali è molto ottima.",
-            "wrong": "molto",
-            "fix": "(togliere)"
+            "q": "La qualità dei materiali è ottimissima.",
+            "wrong": "ottimissima",
+            "fix": "ottima"
           },
           {
             "q": "La seconda stesura del testo era meglio della prima.",
@@ -16864,7 +16864,7 @@ const TEST_STRUCTURES = [
         "type": "Comprensione",
         "fmt": "buco",
         "instr": "Leggi il testo e rispondi.",
-        "testo": "Paolo ha lavorato per vent'anni come cuoco nel ristorante di un albergo. Il suo progetto però era un altro: aprire una piccola trattoria di pesce vicino al porto, con pochi tavoli e il menù scritto a mano. Aveva anche trovato il locale: se il proprietario non avesse cambiato idea all'ultimo momento, la trattoria avrebbe aperto nella primavera del 2019. La caparra, Paolo non ha fatto in tempo a versarla. Il socio di allora pensava che Paolo avesse messo da parte abbastanza soldi per ripartire da solo; in realtà i risparmi coprivano appena l'affitto di un anno. Oggi Paolo dice che, se avesse versato la caparra un mese prima, il proprietario non avrebbe potuto tirarsi indietro. Sua moglie la vede diversamente: era convinta che quell'attività li avrebbe portati a lavorare sette giorni su sette, e non lo nasconde: «Se la trattoria avesse aperto, non avremmo mai più fatto una vacanza». Del vecchio progetto resta una cartella: il menù, i conti e la lista dei fornitori che Paolo aveva già contattato.",
+        "testo": "Paolo ha lavorato per vent'anni come cuoco nel ristorante di un albergo. Il suo progetto però era un altro: aprire una piccola trattoria di pesce vicino al porto, con pochi tavoli e il menù scritto a mano. Aveva anche trovato il locale: se il proprietario non avesse cambiato idea all'ultimo momento, la trattoria avrebbe aperto nella primavera del 2019. Il socio di allora pensava che Paolo avesse messo da parte abbastanza soldi per ripartire da solo; in realtà i risparmi coprivano appena l'affitto di un anno. Oggi Paolo dice che, se avesse versato la caparra in tempo, il proprietario non avrebbe potuto tirarsi indietro. Sua moglie la vede diversamente: era convinta che quell'attività li avrebbe portati a lavorare sette giorni su sette, e non lo nasconde: «Se la trattoria avesse aperto, non avremmo mai più fatto una vacanza». Del vecchio progetto resta una cartella: il menù, i conti e la lista dei fornitori che Paolo aveva già contattato.",
         "items": [
           {
             "q": "La trattoria alla fine ha aperto?",
@@ -16897,17 +16897,17 @@ const TEST_STRUCTURES = [
             "q": "Paolo ha versato la caparra?",
             "options": [
               "No, non è arrivato a versarla.",
-              "Sì, un mese prima dell'apertura.",
+              "Sì, prima che il proprietario cambiasse idea.",
               "Il testo non permette di saperlo."
             ],
             "answer": 0
           },
           {
-            "q": "Che cosa risulta delle vacanze di Paolo e della moglie?",
+            "q": "La vacanza di cui parla la moglie è un fatto o un'ipotesi?",
             "options": [
-              "Hanno potuto continuare a farle proprio perché la trattoria non ha aperto.",
-              "Non ne hanno mai più fatta una.",
-              "Ne avevano già programmata una per il 2019."
+              "È un'ipotesi: dice che cosa sarebbe successo se la trattoria avesse aperto.",
+              "È un fatto: da allora non hanno più fatto vacanze.",
+              "È un fatto: hanno rinunciato alle vacanze per aprire la trattoria."
             ],
             "answer": 0
           },
