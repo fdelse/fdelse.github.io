@@ -10509,7 +10509,7 @@ const TEST_STRUCTURES = [
         "instr": "Scegli la preposizione corretta davanti a «cui».",
         "items": [
           {
-            "q": "Il ritardo ___ si lamentano tutti dura ormai da mesi.",
+            "q": "Il ritardo ___ si lamentano tutti i clienti dura ormai da mesi.",
             "options": [
               "di cui",
               "su cui",
@@ -10826,9 +10826,9 @@ const TEST_STRUCTURES = [
         "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
-            "q": "Dopo la riunione loro se la hanno presa moltissimo.",
-            "wrong": "hanno",
-            "fix": "sono"
+            "q": "Dopo la riunione loro si la sono presa moltissimo.",
+            "wrong": "si",
+            "fix": "se"
           },
           {
             "q": "Le mie colleghe non se la sono sentite di protestare.",
@@ -13464,7 +13464,7 @@ const TEST_STRUCTURES = [
         "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
-            "q": "Appena entrai in sala, il concerto è già iniziato.",
+            "q": "Appena entrai in sala, il concerto è già iniziato e dovetti restare in piedi.",
             "wrong": "è",
             "fix": "era"
           },
@@ -13479,17 +13479,17 @@ const TEST_STRUCTURES = [
             "fix": "erano"
           },
           {
-            "q": "Ci rivelò più tardi che ha mentito a tutti.",
+            "q": "Ci rivelò in seguito che ha mentito a tutti, e nessuno gli credette più.",
             "wrong": "ha",
             "fix": "aveva"
           },
           {
-            "q": "Allo sportello mi dissero che il modulo è già scaduto.",
+            "q": "Allo sportello mi dissero che il modulo è già scaduto e mi consigliarono di rifarlo.",
             "wrong": "è",
             "fix": "era"
           },
           {
-            "q": "Il giorno dopo capimmo che hanno esagerato.",
+            "q": "Il giorno dopo capimmo che hanno esagerato e ci scusammo con tutti.",
             "wrong": "hanno",
             "fix": "avevano"
           }
@@ -13661,7 +13661,7 @@ const TEST_STRUCTURES = [
           {
             "q": "«Non ho premiato i tesserati che si sono iscritti in ritardo.»",
             "options": [
-              "La frase non dice niente sui tesserati iscritti in tempo.",
+              "Solo i tesserati iscritti in ritardo non sono stati premiati.",
               "Nessun tesserato è stato premiato.",
               "Tutti i tesserati si sono iscritti in ritardo."
             ],
@@ -13807,6 +13807,14 @@ const TEST_STRUCTURES = [
               "decida",
               "lui"
             ],
+            "alt": [
+              [
+                "lascia",
+                "che",
+                "lui",
+                "decida"
+              ]
+            ],
             "extra": [
               "lascialo",
               "decide"
@@ -13838,11 +13846,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "I ragazzi hanno finito i compiti, così stasera ___ fino a tardi.",
+            "q": "Il piccolo si era appena addormentato, così ___ ancora un po'.",
             "options": [
-              "li lasciamo uscire",
-              "li facciamo uscire",
-              "gli lasciamo uscire"
+              "l'abbiamo lasciato dormire",
+              "l'abbiamo fatto dormire",
+              "gli abbiamo lasciato dormire"
             ],
             "answer": 0
           },
@@ -17144,7 +17152,7 @@ const TEST_STRUCTURES = [
             "fix": "perciò"
           },
           {
-            "q": "La piscina comunale è chiusa il lunedì, cioè il martedì apre alle sette.",
+            "q": "La piscina comunale è chiusa tutto il lunedì, cioè il martedì torna aperta.",
             "wrong": "cioè",
             "fix": "invece"
           },
