@@ -10443,7 +10443,7 @@ const TEST_STRUCTURES = [
             "options": [
               "Un pranzo ottimo",
               "Un pranzo più buono",
-              "Un pranzo buonissimo"
+              "Un pranzo pessimo"
             ],
             "answer": 0
           },
@@ -10460,7 +10460,7 @@ const TEST_STRUCTURES = [
             "q": "Il livello più alto →",
             "options": [
               "Il livello massimo",
-              "Il livello più massimo",
+              "Il livello minimo",
               "Il livello altissimo"
             ],
             "answer": 0
@@ -10478,7 +10478,7 @@ const TEST_STRUCTURES = [
             "q": "Il figlio più anziano →",
             "options": [
               "Il figlio maggiore",
-              "Il figlio più maggiore",
+              "Il figlio minore",
               "Il figlio anzianissimo"
             ],
             "answer": 0
@@ -15394,19 +15394,19 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Nonostante ___ ogni sera fino a tardi, in quei mesi continuava ad avere difficoltà in matematica.",
+            "q": "Nonostante ___ pochissimo tempo, in quei mesi seguiva anche il corso serale.",
             "options": [
-              "studiasse",
-              "abbia studiato",
-              "studi"
+              "avesse",
+              "avesse avuto",
+              "abbia"
             ],
             "answer": 0
           },
           {
-            "q": "Era strano che il negozio ___ tutto il magazzino già prima dei saldi.",
+            "q": "Era strano che il negozio ___ l'intero magazzino in una sola notte.",
             "options": [
               "avesse svenduto",
-              "svenda",
+              "svendesse",
               "abbia svenduto"
             ],
             "answer": 0
@@ -15714,12 +15714,12 @@ const TEST_STRUCTURES = [
             "fix": "avessi"
           },
           {
-            "q": "Se Livia si fosse iscritta entro la scadenza, ora ha un posto in graduatoria; invece è rimasta esclusa.",
+            "q": "Se Livia si fosse iscritta entro la scadenza, ora ha un posto in graduatoria, e invece è rimasta esclusa.",
             "wrong": "ha",
             "fix": "avrebbe"
           },
           {
-            "q": "Se avessero riparato il tetto in estate, adesso la palestra sarà agibile; invece tutto è rimasto com’era.",
+            "q": "Se avessero riparato il tetto in estate, adesso la palestra sarà agibile, e invece non è stato fatto niente.",
             "wrong": "sarà",
             "fix": "sarebbe"
           },
