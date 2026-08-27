@@ -70,7 +70,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Marco è trent'anni.",
@@ -240,7 +240,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "In aula c'è la studente nuovo.",
@@ -409,7 +409,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Stasera c'è uno amico di Marco a casa.",
@@ -639,7 +639,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "In soggiorno ho alcuni posto per gli ospiti.",
@@ -747,7 +747,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Oggi in città c'è molti negozi e una banca.",
@@ -916,7 +916,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Il cappotto è rossa e molto caldo.",
@@ -1086,7 +1086,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "La sera noi guarda la televisione e voi ascoltate la radio.",
@@ -1255,7 +1255,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Ogni sera mia zia rispondono al telefono.",
@@ -1424,7 +1424,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "La notte Anna dormono poco.",
@@ -1593,7 +1593,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Mi piacciono molto il pesce rosso di Luca.",
@@ -1762,7 +1762,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Per comprare la frutta mio padre vanno al mercato ogni sabato.",
@@ -1932,7 +1932,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Il quaderno è a Sara.",
@@ -2161,7 +2161,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "In ospedale Maria è una brava dottore e Luca è un bravo infermiere.",
@@ -2268,7 +2268,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Per il test di domani devi a finire i compiti stasera.",
@@ -2436,7 +2436,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Sul tavolo ci sono il mio telefono e le mia chiavi.",
@@ -2604,7 +2604,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Alla stazione controllo il tabellone e leggo che è le cinque.",
@@ -3099,7 +3099,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata in un contesto formale.",
+        "instr": "In un contesto formale, individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Buonasera, signore, dove lavori?",
@@ -3267,7 +3267,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Stasera vado alla cinema per vedere un film nuovo.",
@@ -3437,7 +3437,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Domani mattina vogliamo di partire subito.",
@@ -3605,7 +3605,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Dopo cena io fa una passeggiata nel quartiere.",
@@ -3776,7 +3776,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Durante la pausa sono mangiato una mela.",
@@ -3947,7 +3947,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Maria ha andata al mercato per comprare la frutta.",
@@ -4118,7 +4118,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Per andare al lavoro io si alzo alle sei.",
@@ -4291,7 +4291,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Le persone si danno del tu. Individua e clicca la parola sbagliata.",
+        "instr": "Le persone si danno del tu. Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Prenda una pentola grande e mettila sul fuoco.",
@@ -4524,7 +4524,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Signora, fai una passeggiata ogni giorno!",
@@ -4631,7 +4631,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Questo casa vicino alla spiaggia è costosa.",
@@ -4800,7 +4800,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Paolo è forte ma è meno veloce che Gianni.",
@@ -4969,7 +4969,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Il vino la compro io e i dolci li porta Marta.",
@@ -5138,7 +5138,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Quando scelgo un concerto, mi interessano soprattutto la musica classica.",
@@ -5498,7 +5498,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Prima di uscire bisogna a controllare i documenti.",
@@ -5666,7 +5666,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Vorrebbe due etti di prosciutto, per favore.",
@@ -6026,7 +6026,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Al mercato ho comprato del pane e delle formaggio.",
@@ -6194,7 +6194,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Per il montaggio, appoggiando il pannello a terra e avvitare le gambe.",
@@ -6362,7 +6362,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Ieri sono andato in banca e ho chiedato un appuntamento.",
@@ -6533,7 +6533,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Noi cominciaremo alle sei e aspetteremo gli altri sul binario.",
@@ -6702,7 +6702,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Per il concorso ci vuole due certificati, ma li abbiamo già.",
@@ -6871,7 +6871,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Negli anni del collegio mia nonna mi rispondeva sempre quando le scrivo.",
@@ -7042,7 +7042,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Ieri finivo il libro che mi hai prestato la settimana scorsa.",
@@ -7273,7 +7273,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Da quando ha cambiato allenatore la squadra gioca migliore, però la difesa resta pessima.",
@@ -7370,7 +7370,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Gli operai sta pulendo il cortile davanti al portone.",
@@ -7538,7 +7538,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "So che Paolo sia in riunione, ma non credo che torni presto.",
@@ -7698,7 +7698,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Noi lavoraremmo anche di sabato, ma preferiremmo riposare.",
@@ -7859,7 +7859,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Credo che Marco sia dormito male e che tu abbia fatto tardi.",
@@ -8016,7 +8016,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Lo spettacolo è per iniziare e gli spettatori stanno per entrare.",
@@ -8186,7 +8186,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Il computer si è infettato con un virus, invece l'ho portato dal tecnico.",
@@ -8344,7 +8344,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Scegli le patate, sbucciala bene e mettile in padella.",
@@ -8512,7 +8512,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Ho conosciuto un ingegnere il cui azienda produce turbine per navi.",
@@ -8681,7 +8681,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Le ho promessa una risposta entro sera, ma Valeria aspetta ancora.",
@@ -8842,7 +8842,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Il caricatore è tuo, quindi domani ti lo riporto.",
@@ -9028,7 +9028,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Quel maglione l'ho comprata in saldo l'inverno scorso.",
@@ -9278,7 +9278,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Questo turno è troppo pesante e non ci la faccio ad arrivare a mezzanotte.",
@@ -9385,7 +9385,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Ieri sera si è tornato tardi e stamattina nessuno era in forma.",
@@ -9554,7 +9554,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Se la settimana prossima ci sarebbe il sole, faremo una gita al mare.",
@@ -9723,7 +9723,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Il giardino è curata dal nonno.",
@@ -9891,7 +9891,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "In quel mercato si compra prodotti locali.",
@@ -10063,7 +10063,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Anna dice: «Mi piace questa commedia». → Anna dice che mi piace questa commedia.",
@@ -10231,7 +10231,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Appena l'odore di vernice avrà sparito, potremo rientrare in casa.",
@@ -10399,7 +10399,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "In un testo scritto formale, individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "In un testo scritto formale, individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Questa è una soluzione più pessima.",
@@ -10567,7 +10567,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Il consolato di cui mi sono rivolto non ha risposto.",
@@ -10823,7 +10823,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Dopo la riunione loro se la hanno presa moltissimo.",
@@ -10930,7 +10930,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Quella domenica al mare ordineremmo il pesce, ma la cucina aveva già chiuso.",
@@ -11095,7 +11095,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Non credo che voi siete pronti per un viaggio così lungo.",
@@ -11263,7 +11263,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "La narrazione è al passato remoto: individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "La narrazione è al passato remoto: individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Galileo insegnò a Padova e moriva ad Arcetri.",
@@ -11291,7 +11291,7 @@ const TEST_STRUCTURES = [
             "fix": "diventò"
           },
           {
-            "q": "Leonardo lasciò Milano nel 1516 e si trasferirono in Francia.",
+            "q": "Leonardo lasciò l'Italia nel 1516 e si trasferirono in Francia.",
             "wrong": "trasferirono",
             "fix": "trasferì"
           }
@@ -11434,7 +11434,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Mi illudevo che lui cambiava.",
@@ -11604,7 +11604,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Se avrei una barca, andrei a pescare.",
@@ -11773,7 +11773,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Immaginavo che si era già iscritto al corso.",
@@ -11942,7 +11942,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Pensavo che Marco abbia sbagliato strada e che fosse ancora lontano.",
@@ -12114,7 +12114,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Se saremmo usciti prima, avremmo visto l'alba.",
@@ -12283,7 +12283,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Anna mi aveva garantito che mi restituirebbe il dizionario entro venerdì, ma non me l'ha mai riportato.",
@@ -12452,7 +12452,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Le circolari alle quale il personale deve attenersi sono due.",
@@ -12621,7 +12621,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Si narrano che il castello sia infestato.",
@@ -12789,7 +12789,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Marta, avendo uscita di casa più tardi del solito, ha perso il treno.",
@@ -12908,7 +12908,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "La mensola nuova sta ___ parete di fondo.",
+            "q": "Hanno dipinto un murale ___ parete di fondo.",
             "options": [
               "sulla",
               "nella",
@@ -12957,7 +12957,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Studia medicina in Bologna da tre anni.",
@@ -13125,7 +13125,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Ieri, dopo cenare, abbiamo giocato a carte tutta la sera.",
@@ -13293,7 +13293,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata o la parola di troppo.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Poiché fosse già tardi, siamo rientrati subito.",
@@ -13461,7 +13461,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Appena entrai in sala, il concerto è già iniziato.",
@@ -13690,7 +13690,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "In un testo scritto formale, individua e clicca la parola sbagliata.",
+        "instr": "In un testo scritto formale, individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "La direttrice della piscina, che arrivi ogni mattina alle sette, controlla di persona l'acqua.",
@@ -13878,7 +13878,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Ogni due anni faccio potare gli alberi il giardiniere del paese.",
@@ -13921,7 +13921,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Ha ragione lui, d'altronde chi altro sappia come funziona quella vecchia caldaia del seminterrato?",
@@ -13929,7 +13929,7 @@ const TEST_STRUCTURES = [
             "fix": "sa"
           },
           {
-            "q": "Il museo ha ridotto gli orari, nondimeno i visitatori restino gli stessi dell'anno scorso.",
+            "q": "Il museo ha ridotto gli orari. Nondimeno, i visitatori restino gli stessi dell'anno scorso.",
             "wrong": "restino",
             "fix": "restano"
           },
@@ -13939,7 +13939,7 @@ const TEST_STRUCTURES = [
             "fix": "ha"
           },
           {
-            "q": "Piove da ieri sera, peraltro nessuno in valle se ne lamenti più di tanto.",
+            "q": "Piove da ieri sera. Peraltro, nessuno in valle se ne lamenti più di tanto.",
             "wrong": "lamenti",
             "fix": "lamenta"
           },
@@ -13970,7 +13970,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Il problema riguarda tutto il personale amministrativo, ___, i tre addetti al protocollo.",
+            "q": "Il problema riguarda diversi uffici del primo piano, ___, quelli del protocollo.",
             "options": [
               "più precisamente",
               "in altre parole",
@@ -14051,7 +14051,7 @@ const TEST_STRUCTURES = [
           {
             "q": "«A conti fatti, ci conveniva noleggiare il furgone.»",
             "options": [
-              "Chi parla è arrivato alla conclusione confrontando dei costi.",
+              "Chi parla è arrivato alla conclusione dopo aver valutato i pro e i contro.",
               "Chi parla ha deciso di getto, senza calcolare.",
               "Chi parla deve ancora decidere."
             ],
@@ -14123,7 +14123,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "«Se il primo autobus passasse alle sei, faremmo in tempo.»",
+            "q": "«Se il primo autobus passasse alle sei, faremmo in tempo: bisognerebbe controllare l’orario.»",
             "options": [
               "Chi parla sta valutando un orario possibile.",
               "Chi parla dice che quell’autobus non passa mai.",
@@ -14202,7 +14202,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Davanti alla vetrina, con la borsa ancora in mano: «Se costava meno la prendevo.»",
+            "q": "Davanti alla vetrina, ancora indecisa: «Se costava meno la prendevo.»",
             "options": [
               "Se costasse meno, la prenderei.",
               "Se fosse costata meno, l’avrei presa.",
@@ -14221,7 +14221,7 @@ const TEST_STRUCTURES = [
             "q": "Se le sue scuse fossero mattoni, ___.",
             "options": [
               "ci costruiremmo un palazzo",
-              "ne avremmo parecchie in più",
+              "ne avremmo parecchi",
               "peserebbero abbastanza"
             ],
             "answer": 0
@@ -14346,10 +14346,10 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
-            "q": "Ratificando l’intesa, la seduta si è chiusa alle undici.",
+            "q": "Ratificando l’intesa, il testo è diventato vincolante per entrambe le parti.",
             "wrong": "Ratificando",
             "fix": "Ratificata"
           },
@@ -14369,9 +14369,9 @@ const TEST_STRUCTURES = [
             "fix": "diffusa"
           },
           {
-            "q": "Raccogliendo le firme, la proposta è arrivata in consiglio comunale.",
-            "wrong": "Raccogliendo",
-            "fix": "Raccolte"
+            "q": "Verificando le firme, la proposta è arrivata in consiglio comunale.",
+            "wrong": "Verificando",
+            "fix": "Verificate"
           },
           {
             "q": "Le scale sono rimaste l’unica via di accesso fino a quando il nuovo ascensore è stato installando.",
@@ -14383,14 +14383,14 @@ const TEST_STRUCTURES = [
       {
         "type": "Trasformazione",
         "fmt": "buco",
-        "instr": "Si vuole dire questo. Scegli l’unica formulazione corretta.",
+        "instr": "Si vuole dire questo. Scegli l’unica formulazione corretta e fedele al contenuto.",
         "items": [
           {
             "q": "Chi parla ha notato l’errore mentre confrontava i due elenchi.",
             "options": [
               "Confrontando i due elenchi, ho notato l’errore.",
               "Confrontando i due elenchi, l’errore è saltato fuori subito.",
-              "Confrontando i due elenchi, l’errore mi è parso evidente."
+              "Confrontato i due elenchi, ho notato l’errore."
             ],
             "answer": 0
           },
@@ -14416,7 +14416,7 @@ const TEST_STRUCTURES = [
             "q": "La commissione ha rinviato la seduta perché mancava il numero legale.",
             "options": [
               "Non avendo il numero legale, la commissione ha rinviato la seduta.",
-              "Non avendo il numero legale, la seduta è stata rinviata.",
+              "Non avendo il numero legale, la seduta ha rinviato la commissione.",
               "Non avendo il numero legale, il rinvio è stato inevitabile."
             ],
             "answer": 0
@@ -14460,7 +14460,7 @@ const TEST_STRUCTURES = [
             "options": [
               "La frase non dice chi ha respinto.",
               "La frase dice che nessuno ha esaminato la richiesta.",
-              "La frase dice che ha respinto chi ha ricevuto la richiesta."
+              "La frase dice che a respingere è stato chi ha ricevuto la richiesta."
             ],
             "answer": 0
           },
@@ -14514,7 +14514,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "I nonni è stato spiegato due volte come si usa la videochiamata.",
@@ -14527,9 +14527,9 @@ const TEST_STRUCTURES = [
             "fix": "state"
           },
           {
-            "q": "Il verbale è firmato ieri sera dal presidente uscente.",
-            "wrong": "è",
-            "fix": "è stato"
+            "q": "Il verbale è stato firmata ieri sera dal presidente uscente.",
+            "wrong": "firmata",
+            "fix": "firmato"
           },
           {
             "q": "Le famiglie sono state promesse nuove case entro giugno.",
@@ -14572,7 +14572,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "«Da martedì la pratica è sospesa.»",
+            "q": "«Da martedì scorso la pratica è sospesa.»",
             "options": [
               "Descrive una situazione che dura ancora.",
               "Indica il momento preciso in cui qualcuno l’ha sospesa.",
@@ -14622,7 +14622,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Riempimento",
         "fmt": "buco",
-        "instr": "Scegli la forma coerente con il momento in cui si riferisce.",
+        "instr": "Scegli la forma adatta al discorso riportato.",
         "items": [
           {
             "q": "«La merce parte domani» → La settimana scorsa il magazziniere assicurò che la merce sarebbe partita ___.",
@@ -14690,7 +14690,7 @@ const TEST_STRUCTURES = [
             "options": [
               "negò",
               "ammise",
-              "precisò"
+              "chiese"
             ],
             "answer": 0
           },
@@ -14725,7 +14725,7 @@ const TEST_STRUCTURES = [
             "q": "La professoressa: «Non credo affatto che abbiate letto il libro.»",
             "options": [
               "contestò",
-              "precisò",
+              "minimizzò",
               "riconobbe"
             ],
             "answer": 0
@@ -14744,7 +14744,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "In un testo scritto formale, individua e clicca la parola sbagliata.",
+        "instr": "In un testo scritto formale, individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Il vivaista negò che la serra era stata lasciata aperta durante la notte.",
@@ -14757,7 +14757,7 @@ const TEST_STRUCTURES = [
             "fix": "era"
           },
           {
-            "q": "La società contestò che i lavori erano stati eseguiti a regola d'arte.",
+            "q": "La società escluse che i lavori erano stati eseguiti a regola d'arte.",
             "wrong": "erano",
             "fix": "fossero"
           },
@@ -14772,7 +14772,7 @@ const TEST_STRUCTURES = [
             "fix": "avesse"
           },
           {
-            "q": "Dagli atti emerse che quella sera ci fossero due persone nel cortile.",
+            "q": "Dagli atti emerse che quella sera nel cortile fossero presenti due persone.",
             "wrong": "fossero",
             "fix": "erano"
           }
@@ -14793,7 +14793,7 @@ const TEST_STRUCTURES = [
         "instr": "Scegli la forma verbale coerente con l'ordine dei fatti.",
         "items": [
           {
-            "q": "Il temporale è arrivato alle sei, a quell'ora noi ___ ancora in spiaggia, e la tenda l'avevamo già smontata.",
+            "q": "Il temporale è arrivato alle sei; a quell'ora noi ___ ancora in spiaggia, e la tenda l'avevamo già smontata.",
             "options": [
               "eravamo",
               "siamo stati",
@@ -14805,13 +14805,13 @@ const TEST_STRUCTURES = [
             "q": "Quando finalmente ho aperto la scatola, ho capito perché era così leggera: qualcuno ___ il contenuto prima ancora che il pacco lasciasse il deposito.",
             "options": [
               "aveva tolto",
-              "ha tolto",
+              "avesse tolto",
               "toglieva"
             ],
             "answer": 0
           },
           {
-            "q": "Alle otto la sala era ancora vuota, alle nove, quando finalmente ___, gli altri erano già andati via.",
+            "q": "Alle otto la sala era ancora vuota; alle nove, quando finalmente ___, gli altri erano già andati via.",
             "options": [
               "sono entrato",
               "ero entrato",
@@ -14863,7 +14863,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "«Quella mattina Lucia partiva per Genova, ma la nebbia ha bloccato tutto.»",
+            "q": "«Quella mattina Lucia partiva per Genova, ma la nebbia ha bloccato tutto e il viaggio è saltato.»",
             "options": [
               "Alla fine non è partita.",
               "È partita con qualche ora di ritardo.",
@@ -14901,7 +14901,7 @@ const TEST_STRUCTURES = [
           {
             "q": "«Sapevo che la farmacia chiudeva alle cinque, e infatti alle cinque e un quarto era tutto spento.»",
             "options": [
-              "La farmacia chiudeva ogni giorno alle cinque.",
+              "La farmacia chiudeva di solito alle cinque.",
               "Quel giorno la farmacia ha chiuso prima del solito.",
               "La farmacia ha chiuso alle cinque e un quarto."
             ],
@@ -14930,7 +14930,7 @@ const TEST_STRUCTURES = [
             "fix": "aveva smesso"
           },
           {
-            "q": "Ho riconosciuto la voce subito: quella donna mi telefonava due volte il giorno prima.",
+            "q": "Ho riconosciuto la voce subito: quella donna mi telefonava due volte, il giorno prima.",
             "wrong": "telefonava",
             "fix": "aveva telefonato"
           },
@@ -14940,7 +14940,7 @@ const TEST_STRUCTURES = [
             "fix": "ho"
           },
           {
-            "q": "Da ragazzo mio nonno si alzò ogni mattina alle cinque per andare nei campi.",
+            "q": "Da ragazzo, per anni, mio nonno si alzò ogni mattina alle cinque per andare nei campi.",
             "wrong": "alzò",
             "fix": "alzava"
           }
@@ -15016,7 +15016,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Riempimento",
         "fmt": "buco",
-        "instr": "Scegli la forma che il connettivo concessivo richiede.",
+        "instr": "Scegli la forma o l'espressione richiesta dal connettivo concessivo.",
         "items": [
           {
             "q": "Pur ___ tutti i documenti richiesti, non ottenne il permesso di soggiorno.",
@@ -15077,7 +15077,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "In un testo scritto formale, individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Benché aveva piovuto tutta la notte, la gara si è disputata regolarmente.",
@@ -15085,22 +15085,22 @@ const TEST_STRUCTURES = [
             "fix": "avesse"
           },
           {
-            "q": "La multa resta dovuta, anche ammettendo che il cartello era coperto dai rami.",
+            "q": "La multa resta dovuta anche ammettendo, per assurdo, che il cartello era coperto dai rami.",
             "wrong": "era",
             "fix": "fosse"
           },
           {
-            "q": "I lavori del cantiere non sono ancora partiti, malgrado l'impresa aveva firmato il contratto a marzo.",
+            "q": "Malgrado l'impresa aveva firmato il contratto a marzo, i lavori del cantiere non sono ancora partiti.",
             "wrong": "aveva",
             "fix": "avesse"
           },
           {
-            "q": "Si è offerto di accompagnarci tutto il giorno, pur non conosceva bene la zona.",
+            "q": "Pur non conosceva bene la zona, si è offerto di accompagnarci tutto il giorno.",
             "wrong": "conosceva",
             "fix": "conoscendo"
           },
           {
-            "q": "Sebbene la neve caduta di notte, la strada del passo è rimasta aperta.",
+            "q": "Sebbene la neve alta mezzo metro, la strada del passo è rimasta aperta.",
             "wrong": "Sebbene",
             "fix": "Nonostante"
           },
@@ -15127,7 +15127,7 @@ const TEST_STRUCTURES = [
         "instr": "Scegli il connettivo adatto al rapporto fra i due fatti. Tutte le forme verbali sono corrette.",
         "items": [
           {
-            "q": "Amir ha diviso l'appartamento con altri tre operai ___ ha lavorato al cantiere di Rho.",
+            "q": "Amir ha diviso l'appartamento con altri tre operai ___ ha lavorato al cantiere di Rho: a lavori conclusi ha cambiato città.",
             "options": [
               "finché",
               "dopo che",
@@ -15145,7 +15145,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "I ragazzi smettono di correre e si siedono a bordo campo ___ l'allenatore fischia.",
+            "q": "I ragazzi smettono di correre e si siedono a bordo campo ___ l'allenatore fischia la pausa.",
             "options": [
               "ogni volta che",
               "da quando",
@@ -15154,7 +15154,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Il cane si è piazzato davanti alla porta ___ ha sentito girare la chiave.",
+            "q": "Il cane si è piazzato davanti alla porta ___ ha sentito girare la chiave, e non si è più mosso.",
             "options": [
               "non appena",
               "da quando",
@@ -15185,7 +15185,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Dopo che avesse firmato il verbale, il presidente lasciò immediatamente la sala.",
@@ -15203,17 +15203,17 @@ const TEST_STRUCTURES = [
             "fix": "ebbe"
           },
           {
-            "q": "Aspettammo in corridoio finché il primario non usciva dalla sala operatoria.",
+            "q": "Aspettammo in corridoio finché il primario non usciva dalla sala operatoria, e solo a notte fonda potemmo parlargli.",
             "wrong": "usciva",
             "fix": "uscì"
           },
           {
-            "q": "Il giudice sospese l'udienza prima che il testimone poté completare la deposizione.",
+            "q": "Il giudice sospese l'udienza prima che il testimone poté completare la deposizione: il resto della deposizione fu rinviato all'indomani.",
             "wrong": "poté",
             "fix": "potesse"
           },
           {
-            "q": "Mentre il consiglio discutesse ancora la proposta, la notizia era già stata diffusa alla stampa.",
+            "q": "Proprio mentre il consiglio discutesse ancora il bilancio, la notizia era già stata diffusa alla stampa.",
             "wrong": "discutesse",
             "fix": "discuteva"
           }
@@ -15236,7 +15236,7 @@ const TEST_STRUCTURES = [
           {
             "q": "«Marco ha riattaccato prima di sentire la risposta.»",
             "options": [
-              "Marco non conosce la risposta.",
+              "Marco non ha sentito la risposta.",
               "Marco ha sentito la risposta e poi ha riattaccato.",
               "Marco ha richiamato per farsi dare la risposta."
             ],
@@ -15245,7 +15245,7 @@ const TEST_STRUCTURES = [
           {
             "q": "«Il sindaco ha inaugurato la piscina prima che i lavori fossero terminati.»",
             "options": [
-              "Al momento dell'inaugurazione i lavori erano ancora in corso.",
+              "Al momento dell'inaugurazione i lavori non erano ancora terminati.",
               "I lavori erano terminati da poco.",
               "I lavori non sono mai stati terminati."
             ],
@@ -15389,7 +15389,7 @@ const TEST_STRUCTURES = [
             "q": "Nonostante ___ ogni sera fino a tardi, in quei mesi continuava ad avere difficoltà in matematica.",
             "options": [
               "studiasse",
-              "avesse studiato",
+              "abbia studiato",
               "studi"
             ],
             "answer": 0
@@ -15398,7 +15398,7 @@ const TEST_STRUCTURES = [
             "q": "Era strano che il negozio ___ tutto il magazzino già prima dei saldi.",
             "options": [
               "avesse svenduto",
-              "svendesse",
+              "svenda",
               "abbia svenduto"
             ],
             "answer": 0
@@ -15417,7 +15417,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "In un testo scritto formale, individua e clicca la parola sbagliata.",
+        "instr": "In un testo scritto formale, individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Sembrava strano che nessuno si era accorto della perdita in cantina.",
@@ -15430,7 +15430,7 @@ const TEST_STRUCTURES = [
             "fix": "fossero"
           },
           {
-            "q": "Nonostante avrebbe provato il finale decine di volte, alla recita nessuno ricordò le battute.",
+            "q": "Nonostante la compagnia avrebbe provato il finale decine di volte, alla recita nessuno ricordò le battute.",
             "wrong": "avrebbe",
             "fix": "avesse"
           },
@@ -15478,14 +15478,14 @@ const TEST_STRUCTURES = [
           {
             "q": "«Le richieste vengono esaminate in ordine di arrivo.»",
             "options": [
-              "Qualcuno le esamina, una dopo l'altra.",
-              "Chi le presenta è tenuto a rispettare l'ordine di arrivo.",
-              "Le richieste risultano già esaminate al momento dell'arrivo."
+              "Qualcuno le esamina, nell’ordine in cui arrivano.",
+              "Chi le presenta è tenuto a rispettare l’ordine di arrivo.",
+              "Le richieste risultano già esaminate al momento dell’arrivo."
             ],
             "answer": 0
           },
           {
-            "q": "«All'epoca certe decisioni venivano prese senza consultare gli interessati.»",
+            "q": "«All’epoca certe decisioni venivano prese senza consultare gli interessati.»",
             "options": [
               "Si descrive una pratica abituale del passato.",
               "Si dice che quelle decisioni dovevano necessariamente essere prese così.",
@@ -15525,7 +15525,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Sulla confezione c’è scritto che il farmaco viene conservato in frigorifero, ma nessuno lo fa.",
@@ -15538,7 +15538,7 @@ const TEST_STRUCTURES = [
             "fix": "fu"
           },
           {
-            "q": "I rifiuti vengono ritirati entro le nove, ma restano sui marciapiedi per giorni.",
+            "q": "I rifiuti vengono portati via entro le nove, ma restano sui marciapiedi per giorni.",
             "wrong": "vengono",
             "fix": "vanno"
           },
@@ -15548,7 +15548,7 @@ const TEST_STRUCTURES = [
             "fix": "fu"
           },
           {
-            "q": "Le assenze vengono comunicate entro le otto, ma molte famiglie non avvisano.",
+            "q": "Le assenze vengono comunicate entro le otto, ma quasi nessuna arriva prima di mezzogiorno.",
             "wrong": "vengono",
             "fix": "vanno"
           },
@@ -15629,10 +15629,10 @@ const TEST_STRUCTURES = [
       {
         "type": "Riempimento",
         "fmt": "fill",
-        "instr": "Ipotesi sul passato, effetto sul presente. Completa con la forma corretta.",
+        "instr": "Ipotesi sul passato, effetto sul presente. In un testo scritto formale, completa con la forma corretta.",
         "items": [
           {
-            "q": "Se avessi accettato quel posto nel duemiladiciannove, ora ___ a Berlino da tre anni. (io – vivere)",
+            "q": "Se avessi accettato quel posto tre anni fa, ora ___ a Berlino da un pezzo. (io – vivere)",
             "a": "vivrei",
             "no": [
               "avrei vissuto",
@@ -15667,7 +15667,7 @@ const TEST_STRUCTURES = [
             ]
           },
           {
-            "q": "Se non gli avessero tagliato i fondi nel duemilaventuno, quel reparto ___ ancora aperto. (essere)",
+            "q": "Se non gli avessero tagliato i fondi qualche anno fa, quel reparto ___ ancora aperto. (essere)",
             "a": "sarebbe",
             "no": [
               "fosse",
@@ -15688,15 +15688,15 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "In un testo scritto formale, individua e clicca la parola sbagliata.",
+        "instr": "In un testo scritto formale, individua e clicca dove c'è l'errore.",
         "items": [
           {
-            "q": "Se avevo dato retta al medico, adesso sarei molto più tranquillo.",
+            "q": "Se avevo dato retta al medico, adesso sarei molto più tranquillo; invece ho fatto di testa mia.",
             "wrong": "avevo",
             "fix": "avessi"
           },
           {
-            "q": "Se avessimo firmato allora, adesso avremo una sede tutta nostra.",
+            "q": "Se avessimo firmato allora, adesso avremo una sede tutta nostra; invece l’accordo è saltato all’ultimo.",
             "wrong": "avremo",
             "fix": "avremmo"
           },
@@ -15706,12 +15706,12 @@ const TEST_STRUCTURES = [
             "fix": "avessi"
           },
           {
-            "q": "Se ti fossi iscritto in tempo, ora hai un contratto stabile.",
-            "wrong": "hai",
-            "fix": "avresti"
+            "q": "Se Livia si fosse iscritta entro la scadenza, ora ha un posto in graduatoria; invece è rimasta esclusa.",
+            "wrong": "ha",
+            "fix": "avrebbe"
           },
           {
-            "q": "Se avessero riparato il tetto in estate, adesso la palestra sarà agibile.",
+            "q": "Se avessero riparato il tetto in estate, adesso la palestra sarà agibile; invece tutto è rimasto com’era.",
             "wrong": "sarà",
             "fix": "sarebbe"
           },
@@ -15794,7 +15794,7 @@ const TEST_STRUCTURES = [
     "lez": [
       "C1 L18"
     ],
-    "title": "Il congiuntivo nelle proposizioni finali",
+    "title": "Il congiuntivo nelle proposizioni finali e consecutive",
     "exercises": [
       {
         "type": "Riempimento",
@@ -15820,7 +15820,7 @@ const TEST_STRUCTURES = [
             ]
           },
           {
-            "q": "La clinica aprì un secondo sportello al fine che le file ___ più corte. (essere)",
+            "q": "La clinica aprì un secondo sportello affinché le file ___ più corte. (essere)",
             "a": "fossero",
             "no": [
               "erano",
@@ -15903,7 +15903,7 @@ const TEST_STRUCTURES = [
             "options": [
               "affinché",
               "per",
-              "allo scopo di"
+              "in modo da"
             ],
             "answer": 0
           },
@@ -15921,7 +15921,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Hanno chiuso la strada affinché i bambini potrebbero giocare in sicurezza.",
@@ -15939,17 +15939,17 @@ const TEST_STRUCTURES = [
             "fix": "rinunciarono"
           },
           {
-            "q": "Il rumore aumentò tanto che gli inquilini si lamentassero con l'amministratore.",
+            "q": "Il rumore aumentò così tanto che gli inquilini si lamentassero con l'amministratore.",
             "wrong": "lamentassero",
             "fix": "lamentarono"
           },
           {
-            "q": "Abbiamo anticipato la partenza in modo che evitavamo il traffico dell’ora di punta.",
-            "wrong": "evitavamo",
-            "fix": "evitassimo"
+            "q": "Abbiamo anticipato la partenza in modo che i ragazzi evitavano il traffico dell'ora di punta.",
+            "wrong": "evitavano",
+            "fix": "evitassero"
           },
           {
-            "q": "Il servizio scuolabus fu soppresso, con il risultato che molte famiglie dovessero cambiare scuola.",
+            "q": "Il servizio scuolabus fu soppresso, con la conseguenza che molte famiglie dovessero cambiare scuola.",
             "wrong": "dovessero",
             "fix": "dovettero"
           }
@@ -16028,25 +16028,25 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
-            "q": "Secondo il primo bilancio, la frana travolgerebbe due automobili all'alba.",
+            "q": "Secondo il primo bilancio, la frana travolgerebbe due automobili all’alba.",
             "wrong": "travolgerebbe",
             "fix": "avrebbe travolto"
           },
           {
-            "q": "La perizia attesta che il muro sarebbe stato costruito senza autorizzazione.",
+            "q": "La perizia ha stabilito che il muro sarebbe stato costruito senza autorizzazione.",
             "wrong": "sarebbe",
             "fix": "era"
           },
           {
-            "q": "Stando a fonti interne, la cooperativa assumerebbe dieci persone il mese scorso.",
+            "q": "Stando a fonti interne, la cooperativa assumerebbe dieci persone il mese scorso, ma nel libro paga di quel mese non compare nessun nuovo nome.",
             "wrong": "assumerebbe",
             "fix": "avrebbe assunto"
           },
           {
-            "q": "La sentenza ha accertato che l'azienda avrebbe versato i contributi quattro mesi prima.",
+            "q": "La sentenza ha accertato che l’azienda avrebbe versato i contributi già quattro mesi prima dell’ispezione.",
             "wrong": "avrebbe",
             "fix": "aveva"
           },
@@ -16077,10 +16077,10 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "«Sarebbe dovuta essere una gita di mezza giornata: siamo rientrati a mezzanotte.»",
+            "q": "«Avrebbe dovuto essere una gita di mezza giornata: siamo rientrati a mezzanotte.»",
             "options": [
               "Sottolinea il contrasto fra la previsione e come è andata.",
-              "Rimprovera chi ha organizzato la gita.",
+              "Dice che la gita è durata meno del previsto.",
               "Dice che la gita non è mai avvenuta."
             ],
             "answer": 0
@@ -16309,7 +16309,7 @@ const TEST_STRUCTURES = [
             "options": [
               "Pensandoci, ho perso la fermata.",
               "Ci pensando, ho perso la fermata.",
-              "Avendoci pensato, ho perso la fermata."
+              "Pensando ci, ho perso la fermata."
             ],
             "answer": 0
           }
@@ -16328,7 +16328,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Riempimento",
         "fmt": "fill",
-        "instr": "Completa con la forma corretta del verbo fra parentesi.",
+        "instr": "Completa con la forma corretta del verbo fra parentesi. La supposizione riguarda il presente.",
         "items": [
           {
             "q": "Sembrerebbe che la consegna ___ stata rinviata a lunedì. (essere)",
@@ -16376,7 +16376,7 @@ const TEST_STRUCTURES = [
             ]
           },
           {
-            "q": "Sembrerebbe che nessuno ___ l'ultima versione del documento. (leggere)",
+            "q": "Sembrerebbe che nessuno ___ l’ultima versione del documento. (leggere)",
             "a": "abbia letto",
             "no": [
               "ha letto",
@@ -16389,7 +16389,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Sembrerebbe che i tecnici hanno rinunciato a cercare il guasto.",
@@ -16426,7 +16426,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Riempimento",
         "fmt": "fill",
-        "instr": "Il condizionale è al passato. Completa con la forma corretta.",
+        "instr": "Il condizionale è al passato. Completa con il congiuntivo nel tempo corretto.",
         "items": [
           {
             "q": "Avrei pensato che i colleghi ___ già da un’ora. (uscire)",
@@ -16498,7 +16498,7 @@ const TEST_STRUCTURES = [
         "type": "Comprensione",
         "fmt": "buco",
         "instr": "Leggi il testo e rispondi.",
-        "testo": "Un istituto europeo ha pubblicato un'indagine sull'immagine internazionale dell'Italia. Il 68% degli intervistati associa il paese a cucina, arte e clima: il dato è confermato da tre rilevazioni successive. La ricercatrice che ha coordinato il lavoro resta prudente: «Sembrerebbe che l'Italia sia percepita soprattutto come luogo di vacanza, ma il campione è ancora ristretto». Un intervistato tedesco racconta che, prima di trasferirsi, pensava che gli orari di lavoro italiani fossero più brevi dei suoi, oggi sa che gli italiani lavorano in media più ore dei tedeschi. Benché il luogo comune sulla lentezza sia ancora diffuso, l'indagine non lo conferma. Sulle differenze regionali la ricercatrice aggiunge soltanto: «Direi che contano più della nazionalità».",
+        "testo": "Un istituto europeo ha pubblicato un'indagine sull'immagine internazionale dell'Italia. Il 68% degli intervistati associa il paese a cucina, arte e clima: il dato è confermato da tre rilevazioni successive. La ricercatrice che ha coordinato il lavoro resta prudente: «Sembrerebbe che l'Italia sia percepita soprattutto come luogo di vacanza, ma il campione è ancora ristretto». Un intervistato tedesco racconta che, prima di trasferirsi, pensava che gli orari di lavoro italiani fossero più brevi dei suoi; oggi sa che gli italiani lavorano in media più ore dei tedeschi. Benché il luogo comune sulla lentezza sia ancora diffuso, l'indagine non lo conferma. Sulle differenze regionali la ricercatrice aggiunge soltanto: «Direi che contano più della nazionalità».",
         "items": [
           {
             "q": "Il testo dà per certo che l'Italia è percepita soprattutto come luogo di vacanza?",
@@ -16622,7 +16622,7 @@ const TEST_STRUCTURES = [
         "type": "Comprensione",
         "fmt": "buco",
         "instr": "Leggi il testo e rispondi.",
-        "testo": "Un articolo universitario ha confrontato gli spot turistici sull'Italia con una serie di interviste a giovani italiani. Negli spot prevalgono borghi, cucina tradizionale e ritmi lenti, nelle interviste compaiono pendolarismo, lavoro digitale e costi abitativi. L'autrice registra il contrasto senza schierarsi: «Direi che nessuna delle due immagini sia completa». Un dato invece lo dà per acquisito: chi resta nel paese più di un mese usa meno generalizzazioni assolute di chi si ferma un giorno, il campione, scrive, è ampio e il risultato si ripete da cinque anni. In chiusura avanza un'ipotesi: un contatto prolungato favorirebbe una percezione più sfumata del paese. Benché l'ipotesi sia plausibile, l'articolo non la verifica.",
+        "testo": "Un articolo universitario ha confrontato gli spot turistici sull'Italia con una serie di interviste a giovani italiani. Negli spot prevalgono borghi, cucina tradizionale e ritmi lenti, nelle interviste compaiono pendolarismo, lavoro digitale e costi abitativi. L'autrice registra il contrasto senza schierarsi: «Direi che nessuna delle due immagini sia completa». Un dato invece lo dà per acquisito: chi resta nel paese più di un mese usa meno generalizzazioni assolute di chi si ferma un giorno; il campione, scrive, è ampio e il risultato si ripete da cinque anni. In chiusura avanza un'ipotesi: un contatto prolungato favorirebbe una percezione più sfumata del paese. Benché l'ipotesi sia plausibile, l'articolo non la verifica.",
         "items": [
           {
             "q": "Che valore ha il giudizio dell'autrice sulle due immagini?",
@@ -16656,7 +16656,7 @@ const TEST_STRUCTURES = [
             "options": [
               "Pendolarismo, lavoro digitale e costi abitativi.",
               "Borghi, ritmi lenti e cucina tradizionale.",
-              "Arte, monumenti e clima mite."
+              "Borghi, pendolarismo e ritmi lenti."
             ],
             "answer": 0
           },
@@ -16753,7 +16753,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Il racconto è tutto al passato remoto: individua e clicca la parola sbagliata.",
+        "instr": "Il racconto è tutto al passato remoto: individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Il pittore nacque a Ferrara, studiò a Firenze e moriva a Roma molto giovane.",
@@ -16864,7 +16864,7 @@ const TEST_STRUCTURES = [
         "type": "Comprensione",
         "fmt": "buco",
         "instr": "Leggi il testo e rispondi.",
-        "testo": "Paolo ha lavorato per vent'anni come cuoco nel ristorante di un albergo. Il suo progetto però era un altro: aprire una piccola trattoria di pesce vicino al porto, con pochi tavoli e il menù scritto a mano. Aveva anche trovato il locale: se il proprietario non avesse cambiato idea all'ultimo momento, la trattoria avrebbe aperto nella primavera del 2019. La caparra, Paolo non fece in tempo a versarla. Il socio di allora pensava che Paolo avesse messo da parte abbastanza soldi per ripartire da solo; in realtà i risparmi coprivano appena l'affitto di un anno. Oggi Paolo dice che, se avesse versato la caparra un mese prima, il proprietario non avrebbe potuto tirarsi indietro. Sua moglie la vede diversamente: era convinta che quell'attività li avrebbe portati a lavorare sette giorni su sette, e non lo nasconde: «Se la trattoria avesse aperto, non avremmo mai più fatto una vacanza». Del vecchio progetto resta una cartella: il menù, i conti e la lista dei fornitori che Paolo aveva già contattato.",
+        "testo": "Paolo ha lavorato per vent'anni come cuoco nel ristorante di un albergo. Il suo progetto però era un altro: aprire una piccola trattoria di pesce vicino al porto, con pochi tavoli e il menù scritto a mano. Aveva anche trovato il locale: se il proprietario non avesse cambiato idea all'ultimo momento, la trattoria avrebbe aperto nella primavera del 2019. La caparra, Paolo non ha fatto in tempo a versarla. Il socio di allora pensava che Paolo avesse messo da parte abbastanza soldi per ripartire da solo; in realtà i risparmi coprivano appena l'affitto di un anno. Oggi Paolo dice che, se avesse versato la caparra un mese prima, il proprietario non avrebbe potuto tirarsi indietro. Sua moglie la vede diversamente: era convinta che quell'attività li avrebbe portati a lavorare sette giorni su sette, e non lo nasconde: «Se la trattoria avesse aperto, non avremmo mai più fatto una vacanza». Del vecchio progetto resta una cartella: il menù, i conti e la lista dei fornitori che Paolo aveva già contattato.",
         "items": [
           {
             "q": "La trattoria alla fine ha aperto?",
@@ -17121,7 +17121,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Correzione",
         "fmt": "errore",
-        "instr": "Individua e clicca la parola sbagliata.",
+        "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
             "q": "Il corso era gratuito e molto atteso, perciò si è iscritto soltanto uno studente.",
