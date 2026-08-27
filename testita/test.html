@@ -254,6 +254,9 @@ function normalizeText(str){
    di una lettera e sono forme diverse. Quindi:
      · l'errore dentro la parola si perdona (finamo, prefeisco, dorimamo)
      · la differenza nelle ultime due lettere no
+     · la differenza sulla PRIMA lettera nemmeno: chi batte male non cambia
+       l'iniziale, e in italiano l'iniziale distingue verbi interi —
+       fosse/rosse, saremo/faremo, diano/siano, visse/disse
      · le forme errate note (campo "no" dell'item) sono respinte comunque
      · gli accenti si ignorano, per non penalizzare chi non ha la tastiera italiana */
 function normParola(s){
@@ -276,7 +279,7 @@ function parolaCorretta(scritto, giusta, forme){
   if (!a) return false;
   if (a === b) return true;
   if ((forme||[]).some(f => normParola(f) === a)) return false;   // forma errata nota
-  if (b.length >= 5 && distanza(a,b) <= 1 && a.slice(-2) === b.slice(-2)) return true;
+  if (b.length >= 5 && a[0] === b[0] && distanza(a,b) <= 1 && a.slice(-2) === b.slice(-2)) return true;
   return false;
 }
 function fillCorrect(userVal, ans, forme){
