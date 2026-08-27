@@ -16397,9 +16397,9 @@ const TEST_STRUCTURES = [
             "fix": "abbiano"
           },
           {
-            "q": "Parrebbe che il cantiere riaprirebbe solo a settembre.",
-            "wrong": "riaprirebbe",
-            "fix": "riapra"
+            "q": "Parrebbe che a Luca non interesserebbe affatto la faccenda.",
+            "wrong": "interesserebbe",
+            "fix": "interessi"
           },
           {
             "q": "Sembrerebbe che la nuova procedura rallenta tutto il reparto.",
@@ -16539,9 +16539,9 @@ const TEST_STRUCTURES = [
           {
             "q": "L'affermazione sulle differenze regionali che valore ha?",
             "options": [
-              "È un giudizio personale, non un risultato.",
+              "È un giudizio personale attenuato, non un risultato.",
               "È il risultato più solido di tutta l'indagine.",
-              "È la citazione di un intervistato."
+              "È la citazione testuale di un intervistato."
             ],
             "answer": 0
           },
@@ -16601,7 +16601,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Perché il moderatore invita alla cautela?",
             "options": [
-              "Perché restano esperienze individuali.",
+              "Perché, benché numerosi, restano casi singoli.",
               "Perché i dati raccolti si contraddicono fra loro.",
               "Perché i partecipanti non erano d'accordo fra loro."
             ],
@@ -16645,8 +16645,8 @@ const TEST_STRUCTURES = [
           {
             "q": "Su che cosa si regge il risultato dato per acquisito?",
             "options": [
-              "Su cinque anni di rilevazioni.",
-              "Su un'ipotesi formulata dall'autrice.",
+              "Su un campione ampio e cinque anni di dati.",
+              "Su un'ipotesi formulata dall'autrice stessa.",
               "Sul confronto fra due soli spot turistici."
             ],
             "answer": 0
