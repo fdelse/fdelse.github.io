@@ -15154,7 +15154,7 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Il cane si è piazzato davanti alla porta ___ ha sentito girare la chiave, e non si è più mosso.",
+            "q": "Il cane si è piazzato davanti alla porta ___ ha sentito girare la chiave, e da lì è rimasto immobile.",
             "options": [
               "non appena",
               "da quando",
