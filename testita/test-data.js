@@ -10362,8 +10362,8 @@ const TEST_STRUCTURES = [
             "q": "Ha ottenuto il ___ dei voti.",
             "options": [
               "massimo",
-              "più massimo",
-              "più altissimo"
+              "massima",
+              "massimi"
             ],
             "answer": 0
           },
@@ -10389,8 +10389,8 @@ const TEST_STRUCTURES = [
             "q": "La sorella ___ studia ancora.",
             "options": [
               "minore",
-              "più minore",
-              "più piccolissima"
+              "minori",
+              "minimo"
             ],
             "answer": 0
           }
@@ -10938,9 +10938,9 @@ const TEST_STRUCTURES = [
             "fix": "avremmo ordinato"
           },
           {
-            "q": "L'autunno scorso i volontari pianterebbero la siepe, ma il terreno era già gelato.",
-            "wrong": "pianterebbero",
-            "fix": "avrebbero piantato"
+            "q": "Quella sera gli ospiti avrebbero rimasti fino a tardi, ma l'ultimo treno partiva alle dieci.",
+            "wrong": "avrebbero",
+            "fix": "sarebbero"
           },
           {
             "q": "Quel giorno Paola salirebbe volentieri fin lassù, ma il sentiero era ghiacciato.",
@@ -10948,9 +10948,9 @@ const TEST_STRUCTURES = [
             "fix": "sarebbe salita"
           },
           {
-            "q": "Quel pomeriggio guardereste la finale con noi, ma la televisione smise di funzionare.",
-            "wrong": "guardereste",
-            "fix": "avreste guardato"
+            "q": "Quel pomeriggio mia zia sarebbe venuto con noi, ma si era slogata una caviglia.",
+            "wrong": "venuto",
+            "fix": "venuta"
           },
           {
             "q": "Ieri sera le mie sorelle uscirebbero con noi, ma avevano perso l'ultimo autobus.",
@@ -13266,7 +13266,7 @@ const TEST_STRUCTURES = [
             "options": [
               "Poiché",
               "Pertanto",
-              "Quindi"
+              "Grazie a"
             ],
             "answer": 0
           },
@@ -13275,7 +13275,7 @@ const TEST_STRUCTURES = [
             "options": [
               "di conseguenza",
               "poiché",
-              "siccome"
+              "così che"
             ],
             "answer": 0
           },
@@ -13284,7 +13284,7 @@ const TEST_STRUCTURES = [
             "options": [
               "perciò",
               "poiché",
-              "dato che"
+              "grazie a"
             ],
             "answer": 0
           }
@@ -13934,9 +13934,9 @@ const TEST_STRUCTURES = [
             "fix": "restano"
           },
           {
-            "q": "Il testimone aveva cambiato versione tre volte, tuttavia il giudice gli abbia creduto fino in fondo.",
-            "wrong": "abbia",
-            "fix": "ha"
+            "q": "Il testimone aveva cambiato versione tre volte. Tuttavia che il giudice gli ha creduto fino in fondo.",
+            "wrong": "che",
+            "fix": "(togliere)"
           },
           {
             "q": "Piove da ieri sera. Peraltro, nessuno in valle se ne lamenti più di tanto.",
@@ -13944,9 +13944,9 @@ const TEST_STRUCTURES = [
             "fix": "lamenta"
           },
           {
-            "q": "Costa poco, per di più le lezioni si tengano a duecento metri dalla fermata del tram.",
-            "wrong": "tengano",
-            "fix": "tengono"
+            "q": "Costa poco. Per di più che le lezioni si tengono a duecento metri dalla fermata del tram.",
+            "wrong": "che",
+            "fix": "(togliere)"
           },
           {
             "q": "L'ascensore funzionava, eppure quasi nessuno sia salito fino all'ultimo piano.",
@@ -13973,8 +13973,8 @@ const TEST_STRUCTURES = [
             "q": "Il problema riguarda diversi uffici del primo piano, ___, quelli del protocollo.",
             "options": [
               "più precisamente",
-              "in altre parole",
-              "per così dire"
+              "ossia",
+              "a ben vedere"
             ],
             "answer": 0
           },
@@ -14001,7 +14001,7 @@ const TEST_STRUCTURES = [
             "options": [
               "in altre parole",
               "più precisamente",
-              "per così dire"
+              "in definitiva"
             ],
             "answer": 0
           },
@@ -14354,9 +14354,9 @@ const TEST_STRUCTURES = [
             "fix": "Ratificata"
           },
           {
-            "q": "Gli atti sono stati trasmessi alla procura una volta chiudendo le indagini.",
-            "wrong": "chiudendo",
-            "fix": "chiuse"
+            "q": "Spedito le lettere, l’impiegata ha chiuso l’ufficio.",
+            "wrong": "Spedito",
+            "fix": "Spedite"
           },
           {
             "q": "Una volta smontando i ponteggi, la piazza è tornata percorribile.",
@@ -14364,9 +14364,9 @@ const TEST_STRUCTURES = [
             "fix": "smontati"
           },
           {
-            "q": "Il telefono dell’ufficio ha iniziato a squillare senza sosta appena diffondendo la notizia.",
-            "wrong": "diffondendo",
-            "fix": "diffusa"
+            "q": "Uscito le ragazze dallo spogliatoio, l’allenatore ha spento le luci.",
+            "wrong": "Uscito",
+            "fix": "Uscite"
           },
           {
             "q": "Verificando le firme, la proposta è arrivata in consiglio comunale.",
@@ -15533,9 +15533,9 @@ const TEST_STRUCTURES = [
             "fix": "va"
           },
           {
-            "q": "La scuola va ricostruita dopo il terremoto e riaprì nel 1978.",
-            "wrong": "va",
-            "fix": "fu"
+            "q": "La vecchia stazione è venuta demolita l’anno scorso.",
+            "wrong": "venuta",
+            "fix": "stata"
           },
           {
             "q": "I rifiuti vengono portati via entro le nove, ma restano sui marciapiedi per giorni.",
@@ -15548,9 +15548,9 @@ const TEST_STRUCTURES = [
             "fix": "fu"
           },
           {
-            "q": "Le assenze vengono comunicate entro le otto, ma quasi nessuna arriva prima di mezzogiorno.",
-            "wrong": "vengono",
-            "fix": "vanno"
+            "q": "Quel documentario è venuto girato in tre mesi.",
+            "wrong": "venuto",
+            "fix": "stato"
           },
           {
             "q": "Nel 1994 il borgo va evacuato in una notte e molti non tornarono più.",
@@ -15867,7 +15867,7 @@ const TEST_STRUCTURES = [
             "options": [
               "per non",
               "affinché non",
-              "in modo che non"
+              "pur di"
             ],
             "answer": 0
           },
@@ -15876,7 +15876,7 @@ const TEST_STRUCTURES = [
             "options": [
               "affinché",
               "per",
-              "allo scopo di"
+              "poiché"
             ],
             "answer": 0
           },
@@ -15885,7 +15885,7 @@ const TEST_STRUCTURES = [
             "options": [
               "in modo che",
               "per",
-              "allo scopo di"
+              "benché"
             ],
             "answer": 0
           },
@@ -15894,16 +15894,16 @@ const TEST_STRUCTURES = [
             "options": [
               "per trovare",
               "affinché",
-              "in modo che"
+              "invece di"
             ],
             "answer": 0
           },
           {
-            "q": "La scuola ha allungato il doposcuola ___ i genitori riuscissero a passare dopo il lavoro.",
+            "q": "La scuola ha allungato il doposcuola ___ i genitori potessero prendere i bambini dopo il lavoro.",
             "options": [
               "affinché",
               "per",
-              "in modo da"
+              "mentre"
             ],
             "answer": 0
           },
@@ -15912,7 +15912,7 @@ const TEST_STRUCTURES = [
             "options": [
               "per riservare",
               "affinché",
-              "al fine che"
+              "per riservando"
             ],
             "answer": 0
           }
@@ -16257,7 +16257,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Scelta",
         "fmt": "buco",
-        "instr": "Scegli la versione corretta.",
+        "instr": "Scegli l’unica versione corretta e fedele al contenuto.",
         "items": [
           {
             "q": "Dopo che l’ho aperta, non sono più riuscito a chiudere la finestra. →",
@@ -16282,7 +16282,7 @@ const TEST_STRUCTURES = [
             "options": [
               "Essendomene accorto in tempo, ho evitato il peggio.",
               "Essendo accortomene in tempo, ho evitato il peggio.",
-              "Mi essendone accorto in tempo, ho evitato il peggio."
+              "Essendosene accorto in tempo, ho evitato il peggio."
             ],
             "answer": 0
           },
@@ -16291,7 +16291,7 @@ const TEST_STRUCTURES = [
             "options": [
               "Scrivendogli adesso, forse fai in tempo.",
               "Gli scrivendo adesso, forse fai in tempo.",
-              "Scrivendo gli adesso, forse fai in tempo."
+              "Avendogli scritto adesso, forse fai in tempo."
             ],
             "answer": 0
           },
@@ -16309,7 +16309,7 @@ const TEST_STRUCTURES = [
             "options": [
               "Pensandoci, ho perso la fermata.",
               "Ci pensando, ho perso la fermata.",
-              "Pensando ci, ho perso la fermata."
+              "Avendoci pensato, ho perso la fermata."
             ],
             "answer": 0
           }
@@ -16503,7 +16503,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Il testo dà per certo che l'Italia è percepita soprattutto come luogo di vacanza?",
             "options": [
-              "No, lo presenta come un'impressione ancora da confermare.",
+              "No, è un'impressione ancora da confermare.",
               "Sì, è il risultato principale dell'indagine.",
               "No, il testo lo smentisce apertamente."
             ],
@@ -16512,7 +16512,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Come è presentato il dato del 68%?",
             "options": [
-              "Come un risultato verificato da più rilevazioni.",
+              "Come un dato verificato più volte.",
               "Come una supposizione della ricercatrice.",
               "Come l'opinione di un singolo intervistato."
             ],
@@ -16521,8 +16521,8 @@ const TEST_STRUCTURES = [
           {
             "q": "L'intervistato tedesco crede ancora che in Italia si lavori meno?",
             "options": [
-              "No, era un'aspettativa che aveva prima di trasferirsi.",
-              "Sì, è la sua opinione di oggi.",
+              "No, lo pensava prima di trasferirsi.",
+              "Sì, è quello che pensa ancora adesso.",
               "Il testo non permette di saperlo."
             ],
             "answer": 0
@@ -16530,7 +16530,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Che cosa dice il testo del luogo comune sulla lentezza?",
             "options": [
-              "È ancora diffuso, ma l'indagine non lo conferma.",
+              "È diffuso, ma i dati non lo confermano.",
               "È confermato dai risultati dell'indagine.",
               "Secondo l'indagine è ormai scomparso."
             ],
@@ -16539,18 +16539,18 @@ const TEST_STRUCTURES = [
           {
             "q": "L'affermazione sulle differenze regionali che valore ha?",
             "options": [
-              "È un giudizio personale attenuato, non un risultato dell'indagine.",
-              "È il risultato più solido dell'indagine.",
+              "È un giudizio personale, non un risultato.",
+              "È il risultato più solido di tutta l'indagine.",
               "È la citazione di un intervistato."
             ],
             "answer": 0
           },
           {
-            "q": "Quale delle tre affermazioni il testo presenta come accertata?",
+            "q": "Perché la ricercatrice invita alla prudenza?",
             "options": [
-              "Gli italiani lavorano in media più ore dei tedeschi.",
-              "L'Italia è percepita soprattutto come luogo di vacanza.",
-              "Le differenze regionali contano più della nazionalità."
+              "Perché il campione è ancora ristretto.",
+              "Perché le rilevazioni sono state solo tre.",
+              "Perché gli intervistati erano soprattutto tedeschi."
             ],
             "answer": 0
           }
@@ -16565,7 +16565,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Su che cosa il testo dice che gli studi sono concordi?",
             "options": [
-              "Sul fatto che il significato dei gesti varia con la regione e la situazione.",
+              "Sul fatto che i gesti variano da regione a regione.",
               "Sul fatto che la puntualità dipende dal settore.",
               "Sul fatto che gli italiani sono più emotivi degli altri."
             ],
@@ -16583,7 +16583,7 @@ const TEST_STRUCTURES = [
           {
             "q": "L'imprenditore tedesco si aspettava riunioni puntuali a Torino?",
             "options": [
-              "No, e proprio per questo si dice sorpreso.",
+              "No, infatti si dice sorpreso.",
               "Sì, era esattamente quello che prevedeva.",
               "Il testo non permette di saperlo."
             ],
@@ -16592,7 +16592,7 @@ const TEST_STRUCTURES = [
           {
             "q": "L'idea che la puntualità dipenda dal settore che valore ha nel testo?",
             "options": [
-              "È un'ipotesi avanzata senza dati a sostegno.",
+              "È un'ipotesi senza dati a sostegno.",
               "È un risultato degli studi citati.",
               "È l'esperienza diretta del moderatore."
             ],
@@ -16601,7 +16601,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Perché il moderatore invita alla cautela?",
             "options": [
-              "Perché gli esempi, benché numerosi, restano esperienze individuali.",
+              "Perché restano esperienze individuali.",
               "Perché i dati raccolti si contraddicono fra loro.",
               "Perché i partecipanti non erano d'accordo fra loro."
             ],
@@ -16610,7 +16610,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Che cosa rappresenta l'esperienza dell'imprenditore tedesco?",
             "options": [
-              "Un'esperienza individuale che contraddice una sua aspettativa.",
+              "Un caso singolo che smentisce un'attesa.",
               "Un dato valido per tutte le aziende italiane.",
               "Una conclusione sostenuta dagli studi citati."
             ],
@@ -16627,7 +16627,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Che valore ha il giudizio dell'autrice sulle due immagini?",
             "options": [
-              "È un'opinione attenuata, non una conclusione dimostrata.",
+              "È un'opinione, non una conclusione.",
               "È il risultato principale della ricerca.",
               "È una citazione dei giovani intervistati."
             ],
@@ -16636,7 +16636,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Quale risultato l'articolo dà per acquisito?",
             "options": [
-              "Chi resta più di un mese generalizza meno di chi si ferma un giorno.",
+              "Chi resta più a lungo generalizza di meno.",
               "Un contatto prolungato rende la percezione più sfumata.",
               "Nessuna delle due immagini del paese è completa."
             ],
@@ -16645,7 +16645,7 @@ const TEST_STRUCTURES = [
           {
             "q": "Su che cosa si regge il risultato dato per acquisito?",
             "options": [
-              "Su un campione ampio e su cinque anni di rilevazioni.",
+              "Su cinque anni di rilevazioni.",
               "Su un'ipotesi formulata dall'autrice.",
               "Sul confronto fra due soli spot turistici."
             ],
@@ -16655,8 +16655,8 @@ const TEST_STRUCTURES = [
             "q": "Quali elementi compaiono nelle interviste e non negli spot?",
             "options": [
               "Pendolarismo, lavoro digitale e costi abitativi.",
-              "Borghi, ritmi lenti e cucina tradizionale.",
-              "Borghi, pendolarismo e ritmi lenti."
+              "Borghi, ritmi lenti e cucina della tradizione locale.",
+              "Borghi, pendolarismo e ritmi di vita lenti."
             ],
             "answer": 0
           },
@@ -16664,17 +16664,17 @@ const TEST_STRUCTURES = [
             "q": "Che cosa dice il testo dell'ipotesi finale?",
             "options": [
               "La considera plausibile, ma non la verifica.",
-              "La considera dimostrata dai dati raccolti.",
+              "La considera ormai dimostrata dai dati raccolti.",
               "La respinge come poco credibile."
             ],
             "answer": 0
           },
           {
-            "q": "L'articolo stabilisce quale delle due immagini sia più vera?",
+            "q": "Su che materiali si basa il confronto dell'articolo?",
             "options": [
-              "No, registra il contrasto senza prendere posizione.",
-              "Sì, sostiene quella che emerge dalle interviste.",
-              "Sì, sostiene quella che emerge dagli spot."
+              "Su spot turistici e su interviste a giovani italiani.",
+              "Su interviste a turisti stranieri e a operatori del settore.",
+              "Su spot turistici di paesi diversi."
             ],
             "answer": 0
           }
@@ -16876,11 +16876,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Paolo aveva davvero i soldi per ripartire da solo?",
+            "q": "Perché il proprietario ha cambiato idea?",
             "options": [
-              "No: i risparmi bastavano appena per un anno di affitto.",
-              "Sì, come pensava il suo socio.",
-              "Il testo non lo dice."
+              "Il testo non lo dice.",
+              "Perché aveva ricevuto un'offerta migliore.",
+              "Perché Paolo non era riuscito a versare la caparra."
             ],
             "answer": 0
           },
@@ -16965,11 +16965,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "La biglietteria unica con la biblioteca esiste già?",
+            "q": "Perché il giardino ha riaperto in ritardo?",
             "options": [
-              "No: è una promessa recente, per l'anno prossimo.",
-              "Sì, dal mese scorso.",
-              "Sì, ma solo la domenica."
+              "Il testo non lo dice.",
+              "Perché i lavori sono durati più del previsto.",
+              "Perché il Comune non ha stanziato i fondi in tempo."
             ],
             "answer": 0
           },
@@ -17009,11 +17009,11 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Perché hanno scartato l'appartamento di via Ellera?",
+            "q": "Hanno comprato il bilocale o l'hanno preso in affitto?",
             "options": [
-              "Perché era al piano terra.",
-              "Perché costava più degli altri della zona.",
-              "Perché non aveva il terrazzo."
+              "Il testo non lo dice.",
+              "L'hanno comprato.",
+              "L'hanno preso in affitto."
             ],
             "answer": 0
           },
