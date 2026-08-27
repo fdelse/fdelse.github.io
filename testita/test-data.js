@@ -6737,9 +6737,9 @@ const TEST_STRUCTURES = [
             "fix": "mettete"
           },
           {
-            "q": "Quando c'è traffico io e mia moglie ci mette il doppio del solito.",
-            "wrong": "mette",
-            "fix": "mettiamo"
+            "q": "Per la domanda ci vogliono solo la carta d'identità.",
+            "wrong": "vogliono",
+            "fix": "vuole"
           }
         ]
       },
@@ -9592,14 +9592,12 @@ const TEST_STRUCTURES = [
             ]
           },
           {
-            "q": "Se il tecnico non richiama, ___ direttamente con il responsabile, mi raccomando. (parlare, tu)",
-            "a": "parla",
+            "q": "Se stanotte senti rumori strani, ___ subito la portineria, mi raccomando. (chiamare, tu)",
+            "a": "chiama",
             "no": [
-              "parola",
-              "paola",
-              "parli",
-              "parlerai",
-              "parleresti"
+              "chiami",
+              "chiamerai",
+              "chiameresti"
             ]
           },
           {
