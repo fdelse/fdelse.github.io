@@ -3567,9 +3567,9 @@ const TEST_STRUCTURES = [
             "fix": "stiamo"
           },
           {
-            "q": "Se un amico ha un dubbio, i colleghi do un consiglio.",
-            "wrong": "do",
-            "fix": "danno"
+            "q": "Ogni settimana vado la busta paga ai miei dipendenti.",
+            "wrong": "vado",
+            "fix": "do"
           },
           {
             "q": "Il sabato voi e i vostri genitori va al mercato?",
@@ -4080,9 +4080,9 @@ const TEST_STRUCTURES = [
             "fix": "(togliere)"
           },
           {
-            "q": "Anna si pettinano allo specchio e poi esce.",
-            "wrong": "pettinano",
-            "fix": "pettina"
+            "q": "Anna si guardano allo specchio e poi esce.",
+            "wrong": "guardano",
+            "fix": "guarda"
           },
           {
             "q": "Quando siete stanchi voi si riposate dopo pranzo.",
@@ -4172,13 +4172,13 @@ const TEST_STRUCTURES = [
         "instr": "Scegli l'imperativo con «tu».",
         "items": [
           {
-            "q": "Per prima cosa, ___ le carote a pezzi.",
+            "q": "Luca, per prima cosa ___ le carote a pezzi.",
             "options": [
-              "taglia",
               "tagli",
+              "taglia",
               "tagliate"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "q": "Marta, ___ bene la salsa nella pentola.",
@@ -4210,20 +4210,20 @@ const TEST_STRUCTURES = [
           {
             "q": "Quando il forno è caldo, ___ la torta.",
             "options": [
-              "cuocere",
-              "inforni",
-              "cuocerete"
+              "cuoci",
+              "cuoce",
+              "cuocete"
             ],
             "answer": 0
           },
           {
-            "q": "Prima di cucinare, ___ le verdure.",
+            "q": "Sara, prima di cucinare ___ le verdure.",
             "options": [
-              "lava",
               "lavi",
+              "lava",
               "lavate"
             ],
-            "answer": 0
+            "answer": 1
           }
         ]
       },
@@ -4253,8 +4253,8 @@ const TEST_STRUCTURES = [
             "fix": "Servi"
           },
           {
-            "q": "Controlla tu le uova e finisci di cuocerle piano.",
-            "wrong": "tu",
+            "q": "Controlla a le uova e finisci di cuocerle piano.",
+            "wrong": "a",
             "fix": "(togliere)"
           },
           {
@@ -4291,7 +4291,7 @@ const TEST_STRUCTURES = [
             "q": "Devi cuocere il riso. →",
             "options": [
               "Cuoci il riso!",
-              "Cuoce il riso!",
+              "Cuocia il riso!",
               "Cuocete il riso!"
             ],
             "answer": 0
@@ -4318,7 +4318,7 @@ const TEST_STRUCTURES = [
             "q": "Devi spegnere il forno. →",
             "options": [
               "Spegni il forno!",
-              "Spegne il forno!",
+              "Spenga il forno!",
               "Spegnete il forno!"
             ],
             "answer": 0
@@ -5760,13 +5760,13 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "La porta è chiusa e lei non ___ entrare.",
+            "q": "La porta è chiusa e Giovanna non ___ entrare.",
             "options": [
-              "può",
               "sa",
+              "può",
               "vuole"
             ],
-            "answer": 0
+            "answer": 1
           }
         ]
       },
