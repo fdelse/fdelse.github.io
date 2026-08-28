@@ -4065,7 +4065,7 @@ const TEST_STRUCTURES = [
             "fix": "mi"
           },
           {
-            "q": "La domenica, quando non lavori, ti svegli tardi e fai colazione con la calma.",
+            "q": "Di domenica, quando non lavora, Marco si sveglia tardi e fa colazione con la calma.",
             "wrong": "la",
             "fix": "(togliere)"
           },
@@ -6322,7 +6322,7 @@ const TEST_STRUCTURES = [
             "fix": "deciso"
           },
           {
-            "q": "Ho fatto colazione al bar e poi ho uscito di corsa.",
+            "q": "Sono andato al bar e poi ho uscito di corsa.",
             "wrong": "ho",
             "fix": "sono"
           },
@@ -10054,7 +10054,7 @@ const TEST_STRUCTURES = [
         "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
-            "q": "Anna dice: «Mi piace questa commedia». → Anna dice che mi piace questa commedia.",
+            "q": "Anna dice: «A me piace questa commedia». → Anna dice che mi piace questa commedia.",
             "wrong": "mi",
             "fix": "le"
           },
