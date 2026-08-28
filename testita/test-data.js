@@ -263,7 +263,7 @@ const TEST_STRUCTURES = [
             "fix": "le"
           },
           {
-            "q": "In aula c'è il psicologo.",
+            "q": "A casa c'è il zio di Marco.",
             "wrong": "il",
             "fix": "lo"
           },
@@ -396,13 +396,13 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Paolo è ___ psicologo in ospedale.",
+            "q": "Paolo ha ___ zio in ospedale.",
             "options": [
-              "uno",
               "un",
+              "uno",
               "una"
             ],
-            "answer": 0
+            "answer": 1
           }
         ]
       },
@@ -939,7 +939,7 @@ const TEST_STRUCTURES = [
             "fix": "nuovi"
           },
           {
-            "q": "Anna ha tre foto nuovo del viaggio.",
+            "q": "Anna ha tre sedie nuovo.",
             "wrong": "nuovo",
             "fix": "nuove"
           },
@@ -1037,13 +1037,13 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Paolo, ___ una canzone per Anna?",
+            "q": "Paolo, ___ una canzone per me?",
             "options": [
-              "canti",
               "canta",
+              "canti",
               "canto"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "q": "Marta ___ in banca dal lunedì al venerdì.",
@@ -1427,8 +1427,8 @@ const TEST_STRUCTURES = [
         "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
-            "q": "La notte Anna dormono poco.",
-            "wrong": "dormono",
+            "q": "La notte Anna dormisce poco.",
+            "wrong": "dormisce",
             "fix": "dorme"
           },
           {
@@ -1447,8 +1447,8 @@ const TEST_STRUCTURES = [
             "fix": "partiamo"
           },
           {
-            "q": "Paolo, tu preferiscono il tè a colazione?",
-            "wrong": "preferiscono",
+            "q": "Paolo, tu preferi il tè a colazione?",
+            "wrong": "preferi",
             "fix": "preferisci"
           },
           {
@@ -1544,13 +1544,13 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Hai due gatti. Ti ___ molto?",
+            "q": "I tuoi gatti ti ___ molto?",
             "options": [
-              "piacciono",
               "piace",
+              "piacciono",
               "piaci"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "q": "Mi ___ molto il cavallo di Marco.",
@@ -1562,13 +1562,13 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Ho due conigli e mi ___ molto.",
+            "q": "I miei conigli mi ___ molto.",
             "options": [
+              "piaci",
               "piacciono",
-              "piace",
-              "piaci"
+              "piace"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "q": "Ti ___ la mucca della fattoria?",
@@ -1601,22 +1601,22 @@ const TEST_STRUCTURES = [
             "fix": "piace"
           },
           {
-            "q": "Le galline della nonna piace molto ai bambini.",
+            "q": "Le galline di Anna piace molto a Marco.",
             "wrong": "piace",
             "fix": "piacciono"
           },
           {
-            "q": "Mi piacciono molto il maiale della fattoria.",
+            "q": "Mi piacciono molto il coniglio di Marta.",
             "wrong": "piacciono",
             "fix": "piace"
           },
           {
-            "q": "A Marco piace le anatre della fattoria.",
+            "q": "Ti piace le anatre bianche?",
             "wrong": "piace",
             "fix": "piacciono"
           },
           {
-            "q": "A Sara piacciono la capra bianca.",
+            "q": "Non mi piacciono la capra bianca.",
             "wrong": "piacciono",
             "fix": "piace"
           },
@@ -1935,7 +1935,7 @@ const TEST_STRUCTURES = [
         "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
-            "q": "Il quaderno è a Sara.",
+            "q": "Il quaderno a Sara è nuovo.",
             "wrong": "a",
             "fix": "di"
           },
@@ -1955,7 +1955,7 @@ const TEST_STRUCTURES = [
             "fix": "da"
           },
           {
-            "q": "Da tre anni abito in Roma e lavoro vicino alla stazione.",
+            "q": "Da tre anni abito in Roma e lavoro con Marco.",
             "wrong": "in",
             "fix": "a"
           },
@@ -1990,13 +1990,13 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Questa borsa è ___ pelle, non è sintetica.",
+            "q": "Questa borsa è ___ pelle.",
             "options": [
-              "di",
               "con",
+              "di",
               "da"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "q": "Per andare in centro vado sempre ___ bicicletta.",
@@ -2017,13 +2017,13 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Ho dato le chiavi ___ mia sorella prima di partire.",
+            "q": "Do le chiavi ___ mia sorella.",
             "options": [
-              "a",
               "da",
+              "a",
               "di"
             ],
-            "answer": 0
+            "answer": 1
           }
         ]
       }
@@ -2246,13 +2246,13 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Ragazzi, il dottore non c'è ancora e ___ aspettare qui.",
+            "q": "Ragazzi, il dottore non c'è ancora e ___ aspettare qui senza di me.",
             "options": [
-              "dovete",
               "dobbiamo",
+              "dovete",
               "devono"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "q": "Marco e Sara hanno molto lavoro e ___ finire tutto oggi.",
@@ -2826,67 +2826,6 @@ const TEST_STRUCTURES = [
               "scrivo",
               "scrive",
               "scriviamo"
-            ],
-            "answer": 0
-          }
-        ]
-      },
-      {
-        "type": "Trasformazione",
-        "fmt": "buco",
-        "instr": "Leggi la situazione e scegli la frase adatta.",
-        "items": [
-          {
-            "q": "Hai già preso l'appuntamento con il meccanico per giovedì. Come lo dici?",
-            "options": [
-              "Giovedì porto la macchina dal meccanico.",
-              "Giovedì vorrei portare la macchina dal meccanico.",
-              "Giovedì penso di portare la macchina dal meccanico."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Ti piacerebbe suonare il piano, ma non hai ancora fatto niente per impararlo. Come lo dici?",
-            "options": [
-              "Un giorno vorrei imparare a suonare il piano.",
-              "Un giorno imparo a suonare il piano.",
-              "Un giorno ho intenzione di imparare il piano."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Sei a casa con un amico e vuoi proporgli di cenare insieme. Che cosa dici?",
-            "options": [
-              "Stasera ordiniamo una pizza?",
-              "Stasera ordino una pizza.",
-              "Stasera vorrei ordinare una pizza."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Hai deciso di iscriverti in palestra, ma non hai ancora scelto quando. Come lo dici?",
-            "options": [
-              "Ho intenzione di iscrivermi in palestra.",
-              "Mi iscrivo in palestra lunedì.",
-              "Vorrei iscrivermi in palestra."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il trasloco è fissato per il quindici. Come lo dici?",
-            "options": [
-              "Il quindici traslochiamo nella casa nuova.",
-              "Il quindici vorremmo traslocare.",
-              "Il quindici pensiamo di traslocare."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Chiudi la telefonata e vuoi proporre a un collega di risentirvi domani. Che cosa dici?",
-            "options": [
-              "Ci sentiamo domani mattina?",
-              "Domani mattina ti chiamo di sicuro.",
-              "Vorrei sentirti domani mattina."
             ],
             "answer": 0
           }
