@@ -2,6 +2,8 @@ controlla.js
 ricalchi.js
 dump.js
 grep.js
+patch-lib.js
+categoria.js
 lezioni/
 *.docx
 RIPARTENZA.md
