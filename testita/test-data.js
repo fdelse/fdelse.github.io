@@ -3363,13 +3363,13 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Tu e Marco dopo cena vuole uscire con noi?",
+            "q": "Tu e Marco dopo cena ___ uscire con noi?",
             "options": [
-              "volete",
               "vuole",
+              "volete",
               "vogliamo"
             ],
-            "answer": 0
+            "answer": 1
           }
         ]
       },
