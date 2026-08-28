@@ -4921,8 +4921,8 @@ const TEST_STRUCTURES = [
             "fix": "la"
           },
           {
-            "q": "I quaderni li porto io e i libri li lasci pure qui.",
-            "wrong": "pure",
+            "q": "I quaderni li porto io e a i libri li lasci qui.",
+            "wrong": "a",
             "fix": "(togliere)"
           },
           {
