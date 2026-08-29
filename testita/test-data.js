@@ -1233,13 +1233,13 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Ragazzi, ___ in centro o in periferia?",
+            "q": "Ragazzi, ___ in centro o in periferia con i vostri genitori?",
             "options": [
-              "vivete",
               "viviamo",
+              "vivete",
               "vivono"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "q": "Quando entrano in classe, gli studenti ___ la borsa accanto alla sedia.",
@@ -5628,7 +5628,7 @@ const TEST_STRUCTURES = [
             "fix": "(togliere)"
           },
           {
-            "q": "Il medico dice che dovrebbe mangiare meno sale, ma io mangio molto sale.",
+            "q": "Il medico mi dice che dovrebbe mangiare meno sale, ma io mangio molto lo stesso.",
             "wrong": "dovrebbe",
             "fix": "dovrei"
           },
@@ -5742,13 +5742,13 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Con questo temporale non ___ uscire di casa. (noi)",
+            "q": "Con la porta bloccata non ___ uscire di casa. (noi)",
             "options": [
-              "possiamo",
               "sappiamo",
+              "possiamo",
               "vogliamo"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "q": "Hanno studiato dieci anni alla scuola di musica e ___ suonare il pianoforte.",
@@ -6025,11 +6025,11 @@ const TEST_STRUCTURES = [
           {
             "q": "Davanti alla cassa ci sono dei clienti. → (con «alcuni»)",
             "options": [
+              "Davanti alla cassa ci sono alcuni cliente.",
               "Davanti alla cassa ci sono alcuni clienti.",
-              "Davanti alla cassa c'è alcuni clienti.",
-              "Davanti alla cassa ci sono qualche clienti."
+              "Davanti alla cassa c'è alcuni clienti."
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "q": "Per la festa prendiamo dell'aranciata. → (tre bottiglie)",
@@ -6176,11 +6176,11 @@ const TEST_STRUCTURES = [
           {
             "q": "Premi il tasto verde per accendere. →",
             "options": [
+              "Premerlo il tasto verde per accendere.",
               "Premere il tasto verde per accendere.",
-              "Da premere il tasto verde per accendere.",
               "Premendo il tasto verde per accendere."
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "q": "Firma il modulo in fondo alla pagina. →",
@@ -6212,11 +6212,11 @@ const TEST_STRUCTURES = [
           {
             "q": "Spedisci la domanda entro venerdì. →",
             "options": [
+              "Spedendo la domanda entro venerdì.",
               "Spedire la domanda entro venerdì.",
-              "Da spedire la domanda entro venerdì.",
               "Spedito la domanda entro venerdì."
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "q": "Compila il modulo con la penna nera. →",
@@ -7692,7 +7692,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Trasformazione",
         "fmt": "buco",
-        "instr": "Scegli la trasformazione corretta, mantenendo la stessa persona.",
+        "instr": "Scegli la trasformazione corretta, mantenendo la stessa persona verbale.",
         "items": [
           {
             "q": "Avete un tavolo vicino alla finestra? →",
@@ -7901,10 +7901,10 @@ const TEST_STRUCTURES = [
             "answer": 2
           },
           {
-            "q": "Temo che questo cappotto ___ troppo per le mie tasche.",
+            "q": "Temo che questo cappotto ___ troppo: l'ho comprato senza guardare il prezzo.",
             "options": [
-              "sia costato",
               "costi",
+              "sia costato",
               "costa"
             ],
             "answer": 1
@@ -8034,13 +8034,13 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "Allacciate le cinture: l'aereo ___ fra un minuto.",
+            "q": "Il semaforo è ancora rosso: la macchina ___.",
             "options": [
-              "sta per decollare",
-              "sta decollando",
-              "stava decollando"
+              "sta partendo",
+              "sta per partire",
+              "stava partendo"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "q": "In questo momento i tecnici ___ l'impianto elettrico.",
@@ -8224,20 +8224,20 @@ const TEST_STRUCTURES = [
           {
             "q": "Il dentista ha rimandato l'appuntamento. Ha cambiato lo studio.",
             "options": [
+              "Non solo il dentista ha rimandato l'appuntamento, ma ha invece cambiato lo studio.",
               "Non solo il dentista ha rimandato l'appuntamento, ma ha anche cambiato lo studio.",
-              "Il dentista ha rimandato l'appuntamento, cioè ha cambiato lo studio.",
-              "Il dentista ha rimandato l'appuntamento, però ha cambiato lo studio."
+              "Non solo il dentista ha rimandato l'appuntamento, ma ha infatti cambiato lo studio."
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "q": "Il candidato conosceva bene l'azienda. Aveva letto tutti i bilanci.",
             "options": [
+              "Il candidato conosceva bene l'azienda: inoltre aveva letto tutti i bilanci.",
               "Il candidato conosceva bene l'azienda: infatti aveva letto tutti i bilanci.",
-              "Il candidato conosceva bene l'azienda: però aveva letto tutti i bilanci.",
-              "Il candidato conosceva bene l'azienda: prima di tutto aveva letto tutti i bilanci."
+              "Il candidato conosceva bene l'azienda: però aveva letto tutti i bilanci."
             ],
-            "answer": 0
+            "answer": 1
           }
         ]
       }
@@ -8322,17 +8322,17 @@ const TEST_STRUCTURES = [
             "fix": "condiscila"
           },
           {
-            "q": "Metti il latte in un pentolino, scaldale piano e assaggialo prima di servire.",
+            "q": "Metti il latte in un pentolino, scaldale e portalo a Marta.",
             "wrong": "scaldale",
             "fix": "scaldalo"
           },
           {
-            "q": "Tritare le cipolle, girale spesso in padella e toglile dal fuoco dopo dieci minuti.",
+            "q": "Tritare le cipolle, girale in padella e toglile dal fuoco dopo dieci minuti.",
             "wrong": "Tritare",
             "fix": "Trita"
           },
           {
-            "q": "Apri il vino, versali nei bicchieri e offrine anche a Marco.",
+            "q": "Apri il vino, versali nei bicchieri e offrilo agli altri.",
             "wrong": "versali",
             "fix": "versalo"
           }
@@ -8708,13 +8708,13 @@ const TEST_STRUCTURES = [
             "answer": 0
           },
           {
-            "q": "___ subito che l'incontro è rimandato!",
+            "q": "Paolo non lo sa ancora: ___ subito che l'incontro è rimandato!",
             "options": [
-              "Digli",
               "Dillo",
+              "Digli",
               "Gli di'"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "q": "___ se ha ancora la ricevuta del pagamento!",
