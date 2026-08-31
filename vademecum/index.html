@@ -197,6 +197,18 @@
     color:var(--ink);white-space:normal;line-height:1.4;
   }
   td.ex-cell b{font-style:normal;font-weight:600;color:var(--lvl);}
+  .tbl-intro{margin-top:16px;}
+  ul.sch{margin:2px 0 0;padding-left:17px;list-style:none;}
+  ul.sch > li{margin:0 0 7px;position:relative;}
+  ul.sch > li::before{
+    content:"";position:absolute;left:-13px;top:8px;width:5px;height:5px;
+    border-radius:50%;background:var(--lvl);
+  }
+  ul.sch ul{margin:3px 0 0;padding-left:15px;list-style:none;}
+  ul.sch ul li{margin:0 0 3px;position:relative;color:var(--ink-soft);}
+  ul.sch ul li::before{
+    content:"";position:absolute;left:-11px;top:9px;width:6px;height:1px;background:var(--line);
+  }
   .tbl-wrap{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:4px;}
   .tbl-wrap > div{flex:1 1 130px;}
 
@@ -2869,59 +2881,79 @@ const ENTRIES = [
     "lvl": "a2",
     "cat": "Verbi",
     "title": "L'imperativo",
-    "def": "Il modo di ordini, istruzioni, consigli e inviti. Ha forme solo per tu, noi, voi e per il Lei di cortesia (manca la 1ª persona singolare).",
-    "form": "Per il <b>tu</b> le due classi si comportano in modo opposto: i verbi in -are prendono la forma di lui/lei del presente (lui parla → <b>parla!</b>), quelli in -ere e -ire prendono la forma di tu (tu prendi → <b>prendi!</b>, tu dormi → <b>dormi!</b>). Noi e voi sono identiche al presente. Il <b>Lei</b> usa il congiuntivo presente (parli!, prenda!).",
+    "def": "Il modo con cui si danno ordini, istruzioni, consigli e inviti. Non ha la 1ª persona singolare — a nessuno si comanda da solo — quindi esistono solo le forme per <b>tu</b>, <b>noi</b>, <b>voi</b> e per il <b>Lei</b> di cortesia.",
+    "form": "<ul class='sch'><li><b>TU</b> — dal presente indicativo<ul><li>verbi in -ARE → radice + <b>a</b>, uguale alla forma di lui/lei (3ª singolare): <b>parla!</b>, <b>mangia!</b></li><li>verbi in -ERE / -IRE → radice + <b>i</b>, uguale alla forma di tu (2ª singolare): <b>prendi!</b>, <b>dormi!</b></li></ul></li><li><b>LEI</b> — dal congiuntivo presente, che al singolare ha una forma sola<ul><li>verbi in -ARE → radice + <b>i</b>: <b>parli!</b>, <b>mangi!</b></li><li>verbi in -ERE / -IRE → radice + <b>a</b>: <b>prenda!</b>, <b>dorma!</b></li></ul></li><li><b>NOI e VOI</b> — dal presente indicativo: <b>parliamo!</b>, <b>parlate!</b></li></ul><p class='sec__t' style='margin-top:10px'>I verbi in -IRE che inseriscono <b>-isc-</b> lo mantengono anche qui: radice + isc + <b>i</b> al tu (<b>finisci!</b>), radice + isc + <b>a</b> al Lei (<b>finisca!</b>).</p>",
     "tables": [
       {
+        "before": "Sette verbi sono irregolari <b>sia al tu sia al Lei</b>. I primi cinque accorciano il tu e prendono l'apostrofo.",
+        "plain": true,
         "headers": [
-          "",
-          "-are",
-          "-ere",
-          "-ire"
+          "verbo",
+          "tu",
+          "Lei"
         ],
         "rows": [
           [
-            "tu",
-            "parla",
-            "prendi",
-            "dormi"
+            "andare",
+            "va'",
+            "vada"
           ],
           [
-            "noi",
-            "parliamo",
-            "prendiamo",
-            "dormiamo"
+            "dare",
+            "da'",
+            "dia"
           ],
           [
-            "Lei",
-            "parli",
-            "prenda",
-            "dorma"
+            "fare",
+            "fa'",
+            "faccia"
           ],
           [
-            "voi",
-            "parlate",
-            "prendete",
-            "dormite"
+            "stare",
+            "sta'",
+            "stia"
+          ],
+          [
+            "dire",
+            "di'",
+            "dica"
+          ],
+          [
+            "essere",
+            "sii",
+            "sia"
+          ],
+          [
+            "avere",
+            "abbi",
+            "abbia"
           ]
         ]
       }
     ],
     "uses": [
       {
-        "label": "ordini e istruzioni",
+        "label": "ordini e istruzioni: è l'uso più diretto",
         "ex": "Apri la finestra! / Girate a destra."
       },
       {
-        "label": "consigli",
-        "ex": "Riposati un po'."
+        "label": "consigli e inviti: l'imperativo non è per forza brusco",
+        "ex": "Riposati un po'. / Venite a cena da noi."
       },
       {
-        "label": "forma di cortesia (Lei)",
+        "label": "con il Lei si ottiene la forma di cortesia, usata con estranei e in contesti formali",
         "ex": "Si accomodi. / Mi dica."
+      },
+      {
+        "label": "per dire a qualcuno di non fare una cosa, il tu usa non + infinito, tutte le altre persone il normale negativo",
+        "ex": "Non parlare! (tu) / Non parlate! (voi)"
+      },
+      {
+        "label": "i pronomi si attaccano in fondo con tu, noi e voi, ma stanno davanti al verbo con il Lei",
+        "ex": "Dimmi tutto! / Alzati! ma Mi dica tutto. / Si accomodi."
       }
     ],
-    "warn": "Il negativo del <b>tu</b> è speciale: non + infinito → «non parlare!», «non andare!». I pronomi si <b>attaccano</b> al verbo con tu/noi/voi (dimmi!, alzati!, andiamocene!), ma vanno <b>prima</b> col Lei (mi dica, si accomodi).",
+    "warn": "Dopo le cinque forme accorciate (va', da', fa', sta', di') il pronome <b>raddoppia</b> la consonante: <b>dammi</b>, <b>dimmi</b>, <b>fallo</b>, <b>stammi</b> vicino. Unica eccezione «gli», che non raddoppia mai: <b>digli</b>, <b>dagli</b>. E attenzione al tu dei verbi in -are: «parli!» non è un ordine ma la forma di cortesia rivolta al Lei.",
     "exercises": [
       {
         "type": "Riempimento",
@@ -7596,6 +7628,12 @@ function tableHTML(t){
 
 function tablesBlock(tables){
   if(!tables || !tables.length) return "";
+  const withIntro = tables.some(t=>t.before || t.after);
+  if(withIntro) return tables.map(t=>
+      (t.before ? "<p class='sec__t tbl-intro'>"+t.before+"</p>" : "")
+      + tableHTML(t)
+      + (t.after ? "<p class='sec__t tbl-intro'>"+t.after+"</p>" : "")
+    ).join("");
   if(tables.length>1) return "<div class='tbl-wrap'>"+tables.map(t=>"<div>"+tableHTML(t)+"</div>").join("")+"</div>";
   return tableHTML(tables[0]);
 }
@@ -7617,7 +7655,7 @@ function cardHTML(e, lvlId, idx){
 
   if(e.form || (e.tables && e.tables.length)){
     h += "<div class='sec'><p class='sec__h'>Formazione</p>";
-    if(e.form) h += "<p class='sec__t'>"+e.form+"</p>";
+    if(e.form) h += "<div class='sec__t'>"+e.form+"</div>";
     h += tablesBlock(e.tables) + "</div>";
   }
   if(e.uses && e.uses.length){
