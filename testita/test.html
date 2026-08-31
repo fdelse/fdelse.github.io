@@ -101,14 +101,17 @@
 <div class="wrap" id="doneWrap" style="display:none;">
   <p class="kicker">Fatto</p>
   <h1>Grazie, <span id="doneName"></span>!</h1>
-  <p class="sub" id="doneSub">Il tuo test è stato inviato all'insegnante. Ecco il tuo risultato.</p>
+  <p class="sub" id="doneSub">Ecco il tuo risultato.</p>
   <div class="score-banner">
     <div class="lbl" id="bannerTop"></div>
     <div class="num" id="bannerNum">–</div>
     <div class="lbl" id="bannerLbl">risposte corrette</div>
   </div>
-  <div id="byStruct"></div>
+  <!-- L'avviso di guasto sta PRIMA del riepilogo: se l'invio automatico
+       fallisce, il pulsante di recupero deve stare dove l'occhio arriva
+       comunque, non sotto venti righe di elenco. -->
   <div id="fallbackBox"></div>
+  <div id="byStruct"></div>
 </div>
 
 <script src="test-data.js"></script>
@@ -1090,10 +1093,7 @@ function submitTest(){
   document.getElementById('testWrap').style.display = 'none';
   document.getElementById('doneWrap').style.display = 'block';
   document.getElementById('doneName').textContent = studentName;
-  if (arrestoAnticipato) {
-    document.getElementById('doneSub').textContent =
-      'Il test si conclude qui: hai completato le sezioni adatte al tuo livello. Ecco il tuo risultato.';
-  }
+  setDoneSub(false);
 
   /* Nel riquadro grande va il dato che conta per il tipo di test:
      - piazzamento: il livello, perché è il motivo per cui il test esiste
@@ -1154,6 +1154,20 @@ function submitTest(){
   sendResults(summary, score);
 }
 
+/* Il sottotitolo si compone su due assi: come si è chiuso il test (in anticipo
+   o no) e se l'invio è confermato. L'invio si annuncia SOLO quando EmailJS ha
+   risposto: prima la pagina non lo sa, e una rassicurazione poi smentita fa
+   chiudere la pagina a chi invece dovrebbe premere il pulsante di recupero. */
+function setDoneSub(inviato){
+  const testa = arrestoAnticipato
+    ? 'Il test si conclude qui: hai completato le sezioni adatte al tuo livello. '
+    : '';
+  const coda = inviato
+    ? 'Il risultato è stato inviato all\'insegnante.'
+    : 'Ecco il tuo risultato.';
+  document.getElementById('doneSub').textContent = testa + coda;
+}
+
 function sendResults(summary, score){
   const box = document.getElementById('fallbackBox');
   const useEmailJS = EMAILJS_CONFIG.SERVICE_ID && EMAILJS_CONFIG.TEMPLATE_ID && EMAILJS_CONFIG.PUBLIC_KEY;
@@ -1164,7 +1178,7 @@ function sendResults(summary, score){
       emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
       emailjs.send(EMAILJS_CONFIG.SERVICE_ID, EMAILJS_CONFIG.TEMPLATE_ID,
         { student_name: studentName, score: score, summary: summary })
-        .then(() => { /* invio riuscito: lo studente non vede nulla in più */ })
+        .then(() => setDoneSub(true))
         .catch(() => showFallback(box, summary));
     };
     script.onerror = () => showFallback(box, summary);
