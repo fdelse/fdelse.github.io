@@ -1525,7 +1525,8 @@ const TEST_STRUCTURES = [
   {
     "lvl": "a",
     "lez": [
-      "A1 L7"
+      "A1 L7",
+      "A2 L24"
     ],
     "title": "Il verbo piacere",
     "exercises": [
@@ -5009,7 +5010,8 @@ const TEST_STRUCTURES = [
   {
     "lvl": "a2",
     "lez": [
-      "A2 L15"
+      "A2 L15",
+      "A2 L24"
     ],
     "title": "Verbi a struttura invertita (interessare, servire, mancare, bastare)",
     "exercises": [
@@ -5537,7 +5539,8 @@ const TEST_STRUCTURES = [
   {
     "lvl": "a2",
     "lez": [
-      "A2 L21"
+      "A2 L21",
+      "A2 L24"
     ],
     "title": "Le richieste cortesi: vorrei, potrei, dovrei e ti/Le dispiace",
     "exercises": [
@@ -5889,6 +5892,174 @@ const TEST_STRUCTURES = [
               "Non vogliamo comprare niente."
             ],
             "answer": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lvl": "a2",
+    "lez": [
+      "A2 L25"
+    ],
+    "title": "Le espressioni di quantità: molto, poco, troppo, tanto",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "buco",
+        "instr": "Scegli la forma corretta.",
+        "items": [
+          {
+            "q": "Alla fine della festa c'era ___ carta per terra.",
+            "options": [
+              "troppo",
+              "troppa",
+              "troppe"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Al bar di sotto chiacchierano ___ e servono lentamente.",
+            "options": [
+              "troppo",
+              "troppi",
+              "troppe"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "In quel bar ci sono ___ tavoli liberi a quest’ora.",
+            "options": [
+              "poco",
+              "pochi",
+              "poche"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Mia sorella ricicla ma legge ___ le etichette.",
+            "options": [
+              "poco",
+              "pochi",
+              "poche"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Alla riunione sul riciclaggio è venuta ___ gente.",
+            "options": [
+              "molta",
+              "molto",
+              "molte"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "I miei vicini differenziano ___ e sbagliano raramente.",
+            "options": [
+              "molto",
+              "molti",
+              "molte"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Individua e clicca dove c'è l'errore.",
+        "items": [
+          {
+            "q": "In cucina ci sono troppi bottiglie da portare giù.",
+            "wrong": "troppi",
+            "fix": "troppe"
+          },
+          {
+            "q": "Al mercato mia madre compra sempre molte e poi butta metà della frutta.",
+            "wrong": "molte",
+            "fix": "molto"
+          },
+          {
+            "q": "Nel condominio ci abita molte gente e l'ascensore è sempre occupato.",
+            "wrong": "molte",
+            "fix": "molta"
+          },
+          {
+            "q": "Il vicino parla tanta e non ascolta mai nessuno.",
+            "wrong": "tanta",
+            "fix": "tanto"
+          },
+          {
+            "q": "Quest’anno ho letto poche libri e me ne dispiace.",
+            "wrong": "poche",
+            "fix": "pochi"
+          },
+          {
+            "q": "I bambini mangiano tanti ma non ingrassano.",
+            "wrong": "tanti",
+            "fix": "tanto"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Riscrivi con il nome fra parentesi: scegli la versione corretta.",
+        "items": [
+          {
+            "q": "C'è molto traffico in centro. (macchine) →",
+            "options": [
+              "Ci sono molto macchine in centro.",
+              "Ci sono molte macchine in centro.",
+              "Ci sono molti macchine in centro."
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Ho comprato troppa frutta al mercato. (dolci) →",
+            "options": [
+              "Ho comprato troppo dolci al mercato.",
+              "Ho comprato troppi dolci al mercato.",
+              "Ho comprato troppa dolci al mercato."
+            ],
+            "answer": 1
+          },
+          {
+            "q": "In questa via c'è poco rumore la sera. (auto) →",
+            "options": [
+              "In questa via ci sono poco auto la sera.",
+              "In questa via ci sono poche auto la sera.",
+              "In questa via ci sono pochi auto la sera."
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Alla festa c'era tanta confusione. (invitati) →",
+            "options": [
+              "Alla festa c'erano tanto invitati.",
+              "Alla festa c'erano tanti invitati.",
+              "Alla festa c'erano tante invitati."
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Al corso ci sono molti studenti stranieri. (gente) →",
+            "options": [
+              "Al corso c'è molto gente straniera.",
+              "Al corso c'è molta gente straniera.",
+              "Al corso c'è molte gente straniera."
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Mangio poca frutta durante la settimana. (pane) →",
+            "options": [
+              "Mangio poca pane durante la settimana.",
+              "Mangio poco pane durante la settimana.",
+              "Mangio pochi pane durante la settimana."
+            ],
+            "answer": 1
           }
         ]
       }
@@ -10192,6 +10363,344 @@ const TEST_STRUCTURES = [
     ]
   },
   {
+    "lvl": "b1",
+    "lez": [
+      "B1 L13",
+      "B2 L12",
+      "B2 L18"
+    ],
+    "title": "Il congiuntivo presente: forme irregolari",
+    "stima": "b2",
+    "exercises": [
+      {
+        "type": "Riempimento",
+        "fmt": "fill",
+        "instr": "Scrivi il congiuntivo presente irregolare.",
+        "items": [
+          {
+            "q": "Non credo che il direttore ___ molto tempo per noi. (avere)",
+            "a": "abbia",
+            "no": [
+              "ha",
+              "abbiano"
+            ]
+          },
+          {
+            "q": "È possibile che i vicini ___ una mano in giardino. (dare)",
+            "a": "diano",
+            "no": [
+              "divano",
+              "dicano",
+              "danno",
+              "dino"
+            ]
+          },
+          {
+            "q": "Dubito che il tecnico ___ la verità sul guasto. (dire)",
+            "a": "dica",
+            "no": [
+              "dice",
+              "dicano"
+            ]
+          },
+          {
+            "q": "Temo che i ragazzi non ___ arrivare in tempo. (potere)",
+            "a": "possano",
+            "no": [
+              "posano",
+              "passano",
+              "possono",
+              "possino"
+            ]
+          },
+          {
+            "q": "Mi sembra che tua sorella ___ molto d'accordo. (essere)",
+            "a": "sia",
+            "no": [
+              "è",
+              "siano"
+            ]
+          },
+          {
+            "q": "È meglio che i documenti ___ direttamente in archivio. (andare)",
+            "a": "vadano",
+            "no": [
+              "vedano",
+              "vanno",
+              "vadino"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Individua e clicca dove c'è l'errore.",
+        "items": [
+          {
+            "q": "Non credo che voi siete pronti per un viaggio così lungo.",
+            "wrong": "siete",
+            "fix": "siate"
+          },
+          {
+            "q": "Temo che i vicini stia per traslocare senza avvisare.",
+            "wrong": "stia",
+            "fix": "stiano"
+          },
+          {
+            "q": "È meglio che voi fate una copia del contratto e che poi la portiate in ufficio.",
+            "wrong": "fate",
+            "fix": "facciate"
+          },
+          {
+            "q": "Immagino che il tecnico possano venire domani mattina.",
+            "wrong": "possano",
+            "fix": "possa"
+          },
+          {
+            "q": "Spero che voi sappiate già come arrivare e che il viaggio sarà tranquillo.",
+            "wrong": "sarà",
+            "fix": "sia"
+          },
+          {
+            "q": "È probabile che i ragazzi dica la verità ai genitori.",
+            "wrong": "dica",
+            "fix": "dicano"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Riformula la frase con l'espressione indicata e il congiuntivo presente: scegli la versione corretta.",
+        "items": [
+          {
+            "q": "Tu hai già tutti i documenti. (Non sono sicuro che...)",
+            "options": [
+              "Non sono sicuro che tu abbia già tutti i documenti.",
+              "Non sono sicuro che tu hai già tutti i documenti.",
+              "Non sono sicuro che tu abbiate già tutti i documenti."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Voi venite in macchina. (È meglio che...)",
+            "options": [
+              "È meglio che voi veniate in macchina.",
+              "È meglio che voi venite in macchina.",
+              "È meglio che voi vengano in macchina."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Io vado a prenderlo in stazione. (Preferisci che...)",
+            "options": [
+              "Preferisci che io vada a prenderlo in stazione?",
+              "Preferisci che io vado a prenderlo in stazione?",
+              "Preferisci che io vadano a prenderlo in stazione?"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Lei sa dove sono le chiavi. (Dubito che...)",
+            "options": [
+              "Dubito che lei sappia dove sono le chiavi.",
+              "Dubito che lei sa dove sono le chiavi.",
+              "Dubito che lei sappiano dove sono le chiavi."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Tu stai bene con questo caldo. (Non mi pare che...)",
+            "options": [
+              "Non mi pare che tu stia bene con questo caldo.",
+              "Non mi pare che tu stai bene con questo caldo.",
+              "Non mi pare che tu stiate bene con questo caldo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Loro danno l'esame a giugno. (È possibile che...)",
+            "options": [
+              "È possibile che loro diano l'esame a giugno.",
+              "È possibile che loro danno l'esame a giugno.",
+              "È possibile che loro dia l'esame a giugno."
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lvl": "b1",
+    "lez": [
+      "B1 L24"
+    ],
+    "title": "Il passato remoto: riconoscere la forma",
+    "exercises": [
+      {
+        "type": "Scelta",
+        "fmt": "buco",
+        "instr": "Sostituisci il passato remoto con il passato prossimo: scegli la forma giusta.",
+        "items": [
+          {
+            "q": "Il maestro lavorò molti anni alla corte del duca. → Il maestro ___ molti anni alla corte del duca.",
+            "options": [
+              "ha lavorato",
+              "lavorava",
+              "aveva lavorato"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il giovane si trasferì a Roma nel 1490. → Il giovane ___ a Roma nel 1490.",
+            "options": [
+              "si ha trasferito",
+              "si è trasferito",
+              "si trasferiva"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "L'allievo copiò i disegni del maestro per cinque anni. → L'allievo ___ i disegni del maestro per cinque anni.",
+            "options": [
+              "ha copiato",
+              "copiava",
+              "aveva copiato"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il committente rifiutò il primo bozzetto. → Il committente ___ il primo bozzetto.",
+            "options": [
+              "ha rifiutato",
+              "rifiutava",
+              "aveva rifiutato"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "L'artista partì per la Francia in autunno. → L'artista ___ per la Francia in autunno.",
+            "options": [
+              "partiva",
+              "è partito",
+              "ha partito"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Il maestro tornò a Firenze dopo dieci anni. → Il maestro ___ a Firenze dopo dieci anni.",
+            "options": [
+              "ha tornato",
+              "è tornato",
+              "tornava"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Il racconto è tutto al passato remoto: individua e clicca dove c'è l'errore.",
+        "items": [
+          {
+            "q": "Il pittore nacque a Ferrara, studiava a Firenze e morì a Roma molto giovane.",
+            "wrong": "studiava",
+            "fix": "studiò"
+          },
+          {
+            "q": "Il maestro apriva una bottega, prese tre allievi e insegnò a tutti il disegno.",
+            "wrong": "apriva",
+            "fix": "aprì"
+          },
+          {
+            "q": "L'artista dipinse la volta, scolpiva il portale e scrisse anche dei versi.",
+            "wrong": "scolpiva",
+            "fix": "scolpì"
+          },
+          {
+            "q": "Il mercante comprò il quadro, lo portò a Venezia e lo vende al doge.",
+            "wrong": "vende",
+            "fix": "vendette"
+          },
+          {
+            "q": "Il duca ordina la statua, pagò l'anticipo e poi cambiò idea.",
+            "wrong": "ordina",
+            "fix": "ordinò"
+          },
+          {
+            "q": "Il giovane arrivò a Roma, resta senza lavoro per mesi e poi trovò un posto.",
+            "wrong": "resta",
+            "fix": "restò"
+          }
+        ]
+      },
+      {
+        "type": "Scelta",
+        "fmt": "buco",
+        "instr": "Scegli l'infinito del verbo al passato remoto.",
+        "items": [
+          {
+            "q": "Il pittore visse a Urbino fino ai vent'anni.",
+            "options": [
+              "vivere",
+              "vincere",
+              "vedere"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il segretario del duca scrisse una lunga relazione.",
+            "options": [
+              "scrivere",
+              "scendere",
+              "scegliere"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "L'allievo dipinse il fondo del quadro.",
+            "options": [
+              "dipingere",
+              "dipendere",
+              "difendere"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il figlio del mercante nacque durante un viaggio.",
+            "options": [
+              "nascere",
+              "nascondere",
+              "nuocere"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il vecchio maestro morì l'inverno seguente.",
+            "options": [
+              "morire",
+              "mordere",
+              "mostrare"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Lo scultore scolpì un leone di pietra.",
+            "options": [
+              "scolpire",
+              "scolare",
+              "scoprire"
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
     "lvl": "b2",
     "lez": [
       "B2 L3"
@@ -11055,176 +11564,6 @@ const TEST_STRUCTURES = [
               "L'avrei comprato.",
               "Lo comprerei.",
               "L'ho comprato."
-            ],
-            "answer": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "lvl": "b1",
-    "lez": [
-      "B1 L13",
-      "B2 L12",
-      "B2 L18"
-    ],
-    "title": "Il congiuntivo presente: forme irregolari",
-    "stima": "b2",
-    "exercises": [
-      {
-        "type": "Riempimento",
-        "fmt": "fill",
-        "instr": "Scrivi il congiuntivo presente irregolare.",
-        "items": [
-          {
-            "q": "Non credo che il direttore ___ molto tempo per noi. (avere)",
-            "a": "abbia",
-            "no": [
-              "ha",
-              "abbiano"
-            ]
-          },
-          {
-            "q": "È possibile che i vicini ___ una mano in giardino. (dare)",
-            "a": "diano",
-            "no": [
-              "divano",
-              "dicano",
-              "danno",
-              "dino"
-            ]
-          },
-          {
-            "q": "Dubito che il tecnico ___ la verità sul guasto. (dire)",
-            "a": "dica",
-            "no": [
-              "dice",
-              "dicano"
-            ]
-          },
-          {
-            "q": "Temo che i ragazzi non ___ arrivare in tempo. (potere)",
-            "a": "possano",
-            "no": [
-              "posano",
-              "passano",
-              "possono",
-              "possino"
-            ]
-          },
-          {
-            "q": "Mi sembra che tua sorella ___ molto d'accordo. (essere)",
-            "a": "sia",
-            "no": [
-              "è",
-              "siano"
-            ]
-          },
-          {
-            "q": "È meglio che i documenti ___ direttamente in archivio. (andare)",
-            "a": "vadano",
-            "no": [
-              "vedano",
-              "vanno",
-              "vadino"
-            ]
-          }
-        ]
-      },
-      {
-        "type": "Correzione",
-        "fmt": "errore",
-        "instr": "Individua e clicca dove c'è l'errore.",
-        "items": [
-          {
-            "q": "Non credo che voi siete pronti per un viaggio così lungo.",
-            "wrong": "siete",
-            "fix": "siate"
-          },
-          {
-            "q": "Temo che i vicini stia per traslocare senza avvisare.",
-            "wrong": "stia",
-            "fix": "stiano"
-          },
-          {
-            "q": "È meglio che voi fate una copia del contratto e che poi la portiate in ufficio.",
-            "wrong": "fate",
-            "fix": "facciate"
-          },
-          {
-            "q": "Immagino che il tecnico possano venire domani mattina.",
-            "wrong": "possano",
-            "fix": "possa"
-          },
-          {
-            "q": "Spero che voi sappiate già come arrivare e che il viaggio sarà tranquillo.",
-            "wrong": "sarà",
-            "fix": "sia"
-          },
-          {
-            "q": "È probabile che i ragazzi dica la verità ai genitori.",
-            "wrong": "dica",
-            "fix": "dicano"
-          }
-        ]
-      },
-      {
-        "type": "Trasformazione",
-        "fmt": "buco",
-        "instr": "Riformula la frase con l'espressione indicata e il congiuntivo presente: scegli la versione corretta.",
-        "items": [
-          {
-            "q": "Tu hai già tutti i documenti. (Non sono sicuro che...)",
-            "options": [
-              "Non sono sicuro che tu abbia già tutti i documenti.",
-              "Non sono sicuro che tu hai già tutti i documenti.",
-              "Non sono sicuro che tu abbiate già tutti i documenti."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Voi venite in macchina. (È meglio che...)",
-            "options": [
-              "È meglio che voi veniate in macchina.",
-              "È meglio che voi venite in macchina.",
-              "È meglio che voi vengano in macchina."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Io vado a prenderlo in stazione. (Preferisci che...)",
-            "options": [
-              "Preferisci che io vada a prenderlo in stazione?",
-              "Preferisci che io vado a prenderlo in stazione?",
-              "Preferisci che io vadano a prenderlo in stazione?"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Lei sa dove sono le chiavi. (Dubito che...)",
-            "options": [
-              "Dubito che lei sappia dove sono le chiavi.",
-              "Dubito che lei sa dove sono le chiavi.",
-              "Dubito che lei sappiano dove sono le chiavi."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Tu stai bene con questo caldo. (Non mi pare che...)",
-            "options": [
-              "Non mi pare che tu stia bene con questo caldo.",
-              "Non mi pare che tu stai bene con questo caldo.",
-              "Non mi pare che tu stiate bene con questo caldo."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Loro danno l'esame a giugno. (È possibile che...)",
-            "options": [
-              "È possibile che loro diano l'esame a giugno.",
-              "È possibile che loro danno l'esame a giugno.",
-              "È possibile che loro dia l'esame a giugno."
             ],
             "answer": 0
           }
@@ -13967,6 +14306,374 @@ const TEST_STRUCTURES = [
             "q": "Mi sono fatto prestare il caricabatterie a un ragazzo del campeggio.",
             "wrong": "a",
             "fix": "da"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Comprensione: attese, promesse e realtà",
+    "lvl": "b2",
+    "lez": [
+      "B2 L19",
+      "B2 L21",
+      "B2 L22",
+      "B2 L28"
+    ],
+    "exercises": [
+      {
+        "type": "Comprensione",
+        "fmt": "buco",
+        "instr": "Leggi il testo e rispondi.",
+        "testo": "Paolo ha lavorato per vent'anni come cuoco nel ristorante di un albergo. Il suo progetto però era un altro: aprire una piccola trattoria di pesce vicino al porto, con pochi tavoli e il menù scritto a mano. Aveva anche trovato il locale: se il proprietario non avesse cambiato idea all'ultimo momento, la trattoria avrebbe aperto nella primavera del 2019. Il socio di allora pensava che Paolo avesse messo da parte abbastanza soldi per ripartire da solo; in realtà i risparmi coprivano appena l'affitto di un anno. Oggi Paolo dice che, se avesse versato la caparra in tempo, il proprietario non avrebbe potuto tirarsi indietro. Sua moglie la vede diversamente: era convinta che quell'attività li avrebbe portati a lavorare sette giorni su sette, e non lo nasconde: «Se la trattoria avesse aperto, non avremmo mai più fatto una vacanza». Del vecchio progetto resta una cartella: il menù, i conti e la lista dei fornitori che Paolo aveva già contattato.",
+        "items": [
+          {
+            "q": "La trattoria alla fine ha aperto?",
+            "options": [
+              "No, non ha mai aperto.",
+              "Sì, ma solo nella primavera del 2019.",
+              "Il testo non permette di saperlo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Perché il proprietario ha cambiato idea?",
+            "options": [
+              "Il testo non lo dice.",
+              "Perché aveva ricevuto un'offerta migliore.",
+              "Perché Paolo non era riuscito a versare la caparra."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Che valore ha l'idea che versando prima la caparra il proprietario non si sarebbe potuto tirare indietro?",
+            "options": [
+              "È un'opinione di Paolo su come sarebbero potute andare le cose.",
+              "È un fatto che il testo dà per accaduto.",
+              "È l'opinione del proprietario."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Paolo ha versato la caparra in tempo?",
+            "options": [
+              "Sì, prima che il proprietario cambiasse idea.",
+              "No, secondo quanto dice non l'ha versata in tempo.",
+              "Il testo non permette di saperlo."
+            ],
+            "answer": 1
+          },
+          {
+            "q": "La vacanza di cui parla la moglie è un fatto o un'ipotesi?",
+            "options": [
+              "È un'ipotesi: dice che cosa sarebbe successo se la trattoria avesse aperto.",
+              "È un fatto: da allora non hanno più fatto vacanze.",
+              "È un fatto: hanno rinunciato alle vacanze per aprire la trattoria."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "I fornitori erano già stati contattati?",
+            "options": [
+              "Sì, Paolo lo aveva già fatto.",
+              "No, era solo una lista di nomi da chiamare.",
+              "Il testo non lo dice."
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "type": "Comprensione",
+        "fmt": "buco",
+        "instr": "Leggi il testo e rispondi.",
+        "testo": "Quando è arrivata al museo civico, due anni fa, la nuova direttrice aveva annunciato che il giardino interno avrebbe riaperto entro giugno e che l'ingresso sarebbe rimasto gratuito la prima domenica del mese. Il giardino ha riaperto in ottobre, con quattro mesi di ritardo; la domenica gratuita invece c'è ancora oggi. I dipendenti erano preoccupati: pensavano che la nuova gestione avrebbe chiuso la piccola caffetteria del piano terra, che invece lavora ancora e ha perfino allungato l'orario. Un giornale locale ha scritto che la direttrice voleva trasferire i laboratori per bambini in un'altra sede; lei ha sempre negato di averlo mai pensato. Il mese scorso ha fatto una nuova promessa: entro l'anno prossimo il museo avrà una biglietteria unica con la biblioteca comunale. Sui tempi, ha ammesso lei stessa, «dipenderà dal Comune».",
+        "items": [
+          {
+            "q": "Il giardino ha riaperto entro giugno, come annunciato?",
+            "options": [
+              "No: ha riaperto, ma quattro mesi dopo la data promessa.",
+              "Sì, puntualmente.",
+              "No, non ha mai riaperto."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "La promessa della domenica gratuita è stata mantenuta?",
+            "options": [
+              "Sì, ed è ancora in vigore.",
+              "Sì, ma solo per il primo anno.",
+              "Il testo non lo dice."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "La caffetteria è stata chiusa?",
+            "options": [
+              "No: i dipendenti lo temevano, ma è ancora aperta.",
+              "Sì, come previsto dalla nuova gestione.",
+              "Il testo non permette di saperlo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Che cosa risulta dell'idea di trasferire i laboratori per bambini?",
+            "options": [
+              "L'ha scritta un giornale, e la direttrice l'ha sempre negata.",
+              "È un progetto annunciato dalla direttrice.",
+              "È stata realizzata in un'altra sede."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Perché il giardino ha riaperto in ritardo?",
+            "options": [
+              "Il testo non lo dice.",
+              "Perché i lavori sono durati più del previsto.",
+              "Perché il Comune non ha stanziato i fondi in tempo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il testo permette di dire se la biglietteria unica arriverà nei tempi promessi?",
+            "options": [
+              "No: la stessa direttrice lega i tempi a una decisione del Comune.",
+              "Sì, è garantito entro l'anno prossimo.",
+              "Sì, il Comune ha già dato i tempi."
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "type": "Comprensione",
+        "fmt": "buco",
+        "instr": "Leggi il testo e rispondi.",
+        "testo": "Irene e Davide hanno cercato casa per otto mesi. All'inizio volevano un appartamento che avesse un balcone abbastanza grande per mangiarci fuori e che non fosse a più di dieci minuti a piedi dalla stazione. Di annunci ne hanno letti a decine, ma non ne hanno trovato nessuno che rispettasse tutte e due le condizioni. A febbraio un'agenzia ha proposto loro l'appartamento di via Ellera, che ha un terrazzo condominiale sul tetto e costa meno degli altri della zona: l'hanno scartato perché era al piano terra. Alla fine hanno preso un bilocale che ha il balcone stretto ma è a cinque minuti dalla stazione. Davide adesso cerca un tavolo pieghevole che si possa fissare alla ringhiera; Irene, che i tavoli pieghevoli non li ha mai sopportati, propone semplicemente di mangiare dentro.",
+        "items": [
+          {
+            "q": "L'appartamento con tutte e due le condizioni è mai saltato fuori?",
+            "options": [
+              "No: nessun annuncio le rispettava entrambe.",
+              "Sì, dopo otto mesi di ricerca.",
+              "Il testo non lo dice."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il terrazzo condominiale di via Ellera esiste?",
+            "options": [
+              "Sì: è una caratteristica reale di quell'appartamento.",
+              "No, era solo tra le richieste della coppia.",
+              "Il testo non permette di saperlo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Hanno comprato il bilocale o l'hanno preso in affitto?",
+            "options": [
+              "Il testo non lo dice.",
+              "L'hanno comprato.",
+              "L'hanno preso in affitto."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il bilocale che hanno preso ha il balcone?",
+            "options": [
+              "Sì, anche se stretto.",
+              "No, ed è per questo che mangiano dentro.",
+              "Il testo non lo dice."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il tavolo pieghevole adatto è già stato trovato?",
+            "options": [
+              "No: Davide lo sta ancora cercando.",
+              "Sì, ed è fissato alla ringhiera.",
+              "Il testo non permette di saperlo."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Che cosa risulta del rapporto di Irene con i tavoli pieghevoli?",
+            "options": [
+              "Non le sono mai piaciuti.",
+              "Le piacciono, ma non su quel balcone.",
+              "Ha cambiato idea da poco."
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "I connettivi nell'argomentazione",
+    "lvl": "b2",
+    "lez": [
+      "B1 L17",
+      "B2 L1",
+      "B2 L17"
+    ],
+    "exercises": [
+      {
+        "type": "Scelta",
+        "fmt": "buco",
+        "instr": "Scegli il connettivo adatto alla relazione fra i due enunciati.",
+        "items": [
+          {
+            "q": "La biblioteca del quartiere ha pochi fondi; ___, quest'anno ha comprato più libri dell'anno scorso.",
+            "options": [
+              "tuttavia",
+              "di conseguenza",
+              "cioè"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il treno delle 7.40 è un regionale veloce, ___ ferma solo nelle stazioni principali.",
+            "options": [
+              "cioè",
+              "tuttavia",
+              "nel frattempo"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il condominio ha approvato tre interventi, ___ il rifacimento del tetto.",
+            "options": [
+              "in particolare",
+              "cioè",
+              "nel frattempo"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il meccanico controlla i freni; ___ la cliente aspetta al bar dell'angolo.",
+            "options": [
+              "nel frattempo",
+              "perciò",
+              "in particolare"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "___ la pioggia di stanotte, il mercato rionale si è tenuto come ogni giovedì.",
+            "options": [
+              "Nonostante",
+              "A causa della",
+              "Grazie alla"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Le analisi dell'acqua hanno dato valori regolari; ___, la fontana del parco è tornata in funzione.",
+            "options": [
+              "di conseguenza",
+              "tuttavia",
+              "in particolare"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "type": "Correzione",
+        "fmt": "errore",
+        "instr": "Individua e clicca dove c'è l'errore.",
+        "items": [
+          {
+            "q": "Il corso era gratuito e molto atteso, perciò si è iscritto soltanto uno studente.",
+            "wrong": "perciò",
+            "fix": "tuttavia"
+          },
+          {
+            "q": "L'ingresso è gratuito per i residenti, tuttavia chi abita nel comune non paga.",
+            "wrong": "tuttavia",
+            "fix": "cioè"
+          },
+          {
+            "q": "L'albergo offre la colazione inclusa e, invece, il parcheggio gratuito.",
+            "wrong": "invece",
+            "fix": "inoltre"
+          },
+          {
+            "q": "Ha piovuto tre giorni sulle colline, però il fiume si è ingrossato.",
+            "wrong": "però",
+            "fix": "perciò"
+          },
+          {
+            "q": "La piscina comunale è chiusa tutto il lunedì, cioè il martedì torna aperta.",
+            "wrong": "cioè",
+            "fix": "invece"
+          },
+          {
+            "q": "Gli abitanti si lamentano dei collegamenti; infatti tre linee di autobus passano ogni dieci minuti.",
+            "wrong": "infatti",
+            "fix": "tuttavia"
+          }
+        ]
+      },
+      {
+        "type": "Trasformazione",
+        "fmt": "buco",
+        "instr": "Scegli la frase che unisce i due enunciati concedendo il primo punto.",
+        "items": [
+          {
+            "q": "I biglietti del festival costano parecchio. Lo spettacolo vale la spesa.",
+            "options": [
+              "È vero che i biglietti costano parecchio, tuttavia lo spettacolo vale la spesa.",
+              "È vero che i biglietti costano parecchio, infatti lo spettacolo vale la spesa.",
+              "È vero che i biglietti costano parecchio, cioè lo spettacolo vale la spesa."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il percorso in collina è faticoso. La vista ripaga della salita.",
+            "options": [
+              "Nonostante la fatica, la vista ripaga della salita.",
+              "Nonostante il percorso è faticoso, la vista ripaga della salita.",
+              "È vero che il percorso è faticoso, cioè la vista ripaga della salita."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "L'appartamento è piccolo. I ragazzi ci vivono bene.",
+            "options": [
+              "Nonostante l'appartamento sia piccolo, i ragazzi ci vivono bene.",
+              "Nonostante l'appartamento è piccolo, i ragazzi ci vivono bene.",
+              "Nonostante l'appartamento fosse piccolo, i ragazzi ci vivono bene."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "La fiera del sabato crea traffico. Porta clienti ai negozi della via.",
+            "options": [
+              "È vero che la fiera crea traffico, ma porta clienti ai negozi.",
+              "È vero che la fiera crea traffico, perciò porta clienti ai negozi.",
+              "È vero che la fiera crea traffico, nel frattempo porta clienti ai negozi."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "C'era vento forte. Il traghetto è partito in orario.",
+            "options": [
+              "Nonostante il vento forte, il traghetto è partito in orario.",
+              "Nonostante il vento era forte, il traghetto è partito in orario.",
+              "C'era vento forte, infatti il traghetto è partito in orario."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Il nuovo orario penalizza i pendolari. L'azienda lo difende.",
+            "options": [
+              "È vero che il nuovo orario penalizza i pendolari, tuttavia l'azienda lo difende.",
+              "È vero che il nuovo orario penalizza i pendolari, di conseguenza l'azienda lo difende.",
+              "È vero che il nuovo orario penalizza i pendolari, in particolare l'azienda lo difende."
+            ],
+            "answer": 0
           }
         ]
       }
@@ -16745,542 +17452,6 @@ const TEST_STRUCTURES = [
               "Su spot turistici e su interviste a giovani italiani.",
               "Su interviste a turisti stranieri e a operatori del settore.",
               "Su spot turistici di paesi diversi."
-            ],
-            "answer": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "lvl": "b1",
-    "lez": [
-      "B1 L24"
-    ],
-    "title": "Il passato remoto: riconoscere la forma",
-    "exercises": [
-      {
-        "type": "Scelta",
-        "fmt": "buco",
-        "instr": "Sostituisci il passato remoto con il passato prossimo: scegli la forma giusta.",
-        "items": [
-          {
-            "q": "Il maestro lavorò molti anni alla corte del duca. → Il maestro ___ molti anni alla corte del duca.",
-            "options": [
-              "ha lavorato",
-              "lavorava",
-              "aveva lavorato"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il giovane si trasferì a Roma nel 1490. → Il giovane ___ a Roma nel 1490.",
-            "options": [
-              "si ha trasferito",
-              "si è trasferito",
-              "si trasferiva"
-            ],
-            "answer": 1
-          },
-          {
-            "q": "L'allievo copiò i disegni del maestro per cinque anni. → L'allievo ___ i disegni del maestro per cinque anni.",
-            "options": [
-              "ha copiato",
-              "copiava",
-              "aveva copiato"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il committente rifiutò il primo bozzetto. → Il committente ___ il primo bozzetto.",
-            "options": [
-              "ha rifiutato",
-              "rifiutava",
-              "aveva rifiutato"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "L'artista partì per la Francia in autunno. → L'artista ___ per la Francia in autunno.",
-            "options": [
-              "partiva",
-              "è partito",
-              "ha partito"
-            ],
-            "answer": 1
-          },
-          {
-            "q": "Il maestro tornò a Firenze dopo dieci anni. → Il maestro ___ a Firenze dopo dieci anni.",
-            "options": [
-              "ha tornato",
-              "è tornato",
-              "tornava"
-            ],
-            "answer": 1
-          }
-        ]
-      },
-      {
-        "type": "Correzione",
-        "fmt": "errore",
-        "instr": "Il racconto è tutto al passato remoto: individua e clicca dove c'è l'errore.",
-        "items": [
-          {
-            "q": "Il pittore nacque a Ferrara, studiava a Firenze e morì a Roma molto giovane.",
-            "wrong": "studiava",
-            "fix": "studiò"
-          },
-          {
-            "q": "Il maestro apriva una bottega, prese tre allievi e insegnò a tutti il disegno.",
-            "wrong": "apriva",
-            "fix": "aprì"
-          },
-          {
-            "q": "L'artista dipinse la volta, scolpiva il portale e scrisse anche dei versi.",
-            "wrong": "scolpiva",
-            "fix": "scolpì"
-          },
-          {
-            "q": "Il mercante comprò il quadro, lo portò a Venezia e lo vende al doge.",
-            "wrong": "vende",
-            "fix": "vendette"
-          },
-          {
-            "q": "Il duca ordina la statua, pagò l'anticipo e poi cambiò idea.",
-            "wrong": "ordina",
-            "fix": "ordinò"
-          },
-          {
-            "q": "Il giovane arrivò a Roma, resta senza lavoro per mesi e poi trovò un posto.",
-            "wrong": "resta",
-            "fix": "restò"
-          }
-        ]
-      },
-      {
-        "type": "Scelta",
-        "fmt": "buco",
-        "instr": "Scegli l'infinito del verbo al passato remoto.",
-        "items": [
-          {
-            "q": "Il pittore visse a Urbino fino ai vent'anni.",
-            "options": [
-              "vivere",
-              "vincere",
-              "vedere"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il segretario del duca scrisse una lunga relazione.",
-            "options": [
-              "scrivere",
-              "scendere",
-              "scegliere"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "L'allievo dipinse il fondo del quadro.",
-            "options": [
-              "dipingere",
-              "dipendere",
-              "difendere"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il figlio del mercante nacque durante un viaggio.",
-            "options": [
-              "nascere",
-              "nascondere",
-              "nuocere"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il vecchio maestro morì l'inverno seguente.",
-            "options": [
-              "morire",
-              "mordere",
-              "mostrare"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Lo scultore scolpì un leone di pietra.",
-            "options": [
-              "scolpire",
-              "scolare",
-              "scoprire"
-            ],
-            "answer": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "title": "Comprensione: attese, promesse e realtà",
-    "lvl": "b2",
-    "lez": [
-      "B2 L19",
-      "B2 L21",
-      "B2 L22",
-      "B2 L28"
-    ],
-    "exercises": [
-      {
-        "type": "Comprensione",
-        "fmt": "buco",
-        "instr": "Leggi il testo e rispondi.",
-        "testo": "Paolo ha lavorato per vent'anni come cuoco nel ristorante di un albergo. Il suo progetto però era un altro: aprire una piccola trattoria di pesce vicino al porto, con pochi tavoli e il menù scritto a mano. Aveva anche trovato il locale: se il proprietario non avesse cambiato idea all'ultimo momento, la trattoria avrebbe aperto nella primavera del 2019. Il socio di allora pensava che Paolo avesse messo da parte abbastanza soldi per ripartire da solo; in realtà i risparmi coprivano appena l'affitto di un anno. Oggi Paolo dice che, se avesse versato la caparra in tempo, il proprietario non avrebbe potuto tirarsi indietro. Sua moglie la vede diversamente: era convinta che quell'attività li avrebbe portati a lavorare sette giorni su sette, e non lo nasconde: «Se la trattoria avesse aperto, non avremmo mai più fatto una vacanza». Del vecchio progetto resta una cartella: il menù, i conti e la lista dei fornitori che Paolo aveva già contattato.",
-        "items": [
-          {
-            "q": "La trattoria alla fine ha aperto?",
-            "options": [
-              "No, non ha mai aperto.",
-              "Sì, ma solo nella primavera del 2019.",
-              "Il testo non permette di saperlo."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Perché il proprietario ha cambiato idea?",
-            "options": [
-              "Il testo non lo dice.",
-              "Perché aveva ricevuto un'offerta migliore.",
-              "Perché Paolo non era riuscito a versare la caparra."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Che valore ha l'idea che versando prima la caparra il proprietario non si sarebbe potuto tirare indietro?",
-            "options": [
-              "È un'opinione di Paolo su come sarebbero potute andare le cose.",
-              "È un fatto che il testo dà per accaduto.",
-              "È l'opinione del proprietario."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Paolo ha versato la caparra in tempo?",
-            "options": [
-              "Sì, prima che il proprietario cambiasse idea.",
-              "No, secondo quanto dice non l'ha versata in tempo.",
-              "Il testo non permette di saperlo."
-            ],
-            "answer": 1
-          },
-          {
-            "q": "La vacanza di cui parla la moglie è un fatto o un'ipotesi?",
-            "options": [
-              "È un'ipotesi: dice che cosa sarebbe successo se la trattoria avesse aperto.",
-              "È un fatto: da allora non hanno più fatto vacanze.",
-              "È un fatto: hanno rinunciato alle vacanze per aprire la trattoria."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "I fornitori erano già stati contattati?",
-            "options": [
-              "Sì, Paolo lo aveva già fatto.",
-              "No, era solo una lista di nomi da chiamare.",
-              "Il testo non lo dice."
-            ],
-            "answer": 0
-          }
-        ]
-      },
-      {
-        "type": "Comprensione",
-        "fmt": "buco",
-        "instr": "Leggi il testo e rispondi.",
-        "testo": "Quando è arrivata al museo civico, due anni fa, la nuova direttrice aveva annunciato che il giardino interno avrebbe riaperto entro giugno e che l'ingresso sarebbe rimasto gratuito la prima domenica del mese. Il giardino ha riaperto in ottobre, con quattro mesi di ritardo; la domenica gratuita invece c'è ancora oggi. I dipendenti erano preoccupati: pensavano che la nuova gestione avrebbe chiuso la piccola caffetteria del piano terra, che invece lavora ancora e ha perfino allungato l'orario. Un giornale locale ha scritto che la direttrice voleva trasferire i laboratori per bambini in un'altra sede; lei ha sempre negato di averlo mai pensato. Il mese scorso ha fatto una nuova promessa: entro l'anno prossimo il museo avrà una biglietteria unica con la biblioteca comunale. Sui tempi, ha ammesso lei stessa, «dipenderà dal Comune».",
-        "items": [
-          {
-            "q": "Il giardino ha riaperto entro giugno, come annunciato?",
-            "options": [
-              "No: ha riaperto, ma quattro mesi dopo la data promessa.",
-              "Sì, puntualmente.",
-              "No, non ha mai riaperto."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "La promessa della domenica gratuita è stata mantenuta?",
-            "options": [
-              "Sì, ed è ancora in vigore.",
-              "Sì, ma solo per il primo anno.",
-              "Il testo non lo dice."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "La caffetteria è stata chiusa?",
-            "options": [
-              "No: i dipendenti lo temevano, ma è ancora aperta.",
-              "Sì, come previsto dalla nuova gestione.",
-              "Il testo non permette di saperlo."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Che cosa risulta dell'idea di trasferire i laboratori per bambini?",
-            "options": [
-              "L'ha scritta un giornale, e la direttrice l'ha sempre negata.",
-              "È un progetto annunciato dalla direttrice.",
-              "È stata realizzata in un'altra sede."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Perché il giardino ha riaperto in ritardo?",
-            "options": [
-              "Il testo non lo dice.",
-              "Perché i lavori sono durati più del previsto.",
-              "Perché il Comune non ha stanziato i fondi in tempo."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il testo permette di dire se la biglietteria unica arriverà nei tempi promessi?",
-            "options": [
-              "No: la stessa direttrice lega i tempi a una decisione del Comune.",
-              "Sì, è garantito entro l'anno prossimo.",
-              "Sì, il Comune ha già dato i tempi."
-            ],
-            "answer": 0
-          }
-        ]
-      },
-      {
-        "type": "Comprensione",
-        "fmt": "buco",
-        "instr": "Leggi il testo e rispondi.",
-        "testo": "Irene e Davide hanno cercato casa per otto mesi. All'inizio volevano un appartamento che avesse un balcone abbastanza grande per mangiarci fuori e che non fosse a più di dieci minuti a piedi dalla stazione. Di annunci ne hanno letti a decine, ma non ne hanno trovato nessuno che rispettasse tutte e due le condizioni. A febbraio un'agenzia ha proposto loro l'appartamento di via Ellera, che ha un terrazzo condominiale sul tetto e costa meno degli altri della zona: l'hanno scartato perché era al piano terra. Alla fine hanno preso un bilocale che ha il balcone stretto ma è a cinque minuti dalla stazione. Davide adesso cerca un tavolo pieghevole che si possa fissare alla ringhiera; Irene, che i tavoli pieghevoli non li ha mai sopportati, propone semplicemente di mangiare dentro.",
-        "items": [
-          {
-            "q": "L'appartamento con tutte e due le condizioni è mai saltato fuori?",
-            "options": [
-              "No: nessun annuncio le rispettava entrambe.",
-              "Sì, dopo otto mesi di ricerca.",
-              "Il testo non lo dice."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il terrazzo condominiale di via Ellera esiste?",
-            "options": [
-              "Sì: è una caratteristica reale di quell'appartamento.",
-              "No, era solo tra le richieste della coppia.",
-              "Il testo non permette di saperlo."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Hanno comprato il bilocale o l'hanno preso in affitto?",
-            "options": [
-              "Il testo non lo dice.",
-              "L'hanno comprato.",
-              "L'hanno preso in affitto."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il bilocale che hanno preso ha il balcone?",
-            "options": [
-              "Sì, anche se stretto.",
-              "No, ed è per questo che mangiano dentro.",
-              "Il testo non lo dice."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il tavolo pieghevole adatto è già stato trovato?",
-            "options": [
-              "No: Davide lo sta ancora cercando.",
-              "Sì, ed è fissato alla ringhiera.",
-              "Il testo non permette di saperlo."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Che cosa risulta del rapporto di Irene con i tavoli pieghevoli?",
-            "options": [
-              "Non le sono mai piaciuti.",
-              "Le piacciono, ma non su quel balcone.",
-              "Ha cambiato idea da poco."
-            ],
-            "answer": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "title": "I connettivi nell'argomentazione",
-    "lvl": "b2",
-    "lez": [
-      "B1 L17",
-      "B2 L1",
-      "B2 L17"
-    ],
-    "exercises": [
-      {
-        "type": "Scelta",
-        "fmt": "buco",
-        "instr": "Scegli il connettivo adatto alla relazione fra i due enunciati.",
-        "items": [
-          {
-            "q": "La biblioteca del quartiere ha pochi fondi; ___, quest'anno ha comprato più libri dell'anno scorso.",
-            "options": [
-              "tuttavia",
-              "di conseguenza",
-              "cioè"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il treno delle 7.40 è un regionale veloce, ___ ferma solo nelle stazioni principali.",
-            "options": [
-              "cioè",
-              "tuttavia",
-              "nel frattempo"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il condominio ha approvato tre interventi, ___ il rifacimento del tetto.",
-            "options": [
-              "in particolare",
-              "cioè",
-              "nel frattempo"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il meccanico controlla i freni; ___ la cliente aspetta al bar dell'angolo.",
-            "options": [
-              "nel frattempo",
-              "perciò",
-              "in particolare"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "___ la pioggia di stanotte, il mercato rionale si è tenuto come ogni giovedì.",
-            "options": [
-              "Nonostante",
-              "A causa della",
-              "Grazie alla"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Le analisi dell'acqua hanno dato valori regolari; ___, la fontana del parco è tornata in funzione.",
-            "options": [
-              "di conseguenza",
-              "tuttavia",
-              "in particolare"
-            ],
-            "answer": 0
-          }
-        ]
-      },
-      {
-        "type": "Correzione",
-        "fmt": "errore",
-        "instr": "Individua e clicca dove c'è l'errore.",
-        "items": [
-          {
-            "q": "Il corso era gratuito e molto atteso, perciò si è iscritto soltanto uno studente.",
-            "wrong": "perciò",
-            "fix": "tuttavia"
-          },
-          {
-            "q": "L'ingresso è gratuito per i residenti, tuttavia chi abita nel comune non paga.",
-            "wrong": "tuttavia",
-            "fix": "cioè"
-          },
-          {
-            "q": "L'albergo offre la colazione inclusa e, invece, il parcheggio gratuito.",
-            "wrong": "invece",
-            "fix": "inoltre"
-          },
-          {
-            "q": "Ha piovuto tre giorni sulle colline, però il fiume si è ingrossato.",
-            "wrong": "però",
-            "fix": "perciò"
-          },
-          {
-            "q": "La piscina comunale è chiusa tutto il lunedì, cioè il martedì torna aperta.",
-            "wrong": "cioè",
-            "fix": "invece"
-          },
-          {
-            "q": "Gli abitanti si lamentano dei collegamenti; infatti tre linee di autobus passano ogni dieci minuti.",
-            "wrong": "infatti",
-            "fix": "tuttavia"
-          }
-        ]
-      },
-      {
-        "type": "Trasformazione",
-        "fmt": "buco",
-        "instr": "Scegli la frase che unisce i due enunciati concedendo il primo punto.",
-        "items": [
-          {
-            "q": "I biglietti del festival costano parecchio. Lo spettacolo vale la spesa.",
-            "options": [
-              "È vero che i biglietti costano parecchio, tuttavia lo spettacolo vale la spesa.",
-              "È vero che i biglietti costano parecchio, infatti lo spettacolo vale la spesa.",
-              "È vero che i biglietti costano parecchio, cioè lo spettacolo vale la spesa."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il percorso in collina è faticoso. La vista ripaga della salita.",
-            "options": [
-              "Nonostante la fatica, la vista ripaga della salita.",
-              "Nonostante il percorso è faticoso, la vista ripaga della salita.",
-              "È vero che il percorso è faticoso, cioè la vista ripaga della salita."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "L'appartamento è piccolo. I ragazzi ci vivono bene.",
-            "options": [
-              "Nonostante l'appartamento sia piccolo, i ragazzi ci vivono bene.",
-              "Nonostante l'appartamento è piccolo, i ragazzi ci vivono bene.",
-              "Nonostante l'appartamento fosse piccolo, i ragazzi ci vivono bene."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "La fiera del sabato crea traffico. Porta clienti ai negozi della via.",
-            "options": [
-              "È vero che la fiera crea traffico, ma porta clienti ai negozi.",
-              "È vero che la fiera crea traffico, perciò porta clienti ai negozi.",
-              "È vero che la fiera crea traffico, nel frattempo porta clienti ai negozi."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "C'era vento forte. Il traghetto è partito in orario.",
-            "options": [
-              "Nonostante il vento forte, il traghetto è partito in orario.",
-              "Nonostante il vento era forte, il traghetto è partito in orario.",
-              "C'era vento forte, infatti il traghetto è partito in orario."
-            ],
-            "answer": 0
-          },
-          {
-            "q": "Il nuovo orario penalizza i pendolari. L'azienda lo difende.",
-            "options": [
-              "È vero che il nuovo orario penalizza i pendolari, tuttavia l'azienda lo difende.",
-              "È vero che il nuovo orario penalizza i pendolari, di conseguenza l'azienda lo difende.",
-              "È vero che il nuovo orario penalizza i pendolari, in particolare l'azienda lo difende."
             ],
             "answer": 0
           }
