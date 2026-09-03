@@ -7658,7 +7658,90 @@ const ENTRIES = [
         ]
       }
     ]
-  }
+  },
+  {
+    "lvl": "c1",
+    "cat": "Certificazioni",
+    "title": "Le certificazioni: CILS, CELI, PLIDA",
+    "def": "Le certificazioni ufficiali di italiano riconosciute dai ministeri sono quattro: <b>CILS</b>, <b>CELI</b>, <b>PLIDA</b> e <b>CERT.IT</b> dell'Università Roma Tre. Tutte seguono i livelli del QCER da A1 a C2 e non hanno scadenza. Il valore legale è equivalente: cambiano il formato dell'esame, la ripartizione delle prove e soprattutto le regole con cui si conservano le prove superate quando l'esame non è superato per intero.",
+    "tables": [
+      {
+        "before": "<b>Chi le rilascia.</b> PLIDA è l'unica delle tre rilasciata da un'associazione privata e non da un'università.",
+        "plain": true,
+        "headers": [
+          "sigla",
+          "nome per esteso",
+          "ente"
+        ],
+        "rows": [
+          [
+            "CILS",
+            "Certificazione di Italiano come Lingua Straniera",
+            "Università per Stranieri di Siena"
+          ],
+          [
+            "CELI",
+            "Certificato di Conoscenza della Lingua Italiana",
+            "Università per Stranieri di Perugia, tramite il CVCL"
+          ],
+          [
+            "PLIDA",
+            "Progetto Lingua Italiana Dante Alighieri",
+            "Società Dante Alighieri"
+          ]
+        ]
+      },
+      {
+        "before": "<b>La capitalizzazione.</b> Se non si superano tutte le prove, quelle riuscite si possono conservare e si ripetono solo le altre, pagando una quota ridotta. Quanto convenga dipende da come è diviso l'esame: più parti separate ci sono, meno lavoro si butta via.",
+        "headers": [
+          "",
+          "divisione dell'esame",
+          "si conserva",
+          "durata"
+        ],
+        "rows": [
+          [
+            "CILS",
+            "4–5 abilità separate",
+            "ogni abilità superata",
+            "18 mesi"
+          ],
+          [
+            "PLIDA",
+            "4 abilità separate",
+            "fino a 3 su 4",
+            "1 anno o 18 mesi"
+          ],
+          [
+            "CELI",
+            "2 blocchi: scritto e orale",
+            "il blocco superato",
+            "1 anno, due sessioni"
+          ]
+        ],
+        "after": "Il salto vero è tra il CELI e le altre due. Tra CILS e PLIDA il meccanismo è lo stesso."
+      }
+    ],
+    "uses": [
+      {
+        "label": "serve almeno una prova superata: senza nemmeno una si rifà l'esame intero pagando tutto",
+        "ex": "Chi sbaglia tutte e quattro le abilità non ha nulla da capitalizzare."
+      },
+      {
+        "label": "nel CELI lo scritto è un pacchetto unico: lettura, produzione scritta, competenza linguistica dal CELI 3 in su, e ascolto",
+        "ex": "Sbagliare l'ascolto obbliga a rifare anche lettura e produzione scritta già superate."
+      },
+      {
+        "label": "l'orale del CELI contiene solo la produzione orale: un colloquio con due esaminatori, da 5 a 20 minuti secondo il livello",
+        "ex": "Al CELI 3 il materiale è una foto, un testo e un compito comunicativo."
+      },
+      {
+        "label": "con CILS e PLIDA la stessa insufficienza costa una prova sola",
+        "ex": "Sbagliare l'ascolto lascia intatte le altre tre abilità."
+      }
+    ],
+    "warn": "<b>B1 Cittadinanza</b> e <b>A2 Integrazione</b> della CILS non prevedono capitalizzazione: basta un'abilità insufficiente e si ripete tutto pagando di nuovo l'intera quota. Sono proprio i livelli richiesti per cittadinanza e permesso di soggiorno. Sulla durata del PLIDA le fonti non concordano — il regolamento del 2015 dice un anno, diversi centri d'esame 18 mesi: conviene verificare col centro dove si sostiene l'esame. E nel CELI chi si iscrive e poi sostiene una sola delle due parti senza giustificare l'assenza con documentazione paga una nuova iscrizione e ripete l'esame per intero."
+  },
 ];
 
 /* ===== Rendering ===== */
