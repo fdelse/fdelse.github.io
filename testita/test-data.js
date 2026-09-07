@@ -16328,10 +16328,10 @@ const TEST_STRUCTURES = [
       {
         "type": "Riempimento",
         "fmt": "fill",
-        "instr": "Completa con il tempo composto del verbo indicato.",
+        "instr": "Completa con il passato prossimo del verbo indicato.",
         "items": [
           {
-            "q": "In quegli anni si ___ moltissimo e si guadagnava poco. (lavorare)",
+            "q": "Quest'anno si ___ moltissimo e tutte le scadenze sono state rispettate. (lavorare)",
             "a": "è lavorato",
             "no": [
               "sono lavorati",
@@ -16340,13 +16340,14 @@ const TEST_STRUCTURES = [
             ]
           },
           {
-            "q": "Di quell'errore ___ soltanto a lavori finiti. (accorgersi)",
-            "a": "ci si è accorti",
+            "q": "Della dimenticanza ci si ___ soltanto oggi, poco prima della partenza. (accorgersi)",
+            "a": "è accorti",
             "no": [
-              "ci si è accorto",
-              "si è accorti",
-              "si è accorto",
-              "ci siamo accorti"
+              "è accorto",
+              "sono accorti",
+              "siamo accorti",
+              "ha accorto",
+              "accorse"
             ]
           },
           {
@@ -16377,7 +16378,7 @@ const TEST_STRUCTURES = [
             ]
           },
           {
-            "q": "Quell'anno si ___ in vacanza soltanto a settembre. (andare)",
+            "q": "L'estate scorsa si ___ in vacanza prima di agosto. (andare)",
             "a": "è andati",
             "no": [
               "è andato",
