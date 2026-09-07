@@ -16294,9 +16294,9 @@ const TEST_STRUCTURES = [
         "instr": "Individua e clicca dove c'è l'errore.",
         "items": [
           {
-            "q": "Sulla confezione c'è scritto che il farmaco è venuto conservato in frigorifero, ma nessuno lo fa.",
-            "wrong": "venuto",
-            "fix": "tenuto"
+            "q": "Sulla confezione c'è scritto che il farmaco viene conservato in frigorifero e usato entro trenta giorni.",
+            "wrong": "viene",
+            "fix": "va"
           },
           {
             "q": "La vecchia stazione è venuta demolita l'anno scorso.",
@@ -16340,12 +16340,13 @@ const TEST_STRUCTURES = [
             ]
           },
           {
-            "q": "Le prime copie si ___ in meno di una settimana. (esaurire)",
-            "a": "sono esaurite",
+            "q": "Di quell'errore ___ soltanto a lavori finiti. (accorgersi)",
+            "a": "ci si è accorti",
             "no": [
-              "è esaurito",
-              "sono esauriti",
-              "hanno esaurito"
+              "ci si è accorto",
+              "si è accorti",
+              "si è accorto",
+              "ci siamo accorti"
             ]
           },
           {
