@@ -897,14 +897,20 @@ function stimaLivello(perLvl){
     const prec = LVL_PRECEDENTE[piuBasso];
     verdetto = (piuBasso === LVL_SEQ[0]) ? prec : prec + ' o inferiore';
   }
-  /* Le lacune non si elencano per livello — il programma è a spirale e quelle
-     strutture tornano comunque più avanti — ma si segnalano con una parola:
-     «B1 con lacune» vuol dire B1 raggiunto, con qualche buco sotto. Il dettaglio
-     di quali strutture sia resta nella ripartizione per struttura.
-     Le tre etichette per livello sono quindi: base · con lacune · solido. */
-  if (lacune.length && / solido$/.test(verdetto)) {
-    verdetto = verdetto.replace(/ solido$/, ' con lacune');
-  }
+  /* Le lacune NON entrano nel verdetto, in nessuna forma. Provate e scartate
+     due versioni: «C1 solido, con lacune su A2» (agosto) e «C1 con lacune»
+     (settembre). Le ragioni dello scarto, per non riaprirle:
+       1. il dato è troppo piccolo per il nome che gli si dà. Una «lacuna a B1»
+          sono 4 errori su 12 item distribuiti su 4 strutture: quasi sempre UNA
+          struttura andata male, non un livello debole.
+       2. «con lacune» dice che un buco c'è e non dove sia. Le righe sotto il
+          banner danno il livello con la sua fascia, e la ripartizione per
+          struttura dà la struttura: l'unica cosa su cui si può agire.
+       3. sostituiva «solido» con un'annotazione, togliendo la parola a chi
+          aveva superato il 70%.
+     Il campo «lacune» resta nel valore di ritorno: è calcolato correttamente e
+     serve a chi volesse leggerlo altrove. Semplicemente non si stampa.
+     Le etichette per livello sono due: base · solido. */
 
   return { presenti, ultimoSolido, bloccante, lacune, verdetto };
 }
