@@ -7971,7 +7971,8 @@ const TEST_STRUCTURES = [
             "a": "notereste",
             "no": [
               "notareste",
-              "noterete"
+              "noterete",
+              "notate"
             ]
           },
           {
@@ -10078,7 +10079,7 @@ const TEST_STRUCTURES = [
         "items": [
           {
             "q": "Se stasera ___ tardi dall'ufficio, passo io a prendere i bambini. (uscire, tu)",
-            "a": "esci",
+            "a": "esci|uscirai",
             "no": [
               "usciresti",
               "uscissi"
@@ -10095,10 +10096,11 @@ const TEST_STRUCTURES = [
           },
           {
             "q": "Ti presto io la macchina se ___ ancora bisogno di andare all'aeroporto. (avere, tu)",
-            "a": "hai",
+            "a": "hai|avrai",
             "no": [
               "avresti",
-              "avessi"
+              "avessi",
+              "averai"
             ]
           },
           {
@@ -10112,7 +10114,7 @@ const TEST_STRUCTURES = [
           },
           {
             "q": "Se il preventivo va bene ai clienti, ___ i lavori il mese prossimo. (cominciare, noi)",
-            "a": "cominceremo",
+            "a": "cominceremo|cominciamo",
             "no": [
               "cominceremmo",
               "cominciassimo"
@@ -10120,7 +10122,7 @@ const TEST_STRUCTURES = [
           },
           {
             "q": "Se ___ il traghetto delle sette, arrivate all'isola prima di pranzo. (prendere, voi)",
-            "a": "prendete",
+            "a": "prendete|prenderete",
             "no": [
               "prendereste",
               "prendeste"
@@ -15536,7 +15538,7 @@ const TEST_STRUCTURES = [
             "fix": "ho"
           },
           {
-            "q": "Da ragazzo, per anni, mio nonno si alzò ogni mattina alle cinque per andare nei campi.",
+            "q": "D'abitudine mio nonno si alzò alle cinque, ma quella domenica restò a letto fino a tardi.",
             "wrong": "alzò",
             "fix": "alzava"
           }
@@ -16499,6 +16501,7 @@ const TEST_STRUCTURES = [
             "q": "Se ___ meno impulsivo, non avrei accettato la prima offerta. (io – essere)",
             "a": "fossi",
             "no": [
+              "sia",
               "fossi stato",
               "sarei",
               "ero"
@@ -16518,6 +16521,7 @@ const TEST_STRUCTURES = [
             "a": "fosse",
             "no": [
               "forse",
+              "sia",
               "fosse stata",
               "sarebbe",
               "era"
@@ -16528,6 +16532,7 @@ const TEST_STRUCTURES = [
             "a": "avessimo",
             "no": [
               "avressimo",
+              "abbiamo",
               "avessimo avuto",
               "avremmo",
               "avevamo"
@@ -16971,7 +16976,7 @@ const TEST_STRUCTURES = [
       {
         "type": "Trasformazione",
         "fmt": "fill",
-        "instr": "Riscrivi con una forma implicita: scrivi solo la parte che va nello spazio.",
+        "instr": "Riscrivi con il gerundio, semplice o composto: scrivi solo la parte che va nello spazio.",
         "items": [
           {
             "q": "Dopo che l'ho controllata, ho firmato la ricevuta. → ___, ho firmato la ricevuta.",
