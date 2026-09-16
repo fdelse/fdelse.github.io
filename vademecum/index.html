@@ -3216,23 +3216,27 @@ const ENTRIES = [
     "lvl": "a2",
     "cat": "Aggettivi",
     "title": "I comparativi",
-    "def": "Confrontano due elementi rispetto a una qualità, stabilendo se uno è superiore, inferiore o uguale all'altro.",
-    "form": "Maggioranza: <b>più</b> …; minoranza: <b>meno</b> …; uguaglianza: (così) … <b>come</b> / (tanto) … <b>quanto</b>.",
+    "def": "Confrontano due elementi rispetto a una qualità e stabiliscono se il primo è superiore, inferiore o uguale al secondo. La difficoltà non sta nel <b>più</b> e nel <b>meno</b>, che sono semplici, ma nella scelta tra <b>di</b> e <b>che</b> per introdurre il secondo termine del confronto.",
+    "form": "<ul class='sch'><li><b>maggioranza</b> → più + aggettivo: <b>Marco è più alto di Luca.</b></li><li><b>minoranza</b> → meno + aggettivo: <b>Questo film è meno bello del precedente.</b></li><li><b>uguaglianza</b> → (così) … come, oppure (tanto) … quanto: <b>Sono alto come te.</b> / <b>È tanto bravo quanto simpatico.</b></li></ul>",
     "uses": [
       {
-        "label": "di — davanti a nomi, pronomi, numeri",
-        "ex": "Marco è più alto di Luca."
+        "label": "con di si confrontano due elementi diversi rispetto alla stessa qualità",
+        "ex": "Marco è più alto di Luca. / Lei è più giovane di me."
       },
       {
-        "label": "che — tra due termini sullo stesso piano",
-        "ex": "È più furbo che intelligente. / Leggo più che scrivo."
+        "label": "di si fonde con l'articolo quando il secondo termine ce l'ha",
+        "ex": "È più bello della foto. / Questo film è meno bello del precedente."
       },
       {
-        "label": "uguaglianza",
-        "ex": "Sono alto come te."
+        "label": "con che si confrontano due qualità, due azioni o due nomi riferiti allo stesso soggetto",
+        "ex": "È più furbo che intelligente. / Ho più amici che nemici."
+      },
+      {
+        "label": "per dire che due elementi sono uguali si usa come oppure quanto",
+        "ex": "Sono alto come te. / È tanto bravo quanto simpatico."
       }
     ],
-    "warn": "Comparativi <b>irregolari</b> accanto alle forme regolari: buono → migliore, cattivo → peggiore, grande → maggiore, piccolo → minore.",
+    "warn": "Gli irregolari sono <b>due serie diverse</b>, e confonderle è l'errore più comune. Come <b>aggettivi</b>: buono → migliore, cattivo → peggiore, grande → maggiore, piccolo → minore («questo vino è <b>migliore</b> di quello»). Come <b>avverbi</b>, cioè riferiti a un verbo: bene → meglio, male → peggio («oggi sto <b>peggio</b> di ieri», «è <b>meglio</b> tardi che mai»). Non si dice «più meglio» né «più migliore»: la forma irregolare contiene già il comparativo. E «più buono» non è un errore: si usa quando buono significa <b>di buon sapore</b> («questa torta è più buona») o <b>di buon carattere</b> («Marco è più buono di suo fratello»), mentre «migliore» si usa quando significa <b>di qualità superiore</b>. Stessa distinzione tra «più cattivo», riferito al carattere, e «peggiore», riferito alla qualità.",
     "exercises": [
       {
         "type": "Riempimento",
@@ -3304,6 +3308,54 @@ const ENTRIES = [
           "<b>che</b> mai",
           "<b>di</b> te",
           "<b>che</b> restare"
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "before": "<b>Di o che.</b> La domanda da farsi è una sola: sto confrontando <b>due cose</b>, oppure <b>due caratteristiche della stessa cosa</b>? Nel primo caso si usa <i>di</i>, nel secondo <i>che</i>.",
+        "plain": true,
+        "headers": [
+          "si usa",
+          "quando",
+          "esempio"
+        ],
+        "rows": [
+          [
+            "di",
+            "due elementi diversi, stessa qualità",
+            "Marco è più alto <b>di</b> Luca."
+          ],
+          [
+            "di",
+            "davanti a numeri",
+            "Ho più <b>di</b> venti libri."
+          ],
+          [
+            "di + articolo",
+            "se il secondo termine ha l'articolo",
+            "È più bello <b>della</b> foto."
+          ],
+          [
+            "che",
+            "due qualità dello stesso elemento",
+            "È più furbo <b>che</b> intelligente."
+          ],
+          [
+            "che",
+            "due verbi all'infinito",
+            "È più facile dire <b>che</b> fare."
+          ],
+          [
+            "che",
+            "due nomi retti dallo stesso verbo",
+            "Ho più amici <b>che</b> nemici."
+          ],
+          [
+            "che",
+            "davanti a una preposizione",
+            "Vado più spesso a Roma <b>che</b> a Milano."
+          ]
         ]
       }
     ]
