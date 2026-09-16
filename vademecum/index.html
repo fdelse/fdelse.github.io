@@ -400,82 +400,6 @@ const LEVELS = [
 const ENTRIES = [
   {
     "lvl": "a",
-    "cat": "Ortografia",
-    "title": "Gli accenti: tonico e grafico",
-    "def": "Con la parola «accento» si indicano due cose diverse. L'<b>accento tonico</b> è la sillaba su cui cade la voce: ogni parola ne ha uno, ma quasi mai si scrive. L'<b>accento grafico</b> è il segno sulla vocale, e si mette solo in casi precisi. Confonderli è all'origine della maggior parte degli errori.",
-    "form": "<b>Dove cade la voce.</b><ul class='sch'><li><b>tronche</b> — sull'ultima sillaba: <b>città</b>, <b>caffè</b>, <b>perché</b>, <b>andrò</b></li><li><b>piane</b> — sulla penultima, ed è la maggioranza delle parole italiane: <b>casa</b>, <b>amico</b>, <b>parlare</b></li><li><b>sdrucciole</b> — sulla terzultima: <b>tavolo</b>, <b>medico</b>, <b>abitano</b></li></ul>",
-    "tables": [
-      {
-        "before": "<b>Quando si scrive l'accento.</b> Il segno grafico non segnala tutte le sillabe toniche, ma solo i casi elencati qui: fuori da questi non si mette.",
-        "plain": true,
-        "headers": [
-          "caso",
-          "esempi"
-        ],
-        "rows": [
-          [
-            "parole tronche di due o più sillabe",
-            "città, perché, caffè, andrò, però"
-          ],
-          [
-            "monosillabi formati da due vocali",
-            "già, giù, può, ciò, più"
-          ],
-          [
-            "monosillabi da distinguere da un omografo",
-            "è/e, dà/da, là/la, lì/li, né/ne, sé/se, sì/si, tè/te"
-          ],
-          [
-            "<b>non</b> si scrive",
-            "qui, qua, fa, sta, va, do, so, no, tre, su"
-          ]
-        ]
-      },
-      {
-        "before": "<b>Acuto o grave.</b> Il verso del segno dipende dal suono della vocale, non dalla parola: chiuso l'acuto, aperto il grave. Su a, i e u la questione non si pone.",
-        "plain": true,
-        "headers": [
-          "segno",
-          "quando",
-          "esempi"
-        ],
-        "rows": [
-          [
-            "acuto  é",
-            "suono chiuso",
-            "perché, poiché, affinché, né, sé, ventitré"
-          ],
-          [
-            "grave  è",
-            "suono aperto",
-            "è, caffè, cioè, tè"
-          ],
-          [
-            "grave  à ì ù",
-            "sempre, su a, i, u",
-            "città, così, più"
-          ]
-        ]
-      }
-    ],
-    "uses": [
-      {
-        "label": "l'accento grafico distingue parole altrimenti identiche",
-        "ex": "È stanco (verbo) / e stanco (congiunzione). Dà il libro (verbo) / da Roma (preposizione)."
-      },
-      {
-        "label": "le parole tronche di due o più sillabe lo vogliono sempre, anche nei verbi",
-        "ex": "Domani andrò a Milano. / Parlerà lui."
-      },
-      {
-        "label": "i monosillabi con una sola vocale non lo prendono",
-        "ex": "Qui si sta bene. / Fa freddo. / Ho tre fratelli — ma ventitré."
-      }
-    ],
-    "warn": "L'accento tonico non si scrive, e in alcune parole la sua posizione <b>cambia il significato</b>: <b>àncora</b> è l'oggetto della nave, <b>ancóra</b> vuol dire di nuovo; <b>prìncipi</b> sono i figli del re, <b>princìpi</b> sono i valori; <b>càpitano</b> è il grado militare, <b>capitàno</b> è il verbo; <b>sùbito</b> vuol dire immediatamente, <b>subìto</b> è il participio di subire. Nella scrittura corrente questi accenti non si mettono e decide il contesto. Un caso frequente: <b>sé</b> vuole l'accento, ma davanti a «stesso» e «medesimo» la tradizione lo toglie — «se stesso»; oggi entrambe le grafie sono accettate."
-  },
-  {
-    "lvl": "a",
     "cat": "Verbi",
     "title": "Essere e avere",
     "def": "I due verbi più importanti dell'italiano: reggono da soli moltissime frasi di base e fanno da <b>ausiliari</b> per costruire i tempi composti (ho mangiato, sono andato).",
@@ -1226,6 +1150,82 @@ const ENTRIES = [
       }
     ],
     "warn": "L'articolo femminile (l', le) è obbligatorio perché sottintende «ora/ore»: «sono <b>le</b> tre»."
+  },
+  {
+    "lvl": "a",
+    "cat": "Ortografia",
+    "title": "Gli accenti: tonico e grafico",
+    "def": "Con la parola «accento» si indicano due cose diverse. L'<b>accento tonico</b> è la sillaba su cui cade la voce: ogni parola ne ha uno, ma quasi mai si scrive. L'<b>accento grafico</b> è il segno sulla vocale, e si mette solo in casi precisi. Confonderli è all'origine della maggior parte degli errori.",
+    "form": "<b>Dove cade la voce.</b><ul class='sch'><li><b>tronche</b> — sull'ultima sillaba: <b>città</b>, <b>caffè</b>, <b>perché</b>, <b>andrò</b></li><li><b>piane</b> — sulla penultima, ed è la maggioranza delle parole italiane: <b>casa</b>, <b>amico</b>, <b>parlare</b></li><li><b>sdrucciole</b> — sulla terzultima: <b>tavolo</b>, <b>medico</b>, <b>abitano</b></li></ul>",
+    "tables": [
+      {
+        "before": "<b>Quando si scrive l'accento.</b> Il segno grafico non segnala tutte le sillabe toniche, ma solo i casi elencati qui: fuori da questi non si mette.",
+        "plain": true,
+        "headers": [
+          "caso",
+          "esempi"
+        ],
+        "rows": [
+          [
+            "parole tronche di due o più sillabe",
+            "città, perché, caffè, andrò, però"
+          ],
+          [
+            "monosillabi formati da due vocali",
+            "già, giù, può, ciò, più"
+          ],
+          [
+            "monosillabi da distinguere da un omografo",
+            "è/e, dà/da, là/la, lì/li, né/ne, sé/se, sì/si, tè/te"
+          ],
+          [
+            "<b>non</b> si scrive",
+            "qui, qua, fa, sta, va, do, so, no, tre, su"
+          ]
+        ]
+      },
+      {
+        "before": "<b>Acuto o grave.</b> Il verso del segno dipende dal suono della vocale, non dalla parola: chiuso l'acuto, aperto il grave. Su a, i e u la questione non si pone.",
+        "plain": true,
+        "headers": [
+          "segno",
+          "quando",
+          "esempi"
+        ],
+        "rows": [
+          [
+            "acuto  é",
+            "suono chiuso",
+            "perché, poiché, affinché, né, sé, ventitré"
+          ],
+          [
+            "grave  è",
+            "suono aperto",
+            "è, caffè, cioè, tè"
+          ],
+          [
+            "grave  à ì ù",
+            "sempre, su a, i, u",
+            "città, così, più"
+          ]
+        ]
+      }
+    ],
+    "uses": [
+      {
+        "label": "l'accento grafico distingue parole altrimenti identiche",
+        "ex": "È stanco (verbo) / e stanco (congiunzione). Dà il libro (verbo) / da Roma (preposizione)."
+      },
+      {
+        "label": "le parole tronche di due o più sillabe lo vogliono sempre, anche nei verbi",
+        "ex": "Domani andrò a Milano. / Parlerà lui."
+      },
+      {
+        "label": "i monosillabi con una sola vocale non lo prendono",
+        "ex": "Qui si sta bene. / Fa freddo. / Ho tre fratelli — ma ventitré."
+      }
+    ],
+    "warn": "L'accento tonico non si scrive, e in alcune parole la sua posizione <b>cambia il significato</b>: <b>àncora</b> è l'oggetto della nave, <b>ancóra</b> vuol dire di nuovo; <b>prìncipi</b> sono i figli del re, <b>princìpi</b> sono i valori; <b>càpitano</b> è il grado militare, <b>capitàno</b> è il verbo; <b>sùbito</b> vuol dire immediatamente, <b>subìto</b> è il participio di subire. Nella scrittura corrente questi accenti non si mettono e decide il contesto. Un caso frequente: <b>sé</b> vuole l'accento, ma davanti a «stesso» e «medesimo» la tradizione lo toglie — «se stesso»; oggi entrambe le grafie sono accettate."
   },
   {
     "lvl": "a2",
