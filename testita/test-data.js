@@ -1,4 +1,4 @@
-// test-data.js v1.2 — 1/10/2026: [100] es0 accetta anche congiuntivo imperfetto/trapassato; v1.1: campo "no" ampliato dalle email
+// test-data.js v1.3 — 1/10/2026: «diag» spostato da [94] a [95]; «forse» nel no di [100] es0#0; v1.2: [100] es0 doppia chiave; v1.1: «no» ampliato dalle email
 const TEST_STRUCTURES = [
   {
     "lvl": "a",
@@ -16225,8 +16225,7 @@ const TEST_STRUCTURES = [
           }
         ]
       }
-    ],
-    "diag": true
+    ]
   },
   {
     "lvl": "c1",
@@ -16396,7 +16395,8 @@ const TEST_STRUCTURES = [
           }
         ]
       }
-    ]
+    ],
+    "diag": true
   },
   {
     "lvl": "c1",
@@ -17126,7 +17126,8 @@ const TEST_STRUCTURES = [
             "a": "sia|fosse",
             "no": [
               "è",
-              "sarebbe"
+              "sarebbe",
+              "forse"
             ]
           },
           {
