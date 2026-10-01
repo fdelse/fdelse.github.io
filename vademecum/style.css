@@ -1,4 +1,4 @@
-/* Vademecum di grammatica italiana — style.css — versione 1.1 */
+/* Vademecum di grammatica italiana — style.css — versione 1.4 */
 :root{
   --ink:#1b1e27;
   --ink-soft:#4a4f5e;
@@ -138,7 +138,7 @@ main{padding:0 0 80px;max-width:1340px;margin-inline:auto;width:100%;}
 .card__title{font-family:var(--display);font-weight:600;font-size:22px;line-height:1.15;margin:0 0 11px;color:var(--ink);letter-spacing:-.01em;}
 .card__def{margin:0;font-size:14.5px;color:var(--ink);line-height:1.5;}
 .card__def b{font-weight:600;}
-.card__def i, .sec i, .uses i, .ex i{font-family:var(--display);font-style:italic;}
+.card__def i, .sec i, .uses i, .ex i{font-family:var(--display);font-style:italic;font-size:1.08em;}
 
 /* sezioni */
 .sec{margin:16px 0 0;}
@@ -165,13 +165,13 @@ main{padding:0 0 80px;max-width:1340px;margin-inline:auto;width:100%;}
 .uses{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;}
 .uses li{font-size:13.5px;line-height:1.45;}
 .use-l{display:block;font-weight:600;color:var(--ink);}
-.use-e{display:block;font-family:var(--display);font-style:italic;color:var(--ink-soft);margin-top:2px;}
+.use-e{display:block;font-family:var(--display);font-style:italic;font-size:15.5px;color:var(--ink-soft);margin-top:2px;}
 .use-e b{font-style:normal;font-weight:600;color:var(--lvl);}
 
 .ex{margin:0;display:flex;flex-direction:column;gap:6px;}
 .ex p{
   margin:0;padding:5px 0 5px 13px;border-left:2px solid var(--line);
-  font-family:var(--display);font-style:italic;font-size:15px;color:var(--ink);line-height:1.4;
+  font-family:var(--display);font-style:italic;font-size:16px;color:var(--ink);line-height:1.4;
 }
 .ex p b{font-style:normal;font-weight:600;color:var(--lvl);}
 
@@ -182,10 +182,13 @@ th{font-weight:600;color:var(--ink-soft);font-size:11.5px;letter-spacing:.04em;t
 td:first-child{color:var(--ink-soft);font-weight:500;white-space:nowrap;}
 td b, td .form{color:var(--ink);font-weight:600;}
 td.ex-cell{
-  font-family:var(--display);font-style:italic;font-weight:400;
+  font-family:var(--display);font-style:italic;font-weight:400;font-size:14.5px;
   color:var(--ink);white-space:normal;line-height:1.4;
 }
 td.ex-cell b{font-style:normal;font-weight:600;color:var(--lvl);}
+/* nelle tabelle con esempi la prima colonna può andare a capo, così gli esempi hanno spazio */
+table:has(td.ex-cell) td:first-child{white-space:normal;min-width:8em;}
+td.ex-cell{min-width:13em;}
 .tbl-intro{margin-top:16px;}
 ul.sch{margin:2px 0 0;padding-left:17px;list-style:none;}
 ul.sch > li{margin:0 0 7px;position:relative;}
@@ -208,16 +211,16 @@ ul.sch ul li::before{
 }
 .warn::before{content:"Attenzione — ";font-weight:700;color:var(--warn-ink);}
 .warn b{color:var(--ink);font-weight:600;}
-.warn i{font-family:var(--display);font-style:italic;}
+.warn i{font-family:var(--display);font-style:italic;font-size:1.08em;}
 
 /* ---------- errori tipici ---------- */
 .errs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;}
 .errs li{font-size:13.5px;line-height:1.45;}
-.err-w{font-family:var(--display);font-style:italic;color:var(--ink-faint);text-decoration:line-through;text-decoration-color:#c0392b;}
+.err-w{font-family:var(--display);font-style:italic;font-size:15px;color:var(--ink-faint);text-decoration:line-through;text-decoration-color:#c0392b;}
 .err-a{margin:0 8px;color:var(--ink-faint);}
-.err-r{font-family:var(--display);font-style:italic;color:var(--ink);font-weight:500;}
+.err-r{font-family:var(--display);font-style:italic;font-size:15px;color:var(--ink);font-weight:500;}
 .err-why{display:block;color:var(--ink-soft);margin-top:2px;}
-.err-why i{font-family:var(--display);font-style:italic;}
+.err-why i{font-family:var(--display);font-style:italic;font-size:1.08em;}
 
 /* ---------- esercizi ---------- */
 .ex-block{
@@ -300,7 +303,9 @@ a:focus-visible, button:focus-visible, .nav-level:focus-visible{outline:2px soli
   .grid{grid-template-columns:1fr;}
 }
 @media (max-width:900px){
-  .shell{grid-template-columns:1fr;}
+  .shell{grid-template-columns:minmax(0,1fr);}
+  .card{min-width:0;overflow-x:auto;}
+  td.ex-cell, table:has(td.ex-cell) td:first-child{min-width:0;}
   .topbar{
     display:flex;align-items:center;gap:8px;
     position:fixed;top:0;left:0;right:0;z-index:60;
