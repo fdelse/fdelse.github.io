@@ -1,5 +1,5 @@
 {
-  "versione": "1.2",
+  "versione": "1.3",
   "livello": "C1",
   "schede": [
     {
@@ -970,13 +970,13 @@
               "PLIDA",
               "4 abilità separate",
               "fino a 3 su 4",
-              "1 anno o 18 mesi"
+              "18 mesi"
             ],
             [
               "CELI",
               "2 blocchi: scritto e orale",
               "il blocco superato",
-              "1 anno, due sessioni"
+              "1 anno, due sessioni (il recupero costa il 70% della tassa)"
             ]
           ],
           "after": "Il salto vero è tra il CELI e le altre due. Tra CILS e PLIDA il meccanismo è lo stesso."
@@ -992,7 +992,7 @@
           "ex": "Sbagliare l'ascolto obbliga a rifare anche lettura e produzione scritta già superate."
         },
         {
-          "label": "l'orale del CELI contiene solo la produzione orale: un colloquio con due esaminatori, da 5 a 20 minuti secondo il livello",
+          "label": "l'orale del CELI contiene solo la produzione orale: un colloquio con una commissione di due persone, un esaminatore e un interlocutore che parla con il candidato, da 5 a 20 minuti secondo il livello",
           "ex": "Al CELI 3 il materiale è una foto, un testo e un compito comunicativo."
         },
         {
@@ -1000,7 +1000,7 @@
           "ex": "Sbagliare l'ascolto lascia intatte le altre tre abilità."
         }
       ],
-      "warn": "<b>B1 Cittadinanza</b> e <b>A2 Integrazione</b> della CILS non prevedono capitalizzazione: basta un'abilità insufficiente e si ripete tutto pagando di nuovo l'intera quota. Sono proprio i livelli richiesti per cittadinanza e permesso di soggiorno. Sulla durata del PLIDA le fonti non concordano — il regolamento del 2015 dice un anno, diversi centri d'esame 18 mesi: conviene verificare col centro dove si sostiene l'esame. E nel CELI chi si iscrive e poi sostiene una sola delle due parti senza giustificare l'assenza con documentazione paga una nuova iscrizione e ripete l'esame per intero."
+      "warn": "<b>B1 Cittadinanza</b>, <b>A1 Integrazione</b> e <b>A2 Integrazione</b> della CILS non prevedono capitalizzazione: basta un'abilità insufficiente e si ripete tutto pagando di nuovo l'intera quota. Sono proprio i livelli richiesti per cittadinanza e permesso di soggiorno. E nel CELI chi si iscrive e poi sostiene una sola delle due parti senza giustificare l'assenza con documentazione paga una nuova iscrizione e ripete l'esame per intero."
     }
   ]
 }
