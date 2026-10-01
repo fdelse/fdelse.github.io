@@ -1,5 +1,5 @@
 {
-  "versione": "1.6",
+  "versione": "1.7",
   "livello": "B1",
   "schede": [
     {
@@ -3038,7 +3038,7 @@
       "lvl": "b1",
       "cat": "Sintassi",
       "title": "Si impersonale e si passivante",
-      "def": "Il <b>si</b> permette di parlare di un'azione senza dire chi la fa: perché è «la gente», «tutti» («in Italia <i>si mangia</i> bene»), oppure perché interessa la cosa e non chi agisce («<i>si vendono</i> case»). Si chiama <b>impersonale</b> quando non c'è una cosa su cui cade l'azione, <b>passivante</b> quando c'è.",
+      "def": "Il <b>si</b> permette di parlare di un'azione senza dire chi la fa: perché è «la gente», «tutti» («in Italia <i>si mangia</i> bene»), oppure perché interessa la cosa e non chi agisce («<i>si vendono</i> case»). Si chiama <b>impersonale</b> quando dopo il verbo non c'è una cosa su cui cade l'azione: il <i>si</i> vuol dire «la gente» e basta («<i>si mangia</i> bene» = la gente mangia bene). Si chiama <b>passivante</b> quando c'è una cosa su cui cade l'azione, e quella cosa si può trasformare nel soggetto di una frase passiva: «in Italia <i>si beve</i> molto vino» = «in Italia molto vino <i>è bevuto</i>».",
       "form": "<b>si</b> + verbo alla 3ª persona. Senza una cosa su cui cade l'azione (impersonale), il verbo è sempre singolare: «si mangia bene». Con una cosa (passivante), il verbo si accorda con quella: «si vende una casa» / «si vendono case». Nei tempi composti si usa sempre <b>essere</b>.",
       "tables": [
         {
@@ -3101,7 +3101,7 @@
           "ex": "Ieri si è lavorato tanto. / Si sono spesi molti soldi."
         }
       ],
-      "warn": "<b>Impersonale o passivante?</b> Per decidere se il verbo va al plurale si cerca la cosa su cui cade l'azione: se c'è ed è plurale, il verbo va al plurale («si vend<b>ono</b> biglietti»); se non c'è, resta singolare («si dorme bene»). Questo <i>si</i> non va confuso con quello dei riflessivi («Marco <i>si</i> lava»), dove chi fa l'azione c'è. In Toscana si sente anche «noi <i>si</i> va» al posto di «noi andiamo»: è un uso regionale.",
+      "warn": "<b>Il test della trasformazione.</b> Prova a trasformare la frase al passivo con <i>essere</i>. Se si può, il <i>si</i> è passivante e il verbo si accorda con la cosa: «si vend<b>ono</b> biglietti» → «i biglietti <i>sono venduti</i>». Se non si può, perché non c'è niente che possa diventare soggetto, il <i>si</i> è impersonale e il verbo resta al singolare: «si dorme bene», «si parte domani». Questo <i>si</i> non va confuso con quello dei riflessivi («Marco <i>si</i> lava»), dove chi fa l'azione c'è. In Toscana si sente anche «noi <i>si</i> va» al posto di «noi andiamo»: è un uso regionale.",
       "errors": [
         {
           "wrong": "Si affitta camere.",
