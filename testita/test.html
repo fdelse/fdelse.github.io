@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- test.html v1.1 — riepilogo email: errori raggruppati per esercizio (struttura+tipo+consegna) -->
 <html lang="it">
 <head>
 <meta charset="UTF-8">
@@ -949,7 +950,7 @@ function submitTest(){
       /* Gli errori si raggruppano per esercizio: la consegna compare una volta
          come intestazione invece di ripetersi su ogni riga, e si vede a colpo
          d'occhio se gli sbagli si concentrano in un esercizio solo. */
-      const chiave = st + '||' + it.dataset.type;
+      const chiave = st + '||' + it.dataset.type + '||' + (it.dataset.instr || '');
       if (!perEsercizio[chiave]) {
         perEsercizio[chiave] = { struct: st, tipo: it.dataset.type,
                                  consegna: it.dataset.instr || '', righe: [] };

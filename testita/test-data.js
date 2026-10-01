@@ -1,3 +1,4 @@
+// test-data.js v1.2 — 1/10/2026: [100] es0 accetta anche congiuntivo imperfetto/trapassato; v1.1: campo "no" ampliato dalle email
 const TEST_STRUCTURES = [
   {
     "lvl": "a",
@@ -6964,7 +6965,8 @@ const TEST_STRUCTURES = [
               "si svegliò",
               "si svegliavo",
               "si svegliavano",
-              "svegliava"
+              "svegliava",
+              "si era svegliato"
             ]
           },
           {
@@ -7955,7 +7957,8 @@ const TEST_STRUCTURES = [
             "a": "abiteremmo",
             "no": [
               "abitaremmo",
-              "abiteremo"
+              "abiteremo",
+              "abitiamo"
             ]
           },
           {
@@ -7963,7 +7966,8 @@ const TEST_STRUCTURES = [
             "a": "verrebbe",
             "no": [
               "vorrebbe",
-              "verebbe"
+              "verebbe",
+              "verrà"
             ]
           },
           {
@@ -7972,7 +7976,8 @@ const TEST_STRUCTURES = [
             "no": [
               "notareste",
               "noterete",
-              "notate"
+              "notate",
+              "avete notato"
             ]
           },
           {
@@ -11802,7 +11807,8 @@ const TEST_STRUCTURES = [
             "no": [
               "dicevano",
               "dicano",
-              "dicesse"
+              "dicesse",
+              "dicesserono"
             ]
           },
           {
@@ -16433,7 +16439,8 @@ const TEST_STRUCTURES = [
             "a": "avrebbe",
             "no": [
               "avesse",
-              "aveva"
+              "aveva",
+              "avrebbe avuto"
             ]
           },
           {
@@ -16441,7 +16448,8 @@ const TEST_STRUCTURES = [
             "a": "sarebbe",
             "no": [
               "fosse",
-              "era"
+              "era",
+              "sarebbe stato"
             ]
           },
           {
@@ -16524,7 +16532,8 @@ const TEST_STRUCTURES = [
               "sia",
               "fosse stata",
               "sarebbe",
-              "era"
+              "era",
+              "avesse stato"
             ]
           },
           {
@@ -16984,7 +16993,8 @@ const TEST_STRUCTURES = [
             "no": [
               "Controllandola",
               "Avendo controllatala",
-              "La avendo controllata"
+              "La avendo controllata",
+              "Dopo averla controllata"
             ]
           },
           {
@@ -17020,7 +17030,8 @@ const TEST_STRUCTURES = [
             "no": [
               "Non pensandoci",
               "Non avendo pensatoci",
-              "Non ci avendo pensato"
+              "Non ci avendo pensato",
+              "Non avendo pensato"
             ]
           },
           {
@@ -17112,58 +17123,52 @@ const TEST_STRUCTURES = [
         "items": [
           {
             "q": "Sembrerebbe che la consegna ___ stata rinviata a lunedì. (essere)",
-            "a": "sia",
+            "a": "sia|fosse",
             "no": [
               "è",
-              "fosse",
               "sarebbe"
             ]
           },
           {
             "q": "Si direbbe che nessuno ___ fretta di rispondere. (avere)",
-            "a": "abbia",
+            "a": "abbia|avesse",
             "no": [
               "ha",
-              "avesse",
               "avrebbe"
             ]
           },
           {
             "q": "Parrebbe che i responsabili ___ valutando una soluzione alternativa. (stare)",
-            "a": "stiano",
+            "a": "stiano|stessero",
             "no": [
               "stimano",
               "strano",
               "siano",
               "stanno",
-              "stessero",
               "starebbero"
             ]
           },
           {
             "q": "Sembrerebbe che i lavori ___ più lentamente del previsto. (procedere)",
-            "a": "procedano",
+            "a": "procedano|procedessero",
             "no": [
               "procedono",
-              "procedessero",
               "procederebbero"
             ]
           },
           {
             "q": "Si direbbe che il nuovo orario non ___ a nessuno. (piacere)",
-            "a": "piaccia",
+            "a": "piaccia|piacesse",
             "no": [
               "piace",
-              "piacesse",
               "piacerebbe"
             ]
           },
           {
             "q": "Sembrerebbe che nessuno ___ l'ultima versione del documento. (leggere)",
-            "a": "abbia letto",
+            "a": "abbia letto|avesse letto",
             "no": [
               "ha letto",
-              "avesse letto",
               "leggerebbe"
             ]
           }
