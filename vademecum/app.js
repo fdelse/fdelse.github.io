@@ -1,8 +1,8 @@
-/* Vademecum di grammatica italiana — app.js — versione 3.1
+/* Vademecum di grammatica italiana — app.js — versione 3.2
    Le schede stanno in dati/<livello>.json.
    Quando modifichi un file di dati, aggiorna la sua versione qui sotto in DATI
    (e il campo "versione" nel file): serve a far riscaricare il file al browser. */
-const VERSIONE = "3.1";
+const VERSIONE = "3.2";
 const DATI = {a:"1.4", a2:"1.4", b1:"1.7", b2:"1.4", c1:"1.3"};
 
 /* ===== Livelli ===== */
@@ -45,13 +45,13 @@ function tablesBlock(tables){
   return tableHTML(tables[0]);
 }
 
+/* La ricerca legge solo il contenuto della scheda (titolo, categoria, spiegazione,
+   formazione, usi, esempi, avviso): esercizi ed errori tipici restano fuori. */
 function searchText(e){
   let parts = [e.title, e.cat, e.def, e.form||""];
   if(e.uses) e.uses.forEach(u=>parts.push(u.label, u.ex));
   if(e.ex) parts = parts.concat(e.ex);
-  if(e.exercises) e.exercises.forEach(x=>{parts.push(x.instr); parts = parts.concat(x.items);});
   if(e.warn) parts.push(e.warn);
-  if(e.errors) e.errors.forEach(x=>parts.push(x.wrong, x.right, x.why||""));
   return unapo(fold(strip(parts.join(" ")).toLowerCase())).replace(/"/g,"");
 }
 
