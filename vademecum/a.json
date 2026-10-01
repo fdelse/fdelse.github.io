@@ -1,0 +1,2877 @@
+{
+  "versione": "1.4",
+  "livello": "A0 · A1",
+  "schede": [
+    {
+      "lvl": "a",
+      "cat": "Verbi",
+      "title": "Essere e avere",
+      "def": "I due verbi più usati dell'italiano. Con <b>essere</b> si dice chi è una persona, com'è, da dove viene e dove si trova; con <b>avere</b> si dice che cosa si possiede, quanti anni si hanno e che cosa si sente (fame, freddo, paura…). Servono anche come <b>ausiliari</b>, cioè come «verbi di aiuto» per formare il passato: <i>ho mangiato</i>, <i>sono andato</i> (vedi la scheda sul passato prossimo).",
+      "form": "Sono tutti e due <b>irregolari</b>: non seguono le terminazioni dei verbi regolari, quindi le forme si imparano a memoria. Il pronome (io, tu, lui…) di solito non si dice, perché la forma del verbo indica già la persona: <i>sono stanco</i> basta, <i>io sono stanco</i> si usa solo per sottolineare «io». L'<b>h</b> di <b>ho, hai, ha, hanno</b> si scrive ma non si pronuncia: serve a distinguerle da parole che suonano uguali (<i>o, ai, a, anno</i>).",
+      "tables": [
+        {
+          "caption": "essere",
+          "rows": [
+            [
+              "io",
+              "sono"
+            ],
+            [
+              "tu",
+              "sei"
+            ],
+            [
+              "lui/lei",
+              "è"
+            ],
+            [
+              "noi",
+              "siamo"
+            ],
+            [
+              "voi",
+              "siete"
+            ],
+            [
+              "loro",
+              "sono"
+            ]
+          ]
+        },
+        {
+          "caption": "avere",
+          "rows": [
+            [
+              "io",
+              "ho"
+            ],
+            [
+              "tu",
+              "hai"
+            ],
+            [
+              "lui/lei",
+              "ha"
+            ],
+            [
+              "noi",
+              "abbiamo"
+            ],
+            [
+              "voi",
+              "avete"
+            ],
+            [
+              "loro",
+              "hanno"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "con essere si dice chi è una persona e com'è",
+          "ex": "Sono Marco. / Anna è simpatica. / Siamo stanchi."
+        },
+        {
+          "label": "con essere si dice da dove viene una persona: essere di + città, oppure essere + nazionalità",
+          "ex": "Sono di Siviglia. / Sei spagnola? / Siamo italiani."
+        },
+        {
+          "label": "con essere si dice il mestiere, di solito senza articolo",
+          "ex": "Sono insegnante. / Mia sorella è avvocato."
+        },
+        {
+          "label": "con essere si dice dove si trova qualcuno o qualcosa",
+          "ex": "Marco è a casa. / Le chiavi sono sul tavolo."
+        },
+        {
+          "label": "con avere si dice che cosa si possiede, comprese le persone della famiglia",
+          "ex": "Ho una macchina nuova. / Hai fratelli? — Sì, ho una sorella."
+        },
+        {
+          "label": "con avere si dice l'età: avere + numero + anni",
+          "ex": "Quanti anni hai? — Ho trent'anni."
+        },
+        {
+          "label": "con avere si dicono le sensazioni del corpo e alcune emozioni: fame, sete, sonno, caldo, freddo, paura, fretta, ragione, torto",
+          "ex": "Ho fame. / Hai freddo? / Abbiamo fretta. / Hai ragione."
+        },
+        {
+          "label": "avere bisogno di e avere voglia di, seguiti da un nome o da un verbo all'infinito",
+          "ex": "Ho bisogno di aiuto. / Ho voglia di un gelato. / Non ho voglia di uscire."
+        }
+      ],
+      "warn": "<b>Caldo e freddo.</b> Per come si sente una persona si usa <b>avere</b>: «<i>ho</i> caldo», «<i>hai</i> freddo?». Per una cosa o un luogo si usa <b>essere</b>: «il caffè <i>è</i> caldo», «la stanza <i>è</i> fredda». Per il tempo che fa si usa <b>fare</b>: «oggi <i>fa</i> caldo». Detto di una persona, «è freddo» vuol dire che ha un carattere distaccato, poco affettuoso.",
+      "errors": [
+        {
+          "wrong": "Sono trent'anni.",
+          "right": "Ho trent'anni.",
+          "why": "L'età si dice con <i>avere</i>: in italiano gli anni si «hanno»."
+        },
+        {
+          "wrong": "Sono fame.",
+          "right": "Ho fame.",
+          "why": "Fame, sete, sonno, paura, fretta vanno con <i>avere</i>."
+        },
+        {
+          "wrong": "Sono freddo.",
+          "right": "Ho freddo.",
+          "why": "«Sono freddo» vuol dire «sono una persona fredda, distaccata». Per la sensazione si usa <i>avere</i>."
+        },
+        {
+          "wrong": "Marco a una macchina.",
+          "right": "Marco ha una macchina.",
+          "why": "<i>ha</i>, del verbo avere, si scrive con l'h; <i>a</i> senza h è una preposizione (<i>vado a Roma</i>)."
+        },
+        {
+          "wrong": "Lei e italiana.",
+          "right": "Lei è italiana.",
+          "why": "<i>è</i>, del verbo essere, vuole l'accento; <i>e</i> senza accento vuol dire «and» (<i>Marco e Anna</i>)."
+        },
+        {
+          "wrong": "Ho bisogno aiuto.",
+          "right": "Ho bisogno di aiuto.",
+          "why": "<i>Avere bisogno</i> e <i>avere voglia</i> vogliono sempre <i>di</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con la forma giusta di essere o avere al presente.",
+          "items": [
+            "Io _____ di Madrid, ma _____ una casa a Siviglia.",
+            "Quanti anni _____ tua sorella?",
+            "Noi _____ stanchi e _____ sonno.",
+            "Ragazzi, _____ fame?",
+            "Luca e Paola _____ a scuola.",
+            "Tu _____ insegnante?"
+          ],
+          "key": [
+            "<b>sono</b>, <b>ho</b>",
+            "<b>ha</b>",
+            "<b>siamo</b>, <b>abbiamo</b>",
+            "<b>avete</b>",
+            "<b>sono</b>",
+            "<b>sei</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Scegli la forma corretta.",
+          "items": [
+            "Marco (a / ha) un cane.",
+            "Anna (e / è) Giulia sono amiche.",
+            "Domani vado (a / ha) Roma.",
+            "I miei vicini (hanno / anno) due figli.",
+            "Il caffè (è / ha) caldo.",
+            "Chiudi la finestra, (sono / ho) freddo."
+          ],
+          "key": [
+            "<b>ha</b>",
+            "<b>e</b>",
+            "<b>a</b>",
+            "<b>hanno</b>",
+            "<b>è</b>",
+            "<b>ho</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Riscrivi la frase con il soggetto tra parentesi.",
+          "items": [
+            "Io sono stanco. (noi)",
+            "Tu hai fame? (voi)",
+            "Lei è spagnola. (loro)",
+            "Ho una bici nuova. (noi)",
+            "Lui ha vent'anni. (loro)",
+            "Sei a casa? (voi)"
+          ],
+          "key": [
+            "<b>Noi siamo stanchi.</b>",
+            "<b>Voi avete fame?</b>",
+            "<b>Loro sono spagnole.</b>",
+            "<b>Abbiamo una bici nuova.</b>",
+            "<b>Loro hanno vent'anni.</b>",
+            "<b>Siete a casa?</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a",
+      "cat": "Articoli",
+      "title": "Articoli determinativi",
+      "def": "L'articolo determinativo (<i>il, lo, la, i, gli, le</i>) si mette davanti a un nome quando si parla di una cosa precisa, che chi ascolta conosce o può riconoscere: «chiudi <i>la</i> porta» = quella porta, la porta di questa stanza. In italiano si usa molto più che in altre lingue, anche per parlare di una cosa in generale: «<i>il</i> caffè fa bene».",
+      "form": "Per scegliere l'articolo si guardano tre cose: se la parola è <b>maschile o femminile</b>, se è <b>singolare o plurale</b>, e <b>con quale lettera comincia</b>. Conta la parola che viene subito dopo l'articolo, anche quando è un aggettivo: «<i>lo</i> studente» ma «<i>il</i> bravo studente».",
+      "tables": [
+        {
+          "before": "<b>Le sei forme.</b>",
+          "headers": [
+            "",
+            "Maschile",
+            "Femminile"
+          ],
+          "rows": [
+            [
+              "Sing.",
+              "il / lo / l'",
+              "la / l'"
+            ],
+            [
+              "Plur.",
+              "i / gli",
+              "le"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Quale forma scegliere.</b> Si parte dalla lettera iniziale della parola che segue.",
+          "plain": true,
+          "headers": [
+            "la parola comincia con",
+            "sing.",
+            "plur.",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "maschile + consonante",
+              "il",
+              "i",
+              "il libro → i libri"
+            ],
+            [
+              "maschile + s seguita da consonante, z, gn, ps, pn, x, y",
+              "lo",
+              "gli",
+              "lo studente → gli studenti, lo zaino → gli zaini, lo psicologo, lo yogurt"
+            ],
+            [
+              "maschile + vocale",
+              "l'",
+              "gli",
+              "l'amico → gli amici"
+            ],
+            [
+              "femminile + consonante",
+              "la",
+              "le",
+              "la casa → le case"
+            ],
+            [
+              "femminile + vocale",
+              "l'",
+              "le",
+              "l'amica → le amiche"
+            ]
+          ],
+          "after": "Al plurale femminile non si mette l'apostrofo: <i>le amiche</i>, <i>le isole</i>."
+        }
+      ],
+      "uses": [
+        {
+          "label": "per una cosa precisa, già nominata o che chi parla e chi ascolta conoscono tutti e due",
+          "ex": "Dov'è il libro che ti ho prestato? / Chiudi la porta, per favore."
+        },
+        {
+          "label": "per una cosa unica, che esiste una volta sola",
+          "ex": "il sole, la luna, il presidente della Repubblica"
+        },
+        {
+          "label": "per parlare di una cosa in generale, cioè di tutta la categoria",
+          "ex": "Il caffè fa bene. / Mi piacciono i gatti. / Odio la pioggia."
+        },
+        {
+          "label": "con i nomi di Paesi, regioni, fiumi, montagne e grandi isole",
+          "ex": "L'Italia è lunga e stretta. / Conosci la Toscana? / Il Tevere passa per Roma. / la Sicilia"
+        },
+        {
+          "label": "con le ore, le date e gli anni",
+          "ex": "Sono le tre. / Il 5 maggio è il mio compleanno. / Sono nato nel 1990."
+        },
+        {
+          "label": "con i giorni della settimana, quando vuol dire «ogni»; senza articolo si parla di un giorno solo",
+          "ex": "Il lunedì vado in palestra (= ogni lunedì). / Lunedì vado dal medico (= questo lunedì)."
+        },
+        {
+          "label": "con i possessivi, nella maggior parte dei casi",
+          "ex": "la mia casa, il tuo amico, i nostri figli (vedi la scheda sui possessivi)"
+        }
+      ],
+      "warn": "<b>Quando l'articolo non si mette.</b> Davanti ai nomi di persona («Marco arriva domani», non «il Marco»: si sente nel parlato di alcune zone del Nord, ma non è italiano standard) e davanti ai nomi di città («Roma è bellissima»; «la Roma» è la squadra di calcio). Con i Paesi, l'articolo sparisce dopo <i>in</i>: «vado in Italia», «vivo in Spagna». Ritorna se il nome è accompagnato da altre parole: «nell'Italia del Nord».",
+      "errors": [
+        {
+          "wrong": "il studente",
+          "right": "lo studente",
+          "why": "Davanti a <i>s</i> + consonante il maschile vuole <i>lo</i>; al plurale <i>gli</i> (gli studenti)."
+        },
+        {
+          "wrong": "il zaino",
+          "right": "lo zaino",
+          "why": "Davanti a <i>z</i> il maschile vuole <i>lo</i>."
+        },
+        {
+          "wrong": "i amici",
+          "right": "gli amici",
+          "why": "Davanti a vocale il maschile plurale è sempre <i>gli</i>."
+        },
+        {
+          "wrong": "l'amiche",
+          "right": "le amiche",
+          "why": "Al plurale femminile niente apostrofo: sempre <i>le</i>."
+        },
+        {
+          "wrong": "lo bravo studente",
+          "right": "il bravo studente",
+          "why": "L'articolo si sceglie guardando la parola subito dopo: qui è <i>bravo</i>, che comincia con <i>b</i>."
+        },
+        {
+          "wrong": "Mi piace caffè.",
+          "right": "Mi piace il caffè.",
+          "why": "Per parlare di una cosa in generale l'italiano vuole l'articolo."
+        },
+        {
+          "wrong": "La Roma è bellissima.",
+          "right": "Roma è bellissima.",
+          "why": "I nomi di città non vogliono l'articolo."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con l'articolo determinativo.",
+          "items": [
+            "_____ zio di Marco",
+            "_____ ragazze",
+            "_____ aereo",
+            "_____ psicologi",
+            "_____ giornali",
+            "_____ isola"
+          ],
+          "key": [
+            "<b>lo</b> zio",
+            "<b>le</b> ragazze",
+            "<b>l'</b>aereo",
+            "<b>gli</b> psicologi",
+            "<b>i</b> giornali",
+            "<b>l'</b>isola"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Volgi al plurale l'articolo e il nome.",
+          "items": [
+            "il libro",
+            "lo studente",
+            "l'amico",
+            "la finestra",
+            "l'università",
+            "lo zio"
+          ],
+          "key": [
+            "<b>i libri</b>",
+            "<b>gli studenti</b>",
+            "<b>gli amici</b>",
+            "<b>le finestre</b>",
+            "<b>le università</b>",
+            "<b>gli zii</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Articolo sì o no? Scegli la forma corretta.",
+          "items": [
+            "(Il Marco / Marco) arriva domani.",
+            "Mi piace (musica / la musica) italiana.",
+            "(L'Italia / Italia) è un Paese lungo e stretto.",
+            "Vivo a (Roma / la Roma).",
+            "(Il sabato / Sabato) vado sempre al mercato.",
+            "A luglio vado (in Spagna / nella Spagna)."
+          ],
+          "key": [
+            "<b>Marco</b>",
+            "<b>la musica</b>",
+            "<b>L'Italia</b>",
+            "<b>Roma</b>",
+            "<b>Il sabato</b> (= ogni sabato)",
+            "<b>in Spagna</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a",
+      "cat": "Articoli",
+      "title": "Articoli indeterminativi",
+      "def": "L'articolo indeterminativo (<i>un, uno, una, un'</i>) si mette davanti a un nome quando si parla di una cosa qualsiasi, non precisa, oppure quando la si nomina per la prima volta: «ho comprato <i>un</i> libro» (uno, chi ascolta non sa ancora quale). Vuol dire più o meno «uno qualsiasi».",
+      "form": "Si sceglie come l'articolo determinativo: si guarda se la parola è maschile o femminile e con quale lettera comincia. Esiste <b>solo al singolare</b>: per il plurale si usano altre parole, nella tabella qui sotto.",
+      "tables": [
+        {
+          "before": "<b>Le quattro forme.</b>",
+          "plain": true,
+          "headers": [
+            "la parola comincia con",
+            "articolo",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "maschile + consonante o vocale",
+              "un",
+              "un libro, un amico"
+            ],
+            [
+              "maschile + s seguita da consonante, z, gn, ps, pn, x, y",
+              "uno",
+              "uno studente, uno zaino, uno psicologo, uno yogurt"
+            ],
+            [
+              "femminile + consonante",
+              "una",
+              "una penna, una studentessa"
+            ],
+            [
+              "femminile + vocale",
+              "un'",
+              "un'amica, un'idea"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Al plurale.</b> «Un libro» al plurale si può dire in quattro modi, con lo stesso significato di «alcuni».",
+          "plain": true,
+          "headers": [
+            "forma",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "dei / degli / delle (si sceglie come i, gli, le)",
+              "Ho comprato dei libri. / Ci sono degli studenti. / Ho delle amiche a Roma."
+            ],
+            [
+              "alcuni / alcune",
+              "Ho alcuni amici a Roma."
+            ],
+            [
+              "qualche + nome al singolare",
+              "Ho qualche amico a Roma."
+            ],
+            [
+              "nessun articolo, soprattutto in elenchi e domande",
+              "Vendono libri usati. / Hai fratelli?"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "per nominare una cosa la prima volta; quando se ne riparla, si passa all'articolo determinativo",
+          "ex": "Ho visto un film. Il film era bellissimo."
+        },
+        {
+          "label": "per una cosa qualsiasi, non importa quale",
+          "ex": "Mi presti una penna? (una qualsiasi)"
+        },
+        {
+          "label": "un e una sono anche il numero 1",
+          "ex": "Prendo un caffè e due cornetti."
+        },
+        {
+          "label": "con c'è, per dire che una cosa esiste o si trova in un posto",
+          "ex": "C'è un gatto in giardino. / Scusi, c'è una farmacia qui vicino?"
+        },
+        {
+          "label": "con il mestiere dopo essere: senza articolo, ma con l'articolo se c'è un aggettivo",
+          "ex": "Mario è medico. / Mario è un medico bravissimo."
+        },
+        {
+          "label": "se prima del nome c'è un aggettivo, l'articolo si sceglie guardando l'aggettivo",
+          "ex": "uno studente → un bravo studente / un'amica → una vecchia amica"
+        }
+      ],
+      "warn": "<b>L'apostrofo solo al femminile.</b> «Un'amica» ha l'apostrofo perché è «una» accorciata davanti a vocale. «Un amico» non ce l'ha, perché «un» è già una parola completa. Trucco per lo studente: se il nome è maschile, mai l'apostrofo; se è femminile e comincia con vocale, sempre.",
+      "errors": [
+        {
+          "wrong": "un'amico",
+          "right": "un amico",
+          "why": "Al maschile non c'è mai l'apostrofo."
+        },
+        {
+          "wrong": "un amica",
+          "right": "un'amica",
+          "why": "Al femminile, davanti a vocale, serve l'apostrofo: <i>un'</i> = <i>una</i>."
+        },
+        {
+          "wrong": "un studente",
+          "right": "uno studente",
+          "why": "Davanti a <i>s</i> + consonante, <i>z</i>, <i>gn</i>, <i>ps</i> il maschile vuole <i>uno</i>."
+        },
+        {
+          "wrong": "uno amico",
+          "right": "un amico",
+          "why": "Davanti a vocale il maschile vuole <i>un</i>, non <i>uno</i>."
+        },
+        {
+          "wrong": "Ho uni amici a Roma.",
+          "right": "Ho degli amici / alcuni amici a Roma.",
+          "why": "<i>Un</i> e <i>una</i> non hanno plurale: si usano <i>dei/degli/delle</i>, <i>alcuni</i> o <i>qualche</i>."
+        },
+        {
+          "wrong": "Ho qualche amici.",
+          "right": "Ho qualche amico.",
+          "why": "Dopo <i>qualche</i> il nome resta al singolare, anche se il senso è plurale."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con un, uno, una o un'.",
+          "items": [
+            "_____ ombrello",
+            "_____ zio",
+            "_____ arancia",
+            "_____ psicologa",
+            "_____ yogurt",
+            "_____ ora"
+          ],
+          "key": [
+            "<b>un</b> ombrello",
+            "<b>uno</b> zio",
+            "<b>un'</b>arancia",
+            "<b>una</b> psicologa",
+            "<b>uno</b> yogurt",
+            "<b>un'</b>ora"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Volgi al plurale usando dei, degli o delle.",
+          "items": [
+            "un libro",
+            "uno studente",
+            "un'amica",
+            "un amico",
+            "una casa",
+            "uno zaino"
+          ],
+          "key": [
+            "<b>dei libri</b>",
+            "<b>degli studenti</b>",
+            "<b>delle amiche</b>",
+            "<b>degli amici</b>",
+            "<b>delle case</b>",
+            "<b>degli zaini</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Articolo determinativo o indeterminativo? Scegli la forma corretta.",
+          "items": [
+            "Ieri ho conosciuto (una / la) ragazza simpatica.",
+            "Oggi (un / il) sole è caldissimo.",
+            "Ho visto un film. (Un / Il) film era bellissimo.",
+            "Scusi, c'è (una / la) farmacia qui vicino?",
+            "Mi passi (un / il) sale, per favore?",
+            "Vorrei (un / il) caffè e un cornetto."
+          ],
+          "key": [
+            "<b>una</b>",
+            "<b>il</b>",
+            "<b>Il</b>",
+            "<b>una</b>",
+            "<b>il</b> (quello che è sulla tavola)",
+            "<b>un</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a",
+      "cat": "Nomi",
+      "title": "Il plurale dei nomi",
+      "def": "Per passare dal singolare al plurale, in italiano cambia la vocale finale del nome: <i>libro → libri</i>, <i>casa → case</i>. La regola di base è semplice. Le eccezioni dipendono quasi sempre da come finisce la parola, quindi si imparano a gruppi e non una per una.",
+      "form": "Si guarda <b>come finisce</b> il nome al singolare e <b>se è maschile o femminile</b>. Insieme al nome cambia anche l'articolo (<i>il → i</i>, <i>la → le</i>): nei nomi che non cambiano, è l'articolo a mostrare il plurale.",
+      "tables": [
+        {
+          "before": "<b>La regola di base.</b>",
+          "headers": [
+            "Sing.",
+            "Plur.",
+            "Esempio"
+          ],
+          "rows": [
+            [
+              "-o (maschile)",
+              "-i",
+              "il libro → i libri"
+            ],
+            [
+              "-a (femminile)",
+              "-e",
+              "la casa → le case"
+            ],
+            [
+              "-e (maschile e femminile)",
+              "-i",
+              "il fiore → i fiori, la chiave → le chiavi"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Nomi in -ca, -ga, -co, -go.</b> La domanda è se al plurale il suono resta duro (<i>-chi, -ghi</i>) o diventa dolce (<i>-ci</i>). Per <i>-co</i> conta dove cade la voce: se cade sulla penultima sillaba (<i>pàr-co</i>) si scrive <i>-chi</i>; se cade sulla terzultima (<i>mè-di-co</i>) si scrive <i>-ci</i>.",
+          "plain": true,
+          "headers": [
+            "terminazione",
+            "plurale",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "-ca, -ga (femminili)",
+              "-che, -ghe",
+              "amica → amiche, riga → righe"
+            ],
+            [
+              "-go",
+              "-ghi",
+              "lago → laghi, albergo → alberghi"
+            ],
+            [
+              "-logo, se indica una persona",
+              "-logi",
+              "psicologo → psicologi, archeologo → archeologi"
+            ],
+            [
+              "-co, voce sulla penultima",
+              "-chi",
+              "parco → parchi, tedesco → tedeschi"
+            ],
+            [
+              "-co, voce sulla terzultima",
+              "-ci",
+              "medico → medici, meccanico → meccanici"
+            ],
+            [
+              "eccezioni da sapere a memoria",
+              "-ci",
+              "amico → amici, nemico → nemici, greco → greci"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Nomi in -cia, -gia e in -io.</b> Per <i>-cia</i> e <i>-gia</i> si guarda la lettera prima di <i>c</i> o <i>g</i>.",
+          "plain": true,
+          "headers": [
+            "terminazione",
+            "plurale",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "-cia, -gia con una vocale prima",
+              "-cie, -gie",
+              "camicia → camicie, valigia → valigie"
+            ],
+            [
+              "-cia, -gia con una consonante prima",
+              "-ce, -ge",
+              "arancia → arance, spiaggia → spiagge"
+            ],
+            [
+              "-cia, -gia con la i accentata",
+              "-cie, -gie",
+              "farmacia → farmacie, bugia → bugie"
+            ],
+            [
+              "-io con la i non accentata",
+              "-i (una sola i)",
+              "negozio → negozi, figlio → figli"
+            ],
+            [
+              "-io con la i accentata",
+              "-ii",
+              "zio → zii"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Nomi che non cambiano.</b> Il plurale si riconosce solo dall'articolo.",
+          "plain": true,
+          "headers": [
+            "gruppo",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "parole con l'accento sull'ultima sillaba",
+              "la città → le città, il caffè → i caffè, l'università → le università"
+            ],
+            [
+              "parole di una sola sillaba",
+              "il re → i re, il tè → i tè"
+            ],
+            [
+              "parole straniere",
+              "il bar → i bar, il film → i film, lo sport → gli sport"
+            ],
+            [
+              "parole accorciate",
+              "la foto → le foto, la moto → le moto, il cinema → i cinema"
+            ],
+            [
+              "nomi in -i",
+              "la crisi → le crisi, l'analisi → le analisi"
+            ],
+            [
+              "nomi femminili in -ie",
+              "la serie → le serie, la specie → le specie (ma: la moglie → le mogli)"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Nomi con un plurale speciale.</b>",
+          "plain": true,
+          "headers": [
+            "gruppo",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "maschili in -a: plurale in -i",
+              "il problema → i problemi, il programma → i programmi, il clima → i climi"
+            ],
+            [
+              "nomi in -ista: una forma per lui e lei al singolare, due al plurale",
+              "il turista → i turisti, la turista → le turiste"
+            ],
+            [
+              "plurali irregolari",
+              "l'uomo → gli uomini, la mano → le mani, il dio → gli dei"
+            ],
+            [
+              "maschili che al plurale diventano femminili in -a",
+              "l'uovo → le uova, il braccio → le braccia, il dito → le dita, il labbro → le labbra, il paio → le paia"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "per scegliere tra -chi e -ci, si fa dire la parola allo studente e si ascolta dove cade la voce",
+          "ex": "pàr-co → parchi / mè-di-co → medici"
+        },
+        {
+          "label": "articolo e aggettivo cambiano insieme al nome",
+          "ex": "il libro nuovo → i libri nuovi / l'amica simpatica → le amiche simpatiche"
+        },
+        {
+          "label": "i maschili in -a restano maschili anche al plurale: articolo e aggettivo al maschile",
+          "ex": "un problema serio → dei problemi seri / il programma nuovo → i programmi nuovi"
+        },
+        {
+          "label": "nei nomi che non cambiano, il plurale si vede dall'articolo e dall'aggettivo",
+          "ex": "una città grande → due città grandi / il film italiano → i film italiani"
+        }
+      ],
+      "warn": "<b>I plurali in -a sono femminili.</b> <i>Le uova, le braccia, le dita, le labbra</i> vogliono articolo e aggettivo al femminile: «le uova fresche», «le dita lunghe». Allo stesso modo <i>la mano</i> resta femminile anche al plurale: «le mani fredde».",
+      "errors": [
+        {
+          "wrong": "le problemi",
+          "right": "i problemi",
+          "why": "<i>Problema</i> è maschile anche se finisce in <i>-a</i>."
+        },
+        {
+          "wrong": "le citte",
+          "right": "le città",
+          "why": "Le parole con l'accento sull'ultima sillaba non cambiano al plurale."
+        },
+        {
+          "wrong": "gli uomi",
+          "right": "gli uomini",
+          "why": "<i>Uomo</i> ha un plurale irregolare."
+        },
+        {
+          "wrong": "le mane",
+          "right": "le mani",
+          "why": "<i>Mano</i> è femminile, ma fa il plurale in <i>-i</i>."
+        },
+        {
+          "wrong": "gli amichi",
+          "right": "gli amici",
+          "why": "<i>Amico</i> è un'eccezione: si dice <i>amici</i> (ma <i>parchi</i>, <i>tedeschi</i>)."
+        },
+        {
+          "wrong": "gli uovi",
+          "right": "le uova",
+          "why": "<i>Uovo</i> al plurale diventa femminile: <i>le uova</i>."
+        },
+        {
+          "wrong": "le foti",
+          "right": "le foto",
+          "why": "<i>Foto</i> è una parola accorciata (da <i>fotografia</i>) e non cambia."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Volgi al plurale l'articolo e il nome.",
+          "items": [
+            "il treno",
+            "la chiave",
+            "il caffè",
+            "l'amica",
+            "il lago",
+            "il problema"
+          ],
+          "key": [
+            "<b>i treni</b>",
+            "<b>le chiavi</b>",
+            "<b>i caffè</b>",
+            "<b>le amiche</b>",
+            "<b>i laghi</b>",
+            "<b>i problemi</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Volgi al plurale l'articolo e il nome. Attenzione alle eccezioni.",
+          "items": [
+            "il medico",
+            "la camicia",
+            "l'uomo",
+            "la mano",
+            "l'uovo",
+            "lo zio"
+          ],
+          "key": [
+            "<b>i medici</b>",
+            "<b>le camicie</b>",
+            "<b>gli uomini</b>",
+            "<b>le mani</b>",
+            "<b>le uova</b>",
+            "<b>gli zii</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Scegli il plurale corretto.",
+          "items": [
+            "il parco: (i parci / i parchi)",
+            "l'arancia: (le arance / le arancie)",
+            "la foto: (le foto / le foti)",
+            "il film: (i filmi / i film)",
+            "il negozio: (i negozii / i negozi)",
+            "il dito: (le dita / i diti)"
+          ],
+          "key": [
+            "<b>i parchi</b>",
+            "<b>le arance</b>",
+            "<b>le foto</b>",
+            "<b>i film</b>",
+            "<b>i negozi</b>",
+            "<b>le dita</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a",
+      "cat": "Aggettivi",
+      "title": "L'accordo dell'aggettivo",
+      "def": "L'aggettivo dice com'è una persona o una cosa (<i>alto, rosso, simpatico</i>). In italiano la maggior parte degli aggettivi cambia l'ultima vocale per «accordarsi» con il nome: diventa maschile o femminile, singolare o plurale come il nome a cui si riferisce. «Un ragazzo alt<b>o</b>», «una ragazza alt<b>a</b>», «dei ragazzi alt<b>i</b>».",
+      "form": "Gli aggettivi si dividono in gruppi secondo come finiscono al maschile singolare: quelli in <b>-o</b> hanno quattro forme, quelli in <b>-e</b> due (uguali per maschile e femminile), quelli in <b>-ista</b> tre. Alcuni non cambiano mai. Al plurale valgono le stesse regole dei nomi, anche per <i>-co</i> e <i>-go</i>: <i>bianco → bianchi</i>, <i>lungo → lunghi</i>, ma <i>simpatico → simpatici</i> (voce sulla terzultima sillaba: sim-pà-ti-co).",
+      "tables": [
+        {
+          "before": "<b>Aggettivi in -o e in -e.</b>",
+          "headers": [
+            "",
+            "Maschile",
+            "Femminile"
+          ],
+          "rows": [
+            [
+              "sing. (-o)",
+              "alto",
+              "alta"
+            ],
+            [
+              "plur.",
+              "alti",
+              "alte"
+            ],
+            [
+              "sing. (-e)",
+              "grande",
+              "grande"
+            ],
+            [
+              "plur.",
+              "grandi",
+              "grandi"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Aggettivi in -ista.</b> Una sola forma al singolare, due al plurale.",
+          "headers": [
+            "",
+            "m. sing.",
+            "f. sing.",
+            "m. plur.",
+            "f. plur."
+          ],
+          "rows": [
+            [
+              "-ista",
+              "ottimista",
+              "ottimista",
+              "ottimisti",
+              "ottimiste"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Aggettivi che non cambiano mai.</b>",
+          "plain": true,
+          "headers": [
+            "gruppo",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "alcuni colori",
+              "blu, rosa, viola, beige, lilla: una borsa blu → delle borse blu"
+            ],
+            [
+              "colori di due parole",
+              "verde scuro, azzurro chiaro: delle camicie verde scuro"
+            ],
+            [
+              "pari, dispari",
+              "i numeri pari, le pagine dispari"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Bello e buono prima del nome</b> cambiano forma come l'articolo.",
+          "plain": true,
+          "headers": [
+            "",
+            "+ consonante",
+            "+ s+cons., z…",
+            "+ vocale"
+          ],
+          "rows": [
+            [
+              "bello (m. sing.)",
+              "un bel ragazzo",
+              "un bello zaino",
+              "un bell'albero"
+            ],
+            [
+              "bello (m. plur.)",
+              "dei bei ragazzi",
+              "dei begli zaini",
+              "dei begli alberi"
+            ],
+            [
+              "buono (m. sing.)",
+              "un buon libro",
+              "un buono stipendio",
+              "un buon amico"
+            ]
+          ],
+          "after": "Al femminile sono regolari: <i>una bella ragazza, una bell'amica, delle belle ragazze; una buona pizza, una buon'amica</i>. Al plurale maschile <i>buono</i> è regolare: <i>dei buoni amici</i>."
+        }
+      ],
+      "uses": [
+        {
+          "label": "di solito l'aggettivo va dopo il nome",
+          "ex": "una macchina veloce / un film interessante / i capelli neri"
+        },
+        {
+          "label": "alcuni aggettivi molto comuni vanno spesso prima del nome: bello, buono, brutto, grande, piccolo, nuovo, vecchio",
+          "ex": "una bella giornata / un piccolo problema / un nuovo lavoro"
+        },
+        {
+          "label": "alcuni aggettivi cambiano significato se stanno prima o dopo il nome",
+          "ex": "un vecchio amico (amico da tanti anni) / un amico vecchio (anziano). Un grande uomo (importante) / un uomo grande (grosso). Un povero ragazzo (sfortunato) / un ragazzo povero (senza soldi)."
+        },
+        {
+          "label": "se l'aggettivo si riferisce a più nomi di genere diverso, va al maschile plurale",
+          "ex": "Marco e Anna sono simpatici. / La casa e il giardino sono grandi."
+        },
+        {
+          "label": "dopo essere l'aggettivo si accorda con il soggetto",
+          "ex": "Le ragazze sono stanche. / Il pane è buono. / Siamo pronti?"
+        }
+      ],
+      "warn": "<b>L'accordo si fa con il nome, non con la persona.</b> «Marco è una persona simpatic<b>a</b>»: l'aggettivo è femminile perché <i>persona</i> è femminile, anche se Marco è un uomo. Allo stesso modo «la guida è brav<b>a</b>» anche quando la guida è un uomo.",
+      "errors": [
+        {
+          "wrong": "la casa rosso",
+          "right": "la casa rossa",
+          "why": "<i>Casa</i> è femminile: l'aggettivo va al femminile."
+        },
+        {
+          "wrong": "delle borse blue",
+          "right": "delle borse blu",
+          "why": "<i>Blu</i> non cambia mai."
+        },
+        {
+          "wrong": "un buono amico",
+          "right": "un buon amico",
+          "why": "Prima del nome <i>buono</i> si comporta come l'articolo <i>un</i>: <i>un amico → un buon amico</i>."
+        },
+        {
+          "wrong": "Marco e Anna sono simpatiche.",
+          "right": "Marco e Anna sono simpatici.",
+          "why": "Con un maschile e un femminile insieme si usa il maschile plurale."
+        },
+        {
+          "wrong": "Marco è una persona simpatico.",
+          "right": "Marco è una persona simpatica.",
+          "why": "L'aggettivo si accorda con <i>persona</i>, che è femminile."
+        },
+        {
+          "wrong": "dei ragazzi simpatichi",
+          "right": "dei ragazzi simpatici",
+          "why": "Nella parola <i>simpatico</i> la voce cade sulla terzultima sillaba: il plurale è in <i>-ci</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con la forma giusta dell'aggettivo tra parentesi.",
+          "items": [
+            "Ho due gatti _____ (nero).",
+            "Questa è una canzone _____ (triste).",
+            "Le mie amiche sono molto _____ (simpatico).",
+            "Ho comprato delle scarpe _____ (blu).",
+            "I ragazzi sono _____ (stanco).",
+            "Carla e Luca sono _____ (gentile)."
+          ],
+          "key": [
+            "<b>neri</b>",
+            "<b>triste</b>",
+            "<b>simpatiche</b>",
+            "<b>blu</b>",
+            "<b>stanchi</b>",
+            "<b>gentili</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Volgi al plurale.",
+          "items": [
+            "un libro interessante",
+            "una ragazza alta",
+            "un vestito rosa",
+            "un lago lungo",
+            "un amico ottimista",
+            "una giornata fredda"
+          ],
+          "key": [
+            "<b>dei libri interessanti</b>",
+            "<b>delle ragazze alte</b>",
+            "<b>dei vestiti rosa</b>",
+            "<b>dei laghi lunghi</b>",
+            "<b>degli amici ottimisti</b>",
+            "<b>delle giornate fredde</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Scegli la forma corretta.",
+          "items": [
+            "È un (buono / buon) ristorante.",
+            "Che (bel / bello) panorama!",
+            "Ho un (bello / bel) zaino nuovo.",
+            "Anna e Paolo sono (stanche / stanchi).",
+            "Ci conosciamo da vent'anni: è un (vecchio amico / amico vecchio).",
+            "Mi piacciono le camicie (verde chiaro / verdi chiare)."
+          ],
+          "key": [
+            "<b>buon</b>",
+            "<b>bel</b>",
+            "<b>bello</b>",
+            "<b>stanchi</b>",
+            "<b>vecchio amico</b>",
+            "<b>verde chiaro</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a",
+      "cat": "Sintassi",
+      "title": "C'è / Ci sono",
+      "def": "Servono a dire che una cosa o una persona <b>esiste</b> o <b>si trova</b> in un posto: «in frigo <i>c'è</i> il latte», «in piazza <i>ci sono</i> molti turisti». Corrispondono all'inglese <i>there is / there are</i> e allo spagnolo <i>hay</i>.",
+      "form": "Sono formati da <b>ci</b> + il verbo <b>essere</b>. Davanti a <i>è</i> la <i>i</i> di <i>ci</i> cade e si mette l'apostrofo: <b>c'è</b>. Davanti a <i>sono</i> resta tutto intero: <b>ci sono</b>. Il verbo si accorda con la cosa che c'è: una cosa sola → <i>c'è</i>, più cose → <i>ci sono</i>. Per la frase negativa si mette <b>non</b> davanti: <i>non c'è</i>, <i>non ci sono</i>. La domanda ha la stessa forma, cambia solo l'intonazione: «<i>c'è</i> il latte?».",
+      "tables": [
+        {
+          "before": "<b>Negli altri tempi.</b> Anche qui il verbo si accorda con la cosa che c'è.",
+          "headers": [
+            "tempo",
+            "una cosa",
+            "più cose"
+          ],
+          "rows": [
+            [
+              "presente",
+              "c'è",
+              "ci sono"
+            ],
+            [
+              "imperfetto",
+              "c'era",
+              "c'erano"
+            ],
+            [
+              "passato prossimo",
+              "c'è stato / c'è stata",
+              "ci sono stati / ci sono state"
+            ],
+            [
+              "futuro",
+              "ci sarà",
+              "ci saranno"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "per dire che una cosa esiste o si trova in un posto",
+          "ex": "C'è un problema. / In frigo c'è il latte. / In questa città ci sono tre musei."
+        },
+        {
+          "label": "nelle domande, per chiedere se una cosa c'è",
+          "ex": "Scusi, c'è un bagno qui vicino? / Quante stanze ci sono?"
+        },
+        {
+          "label": "per chiedere o dire se una persona è presente",
+          "ex": "C'è Marco? — No, non c'è, è uscito."
+        },
+        {
+          "label": "con le parole di quantità: molto, poco, tanto, nessuno, niente",
+          "ex": "Ci sono molte persone. / C'è poco tempo. / Non c'è nessuno."
+        },
+        {
+          "label": "ecco invece serve a indicare una cosa che si vede in quel momento",
+          "ex": "Ecco il bus! (lo indico) / C'è un bus ogni dieci minuti (do un'informazione)."
+        }
+      ],
+      "warn": "<b>C'è oppure è?</b> «C'è» presenta una cosa e dice che si trova in un posto: «in piazza <i>c'è</i> un bar». «È» dice dove sta una cosa di cui già si parla: «il bar <i>è</i> in piazza». Per questo con <i>c'è</i> si trova spesso l'articolo <i>un/una</i> (cosa nuova), con <i>è</i> l'articolo <i>il/la</i> (cosa già nota).",
+      "errors": [
+        {
+          "wrong": "Ci è un problema.",
+          "right": "C'è un problema.",
+          "why": "Davanti a <i>è</i> la <i>i</i> di <i>ci</i> cade: si scrive <i>c'è</i>."
+        },
+        {
+          "wrong": "C'è molte persone.",
+          "right": "Ci sono molte persone.",
+          "why": "Il verbo si accorda con la cosa che c'è: <i>persone</i> è plurale."
+        },
+        {
+          "wrong": "Qui è un bar.",
+          "right": "Qui c'è un bar.",
+          "why": "Per dire che una cosa esiste in un posto si usa <i>c'è</i>."
+        },
+        {
+          "wrong": "C'erano un problema.",
+          "right": "C'era un problema.",
+          "why": "Anche negli altri tempi il verbo si accorda: <i>problema</i> è singolare."
+        },
+        {
+          "wrong": "C'è stato una festa.",
+          "right": "C'è stata una festa.",
+          "why": "Al passato prossimo <i>stato</i> si accorda con la cosa: <i>festa</i> è femminile."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con c'è o ci sono.",
+          "items": [
+            "In questa classe _____ dodici studenti.",
+            "Scusi, _____ un supermercato qui vicino?",
+            "Nel frigo non _____ niente.",
+            "_____ Marco? — No, è uscito.",
+            "In centro _____ molti ristoranti.",
+            "Oggi _____ il sole."
+          ],
+          "key": [
+            "<b>ci sono</b>",
+            "<b>c'è</b>",
+            "<b>c'è</b>",
+            "<b>C'è</b>",
+            "<b>ci sono</b>",
+            "<b>c'è</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Scegli la forma corretta.",
+          "items": [
+            "Il bagno (c'è / è) in fondo al corridoio.",
+            "In questa via (c'è / è) una farmacia.",
+            "(Ecco / C'è) il treno, corri!",
+            "Roma (c'è / è) in Italia.",
+            "In giardino (c'è / è) un gatto.",
+            "Guarda, (ecco / ci sono) le chiavi che cercavi!"
+          ],
+          "key": [
+            "<b>è</b>",
+            "<b>c'è</b>",
+            "<b>Ecco</b>",
+            "<b>è</b>",
+            "<b>c'è</b>",
+            "<b>ecco</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Volgi al plurale.",
+          "items": [
+            "C'è un problema.",
+            "C'è una sedia libera.",
+            "Non c'è un bar qui.",
+            "C'è un turista in piazza.",
+            "C'è un'offerta speciale.",
+            "C'è uno studente nuovo."
+          ],
+          "key": [
+            "<b>Ci sono dei problemi.</b>",
+            "<b>Ci sono delle sedie libere.</b>",
+            "<b>Non ci sono bar qui.</b>",
+            "<b>Ci sono dei turisti in piazza.</b>",
+            "<b>Ci sono delle offerte speciali.</b>",
+            "<b>Ci sono degli studenti nuovi.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a",
+      "cat": "Verbi",
+      "title": "Presente indicativo: verbi regolari",
+      "def": "Il presente si usa per quello che succede adesso, per le abitudini, per le cose sempre vere e anche per il futuro vicino. È il primo tempo che si impara: la maggior parte dei verbi segue tre modelli, secondo come finisce l'infinito (<i>-are, -ere, -ire</i>).",
+      "form": "Si toglie la parte finale dell'infinito (<i>-are, -ere, -ire</i>); a quello che resta, la <b>radice</b> (<i>parl-, prend-, dorm-</i>), si aggiunge la terminazione della persona. Le persone <b>io, tu, noi</b> hanno la stessa terminazione in tutti e tre i gruppi: <i>-o, -i, -iamo</i>. Il pronome soggetto (io, tu…) di solito non si dice, perché la terminazione indica già la persona: «parlo italiano»; si dice per sottolineare o fare un contrasto: «<i>io</i> lavoro, <i>tu</i> no». Nella persona <b>loro</b> la voce cade sulla stessa sillaba di <i>io</i>: <i>pàrlo → pàrlano</i>, <i>àbito → àbitano</i>.<ul class='sch'><li><b>-care, -gare</b>: davanti a <i>i</i> si aggiunge una <i>h</i>, per non cambiare il suono: cerco, cer<b>ch</b>i, cer<b>ch</b>iamo; pago, pa<b>gh</b>i, pa<b>gh</b>iamo</li><li><b>-ciare, -giare</b>: la <i>i</i> non si raddoppia: mangio, mang<b>i</b> (non <i>mangii</i>), mang<b>i</b>amo; comincio, cominci, cominciamo</li><li><b>-iare</b>: di solito una sola <i>i</i>: studio, stud<b>i</b>, stud<b>i</b>amo</li></ul>",
+      "tables": [
+        {
+          "caption": "parl-are",
+          "rows": [
+            [
+              "io",
+              "parlo"
+            ],
+            [
+              "tu",
+              "parli"
+            ],
+            [
+              "lui/lei",
+              "parla"
+            ],
+            [
+              "noi",
+              "parliamo"
+            ],
+            [
+              "voi",
+              "parlate"
+            ],
+            [
+              "loro",
+              "parlano"
+            ]
+          ]
+        },
+        {
+          "caption": "prend-ere",
+          "rows": [
+            [
+              "io",
+              "prendo"
+            ],
+            [
+              "tu",
+              "prendi"
+            ],
+            [
+              "lui/lei",
+              "prende"
+            ],
+            [
+              "noi",
+              "prendiamo"
+            ],
+            [
+              "voi",
+              "prendete"
+            ],
+            [
+              "loro",
+              "prendono"
+            ]
+          ]
+        },
+        {
+          "caption": "dorm-ire",
+          "rows": [
+            [
+              "io",
+              "dormo"
+            ],
+            [
+              "tu",
+              "dormi"
+            ],
+            [
+              "lui/lei",
+              "dorme"
+            ],
+            [
+              "noi",
+              "dormiamo"
+            ],
+            [
+              "voi",
+              "dormite"
+            ],
+            [
+              "loro",
+              "dormono"
+            ]
+          ]
+        },
+        {
+          "caption": "cap-ire (-isc-)",
+          "rows": [
+            [
+              "io",
+              "capisco"
+            ],
+            [
+              "tu",
+              "capisci"
+            ],
+            [
+              "lui/lei",
+              "capisce"
+            ],
+            [
+              "noi",
+              "capiamo"
+            ],
+            [
+              "voi",
+              "capite"
+            ],
+            [
+              "loro",
+              "capiscono"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "per un'azione che succede adesso",
+          "ex": "Adesso lavoro, ti chiamo dopo. / Cosa guardi?"
+        },
+        {
+          "label": "per le abitudini, spesso con sempre, ogni giorno, di solito",
+          "ex": "Ogni mattina prendo il caffè al bar. / Di solito ceno alle nove."
+        },
+        {
+          "label": "per le cose sempre vere",
+          "ex": "L'acqua bolle a 100 gradi. / Il sole sorge a est."
+        },
+        {
+          "label": "per il futuro vicino o già deciso, con una parola di tempo",
+          "ex": "Domani parto per Roma. / Stasera usciamo? (vedi Il futuro con il presente)"
+        },
+        {
+          "label": "con da + periodo o momento, per un'azione cominciata nel passato che continua ancora",
+          "ex": "Studio italiano da due anni. / Abito a Siviglia da marzo."
+        }
+      ],
+      "warn": "<b>I verbi con -isc-.</b> Alcuni verbi in <i>-ire</i> aggiungono <i>-isc-</i> tra la radice e la terminazione in quattro persone (io, tu, lui/lei, loro): <i>capisco, capisci, capisce, capiamo, capite, capiscono</i>. Dall'infinito non si riconoscono: vanno imparati. I più comuni: <i>capire, finire, preferire, pulire, spedire, costruire</i>. <i>Dormire, partire, aprire, sentire, offrire</i> seguono invece il modello di <i>dormire</i>.",
+      "errors": [
+        {
+          "wrong": "tu cerci",
+          "right": "tu cerchi",
+          "why": "Nei verbi in <i>-care</i> si aggiunge una <i>h</i>, altrimenti il suono cambia."
+        },
+        {
+          "wrong": "tu mangii",
+          "right": "tu mangi",
+          "why": "Nei verbi in <i>-ciare</i> e <i>-giare</i> la <i>i</i> non si raddoppia."
+        },
+        {
+          "wrong": "io capo",
+          "right": "io capisco",
+          "why": "<i>Capire</i> prende <i>-isc-</i>."
+        },
+        {
+          "wrong": "loro parlàno",
+          "right": "loro pàrlano",
+          "why": "In <i>loro</i> la voce cade sulla stessa sillaba di <i>io</i> (pàrlo)."
+        },
+        {
+          "wrong": "Studio italiano per due anni.",
+          "right": "Studio italiano da due anni.",
+          "why": "Per un'azione che continua ancora si usa <i>da</i>. <i>Per due anni</i> indica un periodo chiuso: «ho studiato italiano per due anni»."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con il presente del verbo tra parentesi.",
+          "items": [
+            "Io _____ (abitare) a Siviglia.",
+            "Tu _____ (prendere) un caffè?",
+            "Noi _____ (dormire) poco.",
+            "Loro _____ (capire) tutto.",
+            "Voi _____ (scrivere) molte email.",
+            "Marco _____ (finire) alle sei."
+          ],
+          "key": [
+            "<b>abito</b>",
+            "<b>prendi</b>",
+            "<b>dormiamo</b>",
+            "<b>capiscono</b>",
+            "<b>scrivete</b>",
+            "<b>finisce</b>"
+          ]
+        },
+        {
+          "type": "Completamento",
+          "instr": "Completa con il presente. Attenzione alla scrittura.",
+          "items": [
+            "Tu _____ (cercare) lavoro?",
+            "Noi _____ (pagare) con la carta.",
+            "Tu _____ (mangiare) la carne?",
+            "Tu _____ (studiare) molto.",
+            "Noi _____ (cominciare) alle nove.",
+            "Tu _____ (dimenticare) sempre le chiavi."
+          ],
+          "key": [
+            "<b>cerchi</b>",
+            "<b>paghiamo</b>",
+            "<b>mangi</b>",
+            "<b>studi</b>",
+            "<b>cominciamo</b>",
+            "<b>dimentichi</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Riscrivi la frase con il soggetto tra parentesi.",
+          "items": [
+            "Io parlo inglese. (loro)",
+            "Tu leggi il giornale. (voi)",
+            "Lei pulisce la casa. (noi)",
+            "Noi apriamo la finestra. (tu)",
+            "Voi preferite il tè. (io)",
+            "Lui spedisce un pacco. (loro)"
+          ],
+          "key": [
+            "<b>Loro parlano inglese.</b>",
+            "<b>Voi leggete il giornale.</b>",
+            "<b>Noi puliamo la casa.</b>",
+            "<b>Tu apri la finestra.</b>",
+            "<b>Io preferisco il tè.</b>",
+            "<b>Loro spediscono un pacco.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a",
+      "cat": "Sintassi",
+      "title": "La negazione",
+      "def": "Per dire che una cosa non è vera o non succede, basta mettere <b>non</b> davanti al verbo: «<i>non</i> capisco», «Marco <i>non</i> lavora». Per precisare o rafforzare la negazione si aggiungono parole come <i>mai, niente, nessuno, più</i>.",
+      "form": "<b>Non</b> va sempre <b>subito prima del verbo</b>. Se ci sono pronomi (<i>mi, ti, lo, la, ci…</i>), va prima dei pronomi: «<i>non lo</i> so», «<i>non mi</i> piace», «<i>non ci</i> vado». Nei tempi composti va prima dell'ausiliare: «<i>non ho</i> capito». <b>No</b> invece è la risposta, il contrario di <i>sì</i>: «Vieni? — <i>No</i>, <i>non</i> posso».",
+      "tables": [
+        {
+          "before": "<b>Le parole che rafforzano la negazione.</b> Si usano insieme a <i>non</i>: non + verbo + parola negativa.",
+          "plain": true,
+          "headers": [
+            "parola",
+            "significato",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "mai",
+              "in nessun momento",
+              "Non bevo mai caffè."
+            ],
+            [
+              "niente / nulla",
+              "nessuna cosa",
+              "Non ho mangiato niente."
+            ],
+            [
+              "nessuno",
+              "nessuna persona",
+              "Non conosco nessuno."
+            ],
+            [
+              "più",
+              "non più come prima",
+              "Non fumo più."
+            ],
+            [
+              "ancora",
+              "non fino a questo momento",
+              "Non ho ancora finito."
+            ],
+            [
+              "neanche / nemmeno",
+              "anche… no",
+              "Non lo so neanche io."
+            ],
+            [
+              "né… né",
+              "non questo e non quello",
+              "Non bevo né vino né birra."
+            ],
+            [
+              "per niente",
+              "assolutamente no",
+              "Non sono per niente stanco."
+            ]
+          ],
+          "after": "Nei tempi composti <i>mai, più, ancora</i> vanno di solito tra l'ausiliare e il participio: «non ho <i>mai</i> visto», «non ho <i>ancora</i> mangiato». <i>Niente</i> e <i>nessuno</i> vanno dopo il participio: «non ho visto <i>nessuno</i>»."
+        }
+      ],
+      "uses": [
+        {
+          "label": "non + verbo: la negazione semplice",
+          "ex": "Non capisco. / Oggi non lavoro."
+        },
+        {
+          "label": "non + verbo + parola negativa: le due negazioni insieme sono corrette e la frase resta negativa",
+          "ex": "Non ho visto nessuno. / Non c'è niente. / Non vado mai al cinema."
+        },
+        {
+          "label": "se nessuno, niente o mai stanno prima del verbo, non si toglie",
+          "ex": "Nessuno è venuto. / Niente è impossibile. / Mai visto una cosa così!"
+        },
+        {
+          "label": "per rispondere: no da solo, oppure no + una frase con non",
+          "ex": "Hai fame? — No. / No, non ho fame."
+        },
+        {
+          "label": "per essere d'accordo: anch'io con una frase positiva, neanch'io con una negativa",
+          "ex": "Sono stanco. — Anch'io. / Non sono stanco. — Neanch'io."
+        }
+      ],
+      "warn": "<b>La doppia negazione.</b> In italiano «non vedo nessuno» è l'unica forma corretta: le due negazioni non si annullano, come succede invece in inglese. La regola vale però solo quando la parola negativa viene <b>dopo</b> il verbo. Se viene prima, <i>non</i> sparisce: «Non è venuto nessuno» oppure «Nessuno è venuto», mai «Nessuno non è venuto».",
+      "errors": [
+        {
+          "wrong": "Io no capisco.",
+          "right": "Io non capisco.",
+          "why": "Davanti al verbo si usa <i>non</i>; <i>no</i> è solo la risposta."
+        },
+        {
+          "wrong": "Lo non so.",
+          "right": "Non lo so.",
+          "why": "<i>Non</i> va prima dei pronomi."
+        },
+        {
+          "wrong": "Ho non capito.",
+          "right": "Non ho capito.",
+          "why": "Nei tempi composti <i>non</i> va prima dell'ausiliare."
+        },
+        {
+          "wrong": "Nessuno non è venuto.",
+          "right": "Nessuno è venuto. / Non è venuto nessuno.",
+          "why": "Se <i>nessuno</i> sta prima del verbo, <i>non</i> si toglie."
+        },
+        {
+          "wrong": "Vedo nessuno.",
+          "right": "Non vedo nessuno.",
+          "why": "Se <i>nessuno</i> viene dopo il verbo, serve anche <i>non</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Rendi negativa la frase.",
+          "items": [
+            "Parlo tedesco.",
+            "Lo conosco.",
+            "Ho capito.",
+            "Mi piace il pesce.",
+            "Ci andiamo domani.",
+            "Marco lavora oggi."
+          ],
+          "key": [
+            "<b>Non parlo tedesco.</b>",
+            "<b>Non lo conosco.</b>",
+            "<b>Non ho capito.</b>",
+            "<b>Non mi piace il pesce.</b>",
+            "<b>Non ci andiamo domani.</b>",
+            "<b>Marco non lavora oggi.</b>"
+          ]
+        },
+        {
+          "type": "Completamento",
+          "instr": "Completa con mai, niente, nessuno, più, ancora o neanche.",
+          "items": [
+            "Mio fratello è timido: non parla con _____.",
+            "Il frigo è vuoto, non c'è _____.",
+            "Non vado _____ in discoteca, non mi piace.",
+            "Aspetta, il film non è _____ finito!",
+            "Non lo so io e non lo sa _____ Marco.",
+            "Grazie, non ho _____ fame: ho appena mangiato."
+          ],
+          "key": [
+            "<b>nessuno</b>",
+            "<b>niente</b>",
+            "<b>mai</b>",
+            "<b>ancora</b>",
+            "<b>neanche</b>",
+            "<b>più</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Scegli la forma corretta.",
+          "items": [
+            "(No / Non) ho tempo.",
+            "Vieni stasera? — (No / Non), sono stanco.",
+            "(Nessuno è / Nessuno non è) a casa.",
+            "(Non lo capisco / Lo non capisco).",
+            "Non ho visto (nessuno / qualcuno).",
+            "Non sono stanco. — (Anch'io / Neanch'io)."
+          ],
+          "key": [
+            "<b>Non</b>",
+            "<b>No</b>",
+            "<b>Nessuno è</b>",
+            "<b>Non lo capisco</b>",
+            "<b>nessuno</b>",
+            "<b>Neanch'io</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a",
+      "cat": "Verbi",
+      "title": "Il verbo piacere",
+      "def": "Si usa per dire che una cosa ci dà gusto, ci fa stare bene. La frase è costruita al rovescio rispetto all'inglese <i>I like</i> (come lo spagnolo <i>me gusta</i>): chi «fa» l'azione è <b>la cosa che piace</b>, mentre la persona è quella <b>a cui</b> piace. «<i>Mi piace</i> la pizza» vuol dire, alla lettera, «la pizza piace a me».",
+      "form": "Il verbo si accorda con <b>la cosa che piace</b>, non con la persona: <b>piace</b> se è una cosa sola o un verbo all'infinito, <b>piacciono</b> se sono più cose. La persona si indica con un pronome prima del verbo (<i>mi, ti, gli, le, ci, vi, gli</i>) oppure con <b>a</b> + nome o pronome: «<i>a Marco</i> piace il calcio», «<i>a me</i> piace, <i>a te</i> no». Al passato prossimo vuole <b>essere</b>, e il participio si accorda con la cosa che è piaciuta: «mi è piaciut<b>o</b> il film», «mi è piaciut<b>a</b> la pizza», «mi sono piaciut<b>i</b> i dolci».",
+      "tables": [
+        {
+          "before": "<b>Le forme.</b>",
+          "headers": [
+            "a chi",
+            "+ una cosa o un verbo",
+            "+ più cose"
+          ],
+          "rows": [
+            [
+              "a me",
+              "mi piace",
+              "mi piacciono"
+            ],
+            [
+              "a te",
+              "ti piace",
+              "ti piacciono"
+            ],
+            [
+              "a lui / a lei",
+              "gli piace / le piace",
+              "gli piacciono / le piacciono"
+            ],
+            [
+              "a noi",
+              "ci piace",
+              "ci piacciono"
+            ],
+            [
+              "a voi",
+              "vi piace",
+              "vi piacciono"
+            ],
+            [
+              "a loro",
+              "gli piace",
+              "gli piacciono"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Rispondere a una frase con piacere.</b>",
+          "plain": true,
+          "headers": [
+            "",
+            "a «Mi piace il mare.»",
+            "a «Non mi piace il mare.»"
+          ],
+          "rows": [
+            [
+              "sono d'accordo",
+              "Anche a me.",
+              "Neanche a me."
+            ],
+            [
+              "non sono d'accordo",
+              "A me no.",
+              "A me sì."
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "piace + una cosa al singolare",
+          "ex": "Mi piace la musica. / Ti piace questo ristorante?"
+        },
+        {
+          "label": "piace + un verbo all'infinito, anche più di uno",
+          "ex": "Mi piace leggere. / Ci piace viaggiare e cucinare."
+        },
+        {
+          "label": "piacciono + più cose",
+          "ex": "Mi piacciono i gatti. / Le piacciono le scarpe rosse."
+        },
+        {
+          "label": "a + nome della persona, quando non si usa il pronome",
+          "ex": "A Marco piace il calcio. / Ai bambini piacciono i dolci."
+        },
+        {
+          "label": "a me, a te, a lui… per sottolineare o fare un contrasto",
+          "ex": "A me piace il mare, a lui la montagna."
+        },
+        {
+          "label": "al passato prossimo con essere: il participio si accorda con la cosa che è piaciuta",
+          "ex": "Mi è piaciuto il film. / Ti è piaciuta Roma? / Ci sono piaciute le foto."
+        }
+      ],
+      "warn": "<b>Altri verbi costruiti nello stesso modo</b>: <i>mancare</i> («mi manchi»), <i>servire</i> («mi serve una penna»), <i>bastare</i> («mi basta poco»), <i>interessare</i> («mi interessa la storia»), <i>sembrare</i> («mi sembra giusto»), <i>dispiacere</i> («mi dispiace»). Anche con loro il verbo si accorda con la cosa: «mi serv<b>ono</b> due penne». Le forme <i>io piaccio, tu piaci</i> esistono, ma quando a piacere è una persona: «tu mi piaci» = io trovo te attraente o simpatico.",
+      "errors": [
+        {
+          "wrong": "Io piaccio la pizza.",
+          "right": "Mi piace la pizza.",
+          "why": "Chi «fa» l'azione è la cosa che piace; la persona si dice con <i>mi, ti, gli…</i>"
+        },
+        {
+          "wrong": "Mi piace i dolci.",
+          "right": "Mi piacciono i dolci.",
+          "why": "<i>Dolci</i> è plurale: <i>piacciono</i>."
+        },
+        {
+          "wrong": "Mi piacciono leggere e scrivere.",
+          "right": "Mi piace leggere e scrivere.",
+          "why": "Con i verbi all'infinito si usa sempre <i>piace</i>."
+        },
+        {
+          "wrong": "Marco piace il calcio.",
+          "right": "A Marco piace il calcio.",
+          "why": "La persona a cui piace qualcosa vuole <i>a</i> davanti."
+        },
+        {
+          "wrong": "Mi ha piaciuto il film.",
+          "right": "Mi è piaciuto il film.",
+          "why": "<i>Piacere</i> al passato vuole <i>essere</i>."
+        },
+        {
+          "wrong": "Mi è piaciuto la pizza.",
+          "right": "Mi è piaciuta la pizza.",
+          "why": "Il participio si accorda con la cosa: <i>pizza</i> è femminile."
+        },
+        {
+          "wrong": "Anche me.",
+          "right": "Anche a me.",
+          "why": "Nella risposta resta la <i>a</i>: <i>anche a me, neanche a me</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con piace o piacciono.",
+          "items": [
+            "Mi _____ la cucina italiana.",
+            "Ti _____ i film horror?",
+            "A Lucia _____ ballare.",
+            "Non ci _____ le città troppo grandi.",
+            "Gli _____ molto il tuo vestito.",
+            "Vi _____ cucinare e mangiare bene?"
+          ],
+          "key": [
+            "<b>piace</b>",
+            "<b>piacciono</b>",
+            "<b>piace</b>",
+            "<b>piacciono</b>",
+            "<b>piace</b>",
+            "<b>piace</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Riscrivi la frase usando il pronome al posto di a + persona.",
+          "items": [
+            "A Marco piace il calcio.",
+            "A Giulia piacciono i gatti.",
+            "A me piace viaggiare.",
+            "A noi piacciono le spiagge.",
+            "A voi piace il caffè?",
+            "Ai miei genitori piace la montagna."
+          ],
+          "key": [
+            "<b>Gli piace il calcio.</b>",
+            "<b>Le piacciono i gatti.</b>",
+            "<b>Mi piace viaggiare.</b>",
+            "<b>Ci piacciono le spiagge.</b>",
+            "<b>Vi piace il caffè?</b>",
+            "<b>Gli piace la montagna.</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Scegli la forma corretta.",
+          "items": [
+            "Mi piace il jazz. — Sono d'accordo: (anche a me / anche io).",
+            "Non mi piacciono i ragni. — Sono d'accordo: (neanche a me / a me sì).",
+            "Ieri ho visto un film: mi (è piaciuto / ha piaciuto) molto.",
+            "Le vacanze? Mi (sono piaciute / è piaciuto) tantissimo.",
+            "(Mi piace / Io piaccio) la pizza.",
+            "A Paolo (piace / piacciono) le moto."
+          ],
+          "key": [
+            "<b>anche a me</b>",
+            "<b>neanche a me</b>",
+            "<b>è piaciuto</b>",
+            "<b>sono piaciute</b>",
+            "<b>Mi piace</b>",
+            "<b>piacciono</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a",
+      "cat": "Verbi",
+      "title": "Modali: dovere, potere, volere",
+      "def": "<i>Dovere</i>, <i>potere</i> e <i>volere</i> si usano quasi sempre insieme a un altro verbo all'infinito e gli aggiungono un'idea: <b>dovere</b> = obbligo o necessità («devo lavorare»), <b>potere</b> = possibilità o permesso («posso venire?»), <b>volere</b> = desiderio («voglio imparare»). Sono irregolari e si usano continuamente.",
+      "form": "<b>Modale coniugato + infinito</b>, senza niente in mezzo: «devo studiare», «puoi aiutarmi?», non «devo <i>di</i> studiare». I pronomi possono stare in due posti, con lo stesso significato: prima del modale, oppure attaccati alla fine dell'infinito: «<i>lo</i> devo fare» = «devo far<i>lo</i>», «<i>mi</i> devo alzare» = «devo alzar<i>mi</i>». Mai in tutti e due i posti. Vicino ai modali c'è <b>bisogna</b> + infinito: esprime una necessità generale, che vale per tutti, e ha una sola forma: «bisogna prenotare».",
+      "tables": [
+        {
+          "caption": "dovere",
+          "rows": [
+            [
+              "io",
+              "devo"
+            ],
+            [
+              "tu",
+              "devi"
+            ],
+            [
+              "lui/lei",
+              "deve"
+            ],
+            [
+              "noi",
+              "dobbiamo"
+            ],
+            [
+              "voi",
+              "dovete"
+            ],
+            [
+              "loro",
+              "devono"
+            ]
+          ]
+        },
+        {
+          "caption": "potere",
+          "rows": [
+            [
+              "io",
+              "posso"
+            ],
+            [
+              "tu",
+              "puoi"
+            ],
+            [
+              "lui/lei",
+              "può"
+            ],
+            [
+              "noi",
+              "possiamo"
+            ],
+            [
+              "voi",
+              "potete"
+            ],
+            [
+              "loro",
+              "possono"
+            ]
+          ]
+        },
+        {
+          "caption": "volere",
+          "rows": [
+            [
+              "io",
+              "voglio"
+            ],
+            [
+              "tu",
+              "vuoi"
+            ],
+            [
+              "lui/lei",
+              "vuole"
+            ],
+            [
+              "noi",
+              "vogliamo"
+            ],
+            [
+              "voi",
+              "volete"
+            ],
+            [
+              "loro",
+              "vogliono"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "dovere: obbligo, cosa necessaria",
+          "ex": "Devo lavorare fino alle sei. / Domani dobbiamo alzarci presto."
+        },
+        {
+          "label": "dovere: consiglio forte",
+          "ex": "Devi provare questo gelato! / Devi riposare di più."
+        },
+        {
+          "label": "potere: una cosa è possibile, non ci sono ostacoli",
+          "ex": "Oggi non posso uscire, ho un esame. / Possiamo andare in treno."
+        },
+        {
+          "label": "potere: chiedere o dare un permesso, chiedere un favore",
+          "ex": "Posso entrare? / Sì, puoi entrare. / Puoi chiudere la porta, per favore?"
+        },
+        {
+          "label": "volere: desiderio, volontà",
+          "ex": "Voglio imparare l'italiano. / Vuoi venire con noi?"
+        },
+        {
+          "label": "volere + un nome, senza infinito",
+          "ex": "Voglio un gelato. / Vogliono una casa più grande."
+        },
+        {
+          "label": "bisogna + infinito: è necessario, per tutti",
+          "ex": "Per entrare bisogna avere il biglietto. / Bisogna prenotare con anticipo."
+        }
+      ],
+      "warn": "<b>Voglio o vorrei?</b> «Voglio un caffè» è corretto ma al bar suona brusco: si dice «vorrei un caffè» (vedi Condizionale di cortesia). <i>Potere</i> non si usa per una capacità imparata: «<i>so</i> nuotare», non «posso nuotare» (vedi Sapere e potere). Nei tempi composti l'ausiliare di solito è quello del verbo all'infinito: «sono dovuto partire» (<i>partire</i> vuole essere), «ho dovuto studiare» (<i>studiare</i> vuole avere).",
+      "errors": [
+        {
+          "wrong": "Devo di studiare.",
+          "right": "Devo studiare.",
+          "why": "Dopo <i>dovere, potere, volere</i> l'infinito viene subito, senza <i>di</i>."
+        },
+        {
+          "wrong": "Posso a venire?",
+          "right": "Posso venire?",
+          "why": "Anche qui nessuna parola tra il modale e l'infinito."
+        },
+        {
+          "wrong": "Lo devo farlo.",
+          "right": "Lo devo fare. / Devo farlo.",
+          "why": "Il pronome va in un posto solo."
+        },
+        {
+          "wrong": "Voglio che vado al cinema.",
+          "right": "Voglio andare al cinema.",
+          "why": "Chi vuole e chi va sono la stessa persona: si usa l'infinito."
+        },
+        {
+          "wrong": "Tu poi venire?",
+          "right": "Tu puoi venire?",
+          "why": "La forma di <i>potere</i> per <i>tu</i> è <i>puoi</i>; <i>poi</i> vuol dire «dopo»."
+        },
+        {
+          "wrong": "Io bisogno studiare.",
+          "right": "Devo studiare. / Ho bisogno di studiare.",
+          "why": "<i>Bisogna</i> ha una sola forma e non si usa con <i>io, tu…</i>; per una persona si dice <i>devo</i> o <i>ho bisogno di</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con dovere, potere o volere al presente.",
+          "items": [
+            "Domani _____ (io, dovere) lavorare.",
+            "_____ (tu, potere) aiutarmi?",
+            "I bambini _____ (volere) un gelato.",
+            "Noi _____ (dovere) partire presto.",
+            "_____ (voi, volere) venire al cinema?",
+            "Scusi, _____ (io, potere) pagare con la carta?"
+          ],
+          "key": [
+            "<b>devo</b>",
+            "<b>Puoi</b>",
+            "<b>vogliono</b>",
+            "<b>dobbiamo</b>",
+            "<b>Volete</b>",
+            "<b>posso</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Riscrivi la frase spostando il pronome nell'altra posizione.",
+          "items": [
+            "Lo devo fare.",
+            "Ti posso chiamare stasera?",
+            "Mi voglio riposare.",
+            "Devo vederla domani.",
+            "Ci dobbiamo alzare presto.",
+            "Potete aspettarmi?"
+          ],
+          "key": [
+            "<b>Devo farlo.</b>",
+            "<b>Posso chiamarti stasera?</b>",
+            "<b>Voglio riposarmi.</b>",
+            "<b>La devo vedere domani.</b>",
+            "<b>Dobbiamo alzarci presto.</b>",
+            "<b>Mi potete aspettare?</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Scegli il verbo giusto.",
+          "items": [
+            "Domani ho un esame: stasera (devo / voglio) studiare, anche se non ne ho voglia.",
+            "Scusi, (posso / devo) entrare?",
+            "È il mio compleanno: (voglio / devo) fare una festa!",
+            "Mia sorella (sa / può) parlare tre lingue: le ha studiate all'università.",
+            "Fa freddo: (puoi / devi) chiudere la finestra, per favore?",
+            "In biblioteca non (si può / si vuole) parlare ad alta voce."
+          ],
+          "key": [
+            "<b>devo</b>",
+            "<b>posso</b>",
+            "<b>voglio</b>",
+            "<b>sa</b>",
+            "<b>puoi</b>",
+            "<b>si può</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a",
+      "cat": "Preposizioni",
+      "title": "Le preposizioni semplici",
+      "def": "Le preposizioni sono parole brevi che non cambiano mai e collegano le parti della frase: dicono dove (<i>a Roma</i>), quando (<i>alle tre</i>), con chi (<i>con Marco</i>), di chi (<i>il libro di Anna</i>), da dove (<i>da Napoli</i>). Sono nove: <b>di, a, da, in, con, su, per, tra, fra</b>. Il loro uso dipende molto dall'abitudine della lingua: conviene impararle dentro espressioni intere, non da sole.",
+      "form": "Non cambiano mai forma. Quando incontrano un articolo (<i>il, la, i…</i>), <i>di, a, da, in, su</i> si uniscono con lui: <i>a + il = al</i>, <i>di + la = della</i> (vedi Le preposizioni articolate). <b>Tra</b> e <b>fra</b> hanno lo stesso significato: si sceglie quella che suona meglio («fra tre giorni», «tra fratelli»).",
+      "tables": [
+        {
+          "before": "<b>Dove si va, dove si è.</b>",
+          "plain": true,
+          "headers": [
+            "luogo",
+            "preposizione",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "città e piccole isole",
+              "a",
+              "Vado a Roma. / Abito a Siviglia. / Andiamo a Capri."
+            ],
+            [
+              "Paesi, regioni, grandi isole",
+              "in",
+              "Vado in Italia. / Vivo in Toscana. / In Sicilia fa caldo."
+            ],
+            [
+              "molti luoghi della città: negozi, uffici, quartieri",
+              "in",
+              "in farmacia, in banca, in biblioteca, in pizzeria, in ufficio, in centro"
+            ],
+            [
+              "casa, scuola, letto, teatro",
+              "a",
+              "a casa, a scuola, a letto, a teatro"
+            ],
+            [
+              "una persona (a casa sua, nel suo studio, nel suo negozio)",
+              "da",
+              "Vado da Marco. / Sono dal medico. / Vado dal parrucchiere."
+            ],
+            [
+              "espressioni fisse con l'articolo",
+              "a / in + articolo",
+              "al bar, al cinema, al mare, allo stadio; ma in montagna, in campagna"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Quando.</b>",
+          "plain": true,
+          "headers": [
+            "per dire",
+            "preposizione",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "l'ora",
+              "a",
+              "alle tre, a mezzogiorno, all'una"
+            ],
+            [
+              "il mese, la stagione, l'anno",
+              "a / in",
+              "a maggio (o in maggio), in estate, nel 2025"
+            ],
+            [
+              "quanto dura un'azione",
+              "per",
+              "Ho studiato per due ore."
+            ],
+            [
+              "da quando dura un'azione che continua ancora",
+              "da",
+              "Studio italiano da due anni. / Abito qui da marzo."
+            ],
+            [
+              "dopo quanto tempo succederà una cosa",
+              "tra / fra",
+              "Parto tra due giorni. / Finisco fra un'ora."
+            ],
+            [
+              "l'inizio e la fine",
+              "da… a…",
+              "Lavoro dalle nove alle cinque. / dal lunedì al venerdì"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Come ci si sposta.</b>",
+          "plain": true,
+          "headers": [
+            "caso",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "in + mezzo di trasporto",
+              "in treno, in macchina, in aereo, in bici, in autobus"
+            ],
+            [
+              "a + piedi, cavallo",
+              "a piedi, a cavallo"
+            ],
+            [
+              "con + articolo, se si parla di un mezzo preciso",
+              "con il treno delle otto, con la macchina di mio padre"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "di: di chi è una cosa, di che cosa è fatta, di quale città è una persona",
+          "ex": "il libro di Anna / un tavolo di legno / Sono di Napoli."
+        },
+        {
+          "label": "a: la città, la persona a cui si dà o si dice qualcosa, l'ora",
+          "ex": "Vado a Milano. / Scrivo a Maria. / Arrivo alle otto."
+        },
+        {
+          "label": "da: il posto da cui si arriva, la casa o il negozio di una persona, da quanto tempo dura un'azione",
+          "ex": "Vengo da Madrid. / Vado da Luca. / Abito qui da un anno."
+        },
+        {
+          "label": "in: Paesi, regioni, molti luoghi della città, mezzi di trasporto",
+          "ex": "Vivo in Spagna. / Lavoro in ufficio. / Vado in treno."
+        },
+        {
+          "label": "con: insieme a qualcuno, oppure lo strumento che si usa",
+          "ex": "Esco con te. / Scrivo con la penna."
+        },
+        {
+          "label": "su: sopra qualcosa, e anche l'argomento di un libro, un film, una lezione",
+          "ex": "Il gatto è sul divano. / Ho letto un libro su Roma."
+        },
+        {
+          "label": "per: la destinazione, lo scopo, quanto dura un'azione",
+          "ex": "Il treno per Firenze. / Studio per l'esame. / Ho dormito per dieci ore."
+        },
+        {
+          "label": "tra / fra: in mezzo a due cose o persone, oppure dopo un certo tempo",
+          "ex": "La farmacia è tra la banca e il bar. / Ci vediamo fra un'ora."
+        }
+      ],
+      "warn": "<b>Sono di, vengo da.</b> Per la città di origine si dice «<i>sono di</i> Roma» (è la mia città), ma «<i>vengo da</i> Roma» (arrivo da lì). Con le persone si usa sempre <b>da</b>: «vado <i>da</i> Marco», «vado <i>dal</i> dentista», mai «a Marco» o «al dentista». Con i Paesi, se c'è un aggettivo o un'altra parola, torna l'articolo: «in Italia» ma «nell'Italia del Sud».",
+      "errors": [
+        {
+          "wrong": "Vado in Roma.",
+          "right": "Vado a Roma.",
+          "why": "Con le città si usa <i>a</i>."
+        },
+        {
+          "wrong": "Vado a Italia.",
+          "right": "Vado in Italia.",
+          "why": "Con i Paesi si usa <i>in</i>."
+        },
+        {
+          "wrong": "Vado al medico.",
+          "right": "Vado dal medico.",
+          "why": "Quando si va da una persona si usa <i>da</i>."
+        },
+        {
+          "wrong": "Vado in piedi.",
+          "right": "Vado a piedi.",
+          "why": "Si dice <i>a piedi</i>; <i>in</i> si usa con i mezzi (<i>in treno, in macchina</i>)."
+        },
+        {
+          "wrong": "Sono da Roma.",
+          "right": "Sono di Roma.",
+          "why": "Per la città di origine si dice <i>essere di</i>."
+        },
+        {
+          "wrong": "Parto in due giorni.",
+          "right": "Parto tra due giorni.",
+          "why": "Per dire «dopo un certo tempo» nel futuro si usa <i>tra</i> o <i>fra</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con di, a, da, in, con, per o tra/fra.",
+          "items": [
+            "Abito _____ Siviglia, ma sono _____ Napoli.",
+            "Domani vado _____ Spagna.",
+            "Stasera ceno _____ i miei amici.",
+            "Questo è il treno _____ Bologna?",
+            "Lavoro _____ ufficio tutta la settimana.",
+            "Ci vediamo _____ dieci minuti."
+          ],
+          "key": [
+            "<b>a</b>, <b>di</b>",
+            "<b>in</b>",
+            "<b>con</b>",
+            "<b>per</b>",
+            "<b>in</b>",
+            "<b>tra</b> / <b>fra</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Scegli la preposizione corretta.",
+          "items": [
+            "Stasera vado (a / da) Marco.",
+            "Vado al lavoro (a / in) piedi.",
+            "Quest'estate andiamo (a / in) Sardegna.",
+            "Domani mattina devo andare (in / a) banca.",
+            "Questa borsa è (di / da) pelle.",
+            "Il treno arriva (da / di) Milano."
+          ],
+          "key": [
+            "<b>da</b>",
+            "<b>a</b>",
+            "<b>in</b>",
+            "<b>in</b>",
+            "<b>di</b>",
+            "<b>da</b>"
+          ]
+        },
+        {
+          "type": "Completamento",
+          "instr": "Completa con a, da, per, tra/fra o in.",
+          "items": [
+            "La lezione comincia _____ mezzogiorno.",
+            "Abito in Italia _____ tre anni.",
+            "Ho aspettato l'autobus _____ mezz'ora.",
+            "Il film comincia _____ cinque minuti.",
+            "_____ estate fa molto caldo.",
+            "Sono nato _____ maggio."
+          ],
+          "key": [
+            "<b>a</b>",
+            "<b>da</b>",
+            "<b>per</b>",
+            "<b>tra</b> / <b>fra</b>",
+            "<b>In</b>",
+            "<b>a</b> (anche <b>in</b>)"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a",
+      "cat": "Aggettivi",
+      "title": "Gli aggettivi possessivi",
+      "def": "I possessivi dicono a chi appartiene una cosa: «il <i>mio</i> libro» = il libro che è di me. In italiano hanno due particolarità: si accordano con <b>la cosa posseduta</b>, non con chi la possiede, e di solito vogliono <b>l'articolo</b> davanti: «<i>il</i> mio libro», «<i>la</i> tua casa».",
+      "form": "Struttura normale: <b>articolo + possessivo + nome</b>: «<i>il mio</i> libro», «<i>le mie</i> chiavi». Il possessivo prende genere e numero della cosa: «la mia macchin<b>a</b>», «i miei libr<b>i</b>». Solo <b>loro</b> non cambia mai.",
+      "tables": [
+        {
+          "before": "<b>Le forme.</b>",
+          "headers": [
+            "M sing.",
+            "F sing.",
+            "M plur.",
+            "F plur."
+          ],
+          "rows": [
+            [
+              "mio",
+              "mia",
+              "miei",
+              "mie"
+            ],
+            [
+              "tuo",
+              "tua",
+              "tuoi",
+              "tue"
+            ],
+            [
+              "suo",
+              "sua",
+              "suoi",
+              "sue"
+            ],
+            [
+              "nostro",
+              "nostra",
+              "nostri",
+              "nostre"
+            ],
+            [
+              "vostro",
+              "vostra",
+              "vostri",
+              "vostre"
+            ],
+            [
+              "loro",
+              "loro",
+              "loro",
+              "loro"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Con i nomi di famiglia</b> l'articolo a volte non c'è.",
+          "plain": true,
+          "headers": [
+            "caso",
+            "articolo",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "familiare al singolare, senza altre parole",
+              "no",
+              "mia madre, tuo padre, sua sorella, nostro zio"
+            ],
+            [
+              "familiare al plurale",
+              "sì",
+              "i miei fratelli, le tue cugine"
+            ],
+            [
+              "mamma, papà, nonno, nonna",
+              "di solito sì",
+              "la mia mamma, il tuo papà"
+            ],
+            [
+              "familiare con un aggettivo, o con forme come -ino, -etto",
+              "sì",
+              "la mia cara zia, il mio fratellino, la mia sorella maggiore"
+            ],
+            [
+              "con loro",
+              "sempre sì",
+              "la loro madre, il loro figlio"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "con l'articolo: è il caso normale",
+          "ex": "la tua idea / i nostri amici / il suo lavoro"
+        },
+        {
+          "label": "senza articolo con i familiari al singolare",
+          "ex": "mia madre / tuo fratello / sua zia"
+        },
+        {
+          "label": "senza il nome, al posto di una cosa già nominata",
+          "ex": "Questa è la mia penna, dov'è la tua? / Di chi è questo zaino? — È mio."
+        },
+        {
+          "label": "dopo il nome, in alcune espressioni fisse",
+          "ex": "a casa mia / è colpa mia / mamma mia!"
+        },
+        {
+          "label": "con il Lei di cortesia si usa suo, spesso con la maiuscola",
+          "ex": "Signora, è Sua questa borsa? / Mi lascia il Suo numero?"
+        }
+      ],
+      "warn": "<b>Suo e sua.</b> Si sceglie guardando la cosa, non la persona che la possiede. «Marco e la <i>sua</i> macchina»: <i>sua</i> è femminile perché <i>macchina</i> è femminile, anche se Marco è un uomo. «Anna e il <i>suo</i> libro»: <i>suo</i> è maschile per <i>libro</i>. Per questo «la sua casa» può voler dire sia «di lui» sia «di lei»: lo chiarisce il contesto, oppure si dice «la casa di Marco».",
+      "errors": [
+        {
+          "wrong": "il mio madre",
+          "right": "mia madre",
+          "why": "<i>Madre</i> è femminile (<i>mia</i>), e con un familiare al singolare l'articolo non si mette."
+        },
+        {
+          "wrong": "la mia sorella",
+          "right": "mia sorella",
+          "why": "Familiare al singolare senza altre parole: niente articolo."
+        },
+        {
+          "wrong": "mia sorelle",
+          "right": "le mie sorelle",
+          "why": "Al plurale il possessivo si accorda e l'articolo torna."
+        },
+        {
+          "wrong": "Anna e sua libro",
+          "right": "Anna e il suo libro",
+          "why": "Il possessivo si accorda con <i>libro</i>, non con Anna."
+        },
+        {
+          "wrong": "loro madre",
+          "right": "la loro madre",
+          "why": "Con <i>loro</i> l'articolo c'è sempre."
+        },
+        {
+          "wrong": "i mii amici",
+          "right": "i miei amici",
+          "why": "Il plurale di <i>mio</i> è <i>miei</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con il possessivo e, se serve, con l'articolo.",
+          "items": [
+            "(io) _____ macchina è nuova.",
+            "(tu) Come si chiama _____ fratello?",
+            "(noi) _____ amici arrivano domani.",
+            "(lei) _____ figli studiano a Milano.",
+            "(loro) _____ madre è medico.",
+            "(voi) Dov'è _____ casa?"
+          ],
+          "key": [
+            "<b>La mia</b>",
+            "<b>tuo</b>",
+            "<b>I nostri</b>",
+            "<b>I suoi</b>",
+            "<b>La loro</b>",
+            "<b>la vostra</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Scegli la forma corretta.",
+          "items": [
+            "(Mia / La mia) madre è insegnante.",
+            "(Mio / Il mio) fratellino ha cinque anni.",
+            "Marco è uscito con (sua / suo) moglie.",
+            "Anna ha perso (il suo / la sua) portafoglio.",
+            "(I miei / Miei) genitori vivono a Napoli.",
+            "Vieni a cena a casa (mia / la mia)?"
+          ],
+          "key": [
+            "<b>Mia</b>",
+            "<b>Il mio</b>",
+            "<b>sua</b>",
+            "<b>il suo</b>",
+            "<b>I miei</b>",
+            "<b>mia</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Volgi al plurale.",
+          "items": [
+            "il mio libro",
+            "la tua amica",
+            "mio cugino",
+            "il suo progetto",
+            "la loro casa",
+            "tua zia"
+          ],
+          "key": [
+            "<b>i miei libri</b>",
+            "<b>le tue amiche</b>",
+            "<b>i miei cugini</b>",
+            "<b>i suoi progetti</b>",
+            "<b>le loro case</b>",
+            "<b>le tue zie</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a",
+      "cat": "Sintassi",
+      "title": "L'ora",
+      "def": "Per chiedere e dire l'ora si usa il verbo <b>essere</b> con l'articolo femminile, perché si sottintende la parola <i>ora</i>: «sono le (ore) tre». Il verbo è singolare o plurale secondo l'ora.",
+      "form": "<b>È</b> + <i>l'una</i>, <i>mezzogiorno</i>, <i>mezzanotte</i>, che sono singolari. <b>Sono le</b> + tutte le altre ore: «sono le due», «sono le dieci». I minuti si aggiungono con <b>e</b> fino alla mezz'ora, e dopo si possono togliere dall'ora successiva con <b>meno</b>: «sono le nove e venti», «sono le dieci meno un quarto» (= 9:45). Per chiedere si dice «<i>Che ora è?</i>» oppure «<i>Che ore sono?</i>»: sono corrette tutte e due.",
+      "tables": [
+        {
+          "before": "<b>Come si leggono gli orari.</b>",
+          "plain": true,
+          "headers": [
+            "orario",
+            "si dice"
+          ],
+          "rows": [
+            [
+              "3:00",
+              "sono le tre (in punto)"
+            ],
+            [
+              "3:15",
+              "sono le tre e un quarto / le tre e quindici"
+            ],
+            [
+              "3:30",
+              "sono le tre e mezza / le tre e mezzo / le tre e trenta"
+            ],
+            [
+              "3:40",
+              "sono le tre e quaranta / le quattro meno venti"
+            ],
+            [
+              "3:45",
+              "sono le quattro meno un quarto / le tre e quarantacinque"
+            ],
+            [
+              "12:55",
+              "è l'una meno cinque / è mezzogiorno e cinquantacinque"
+            ],
+            [
+              "13:00",
+              "è l'una (nel parlato) / sono le tredici (negli orari ufficiali)"
+            ]
+          ],
+          "after": "Nel parlato si usano le ore da 1 a 12, aggiungendo se serve <i>di mattina, di pomeriggio, di sera, di notte</i>: «alle otto di sera». Negli orari ufficiali (treni, negozi, appuntamenti di lavoro) si usano le 24 ore: «il treno parte alle 20:15», cioè «alle venti e quindici»."
+        }
+      ],
+      "uses": [
+        {
+          "label": "per chiedere e dire che ore sono adesso",
+          "ex": "Che ore sono? — Sono le cinque. / È l'una e dieci."
+        },
+        {
+          "label": "per dire a che ora succede una cosa: a + articolo (alle, all')",
+          "ex": "A che ora comincia il film? — Alle nove. / Ci vediamo all'una."
+        },
+        {
+          "label": "con mezzogiorno e mezzanotte non c'è articolo",
+          "ex": "Pranzo a mezzogiorno. / Il locale chiude a mezzanotte."
+        },
+        {
+          "label": "per un orario approssimativo: verso, circa",
+          "ex": "Arrivo verso le otto. / Sono circa le tre."
+        },
+        {
+          "label": "da… a… per un orario di apertura o di lavoro",
+          "ex": "Lavoro dalle nove alle cinque. / Il museo è aperto dalle dieci alle diciotto."
+        }
+      ],
+      "warn": "<b>È l'una, sono le due.</b> L'una è l'unica ora al singolare, insieme a mezzogiorno e mezzanotte: «è l'una», «all'una». Tutte le altre sono al plurale, anche con pochi minuti: «sono le due e cinque». <i>Mezza</i> e <i>mezzo</i> sono corretti tutti e due: «le tre e mezza» o «le tre e mezzo».",
+      "errors": [
+        {
+          "wrong": "Sono la una.",
+          "right": "È l'una.",
+          "why": "L'una è singolare: <i>è l'una</i>."
+        },
+        {
+          "wrong": "È le tre.",
+          "right": "Sono le tre.",
+          "why": "Tutte le ore tranne l'una vogliono il plurale."
+        },
+        {
+          "wrong": "Sono tre.",
+          "right": "Sono le tre.",
+          "why": "L'articolo è obbligatorio."
+        },
+        {
+          "wrong": "A le tre.",
+          "right": "Alle tre.",
+          "why": "<i>A</i> + <i>le</i> si uniscono: <i>alle</i>."
+        },
+        {
+          "wrong": "Alle una.",
+          "right": "All'una.",
+          "why": "Davanti a <i>una</i> si dice <i>all'una</i>, con l'apostrofo."
+        },
+        {
+          "wrong": "Alle mezzogiorno.",
+          "right": "A mezzogiorno.",
+          "why": "<i>Mezzogiorno</i> e <i>mezzanotte</i> non vogliono l'articolo."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Scrivi l'ora in lettere.",
+          "items": [
+            "8:00",
+            "1:10",
+            "12:00 (di giorno)",
+            "6:30",
+            "9:45",
+            "4:20"
+          ],
+          "key": [
+            "<b>Sono le otto.</b>",
+            "<b>È l'una e dieci.</b>",
+            "<b>È mezzogiorno.</b>",
+            "<b>Sono le sei e mezza</b> (o <b>e mezzo</b>, <b>e trenta</b>).",
+            "<b>Sono le dieci meno un quarto</b> (o <b>le nove e quarantacinque</b>).",
+            "<b>Sono le quattro e venti.</b>"
+          ]
+        },
+        {
+          "type": "Completamento",
+          "instr": "Completa con a, alle o all'.",
+          "items": [
+            "Il treno parte _____ sette.",
+            "Pranziamo _____ mezzogiorno.",
+            "Ci vediamo _____ una.",
+            "La banca apre _____ otto e mezza.",
+            "Torno a casa _____ mezzanotte.",
+            "La lezione finisce _____ undici."
+          ],
+          "key": [
+            "<b>alle</b>",
+            "<b>a</b>",
+            "<b>all'</b>",
+            "<b>alle</b>",
+            "<b>a</b>",
+            "<b>alle</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Scegli la forma corretta.",
+          "items": [
+            "(Che ora è? / Che ora sono?)",
+            "(È / Sono) le due e un quarto.",
+            "(È / Sono) l'una meno cinque.",
+            "Il film comincia (alle / le) nove.",
+            "Arrivo (verso le / verso) otto.",
+            "Il negozio apre alle 15:00, cioè (alle tre di pomeriggio / alle tre di mattina)."
+          ],
+          "key": [
+            "<b>Che ora è?</b>",
+            "<b>Sono</b>",
+            "<b>È</b>",
+            "<b>alle</b>",
+            "<b>verso le</b>",
+            "<b>alle tre di pomeriggio</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a",
+      "cat": "Ortografia",
+      "title": "Gli accenti: tonico e grafico",
+      "def": "Con la parola «accento» si indicano due cose diverse. L'<b>accento tonico</b> è la sillaba su cui cade la voce: ogni parola ne ha uno, ma quasi mai si scrive. L'<b>accento grafico</b> è il segno sulla vocale, e si mette solo in casi precisi. Confonderli è all'origine della maggior parte degli errori.",
+      "form": "<b>Dove cade la voce.</b><ul class='sch'><li><b>tronche</b> — sull'ultima sillaba: <b>città</b>, <b>caffè</b>, <b>perché</b>, <b>andrò</b></li><li><b>piane</b> — sulla penultima, ed è la maggioranza delle parole italiane: <b>casa</b>, <b>amico</b>, <b>parlare</b></li><li><b>sdrucciole</b> — sulla terzultima: <b>tavolo</b>, <b>medico</b>, <b>abitano</b></li></ul>",
+      "tables": [
+        {
+          "before": "<b>Quando si scrive l'accento.</b> Il segno grafico non segnala tutte le sillabe toniche, ma solo i casi elencati qui: fuori da questi non si mette.",
+          "plain": true,
+          "headers": [
+            "caso",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "parole tronche di due o più sillabe",
+              "città, perché, caffè, andrò, però"
+            ],
+            [
+              "monosillabi formati da due vocali",
+              "già, giù, può, ciò, più"
+            ],
+            [
+              "monosillabi che si scrivono come un'altra parola con significato diverso (un <i>omografo</i>)",
+              "è/e, dà/da, là/la, lì/li, né/ne, sé/se, sì/si, tè/te"
+            ],
+            [
+              "<b>non</b> si scrive",
+              "qui, qua, fa, sta, va, do, so, no, tre, su"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Acuto o grave.</b> Il verso del segno dipende dal suono della vocale, non dalla parola: chiuso l'acuto, aperto il grave. Su a, i e u la questione non si pone.",
+          "plain": true,
+          "headers": [
+            "segno",
+            "quando",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "acuto  é",
+              "suono chiuso",
+              "perché, poiché, affinché, né, sé, ventitré"
+            ],
+            [
+              "grave  è",
+              "suono aperto",
+              "è, caffè, cioè, tè"
+            ],
+            [
+              "grave  à ì ù",
+              "sempre, su a, i, u",
+              "città, così, più"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "l'accento grafico distingue parole che altrimenti si scriverebbero uguali",
+          "ex": "È stanco (verbo essere) / e stanco («and»). Dà il libro (verbo dare) / da Roma (preposizione)."
+        },
+        {
+          "label": "le parole tronche di due o più sillabe lo vogliono sempre, anche nei verbi",
+          "ex": "Domani andrò a Milano. / Parlerà lui."
+        },
+        {
+          "label": "i monosillabi con una sola vocale non lo prendono",
+          "ex": "Qui si sta bene. / Fa freddo. / Ho tre fratelli — ma ventitré."
+        }
+      ],
+      "warn": "L'accento tonico non si scrive, e in alcune parole la sua posizione <b>cambia il significato</b>: <b>àncora</b> è l'oggetto della nave, <b>ancóra</b> vuol dire di nuovo; <b>prìncipi</b> sono i figli del re, <b>princìpi</b> sono i valori; <b>capitàno</b> è il grado militare, <b>càpitano</b> è il verbo (<i>queste cose càpitano</i>); <b>sùbito</b> vuol dire immediatamente, <b>subìto</b> è il participio di subire. Nella scrittura corrente questi accenti non si mettono e decide il contesto. Un caso frequente: <b>sé</b> vuole l'accento, ma davanti a «stesso» e «medesimo» la tradizione lo toglie — «se stesso»; oggi entrambe le grafie sono accettate.",
+      "errors": [
+        {
+          "wrong": "perchè",
+          "right": "perché",
+          "why": "La <i>e</i> di <i>perché</i> è chiusa: accento acuto. Lo stesso per <i>poiché, affinché, né, ventitré</i>."
+        },
+        {
+          "wrong": "pò",
+          "right": "po'",
+          "why": "<i>Po'</i> è <i>poco</i> accorciato: si scrive con l'apostrofo, non con l'accento."
+        },
+        {
+          "wrong": "qual'è",
+          "right": "qual è",
+          "why": "<i>Qual</i> esiste anche come parola intera, quindi niente apostrofo."
+        },
+        {
+          "wrong": "sò, stà, fà, quì",
+          "right": "so, sta, fa, qui",
+          "why": "Monosillabi con una sola vocale che non si confondono con un'altra parola: niente accento."
+        },
+        {
+          "wrong": "Si, ho capito.",
+          "right": "Sì, ho capito.",
+          "why": "<i>Sì</i> come risposta vuole l'accento; <i>si</i> senza accento è il pronome (<i>si chiama</i>)."
+        },
+        {
+          "wrong": "Da il libro a Marco.",
+          "right": "Dà il libro a Marco.",
+          "why": "<i>Dà</i> è il verbo dare; <i>da</i> senza accento è la preposizione (<i>da Roma</i>)."
+        },
+        {
+          "wrong": "E' vero.",
+          "right": "È vero.",
+          "why": "Anche con la maiuscola si scrive l'accento: <i>È</i>, non <i>E'</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Scelta",
+          "instr": "Accento sì o no? Scegli la forma corretta.",
+          "items": [
+            "(Si / Sì), vengo anch'io.",
+            "Marco (si / sì) alza alle sette.",
+            "Non lo so (ne / né) io (ne / né) lei.",
+            "Mi (da / dà) una mano?",
+            "Vengo (da / dà) Roma.",
+            "Il libro è (la / là), sul tavolo."
+          ],
+          "key": [
+            "<b>Sì</b>",
+            "<b>si</b>",
+            "<b>né</b>, <b>né</b>",
+            "<b>dà</b>",
+            "<b>da</b>",
+            "<b>là</b>"
+          ]
+        },
+        {
+          "type": "Completamento",
+          "instr": "Scrivi l'accento solo dove serve.",
+          "items": [
+            "perche",
+            "citta",
+            "qui",
+            "piu",
+            "tre",
+            "ventitre"
+          ],
+          "key": [
+            "<b>perché</b>",
+            "<b>città</b>",
+            "<b>qui</b> (nessun accento)",
+            "<b>più</b>",
+            "<b>tre</b> (nessun accento)",
+            "<b>ventitré</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Accento acuto o grave? Scegli la forma corretta.",
+          "items": [
+            "perch_ (é / è)",
+            "caff_ (é / è)",
+            "n_ io n_ te (é / è)",
+            "_ vero (É / È)",
+            "poich_ (é / è)",
+            "t_ (é / è)"
+          ],
+          "key": [
+            "<b>perché</b>",
+            "<b>caffè</b>",
+            "<b>né</b> io <b>né</b> te",
+            "<b>È</b> vero",
+            "<b>poiché</b>",
+            "<b>tè</b>"
+          ]
+        }
+      ]
+    }
+  ]
+}

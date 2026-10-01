@@ -1,0 +1,2619 @@
+{
+  "versione": "1.4",
+  "livello": "A2",
+  "schede": [
+    {
+      "lvl": "a2",
+      "cat": "Pragmatica",
+      "title": "Tu e Lei: formale e informale",
+      "def": "L'italiano ha due modi di rivolgersi a una persona: il <b>tu</b>, informale, con amici, familiari, colleghi con cui si ha confidenza e bambini; e il <b>Lei</b>, formale, con chi non si conosce o in situazioni ufficiali. Scegliere il registro giusto conta quanto usare la forma giusta: dare del tu a uno sconosciuto in un negozio o in un ufficio può sembrare maleducato.",
+      "form": "<b>Tu</b> usa la 2ª persona singolare: «<i>tu sei, hai, vieni</i>». <b>Lei</b> usa la 3ª persona singolare, la stessa di <i>lui/lei</i>, sia con un uomo sia con una donna: «<i>Lei è, ha, viene</i>». Nello scritto formale si usa spesso la maiuscola (<i>Lei, La, Le, Suo</i>) per distinguerlo da <i>lei</i> = «she». Con il Lei non cambia solo il verbo: anche pronomi e possessivi passano alla 3ª persona.",
+      "tables": [
+        {
+          "before": "<b>Tu e Lei a confronto.</b>",
+          "plain": true,
+          "headers": [
+            "",
+            "tu",
+            "Lei"
+          ],
+          "rows": [
+            [
+              "verbo",
+              "Come stai? / Di dove sei?",
+              "Come sta? / Di dov'è?"
+            ],
+            [
+              "pronome (chi?)",
+              "Ti chiamo domani.",
+              "La chiamo domani."
+            ],
+            [
+              "pronome (a chi?)",
+              "Ti scrivo una mail.",
+              "Le scrivo una mail."
+            ],
+            [
+              "verbi riflessivi",
+              "Come ti chiami?",
+              "Come si chiama?"
+            ],
+            [
+              "possessivo",
+              "È la tua borsa?",
+              "È la Sua borsa?"
+            ],
+            [
+              "imperativo",
+              "Entra! Siediti!",
+              "Entri! Si sieda! (vedi L'imperativo)"
+            ],
+            [
+              "saluti",
+              "Ciao! / Ci vediamo!",
+              "Buongiorno! / Buonasera! / Arrivederci!"
+            ],
+            [
+              "ringraziare",
+              "Grazie a te!",
+              "Grazie a Lei!"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "tu con amici, familiari, coetanei e bambini; tra giovani anche alla prima conoscenza",
+          "ex": "Ciao, come ti chiami? / Tu cosa fai stasera?"
+        },
+        {
+          "label": "Lei con adulti sconosciuti, nei negozi e negli uffici, con clienti, persone più anziane e superiori",
+          "ex": "Buongiorno, signora, come sta? / Mi scusi, sa dov'è la stazione?"
+        },
+        {
+          "label": "con il Lei si usano signore, signora, dottore, professore + cognome; davanti al cognome signore diventa signor",
+          "ex": "Buongiorno, signor Rossi. / Dottoressa Bianchi, Le presento mio figlio."
+        },
+        {
+          "label": "voi è il plurale di tutti e due: si usa con un gruppo, anche in situazioni formali",
+          "ex": "Ragazzi, voi cosa prendete? / Signori, accomodatevi."
+        },
+        {
+          "label": "per proporre di passare al tu",
+          "ex": "Possiamo darci del tu? / Dammi pure del tu."
+        }
+      ],
+      "warn": "<b>Chi propone il tu?</b> Di solito la persona più anziana o con un ruolo più alto: è lei a dire «diamoci del tu». Nel lavoro, al primo contatto, conviene partire dal Lei. Con il Lei aggettivi e participi si accordano con la persona reale: a un uomo «Lei è stanc<b>o</b>?», a una donna «Lei è stanc<b>a</b>?». Per un gruppo esiste anche il <i>Loro</i> di cortesia («Loro desiderano?»), ma oggi è rarissimo: si usa <i>voi</i>.",
+      "errors": [
+        {
+          "wrong": "Lei sei italiano?",
+          "right": "Lei è italiano?",
+          "why": "Il Lei vuole il verbo alla 3ª persona."
+        },
+        {
+          "wrong": "Come stai, signora?",
+          "right": "Come sta, signora?",
+          "why": "<i>Signora</i> indica un registro formale: si usa il Lei."
+        },
+        {
+          "wrong": "Ciao, signor Rossi!",
+          "right": "Buongiorno, signor Rossi!",
+          "why": "<i>Ciao</i> è informale; con il Lei si usano <i>buongiorno, buonasera, arrivederci</i>."
+        },
+        {
+          "wrong": "Signora, ti ringrazio.",
+          "right": "Signora, La ringrazio.",
+          "why": "Anche i pronomi passano alla forma di cortesia: <i>La, Le</i>."
+        },
+        {
+          "wrong": "Lei è stanca? (a un uomo)",
+          "right": "Lei è stanco?",
+          "why": "L'aggettivo si accorda con la persona a cui si parla."
+        },
+        {
+          "wrong": "Buongiorno, signore Rossi.",
+          "right": "Buongiorno, signor Rossi.",
+          "why": "Davanti al cognome <i>signore</i> perde la <i>-e</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Trasforma la frase dal tu al Lei.",
+          "items": [
+            "Come ti chiami?",
+            "Di dove sei?",
+            "Ti posso aiutare?",
+            "Hai bisogno di qualcosa?",
+            "Ti piace questo vino?",
+            "È la tua giacca?"
+          ],
+          "key": [
+            "<b>Come si chiama?</b>",
+            "<b>Di dov'è?</b>",
+            "<b>La posso aiutare?</b> (o <b>Posso aiutarLa?</b>)",
+            "<b>Ha bisogno di qualcosa?</b>",
+            "<b>Le piace questo vino?</b>",
+            "<b>È la Sua giacca?</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Trasforma la frase dal Lei al tu.",
+          "items": [
+            "Dove abita?",
+            "Le scrivo domani.",
+            "Si accomodi pure.",
+            "La chiamo stasera.",
+            "Che lavoro fa?",
+            "Grazie a Lei!"
+          ],
+          "key": [
+            "<b>Dove abiti?</b>",
+            "<b>Ti scrivo domani.</b>",
+            "<b>Accomodati pure.</b>",
+            "<b>Ti chiamo stasera.</b>",
+            "<b>Che lavoro fai?</b>",
+            "<b>Grazie a te!</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Tu o Lei? Scegli la forma adatta alla situazione.",
+          "items": [
+            "Al bar, a un amico: (Cosa prendi? / Cosa prende?)",
+            "In banca, all'impiegato: (Scusi / Scusa), posso fare una domanda?",
+            "Al telefono con un cliente: (Ciao / Buongiorno), sono Marco Bianchi.",
+            "A un bambino: (Come ti chiami? / Come si chiama?)",
+            "A una signora anziana per strada: (Ha bisogno / Hai bisogno) di aiuto?",
+            "Al professore, alla fine della lezione: (Arrivederci / Ciao), professore!"
+          ],
+          "key": [
+            "<b>Cosa prendi?</b>",
+            "<b>Scusi</b>",
+            "<b>Buongiorno</b>",
+            "<b>Come ti chiami?</b>",
+            "<b>Ha bisogno</b>",
+            "<b>Arrivederci</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a2",
+      "cat": "Preposizioni",
+      "title": "Le preposizioni articolate",
+      "def": "Quando una preposizione (<i>di, a, da, in, su</i>) è seguita da un articolo determinativo, le due parole si uniscono in una sola: <i>a + il = al</i>, <i>di + la = della</i>, <i>in + i = nei</i>. Non è una scelta di stile: la forma unita è obbligatoria.",
+      "form": "Si sceglie prima l'articolo giusto (<i>il, lo, l', la, i, gli, le</i>) e poi lo si unisce alla preposizione, con due piccoli cambi: <b>in</b> diventa <b>ne-</b> (<i>nel, nella</i>) e <b>di</b> diventa <b>de-</b> (<i>del, della</i>). Con <i>lo, la, le, l'</i> la <i>l</i> si raddoppia: <i>allo, della, nelle, sull'</i>. <b>Con</b> e <b>per</b> restano separate: <i>con il, per la</i>. Le forme unite <i>col</i> e <i>coi</i> esistono ancora, ma sono rare.",
+      "tables": [
+        {
+          "before": "<b>Le forme.</b>",
+          "headers": [
+            "",
+            "il",
+            "lo",
+            "l'",
+            "la",
+            "i",
+            "gli",
+            "le"
+          ],
+          "rows": [
+            [
+              "di",
+              "del",
+              "dello",
+              "dell'",
+              "della",
+              "dei",
+              "degli",
+              "delle"
+            ],
+            [
+              "a",
+              "al",
+              "allo",
+              "all'",
+              "alla",
+              "ai",
+              "agli",
+              "alle"
+            ],
+            [
+              "da",
+              "dal",
+              "dallo",
+              "dall'",
+              "dalla",
+              "dai",
+              "dagli",
+              "dalle"
+            ],
+            [
+              "in",
+              "nel",
+              "nello",
+              "nell'",
+              "nella",
+              "nei",
+              "negli",
+              "nelle"
+            ],
+            [
+              "su",
+              "sul",
+              "sullo",
+              "sull'",
+              "sulla",
+              "sui",
+              "sugli",
+              "sulle"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Semplice o articolata?</b> Si usa la preposizione articolata quando il nome vuole l'articolo. Alcuni luoghi molto comuni, però, si usano senza.",
+          "plain": true,
+          "headers": [
+            "senza articolo",
+            "con articolo"
+          ],
+          "rows": [
+            [
+              "in Italia, in Spagna",
+              "nell'Italia del Nord, negli Stati Uniti"
+            ],
+            [
+              "a casa, a scuola, a letto, a teatro",
+              "al cinema, al mare, alla stazione, all'università"
+            ],
+            [
+              "in ufficio, in banca, in cucina, in centro",
+              "nell'ufficio di Marco, nella cucina nuova"
+            ],
+            [
+              "in macchina, in treno, in aereo",
+              "nella macchina di Marco, nel treno delle otto"
+            ]
+          ],
+          "after": "Regola pratica: se il nome è accompagnato da altre parole che lo precisano, l'articolo torna. «In macchina» ma «nella macchina di Marco»."
+        }
+      ],
+      "uses": [
+        {
+          "label": "di + articolo: di chi è una cosa, di che cosa si parla",
+          "ex": "il colore del mare / la casa dei miei genitori / Parliamo del viaggio."
+        },
+        {
+          "label": "a + articolo: dove si va, a che ora, a chi",
+          "ex": "Vado alla stazione. / Ci vediamo alle cinque. / Do il libro al professore."
+        },
+        {
+          "label": "da + articolo: da dove si esce o si viene, da chi si va",
+          "ex": "Esco dall'ufficio alle sei. / Vado dal dentista."
+        },
+        {
+          "label": "in + articolo: dentro un posto preciso",
+          "ex": "Le chiavi sono nella borsa. / Lavoro nel centro di Roma."
+        },
+        {
+          "label": "su + articolo: sopra una cosa, oppure l'argomento",
+          "ex": "Il libro è sul tavolo. / un documentario sugli animali"
+        },
+        {
+          "label": "di + articolo anche per dire «un po' di» o «alcuni»",
+          "ex": "Vorrei del pane. / Ho comprato delle mele. (vedi Il partitivo)"
+        }
+      ],
+      "warn": "<b>Al cinema, ma in ufficio.</b> Con alcuni luoghi l'italiano usa la preposizione semplice, con altri l'articolata, e non c'è una regola che li distingua: «vado <i>al</i> cinema, <i>al</i> mare, <i>alla</i> stazione» ma «vado <i>a</i> casa, <i>a</i> scuola, <i>in</i> ufficio, <i>in</i> banca». Si imparano come espressioni.",
+      "errors": [
+        {
+          "wrong": "Vado a il cinema.",
+          "right": "Vado al cinema.",
+          "why": "<i>A + il</i> si uniscono sempre: <i>al</i>."
+        },
+        {
+          "wrong": "Le chiavi sono in la borsa.",
+          "right": "Le chiavi sono nella borsa.",
+          "why": "<i>In + la</i> = <i>nella</i>."
+        },
+        {
+          "wrong": "Il libro di il professore",
+          "right": "Il libro del professore",
+          "why": "<i>Di + il</i> = <i>del</i>."
+        },
+        {
+          "wrong": "Vado nella Spagna.",
+          "right": "Vado in Spagna.",
+          "why": "Con il nome del Paese da solo si usa <i>in</i> senza articolo."
+        },
+        {
+          "wrong": "Vado dall'medico.",
+          "right": "Vado dal medico.",
+          "why": "<i>Medico</i> comincia con consonante: <i>dal</i>. L'apostrofo si usa solo davanti a vocale."
+        },
+        {
+          "wrong": "Torno alla casa.",
+          "right": "Torno a casa.",
+          "why": "Con <i>casa</i> (la propria) niente articolo: <i>a casa</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con la preposizione articolata. La preposizione semplice è tra parentesi.",
+          "items": [
+            "Il gatto dorme (su) _____ divano.",
+            "Vado (a) _____ stazione.",
+            "Torno (da) _____ ufficio alle sei.",
+            "Le foto (di) _____ vacanze sono bellissime.",
+            "I bambini giocano (in) _____ giardino.",
+            "Scrivo una mail (a) _____ studenti."
+          ],
+          "key": [
+            "<b>sul</b>",
+            "<b>alla</b>",
+            "<b>dall'</b>",
+            "<b>delle</b>",
+            "<b>nel</b>",
+            "<b>agli</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Preposizione semplice o articolata? Scegli la forma corretta.",
+          "items": [
+            "Stasera resto (a casa / alla casa).",
+            "Andiamo (al mare / a mare) domenica?",
+            "Lavoro (in banca / nella banca).",
+            "Il portafoglio è (in macchina / nella macchina) di Luca.",
+            "Vivono (negli Stati Uniti / in Stati Uniti).",
+            "Stasera vado (al / a) cinema con Paola."
+          ],
+          "key": [
+            "<b>a casa</b>",
+            "<b>al mare</b>",
+            "<b>in banca</b>",
+            "<b>nella macchina</b>",
+            "<b>negli Stati Uniti</b>",
+            "<b>al</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Volgi al plurale.",
+          "items": [
+            "nel cassetto",
+            "dello studente",
+            "sulla sedia",
+            "dall'amico",
+            "all'amica",
+            "al ristorante"
+          ],
+          "key": [
+            "<b>nei cassetti</b>",
+            "<b>degli studenti</b>",
+            "<b>sulle sedie</b>",
+            "<b>dagli amici</b>",
+            "<b>alle amiche</b>",
+            "<b>ai ristoranti</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a2",
+      "cat": "Verbi",
+      "title": "Verbi irregolari comuni",
+      "def": "Un gruppo di verbi molto usati che al presente non seguono i modelli regolari (<i>parlare, prendere, dormire</i>). Le forme vanno imparate a memoria, ma molti di questi verbi si somigliano, quindi si possono studiare a gruppi.",
+      "form": "Tre osservazioni aiutano a ricordarli:<ul class='sch'><li>le persone <b>noi</b> e <b>voi</b> sono quasi sempre regolari: <i>andiamo, andate; veniamo, venite; usciamo, uscite</i></li><li>molti verbi prendono una <b>-g-</b> nelle persone <i>io</i> e <i>loro</i>: <i>ven<b>g</b>o, ven<b>g</b>ono; ten<b>g</b>o, ten<b>g</b>ono; riman<b>g</b>o, riman<b>g</b>ono; sal<b>g</b>o, sal<b>g</b>ono; scel<b>g</b>o, scel<b>g</b>ono</i></li><li><i>fare, dire, bere</i> si coniugano partendo da una forma più lunga: <i>fac-, dic-, bev-</i>: <i>faccio, dico, bevo; facciamo, diciamo, beviamo</i></li></ul>",
+      "tables": [
+        {
+          "caption": "andare",
+          "rows": [
+            [
+              "io",
+              "vado"
+            ],
+            [
+              "tu",
+              "vai"
+            ],
+            [
+              "lui/lei",
+              "va"
+            ],
+            [
+              "noi",
+              "andiamo"
+            ],
+            [
+              "voi",
+              "andate"
+            ],
+            [
+              "loro",
+              "vanno"
+            ]
+          ]
+        },
+        {
+          "caption": "fare",
+          "rows": [
+            [
+              "io",
+              "faccio"
+            ],
+            [
+              "tu",
+              "fai"
+            ],
+            [
+              "lui/lei",
+              "fa"
+            ],
+            [
+              "noi",
+              "facciamo"
+            ],
+            [
+              "voi",
+              "fate"
+            ],
+            [
+              "loro",
+              "fanno"
+            ]
+          ]
+        },
+        {
+          "caption": "venire",
+          "rows": [
+            [
+              "io",
+              "vengo"
+            ],
+            [
+              "tu",
+              "vieni"
+            ],
+            [
+              "lui/lei",
+              "viene"
+            ],
+            [
+              "noi",
+              "veniamo"
+            ],
+            [
+              "voi",
+              "venite"
+            ],
+            [
+              "loro",
+              "vengono"
+            ]
+          ]
+        },
+        {
+          "caption": "stare / dare",
+          "headers": [
+            "",
+            "stare",
+            "dare"
+          ],
+          "rows": [
+            [
+              "io",
+              "sto",
+              "do"
+            ],
+            [
+              "tu",
+              "stai",
+              "dai"
+            ],
+            [
+              "lui/lei",
+              "sta",
+              "dà"
+            ],
+            [
+              "noi",
+              "stiamo",
+              "diamo"
+            ],
+            [
+              "voi",
+              "state",
+              "date"
+            ],
+            [
+              "loro",
+              "stanno",
+              "danno"
+            ]
+          ]
+        },
+        {
+          "caption": "uscire / dire",
+          "headers": [
+            "",
+            "uscire",
+            "dire"
+          ],
+          "rows": [
+            [
+              "io",
+              "esco",
+              "dico"
+            ],
+            [
+              "tu",
+              "esci",
+              "dici"
+            ],
+            [
+              "lui/lei",
+              "esce",
+              "dice"
+            ],
+            [
+              "noi",
+              "usciamo",
+              "diciamo"
+            ],
+            [
+              "voi",
+              "uscite",
+              "dite"
+            ],
+            [
+              "loro",
+              "escono",
+              "dicono"
+            ]
+          ]
+        },
+        {
+          "caption": "bere / sapere",
+          "headers": [
+            "",
+            "bere",
+            "sapere"
+          ],
+          "rows": [
+            [
+              "io",
+              "bevo",
+              "so"
+            ],
+            [
+              "tu",
+              "bevi",
+              "sai"
+            ],
+            [
+              "lui/lei",
+              "beve",
+              "sa"
+            ],
+            [
+              "noi",
+              "beviamo",
+              "sappiamo"
+            ],
+            [
+              "voi",
+              "bevete",
+              "sapete"
+            ],
+            [
+              "loro",
+              "bevono",
+              "sanno"
+            ]
+          ]
+        },
+        {
+          "caption": "rimanere / scegliere",
+          "headers": [
+            "",
+            "rimanere",
+            "scegliere"
+          ],
+          "rows": [
+            [
+              "io",
+              "rimango",
+              "scelgo"
+            ],
+            [
+              "tu",
+              "rimani",
+              "scegli"
+            ],
+            [
+              "lui/lei",
+              "rimane",
+              "sceglie"
+            ],
+            [
+              "noi",
+              "rimaniamo",
+              "scegliamo"
+            ],
+            [
+              "voi",
+              "rimanete",
+              "scegliete"
+            ],
+            [
+              "loro",
+              "rimangono",
+              "scelgono"
+            ]
+          ]
+        },
+        {
+          "caption": "tenere / salire",
+          "headers": [
+            "",
+            "tenere",
+            "salire"
+          ],
+          "rows": [
+            [
+              "io",
+              "tengo",
+              "salgo"
+            ],
+            [
+              "tu",
+              "tieni",
+              "sali"
+            ],
+            [
+              "lui/lei",
+              "tiene",
+              "sale"
+            ],
+            [
+              "noi",
+              "teniamo",
+              "saliamo"
+            ],
+            [
+              "voi",
+              "tenete",
+              "salite"
+            ],
+            [
+              "loro",
+              "tengono",
+              "salgono"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "andare: spostarsi verso un posto dove chi parla non si trova",
+          "ex": "Vado a scuola. / Andiamo al cinema?"
+        },
+        {
+          "label": "venire: spostarsi verso chi parla o chi ascolta, oppure insieme a loro",
+          "ex": "Vieni alla mia festa? / Vengo con te."
+        },
+        {
+          "label": "uscire: andare fuori da un posto, oppure uscire per divertirsi",
+          "ex": "Esco di casa alle otto. / Stasera usciamo con gli amici."
+        },
+        {
+          "label": "fare: attività in generale, e molte espressioni fisse",
+          "ex": "Cosa fai? — Faccio i compiti. / Faccio colazione, faccio la doccia. / Oggi fa freddo."
+        },
+        {
+          "label": "stare: come si sta, restare in un posto; e stare + gerundio",
+          "ex": "Come stai? — Sto bene. / Oggi sto a casa. / Sto mangiando."
+        },
+        {
+          "label": "dare: consegnare, offrire",
+          "ex": "Ti do il mio numero. / Mi dai una mano?"
+        },
+        {
+          "label": "dire: comunicare qualcosa; e dire di + infinito per riferire un consiglio o un ordine",
+          "ex": "Cosa dici? / Mi dice sempre di stare attento."
+        },
+        {
+          "label": "rimanere: restare; tenere: avere in mano o conservare",
+          "ex": "Rimango a casa stasera. / Tieni le chiavi, io esco."
+        }
+      ],
+      "warn": "<b>Andare o venire?</b> L'italiano usa <i>venire</i> quando ci si sposta verso il posto dove si trova, o si troverà, chi parla o chi ascolta: «Vieni da me stasera?» — «Sì, <i>vengo</i> alle otto» (non «vado»). In spagnolo si risponde con <i>voy</i>, ed è da qui che nasce l'errore. Accenti: <i>dà</i> (verbo dare) vuole l'accento per distinguersi da <i>da</i>; <i>do, fa, sa, sta, va</i> non lo prendono mai.",
+      "errors": [
+        {
+          "wrong": "io veno",
+          "right": "io vengo",
+          "why": "<i>Venire</i> prende la <i>-g-</i> in <i>io</i> e <i>loro</i>: <i>vengo, vengono</i>."
+        },
+        {
+          "wrong": "io facio",
+          "right": "io faccio",
+          "why": "Due <i>c</i>: <i>faccio, facciamo</i>."
+        },
+        {
+          "wrong": "io escio",
+          "right": "io esco",
+          "why": "<i>Uscire</i> diventa <i>esc-</i> in <i>io, tu, lui/lei, loro</i>."
+        },
+        {
+          "wrong": "loro vanono",
+          "right": "loro vanno",
+          "why": "Forma irregolare: <i>vanno</i>."
+        },
+        {
+          "wrong": "voi dicete",
+          "right": "voi dite",
+          "why": "Forma irregolare: <i>dite</i>."
+        },
+        {
+          "wrong": "Vieni alla festa? — Sì, vado.",
+          "right": "Sì, vengo.",
+          "why": "Ci si sposta verso chi parla: si risponde con <i>venire</i>."
+        },
+        {
+          "wrong": "Marco da un regalo a Anna.",
+          "right": "Marco dà un regalo ad Anna.",
+          "why": "<i>Dà</i> (verbo) vuole l'accento; senza accento è la preposizione."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con il presente del verbo tra parentesi.",
+          "items": [
+            "Stasera noi _____ (uscire) con Paolo.",
+            "Io _____ (fare) la spesa il sabato.",
+            "Tu _____ (venire) al cinema con noi?",
+            "Loro _____ (andare) in vacanza in Sardegna.",
+            "Cosa _____ (voi, bere)?",
+            "Io non _____ (sapere) la risposta."
+          ],
+          "key": [
+            "<b>usciamo</b>",
+            "<b>faccio</b>",
+            "<b>vieni</b>",
+            "<b>vanno</b>",
+            "<b>bevete</b>",
+            "<b>so</b>"
+          ]
+        },
+        {
+          "type": "Completamento",
+          "instr": "Completa con il presente. Attenzione alla -g-.",
+          "items": [
+            "Io _____ (rimanere) a casa.",
+            "I miei genitori _____ (venire) domani.",
+            "Io _____ (scegliere) il vino rosso.",
+            "I bambini _____ (salire) sull'autobus.",
+            "Tu _____ (tenere) le chiavi?",
+            "Io _____ (salire) a piedi, non prendo l'ascensore."
+          ],
+          "key": [
+            "<b>rimango</b>",
+            "<b>vengono</b>",
+            "<b>scelgo</b>",
+            "<b>salgono</b>",
+            "<b>tieni</b>",
+            "<b>salgo</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Scegli la forma corretta.",
+          "items": [
+            "Mi (dai / dài) il tuo numero?",
+            "Marco (da / dà) un regalo alla sorella.",
+            "Vieni da me? — Sì, (vado / vengo) alle otto.",
+            "Voi (dite / dicete) sempre la verità?",
+            "Io (esco / uscio) alle sette.",
+            "Come (stai / sei)? — Bene, grazie."
+          ],
+          "key": [
+            "<b>dai</b>",
+            "<b>dà</b>",
+            "<b>vengo</b>",
+            "<b>dite</b>",
+            "<b>esco</b>",
+            "<b>stai</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a2",
+      "cat": "Verbi",
+      "title": "Il passato prossimo",
+      "def": "Il tempo più usato, quando si parla, per raccontare il passato. Presenta un'azione come <b>conclusa</b>: è successa ed è finita, che sia successa pochi minuti fa («ho finito») o tanti anni fa («sono nato nel 1990»).",
+      "form": "È formato da due parole: il presente di <b>avere</b> o <b>essere</b> (l'<b>ausiliare</b>, cioè il verbo «di aiuto») + il <b>participio passato</b> del verbo. Il participio regolare si ottiene togliendo <i>-are, -ere, -ire</i> e aggiungendo <i>-ato, -uto, -ito</i>: <i>parlato, venduto, dormito</i>. Molti verbi frequenti, soprattutto in <i>-ere</i>, hanno il participio irregolare.",
+      "tables": [
+        {
+          "before": "<b>Il participio regolare.</b>",
+          "headers": [
+            "Infinito",
+            "Participio"
+          ],
+          "rows": [
+            [
+              "-are",
+              "-ato (parlare → parlato)"
+            ],
+            [
+              "-ere",
+              "-uto (vendere → venduto)"
+            ],
+            [
+              "-ire",
+              "-ito (dormire → dormito)"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Avere o essere?</b>",
+          "plain": true,
+          "headers": [
+            "ausiliare",
+            "quali verbi",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "avere",
+              "i verbi che possono avere un oggetto diretto, cioè rispondere alla domanda «che cosa?» o «chi?»: mangiare, comprare, vedere, fare, leggere",
+              "Ho mangiato una pizza. / Ho visto Marco."
+            ],
+            [
+              "avere",
+              "anche molti verbi senza oggetto: dormire, lavorare, parlare, telefonare, ridere, camminare, viaggiare, nuotare",
+              "Ho dormito bene. / Abbiamo camminato molto."
+            ],
+            [
+              "essere",
+              "i verbi che indicano andare da un posto a un altro: andare, venire, partire, arrivare, tornare, entrare, uscire",
+              "Sono andato a Roma. / Siamo arrivati tardi."
+            ],
+            [
+              "essere",
+              "i verbi che indicano un cambiamento: nascere, morire, diventare, crescere, succedere",
+              "È nata nel 1995. / Cos'è successo?"
+            ],
+            [
+              "essere",
+              "i verbi che indicano stare o restare: essere, stare, restare, rimanere",
+              "Sono stato a casa. / Siamo rimasti fino a tardi."
+            ],
+            [
+              "essere",
+              "tutti i verbi riflessivi; e piacere, mancare, sembrare, costare",
+              "Mi sono alzato presto. / Mi è piaciuto il film. / Quanto è costato?"
+            ]
+          ],
+          "after": "Regola pratica: se il verbo può rispondere a «che cosa?», usa <i>avere</i>. Se no, ci si chiede se indica uno spostamento da un posto a un altro, un cambiamento o il restare: in questi casi usa <i>essere</i>. Nel dubbio, il dizionario indica l'ausiliare."
+        },
+        {
+          "before": "<b>Participi irregolari frequenti</b>, raggruppati per somiglianza.",
+          "plain": true,
+          "headers": [
+            "gruppo",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "in -tto",
+              "fare → fatto, dire → detto, leggere → letto, scrivere → scritto, rompere → rotto"
+            ],
+            [
+              "in -so",
+              "prendere → preso, mettere → messo, chiudere → chiuso, decidere → deciso, perdere → perso, spendere → speso, ridere → riso"
+            ],
+            [
+              "in -sto",
+              "vedere → visto, chiedere → chiesto, rispondere → risposto, rimanere → rimasto"
+            ],
+            [
+              "in -rto",
+              "aprire → aperto, offrire → offerto, coprire → coperto, morire → morto"
+            ],
+            [
+              "altri",
+              "essere → stato, venire → venuto, nascere → nato, bere → bevuto, vivere → vissuto, scegliere → scelto"
+            ]
+          ]
+        },
+        {
+          "before": "<b>L'accordo del participio.</b>",
+          "plain": true,
+          "headers": [
+            "caso",
+            "regola",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "con essere",
+              "il participio si accorda con il soggetto, come un aggettivo",
+              "Marco è andato. / Anna è andata. / Le ragazze sono uscite."
+            ],
+            [
+              "con avere",
+              "il participio resta in -o",
+              "Anna ha mangiato. / Le ragazze hanno studiato."
+            ],
+            [
+              "con avere + lo, la, li, le prima del verbo",
+              "il participio si accorda con il pronome",
+              "La pizza? L'ho mangiata. / I libri? Li ho letti."
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "un'azione conclusa in un momento preciso del passato",
+          "ex": "Ieri ho incontrato Luca. / Nel 2020 sono andato in Giappone."
+        },
+        {
+          "label": "un'azione appena successa",
+          "ex": "Ho appena finito di mangiare. / Guarda, è arrivato il treno."
+        },
+        {
+          "label": "un'azione passata che ha effetti adesso",
+          "ex": "Ho perso le chiavi (e ora non posso entrare)."
+        },
+        {
+          "label": "un'azione durata un periodo preciso e ormai chiuso",
+          "ex": "Ho vissuto a Londra per tre anni. / Abbiamo aspettato un'ora."
+        },
+        {
+          "label": "le esperienze della vita, spesso con mai o già",
+          "ex": "Sei mai stato a Napoli? / Ho già visto questo film."
+        },
+        {
+          "label": "alcuni verbi usano avere se c'è un oggetto, essere se non c'è",
+          "ex": "Ho finito il lavoro / Il film è finito. — Ho cominciato un corso / La lezione è cominciata. — Ho passato l'esame / Sono passato da casa."
+        },
+        {
+          "label": "con il tempo atmosferico vanno bene tutti e due gli ausiliari",
+          "ex": "È piovuto / Ha piovuto tutta la notte."
+        }
+      ],
+      "warn": "Il passato prossimo racconta i fatti. Per descrivere com'erano le cose o per le abitudini del passato si usa l'imperfetto (vedi Imperfetto o passato prossimo?). Con <i>dovere, potere, volere</i> seguiti da un infinito l'ausiliare di solito è quello dell'infinito: «sono dovuto partire», «ho dovuto lavorare».",
+      "errors": [
+        {
+          "wrong": "Ho andato al cinema.",
+          "right": "Sono andato al cinema.",
+          "why": "<i>Andare</i> indica uno spostamento verso un posto: <i>essere</i>."
+        },
+        {
+          "wrong": "Sono camminato molto.",
+          "right": "Ho camminato molto.",
+          "why": "<i>Camminare</i> non indica andare da un posto a un altro: <i>avere</i>."
+        },
+        {
+          "wrong": "Ho nato nel 1990.",
+          "right": "Sono nato nel 1990.",
+          "why": "<i>Nascere</i> indica un cambiamento: <i>essere</i>."
+        },
+        {
+          "wrong": "Maria è andato a casa.",
+          "right": "Maria è andata a casa.",
+          "why": "Con <i>essere</i> il participio si accorda con il soggetto."
+        },
+        {
+          "wrong": "Le mele? Le ho mangiato.",
+          "right": "Le mele? Le ho mangiate.",
+          "why": "Con <i>lo, la, li, le</i> prima del verbo il participio si accorda."
+        },
+        {
+          "wrong": "Ho aprito la finestra.",
+          "right": "Ho aperto la finestra.",
+          "why": "<i>Aprire</i> ha il participio irregolare: <i>aperto</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con il passato prossimo del verbo tra parentesi.",
+          "items": [
+            "Ieri io _____ (mangiare) una pizza buonissima.",
+            "Anna _____ (arrivare) alle otto.",
+            "Noi _____ (dormire) dieci ore.",
+            "I ragazzi _____ (uscire) presto.",
+            "Tu _____ (fare) i compiti?",
+            "Le mie amiche _____ (venire) alla festa."
+          ],
+          "key": [
+            "<b>ho mangiato</b>",
+            "<b>è arrivata</b>",
+            "<b>abbiamo dormito</b>",
+            "<b>sono usciti</b>",
+            "<b>hai fatto</b>",
+            "<b>sono venute</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Avere o essere? Scegli l'ausiliare corretto.",
+          "items": [
+            "(Ho / Sono) viaggiato molto quest'anno.",
+            "Marco (ha / è) tornato tardi.",
+            "Il concerto (ha / è) finito a mezzanotte.",
+            "(Ho / Sono) finito il libro.",
+            "Paola (ha / è) diventata mamma.",
+            "Ieri (ho / sono) nuotato in piscina."
+          ],
+          "key": [
+            "<b>Ho</b>",
+            "<b>è</b>",
+            "<b>è</b>",
+            "<b>Ho</b>",
+            "<b>è</b>",
+            "<b>ho</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Trasforma la frase al passato prossimo.",
+          "items": [
+            "Leggo un libro.",
+            "Lucia parte per Roma.",
+            "Scriviamo una mail.",
+            "Prendi il treno?",
+            "Le ragazze rimangono a casa.",
+            "Chiudo la porta."
+          ],
+          "key": [
+            "<b>Ho letto un libro.</b>",
+            "<b>Lucia è partita per Roma.</b>",
+            "<b>Abbiamo scritto una mail.</b>",
+            "<b>Hai preso il treno?</b>",
+            "<b>Le ragazze sono rimaste a casa.</b>",
+            "<b>Ho chiuso la porta.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a2",
+      "cat": "Verbi",
+      "title": "I verbi riflessivi",
+      "def": "Sono verbi in cui chi fa l'azione la fa su se stesso: «<i>mi lavo</i>» = lavo me stesso. All'infinito finiscono in <b>-si</b> (<i>lavarsi, alzarsi, chiamarsi</i>). Molti verbi della vita di tutti i giorni sono riflessivi in italiano anche quando non lo sono in altre lingue: <i>mi sveglio, mi alzo, mi vesto, mi chiamo</i>.",
+      "form": "<b>Pronome riflessivo + verbo coniugato normalmente</b>. I pronomi sono <b>mi, ti, si, ci, vi, si</b> e cambiano con la persona del verbo: <i>io mi lavo, tu ti lavi</i>. Il pronome va prima del verbo coniugato. Con l'infinito e con l'imperativo per tu, noi, voi si attacca alla fine: <i>alzarsi, alzati!, alziamoci!</i>. Con <i>dovere, potere, volere</i> può stare prima o dopo: «<i>mi</i> devo alzare» = «devo alzar<i>mi</i>». Al passato prossimo vogliono sempre <b>essere</b>, e il participio si accorda con il soggetto: «Anna si è alzat<b>a</b>».",
+      "tables": [
+        {
+          "caption": "lavarsi",
+          "rows": [
+            [
+              "io",
+              "mi lavo"
+            ],
+            [
+              "tu",
+              "ti lavi"
+            ],
+            [
+              "lui/lei",
+              "si lava"
+            ],
+            [
+              "noi",
+              "ci laviamo"
+            ],
+            [
+              "voi",
+              "vi lavate"
+            ],
+            [
+              "loro",
+              "si lavano"
+            ]
+          ]
+        },
+        {
+          "caption": "passato prossimo: alzarsi",
+          "rows": [
+            [
+              "io",
+              "mi sono alzato/a"
+            ],
+            [
+              "tu",
+              "ti sei alzato/a"
+            ],
+            [
+              "lui/lei",
+              "si è alzato/a"
+            ],
+            [
+              "noi",
+              "ci siamo alzati/e"
+            ],
+            [
+              "voi",
+              "vi siete alzati/e"
+            ],
+            [
+              "loro",
+              "si sono alzati/e"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "l'azione torna su chi la fa",
+          "ex": "Mi lavo. / Ti vesti? / Si guarda allo specchio."
+        },
+        {
+          "label": "la giornata di tutti i giorni",
+          "ex": "Mi sveglio alle sette, mi alzo, mi faccio la doccia e mi vesto."
+        },
+        {
+          "label": "verbi riflessivi in italiano ma spesso non in altre lingue: chiamarsi, ricordarsi, dimenticarsi, sentirsi, divertirsi, annoiarsi, arrabbiarsi, preoccuparsi",
+          "ex": "Come ti chiami? / Mi sento bene. / Ci divertiamo molto. / Non ti preoccupare."
+        },
+        {
+          "label": "al plurale possono indicare un'azione reciproca, «l'uno con l'altro»",
+          "ex": "Marco e Anna si amano. / Ci sentiamo domani. / Vi conoscete?"
+        },
+        {
+          "label": "con le parti del corpo e i vestiti si usa l'articolo, non il possessivo",
+          "ex": "Mi lavo le mani. / Si mette la giacca."
+        },
+        {
+          "label": "con dovere, potere, volere il pronome va prima o si attacca all'infinito",
+          "ex": "Mi devo alzare presto. = Devo alzarmi presto."
+        }
+      ],
+      "warn": "<b>Stesso verbo, con o senza pronome.</b> Molti verbi esistono in tutte e due le forme, con significato diverso: «<i>lavo</i> la macchina» (lavo un'altra cosa) / «<i>mi lavo</i>» (lavo me stesso); «<i>chiamo</i> Marco» / «<i>mi chiamo</i> Marco»; «<i>sveglio</i> i bambini» / «<i>mi sveglio</i>». Al passato cambia anche l'ausiliare: «<i>ho</i> svegliato i bambini» ma «<i>mi sono</i> svegliato».",
+      "errors": [
+        {
+          "wrong": "Mi ho lavato.",
+          "right": "Mi sono lavato.",
+          "why": "I riflessivi al passato vogliono <i>essere</i>."
+        },
+        {
+          "wrong": "Maria si è lavato.",
+          "right": "Maria si è lavata.",
+          "why": "Il participio si accorda con il soggetto."
+        },
+        {
+          "wrong": "Stamattina ho svegliato alle sette.",
+          "right": "Stamattina mi sono svegliato alle sette.",
+          "why": "Senza pronome il verbo vuol dire svegliare un'altra persona."
+        },
+        {
+          "wrong": "Lavati le tue mani.",
+          "right": "Lavati le mani.",
+          "why": "Con le parti del corpo niente possessivo: il pronome dice già di chi sono."
+        },
+        {
+          "wrong": "Io si chiamo Luca.",
+          "right": "Io mi chiamo Luca.",
+          "why": "Il pronome cambia con la persona: <i>io mi, tu ti, lui si</i>."
+        },
+        {
+          "wrong": "Mi devo alzarmi.",
+          "right": "Mi devo alzare. / Devo alzarmi.",
+          "why": "Il pronome va in un posto solo."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con il pronome riflessivo.",
+          "items": [
+            "Io _____ sveglio alle sette.",
+            "Come _____ chiami?",
+            "Noi _____ divertiamo molto.",
+            "Loro _____ alzano tardi la domenica.",
+            "Voi _____ preparate per uscire?",
+            "Lucia _____ trucca sempre."
+          ],
+          "key": [
+            "<b>mi</b>",
+            "<b>ti</b>",
+            "<b>ci</b>",
+            "<b>si</b>",
+            "<b>vi</b>",
+            "<b>si</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Trasforma la frase al passato prossimo.",
+          "items": [
+            "Mi alzo presto.",
+            "Anna si veste.",
+            "Ci divertiamo.",
+            "I bambini si lavano.",
+            "Ti ricordi?",
+            "Le ragazze si preparano."
+          ],
+          "key": [
+            "<b>Mi sono alzato/a presto.</b>",
+            "<b>Anna si è vestita.</b>",
+            "<b>Ci siamo divertiti/e.</b>",
+            "<b>I bambini si sono lavati.</b>",
+            "<b>Ti sei ricordato/a?</b>",
+            "<b>Le ragazze si sono preparate.</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Scegli la forma corretta.",
+          "items": [
+            "Stamattina (ho svegliato / mi sono svegliato) tardi.",
+            "Prima di mangiare (lavati le mani / lavati le tue mani).",
+            "Domani (devo alzarmi / mi devo alzarmi) presto.",
+            "Marco e Anna (si sono sposati / hanno sposati) a giugno.",
+            "Paola (si è arrabbiata / si ha arrabbiata).",
+            "(Ho chiamato / Mi sono chiamato) Marco per invitarlo."
+          ],
+          "key": [
+            "<b>mi sono svegliato</b>",
+            "<b>lavati le mani</b>",
+            "<b>devo alzarmi</b>",
+            "<b>si sono sposati</b>",
+            "<b>si è arrabbiata</b>",
+            "<b>Ho chiamato</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a2",
+      "cat": "Verbi",
+      "title": "L'imperativo",
+      "def": "Il modo con cui si danno ordini, istruzioni, consigli e inviti. Non ha la 1ª persona singolare — a nessuno si comanda da solo — quindi esistono solo le forme per <b>tu</b>, <b>noi</b>, <b>voi</b> e per il <b>Lei</b> di cortesia.",
+      "form": "<ul class='sch'><li><b>TU</b><ul><li>verbi in -ARE → radice + <b>a</b>, uguale alla 3ª persona singolare del presente indicativo: <b>parla!</b>, <b>mangia!</b></li><li>verbi in -ERE / -IRE → radice + <b>i</b>, uguale alla 2ª persona singolare del presente indicativo: <b>prendi!</b>, <b>dormi!</b></li></ul></li><li><b>LEI</b> — usa il congiuntivo presente (un'altra forma del verbo, che si studia al B1)<ul><li>verbi in -ARE → radice + <b>i</b>: <b>parli!</b>, <b>mangi!</b></li><li>verbi in -ERE / -IRE → radice + <b>a</b>: <b>prenda!</b>, <b>dorma!</b></li></ul></li><li><b>NOI e VOI</b> — forme uguali al presente indicativo: <b>parliamo!</b>, <b>parlate!</b></li></ul><p class='sec__t' style='margin-top:10px'>I verbi in -IRE che inseriscono <b>-isc-</b> lo mantengono anche qui: radice + isc + <b>i</b> al tu (<b>finisci!</b>), radice + isc + <b>a</b> al Lei (<b>finisca!</b>).</p>",
+      "tables": [
+        {
+          "before": "<b>Confronto con l'indicativo.</b> Chi impara l'imperativo scambia spesso le sue forme con quelle dell'indicativo, e non è distrazione: nei verbi in -ARE le terminazioni sono le stesse due, ma assegnate a persone diverse. All'indicativo si dice <b>tu parli</b> e <b>Lei parla</b>; all'imperativo l'ordine al tu è <b>parla!</b> e la cortesia al Lei è <b>parli!</b> Le stesse uscite, invertite.<br><br>Nei verbi in -ERE e in -IRE il fenomeno quasi non si nota, perché il tu è identico nei due modi: <b>tu prendi</b> e <b>prendi!</b>, <b>tu dormi</b> e <b>dormi!</b> Cambia soltanto il Lei, che passa da <b>prende</b> a <b>prenda!</b> e da <b>dorme</b> a <b>dorma!</b>",
+          "headers": [
+            "",
+            "indicativo",
+            "imperativo"
+          ],
+          "rows": [
+            [
+              "tu — parlare",
+              "parl<b>i</b>",
+              "parl<b>a</b>!"
+            ],
+            [
+              "Lei — parlare",
+              "parl<b>a</b>",
+              "parl<b>i</b>!"
+            ],
+            [
+              "tu — prendere",
+              "prend<b>i</b>",
+              "prend<b>i</b>!"
+            ],
+            [
+              "Lei — prendere",
+              "prend<b>e</b>",
+              "prend<b>a</b>!"
+            ],
+            [
+              "tu — dormire",
+              "dorm<b>i</b>",
+              "dorm<b>i</b>!"
+            ],
+            [
+              "Lei — dormire",
+              "dorm<b>e</b>",
+              "dorm<b>a</b>!"
+            ],
+            [
+              "tu — andare",
+              "vai",
+              "<b>va'!</b>"
+            ],
+            [
+              "tu — essere",
+              "sei",
+              "<b>sii!</b>"
+            ]
+          ],
+          "after": "Nei verbi regolari nessuna forma appartiene esclusivamente all'imperativo: «parla» e «parli» esistono in entrambi i modi, e a distinguerli è solo la persona a cui si riferiscono e il contesto in cui compaiono. «Signora, parla» constata che sta parlando; «Signora, parli» le chiede di farlo. È questa sovrapposizione a rendere l'imperativo dei verbi in -are più difficile di quanto le sue regole lascino pensare.<br><br>Solo gli irregolari, nelle ultime due righe della tabella, hanno forme che l'indicativo non possiede: <b>va'</b>, <b>sii</b>, e con loro <b>da'</b>, <b>fa'</b>, <b>sta'</b>, <b>di'</b>, <b>abbi</b>. Lì il dubbio non si pone.<br><br><b>Controllo pratico:</b> se stai dando un ordine con un verbo in -are e la forma per il tu ti esce in -i, non hai fatto l'imperativo — hai prodotto l'indicativo, oppure la cortesia rivolta al Lei."
+        },
+        {
+          "before": "Sette verbi sono irregolari <b>sia al tu sia al Lei</b>. I primi cinque accorciano il tu e prendono l'apostrofo.",
+          "plain": true,
+          "headers": [
+            "verbo",
+            "tu",
+            "Lei"
+          ],
+          "rows": [
+            [
+              "andare",
+              "va'",
+              "vada"
+            ],
+            [
+              "dare",
+              "da'",
+              "dia"
+            ],
+            [
+              "fare",
+              "fa'",
+              "faccia"
+            ],
+            [
+              "stare",
+              "sta'",
+              "stia"
+            ],
+            [
+              "dire",
+              "di'",
+              "dica"
+            ],
+            [
+              "essere",
+              "sii",
+              "sia"
+            ],
+            [
+              "avere",
+              "abbi",
+              "abbia"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "ordini e istruzioni: è l'uso più diretto",
+          "ex": "Apri la finestra! / Girate a destra."
+        },
+        {
+          "label": "consigli e inviti: l'imperativo non è per forza brusco",
+          "ex": "Riposati un po'. / Venite a cena da noi."
+        },
+        {
+          "label": "con il Lei si ottiene la forma di cortesia, usata con estranei e in contesti formali",
+          "ex": "Si accomodi. / Mi dica."
+        },
+        {
+          "label": "per dire a qualcuno di non fare una cosa, il tu usa non + infinito, tutte le altre persone il normale negativo",
+          "ex": "Non parlare! (tu) / Non parlate! (voi)"
+        },
+        {
+          "label": "i pronomi si attaccano in fondo con tu, noi e voi, ma stanno davanti al verbo con il Lei",
+          "ex": "Dimmi tutto! / Alzati! ma Mi dica tutto. / Si accomodi."
+        },
+        {
+          "label": "al negativo, con il tu il pronome può stare prima di non + infinito o attaccato all'infinito; con il Lei sta sempre prima del verbo",
+          "ex": "Non farlo! = Non lo fare! / Non lo faccia! (Lei)"
+        }
+      ],
+      "warn": "Dopo le cinque forme accorciate (va', da', fa', sta', di') il pronome <b>raddoppia</b> la consonante: <b>dammi</b>, <b>dimmi</b>, <b>fallo</b>, <b>stammi</b> vicino. Unica eccezione «gli», che non raddoppia mai: <b>digli</b>, <b>dagli</b>. E attenzione al tu dei verbi in -are: «parli!» non è un ordine ma la forma di cortesia rivolta al Lei.",
+      "errors": [
+        {
+          "wrong": "Parli più piano! (a un amico)",
+          "right": "Parla più piano!",
+          "why": "Al tu i verbi in <i>-are</i> finiscono in <i>-a</i>; <i>parli!</i> è la forma per il Lei."
+        },
+        {
+          "wrong": "Non parla! (a un amico)",
+          "right": "Non parlare!",
+          "why": "Al negativo il tu usa <i>non</i> + infinito."
+        },
+        {
+          "wrong": "Non ti preoccupi! (a un amico)",
+          "right": "Non ti preoccupare! / Non preoccuparti!",
+          "why": "Anche qui: <i>non</i> + infinito; <i>non si preoccupi</i> è per il Lei."
+        },
+        {
+          "wrong": "Dimi la verità.",
+          "right": "Dimmi la verità.",
+          "why": "Dopo <i>di', da', fa', sta', va'</i> la consonante del pronome raddoppia."
+        },
+        {
+          "wrong": "Si siede, prego. (al Lei)",
+          "right": "Si sieda, prego.",
+          "why": "Il Lei ha forme proprie: <i>si sieda, venga, prenda</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con l'imperativo per tu.",
+          "items": [
+            "_____ (parlare) più piano, per favore!",
+            "_____ (prendere) l'ombrello, piove.",
+            "_____ (finire) i compiti prima di uscire.",
+            "_____ (andare) a dormire, è tardi!",
+            "_____ (fare) attenzione!",
+            "_____ (essere) gentile con tua sorella."
+          ],
+          "key": [
+            "<b>Parla</b>",
+            "<b>Prendi</b>",
+            "<b>Finisci</b>",
+            "<b>Va'</b> (o <b>Vai</b>)",
+            "<b>Fa'</b> (o <b>Fai</b>)",
+            "<b>Sii</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Trasforma dal tu al Lei.",
+          "items": [
+            "Entra pure!",
+            "Scusa!",
+            "Dimmi tutto.",
+            "Siediti.",
+            "Prendi un caffè!",
+            "Aspettami qui."
+          ],
+          "key": [
+            "<b>Entri pure!</b>",
+            "<b>Scusi!</b>",
+            "<b>Mi dica tutto.</b>",
+            "<b>Si sieda.</b>",
+            "<b>Prenda un caffè!</b>",
+            "<b>Mi aspetti qui.</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Rendi negativo l'ordine.",
+          "items": [
+            "Mangia!",
+            "Fallo!",
+            "Uscite!",
+            "Parli! (Lei)",
+            "Alzati!",
+            "Andiamo!"
+          ],
+          "key": [
+            "<b>Non mangiare!</b>",
+            "<b>Non farlo!</b> (o <b>Non lo fare!</b>)",
+            "<b>Non uscite!</b>",
+            "<b>Non parli!</b>",
+            "<b>Non alzarti!</b> (o <b>Non ti alzare!</b>)",
+            "<b>Non andiamo!</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a2",
+      "cat": "Aggettivi",
+      "title": "Dimostrativi: questo e quello",
+      "def": "Servono a indicare una persona o una cosa e a dire dov'è rispetto a chi parla: <b>questo</b> per ciò che è vicino («questo libro», quello che ho in mano), <b>quello</b> per ciò che è lontano («quella casa», laggiù). Valgono anche per il tempo: «questa settimana» è quella in cui siamo, «quell'anno» è un anno lontano.",
+      "form": "<b>Questo</b> è regolare, come un aggettivo in <i>-o</i>: <i>questo, questa, questi, queste</i>; al singolare davanti a vocale si può apostrofare: <i>quest'anno, quest'estate</i>. <b>Quello</b>, quando sta davanti a un nome, cambia come l'articolo determinativo: si pensa all'articolo che vorrebbe il nome e si prende la forma corrispondente (<i>il libro → quel libro</i>, <i>lo studente → quello studente</i>, <i>gli amici → quegli amici</i>). Quando invece si usa da solo, senza nome, ha solo quattro forme regolari: <i>quello, quella, quelli, quelle</i>.",
+      "tables": [
+        {
+          "before": "<b>Questo.</b>",
+          "headers": [
+            "",
+            "Maschile",
+            "Femminile"
+          ],
+          "rows": [
+            [
+              "sing.",
+              "questo / quest'",
+              "questa / quest'"
+            ],
+            [
+              "plur.",
+              "questi",
+              "queste"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Quello davanti al nome:</b> si guarda l'articolo.",
+          "plain": true,
+          "headers": [
+            "articolo",
+            "quello",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "il",
+              "quel",
+              "quel ragazzo"
+            ],
+            [
+              "lo",
+              "quello",
+              "quello studente, quello zaino"
+            ],
+            [
+              "l'",
+              "quell'",
+              "quell'albero, quell'amica"
+            ],
+            [
+              "la",
+              "quella",
+              "quella casa"
+            ],
+            [
+              "i",
+              "quei",
+              "quei libri"
+            ],
+            [
+              "gli",
+              "quegli",
+              "quegli studenti, quegli amici"
+            ],
+            [
+              "le",
+              "quelle",
+              "quelle ragazze"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Quello da solo</b>, senza nome dopo.",
+          "headers": [
+            "",
+            "Maschile",
+            "Femminile"
+          ],
+          "rows": [
+            [
+              "sing.",
+              "quello",
+              "quella"
+            ],
+            [
+              "plur.",
+              "quelli",
+              "quelle"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "questo per ciò che è vicino a chi parla, nello spazio o nel tempo",
+          "ex": "Questo caffè è ottimo. / Questa settimana lavoro molto. / Quest'anno vado in Italia."
+        },
+        {
+          "label": "quello per ciò che è lontano da chi parla",
+          "ex": "Vedi quella montagna? / Quell'estate è stata bellissima."
+        },
+        {
+          "label": "da soli, senza nome, per non ripetere il nome",
+          "ex": "Quale vuoi? — Questo, non quello. / Questi sono i miei, quelli sono i tuoi."
+        },
+        {
+          "label": "questo per presentare una persona",
+          "ex": "Questo è Marco, questa è mia sorella."
+        },
+        {
+          "label": "quello che vuol dire «la cosa che»",
+          "ex": "Fai quello che vuoi. / Non capisco quello che dici."
+        },
+        {
+          "label": "ciò vuol dire «questa cosa» o «quella cosa»: è più formale e si usa solo per le cose",
+          "ex": "Ciò che dici è vero. / Non sono d'accordo con ciò."
+        }
+      ],
+      "warn": "<b>Quel o quello?</b> Davanti al nome si usa la forma che segue l'articolo (<i>quel libro, quello zaino</i>); da solo si usa sempre <i>quello</i>: «Quale libro? — <i>Quello</i>», mai «quel». Al plurale, da solo, si dice <i>quelli</i>, mai <i>quei</i> o <i>quegli</i>. In Toscana e nel linguaggio burocratico si trova anche <i>codesto</i> (per ciò che è vicino a chi ascolta), ma nell'italiano di tutti i giorni non si usa.",
+      "errors": [
+        {
+          "wrong": "Quel è mio.",
+          "right": "Quello è mio.",
+          "why": "Da solo, senza nome, si usa <i>quello</i>."
+        },
+        {
+          "wrong": "quello libro",
+          "right": "quel libro",
+          "why": "<i>Il libro</i> → <i>quel libro</i>."
+        },
+        {
+          "wrong": "quelli studenti",
+          "right": "quegli studenti",
+          "why": "Davanti al nome <i>quello</i> segue l'articolo: <i>gli studenti</i> → <i>quegli studenti</i>."
+        },
+        {
+          "wrong": "quei amici",
+          "right": "quegli amici",
+          "why": "Davanti a vocale: <i>gli amici</i> → <i>quegli amici</i>."
+        },
+        {
+          "wrong": "Mi piacciono quei.",
+          "right": "Mi piacciono quelli.",
+          "why": "Da solo al plurale: <i>quelli</i>."
+        },
+        {
+          "wrong": "questo ragazze",
+          "right": "queste ragazze",
+          "why": "<i>Questo</i> si accorda con il nome come un aggettivo."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con la forma giusta di quello.",
+          "items": [
+            "_____ ragazzo è mio cugino.",
+            "_____ zaino è nuovo.",
+            "Ti piace _____ albero?",
+            "_____ libri sono di Marco.",
+            "_____ studenti sono spagnoli.",
+            "Conosci _____ ragazze?"
+          ],
+          "key": [
+            "<b>Quel</b>",
+            "<b>Quello</b>",
+            "<b>quell'</b>",
+            "<b>Quei</b>",
+            "<b>Quegli</b>",
+            "<b>quelle</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Scegli la forma corretta.",
+          "items": [
+            "Quale gelato vuoi? — (Quello / Quel) al cioccolato.",
+            "(Questa / Questo) settimana sono libero.",
+            "Queste scarpe sono mie, (quelle / quei) sono tue.",
+            "Vedi (quegli / quelli) alberi?",
+            "Non capisco (quello / quel) che dici.",
+            "(Questi / Queste) sono i miei amici."
+          ],
+          "key": [
+            "<b>Quello</b>",
+            "<b>Questa</b>",
+            "<b>quelle</b>",
+            "<b>quegli</b>",
+            "<b>quello</b>",
+            "<b>Questi</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Volgi al plurale.",
+          "items": [
+            "quel bambino",
+            "quello zio",
+            "quell'amica",
+            "quest'idea",
+            "quell'uomo",
+            "questo esercizio"
+          ],
+          "key": [
+            "<b>quei bambini</b>",
+            "<b>quegli zii</b>",
+            "<b>quelle amiche</b>",
+            "<b>queste idee</b>",
+            "<b>quegli uomini</b>",
+            "<b>questi esercizi</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a2",
+      "cat": "Aggettivi",
+      "title": "I comparativi",
+      "def": "Confrontano due elementi rispetto a una qualità e stabiliscono se il primo è superiore, inferiore o uguale al secondo. La difficoltà non sta nel <b>più</b> e nel <b>meno</b>, che sono semplici, ma nella scelta tra <b>di</b> e <b>che</b> per introdurre il secondo termine del confronto.",
+      "form": "<ul class='sch'><li><b>maggioranza</b> → più + aggettivo: <b>Marco è più alto di Luca.</b></li><li><b>minoranza</b> → meno + aggettivo: <b>Questo film è meno bello del precedente.</b></li><li><b>uguaglianza</b> → (così) … come, oppure (tanto) … quanto: <b>Sono alto come te.</b> / <b>È tanto bravo quanto simpatico.</b></li></ul>",
+      "uses": [
+        {
+          "label": "con di si confrontano due elementi diversi rispetto alla stessa qualità",
+          "ex": "Marco è più alto di Luca. / Lei è più giovane di me."
+        },
+        {
+          "label": "di si fonde con l'articolo quando il secondo termine ce l'ha",
+          "ex": "È più bello della foto. / Questo film è meno bello del precedente."
+        },
+        {
+          "label": "con che si confrontano due qualità, due azioni o due nomi riferiti allo stesso soggetto",
+          "ex": "È più furbo che intelligente. / Ho più amici che nemici."
+        },
+        {
+          "label": "per dire che due elementi sono uguali si usa come oppure quanto",
+          "ex": "Sono alto come te. / È tanto bravo quanto simpatico."
+        },
+        {
+          "label": "per confrontare con quello che si pensava o ci si aspettava: di quanto o di quello che + verbo (nello scritto curato con il congiuntivo: di quanto pensassi)",
+          "ex": "L'esame è più facile di quanto pensavo. / Costa meno di quello che credi."
+        }
+      ],
+      "warn": "<b>Gli irregolari sono due serie diverse.</b> Come aggettivi, cioè riferiti a un nome: <i>buono → migliore, cattivo → peggiore, grande → maggiore, piccolo → minore</i> («questo vino è migliore di quello»). Come avverbi, cioè riferiti a un verbo: <i>bene → meglio, male → peggio</i> («oggi sto peggio di ieri», «è meglio tardi che mai»). <i>Più buono</i> però non è un errore: si usa quando <i>buono</i> vuol dire «di buon sapore» o «di buon carattere» («questa torta è più buona», «Marco è più buono di suo fratello»); <i>migliore</i> quando vuol dire «di qualità superiore». Stessa differenza tra <i>più cattivo</i> (carattere) e <i>peggiore</i> (qualità).",
+      "tables": [
+        {
+          "before": "<b>Di o che.</b> La domanda da farsi è una sola: sto confrontando <b>due cose</b>, oppure <b>due caratteristiche della stessa cosa</b>? Nel primo caso si usa <i>di</i>, nel secondo <i>che</i>.",
+          "plain": true,
+          "headers": [
+            "si usa",
+            "quando",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "di",
+              "due elementi diversi, stessa qualità",
+              "Marco è più alto <b>di</b> Luca."
+            ],
+            [
+              "di",
+              "davanti a numeri",
+              "Ho più <b>di</b> venti libri."
+            ],
+            [
+              "di + articolo",
+              "se il secondo termine ha l'articolo",
+              "È più bello <b>della</b> foto."
+            ],
+            [
+              "che",
+              "due qualità dello stesso elemento",
+              "È più furbo <b>che</b> intelligente."
+            ],
+            [
+              "che",
+              "due verbi all'infinito",
+              "È più facile dire <b>che</b> fare."
+            ],
+            [
+              "che",
+              "due nomi che dipendono dallo stesso verbo",
+              "Ho più amici <b>che</b> nemici."
+            ],
+            [
+              "che",
+              "davanti a una preposizione",
+              "Vado più spesso a Roma <b>che</b> a Milano."
+            ]
+          ]
+        }
+      ],
+      "errors": [
+        {
+          "wrong": "più meglio",
+          "right": "meglio",
+          "why": "<i>Meglio</i> è già un comparativo: «sto meglio»."
+        },
+        {
+          "wrong": "più migliore",
+          "right": "migliore",
+          "why": "Anche <i>migliore</i> contiene già il «più»."
+        },
+        {
+          "wrong": "Oggi sto migliore.",
+          "right": "Oggi sto meglio.",
+          "why": "Con un verbo si usa l'avverbio <i>meglio</i>; <i>migliore</i> va con un nome."
+        },
+        {
+          "wrong": "Marco è più alto che Luca.",
+          "right": "Marco è più alto di Luca.",
+          "why": "Due persone diverse, stessa qualità: <i>di</i>."
+        },
+        {
+          "wrong": "È più furbo di intelligente.",
+          "right": "È più furbo che intelligente.",
+          "why": "Due qualità della stessa persona: <i>che</i>."
+        },
+        {
+          "wrong": "È più bello di la foto.",
+          "right": "È più bello della foto.",
+          "why": "<i>Di</i> si unisce all'articolo: <i>della</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con di (anche unito all'articolo) o che.",
+          "items": [
+            "Roma è più grande _____ Firenze.",
+            "Mi piace più leggere _____ guardare la TV.",
+            "Il treno è più veloce _____ autobus.",
+            "È più simpatico _____ bello.",
+            "Ho più _____ cento libri.",
+            "Vado più spesso al mare _____ in montagna."
+          ],
+          "key": [
+            "<b>di</b>",
+            "<b>che</b>",
+            "<b>dell'</b>",
+            "<b>che</b>",
+            "<b>di</b>",
+            "<b>che</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Scegli la forma corretta.",
+          "items": [
+            "Oggi sto (meglio / migliore) di ieri.",
+            "Questo ristorante è (migliore / meglio) di quello.",
+            "Mio fratello (maggiore / più maggiore) vive a Milano.",
+            "Questa torta è (più buona / più migliore) della tua.",
+            "Il tempo oggi è (peggio / peggiore) di ieri.",
+            "All'esame hai fatto (peggio / peggiore) di me."
+          ],
+          "key": [
+            "<b>meglio</b>",
+            "<b>migliore</b>",
+            "<b>maggiore</b>",
+            "<b>più buona</b>",
+            "<b>peggiore</b>",
+            "<b>peggio</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Fai un confronto con le parole date.",
+          "items": [
+            "Marco / Luca (più alto)",
+            "il treno / l'aereo (meno veloce)",
+            "Anna / sua sorella (simpatica come)",
+            "questo film / interessante / divertente (più… che)",
+            "in questa classe: ragazze / ragazzi (più… che)",
+            "l'esame / facile / pensavo (più… di quanto)"
+          ],
+          "key": [
+            "<b>Marco è più alto di Luca.</b>",
+            "<b>Il treno è meno veloce dell'aereo.</b>",
+            "<b>Anna è simpatica come sua sorella.</b>",
+            "<b>Questo film è più interessante che divertente.</b>",
+            "<b>In questa classe ci sono più ragazze che ragazzi.</b>",
+            "<b>L'esame è più facile di quanto pensavo.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a2",
+      "cat": "Pronomi",
+      "title": "I pronomi diretti",
+      "def": "Sostituiscono la persona o la cosa che riceve direttamente l'azione, quella che risponde alla domanda «chi?» o «che cosa?» dopo il verbo, per non ripeterla: «Conosci Maria? — Sì, <i>la</i> conosco» (<i>la</i> = Maria).",
+      "form": "Le forme sono <b>mi, ti, lo, la, ci, vi, li, le</b>; per una cosa o una persona maschile si usa <i>lo/li</i>, femminile <i>la/le</i>. Di solito vanno <b>prima del verbo</b> coniugato: «<i>lo</i> vedo», «<i>ti</i> aspetto». Si attaccano invece alla fine dell'infinito, dell'imperativo (tu, noi, voi) e di <i>ecco</i>: «voglio veder<i>lo</i>», «chiama<i>la</i>!», «ecco<i>li</i>». Con <i>dovere, potere, volere</i> possono stare prima o dopo: «<i>lo</i> devo fare» = «devo far<i>lo</i>». <i>Lo</i> e <i>la</i> davanti alle forme di <i>avere</i> si apostrofano praticamente sempre («<i>l'</i>ho visto», «<i>l'</i>hai chiamata?»); davanti alle altre parole che cominciano con vocale l'apostrofo è frequente ma non obbligatorio («<i>l'</i>aspetto» o «<i>lo</i> aspetto»). <i>Li</i> e <i>le</i> non si apostrofano mai («<i>li</i> ho visti», «<i>le</i> ho comprate»).",
+      "tables": [
+        {
+          "before": "<b>Le forme.</b>",
+          "headers": [
+            "chi / che cosa",
+            "pronome",
+            "forma accentata"
+          ],
+          "rows": [
+            [
+              "me",
+              "mi",
+              "me"
+            ],
+            [
+              "te",
+              "ti",
+              "te"
+            ],
+            [
+              "lui, una cosa maschile",
+              "lo",
+              "lui"
+            ],
+            [
+              "lei, una cosa femminile",
+              "la",
+              "lei"
+            ],
+            [
+              "Lei (cortesia)",
+              "La",
+              "Lei"
+            ],
+            [
+              "noi",
+              "ci",
+              "noi"
+            ],
+            [
+              "voi",
+              "vi",
+              "voi"
+            ],
+            [
+              "loro, cose maschili o miste",
+              "li",
+              "loro"
+            ],
+            [
+              "loro, cose femminili",
+              "le",
+              "loro"
+            ]
+          ],
+          "after": "Le forme accentate (<i>me, te, lui, lei…</i>) si usano dopo il verbo per sottolineare o fare un contrasto («cercano <i>te</i>, non me») e dopo le preposizioni («vengo con <i>te</i>»)."
+        }
+      ],
+      "uses": [
+        {
+          "label": "per non ripetere una persona o una cosa già nominata",
+          "ex": "Conosci Maria? — Sì, la conosco. / Compri il pane? — Sì, lo compro."
+        },
+        {
+          "label": "prima del verbo coniugato",
+          "ex": "Ti aspetto davanti al cinema. / Li vedo domani."
+        },
+        {
+          "label": "attaccati all'infinito, all'imperativo e a ecco",
+          "ex": "Voglio vederlo. / Chiamala! / Dove sono le chiavi? — Eccole."
+        },
+        {
+          "label": "con dovere, potere, volere: prima del modale o attaccati all'infinito",
+          "ex": "La posso aiutare? = Posso aiutarla?"
+        },
+        {
+          "label": "lo può sostituire una frase intera: lo so, lo spero, lo credo",
+          "ex": "Domani piove. — Lo so. / Arriva in tempo? — Lo spero."
+        },
+        {
+          "label": "al passato prossimo lo, la, li, le fanno accordare il participio",
+          "ex": "Hai visto Anna? — Sì, l'ho vista. / I film? Li ho visti tutti."
+        },
+        {
+          "label": "le forme accentate per sottolineare o contrapporre",
+          "ex": "Cercano te, non me. / Ho visto lui, ma non lei."
+        }
+      ],
+      "warn": "<b>Diretto o indiretto?</b> I pronomi diretti rispondono a «chi?» o «che cosa?» senza preposizione: «<i>la</i> vedo» (vedo lei). Quando il verbo vuole <i>a</i> si usano gli indiretti: «<i>le</i> telefono» (telefono a lei), «<i>gli</i> scrivo» (vedi I pronomi indiretti). Alcuni verbi vogliono il diretto anche se in altre lingue no: «<i>l'</i>aspetto», «<i>l'</i>ascolto», «<i>li</i> cerco», «<i>La</i> ringrazio».",
+      "errors": [
+        {
+          "wrong": "Lo ho visto.",
+          "right": "L'ho visto.",
+          "why": "<i>Lo</i> e <i>la</i> davanti a <i>h</i> o a vocale prendono l'apostrofo."
+        },
+        {
+          "wrong": "I film? Li ho visto.",
+          "right": "I film? Li ho visti.",
+          "why": "Con <i>li</i> e <i>le</i> prima del verbo il participio si accorda."
+        },
+        {
+          "wrong": "Le ragazze? Le ho visto.",
+          "right": "Le ragazze? Le ho viste.",
+          "why": "Stessa regola: <i>le</i> → participio al femminile plurale."
+        },
+        {
+          "wrong": "Voglio lo vedere.",
+          "right": "Lo voglio vedere. / Voglio vederlo.",
+          "why": "Il pronome va prima del modale o attaccato all'infinito, mai in mezzo."
+        },
+        {
+          "wrong": "Gli vedo domani.",
+          "right": "Lo vedo domani.",
+          "why": "<i>Vedere</i> vuole il pronome diretto; <i>gli</i> è indiretto (= a lui)."
+        },
+        {
+          "wrong": "Chiama la!",
+          "right": "Chiamala!",
+          "why": "Con l'imperativo per tu il pronome si attacca al verbo."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con lo, la, li o le.",
+          "items": [
+            "Conosci Paolo? — Sì, _____ conosco bene.",
+            "Dove sono le chiavi? — Non _____ trovo.",
+            "Mangi la pasta? — Sì, _____ mangio.",
+            "Inviti i tuoi amici? — Sì, _____ invito tutti.",
+            "Chi prende il pane? — _____ prendo io.",
+            "Leggi i giornali? — No, non _____ leggo mai."
+          ],
+          "key": [
+            "<b>lo</b>",
+            "<b>le</b>",
+            "<b>la</b>",
+            "<b>li</b>",
+            "<b>Lo</b>",
+            "<b>li</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Rispondi usando il pronome al posto delle parole in grassetto.",
+          "items": [
+            "Hai visto <b>il film</b>? — Sì, …",
+            "Hai comprato <b>le mele</b>? — Sì, …",
+            "Hai chiamato <b>Anna</b>? — Sì, …",
+            "Hai invitato <b>i colleghi</b>? — No, …",
+            "Puoi aiutare <b>me</b>? — Sì, …",
+            "Vuoi vedere <b>la casa</b>? — Sì, …"
+          ],
+          "key": [
+            "<b>Sì, l'ho visto.</b>",
+            "<b>Sì, le ho comprate.</b>",
+            "<b>Sì, l'ho chiamata.</b>",
+            "<b>No, non li ho invitati.</b>",
+            "<b>Sì, posso aiutarti</b> (o <b>ti posso aiutare</b>).",
+            "<b>Sì, voglio vederla</b> (o <b>la voglio vedere</b>)."
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Scegli la forma corretta.",
+          "items": [
+            "(L'ho / Lo ho) incontrato ieri.",
+            "Dov'è Marco? — (Eccolo / Ecco lo)!",
+            "Le ragazze? Non (le ho viste / le ho visto).",
+            "Domani piove. — Sì, (lo so / so).",
+            "Telefoni a Maria? — Sì, (la / le) telefono stasera.",
+            "Aspetti Luca? — Sì, (lo / gli) aspetto."
+          ],
+          "key": [
+            "<b>L'ho</b>",
+            "<b>Eccolo</b>",
+            "<b>le ho viste</b>",
+            "<b>lo so</b>",
+            "<b>le</b>",
+            "<b>lo</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a2",
+      "cat": "Verbi",
+      "title": "Il futuro con il presente",
+      "def": "Per parlare di un'azione futura vicina e già decisa, in italiano si usa molto spesso il presente, accompagnato da una parola che indica il futuro: «<i>domani parto</i>», «<i>stasera usciamo</i>». Nel parlato è la forma più naturale, più del futuro semplice.",
+      "form": "<b>Presente indicativo + una parola o un'espressione di tempo futuro.</b> È la parola di tempo a dire che si parla del futuro: «parto» (adesso) / «parto domani». Non serve nessun verbo di aiuto: l'italiano non ha una forma come l'inglese <i>going to</i> o lo spagnolo <i>ir a</i> + infinito.",
+      "tables": [
+        {
+          "before": "<b>Le parole che indicano il futuro.</b>",
+          "plain": true,
+          "headers": [
+            "espressione",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "stasera, stanotte, domani, dopodomani",
+              "Stasera ceno da Luca."
+            ],
+            [
+              "tra / fra + periodo",
+              "Tra due giorni parto."
+            ],
+            [
+              "la settimana prossima, il mese prossimo, l'anno prossimo",
+              "La settimana prossima comincio un corso."
+            ],
+            [
+              "lunedì, martedì… senza articolo (= quello che viene)",
+              "Sabato vado al mare."
+            ],
+            [
+              "a + mese, il + data",
+              "A luglio vado in Sicilia. / Il 3 maggio ho l'esame."
+            ],
+            [
+              "dopo, più tardi, poi",
+              "Ti chiamo più tardi."
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "piani e appuntamenti già fissati",
+          "ex": "Domani vado dal medico. / Giovedì ho una riunione."
+        },
+        {
+          "label": "orari e programmi",
+          "ex": "Il treno parte alle 8. / Il negozio apre lunedì."
+        },
+        {
+          "label": "decisioni prese in quel momento",
+          "ex": "Va bene, allora vengo anch'io. / Aspetta, ti aiuto io."
+        },
+        {
+          "label": "proposte e domande sul futuro",
+          "ex": "Stasera usciamo? / Cosa fai nel fine settimana?"
+        },
+        {
+          "label": "stare per + infinito: una cosa che succederà tra pochissimo",
+          "ex": "Sto per uscire, ti chiamo dopo. / Il film sta per cominciare."
+        },
+        {
+          "label": "il futuro semplice invece si usa per previsioni, promesse e supposizioni",
+          "ex": "Domani pioverà. / Te lo prometto, non lo farò più. / Saranno le tre."
+        }
+      ],
+      "warn": "<b>Presente o futuro semplice?</b> Per un piano concreto e vicino il presente suona più naturale: «domani parto» è normale, «domani partirò» suona più formale o più solenne. Il futuro semplice serve quando il fatto è incerto o lontano, nelle previsioni e nelle promesse (vedi Il futuro semplice). Usare il futuro non è un errore, ma nel parlato quotidiano gli italiani usano quasi sempre il presente.",
+      "errors": [
+        {
+          "wrong": "Vado a partire domani.",
+          "right": "Parto domani.",
+          "why": "<i>Andare a</i> + infinito vuol dire spostarsi per fare qualcosa («vado a mangiare» = vado in un posto per mangiare): non è un futuro come lo spagnolo <i>voy a</i>."
+        },
+        {
+          "wrong": "Settimana prossima vado a Roma.",
+          "right": "La settimana prossima vado a Roma.",
+          "why": "Con <i>prossimo</i> serve l'articolo."
+        },
+        {
+          "wrong": "In due giorni parto.",
+          "right": "Tra due giorni parto.",
+          "why": "Per il tempo che manca si usa <i>tra</i> o <i>fra</i>."
+        },
+        {
+          "wrong": "La settimana prossima sto per andare a Roma.",
+          "right": "La settimana prossima vado a Roma.",
+          "why": "<i>Stare per</i> indica una cosa che succede tra pochissimo, non tra una settimana."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con il presente del verbo tra parentesi.",
+          "items": [
+            "Domani _____ (io, partire) per Milano.",
+            "Stasera _____ (noi, mangiare) al ristorante.",
+            "Il film _____ (cominciare) alle nove.",
+            "La settimana prossima Anna _____ (cambiare) casa.",
+            "Tra un'ora _____ (io, finire) di lavorare.",
+            "Sabato _____ (voi, venire) alla festa?"
+          ],
+          "key": [
+            "<b>parto</b>",
+            "<b>mangiamo</b>",
+            "<b>comincia</b>",
+            "<b>cambia</b>",
+            "<b>finisco</b>",
+            "<b>venite</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Scegli la forma corretta.",
+          "items": [
+            "(Domani vado / Vado a andare domani) in banca.",
+            "(Tra / In) dieci minuti arrivo.",
+            "(La settimana prossima / Settimana prossima) ho un esame.",
+            "Ci vediamo (sabato / il sabato)? Ho una cosa da dirti.",
+            "Il treno (sta per / va a) partire, corri!",
+            "Domani alle otto (parte / sta per partire) il treno per Roma."
+          ],
+          "key": [
+            "<b>Domani vado</b>",
+            "<b>Tra</b>",
+            "<b>La settimana prossima</b>",
+            "<b>sabato</b> (= questo sabato; <i>il sabato</i> vorrebbe dire «ogni sabato»)",
+            "<b>sta per</b>",
+            "<b>parte</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Riscrivi la frase al futuro, usando il presente e l'espressione tra parentesi.",
+          "items": [
+            "Lavoro a casa. (domani)",
+            "Vado in Spagna. (ad agosto)",
+            "Marco arriva. (tra un'ora)",
+            "Ceniamo insieme. (stasera)",
+            "Comincio un nuovo lavoro. (il mese prossimo)",
+            "Ho l'esame. (il 12 giugno)"
+          ],
+          "key": [
+            "<b>Domani lavoro a casa.</b>",
+            "<b>Ad agosto vado in Spagna.</b>",
+            "<b>Marco arriva tra un'ora.</b>",
+            "<b>Stasera ceniamo insieme.</b>",
+            "<b>Il mese prossimo comincio un nuovo lavoro.</b>",
+            "<b>Il 12 giugno ho l'esame.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a2",
+      "cat": "Verbi",
+      "title": "Condizionale di cortesia",
+      "def": "Il condizionale si studia per intero al B1, ma alcune sue forme servono subito: rendono una richiesta, un desiderio o un consiglio più gentili e meno diretti. «<i>Voglio</i> un caffè» è corretto ma brusco; «<i>vorrei</i> un caffè» è quello che si dice al bar.",
+      "form": "Bastano poche forme di tre verbi e qualche espressione fissa. Per il Lei si usa la stessa forma di <i>lui/lei</i>: «<i>potrebbe</i> ripetere?». Dopo <i>vorrei, potrei, dovrei</i> viene un nome o un verbo all'infinito, senza preposizioni: «vorrei un caffè», «vorrei prenotare».",
+      "tables": [
+        {
+          "before": "<b>Le forme più utili.</b>",
+          "headers": [
+            "",
+            "volere",
+            "potere",
+            "dovere"
+          ],
+          "rows": [
+            [
+              "io",
+              "vorrei",
+              "potrei",
+              "dovrei"
+            ],
+            [
+              "tu",
+              "vorresti",
+              "potresti",
+              "dovresti"
+            ],
+            [
+              "lui / lei / Lei",
+              "vorrebbe",
+              "potrebbe",
+              "dovrebbe"
+            ],
+            [
+              "noi",
+              "vorremmo",
+              "potremmo",
+              "dovremmo"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Espressioni utili.</b>",
+          "plain": true,
+          "headers": [
+            "espressione",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "mi piacerebbe + infinito",
+              "Mi piacerebbe visitare Roma."
+            ],
+            [
+              "avrei bisogno di",
+              "Avrei bisogno di un'informazione."
+            ],
+            [
+              "Le dispiacerebbe + infinito?",
+              "Le dispiacerebbe chiudere la finestra?"
+            ],
+            [
+              "sarebbe possibile + infinito?",
+              "Sarebbe possibile pagare con la carta?"
+            ],
+            [
+              "preferirei",
+              "Preferirei un tè, grazie."
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "vorrei: chiedere qualcosa al bar, al ristorante, in un negozio",
+          "ex": "Vorrei un cappuccino, per favore. / Vorrei provare queste scarpe."
+        },
+        {
+          "label": "potrebbe, potresti: chiedere un favore",
+          "ex": "Potrebbe ripetere, per favore? / Potresti aiutarmi?"
+        },
+        {
+          "label": "dovresti, dovrebbe: dare un consiglio",
+          "ex": "Dovresti riposare di più. / Dovrebbe parlare con il direttore."
+        },
+        {
+          "label": "mi piacerebbe: esprimere un desiderio",
+          "ex": "Mi piacerebbe imparare a suonare la chitarra."
+        },
+        {
+          "label": "al telefono e nelle mail formali",
+          "ex": "Vorrei parlare con il signor Rossi. / Vorrei prenotare un tavolo per due."
+        }
+      ],
+      "warn": "<b>Una questione di registro, non di grammatica.</b> «Voglio un caffè» non è sbagliato, ma detto a uno sconosciuto suona come un ordine. Lo stesso vale per «puoi aiutarmi?» rispetto a «potresti aiutarmi?». Con il Lei attenzione anche ai pronomi: «<i>Le</i> dispiacerebbe…?» (= a Lei), «<i>La</i> potrei disturbare un momento?».",
+      "errors": [
+        {
+          "wrong": "Vorrei di un caffè.",
+          "right": "Vorrei un caffè.",
+          "why": "Dopo <i>vorrei</i> viene direttamente il nome."
+        },
+        {
+          "wrong": "Vorrei di prenotare.",
+          "right": "Vorrei prenotare.",
+          "why": "Anche con l'infinito niente <i>di</i>."
+        },
+        {
+          "wrong": "Mi piacerei andare al mare.",
+          "right": "Mi piacerebbe andare al mare.",
+          "why": "<i>Piacere</i> si accorda con la cosa che piace (andare al mare): <i>piacerebbe</i>."
+        },
+        {
+          "wrong": "Signora, potresti ripetere?",
+          "right": "Signora, potrebbe ripetere?",
+          "why": "Con il Lei si usa la forma di <i>lui/lei</i>: <i>potrebbe</i>."
+        },
+        {
+          "wrong": "Vorrebbi un tè.",
+          "right": "Vorrei un tè.",
+          "why": "La forma per <i>io</i> è <i>vorrei</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con il condizionale del verbo tra parentesi.",
+          "items": [
+            "Buongiorno, _____ (io, volere) un cornetto.",
+            "_____ (Lei, potere) parlare più piano?",
+            "Sei stanco: _____ (tu, dovere) dormire di più.",
+            "_____ (tu, potere) passarmi il sale?",
+            "Mi _____ (piacere) vivere in Italia.",
+            "_____ (noi, volere) prenotare una camera doppia."
+          ],
+          "key": [
+            "<b>vorrei</b>",
+            "<b>Potrebbe</b>",
+            "<b>dovresti</b>",
+            "<b>Potresti</b>",
+            "<b>piacerebbe</b>",
+            "<b>Vorremmo</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Rendi la frase più gentile usando il condizionale.",
+          "items": [
+            "Voglio un bicchiere d'acqua.",
+            "Puoi chiudere la porta?",
+            "Può ripetere?",
+            "Devi studiare di più.",
+            "Voglio parlare con il direttore.",
+            "Ho bisogno di un'informazione."
+          ],
+          "key": [
+            "<b>Vorrei un bicchiere d'acqua.</b>",
+            "<b>Potresti chiudere la porta?</b>",
+            "<b>Potrebbe ripetere?</b>",
+            "<b>Dovresti studiare di più.</b>",
+            "<b>Vorrei parlare con il direttore.</b>",
+            "<b>Avrei bisogno di un'informazione.</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Scegli la frase più adatta alla situazione.",
+          "items": [
+            "Al bar: (Vorrei un caffè, per favore. / Voglio un caffè.)",
+            "A un impiegato: (Potrebbe aiutarmi? / Potresti aiutarmi?)",
+            "A un amico stanco: (Dovresti riposare. / Dovrebbe riposare.)",
+            "Al telefono: (Vorrei parlare con la dottoressa Neri. / Voglio la dottoressa Neri.)",
+            "A uno sconosciuto in treno: (Le dispiacerebbe aprire il finestrino? / Ti dispiacerebbe aprire il finestrino?)",
+            "Parlando di un sogno: (Mi piacerebbe / Mi piacerei) fare il giro del mondo."
+          ],
+          "key": [
+            "<b>Vorrei un caffè, per favore.</b>",
+            "<b>Potrebbe aiutarmi?</b>",
+            "<b>Dovresti riposare.</b>",
+            "<b>Vorrei parlare con la dottoressa Neri.</b>",
+            "<b>Le dispiacerebbe aprire il finestrino?</b>",
+            "<b>Mi piacerebbe</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a2",
+      "cat": "Verbi",
+      "title": "Sapere e potere",
+      "def": "In alcune lingue (come l'inglese con <i>can</i>) un solo verbo vuol dire sia «essere capace» sia «avere la possibilità»; in italiano i verbi sono due. <b>Sapere</b> + infinito = saper fare una cosa perché la si è imparata. <b>Potere</b> + infinito = avere la possibilità o il permesso di farla. Accanto a <i>sapere</i> c'è <b>conoscere</b>, e accanto a <i>potere</i> c'è <b>riuscire</b>: anche questi vanno distinti.",
+      "form": "<b>Sapere</b> e <b>potere</b> sono irregolari e sono seguiti direttamente dall'infinito, senza preposizioni: «so nuotare», «posso venire». <b>Riuscire</b> invece vuole <b>a</b> (<i>ad</i> davanti a vocale): «riesco <i>a</i> finire», «non riesco <i>ad</i> aprire»; si coniuga come <i>uscire</i>.",
+      "tables": [
+        {
+          "headers": [
+            "",
+            "sapere",
+            "potere",
+            "riuscire"
+          ],
+          "rows": [
+            [
+              "io",
+              "so",
+              "posso",
+              "riesco"
+            ],
+            [
+              "tu",
+              "sai",
+              "puoi",
+              "riesci"
+            ],
+            [
+              "lui/lei",
+              "sa",
+              "può",
+              "riesce"
+            ],
+            [
+              "noi",
+              "sappiamo",
+              "possiamo",
+              "riusciamo"
+            ],
+            [
+              "voi",
+              "sapete",
+              "potete",
+              "riuscite"
+            ],
+            [
+              "loro",
+              "sanno",
+              "possono",
+              "riescono"
+            ]
+          ],
+          "before": "<b>Le forme.</b>"
+        },
+        {
+          "before": "<b>Sapere o conoscere?</b>",
+          "plain": true,
+          "headers": [
+            "verbo",
+            "si usa con",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "sapere",
+              "un fatto, un'informazione: che…, se…, dove…, come…, quando…",
+              "So che sei stanco. / Sai dov'è la stazione?"
+            ],
+            [
+              "sapere",
+              "un verbo all'infinito: una capacità imparata",
+              "So guidare."
+            ],
+            [
+              "conoscere",
+              "una persona, un luogo, una cosa con cui si ha familiarità",
+              "Conosco Marco. / Conosci Roma? / Conosco questo libro."
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "sapere + infinito: una capacità che si è imparata",
+          "ex": "So nuotare. / Sai parlare tedesco? / Non so cucinare."
+        },
+        {
+          "label": "sapere + che, se, dove, come…: avere un'informazione",
+          "ex": "So che è tardi. / Non so dove abita. / Sai se viene?"
+        },
+        {
+          "label": "potere + infinito: c'è la possibilità, nessun ostacolo lo impedisce",
+          "ex": "Oggi non posso nuotare: la piscina è chiusa. / Posso venire alle otto."
+        },
+        {
+          "label": "potere + infinito: chiedere o dare il permesso",
+          "ex": "Posso entrare? / Qui non si può fumare."
+        },
+        {
+          "label": "conoscere: una persona, un luogo, una cosa",
+          "ex": "Conosci mia sorella? / Non conosco questa città."
+        },
+        {
+          "label": "riuscire a + infinito: farcela, avere successo in una cosa difficile",
+          "ex": "Non riesco ad aprire la porta. / Sei riuscito a finire?"
+        }
+      ],
+      "warn": "<b>So nuotare, posso nuotare, riesco a nuotare.</b> «<i>So</i> nuotare» = ho imparato, ne sono capace. «<i>Posso</i> nuotare» = adesso ne ho la possibilità (l'acqua è calda, il medico me lo permette). «Non <i>riesco</i> a nuotare» = ci provo, ma non ce la faccio. Al passato prossimo <i>conoscere</i> vuol dire «incontrare per la prima volta» («ho conosciuto Marco ieri») e <i>sapere</i> vuol dire «venire a sapere» («l'ho saputo ieri»).",
+      "errors": [
+        {
+          "wrong": "Posso nuotare. (= ho imparato)",
+          "right": "So nuotare.",
+          "why": "Per una capacità imparata si usa <i>sapere</i>."
+        },
+        {
+          "wrong": "So Marco.",
+          "right": "Conosco Marco.",
+          "why": "Con le persone si usa <i>conoscere</i>."
+        },
+        {
+          "wrong": "Sai Roma?",
+          "right": "Conosci Roma?",
+          "why": "Anche con i luoghi si usa <i>conoscere</i>."
+        },
+        {
+          "wrong": "Conosco che sei stanco.",
+          "right": "So che sei stanco.",
+          "why": "Con <i>che, se, dove…</i> si usa <i>sapere</i>."
+        },
+        {
+          "wrong": "So di guidare.",
+          "right": "So guidare.",
+          "why": "<i>Sapere</i> + infinito senza preposizione."
+        },
+        {
+          "wrong": "Non riesco aprire la porta.",
+          "right": "Non riesco ad aprire la porta.",
+          "why": "<i>Riuscire</i> vuole <i>a</i> (<i>ad</i> davanti a vocale)."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con sapere o potere al presente.",
+          "items": [
+            "Mia figlia ha sei anni e _____ già leggere.",
+            "Scusi, _____ (io) aprire la finestra? Fa caldo.",
+            "Oggi non _____ (io) uscire: devo lavorare.",
+            "_____ (tu) suonare la chitarra?",
+            "Non _____ (io) dove sono le chiavi.",
+            "In questo museo non si _____ fare foto."
+          ],
+          "key": [
+            "<b>sa</b>",
+            "<b>posso</b>",
+            "<b>posso</b>",
+            "<b>Sai</b>",
+            "<b>so</b>",
+            "<b>può</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Sapere o conoscere? Scegli la forma corretta.",
+          "items": [
+            "(Conosci / Sai) mio fratello?",
+            "(Conosci / Sai) che ore sono?",
+            "Non (conosco / so) questa canzone.",
+            "Non (conosco / so) se Marco viene.",
+            "(Conoscete / Sapete) un buon ristorante qui vicino?",
+            "(Conosci / Sai) cucinare la carbonara?"
+          ],
+          "key": [
+            "<b>Conosci</b>",
+            "<b>Sai</b>",
+            "<b>conosco</b>",
+            "<b>so</b>",
+            "<b>Conoscete</b>",
+            "<b>Sai</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Sapere, potere o riuscire? Scegli il verbo giusto.",
+          "items": [
+            "Ho studiato inglese per dieci anni: (so / posso) parlarlo bene.",
+            "C'è troppo rumore, non (riesco a / so) dormire.",
+            "Sei libero domani? (Puoi / Sai) aiutarmi con il trasloco?",
+            "Il coperchio è bloccato: non (riesco ad / so) aprire il barattolo.",
+            "Mio nonno non (sa / può) usare il computer: non l'ha mai imparato.",
+            "Mi dispiace, stasera non (posso / so) venire: ho un impegno."
+          ],
+          "key": [
+            "<b>so</b>",
+            "<b>riesco a</b>",
+            "<b>Puoi</b>",
+            "<b>riesco ad</b>",
+            "<b>sa</b>",
+            "<b>posso</b>"
+          ]
+        }
+      ]
+    }
+  ]
+}

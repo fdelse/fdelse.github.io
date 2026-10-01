@@ -1,0 +1,1006 @@
+{
+  "versione": "1.2",
+  "livello": "C1",
+  "schede": [
+    {
+      "lvl": "c1",
+      "cat": "Sintassi",
+      "title": "La forma passiva: tutte le forme",
+      "def": "Al livello avanzato il passivo non si fa solo con <i>essere</i>: l'italiano ha altre tre costruzioni, ognuna con una sfumatura propria. <b>Venire</b> mette in primo piano l'azione che succede; <b>andare</b> aggiunge l'idea di obbligo («va fatto» = deve essere fatto); il <b>si</b> passivante presenta l'azione come generale o impersonale.",
+      "form": "Tutte usano il <b>participio passato accordato con il soggetto</b>. <b>Essere</b> va bene in tutti i tempi. <b>Venire</b> solo nei tempi semplici (<i>viene, veniva, verrà, verrebbe fatto</i>). <b>Andare</b> + participio con il valore di obbligo solo nei tempi semplici (<i>va, andava, andrà, andrebbe fatto</i>); nei tempi composti <i>andare</i> + participio esiste, ma con un altro significato: la perdita («è andato perso»). Il <b>si</b> passivante accorda il verbo con la cosa («si vende la casa / si vendono le case»).",
+      "tables": [
+        {
+          "before": "<b>Le costruzioni a confronto.</b>",
+          "plain": true,
+          "headers": [
+            "costruzione",
+            "significato",
+            "tempi",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "essere + participio",
+              "passivo neutro",
+              "tutti",
+              "La legge è stata approvata ieri."
+            ],
+            [
+              "venire + participio",
+              "l'azione mentre succede, o che si ripete",
+              "solo semplici",
+              "Le domande vengono esaminate ogni lunedì."
+            ],
+            [
+              "andare + participio",
+              "dover essere",
+              "solo semplici",
+              "Il modulo va compilato in stampatello. (= deve essere compilato)"
+            ],
+            [
+              "andare + perso, smarrito, distrutto, sprecato",
+              "perdita",
+              "anche composti",
+              "Il pacco è andato perso. / Molti documenti sono andati distrutti."
+            ],
+            [
+              "si + verbo",
+              "impersonale, generale",
+              "tutti (con essere)",
+              "Si raccomanda la puntualità. / Si sono raccolti mille euro."
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "andare + participio: istruzioni, regole, avvisi",
+          "ex": "Il contratto va firmato in due copie. / Questi farmaci vanno conservati in frigo."
+        },
+        {
+          "label": "andare + participio al condizionale: un consiglio formale",
+          "ex": "La questione andrebbe discussa con calma."
+        },
+        {
+          "label": "venire + participio: procedure e azioni che si ripetono",
+          "ex": "Le decisioni vengono prese dal consiglio. / I candidati verranno contattati via email."
+        },
+        {
+          "label": "il passivo senza un soggetto preciso, nei testi formali",
+          "ex": "È stato deciso che la riunione si terrà a maggio. / Si comunica che l'ufficio resterà chiuso."
+        },
+        {
+          "label": "il si passivante con i modali",
+          "ex": "Si devono rispettare le scadenze. / Non si possono portare animali."
+        }
+      ],
+      "warn": "<b>Andare nei tempi composti.</b> Con il valore di «dover essere», <i>andare</i> + participio esiste solo nei tempi semplici: «il modulo <i>va compilato</i>», «<i>andava compilato</i>»; «è andato compilato» non si dice (si dice «doveva essere compilato»). Nei tempi composti <i>andare</i> + participio si usa invece con i verbi di perdita: «<i>è andato perso</i>», «<i>sono andati distrutti</i>», «un'occasione <i>andata sprecata</i>»: è corretto e frequente.",
+      "errors": [
+        {
+          "wrong": "Il modulo è andato compilato entro ieri.",
+          "right": "Il modulo doveva essere compilato entro ieri.",
+          "why": "<i>Andare</i> = «dover essere» esiste solo nei tempi semplici."
+        },
+        {
+          "wrong": "Va compilato i moduli.",
+          "right": "Vanno compilati i moduli.",
+          "why": "Verbo e participio si accordano con la cosa: <i>i moduli</i>."
+        },
+        {
+          "wrong": "La domanda va presentato entro giugno.",
+          "right": "La domanda va presentata entro giugno.",
+          "why": "Il participio si accorda con <i>la domanda</i>."
+        },
+        {
+          "wrong": "Il lavoro viene stato fatto.",
+          "right": "Il lavoro è stato fatto.",
+          "why": "<i>Venire</i> non si usa nei tempi composti."
+        },
+        {
+          "wrong": "Si è raccolto mille euro.",
+          "right": "Si sono raccolti mille euro.",
+          "why": "Con il <i>si</i> passivante il verbo si accorda con la cosa."
+        },
+        {
+          "wrong": "Le valigie sono andate perso.",
+          "right": "Le valigie sono andate perse.",
+          "why": "Il participio si accorda con il soggetto."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Riformulazione",
+          "instr": "Riformula usando la costruzione tra parentesi.",
+          "items": [
+            "Il documento deve essere firmato. (andare)",
+            "Le lettere sono spedite ogni giorno. (venire)",
+            "Raccomandiamo la massima prudenza. (si)",
+            "Le norme devono essere rispettate. (andare)",
+            "Durante il trasloco abbiamo perso molti libri. (andare + participio)",
+            "I risultati saranno pubblicati domani. (venire)"
+          ],
+          "key": [
+            "<b>Il documento va firmato.</b>",
+            "<b>Le lettere vengono spedite ogni giorno.</b>",
+            "<b>Si raccomanda la massima prudenza.</b>",
+            "<b>Le norme vanno rispettate.</b>",
+            "<b>Durante il trasloco molti libri sono andati persi.</b>",
+            "<b>I risultati verranno pubblicati domani.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "La tassa è andata pagata entro marzo.",
+            "Queste regole va rispettato.",
+            "Il progetto viene stato approvato.",
+            "Si sono deciso di rinviare la riunione.",
+            "Purtroppo i dati sono andati persa.",
+            "Le fatture vengono pagato a trenta giorni."
+          ],
+          "key": [
+            "<b>doveva essere pagata</b>",
+            "<b>vanno rispettate</b>",
+            "<b>è stato approvato</b>",
+            "<b>Si è deciso</b>",
+            "<b>persi</b>",
+            "<b>pagate</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata",
+          "instr": "Scrivi una frase per la situazione, usando la costruzione indicata.",
+          "items": [
+            "Un cartello in piscina: obbligo di cuffia. (andare)",
+            "Un avviso in ufficio: chiusura per ferie. (si)",
+            "Una procedura aziendale: controllo delle fatture. (venire)",
+            "Un consiglio formale a un collega. (andare al condizionale)",
+            "Un guasto informatico. (andare + participio di perdita)",
+            "Una regola del condominio. (si + modale)"
+          ],
+          "key": [
+            "Esempio: <b>La cuffia va indossata in vasca.</b>",
+            "Esempio: <b>Si comunica che l'ufficio resterà chiuso dal 10 al 20 agosto.</b>",
+            "Esempio: <b>Le fatture vengono controllate dall'ufficio contabilità.</b>",
+            "Esempio: <b>Il problema andrebbe segnalato al direttore.</b>",
+            "Esempio: <b>Durante il guasto sono andati persi molti dati.</b>",
+            "Esempio: <b>Dopo le 22 non si possono fare rumori.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "c1",
+      "cat": "Sintassi",
+      "title": "Le proposizioni concessive",
+      "def": "Le concessive presentano un fatto che <b>potrebbe impedire</b> quello che dice il resto della frase, ma non lo impedisce: «<i>benché fosse tardi</i>, siamo usciti» (era tardi, eppure siamo usciti). Esprimono l'idea di «anche se».",
+      "form": "La regola principale: <b>benché, sebbene, nonostante, malgrado, per quanto, quantunque</b> vogliono il <b>congiuntivo</b>; <b>anche se</b> vuole l'<b>indicativo</b>. Il tempo del congiuntivo segue la concordanza: «benché <i>sia</i> tardi, esco» / «benché <i>fosse</i> tardi, sono uscito». Esistono anche forme senza verbo coniugato, più compatte: <b>pur</b> + gerundio, <b>nonostante / malgrado</b> + nome, <b>per quanto</b> + aggettivo.",
+      "tables": [
+        {
+          "before": "<b>Le forme.</b>",
+          "plain": true,
+          "headers": [
+            "forma",
+            "modo",
+            "registro",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "anche se",
+              "indicativo",
+              "neutro",
+              "Anche se piove, esco."
+            ],
+            [
+              "benché, sebbene",
+              "congiuntivo",
+              "curato",
+              "Benché fosse stanco, ha continuato a lavorare."
+            ],
+            [
+              "nonostante, malgrado + frase",
+              "congiuntivo",
+              "neutro o curato",
+              "Nonostante piovesse, siamo usciti."
+            ],
+            [
+              "nonostante, malgrado + nome",
+              "—",
+              "neutro",
+              "Nonostante la pioggia, siamo usciti. / Malgrado le difficoltà, ce l'ha fatta."
+            ],
+            [
+              "per quanto + verbo o aggettivo",
+              "congiuntivo",
+              "curato",
+              "Per quanto sia difficile, ci proverò. / Per quanto bravo sia, non può fare tutto da solo."
+            ],
+            [
+              "pur + gerundio",
+              "—",
+              "curato",
+              "Pur essendo stanco, ha continuato."
+            ],
+            [
+              "quantunque, ancorché",
+              "congiuntivo",
+              "letterario o burocratico",
+              "Quantunque fosse ricco, viveva modestamente."
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "anche se + indicativo: la forma più comune nel parlato",
+          "ex": "Anche se non ho tempo, ti aiuto. / Anche se era tardi, ha chiamato."
+        },
+        {
+          "label": "benché, sebbene + congiuntivo: nello scritto e nel parlato curato",
+          "ex": "Sebbene avesse studiato, non ha superato l'esame."
+        },
+        {
+          "label": "nonostante e malgrado: con una frase al congiuntivo o con un nome",
+          "ex": "Nonostante fosse malato, è venuto. / Nonostante la febbre, è venuto."
+        },
+        {
+          "label": "pur + gerundio: compatto, con lo stesso soggetto",
+          "ex": "Pur sapendolo, non ha detto niente."
+        },
+        {
+          "label": "per quanto: «anche se molto»",
+          "ex": "Per quanto ci provi, non ci riesco."
+        },
+        {
+          "label": "a costo di + infinito: accettare anche un sacrificio",
+          "ex": "Lo finirò, a costo di lavorare tutta la notte."
+        }
+      ],
+      "warn": "<b>Anche se o benché?</b> L'errore tipico è scambiare i modi: «benché <i>è</i> tardi» e «anche se <i>sia</i> tardi» sono tutti e due sbagliati. Nel parlato si sente anche <i>nonostante</i> + indicativo («nonostante è tardi»): è diffuso, ma nello scritto e all'esame va evitato. <i>Malgrado</i> e <i>nonostante</i> davanti a un nome non vogliono preposizioni: «malgrado <i>la</i> pioggia», non «malgrado di».",
+      "errors": [
+        {
+          "wrong": "Benché è tardi, esco.",
+          "right": "Benché sia tardi, esco.",
+          "why": "<i>Benché</i> vuole il congiuntivo."
+        },
+        {
+          "wrong": "Anche se sia stanco, vengo.",
+          "right": "Anche se sono stanco, vengo.",
+          "why": "<i>Anche se</i> vuole l'indicativo."
+        },
+        {
+          "wrong": "Malgrado di tutto, siamo amici.",
+          "right": "Malgrado tutto, siamo amici.",
+          "why": "Davanti a un nome, <i>malgrado</i> non vuole preposizioni."
+        },
+        {
+          "wrong": "Pur se è difficile, ci provo.",
+          "right": "Anche se è difficile, ci provo. / Pur essendo difficile, ci provo.",
+          "why": "<i>Pur</i> va con il gerundio; con un verbo coniugato si usa <i>anche se</i>."
+        },
+        {
+          "wrong": "Nonostante piove, usciamo. (scritto)",
+          "right": "Nonostante piova, usciamo.",
+          "why": "Nello scritto <i>nonostante</i> vuole il congiuntivo."
+        },
+        {
+          "wrong": "Benché fosse stanco, ma ha continuato.",
+          "right": "Benché fosse stanco, ha continuato.",
+          "why": "La concessiva contiene già l'idea di «ma»."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Riformulazione",
+          "instr": "Riformula usando la parola tra parentesi.",
+          "items": [
+            "Era stanco, ma è andato al lavoro. (benché)",
+            "Piove, ma usciamo lo stesso. (anche se)",
+            "C'era traffico, ma siamo arrivati in tempo. (nonostante + nome)",
+            "Sapeva la verità, ma non ha detto nulla. (pur)",
+            "È molto bravo, ma non può fare tutto da solo. (per quanto)",
+            "Aveva poco tempo, ma ci ha aiutati. (sebbene)"
+          ],
+          "key": [
+            "<b>Benché fosse stanco, è andato al lavoro.</b>",
+            "<b>Anche se piove, usciamo lo stesso.</b>",
+            "<b>Nonostante il traffico, siamo arrivati in tempo.</b>",
+            "<b>Pur sapendo la verità, non ha detto nulla.</b>",
+            "<b>Per quanto sia bravo, non può fare tutto da solo.</b>",
+            "<b>Sebbene avesse poco tempo, ci ha aiutati.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Sebbene ha molti soldi, vive in modo semplice.",
+            "Anche se fosse tardi, siamo rimasti.",
+            "Malgrado di questo, ha accettato.",
+            "Pur ha studiato molto, non ha superato l'esame.",
+            "Benché era malato, ma è venuto al lavoro.",
+            "Per quanto è difficile, non mi arrendo."
+          ],
+          "key": [
+            "<b>abbia</b>",
+            "<b>era</b>",
+            "<b>Malgrado questo</b>",
+            "<b>Pur avendo studiato</b>",
+            "<b>Benché fosse malato, è venuto</b> al lavoro.",
+            "<b>sia</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata",
+          "instr": "Scrivi una frase con la forma indicata.",
+          "items": [
+            "nonostante + nome",
+            "benché + congiuntivo imperfetto",
+            "pur + gerundio composto",
+            "per quanto + aggettivo",
+            "anche se + indicativo",
+            "a costo di + infinito"
+          ],
+          "key": [
+            "Esempio: <b>Nonostante la crisi, l'azienda ha assunto nuovo personale.</b>",
+            "Esempio: <b>Benché il viaggio fosse lungo, nessuno si è lamentato.</b>",
+            "Esempio: <b>Pur avendo vissuto in Italia per anni, parla ancora poco italiano.</b>",
+            "Esempio: <b>Per quanto sia interessante, questo libro è troppo lungo.</b>",
+            "Esempio: <b>Anche se non mi piace il calcio, guardo sempre la finale.</b>",
+            "Esempio: <b>Finirò la tesi entro giugno, a costo di lavorare anche nel fine settimana.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "c1",
+      "cat": "Sintassi",
+      "title": "Le proposizioni temporali avanzate",
+      "def": "Sono le frasi che collocano un'azione nel tempo rispetto a un'altra: prima, dopo, nello stesso momento, fino a quando. Al livello avanzato conta la scelta del modo (indicativo, congiuntivo o infinito), che dipende dalla congiunzione e dal fatto che il soggetto sia lo stesso o no.",
+      "form": "Due domande. <b>1. Che rapporto c'è tra le due azioni?</b> (prima, dopo, nello stesso momento, fino a…). <b>2. Il soggetto è lo stesso?</b> Con lo stesso soggetto si preferisce spesso una forma con l'infinito (<i>prima di uscire, dopo aver mangiato</i>); con soggetti diversi serve una frase con il verbo coniugato. L'unica congiunzione temporale che vuole sempre il congiuntivo è <b>prima che</b>, perché parla di qualcosa che non è ancora successo.",
+      "tables": [
+        {
+          "before": "<b>Le congiunzioni temporali.</b>",
+          "plain": true,
+          "headers": [
+            "congiunzione",
+            "rapporto",
+            "modo",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "prima che",
+              "prima (soggetti diversi)",
+              "congiuntivo",
+              "Esci prima che cominci a piovere."
+            ],
+            [
+              "prima di + infinito",
+              "prima (stesso soggetto)",
+              "infinito",
+              "Prima di uscire, chiudi la porta."
+            ],
+            [
+              "dopo che",
+              "dopo",
+              "indicativo",
+              "Dopo che sei partito, ho pulito casa."
+            ],
+            [
+              "dopo + infinito passato",
+              "dopo (stesso soggetto)",
+              "infinito passato",
+              "Dopo aver cenato, siamo usciti."
+            ],
+            [
+              "(non) appena, una volta che",
+              "subito dopo",
+              "indicativo (futuro anteriore per il futuro)",
+              "Appena sarò arrivato, ti chiamerò."
+            ],
+            [
+              "mentre",
+              "nello stesso momento",
+              "indicativo",
+              "Mentre cucinavo, è suonato il telefono."
+            ],
+            [
+              "finché (non)",
+              "fino al momento in cui",
+              "indicativo",
+              "Aspetto finché non torni."
+            ],
+            [
+              "da quando",
+              "dall'inizio di un periodo",
+              "indicativo",
+              "Da quando vive a Roma, è più felice."
+            ],
+            [
+              "ogni volta che",
+              "ripetizione",
+              "indicativo",
+              "Ogni volta che lo vedo, mi saluta."
+            ]
+          ]
+        },
+        {
+          "before": "<b>Il trapassato remoto.</b>",
+          "plain": true,
+          "headers": [
+            "forma",
+            "uso",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "passato remoto di avere o essere + participio (ebbi parlato, fu partito)",
+              "solo nello scritto letterario, dopo le congiunzioni <i>dopo che</i>, <i>appena</i>, <i>quando</i>, se la frase principale è al passato remoto",
+              "Dopo che ebbe parlato, tutti applaudirono. / Appena fu arrivato, si mise a lavorare."
+            ]
+          ],
+          "after": "Nel parlato e nello scritto di oggi si sostituisce con il trapassato prossimo o con una forma all'infinito: «dopo aver parlato, tutti applaudirono»."
+        }
+      ],
+      "uses": [
+        {
+          "label": "prima che + congiuntivo, con soggetti diversi",
+          "ex": "Torna prima che faccia buio. / Te lo dico prima che tu lo scopra da solo."
+        },
+        {
+          "label": "prima di + infinito, con lo stesso soggetto",
+          "ex": "Prima di decidere, voglio pensarci."
+        },
+        {
+          "label": "dopo che + indicativo, mai il congiuntivo",
+          "ex": "Dopo che è arrivato il direttore, la riunione è cominciata."
+        },
+        {
+          "label": "appena e una volta che: con il futuro anteriore per un'azione futura",
+          "ex": "Appena avrò ricevuto i documenti, li firmerò. / Una volta che avrai finito, avvisami."
+        },
+        {
+          "label": "finché non: il non non nega, sottolinea il limite",
+          "ex": "Resto qui finché non arrivi. (= fino a quando arrivi)"
+        },
+        {
+          "label": "finché senza non: per tutto il tempo in cui",
+          "ex": "Finché lavoro, non posso rispondere al telefono."
+        }
+      ],
+      "warn": "<b>Il «non» di finché.</b> In «aspetto <i>finché non</i> torni», il <i>non</i> non nega nulla: la frase vuol dire «aspetto fino al momento in cui torni». Si può anche togliere («aspetto finché torni»), ma con <i>non</i> è più comune. Diverso è <i>finché</i> senza <i>non</i> con il senso di «per tutto il tempo in cui»: «<i>finché</i> c'è vita, c'è speranza». Lo stesso <i>non</i> che non nega compare in <i>a meno che non</i> e, facoltativo, in <i>prima che (non)</i>.",
+      "errors": [
+        {
+          "wrong": "Prima che io esca, chiudo la finestra.",
+          "right": "Prima di uscire, chiudo la finestra.",
+          "why": "Stesso soggetto: <i>prima di</i> + infinito."
+        },
+        {
+          "wrong": "Dopo che sia arrivato, abbiamo cenato.",
+          "right": "Dopo che è arrivato, abbiamo cenato.",
+          "why": "<i>Dopo che</i> vuole l'indicativo."
+        },
+        {
+          "wrong": "Prima che arrivi Marco, avevo già cenato.",
+          "right": "Prima che arrivasse Marco, avevo già cenato.",
+          "why": "Frase al passato: congiuntivo imperfetto."
+        },
+        {
+          "wrong": "Da quando che vivo qui, sto meglio.",
+          "right": "Da quando vivo qui, sto meglio.",
+          "why": "<i>Da quando</i> non vuole <i>che</i>."
+        },
+        {
+          "wrong": "Mentre che cucinavo, ho rotto un piatto.",
+          "right": "Mentre cucinavo, ho rotto un piatto.",
+          "why": "<i>Mentre</i> non vuole <i>che</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Riformulazione",
+          "instr": "Riformula usando la forma tra parentesi.",
+          "items": [
+            "Ho mangiato e poi sono uscito. (dopo + infinito)",
+            "Devi finire il lavoro: il capo torna tra poco. (prima che)",
+            "Ti chiamerò quando sarò arrivato a casa. (appena)",
+            "Aspetto qui fino al momento in cui finisci. (finché non)",
+            "Vive a Bologna dal 2019 e da allora è più felice. (da quando)",
+            "Leggo il contratto, poi lo firmo. (prima di)"
+          ],
+          "key": [
+            "<b>Dopo aver mangiato, sono uscito.</b>",
+            "<b>Devi finire il lavoro prima che torni il capo.</b>",
+            "<b>Appena sarò arrivato a casa, ti chiamerò.</b>",
+            "<b>Aspetto qui finché non finisci.</b>",
+            "<b>Da quando vive a Bologna, è più felice.</b>",
+            "<b>Prima di firmare il contratto, lo leggo.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Prima che noi usciamo, prendiamo l'ombrello.",
+            "Dopo che abbia finito, ti scriverò.",
+            "Prima che arrivi la polizia, il ladro era già scappato.",
+            "Da quando che lavoro qui, non ho mai preso ferie.",
+            "Ogni volta che lo vedessi, mi salutava.",
+            "Mentre che aspettavo, ho letto il giornale."
+          ],
+          "key": [
+            "<b>Prima di uscire</b>, prendiamo l'ombrello.",
+            "<b>Dopo che avrò finito</b>",
+            "<b>arrivasse</b>",
+            "<b>Da quando lavoro</b>",
+            "<b>vedevo</b> (<i>ogni volta che</i> vuole l'indicativo)",
+            "<b>Mentre aspettavo</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata",
+          "instr": "Scrivi una frase con la forma indicata.",
+          "items": [
+            "prima che + congiuntivo",
+            "non appena + futuro anteriore",
+            "finché non",
+            "dopo + infinito passato",
+            "da quando",
+            "ogni volta che"
+          ],
+          "key": [
+            "Esempio: <b>Vorrei parlarti prima che tu prenda una decisione.</b>",
+            "Esempio: <b>Non appena avrò ricevuto il pagamento, spedirò la merce.</b>",
+            "Esempio: <b>Non me ne vado finché non mi dai una risposta.</b>",
+            "Esempio: <b>Dopo essermi laureato, ho lavorato due anni all'estero.</b>",
+            "Esempio: <b>Da quando ho cambiato lavoro, dormo meglio.</b>",
+            "Esempio: <b>Ogni volta che vado a Roma, scopro un posto nuovo.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "c1",
+      "cat": "Verbi",
+      "title": "Il periodo ipotetico misto",
+      "def": "Nel periodo ipotetico «normale» condizione e conseguenza stanno sullo stesso piano di tempo. Nel periodo ipotetico <b>misto</b> stanno su piani diversi: di solito una condizione non realizzata nel <b>passato</b> che ha effetti sul <b>presente</b> («se <i>avessi studiato</i> medicina, ora <i>sarei</i> medico»), oppure una caratteristica presente e permanente che spiega un fatto passato («se tu <i>fossi</i> più attento, non <i>avresti fatto</i> quell'errore»).",
+      "form": "Si scelgono i tempi guardando quando si colloca ciascuna parte. <b>Condizione nel passato</b> → congiuntivo trapassato; <b>condizione presente o permanente</b> → congiuntivo imperfetto. <b>Conseguenza nel presente</b> → condizionale presente; <b>conseguenza nel passato</b> → condizionale passato. Il periodo ipotetico si può costruire anche <b>senza se</b>, con forme più formali o più compatte.",
+      "tables": [
+        {
+          "before": "<b>Le due combinazioni.</b>",
+          "plain": true,
+          "headers": [
+            "condizione",
+            "conseguenza",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "congiuntivo trapassato (passato)",
+              "condizionale presente (adesso)",
+              "Se avessi accettato quel lavoro, ora vivrei a Milano."
+            ],
+            [
+              "congiuntivo imperfetto (sempre, in generale)",
+              "condizionale passato (passato)",
+              "Se tu fossi più organizzato, non avresti perso il treno."
+            ]
+          ]
+        },
+        {
+          "before": "<b>Il periodo ipotetico senza se.</b>",
+          "plain": true,
+          "headers": [
+            "forma",
+            "registro",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "congiuntivo senza se, all'inizio della frase",
+              "parlato e scritto",
+              "Avessi saputo, sarei venuto. / Fossi in te, accetterei."
+            ],
+            [
+              "dovesse, dovessero + infinito",
+              "condizione poco probabile",
+              "Dovesse piovere, la festa si farà al chiuso."
+            ],
+            [
+              "qualora, nel caso in cui + congiuntivo",
+              "formale",
+              "Qualora il prodotto fosse difettoso, verrà sostituito. / Nel caso in cui non possiate venire, avvisateci."
+            ],
+            [
+              "a patto che, purché, a condizione che + congiuntivo",
+              "condizione necessaria",
+              "Ti presto la macchina, a patto che tu la riporti entro sera."
+            ],
+            [
+              "a + infinito",
+              "parlato, compatto",
+              "A saperlo, sarei venuto prima. (= se l'avessi saputo)"
+            ],
+            [
+              "gerundio",
+              "compatto",
+              "Volendo, potremmo partire domani. (= se volessimo)"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "una scelta passata e le sue conseguenze oggi",
+          "ex": "Se non mi fossi trasferito, oggi non parlerei italiano. / Se avessi risparmiato, ora potrei comprare casa."
+        },
+        {
+          "label": "una caratteristica permanente che spiega un fatto passato",
+          "ex": "Se fosse una persona seria, non si sarebbe comportato così. / Se non fossi così timido, le avresti parlato."
+        },
+        {
+          "label": "rimpianti e rimproveri",
+          "ex": "Se mi avessi ascoltato, adesso non saremmo in questa situazione."
+        },
+        {
+          "label": "senza se, nella lingua formale e burocratica",
+          "ex": "Qualora riscontrasse problemi, contatti il servizio clienti."
+        },
+        {
+          "label": "nel parlato informale l'imperfetto indicativo sostituisce congiuntivo e condizionale: da riconoscere, non da insegnare come modello",
+          "ex": "Se lo sapevo, venivo. (= se l'avessi saputo, sarei venuto)"
+        }
+      ],
+      "warn": "<b>Un tempo sbagliato cambia il senso.</b> «Se avessi studiato medicina, <i>sarei stato</i> medico» parla solo del passato; «…, ora <i>sarei</i> medico» dice che l'effetto dura oggi. Per scegliere, lo studente si chiede: la conseguenza riguarda adesso o allora? Attenzione a <i>qualora</i>: vuole sempre il congiuntivo («qualora <i>fosse</i> necessario», non «qualora è necessario»).",
+      "errors": [
+        {
+          "wrong": "Se avessi studiato medicina, ora sarei stato medico.",
+          "right": "Se avessi studiato medicina, ora sarei medico.",
+          "why": "Con «ora» la conseguenza è nel presente: condizionale presente."
+        },
+        {
+          "wrong": "Se avrei accettato, ora vivrei a Milano.",
+          "right": "Se avessi accettato, ora vivrei a Milano.",
+          "why": "Dopo <i>se</i> va il congiuntivo, mai il condizionale."
+        },
+        {
+          "wrong": "Qualora è necessario, vi chiameremo.",
+          "right": "Qualora fosse necessario, vi chiameremo.",
+          "why": "<i>Qualora</i> vuole il congiuntivo."
+        },
+        {
+          "wrong": "Avessi saputo, venivo.",
+          "right": "Avessi saputo, sarei venuto.",
+          "why": "«Venivo» è del parlato informale; nello scritto la conseguenza va al condizionale passato."
+        },
+        {
+          "wrong": "Dovesse pioverebbe, restiamo a casa.",
+          "right": "Dovesse piovere, restiamo a casa.",
+          "why": "Dopo <i>dovesse</i> va l'infinito."
+        },
+        {
+          "wrong": "A sapendolo, sarei venuto.",
+          "right": "A saperlo, sarei venuto.",
+          "why": "La costruzione è <i>a</i> + infinito."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Riformulazione",
+          "instr": "Riformula con un periodo ipotetico misto.",
+          "items": [
+            "Non ho imparato l'inglese da piccolo, perciò oggi non lo parlo bene.",
+            "Non ho preso il treno delle otto e ora non sono a Roma.",
+            "Non sei una persona paziente, per questo ti sei arrabbiato.",
+            "Non ho risparmiato e adesso non posso fare il viaggio.",
+            "Marco non è prudente, per questo ha avuto l'incidente.",
+            "Non ci siamo conosciuti all'università e oggi non siamo amici."
+          ],
+          "key": [
+            "<b>Se avessi imparato l'inglese da piccolo, oggi lo parlerei bene.</b>",
+            "<b>Se avessi preso il treno delle otto, ora sarei a Roma.</b>",
+            "<b>Se fossi una persona paziente, non ti saresti arrabbiato.</b>",
+            "<b>Se avessi risparmiato, adesso potrei fare il viaggio.</b>",
+            "<b>Se Marco fosse prudente, non avrebbe avuto l'incidente.</b>",
+            "<b>Se ci fossimo conosciuti all'università, oggi saremmo amici.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Se avessi accettato quel lavoro, oggi sarei stato ricco.",
+            "Qualora avete domande, scriveteci.",
+            "Se avrei saputo, ti avrei aiutato.",
+            "Se tu fossi stato più gentile, ora avrai più amici.",
+            "A sapendolo prima, non sarei partito.",
+            "Nel caso in cui il pacco arriva rotto, contattateci."
+          ],
+          "key": [
+            "<b>oggi sarei ricco</b>",
+            "<b>abbiate</b> (o <b>aveste</b>)",
+            "<b>avessi saputo</b>",
+            "<b>avresti</b>",
+            "<b>A saperlo</b>",
+            "<b>arrivi</b> (o <b>arrivasse</b>)"
+          ]
+        },
+        {
+          "type": "Produzione guidata",
+          "instr": "Scrivi una frase per la situazione indicata.",
+          "items": [
+            "Una scelta del passato che ha cambiato la tua vita di oggi.",
+            "Un rimprovero a un amico che ha sempre poca pazienza.",
+            "Un avviso per i clienti. (qualora)",
+            "Un piano per il fine settimana. (dovesse + infinito)",
+            "Un rimpianto, senza se.",
+            "Una cosa che avresti fatto diversamente. (a + infinito)"
+          ],
+          "key": [
+            "Esempio: <b>Se non avessi studiato lingue, oggi non lavorerei come traduttore.</b>",
+            "Esempio: <b>Se tu fossi più paziente, non avresti litigato con il capo.</b>",
+            "Esempio: <b>Qualora il prodotto non fosse disponibile, vi rimborseremo.</b>",
+            "Esempio: <b>Dovesse fare brutto tempo, andremo al museo.</b>",
+            "Esempio: <b>Avessi ascoltato i miei genitori, ora avrei una laurea.</b>",
+            "Esempio: <b>A saperlo, avrei comprato i biglietti prima.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "c1",
+      "cat": "Sintassi",
+      "title": "I connettivi",
+      "def": "Gli <b>snodi logici</b> che legano le frasi di un testo e ne mostrano la struttura: aggiunta, opposizione, causa, conseguenza, conclusione. Ogni funzione ha connettivi di diversa difficoltà e formalità: la tabella li mette in fila dai più semplici ai più formali, così si vede quale alternativa proporre a seconda del livello.",
+      "uses": [
+        {
+          "label": "stessa idea, connettivo diverso secondo il livello",
+          "ex": "Piove, così resto a casa. → Piove, quindi resto a casa. → Piove, pertanto resto a casa."
+        },
+        {
+          "label": "i connettivi di causa cambiano la posizione: perché va dopo, siccome e poiché di solito prima",
+          "ex": "Resto a casa perché piove. / Siccome piove, resto a casa."
+        },
+        {
+          "label": "concedere: benché, sebbene e per quanto vogliono il congiuntivo; «anche se» invece vuole l'indicativo",
+          "ex": "Anche se piove, esco. / Benché piova, esco."
+        },
+        {
+          "label": "i marcatori di opinione segnalano che quella che segue è una valutazione personale",
+          "ex": "Secondo me è troppo caro. / A mio parere la proposta va rivista. / A mio avviso si tratta di un errore."
+        }
+      ],
+      "warn": "<b>Registro:</b> «poiché, pertanto, nondimeno» appartengono allo scritto formale; nel parlato spontaneo suonano artificiosi, dove si preferiscono «siccome, quindi, però». Non sono sinonimi intercambiabili: scegliere la colonna sbagliata è un errore di registro, non di grammatica.",
+      "tables": [
+        {
+          "caption": "la stessa funzione, dal più semplice al più formale",
+          "headers": [
+            "funzione",
+            "A1–A2",
+            "B1–B2",
+            "C1"
+          ],
+          "rows": [
+            [
+              "aggiungere",
+              "e, anche",
+              "in più, inoltre",
+              "peraltro, oltre a ciò"
+            ],
+            [
+              "opporre",
+              "ma",
+              "però, tuttavia",
+              "nondimeno, d'altra parte"
+            ],
+            [
+              "concedere",
+              "anche se",
+              "benché, sebbene",
+              "per quanto, malgrado"
+            ],
+            [
+              "causa",
+              "perché",
+              "siccome, dato che",
+              "poiché, in quanto"
+            ],
+            [
+              "conseguenza",
+              "così",
+              "quindi, perciò",
+              "pertanto, di conseguenza"
+            ],
+            [
+              "concludere",
+              "alla fine",
+              "insomma, in conclusione",
+              "in definitiva, in sintesi"
+            ],
+            [
+              "opinione",
+              "secondo me",
+              "a mio parere",
+              "a mio avviso, dal mio punto di vista"
+            ]
+          ]
+        }
+      ],
+      "errors": [
+        {
+          "wrong": "Pertanto non vengo, sono stanco. (fra amici)",
+          "right": "Quindi non vengo, sono stanco.",
+          "why": "<i>Pertanto</i> è dello scritto formale: nel parlato informale suona artificiale."
+        },
+        {
+          "wrong": "Benché piove, esco.",
+          "right": "Benché piova, esco.",
+          "why": "<i>Benché</i> vuole il congiuntivo."
+        },
+        {
+          "wrong": "Resto a casa siccome piove.",
+          "right": "Siccome piove, resto a casa. / Resto a casa perché piove.",
+          "why": "<i>Siccome</i> va di solito all'inizio della frase."
+        },
+        {
+          "wrong": "È economico; inoltre, è di bassa qualità.",
+          "right": "È economico; tuttavia, è di bassa qualità.",
+          "why": "<i>Inoltre</i> aggiunge, non oppone: per un contrasto servono <i>però, tuttavia</i>."
+        },
+        {
+          "wrong": "È bravo, però tuttavia è disorganizzato.",
+          "right": "È bravo, però è disorganizzato. / …, tuttavia è disorganizzato.",
+          "why": "Due connettivi con la stessa funzione: se ne usa uno solo."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Riformulazione",
+          "instr": "Sostituisci il connettivo con uno di registro più formale.",
+          "items": [
+            "Piove, quindi resto a casa.",
+            "È bravo, però è disorganizzato.",
+            "Siccome il treno era in ritardo, siamo arrivati tardi.",
+            "Secondo me la proposta va rivista.",
+            "In più, il prezzo è troppo alto.",
+            "Alla fine, il progetto è stato un successo."
+          ],
+          "key": [
+            "Piove, <b>pertanto</b> (o <b>di conseguenza</b>) resto a casa.",
+            "È bravo, <b>tuttavia</b> è disorganizzato.",
+            "<b>Poiché</b> il treno era in ritardo, siamo arrivati tardi.",
+            "<b>A mio avviso</b> la proposta va rivista.",
+            "<b>Inoltre</b> (o <b>Oltre a ciò</b>), il prezzo è troppo alto.",
+            "<b>In definitiva</b> (o <b>In conclusione</b>), il progetto è stato un successo."
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Benché sono stanco, continuo a lavorare.",
+            "Non vengo siccome devo lavorare.",
+            "Il prodotto è economico; inoltre, è di bassa qualità.",
+            "Ragazzi, stasera piove, pertanto niente partita! (chat tra amici)",
+            "È una buona idea, però tuttavia costa troppo.",
+            "Anche se sia difficile, ci proverò."
+          ],
+          "key": [
+            "<b>sia</b>",
+            "<b>perché devo lavorare</b> (o <b>Siccome devo lavorare, non vengo</b>)",
+            "<b>tuttavia</b> (o <b>però</b>)",
+            "<b>quindi</b>",
+            "<b>però</b> (o <b>tuttavia</b>), non tutti e due",
+            "<b>è</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata",
+          "instr": "Scrivi un breve testo di 2–3 frasi con i connettivi indicati.",
+          "items": [
+            "inoltre, tuttavia: vantaggi e svantaggi del lavoro da casa",
+            "poiché, pertanto: perché un'azienda assume",
+            "benché, in definitiva: giudizio su un film",
+            "a mio avviso, d'altra parte: vivere in centro",
+            "siccome, quindi: un racconto informale",
+            "oltre a ciò, in sintesi: conclusione di una relazione"
+          ],
+          "key": [
+            "Esempio: <b>Lavorare da casa fa risparmiare tempo; inoltre permette di organizzarsi meglio. Tuttavia, può portare all'isolamento.</b>",
+            "Esempio: <b>Poiché gli ordini sono aumentati, l'azienda ha bisogno di personale; pertanto assumerà cinque persone.</b>",
+            "Esempio: <b>Benché la trama sia un po' lenta, gli attori sono bravissimi. In definitiva, è un film da vedere.</b>",
+            "Esempio: <b>A mio avviso, vivere in centro è comodo; d'altra parte, è molto caro.</b>",
+            "Esempio: <b>Siccome ieri pioveva, siamo rimasti a casa e quindi abbiamo guardato un film.</b>",
+            "Esempio: <b>Il progetto ha rispettato i tempi; oltre a ciò, è costato meno del previsto. In sintesi, è stato un successo.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "c1",
+      "cat": "Certificazioni",
+      "title": "Le certificazioni: CILS, CELI, PLIDA",
+      "def": "Le certificazioni ufficiali di italiano riconosciute dai ministeri sono quattro: <b>CILS</b>, <b>CELI</b>, <b>PLIDA</b> e <b>CERT.IT</b> dell'Università Roma Tre. Tutte seguono i livelli del QCER da A1 a C2 e non hanno scadenza. Il valore legale è equivalente: cambiano il formato dell'esame, la ripartizione delle prove e soprattutto le regole con cui si conservano le prove superate quando l'esame non è superato per intero.",
+      "tables": [
+        {
+          "before": "<b>Chi le rilascia.</b> PLIDA è l'unica delle tre rilasciata da un'associazione privata e non da un'università.",
+          "plain": true,
+          "headers": [
+            "sigla",
+            "nome per esteso",
+            "ente"
+          ],
+          "rows": [
+            [
+              "CILS",
+              "Certificazione di Italiano come Lingua Straniera",
+              "Università per Stranieri di Siena"
+            ],
+            [
+              "CELI",
+              "Certificato di Conoscenza della Lingua Italiana",
+              "Università per Stranieri di Perugia, tramite il CVCL"
+            ],
+            [
+              "PLIDA",
+              "Progetto Lingua Italiana Dante Alighieri",
+              "Società Dante Alighieri"
+            ]
+          ]
+        },
+        {
+          "before": "<b>La capitalizzazione.</b> Se non si superano tutte le prove, quelle riuscite si possono conservare e si ripetono solo le altre, pagando una quota ridotta. Quanto convenga dipende da come è diviso l'esame: più parti separate ci sono, meno lavoro si butta via.",
+          "headers": [
+            "",
+            "divisione dell'esame",
+            "si conserva",
+            "durata"
+          ],
+          "rows": [
+            [
+              "CILS",
+              "4–5 abilità separate",
+              "ogni abilità superata",
+              "18 mesi"
+            ],
+            [
+              "PLIDA",
+              "4 abilità separate",
+              "fino a 3 su 4",
+              "1 anno o 18 mesi"
+            ],
+            [
+              "CELI",
+              "2 blocchi: scritto e orale",
+              "il blocco superato",
+              "1 anno, due sessioni"
+            ]
+          ],
+          "after": "Il salto vero è tra il CELI e le altre due. Tra CILS e PLIDA il meccanismo è lo stesso."
+        }
+      ],
+      "uses": [
+        {
+          "label": "serve almeno una prova superata: senza nemmeno una si rifà l'esame intero pagando tutto",
+          "ex": "Chi sbaglia tutte e quattro le abilità non ha nulla da capitalizzare."
+        },
+        {
+          "label": "nel CELI lo scritto è un pacchetto unico: lettura, produzione scritta, competenza linguistica dal CELI 3 in su, e ascolto",
+          "ex": "Sbagliare l'ascolto obbliga a rifare anche lettura e produzione scritta già superate."
+        },
+        {
+          "label": "l'orale del CELI contiene solo la produzione orale: un colloquio con due esaminatori, da 5 a 20 minuti secondo il livello",
+          "ex": "Al CELI 3 il materiale è una foto, un testo e un compito comunicativo."
+        },
+        {
+          "label": "con CILS e PLIDA la stessa insufficienza costa una prova sola",
+          "ex": "Sbagliare l'ascolto lascia intatte le altre tre abilità."
+        }
+      ],
+      "warn": "<b>B1 Cittadinanza</b> e <b>A2 Integrazione</b> della CILS non prevedono capitalizzazione: basta un'abilità insufficiente e si ripete tutto pagando di nuovo l'intera quota. Sono proprio i livelli richiesti per cittadinanza e permesso di soggiorno. Sulla durata del PLIDA le fonti non concordano — il regolamento del 2015 dice un anno, diversi centri d'esame 18 mesi: conviene verificare col centro dove si sostiene l'esame. E nel CELI chi si iscrive e poi sostiene una sola delle due parti senza giustificare l'assenza con documentazione paga una nuova iscrizione e ripete l'esame per intero."
+    }
+  ]
+}

@@ -1,0 +1,2290 @@
+{
+  "versione": "1.4",
+  "livello": "B2",
+  "schede": [
+    {
+      "lvl": "b2",
+      "cat": "Verbi",
+      "title": "Il futuro anteriore",
+      "def": "È il futuro di un'azione che sarà già <b>finita</b> in un certo momento del futuro: «domani alle otto <i>avrò finito</i>» (alle otto il lavoro sarà concluso). Come il futuro semplice, si usa anche per fare supposizioni, ma su un fatto passato: «non risponde: <i>sarà uscito</i>» (probabilmente è uscito).",
+      "form": "<b>Futuro semplice di avere o essere + participio passato.</b> L'ausiliare è lo stesso del passato prossimo («ho finito → avrò finito», «sono partito → sarò partito»); con <i>essere</i> il participio si accorda con il soggetto («Anna sarà partit<b>a</b>»).",
+      "tables": [
+        {
+          "before": "<b>Le forme.</b>",
+          "headers": [
+            "",
+            "finire",
+            "partire"
+          ],
+          "rows": [
+            [
+              "io",
+              "avrò finito",
+              "sarò partito/a"
+            ],
+            [
+              "tu",
+              "avrai finito",
+              "sarai partito/a"
+            ],
+            [
+              "lui/lei",
+              "avrà finito",
+              "sarà partito/a"
+            ],
+            [
+              "noi",
+              "avremo finito",
+              "saremo partiti/e"
+            ],
+            [
+              "voi",
+              "avrete finito",
+              "sarete partiti/e"
+            ],
+            [
+              "loro",
+              "avranno finito",
+              "saranno partiti/e"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "un'azione futura già conclusa prima di un'altra azione futura, spesso dopo quando, appena, dopo che",
+          "ex": "Quando avrò finito, ti chiamerò. / Appena sarò arrivato, ti scriverò."
+        },
+        {
+          "label": "un'azione già conclusa entro un momento del futuro",
+          "ex": "Entro venerdì avremo consegnato il progetto. / Per le dieci saranno partiti."
+        },
+        {
+          "label": "una supposizione su un fatto passato: «probabilmente è successo»",
+          "ex": "Marco non risponde: sarà già andato a dormire. / Avrà perso il treno."
+        },
+        {
+          "label": "domande di dubbio sul passato",
+          "ex": "Che cosa gli sarà successo? / Dove avrò messo le chiavi?"
+        }
+      ],
+      "warn": "<b>Nel parlato spesso si semplifica.</b> «Quando <i>finisco</i>, ti chiamo» è normale nella conversazione; nello scritto e nel registro curato si preferisce mettere l'azione che viene prima al futuro anteriore: «quando <i>avrò finito</i>, ti chiamerò». Il valore di supposizione invece è vivissimo anche nel parlato: «<i>sarà stato</i> stanco». Anche «quando <i>finirò</i>, ti chiamerò» è corretto.",
+      "errors": [
+        {
+          "wrong": "Domani a quest'ora avrò partito.",
+          "right": "Domani a quest'ora sarò partito.",
+          "why": "<i>Partire</i> vuole <i>essere</i>, come al passato prossimo."
+        },
+        {
+          "wrong": "Quando sarò arrivato, ti chiamo. (detto da una donna)",
+          "right": "Quando sarò arrivata, ti chiamo.",
+          "why": "Con <i>essere</i> il participio si accorda con il soggetto."
+        },
+        {
+          "wrong": "Avrà stato stanco.",
+          "right": "Sarà stato stanco.",
+          "why": "<i>Essere</i> al passato vuole <i>essere</i>: <i>sarà stato</i>."
+        },
+        {
+          "wrong": "Avremo andati al mare.",
+          "right": "Saremo andati al mare.",
+          "why": "<i>Andare</i> vuole <i>essere</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Unisci le frasi con quando e il futuro anteriore.",
+          "items": [
+            "Finisco il lavoro. Poi esco.",
+            "Arrivo a Roma. Poi ti telefono.",
+            "I bambini si addormentano. Poi guardiamo un film.",
+            "Leggo il libro. Poi te lo presto.",
+            "Marco torna. Poi ceniamo.",
+            "Ricevo la risposta. Poi ti faccio sapere."
+          ],
+          "key": [
+            "<b>Quando avrò finito il lavoro, uscirò.</b>",
+            "<b>Quando sarò arrivato/a a Roma, ti telefonerò.</b>",
+            "<b>Quando i bambini si saranno addormentati, guarderemo un film.</b>",
+            "<b>Quando avrò letto il libro, te lo presterò.</b>",
+            "<b>Quando Marco sarà tornato, ceneremo.</b>",
+            "<b>Quando avrò ricevuto la risposta, ti farò sapere.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Appena avrò arrivato, ti scriverò.",
+            "Le ragazze saranno già partito.",
+            "Avrà stato un errore.",
+            "Entro giugno avremo finiti i lavori.",
+            "Dopo che sarai mangiato, lavati i denti.",
+            "Dove avrò mettuto le chiavi?"
+          ],
+          "key": [
+            "<b>sarò arrivato/a</b>",
+            "<b>partite</b>",
+            "<b>Sarà stato</b>",
+            "<b>finito</b>",
+            "<b>avrai mangiato</b>",
+            "<b>messo</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Fai una supposizione sul passato con il futuro anteriore.",
+          "items": [
+            "Luca ha gli occhi rossi.",
+            "Il pavimento è tutto bagnato.",
+            "Anna è molto abbronzata.",
+            "Il professore oggi non è venuto.",
+            "Il negozio è chiuso.",
+            "Marco non ha risposto al mio messaggio."
+          ],
+          "key": [
+            "Esempio: <b>Avrà pianto.</b> / <b>Non avrà dormito.</b>",
+            "Esempio: <b>Avranno lasciato la finestra aperta durante il temporale.</b>",
+            "Esempio: <b>Sarà stata al mare.</b>",
+            "Esempio: <b>Si sarà ammalato.</b>",
+            "Esempio: <b>Avranno cambiato orario.</b>",
+            "Esempio: <b>Non l'avrà ancora letto.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b2",
+      "cat": "Verbi",
+      "title": "Il trapassato prossimo",
+      "def": "È il «passato del passato»: indica un'azione che era già conclusa <b>prima</b> di un altro momento o di un altro fatto passato. «Quando sono arrivato alla stazione, il treno <i>era</i> già <i>partito</i>»: prima è partito il treno, poi sono arrivato io.",
+      "form": "<b>Imperfetto di avere o essere + participio passato.</b> L'ausiliare è lo stesso del passato prossimo («ho mangiato → avevo mangiato», «sono uscito → ero uscito»); con <i>essere</i> il participio si accorda con il soggetto.",
+      "tables": [
+        {
+          "before": "<b>Le forme.</b>",
+          "headers": [
+            "",
+            "mangiare",
+            "uscire"
+          ],
+          "rows": [
+            [
+              "io",
+              "avevo mangiato",
+              "ero uscito/a"
+            ],
+            [
+              "tu",
+              "avevi mangiato",
+              "eri uscito/a"
+            ],
+            [
+              "lui/lei",
+              "aveva mangiato",
+              "era uscito/a"
+            ],
+            [
+              "noi",
+              "avevamo mangiato",
+              "eravamo usciti/e"
+            ],
+            [
+              "voi",
+              "avevate mangiato",
+              "eravate usciti/e"
+            ],
+            [
+              "loro",
+              "avevano mangiato",
+              "erano usciti/e"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "un'azione avvenuta prima di un'altra azione passata",
+          "ex": "Quando sono arrivato, lo spettacolo era già finito. / Ho perso il libro che mi avevi prestato."
+        },
+        {
+          "label": "la causa, nel passato, di una situazione passata",
+          "ex": "Ero stanco perché avevo lavorato tutto il giorno."
+        },
+        {
+          "label": "con già, non ancora, mai, prima: quello che era successo, o no, fino a quel momento",
+          "ex": "Non ero mai stato a Roma prima di quel viaggio. / Alle otto non avevamo ancora cenato."
+        },
+        {
+          "label": "nel discorso indiretto, per riferire un fatto passato",
+          "ex": "Ha detto che aveva finito. (vedi Il discorso indiretto)"
+        },
+        {
+          "label": "dopo che, appena, quando + trapassato, per un'abitudine passata",
+          "ex": "Dopo che aveva cenato, usciva sempre a fare una passeggiata."
+        }
+      ],
+      "warn": "<b>Serve solo se l'ordine conta.</b> Il trapassato si usa quando si parla di due momenti passati e bisogna chiarire quale viene prima. Se i fatti sono raccontati nell'ordine in cui sono successi, basta il passato prossimo: «sono arrivato, ho mangiato e sono uscito». È il trapassato a dire «prima»: parole come <i>già</i> e <i>prima</i> lo accompagnano soltanto.",
+      "errors": [
+        {
+          "wrong": "Quando sono arrivato, il film è già finito.",
+          "right": "Quando sono arrivato, il film era già finito.",
+          "why": "Il film è finito prima del mio arrivo: trapassato."
+        },
+        {
+          "wrong": "Avevo andato a Roma.",
+          "right": "Ero andato a Roma.",
+          "why": "<i>Andare</i> vuole <i>essere</i>."
+        },
+        {
+          "wrong": "Ero stanca perché ho lavorato tutto il giorno.",
+          "right": "Ero stanca perché avevo lavorato tutto il giorno.",
+          "why": "La causa viene prima della stanchezza: trapassato."
+        },
+        {
+          "wrong": "Le ragazze erano già uscito.",
+          "right": "Le ragazze erano già uscite.",
+          "why": "Con <i>essere</i> il participio si accorda con il soggetto."
+        },
+        {
+          "wrong": "Non avevo mai stato in Italia.",
+          "right": "Non ero mai stato in Italia.",
+          "why": "<i>Essere</i> vuole <i>essere</i>: <i>ero stato</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Unisci le frasi: l'azione che viene prima va al trapassato.",
+          "items": [
+            "Il film è cominciato. Poi siamo arrivati.",
+            "Anna è uscita. Poi ho telefonato.",
+            "Ho studiato molto. Per questo ho passato l'esame.",
+            "Mi hai prestato un libro. L'ho perso.",
+            "Non ho mai visto il mare. Poi sono andato in Sicilia.",
+            "I ragazzi hanno finito i compiti. Poi sono andati al parco."
+          ],
+          "key": [
+            "<b>Quando siamo arrivati, il film era già cominciato.</b>",
+            "<b>Quando ho telefonato, Anna era già uscita.</b>",
+            "<b>Ho passato l'esame perché avevo studiato molto.</b>",
+            "<b>Ho perso il libro che mi avevi prestato.</b>",
+            "<b>Prima di andare in Sicilia non avevo mai visto il mare.</b>",
+            "<b>I ragazzi sono andati al parco dopo che avevano finito i compiti.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Quando siamo arrivati, la festa è già finita.",
+            "Avevamo andati a letto presto.",
+            "Ero arrabbiato perché Marco non mi ha chiamato.",
+            "Paola era già partito quando l'ho chiamata.",
+            "Alle nove non abbiamo ancora cenato, quindi eravamo affamati.",
+            "Mi ha detto che ha già visto il film."
+          ],
+          "key": [
+            "<b>era già finita</b>",
+            "<b>Eravamo andati</b>",
+            "<b>non mi aveva chiamato</b>",
+            "<b>partita</b>",
+            "<b>non avevamo ancora cenato</b>",
+            "<b>aveva già visto</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa con il trapassato prossimo.",
+          "items": [
+            "Quando sono arrivato alla stazione, il treno …",
+            "Ero stanchissimo perché …",
+            "Non sapevo nuotare perché da bambino …",
+            "La professoressa era arrabbiata perché gli studenti …",
+            "Ho ritrovato il portafoglio che …",
+            "Prima di venire in Italia, …"
+          ],
+          "key": [
+            "Esempio: <b>era già partito</b>.",
+            "Esempio: <b>non avevo dormito</b>.",
+            "Esempio: <b>non avevo mai preso lezioni</b>.",
+            "Esempio: <b>non avevano fatto i compiti</b>.",
+            "Esempio: <b>avevo perso la settimana prima</b>.",
+            "Esempio: <b>non avevo mai mangiato una vera pizza</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b2",
+      "cat": "Verbi",
+      "title": "Il passato remoto",
+      "def": "Un tempo del passato che presenta l'azione come conclusa e lontana, staccata dal presente di chi parla. È il tempo della narrazione: romanzi, fiabe, biografie, libri di storia. Nel parlato si usa molto in alcune regioni del Sud e in parte della Toscana; altrove si usa quasi solo il passato prossimo.",
+      "form": "Le forme regolari si ottengono togliendo <i>-are, -ere, -ire</i> e aggiungendo le terminazioni della tabella. I verbi in <i>-ere</i> hanno due forme per <i>io, lui/lei, loro</i>, tutte e due corrette (<i>credei / credetti</i>). Molti verbi in <i>-ere</i> sono irregolari, ma seguono uno schema fisso: sono irregolari <b>solo le persone io, lui/lei e loro</b>, che hanno la stessa base (<i>presi, prese, presero</i>); <i>tu, noi, voi</i> sono regolari (<i>prendesti, prendemmo, prendeste</i>). Basta quindi imparare la forma di <i>io</i>: per <i>lui/lei</i> la <i>-i</i> diventa <i>-e</i>, per <i>loro</i> si aggiunge <i>-ro</i> (<i>presi → prese → presero</i>).",
+      "tables": [
+        {
+          "before": "<b>I verbi regolari.</b>",
+          "headers": [
+            "",
+            "parlare",
+            "credere",
+            "dormire"
+          ],
+          "rows": [
+            [
+              "io",
+              "parlai",
+              "credei / credetti",
+              "dormii"
+            ],
+            [
+              "tu",
+              "parlasti",
+              "credesti",
+              "dormisti"
+            ],
+            [
+              "lui/lei",
+              "parlò",
+              "credé / credette",
+              "dormì"
+            ],
+            [
+              "noi",
+              "parlammo",
+              "credemmo",
+              "dormimmo"
+            ],
+            [
+              "voi",
+              "parlaste",
+              "credeste",
+              "dormiste"
+            ],
+            [
+              "loro",
+              "parlarono",
+              "crederono / credettero",
+              "dormirono"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Essere e avere.</b>",
+          "headers": [
+            "",
+            "essere",
+            "avere"
+          ],
+          "rows": [
+            [
+              "io",
+              "fui",
+              "ebbi"
+            ],
+            [
+              "tu",
+              "fosti",
+              "avesti"
+            ],
+            [
+              "lui/lei",
+              "fu",
+              "ebbe"
+            ],
+            [
+              "noi",
+              "fummo",
+              "avemmo"
+            ],
+            [
+              "voi",
+              "foste",
+              "aveste"
+            ],
+            [
+              "loro",
+              "furono",
+              "ebbero"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Irregolari frequenti</b>: le tre persone irregolari.",
+          "plain": true,
+          "headers": [
+            "infinito",
+            "io",
+            "lui / lei",
+            "loro"
+          ],
+          "rows": [
+            [
+              "fare",
+              "feci",
+              "fece",
+              "fecero"
+            ],
+            [
+              "dire",
+              "dissi",
+              "disse",
+              "dissero"
+            ],
+            [
+              "venire",
+              "venni",
+              "venne",
+              "vennero"
+            ],
+            [
+              "vedere",
+              "vidi",
+              "vide",
+              "videro"
+            ],
+            [
+              "nascere",
+              "nacqui",
+              "nacque",
+              "nacquero"
+            ],
+            [
+              "prendere",
+              "presi",
+              "prese",
+              "presero"
+            ],
+            [
+              "mettere",
+              "misi",
+              "mise",
+              "misero"
+            ],
+            [
+              "scrivere",
+              "scrissi",
+              "scrisse",
+              "scrissero"
+            ],
+            [
+              "leggere",
+              "lessi",
+              "lesse",
+              "lessero"
+            ],
+            [
+              "vivere",
+              "vissi",
+              "visse",
+              "vissero"
+            ],
+            [
+              "volere",
+              "volli",
+              "volle",
+              "vollero"
+            ],
+            [
+              "sapere",
+              "seppi",
+              "seppe",
+              "seppero"
+            ],
+            [
+              "conoscere",
+              "conobbi",
+              "conobbe",
+              "conobbero"
+            ],
+            [
+              "chiedere",
+              "chiesi",
+              "chiese",
+              "chiesero"
+            ],
+            [
+              "rispondere",
+              "risposi",
+              "rispose",
+              "risposero"
+            ],
+            [
+              "decidere",
+              "decisi",
+              "decise",
+              "decisero"
+            ],
+            [
+              "rimanere",
+              "rimasi",
+              "rimase",
+              "rimasero"
+            ],
+            [
+              "scegliere",
+              "scelsi",
+              "scelse",
+              "scelsero"
+            ],
+            [
+              "bere",
+              "bevvi",
+              "bevve",
+              "bevvero"
+            ],
+            [
+              "tenere",
+              "tenni",
+              "tenne",
+              "tennero"
+            ],
+            [
+              "dare",
+              "diedi (detti)",
+              "diede (dette)",
+              "diedero (dettero)"
+            ],
+            [
+              "stare",
+              "stetti",
+              "stette",
+              "stettero"
+            ]
+          ],
+          "after": "<i>Fare, dire, bere</i> nelle persone <i>tu, noi, voi</i> partono dalla forma lunga: <i>facesti, dicemmo, beveste</i>. <i>Dare</i> e <i>stare</i>: <i>desti, demmo, deste; stesti, stemmo, steste</i>."
+        }
+      ],
+      "uses": [
+        {
+          "label": "eventi storici",
+          "ex": "Nel 1861 nacque il Regno d'Italia. / Colombo arrivò in America nel 1492."
+        },
+        {
+          "label": "narrativa, fiabe, biografie",
+          "ex": "C'era una volta un re che aveva tre figlie. Un giorno chiamò la più giovane e le disse…"
+        },
+        {
+          "label": "insieme all'imperfetto, che descrive lo sfondo",
+          "ex": "Quando arrivò a Firenze, Dante aveva vent'anni."
+        },
+        {
+          "label": "nel parlato di alcune regioni del Sud anche per fatti recenti",
+          "ex": "Ieri andai al mercato. (normale a Napoli o a Palermo, strano a Milano)"
+        }
+      ],
+      "warn": "<b>Prima riconoscerlo, poi usarlo.</b> Per la maggior parte degli studenti è più importante riconoscere il passato remoto nei testi che produrlo: le forme da riconoscere subito sono <i>fu/furono, ebbe/ebbero, fece, disse, venne, nacque</i>. Accenti: <i>parlò, dormì, credé</i> lo vogliono; <i>fu</i>, <i>diede</i>, <i>stette</i> no. Rispetto al passato prossimo, il remoto stacca il fatto dal presente, il prossimo lo collega: «mio nonno <i>nacque</i> nel 1930» / «mio figlio <i>è nato</i> nel 2015».",
+      "errors": [
+        {
+          "wrong": "facerono",
+          "right": "fecero",
+          "why": "<i>Fare</i>: <i>feci, fece, fecero</i>."
+        },
+        {
+          "wrong": "venì",
+          "right": "venne",
+          "why": "<i>Venire</i> è irregolare: <i>venni, venne, vennero</i>."
+        },
+        {
+          "wrong": "dicette",
+          "right": "disse",
+          "why": "<i>Dire</i>: <i>dissi, disse, dissero</i>."
+        },
+        {
+          "wrong": "fù",
+          "right": "fu",
+          "why": "<i>Fu</i> è un monosillabo con una sola vocale: niente accento."
+        },
+        {
+          "wrong": "vedette",
+          "right": "vide",
+          "why": "<i>Vedere</i> è irregolare: <i>vidi, vide, videro</i>."
+        },
+        {
+          "wrong": "loro prenderono",
+          "right": "loro presero",
+          "why": "<i>Prendere</i> è irregolare in <i>io, lui/lei, loro</i>: <i>presi, prese, presero</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Trasforma dal passato prossimo al passato remoto.",
+          "items": [
+            "Garibaldi è nato a Nizza.",
+            "I soldati hanno combattuto per tre giorni.",
+            "Il re ha detto: «Basta!»",
+            "Dante ha scritto la Divina Commedia.",
+            "Gli ospiti sono venuti da lontano.",
+            "La principessa ha preso la mela e l'ha mangiata."
+          ],
+          "key": [
+            "<b>Garibaldi nacque a Nizza.</b>",
+            "<b>I soldati combatterono per tre giorni.</b>",
+            "<b>Il re disse: «Basta!»</b>",
+            "<b>Dante scrisse la Divina Commedia.</b>",
+            "<b>Gli ospiti vennero da lontano.</b>",
+            "<b>La principessa prese la mela e la mangiò.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Nel 1946 gli italiani scegliettero la Repubblica.",
+            "Il principe vedette la ragazza e se ne innamorò.",
+            "Colombo arrivò in America e ci rimanette poco.",
+            "Leonardo fù un genio.",
+            "I due amici bevvero un bicchiere e poi facerono pace.",
+            "Quando lo sapette, si arrabbiò."
+          ],
+          "key": [
+            "<b>scelsero</b>",
+            "<b>vide</b>",
+            "<b>rimase</b>",
+            "<b>fu</b>",
+            "<b>fecero</b>",
+            "<b>seppe</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Continua la fiaba usando il passato remoto.",
+          "items": [
+            "C'era una volta una ragazza che viveva in un bosco. Un giorno …",
+            "Il lupo le chiese …",
+            "La ragazza rispose …",
+            "Allora il lupo …",
+            "Quando la ragazza arrivò, …",
+            "Alla fine …"
+          ],
+          "key": [
+            "Esempio: <b>incontrò un lupo</b>.",
+            "Esempio: <b>dove andava</b>.",
+            "Esempio: <b>che andava dalla nonna</b>.",
+            "Esempio: <b>corse a casa della nonna</b>.",
+            "Esempio: <b>vide che la nonna aveva dei denti enormi</b>.",
+            "Esempio: <b>arrivò un cacciatore e le salvò tutte e due</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b2",
+      "cat": "Verbi",
+      "title": "Il congiuntivo imperfetto",
+      "def": "È il congiuntivo che si usa quando il primo verbo della frase è al <b>passato</b> o al <b>condizionale</b> («pensavo che <i>fosse</i> facile», «vorrei che tu <i>venissi</i>») e nel periodo ipotetico della possibilità («se <i>avessi</i> tempo, viaggerei»). Esprime le stesse cose del congiuntivo presente: opinione, desiderio, dubbio, emozione.",
+      "form": "È uno dei tempi più regolari: si toglie <i>-re</i> dall'infinito e si aggiungono <b>-ssi, -ssi, -sse, -ssimo, -ste, -ssero</b>: <i>parla-re → parlassi</i>, <i>prende-re → prendessi</i>, <i>dormi-re → dormissi</i>. Le persone <i>io</i> e <i>tu</i> hanno la stessa forma, per questo spesso si aggiunge il pronome. I pochi irregolari sono <i>essere</i> (<i>fossi</i>), <i>dare</i> e <i>stare</i> (<i>dessi, stessi</i>), e i verbi che partono dalla forma lunga come all'imperfetto (<i>fare → facessi, dire → dicessi, bere → bevessi, tradurre → traducessi</i>).",
+      "tables": [
+        {
+          "before": "<b>I verbi regolari</b> (preceduti da <i>che</i>).",
+          "headers": [
+            "",
+            "parlare",
+            "prendere",
+            "dormire"
+          ],
+          "rows": [
+            [
+              "io",
+              "parlassi",
+              "prendessi",
+              "dormissi"
+            ],
+            [
+              "tu",
+              "parlassi",
+              "prendessi",
+              "dormissi"
+            ],
+            [
+              "lui/lei",
+              "parlasse",
+              "prendesse",
+              "dormisse"
+            ],
+            [
+              "noi",
+              "parlassimo",
+              "prendessimo",
+              "dormissimo"
+            ],
+            [
+              "voi",
+              "parlaste",
+              "prendeste",
+              "dormiste"
+            ],
+            [
+              "loro",
+              "parlassero",
+              "prendessero",
+              "dormissero"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Gli irregolari.</b>",
+          "headers": [
+            "",
+            "essere",
+            "fare",
+            "dare",
+            "stare"
+          ],
+          "rows": [
+            [
+              "io",
+              "fossi",
+              "facessi",
+              "dessi",
+              "stessi"
+            ],
+            [
+              "tu",
+              "fossi",
+              "facessi",
+              "dessi",
+              "stessi"
+            ],
+            [
+              "lui/lei",
+              "fosse",
+              "facesse",
+              "desse",
+              "stesse"
+            ],
+            [
+              "noi",
+              "fossimo",
+              "facessimo",
+              "dessimo",
+              "stessimo"
+            ],
+            [
+              "voi",
+              "foste",
+              "faceste",
+              "deste",
+              "steste"
+            ],
+            [
+              "loro",
+              "fossero",
+              "facessero",
+              "dessero",
+              "stessero"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "dopo un verbo di opinione, dubbio, speranza al passato",
+          "ex": "Pensavo che fosse facile. / Speravo che arrivassi prima. / Non sapevo che parlassi tedesco."
+        },
+        {
+          "label": "dopo vorrei, preferirei, mi piacerebbe",
+          "ex": "Vorrei che tu venissi con me. / Mi piacerebbe che restassero."
+        },
+        {
+          "label": "nel periodo ipotetico del 2° tipo, dopo se",
+          "ex": "Se avessi tempo, viaggerei. / Se fossi in te, accetterei."
+        },
+        {
+          "label": "come se: una cosa che sembra, ma non è",
+          "ex": "Parla come se fosse il capo. / Mi guardava come se non mi conoscesse."
+        },
+        {
+          "label": "magari: un desiderio difficile da realizzare",
+          "ex": "Magari vincessi alla lotteria! / Magari fosse vero!"
+        },
+        {
+          "label": "dopo benché, affinché, prima che… in una frase al passato",
+          "ex": "Benché piovesse, siamo usciti."
+        }
+      ],
+      "warn": "<b>Il primo verbo decide.</b> Con il primo verbo al presente si usa il congiuntivo presente («penso che <i>sia</i> facile»); con il primo verbo al passato o al condizionale si passa all'imperfetto («pensavo che <i>fosse</i> facile», «vorrei che <i>fosse</i> facile»). Lo schema completo è nella scheda La concordanza dei tempi. Attenzione a non confondere <i>stessi, dessi</i> (congiuntivo) con il passato remoto <i>stetti, diedi</i>.",
+      "errors": [
+        {
+          "wrong": "Pensavo che è facile.",
+          "right": "Pensavo che fosse facile.",
+          "why": "Primo verbo al passato: congiuntivo imperfetto."
+        },
+        {
+          "wrong": "Vorrei che vieni con me.",
+          "right": "Vorrei che tu venissi con me.",
+          "why": "Dopo <i>vorrei</i>: congiuntivo imperfetto."
+        },
+        {
+          "wrong": "Se sarei ricco, comprerei una barca.",
+          "right": "Se fossi ricco, comprerei una barca.",
+          "why": "Dopo <i>se</i> va il congiuntivo, mai il condizionale."
+        },
+        {
+          "wrong": "stassi",
+          "right": "stessi",
+          "why": "<i>Stare</i> fa <i>stessi</i>, non segue i verbi in <i>-are</i>."
+        },
+        {
+          "wrong": "dassi",
+          "right": "dessi",
+          "why": "<i>Dare</i> fa <i>dessi</i>."
+        },
+        {
+          "wrong": "Volevo che tu fai attenzione.",
+          "right": "Volevo che tu facessi attenzione.",
+          "why": "Primo verbo al passato: congiuntivo imperfetto."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Porta la frase al passato: comincia con «Pensavo che».",
+          "items": [
+            "Penso che Marco sia stanco.",
+            "Penso che tu abbia ragione.",
+            "Penso che vengano anche loro.",
+            "Penso che lei parli inglese.",
+            "Penso che facciate sport.",
+            "Penso che stiano bene."
+          ],
+          "key": [
+            "<b>Pensavo che Marco fosse stanco.</b>",
+            "<b>Pensavo che tu avessi ragione.</b>",
+            "<b>Pensavo che venissero anche loro.</b>",
+            "<b>Pensavo che lei parlasse inglese.</b>",
+            "<b>Pensavo che faceste sport.</b>",
+            "<b>Pensavo che stessero bene.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Volevo che tu mi chiami.",
+            "Se avrei più tempo, leggerei di più.",
+            "Parla come se è un esperto.",
+            "Magari stassi meglio!",
+            "Speravo che i miei genitori mi dassero il permesso.",
+            "Benché era tardi, siamo rimasti."
+          ],
+          "key": [
+            "<b>chiamassi</b>",
+            "<b>avessi</b>",
+            "<b>fosse</b>",
+            "<b>stessi</b>",
+            "<b>dessero</b>",
+            "<b>fosse</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa con il congiuntivo imperfetto.",
+          "items": [
+            "Vorrei che i miei amici …",
+            "Da bambino credevo che …",
+            "Magari …!",
+            "Mi tratta come se …",
+            "Il professore voleva che noi …",
+            "Non sapevo che tu …"
+          ],
+          "key": [
+            "Esempio: <b>venissero più spesso a trovarmi</b>.",
+            "Esempio: <b>Babbo Natale esistesse</b>.",
+            "Esempio: <b>Magari fosse già venerdì!</b>",
+            "Esempio: <b>fossi un bambino</b>.",
+            "Esempio: <b>leggessimo un libro al mese</b>.",
+            "Esempio: <b>suonassi il pianoforte</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b2",
+      "cat": "Verbi",
+      "title": "Il congiuntivo trapassato",
+      "def": "È il congiuntivo per un fatto avvenuto <b>prima</b> di un momento passato: «pensavo che Marco <i>fosse</i> già <i>partito</i>» (prima è partito, poi io l'ho pensato). È anche la forma della condizione impossibile nel periodo ipotetico del 3° tipo: «se l'<i>avessi saputo</i>, sarei venuto».",
+      "form": "<b>Congiuntivo imperfetto di avere o essere + participio passato.</b> L'ausiliare è lo stesso del passato prossimo; con <i>essere</i> il participio si accorda con il soggetto («pensavo che Anna fosse partit<b>a</b>»).",
+      "tables": [
+        {
+          "before": "<b>Le forme</b> (precedute da <i>che</i> o da <i>se</i>).",
+          "headers": [
+            "",
+            "fare",
+            "partire"
+          ],
+          "rows": [
+            [
+              "io",
+              "avessi fatto",
+              "fossi partito/a"
+            ],
+            [
+              "tu",
+              "avessi fatto",
+              "fossi partito/a"
+            ],
+            [
+              "lui/lei",
+              "avesse fatto",
+              "fosse partito/a"
+            ],
+            [
+              "noi",
+              "avessimo fatto",
+              "fossimo partiti/e"
+            ],
+            [
+              "voi",
+              "aveste fatto",
+              "foste partiti/e"
+            ],
+            [
+              "loro",
+              "avessero fatto",
+              "fossero partiti/e"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "dopo un primo verbo al passato, per un fatto avvenuto prima",
+          "ex": "Credevo che fossero già usciti. / Non sapevo che avessi cambiato lavoro."
+        },
+        {
+          "label": "dopo un condizionale, per un fatto passato",
+          "ex": "Preferirei che non l'avessi detto."
+        },
+        {
+          "label": "periodo ipotetico del 3° tipo: una condizione che non si è realizzata",
+          "ex": "Se avessi saputo, sarei venuto. / Se fossimo partiti prima, non avremmo perso il treno."
+        },
+        {
+          "label": "come se + trapassato",
+          "ex": "Mi guardava come se avessi detto una cosa terribile."
+        },
+        {
+          "label": "magari + trapassato: un rimpianto",
+          "ex": "Magari l'avessi saputo prima! / Magari fossi rimasto a casa!"
+        },
+        {
+          "label": "dopo le congiunzioni, in un racconto al passato",
+          "ex": "Benché avesse studiato molto, non passò l'esame."
+        }
+      ],
+      "warn": "<b>Imperfetto o trapassato?</b> Con il primo verbo al passato si guarda il tempo dell'azione: se succede nello stesso momento si usa l'imperfetto («pensavo che <i>stesse</i> male»), se era successa prima il trapassato («pensavo che <i>fosse stato</i> male»). Nel periodo ipotetico il trapassato va dopo <i>se</i>, e nella conseguenza c'è il condizionale passato: il condizionale non va mai dopo <i>se</i>.",
+      "errors": [
+        {
+          "wrong": "Pensavo che è partito.",
+          "right": "Pensavo che fosse partito.",
+          "why": "Primo verbo al passato, azione precedente: congiuntivo trapassato."
+        },
+        {
+          "wrong": "Se avrei saputo, sarei venuto.",
+          "right": "Se avessi saputo, sarei venuto.",
+          "why": "Dopo <i>se</i> va il congiuntivo, mai il condizionale."
+        },
+        {
+          "wrong": "Credevo che avesse andato via.",
+          "right": "Credevo che fosse andato via.",
+          "why": "<i>Andare</i> vuole <i>essere</i>."
+        },
+        {
+          "wrong": "Se avessi saputo, venivo.",
+          "right": "Se avessi saputo, sarei venuto.",
+          "why": "«Venivo» si sente nel parlato informale, ma nello scritto la conseguenza va al condizionale passato."
+        },
+        {
+          "wrong": "Magari avrei saputo!",
+          "right": "Magari l'avessi saputo!",
+          "why": "Dopo <i>magari</i> va il congiuntivo."
+        },
+        {
+          "wrong": "Non sapevo che Giulia fosse partito.",
+          "right": "Non sapevo che Giulia fosse partita.",
+          "why": "Con <i>essere</i> il participio si accorda con il soggetto."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Comincia con «Pensavo che» e metti il verbo al congiuntivo trapassato.",
+          "items": [
+            "Marco ha finito.",
+            "Sono partiti ieri.",
+            "Hai già mangiato.",
+            "Anna è tornata.",
+            "Avete capito tutto.",
+            "Il film è piaciuto a tutti."
+          ],
+          "key": [
+            "<b>Pensavo che Marco avesse finito.</b>",
+            "<b>Pensavo che fossero partiti ieri.</b>",
+            "<b>Pensavo che tu avessi già mangiato.</b>",
+            "<b>Pensavo che Anna fosse tornata.</b>",
+            "<b>Pensavo che aveste capito tutto.</b>",
+            "<b>Pensavo che il film fosse piaciuto a tutti.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Se avremmo preso il taxi, saremmo arrivati in tempo.",
+            "Credevo che le ragazze fossero già uscito.",
+            "Non sapevo che avevi cambiato casa.",
+            "Se fossi studiato di più, avrei passato l'esame.",
+            "Magari sarei rimasto a casa!",
+            "Mi guardava come se ho detto una stupidaggine."
+          ],
+          "key": [
+            "<b>avessimo preso</b>",
+            "<b>uscite</b>",
+            "<b>avessi cambiato</b> (nello scritto curato)",
+            "<b>avessi studiato</b>",
+            "<b>fossi rimasto</b>",
+            "<b>avessi detto</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Esprimi un rimpianto: completa il periodo ipotetico del 3° tipo.",
+          "items": [
+            "Se avessi studiato di più, …",
+            "Se fossimo partiti prima, …",
+            "Se mi avessi chiamato, …",
+            "Se avessi saputo che era il tuo compleanno, …",
+            "Magari …!",
+            "Se non fossi venuto in Italia, …"
+          ],
+          "key": [
+            "Esempio: <b>avrei passato l'esame</b>.",
+            "Esempio: <b>non avremmo trovato traffico</b>.",
+            "Esempio: <b>ti avrei aiutato</b>.",
+            "Esempio: <b>ti avrei fatto un regalo</b>.",
+            "Esempio: <b>Magari avessi accettato quel lavoro!</b>",
+            "Esempio: <b>non avrei imparato l'italiano così bene</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b2",
+      "cat": "Sintassi",
+      "title": "La concordanza dei tempi",
+      "def": "Quando una frase ha due verbi e il secondo è al congiuntivo («penso che <i>venga</i>»), il tempo del secondo verbo dipende da due cose: il tempo del <b>primo verbo</b>, quello che esprime l'opinione, il desiderio, il dubbio; e il <b>rapporto di tempo</b> tra le due azioni: il secondo fatto succede nello stesso momento, prima o dopo?",
+      "form": "Due domande, in quest'ordine. <b>1. Il primo verbo è al presente (o al futuro), oppure al passato (o al condizionale)?</b> <b>2. L'azione del secondo verbo succede nello stesso momento, prima o dopo?</b> Dalla combinazione delle due risposte si ricava il tempo giusto, nella tabella.",
+      "tables": [
+        {
+          "before": "<b>Lo schema.</b>",
+          "plain": true,
+          "headers": [
+            "primo verbo",
+            "stesso momento",
+            "prima",
+            "dopo"
+          ],
+          "rows": [
+            [
+              "presente o futuro: penso, penserò",
+              "congiuntivo presente: che venga",
+              "congiuntivo passato: che sia venuto",
+              "futuro: che verrà (anche congiuntivo presente: che venga)"
+            ],
+            [
+              "passato: pensavo, ho pensato, pensai",
+              "congiuntivo imperfetto: che venisse",
+              "congiuntivo trapassato: che fosse venuto",
+              "condizionale passato: che sarebbe venuto"
+            ],
+            [
+              "condizionale di desiderio: vorrei, preferirei",
+              "congiuntivo imperfetto: che venisse",
+              "congiuntivo trapassato: che fosse venuto",
+              "—"
+            ]
+          ],
+          "after": "Con i verbi che vogliono l'indicativo (<i>so, dico, ho visto…</i>) vale lo stesso principio: «so che viene / è venuto / verrà», «sapevo che veniva / era venuto / sarebbe venuto»."
+        }
+      ],
+      "uses": [
+        {
+          "label": "primo verbo al presente, stesso momento",
+          "ex": "Penso che Marco sia a casa (adesso)."
+        },
+        {
+          "label": "primo verbo al presente, prima",
+          "ex": "Penso che Marco sia uscito (prima)."
+        },
+        {
+          "label": "primo verbo al presente, dopo",
+          "ex": "Penso che Marco verrà domani."
+        },
+        {
+          "label": "primo verbo al passato, stesso momento",
+          "ex": "Pensavo che Marco fosse a casa (allora)."
+        },
+        {
+          "label": "primo verbo al passato, prima",
+          "ex": "Pensavo che Marco fosse uscito (prima di allora)."
+        },
+        {
+          "label": "primo verbo al passato, dopo: il «futuro nel passato» è il condizionale passato",
+          "ex": "Pensavo che Marco sarebbe venuto (dopo)."
+        },
+        {
+          "label": "vorrei, preferirei, mi piacerebbe vogliono il congiuntivo imperfetto",
+          "ex": "Vorrei che tu restassi. / Mi piacerebbe che venissero anche loro."
+        }
+      ],
+      "warn": "<b>L'errore tipico: restare al presente.</b> Chi impara tende a usare sempre il congiuntivo presente: «pensavo che <i>venga</i>», «vorrei che <i>venga</i>». Il primo verbo al passato o al condizionale «tira indietro» tutta la frase: «pensavo che <i>venisse</i>», «vorrei che <i>venisse</i>». E per il futuro visto dal passato non si usa né il futuro né il condizionale presente, ma il condizionale passato: «pensavo che <i>sarebbe venuto</i>».",
+      "errors": [
+        {
+          "wrong": "Pensavo che venga.",
+          "right": "Pensavo che venisse.",
+          "why": "Primo verbo al passato, stesso momento: congiuntivo imperfetto."
+        },
+        {
+          "wrong": "Pensavo che verrà.",
+          "right": "Pensavo che sarebbe venuto.",
+          "why": "Il futuro visto dal passato si esprime con il condizionale passato."
+        },
+        {
+          "wrong": "Vorrei che tu venga.",
+          "right": "Vorrei che tu venissi.",
+          "why": "Dopo <i>vorrei</i>: congiuntivo imperfetto."
+        },
+        {
+          "wrong": "Credevo che è partito.",
+          "right": "Credevo che fosse partito.",
+          "why": "Primo verbo al passato, azione precedente: congiuntivo trapassato."
+        },
+        {
+          "wrong": "Ero sicuro che verrebbe.",
+          "right": "Ero sicuro che sarebbe venuto.",
+          "why": "Futuro nel passato: condizionale passato, non presente."
+        },
+        {
+          "wrong": "Penso che fosse uscito un'ora fa.",
+          "right": "Penso che sia uscito un'ora fa.",
+          "why": "Primo verbo al presente, azione precedente: congiuntivo passato."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Metti il primo verbo all'imperfetto e cambia il secondo.",
+          "items": [
+            "Penso che Luca sia malato.",
+            "Credo che abbiano già cenato.",
+            "So che arriverà domani.",
+            "Spero che tu stia bene.",
+            "Dubito che abbia capito.",
+            "Sono sicuro che vincerete."
+          ],
+          "key": [
+            "<b>Pensavo che Luca fosse malato.</b>",
+            "<b>Credevo che avessero già cenato.</b>",
+            "<b>Sapevo che sarebbe arrivato il giorno dopo.</b>",
+            "<b>Speravo che tu stessi bene.</b>",
+            "<b>Dubitavo che avesse capito.</b>",
+            "<b>Ero sicuro che avreste vinto.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Speravo che tu mi chiami.",
+            "Vorrei che voi siate più puntuali.",
+            "Mi ha promesso che verrà il giorno dopo.",
+            "Pensavo che Anna è partita la settimana prima.",
+            "Credo che ieri fosse piovuto.",
+            "Non immaginavo che il viaggio costerebbe così tanto."
+          ],
+          "key": [
+            "<b>chiamassi</b>",
+            "<b>foste</b>",
+            "<b>sarebbe venuto</b>",
+            "<b>fosse partita</b>",
+            "<b>sia piovuto</b>",
+            "<b>sarebbe costato</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa la frase con il tempo giusto.",
+          "items": [
+            "Pensavo che l'esame …",
+            "Credo che ieri Marco …",
+            "Ero sicuro che tu …",
+            "Mi piacerebbe che i miei figli …",
+            "Non sapevo che voi …",
+            "Spero che domani …"
+          ],
+          "key": [
+            "Esempio: <b>fosse più difficile</b>.",
+            "Esempio: <b>abbia lavorato fino a tardi</b>.",
+            "Esempio: <b>saresti arrivato in ritardo</b>.",
+            "Esempio: <b>imparassero l'italiano</b>.",
+            "Esempio: <b>vi foste già trasferiti</b>.",
+            "Esempio: <b>faccia bel tempo</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b2",
+      "cat": "Verbi",
+      "title": "Il condizionale passato",
+      "def": "Esprime un'azione possibile o desiderata che <b>non si è realizzata</b> (un rimpianto), la conseguenza nel periodo ipotetico del 3° tipo, o il <b>futuro nel passato</b> del discorso indiretto.",
+      "form": "condizionale presente di <b>essere</b> o <b>avere</b> + participio passato.",
+      "tables": [
+        {
+          "caption": "parlare / andare",
+          "headers": [
+            "",
+            "parlare",
+            "andare"
+          ],
+          "rows": [
+            [
+              "io",
+              "avrei parlato",
+              "sarei andato/a"
+            ],
+            [
+              "tu",
+              "avresti parlato",
+              "saresti andato/a"
+            ],
+            [
+              "lui/lei",
+              "avrebbe parlato",
+              "sarebbe andato/a"
+            ],
+            [
+              "noi",
+              "avremmo parlato",
+              "saremmo andati/e"
+            ],
+            [
+              "voi",
+              "avreste parlato",
+              "sareste andati/e"
+            ],
+            [
+              "loro",
+              "avrebbero parlato",
+              "sarebbero andati/e"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "rimpianto / azione mancata",
+          "ex": "Sarei venuto, ma non ho potuto."
+        },
+        {
+          "label": "periodo ipotetico 3° tipo",
+          "ex": "Se avessi studiato, avrei superato l'esame."
+        },
+        {
+          "label": "futuro nel passato (discorso indiretto)",
+          "ex": "Disse che sarebbe venuto."
+        },
+        {
+          "label": "desiderio non realizzato",
+          "ex": "Mi sarebbe piaciuto restare."
+        }
+      ],
+      "warn": "Sceglie l'ausiliare come il passato prossimo (con essere il participio si accorda: «sarebbe andat<i>a</i>»). Nel discorso indiretto al passato il futuro diventa <b>sempre</b> condizionale passato: «Disse che <i>sarebbe venuto</i>», mai «che verrebbe».",
+      "errors": [
+        {
+          "wrong": "Disse che verrebbe.",
+          "right": "Disse che sarebbe venuto.",
+          "why": "Il futuro visto dal passato si esprime con il condizionale passato."
+        },
+        {
+          "wrong": "Avrei andato volentieri.",
+          "right": "Sarei andato volentieri.",
+          "why": "L'ausiliare è lo stesso del passato prossimo: <i>andare</i> vuole <i>essere</i>."
+        },
+        {
+          "wrong": "Mi sarebbe piaciuto la festa.",
+          "right": "Mi sarebbe piaciuta la festa.",
+          "why": "Con <i>essere</i> il participio si accorda con il soggetto, qui <i>la festa</i>."
+        },
+        {
+          "wrong": "Se avrei studiato, avrei passato l'esame.",
+          "right": "Se avessi studiato, avrei passato l'esame.",
+          "why": "Il condizionale va nella conseguenza, mai dopo <i>se</i>."
+        },
+        {
+          "wrong": "Al tuo posto avrei lo fatto.",
+          "right": "Al tuo posto l'avrei fatto.",
+          "why": "Il pronome va prima dell'ausiliare."
+        },
+        {
+          "wrong": "Avremo voluto venire.",
+          "right": "Avremmo voluto venire.",
+          "why": "Il condizionale di <i>noi</i> ha due <i>m</i>; <i>avremo</i> è il futuro."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Esprimi un rimpianto: passa dal condizionale presente al condizionale passato.",
+          "items": [
+            "Verrei volentieri.",
+            "Mi piacerebbe vederti.",
+            "Dovresti studiare di più.",
+            "Lo comprerei, ma costa troppo.",
+            "Ci andremmo con piacere.",
+            "Potresti dirmelo."
+          ],
+          "key": [
+            "<b>Sarei venuto/a volentieri.</b>",
+            "<b>Mi sarebbe piaciuto vederti.</b>",
+            "<b>Avresti dovuto studiare di più.</b>",
+            "<b>L'avrei comprato, ma costava troppo.</b>",
+            "<b>Ci saremmo andati con piacere.</b>",
+            "<b>Avresti potuto dirmelo.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Mi aveva detto che mi chiamerebbe.",
+            "Avrei partito, ma ho perso il treno.",
+            "Ci sarebbe piaciuto molto la cena.",
+            "Avremo voluto aiutarti, ma eravamo via.",
+            "Al tuo posto, io avrei lo detto.",
+            "Se lo avrei saputo, sarei venuto."
+          ],
+          "key": [
+            "<b>mi avrebbe chiamato</b>",
+            "<b>Sarei partito</b>",
+            "<b>piaciuta</b>",
+            "<b>Avremmo voluto</b>",
+            "<b>l'avrei detto</b>",
+            "<b>Se l'avessi saputo</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa con il condizionale passato.",
+          "items": [
+            "Al tuo posto …",
+            "Ieri sarei uscito, ma …",
+            "Mi avevi promesso che …",
+            "Da piccolo avrei voluto …",
+            "Avresti dovuto …",
+            "Se fossi stato più attento, …"
+          ],
+          "key": [
+            "Esempio: <b>avrei accettato subito</b>.",
+            "Esempio: <b>pioveva troppo</b>.",
+            "Esempio: <b>saresti arrivato puntuale</b>.",
+            "Esempio: <b>diventare astronauta</b>.",
+            "Esempio: <b>dirmelo prima</b>.",
+            "Esempio: <b>non avrei fatto quell'errore</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b2",
+      "cat": "Sintassi",
+      "title": "Il discorso indiretto",
+      "def": "È il modo di riferire con parole nostre quello che ha detto qualcuno, senza citarlo tra virgolette: «Marco ha detto: “Sono stanco”» → «Marco ha detto <i>che era stanco</i>». Quando il verbo che introduce le parole riferite (<i>dire, raccontare, rispondere…</i>) è al passato, cambiano i tempi, le persone e le parole di tempo e di luogo.",
+      "form": "Per spiegarlo allo studente: si immagina di raccontare la scena da un altro momento e da un altro posto. <b>Cambia la persona</b> (l'«io» di chi parlava diventa «lui» o «lei»), <b>cambia il tempo del verbo</b> se il verbo introduttivo è al passato, <b>cambiano le parole che indicano qui e ora</b>. Se il verbo introduttivo è al presente («dice che…»), i tempi restano uguali: «Dice che è stanco».",
+      "tables": [
+        {
+          "before": "<b>I tempi, con il verbo introduttivo al passato.</b>",
+          "plain": true,
+          "headers": [
+            "discorso diretto",
+            "discorso indiretto",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "presente",
+              "imperfetto",
+              "«Sto bene» → Ha detto che stava bene."
+            ],
+            [
+              "passato prossimo o remoto",
+              "trapassato prossimo",
+              "«Ho finito» → Ha detto che aveva finito."
+            ],
+            [
+              "imperfetto",
+              "imperfetto (non cambia)",
+              "«Ero stanco» → Ha detto che era stanco."
+            ],
+            [
+              "futuro",
+              "condizionale passato",
+              "«Verrò» → Ha detto che sarebbe venuto."
+            ],
+            [
+              "imperativo",
+              "di + infinito",
+              "«Chiamami!» → Mi ha detto di chiamarlo."
+            ],
+            [
+              "congiuntivo presente",
+              "congiuntivo imperfetto",
+              "«Penso che sia tardi» → Ha detto che pensava che fosse tardi."
+            ],
+            [
+              "condizionale presente",
+              "condizionale passato",
+              "«Vorrei un caffè» → Ha detto che avrebbe voluto un caffè."
+            ]
+          ]
+        },
+        {
+          "before": "<b>Persone, tempo e luogo.</b>",
+          "plain": true,
+          "headers": [
+            "diretto",
+            "indiretto"
+          ],
+          "rows": [
+            [
+              "io, mi, mio",
+              "lui / lei, gli / le, suo"
+            ],
+            [
+              "noi, ci, nostro",
+              "loro, gli, loro"
+            ],
+            [
+              "oggi",
+              "quel giorno"
+            ],
+            [
+              "ieri",
+              "il giorno prima"
+            ],
+            [
+              "domani",
+              "il giorno dopo"
+            ],
+            [
+              "adesso",
+              "allora, in quel momento"
+            ],
+            [
+              "tra una settimana",
+              "una settimana dopo"
+            ],
+            [
+              "la settimana scorsa",
+              "la settimana prima"
+            ],
+            [
+              "questo",
+              "quello"
+            ],
+            [
+              "qui, qua",
+              "lì, là"
+            ],
+            [
+              "venire",
+              "andare"
+            ]
+          ],
+          "after": "Le parole di tempo e di luogo cambiano solo se chi riferisce si trova in un altro momento o in un altro posto. Se Marco l'ha detto stamattina, si può dire «ha detto che domani parte»."
+        }
+      ],
+      "uses": [
+        {
+          "label": "riferire un'affermazione: dire, raccontare, rispondere + che",
+          "ex": "«Ho fame» → Ha detto che aveva fame."
+        },
+        {
+          "label": "riferire un ordine o un consiglio: dire, chiedere, consigliare + di + infinito",
+          "ex": "«Chiudi la porta!» → Mi ha detto di chiudere la porta."
+        },
+        {
+          "label": "riferire una domanda sì/no: chiedere se",
+          "ex": "«Vieni?» → Mi ha chiesto se venivo."
+        },
+        {
+          "label": "riferire una domanda con chi, dove, quando, perché…: la parola interrogativa resta",
+          "ex": "«Dove abiti?» → Mi ha chiesto dove abitavo."
+        },
+        {
+          "label": "verbo introduttivo al presente: i tempi non cambiano",
+          "ex": "«Arrivo tardi» → Dice che arriva tardi."
+        }
+      ],
+      "warn": "<b>Il futuro nel passato.</b> Il futuro del discorso diretto («verrò») diventa sempre condizionale passato («ha detto che <i>sarebbe venuto</i>»), anche se l'azione deve ancora succedere: «ha detto che verrebbe» è un errore frequente. Nelle domande indirette, nello scritto curato si usa anche il congiuntivo: «mi ha chiesto dove <i>abitassi</i>».",
+      "errors": [
+        {
+          "wrong": "Ha detto che verrebbe.",
+          "right": "Ha detto che sarebbe venuto.",
+          "why": "Il futuro diventa condizionale passato."
+        },
+        {
+          "wrong": "Mi ha detto che lo chiami.",
+          "right": "Mi ha detto di chiamarlo.",
+          "why": "Un ordine riferito si esprime con <i>di</i> + infinito."
+        },
+        {
+          "wrong": "Una settimana fa mi ha detto che domani parte.",
+          "right": "Una settimana fa mi ha detto che partiva il giorno dopo.",
+          "why": "Se chi riferisce è in un altro momento, cambiano tempo del verbo e parole di tempo."
+        },
+        {
+          "wrong": "Mi ha chiesto che se venivo.",
+          "right": "Mi ha chiesto se venivo.",
+          "why": "La domanda sì/no si riferisce con <i>se</i>, senza <i>che</i>."
+        },
+        {
+          "wrong": "Anna ha detto che io sono stanca.",
+          "right": "Anna ha detto che era stanca.",
+          "why": "L'«io» di chi parlava diventa «lei»."
+        },
+        {
+          "wrong": "Ieri mi ha chiesto dov'è la stazione.",
+          "right": "Ieri mi ha chiesto dov'era la stazione.",
+          "why": "Con il verbo introduttivo al passato, il presente diventa imperfetto."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Trasforma in discorso indiretto. Comincia con «Marco ha detto…» o «Marco mi ha chiesto…».",
+          "items": [
+            "«Sono stanco.»",
+            "«Ho perso le chiavi.»",
+            "«Domani andrò a Roma.»",
+            "«Chiudi la finestra!»",
+            "«Vieni con me?»",
+            "«Dove abiti?»"
+          ],
+          "key": [
+            "<b>Marco ha detto che era stanco.</b>",
+            "<b>Marco ha detto che aveva perso le chiavi.</b>",
+            "<b>Marco ha detto che il giorno dopo sarebbe andato a Roma.</b>",
+            "<b>Marco mi ha detto di chiudere la finestra.</b>",
+            "<b>Marco mi ha chiesto se andavo con lui.</b>",
+            "<b>Marco mi ha chiesto dove abitavo.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Anna ha detto che verrebbe alla festa.",
+            "Il medico mi ha detto che riposi.",
+            "Ieri mi ha chiesto che cosa faccio stasera.",
+            "Luca mi ha detto: che era stanco.",
+            "La settimana scorsa Paola mi ha detto che ieri è stata male.",
+            "Mi hanno chiesto se io voglio venire con noi."
+          ],
+          "key": [
+            "<b>sarebbe venuta</b>",
+            "<b>di riposare</b>",
+            "<b>che cosa facevo quella sera</b>",
+            "<b>Luca mi ha detto che era stanco.</b>",
+            "<b>che il giorno prima era stata male</b>",
+            "<b>se volevo andare con loro</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Riferisci quello che ti hanno detto ieri.",
+          "items": [
+            "Mia madre mi ha detto di …",
+            "Il mio capo mi ha chiesto se …",
+            "Un amico mi ha raccontato che …",
+            "L'insegnante ci ha detto che la settimana dopo …",
+            "Un turista mi ha chiesto dove …",
+            "Mio fratello mi ha promesso che …"
+          ],
+          "key": [
+            "Esempio: <b>chiamarla più spesso</b>.",
+            "Esempio: <b>potevo lavorare sabato</b>.",
+            "Esempio: <b>aveva trovato un nuovo lavoro</b>.",
+            "Esempio: <b>ci sarebbe stato l'esame</b>.",
+            "Esempio: <b>era il Colosseo</b> (o <b>fosse</b>).",
+            "Esempio: <b>mi avrebbe restituito i soldi</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b2",
+      "cat": "Verbi",
+      "title": "Il gerundio: semplice e composto",
+      "def": "Il gerundio è una forma del verbo che non cambia mai e che collega due azioni senza bisogno di parole come <i>mentre, perché, se</i>: «<i>Camminando</i>, ascoltavo musica» = mentre camminavo. Che cosa vuol dire esattamente (tempo, causa, modo, condizione, «anche se») si capisce dal contesto.",
+      "form": "<b>Semplice</b>: si toglie <i>-are, -ere, -ire</i> e si aggiunge <b>-ando</b> ai verbi in <i>-are</i>, <b>-endo</b> agli altri: <i>parlando, prendendo, dormendo</i>. <i>Fare, dire, bere, tradurre</i> partono dalla forma lunga: <i>facendo, dicendo, bevendo, traducendo</i>. <b>Composto</b>: <i>avendo</i> o <i>essendo</i> + participio passato: <i>avendo parlato, essendo partito</i>; con <i>essendo</i> il participio si accorda con il soggetto (<i>essendo partit<b>a</b></i>). I pronomi si attaccano in fondo: <i>vedendo<b>lo</b>, avendo<b>lo</b> visto, alzando<b>si</b></i>.",
+      "tables": [
+        {
+          "before": "<b>Che cosa può esprimere.</b>",
+          "plain": true,
+          "headers": [
+            "valore",
+            "con una frase normale sarebbe…",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "tempo, nello stesso momento",
+              "mentre…",
+              "Tornando a casa, ho incontrato Luca. (= mentre tornavo)"
+            ],
+            [
+              "modo, mezzo",
+              "come? in che modo?",
+              "Si impara sbagliando. / È entrato correndo."
+            ],
+            [
+              "causa",
+              "poiché, siccome…",
+              "Essendo stanco, sono rimasto a casa."
+            ],
+            [
+              "condizione",
+              "se…",
+              "Volendo, possiamo partire domani. (= se vogliamo)"
+            ],
+            [
+              "«anche se», con pur",
+              "anche se…",
+              "Pur essendo stanco, è uscito."
+            ],
+            [
+              "tempo, prima (con il composto)",
+              "dopo che…",
+              "Avendo finito, è uscito."
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "semplice: due azioni nello stesso momento",
+          "ex": "Camminando, ascoltavo musica. / Leggo il giornale facendo colazione."
+        },
+        {
+          "label": "semplice: in che modo si fa una cosa",
+          "ex": "Si impara sbagliando. / Ha risposto sorridendo."
+        },
+        {
+          "label": "semplice o composto: la causa",
+          "ex": "Essendo stanco, sono rimasto a casa. / Non avendo studiato, non ha passato l'esame."
+        },
+        {
+          "label": "una condizione: volendo, potendo, continuando così…",
+          "ex": "Volendo, ci puoi andare a piedi. / Continuando così, ti ammalerai."
+        },
+        {
+          "label": "pur + gerundio = «anche se»",
+          "ex": "Pur sapendo la verità, non ha detto niente. / Pur avendo dormito, sono stanchissimo."
+        },
+        {
+          "label": "composto: un'azione finita prima dell'altra",
+          "ex": "Avendo letto il libro, conosco la storia. / Essendo arrivati tardi, non abbiamo trovato posto."
+        }
+      ],
+      "warn": "<b>Stesso soggetto.</b> Di regola il gerundio ha lo stesso soggetto del verbo principale: «<i>Tornando</i> a casa, (io) ho incontrato Luca». Con soggetti diversi la frase diventa sbagliata o ridicola: «Uscendo dal cinema, ha cominciato a piovere» (sembra che la pioggia esca dal cinema). In quel caso si usa una frase normale: «<i>Mentre uscivamo</i> dal cinema, ha cominciato a piovere». Fa eccezione, nello stile formale, il gerundio con il suo soggetto espresso subito dopo: «Essendo <i>il treno</i> in ritardo, siamo arrivati tardi».",
+      "errors": [
+        {
+          "wrong": "Uscendo dal cinema, ha cominciato a piovere.",
+          "right": "Mentre uscivamo dal cinema, ha cominciato a piovere.",
+          "why": "Il gerundio vuole lo stesso soggetto della frase principale."
+        },
+        {
+          "wrong": "Lo vedendo, l'ho salutato.",
+          "right": "Vedendolo, l'ho salutato.",
+          "why": "I pronomi si attaccano in fondo al gerundio."
+        },
+        {
+          "wrong": "Pur avendo stato malato, è venuto.",
+          "right": "Pur essendo stato malato, è venuto.",
+          "why": "<i>Essere</i> vuole <i>essere</i>: <i>essendo stato</i>."
+        },
+        {
+          "wrong": "Essendo partito presto, Anna è arrivata puntuale.",
+          "right": "Essendo partita presto, Anna è arrivata puntuale.",
+          "why": "Con <i>essendo</i> il participio si accorda con il soggetto."
+        },
+        {
+          "wrong": "facciendo",
+          "right": "facendo",
+          "why": "Il gerundio di <i>fare</i> è <i>facendo</i>."
+        },
+        {
+          "wrong": "Pur essendo stanco, ma è uscito.",
+          "right": "Pur essendo stanco, è uscito.",
+          "why": "<i>Pur</i> vuol già dire «anche se»: niente <i>ma</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Sostituisci la parte in grassetto con un gerundio.",
+          "items": [
+            "<b>Mentre tornavo</b> a casa, ho visto un incidente.",
+            "<b>Siccome ero</b> stanco, sono andato a letto presto.",
+            "<b>Se vuoi</b>, puoi restare a cena.",
+            "<b>Anche se sapeva</b> la risposta, non ha parlato.",
+            "<b>Dopo che aveva finito</b> il lavoro, è uscito.",
+            "<b>Poiché erano arrivati</b> tardi, non hanno trovato posto."
+          ],
+          "key": [
+            "<b>Tornando</b> a casa",
+            "<b>Essendo</b> stanco",
+            "<b>Volendo</b>",
+            "<b>Pur sapendo</b> la risposta",
+            "<b>Avendo finito</b> il lavoro",
+            "<b>Essendo arrivati</b> tardi"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Lo leggendo, ho capito tutto.",
+            "Pur avendo stato in Italia molte volte, non parla italiano.",
+            "Essendo partito presto, Giulia è arrivata per prima.",
+            "Aspettando l'autobus, è arrivato un mio amico.",
+            "Pur essendo ricco, ma vive in modo semplice.",
+            "Facciendo sport, si sta meglio."
+          ],
+          "key": [
+            "<b>Leggendolo</b>",
+            "<b>Pur essendo stato</b>",
+            "<b>partita</b>",
+            "<b>Mentre aspettavo l'autobus</b>, è arrivato un mio amico.",
+            "<b>Pur essendo ricco, vive</b> in modo semplice.",
+            "<b>Facendo</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa la frase.",
+          "items": [
+            "Si impara una lingua …",
+            "Pur …, ho deciso di partire.",
+            "Avendo perso il treno, …",
+            "Volendo, …",
+            "Ascoltando la radio, …",
+            "Essendo arrivata in ritardo, …"
+          ],
+          "key": [
+            "Esempio: <b>parlando con le persone del posto</b>.",
+            "Esempio: <b>Pur avendo poco tempo</b>, ho deciso di partire.",
+            "Esempio: <b>sono arrivato tardi al lavoro</b>.",
+            "Esempio: <b>possiamo andare al mare domenica</b>.",
+            "Esempio: <b>ho sentito una notizia interessante</b>.",
+            "Esempio: <b>Anna non è potuta entrare</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b2",
+      "cat": "Verbi",
+      "title": "Infinito sostantivato e passato",
+      "def": "L'infinito è la forma «base» del verbo (<i>parlare, essere</i>), ma non serve solo nel dizionario: può fare da <b>nome</b> («<i>viaggiare</i> apre la mente») e, nella forma <b>passata</b> (<i>aver parlato, essere andato</i>), indica un'azione già avvenuta rispetto a un'altra («dopo <i>aver mangiato</i>, sono uscito»).",
+      "form": "<b>Infinito passato</b>: <b>avere</b> o <b>essere</b> all'infinito + participio passato, con lo stesso ausiliare del passato prossimo. Spesso si accorcia: <i>aver finito, esser tornato</i>. Con <i>essere</i> il participio si accorda con il soggetto: «dopo essere arrivat<b>a</b>», «dopo esser partit<b>i</b>». I pronomi si attaccano in fondo all'ausiliare: «dopo aver<b>lo</b> visto», «dopo esser<b>si</b> svegliato». <b>Infinito come nome</b>: può fare da soggetto o da oggetto della frase, di solito senza articolo («<i>fumare</i> fa male»); con l'articolo («<i>il</i> mangiare») suona letterario o fa parte di espressioni fisse.",
+      "tables": [
+        {
+          "before": "<b>Preposizioni + infinito.</b> Si usano quando il soggetto è lo stesso nelle due parti della frase.",
+          "plain": true,
+          "headers": [
+            "espressione",
+            "significato",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "prima di + infinito presente",
+              "prima che…",
+              "Prima di uscire, chiudi la finestra."
+            ],
+            [
+              "dopo + infinito passato",
+              "dopo che…",
+              "Dopo aver cenato, siamo usciti."
+            ],
+            [
+              "senza + infinito",
+              "e non…",
+              "È uscito senza salutare."
+            ],
+            [
+              "invece di + infinito",
+              "al posto di…",
+              "Invece di studiare, guarda la TV."
+            ],
+            [
+              "per + infinito presente",
+              "scopo",
+              "Studio per trovare lavoro."
+            ],
+            [
+              "per + infinito passato",
+              "causa: perché ha fatto…",
+              "È stato multato per aver superato il limite."
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "infinito come soggetto: un'azione presentata come una cosa",
+          "ex": "Viaggiare apre la mente. / Fumare fa male. / È importante dormire bene."
+        },
+        {
+          "label": "infinito con l'articolo, in espressioni fisse o nello stile curato",
+          "ex": "il mangiare e il bere / il sorgere del sole / il suo modo di fare"
+        },
+        {
+          "label": "infinito passato: un'azione già avvenuta, con lo stesso soggetto",
+          "ex": "Dopo aver mangiato, sono uscito. / Sono contento di averti conosciuto."
+        },
+        {
+          "label": "ringraziamenti e scuse per qualcosa di già fatto",
+          "ex": "Grazie per essere venuti. / Scusa per averti disturbato."
+        },
+        {
+          "label": "dopo verbi di opinione e di emozione, con lo stesso soggetto",
+          "ex": "Penso di aver capito. / Mi dispiace di essere arrivato tardi."
+        }
+      ],
+      "warn": "<b>Dopo + infinito passato, prima di + infinito presente.</b> «Dopo» vuole l'infinito passato («dopo <i>aver mangiato</i>»), «prima di» l'infinito presente («prima di <i>mangiare</i>»). Tutti e due funzionano solo se il soggetto è lo stesso nelle due parti della frase; se cambia, servono <i>dopo che</i> + indicativo o <i>prima che</i> + congiuntivo: «prima che <i>tu</i> esca, <i>io</i> ti saluto». Nel parlato si sente anche «dopo mangiato»: è informale.",
+      "errors": [
+        {
+          "wrong": "Dopo che mangiare, esco.",
+          "right": "Dopo aver mangiato, esco.",
+          "why": "<i>Dopo</i> + infinito passato, senza <i>che</i>."
+        },
+        {
+          "wrong": "Grazie per venire.",
+          "right": "Grazie per essere venuti.",
+          "why": "Si ringrazia per una cosa già fatta: infinito passato."
+        },
+        {
+          "wrong": "Prima di uscendo, chiudi la porta.",
+          "right": "Prima di uscire, chiudi la porta.",
+          "why": "<i>Prima di</i> vuole l'infinito, non il gerundio."
+        },
+        {
+          "wrong": "Dopo essere arrivato, Anna ha telefonato.",
+          "right": "Dopo essere arrivata, Anna ha telefonato.",
+          "why": "Con <i>essere</i> il participio si accorda con il soggetto."
+        },
+        {
+          "wrong": "Dopo avere andato al cinema, siamo tornati.",
+          "right": "Dopo essere andati al cinema, siamo tornati.",
+          "why": "<i>Andare</i> vuole <i>essere</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Unisci le frasi con dopo + infinito passato.",
+          "items": [
+            "Ho finito i compiti. Poi sono uscito.",
+            "Anna è tornata a casa. Poi ha cenato.",
+            "Abbiamo visto il film. Poi ne abbiamo parlato.",
+            "Si sono svegliati. Poi hanno fatto colazione.",
+            "Ho letto la lettera. Poi l'ho buttata.",
+            "I ragazzi sono arrivati. Poi hanno cominciato a giocare."
+          ],
+          "key": [
+            "<b>Dopo aver finito i compiti, sono uscito.</b>",
+            "<b>Dopo essere tornata a casa, Anna ha cenato.</b>",
+            "<b>Dopo aver visto il film, ne abbiamo parlato.</b>",
+            "<b>Dopo essersi svegliati, hanno fatto colazione.</b>",
+            "<b>Dopo averla letta, l'ho buttata.</b>",
+            "<b>Dopo essere arrivati, i ragazzi hanno cominciato a giocare.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Dopo che cenare, guardiamo un film.",
+            "Scusa per non rispondere ieri.",
+            "Prima di partendo, saluta la nonna.",
+            "Dopo essere uscito, Paola ha chiamato un taxi.",
+            "È stato licenziato per arrivare sempre in ritardo.",
+            "Invece di studiando, gioca ai videogiochi."
+          ],
+          "key": [
+            "<b>Dopo aver cenato</b>",
+            "<b>per non aver risposto</b>",
+            "<b>partire</b>",
+            "<b>uscita</b>",
+            "<b>per essere arrivato</b>",
+            "<b>studiare</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa la frase.",
+          "items": [
+            "Dopo aver finito l'università, …",
+            "Prima di dormire, …",
+            "Grazie per …",
+            "… è la cosa più rilassante del mondo.",
+            "Mi dispiace di …",
+            "È uscito senza …"
+          ],
+          "key": [
+            "Esempio: <b>ho trovato lavoro a Milano</b>.",
+            "Esempio: <b>leggo sempre un po'</b>.",
+            "Esempio: <b>avermi aiutato con il trasloco</b>.",
+            "Esempio: <b>Camminare sulla spiaggia</b> è la cosa più rilassante del mondo.",
+            "Esempio: <b>non essere venuto alla tua festa</b>.",
+            "Esempio: <b>prendere l'ombrello</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b2",
+      "cat": "Sintassi",
+      "title": "Relative esplicative e limitative",
+      "def": "Le frasi introdotte da <i>che, cui, il quale</i> possono fare due lavori diversi. La relativa <b>limitativa</b> <b>sceglie</b>: dice di quali persone o cose si parla, separandole dalle altre. La relativa <b>esplicativa</b> <b>aggiunge</b> un'informazione su persone o cose già chiare, come una parentesi. Nello scritto la differenza si vede dalle virgole; nel parlato dalle pause.",
+      "form": "<b>Limitativa: senza virgole.</b> Se la si toglie, cambia il senso della frase: «Gli studenti <i>che hanno studiato</i> hanno superato l'esame» (solo quelli, non tutti). <b>Esplicativa: tra virgole.</b> Se la si toglie, la frase resta vera e parla delle stesse persone: «Gli studenti, <i>che avevano studiato</i>, hanno superato l'esame» (tutti avevano studiato, e tutti l'hanno superato). Test per lo studente: posso togliere la relativa senza cambiare di chi sto parlando? Se sì, è esplicativa e vuole le virgole.",
+      "tables": [
+        {
+          "before": "<b>A confronto.</b>",
+          "plain": true,
+          "headers": [
+            "",
+            "limitativa",
+            "esplicativa"
+          ],
+          "rows": [
+            [
+              "che cosa fa",
+              "sceglie una parte del gruppo",
+              "aggiunge un'informazione"
+            ],
+            [
+              "punteggiatura",
+              "niente virgole",
+              "tra virgole"
+            ],
+            [
+              "esempio",
+              "I colleghi che lavorano da casa non vengono alla riunione. (solo alcuni)",
+              "I colleghi, che lavorano da casa, non vengono alla riunione. (tutti)"
+            ],
+            [
+              "con un nome proprio o una persona unica",
+              "quasi mai",
+              "quasi sempre: Roma, che è la capitale, …"
+            ],
+            [
+              "il quale al posto di che",
+              "raro",
+              "possibile, nello stile formale"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "limitativa: dice di quali persone o cose si parla",
+          "ex": "Il libro che mi hai prestato è bellissimo. / Le persone che fumano devono uscire."
+        },
+        {
+          "label": "esplicativa: aggiunge un'informazione, come una parentesi",
+          "ex": "Mia madre, che è insegnante, conosce bene il problema. / Roma, che ha quasi tre milioni di abitanti, è la città più grande d'Italia."
+        },
+        {
+          "label": "con un nome proprio o una persona unica la relativa è esplicativa",
+          "ex": "Mio padre, che ha settant'anni, lavora ancora."
+        },
+        {
+          "label": "nella limitativa il congiuntivo indica una cosa cercata o desiderata, che forse non esiste",
+          "ex": "Cerco una segretaria che parli tre lingue. ≠ Ho una segretaria che parla tre lingue."
+        },
+        {
+          "label": "congiuntivo anche dopo un superlativo o dopo l'unico, il solo, il primo",
+          "ex": "È l'unico che mi capisca. / È il film più bello che io abbia visto."
+        }
+      ],
+      "warn": "<b>Le virgole cambiano il significato.</b> «Mio fratello <i>che vive a Roma</i> viene a trovarmi» fa capire che ho più fratelli e parlo di quello di Roma; «Mio fratello, <i>che vive a Roma</i>, viene a trovarmi» fa capire che ne ho uno solo. Per lo stesso motivo, con <i>mia madre, mio marito</i> e con i nomi propri la relativa vuole quasi sempre le virgole. L'esplicativa va chiusa da una seconda virgola, se la frase continua.",
+      "errors": [
+        {
+          "wrong": "Mia madre che è medico mi ha consigliato di riposare.",
+          "right": "Mia madre, che è medico, mi ha consigliato di riposare.",
+          "why": "La madre è una sola: la relativa aggiunge un'informazione e vuole le virgole."
+        },
+        {
+          "wrong": "Gli studenti, che non hanno fatto i compiti, devono restare. (solo alcuni)",
+          "right": "Gli studenti che non hanno fatto i compiti devono restare.",
+          "why": "Se si parla solo di alcuni, la relativa sceglie: niente virgole."
+        },
+        {
+          "wrong": "Cerco un appartamento che ha il giardino.",
+          "right": "Cerco un appartamento che abbia il giardino.",
+          "why": "È una cosa cercata, che forse non esiste: congiuntivo."
+        },
+        {
+          "wrong": "Roma che è la capitale d'Italia è molto grande.",
+          "right": "Roma, che è la capitale d'Italia, è molto grande.",
+          "why": "Con un nome proprio la relativa è esplicativa."
+        },
+        {
+          "wrong": "È l'unica persona che mi capisce. (scritto curato)",
+          "right": "È l'unica persona che mi capisca.",
+          "why": "Dopo <i>l'unico, il solo</i>, nello scritto curato si usa il congiuntivo."
+        },
+        {
+          "wrong": "Mio fratello, che vive a Roma viene domani.",
+          "right": "Mio fratello, che vive a Roma, viene domani.",
+          "why": "L'esplicativa va chiusa da una seconda virgola."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Unisci le due frasi con una relativa. Decidi se servono le virgole.",
+          "items": [
+            "Mia sorella vive a Londra. Mia sorella fa l'architetto. (ho una sola sorella)",
+            "I treni partono dal binario 3. Questi treni vanno a Milano. (solo alcuni treni)",
+            "Venezia attira milioni di turisti. Venezia è costruita sull'acqua.",
+            "Ho comprato il libro. Mi avevi consigliato il libro.",
+            "Il mio capo è molto severo. Il mio capo arriva sempre alle sette.",
+            "Cerco un insegnante. L'insegnante deve conoscere bene il russo."
+          ],
+          "key": [
+            "<b>Mia sorella, che fa l'architetto, vive a Londra.</b>",
+            "<b>I treni che vanno a Milano partono dal binario 3.</b>",
+            "<b>Venezia, che è costruita sull'acqua, attira milioni di turisti.</b>",
+            "<b>Ho comprato il libro che mi avevi consigliato.</b>",
+            "<b>Il mio capo, che arriva sempre alle sette, è molto severo.</b>",
+            "<b>Cerco un insegnante che conosca bene il russo.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Correggi la punteggiatura o il verbo.",
+          "items": [
+            "Mio marito che è spagnolo parla benissimo l'italiano.",
+            "I clienti, che hanno pagato in anticipo, avranno uno sconto. (solo alcuni)",
+            "Cerchiamo un collaboratore che ha esperienza nel settore.",
+            "Il Po che è il fiume più lungo d'Italia attraversa quattro regioni.",
+            "È l'unico ristorante che è aperto la domenica.",
+            "La signora Rossi, che abita al piano di sopra è molto gentile."
+          ],
+          "key": [
+            "<b>Mio marito, che è spagnolo, parla</b> benissimo l'italiano.",
+            "<b>I clienti che hanno pagato in anticipo avranno</b> uno sconto.",
+            "<b>abbia</b>",
+            "<b>Il Po, che è il fiume più lungo d'Italia, attraversa</b> quattro regioni.",
+            "<b>che sia aperto</b> (nello scritto curato)",
+            "<b>al piano di sopra, è</b> molto gentile"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa con una relativa, limitativa o esplicativa.",
+          "items": [
+            "Le persone che …",
+            "Mia nonna, che …,",
+            "Cerco un appartamento che …",
+            "Firenze, che …,",
+            "Il ristorante dove …",
+            "È la persona più generosa che …"
+          ],
+          "key": [
+            "Esempio: <b>vivono in città respirano aria più inquinata</b>.",
+            "Esempio: <b>ha novant'anni, cucina ancora tutti i giorni</b>.",
+            "Esempio: <b>sia vicino al centro</b>.",
+            "Esempio: <b>è la città di Dante, è piena di turisti</b>.",
+            "Esempio: <b>abbiamo cenato ieri era ottimo</b>.",
+            "Esempio: <b>io abbia mai conosciuto</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b2",
+      "cat": "Sintassi",
+      "title": "Il costrutto causativo: far fare",
+      "def": "Una costruzione per dire che il soggetto <b>non fa</b> l'azione da solo, ma la <b>fa fare</b> a qualcun altro: «<i>faccio riparare</i> la macchina» = la porto dal meccanico e la ripara lui. Con <i>lasciare</i> + infinito si dice invece che si <b>permette</b> a qualcuno di fare qualcosa: «<i>lascia parlare</i> lui».",
+      "form": "<b>fare</b> (coniugato) + <b>infinito</b>, uno dopo l'altro, senza niente in mezzo: «<i>faccio riparare</i> la macchina». Chi fa davvero l'azione si indica con <b>a</b> («faccio leggere il libro <i>a</i> Marco») o con <b>da</b> («faccio riparare la macchina <i>dal</i> meccanico»); se non c'è un oggetto, va direttamente dopo l'infinito: «faccio entrare <i>Marco</i>». I pronomi vanno prima di <i>fare</i> («<i>la</i> faccio riparare», «<i>glielo</i> faccio leggere»); con l'infinito e l'imperativo si attaccano a <i>fare</i> («far<i>la</i> riparare», «fa<i>llo</i> entrare!»). <b>Farsi</b> + infinito vuol dire far fare qualcosa per sé o sul proprio corpo («<i>mi faccio tagliare</i> i capelli»); al passato vuole <b>essere</b>.",
+      "tables": [
+        {
+          "before": "<b>Le forme principali.</b>",
+          "plain": true,
+          "headers": [
+            "costruzione",
+            "significato",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "fare + infinito",
+              "far fare un'azione a qualcuno",
+              "Faccio riparare la macchina. / Il professore ci fa leggere molto."
+            ],
+            [
+              "fare + infinito + a / da qualcuno",
+              "dire chi fa l'azione",
+              "Faccio controllare il contratto all'avvocato (o dall'avvocato)."
+            ],
+            [
+              "farsi + infinito",
+              "far fare qualcosa per sé",
+              "Mi sono fatto tagliare i capelli. / Si è fatta fare un vestito."
+            ],
+            [
+              "lasciare + infinito",
+              "permettere",
+              "Lascia parlare lui. / Mi lascia passare, per favore?"
+            ],
+            [
+              "con i pronomi",
+              "i pronomi vanno prima di fare",
+              "L'ho fatta riparare. / Glielo faccio sapere."
+            ],
+            [
+              "far sapere, far vedere, far entrare",
+              "espressioni frequentissime",
+              "Ti faccio sapere domani. / Fammi vedere!"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "far fare un lavoro a un professionista o a un'altra persona",
+          "ex": "Ho fatto riparare la lavatrice. / Faccio tradurre il documento."
+        },
+        {
+          "label": "far fare qualcosa a qualcuno, anche contro la sua volontà",
+          "ex": "La mamma fa mangiare la verdura ai bambini. / Il capo ci fa lavorare il sabato."
+        },
+        {
+          "label": "farsi + infinito: per sé, o sul proprio corpo",
+          "ex": "Mi faccio tagliare i capelli ogni mese. / Si è fatto prestare dei soldi."
+        },
+        {
+          "label": "far sapere, far vedere, far entrare: espressioni di tutti i giorni",
+          "ex": "Fammi sapere! / Mi fai vedere le foto? / Faccia entrare il signore."
+        },
+        {
+          "label": "lasciare + infinito: permettere",
+          "ex": "Non mi lasciano uscire la sera. / Lasciami pensare."
+        }
+      ],
+      "warn": "<b>Fatto da me o da un altro?</b> «<i>Ho riparato</i> la macchina» = l'ho fatto io. «<i>Ho fatto riparare</i> la macchina» = l'ha fatto un altro per me. È una differenza di significato, non di stile: «mi sono tagliato i capelli» vuol dire che li ho tagliati io. Con i pronomi, al passato il participio <i>fatto</i> si accorda: «la macchina? L'ho fatt<b>a</b> riparare».",
+      "errors": [
+        {
+          "wrong": "Ho fatto riparato la macchina.",
+          "right": "Ho fatto riparare la macchina.",
+          "why": "Dopo <i>fare</i> va l'infinito."
+        },
+        {
+          "wrong": "Mi ho fatto tagliare i capelli.",
+          "right": "Mi sono fatto tagliare i capelli.",
+          "why": "<i>Farsi</i> al passato vuole <i>essere</i>."
+        },
+        {
+          "wrong": "Faccio Marco leggere il libro.",
+          "right": "Faccio leggere il libro a Marco.",
+          "why": "L'infinito viene subito dopo <i>fare</i>; chi fa l'azione va dopo, con <i>a</i>."
+        },
+        {
+          "wrong": "Ho riparato la macchina dal meccanico.",
+          "right": "Ho fatto riparare la macchina dal meccanico.",
+          "why": "Se il lavoro l'ha fatto un altro serve <i>fare</i> + infinito."
+        },
+        {
+          "wrong": "La macchina? L'ho fatto riparare.",
+          "right": "La macchina? L'ho fatta riparare.",
+          "why": "Il participio si accorda con il pronome <i>la</i>."
+        },
+        {
+          "wrong": "Fai lo entrare!",
+          "right": "Fallo entrare!",
+          "why": "Con l'imperativo il pronome si attacca a <i>fare</i>: <i>fa' + lo → fallo</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Riscrivi con fare + infinito: il lavoro lo fa un'altra persona.",
+          "items": [
+            "Riparo la bici. (il meccanico)",
+            "Mi sono tagliato i capelli. (il parrucchiere)",
+            "Traduciamo il contratto. (un traduttore)",
+            "Pulisco la casa. (una ditta)",
+            "Hai controllato la macchina? (un esperto)",
+            "Costruiranno una casa nuova. (un'impresa)"
+          ],
+          "key": [
+            "<b>Faccio riparare la bici dal meccanico.</b>",
+            "<b>Mi sono fatto tagliare i capelli dal parrucchiere.</b>",
+            "<b>Facciamo tradurre il contratto da un traduttore.</b>",
+            "<b>Faccio pulire la casa da una ditta.</b>",
+            "<b>Hai fatto controllare la macchina da un esperto?</b>",
+            "<b>Faranno costruire una casa nuova da un'impresa.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Ho fatto venuto l'idraulico.",
+            "Anna si ha fatto fare un vestito.",
+            "Il professore fa gli studenti leggere un libro al mese.",
+            "Le lettere? Le ho fatto spedire ieri.",
+            "Fai lo sapere a tutti!",
+            "Non mi lascia di uscire."
+          ],
+          "key": [
+            "<b>fatto venire</b>",
+            "<b>si è fatta fare</b>",
+            "<b>fa leggere un libro al mese agli studenti</b>",
+            "<b>fatte</b>",
+            "<b>Fallo sapere</b>",
+            "<b>Non mi lascia uscire</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Rispondi usando fare, farsi o lasciare + infinito.",
+          "items": [
+            "Che cosa fai quando la macchina si rompe?",
+            "Che cosa fanno fare gli insegnanti agli studenti?",
+            "Hai dipinto tu le pareti di casa?",
+            "Dove ti fai tagliare i capelli?",
+            "Mi dici se vieni alla festa?",
+            "Da ragazzo i tuoi genitori ti lasciavano uscire la sera?"
+          ],
+          "key": [
+            "Esempio: <b>La faccio riparare dal meccanico.</b>",
+            "Esempio: <b>Gli fanno fare molti esercizi.</b>",
+            "Esempio: <b>No, le ho fatte dipingere da un imbianchino.</b>",
+            "Esempio: <b>Me li faccio tagliare da un parrucchiere vicino a casa.</b>",
+            "Esempio: <b>Ti faccio sapere domani.</b>",
+            "Esempio: <b>Sì, mi lasciavano uscire fino a mezzanotte.</b>"
+          ]
+        }
+      ]
+    }
+  ]
+}

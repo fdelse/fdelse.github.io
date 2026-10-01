@@ -1,0 +1,3557 @@
+{
+  "versione": "1.6",
+  "livello": "B1",
+  "schede": [
+    {
+      "lvl": "b1",
+      "cat": "Verbi",
+      "title": "L'imperfetto",
+      "def": "Il secondo tempo del passato più usato, accanto al passato prossimo. Non racconta un fatto concluso: <b>descrive</b> com'erano le cose, che cosa si faceva di solito e che cosa stava succedendo in un certo momento. «Da bambino <i>abitavo</i> al mare», «<i>pioveva</i>», «<i>dormivo</i> quando hai chiamato».",
+      "form": "Si toglie <i>-re</i> dall'infinito e si aggiungono le terminazioni <b>-vo, -vi, -va, -vamo, -vate, -vano</b>: <i>parla-re → parlavo</i>, <i>prende-re → prendevo</i>, <i>dormi-re → dormivo</i>. È uno dei tempi più regolari: anche i verbi con <i>-isc-</i> qui non lo prendono (<i>capivo, finivo</i>). Nella persona <i>loro</i> la voce cade sulla terzultima sillaba: <i>parlàvano</i>.",
+      "tables": [
+        {
+          "before": "<b>I verbi regolari.</b>",
+          "headers": [
+            "",
+            "parlare",
+            "prendere",
+            "dormire"
+          ],
+          "rows": [
+            [
+              "io",
+              "parlavo",
+              "prendevo",
+              "dormivo"
+            ],
+            [
+              "tu",
+              "parlavi",
+              "prendevi",
+              "dormivi"
+            ],
+            [
+              "lui/lei",
+              "parlava",
+              "prendeva",
+              "dormiva"
+            ],
+            [
+              "noi",
+              "parlavamo",
+              "prendevamo",
+              "dormivamo"
+            ],
+            [
+              "voi",
+              "parlavate",
+              "prendevate",
+              "dormivate"
+            ],
+            [
+              "loro",
+              "parlavano",
+              "prendevano",
+              "dormivano"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Gli irregolari.</b> Sono pochi: <i>essere</i>, e alcuni verbi che partono da una forma più lunga, la stessa del gerundio (<i>facendo → facevo</i>).",
+          "headers": [
+            "",
+            "essere",
+            "fare",
+            "dire",
+            "bere",
+            "tradurre"
+          ],
+          "rows": [
+            [
+              "io",
+              "ero",
+              "facevo",
+              "dicevo",
+              "bevevo",
+              "traducevo"
+            ],
+            [
+              "tu",
+              "eri",
+              "facevi",
+              "dicevi",
+              "bevevi",
+              "traducevi"
+            ],
+            [
+              "lui/lei",
+              "era",
+              "faceva",
+              "diceva",
+              "beveva",
+              "traduceva"
+            ],
+            [
+              "noi",
+              "eravamo",
+              "facevamo",
+              "dicevamo",
+              "bevevamo",
+              "traducevamo"
+            ],
+            [
+              "voi",
+              "eravate",
+              "facevate",
+              "dicevate",
+              "bevevate",
+              "traducevate"
+            ],
+            [
+              "loro",
+              "erano",
+              "facevano",
+              "dicevano",
+              "bevevano",
+              "traducevano"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "abitudini e azioni ripetute nel passato, spesso con sempre, di solito, ogni giorno, da bambino",
+          "ex": "Da bambino giocavo a calcio ogni giorno. / D'estate andavamo sempre al mare."
+        },
+        {
+          "label": "descrivere persone, luoghi, cose e il tempo che faceva",
+          "ex": "Mia nonna era alta e aveva i capelli bianchi. / La casa era grande e c'era un giardino. / Faceva freddo."
+        },
+        {
+          "label": "stati d'animo e condizioni fisiche",
+          "ex": "Ero stanco e avevo fame. / Non stava bene."
+        },
+        {
+          "label": "un'azione in corso in un momento del passato, spesso interrotta da un'altra",
+          "ex": "Dormivo quando hai chiamato. / Mentre cucinavo, ascoltavo la radio."
+        },
+        {
+          "label": "l'età e l'ora nel passato",
+          "ex": "Avevo dieci anni. / Erano le tre."
+        },
+        {
+          "label": "imperfetto di cortesia, per chiedere in modo gentile",
+          "ex": "Volevo un caffè, per favore. / Volevo chiederti un favore."
+        }
+      ],
+      "warn": "Per raccontare che cosa è successo, i fatti uno dopo l'altro, si usa il passato prossimo; l'imperfetto fa da sfondo (vedi Imperfetto o passato prossimo?). <i>Stare</i> all'imperfetto + gerundio sottolinea l'azione in corso: «<i>stavo uscendo</i> quando ha squillato il telefono».",
+      "errors": [
+        {
+          "wrong": "io parlava",
+          "right": "io parlavo",
+          "why": "Per <i>io</i> la terminazione è <i>-vo</i>; <i>-va</i> è per <i>lui/lei</i>."
+        },
+        {
+          "wrong": "divo, dicavo",
+          "right": "dicevo",
+          "why": "<i>Dire</i> parte da <i>dic-</i>: <i>dicevo</i>."
+        },
+        {
+          "wrong": "bevavo",
+          "right": "bevevo",
+          "why": "<i>Bere</i> parte da <i>bev-</i> e segue i verbi in <i>-ere</i>: <i>bevevo</i>."
+        },
+        {
+          "wrong": "fevo",
+          "right": "facevo",
+          "why": "<i>Fare</i> parte da <i>fac-</i>: <i>facevo</i>."
+        },
+        {
+          "wrong": "erevamo",
+          "right": "eravamo",
+          "why": "<i>Essere</i>: <i>ero, eri, era, eravamo, eravate, erano</i>."
+        },
+        {
+          "wrong": "loro parlavàno",
+          "right": "loro parlàvano",
+          "why": "In <i>loro</i> la voce cade sulla terzultima sillaba."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Trasforma la frase all'imperfetto.",
+          "items": [
+            "Abito a Roma.",
+            "Facciamo una passeggiata ogni sera.",
+            "Il bambino beve molto latte.",
+            "Sono stanco.",
+            "Cosa dici?",
+            "Capiscono tutto."
+          ],
+          "key": [
+            "<b>Abitavo a Roma.</b>",
+            "<b>Facevamo una passeggiata ogni sera.</b>",
+            "<b>Il bambino beveva molto latte.</b>",
+            "<b>Ero stanco.</b>",
+            "<b>Cosa dicevi?</b>",
+            "<b>Capivano tutto.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Da piccola io giocava sempre in giardino.",
+            "Mio nonno ci divo sempre di studiare.",
+            "Da giovani uscivamo spesso e bevavamo molto.",
+            "I miei genitori lavoravano e noi stavavamo con la nonna.",
+            "La casa avveva un grande giardino.",
+            "Voi dicavate sempre la verità."
+          ],
+          "key": [
+            "<b>giocavo</b>",
+            "<b>diceva</b>",
+            "<b>bevevamo</b>",
+            "<b>stavamo</b>",
+            "<b>aveva</b>",
+            "<b>dicevate</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa la frase con un verbo all'imperfetto.",
+          "items": [
+            "Quando avevo dieci anni, …",
+            "Da bambino, ogni estate …",
+            "Mentre aspettavo l'autobus, …",
+            "La casa dei miei nonni …",
+            "Ieri sera il tempo era brutto: …",
+            "Prima di studiare l'italiano, …"
+          ],
+          "key": [
+            "Risposta libera. Esempio: <b>abitavo in campagna</b>.",
+            "Esempio: <b>andavo al mare con i nonni</b>.",
+            "Esempio: <b>leggevo il giornale</b>.",
+            "Esempio: <b>era grande e aveva un giardino</b>.",
+            "Esempio: <b>pioveva e faceva freddo</b>.",
+            "Esempio: <b>non capivo le canzoni italiane</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b1",
+      "cat": "Verbi",
+      "title": "Imperfetto o passato prossimo?",
+      "def": "I due tempi parlano tutti e due del passato, ma lo guardano in modo diverso. Il <b>passato prossimo</b> racconta i fatti: che cosa è successo, una cosa dopo l'altra. L'<b>imperfetto</b> descrive lo sfondo: com'era la situazione, che cosa si faceva di solito, che cosa stava succedendo. In un racconto di solito ci sono tutti e due.",
+      "form": "Domanda pratica: <b>sto raccontando un fatto o sto descrivendo una situazione?</b> Se rispondo a «che cosa è successo?» → passato prossimo. Se rispondo a «com'era?», «che cosa si faceva di solito?», «che cosa stava succedendo?» → imperfetto. Un secondo aiuto: un'azione con un inizio e una fine chiari, anche lunga, va al passato prossimo («ho vissuto a Roma per tre anni»); un'azione vista mentre si svolge, senza confini, va all'imperfetto («vivevo a Roma e lavoravo in un bar»).",
+      "tables": [
+        {
+          "before": "<b>Le parole spia.</b>",
+          "plain": true,
+          "headers": [
+            "di solito con l'imperfetto",
+            "di solito con il passato prossimo"
+          ],
+          "rows": [
+            [
+              "sempre, di solito, ogni giorno, spesso",
+              "ieri, una volta, all'improvviso, a un certo punto"
+            ],
+            [
+              "mentre",
+              "quando (per un fatto), poi, dopo"
+            ],
+            [
+              "da bambino, a quel tempo, prima",
+              "per due anni, dal 2010 al 2015, tre volte"
+            ]
+          ],
+          "after": "Sono indizi, non regole: decide il significato. «Ieri <i>pioveva</i>» è corretto se il tempo di ieri è lo sfondo di un racconto."
+        },
+        {
+          "before": "<b>Verbi che cambiano significato.</b>",
+          "plain": true,
+          "headers": [
+            "verbo",
+            "imperfetto",
+            "passato prossimo"
+          ],
+          "rows": [
+            [
+              "sapere",
+              "sapevo = ne ero a conoscenza",
+              "ho saputo = l'ho scoperto, me l'hanno detto"
+            ],
+            [
+              "conoscere",
+              "conoscevo Marco = lo conoscevo già",
+              "ho conosciuto Marco = l'ho incontrato per la prima volta"
+            ],
+            [
+              "dovere",
+              "dovevo partire = era previsto (non si sa se sono partito)",
+              "sono dovuto partire = ho dovuto e sono partito"
+            ],
+            [
+              "potere",
+              "potevo venire = avevo la possibilità (forse non sono venuto)",
+              "sono potuto venire = sono venuto"
+            ],
+            [
+              "volere",
+              "volevo uscire = ne avevo voglia",
+              "ho voluto uscire = ho deciso e sono uscito"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "un fatto concluso va al passato prossimo",
+          "ex": "Ho aperto la porta. / Ieri ho incontrato Luca."
+        },
+        {
+          "label": "lo sfondo, la descrizione, va all'imperfetto",
+          "ex": "Era notte e pioveva."
+        },
+        {
+          "label": "insieme: l'imperfetto fa da sfondo, il passato prossimo dice che cosa è successo",
+          "ex": "Mentre cenavo, è arrivato un messaggio. / Dormivo quando è suonato il telefono."
+        },
+        {
+          "label": "abitudine (imperfetto) contro volta singola (passato prossimo)",
+          "ex": "Andavo sempre al mare. ≠ Ieri sono andato al mare."
+        },
+        {
+          "label": "due azioni in corso nello stesso momento: tutte e due all'imperfetto",
+          "ex": "Mentre io cucinavo, lui apparecchiava."
+        },
+        {
+          "label": "una durata chiusa, con inizio e fine, va al passato prossimo anche se è lunga",
+          "ex": "Ho vissuto a Londra per dieci anni. / Ho aspettato tutto il pomeriggio."
+        }
+      ],
+      "warn": "<b>Il trucco del film.</b> L'imperfetto è la scenografia e quello che i personaggi stanno facendo quando comincia la scena; il passato prossimo è ciò che succede e fa andare avanti la storia. «<i>Era</i> sera, <i>faceva</i> freddo, io <i>leggevo</i> (scena)… all'improvviso <i>è entrato</i> un uomo (azione).»",
+      "errors": [
+        {
+          "wrong": "Ieri andavo al cinema con Paola.",
+          "right": "Ieri sono andato al cinema con Paola.",
+          "why": "Una volta sola, un fatto concluso: passato prossimo."
+        },
+        {
+          "wrong": "Da bambino ho giocato a calcio ogni giorno.",
+          "right": "Da bambino giocavo a calcio ogni giorno.",
+          "why": "Un'abitudine del passato: imperfetto."
+        },
+        {
+          "wrong": "Mentre ho mangiato, è arrivato Marco.",
+          "right": "Mentre mangiavo, è arrivato Marco.",
+          "why": "L'azione in corso, interrotta da un'altra, va all'imperfetto."
+        },
+        {
+          "wrong": "Vivevo a Roma per tre anni.",
+          "right": "Ho vissuto a Roma per tre anni.",
+          "why": "Una durata chiusa, con <i>per</i>: passato prossimo."
+        },
+        {
+          "wrong": "Non ho saputo che eri in città.",
+          "right": "Non sapevo che eri in città.",
+          "why": "Per dire che non se ne era a conoscenza: imperfetto. <i>Ho saputo</i> = l'ho scoperto."
+        },
+        {
+          "wrong": "Quando ero piccola, sono stata timida.",
+          "right": "Quando ero piccola, ero timida.",
+          "why": "È una descrizione: imperfetto."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Porta il racconto al passato, scegliendo tra imperfetto e passato prossimo.",
+          "items": [
+            "È una bella giornata e c'è il sole.",
+            "Mentre passeggio, incontro Giulia.",
+            "Giulia porta un vestito rosso.",
+            "Andiamo insieme al bar.",
+            "Lei ordina un caffè e io un tè.",
+            "Siamo contenti di vederci."
+          ],
+          "key": [
+            "<b>Era</b> una bella giornata e <b>c'era</b> il sole.",
+            "Mentre <b>passeggiavo</b>, <b>ho incontrato</b> Giulia.",
+            "Giulia <b>portava</b> un vestito rosso.",
+            "<b>Siamo andati/e</b> insieme al bar.",
+            "Lei <b>ha ordinato</b> un caffè e io un tè.",
+            "<b>Eravamo</b> contenti di vederci."
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Correggi il tempo sbagliato.",
+          "items": [
+            "Ieri sera guardavo un film e poi andavo a letto.",
+            "Quando ero piccolo, sono andato a scuola a piedi tutti i giorni.",
+            "Ho studiato quando è arrivata mia madre.",
+            "Non ho saputo che Marco era malato: nessuno me l'aveva detto.",
+            "Abitavamo in Germania per cinque anni, dal 2010 al 2015.",
+            "Ieri faceva caldo, così andavamo al mare."
+          ],
+          "key": [
+            "<b>ho guardato</b> … <b>sono andato/a</b>",
+            "<b>andavo</b>",
+            "<b>Studiavo</b>",
+            "<b>Non sapevo</b>",
+            "<b>Abbiamo abitato</b>",
+            "<b>siamo andati</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa la frase in modo logico, con il tempo giusto.",
+          "items": [
+            "Mentre tornavo a casa, …",
+            "Quando sono arrivato alla stazione, il treno …",
+            "Da piccola, ogni domenica …",
+            "Ieri ho incontrato Luca: …",
+            "Ho vissuto in Francia …",
+            "Non sapevo che …"
+          ],
+          "key": [
+            "Esempio: <b>ho visto un incidente</b>.",
+            "Esempio: <b>stava partendo</b>.",
+            "Esempio: <b>pranzavo dai nonni</b>.",
+            "Esempio: <b>era molto stanco</b>.",
+            "Esempio: <b>per due anni</b>.",
+            "Esempio: <b>parlavi giapponese</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b1",
+      "cat": "Verbi",
+      "title": "Stare + gerundio",
+      "def": "La forma che mette in primo piano un'azione <b>proprio mentre si sta svolgendo</b>, adesso o in un momento preciso del passato: «<i>sto mangiando</i>» = sono a metà, in questo momento.",
+      "form": "<b>Stare</b> coniugato (di solito al presente o all'imperfetto) + <b>gerundio</b>. Il gerundio si forma togliendo <i>-are, -ere, -ire</i> e aggiungendo <b>-ando</b> ai verbi in <i>-are</i> e <b>-endo</b> agli altri: <i>parlando, prendendo, dormendo</i>. Il gerundio non cambia mai, né per persona né per genere. I pronomi vanno prima di <i>stare</i> oppure si attaccano al gerundio: «<i>lo</i> sto facendo» = «sto facendo<i>lo</i>».",
+      "tables": [
+        {
+          "before": "<b>Le forme.</b>",
+          "headers": [
+            "",
+            "presente",
+            "imperfetto"
+          ],
+          "rows": [
+            [
+              "io",
+              "sto parlando",
+              "stavo parlando"
+            ],
+            [
+              "tu",
+              "stai parlando",
+              "stavi parlando"
+            ],
+            [
+              "lui/lei",
+              "sta parlando",
+              "stava parlando"
+            ],
+            [
+              "noi",
+              "stiamo parlando",
+              "stavamo parlando"
+            ],
+            [
+              "voi",
+              "state parlando",
+              "stavate parlando"
+            ],
+            [
+              "loro",
+              "stanno parlando",
+              "stavano parlando"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Gerundi irregolari.</b> Partono dalla stessa forma lunga dell'imperfetto.",
+          "headers": [
+            "infinito",
+            "gerundio"
+          ],
+          "rows": [
+            [
+              "fare",
+              "facendo"
+            ],
+            [
+              "dire",
+              "dicendo"
+            ],
+            [
+              "bere",
+              "bevendo"
+            ],
+            [
+              "tradurre",
+              "traducendo"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "un'azione in corso proprio adesso",
+          "ex": "Sto leggendo, ti richiamo dopo. / Cosa stai facendo?"
+        },
+        {
+          "label": "un'azione in corso in un momento del passato, spesso interrotta da un'altra",
+          "ex": "Stavo uscendo quando è suonato il telefono."
+        },
+        {
+          "label": "una situazione temporanea, in questo periodo",
+          "ex": "Sto cercando lavoro. / Sto imparando a guidare."
+        },
+        {
+          "label": "stare per + infinito: un'azione che sta per cominciare",
+          "ex": "Sto per uscire. / Il film sta per finire."
+        },
+        {
+          "label": "con i pronomi: prima di stare o attaccati al gerundio",
+          "ex": "Ti sto ascoltando. = Sto ascoltandoti. / Lo stavo dicendo."
+        }
+      ],
+      "warn": "<b>Non è obbligatoria come in inglese.</b> Spesso basta il presente anche per un'azione in corso: «Cosa fai?» — «Leggo». La forma con <i>stare</i> serve a sottolineare che l'azione è in corso proprio ora. Per le abitudini si usa solo il presente: «lavoro in banca» (in generale) ≠ «sto lavorando» (in questo momento). Non si usa con <i>essere</i>, con <i>avere</i> nel senso di possedere, né con verbi come <i>sapere, conoscere, volere</i>: «ho una macchina», «so la risposta».",
+      "errors": [
+        {
+          "wrong": "Sono mangiando.",
+          "right": "Sto mangiando.",
+          "why": "Questa forma si costruisce con <i>stare</i>, non con <i>essere</i>."
+        },
+        {
+          "wrong": "Sto essendo stanco.",
+          "right": "Sono stanco.",
+          "why": "<i>Essere</i> non si usa con <i>stare</i> + gerundio."
+        },
+        {
+          "wrong": "Sto avendo una macchina nuova.",
+          "right": "Ho una macchina nuova.",
+          "why": "<i>Avere</i> nel senso di possedere non va con <i>stare</i>."
+        },
+        {
+          "wrong": "Sto facciendo i compiti.",
+          "right": "Sto facendo i compiti.",
+          "why": "Il gerundio di <i>fare</i> è <i>facendo</i>."
+        },
+        {
+          "wrong": "Lo sto facendolo.",
+          "right": "Lo sto facendo. / Sto facendolo.",
+          "why": "Il pronome va in un posto solo."
+        },
+        {
+          "wrong": "Il treno sta per partendo.",
+          "right": "Il treno sta per partire.",
+          "why": "<i>Stare per</i> vuole l'infinito, non il gerundio."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Riscrivi la frase con stare + gerundio.",
+          "items": [
+            "Marco legge il giornale.",
+            "Cosa fai?",
+            "I bambini dormono.",
+            "Quando sei arrivato, cucinavo.",
+            "Bevo un caffè.",
+            "Che cosa dicevi?"
+          ],
+          "key": [
+            "<b>Marco sta leggendo il giornale.</b>",
+            "<b>Cosa stai facendo?</b>",
+            "<b>I bambini stanno dormendo.</b>",
+            "<b>Quando sei arrivato, stavo cucinando.</b>",
+            "<b>Sto bevendo un caffè.</b>",
+            "<b>Che cosa stavi dicendo?</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Non posso parlare, sono guidando.",
+            "Anna parla e tu non la stai ascoltandola.",
+            "Stavamo bevendi un aperitivo.",
+            "Sto facciendo la spesa.",
+            "Il film sta per cominciando.",
+            "Siamo lavorando a un nuovo progetto."
+          ],
+          "key": [
+            "<b>sto guidando</b>",
+            "<b>non la stai ascoltando</b> (o <b>non stai ascoltandola</b>)",
+            "<b>bevendo</b>",
+            "<b>facendo</b>",
+            "<b>sta per cominciare</b>",
+            "<b>Stiamo lavorando</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Rispondi alla domanda usando stare + gerundio.",
+          "items": [
+            "Che cosa stai facendo adesso?",
+            "Che cosa stavi facendo ieri alle otto di sera?",
+            "Che cosa sta facendo la tua famiglia in questo momento?",
+            "Che cosa stai imparando in questo periodo?",
+            "Perché non rispondi al telefono?",
+            "Che cosa stavi facendo quando è cominciata la lezione?"
+          ],
+          "key": [
+            "Esempio: <b>Sto studiando l'italiano.</b>",
+            "Esempio: <b>Stavo cenando con la mia famiglia.</b>",
+            "Esempio: <b>Mia sorella sta lavorando.</b>",
+            "Esempio: <b>Sto imparando a cucinare.</b>",
+            "Esempio: <b>Perché sto guidando.</b>",
+            "Esempio: <b>Stavo bevendo un caffè.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b1",
+      "cat": "Verbi",
+      "title": "Il futuro semplice",
+      "def": "Il tempo delle azioni che devono ancora succedere, soprattutto quando sono lontane, incerte o promesse. Ha anche un secondo uso molto frequente: fare una <b>supposizione</b> sul presente. «<i>Saranno</i> le tre» = probabilmente sono le tre.",
+      "form": "Si toglie la <i>-e</i> finale dell'infinito e si aggiungono le terminazioni <b>-ò, -ai, -à, -emo, -ete, -anno</b>, uguali per tutti i verbi. Nei verbi in <i>-are</i> la <i>a</i> diventa <i>e</i>: <i>parlare → parlerò</i>. Le persone <i>io</i> e <i>lui/lei</i> hanno l'accento scritto: <i>parlerò, parlerà</i>.<ul class='sch'><li><b>-care, -gare</b>: si aggiunge la <i>h</i>: cercherò, pagherò</li><li><b>-ciare, -giare</b>: la <i>i</i> cade: comincerò, mangerò</li></ul>",
+      "tables": [
+        {
+          "before": "<b>I verbi regolari.</b>",
+          "headers": [
+            "",
+            "parlare",
+            "prendere",
+            "dormire"
+          ],
+          "rows": [
+            [
+              "io",
+              "parlerò",
+              "prenderò",
+              "dormirò"
+            ],
+            [
+              "tu",
+              "parlerai",
+              "prenderai",
+              "dormirai"
+            ],
+            [
+              "lui/lei",
+              "parlerà",
+              "prenderà",
+              "dormirà"
+            ],
+            [
+              "noi",
+              "parleremo",
+              "prenderemo",
+              "dormiremo"
+            ],
+            [
+              "voi",
+              "parlerete",
+              "prenderete",
+              "dormirete"
+            ],
+            [
+              "loro",
+              "parleranno",
+              "prenderanno",
+              "dormiranno"
+            ]
+          ]
+        },
+        {
+          "before": "<b>I verbi irregolari</b>, raggruppati per tipo. Le terminazioni restano quelle regolari: cambia solo la parte prima.",
+          "plain": true,
+          "headers": [
+            "gruppo",
+            "esempi (io)"
+          ],
+          "rows": [
+            [
+              "essere",
+              "sarò"
+            ],
+            [
+              "perdono la vocale prima della r: andare, avere, dovere, potere, sapere, vedere, vivere, cadere",
+              "andrò, avrò, dovrò, potrò, saprò, vedrò, vivrò, cadrò"
+            ],
+            [
+              "raddoppiano la r: bere, rimanere, tenere, venire, volere",
+              "berrò, rimarrò, terrò, verrò, vorrò"
+            ],
+            [
+              "dare, fare, stare: tengono la a",
+              "darò, farò, starò"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "azioni future, soprattutto lontane o non ancora organizzate",
+          "ex": "L'anno prossimo cambierò lavoro. / Un giorno vivrò in Italia."
+        },
+        {
+          "label": "previsioni",
+          "ex": "Domani pioverà. / Secondo me non verrà nessuno."
+        },
+        {
+          "label": "promesse e decisioni ferme",
+          "ex": "Te lo prometto: non lo farò più. / Ti chiamerò appena posso."
+        },
+        {
+          "label": "supposizioni sul presente: «probabilmente»",
+          "ex": "Saranno le cinque. / Non risponde: sarà in riunione. / Avrà trent'anni."
+        },
+        {
+          "label": "dopo quando, appena, se riferiti al futuro, il futuro va in tutte e due le parti della frase",
+          "ex": "Quando arriverò a Roma, ti telefonerò. / Se verrai, sarò contento."
+        },
+        {
+          "label": "istruzioni formali e regolamenti",
+          "ex": "Il candidato dovrà presentare un documento d'identità."
+        }
+      ],
+      "warn": "<b>Futuro o presente?</b> Per un piano vicino e concreto gli italiani usano quasi sempre il presente: «domani parto» (vedi Il futuro con il presente). Il futuro aggiunge distanza, incertezza o solennità. Con <i>quando</i> e <i>se</i>, nel parlato si sente anche il presente («quando arrivo, ti chiamo»), ma nello scritto si preferisce il futuro.",
+      "errors": [
+        {
+          "wrong": "mangierò",
+          "right": "mangerò",
+          "why": "Nei verbi in <i>-giare</i> e <i>-ciare</i> la <i>i</i> cade."
+        },
+        {
+          "wrong": "cercerò",
+          "right": "cercherò",
+          "why": "Nei verbi in <i>-care</i> serve la <i>h</i> per mantenere il suono duro."
+        },
+        {
+          "wrong": "anderò",
+          "right": "andrò",
+          "why": "<i>Andare</i> perde la vocale: <i>andrò</i>."
+        },
+        {
+          "wrong": "venirò",
+          "right": "verrò",
+          "why": "<i>Venire</i> raddoppia la <i>r</i>: <i>verrò</i>."
+        },
+        {
+          "wrong": "poterò",
+          "right": "potrò",
+          "why": "<i>Potere</i> perde la vocale: <i>potrò</i>."
+        },
+        {
+          "wrong": "averò",
+          "right": "avrò",
+          "why": "<i>Avere</i> perde la vocale: <i>avrò</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Trasforma la frase al futuro semplice.",
+          "items": [
+            "Domani piove.",
+            "Vengo con te.",
+            "Paghiamo con la carta.",
+            "Che cosa fai dopo la laurea?",
+            "Rimangono a casa.",
+            "Cominci a lavorare a settembre?"
+          ],
+          "key": [
+            "<b>Domani pioverà.</b>",
+            "<b>Verrò con te.</b>",
+            "<b>Pagheremo con la carta.</b>",
+            "<b>Che cosa farai dopo la laurea?</b>",
+            "<b>Rimarranno a casa.</b>",
+            "<b>Comincerai a lavorare a settembre?</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "L'anno prossimo anderemo in Giappone.",
+            "Domani mangieremo da mia madre.",
+            "Vi cercerò appena arrivo.",
+            "Non so se poterò venire.",
+            "Se averai tempo, ci vediamo.",
+            "I miei genitori venirano a trovarmi."
+          ],
+          "key": [
+            "<b>andremo</b>",
+            "<b>mangeremo</b>",
+            "<b>cercherò</b>",
+            "<b>potrò</b>",
+            "<b>avrai</b>",
+            "<b>verranno</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Fai una supposizione usando il futuro.",
+          "items": [
+            "Marco non risponde al telefono.",
+            "Quanti anni ha il nuovo professore?",
+            "Che ore sono? Non ho l'orologio.",
+            "Perché Anna è così contenta?",
+            "Dov'è il gatto?",
+            "Quanto costa quella macchina?"
+          ],
+          "key": [
+            "Esempio: <b>Sarà in riunione.</b>",
+            "Esempio: <b>Avrà quarant'anni.</b>",
+            "Esempio: <b>Saranno le sei.</b>",
+            "Esempio: <b>Sarà innamorata.</b>",
+            "Esempio: <b>Sarà sotto il letto.</b>",
+            "Esempio: <b>Costerà almeno cinquantamila euro.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b1",
+      "cat": "Nomi",
+      "title": "Il partitivo",
+      "def": "Indica una quantità non precisa, «una parte di» qualcosa: «vorrei <i>del</i> pane» (un po' di pane), «ho comprato <i>delle</i> mele» (alcune mele). Funziona anche come plurale di <i>un/una</i>, che un plurale non ce l'hanno.",
+      "form": "<b>di + articolo determinativo</b>: <i>del, dello, dell', della, dei, degli, delle</i>. Si sceglie come l'articolo: <i>il pane → del pane</i>, <i>gli spinaci → degli spinaci</i>. Al singolare si usa con le cose che non si contano (pane, acqua, latte, tempo); al plurale con le cose che si contano (mele, amici, libri). Le alternative con lo stesso significato sono <b>un po' di</b> (cose che non si contano), <b>alcuni/alcune</b> + plurale e <b>qualche</b> + singolare.",
+      "tables": [
+        {
+          "before": "<b>Partitivo e alternative.</b>",
+          "plain": true,
+          "headers": [
+            "",
+            "cose che non si contano",
+            "cose che si contano"
+          ],
+          "rows": [
+            [
+              "partitivo",
+              "del pane, dell'acqua",
+              "delle mele, degli amici"
+            ],
+            [
+              "alternative",
+              "un po' di pane, un po' d'acqua",
+              "alcune mele, qualche mela"
+            ],
+            [
+              "quantità precisa: di senza articolo",
+              "un chilo di pane, un litro d'acqua",
+              "un chilo di mele, una scatola di biscotti"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "una quantità non precisa di una cosa che non si conta",
+          "ex": "Vorrei del pane. / Mi dai dell'acqua? / C'è ancora del caffè?"
+        },
+        {
+          "label": "un numero non preciso di cose che si contano: è il plurale di un/una",
+          "ex": "Ho comprato delle mele. / Ho conosciuto degli studenti spagnoli."
+        },
+        {
+          "label": "le alternative: un po' di, alcuni, qualche",
+          "ex": "un po' di tempo / alcuni amici / qualche amico"
+        },
+        {
+          "label": "con una quantità precisa si usa di senza articolo",
+          "ex": "un chilo di pomodori / una bottiglia di vino / un po' di latte"
+        },
+        {
+          "label": "per non ripetere la cosa si usa ne",
+          "ex": "Vuoi del vino? — Sì, ne prendo un bicchiere. (vedi Le particelle CI e NE)"
+        }
+      ],
+      "warn": "<b>Nelle frasi negative il partitivo di solito sparisce</b>: «ho del pane» → «non ho pane»; «ci sono delle sedie» → «non ci sono sedie». Spesso non si mette nemmeno nelle domande e negli elenchi: «hai fratelli?», «compro pane, latte e uova». Dopo una preposizione suona più naturale un'alternativa: «esco con alcuni amici» piuttosto che «con degli amici».",
+      "errors": [
+        {
+          "wrong": "un chilo del pane",
+          "right": "un chilo di pane",
+          "why": "Dopo una quantità precisa si usa <i>di</i> senza articolo."
+        },
+        {
+          "wrong": "qualche libri",
+          "right": "qualche libro",
+          "why": "<i>Qualche</i> vuole il nome al singolare."
+        },
+        {
+          "wrong": "Vorrei degli acqua.",
+          "right": "Vorrei dell'acqua.",
+          "why": "<i>Acqua</i> è femminile singolare: <i>l'acqua → dell'acqua</i>."
+        },
+        {
+          "wrong": "Ho alcuni pane.",
+          "right": "Ho del pane. / Ho un po' di pane.",
+          "why": "<i>Alcuni</i> va solo con cose che si contano, al plurale."
+        },
+        {
+          "wrong": "un po' del zucchero",
+          "right": "un po' di zucchero",
+          "why": "<i>Un po'</i> è già una quantità: <i>di</i> senza articolo."
+        },
+        {
+          "wrong": "dei spaghetti",
+          "right": "degli spaghetti",
+          "why": "<i>Gli spaghetti → degli spaghetti</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Sostituisci le parole in grassetto con il partitivo (di + articolo).",
+          "items": [
+            "Ho comprato <b>alcune</b> arance.",
+            "Vorrei <b>un po' di</b> vino rosso.",
+            "Ho incontrato <b>alcuni</b> amici al bar.",
+            "Ci sono <b>alcuni</b> problemi.",
+            "Mi dai <b>un po' d'</b>acqua?",
+            "Ho letto <b>qualche</b> articolo interessante."
+          ],
+          "key": [
+            "<b>delle</b> arance",
+            "<b>del</b> vino rosso",
+            "<b>degli</b> amici",
+            "<b>dei</b> problemi",
+            "<b>dell'</b>acqua",
+            "<b>degli</b> articoli interessanti"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Ho comprato un chilo delle patate.",
+            "Ho qualche amici a Milano.",
+            "Vorrei dei zucchero.",
+            "Mi passi dell'olio e degli sale?",
+            "Ho alcuni latte in frigo.",
+            "Non ho dei soldi con me."
+          ],
+          "key": [
+            "<b>un chilo di patate</b>",
+            "<b>qualche amico</b>",
+            "<b>dello zucchero</b>",
+            "<b>del sale</b>",
+            "<b>del latte</b> (o <b>un po' di latte</b>)",
+            "<b>Non ho soldi</b> con me"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa con una quantità: partitivo, un po' di, qualche o una quantità precisa.",
+          "items": [
+            "Per la torta mi servono …",
+            "Al supermercato compro …",
+            "Nel mio frigo adesso ci sono …",
+            "Alla festa ho conosciuto …",
+            "Prima di partire devo comprare …",
+            "Nel caffè metto …"
+          ],
+          "key": [
+            "Esempio: <b>sei uova e mezzo chilo di farina</b>.",
+            "Esempio: <b>del pane, un litro di latte e qualche mela</b>.",
+            "Esempio: <b>delle verdure e un po' di formaggio</b>.",
+            "Esempio: <b>degli amici di Marco</b>.",
+            "Esempio: <b>qualche regalo</b>.",
+            "Esempio: <b>un po' di zucchero</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b1",
+      "cat": "Sintassi",
+      "title": "Quando serve il congiuntivo",
+      "def": "Il congiuntivo non si sceglie in base al tempo, ma in base a <b>che cosa lo introduce</b>. Compare nella seconda parte della frase, quella introdotta da <i>che</i> o da una congiunzione, quando chi parla non presenta il fatto come certo — opinione, volontà, emozione, dubbio — oppure quando è una congiunzione a richiederlo. La parola che lo richiede sta sempre <b>prima</b> del verbo al congiuntivo, mai dopo.",
+      "form": "Schema base: <b>verbo che esprime un punto di vista + che + congiuntivo</b>. In «credo che sia tardi» il congiuntivo «sia» dipende da «credo», non da quello che la frase dice. Cambiando il primo verbo cambia il modo: «so che <b>è</b> tardi» va all'indicativo, perché «so» afferma un fatto. Le congiunzioni come «benché» funzionano allo stesso modo: sono loro a imporre il congiuntivo, anche senza «che».",
+      "tables": [
+        {
+          "headers": [
+            "che cosa lo richiede",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "<b>opinione e dubbio</b>: credere, pensare, ritenere, dubitare, sembrare, parere",
+              "Credo che <b>sia</b> tardi. / Sembra che non <b>venga</b>."
+            ],
+            [
+              "<b>volontà e desiderio</b>: volere, desiderare, preferire, sperare, chiedere",
+              "Voglio che tu <b>venga</b>."
+            ],
+            [
+              "<b>emozione</b>: temere, avere paura, essere contento, dispiacere",
+              "Temo che non <b>arrivi</b> in tempo."
+            ],
+            [
+              "<b>espressioni impersonali</b>: bisogna, è necessario, è importante, è possibile, può darsi",
+              "Bisogna che tu <b>studi</b>."
+            ],
+            [
+              "<b>congiunzioni</b>: benché, sebbene, nonostante, affinché, prima che, purché, a meno che",
+              "Nonostante <b>piova</b>, esco."
+            ],
+            [
+              "<b>la persona o la cosa cercata non è ancora stata trovata</b>, e forse non esiste: la frase con <i>che</i> che la descrive va al congiuntivo",
+              "Cerco un libro che <b>sia</b> semplice."
+            ],
+            [
+              "<b>superlativi e parole di unicità</b> — l'unico, il solo, il primo: la frase con <i>che</i> che segue va al congiuntivo",
+              "È il film più bello che io <b>abbia</b> visto."
+            ]
+          ],
+          "plain": true
+        }
+      ],
+      "uses": [
+        {
+          "label": "decide il verbo che introduce, non il fatto in sé",
+          "ex": "Credo che sia tardi (opinione → congiuntivo). / So che è tardi (certezza → indicativo)."
+        },
+        {
+          "label": "perché vuole il congiuntivo quando significa «allo scopo che», l'indicativo quando significa «dato che»",
+          "ex": "Te lo dico perché tu capisca (scopo). / Te lo dico perché è giusto (causa)."
+        },
+        {
+          "label": "se chi pensa e chi agisce sono la stessa persona, il congiuntivo non serve: si usa di + infinito",
+          "ex": "Credo di aver capito (non «credo che io abbia capito»)."
+        },
+        {
+          "label": "purché e a meno che vogliono sempre il congiuntivo; a meno che porta con sé un non che non nega",
+          "ex": "Vengo, purché tu ci sia. / Vengo, a meno che non piova."
+        },
+        {
+          "label": "chiunque, qualunque, dovunque e comunque vogliono il congiuntivo",
+          "ex": "Chiunque venga, sarà accolto."
+        }
+      ],
+      "warn": "Non ci va il congiuntivo dopo le espressioni di <b>certezza</b>: so che, è vero che, è certo che, è chiaro che, si sa che. E non ci va dopo «secondo me», che vuole l'indicativo: «secondo me <b>è</b> tardi». Attenzione a «penso che»: nel parlato si sente spesso l'indicativo («penso che è tardi»), ma nello scritto e all'esame resta un errore.",
+      "errors": [
+        {
+          "wrong": "Penso che è tardi.",
+          "right": "Penso che sia tardi.",
+          "why": "<i>Penso che</i> esprime un'opinione: congiuntivo. Nel parlato si sente l'indicativo, ma nello scritto e all'esame è un errore."
+        },
+        {
+          "wrong": "Credo che io abbia capito.",
+          "right": "Credo di aver capito.",
+          "why": "Chi pensa e chi agisce sono la stessa persona: <i>di</i> + infinito."
+        },
+        {
+          "wrong": "Benché è tardi, esco.",
+          "right": "Benché sia tardi, esco.",
+          "why": "<i>Benché</i> vuole sempre il congiuntivo."
+        },
+        {
+          "wrong": "Spero che vieni.",
+          "right": "Spero che tu venga.",
+          "why": "<i>Sperare</i> vuole il congiuntivo; il pronome <i>tu</i> aiuta, perché <i>io, tu, lui</i> hanno la stessa forma."
+        },
+        {
+          "wrong": "So che sia vero.",
+          "right": "So che è vero.",
+          "why": "<i>So che</i> presenta un fatto certo: indicativo."
+        },
+        {
+          "wrong": "Secondo me sia giusto.",
+          "right": "Secondo me è giusto.",
+          "why": "<i>Secondo me</i> vuole l'indicativo."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Comincia la frase con l'espressione tra parentesi e cambia il verbo, se serve.",
+          "items": [
+            "Marco è a casa. (Penso che…)",
+            "Il treno parte alle otto. (So che…)",
+            "Tu hai ragione. (Credo che…)",
+            "Loro vengono alla festa. (Spero che…)",
+            "Piove, ma esco. (Nonostante…)",
+            "Io ho sbagliato. (Penso di…)"
+          ],
+          "key": [
+            "<b>Penso che Marco sia a casa.</b>",
+            "<b>So che il treno parte alle otto.</b>",
+            "<b>Credo che tu abbia ragione.</b>",
+            "<b>Spero che vengano alla festa.</b>",
+            "<b>Nonostante piova, esco.</b>",
+            "<b>Penso di aver sbagliato.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Voglio che tu vieni con me.",
+            "È importante che lui studia ogni giorno.",
+            "È vero che Paolo sia partito.",
+            "Benché ho poco tempo, ti aiuto.",
+            "Credo che io sia stanco.",
+            "Cerco un appartamento che ha tre camere."
+          ],
+          "key": [
+            "<b>venga</b>",
+            "<b>studi</b>",
+            "<b>è partito</b>",
+            "<b>abbia</b>",
+            "<b>Credo di essere stanco.</b>",
+            "<b>abbia</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa la frase. Attenzione: non tutte vogliono il congiuntivo.",
+          "items": [
+            "Penso che l'italiano …",
+            "Spero che domani …",
+            "Ti presto i miei appunti purché …",
+            "So che mio fratello …",
+            "Prima che tu parta, …",
+            "È il libro più bello che …"
+          ],
+          "key": [
+            "Esempio: <b>sia una lingua bellissima</b>.",
+            "Esempio: <b>faccia bel tempo</b>.",
+            "Esempio: <b>tu me li restituisca entro venerdì</b>.",
+            "Esempio: <b>lavora troppo</b> (indicativo: è un fatto certo).",
+            "Esempio: <b>vorrei salutarti</b>.",
+            "Esempio: <b>io abbia mai letto</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b1",
+      "cat": "Verbi",
+      "title": "Il congiuntivo presente",
+      "def": "Il congiuntivo è un <b>modo</b> del verbo, cioè un modo diverso di presentare un'azione. L'indicativo presenta un fatto come certo («Marco <i>è</i> a casa»); il congiuntivo lo presenta attraverso l'opinione, il dubbio, il desiderio o l'emozione di qualcuno («penso che Marco <i>sia</i> a casa»). Si trova quasi sempre nella seconda parte della frase, dopo <i>che</i> o dopo parole come <i>benché, affinché</i>. Quando serve è spiegato nella scheda Quando serve il congiuntivo; qui ci sono le forme.",
+      "form": "Le terminazioni sono <b>-i</b> per i verbi in <i>-are</i> e <b>-a</b> per i verbi in <i>-ere</i> e <i>-ire</i>: al contrario rispetto al presente indicativo (<i>lui parla → che lui parli</i>; <i>lui prende → che lui prenda</i>). Le persone <i>io, tu, lui/lei</i> hanno la stessa forma, per questo spesso si aggiunge il pronome: «che <i>tu</i> parli». <i>Noi</i> è uguale all'indicativo; <i>voi</i> finisce in <b>-iate</b>.<ul class='sch'><li><b>-isc-</b>: resta nelle stesse persone del presente: che io capisca, che loro capiscano (ma che noi capiamo)</li><li><b>-care, -gare</b>: si aggiunge la <i>h</i>: che io cerchi, che tu paghi</li><li><b>irregolari</b>: nella maggior parte dei casi si parte dalla persona <i>io</i> del presente indicativo: faccio → che faccia; vengo → che venga; dico → che dica; posso → che possa; esco → che esca</li></ul>",
+      "tables": [
+        {
+          "before": "<b>I verbi regolari</b> (sempre preceduti da <i>che</i>).",
+          "headers": [
+            "",
+            "parlare",
+            "prendere",
+            "dormire",
+            "capire"
+          ],
+          "rows": [
+            [
+              "io",
+              "parli",
+              "prenda",
+              "dorma",
+              "capisca"
+            ],
+            [
+              "tu",
+              "parli",
+              "prenda",
+              "dorma",
+              "capisca"
+            ],
+            [
+              "lui/lei",
+              "parli",
+              "prenda",
+              "dorma",
+              "capisca"
+            ],
+            [
+              "noi",
+              "parliamo",
+              "prendiamo",
+              "dormiamo",
+              "capiamo"
+            ],
+            [
+              "voi",
+              "parliate",
+              "prendiate",
+              "dormiate",
+              "capiate"
+            ],
+            [
+              "loro",
+              "parlino",
+              "prendano",
+              "dormano",
+              "capiscano"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Gli irregolari più frequenti.</b>",
+          "headers": [
+            "",
+            "essere",
+            "avere",
+            "fare",
+            "andare",
+            "venire"
+          ],
+          "rows": [
+            [
+              "io",
+              "sia",
+              "abbia",
+              "faccia",
+              "vada",
+              "venga"
+            ],
+            [
+              "tu",
+              "sia",
+              "abbia",
+              "faccia",
+              "vada",
+              "venga"
+            ],
+            [
+              "lui/lei",
+              "sia",
+              "abbia",
+              "faccia",
+              "vada",
+              "venga"
+            ],
+            [
+              "noi",
+              "siamo",
+              "abbiamo",
+              "facciamo",
+              "andiamo",
+              "veniamo"
+            ],
+            [
+              "voi",
+              "siate",
+              "abbiate",
+              "facciate",
+              "andiate",
+              "veniate"
+            ],
+            [
+              "loro",
+              "siano",
+              "abbiano",
+              "facciano",
+              "vadano",
+              "vengano"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Altri irregolari</b> (forma di <i>io, tu, lui/lei</i>).",
+          "plain": true,
+          "headers": [
+            "infinito",
+            "congiuntivo"
+          ],
+          "rows": [
+            [
+              "dare, stare",
+              "dia, stia"
+            ],
+            [
+              "sapere",
+              "sappia"
+            ],
+            [
+              "volere, potere, dovere",
+              "voglia, possa, debba"
+            ],
+            [
+              "dire, bere, uscire",
+              "dica, beva, esca"
+            ],
+            [
+              "rimanere, tenere, scegliere",
+              "rimanga, tenga, scelga"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "dopo verbi ed espressioni di opinione, dubbio, desiderio, volontà, emozione",
+          "ex": "Penso che sia giusto. / Voglio che tu studi. / Ho paura che non arrivi in tempo."
+        },
+        {
+          "label": "dopo espressioni come è importante, è necessario, bisogna, è possibile",
+          "ex": "È importante che tu lo sappia. / Bisogna che partiamo presto."
+        },
+        {
+          "label": "dopo alcune congiunzioni: benché, sebbene, affinché, prima che, purché, a meno che",
+          "ex": "Te lo dico affinché tu capisca. / Usciamo prima che piova."
+        },
+        {
+          "label": "nella frase che descrive una cosa cercata, che non si sa se esiste",
+          "ex": "Cerco una casa che abbia il giardino."
+        },
+        {
+          "label": "da solo, con che, per un augurio",
+          "ex": "Che vinca il migliore!"
+        }
+      ],
+      "warn": "<b>Stessa persona: di + infinito.</b> Dopo i verbi di opinione, speranza ed emozione, se chi pensa (o spera, teme…) e chi fa l'azione sono la stessa persona, non si usa il congiuntivo ma <i>di</i> + infinito: «penso <i>di</i> avere ragione» (io–io), ma «penso che <i>tu</i> abbia ragione» (io–tu). Con <i>volere</i> l'infinito va senza <i>di</i>: «voglio partire». La regola <b>non</b> vale per le congiunzioni: «<i>benché</i> io sia stanco, esco» (vedi Quando serve il congiuntivo).",
+      "errors": [
+        {
+          "wrong": "che lui viena",
+          "right": "che lui venga",
+          "why": "Si parte da <i>io vengo</i>: <i>che venga</i>."
+        },
+        {
+          "wrong": "che tu parla",
+          "right": "che tu parli",
+          "why": "I verbi in <i>-are</i> finiscono in <i>-i</i>."
+        },
+        {
+          "wrong": "che io prendi",
+          "right": "che io prenda",
+          "why": "I verbi in <i>-ere</i> e <i>-ire</i> finiscono in <i>-a</i>."
+        },
+        {
+          "wrong": "che tu pagi",
+          "right": "che tu paghi",
+          "why": "Nei verbi in <i>-gare</i> serve la <i>h</i>."
+        },
+        {
+          "wrong": "che lui fa",
+          "right": "che lui faccia",
+          "why": "Si parte da <i>io faccio</i>: <i>che faccia</i>."
+        },
+        {
+          "wrong": "che loro parlano",
+          "right": "che loro parlino",
+          "why": "Anche in <i>loro</i> la vocale cambia: <i>-ino</i> per i verbi in <i>-are</i>."
+        },
+        {
+          "wrong": "Spero che io trovi lavoro.",
+          "right": "Spero di trovare lavoro.",
+          "why": "Stessa persona: <i>di</i> + infinito."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Comincia con «Penso che» e metti il verbo al congiuntivo presente.",
+          "items": [
+            "Marco lavora troppo.",
+            "Loro capiscono bene.",
+            "Anna ha ragione.",
+            "Voi venite domani.",
+            "Il negozio è chiuso.",
+            "Luca fa sport."
+          ],
+          "key": [
+            "<b>Penso che Marco lavori troppo.</b>",
+            "<b>Penso che capiscano bene.</b>",
+            "<b>Penso che Anna abbia ragione.</b>",
+            "<b>Penso che veniate domani.</b>",
+            "<b>Penso che il negozio sia chiuso.</b>",
+            "<b>Penso che Luca faccia sport.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Voglio che tu parla con lui.",
+            "È meglio che voi andate via.",
+            "Spero che lui viena alla festa.",
+            "Bisogna che io pagi l'affitto.",
+            "Dubito che loro sanno la risposta.",
+            "Spero che io trovi presto lavoro."
+          ],
+          "key": [
+            "<b>parli</b>",
+            "<b>andiate</b>",
+            "<b>venga</b>",
+            "<b>paghi</b>",
+            "<b>sappiano</b>",
+            "<b>Spero di trovare presto lavoro.</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa con un verbo al congiuntivo presente.",
+          "items": [
+            "Mia madre vuole che io …",
+            "È importante che gli studenti …",
+            "Il capo spera che noi …",
+            "Ho paura che domani …",
+            "Ti spiego tutto affinché tu …",
+            "Cerco un collega che …"
+          ],
+          "key": [
+            "Esempio: <b>la chiami più spesso</b>.",
+            "Esempio: <b>facciano i compiti</b>.",
+            "Esempio: <b>finiamo il progetto entro venerdì</b>.",
+            "Esempio: <b>piova</b>.",
+            "Esempio: <b>capisca</b>.",
+            "Esempio: <b>sappia parlare tedesco</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b1",
+      "cat": "Verbi",
+      "title": "Il congiuntivo passato",
+      "def": "Si usa negli stessi casi del congiuntivo presente (opinioni, dubbi, desideri, emozioni…), ma per un fatto <b>già successo</b>: «penso che Marco <i>sia</i> a casa» (adesso) → «penso che Marco <i>sia partito</i>» (prima).",
+      "form": "<b>Congiuntivo presente di avere o essere + participio passato.</b> L'ausiliare è lo stesso del passato prossimo: «ho parlato → che abbia parlato», «sono andato → che sia andato». Con <i>essere</i> il participio si accorda con il soggetto: «penso che Anna sia partit<b>a</b>».",
+      "tables": [
+        {
+          "before": "<b>Le forme</b> (sempre precedute da <i>che</i>).",
+          "headers": [
+            "",
+            "parlare",
+            "andare"
+          ],
+          "rows": [
+            [
+              "io",
+              "abbia parlato",
+              "sia andato/a"
+            ],
+            [
+              "tu",
+              "abbia parlato",
+              "sia andato/a"
+            ],
+            [
+              "lui/lei",
+              "abbia parlato",
+              "sia andato/a"
+            ],
+            [
+              "noi",
+              "abbiamo parlato",
+              "siamo andati/e"
+            ],
+            [
+              "voi",
+              "abbiate parlato",
+              "siate andati/e"
+            ],
+            [
+              "loro",
+              "abbiano parlato",
+              "siano andati/e"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "un'opinione o un dubbio su un fatto passato",
+          "ex": "Credo che sia già partito. / Non sono sicuro che abbiano capito."
+        },
+        {
+          "label": "un'emozione per qualcosa che è successo",
+          "ex": "Mi dispiace che tu abbia avuto problemi. / Sono contento che siate venuti."
+        },
+        {
+          "label": "una speranza su qualcosa che dovrebbe essere già successo",
+          "ex": "Spero che sia arrivato bene."
+        },
+        {
+          "label": "dopo le congiunzioni, per un fatto già avvenuto",
+          "ex": "Benché abbia studiato molto, non ha superato l'esame."
+        },
+        {
+          "label": "dopo un superlativo, spesso con mai",
+          "ex": "È il film più bello che io abbia mai visto."
+        }
+      ],
+      "warn": "<b>Presente o passato?</b> Dipende da quando succede l'azione rispetto al momento in cui si parla: «penso che <i>stia</i> male» (adesso) / «penso che <i>sia stato</i> male» (prima). Se il primo verbo è al passato («pensavo che…»), servono invece il congiuntivo imperfetto o trapassato (vedi La concordanza dei tempi). Con la stessa persona si usa <i>di</i> + infinito passato: «penso di <i>aver sbagliato</i>».",
+      "errors": [
+        {
+          "wrong": "Penso che è partito.",
+          "right": "Penso che sia partito.",
+          "why": "Un'opinione: congiuntivo."
+        },
+        {
+          "wrong": "Credo che abbia andato.",
+          "right": "Credo che sia andato.",
+          "why": "<i>Andare</i> vuole <i>essere</i>, come al passato prossimo."
+        },
+        {
+          "wrong": "Spero che Anna sia arrivato.",
+          "right": "Spero che Anna sia arrivata.",
+          "why": "Con <i>essere</i> il participio si accorda con il soggetto."
+        },
+        {
+          "wrong": "Penso che io abbia sbagliato.",
+          "right": "Penso di aver sbagliato.",
+          "why": "Stessa persona: <i>di</i> + infinito passato."
+        },
+        {
+          "wrong": "Mi dispiace che non hai potuto venire.",
+          "right": "Mi dispiace che tu non abbia potuto venire.",
+          "why": "<i>Mi dispiace che</i> vuole il congiuntivo."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Comincia con «Credo che» e metti il verbo al congiuntivo passato.",
+          "items": [
+            "Paolo ha finito il lavoro.",
+            "Le ragazze sono uscite.",
+            "Hai sbagliato strada.",
+            "Anna è tornata ieri.",
+            "I bambini hanno mangiato.",
+            "Il film è piaciuto a tutti."
+          ],
+          "key": [
+            "<b>Credo che Paolo abbia finito il lavoro.</b>",
+            "<b>Credo che le ragazze siano uscite.</b>",
+            "<b>Credo che tu abbia sbagliato strada.</b>",
+            "<b>Credo che Anna sia tornata ieri.</b>",
+            "<b>Credo che i bambini abbiano mangiato.</b>",
+            "<b>Credo che il film sia piaciuto a tutti.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Sono contento che siete venuti.",
+            "Spero che Giulia sia arrivato in orario.",
+            "Mi sembra che lui abbia partito ieri.",
+            "Penso che io abbia dimenticato le chiavi.",
+            "È la città più bella che ho mai visto.",
+            "Benché ha studiato, non ha passato l'esame."
+          ],
+          "key": [
+            "<b>siate</b>",
+            "<b>arrivata</b>",
+            "<b>sia partito</b>",
+            "<b>Penso di aver dimenticato</b>",
+            "<b>abbia</b> mai visto",
+            "<b>abbia studiato</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa con un verbo al congiuntivo passato.",
+          "items": [
+            "Non trovo il portafoglio: temo che …",
+            "Marco non risponde: penso che …",
+            "Mi dispiace che tu …",
+            "Sono felice che i miei amici …",
+            "È il libro più interessante che …",
+            "Speriamo che il pacco …"
+          ],
+          "key": [
+            "Esempio: <b>qualcuno l'abbia preso</b>.",
+            "Esempio: <b>sia già andato a dormire</b>.",
+            "Esempio: <b>abbia perso il lavoro</b>.",
+            "Esempio: <b>siano venuti alla festa</b>.",
+            "Esempio: <b>io abbia mai letto</b>.",
+            "Esempio: <b>sia arrivato</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b1",
+      "cat": "Verbi",
+      "title": "Il condizionale semplice",
+      "def": "Il modo del verbo che presenta un'azione come <b>possibile a una condizione</b>, non come un fatto: «con più tempo <i>viaggerei</i>» (non viaggio, ma lo farei se avessi tempo). Si usa anche per i desideri, per chiedere e consigliare in modo gentile e per dare notizie non ancora confermate.",
+      "form": "Si forma come il futuro semplice, con la stessa parte iniziale anche nei verbi irregolari, ma con terminazioni diverse: <b>-ei, -esti, -ebbe, -emmo, -este, -ebbero</b>. Chi conosce il futuro conosce già il condizionale: <i>parlerò → parlerei</i>, <i>andrò → andrei</i>, <i>verrò → verrei</i>. Attenzione a <i>noi</i>: <i>-emmo</i> con due <i>m</i> (<i>parleremmo</i>), diverso dal futuro <i>parleremo</i>.<ul class='sch'><li><b>-care, -gare</b>: cercherei, pagherei</li><li><b>-ciare, -giare</b>: comincerei, mangerei</li></ul>",
+      "tables": [
+        {
+          "before": "<b>I verbi regolari.</b>",
+          "headers": [
+            "",
+            "parlare",
+            "prendere",
+            "dormire"
+          ],
+          "rows": [
+            [
+              "io",
+              "parlerei",
+              "prenderei",
+              "dormirei"
+            ],
+            [
+              "tu",
+              "parleresti",
+              "prenderesti",
+              "dormiresti"
+            ],
+            [
+              "lui/lei",
+              "parlerebbe",
+              "prenderebbe",
+              "dormirebbe"
+            ],
+            [
+              "noi",
+              "parleremmo",
+              "prenderemmo",
+              "dormiremmo"
+            ],
+            [
+              "voi",
+              "parlereste",
+              "prendereste",
+              "dormireste"
+            ],
+            [
+              "loro",
+              "parlerebbero",
+              "prenderebbero",
+              "dormirebbero"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Essere e avere.</b>",
+          "headers": [
+            "",
+            "essere",
+            "avere"
+          ],
+          "rows": [
+            [
+              "io",
+              "sarei",
+              "avrei"
+            ],
+            [
+              "tu",
+              "saresti",
+              "avresti"
+            ],
+            [
+              "lui/lei",
+              "sarebbe",
+              "avrebbe"
+            ],
+            [
+              "noi",
+              "saremmo",
+              "avremmo"
+            ],
+            [
+              "voi",
+              "sareste",
+              "avreste"
+            ],
+            [
+              "loro",
+              "sarebbero",
+              "avrebbero"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Gli altri irregolari</b>: gli stessi del futuro.",
+          "plain": true,
+          "headers": [
+            "gruppo",
+            "esempi (io)"
+          ],
+          "rows": [
+            [
+              "perdono la vocale prima della r: andare, dovere, potere, sapere, vedere, vivere",
+              "andrei, dovrei, potrei, saprei, vedrei, vivrei"
+            ],
+            [
+              "raddoppiano la r: bere, rimanere, tenere, venire, volere",
+              "berrei, rimarrei, terrei, verrei, vorrei"
+            ],
+            [
+              "dare, fare, stare: tengono la a",
+              "darei, farei, starei"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "desideri",
+          "ex": "Mi piacerebbe vivere al mare. / Vorrei un caffè."
+        },
+        {
+          "label": "richieste e consigli gentili",
+          "ex": "Potresti aprire la finestra? / Dovresti riposare."
+        },
+        {
+          "label": "la conseguenza di una condizione, anche non detta",
+          "ex": "Con più tempo, finirei prima. / Al tuo posto non lo farei."
+        },
+        {
+          "label": "nel periodo ipotetico, nella parte che dice la conseguenza",
+          "ex": "Se avessi tempo, viaggerei. (vedi Il periodo ipotetico)"
+        },
+        {
+          "label": "notizie non confermate, tipico dei giornali",
+          "ex": "Il ministro sarebbe pronto a dimettersi. (= secondo alcune fonti)"
+        },
+        {
+          "label": "un'opinione detta con prudenza",
+          "ex": "Direi che è meglio aspettare. / Non saprei."
+        }
+      ],
+      "warn": "<b>Mai dopo «se».</b> Nella parte della frase con <i>se</i>, quella che dice la condizione, non va il condizionale ma il congiuntivo: «se <i>avessi</i> tempo» (non «se avrei tempo»). Il condizionale va nell'altra parte, quella che dice la conseguenza: «se avessi tempo, <i>viaggerei</i>».",
+      "errors": [
+        {
+          "wrong": "Se avrei tempo, viaggerei.",
+          "right": "Se avessi tempo, viaggerei.",
+          "why": "Dopo <i>se</i> va il congiuntivo, non il condizionale."
+        },
+        {
+          "wrong": "anderei",
+          "right": "andrei",
+          "why": "Come il futuro: <i>andrò → andrei</i>."
+        },
+        {
+          "wrong": "mangierei",
+          "right": "mangerei",
+          "why": "Nei verbi in <i>-giare</i> e <i>-ciare</i> la <i>i</i> cade."
+        },
+        {
+          "wrong": "venirei",
+          "right": "verrei",
+          "why": "Come il futuro: <i>verrò → verrei</i>."
+        },
+        {
+          "wrong": "Noi parleremo volentieri, ma non abbiamo tempo.",
+          "right": "Noi parleremmo volentieri…",
+          "why": "Il condizionale di <i>noi</i> ha due <i>m</i>; <i>parleremo</i> è il futuro."
+        },
+        {
+          "wrong": "Lui vorebbe venire.",
+          "right": "Lui vorrebbe venire.",
+          "why": "<i>Volere</i> raddoppia la <i>r</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Trasforma dal futuro al condizionale.",
+          "items": [
+            "Andrò in Grecia.",
+            "Saremo contenti.",
+            "Verranno con noi.",
+            "Potrai aiutarmi?",
+            "Farete una festa.",
+            "Pagherò io."
+          ],
+          "key": [
+            "<b>Andrei in Grecia.</b>",
+            "<b>Saremmo contenti.</b>",
+            "<b>Verrebbero con noi.</b>",
+            "<b>Potresti aiutarmi?</b>",
+            "<b>Fareste una festa.</b>",
+            "<b>Pagherei io.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Se avrei più soldi, comprerei una casa.",
+            "Al tuo posto, io anderei dal medico.",
+            "Noi verremo volentieri, ma siamo occupati.",
+            "Mangierei volentieri una pizza.",
+            "Ragazzi, potreste aiutarmi? — Ti aiuterebbimo volentieri, ma abbiamo da fare.",
+            "Lui vorebbe venire, ma non può."
+          ],
+          "key": [
+            "<b>avessi</b>",
+            "<b>andrei</b>",
+            "<b>verremmo</b>",
+            "<b>Mangerei</b>",
+            "<b>aiuteremmo</b>",
+            "<b>vorrebbe</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa con un verbo al condizionale.",
+          "items": [
+            "Al tuo posto, …",
+            "Con un milione di euro, …",
+            "Mi piacerebbe …",
+            "Scusi, … (chiedi un favore)",
+            "Sei stanco: … (dai un consiglio)",
+            "Non so cosa fare. Tu cosa …?"
+          ],
+          "key": [
+            "Esempio: <b>accetterei l'offerta</b>.",
+            "Esempio: <b>comprerei una casa al mare</b>.",
+            "Esempio: <b>vivere in Italia per un anno</b>.",
+            "Esempio: <b>potrebbe chiudere la porta?</b>",
+            "Esempio: <b>dovresti andare a dormire</b>.",
+            "Esempio: <b>faresti</b>?"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b1",
+      "cat": "Sintassi",
+      "title": "Il periodo ipotetico",
+      "def": "È la frase con <b>se</b>: una parte dice la condizione («se piove»), l'altra la conseguenza («resto a casa»). In italiano i verbi cambiano secondo quanto la condizione è realistica: si distinguono tre tipi, dalla realtà all'impossibile.",
+      "form": "Per scegliere il tipo ci si chiede: <b>la condizione è reale, possibile o ormai impossibile?</b> Nella parte con <i>se</i> va l'indicativo (realtà) o il congiuntivo (possibilità e impossibilità), mai il condizionale. Il condizionale va nella conseguenza. Le due parti possono stare in tutti e due gli ordini: «se piove, resto a casa» = «resto a casa se piove».",
+      "tables": [
+        {
+          "before": "<b>I tre tipi.</b>",
+          "plain": true,
+          "headers": [
+            "tipo",
+            "condizione (se…)",
+            "conseguenza",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "1° — realtà: una cosa vera o probabile",
+              "indicativo presente o futuro",
+              "indicativo presente o futuro, imperativo",
+              "Se piove, resto a casa. / Se hai tempo, chiamami."
+            ],
+            [
+              "2° — possibilità: una cosa poco probabile, o immaginaria nel presente",
+              "congiuntivo imperfetto",
+              "condizionale presente",
+              "Se avessi tempo, viaggerei. / Se fossi in te, accetterei."
+            ],
+            [
+              "3° — impossibilità: una cosa che non è successa nel passato",
+              "congiuntivo trapassato",
+              "condizionale passato",
+              "Se avessi studiato, avrei superato l'esame."
+            ]
+          ],
+          "after": "Le forme del congiuntivo imperfetto e trapassato e del condizionale passato sono nelle schede B2. Esistono anche combinazioni tra il 2° e il 3° tipo (vedi Il periodo ipotetico misto, C1)."
+        }
+      ],
+      "uses": [
+        {
+          "label": "1° tipo: una condizione reale o molto probabile",
+          "ex": "Se finisco presto, vengo al cinema. / Se domani pioverà, resteremo a casa."
+        },
+        {
+          "label": "1° tipo con l'imperativo: consigli e istruzioni",
+          "ex": "Se hai fame, mangia qualcosa. / Se non capisci, chiedi."
+        },
+        {
+          "label": "2° tipo: una situazione immaginaria nel presente o poco probabile nel futuro",
+          "ex": "Se fossi ricco, comprerei una barca. / Se vincessi alla lotteria, smetterei di lavorare."
+        },
+        {
+          "label": "2° tipo per dare consigli: se fossi in te",
+          "ex": "Se fossi in te, parlerei con lui."
+        },
+        {
+          "label": "3° tipo: un passato che non si può più cambiare, spesso un rimpianto",
+          "ex": "Se fossi partito prima, non avrei perso il treno."
+        },
+        {
+          "label": "nel parlato informale si usa anche l'imperfetto indicativo nelle due parti del 3° tipo: va riconosciuto, ma non insegnato come forma corretta",
+          "ex": "Se lo sapevo, venivo. (= Se l'avessi saputo, sarei venuto.)"
+        }
+      ],
+      "warn": "<b>L'errore più frequente: il condizionale dopo «se».</b> «Se avrei tempo» è sbagliato: dopo <i>se</i> va il congiuntivo imperfetto, «se <i>avessi</i> tempo». Trucco per lo studente: il condizionale non sta mai nella stessa parte del <i>se</i>. Attenzione però: quando <i>se</i> non introduce una condizione ma una domanda indiretta («non so se…»), il condizionale è possibile: «non so se <i>verrebbe</i>».",
+      "errors": [
+        {
+          "wrong": "Se avrei tempo, verrei.",
+          "right": "Se avessi tempo, verrei.",
+          "why": "Dopo <i>se</i> va il congiuntivo imperfetto."
+        },
+        {
+          "wrong": "Se sarei ricco, comprerei una casa.",
+          "right": "Se fossi ricco, comprerei una casa.",
+          "why": "Stesso errore: <i>se fossi</i>."
+        },
+        {
+          "wrong": "Se avessi tempo, viaggio.",
+          "right": "Se avessi tempo, viaggerei.",
+          "why": "Nel 2° tipo la conseguenza va al condizionale."
+        },
+        {
+          "wrong": "Se avessi studiato, passavo l'esame.",
+          "right": "Se avessi studiato, avrei passato l'esame.",
+          "why": "Nel 3° tipo la conseguenza va al condizionale passato; l'imperfetto è solo del parlato informale."
+        },
+        {
+          "wrong": "Se piove, rimarrei a casa.",
+          "right": "Se piove, rimango a casa.",
+          "why": "Con una condizione reale (1° tipo) la conseguenza va all'indicativo."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Trasforma dal 1° al 2° tipo.",
+          "items": [
+            "Se ho tempo, ti aiuto.",
+            "Se Marco viene, siamo contenti.",
+            "Se fa bel tempo, andiamo al mare.",
+            "Se sei stanco, puoi andare a casa.",
+            "Se vinco, compro una macchina.",
+            "Se studiate, passate l'esame."
+          ],
+          "key": [
+            "<b>Se avessi tempo, ti aiuterei.</b>",
+            "<b>Se Marco venisse, saremmo contenti.</b>",
+            "<b>Se facesse bel tempo, andremmo al mare.</b>",
+            "<b>Se fossi stanco, potresti andare a casa.</b>",
+            "<b>Se vincessi, comprerei una macchina.</b>",
+            "<b>Se studiaste, passereste l'esame.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Se avrei i soldi, farei il giro del mondo.",
+            "Se fossi in te, non lo faccio.",
+            "Se mi chiami, ti risponderei.",
+            "Se sarebbe più facile, lo farebbero tutti.",
+            "Se avessi saputo, ti aiutavo.",
+            "Se piovesse, restiamo a casa."
+          ],
+          "key": [
+            "<b>avessi</b>",
+            "<b>farei</b>",
+            "<b>rispondo</b> (oppure: <b>Se mi chiamassi, ti risponderei</b>)",
+            "<b>fosse</b>",
+            "<b>ti avrei aiutato</b>",
+            "<b>resteremmo</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa la frase con il tempo giusto.",
+          "items": [
+            "Se domani fa bel tempo, …",
+            "Se fossi il sindaco della mia città, …",
+            "Se parlassi perfettamente l'italiano, …",
+            "Se avessi più tempo libero, …",
+            "Se non capisci un esercizio, …",
+            "Se fossi in te, …"
+          ],
+          "key": [
+            "Esempio: <b>andiamo al mare</b>.",
+            "Esempio: <b>costruirei più parchi</b>.",
+            "Esempio: <b>lavorerei in Italia</b>.",
+            "Esempio: <b>imparerei a suonare il pianoforte</b>.",
+            "Esempio: <b>chiedi all'insegnante</b>.",
+            "Esempio: <b>accetterei quel lavoro</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b1",
+      "cat": "Pronomi",
+      "title": "Pronomi relativi: che e cui",
+      "def": "Collegano due frasi che parlano della stessa persona o cosa, per non ripeterla: «Ho un amico. L'amico vive a Roma.» → «Ho un amico <i>che</i> vive a Roma». La parola sostituita (qui <i>amico</i>) sta subito prima del relativo.",
+      "form": "Si sceglie il relativo guardando che ruolo ha la parola sostituita nella seconda frase. Se fa l'azione o la riceve direttamente, senza preposizione, si usa <b>che</b>, che non cambia mai. Se nella seconda frase ci vorrebbe una preposizione (<i>a, di, con, in, per…</i>), si usa <b>preposizione + cui</b>, anche questo invariabile. <b>Il quale</b> (<i>la quale, i quali, le quali</i>) può sostituire tutti e due ed è più formale: si accorda con la parola sostituita e con le preposizioni si unisce all'articolo (<i>al quale, della quale</i>).",
+      "tables": [
+        {
+          "before": "<b>Come si sceglie.</b> Si rimette la parola nella seconda frase e si guarda se ha una preposizione davanti.",
+          "plain": true,
+          "headers": [
+            "nella seconda frase la parola…",
+            "relativo",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "fa l'azione",
+              "che",
+              "Il treno che parte alle 8 è in ritardo. (il treno parte)"
+            ],
+            [
+              "riceve l'azione, senza preposizione",
+              "che",
+              "Il libro che leggo è bello. (leggo il libro)"
+            ],
+            [
+              "ha una preposizione davanti",
+              "preposizione + cui",
+              "La persona a cui scrivo. (scrivo a una persona) / la città in cui vivo / gli amici con cui esco"
+            ],
+            [
+              "dice di chi è una cosa",
+              "il / la / i / le + cui + nome",
+              "Lo scrittore il cui romanzo è famoso. (il romanzo dello scrittore)"
+            ],
+            [
+              "(registro formale, al posto di che o cui)",
+              "il quale, la quale, i quali, le quali",
+              "La ditta per la quale lavoro. / Il signore al quale ho scritto."
+            ]
+          ]
+        },
+        {
+          "before": "<b>Altri relativi.</b>",
+          "plain": true,
+          "headers": [
+            "relativo",
+            "significa",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "chi",
+              "la persona che, le persone che (verbo sempre al singolare)",
+              "Chi studia, impara. / Ringrazio chi mi ha aiutato."
+            ],
+            [
+              "quello che / ciò che",
+              "la cosa che",
+              "Fai quello che vuoi. / Ciò che dici è vero."
+            ],
+            [
+              "dove",
+              "in cui, con i luoghi",
+              "La città dove sono nato. = La città in cui sono nato."
+            ],
+            [
+              "cui senza preposizione",
+              "a cui (scritto formale)",
+              "La persona cui mi riferisco."
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "che: la parola sostituita fa l'azione",
+          "ex": "Il ragazzo che parla è mio fratello."
+        },
+        {
+          "label": "che: la parola sostituita riceve l'azione",
+          "ex": "Il film che abbiamo visto era bello."
+        },
+        {
+          "label": "preposizione + cui",
+          "ex": "Il motivo per cui resto. / La ragazza con cui esco. / Il libro di cui ti ho parlato."
+        },
+        {
+          "label": "il cui per dire di chi è una cosa: l'articolo si accorda con la cosa posseduta",
+          "ex": "La signora la cui figlia studia con me. / Un autore i cui libri sono famosi."
+        },
+        {
+          "label": "chi = la persona che, con il verbo al singolare",
+          "ex": "Chi arriva tardi non entra."
+        },
+        {
+          "label": "dove per i luoghi, al posto di in cui",
+          "ex": "Il ristorante dove abbiamo cenato era ottimo."
+        }
+      ],
+      "warn": "<b>Dopo una preposizione mai «che».</b> «La casa <i>in che</i> vivo» è sbagliato: si dice «la casa <i>in cui</i> vivo». Per capire se serve la preposizione si rimette la parola nella seconda frase: «vivo <i>in</i> una casa» → <i>in cui</i>; «parlo <i>con</i> una ragazza» → <i>con cui</i>. Nel parlato trascurato si sente il «che» al posto di tutto («la ragazza che ci esco»), ma è un errore.",
+      "errors": [
+        {
+          "wrong": "la casa in che vivo",
+          "right": "la casa in cui vivo",
+          "why": "Dopo una preposizione si usa <i>cui</i>."
+        },
+        {
+          "wrong": "la ragazza che ho parlato",
+          "right": "la ragazza con cui ho parlato",
+          "why": "Si parla <i>con</i> qualcuno: serve <i>con cui</i>."
+        },
+        {
+          "wrong": "il ragazzo di chi ti ho parlato",
+          "right": "il ragazzo di cui ti ho parlato",
+          "why": "Dopo una preposizione si usa <i>cui</i>; <i>chi</i> vuol dire «la persona che»."
+        },
+        {
+          "wrong": "lo scrittore il di cui libro",
+          "right": "lo scrittore il cui libro",
+          "why": "Per il possesso: articolo + <i>cui</i> + nome, senza <i>di</i>."
+        },
+        {
+          "wrong": "Chi arrivano tardi non entrano.",
+          "right": "Chi arriva tardi non entra.",
+          "why": "<i>Chi</i> vuole il verbo al singolare."
+        },
+        {
+          "wrong": "la città che sono nato",
+          "right": "la città in cui sono nato / dove sono nato",
+          "why": "Si nasce <i>in</i> una città: <i>in cui</i> o <i>dove</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Unisci le due frasi con un pronome relativo.",
+          "items": [
+            "Ho un'amica. L'amica vive a Parigi.",
+            "Ho letto il libro. Mi hai regalato il libro.",
+            "Questa è la casa. Abito in questa casa.",
+            "Ecco il collega. Lavoro con il collega.",
+            "È un problema. Ti ho parlato del problema.",
+            "Conosco un pittore. I quadri del pittore sono famosi."
+          ],
+          "key": [
+            "<b>Ho un'amica che vive a Parigi.</b>",
+            "<b>Ho letto il libro che mi hai regalato.</b>",
+            "<b>Questa è la casa in cui</b> (o <b>dove</b>) <b>abito.</b>",
+            "<b>Ecco il collega con cui lavoro.</b>",
+            "<b>È il problema di cui ti ho parlato.</b>",
+            "<b>Conosco un pittore i cui quadri sono famosi.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Il motivo per che sono qui è semplice.",
+            "La persona che ho scritto non mi ha risposto.",
+            "Ringrazio chi mi hanno aiutato.",
+            "Non capisco quello cui dici.",
+            "È un'attrice la di cui fama è mondiale.",
+            "Questo è il quartiere che sono cresciuto."
+          ],
+          "key": [
+            "<b>per cui</b>",
+            "<b>a cui</b>",
+            "<b>chi mi ha aiutato</b>",
+            "<b>quello che</b>",
+            "<b>la cui fama</b>",
+            "<b>in cui</b> (o <b>dove</b>)"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa la frase con un relativo.",
+          "items": [
+            "Ho un amico …",
+            "Questa è la città …",
+            "Ti presento la collega …",
+            "Chi …",
+            "Non ho capito quello …",
+            "È un'azienda …"
+          ],
+          "key": [
+            "Esempio: <b>che parla cinque lingue</b>.",
+            "Esempio: <b>in cui sono nato</b>.",
+            "Esempio: <b>con cui lavoro</b>.",
+            "Esempio: <b>dorme non piglia pesci</b>.",
+            "Esempio: <b>che hai detto</b>.",
+            "Esempio: <b>i cui prodotti sono venduti in tutto il mondo</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b1",
+      "cat": "Pronomi",
+      "title": "I pronomi indiretti",
+      "def": "Sostituiscono la persona <b>a cui</b> è rivolta l'azione: a chi do, dico, scrivo, telefono qualcosa. «Telefono <i>a Maria</i>» → «<i>Le</i> telefono»; «do il libro <i>a Marco</i>» → «<i>gli</i> do il libro». Per capire se serve un indiretto basta chiedersi se davanti alla persona c'è, o ci sarebbe, <i>a</i>.",
+      "form": "Le forme sono <b>mi, ti, gli, le, ci, vi, gli</b>. Rispetto ai pronomi diretti cambia solo la 3ª persona: <b>gli</b> (a lui), <b>le</b> (a lei), <b>Le</b> (a Lei, cortesia) e il plurale <b>gli</b> (a loro). La posizione è la stessa dei diretti: prima del verbo coniugato, attaccati a infinito, imperativo e gerundio: «ti scrivo», «voglio parlar<i>ti</i>», «scrivi<i>mi</i>!». Nei tempi composti il participio <b>non</b> si accorda con l'indiretto: «<i>le</i> ho parlato», non «parlata».",
+      "tables": [
+        {
+          "before": "<b>Le forme.</b>",
+          "headers": [
+            "a chi",
+            "pronome",
+            "forma accentata"
+          ],
+          "rows": [
+            [
+              "a me",
+              "mi",
+              "a me"
+            ],
+            [
+              "a te",
+              "ti",
+              "a te"
+            ],
+            [
+              "a lui",
+              "gli",
+              "a lui"
+            ],
+            [
+              "a lei",
+              "le",
+              "a lei"
+            ],
+            [
+              "a Lei (cortesia)",
+              "Le",
+              "a Lei"
+            ],
+            [
+              "a noi",
+              "ci",
+              "a noi"
+            ],
+            [
+              "a voi",
+              "vi",
+              "a voi"
+            ],
+            [
+              "a loro",
+              "gli (o loro, dopo il verbo)",
+              "a loro"
+            ]
+          ],
+          "after": "<i>Loro</i> come pronome indiretto va dopo il verbo («parlo <i>loro</i>») ed è formale; nell'italiano di oggi si usa quasi sempre <i>gli</i>: «<i>gli</i> parlo». Le forme accentate servono per sottolineare o fare un contrasto: «l'ho detto <i>a te</i>, non a lui»."
+        },
+        {
+          "before": "<b>Verbi che vogliono il pronome indiretto.</b>",
+          "plain": true,
+          "headers": [
+            "tipo",
+            "verbi",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "dare e far avere",
+              "dare, regalare, prestare, mandare, offrire, portare",
+              "Gli regalo un libro."
+            ],
+            [
+              "comunicare",
+              "dire, scrivere, telefonare, rispondere, chiedere, spiegare, raccontare, insegnare",
+              "Le telefono stasera. / Mi spieghi?"
+            ],
+            [
+              "costruiti come piacere",
+              "piacere, sembrare, mancare, servire, interessare, dispiacere",
+              "Gli piace il calcio. / Ti manca?"
+            ],
+            [
+              "espressioni",
+              "fare una domanda, voler bene, dare fastidio",
+              "Le voglio bene. / Ti dà fastidio?"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "per non ripetere la persona a cui si dà o si dice qualcosa",
+          "ex": "Hai scritto a Luca? — Sì, gli ho scritto ieri."
+        },
+        {
+          "label": "gli per lui, le per lei",
+          "ex": "Vedo Anna e le dico tutto. / Vedo Marco e gli dico tutto."
+        },
+        {
+          "label": "gli anche per «a loro»",
+          "ex": "Ho visto i miei genitori e gli ho raccontato del viaggio."
+        },
+        {
+          "label": "Le di cortesia",
+          "ex": "Signora, Le posso offrire un caffè?"
+        },
+        {
+          "label": "con i verbi costruiti come piacere",
+          "ex": "Gli piace la pizza. / Le sembra giusto?"
+        },
+        {
+          "label": "attaccati all'infinito e all'imperativo",
+          "ex": "Devo parlarti. / Dimmi! / Scrivigli un messaggio."
+        }
+      ],
+      "warn": "<b>Diretto o indiretto?</b> Dipende dal verbo, e non sempre coincide con altre lingue. «<i>La</i> chiamo» (chiamare qualcuno: diretto) ma «<i>le</i> telefono» (telefonare a qualcuno: indiretto). «<i>Lo</i> aiuto» (aiutare qualcuno) ma «<i>gli</i> rispondo» (rispondere a qualcuno). Nel dubbio si prova a mettere il nome: se ci vuole <i>a</i>, il pronome è indiretto.",
+      "errors": [
+        {
+          "wrong": "Ho visto Maria e gli ho detto tutto.",
+          "right": "Ho visto Maria e le ho detto tutto.",
+          "why": "Per una donna si usa <i>le</i>."
+        },
+        {
+          "wrong": "La telefono stasera.",
+          "right": "Le telefono stasera.",
+          "why": "Si telefona <i>a</i> qualcuno: indiretto."
+        },
+        {
+          "wrong": "Le ho parlata ieri.",
+          "right": "Le ho parlato ieri.",
+          "why": "Il participio non si accorda con il pronome indiretto."
+        },
+        {
+          "wrong": "Lo rispondo subito.",
+          "right": "Gli rispondo subito.",
+          "why": "Si risponde <i>a</i> qualcuno: indiretto."
+        },
+        {
+          "wrong": "Gli aiuto.",
+          "right": "Lo aiuto.",
+          "why": "Si aiuta qualcuno, senza <i>a</i>: diretto."
+        },
+        {
+          "wrong": "Ti chiedo a te.",
+          "right": "Ti chiedo. / Chiedo a te.",
+          "why": "La stessa persona due volte: o il pronome o <i>a te</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Sostituisci le parole in grassetto con un pronome indiretto.",
+          "items": [
+            "Scrivo <b>a Paolo</b> domani.",
+            "Telefono <b>a mia madre</b> ogni sera.",
+            "Abbiamo spiegato la regola <b>agli studenti</b>.",
+            "Do il mio numero <b>a te</b>.",
+            "Signora, posso offrire un caffè <b>a Lei</b>?",
+            "Il film è piaciuto <b>a noi</b>."
+          ],
+          "key": [
+            "<b>Gli scrivo domani.</b>",
+            "<b>Le telefono ogni sera.</b>",
+            "<b>Gli abbiamo spiegato la regola.</b>",
+            "<b>Ti do il mio numero.</b>",
+            "<b>Signora, Le posso offrire un caffè?</b>",
+            "<b>Il film ci è piaciuto.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Ho incontrato Giulia e gli ho dato le chiavi.",
+            "Non la ho risposto.",
+            "Le ho telefonata, ma non ha risposto.",
+            "Domani lo scrivo una mail.",
+            "Paolo è triste: gli voglio aiutare.",
+            "A me mi piace il cioccolato."
+          ],
+          "key": [
+            "<b>le ho dato</b>",
+            "<b>Non le ho risposto.</b>",
+            "<b>telefonato</b>",
+            "<b>gli scrivo</b>",
+            "<b>lo voglio aiutare</b> (o <b>voglio aiutarlo</b>)",
+            "<b>A me piace</b> (o <b>Mi piace</b>): nel parlato si sente, ma nello scritto è un errore"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Rispondi usando un pronome indiretto.",
+          "items": [
+            "Che cosa regali a tua madre per il compleanno?",
+            "Quando telefoni ai tuoi amici?",
+            "Che cosa hai detto a Marco?",
+            "Che cosa piace ai tuoi figli?",
+            "Hai risposto alla professoressa?",
+            "Che cosa mi consigli di visitare a Roma?"
+          ],
+          "key": [
+            "Esempio: <b>Le regalo un libro.</b>",
+            "Esempio: <b>Gli telefono la domenica.</b>",
+            "Esempio: <b>Gli ho detto che arrivo tardi.</b>",
+            "Esempio: <b>Gli piace giocare a calcio.</b>",
+            "Esempio: <b>Sì, le ho risposto ieri.</b>",
+            "Esempio: <b>Ti consiglio di visitare i Musei Vaticani.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b1",
+      "cat": "Pronomi",
+      "title": "I pronomi combinati",
+      "def": "Quando in una frase ci sono insieme un pronome <b>indiretto</b> e uno <b>diretto</b>, i due si fondono in un'unica forma. Perché accada devono essere pronomi <b>tutti e due</b>: se uno dei due resta esplicito oppure viene sottinteso, il combinato non si forma («Gli do il libro», «Li ha forniti»).",
+      "form": "L'indiretto va per primo e cambia vocale: mi/ti/ci/vi → me, te, ce, ve. Il diretto lo segue e <b>resta invariato</b>: può essere soltanto lo, la, li, le o ne. Due esempi completi: «Do il libro <b>a te</b>» → «<b>Te lo</b> do»; «Do il libro <b>a Marco</b>» → «<b>Glielo</b> do».",
+      "tables": [
+        {
+          "headers": [
+            "",
+            "+ lo",
+            "+ la",
+            "+ li",
+            "+ le",
+            "+ ne"
+          ],
+          "rows": [
+            [
+              "mi (a me)",
+              "me lo",
+              "me la",
+              "me li",
+              "me le",
+              "me ne"
+            ],
+            [
+              "ti (a te)",
+              "te lo",
+              "te la",
+              "te li",
+              "te le",
+              "te ne"
+            ],
+            [
+              "gli / le (a lui, a lei)",
+              "glielo",
+              "gliela",
+              "glieli",
+              "gliele",
+              "gliene"
+            ],
+            [
+              "ci (a noi)",
+              "ce lo",
+              "ce la",
+              "ce li",
+              "ce le",
+              "ce ne"
+            ],
+            [
+              "vi (a voi)",
+              "ve lo",
+              "ve la",
+              "ve li",
+              "ve le",
+              "ve ne"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "glie- vale sia per lui sia per lei: la forma è la stessa, cambia solo il contesto",
+          "ex": "Glielo dico (a lui / a lei)."
+        },
+        {
+          "label": "al posto del diretto può esserci ne, quando si parla di una quantità o di un argomento",
+          "ex": "Me ne dai due? / Gliene parlo domani."
+        },
+        {
+          "label": "la forma combinata sta prima del verbo, ma si attacca in fondo a infinito e imperativo",
+          "ex": "Te lo voglio dare = Voglio dartelo. / Dammelo! Diglielo!"
+        },
+        {
+          "label": "davanti ad ha, ho, hanno i pronomi lo e la perdono la vocale e prendono l'apostrofo",
+          "ex": "Me l'ha detto ieri. / Gliel'ho già mandata."
+        },
+        {
+          "label": "se il diretto è mi, ti, ci o vi la fusione non avviene: resta lui davanti e l'altro passa dopo il verbo",
+          "ex": "Presenta me a Marco → Mi presenta a lui."
+        }
+      ],
+      "warn": "«gli» e «le» diventano <b>entrambi</b> «glie-», scritto attaccato al diretto: «glielo dico» vale sia per lui sia per lei, decide il contesto. Nei tempi composti il participio si accorda con il <b>diretto</b>, mai con l'indiretto: «Me li ha portat<i>i</i>».",
+      "errors": [
+        {
+          "wrong": "Le lo do.",
+          "right": "Glielo do.",
+          "why": "Anche <i>a lei</i> + <i>lo</i> diventa <i>glielo</i>, come per lui."
+        },
+        {
+          "wrong": "Gli lo do.",
+          "right": "Glielo do.",
+          "why": "<i>Gli</i> diventa <i>glie-</i> e si unisce al diretto."
+        },
+        {
+          "wrong": "Mi lo dai?",
+          "right": "Me lo dai?",
+          "why": "Davanti a <i>lo, la, li, le, ne</i>, <i>mi</i> diventa <i>me</i>."
+        },
+        {
+          "wrong": "Glie lo dico.",
+          "right": "Glielo dico.",
+          "why": "<i>Glie-</i> si scrive attaccato al diretto."
+        },
+        {
+          "wrong": "Le chiavi? Me l'ha dato.",
+          "right": "Le chiavi? Me le ha date.",
+          "why": "Il participio si accorda con il diretto (<i>le chiavi → le → date</i>); l'apostrofo si usa solo con <i>lo</i> e <i>la</i>."
+        },
+        {
+          "wrong": "Te lo voglio darlo.",
+          "right": "Te lo voglio dare. / Voglio dartelo.",
+          "why": "Il pronome va in un posto solo."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Sostituisci le parole in grassetto con un pronome combinato.",
+          "items": [
+            "Do <b>il libro a te</b>.",
+            "Presto <b>la macchina a Marco</b>.",
+            "Mandi <b>le foto a me</b>?",
+            "Spiego <b>la regola a voi</b>.",
+            "Ho regalato <b>i fiori ad Anna</b>.",
+            "Parlo <b>del problema al direttore</b>."
+          ],
+          "key": [
+            "<b>Te lo do.</b>",
+            "<b>Gliela presto.</b>",
+            "<b>Me le mandi?</b>",
+            "<b>Ve la spiego.</b>",
+            "<b>Glieli ho regalati.</b>",
+            "<b>Gliene parlo.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Le lo dico domani.",
+            "Mi la puoi prestare?",
+            "I documenti? Te li ho mandato ieri.",
+            "Glie l'ho detto.",
+            "Ve lo voglio dirlo.",
+            "Dammi lo!"
+          ],
+          "key": [
+            "<b>Glielo</b>",
+            "<b>Me la</b>",
+            "<b>mandati</b>",
+            "<b>Gliel'ho detto.</b>",
+            "<b>Ve lo voglio dire.</b> (o <b>Voglio dirvelo.</b>)",
+            "<b>Dammelo!</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Rispondi usando un pronome combinato.",
+          "items": [
+            "Mi presti la penna?",
+            "Hai dato il regalo a Luca?",
+            "Ci racconti la storia?",
+            "Chi ti ha dato queste informazioni?",
+            "Hai parlato a tua madre del viaggio?",
+            "Puoi spedirmi il contratto?"
+          ],
+          "key": [
+            "Esempio: <b>Sì, te la presto.</b>",
+            "Esempio: <b>Sì, gliel'ho dato ieri.</b>",
+            "Esempio: <b>Sì, ve la racconto subito.</b>",
+            "Esempio: <b>Me le ha date il direttore.</b>",
+            "Esempio: <b>Sì, gliene ho parlato.</b>",
+            "Esempio: <b>Sì, te lo spedisco domani.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b1",
+      "cat": "Pronomi",
+      "title": "Le particelle CI e NE",
+      "def": "Due particelle brevissime che servono a non ripetere una parte della frase già detta. <b>CI</b> sostituisce soprattutto un luogo («Vai a Roma? — Sì, <i>ci</i> vado») o una cosa introdotta da <i>a</i>, <i>in</i>, <i>su</i> («Pensi all'esame? — Sì, <i>ci</i> penso»). <b>NE</b> sostituisce una quantità («Quanti caffè? — <i>Ne</i> prendo due») o una cosa introdotta da <i>di</i> o <i>da</i> («Parli del progetto? — Sì, <i>ne</i> parlo»).",
+      "form": "Stanno nella stessa posizione degli altri pronomi: prima del verbo coniugato («<i>ci</i> vado», «<i>ne</i> parlo»), attaccati alla fine di infinito, gerundio e imperativo («andar<i>ci</i>», «parlando<i>ne</i>», «prendi<i>ne</i>»). Dopo le forme brevi dell'imperativo (<i>va', fa', di'</i>) la consonante raddoppia: <i>vacci, fanne</i>. Con un altro pronome davanti cambiano la vocale come nei combinati: <i>ci</i> + <i>lo</i> → <b>ce lo</b>; <i>mi</i> + <i>ne</i> → <b>me ne</b>; <i>gli</i> + <i>ne</i> → <b>gliene</b>.",
+      "tables": [
+        {
+          "before": "<b>Che cosa sostituiscono.</b>",
+          "plain": true,
+          "headers": [
+            "particella",
+            "sostituisce",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "ci",
+              "un luogo: a, in, da + luogo",
+              "Vai a Roma? — Sì, ci vado domani. / Sei mai stato in Sicilia? — No, non ci sono mai stato."
+            ],
+            [
+              "ci",
+              "a, su + una cosa: pensare a, credere a, contare su, riuscire a",
+              "Pensi all'esame? — Sì, ci penso sempre. / Ci sei riuscito?"
+            ],
+            [
+              "ne",
+              "una parte di una quantità",
+              "Quante mele vuoi? — Ne voglio tre. / Hai fratelli? — Sì, ne ho due."
+            ],
+            [
+              "ne",
+              "di + una cosa: parlare di, avere bisogno di, avere paura di",
+              "Parli del progetto? — Sì, ne parlo domani. / Ne ho bisogno."
+            ],
+            [
+              "ne",
+              "da + un luogo: uscirne, andarsene",
+              "È entrato nel bar e ne è uscito subito."
+            ]
+          ]
+        },
+        {
+          "before": "<b>Usi fissi di ci.</b>",
+          "plain": true,
+          "headers": [
+            "espressione",
+            "significato",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "volerci",
+              "essere necessario",
+              "Ci vogliono due ore. (vedi I verbi pronominali)"
+            ],
+            [
+              "metterci",
+              "impiegare tempo",
+              "Ci metto dieci minuti."
+            ],
+            [
+              "entrarci",
+              "avere a che fare con qualcosa",
+              "Io non c'entro."
+            ],
+            [
+              "sentirci, vederci",
+              "sentire, vedere bene",
+              "Mio nonno non ci sente più."
+            ],
+            [
+              "esserci",
+              "esistere, essere presente",
+              "C'è un problema. (vedi C'è / Ci sono)"
+            ],
+            [
+              "avercela con qualcuno",
+              "essere arrabbiato con qualcuno",
+              "Ce l'hai con me?"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "ci per non ripetere un luogo",
+          "ex": "Vai spesso al cinema? — Sì, ci vado ogni settimana."
+        },
+        {
+          "label": "ci con i verbi che vogliono a: pensare, credere, provare, riuscire",
+          "ex": "Ci credi? / Ci ho provato, ma non ci sono riuscito."
+        },
+        {
+          "label": "ne con le quantità: il numero o la parola di quantità resta dopo il verbo",
+          "ex": "Quanti anni hai? — Ne ho trenta. / Vuoi del vino? — Sì, ne prendo un po'."
+        },
+        {
+          "label": "ne con i verbi che vogliono di",
+          "ex": "Hai paura dei cani? — Sì, ne ho paura. / Che ne pensi?"
+        },
+        {
+          "label": "con un altro pronome davanti: ce lo, me ne, gliene",
+          "ex": "Me ne dai due? / Gliene ho parlato ieri. / Il vino al mare? Ce lo porto io."
+        }
+      ],
+      "warn": "<b>Con ne il participio si accorda con la quantità</b>: «Quante mele hai mangiato? — <i>Ne</i> ho mangiat<b>e</b> tre»; «Quanti libri hai letto? — <i>Ne</i> ho lett<b>i</b> due». <i>Ci</i> e <i>ne</i> hanno anche altri significati: <i>ci</i> = noi, a noi («<i>ci</i> telefona», «<i>ci</i> vediamo»), <i>ne</i> = di lui, di lei, di loro («<i>ne</i> parlano tutti»). È il contesto a chiarire.",
+      "errors": [
+        {
+          "wrong": "Le mele? Ne ho mangiato tre.",
+          "right": "Le mele? Ne ho mangiate tre.",
+          "why": "Con <i>ne</i> il participio si accorda con la cosa contata."
+        },
+        {
+          "wrong": "Vai a Roma? — Sì, vado domani.",
+          "right": "Sì, ci vado domani.",
+          "why": "In italiano il luogo si riprende con <i>ci</i>."
+        },
+        {
+          "wrong": "Ci penso di te.",
+          "right": "Penso a te.",
+          "why": "<i>Ci</i> sostituisce <i>a</i> + una cosa; per le persone si usa <i>a me, a te, a lui…</i>"
+        },
+        {
+          "wrong": "Quanti fratelli hai? — Ho due.",
+          "right": "Ne ho due.",
+          "why": "Quando si dice solo il numero, senza il nome, serve <i>ne</i>."
+        },
+        {
+          "wrong": "Ci lo porto io.",
+          "right": "Ce lo porto io.",
+          "why": "Davanti a <i>lo, la, li, le, ne</i>, <i>ci</i> diventa <i>ce</i>."
+        },
+        {
+          "wrong": "Mi ne vado.",
+          "right": "Me ne vado.",
+          "why": "Davanti a <i>ne</i>, <i>mi</i> diventa <i>me</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Rispondi usando ci o ne al posto delle parole in grassetto.",
+          "items": [
+            "Vai <b>in palestra</b> oggi? — Sì, …",
+            "Quanti <b>caffè</b> bevi al giorno? — … tre.",
+            "Hai parlato <b>del problema</b> con Luca? — Sì, …",
+            "Credi <b>ai fantasmi</b>? — No, …",
+            "Hai bisogno <b>di aiuto</b>? — Sì, …",
+            "Quante <b>foto</b> hai fatto? — … cento!"
+          ],
+          "key": [
+            "<b>Sì, ci vado.</b>",
+            "<b>Ne bevo tre.</b>",
+            "<b>Sì, ne ho parlato.</b>",
+            "<b>No, non ci credo.</b>",
+            "<b>Sì, ne ho bisogno.</b>",
+            "<b>Ne ho fatte cento!</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "I biscotti? Ne ho mangiato cinque.",
+            "Sei stato a Venezia? — Sì, sono stato l'anno scorso.",
+            "Quante sorelle hai? — Ho una.",
+            "Il vino in frigo? Ci lo metto io.",
+            "Mi ne vado, è tardi.",
+            "Che ci pensi di questa idea?"
+          ],
+          "key": [
+            "<b>mangiati</b>",
+            "<b>ci sono stato</b>",
+            "<b>Ne ho una.</b>",
+            "<b>Ce lo metto</b>",
+            "<b>Me ne vado</b>",
+            "<b>Che ne pensi</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Rispondi alla domanda usando ci o ne.",
+          "items": [
+            "Quante volte sei stato in Italia?",
+            "Quanti libri leggi in un anno?",
+            "Pensi spesso al futuro?",
+            "Quanto tempo ci metti per arrivare al lavoro?",
+            "Che ne pensi del cinema italiano?",
+            "Vai mai in montagna?"
+          ],
+          "key": [
+            "Esempio: <b>Ci sono stato tre volte.</b>",
+            "Esempio: <b>Ne leggo una decina.</b>",
+            "Esempio: <b>Sì, ci penso spesso.</b>",
+            "Esempio: <b>Ci metto mezz'ora.</b>",
+            "Esempio: <b>Ne penso molto bene.</b>",
+            "Esempio: <b>Sì, ci vado ogni inverno.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b1",
+      "cat": "Verbi",
+      "title": "I verbi pronominali",
+      "def": "Verbi che contengono uno o due pronomi fissi (<i>ci, ne, la, si</i>) e che con questi pronomi prendono un significato nuovo, spesso diverso dal verbo di partenza: <i>andare</i> → <i>andarsene</i> (andare via), <i>fare</i> → <i>farcela</i> (riuscire). Sono frequentissimi nel parlato e vanno imparati come parole nuove.",
+      "form": "All'infinito i pronomi sono attaccati in fondo (<i>andarsene, farcela</i>). Quando il verbo si coniuga, i pronomi si spostano davanti e quelli che indicano la persona cambiano, come nei pronomi combinati: <i>me ne vado, te ne vai, se ne va…</i>. <i>La</i>, <i>ci</i> e <i>ne</i> invece restano uguali: <i>ce la faccio, ce la fai, ce la fa…</i>. Al passato prossimo i verbi con <i>si</i> vogliono <b>essere</b> (<i>me ne sono andato</i>); <i>farcela</i> e <i>avercela</i> vogliono <b>avere</b>, e il participio si accorda con <i>la</i>: <i>ce l'ho fatt<b>a</b></i>.",
+      "tables": [
+        {
+          "before": "<b>Le forme.</b>",
+          "headers": [
+            "",
+            "andarsene",
+            "farcela",
+            "cavarsela"
+          ],
+          "rows": [
+            [
+              "io",
+              "me ne vado",
+              "ce la faccio",
+              "me la cavo"
+            ],
+            [
+              "tu",
+              "te ne vai",
+              "ce la fai",
+              "te la cavi"
+            ],
+            [
+              "lui/lei",
+              "se ne va",
+              "ce la fa",
+              "se la cava"
+            ],
+            [
+              "noi",
+              "ce ne andiamo",
+              "ce la facciamo",
+              "ce la caviamo"
+            ],
+            [
+              "voi",
+              "ve ne andate",
+              "ce la fate",
+              "ve la cavate"
+            ],
+            [
+              "loro",
+              "se ne vanno",
+              "ce la fanno",
+              "se la cavano"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Al passato prossimo.</b>",
+          "headers": [
+            "",
+            "andarsene",
+            "farcela"
+          ],
+          "rows": [
+            [
+              "io",
+              "me ne sono andato/a",
+              "ce l'ho fatta"
+            ],
+            [
+              "tu",
+              "te ne sei andato/a",
+              "ce l'hai fatta"
+            ],
+            [
+              "lui/lei",
+              "se n'è andato/a",
+              "ce l'ha fatta"
+            ],
+            [
+              "noi",
+              "ce ne siamo andati/e",
+              "ce l'abbiamo fatta"
+            ],
+            [
+              "voi",
+              "ve ne siete andati/e",
+              "ce l'avete fatta"
+            ],
+            [
+              "loro",
+              "se ne sono andati/e",
+              "ce l'hanno fatta"
+            ]
+          ]
+        },
+        {
+          "before": "<b>I più frequenti.</b>",
+          "plain": true,
+          "headers": [
+            "verbo",
+            "significato",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "andarsene",
+              "andare via",
+              "È tardi, me ne vado."
+            ],
+            [
+              "farcela",
+              "riuscire",
+              "È difficile, ma ce la faccio."
+            ],
+            [
+              "cavarsela",
+              "riuscire a gestire una situazione, abbastanza bene",
+              "Non parlo bene il tedesco, ma me la cavo."
+            ],
+            [
+              "volerci",
+              "essere necessario (tempo, cose)",
+              "Ci vogliono due ore. / Ci vuole pazienza."
+            ],
+            [
+              "metterci",
+              "impiegare tempo (con una persona come soggetto)",
+              "Ci metto dieci minuti."
+            ],
+            [
+              "prendersela",
+              "offendersi, arrabbiarsi",
+              "Non prendertela, scherzavo!"
+            ],
+            [
+              "avercela con qualcuno",
+              "essere arrabbiato con qualcuno",
+              "Ce l'hai con me?"
+            ],
+            [
+              "smetterla",
+              "smettere di fare una cosa che dà fastidio",
+              "Smettila di urlare!"
+            ],
+            [
+              "sentirsela",
+              "avere il coraggio o la forza",
+              "Non me la sento di guidare di notte."
+            ],
+            [
+              "fregarsene (colloquiale, brusco)",
+              "non interessarsi",
+              "Me ne frego di quello che dicono."
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "andarsene: andare via da un posto",
+          "ex": "Ce ne andiamo? Sono stanco. / Se n'è andato senza salutare."
+        },
+        {
+          "label": "farcela e cavarsela: riuscire in una cosa difficile",
+          "ex": "Ce l'hai fatta a prendere il treno? / All'esame me la sono cavata."
+        },
+        {
+          "label": "volerci: il verbo si accorda con la cosa necessaria",
+          "ex": "Ci vuole un'ora. / Ci vogliono tre uova."
+        },
+        {
+          "label": "metterci: il verbo si accorda con la persona",
+          "ex": "Io ci metto un'ora. / Quanto ci mettete?"
+        },
+        {
+          "label": "con l'imperativo i pronomi si attaccano al verbo",
+          "ex": "Vattene! / Smettila! / Non prendertela."
+        }
+      ],
+      "warn": "<b>Volerci o metterci?</b> Tutti e due parlano del tempo necessario, ma in modo diverso. <i>Volerci</i> non ha una persona come soggetto e si accorda con il tempo o con la cosa necessaria: «<i>ci vogliono</i> due ore per arrivare». <i>Metterci</i> ha come soggetto la persona che impiega il tempo: «(io) <i>ci metto</i> due ore». Per lo studente: se c'è qualcuno (io, tu, Marco…) che impiega il tempo, <i>metterci</i>; se il tempo è necessario in generale, <i>volerci</i>.",
+      "errors": [
+        {
+          "wrong": "Mi ne vado.",
+          "right": "Me ne vado.",
+          "why": "Davanti a <i>ne</i>, <i>mi</i> diventa <i>me</i>."
+        },
+        {
+          "wrong": "Me sono andato.",
+          "right": "Me ne sono andato.",
+          "why": "<i>Andarsene</i> ha due pronomi: <i>me</i> + <i>ne</i>."
+        },
+        {
+          "wrong": "Ce lo faccio.",
+          "right": "Ce la faccio.",
+          "why": "In <i>farcela</i> il pronome è sempre <i>la</i>."
+        },
+        {
+          "wrong": "Ce l'ho fatto.",
+          "right": "Ce l'ho fatta.",
+          "why": "Il participio si accorda con <i>la</i>."
+        },
+        {
+          "wrong": "Ci vuole due ore.",
+          "right": "Ci vogliono due ore.",
+          "why": "<i>Volerci</i> si accorda con la cosa necessaria: <i>due ore</i> è plurale."
+        },
+        {
+          "wrong": "Io ci vogliono due ore.",
+          "right": "Io ci metto due ore.",
+          "why": "Quando c'è una persona che impiega il tempo si usa <i>metterci</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Trasforma la frase al passato prossimo.",
+          "items": [
+            "Me ne vado.",
+            "Ce la fai?",
+            "Marco se ne va.",
+            "Me la cavo.",
+            "Ce ne andiamo presto.",
+            "Anna se la prende."
+          ],
+          "key": [
+            "<b>Me ne sono andato/a.</b>",
+            "<b>Ce l'hai fatta?</b>",
+            "<b>Marco se n'è andato.</b>",
+            "<b>Me la sono cavata.</b>",
+            "<b>Ce ne siamo andati/e presto.</b>",
+            "<b>Anna se l'è presa.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Non ci la faccio più!",
+            "Per fare la torta ci vuole tre uova.",
+            "Io ci vogliono venti minuti per arrivare.",
+            "Gli studenti se ne sono andato.",
+            "Abbiamo vinto: ce l'abbiamo fatto!",
+            "Non te lo prendere, scherzavo!"
+          ],
+          "key": [
+            "<b>ce la faccio</b>",
+            "<b>ci vogliono</b>",
+            "<b>Io ci metto</b>",
+            "<b>andati</b>",
+            "<b>fatta</b>",
+            "<b>Non te la prendere</b> (o <b>Non prendertela</b>)"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Rispondi usando un verbo pronominale.",
+          "items": [
+            "Quanto tempo ci metti per andare al lavoro?",
+            "Quanto ci vuole da Roma a Milano in treno?",
+            "Come va con l'italiano?",
+            "Perché sei andato via dalla festa?",
+            "Hai superato l'esame?",
+            "Te la senti di parlare in pubblico?"
+          ],
+          "key": [
+            "Esempio: <b>Ci metto venti minuti.</b>",
+            "Esempio: <b>Ci vogliono tre ore.</b>",
+            "Esempio: <b>Me la cavo abbastanza bene.</b>",
+            "Esempio: <b>Me ne sono andato perché ero stanco.</b>",
+            "Esempio: <b>Sì, ce l'ho fatta!</b>",
+            "Esempio: <b>No, non me la sento.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b1",
+      "cat": "Sintassi",
+      "title": "Si impersonale e si passivante",
+      "def": "Il <b>si</b> permette di parlare di un'azione senza dire chi la fa: perché è «la gente», «tutti» («in Italia <i>si mangia</i> bene»), oppure perché interessa la cosa e non chi agisce («<i>si vendono</i> case»). Si chiama <b>impersonale</b> quando non c'è una cosa su cui cade l'azione, <b>passivante</b> quando c'è.",
+      "form": "<b>si</b> + verbo alla 3ª persona. Senza una cosa su cui cade l'azione (impersonale), il verbo è sempre singolare: «si mangia bene». Con una cosa (passivante), il verbo si accorda con quella: «si vende una casa» / «si vendono case». Nei tempi composti si usa sempre <b>essere</b>.",
+      "tables": [
+        {
+          "before": "<b>Casi particolari.</b>",
+          "plain": true,
+          "headers": [
+            "caso",
+            "regola",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "verbi riflessivi (alzarsi, divertirsi)",
+              "ci si, per non avere due si",
+              "Ci si alza presto. / Ci si diverte."
+            ],
+            [
+              "con un aggettivo dopo essere, diventare, sentirsi",
+              "aggettivo al maschile plurale",
+              "Quando si è stanchi, si sbaglia."
+            ],
+            [
+              "tempi composti, verbo senza oggetto che di solito vuole avere",
+              "participio in -o",
+              "Si è mangiato bene. / Si è parlato molto."
+            ],
+            [
+              "tempi composti, verbo che di solito vuole essere",
+              "participio al plurale",
+              "Si è arrivati tardi. / Si è partiti presto."
+            ],
+            [
+              "tempi composti, con un oggetto (passivante)",
+              "participio accordato con la cosa",
+              "Si è venduta la casa. / Si sono vendute tutte le case."
+            ],
+            [
+              "con un pronome diretto",
+              "lo si, la si… (il pronome va prima di si)",
+              "Questo lo si fa così."
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "impersonale: regole generali, abitudini di un paese o di un gruppo",
+          "ex": "In Italia si cena tardi. / Come si dice «thank you»? / Qui non si fuma."
+        },
+        {
+          "label": "passivante: il verbo si accorda con la cosa",
+          "ex": "Si affitta un appartamento. / Si affittano camere. / Qui si parlano molte lingue."
+        },
+        {
+          "label": "istruzioni e ricette",
+          "ex": "Si taglia la cipolla, si aggiungono i pomodori e si cuoce per dieci minuti."
+        },
+        {
+          "label": "al passato, sempre con essere",
+          "ex": "Ieri si è lavorato tanto. / Si sono spesi molti soldi."
+        }
+      ],
+      "warn": "<b>Impersonale o passivante?</b> Per decidere se il verbo va al plurale si cerca la cosa su cui cade l'azione: se c'è ed è plurale, il verbo va al plurale («si vend<b>ono</b> biglietti»); se non c'è, resta singolare («si dorme bene»). Questo <i>si</i> non va confuso con quello dei riflessivi («Marco <i>si</i> lava»), dove chi fa l'azione c'è. In Toscana si sente anche «noi <i>si</i> va» al posto di «noi andiamo»: è un uso regionale.",
+      "errors": [
+        {
+          "wrong": "Si affitta camere.",
+          "right": "Si affittano camere.",
+          "why": "La cosa è plurale (<i>camere</i>): il verbo va al plurale."
+        },
+        {
+          "wrong": "Si si alza presto.",
+          "right": "Ci si alza presto.",
+          "why": "Con i verbi riflessivi il primo <i>si</i> diventa <i>ci</i>."
+        },
+        {
+          "wrong": "Quando si è stanco, si sbaglia.",
+          "right": "Quando si è stanchi, si sbaglia.",
+          "why": "Con il <i>si</i> impersonale l'aggettivo va al maschile plurale."
+        },
+        {
+          "wrong": "Si ha mangiato bene.",
+          "right": "Si è mangiato bene.",
+          "why": "Nei tempi composti si usa sempre <i>essere</i>."
+        },
+        {
+          "wrong": "Si è arrivato tardi.",
+          "right": "Si è arrivati tardi.",
+          "why": "Con i verbi che vogliono <i>essere</i> il participio va al plurale."
+        },
+        {
+          "wrong": "Si sono venduto molte case.",
+          "right": "Si sono vendute molte case.",
+          "why": "Il participio si accorda con la cosa: <i>case</i>, femminile plurale."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Riscrivi la frase usando il si.",
+          "items": [
+            "In Italia la gente mangia la pasta tutti i giorni.",
+            "Qui le persone parlano molte lingue.",
+            "In questo ufficio tutti lavorano tanto.",
+            "La domenica la gente si riposa.",
+            "Vendiamo biciclette usate.",
+            "Alla festa tutti si sono divertiti."
+          ],
+          "key": [
+            "<b>In Italia si mangia la pasta tutti i giorni.</b>",
+            "<b>Qui si parlano molte lingue.</b>",
+            "<b>In questo ufficio si lavora tanto.</b>",
+            "<b>La domenica ci si riposa.</b>",
+            "<b>Si vendono biciclette usate.</b>",
+            "<b>Alla festa ci si è divertiti.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "In questo negozio si vende vestiti usati.",
+            "D'estate si si alza presto per evitare il caldo.",
+            "Quando si è giovane, si ha tanta energia.",
+            "Ieri si ha parlato di politica.",
+            "In quel ristorante si è mangiati benissimo.",
+            "Si sono venduto tutti i biglietti."
+          ],
+          "key": [
+            "<b>si vendono</b>",
+            "<b>ci si alza</b>",
+            "<b>giovani</b>",
+            "<b>si è parlato</b>",
+            "<b>si è mangiato</b>",
+            "<b>venduti</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Rispondi usando il si impersonale o passivante.",
+          "items": [
+            "Che cosa si mangia a Natale nel tuo Paese?",
+            "Come si festeggia il compleanno da voi?",
+            "Che lingue si parlano nel tuo Paese?",
+            "Che cosa non si deve fare in biblioteca?",
+            "Come si prepara il caffè con la moka?",
+            "Dove si va in vacanza ad agosto nel tuo Paese?"
+          ],
+          "key": [
+            "Esempio: <b>Si mangia il tacchino.</b>",
+            "Esempio: <b>Si fa una festa con gli amici.</b>",
+            "Esempio: <b>Si parlano lo spagnolo e il catalano.</b>",
+            "Esempio: <b>Non si deve parlare ad alta voce.</b>",
+            "Esempio: <b>Si mette l'acqua, si aggiunge il caffè e si mette sul fuoco.</b>",
+            "Esempio: <b>Si va al mare.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b1",
+      "cat": "Sintassi",
+      "title": "La forma passiva",
+      "def": "Nella forma attiva il soggetto fa l'azione («Marco <i>scrive</i> la lettera»); nella forma passiva il soggetto la riceve («la lettera <i>è scritta</i> da Marco»). Si usa quando conta di più quello che succede alla cosa o alla persona che chi fa l'azione, che spesso non si dice affatto: «il museo <i>è stato chiuso</i>».",
+      "form": "<b>essere</b> (allo stesso tempo del verbo attivo) + <b>participio passato</b>, accordato con il soggetto. Chi fa l'azione si introduce con <b>da</b>, unito all'articolo se serve (<i>dal, dalla, dagli…</i>). Hanno il passivo solo i verbi che possono avere un oggetto diretto, cioè rispondere a «che cosa?» o «chi?»: <i>scrivere una lettera → la lettera è scritta</i>; <i>telefonare</i> o <i>arrivare</i> no. Al posto di <i>essere</i> si può usare <b>venire</b>, ma solo nei tempi semplici.",
+      "tables": [
+        {
+          "before": "<b>Attivo e passivo nei tempi principali.</b>",
+          "plain": true,
+          "headers": [
+            "tempo",
+            "attivo",
+            "passivo con essere",
+            "passivo con venire"
+          ],
+          "rows": [
+            [
+              "presente",
+              "Marco scrive la lettera.",
+              "La lettera è scritta da Marco.",
+              "La lettera viene scritta da Marco."
+            ],
+            [
+              "imperfetto",
+              "Marco scriveva la lettera.",
+              "La lettera era scritta…",
+              "La lettera veniva scritta…"
+            ],
+            [
+              "passato prossimo",
+              "Marco ha scritto la lettera.",
+              "La lettera è stata scritta…",
+              "—"
+            ],
+            [
+              "futuro",
+              "Marco scriverà la lettera.",
+              "La lettera sarà scritta…",
+              "La lettera verrà scritta…"
+            ],
+            [
+              "congiuntivo presente",
+              "che Marco scriva la lettera",
+              "che la lettera sia scritta…",
+              "che la lettera venga scritta…"
+            ]
+          ],
+          "after": "Al passato prossimo i participi sono due, e si accordano tutti e due con il soggetto: «la lettera è stat<b>a</b> scritt<b>a</b>»."
+        }
+      ],
+      "uses": [
+        {
+          "label": "quando conta l'azione o il risultato, non chi la fa",
+          "ex": "Il ponte è stato costruito nel 1950. / La riunione è stata rinviata."
+        },
+        {
+          "label": "con da per dire chi fa l'azione",
+          "ex": "Il quadro è stato dipinto da un artista locale. / Sono stato invitato dai miei colleghi."
+        },
+        {
+          "label": "venire, nei tempi semplici, mette in primo piano l'azione che succede o si ripete",
+          "ex": "Il pacco viene consegnato domani. / I rifiuti vengono raccolti il lunedì."
+        },
+        {
+          "label": "nei giornali, nei documenti, negli avvisi",
+          "ex": "Il contratto deve essere firmato entro venerdì. / La strada è stata chiusa per lavori."
+        },
+        {
+          "label": "con i modali: modale + essere + participio",
+          "ex": "La domanda può essere presentata online."
+        }
+      ],
+      "warn": "<b>Venire solo nei tempi semplici.</b> «Viene fatto», «veniva fatto», «verrà fatto» sono corretti; «è venuto fatto» no: nei tempi composti si usa solo <i>essere</i> («è stato fatto»). Esiste anche <i>andare</i> + participio con il significato di «dover essere»: «il modulo <i>va compilato</i>» (vedi La forma passiva: tutte le forme, C1). Per parlare in generale, spesso si preferisce il <i>si</i> passivante: «si vendono case» (vedi Si impersonale e si passivante).",
+      "errors": [
+        {
+          "wrong": "Il lavoro è venuto fatto ieri.",
+          "right": "Il lavoro è stato fatto ieri.",
+          "why": "Nei tempi composti il passivo si fa solo con <i>essere</i>."
+        },
+        {
+          "wrong": "La lettera è stata scritto.",
+          "right": "La lettera è stata scritta.",
+          "why": "Tutti e due i participi si accordano con il soggetto."
+        },
+        {
+          "wrong": "La casa è stata costruita per mio nonno.",
+          "right": "La casa è stata costruita da mio nonno.",
+          "why": "Chi fa l'azione si introduce con <i>da</i>; <i>per</i> vuol dire «a favore di»."
+        },
+        {
+          "wrong": "Sono stato telefonato da Marco.",
+          "right": "Marco mi ha telefonato.",
+          "why": "<i>Telefonare</i> non ha un oggetto diretto (si telefona <i>a</i> qualcuno): non ha il passivo."
+        },
+        {
+          "wrong": "Il libro è letto di molti studenti.",
+          "right": "Il libro è letto da molti studenti.",
+          "why": "Chi fa l'azione: <i>da</i>, non <i>di</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Trasforma dalla forma attiva alla passiva.",
+          "items": [
+            "Il cuoco prepara la cena.",
+            "Molti turisti visitano Venezia.",
+            "Leonardo ha dipinto la Gioconda.",
+            "Il direttore firmerà il contratto.",
+            "La polizia ha chiuso la strada.",
+            "Gli studenti hanno scritto queste lettere."
+          ],
+          "key": [
+            "<b>La cena è preparata</b> (o <b>viene preparata</b>) <b>dal cuoco.</b>",
+            "<b>Venezia è visitata da molti turisti.</b>",
+            "<b>La Gioconda è stata dipinta da Leonardo.</b>",
+            "<b>Il contratto sarà firmato dal direttore.</b>",
+            "<b>La strada è stata chiusa dalla polizia.</b>",
+            "<b>Queste lettere sono state scritte dagli studenti.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "La finestra è stata rotto da un pallone.",
+            "Il film è venuto girato in Sicilia.",
+            "La torta è stata fatta per mia nonna. (l'ha fatta lei)",
+            "I documenti vengono controllato ogni mese.",
+            "La mostra è stata visitata di migliaia di persone.",
+            "Sono stata arrivata tardi."
+          ],
+          "key": [
+            "<b>rotta</b>",
+            "<b>è stato girato</b>",
+            "<b>da mia nonna</b>",
+            "<b>controllati</b>",
+            "<b>da</b>",
+            "<b>Sono arrivata tardi.</b> (<i>arrivare</i> non ha il passivo)"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa la frase con un verbo al passivo.",
+          "items": [
+            "La Torre di Pisa …",
+            "In Italia il caffè …",
+            "La lettera …",
+            "Il nuovo ospedale …",
+            "Questo libro …",
+            "Le iscrizioni …"
+          ],
+          "key": [
+            "Esempio: <b>è stata costruita nel Medioevo</b>.",
+            "Esempio: <b>viene bevuto soprattutto al bar</b>.",
+            "Esempio: <b>sarà spedita domani</b>.",
+            "Esempio: <b>è stato inaugurato la settimana scorsa</b>.",
+            "Esempio: <b>è stato tradotto in venti lingue</b>.",
+            "Esempio: <b>devono essere fatte entro il 30 settembre</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b1",
+      "cat": "Aggettivi",
+      "title": "I superlativi",
+      "def": "Esprimono il grado più alto di una qualità. Ce ne sono due tipi. Il <b>superlativo relativo</b> confronta con un gruppo: «è <i>il più alto</i> della classe» (più di tutti gli altri). Il <b>superlativo assoluto</b> non confronta con nessuno, dice solo che la qualità è molto forte: «è <i>altissimo</i>» (molto alto).",
+      "form": "<b>Relativo</b>: articolo + <i>più</i> o <i>meno</i> + aggettivo, con il gruppo introdotto da <i>di</i> (unito all'articolo) o da <i>tra/fra</i>: «il ragazzo <i>più alto della</i> classe». <b>Assoluto</b>: si toglie l'ultima vocale e si aggiunge <b>-issimo</b>, che si accorda come un aggettivo in <i>-o</i> (<i>-issimo, -issima, -issimi, -issime</i>): <i>bello → bellissimo</i>, <i>facile → facilissimo</i>. Oppure <i>molto</i> + aggettivo: «molto bello». Gli aggettivi in <i>-co/-go</i> partono dal plurale maschile: <i>simpatici → simpaticissimo</i>; <i>bianchi → bianchissimo</i>; <i>lunghi → lunghissimo</i>.",
+      "tables": [
+        {
+          "before": "<b>Forme irregolari.</b> Accanto alle forme speciali si usano anche quelle regolari.",
+          "plain": true,
+          "headers": [
+            "aggettivo",
+            "comparativo",
+            "superlativo relativo",
+            "superlativo assoluto"
+          ],
+          "rows": [
+            [
+              "buono",
+              "migliore",
+              "il migliore",
+              "ottimo (o buonissimo)"
+            ],
+            [
+              "cattivo",
+              "peggiore",
+              "il peggiore",
+              "pessimo (o cattivissimo)"
+            ],
+            [
+              "grande",
+              "maggiore",
+              "il maggiore",
+              "massimo (o grandissimo)"
+            ],
+            [
+              "piccolo",
+              "minore",
+              "il minore",
+              "minimo (o piccolissimo)"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Altri modi per il superlativo assoluto.</b>",
+          "plain": true,
+          "headers": [
+            "forma",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "avverbi + -issimo",
+              "benissimo, malissimo, prestissimo, tardissimo"
+            ],
+            [
+              "ripetizione dell'aggettivo o dell'avverbio",
+              "piano piano, caldo caldo, vicino vicino"
+            ],
+            [
+              "prefissi, nel parlato",
+              "stra- (strapieno, strabuono), super- (superveloce), iper- (iperattivo)"
+            ],
+            [
+              "espressioni fisse",
+              "stanco morto, pieno zeppo, ricco sfondato"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "superlativo relativo: il più (o il meno) di un gruppo",
+          "ex": "È lo studente più bravo della classe. / È il ristorante meno caro della città."
+        },
+        {
+          "label": "il gruppo si introduce con di (unito all'articolo) o con tra",
+          "ex": "la montagna più alta d'Europa / il più giovane tra i fratelli"
+        },
+        {
+          "label": "superlativo assoluto con -issimo",
+          "ex": "Il caffè è buonissimo. / È una casa grandissima."
+        },
+        {
+          "label": "superlativo assoluto con molto",
+          "ex": "È molto interessante. / Sono molto stanco."
+        },
+        {
+          "label": "con gli avverbi",
+          "ex": "Sto benissimo. / Arrivo prestissimo."
+        },
+        {
+          "label": "dopo il superlativo relativo, la frase con che vuole spesso il congiuntivo",
+          "ex": "È il film più bello che io abbia mai visto."
+        }
+      ],
+      "warn": "<b>Niente doppio superlativo.</b> <i>-issimo</i> e <i>molto</i> non vanno insieme («molto bellissimo» è sbagliato), e <i>ottimo, pessimo, migliore, peggiore</i> contengono già il superlativo o il comparativo («il più migliore» e «ottimissimo» sono sbagliati). Nel superlativo relativo l'articolo si mette una volta sola, davanti al nome: «il ragazzo più alto», non «il ragazzo il più alto».",
+      "errors": [
+        {
+          "wrong": "molto bellissimo",
+          "right": "bellissimo / molto bello",
+          "why": "<i>Molto</i> e <i>-issimo</i> dicono la stessa cosa: se ne usa uno solo."
+        },
+        {
+          "wrong": "il più migliore",
+          "right": "il migliore",
+          "why": "<i>Migliore</i> contiene già il «più»."
+        },
+        {
+          "wrong": "simpatichissimo",
+          "right": "simpaticissimo",
+          "why": "Si parte dal plurale maschile: <i>simpatici → simpaticissimo</i>."
+        },
+        {
+          "wrong": "ottimissimo",
+          "right": "ottimo",
+          "why": "<i>Ottimo</i> è già un superlativo."
+        },
+        {
+          "wrong": "il più alto in la classe",
+          "right": "il più alto della classe",
+          "why": "Il gruppo si introduce con <i>di</i> (unito all'articolo)."
+        },
+        {
+          "wrong": "È la ragazza la più simpatica.",
+          "right": "È la ragazza più simpatica.",
+          "why": "L'articolo si mette una volta sola."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Trasforma usando il superlativo assoluto in -issimo.",
+          "items": [
+            "Questo esercizio è molto facile.",
+            "La città è molto bella.",
+            "I tuoi amici sono molto simpatici.",
+            "La strada è molto lunga.",
+            "Oggi sto molto bene.",
+            "Le camicie sono molto bianche."
+          ],
+          "key": [
+            "<b>facilissimo</b>",
+            "<b>bellissima</b>",
+            "<b>simpaticissimi</b>",
+            "<b>lunghissima</b>",
+            "<b>benissimo</b>",
+            "<b>bianchissime</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "È stato un viaggio molto bellissimo.",
+            "Questo è il più migliore ristorante della città.",
+            "Lucia è la più brava in la squadra.",
+            "I miei vicini sono simpatichissimi.",
+            "Il tiramisù era ottimissimo.",
+            "È il libro più bello che ho mai letto."
+          ],
+          "key": [
+            "<b>bellissimo</b> (o <b>molto bello</b>)",
+            "<b>il migliore</b>",
+            "<b>della squadra</b>",
+            "<b>simpaticissimi</b>",
+            "<b>ottimo</b>",
+            "<b>che io abbia mai letto</b> (nello scritto)"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa con un superlativo relativo.",
+          "items": [
+            "Il Monte Bianco è …",
+            "Secondo me, il mese più bello dell'anno …",
+            "Il giorno più importante della mia vita …",
+            "Il ristorante migliore della mia città …",
+            "La cosa più difficile dell'italiano …",
+            "È il film più …"
+          ],
+          "key": [
+            "Esempio: <b>la montagna più alta d'Europa</b>.",
+            "Esempio: <b>è maggio</b>.",
+            "Esempio: <b>è stato il giorno della laurea</b>.",
+            "Esempio: <b>è una trattoria vicino al porto</b>.",
+            "Esempio: <b>è il congiuntivo</b>.",
+            "Esempio: <b>divertente che io abbia mai visto</b>."
+          ]
+        }
+      ]
+    }
+  ]
+}
