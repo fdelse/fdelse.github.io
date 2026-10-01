@@ -1,4 +1,4 @@
-// test-data.js v1.3 — 1/10/2026: «diag» spostato da [94] a [95]; «forse» nel no di [100] es0#0; v1.2: [100] es0 doppia chiave; v1.1: «no» ampliato dalle email
+// test-data.js v1.4 — 1/10/2026: v1.4 solo commento (item numerati da 1); v1.3: «diag» spostato da [94] a [95], «forse» nel no di [100] es0#1; v1.2: [100] es0 doppia chiave; v1.1: «no» ampliato dalle email
 const TEST_STRUCTURES = [
   {
     "lvl": "a",
