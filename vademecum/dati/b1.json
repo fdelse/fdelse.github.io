@@ -1,5 +1,5 @@
 {
-  "versione": "1.8",
+  "versione": "1.9",
   "livello": "B1",
   "schede": [
     {
@@ -2461,7 +2461,7 @@
           "ex": "Presenta me a Marco → Mi presenta a lui."
         }
       ],
-      "warn": "«gli» e «le» diventano <b>entrambi</b> «glie-», scritto attaccato al diretto: «glielo dico» vale sia per lui sia per lei, decide il contesto. Nei tempi composti il participio si accorda con il <b>diretto</b>, mai con l'indiretto: «Me li ha portat<i>i</i>». <br><br><b>L'apostrofo.</b> Si apostrofano solo le forme con <i>lo</i> e <i>la</i> (<i>me lo, te la, glielo, gliela, ce lo…</i>). Davanti alle forme di <i>avere</i> che cominciano con vocale o <i>h</i> (<i>ho, hai, ha, abbiamo, avete, hanno</i>) l'apostrofo si mette praticamente sempre: «me <b>l'</b>ho detto», «te <b>l'</b>ha data», «<b>gliel'</b>hanno spedito». Davanti ad altre vocali è facoltativo: «te l'invio» o «te lo invio». Le forme con <i>li</i> e <i>le</i> non si apostrofano mai: «me <b>li</b> ha dati», «<b>gliele</b> ho prese».",
+      "warn": "«gli» e «le» diventano <b>entrambi</b> «glie-», scritto attaccato al diretto: «glielo dico» vale sia per lui sia per lei, decide il contesto. Nei tempi composti il participio si accorda con il <b>diretto</b>, mai con l'indiretto: «Me li ha portat<i>i</i>». <br><br><b>L'apostrofo.</b> Si apostrofano solo le forme con <i>lo</i> e <i>la</i> (<i>me lo, te la, glielo, gliela, ce lo…</i>). Davanti alle forme di <i>avere</i> che cominciano con vocale o <i>h</i> (<i>ho, hai, ha, abbiamo, avete, hanno</i>) l'apostrofo si mette praticamente sempre: «me <b>l'</b>hai detto», «te <b>l'</b>ha data», «<b>gliel'</b>hanno spedito». Davanti ad altre vocali è facoltativo: «te l'invio» o «te lo invio». Le forme con <i>li</i> e <i>le</i> non si apostrofano mai: «me <b>li</b> ha dati», «<b>gliele</b> ho prese».",
       "errors": [
         {
           "wrong": "Le lo do.",
