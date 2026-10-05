@@ -2345,7 +2345,7 @@
             "Non la ho risposto.",
             "Le ho telefonata, ma non ha risposto.",
             "Domani lo scrivo una mail.",
-            "Paolo è triste: gli voglio aiutare.",
+            "Paolo è triste: lo telefono stasera.",
             "A me mi piace il cioccolato."
           ],
           "key": [
@@ -2353,7 +2353,7 @@
             "<b>Non le ho risposto.</b>",
             "<b>telefonato</b>",
             "<b>gli scrivo</b>",
-            "<b>lo voglio aiutare</b> (o <b>voglio aiutarlo</b>)",
+            "<b>gli telefono stasera</b> (o <b>voglio aiutarlo</b>)",
             "<b>A me piace</b> (o <b>Mi piace</b>): nel parlato si sente, ma nello scritto è un errore"
           ]
         },
