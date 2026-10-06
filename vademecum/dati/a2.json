@@ -1,5 +1,5 @@
 {
-  "versione": "1.5",
+  "versione": "1.6",
   "livello": "A2",
   "schede": [
     {
@@ -1934,10 +1934,11 @@
             ],
             [
               "loro",
-              "li (maschile o misto) / le (femminile)",
+              "li (uomini, cose maschili o gruppo misto) / le (solo donne o cose femminili)",
               "gli"
             ]
-          ]
+          ],
+          "after": "Marco e Anna → <i>li</i> conosco; Anna e Marta → <i>le</i> conosco; ai ragazzi o alle ragazze → <i>gli</i> telefono."
         },
         {
           "before": "<b>La differenza fondamentale.</b>",
@@ -1961,7 +1962,7 @@
           ]
         },
         {
-          "before": "<b>Verbi frequenti.</b> Conviene impararli con «qualcuno» o «a qualcuno»: alcuni sono diversi da altre lingue.",
+          "before": "<b>Verbi frequenti.</b> È il verbo a decidere se il pronome è diretto o indiretto: si dice <i>aiutare qualcuno</i> → «<b>lo</b> aiuto», ma <i>telefonare a qualcuno</i> → «<b>gli</b> telefono».",
           "plain": true,
           "headers": [
             "verbo",
