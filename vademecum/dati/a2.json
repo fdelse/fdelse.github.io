@@ -1,5 +1,5 @@
 {
-  "versione": "1.4",
+  "versione": "1.5",
   "livello": "A2",
   "schede": [
     {
@@ -1885,189 +1885,232 @@
     {
       "lvl": "a2",
       "cat": "Pronomi",
-      "title": "I pronomi diretti",
-      "def": "Sostituiscono la persona o la cosa che riceve direttamente l'azione, quella che risponde alla domanda «chi?» o «che cosa?» dopo il verbo, per non ripeterla: «Conosci Maria? — Sì, <i>la</i> conosco» (<i>la</i> = Maria).",
-      "form": "Le forme sono <b>mi, ti, lo, la, ci, vi, li, le</b>; per una cosa o una persona maschile si usa <i>lo/li</i>, femminile <i>la/le</i>. Di solito vanno <b>prima del verbo</b> coniugato: «<i>lo</i> vedo», «<i>ti</i> aspetto». Si attaccano invece alla fine dell'infinito, dell'imperativo (tu, noi, voi) e di <i>ecco</i>: «voglio veder<i>lo</i>», «chiama<i>la</i>!», «ecco<i>li</i>». Con <i>dovere, potere, volere</i> possono stare prima o dopo: «<i>lo</i> devo fare» = «devo far<i>lo</i>». <i>Lo</i> e <i>la</i> davanti alle forme di <i>avere</i> si apostrofano praticamente sempre («<i>l'</i>ho visto», «<i>l'</i>hai chiamata?»); davanti alle altre parole che cominciano con vocale l'apostrofo è frequente ma non obbligatorio («<i>l'</i>aspetto» o «<i>lo</i> aspetto»). <i>Li</i> e <i>le</i> non si apostrofano mai («<i>li</i> ho visti», «<i>le</i> ho comprate»).",
+      "title": "I pronomi diretti e indiretti",
+      "def": "I <b>pronomi diretti e indiretti</b> servono a sostituire un nome già detto, per non ripeterlo: «Conosci Marco? — Sì, <i>lo</i> conosco», «Telefoni a Giulia? — Sì, <i>le</i> telefono». Per scegliere tra diretto e indiretto si guarda il <b>verbo</b> e la domanda a cui risponde la parola che il pronome sostituisce: <b>chi? / che cosa?</b> → diretto; <b>a chi?</b> → indiretto.",
+      "form": "Il pronome va normalmente <b>prima del verbo coniugato</b>: «<i>lo</i> vedo», «<i>la</i> conosco», «<i>gli</i> telefono», «<i>le</i> scrivo». Con un <b>infinito</b> si attacca alla fine del verbo, che perde la <i>-e</i>: «voglio veder<b>lo</b>», «voglio telefonar<b>gli</b>». Con <b>dovere, potere, volere</b> può stare anche prima: «<i>lo</i> voglio vedere», «<i>gli</i> voglio telefonare». Si attacca anche all'<b>imperativo</b> (tu, noi, voi) e a <b>ecco</b>: «chiama<b>la</b>!», «scrivi<b>gli</b>!», «ecco<b>li</b>».<ul class='sch'><li><b>Passato prossimo con i diretti</b>: con <i>lo, la, li, le</i> prima del verbo il participio si accorda con il pronome: «l'ho vist<b>o</b>» (Marco), «l'ho vist<b>a</b>» (Giulia), «li ho vist<b>i</b>», «le ho vist<b>e</b>»</li><li><b>Passato prossimo con gli indiretti</b>: il participio <b>non</b> si accorda: «<i>le</i> ho telefonat<b>o</b>», non «le ho telefonata»; «<i>gli</i> ho scritto»</li><li><b>L'apostrofo</b>: <i>lo</i> e <i>la</i> davanti alle forme di <i>avere</i> si apostrofano praticamente sempre («<i>l'</i>ho visto», «<i>l'</i>hai chiamata?»); davanti ad altre vocali è facoltativo («l'aspetto» o «lo aspetto»). <i>Li</i>, <i>le</i> e <i>gli</i> non si apostrofano mai («li ho visti», «gli ho scritto»)</li></ul>",
       "tables": [
         {
-          "before": "<b>Le forme.</b>",
+          "before": "<b>Le forme.</b> <i>Mi, ti, ci, vi</i> sono uguali nei due gruppi; cambia solo la terza persona.",
           "headers": [
-            "chi / che cosa",
-            "pronome",
-            "forma accentata"
+            "persona",
+            "diretto (chi? che cosa?)",
+            "indiretto (a chi?)"
           ],
           "rows": [
             [
-              "me",
+              "io",
               "mi",
-              "me"
+              "mi"
             ],
             [
-              "te",
+              "tu",
               "ti",
-              "te"
+              "ti"
             ],
             [
-              "lui, una cosa maschile",
+              "lui",
               "lo",
-              "lui"
+              "gli"
             ],
             [
-              "lei, una cosa femminile",
+              "lei",
               "la",
-              "lei"
+              "le"
             ],
             [
               "Lei (cortesia)",
               "La",
-              "Lei"
+              "Le"
             ],
             [
               "noi",
               "ci",
-              "noi"
+              "ci"
             ],
             [
               "voi",
               "vi",
-              "voi"
+              "vi"
             ],
             [
-              "loro, cose maschili o miste",
-              "li",
-              "loro"
+              "loro",
+              "li (maschile o misto) / le (femminile)",
+              "gli"
+            ]
+          ]
+        },
+        {
+          "before": "<b>La differenza fondamentale.</b>",
+          "plain": true,
+          "headers": [
+            "tipo",
+            "domanda",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "diretto",
+              "chi? / che cosa?",
+              "Vedo Marco → <b>Lo</b> vedo. / Compro il libro → <b>Lo</b> compro."
             ],
             [
-              "loro, cose femminili",
-              "le",
-              "loro"
+              "indiretto",
+              "a chi?",
+              "Telefono a Marco → <b>Gli</b> telefono. / Scrivo a Giulia → <b>Le</b> scrivo."
+            ]
+          ]
+        },
+        {
+          "before": "<b>Verbi frequenti.</b> Conviene impararli con «qualcuno» o «a qualcuno»: alcuni sono diversi da altre lingue.",
+          "plain": true,
+          "headers": [
+            "verbo",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "con il diretto: <b>vedere, conoscere, aspettare, aiutare, chiamare, ascoltare, ringraziare</b> qualcuno",
+              "Lo vedo. / La conosco. / Lo aspetto. / La aiuto. / Lo chiamo. / La ascolto. / La ringrazio."
+            ],
+            [
+              "con l'indiretto: <b>telefonare, scrivere, rispondere, parlare</b> a qualcuno",
+              "Gli telefono. / Le scrivo. / Gli rispondo. / Le parlo."
+            ],
+            [
+              "con l'indiretto: <b>dire, dare, regalare, chiedere, spiegare</b> qualcosa a qualcuno",
+              "Gli dico la verità. / Le do il libro. / Gli regalo un libro."
             ]
           ],
-          "after": "Le forme accentate (<i>me, te, lui, lei…</i>) si usano dopo il verbo per sottolineare o fare un contrasto («cercano <i>te</i>, non me») e dopo le preposizioni («vengo con <i>te</i>»)."
+          "after": "Con <i>dire, dare, regalare…</i> la cosa è diretta e la persona indiretta: «do <i>il libro</i> <b>a Paolo</b>» → «<b>gli</b> do il libro». Se si sostituiscono tutte e due insieme si usano i pronomi combinati (<i>glielo do</i>: vedi I pronomi combinati)."
         }
       ],
       "uses": [
         {
-          "label": "per non ripetere una persona o una cosa già nominata",
-          "ex": "Conosci Maria? — Sì, la conosco. / Compri il pane? — Sì, lo compro."
+          "label": "diretto: sostituisce una persona o una cosa che risponde a «chi?» o «che cosa?», senza a davanti",
+          "ex": "Vedo Marco → Lo vedo. / Conosco Giulia → La conosco. / Conosco Marco e Paolo → Li conosco. / Conosco Anna e Marta → Le conosco."
         },
         {
-          "label": "prima del verbo coniugato",
-          "ex": "Ti aspetto davanti al cinema. / Li vedo domani."
+          "label": "indiretto: sostituisce una persona introdotta da a, che risponde a «a chi?»",
+          "ex": "Telefono a Marco → Gli telefono. / Scrivo a Giulia → Le scrivo. / Do un libro a Paolo → Gli do un libro."
         },
         {
-          "label": "attaccati all'infinito, all'imperativo e a ecco",
-          "ex": "Voglio vederlo. / Chiamala! / Dove sono le chiavi? — Eccole."
+          "label": "mi, ti, ci, vi possono essere diretti o indiretti: la forma è uguale, decide il verbo",
+          "ex": "Mi vede (vede me: diretto). / Mi telefona (telefona a me: indiretto). / Ti conosco (diretto). / Ti scrivo (indiretto)."
         },
         {
-          "label": "con dovere, potere, volere: prima del modale o attaccati all'infinito",
-          "ex": "La posso aiutare? = Posso aiutarla?"
+          "label": "gli si usa comunemente anche per «a loro»; loro, dopo il verbo, si usa in un registro più formale",
+          "ex": "Parlo ai ragazzi → Gli parlo. / Scrivo ai miei amici → Gli scrivo. / Ho detto loro la verità (formale)."
         },
         {
-          "label": "lo può sostituire una frase intera: lo so, lo spero, lo credo",
+          "label": "le forme toniche (me, te, lui, lei, noi, voi, loro) si usano dopo una preposizione o per mettere in evidenza una persona",
+          "ex": "Vieni con me? / Questo regalo è per te. / Ho parlato con lui. / Ha telefonato a me, non a lui. / Ho dato il libro a lei, non a Marco."
+        },
+        {
+          "label": "lo può sostituire una frase intera: lo so, lo spero, lo credo, lo dico",
           "ex": "Domani piove. — Lo so. / Arriva in tempo? — Lo spero."
         },
         {
-          "label": "al passato prossimo lo, la, li, le fanno accordare il participio",
-          "ex": "Hai visto Anna? — Sì, l'ho vista. / I film? Li ho visti tutti."
-        },
-        {
-          "label": "le forme accentate per sottolineare o contrapporre",
-          "ex": "Cercano te, non me. / Ho visto lui, ma non lei."
+          "label": "con i verbi costruiti come piacere si usa l'indiretto: piacere, sembrare, mancare, servire, interessare",
+          "ex": "Gli piace il calcio. / Le sembra giusto? / Ti manco? / Mi serve una penna."
         }
       ],
-      "warn": "<b>Diretto o indiretto?</b> I pronomi diretti rispondono a «chi?» o «che cosa?» senza preposizione: «<i>la</i> vedo» (vedo lei). Quando il verbo vuole <i>a</i> si usano gli indiretti: «<i>le</i> telefono» (telefono a lei), «<i>gli</i> scrivo» (vedi I pronomi indiretti). Alcuni verbi vogliono il diretto anche se in altre lingue no: «<i>l'</i>aspetto», «<i>l'</i>ascolto», «<i>li</i> cerco», «<i>La</i> ringrazio».",
+      "warn": "<b>Regola pratica.</b> Verbo + <i>qualcuno / qualcosa</i> → pronome <b>diretto</b>: «aiuto Marco» → «<i>lo</i> aiuto»; «ascolto Giulia» → «<i>la</i> ascolto». Verbo + <i>a qualcuno</i> → pronome <b>indiretto</b>: «telefono a Marco» → «<i>gli</i> telefono»; «parlo a Giulia» → «<i>le</i> parlo». Nel dubbio si rimette il nome nella frase e si guarda se ci vuole <i>a</i>. <br><br><b>Attenzione a «le».</b> Ha due funzioni: «<i>le</i> vedo» = vedo Anna e Marta (diretto, femminile plurale); «<i>le</i> telefono» = telefono a Giulia (indiretto, femminile singolare). È il verbo che permette di capire quale delle due.",
       "errors": [
         {
-          "wrong": "Lo ho visto.",
-          "right": "L'ho visto.",
-          "why": "<i>Lo</i> e <i>la</i> davanti a <i>h</i> o a vocale prendono l'apostrofo."
+          "wrong": "La telefono stasera.",
+          "right": "Le telefono stasera.",
+          "why": "Si telefona <i>a</i> qualcuno: indiretto."
+        },
+        {
+          "wrong": "Gli aiuto.",
+          "right": "Lo aiuto.",
+          "why": "Si aiuta qualcuno, senza <i>a</i>: diretto."
+        },
+        {
+          "wrong": "Ho visto Maria e gli ho detto tutto.",
+          "right": "Ho visto Maria e le ho detto tutto.",
+          "why": "Per una donna l'indiretto è <i>le</i>; <i>gli</i> è per un uomo o per «a loro»."
+        },
+        {
+          "wrong": "Le ho telefonata ieri.",
+          "right": "Le ho telefonato ieri.",
+          "why": "Con i pronomi indiretti il participio non si accorda."
         },
         {
           "wrong": "I film? Li ho visto.",
           "right": "I film? Li ho visti.",
-          "why": "Con <i>li</i> e <i>le</i> prima del verbo il participio si accorda."
+          "why": "Con <i>lo, la, li, le</i> prima del verbo il participio si accorda."
         },
         {
-          "wrong": "Le ragazze? Le ho visto.",
-          "right": "Le ragazze? Le ho viste.",
-          "why": "Stessa regola: <i>le</i> → participio al femminile plurale."
+          "wrong": "Lo ho visto.",
+          "right": "L'ho visto.",
+          "why": "<i>Lo</i> e <i>la</i> davanti alle forme di <i>avere</i> si apostrofano."
         },
         {
           "wrong": "Voglio lo vedere.",
           "right": "Lo voglio vedere. / Voglio vederlo.",
-          "why": "Il pronome va prima del modale o attaccato all'infinito, mai in mezzo."
-        },
-        {
-          "wrong": "Gli vedo domani.",
-          "right": "Lo vedo domani.",
-          "why": "<i>Vedere</i> vuole il pronome diretto; <i>gli</i> è indiretto (= a lui)."
-        },
-        {
-          "wrong": "Chiama la!",
-          "right": "Chiamala!",
-          "why": "Con l'imperativo per tu il pronome si attacca al verbo."
+          "why": "Il pronome va prima di <i>volere</i> o attaccato all'infinito, mai in mezzo."
         }
       ],
       "exercises": [
         {
           "type": "Completamento",
-          "instr": "Completa con lo, la, li o le.",
+          "instr": "Completa con il pronome diretto o indiretto giusto.",
           "items": [
             "Conosci Paolo? — Sì, _____ conosco bene.",
+            "Hai parlato con Giulia? — Sì, _____ ho telefonato ieri.",
             "Dove sono le chiavi? — Non _____ trovo.",
-            "Mangi la pasta? — Sì, _____ mangio.",
+            "Che cosa regali a tuo fratello? — _____ regalo un libro.",
             "Inviti i tuoi amici? — Sì, _____ invito tutti.",
-            "Chi prende il pane? — _____ prendo io.",
-            "Leggi i giornali? — No, non _____ leggo mai."
+            "Hai risposto ai clienti? — Sì, _____ ho risposto stamattina."
+          ],
+          "key": [
+            "<b>lo</b>",
+            "<b>le</b>",
+            "<b>le</b>",
+            "<b>Gli</b>",
+            "<b>li</b>",
+            "<b>gli</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Diretto o indiretto? Scegli la forma corretta.",
+          "items": [
+            "Aspetti Luca? — Sì, (lo / gli) aspetto.",
+            "Telefoni a Maria? — Sì, (la / le) telefono stasera.",
+            "Aiuti tua madre? — Sì, (la / le) aiuto sempre.",
+            "Scrivi a Marco? — Sì, (lo / gli) scrivo domani.",
+            "Ho visto Anna e (gli / le) ho dato le chiavi.",
+            "Signora, (La / Le) ringrazio per l'aiuto."
           ],
           "key": [
             "<b>lo</b>",
             "<b>le</b>",
             "<b>la</b>",
-            "<b>li</b>",
-            "<b>Lo</b>",
-            "<b>li</b>"
+            "<b>gli</b>",
+            "<b>le</b>",
+            "<b>La</b>"
           ]
         },
         {
           "type": "Trasformazione",
-          "instr": "Rispondi usando il pronome al posto delle parole in grassetto.",
+          "instr": "Rispondi al passato prossimo usando il pronome al posto delle parole dopo il verbo.",
           "items": [
-            "Hai visto <b>il film</b>? — Sì, …",
-            "Hai comprato <b>le mele</b>? — Sì, …",
-            "Hai chiamato <b>Anna</b>? — Sì, …",
-            "Hai invitato <b>i colleghi</b>? — No, …",
-            "Puoi aiutare <b>me</b>? — Sì, …",
-            "Vuoi vedere <b>la casa</b>? — Sì, …"
+            "Hai visto il film? — Sì, …",
+            "Hai chiamato Anna? — Sì, …",
+            "Hai comprato le mele? — Sì, …",
+            "Hai telefonato a Giulia? — Sì, …",
+            "Hai scritto ai tuoi genitori? — No, …",
+            "Hai invitato i colleghi? — No, …"
           ],
           "key": [
             "<b>Sì, l'ho visto.</b>",
-            "<b>Sì, le ho comprate.</b>",
             "<b>Sì, l'ho chiamata.</b>",
-            "<b>No, non li ho invitati.</b>",
-            "<b>Sì, posso aiutarti</b> (o <b>ti posso aiutare</b>).",
-            "<b>Sì, voglio vederla</b> (o <b>la voglio vedere</b>)."
-          ]
-        },
-        {
-          "type": "Scelta",
-          "instr": "Scegli la forma corretta.",
-          "items": [
-            "(L'ho / Lo ho) incontrato ieri.",
-            "Dov'è Marco? — (Eccolo / Ecco lo)!",
-            "Le ragazze? Non (le ho viste / le ho visto).",
-            "Domani piove. — Sì, (lo so / so).",
-            "Telefoni a Maria? — Sì, (la / le) telefono stasera.",
-            "Aspetti Luca? — Sì, (lo / gli) aspetto."
-          ],
-          "key": [
-            "<b>L'ho</b>",
-            "<b>Eccolo</b>",
-            "<b>le ho viste</b>",
-            "<b>lo so</b>",
-            "<b>le</b>",
-            "<b>lo</b>"
+            "<b>Sì, le ho comprate.</b>",
+            "<b>Sì, le ho telefonato.</b>",
+            "<b>No, non gli ho scritto.</b>",
+            "<b>No, non li ho invitati.</b>"
           ]
         }
       ]

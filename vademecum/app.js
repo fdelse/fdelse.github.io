@@ -1,9 +1,9 @@
-/* Vademecum di grammatica italiana — app.js — versione 3.4
+/* Vademecum di grammatica italiana — app.js — versione 3.5
    Le schede stanno in dati/<livello>.json.
    Quando modifichi un file di dati, aggiorna la sua versione qui sotto in DATI
    (e il campo "versione" nel file): serve a far riscaricare il file al browser. */
-const VERSIONE = "3.4";
-const DATI = {a:"1.4", a2:"1.4", b1:"1.9", b2:"1.4", c1:"1.3"};
+const VERSIONE = "3.5";
+const DATI = {a:"1.4", a2:"1.5", b1:"2.0", b2:"1.4", c1:"1.3"};
 
 /* ===== Livelli ===== */
 const LEVELS = [
