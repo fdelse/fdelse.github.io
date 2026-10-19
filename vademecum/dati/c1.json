@@ -1,5 +1,5 @@
 {
-  "versione": "1.3",
+  "versione": "1.4",
   "livello": "C1",
   "schede": [
     {
@@ -754,26 +754,42 @@
       "lvl": "c1",
       "cat": "Sintassi",
       "title": "I connettivi",
-      "def": "Gli <b>snodi logici</b> che legano le frasi di un testo e ne mostrano la struttura: aggiunta, opposizione, causa, conseguenza, conclusione. Ogni funzione ha connettivi di diversa difficoltà e formalità: la tabella li mette in fila dai più semplici ai più formali, così si vede quale alternativa proporre a seconda del livello.",
+      "def": "Gli <b>snodi logici</b> che legano le frasi di un testo e ne mostrano la struttura: aggiunta, opposizione, concessione (un ostacolo che non cambia il risultato), causa, conseguenza, conclusione, opinione. Ogni funzione ha connettivi di diversa difficoltà e formalità: la tabella li mette in fila dai più semplici ai più formali, così si vede quale alternativa proporre a seconda del livello.",
       "uses": [
         {
-          "label": "stessa idea, connettivo diverso secondo il livello",
-          "ex": "Piove, così resto a casa. → Piove, quindi resto a casa. → Piove, pertanto resto a casa."
+          "label": "stessa funzione, connettivo diverso secondo il livello e il registro",
+          "ex": "Piove, <b>così</b> resto a casa. → Piove, <b>quindi</b> resto a casa. → Sono previste forti piogge; <b>pertanto</b> la cerimonia si terrà al chiuso."
         },
         {
-          "label": "i connettivi di causa cambiano la posizione: perché va dopo, siccome e poiché di solito prima",
-          "ex": "Resto a casa perché piove. / Siccome piove, resto a casa."
+          "label": "aggiungere: un'informazione in più, nella stessa direzione della prima",
+          "ex": "Il corso è utile <b>e</b> divertente. / Il corso è utile; è <b>anche</b> divertente. / Il corso è utile; <b>in più</b> costa poco. / L'appartamento è luminoso; <b>inoltre</b> è vicino alla metro. / Il contratto scade a giugno; <b>peraltro</b> non prevede il rinnovo automatico. / Il fornitore ha consegnato in ritardo; <b>oltre a ciò</b>, parte della merce era danneggiata."
         },
         {
-          "label": "concedere: benché, sebbene e per quanto vogliono il congiuntivo; «anche se» invece vuole l'indicativo",
-          "ex": "Anche se piove, esco. / Benché piova, esco."
+          "label": "opporre: la seconda informazione va contro la prima o la limita; «d'altra parte» mette a confronto due aspetti della stessa cosa, spesso dopo «da una parte»",
+          "ex": "La casa è bella <b>ma</b> cara. / Mi piace il mare, <b>però</b> non so nuotare. / Il progetto è interessante; <b>tuttavia</b> i costi sono alti. / I risultati del trimestre sono modesti; <b>nondimeno</b> l'azienda conferma gli investimenti previsti. / Da una parte il lavoro da remoto fa risparmiare tempo; <b>d'altra parte</b> rende più difficile la collaborazione."
         },
         {
-          "label": "i marcatori di opinione segnalano che quella che segue è una valutazione personale",
-          "ex": "Secondo me è troppo caro. / A mio parere la proposta va rivista. / A mio avviso si tratta di un errore."
+          "label": "concedere: c'è un ostacolo, ma il fatto succede lo stesso. «Anche se» vuole l'indicativo; benché, sebbene, per quanto e malgrado vogliono il congiuntivo (malgrado si usa anche con un nome: malgrado la pioggia)",
+          "ex": "<b>Anche se</b> piove, esco. / <b>Benché</b> piova, esco. / <b>Sebbene</b> sia stanco, finisco il lavoro. / <b>Per quanto</b> l'offerta sia vantaggiosa, il consiglio ha deciso di rifiutarla. / <b>Malgrado</b> il mercato sia in calo, il fatturato è cresciuto."
+        },
+        {
+          "label": "causa: la posizione cambia. «Siccome» va all'inizio della frase; «perché» e «in quanto» vanno dopo; «dato che» e «poiché» possono stare prima o dopo",
+          "ex": "Resto a casa <b>perché</b> piove. / <b>Siccome</b> piove, resto a casa. / <b>Dato che</b> sei qui, ti offro un caffè. / Chiediamo il rimborso, <b>poiché</b> la merce è arrivata danneggiata. / La domanda non può essere accettata, <b>in quanto</b> manca la firma del richiedente."
+        },
+        {
+          "label": "conseguenza: la seconda informazione è il risultato della prima",
+          "ex": "Ero stanco, <b>così</b> sono andato a letto presto. / Il treno era in ritardo, <b>quindi</b> ho preso un taxi. / Non ho studiato, <b>perciò</b> non ho passato l'esame. / Il pagamento non è stato effettuato entro i termini; <b>pertanto</b> il contratto si intende risolto. / I costi delle materie prime sono aumentati; <b>di conseguenza</b>, i prezzi verranno adeguati."
+        },
+        {
+          "label": "concludere: chiudono o riassumono un discorso; «insomma» è tipico del parlato",
+          "ex": "Abbiamo avuto qualche problema, ma <b>alla fine</b> è stata una bella vacanza. / Il viaggio è stato lungo e la camera era piccola: <b>insomma</b>, non mi è piaciuto. / <b>In conclusione</b>, il corso mi è stato molto utile. / <b>In definitiva</b>, la proposta presenta più vantaggi che svantaggi. / <b>In sintesi</b>, il progetto ha rispettato tempi e budget."
+        },
+        {
+          "label": "opinione: segnalano che quella che segue è una valutazione personale",
+          "ex": "<b>Secondo me</b> è troppo caro. / <b>A mio parere</b> la proposta va rivista. / <b>A mio avviso</b> si tratta di un errore di valutazione. / <b>Dal mio punto di vista</b>, il piano è realistico ma troppo costoso."
         }
       ],
-      "warn": "<b>Registro:</b> «poiché, pertanto, nondimeno» appartengono allo scritto formale; nel parlato spontaneo suonano artificiosi, dove si preferiscono «siccome, quindi, però». Non sono sinonimi intercambiabili: scegliere la colonna sbagliata è un errore di registro, non di grammatica.",
+      "warn": "<b>Registro:</b> «poiché, pertanto, nondimeno» appartengono allo scritto formale e nel parlato spontaneo suonano artificiosi: lì si preferiscono «siccome, quindi, però». Non sono sinonimi intercambiabili, ma il problema va in una sola direzione: i connettivi semplici come «e, ma, perché» vanno bene anche nello scritto formale, mentre quelli formali nel parlato informale sono un errore di registro, non di grammatica. Fa eccezione «insomma»: sta nella colonna centrale, ma è tipico del parlato, e nello scritto formale si sostituisce con «in conclusione» o «in definitiva».",
       "tables": [
         {
           "caption": "la stessa funzione, dal più semplice al più formale",
