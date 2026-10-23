@@ -1,5 +1,5 @@
 {
-  "versione": "1.4",
+  "versione": "1.5",
   "livello": "A0 · A1",
   "schede": [
     {
@@ -872,6 +872,198 @@
             "<b>i film</b>",
             "<b>i negozi</b>",
             "<b>le dita</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a",
+      "cat": "Nomi",
+      "title": "Nomi solo plurali e solo singolari",
+      "def": "Quasi tutti i nomi hanno un singolare e un plurale. Alcuni però si usano solo al plurale (<i>gli occhiali</i>, <i>le forbici</i>) e altri quasi solo al singolare (<i>il latte</i>, <i>la gente</i>). Altri ancora hanno un numero diverso da quello di altre lingue (<i>i capelli</i>, <i>i soldi</i>). Le regole per formare il plurale sono nella scheda <i>Il plurale dei nomi</i>.",
+      "form": "Si imparano a gruppi. <b>Solo plurale</b>: gli oggetti fatti di due parti uguali e pochi altri nomi; per contarli si usa <b>un paio di</b> (<i>un paio di occhiali</i>, <i>due paia di pantaloni</i>). <b>Quasi solo singolare</b>: le cose che non si contano (<i>il latte</i>, <i>l'acqua</i>, <i>il sale</i>) e alcuni nomi che indicano un insieme (<i>la gente</i>, <i>la frutta</i>): con questi il verbo va al singolare.",
+      "tables": [
+        {
+          "before": "<b>Solo plurale.</b>",
+          "plain": true,
+          "headers": [
+            "gruppo",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "oggetti fatti di due parti uguali",
+              "gli occhiali, le forbici, i pantaloni, le mutande"
+            ],
+            [
+              "altri nomi",
+              "i soldi, le ferie, le nozze, i dintorni"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Quasi solo singolare.</b>",
+          "plain": true,
+          "headers": [
+            "gruppo",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "cose che non si contano",
+              "il latte, l'acqua, il sale, lo zucchero, la fame, la sete"
+            ],
+            [
+              "nomi che indicano un insieme",
+              "la gente (al plurale si dice le persone), la frutta"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Numeri non precisi.</b> Il plurale finisce in <i>-a</i> ed è femminile.",
+          "plain": true,
+          "headers": [
+            "singolare",
+            "plurale",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "il paio (due)",
+              "le paia",
+              "un paio di scarpe, due paia di scarpe"
+            ],
+            [
+              "il centinaio (circa cento)",
+              "le centinaia",
+              "un centinaio di persone, centinaia di persone"
+            ],
+            [
+              "il migliaio (circa mille)",
+              "le migliaia",
+              "un migliaio di euro, migliaia di euro"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "per contare i nomi solo plurali si usa un paio di (al plurale due paia, tre paia)",
+          "ex": "Mi serve <b>un paio di</b> forbici. / Ho <b>due paia di</b> occhiali. / Questi <b>pantaloni</b> sono nuovi."
+        },
+        {
+          "label": "la gente è singolare anche se indica molte persone: verbo e aggettivo al singolare; per il plurale si usa le persone",
+          "ex": "La <b>gente</b> è gentile. / C'è molta <b>gente</b>. / Le <b>persone</b> sono gentili."
+        },
+        {
+          "label": "la frutta indica l'insieme e sta al singolare; per un pezzo si dice il nome del frutto",
+          "ex": "Mangio molta <b>frutta</b>. / Vuoi una mela? / La <b>frutta</b> è buona."
+        },
+        {
+          "label": "i soldi e i capelli sono plurali, anche se in altre lingue sono singolari (sp. el dinero, el pelo; ingl. money, hair)",
+          "ex": "Ho pochi <b>soldi</b>. / Ho i <b>capelli</b> lunghi. / I tuoi <b>capelli</b> sono belli."
+        },
+        {
+          "label": "informazione e consiglio si contano: un'informazione, due informazioni (ingl. information, advice)",
+          "ex": "Vorrei un'<b>informazione</b>. / Mi dai dei <b>consigli</b>?"
+        },
+        {
+          "label": "centinaia e migliaia sono femminili plurali",
+          "ex": "Ci sono <b>centinaia</b> di turisti. / Costa <b>migliaia</b> di euro."
+        }
+      ],
+      "warn": "<b>Anche il verbo cambia.</b> Con i nomi solo plurali verbo e aggettivo vanno al plurale: «gli occhiali sono nuovi», «le forbici sono sul tavolo». Con <i>la gente</i> e <i>la frutta</i>, invece, al singolare: «la gente è contenta», «la frutta è buona».",
+      "errors": [
+        {
+          "wrong": "La gente sono simpatici.",
+          "right": "La gente è simpatica.",
+          "why": "<i>Gente</i> è femminile singolare: verbo e aggettivo al singolare."
+        },
+        {
+          "wrong": "Mangio molte frutte.",
+          "right": "Mangio molta frutta.",
+          "why": "<i>Frutta</i> indica l'insieme e si usa al singolare."
+        },
+        {
+          "wrong": "Il mio occhiale è rotto.",
+          "right": "I miei occhiali sono rotti.",
+          "why": "Nella lingua di tutti i giorni <i>occhiali</i> si usa al plurale."
+        },
+        {
+          "wrong": "Non ho soldo.",
+          "right": "Non ho soldi.",
+          "why": "Per il denaro si usa il plurale <i>soldi</i>."
+        },
+        {
+          "wrong": "Vorrei un informazioni.",
+          "right": "Vorrei un'informazione. / Vorrei delle informazioni.",
+          "why": "<i>Informazione</i> si conta: singolare con <i>un'</i>, plurale con <i>delle</i>."
+        },
+        {
+          "wrong": "Ci sono centinai di persone.",
+          "right": "Ci sono centinaia di persone.",
+          "why": "Il plurale di <i>centinaio</i> è <i>centinaia</i>, femminile."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Scelta",
+          "instr": "Scegli la forma corretta.",
+          "items": [
+            "La gente (è / sono) in piazza.",
+            "I miei occhiali (è / sono) nuovi.",
+            "Mangio molta (frutta / frutte).",
+            "Non ho (soldo / soldi).",
+            "Ho i (capello / capelli) corti.",
+            "Ci sono (centinaia / centinai) di turisti."
+          ],
+          "key": [
+            "<b>è</b>",
+            "<b>sono</b>",
+            "<b>frutta</b>",
+            "<b>soldi</b>",
+            "<b>capelli</b>",
+            "<b>centinaia</b>"
+          ]
+        },
+        {
+          "type": "Completamento",
+          "instr": "Completa con un paio di oppure paia di.",
+          "items": [
+            "Mi serve … forbici.",
+            "Compro due … scarpe.",
+            "Vorrei … occhiali da sole.",
+            "Nell'armadio ho tre … pantaloni.",
+            "Mi presti … guanti?",
+            "In valigia metto quattro … calzini."
+          ],
+          "key": [
+            "<b>un paio di</b>",
+            "<b>paia di</b>",
+            "<b>un paio di</b>",
+            "<b>paia di</b>",
+            "<b>un paio di</b>",
+            "<b>paia di</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Sostituisci la gente con le persone e cambia il verbo e l'aggettivo.",
+          "items": [
+            "La gente è contenta.",
+            "La gente parla italiano.",
+            "C'è molta gente.",
+            "La gente è stanca.",
+            "La gente aspetta l'autobus.",
+            "La gente mangia la pizza."
+          ],
+          "key": [
+            "<b>Le persone sono contente.</b>",
+            "<b>Le persone parlano italiano.</b>",
+            "<b>Ci sono molte persone.</b>",
+            "<b>Le persone sono stanche.</b>",
+            "<b>Le persone aspettano l'autobus.</b>",
+            "<b>Le persone mangiano la pizza.</b>"
           ]
         }
       ]

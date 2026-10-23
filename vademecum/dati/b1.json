@@ -1,5 +1,5 @@
 {
-  "versione": "2.0",
+  "versione": "2.2",
   "livello": "B1",
   "schede": [
     {
@@ -971,6 +971,222 @@
             "Esempio: <b>degli amici di Marco</b>.",
             "Esempio: <b>qualche regalo</b>.",
             "Esempio: <b>un po' di zucchero</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b1",
+      "cat": "Nomi",
+      "title": "Doppi plurali e nomi composti",
+      "def": "Due casi in cui il plurale non segue le regole di base: i nomi con due plurali di significato diverso (<i>le braccia / i bracci</i>) e i nomi composti, fatti di due parole (<i>cassaforte</i>, <i>capolavoro</i>). In più, l'accordo del verbo con i nomi che indicano un gruppo. Le regole di base sono nella scheda <i>Il plurale dei nomi</i>; i nomi che si usano solo al plurale o quasi solo al singolare (<i>occhiali</i>, <i>gente</i>) in <i>Nomi solo plurali e solo singolari</i> (tutte e due A0 · A1).",
+      "form": "Si parte dal singolare e si guarda in quale gruppo rientra il nome. <b>Doppi plurali</b>: alcuni nomi maschili in <i>-o</i> hanno due plurali con significato diverso. Il plurale in <b>-a</b> è femminile e indica il significato di base (il corpo, la cosa intera); quello in <b>-i</b> è maschile e indica gli altri significati o le cose prese una per una. I più comuni: braccio, muro, osso, ciglio, fondamento, grido, corno, lenzuolo, membro. <b>Nomi composti</b>: si guarda di quali parole è fatto il nome. <b>Nomi che indicano un gruppo</b> (<i>la famiglia</i>, <i>la squadra</i>): il verbo va al singolare.",
+      "tables": [
+        {
+          "before": "<b>Doppi plurali.</b> Due plurali, due significati.",
+          "after": "Hanno un solo plurale, femminile in <i>-a</i>, anche <i>l'uovo → le uova</i>, <i>il dito → le dita</i> e <i>il paio → le paia</i> (vedi <i>Il plurale dei nomi</i>), <i>il centinaio → le centinaia</i> e <i>il migliaio → le migliaia</i> (vedi <i>Nomi solo plurali e solo singolari</i>).",
+          "plain": true,
+          "headers": [
+            "singolare",
+            "plurale in -a (femminile)",
+            "plurale in -i (maschile)"
+          ],
+          "rows": [
+            [
+              "il braccio",
+              "le braccia del corpo",
+              "i bracci di una lampada, di un fiume"
+            ],
+            [
+              "il muro",
+              "le mura di una città, di un castello",
+              "i muri di una casa"
+            ],
+            [
+              "l'osso",
+              "le ossa dello scheletro",
+              "gli ossi presi uno per uno (gli ossi del pollo)"
+            ],
+            [
+              "il ciglio",
+              "le ciglia degli occhi",
+              "i cigli della strada"
+            ],
+            [
+              "il fondamento",
+              "le fondamenta di un edificio",
+              "i fondamenti di una teoria, di una materia"
+            ],
+            [
+              "il grido",
+              "le grida delle persone",
+              "i gridi degli animali"
+            ],
+            [
+              "il corno",
+              "le corna degli animali",
+              "i corni, strumenti musicali"
+            ],
+            [
+              "il lenzuolo",
+              "le lenzuola, il paio sul letto",
+              "i lenzuoli presi uno per uno"
+            ],
+            [
+              "il membro",
+              "le membra del corpo (lingua scritta)",
+              "i membri di un gruppo"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Nomi composti.</b> Si guarda di quali parole è fatto il nome. Nei casi dubbi si controlla il dizionario: alcuni composti non seguono queste regole.",
+          "plain": true,
+          "headers": [
+            "fatto di",
+            "al plurale",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "nome + nome",
+              "cambia la fine",
+              "l'arcobaleno → gli arcobaleni, il cavolfiore → i cavolfiori, la ferrovia → le ferrovie"
+            ],
+            [
+              "aggettivo + nome",
+              "cambia la fine",
+              "il francobollo → i francobolli, l'altoparlante → gli altoparlanti"
+            ],
+            [
+              "nome + aggettivo",
+              "cambiano tutte e due le parole",
+              "la cassaforte → le casseforti, la terracotta → le terrecotte"
+            ],
+            [
+              "capo- che indica chi comanda",
+              "cambia capo-",
+              "il capostazione → i capistazione, il capoufficio → i capiufficio"
+            ],
+            [
+              "capo- che vuol dire «il principale»",
+              "cambia la fine",
+              "il capolavoro → i capolavori, il capoluogo → i capoluoghi"
+            ],
+            [
+              "verbo + nome maschile singolare",
+              "cambia la fine",
+              "il passaporto → i passaporti, il portafoglio → i portafogli, il grattacielo → i grattacieli"
+            ],
+            [
+              "verbo + nome plurale o femminile",
+              "non cambia",
+              "l'apriscatole → gli apriscatole, il cavatappi → i cavatappi, il portacenere → i portacenere"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "doppi plurali: il plurale in -a per il significato di base (il corpo, la cosa intera), quello in -i per gli altri significati",
+          "ex": "Dopo la palestra mi fanno male le <b>braccia</b>. / La lampada ha tre <b>bracci</b>. / Lucca è circondata dalle <b>mura</b>. / In camera ho dipinto i <b>muri</b> di bianco. / Mi sono rotto due <b>ossa</b> del piede. / Le <b>fondamenta</b> del palazzo sono solide. / Studia i <b>fondamenti</b> della matematica."
+        },
+        {
+          "label": "nomi composti: prima di fare il plurale si guarda di quali parole è fatto il nome",
+          "ex": "Agli Uffizi ci sono molti <b>capolavori</b>. / I <b>capistazione</b> sono in sciopero. / La banca ha due <b>casseforti</b>. / Mi servono dei <b>francobolli</b>. / Avete i <b>passaporti</b>? / Dove sono gli <b>apriscatole</b>?"
+        },
+        {
+          "label": "con i nomi che indicano un gruppo (la famiglia, la squadra, il pubblico) il verbo va al singolare; con la maggior parte di, un gruppo di + plurale sono corretti tutti e due: il singolare guarda alla prima parola, il plurale alle persone",
+          "ex": "La mia <b>famiglia</b> vive a Napoli. / La <b>squadra</b> ha vinto. / La <b>maggior parte</b> degli studenti è arrivata. / La <b>maggior parte</b> degli studenti sono arrivati."
+        }
+      ],
+      "warn": "<b>I plurali in -a sono femminili.</b> Articolo e aggettivo vanno al femminile: «le braccia stanche», «le mura antiche», «le ciglia lunghe», «le lenzuola pulite», «le corna del toro», «le grida dei bambini».",
+      "errors": [
+        {
+          "wrong": "i capostazioni",
+          "right": "i capistazione",
+          "why": "Quando <i>capo</i> indica chi comanda, al plurale cambia <i>capo</i>, non la fine."
+        },
+        {
+          "wrong": "gli apriscatoli",
+          "right": "gli apriscatole",
+          "why": "Verbo + nome plurale (<i>apri + scatole</i>): il nome non cambia."
+        },
+        {
+          "wrong": "Le mura della mia camera sono bianche.",
+          "right": "I muri della mia camera sono bianchi.",
+          "why": "<i>Le mura</i> sono quelle di una città o di un castello; in casa si dice <i>i muri</i>."
+        },
+        {
+          "wrong": "La lampada ha tre braccia.",
+          "right": "La lampada ha tre bracci.",
+          "why": "<i>Le braccia</i> sono quelle del corpo; per una lampada o un fiume si dice <i>i bracci</i>."
+        },
+        {
+          "wrong": "La famiglia di Marco vivono a Roma.",
+          "right": "La famiglia di Marco vive a Roma.",
+          "why": "<i>Famiglia</i> indica un gruppo, ma è singolare: verbo al singolare."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Volgi al plurale l'articolo e il nome.",
+          "items": [
+            "il capolavoro",
+            "la cassaforte",
+            "il capostazione",
+            "l'apriscatole",
+            "il braccio (della lampada)",
+            "il grattacielo"
+          ],
+          "key": [
+            "<b>i capolavori</b>",
+            "<b>le casseforti</b>",
+            "<b>i capistazione</b>",
+            "<b>gli apriscatole</b>",
+            "<b>i bracci</b>",
+            "<b>i grattacieli</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Il pubblico applaudono alla fine del concerto.",
+            "Le casseforte della banca sono chiuse.",
+            "Roma è circondata da muri antichissimi.",
+            "Ha delle ciglie lunghissime.",
+            "La mia squadra hanno vinto la partita.",
+            "Al museo abbiamo visto tanti capilavori."
+          ],
+          "key": [
+            "Il pubblico <b>applaude</b>",
+            "Le <b>casseforti</b>",
+            "da <b>mura antichissime</b>",
+            "delle <b>ciglia</b> lunghissime",
+            "La mia squadra <b>ha vinto</b> la partita.",
+            "tanti <b>capolavori</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa la frase usando al plurale il nome tra parentesi.",
+          "items": [
+            "Dopo la palestra mi fanno male … (il braccio)",
+            "In camera ho appeso dei quadri su … (il muro)",
+            "Nella radiografia si vedono bene … (l'osso)",
+            "In questa città ci sono molti … (il grattacielo)",
+            "Al museo abbiamo visto … (il capolavoro)",
+            "Per spedire le cartoline mi servono … (il francobollo)"
+          ],
+          "key": [
+            "Esempio: <b>le braccia e le gambe</b>.",
+            "Esempio: <b>tutti i muri</b>.",
+            "Esempio: <b>le ossa della mano</b>.",
+            "Esempio: <b>grattacieli moderni</b>.",
+            "Esempio: <b>alcuni capolavori del Rinascimento</b>.",
+            "Esempio: <b>tre francobolli</b>."
           ]
         }
       ]

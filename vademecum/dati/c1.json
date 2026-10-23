@@ -1,5 +1,5 @@
 {
-  "versione": "1.4",
+  "versione": "1.5",
   "livello": "C1",
   "schede": [
     {
@@ -566,7 +566,7 @@
       "lvl": "c1",
       "cat": "Verbi",
       "title": "Il periodo ipotetico misto",
-      "def": "Nel periodo ipotetico «normale» condizione e conseguenza stanno sullo stesso piano di tempo. Nel periodo ipotetico <b>misto</b> stanno su piani diversi: di solito una condizione non realizzata nel <b>passato</b> che ha effetti sul <b>presente</b> («se <i>avessi studiato</i> medicina, ora <i>sarei</i> medico»), oppure una caratteristica presente e permanente che spiega un fatto passato («se tu <i>fossi</i> più attento, non <i>avresti fatto</i> quell'errore»).",
+      "def": "Nel periodo ipotetico «normale», condizione e conseguenza si riferiscono allo stesso piano temporale. Nel periodo ipotetico <b>misto</b> si riferiscono a piani temporali diversi: una condizione non realizzata nel <b>passato</b> che ha conseguenze nel <b>presente</b> («Se <i>avessi studiato</i> medicina, ora <i>sarei</i> medico»), oppure una condizione presente che spiega un fatto passato («Se tu <i>fossi</i> più attento, non <i>avresti fatto</i> quell'errore»). Il periodo ipotetico misto combina gli schemi verbali del secondo e del terzo tipo.",
       "form": "Si scelgono i tempi guardando quando si colloca ciascuna parte. <b>Condizione nel passato</b> → congiuntivo trapassato; <b>condizione presente o permanente</b> → congiuntivo imperfetto. <b>Conseguenza nel presente</b> → condizionale presente; <b>conseguenza nel passato</b> → condizionale passato. Il periodo ipotetico si può costruire anche <b>senza se</b>, con forme più formali o più compatte.",
       "tables": [
         {
