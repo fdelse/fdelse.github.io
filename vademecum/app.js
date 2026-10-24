@@ -1,8 +1,8 @@
-/* Vademecum di grammatica italiana — app.js — versione 4.1
+/* Vademecum di grammatica italiana — app.js — versione 4.2
    Le schede stanno in dati/<livello>.json.
    Quando modifichi un file di dati, aggiorna la sua versione qui sotto in DATI
    (e il campo "versione" nel file): serve a far riscaricare il file al browser. */
-const VERSIONE = "4.1";
+const VERSIONE = "4.2";
 const DATI = {a:"1.6", a2:"1.7", b1:"2.2", b2:"1.4", c1:"1.5"};
 
 /* ===== Livelli ===== */
@@ -90,7 +90,7 @@ function cardHTML(e, lvlId, idx){
         + "<p class='ex-type'>"+x.type+"</p>"
         + "<p class='ex-instr'>"+x.instr+"</p>"
         + "<ol class='ex-items'>"+x.items.map(it=>"<li>"+it+"</li>").join("")+"</ol>"
-        + "<details class='ex-key'><summary>Soluzioni (docente)</summary><ol>"
+        + "<details class='ex-key'><summary>Soluzioni</summary><ol>"
         + x.key.map(k=>"<li>"+k+"</li>").join("")+"</ol></details>"
         + "</div>";
     });
