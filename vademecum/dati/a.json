@@ -1,5 +1,5 @@
 {
-  "versione": "1.5",
+  "versione": "1.6",
   "livello": "A0 · A1",
   "schede": [
     {
@@ -3061,6 +3061,259 @@
             "<b>È</b> vero",
             "<b>poiché</b>",
             "<b>tè</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a",
+      "cat": "Ortografia",
+      "title": "L'apostrofo",
+      "def": "L'apostrofo (<b>'</b>) prende il posto di una vocale che cade. Quasi sempre succede quando una parola finisce con una vocale e la parola dopo comincia con una vocale: <i>lo amico → l'amico</i>, <i>una amica → un'amica</i>, <i>ci è → c'è</i>. In alcuni casi l'apostrofo è obbligatorio, in altri si può scegliere, in altri ancora è sbagliato.",
+      "form": "Per decidere ci si fanno due domande. <b>1. La parola dopo comincia con una vocale?</b> (anche con una <i>h</i> che non si pronuncia: <i>l'hotel</i>, <i>l'ho</i>). Se comincia con una consonante l'apostrofo non si mette, tranne nelle poche parole accorciate come <i>po'</i> e <i>va'</i>. <b>2. La forma corta esiste anche davanti a una consonante?</b> Se sì, è una parola intera e non vuole l'apostrofo: <i>un libro → un amico</i>, <i>nessun problema → nessun altro</i>, <i>qual buon vento → qual è</i>. Se invece la forma corta esiste solo davanti a vocale (<i>l'</i>, <i>un'</i>, <i>c'</i>), l'apostrofo ci vuole.",
+      "tables": [
+        {
+          "before": "<b>Obbligatorio.</b>",
+          "plain": true,
+          "headers": [
+            "caso",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "articoli lo e la + vocale",
+              "l'amico, l'anno, l'isola, l'università"
+            ],
+            [
+              "una + vocale (solo al femminile)",
+              "un'amica, un'ora, un'altra"
+            ],
+            [
+              "preposizioni articolate al singolare + vocale",
+              "dell'anno, all'una, nell'aula, sull'albero, dall'Italia"
+            ],
+            [
+              "quello e bello al maschile singolare + vocale (come l'articolo: l'uomo)",
+              "quell'uomo, bell'albero"
+            ],
+            [
+              "ci + è",
+              "c'è (ma: ci sono)"
+            ],
+            [
+              "pronomi lo e la + ho, hai, ha, hanno",
+              "l'ho visto, l'hai chiamata?, l'hanno detto"
+            ],
+            [
+              "espressioni fisse",
+              "d'accordo, senz'altro (= certamente)"
+            ],
+            [
+              "parole accorciate, anche davanti a consonante",
+              "un po' (= poco); va', da', fa', sta' (= vai, dai, fai, stai), di' (= dici)"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Si può scegliere.</b> Tutte e due le forme sono corrette; con l'apostrofo è più comune, soprattutto nel parlato.",
+          "plain": true,
+          "headers": [
+            "caso",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "questo e questa + vocale",
+              "quest'anno / questo anno, quest'estate / questa estate"
+            ],
+            [
+              "dove, come, cosa, quando + è",
+              "dov'è / dove è, com'è / come è, cos'è / cosa è, quand'è / quando è"
+            ],
+            [
+              "anche + io",
+              "anch'io / anche io"
+            ],
+            [
+              "di + vocale",
+              "d'estate / di estate, d'Italia / di Italia"
+            ],
+            [
+              "pronomi lo e la + altre vocali",
+              "l'aspetto / lo aspetto, l'ascolto / la ascolto"
+            ],
+            [
+              "mi, ti, si, vi + vocale: più frequente nelle canzoni e nella poesia",
+              "t'aspetto / ti aspetto, m'ha detto / mi ha detto"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Mai.</b>",
+          "plain": true,
+          "headers": [
+            "caso",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "articoli e pronomi plurali: le, gli, li",
+              "le amiche, gli amici, li ho visti, le ho viste"
+            ],
+            [
+              "pronomi gli e le (= a lui, a lei)",
+              "gli ho scritto, le ho telefonato"
+            ],
+            [
+              "un al maschile: è una parola intera",
+              "un amico, un altro, un uomo"
+            ],
+            [
+              "altre forme intere che esistono anche davanti a consonante",
+              "qual è, nessun altro, buon anno, ciascun amico"
+            ],
+            [
+              "ci + a, o, u: la c si leggerebbe dura",
+              "ci andiamo, ci ho pensato"
+            ],
+            [
+              "da: di solito resta intero, per non confonderlo con di",
+              "da Anna, da oggi"
+            ],
+            [
+              "davanti a i + vocale",
+              "la iena, lo yogurt"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "obbligatorio con gli articoli lo, la e una davanti a vocale; un al maschile resta intero",
+          "ex": "<b>L'</b>amico di Marco è simpatico. / Ho <b>un'</b>amica a Roma. / Ho <b>un</b> amico a Roma. / È <b>l'</b>una. / Abito <b>all'</b>ultimo piano."
+        },
+        {
+          "label": "c'è con l'apostrofo, ci sono senza",
+          "ex": "<b>C'è</b> un bar qui vicino? / <b>Ci sono</b> due bar. / <b>C'era</b> molta gente."
+        },
+        {
+          "label": "qual è, un altro, nessun altro, buon anno senza apostrofo: sono forme intere; al femminile invece un'altra, nessun'altra",
+          "ex": "<b>Qual è</b> il tuo numero? / Prendo <b>un altro</b> caffè. / Prendo <b>un'altra</b> birra. / Non c'è <b>nessun altro</b>. / <b>Buon anno</b>!"
+        },
+        {
+          "label": "si può scegliere con questo, dove, come, cosa, anche, di",
+          "ex": "<b>Quest'</b>anno vado in Italia. / <b>Dov'è</b> la stazione? / <b>Com'è</b> il tempo? / <b>Anch'io</b> sono stanco. / <b>D'</b>estate vado al mare."
+        },
+        {
+          "label": "alcune espressioni fisse hanno sempre l'apostrofo",
+          "ex": "Sei <b>d'accordo</b>? / Vieni anche tu? — <b>Senz'altro</b>!"
+        },
+        {
+          "label": "con i pronomi lo e la davanti ad avere (vedi I pronomi diretti e indiretti, A2)",
+          "ex": "Il libro? <b>L'</b>ho letto. / La pizza? <b>L'</b>ho mangiata. / Le chiavi? <b>Le</b> ho prese."
+        },
+        {
+          "label": "parole accorciate: l'apostrofo anche davanti a consonante",
+          "ex": "Vorrei un <b>po'</b> di pane. / <b>Va'</b> a casa! / <b>Fa'</b> presto! / <b>Di'</b> la verità!"
+        }
+      ],
+      "warn": "<b>Apostrofo e accento non sono la stessa cosa.</b> L'apostrofo segna una lettera che manca (<i>po'</i> = <i>poco</i>); l'accento segna dove cade la voce (<i>però</i>). Per questo si scrive <i>po'</i> e non <i>pò</i>, e la <i>È</i> maiuscola si scrive con l'accento, non <i>E'</i> (vedi <i>Gli accenti: tonico e grafico</i>). <b>Niente spazio dopo l'apostrofo</b>: <i>l'amico</i>, non <i>l' amico</i>.",
+      "errors": [
+        {
+          "wrong": "un'amico",
+          "right": "un amico",
+          "why": "Al maschile <i>un</i> è una parola intera: niente apostrofo."
+        },
+        {
+          "wrong": "un'altro caffè",
+          "right": "un altro caffè",
+          "why": "<i>Altro</i> è maschile: <i>un altro</i>. Al femminile: <i>un'altra</i>."
+        },
+        {
+          "wrong": "qual'è",
+          "right": "qual è",
+          "why": "<i>Qual</i> esiste anche da solo (<i>qual buon vento</i>): niente apostrofo."
+        },
+        {
+          "wrong": "l'amiche",
+          "right": "le amiche",
+          "why": "Al plurale <i>le</i> non si apostrofa."
+        },
+        {
+          "wrong": "Dov'è i bagni?",
+          "right": "Dove sono i bagni?",
+          "why": "<i>Dov'è</i> vuol dire «dove è»: con il plurale si dice <i>dove sono</i>."
+        },
+        {
+          "wrong": "un pò di pane",
+          "right": "un po' di pane",
+          "why": "<i>Po'</i> è <i>poco</i> accorciato: apostrofo, non accento."
+        },
+        {
+          "wrong": "l' amico",
+          "right": "l'amico",
+          "why": "Dopo l'apostrofo non si lascia lo spazio."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Scelta",
+          "instr": "Scegli la forma corretta.",
+          "items": [
+            "Ho (un amico / un'amico) a Roma.",
+            "(Qual è / Qual'è) il tuo nome?",
+            "Vorrei (un po' / un pò) d'acqua.",
+            "(Le amiche / L'amiche) di Anna sono qui.",
+            "Prendo (un'altra / un altra) pizza.",
+            "(Ci sono / C'sono) molti turisti."
+          ],
+          "key": [
+            "<b>un amico</b>",
+            "<b>Qual è</b>",
+            "<b>un po'</b>",
+            "<b>Le amiche</b>",
+            "<b>un'altra</b>",
+            "<b>Ci sono</b>"
+          ]
+        },
+        {
+          "type": "Completamento",
+          "instr": "Scrivi l'articolo tra parentesi davanti al nome, con l'apostrofo se serve.",
+          "items": [
+            "(lo) … albergo",
+            "(una) … isola",
+            "(la) … università",
+            "(le) … isole",
+            "(gli) … amici",
+            "(un) … uomo"
+          ],
+          "key": [
+            "<b>l'albergo</b>",
+            "<b>un'isola</b>",
+            "<b>l'università</b>",
+            "<b>le isole</b>",
+            "<b>gli amici</b>",
+            "<b>un uomo</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Riscrivi la frase con l'apostrofo, dove si può.",
+          "items": [
+            "Dove è la stazione?",
+            "Come è la tua casa?",
+            "Anche io parlo italiano.",
+            "Questo anno vado in Italia.",
+            "Ci sono molte persone.",
+            "Qual è il problema?"
+          ],
+          "key": [
+            "<b>Dov'è</b> la stazione?",
+            "<b>Com'è</b> la tua casa?",
+            "<b>Anch'io</b> parlo italiano.",
+            "<b>Quest'anno</b> vado in Italia.",
+            "Resta così: <b>ci sono</b> non si apostrofa.",
+            "Resta così: <b>qual è</b> non si apostrofa."
           ]
         }
       ]
