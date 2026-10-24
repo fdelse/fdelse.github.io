@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Vademecum dell'italiano per le professioni — index.html — versione 1.0 -->
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="favicon.png" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Vademecum dell'italiano per le professioni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1.0">
+</head>
+<body>
+<div class="topbar">
+  <button class="menu-btn" id="menuBtn" aria-label="Apri il menu" aria-expanded="false"><span></span></button>
+  <input id="q-m" type="search" class="topsearch" placeholder="Cerca un termine…" aria-label="Cerca un termine o un argomento" autocomplete="off">
+</div>
+<div class="overlay" id="overlay"></div>
+<div class="shell">
+  <aside class="spine">
+    <div class="spine__head">
+      <p class="spine__kicker">Italiano · LS</p>
+      <h1 class="spine__title">Vademecum delle <em>professioni</em></h1>
+    </div>
+    <div class="search">
+      <input id="q" type="search" placeholder="Cerca un termine…" aria-label="Cerca un termine o un argomento" autocomplete="off">
+    </div>
+    <nav class="nav" id="nav" aria-label="Settori"></nav>
+  </aside>
+
+  <main>
+    <header class="masthead">
+      <h1>L'italiano <em>per le professioni</em></h1>
+      <p>Ogni voce tratta un argomento di un settore professionale: il lessico, con la parola di tutti i giorni accanto a quella tecnica, le frasi pronte per le situazioni di lavoro, le insidie da evitare e gli esercizi. I colori segnalano il settore.</p>
+      <div class="legend" id="legend"></div>
+    </header>
+    <div id="content"></div>
+    <div class="cited" id="cited" hidden><span id="cited-n"></span> <button type="button" id="cited-btn">mostra anche queste</button></div>
+    <div class="empty" id="empty">Nessuna voce per <b id="empty-q"></b>. Prova con un altro termine.</div>
+  </main>
+</div>
+<button class="totop" id="totop" aria-label="Torna in cima">↑</button>
+
+<script src="app.js?v=1.0"></script>
+</body>
+</html>

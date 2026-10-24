@@ -1,0 +1,2251 @@
+{
+  "versione": "1.0",
+  "livello": "Medicina",
+  "schede": [
+    {
+      "lvl": "medicina",
+      "cat": "Anatomia",
+      "title": "Il corpo umano",
+      "def": "I nomi delle parti del corpo in due versioni: la parola di tutti i giorni, che usa il paziente, e il termine medico, che si trova nei referti e si usa tra colleghi. Il medico deve capire la prima e saper tradurre il secondo per il paziente.",
+      "form": "Molte parti del corpo hanno un nome comune e un aggettivo medico che viene dal latino o dal greco: <i>il cuore → cardiaco</i>, <i>il fegato → epatico</i>, <i>il rene → renale</i>, <i>la pancia → addominale</i>. Nel referto si usa l'aggettivo («insufficienza renale»), con il paziente il nome («i reni non funzionano bene»). Attenzione ai plurali irregolari: <i>il braccio → le braccia</i>, <i>il ginocchio → le ginocchia</i>, <i>l'osso → le ossa</i>, <i>il dito → le dita</i>, <i>il labbro → le labbra</i>, <i>l'orecchio → le orecchie</i>.",
+      "tables": [
+        {
+          "before": "<b>Parti esterne.</b>",
+          "plain": true,
+          "headers": [
+            "parola comune",
+            "termine medico",
+            "esempio nel referto"
+          ],
+          "rows": [
+            [
+              "la testa",
+              "il cranio, cranico; cefalea = mal di testa",
+              "trauma cranico"
+            ],
+            [
+              "il collo",
+              "cervicale",
+              "dolore cervicale (nel parlato: «ho la cervicale»)"
+            ],
+            [
+              "il petto",
+              "il torace, toracico",
+              "dolore toracico"
+            ],
+            [
+              "la pancia",
+              "l'addome, addominale",
+              "dolore addominale"
+            ],
+            [
+              "la schiena (parte bassa)",
+              "lombare; lombalgia = mal di schiena in basso",
+              "dolore lombare"
+            ],
+            [
+              "il braccio, la gamba",
+              "l'arto superiore, l'arto inferiore",
+              "frattura dell'arto inferiore"
+            ],
+            [
+              "la pelle",
+              "la cute, cutaneo",
+              "eruzione cutanea"
+            ],
+            [
+              "la bocca",
+              "il cavo orale, orale",
+              "terapia per via orale"
+            ],
+            [
+              "l'occhio",
+              "oculare",
+              "pressione oculare"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Organi interni.</b>",
+          "plain": true,
+          "headers": [
+            "organo",
+            "aggettivo",
+            "esempio nel referto"
+          ],
+          "rows": [
+            [
+              "il cuore",
+              "cardiaco",
+              "frequenza cardiaca, arresto cardiaco"
+            ],
+            [
+              "i polmoni",
+              "polmonare",
+              "embolia polmonare"
+            ],
+            [
+              "lo stomaco",
+              "gastrico",
+              "ulcera gastrica"
+            ],
+            [
+              "l'intestino",
+              "intestinale",
+              "occlusione intestinale"
+            ],
+            [
+              "il fegato",
+              "epatico",
+              "funzionalità epatica"
+            ],
+            [
+              "i reni",
+              "renale",
+              "insufficienza renale"
+            ],
+            [
+              "il cervello",
+              "cerebrale",
+              "emorragia cerebrale"
+            ],
+            [
+              "la vescica",
+              "vescicale",
+              "catetere vescicale"
+            ],
+            [
+              "le ossa",
+              "osseo",
+              "densità ossea"
+            ],
+            [
+              "il sangue",
+              "ematico; ematochimico",
+              "esami ematochimici (= esami del sangue)"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici con lo spagnolo.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "spagnolo",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "la spalla",
+              "el hombro",
+              "lo spagnolo «espalda» è la schiena"
+            ],
+            [
+              "la schiena",
+              "la espalda",
+              ""
+            ],
+            [
+              "il polso",
+              "la muñeca; el pulso",
+              "in italiano «polso» è tutte e due le cose"
+            ],
+            [
+              "la caviglia",
+              "el tobillo",
+              ""
+            ],
+            [
+              "il gomito",
+              "el codo",
+              ""
+            ],
+            [
+              "l'anca",
+              "la cadera",
+              ""
+            ],
+            [
+              "il viso, la faccia",
+              "la cara",
+              "in italiano «cara» vuol dire «querida»"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "far indicare il punto del dolore e chiedere di precisare",
+          "ex": "Dove le fa male? / Mi fa male la <b>pancia</b>, qui a destra. / Il dolore arriva fino alla <b>schiena</b>? / Mi fa vedere con un dito?"
+        },
+        {
+          "label": "con il paziente la parola comune, nel referto il termine medico",
+          "ex": "Ha mal di testa? → <b>cefalea</b> / Le fa male la pancia? → <b>dolore addominale</b> / Ha la pelle arrossata? → <b>eritema cutaneo</b>"
+        },
+        {
+          "label": "destra e sinistra si riferiscono sempre al corpo del paziente",
+          "ex": "il <b>braccio</b> sinistro / il <b>fianco</b> destro / la parte alta dell'<b>addome</b>"
+        },
+        {
+          "label": "fa male o fanno male: il verbo si accorda con la parte del corpo",
+          "ex": "Mi <b>fa</b> male la gamba. / Mi <b>fanno</b> male le gambe. / Le <b>fanno</b> male le <b>ginocchia</b>?"
+        },
+        {
+          "label": "gli organi interni nella spiegazione al paziente",
+          "ex": "Il <b>cuore</b> batte regolarmente. / I <b>polmoni</b> sono liberi. / Gli esami del <b>fegato</b> e dei <b>reni</b> sono buoni."
+        }
+      ],
+      "warn": "<b>Pancia e stomaco.</b> Nel parlato molti dicono «mal di stomaco» per qualsiasi dolore alla pancia (come l'inglese «stomach ache»): conviene far indicare il punto. <b>Mal di…</b> si usa soprattutto con alcune parti: mal di testa, di denti, di gola, di pancia, di stomaco, di schiena, d'orecchio. Per le altre si dice «mi fa male il ginocchio» o «ho male al ginocchio».",
+      "errors": [
+        {
+          "wrong": "(indicando la parte bassa della schiena) Mi fa male la spalla.",
+          "right": "Mi fa male la schiena.",
+          "why": "<i>Spalla</i> è lo spagnolo «hombro»; «espalda» in italiano è <i>schiena</i>."
+        },
+        {
+          "wrong": "Mi fanno male la gamba.",
+          "right": "Mi fa male la gamba.",
+          "why": "Il verbo si accorda con la parte del corpo: una gamba → <i>fa</i>."
+        },
+        {
+          "wrong": "Mi fa male i piedi.",
+          "right": "Mi fanno male i piedi.",
+          "why": "Due piedi → <i>fanno</i>."
+        },
+        {
+          "wrong": "Mi fanno male i dita.",
+          "right": "Mi fanno male le dita.",
+          "why": "<i>Dito</i> al plurale diventa femminile: <i>le dita</i>."
+        },
+        {
+          "wrong": "Tengo mal di testa.",
+          "right": "Ho mal di testa.",
+          "why": "Lo spagnolo «tengo» in italiano è <i>ho</i>: <i>avere mal di testa</i>."
+        },
+        {
+          "wrong": "insufficienza di rene",
+          "right": "insufficienza renale",
+          "why": "Nel linguaggio medico si usa l'aggettivo: <i>renale</i>, <i>epatico</i>, <i>cardiaco</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Riformulazione",
+          "instr": "Riscrivi con il termine che si usa nel referto.",
+          "items": [
+            "mal di testa",
+            "dolore alla pancia",
+            "dolore al petto",
+            "un'eruzione sulla pelle",
+            "esami del sangue",
+            "i reni funzionano poco"
+          ],
+          "key": [
+            "<b>cefalea</b>",
+            "<b>dolore addominale</b>",
+            "<b>dolore toracico</b>",
+            "<b>eruzione cutanea</b>",
+            "<b>esami ematochimici</b>",
+            "<b>funzionalità renale ridotta</b> (se grave: <b>insufficienza renale</b>)"
+          ]
+        },
+        {
+          "type": "Completamento",
+          "instr": "Completa con fa male o fanno male.",
+          "items": [
+            "Mi … la testa.",
+            "Le … i piedi?",
+            "Mi … tutte le ossa.",
+            "Al bambino … l'orecchio destro.",
+            "Quando cammino mi … le ginocchia.",
+            "Le … qui, quando premo?"
+          ],
+          "key": [
+            "<b>fa male</b>",
+            "<b>fanno male</b>",
+            "<b>fanno male</b>",
+            "<b>fa male</b>",
+            "<b>fanno male</b>",
+            "<b>fa male</b>"
+          ]
+        },
+        {
+          "type": "Riformulazione",
+          "instr": "Spiega al paziente con parole semplici.",
+          "items": [
+            "dolore lombare",
+            "frattura dell'arto superiore",
+            "frequenza cardiaca elevata",
+            "funzionalità epatica alterata",
+            "trauma cranico",
+            "eruzione cutanea"
+          ],
+          "key": [
+            "Esempio: <b>mal di schiena, nella parte bassa</b>.",
+            "Esempio: <b>si è rotto il braccio</b>.",
+            "Esempio: <b>il cuore batte veloce</b>.",
+            "Esempio: <b>il fegato non funziona bene</b>.",
+            "Esempio: <b>ha battuto forte la testa</b>.",
+            "Esempio: <b>ha delle macchie rosse sulla pelle</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "medicina",
+      "cat": "Visita",
+      "title": "Sintomi: come li descrive il paziente",
+      "def": "Il paziente descrive i sintomi con parole di tutti i giorni; il medico li traduce in termini medici per la cartella. Questa scheda raccoglie le espressioni più comuni e le domande per capire com'è il dolore.",
+      "form": "Molti sintomi si dicono con <b>avere</b> + nome (<i>ho la febbre</i>, <i>ho la tosse</i>, <i>ho la nausea</i>) oppure con un verbo e un pronome (<i>mi gira la testa</i>, <i>mi brucia</i>, <i>mi prude</i>). Con questi verbi la parte del corpo è il soggetto, come con <i>piacere</i>: «mi brucia <b>lo stomaco</b>», «mi prudono <b>le gambe</b>». Per dire da quanto tempo dura un disturbo si usa <b>da</b> + presente: «ho la febbre <b>da</b> tre giorni» (sp. «desde hace»).",
+      "tables": [
+        {
+          "before": "<b>Il paziente dice, il medico scrive.</b>",
+          "plain": true,
+          "headers": [
+            "il paziente dice",
+            "il medico scrive"
+          ],
+          "rows": [
+            [
+              "ho la febbre; ho qualche linea",
+              "febbre; febbricola (se è bassa)"
+            ],
+            [
+              "mi gira la testa",
+              "vertigini"
+            ],
+            [
+              "mi manca l'aria, ho il fiato corto",
+              "dispnea"
+            ],
+            [
+              "ho la nausea; ho vomitato",
+              "nausea; vomito"
+            ],
+            [
+              "mi sento stanco, senza forze",
+              "astenia"
+            ],
+            [
+              "non ho fame",
+              "inappetenza"
+            ],
+            [
+              "ho la diarrea; non vado di corpo",
+              "diarrea; stipsi (stitichezza)"
+            ],
+            [
+              "mi brucia quando faccio la pipì",
+              "bruciore minzionale"
+            ],
+            [
+              "ho la tosse secca / grassa",
+              "tosse secca / tosse produttiva"
+            ],
+            [
+              "ho il naso chiuso; mi cola il naso",
+              "congestione nasale; rinorrea"
+            ],
+            [
+              "mi formicola la mano",
+              "parestesia"
+            ],
+            [
+              "mi prude",
+              "prurito"
+            ],
+            [
+              "ho il batticuore",
+              "palpitazioni"
+            ],
+            [
+              "sono svenuto",
+              "sincope, perdita di coscienza"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Com'è il dolore.</b> Le domande che il medico fa quasi sempre.",
+          "plain": true,
+          "headers": [
+            "che cosa si chiede",
+            "domanda",
+            "risposte tipiche"
+          ],
+          "rows": [
+            [
+              "dove",
+              "Dove le fa male?",
+              "qui; nella parte alta della pancia; dietro lo sterno"
+            ],
+            [
+              "da quando",
+              "Da quando ha questo dolore?",
+              "da ieri; da stamattina; da tre giorni"
+            ],
+            [
+              "com'è",
+              "Com'è il dolore?",
+              "forte; sordo; pulsante; a fitte; bruciante; come un peso"
+            ],
+            [
+              "se si sposta",
+              "Il dolore si sposta da qualche parte?",
+              "va verso il braccio, verso la schiena (dolore irradiato)"
+            ],
+            [
+              "se è continuo",
+              "Il dolore è sempre uguale?",
+              "è continuo; va e viene; arriva a ondate"
+            ],
+            [
+              "quanto è forte",
+              "Da 0 a 10, quanto è forte?",
+              "sette, otto…"
+            ],
+            [
+              "che cosa lo cambia",
+              "Quando peggiora? Quando migliora?",
+              "quando mangio; quando cammino; a riposo"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "lingua del paziente",
+            "in italiano si dice",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "sp. estar constipado",
+              "essere raffreddato",
+              "l'italiano «costipato» di solito vuol dire stitico"
+            ],
+            [
+              "sp. estar embarazada",
+              "essere incinta",
+              "l'italiano «imbarazzata» vuol dire «avergonzada»"
+            ],
+            [
+              "sp. estar mareado",
+              "ho la nausea; mi gira la testa",
+              ""
+            ],
+            [
+              "ingl. constipated",
+              "stitico",
+              ""
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "chiedere i sintomi con domande aperte",
+          "ex": "Che disturbi ha? / Da quanto tempo? / Mi descriva il dolore. / Ha la <b>febbre</b>? Quanto?"
+        },
+        {
+          "label": "da + presente per dire da quanto tempo dura un disturbo che c'è ancora",
+          "ex": "Ho la <b>tosse</b> da una settimana. / Da quando le fa male? / Non dormo bene da un mese."
+        },
+        {
+          "label": "mi gira, mi brucia, mi prude: il soggetto è la parte del corpo",
+          "ex": "Mi <b>gira</b> la testa. / Mi <b>bruciano</b> gli occhi. / Mi <b>prude</b> la schiena."
+        },
+        {
+          "label": "precisare intensità e andamento del dolore",
+          "ex": "Da 0 a 10, quanto è forte? / Il dolore <b>va e viene</b>. / Peggiora quando sale le scale?"
+        },
+        {
+          "label": "le parole del paziente nella cartella",
+          "ex": "«mi manca l'aria» → <b>dispnea</b> / «sono stanco morto» → <b>astenia</b> / «ho il batticuore» → <b>palpitazioni</b> / «mi gira la testa» → <b>vertigini</b>"
+        }
+      ],
+      "warn": "<b>Costipato.</b> Per molti italiani vuol dire «stitico», ma in alcune zone anche «raffreddato»: meglio chiedere con parole chiare («va di corpo regolarmente?»). <b>Mi sento male</b> vuol dire stare male in generale, a volte stare per svenire; <b>mi fa male</b> indica un dolore preciso.",
+      "errors": [
+        {
+          "wrong": "Ho la tosse da tre giorni fa.",
+          "right": "Ho la tosse da tre giorni.",
+          "why": "<i>Da</i> e <i>fa</i> non vanno insieme: «da tre giorni» (dura ancora) oppure «è cominciata tre giorni fa»."
+        },
+        {
+          "wrong": "Ho avuto la tosse da una settimana.",
+          "right": "Ho la tosse da una settimana.",
+          "why": "Se il disturbo c'è ancora, con <i>da</i> si usa il presente."
+        },
+        {
+          "wrong": "Mi girano la testa.",
+          "right": "Mi gira la testa.",
+          "why": "Il soggetto è <i>la testa</i>: singolare."
+        },
+        {
+          "wrong": "Mi brucia gli occhi.",
+          "right": "Mi bruciano gli occhi.",
+          "why": "Il soggetto è <i>gli occhi</i>: plurale."
+        },
+        {
+          "wrong": "(per dire che ha il raffreddore) Sono costipata.",
+          "right": "Sono raffreddata.",
+          "why": "Lo spagnolo «constipada» in italiano è <i>raffreddata</i>; <i>costipata</i> in alcune zone vuol dire anche questo, ma molti capiscono «stitica»."
+        },
+        {
+          "wrong": "Sono imbarazzata di tre mesi.",
+          "right": "Sono incinta di tre mesi.",
+          "why": "Lo spagnolo «embarazada» in italiano è <i>incinta</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Riformulazione",
+          "instr": "Scrivi il termine medico.",
+          "items": [
+            "Mi manca l'aria.",
+            "Mi gira la testa.",
+            "Mi sento sempre stanco.",
+            "Ho il batticuore.",
+            "Mi formicolano le dita.",
+            "Mi cola il naso."
+          ],
+          "key": [
+            "<b>dispnea</b>",
+            "<b>vertigini</b>",
+            "<b>astenia</b>",
+            "<b>palpitazioni</b>",
+            "<b>parestesie</b>",
+            "<b>rinorrea</b>"
+          ]
+        },
+        {
+          "type": "Completamento",
+          "instr": "Completa con la forma giusta del verbo tra parentesi.",
+          "items": [
+            "Mi (bruciare) … gli occhi.",
+            "Mi (girare) … la testa.",
+            "Le (fare) … male le gambe?",
+            "Mi (prudere) … le mani.",
+            "Le (bruciare) … lo stomaco dopo i pasti?",
+            "Mi (formicolare) … il braccio sinistro."
+          ],
+          "key": [
+            "<b>bruciano</b>",
+            "<b>gira</b>",
+            "<b>fanno</b>",
+            "<b>prudono</b>",
+            "<b>brucia</b>",
+            "<b>formicola</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata",
+          "instr": "Scrivi la domanda del medico che porta a questa risposta.",
+          "items": [
+            "«Da tre giorni.»",
+            "«Come un peso sul petto.»",
+            "«Otto.»",
+            "«Verso il braccio sinistro.»",
+            "«Quando salgo le scale.»",
+            "«No, va e viene.»"
+          ],
+          "key": [
+            "Esempio: <b>Da quanto tempo ha la febbre?</b>",
+            "Esempio: <b>Com'è il dolore?</b>",
+            "Esempio: <b>Da 0 a 10, quanto è forte il dolore?</b>",
+            "Esempio: <b>Il dolore si sposta da qualche parte?</b>",
+            "Esempio: <b>Quando peggiora?</b>",
+            "Esempio: <b>Il dolore è continuo?</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "medicina",
+      "cat": "Visita",
+      "title": "L'anamnesi",
+      "def": "L'<b>anamnesi</b> è la storia clinica del paziente, raccolta con domande all'inizio della visita, prima dell'esame obiettivo. Nella tradizione italiana si divide in quattro parti: familiare, fisiologica, patologica remota e patologica prossima. La difficoltà, per chi impara l'italiano, è fare domande chiare e capire risposte spesso molto colloquiali.",
+      "form": "Per malattie, interventi e ricoveri già passati si usa il <b>passato prossimo</b>, spesso con <b>mai</b> (<i>è mai stato operato?</i>); per quello che dura ancora il presente con <b>da</b> (<i>da quanto tempo prende questo farmaco?</i>). Con il Lei participio e aggettivo si accordano con la persona reale: «è mai stat<b>o</b> operat<b>o</b>?» a un uomo, «è mai stat<b>a</b> operat<b>a</b>?» a una donna. Verbi e preposizioni da sapere: <i>soffrire di</i>, <i>essere allergico a</i>, <i>essere operato di</i>, <i>prendere un farmaco per</i>.",
+      "tables": [
+        {
+          "before": "<b>Le quattro parti.</b>",
+          "plain": true,
+          "headers": [
+            "parte",
+            "che cosa si chiede",
+            "domande tipiche"
+          ],
+          "rows": [
+            [
+              "anamnesi familiare",
+              "malattie di genitori, fratelli, figli",
+              "In famiglia ci sono casi di diabete, malattie di cuore, tumori?"
+            ],
+            [
+              "anamnesi fisiologica",
+              "nascita e sviluppo, lavoro, alimentazione, fumo, alcol, sonno, ciclo mestruale",
+              "Che lavoro fa? Fuma? Beve alcolici? Dorme bene?"
+            ],
+            [
+              "anamnesi patologica remota",
+              "malattie, interventi e ricoveri del passato, allergie, farmaci",
+              "Ha avuto malattie importanti? È mai stato operato? È allergico a qualche farmaco?"
+            ],
+            [
+              "anamnesi patologica prossima",
+              "il problema di oggi: come e quando è cominciato",
+              "Che cosa la porta qui oggi? Quando sono cominciati i disturbi?"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Risposte colloquiali.</b> Come lo dice il paziente e che cosa significa.",
+          "plain": true,
+          "headers": [
+            "il paziente dice",
+            "significa"
+          ],
+          "rows": [
+            [
+              "Prendo la pastiglia per la pressione.",
+              "è in terapia per la pressione alta (ipertensione)"
+            ],
+            [
+              "Ho lo zucchero alto.",
+              "ha la glicemia alta; spesso vuol dire che è diabetico"
+            ],
+            [
+              "Ho il colesterolo.",
+              "ha il colesterolo alto (ipercolesterolemia)"
+            ],
+            [
+              "Ho la pressione bassa.",
+              "ipotensione"
+            ],
+            [
+              "Mi hanno tolto l'appendice.",
+              "è stato operato di appendicite (appendicectomia)"
+            ],
+            [
+              "Mio padre è morto di un brutto male.",
+              "è morto di un tumore: è un modo per non nominarlo"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "aprire il colloquio",
+          "ex": "Buongiorno, si accomodi. Che cosa la porta qui oggi? / Mi racconti."
+        },
+        {
+          "label": "malattie e interventi del passato: passato prossimo, spesso con mai",
+          "ex": "È mai stato <b>ricoverato</b>? / Ha mai avuto problemi di cuore? / È mai stata <b>operata</b>?"
+        },
+        {
+          "label": "farmaci e allergie",
+          "ex": "Prende farmaci regolarmente? / Da quanto tempo li prende? / È <b>allergico</b> a qualcosa? A farmaci, alimenti?"
+        },
+        {
+          "label": "abitudini (anamnesi fisiologica)",
+          "ex": "<b>Fuma</b>? Quante sigarette al giorno? / Quanto beve, in media? / Fa attività fisica? / Che lavoro fa?"
+        },
+        {
+          "label": "famiglia (anamnesi familiare)",
+          "ex": "I suoi genitori sono vivi? / Di che cosa è morto suo padre? / In famiglia qualcuno ha avuto il <b>diabete</b>?"
+        },
+        {
+          "label": "domande delicate: spiegare perché si fanno",
+          "ex": "Le faccio qualche domanda personale: è importante per la diagnosi. / Potrebbe essere <b>incinta</b>?"
+        }
+      ],
+      "warn": "<b>Eufemismi.</b> Molti pazienti, soprattutto anziani, non nominano le malattie gravi: «un brutto male», «quella malattia» per il tumore; «lo zucchero» per il diabete. <b>Le quantità</b>: «bevo un bicchiere ai pasti», «fumo poco» sono risposte vaghe, conviene chiedere numeri precisi («quante sigarette al giorno?»).",
+      "errors": [
+        {
+          "wrong": "Da quanto tempo prendeva questo farmaco? (e lo prende ancora)",
+          "right": "Da quanto tempo prende questo farmaco?",
+          "why": "Se la cosa dura ancora, con <i>da</i> si usa il presente."
+        },
+        {
+          "wrong": "È mai stato operata, signora?",
+          "right": "È mai stata operata, signora?",
+          "why": "Con il Lei participio e aggettivo si accordano con la persona: a una donna <i>stata operata</i>."
+        },
+        {
+          "wrong": "Ha mai stato ricoverato?",
+          "right": "È mai stato ricoverato?",
+          "why": "<i>Essere ricoverato</i> vuole l'ausiliare <i>essere</i>."
+        },
+        {
+          "wrong": "È allergico di penicillina?",
+          "right": "È allergico alla penicillina?",
+          "why": "<i>Allergico a</i>."
+        },
+        {
+          "wrong": "Soffre da diabete?",
+          "right": "Soffre di diabete?",
+          "why": "<i>Soffrire di</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con la preposizione giusta (semplice o articolata).",
+          "items": [
+            "Soffre … pressione alta?",
+            "È allergico … qualche farmaco?",
+            "Prende questo farmaco … due anni.",
+            "In famiglia ci sono casi … diabete?",
+            "È stato operato … appendicite.",
+            "Fuma … quando aveva vent'anni."
+          ],
+          "key": [
+            "<b>di</b>",
+            "<b>a</b>",
+            "<b>da</b>",
+            "<b>di</b>",
+            "<b>di</b>",
+            "<b>da</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Rivolgi la domanda a una paziente donna.",
+          "items": [
+            "È mai stato operato?",
+            "È mai stato ricoverato?",
+            "È allergico a qualcosa?",
+            "È sposato?",
+            "È stato vaccinato contro il tetano?",
+            "È sempre stato bene?"
+          ],
+          "key": [
+            "È mai <b>stata operata</b>?",
+            "È mai <b>stata ricoverata</b>?",
+            "È <b>allergica</b> a qualcosa?",
+            "È <b>sposata</b>?",
+            "È <b>stata vaccinata</b> contro il tetano?",
+            "È sempre <b>stata</b> bene?"
+          ]
+        },
+        {
+          "type": "Classificazione",
+          "instr": "A quale parte dell'anamnesi appartiene la domanda?",
+          "items": [
+            "Sua madre ha avuto problemi di cuore?",
+            "Quante ore dorme per notte?",
+            "Ha mai avuto la polmonite?",
+            "Quando è cominciato il dolore?",
+            "Che lavoro fa?",
+            "Ha fratelli con il diabete?"
+          ],
+          "key": [
+            "<b>familiare</b>",
+            "<b>fisiologica</b>",
+            "<b>patologica remota</b>",
+            "<b>patologica prossima</b>",
+            "<b>fisiologica</b>",
+            "<b>familiare</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "medicina",
+      "cat": "Visita",
+      "title": "L'esame obiettivo e le istruzioni al paziente",
+      "def": "Durante la visita il medico dà istruzioni al paziente: spogliarsi, sdraiarsi, respirare, tossire. In Italia con un paziente adulto si usa il <b>Lei</b>, quindi le istruzioni si danno con l'<b>imperativo di cortesia</b> («si sdrai», «respiri») oppure, in modo più morbido, con una domanda («può sdraiarsi?»). L'<b>esame obiettivo</b> è la parte della visita in cui il medico guarda, tocca e ascolta il paziente.",
+      "form": "L'imperativo con il Lei ha le forme del congiuntivo presente: i verbi in <b>-are</b> finiscono in <b>-i</b> (<i>respiri</i>, <i>si sdrai</i>), quelli in <b>-ere</b> e <b>-ire</b> in <b>-a</b> (<i>apra</i>, <i>tossisca</i>). <b>I pronomi vanno prima del verbo</b>: <i>si sieda</i>, <i>si spogli</i>, <i>mi dica</i>. Con il tu (per esempio con i bambini) vanno dopo, attaccati: <i>siediti</i>, <i>spogliati</i>, <i>dimmi</i>. Irregolari frequenti: <i>stia</i> (stare), <i>faccia</i> (fare), <i>vada</i> (andare), <i>venga</i> (venire), <i>tenga</i> (tenere), <i>dica</i> (dire).",
+      "tables": [
+        {
+          "before": "<b>Le istruzioni più comuni.</b>",
+          "plain": true,
+          "headers": [
+            "verbo",
+            "con il Lei",
+            "con il tu"
+          ],
+          "rows": [
+            [
+              "spogliarsi",
+              "si spogli fino alla vita",
+              "spogliati"
+            ],
+            [
+              "sdraiarsi",
+              "si sdrai a pancia in su / a pancia in giù",
+              "sdraiati"
+            ],
+            [
+              "sedersi",
+              "si sieda",
+              "siediti"
+            ],
+            [
+              "alzarsi",
+              "si alzi lentamente",
+              "alzati"
+            ],
+            [
+              "girarsi",
+              "si giri sul fianco sinistro",
+              "girati"
+            ],
+            [
+              "respirare",
+              "respiri profondamente",
+              "respira"
+            ],
+            [
+              "trattenere il respiro",
+              "trattenga il respiro",
+              "trattieni il respiro"
+            ],
+            [
+              "tossire",
+              "tossisca",
+              "tossisci"
+            ],
+            [
+              "aprire la bocca",
+              "apra la bocca",
+              "apri la bocca"
+            ],
+            [
+              "piegare",
+              "pieghi le ginocchia",
+              "piega le ginocchia"
+            ],
+            [
+              "stare fermo",
+              "stia fermo / stia ferma",
+              "stai fermo"
+            ],
+            [
+              "rilassarsi",
+              "si rilassi",
+              "rilassati"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Che cosa fa il medico e come si scrive nel referto.</b>",
+          "plain": true,
+          "headers": [
+            "in parole semplici",
+            "termine medico",
+            "nel referto"
+          ],
+          "rows": [
+            [
+              "guardare",
+              "ispezionare, l'ispezione",
+              "all'ispezione: cute integra"
+            ],
+            [
+              "toccare e premere con le mani",
+              "palpare, la palpazione",
+              "addome trattabile, non dolente alla palpazione"
+            ],
+            [
+              "battere con le dita",
+              "percuotere, la percussione",
+              "alla percussione: …"
+            ],
+            [
+              "ascoltare con il fonendoscopio",
+              "auscultare, l'auscultazione",
+              "all'auscultazione: toni cardiaci validi"
+            ],
+            [
+              "misurare la pressione",
+              "pressione arteriosa (PA)",
+              "PA 130/80 mmHg"
+            ],
+            [
+              "sentire il polso",
+              "frequenza cardiaca (FC)",
+              "FC 72 bpm (battiti al minuto)"
+            ],
+            [
+              "misurare la febbre",
+              "temperatura corporea (TC)",
+              "TC 37,5 °C"
+            ],
+            [
+              "misurare l'ossigeno nel sangue",
+              "saturazione (SpO2)",
+              "SpO2 98%"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "le istruzioni con il Lei: imperativo di cortesia, pronome prima del verbo",
+          "ex": "<b>Si accomodi</b>. / <b>Si spogli</b> fino alla vita, per favore. / <b>Si sdrai</b> sul lettino a pancia in su. / <b>Respiri</b> profondamente con la bocca aperta. / <b>Trattenga</b> il respiro. / Ora <b>tossisca</b>."
+        },
+        {
+          "label": "più morbido: una domanda con potere, potrebbe o le dispiace",
+          "ex": "<b>Può</b> sdraiarsi, per favore? / <b>Potrebbe</b> girarsi sul fianco sinistro? / <b>Le dispiace</b> togliersi la maglia?"
+        },
+        {
+          "label": "durante la palpazione: chiedere se fa male",
+          "ex": "Le faccio male se premo qui? / <b>Mi dica</b> se sente dolore. / Fa più male quando premo o quando lascio?"
+        },
+        {
+          "label": "annunciare quello che si sta per fare",
+          "ex": "Adesso le misuro la <b>pressione</b>. / Le sento il <b>polso</b>. / Sentirà un po' di freddo: è il <b>fonendoscopio</b>."
+        },
+        {
+          "label": "chiudere la visita",
+          "ex": "Bene, abbiamo finito: <b>si rivesta</b> pure. / <b>Si accomodi</b> alla scrivania."
+        }
+      ],
+      "warn": "<b>Lei e tu non si mescolano</b> nella stessa frase né nella stessa visita: «si sdrai e rilassati» → «si sdrai e si rilassi». <b>L'aggettivo si accorda con la persona reale</b>: «stia fermo» a un uomo, «stia ferma» a una donna. Nel parlato si sente anche il presente usato come istruzione («adesso si sdraia qui»): è corretto, ma l'imperativo di cortesia è la forma da insegnare.",
+      "errors": [
+        {
+          "wrong": "Siediti, signora.",
+          "right": "Si sieda, signora.",
+          "why": "Con il Lei: pronome prima del verbo e forma di cortesia (<i>si sieda</i>)."
+        },
+        {
+          "wrong": "Fai un respiro profondo, signora.",
+          "right": "Faccia un respiro profondo, signora.",
+          "why": "<i>Fai</i> è del tu; con il Lei <i>fare</i> diventa <i>faccia</i>."
+        },
+        {
+          "wrong": "Si sdrai e rilassati.",
+          "right": "Si sdrai e si rilassi.",
+          "why": "Nella stessa frase non si passa dal Lei al tu."
+        },
+        {
+          "wrong": "Tosse, per favore.",
+          "right": "Tossisca, per favore.",
+          "why": "<i>Tosse</i> è il nome (o il presente: «lui tosse»); l'istruzione con il Lei è <i>tossisca</i>."
+        },
+        {
+          "wrong": "Mi dici dove le fa male?",
+          "right": "Mi dica dove le fa male. / Mi dice dove le fa male?",
+          "why": "<i>Dici</i> è del tu, <i>le</i> del Lei: con il Lei si dice <i>mi dica</i> (o, come domanda, <i>mi dice</i>)."
+        },
+        {
+          "wrong": "Stia ferma, signor Bianchi.",
+          "right": "Stia fermo, signor Bianchi.",
+          "why": "Con il Lei l'aggettivo si accorda con la persona: a un uomo <i>fermo</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Riscrivi l'istruzione dando del Lei al paziente.",
+          "items": [
+            "Siediti sul lettino.",
+            "Apri la bocca.",
+            "Respira profondamente.",
+            "Girati sul fianco destro.",
+            "Stai fermo.",
+            "Dimmi dove ti fa male."
+          ],
+          "key": [
+            "<b>Si sieda</b> sul lettino.",
+            "<b>Apra</b> la bocca.",
+            "<b>Respiri</b> profondamente.",
+            "<b>Si giri</b> sul fianco destro.",
+            "<b>Stia</b> fermo.",
+            "<b>Mi dica</b> dove <b>le</b> fa male."
+          ]
+        },
+        {
+          "type": "Completamento",
+          "instr": "Completa con l'imperativo di cortesia del verbo tra parentesi.",
+          "items": [
+            "(spogliarsi) … fino alla vita.",
+            "(trattenere) … il respiro.",
+            "(tossire) Ora …, per favore.",
+            "(alzarsi) … lentamente.",
+            "(piegare) … le ginocchia.",
+            "(rivestirsi) Abbiamo finito: … pure."
+          ],
+          "key": [
+            "<b>Si spogli</b>",
+            "<b>Trattenga</b>",
+            "<b>tossisca</b>",
+            "<b>Si alzi</b>",
+            "<b>Pieghi</b>",
+            "<b>si rivesta</b>"
+          ]
+        },
+        {
+          "type": "Riformulazione",
+          "instr": "Rendi l'istruzione più gentile con una domanda.",
+          "items": [
+            "Si sdrai.",
+            "Si tolga la maglia.",
+            "Si giri.",
+            "Apra la bocca.",
+            "Respiri forte.",
+            "Mi dica quando fa male."
+          ],
+          "key": [
+            "Esempio: <b>Può sdraiarsi, per favore?</b>",
+            "Esempio: <b>Le dispiace togliersi la maglia?</b>",
+            "Esempio: <b>Potrebbe girarsi?</b>",
+            "Esempio: <b>Può aprire la bocca?</b>",
+            "Esempio: <b>Può respirare forte?</b>",
+            "Esempio: <b>Può dirmi quando fa male?</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "medicina",
+      "cat": "Terapia",
+      "title": "Diagnosi e terapia",
+      "def": "Dopo la visita e gli esami il medico spiega al paziente che cosa ha (la <b>diagnosi</b>), che cosa bisogna fare (la <b>terapia</b>) e come andrà (la <b>prognosi</b>). Servono parole semplici, ma anche formule per dire se una cosa è certa o solo probabile.",
+      "form": "Per le <b>ipotesi</b> si usa il congiuntivo dopo <i>penso che</i>, <i>credo che</i>, <i>è probabile che</i>, <i>è possibile che</i> («penso che si tratti di una gastrite»), oppure il futuro o il condizionale («sarà un'influenza», «potrebbe essere un'allergia»). Per le <b>certezze</b> si usa l'indicativo: «gli esami mostrano che si tratta di…». Per la <b>prognosi</b> si usa il futuro: «tra una settimana starà meglio».",
+      "tables": [
+        {
+          "before": "<b>Le parole della diagnosi.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "acuto",
+              "cominciato da poco, di solito intenso",
+              "una bronchite acuta"
+            ],
+            [
+              "cronico",
+              "che dura a lungo o non guarisce del tutto",
+              "una malattia cronica"
+            ],
+            [
+              "benigno / maligno",
+              "che non si diffonde / che può diffondersi (si dice dei tumori)",
+              "un nodulo benigno"
+            ],
+            [
+              "lieve / grave",
+              "poco serio / serio",
+              "una forma lieve"
+            ],
+            [
+              "sospetto",
+              "ipotesi ancora da confermare",
+              "sospetta frattura del polso"
+            ],
+            [
+              "gli accertamenti",
+              "gli esami in più per confermare la diagnosi",
+              "sono necessari ulteriori accertamenti"
+            ],
+            [
+              "la prognosi",
+              "come andrà la malattia",
+              "prognosi favorevole; prognosi riservata (le condizioni sono gravi e il medico non si pronuncia sull'esito)"
+            ]
+          ]
+        },
+        {
+          "before": "<b>I tipi di terapia.</b>",
+          "plain": true,
+          "headers": [
+            "terapia",
+            "frase tipica"
+          ],
+          "rows": [
+            [
+              "farmacologica",
+              "Le prescrivo un antibiotico per sei giorni."
+            ],
+            [
+              "chirurgica (un intervento)",
+              "Dobbiamo operare: è un intervento semplice."
+            ],
+            [
+              "fisioterapia, riabilitazione",
+              "Farà dieci sedute di fisioterapia."
+            ],
+            [
+              "riposo, dieta",
+              "Stia a riposo per tre giorni e beva molto."
+            ],
+            [
+              "controllo",
+              "Ci rivediamo tra un mese per un controllo."
+            ],
+            [
+              "ricovero",
+              "È meglio ricoverarla per qualche giorno."
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "comunicare la diagnosi: si tratta di, ha",
+          "ex": "<b>Si tratta di</b> una gastrite. / Ha una frattura del polso. / Gli esami sono nella norma."
+        },
+        {
+          "label": "ipotesi: congiuntivo, futuro o condizionale",
+          "ex": "Penso che <b>sia</b> un'influenza. / È probabile che <b>si tratti</b> di un'allergia. / <b>Sarà</b> un virus. / <b>Potrebbe</b> essere stress."
+        },
+        {
+          "label": "prescrivere e consigliare",
+          "ex": "Le <b>prescrivo</b> un antinfiammatorio. / Prenda questo farmaco per una settimana. / Le consiglio di riposare."
+        },
+        {
+          "label": "la prognosi: futuro",
+          "ex": "Tra qualche giorno <b>starà</b> meglio. / <b>Guarirà</b> completamente. / Ci vorrà circa un mese."
+        },
+        {
+          "label": "rassicurare",
+          "ex": "Non è niente di grave. / È una cosa molto comune. / Di solito passa da sola."
+        }
+      ],
+      "warn": "<b>Ipotesi e certezze.</b> Dopo <i>penso che</i>, <i>credo che</i>, <i>è possibile che</i> ci vuole il congiuntivo («penso che <b>sia</b>»); dopo <i>sono sicuro che</i>, <i>gli esami mostrano che</i> l'indicativo («gli esami mostrano che <b>è</b>»). Nel parlato si sente anche «penso che è»: è informale, con il paziente è meglio il congiuntivo. <b>Positivo</b> nel linguaggio medico vuol dire che il test ha trovato quello che cercava: «tampone positivo» è di solito una cattiva notizia.",
+      "errors": [
+        {
+          "wrong": "Gli esami mostrano che sia una frattura.",
+          "right": "Gli esami mostrano che è una frattura.",
+          "why": "È un fatto certo: indicativo."
+        },
+        {
+          "wrong": "Si tratta un'influenza.",
+          "right": "Si tratta di un'influenza.",
+          "why": "<i>Trattarsi di</i>: la preposizione non si toglie."
+        },
+        {
+          "wrong": "Le prescrivo di un antibiotico.",
+          "right": "Le prescrivo un antibiotico.",
+          "why": "<i>Prescrivere qualcosa</i>, senza preposizione."
+        },
+        {
+          "wrong": "È una malattia crónica.",
+          "right": "È una malattia cronica.",
+          "why": "In italiano niente accento scritto: <i>cronica</i>."
+        },
+        {
+          "wrong": "La diagnosi è stata confermato.",
+          "right": "La diagnosi è stata confermata.",
+          "why": "Il participio si accorda con <i>la diagnosi</i>, femminile."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con il verbo tra parentesi: congiuntivo o indicativo?",
+          "items": [
+            "Penso che (essere) … un'influenza.",
+            "Gli esami mostrano che (essere) … tutto normale.",
+            "È probabile che (trattarsi) … di un'allergia.",
+            "Sono sicuro che (guarire) … presto.",
+            "Credo che le (servire) … qualche giorno di riposo.",
+            "La radiografia conferma che c'(essere) … una frattura."
+          ],
+          "key": [
+            "<b>sia</b>",
+            "<b>è</b>",
+            "<b>si tratti</b>",
+            "<b>guarirà</b> (anche: <b>guarisce</b>)",
+            "<b>serva</b>",
+            "<b>è</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Riformula con il futuro che esprime un'ipotesi.",
+          "items": [
+            "Probabilmente è un virus.",
+            "Probabilmente ha preso freddo.",
+            "Forse è stanchezza.",
+            "Probabilmente il dolore dipende dalla postura.",
+            "Probabilmente ha mangiato qualcosa di pesante.",
+            "Forse sono i pollini."
+          ],
+          "key": [
+            "<b>Sarà</b> un virus.",
+            "<b>Avrà preso</b> freddo.",
+            "<b>Sarà</b> stanchezza.",
+            "Il dolore <b>dipenderà</b> dalla postura.",
+            "<b>Avrà mangiato</b> qualcosa di pesante.",
+            "<b>Saranno</b> i pollini."
+          ]
+        },
+        {
+          "type": "Produzione guidata",
+          "instr": "Spiega al paziente diagnosi e terapia con parole semplici.",
+          "items": [
+            "faringite acuta; antibiotico per 6 giorni",
+            "frattura del polso; gesso per 30 giorni",
+            "lombalgia; antinfiammatorio, poi fisioterapia",
+            "ipertensione; controllo tra un mese",
+            "gastrite; dieta leggera",
+            "nodulo benigno; nessuna terapia"
+          ],
+          "key": [
+            "Esempio: <b>Ha un'infiammazione della gola. Le prescrivo un antibiotico per sei giorni.</b>",
+            "Esempio: <b>Si è rotto il polso: dovrà tenere il gesso per un mese.</b>",
+            "Esempio: <b>Ha mal di schiena: le prescrivo un antinfiammatorio, poi farà fisioterapia.</b>",
+            "Esempio: <b>Ha la pressione alta: la ricontrolliamo tra un mese.</b>",
+            "Esempio: <b>Lo stomaco è infiammato: mangi leggero per qualche settimana.</b>",
+            "Esempio: <b>Non è niente di pericoloso: per ora non serve nessuna cura.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "medicina",
+      "cat": "Terapia",
+      "title": "Farmaci, posologia e ricetta",
+      "def": "Come si chiamano le forme dei farmaci, come si spiega il modo di prenderli (la <b>posologia</b>) e come funziona la ricetta in Italia. Il paziente deve capire esattamente quanto, quando e per quanto tempo prendere un farmaco.",
+      "form": "La posologia si dice con formule fisse: <b>quanto</b> (una compressa, venti gocce, un cucchiaio), <b>quante volte</b> (due volte al giorno, ogni otto ore), <b>quando</b> (a stomaco vuoto, dopo i pasti, la sera), <b>per quanto tempo</b> (per sette giorni, fino alla fine della confezione). Nelle istruzioni scritte si usa l'infinito («assumere una compressa al giorno»), a voce l'imperativo di cortesia («prenda una compressa»). <b>Prendere</b> è il verbo di tutti i giorni, <b>assumere</b> quello scritto.",
+      "tables": [
+        {
+          "before": "<b>Le forme dei farmaci.</b>",
+          "plain": true,
+          "headers": [
+            "forma",
+            "come si usa",
+            "sigla nella ricetta"
+          ],
+          "rows": [
+            [
+              "la compressa (la pastiglia)",
+              "prendere una compressa con un po' d'acqua",
+              "cpr"
+            ],
+            [
+              "la capsula",
+              "prendere una capsula",
+              "cps"
+            ],
+            [
+              "la bustina",
+              "sciogliere una bustina in mezzo bicchiere d'acqua",
+              "bust."
+            ],
+            [
+              "le gocce",
+              "venti gocce in un po' d'acqua",
+              "gtt"
+            ],
+            [
+              "lo sciroppo",
+              "un cucchiaio, un misurino",
+              ""
+            ],
+            [
+              "la fiala, l'iniezione (la puntura)",
+              "fare una puntura in vena, nel muscolo, sotto la pelle",
+              "fl; ev, im, sc"
+            ],
+            [
+              "la supposta",
+              "",
+              "supp."
+            ],
+            [
+              "la pomata, la crema",
+              "applicare sulla parte due volte al giorno",
+              ""
+            ],
+            [
+              "il collirio",
+              "due gocce in ogni occhio",
+              ""
+            ],
+            [
+              "il cerotto",
+              "applicare sulla pelle e cambiare ogni giorno",
+              ""
+            ]
+          ]
+        },
+        {
+          "before": "<b>La posologia.</b>",
+          "plain": true,
+          "headers": [
+            "si dice",
+            "che cosa vuol dire",
+            "nella ricetta"
+          ],
+          "rows": [
+            [
+              "una volta al giorno",
+              "una sola volta ogni giorno",
+              "1 cpr/die"
+            ],
+            [
+              "due volte al giorno",
+              "di solito mattina e sera",
+              "1 cpr x 2/die"
+            ],
+            [
+              "ogni otto ore",
+              "tre volte al giorno, a orari regolari",
+              "1 cpr ogni 8 h"
+            ],
+            [
+              "al bisogno",
+              "solo quando serve (dolore, febbre)",
+              "al bisogno"
+            ],
+            [
+              "a stomaco vuoto, a digiuno, lontano dai pasti",
+              "senza aver mangiato",
+              ""
+            ],
+            [
+              "a stomaco pieno, dopo i pasti",
+              "subito dopo aver mangiato",
+              ""
+            ],
+            [
+              "per bocca",
+              "per via orale",
+              "per os"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Il farmaco e la ricetta.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "il foglietto illustrativo (il bugiardino)",
+              "le istruzioni dentro la confezione"
+            ],
+            [
+              "il principio attivo",
+              "la sostanza che cura"
+            ],
+            [
+              "il farmaco generico (equivalente)",
+              "stesso principio attivo, prezzo più basso"
+            ],
+            [
+              "gli effetti collaterali (indesiderati)",
+              "le reazioni non volute"
+            ],
+            [
+              "le controindicazioni",
+              "i casi in cui il farmaco non si deve prendere"
+            ],
+            [
+              "la ricetta elettronica",
+              "oggi la ricetta è quasi sempre elettronica: il paziente riceve un promemoria o il numero della ricetta (NRE); in farmacia serve anche la tessera sanitaria"
+            ],
+            [
+              "il ticket",
+              "la quota che il paziente paga per farmaci ed esami del Servizio sanitario"
+            ],
+            [
+              "il farmaco da banco (senza ricetta)",
+              "si compra in farmacia senza prescrizione"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "spiegare la posologia",
+          "ex": "Prenda una <b>compressa</b> due volte al giorno, dopo i pasti. / Metta venti <b>gocce</b> in un po' d'acqua la sera. / Lo prenda per sette giorni, anche se si sente meglio."
+        },
+        {
+          "label": "farmaci al bisogno",
+          "ex": "Se ha dolore, prenda una <b>bustina</b>, ma non più di tre al giorno."
+        },
+        {
+          "label": "avvertenze",
+          "ex": "Può dare sonnolenza: non guidi. / Non beva alcolici. / Se ha <b>effetti collaterali</b>, lo sospenda e mi chiami."
+        },
+        {
+          "label": "in farmacia",
+          "ex": "Ha la <b>ricetta</b>? / Mi serve la <b>tessera sanitaria</b>. / C'è il <b>generico</b>, costa meno."
+        },
+        {
+          "label": "nelle istruzioni scritte: infinito",
+          "ex": "<b>Assumere</b> una compressa al giorno. / <b>Agitare</b> prima dell'uso. / <b>Conservare</b> a temperatura ambiente."
+        }
+      ],
+      "warn": "<b>Ogni otto ore</b> non è sempre uguale a «tre volte al giorno, ai pasti»: per alcuni farmaci contano gli orari regolari, quindi va detto con precisione. <b>Bugiardino</b> è il nome popolare del foglietto illustrativo. Le sigle della ricetta (<i>cpr</i>, <i>x 2/die</i>, <i>per os</i>) vanno sempre spiegate a voce al paziente.",
+      "errors": [
+        {
+          "wrong": "Prenda una pastilla.",
+          "right": "Prenda una pastiglia. / Prenda una compressa.",
+          "why": "Lo spagnolo «pastilla» in italiano è <i>pastiglia</i>."
+        },
+        {
+          "wrong": "Due volte per giorno.",
+          "right": "Due volte al giorno.",
+          "why": "In italiano si dice <i>al giorno</i>."
+        },
+        {
+          "wrong": "ogni otto ora",
+          "right": "ogni otto ore",
+          "why": "Plurale: <i>l'ora → le ore</i>."
+        },
+        {
+          "wrong": "Prenda la compressa al digiuno.",
+          "right": "Prenda la compressa a digiuno.",
+          "why": "L'espressione è <i>a digiuno</i>."
+        },
+        {
+          "wrong": "Ha la receta?",
+          "right": "Ha la ricetta?",
+          "why": "Lo spagnolo «receta» in italiano è <i>ricetta</i>."
+        },
+        {
+          "wrong": "Ha molti efetti collaterali.",
+          "right": "Ha molti effetti collaterali.",
+          "why": "<i>Effetto</i> si scrive con due <i>f</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Riformulazione",
+          "instr": "Spiega a voce al paziente quello che c'è scritto nella ricetta.",
+          "items": [
+            "1 cpr/die la sera",
+            "1 cpr x 2/die dopo i pasti",
+            "20 gtt al bisogno",
+            "1 bust. ogni 8 h per 5 giorni",
+            "1 cps a digiuno",
+            "pomata 2 volte/die sulla parte"
+          ],
+          "key": [
+            "Esempio: <b>Prenda una compressa al giorno, la sera.</b>",
+            "Esempio: <b>Prenda una compressa due volte al giorno, dopo i pasti.</b>",
+            "Esempio: <b>Prenda venti gocce solo quando ne ha bisogno.</b>",
+            "Esempio: <b>Prenda una bustina ogni otto ore per cinque giorni.</b>",
+            "Esempio: <b>Prenda una capsula a stomaco vuoto.</b>",
+            "Esempio: <b>Metta la pomata sulla parte due volte al giorno.</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Dall'istruzione scritta all'istruzione a voce, con il Lei.",
+          "items": [
+            "Assumere una compressa al giorno.",
+            "Agitare prima dell'uso.",
+            "Sciogliere la bustina in acqua.",
+            "Non superare la dose consigliata.",
+            "Conservare in frigorifero.",
+            "Applicare la crema due volte al giorno."
+          ],
+          "key": [
+            "<b>Prenda</b> una compressa al giorno.",
+            "<b>Agiti</b> prima dell'uso.",
+            "<b>Sciolga</b> la bustina in acqua.",
+            "Non <b>superi</b> la dose consigliata.",
+            "Lo <b>conservi</b> in frigorifero.",
+            "<b>Applichi</b> la crema due volte al giorno."
+          ]
+        },
+        {
+          "type": "Completamento",
+          "instr": "Completa con al, ogni, per, a, dopo.",
+          "items": [
+            "Due volte … giorno.",
+            "Una bustina … otto ore.",
+            "Lo prenda … sette giorni, poi smetta.",
+            "… stomaco vuoto.",
+            "… i pasti.",
+            "Solo … bisogno."
+          ],
+          "key": [
+            "<b>al</b>",
+            "<b>ogni</b>",
+            "<b>per</b>",
+            "<b>a</b>",
+            "<b>dopo</b>",
+            "<b>al</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "medicina",
+      "cat": "Strutture",
+      "title": "In ospedale: reparti, ricovero, dimissione",
+      "def": "Le parole dell'ospedale e del Servizio sanitario: dove si va, chi ci lavora, come si entra e come si esce. Molti termini hanno una versione ufficiale e una popolare (<i>coordinatore infermieristico</i> / <i>caposala</i>).",
+      "form": "Il percorso tipico: il paziente va dal <b>medico di base</b> (ufficialmente <i>medico di medicina generale</i>) o, se è urgente, al <b>pronto soccorso</b>; lì il <b>triage</b> decide la priorità; se serve, viene <b>ricoverato</b> in un <b>reparto</b>; alla fine viene <b>dimesso</b> con la <b>lettera di dimissione</b>. Nel parlato si usa la forma impersonale: «mi hanno ricoverato», «mi hanno dimesso».",
+      "tables": [
+        {
+          "before": "<b>Il Servizio sanitario e i numeri utili.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "SSN",
+              "Servizio sanitario nazionale"
+            ],
+            [
+              "ASL",
+              "azienda sanitaria locale; in alcune regioni ha un altro nome (ATS, AUSL, ASP…)"
+            ],
+            [
+              "il medico di base (di famiglia)",
+              "medico di medicina generale (MMG); per i bambini il pediatra di libera scelta (PLS)"
+            ],
+            [
+              "la guardia medica",
+              "servizio di continuità assistenziale: di notte, nel fine settimana e nei festivi; in molte regioni risponde al 116117"
+            ],
+            [
+              "112 e 118",
+              "emergenze: il 112 (numero unico di emergenza) è attivo in gran parte d'Italia; il 118 resta il numero delle emergenze sanitarie"
+            ],
+            [
+              "il pronto soccorso (PS)",
+              "per le urgenze; il triage assegna un codice di priorità"
+            ],
+            [
+              "il CUP",
+              "centro unico di prenotazione: per prenotare visite ed esami"
+            ],
+            [
+              "la tessera sanitaria",
+              "la tessera con il codice fiscale, serve per ricette ed esami"
+            ],
+            [
+              "il fascicolo sanitario elettronico (FSE)",
+              "l'archivio online di referti e ricette del paziente"
+            ]
+          ]
+        },
+        {
+          "before": "<b>I codici di triage.</b> Le linee guida nazionali del 2019 hanno sostituito i quattro codici a colori con cinque codici numerici; le regioni li hanno adottati in tempi diversi.",
+          "plain": true,
+          "headers": [
+            "codice",
+            "colore",
+            "significato"
+          ],
+          "rows": [
+            [
+              "1",
+              "rosso",
+              "emergenza"
+            ],
+            [
+              "2",
+              "arancione",
+              "urgenza"
+            ],
+            [
+              "3",
+              "azzurro",
+              "urgenza differibile"
+            ],
+            [
+              "4",
+              "verde",
+              "urgenza minore"
+            ],
+            [
+              "5",
+              "bianco",
+              "non urgenza"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Reparti e persone.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "il reparto di medicina (interna)",
+              "malattie dell'adulto che non richiedono un intervento"
+            ],
+            [
+              "la terapia intensiva (la rianimazione)",
+              "pazienti in pericolo di vita"
+            ],
+            [
+              "il primario",
+              "il medico che dirige il reparto (ufficialmente direttore di struttura complessa)"
+            ],
+            [
+              "il medico di guardia",
+              "il medico presente di notte e nei giorni festivi"
+            ],
+            [
+              "lo specializzando",
+              "il medico che sta facendo la specializzazione"
+            ],
+            [
+              "il/la caposala",
+              "ufficialmente coordinatore infermieristico"
+            ],
+            [
+              "l'OSS",
+              "operatore socio-sanitario: aiuta il paziente nell'igiene, nei pasti, negli spostamenti"
+            ],
+            [
+              "l'ostetrica",
+              "segue la gravidanza e il parto"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Ricovero e dimissione.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "il ricovero ordinario",
+              "il paziente resta in ospedale giorno e notte"
+            ],
+            [
+              "il day hospital",
+              "ricovero diurno, senza passare la notte in ospedale; può ripetersi in più giorni (per esempio per un ciclo di terapie)"
+            ],
+            [
+              "la day surgery",
+              "un piccolo intervento con ritorno a casa in giornata"
+            ],
+            [
+              "la degenza",
+              "il periodo passato in ospedale (giorni di degenza)"
+            ],
+            [
+              "la cartella clinica",
+              "il documento con tutta la storia del ricovero"
+            ],
+            [
+              "la lettera di dimissione",
+              "il riassunto per il paziente e per il medico di base: diagnosi, terapia, controlli"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "al pronto soccorso",
+          "ex": "Le hanno dato il <b>codice verde</b>: dovrà aspettare un po'. / È arrivato in ambulanza con il <b>codice rosso</b>."
+        },
+        {
+          "label": "ricovero e dimissione: nel parlato con la forma impersonale",
+          "ex": "Mi hanno <b>ricoverato</b> in cardiologia. / Mi hanno <b>dimesso</b> ieri. / Quando mi <b>dimettono</b>?"
+        },
+        {
+          "label": "dare indicazioni",
+          "ex": "Il <b>reparto</b> di ortopedia è al terzo piano. / Per prenotare l'esame deve andare al <b>CUP</b>."
+        },
+        {
+          "label": "orari e visite",
+          "ex": "L'orario di visita è dalle 18 alle 19. / Può restare un familiare di notte?"
+        },
+        {
+          "label": "chiedere aiuto al personale",
+          "ex": "Dottore, posso farle una domanda? / Scusi, mi può chiamare l'<b>infermiere</b>?"
+        }
+      ],
+      "warn": "<b>Dimettere e dimettersi.</b> Il paziente <i>viene dimesso</i> («è stato dimesso ieri»); <i>dimettersi</i> vuol dire lasciare il lavoro; in ospedale si usa solo per chi esce di sua volontà, contro il parere dei medici (dimissione volontaria). <b>Ambulatorio e consultorio.</b> L'<i>ambulatorio</i> è il posto delle visite senza ricovero; il <i>consultorio</i> in italiano è un servizio per la famiglia, la gravidanza e la salute delle donne, non lo studio del medico come lo spagnolo «consultorio». <b>Urgenze</b>: lo spagnolo «urgencias» in italiano è il <i>pronto soccorso</i>.",
+      "errors": [
+        {
+          "wrong": "(dimissione normale) Il paziente si è dimesso ieri.",
+          "right": "Il paziente è stato dimesso ieri.",
+          "why": "Dall'ospedale si <i>viene dimessi</i>; <i>si è dimesso</i> si dice solo di chi esce di sua volontà, contro il parere dei medici."
+        },
+        {
+          "wrong": "Mi hanno dimettuto.",
+          "right": "Mi hanno dimesso.",
+          "why": "Il participio di <i>dimettere</i> è <i>dimesso</i>."
+        },
+        {
+          "wrong": "Vado al consultorio del medico.",
+          "right": "Vado dal medico. / Vado all'ambulatorio.",
+          "why": "In italiano il <i>consultorio</i> è un servizio per la famiglia, non lo studio del medico."
+        },
+        {
+          "wrong": "Sono andato all'urgenza.",
+          "right": "Sono andato al pronto soccorso.",
+          "why": "Lo spagnolo «urgencias» è il <i>pronto soccorso</i>."
+        },
+        {
+          "wrong": "Il primario è l'infermiere più anziano.",
+          "right": "Il primario è il medico che dirige il reparto.",
+          "why": "Chi coordina gli infermieri è il <i>coordinatore infermieristico</i> (caposala)."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con: pronto soccorso, ricovero, dimissione, primario, triage, guardia medica.",
+          "items": [
+            "Di notte, per un problema non urgente, chiamo la …",
+            "Il … serve a decidere chi viene visitato per primo.",
+            "Il … dirige il reparto.",
+            "Alla … le daremo una lettera per il suo medico.",
+            "Per un incidente grave si va al …",
+            "Il … è durato cinque giorni."
+          ],
+          "key": [
+            "<b>guardia medica</b>",
+            "<b>triage</b>",
+            "<b>primario</b>",
+            "<b>dimissione</b>",
+            "<b>pronto soccorso</b>",
+            "<b>ricovero</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Riscrivi la frase con essere + participio.",
+          "items": [
+            "Mi hanno ricoverato ieri.",
+            "L'hanno dimessa stamattina.",
+            "Lo hanno operato al ginocchio.",
+            "Ci hanno visitati subito.",
+            "L'hanno trasferita in cardiologia.",
+            "Gli hanno dato il codice verde."
+          ],
+          "key": [
+            "<b>Sono stato ricoverato</b> ieri.",
+            "<b>È stata dimessa</b> stamattina.",
+            "<b>È stato operato</b> al ginocchio.",
+            "<b>Siamo stati visitati</b> subito.",
+            "<b>È stata trasferita</b> in cardiologia.",
+            "Gli <b>è stato dato</b> il codice verde."
+          ]
+        },
+        {
+          "type": "Produzione guidata",
+          "instr": "Spiega che cos'è a un paziente straniero.",
+          "items": [
+            "il CUP",
+            "la guardia medica",
+            "il day hospital",
+            "la lettera di dimissione",
+            "il fascicolo sanitario elettronico",
+            "il ticket"
+          ],
+          "key": [
+            "Esempio: <b>l'ufficio dove si prenotano visite ed esami</b>.",
+            "Esempio: <b>il medico che si chiama di notte e nei festivi, quando il medico di base non c'è</b>.",
+            "Esempio: <b>si viene in ospedale per un giorno per una terapia e la sera si torna a casa</b>.",
+            "Esempio: <b>il foglio con la diagnosi e le cure da fare a casa, da portare al suo medico</b>.",
+            "Esempio: <b>l'archivio online dove trova i suoi referti e le ricette</b>.",
+            "Esempio: <b>la parte del prezzo che paga lei per un esame o un farmaco</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "medicina",
+      "cat": "Documenti",
+      "title": "Referti, sigle e abbreviazioni",
+      "def": "Referti, cartelle cliniche e lettere di dimissione sono pieni di sigle e abbreviazioni. Questa scheda raccoglie le più frequenti e le formule tipiche dei referti, con la traduzione in parole semplici.",
+      "form": "Il referto ha uno <b>stile nominale</b>: poche frasi complete, molti nomi e aggettivi («addome trattabile, non dolente alla palpazione»). Quando ci sono verbi, sono spesso impersonali («si consiglia controllo», «non si rilevano alterazioni»). <b>Riferisce</b> si usa per quello che dice il paziente («il pz riferisce dolore da 3 giorni»); <b>si rileva</b>, <b>si osserva</b> per quello che trova il medico.",
+      "tables": [
+        {
+          "before": "<b>Sigle della cartella.</b>",
+          "plain": true,
+          "headers": [
+            "sigla",
+            "significato"
+          ],
+          "rows": [
+            [
+              "pz; aa",
+              "paziente; anni (pz di 65 aa)"
+            ],
+            [
+              "dx; sn o sx",
+              "destro; sinistro"
+            ],
+            [
+              "PA, FC, FR, TC, SpO2",
+              "pressione arteriosa, frequenza cardiaca, frequenza respiratoria, temperatura corporea, saturazione"
+            ],
+            [
+              "ECG",
+              "elettrocardiogramma"
+            ],
+            [
+              "Rx",
+              "radiografia (Rx torace)"
+            ],
+            [
+              "TC (TAC)",
+              "tomografia computerizzata"
+            ],
+            [
+              "RM (RMN)",
+              "risonanza magnetica"
+            ],
+            [
+              "eco",
+              "ecografia"
+            ],
+            [
+              "ev, im, sc, per os",
+              "in vena, nel muscolo, sotto la pelle, per bocca"
+            ],
+            [
+              "die; x 2/die",
+              "al giorno; due volte al giorno"
+            ],
+            [
+              "DD",
+              "diagnosi differenziale"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Sigle delle malattie.</b>",
+          "plain": true,
+          "headers": [
+            "sigla",
+            "malattia",
+            "in parole semplici"
+          ],
+          "rows": [
+            [
+              "IMA",
+              "infarto miocardico acuto",
+              "infarto"
+            ],
+            [
+              "BPCO",
+              "broncopneumopatia cronica ostruttiva",
+              "malattia cronica dei bronchi, spesso dovuta al fumo"
+            ],
+            [
+              "DM",
+              "diabete mellito (tipo 1, tipo 2)",
+              "diabete"
+            ],
+            [
+              "IRC",
+              "insufficienza renale cronica",
+              "i reni funzionano poco, da tempo"
+            ],
+            [
+              "IVU",
+              "infezione delle vie urinarie",
+              "infezione dell'urina, per esempio una cistite"
+            ],
+            [
+              "TVP",
+              "trombosi venosa profonda",
+              "un coagulo in una vena, di solito della gamba"
+            ],
+            [
+              "FA",
+              "fibrillazione atriale",
+              "battito del cuore irregolare"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Esami del sangue.</b>",
+          "plain": true,
+          "headers": [
+            "voce",
+            "che cosa misura"
+          ],
+          "rows": [
+            [
+              "emocromo",
+              "globuli rossi (GR), globuli bianchi (GB) e piastrine (PLT)"
+            ],
+            [
+              "Hb",
+              "emoglobina"
+            ],
+            [
+              "glicemia",
+              "lo zucchero nel sangue"
+            ],
+            [
+              "PCR",
+              "proteina C reattiva: segnala un'infiammazione"
+            ],
+            [
+              "VES",
+              "velocità di eritrosedimentazione: anche questa segnala un'infiammazione"
+            ],
+            [
+              "creatinina",
+              "come funzionano i reni"
+            ],
+            [
+              "transaminasi (AST, ALT)",
+              "come funziona il fegato"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Formule dei referti.</b>",
+          "plain": true,
+          "headers": [
+            "formula",
+            "in parole semplici"
+          ],
+          "rows": [
+            [
+              "nella norma; nei limiti della norma",
+              "normale"
+            ],
+            [
+              "non si rilevano alterazioni",
+              "non c'è niente di anormale"
+            ],
+            [
+              "reperto negativo",
+              "non è stato trovato niente"
+            ],
+            [
+              "quadro compatibile con…",
+              "i risultati fanno pensare a…"
+            ],
+            [
+              "da correlare con la clinica",
+              "va interpretato insieme ai sintomi e alla visita"
+            ],
+            [
+              "si consiglia controllo a 6 mesi",
+              "rifare l'esame tra sei mesi"
+            ],
+            [
+              "in anamnesi",
+              "nella storia clinica del paziente"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "leggere un referto al paziente",
+          "ex": "L'<b>ecografia</b> è nella norma. / Nelle analisi la <b>PCR</b> è un po' alta: c'è un'infiammazione. / La <b>radiografia</b> non mostra fratture."
+        },
+        {
+          "label": "positivo e negativo",
+          "ex": "Il test è <b>negativo</b>: non c'è infezione. / Il tampone è <b>positivo</b>: l'infezione c'è."
+        },
+        {
+          "label": "scrivere in stile referto",
+          "ex": "Pz di 72 aa, <b>riferisce</b> dolore toracico da 2 ore. / PA 150/90, FC 98. / Addome trattabile, non dolente."
+        },
+        {
+          "label": "le sigle a voce: alcune si leggono lettera per lettera, altre come una parola",
+          "ex": "l'<b>ECG</b> (e-ci-gi) / la <b>TAC</b> (tac) / la <b>PCR</b> (pi-ci-erre) / la <b>BPCO</b> (bi-pi-ci-o)"
+        }
+      ],
+      "warn": "<b>Sigle con due significati.</b> <i>TC</i> è la temperatura corporea, ma anche la TAC (tomografia computerizzata); <i>PCR</i> è la proteina C reattiva negli esami del sangue, ma anche un tipo di tampone («tampone PCR»). Si capisce dal contesto. <b>Negativo</b> nel referto è di solito una buona notizia: vuol dire che non è stato trovato quello che si cercava. <b>Creatinina</b> (esame del sangue) non è <i>creatina</i> (integratore per lo sport).",
+      "errors": [
+        {
+          "wrong": "(test per un'infezione) Il risultato è negativo, purtroppo.",
+          "right": "Il risultato è negativo: non c'è infezione.",
+          "why": "<i>Negativo</i> vuol dire che l'infezione non è stata trovata: è una buona notizia."
+        },
+        {
+          "wrong": "I valori sono nella norme.",
+          "right": "I valori sono nella norma.",
+          "why": "L'espressione è <i>nella norma</i>, al singolare."
+        },
+        {
+          "wrong": "Ho fatto la ecografia.",
+          "right": "Ho fatto l'ecografia.",
+          "why": "Davanti a vocale l'articolo <i>la</i> diventa <i>l'</i>."
+        },
+        {
+          "wrong": "Le transaminase sono alte.",
+          "right": "Le transaminasi sono alte.",
+          "why": "In italiano si dice <i>transaminasi</i>, che non cambia al plurale."
+        },
+        {
+          "wrong": "La creatina è alta: i reni non funzionano bene.",
+          "right": "La creatinina è alta: i reni non funzionano bene.",
+          "why": "L'esame dei reni è la <i>creatinina</i>; la <i>creatina</i> è un'altra cosa."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Riformulazione",
+          "instr": "Scrivi la sigla per esteso.",
+          "items": [
+            "ECG",
+            "RM",
+            "BPCO",
+            "TVP",
+            "ev",
+            "Hb"
+          ],
+          "key": [
+            "<b>elettrocardiogramma</b>",
+            "<b>risonanza magnetica</b>",
+            "<b>broncopneumopatia cronica ostruttiva</b>",
+            "<b>trombosi venosa profonda</b>",
+            "<b>endovena</b> (in vena)",
+            "<b>emoglobina</b>"
+          ]
+        },
+        {
+          "type": "Riformulazione",
+          "instr": "Spiega al paziente con parole semplici.",
+          "items": [
+            "reperto negativo",
+            "quadro compatibile con polmonite",
+            "PCR elevata",
+            "glicemia nei limiti della norma",
+            "si consiglia controllo a 6 mesi",
+            "FA in anamnesi"
+          ],
+          "key": [
+            "Esempio: <b>non è stato trovato niente</b>.",
+            "Esempio: <b>i risultati fanno pensare a una polmonite</b>.",
+            "Esempio: <b>c'è un'infiammazione</b>.",
+            "Esempio: <b>lo zucchero nel sangue è normale</b>.",
+            "Esempio: <b>rifacciamo l'esame tra sei mesi</b>.",
+            "Esempio: <b>in passato ha già avuto un battito del cuore irregolare</b>."
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Riscrivi la frase in stile referto.",
+          "items": [
+            "Il paziente ha 70 anni e dice che ha mal di testa da due giorni.",
+            "La pressione è 140 su 90.",
+            "La pancia è morbida e non fa male quando la tocco.",
+            "Nella radiografia del torace non c'è niente di strano.",
+            "Ha il diabete da anni.",
+            "Consiglio di rifare l'esame tra un mese."
+          ],
+          "key": [
+            "Esempio: <b>Pz di 70 aa, riferisce cefalea da 2 giorni.</b>",
+            "Esempio: <b>PA 140/90 mmHg</b>",
+            "Esempio: <b>Addome trattabile, non dolente alla palpazione.</b>",
+            "Esempio: <b>Rx torace: non si rilevano alterazioni.</b>",
+            "Esempio: <b>DM in anamnesi.</b>",
+            "Esempio: <b>Si consiglia controllo a 1 mese.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "medicina",
+      "cat": "Comunicazione",
+      "title": "Comunicare con il paziente: consenso informato e cattive notizie",
+      "def": "Due momenti delicati del lavoro del medico: spiegare una cura e ottenere il <b>consenso informato</b>, e comunicare una cattiva notizia. In tutti e due conta come si parla: frasi semplici, controllare che il paziente abbia capito, parole che mostrano attenzione.",
+      "form": "In Italia il consenso informato è regolato dalla <b>legge 219 del 2017</b>: il paziente ha diritto di essere informato in modo comprensibile su diagnosi, prognosi, benefici e rischi delle cure e delle alternative; può accettare o rifiutare, e può revocare il consenso in qualsiasi momento. Per attenuare si usa il <b>condizionale</b> («vorrei spiegarle», «dovremmo fare un esame») insieme a <i>purtroppo</i> e <i>mi dispiace</i>; per mostrare comprensione si usa di solito il <b>congiuntivo</b> dopo <i>capisco che</i>: «capisco che sia difficile» (si sente anche l'indicativo: «capisco che è difficile»).",
+      "tables": [
+        {
+          "before": "<b>Il consenso informato: le parole.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "il consenso informato",
+              "il sì del paziente a una cura, dato dopo aver ricevuto le informazioni"
+            ],
+            [
+              "il modulo di consenso",
+              "il foglio da firmare"
+            ],
+            [
+              "i rischi, le complicanze",
+              "quello che può andare storto"
+            ],
+            [
+              "i benefici",
+              "i vantaggi della cura"
+            ],
+            [
+              "le alternative",
+              "le altre cure possibili"
+            ],
+            [
+              "rifiutare, revocare il consenso",
+              "dire di no; cambiare idea in qualsiasi momento"
+            ],
+            [
+              "le DAT (disposizioni anticipate di trattamento)",
+              "le volontà del paziente sulle cure future, se un giorno non potrà più decidere; nel parlato «testamento biologico»"
+            ],
+            [
+              "il fiduciario",
+              "la persona scelta dal paziente nelle DAT per rappresentarlo con i medici"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Comunicare una cattiva notizia: una sequenza utile.</b>",
+          "plain": true,
+          "headers": [
+            "momento",
+            "frase tipica"
+          ],
+          "rows": [
+            [
+              "preparare",
+              "Ho i risultati degli esami. Preferisce parlarne da solo o con un familiare?"
+            ],
+            [
+              "capire che cosa sa il paziente",
+              "Che cosa le hanno detto finora?"
+            ],
+            [
+              "avvisare",
+              "Purtroppo non sono buone notizie."
+            ],
+            [
+              "dire la notizia con parole semplici",
+              "Gli esami mostrano un tumore al polmone."
+            ],
+            [
+              "lasciare spazio",
+              "Capisco che sia difficile. Si prenda il tempo di cui ha bisogno."
+            ],
+            [
+              "spiegare i passi successivi",
+              "Adesso le spiego che cosa possiamo fare."
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "spiegare la cura",
+          "ex": "Vorrei spiegarle in che cosa consiste l'intervento. / I <b>benefici</b> sono… I <b>rischi</b> principali sono… / Ci sono anche delle <b>alternative</b>."
+        },
+        {
+          "label": "controllare che il paziente abbia capito",
+          "ex": "Mi può ripetere con parole sue che cosa faremo? / Ha domande? / C'è qualcosa che non è chiaro?"
+        },
+        {
+          "label": "chiedere il consenso",
+          "ex": "Se è d'accordo, le chiedo di firmare il <b>modulo</b>. / Può cambiare idea in qualsiasi momento. / Vuole pensarci?"
+        },
+        {
+          "label": "cattive notizie: avvisare e attenuare",
+          "ex": "<b>Purtroppo</b> gli esami non sono andati come speravamo. / <b>Mi dispiace</b> doverle dire che…"
+        },
+        {
+          "label": "mostrare comprensione",
+          "ex": "<b>Capisco che sia</b> un momento difficile. / È normale sentirsi così. / Siamo qui per aiutarla."
+        },
+        {
+          "label": "parlare con i familiari, con il permesso del paziente",
+          "ex": "Suo padre mi ha autorizzato a parlare con lei. / Le condizioni sono stabili."
+        }
+      ],
+      "warn": "<b>Le frasi che chiudono il discorso</b> («non c'è più niente da fare») si possono sostituire con frasi che indicano un obiettivo («adesso l'obiettivo è che stia il meglio possibile»). <b>Il gergo medico</b> («prognosi riservata», «metastasi», «cure palliative») va spiegato con parole semplici. <b>«Ha capito?»</b> mette il paziente in difficoltà: meglio chiedere di ripetere con parole sue.",
+      "errors": [
+        {
+          "wrong": "Firmi qui il consentimento.",
+          "right": "Firmi qui il consenso.",
+          "why": "Lo spagnolo «consentimiento» in italiano è <i>consenso</i>."
+        },
+        {
+          "wrong": "Il paziente ha rifiutato a firmare.",
+          "right": "Il paziente si è rifiutato di firmare.",
+          "why": "<i>Rifiutarsi di</i> (o <i>rifiutare di</i>) + infinito."
+        },
+        {
+          "wrong": "Le informo che l'intervento è lunedì.",
+          "right": "La informo che l'intervento è lunedì.",
+          "why": "<i>Informare qualcuno</i>: con il Lei il pronome è <i>La</i>, non <i>Le</i>."
+        },
+        {
+          "wrong": "Mi dispiace molto, lo sento.",
+          "right": "Mi dispiace molto.",
+          "why": "Lo spagnolo «lo siento» in italiano è <i>mi dispiace</i>; «lo sento» vuol dire «lo oigo»."
+        },
+        {
+          "wrong": "Si prenda il tempo che ha bisogno.",
+          "right": "Si prenda il tempo di cui ha bisogno.",
+          "why": "<i>Avere bisogno di</i>: nella frase relativa diventa <i>di cui</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Rendi la frase più delicata.",
+          "items": [
+            "Deve fare un intervento.",
+            "Voglio spiegarle l'esame.",
+            "Firmi qui.",
+            "Ha capito?",
+            "La notizia è brutta.",
+            "Non c'è niente da fare."
+          ],
+          "key": [
+            "Esempio: <b>Dovremmo fare un intervento.</b>",
+            "Esempio: <b>Vorrei spiegarle l'esame.</b>",
+            "Esempio: <b>Se è d'accordo, può firmare qui?</b>",
+            "Esempio: <b>Mi può ripetere con parole sue?</b>",
+            "Esempio: <b>Purtroppo non sono buone notizie.</b>",
+            "Esempio: <b>Adesso l'obiettivo è che lei stia il meglio possibile.</b>"
+          ]
+        },
+        {
+          "type": "Completamento",
+          "instr": "Completa con: di, cui, La, le, in.",
+          "items": [
+            "Ha il diritto … rifiutare la cura.",
+            "Si è rifiutato … firmare.",
+            "… informo che l'intervento è programmato per lunedì.",
+            "Si prenda il tempo di … ha bisogno.",
+            "Posso spiegar… i rischi?",
+            "Può cambiare idea … qualsiasi momento."
+          ],
+          "key": [
+            "<b>di</b>",
+            "<b>di</b>",
+            "<b>La</b>",
+            "<b>cui</b>",
+            "spiegar<b>le</b>",
+            "<b>in</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata",
+          "instr": "Scrivi che cosa direbbe il medico.",
+          "items": [
+            "Per cominciare il colloquio con un risultato difficile.",
+            "Per avvisare che la notizia è brutta.",
+            "Per controllare che il paziente abbia capito.",
+            "Per mostrare comprensione.",
+            "Per spiegare che il paziente può dire di no.",
+            "Per passare a quello che si farà."
+          ],
+          "key": [
+            "Esempio: <b>Ho i risultati degli esami. Preferisce parlarne da solo o con un familiare?</b>",
+            "Esempio: <b>Purtroppo non sono buone notizie.</b>",
+            "Esempio: <b>Mi può ripetere con parole sue che cosa faremo?</b>",
+            "Esempio: <b>Capisco che sia un momento difficile.</b>",
+            "Esempio: <b>Può rifiutare la cura o cambiare idea in qualsiasi momento.</b>",
+            "Esempio: <b>Adesso le spiego che cosa possiamo fare.</b>"
+          ]
+        }
+      ]
+    }
+  ]
+}
