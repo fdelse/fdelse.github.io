@@ -1,14 +1,14 @@
-/* Vademecum dell'italiano per le professioni — app.js — versione 1.0
+/* Vademecum dell'italiano per le professioni — app.js — versione 1.2
    Le schede stanno in dati/<settore>.json.
    Quando modifichi un file di dati, aggiorna la sua versione qui sotto in DATI
    (e il campo "versione" nel file): serve a far riscaricare il file al browser. */
-const VERSIONE = "1.0";
-const DATI = {medicina:"1.0", diritto:"1.0", banca:"1.0", software:"1.0"};
+const VERSIONE = "1.2";
+const DATI = {medicina:"1.2", diritto:"1.0", banca:"1.0", software:"1.0"};
 
 /* ===== Settori =====
    (si chiamano LEVELS come nel vademecum di grammatica, per tenere il codice uguale) */
 const LEVELS = [
-  {id:"medicina", tag:"Medicina", name:"Professioni sanitarie", color:"var(--c-c1)"},
+  {id:"medicina", tag:"Medicina", name:"Medici", color:"var(--c-c1)"},
   {id:"diritto",  tag:"Diritto",  name:"Giuristi e contratti",  color:"var(--c-b2)"},
   {id:"banca",    tag:"Banca",    name:"Banche e finanza",      color:"var(--c-a)"},
   {id:"software", tag:"Software", name:"Sviluppatori",          color:"var(--c-b1)"},
