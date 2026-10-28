@@ -1,5 +1,5 @@
 {
-  "versione": "1.2",
+  "versione": "1.3",
   "livello": "Medicina",
   "schede": [
     {
@@ -127,48 +127,38 @@
           ]
         },
         {
-          "before": "<b>Italiano e spagnolo: parole simili e falsi amici.</b>",
+          "before": "<b>Falsi amici.</b>",
           "plain": true,
           "headers": [
             "italiano",
-            "spagnolo",
+            "inglese (e altre lingue)",
             "attenzione"
           ],
           "rows": [
             [
               "la spalla",
-              "el hombro",
-              "lo spagnolo «espalda» è la schiena"
-            ],
-            [
-              "la schiena",
-              "la espalda",
-              ""
+              "sp. el hombro",
+              "lo spagnolo «espalda» è la <i>schiena</i>"
             ],
             [
               "il polso",
-              "la muñeca; el pulso",
-              "in italiano «polso» è tutte e due le cose"
+              "wrist, pulse; sp. muñeca, pulso",
+              "in italiano <i>polso</i> è tutte e due le cose"
             ],
             [
-              "la caviglia",
-              "el tobillo",
-              ""
+              "le articolazioni",
+              "joints",
+              "il <i>giunto</i> in italiano è un pezzo meccanico"
             ],
             [
-              "il gomito",
-              "el codo",
-              ""
-            ],
-            [
-              "l'anca",
-              "la cadera",
-              ""
+              "la tempia",
+              "temple",
+              "il <i>tempio</i> in italiano è l'edificio sacro"
             ],
             [
               "il viso, la faccia",
-              "la cara",
-              "in italiano «cara» vuol dire «querida»"
+              "sp. la cara",
+              "in italiano <i>cara</i> vuol dire «dear»: cara Anna"
             ]
           ]
         }
@@ -203,9 +193,9 @@
           "why": "<i>Spalla</i> è lo spagnolo «hombro»; «espalda» in italiano è <i>schiena</i>."
         },
         {
-          "wrong": "Tengo mal di testa.",
-          "right": "Ho mal di testa.",
-          "why": "Lo spagnolo «tengo» in italiano è <i>ho</i>: <i>avere mal di testa</i>."
+          "wrong": "Mi fanno male i giunti delle mani.",
+          "right": "Mi fanno male le articolazioni delle mani.",
+          "why": "L'inglese «joints» sono le <i>articolazioni</i> (nel parlato anche <i>giunture</i>); il <i>giunto</i> è un pezzo meccanico."
         },
         {
           "wrong": "insufficienza di rene",
@@ -213,14 +203,14 @@
           "why": "Nel linguaggio medico si usa l'aggettivo: <i>renale</i>, <i>epatico</i>, <i>cardiaco</i>."
         },
         {
-          "wrong": "Mi fa male la cintura.",
-          "right": "Mi fa male la schiena all'altezza della vita. / Ho male ai fianchi.",
-          "why": "Per la parte del corpo <i>cintura</i> si usa poco; per il dolore si dice <i>schiena</i>, <i>fianchi</i> o <i>vita</i>."
+          "wrong": "Quando mi lavo i denti mi sanguinano le gomme.",
+          "right": "Quando mi lavo i denti mi sanguinano le gengive.",
+          "why": "L'inglese «gums» sono le <i>gengive</i>; la <i>gomma</i> è quella da masticare o delle ruote."
         },
         {
-          "wrong": "Ho una macchia rossa sulla cara.",
-          "right": "Ho una macchia rossa sulla faccia (sul viso).",
-          "why": "Lo spagnolo «cara» è la <i>faccia</i>, il <i>viso</i>; in italiano <i>cara</i> vuol dire «querida»."
+          "wrong": "Mi fa male il tempio destro.",
+          "right": "Mi fa male la tempia destra.",
+          "why": "L'inglese «temple» qui è la <i>tempia</i>; il <i>tempio</i> è l'edificio sacro."
         }
       ],
       "exercises": [
@@ -442,17 +432,22 @@
             [
               "sp. estar embarazada",
               "essere incinta",
-              "l'italiano «imbarazzata» vuol dire «avergonzada»"
-            ],
-            [
-              "sp. estar mareado",
-              "ho la nausea; mi gira la testa",
-              ""
+              "l'italiano «imbarazzata» vuol dire «embarrassed»"
             ],
             [
               "ingl. constipated",
               "stitico",
               ""
+            ],
+            [
+              "ingl. I have a temperature",
+              "ho la febbre",
+              "non si dice «ho una temperatura»; nel parlato anche «ho un po' di temperatura»"
+            ],
+            [
+              "ingl. I feel bad",
+              "mi sento male",
+              "<i>cattivo</i> descrive una persona che fa il male (un uomo cattivo) o una cosa di bassa qualità (un cattivo odore)"
             ]
           ]
         }
@@ -487,24 +482,24 @@
           "why": "Lo spagnolo «embarazada» in italiano è <i>incinta</i>."
         },
         {
-          "wrong": "Ho la gripe da tre giorni.",
-          "right": "Ho l'influenza da tre giorni.",
-          "why": "Lo spagnolo «gripe» in italiano è <i>influenza</i>."
+          "wrong": "Ho una temperatura da ieri.",
+          "right": "Ho la febbre da ieri.",
+          "why": "Calco dell'inglese «I have a temperature»: non si dice <i>una temperatura</i>. Nel parlato si sente <i>ho un po' di temperatura</i>, ma la forma chiara è <i>ho la febbre</i>."
         },
         {
-          "wrong": "Sono mareato quando mi alzo.",
-          "right": "Mi gira la testa quando mi alzo.",
-          "why": "Lo spagnolo «mareado» si dice <i>mi gira la testa</i> o, se viene da vomitare, <i>ho la nausea</i>."
+          "wrong": "Ho un freddo da tre giorni.",
+          "right": "Ho il raffreddore da tre giorni.",
+          "why": "L'inglese «a cold» è il <i>raffreddore</i>; «ho freddo» vuol dire che la temperatura è bassa."
         },
         {
-          "wrong": "Ho un resfriado da due giorni.",
-          "right": "Ho il raffreddore da due giorni.",
-          "why": "Lo spagnolo «resfriado» in italiano è <i>raffreddore</i>."
+          "wrong": "Il naso mi corre.",
+          "right": "Mi cola il naso.",
+          "why": "Calco dell'inglese «my nose is running»: in italiano il naso <i>cola</i>."
         },
         {
-          "wrong": "Ho dolor de garganta.",
-          "right": "Ho mal di gola.",
-          "why": "Lo spagnolo «dolor de garganta» si dice <i>mal di gola</i>."
+          "wrong": "Da stamattina mi sento cattivo.",
+          "right": "Da stamattina mi sento male.",
+          "why": "«I feel bad» qui vuol dire «sto male»: si dice <i>mi sento male</i>; <i>cattivo</i> descrive una persona che fa il male o una cosa di bassa qualità."
         }
       ],
       "exercises": [
@@ -682,7 +677,7 @@
         },
         {
           "label": "famiglia (anamnesi familiare)",
-          "ex": "I suoi genitori sono vivi? / Di che cosa è morto suo padre? / In famiglia qualcuno ha avuto il <b>diabete</b>?"
+          "ex": "I Suoi genitori sono vivi? / Di che cosa è morto suo padre? / In famiglia qualcuno ha avuto il <b>diabete</b>?"
         },
         {
           "label": "domande delicate: spiegare perché si fanno",
@@ -697,24 +692,24 @@
           "why": "Lo spagnolo «intervenido» si dice <i>operato</i>; in italiano <i>intervenire</i> vuol dire «agire, prendere la parola»."
         },
         {
-          "wrong": "Ha antecedenti familiari di diabete?",
-          "right": "In famiglia qualcuno ha il diabete? (nel referto: familiarità per diabete)",
-          "why": "Lo spagnolo «antecedentes familiares» nel referto è <i>familiarità per</i>; con il paziente si chiede in modo semplice."
+          "wrong": "Prende qualche droga per la pressione?",
+          "right": "Prende qualche farmaco per la pressione?",
+          "why": "L'inglese «drug» qui è il <i>farmaco</i>; la <i>droga</i> in italiano è la sostanza stupefacente."
         },
         {
-          "wrong": "Prende qualche medicamento?",
-          "right": "Prende qualche farmaco (qualche medicina)?",
-          "why": "<i>Medicamento</i> esiste, ma è raro e formale: con il paziente si dice <i>farmaco</i> o <i>medicina</i>."
+          "wrong": "I Suoi parenti sono ancora vivi?",
+          "right": "I Suoi genitori sono ancora vivi?",
+          "why": "L'inglese «parents» sono i <i>genitori</i>; i <i>parenti</i> sono tutte le persone della famiglia (zii, cugini…)."
         },
         {
-          "wrong": "Quanti sigari fuma al giorno? (a chi fuma sigarette)",
-          "right": "Quante sigarette fuma al giorno?",
-          "why": "Lo spagnolo «cigarro» in molti paesi è la <i>sigaretta</i>; il <i>sigaro</i> in italiano è un'altra cosa (il toscano, il cubano)."
+          "wrong": "Prende delle medicazioni?",
+          "right": "Prende dei farmaci?",
+          "why": "L'inglese «medication» è il <i>farmaco</i>; la <i>medicazione</i> è la cura di una ferita (garza, cerotto)."
         },
         {
-          "wrong": "Ha fatto la vacuna del tetano?",
-          "right": "Ha fatto il vaccino contro il tetano?",
-          "why": "Lo spagnolo «vacuna» in italiano è <i>il vaccino</i>."
+          "wrong": "Qual è il Suo reclamo principale?",
+          "right": "Che disturbi ha? / Qual è il problema principale?",
+          "why": "Calco dell'inglese medico «chief complaint»: il <i>reclamo</i> in italiano è una protesta formale."
         }
       ],
       "exercises": [
@@ -965,9 +960,9 @@
           "why": "Nella stessa frase non si passa dal Lei al tu."
         },
         {
-          "wrong": "Si tumbi sulla camilla.",
-          "right": "Si sdrai sul lettino.",
-          "why": "Lo spagnolo «tumbarse» è <i>sdraiarsi</i>; la «camilla» è il <i>lettino</i>."
+          "wrong": "Si rotoli su la manica, per favore.",
+          "right": "Si tiri su (si arrotoli) la manica, per favore.",
+          "why": "Calco dell'inglese «roll up your sleeve»: <i>rotolare</i> vuol dire girare su sé stesso come una palla; si dice <i>tirarsi su</i> o <i>arrotolarsi la manica</i>."
         },
         {
           "wrong": "Adesso le prendo la tensione.",
@@ -975,14 +970,14 @@
           "why": "Lo spagnolo «tensión (arterial)» a voce si dice <i>pressione</i>; <i>tensione arteriosa</i> esiste solo nel linguaggio tecnico."
         },
         {
-          "wrong": "Si desvesta, per favore.",
-          "right": "Si spogli, per favore.",
-          "why": "Lo spagnolo «desvestirse» è <i>spogliarsi</i>."
+          "wrong": "Si relassi, signora.",
+          "right": "Si rilassi, signora.",
+          "why": "Dall'inglese «relax»: in italiano il verbo è <i>rilassarsi</i>."
         },
         {
-          "wrong": "Respiri hondo.",
-          "right": "Respiri profondamente. / Faccia un respiro profondo.",
-          "why": "Lo spagnolo «hondo» si dice <i>profondamente</i>."
+          "wrong": "Respiri dentro… e fuori.",
+          "right": "Inspiri… ed espiri. / Prenda aria… e butti fuori.",
+          "why": "Calco dell'inglese «breathe in, breathe out»: si dice <i>inspirare</i> ed <i>espirare</i>."
         }
       ],
       "exercises": [
@@ -1210,39 +1205,34 @@
           "plain": true,
           "headers": [
             "italiano",
-            "spagnolo / inglese",
+            "inglese (e altre lingue)",
             "attenzione"
           ],
           "rows": [
             [
               "la radiografia (la lastra)",
-              "la radiografía (la placa)",
-              "in italiano la <i>placca</i> è quella dei denti o delle arterie"
+              "X-ray; sp. placa",
+              "per l'esame non si dice «un raggio X» (nel parlato: «fare i raggi»); la <i>placca</i> è quella dei denti o delle arterie"
             ],
             [
-              "gli esami del sangue",
-              "la analítica",
-              "in italiano <i>analitica</i> non si usa per gli esami"
+              "l'ecografia",
+              "ultrasound",
+              "gli <i>ultrasuoni</i> sono le onde che usa l'esame"
             ],
             [
-              "a digiuno",
-              "en ayunas",
-              "si dice <i>a digiuno</i>, non <i>in digiuno</i>"
-            ],
-            [
-              "il mezzo di contrasto",
-              "el contraste",
-              "il paziente dice anche solo <i>il contrasto</i>"
-            ],
-            [
-              "l'esito",
-              "el resultado",
-              "<i>esito</i> non vuol dire «éxito» (successo)"
+              "la risonanza magnetica (RM, RMN)",
+              "MRI",
+              "in italiano la sigla è <i>RM</i> o <i>RMN</i>"
             ],
             [
               "la TAC, la TC",
-              "el escáner; CT scan",
+              "CT scan; sp. escáner",
               "lo <i>scanner</i> è la macchina, non l'esame"
+            ],
+            [
+              "l'esito",
+              "sp. el resultado",
+              "<i>esito</i> vuol dire «risultato», non «éxito» (successo)"
             ]
           ]
         }
@@ -1276,9 +1266,9 @@
       "warn": "<b>TC e TAC.</b> Nei referti e nelle richieste si scrive <i>TC</i> (tomografia computerizzata); <i>TAC</i> è il nome vecchio, ma è quello che usano quasi tutti i pazienti: con loro va benissimo. <b>Esito</b> vuol dire risultato, non successo: «esito negativo» di solito è una buona notizia, perché l'esame non ha trovato niente. <b>Eco</b>: da solo vuol dire quasi sempre ecografia; per il cuore si dice <i>eco al cuore</i> o <i>ecocardiogramma</i>.",
       "errors": [
         {
-          "wrong": "Devo farmi un'analitica.",
-          "right": "Devo fare gli esami del sangue.",
-          "why": "In italiano <i>analitica</i> non si usa per gli esami (sp. «analítica»)."
+          "wrong": "Le prescrivo un ultrasuono dell'addome.",
+          "right": "Le prescrivo un'ecografia dell'addome.",
+          "why": "L'inglese «ultrasound» (l'esame) è l'<i>ecografia</i>; gli <i>ultrasuoni</i> sono le onde che usa."
         },
         {
           "wrong": "Le hanno fatto una placca al torace.",
@@ -1286,19 +1276,19 @@
           "why": "Lo spagnolo «placa» è la <i>lastra</i>; la <i>placca</i> è quella dei denti o delle arterie."
         },
         {
-          "wrong": "Domani venga in digiuno.",
-          "right": "Domani venga a digiuno.",
-          "why": "L'espressione fissa è <i>a digiuno</i> (sp. «en ayunas»)."
+          "wrong": "Le facciamo una MRI del ginocchio.",
+          "right": "Le facciamo una risonanza (RM, anche RMN) del ginocchio.",
+          "why": "In italiano la sigla è <i>RM</i> o <i>RMN</i> (risonanza magnetica), non quella inglese «MRI»."
         },
         {
-          "wrong": "Ho la cita per la risonanza il 3 marzo.",
-          "right": "Ho l'appuntamento per la risonanza il 3 marzo.",
-          "why": "Lo spagnolo «cita» è l'<i>appuntamento</i>; in italiano <i>citazione</i> è un'altra cosa."
+          "wrong": "Le facciamo un raggio X del polso.",
+          "right": "Le facciamo una radiografia del polso.",
+          "why": "Calco dell'inglese «an X-ray»: l'esame è la <i>radiografia</i> (Rx); nel parlato si dice anche <i>fare i raggi</i>, ma non «un raggio X»."
         },
         {
-          "wrong": "Adesso le mettiamo il contraste.",
-          "right": "Adesso le iniettiamo il mezzo di contrasto.",
-          "why": "In italiano è il <i>mezzo di contrasto</i> (o solo <i>il contrasto</i>)."
+          "wrong": "Adesso Le iniettiamo il medio di contrasto.",
+          "right": "Adesso Le iniettiamo il mezzo di contrasto.",
+          "why": "Calco dell'inglese «contrast medium»: in italiano è il <i>mezzo di contrasto</i> (o solo <i>il contrasto</i>)."
         },
         {
           "wrong": "Le prescrivo uno scan dell'addome.",
@@ -1502,24 +1492,24 @@
       "warn": "<b>Ipotesi e certezze.</b> Se la diagnosi non è sicura, bisogna dirlo, ma senza spaventare: «per ora penso che sia…, facciamo un esame per esserne sicuri». <b>Positivo</b> nel linguaggio medico vuol dire che il test ha trovato quello che cercava: «tampone positivo» è di solito una cattiva notizia. <b>Prognosi riservata</b> vuol dire che i medici non possono ancora dire come andrà.",
       "errors": [
         {
-          "wrong": "Le receto un antibiotico.",
-          "right": "Le prescrivo un antibiotico.",
-          "why": "Lo spagnolo «recetar» si dice <i>prescrivere</i>; la <i>ricetta</i> è il foglio."
+          "wrong": "Il paziente si è ricoverato bene dalla polmonite.",
+          "right": "Il paziente si è ripreso bene dalla polmonite.",
+          "why": "L'inglese «recover» è <i>riprendersi</i>, <i>guarire</i>; <i>ricoverare</i> vuol dire portare in ospedale."
         },
         {
-          "wrong": "Deve guardare riposo per tre giorni.",
-          "right": "Deve stare a riposo per tre giorni.",
-          "why": "Lo spagnolo «guardar reposo» si dice <i>stare a riposo</i>."
+          "wrong": "La prenda facile per qualche giorno.",
+          "right": "Si riguardi (non si affatichi) per qualche giorno.",
+          "why": "Calco dell'inglese «take it easy»: in italiano si dice <i>si riguardi</i>, <i>stia a riposo</i>."
         },
         {
-          "wrong": "Ha un catarro da tre giorni.",
-          "right": "Ha il raffreddore da tre giorni.",
-          "why": "Lo spagnolo «catarro» è soprattutto il raffreddore; in italiano il <i>catarro</i> è il muco."
+          "wrong": "Non è niente di grave: ha preso un insetto dello stomaco.",
+          "right": "Non è niente di grave: ha preso un virus intestinale (una gastroenterite).",
+          "why": "Calco dell'inglese «stomach bug»: si dice <i>virus intestinale</i>; l'<i>insetto</i> è la mosca, la zanzara…"
         },
         {
-          "wrong": "Le metto un trattamento con antibiotico.",
-          "right": "Le prescrivo una terapia antibiotica.",
-          "why": "Lo spagnolo «poner un tratamiento» si dice <i>prescrivere una terapia</i> (o <i>una cura</i>)."
+          "wrong": "Purtroppo la prognosi è povera.",
+          "right": "Purtroppo la prognosi è sfavorevole (infausta).",
+          "why": "Calco dell'inglese «poor prognosis»: si dice <i>prognosi sfavorevole</i> o <i>infausta</i>; <i>povero</i> si dice di una persona senza soldi o, con <i>di</i>, di una cosa che ha poco di qualcosa (povero di grassi)."
         },
         {
           "wrong": "Tranquillo, si curerà in una settimana.",
@@ -1762,7 +1752,7 @@
             ],
             [
               "il farmaco da banco (senza ricetta)",
-              "si compra in farmacia senza prescrizione"
+              "si compra senza ricetta, in farmacia o in parafarmacia"
             ]
           ]
         }
@@ -1802,19 +1792,19 @@
           "why": "In italiano si dice <i>al giorno</i>."
         },
         {
-          "wrong": "Ha la receta?",
-          "right": "Ha la ricetta?",
-          "why": "Lo spagnolo «receta» in italiano è <i>ricetta</i>."
+          "wrong": "Prenda una tavoletta dopo cena.",
+          "right": "Prenda una compressa dopo cena.",
+          "why": "L'inglese «tablet» è la <i>compressa</i>; la <i>tavoletta</i> è una piccola tavola (una tavoletta di cioccolato)."
         },
         {
-          "wrong": "Questo farmaco ha poche contraindicazioni.",
-          "right": "Questo farmaco ha poche controindicazioni.",
-          "why": "In italiano si dice <i>controindicazioni</i> (sp. «contraindicaciones»)."
+          "wrong": "Questo farmaco ha pochi effetti laterali.",
+          "right": "Questo farmaco ha pochi effetti collaterali.",
+          "why": "Calco dell'inglese «side effects»: si dice <i>effetti collaterali</i>."
         },
         {
-          "wrong": "Le do un jarabe per la tosse.",
-          "right": "Le do uno sciroppo per la tosse.",
-          "why": "Lo spagnolo «jarabe» in italiano è <i>sciroppo</i>."
+          "wrong": "È un farmaco sopra il banco.",
+          "right": "È un farmaco da banco (senza ricetta).",
+          "why": "Calco dell'inglese «over the counter»: si dice <i>farmaco da banco</i>."
         }
       ],
       "exercises": [
@@ -2035,28 +2025,28 @@
           ]
         },
         {
-          "before": "<b>Italiano, spagnolo e inglese.</b>",
+          "before": "<b>Falsi amici.</b>",
           "plain": true,
           "headers": [
             "italiano",
-            "spagnolo / inglese",
+            "inglese (e altre lingue)",
             "attenzione"
           ],
           "rows": [
             [
               "la sala operatoria",
-              "el quirófano",
-              "parola del tutto diversa: il paziente non la capirebbe"
+              "operating room, operating theatre (UK); sp. quirófano",
+              "<i>teatro operatorio</i> è un termine antiquato: oggi si dice sala operatoria"
             ],
             [
               "togliere i punti",
-              "quitar los puntos",
+              "sp. quitar los puntos",
               "si dice <i>togliere</i>, non <i>quitare</i>"
             ],
             [
               "la medicazione; la fasciatura",
-              "el apósito; el vendaje",
-              "in italiano la <i>medicazione</i> è anche quello che protegge la ferita, non solo i farmaci"
+              "dressing, bandage; sp. apósito, vendaje",
+              "la <i>medicazione</i> è la garza o il cerotto sulla ferita (e l'atto di medicarla); non sono i farmaci (ingl. «medication»)"
             ],
             [
               "l'intervento chirurgico",
@@ -2065,8 +2055,13 @@
             ],
             [
               "la sala risveglio",
-              "la sala de recuperación; recovery room",
+              "recovery room",
               "si dice anche <i>recovery room</i>, ma più spesso <i>sala risveglio</i>"
+            ],
+            [
+              "il gesso",
+              "cast",
+              "la <i>casta</i> in italiano è un gruppo sociale chiuso"
             ]
           ]
         }
@@ -2110,9 +2105,9 @@
           "why": "Lo spagnolo «quitar» è <i>togliere</i>."
         },
         {
-          "wrong": "Il paziente è ancora nel quirofano.",
-          "right": "Il paziente è ancora in sala operatoria.",
-          "why": "Lo spagnolo «quirófano» è la <i>sala operatoria</i>."
+          "wrong": "Deve tenere la casta per un mese.",
+          "right": "Deve tenere il gesso per un mese.",
+          "why": "L'inglese «cast» qui è il <i>gesso</i>; la <i>casta</i> è un gruppo sociale chiuso."
         },
         {
           "wrong": "Le hanno fatto una cicatrizzazione di dieci centimetri.",
@@ -2120,14 +2115,14 @@
           "why": "La <i>cicatrizzazione</i> è il processo di guarigione; il segno che resta è la <i>cicatrice</i>."
         },
         {
-          "wrong": "Le cambio il vendaggio.",
-          "right": "Le cambio la medicazione (la fasciatura).",
-          "why": "Lo spagnolo «vendaje» è la <i>fasciatura</i>; per la ferita chirurgica si dice <i>medicazione</i>."
+          "wrong": "Dopo l'intervento resta un'ora nella stanza di recupero.",
+          "right": "Dopo l'intervento resta un'ora in sala risveglio.",
+          "why": "Calco dell'inglese «recovery room»: si dice <i>sala risveglio</i>."
         },
         {
-          "wrong": "Le faremo una raquídea.",
-          "right": "Le faremo una spinale (una rachianestesia).",
-          "why": "Lo spagnolo «raquídea» si dice <i>anestesia spinale</i> o <i>rachianestesia</i>."
+          "wrong": "Per il menisco ha bisogno di una chirurgia.",
+          "right": "Per il menisco ha bisogno di un intervento (chirurgico).",
+          "why": "Dall'inglese «a surgery»: la <i>chirurgia</i> è la disciplina; l'operazione è l'<i>intervento</i>."
         }
       ],
       "exercises": [
@@ -2409,14 +2404,14 @@
           "why": "Dall'ospedale si <i>viene dimessi</i>; <i>si è dimesso</i> si dice solo di chi esce di sua volontà, contro il parere dei medici."
         },
         {
-          "wrong": "Mi hanno ingresato in cardiologia.",
-          "right": "Mi hanno ricoverato in cardiologia.",
-          "why": "Lo spagnolo «ingresar» (in ospedale) si dice <i>ricoverare</i>."
+          "wrong": "Se va tutto bene, domani La scarichiamo.",
+          "right": "Se va tutto bene, domani La dimettiamo.",
+          "why": "L'inglese «discharge» qui è <i>dimettere</i>; <i>scaricare</i> vuol dire togliere un carico (scaricare un camion)."
         },
         {
-          "wrong": "Vado al consultorio del medico.",
-          "right": "Vado dal medico. / Vado all'ambulatorio.",
-          "why": "In italiano il <i>consultorio</i> è un servizio per la famiglia, non lo studio del medico."
+          "wrong": "Il paziente è in ICU da due giorni.",
+          "right": "Il paziente è in terapia intensiva (in rianimazione) da due giorni.",
+          "why": "In italiano non si usa la sigla inglese «ICU»: si dice <i>terapia intensiva</i> o <i>rianimazione</i>."
         },
         {
           "wrong": "Sono andato all'urgenza.",
@@ -2732,14 +2727,14 @@
           "why": "L'esame dei reni è la <i>creatinina</i>; la <i>creatina</i> è un'altra cosa."
         },
         {
-          "wrong": "Ho letto il suo informe.",
-          "right": "Ho letto il suo referto.",
+          "wrong": "Ho letto il Suo informe.",
+          "right": "Ho letto il Suo referto.",
           "why": "Lo spagnolo «informe (médico)» è il <i>referto</i>; in italiano <i>informe</i> vuol dire «senza forma»."
         },
         {
-          "wrong": "Le faccio un emograma.",
-          "right": "Le faccio un emocromo.",
-          "why": "Lo spagnolo «hemograma» in italiano è <i>emocromo</i>."
+          "wrong": "Le faccio una conta del sangue.",
+          "right": "Le prescrivo un emocromo.",
+          "why": "Calco dell'inglese «blood count»: l'esame completo è l'<i>emocromo</i>; si dice però <i>conta dei globuli bianchi</i>, <i>conta piastrinica</i>."
         }
       ],
       "exercises": [
@@ -2977,7 +2972,12 @@
             [
               "rilasciare",
               "expedir; to issue",
-              "<i>rilasciare</i> un certificato vuol dire farlo, non «liberarlo»"
+              "<i>rilasciare</i> un certificato vuol dire farlo e consegnarlo al paziente"
+            ],
+            [
+              "il datore di lavoro",
+              "employer",
+              "l'<i>impiegato</i> in italiano è chi lavora in un ufficio; «impiegatore» non esiste"
             ]
           ]
         }
@@ -3012,24 +3012,24 @@
           "why": "Lo spagnolo «baja» è il <i>certificato di malattia</i>; «essere in malattia»."
         },
         {
-          "wrong": "Lunedì mi dà l'alta e torno al lavoro.",
-          "right": "La prognosi finisce domenica e lunedì torno al lavoro.",
-          "why": "In italiano <i>alta</i> non si usa in questo senso; la malattia finisce con la fine della prognosi."
+          "wrong": "Sono fuori malato da lunedì.",
+          "right": "Sono in malattia da lunedì.",
+          "why": "Calco dell'inglese «I'm off sick»: si dice <i>essere in malattia</i>."
         },
         {
-          "wrong": "Sono di baja da una settimana.",
-          "right": "Sono in malattia da una settimana.",
-          "why": "Si dice <i>essere in malattia</i>."
+          "wrong": "La paga di malattia la paga l'INPS?",
+          "right": "L'indennità di malattia la paga l'INPS?",
+          "why": "Calco dell'inglese «sick pay»: si dice <i>indennità di malattia</i>."
         },
         {
-          "wrong": "Le espedisco il certificato.",
-          "right": "Le rilascio il certificato. / Le faccio il certificato.",
-          "why": "Lo spagnolo «expedir» è <i>rilasciare</i>; <i>spedire</i> vuol dire mandare per posta."
-        },
-        {
-          "wrong": "Le faccio il parte di malattia.",
+          "wrong": "Le faccio una nota di malattia.",
           "right": "Le faccio il certificato di malattia.",
-          "why": "Lo spagnolo «parte de baja» è il <i>certificato di malattia</i>; in italiano <i>parte</i> vuol dire «porzione»."
+          "why": "Calco dell'inglese «sick note»: si dice <i>certificato di malattia</i>."
+        },
+        {
+          "wrong": "Il certificato lo vede anche il Suo impiegatore.",
+          "right": "Il certificato lo vede anche il Suo datore di lavoro.",
+          "why": "L'inglese «employer» è il <i>datore di lavoro</i>; l'<i>impiegato</i> è chi lavora in un ufficio, e «impiegatore» non esiste."
         }
       ],
       "exercises": [
@@ -3241,14 +3241,19 @@
               "il paziente usa quasi sempre il nome popolare"
             ],
             [
-              "il check-up, i controlli",
-              "el chequeo; check-up",
-              "<i>chequeo</i> non esiste in italiano"
-            ],
-            [
               "il preservativo",
               "el preservativo; condom",
               "l'inglese «preservative» in italiano è il <i>conservante</i>"
+            ],
+            [
+              "fare attività fisica",
+              "to exercise",
+              "<i>esercitare</i> da solo vuol dire praticare una professione; si dice <i>esercitare i muscoli</i>, ma non «esercito ogni giorno»"
+            ],
+            [
+              "crea dipendenza",
+              "addictive",
+              "l'<i>additivo</i> è una sostanza aggiunta"
             ]
           ]
         }
@@ -3287,24 +3292,24 @@
           "why": "Lo spagnolo «dejar de» + infinito si dice <i>smettere di</i>."
         },
         {
-          "wrong": "Le faccio un chequeo completo.",
-          "right": "Le faccio un check-up completo. / Facciamo dei controlli.",
-          "why": "Lo spagnolo «chequeo» in italiano è <i>check-up</i> o <i>controlli</i>."
+          "wrong": "Deve esercitare almeno mezz'ora al giorno.",
+          "right": "Deve fare attività fisica almeno mezz'ora al giorno.",
+          "why": "Senza complemento <i>esercitare</i> non vuol dire fare sport (si esercita una professione, si esercitano i muscoli): si dice <i>fare attività fisica</i>, <i>fare movimento</i>."
         },
         {
-          "wrong": "Ha mai avuto la culebrilla?",
-          "right": "Ha mai avuto il fuoco di Sant'Antonio?",
-          "why": "Lo spagnolo «culebrilla» è il <i>fuoco di Sant'Antonio</i> (herpes zoster)."
+          "wrong": "Quest'anno ho guadagnato cinque chili.",
+          "right": "Quest'anno sono ingrassato di cinque chili (ho preso cinque chili).",
+          "why": "Calco dell'inglese «gain weight»: si dice <i>ingrassare</i> o <i>prendere peso</i>."
         },
         {
-          "wrong": "Deve abbassare di peso.",
-          "right": "Deve perdere peso. / Deve dimagrire.",
-          "why": "Lo spagnolo «bajar de peso» si dice <i>perdere peso</i> o <i>dimagrire</i>."
+          "wrong": "Il fumo è molto additivo.",
+          "right": "Il fumo crea molta dipendenza.",
+          "why": "L'inglese «addictive» si dice <i>che crea dipendenza</i>; l'<i>additivo</i> è una sostanza aggiunta (additivi alimentari)."
         },
         {
-          "wrong": "Lei ha sovrappeso.",
-          "right": "Lei è in sovrappeso. / Ha qualche chilo di troppo.",
-          "why": "Lo spagnolo «tener sobrepeso» si dice <i>essere in sovrappeso</i>."
+          "wrong": "Scelga cibi bassi in grassi.",
+          "right": "Scelga cibi poveri di grassi (a basso contenuto di grassi).",
+          "why": "Calco dell'inglese «low in fat»: si dice <i>poveri di grassi</i> o <i>a basso contenuto di grassi</i>."
         }
       ],
       "exercises": [
@@ -3503,9 +3508,9 @@
       "warn": "<b>Le frasi che chiudono il discorso</b> («non c'è più niente da fare») si possono sostituire con frasi che indicano un obiettivo («adesso l'obiettivo è che stia il meglio possibile»). <b>Il gergo medico</b> («prognosi riservata», «metastasi», «cure palliative») va spiegato con parole semplici. <b>«Ha capito?»</b> mette il paziente in difficoltà: meglio chiedere di ripetere con parole sue.",
       "errors": [
         {
-          "wrong": "Firmi qui il consentimento.",
-          "right": "Firmi qui il consenso.",
-          "why": "Lo spagnolo «consentimiento» in italiano è <i>consenso</i>."
+          "wrong": "Come rompiamo la notizia alla famiglia?",
+          "right": "Come diamo la notizia alla famiglia?",
+          "why": "Calco dell'inglese «break the news»: si dice <i>dare la notizia</i>."
         },
         {
           "wrong": "Il paziente ha rifiutato a firmare.",
@@ -3518,14 +3523,14 @@
           "why": "Lo spagnolo «lo siento» in italiano è <i>mi dispiace</i>; «lo sento» vuol dire «lo oigo»."
         },
         {
-          "wrong": "Purtroppo le devo dare una mala notizia.",
-          "right": "Purtroppo le devo dare una brutta notizia.",
-          "why": "Lo spagnolo «mala noticia» si dice <i>brutta notizia</i> (o <i>cattiva notizia</i>)."
+          "wrong": "Il paziente è passato via stanotte.",
+          "right": "Il paziente è mancato (è morto) stanotte.",
+          "why": "Calco dell'inglese «passed away»: si dice <i>è mancato</i>, <i>è venuto a mancare</i>, <i>è morto</i>."
         },
         {
-          "wrong": "Il paziente ha dato la sua conformità.",
-          "right": "Il paziente ha dato il suo consenso.",
-          "why": "Lo spagnolo «conformidad» qui è il <i>consenso</i>."
+          "wrong": "Il medico è stato molto simpatico con la famiglia.",
+          "right": "Il medico è stato molto vicino alla famiglia (molto comprensivo con la famiglia).",
+          "why": "L'inglese «sympathetic» è <i>comprensivo</i>, <i>partecipe</i>; <i>simpatico</i> vuol dire «piacevole, che sta simpatico»."
         }
       ],
       "exercises": [
@@ -3761,6 +3766,11 @@
               "le consegne",
               "el pase de guardia, el relevo; handover",
               "<i>il relevo</i> non esiste; il <i>cambio turno</i> è il momento in cui si passano le consegne"
+            ],
+            [
+              "essere reperibile / di guardia",
+              "on call; sp. de guardia localizada",
+              "reperibile = a casa, pronto a venire; di guardia = in ospedale; non si dice «in chiamata»"
             ]
           ]
         }
@@ -3799,9 +3809,9 @@
           "why": "Lo spagnolo «residente» (e l'inglese «resident») è lo <i>specializzando</i>."
         },
         {
-          "wrong": "Ho chiesto un'interconsulta alla neurologia.",
+          "wrong": "Ho fatto una referenza alla neurologia.",
           "right": "Ho chiesto una consulenza neurologica.",
-          "why": "In italiano si dice <i>consulenza</i>."
+          "why": "Calco dell'inglese «referral»: in ospedale si chiede una <i>consulenza</i>; la <i>referenza</i> è una lettera di presentazione."
         },
         {
           "wrong": "Il consulente di reparto ha visto il paziente.",
@@ -3814,9 +3824,9 @@
           "why": "Lo spagnolo «relevo» si dice <i>passare le consegne</i>."
         },
         {
-          "wrong": "Stanotte faccio la guardia localizzata.",
-          "right": "Stanotte sono reperibile.",
-          "why": "Lo spagnolo «guardia localizada» si dice <i>reperibilità</i>, <i>essere reperibile</i>."
+          "wrong": "Stanotte sono in chiamata.",
+          "right": "Stanotte sono di guardia (in ospedale) / reperibile (da casa).",
+          "why": "L'inglese «on call» è <i>di guardia</i> se il medico è in ospedale, <i>reperibile</i> se è a casa e pronto a venire; «in chiamata» non si dice."
         },
         {
           "wrong": "(davanti alla famiglia) Andiamo a vedere la 12.",

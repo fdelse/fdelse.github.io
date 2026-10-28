@@ -1,0 +1,3934 @@
+{
+  "versione": "1.0",
+  "livello": "Vendite",
+  "schede": [
+    {
+      "lvl": "vendite",
+      "cat": "Presentazione",
+      "title": "Presentare l'azienda e il prodotto",
+      "def": "Il commerciale presenta in poche frasi chi è la sua azienda e che cosa vende: a un cliente nuovo, al telefono, in fiera, in una riunione. Questa scheda raccoglie il lessico per descrivere l'azienda (sede, settore, dimensioni, mercati) e il prodotto (gamma, caratteristiche, vantaggi), e le frasi pronte per presentarli.",
+      "form": "Una presentazione breve risponde a quattro domande: <b>chi siamo</b>, <b>che cosa facciamo</b>, <b>per chi</b>, <b>perché sceglierci</b>. Si parte dall'azienda (nome, settore, sede, storia, qualche numero) e si passa al prodotto. Del prodotto si dice prima il <b>vantaggio</b> per il cliente e poi la <b>caratteristica</b> tecnica che lo rende possibile. Si parla a nome dell'azienda, con il <i>noi</i> («siamo un'azienda di…»), e al cliente si dà del <i>Lei</i>. Le forme delle società (srl, spa) sono spiegate in Diritto.",
+      "tables": [
+        {
+          "before": "<b>L'azienda.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "la sede legale / la sede operativa",
+              "l'indirizzo ufficiale dell'azienda / il luogo dove l'azienda lavora davvero"
+            ],
+            [
+              "la filiale",
+              "un ufficio o un punto vendita dell'azienda in un'altra città o in un altro paese"
+            ],
+            [
+              "lo stabilimento",
+              "il luogo dove si produce"
+            ],
+            [
+              "il settore",
+              "il campo di attività: alimentare, meccanico, tessile, dei servizi…"
+            ],
+            [
+              "il fatturato",
+              "quanto vende l'azienda in un anno"
+            ],
+            [
+              "i dipendenti",
+              "le persone che lavorano nell'azienda"
+            ],
+            [
+              "il gruppo",
+              "più aziende con la stessa proprietà"
+            ],
+            [
+              "l'export, i mercati esteri",
+              "le vendite fuori dall'Italia"
+            ],
+            [
+              "il marchio",
+              "il nome e il logo con cui si vendono i prodotti"
+            ],
+            [
+              "la PMI",
+              "piccola e media impresa"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Il prodotto.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "la gamma",
+              "tutti i prodotti di un tipo che l'azienda offre"
+            ],
+            [
+              "la linea",
+              "un gruppo di prodotti della gamma: la linea professionale"
+            ],
+            [
+              "il modello, l'articolo",
+              "un prodotto preciso, con il suo codice"
+            ],
+            [
+              "il catalogo",
+              "l'elenco illustrato dei prodotti"
+            ],
+            [
+              "la scheda tecnica",
+              "il documento con le caratteristiche tecniche di un prodotto"
+            ],
+            [
+              "la caratteristica",
+              "che cosa ha il prodotto: un motore da 2 kW"
+            ],
+            [
+              "il vantaggio",
+              "che cosa ci guadagna il cliente: consuma meno"
+            ],
+            [
+              "il punto di forza",
+              "ciò che ci rende migliori della concorrenza"
+            ],
+            [
+              "su misura",
+              "fatto per il singolo cliente"
+            ],
+            [
+              "di serie / optional",
+              "compreso nel prezzo / da pagare a parte"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "l'azienda, la ditta, la società",
+              "company",
+              "la <i>compagnia</i> in italiano è soprattutto quella aerea, di assicurazioni o teatrale, oppure lo stare insieme"
+            ],
+            [
+              "il grande gruppo, la multinazionale",
+              "corporation",
+              "la <i>corporazione</i> in italiano è un'associazione di persone dello stesso mestiere (le corporazioni medievali)"
+            ],
+            [
+              "la fabbrica",
+              "factory; fabric",
+              "l'inglese «fabric» è il <i>tessuto</i>"
+            ],
+            [
+              "in realtà",
+              "actually",
+              "<i>attualmente</i> vuol dire «oggi, in questo periodo»"
+            ],
+            [
+              "sensato, ragionevole",
+              "sensible",
+              "<i>sensibile</i> vuol dire «sensitive»: che sente molto, delicato"
+            ],
+            [
+              "la filiale",
+              "sp. sucursal",
+              "<i>sucursal</i> non esiste in italiano"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "chi siamo",
+          "ex": "Siamo un'<b>azienda</b> di Bologna che produce macchine per il caffè dal 1985. / La nostra <b>sede</b> è a Bologna e abbiamo una <b>filiale</b> a Milano."
+        },
+        {
+          "label": "qualche numero",
+          "ex": "Abbiamo 120 <b>dipendenti</b> e un <b>fatturato</b> di circa 30 milioni di euro. / Il 60% delle nostre vendite è sui <b>mercati esteri</b>."
+        },
+        {
+          "label": "che cosa facciamo",
+          "ex": "Ci occupiamo di imballaggi per l'industria alimentare. / La nostra <b>gamma</b> comprende tre <b>linee</b>: casa, bar e ristorazione."
+        },
+        {
+          "label": "il prodotto",
+          "ex": "Questo <b>modello</b> consuma il 30% in meno di energia. / Il pannello digitale è <b>di serie</b>; il kit di pulizia è <b>optional</b>."
+        },
+        {
+          "label": "perché sceglierci",
+          "ex": "Il nostro <b>punto di forza</b> è l'assistenza: interveniamo entro 24 ore. / Possiamo produrre anche <b>su misura</b>."
+        },
+        {
+          "label": "lasciare materiale",
+          "ex": "Le lascio il <b>catalogo</b> e la <b>scheda tecnica</b>. / Sul nostro sito trova tutta la gamma."
+        }
+      ],
+      "warn": "Prima il <b>vantaggio</b>, poi la caratteristica: «consuma meno» dice al cliente più di «motore da 2 kW». I numeri dell'azienda (fatturato, clienti) si dicono solo se sono pubblici o se l'azienda è d'accordo. «Leader del settore», «il migliore sul mercato» sono promesse: si usano solo se si possono dimostrare. <i>Made in Italy</i> ha regole precise (conta dove il prodotto ha avuto l'ultima lavorazione importante): nei casi dubbi chiedere all'ufficio legale.",
+      "errors": [
+        {
+          "wrong": "Lavoro in una compagnia di Torino che produce mobili.",
+          "right": "Lavoro in un'azienda (in una ditta) di Torino che produce mobili.",
+          "why": "L'inglese «company» è l'<i>azienda</i>; in italiano <i>compagnia</i> si dice soprattutto delle compagnie aeree e di assicurazioni."
+        },
+        {
+          "wrong": "Siamo una corporazione con sedi in tutta Europa.",
+          "right": "Siamo un grande gruppo con sedi in tutta Europa.",
+          "why": "L'inglese «corporation» è la <i>grande azienda</i>, il <i>gruppo</i>; la <i>corporazione</i> è un'associazione di mestiere."
+        },
+        {
+          "wrong": "Attualmente il prodotto costa di più, ma dura il doppio.",
+          "right": "In realtà il prodotto costa di più, ma dura il doppio.",
+          "why": "L'inglese «actually» è <i>in realtà</i>; <i>attualmente</i> vuol dire «oggi»."
+        },
+        {
+          "wrong": "Per la Sua azienda è una scelta molto sensibile.",
+          "right": "Per la Sua azienda è una scelta molto sensata.",
+          "why": "L'inglese «sensible» è <i>sensato</i>; <i>sensibile</i> vuol dire «che sente molto»."
+        },
+        {
+          "wrong": "Abbiamo una sucursal a Milano.",
+          "right": "Abbiamo una filiale a Milano.",
+          "why": "Lo spagnolo «sucursal» in italiano è la <i>filiale</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: sede, filiale, dipendenti, gamma, catalogo, su misura.",
+          "items": [
+            "La … principale dell'azienda è a Verona.",
+            "Abbiamo aperto una … a Roma per i clienti del Centro Italia.",
+            "Nella nostra azienda lavorano 80 …",
+            "La nostra … comprende venti modelli.",
+            "Le lascio il … con le foto di tutti i prodotti.",
+            "Non abbiamo un modello standard: ogni cucina è fatta …"
+          ],
+          "key": [
+            "<b>sede</b>",
+            "<b>filiale</b>",
+            "<b>dipendenti</b>",
+            "<b>gamma</b>",
+            "<b>catalogo</b>",
+            "<b>su misura</b>"
+          ]
+        },
+        {
+          "type": "Riformulazione (B1–B2)",
+          "instr": "Trasforma la caratteristica in un vantaggio per il cliente.",
+          "items": [
+            "Telefono con batteria da 5.000 mAh.",
+            "Lavatrice in classe energetica A.",
+            "Assistenza tecnica entro 24 ore.",
+            "Computer portatile da 1,1 kg.",
+            "Garanzia di cinque anni.",
+            "Programma gestionale in cloud."
+          ],
+          "key": [
+            "Esempio: <b>il telefono dura due giorni senza ricaricarlo.</b>",
+            "Esempio: <b>consuma pochissima energia, quindi spende meno in bolletta.</b>",
+            "Esempio: <b>se la macchina si ferma, in un giorno è di nuovo al lavoro.</b>",
+            "Esempio: <b>lo porta facilmente con sé in viaggio.</b>",
+            "Esempio: <b>per cinque anni, se c'è un difetto, la riparazione non costa niente.</b>",
+            "Esempio: <b>può lavorare da qualsiasi computer e trova i dati sempre aggiornati.</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Rispondi o parla al cliente in registro formale.",
+          "items": [
+            "Presenta la tua azienda (o un'azienda inventata) in 30 secondi: chi, che cosa, per chi, perché.",
+            "Il cliente chiede: «Scusi, ma voi chi siete? Non vi conosco.»",
+            "Il cliente chiede che differenza c'è tra due modelli della vostra gamma.",
+            "Il cliente chiede se potete fare un prodotto su misura; potete, ma con tempi più lunghi.",
+            "Il cliente chiede se il prodotto è fatto in Italia; è progettato in Italia e prodotto in parte in Romania.",
+            "Il cliente chiede se lavorate già con aziende del suo settore."
+          ],
+          "key": [
+            "Esempio: <b>siamo Alfa Caffè, un'azienda di Bologna che dal 1985 produce macchine per il caffè per bar e ristoranti; il nostro punto di forza è l'assistenza in 24 ore.</b>",
+            "Esempio: <b>ha ragione, mi presento: siamo un'azienda di Bologna con quarant'anni di esperienza nelle macchine per il caffè e lavoriamo con più di duemila bar in Italia.</b>",
+            "Esempio: <b>il modello Base è pensato per i bar piccoli; il modello Pro fa il doppio dei caffè all'ora e ha il pannello digitale di serie.</b>",
+            "Esempio: <b>sì, possiamo farlo su misura: in questo caso la consegna richiede circa otto settimane invece di tre.</b>",
+            "Esempio: <b>il prodotto è progettato e controllato in Italia; una parte della produzione si fa nel nostro stabilimento in Romania.</b>",
+            "Esempio: <b>sì, lavoriamo con diverse aziende alimentari della zona; se vuole, Le racconto come le abbiamo aiutate.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è il commerciale di un'azienda che produce macchine per il caffè professionali, il docente è il proprietario di un bar. Hanno dieci minuti per un primo incontro. Difficoltà da introdurre: dopo un minuto il cliente, che ha fretta, chiede: «Mi dica in due parole perché dovrei ascoltarLa.»",
+          "items": [
+            "Presentati e presenta l'azienda.",
+            "Di' per quali clienti lavorate.",
+            "Presenta in breve la gamma.",
+            "Rispondi in due frasi alla domanda del cliente.",
+            "Spiega un vantaggio con un esempio concreto.",
+            "Lascia il materiale e proponi il passo successivo."
+          ],
+          "key": [
+            "Esempio: <b>Buongiorno, sono Paolo Conti di Alfa Caffè, un'azienda di Bologna che produce macchine per il caffè.</b>",
+            "Esempio: <b>Lavoriamo soprattutto con bar e pasticcerie, dal piccolo locale alla catena.</b>",
+            "Esempio: <b>Abbiamo tre linee: una per i bar piccoli, una per i locali con molto movimento e una per la ristorazione.</b>",
+            "Esempio: <b>Perché le nostre macchine consumano meno e, se si fermano, in 24 ore sono di nuovo in funzione: per un bar vuol dire non perdere clienti.</b>",
+            "Esempio: <b>Un bar di Modena come il Suo ha risparmiato circa 600 euro di elettricità in un anno.</b>",
+            "Esempio: <b>Le lascio il catalogo; se è d'accordo, la settimana prossima Le porto una macchina in prova per tre giorni.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "vendite",
+      "cat": "Contatto",
+      "title": "Il primo contatto: telefonata, email, LinkedIn",
+      "def": "Il commerciale contatta per la prima volta un potenziale cliente che non lo conosce: con una telefonata, una email o un messaggio su LinkedIn. Questa scheda raccoglie il lessico e le frasi per presentarsi, spiegare il motivo del contatto, arrivare alla persona giusta e chiedere un appuntamento.",
+      "form": "Nel primo contatto si dice in pochi secondi <b>chi si è</b>, <b>perché si contatta</b> e <b>che cosa si chiede</b>: di solito non si vende subito, si chiede un appuntamento o una breve <i>call</i>. Al telefono spesso risponde prima il <b>centralino</b> o la segreteria, e bisogna chiedere della persona giusta: il <i>referente</i>, il <i>responsabile</i>. Si dà sempre del <i>Lei</i>; nelle email si comincia con «Gentile dottoressa Bianchi», «Gentile signor Rossi». Su LinkedIn il tono è un po' più diretto, ma sempre cortese. Le email dopo un incontro o un'offerta sono nella scheda sul follow-up.",
+      "tables": [
+        {
+          "before": "<b>Chi è chi.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "il potenziale cliente, il prospect",
+              "un'azienda o una persona che potrebbe diventare cliente"
+            ],
+            [
+              "il contatto, il nominativo",
+              "il nome di una persona da chiamare"
+            ],
+            [
+              "il centralino",
+              "il numero generale dell'azienda"
+            ],
+            [
+              "la segreteria, l'assistente",
+              "chi risponde e passa (o non passa) le telefonate"
+            ],
+            [
+              "il referente",
+              "la persona che si occupa di un certo argomento"
+            ],
+            [
+              "il responsabile acquisti, il buyer",
+              "chi sceglie che cosa comprare e da chi"
+            ],
+            [
+              "il titolare",
+              "il proprietario di una piccola azienda o di un negozio"
+            ],
+            [
+              "chi decide, il decisore",
+              "chi prende la decisione finale"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Il contatto.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "la telefonata a freddo",
+              "telefonare a chi non ci conosce e non ci aspetta"
+            ],
+            [
+              "la mail di presentazione",
+              "la prima email a un nuovo contatto"
+            ],
+            [
+              "l'oggetto (della mail)",
+              "il titolo della email"
+            ],
+            [
+              "la richiesta di collegamento",
+              "su LinkedIn: chiedere a una persona di entrare nella propria rete"
+            ],
+            [
+              "fissare un appuntamento",
+              "decidere giorno e ora di un incontro"
+            ],
+            [
+              "la call, la videochiamata",
+              "un incontro a distanza"
+            ],
+            [
+              "lasciare un messaggio",
+              "quando la persona non c'è"
+            ],
+            [
+              "richiamare",
+              "telefonare di nuovo"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Titoli e saluti.</b>",
+          "plain": true,
+          "headers": [
+            "forma",
+            "quando si usa"
+          ],
+          "rows": [
+            [
+              "Gentile dottor Rossi, Gentile dottoressa Bianchi",
+              "con le persone laureate; in Italia si usa molto"
+            ],
+            [
+              "Gentile ingegner Rossi, Gentile avvocato Rossi",
+              "con chi ha questi titoli professionali"
+            ],
+            [
+              "Gentile signor Rossi, Gentile signora Bianchi",
+              "quando non si conosce il titolo"
+            ],
+            [
+              "Egregio dottore",
+              "molto formale, sempre meno usato"
+            ],
+            [
+              "Buongiorno, sono Marco Neri di Alfa Imballaggi",
+              "al telefono, all'inizio"
+            ],
+            [
+              "Cordiali saluti, Distinti saluti",
+              "alla fine della email"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "presentarsi",
+              "to introduce oneself",
+              "<i>introdurre</i> vuol dire «mettere dentro» o «far entrare»"
+            ],
+            [
+              "Cordiali saluti (alla fine della mail)",
+              "Sincerely",
+              "<i>sinceramente</i> vuol dire «a dire la verità»"
+            ],
+            [
+              "partecipare a",
+              "to attend",
+              "<i>attendere</i> vuol dire «aspettare»"
+            ],
+            [
+              "richiamare",
+              "to return a call",
+              "in italiano non si dice «ritornare la chiamata»"
+            ],
+            [
+              "la richiesta",
+              "sp. petición",
+              "la <i>petizione</i> in italiano è una richiesta firmata da molte persone"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "al centralino",
+          "ex": "Buongiorno, sono Marco Neri di Alfa Imballaggi. Potrei parlare con il <b>responsabile acquisti</b>? / Chi si occupa degli imballaggi da voi?"
+        },
+        {
+          "label": "il motivo",
+          "ex": "La chiamo perché lavoriamo con molte aziende alimentari della zona. / Le rubo solo due minuti."
+        },
+        {
+          "label": "chiedere un appuntamento",
+          "ex": "Le andrebbe di <b>fissare</b> una <b>call</b> di venti minuti la prossima settimana? / Sarebbe disponibile martedì o giovedì mattina?"
+        },
+        {
+          "label": "se la persona non c'è",
+          "ex": "Posso <b>lasciare un messaggio</b>? / Quando posso trovarlo? / Va bene, La <b>richiamo</b> domani."
+        },
+        {
+          "label": "la mail",
+          "ex": "<b>Oggetto</b>: imballaggi compostabili per la linea biologica / Gentile dottoressa Bianchi, mi chiamo Marco Neri e mi occupo di… / Le scrivo perché…"
+        },
+        {
+          "label": "LinkedIn",
+          "ex": "Buongiorno, ho visto che vi occupate di prodotti biologici e mi farebbe piacere entrare in contatto con Lei. / Grazie per il <b>collegamento</b>!"
+        }
+      ],
+      "warn": "Al primo contatto non si dà del <i>tu</i>, anche se su LinkedIn molti lo fanno: si aspetta che lo proponga l'altra persona. <i>Dottore</i> e <i>dottoressa</i> in Italia si usano molto, anche per chi non è medico: nel dubbio è più sicuro usarli. L'<b>oggetto</b> della mail deve dire subito di che cosa si parla: con oggetti vaghi («Proposta», «Informazioni») la mail spesso non si apre. Non si cerca di vendere al primo contatto: si chiede un appuntamento.",
+      "errors": [
+        {
+          "wrong": "Vorrei introdurmi: sono Marco Neri di Alfa Imballaggi.",
+          "right": "Vorrei presentarmi: sono Marco Neri di Alfa Imballaggi.",
+          "why": "L'inglese «introduce oneself» è <i>presentarsi</i>; <i>introdurre</i> vuol dire «mettere dentro»."
+        },
+        {
+          "wrong": "Sinceramente, Marco Neri",
+          "right": "Cordiali saluti, Marco Neri",
+          "why": "L'inglese «Sincerely» alla fine di una mail è <i>Cordiali saluti</i>; <i>sinceramente</i> vuol dire «a dire la verità»."
+        },
+        {
+          "wrong": "La prossima settimana attendo la fiera di Milano.",
+          "right": "La prossima settimana partecipo alla (vado alla) fiera di Milano.",
+          "why": "L'inglese «attend» è <i>partecipare</i>; <i>attendere</i> vuol dire «aspettare»."
+        },
+        {
+          "wrong": "Va bene, Le ritorno la chiamata domani.",
+          "right": "Va bene, La richiamo domani.",
+          "why": "Calco dell'inglese «return a call»: in italiano si dice <i>richiamare</i>."
+        },
+        {
+          "wrong": "Le ho mandato una petizione di collegamento su LinkedIn.",
+          "right": "Le ho mandato una richiesta di collegamento su LinkedIn.",
+          "why": "Lo spagnolo «petición» è la <i>richiesta</i>; la <i>petizione</i> è una richiesta firmata da molti."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: centralino, messaggio, richiamo, oggetto, referente, appuntamento.",
+          "items": [
+            "Ho chiamato il … e mi hanno passato l'ufficio acquisti.",
+            "Il dottor Rossi non c'è: posso lasciare un …?",
+            "Va bene, La … domani mattina.",
+            "Nell'… della mail scrivo subito il motivo del contatto.",
+            "Chi è il … per gli imballaggi nella vostra azienda?",
+            "Vorrei fissare un … per la prossima settimana."
+          ],
+          "key": [
+            "<b>centralino</b>",
+            "<b>messaggio</b>",
+            "<b>richiamo</b>",
+            "<b>oggetto</b>",
+            "<b>referente</b>",
+            "<b>appuntamento</b>"
+          ]
+        },
+        {
+          "type": "Riformulazione (B1–B2)",
+          "instr": "Riscrivi in registro formale, adatto a un primo contatto.",
+          "items": [
+            "«Ciao, sono Marco, ti chiamo per farti vedere i nostri prodotti.»",
+            "«Mi passi il capo?»",
+            "«Quando ci vediamo?»",
+            "«Ti scrivo perché ho visto il tuo profilo.»",
+            "«Ok, ti richiamo.»",
+            "«Ciao, a presto!» (alla fine di una mail)"
+          ],
+          "key": [
+            "Esempio: <b>Buongiorno, sono Marco Neri di Alfa Imballaggi: La chiamo per presentarLe i nostri prodotti.</b>",
+            "Esempio: <b>Potrebbe passarmi il responsabile acquisti, per favore?</b>",
+            "Esempio: <b>Quando sarebbe disponibile per un incontro?</b>",
+            "Esempio: <b>Le scrivo perché ho visto il Suo profilo su LinkedIn.</b>",
+            "Esempio: <b>Va bene, La richiamo domani in mattinata.</b>",
+            "Esempio: <b>Cordiali saluti.</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Scrivi o di' che cosa risponderesti.",
+          "items": [
+            "La segretaria dice: «Il dottor Rossi non riceve rappresentanti.»",
+            "Il cliente risponde: «Non ho tempo, mi mandi una mail.»",
+            "Il centralinista chiede: «Di che cosa si tratta?»",
+            "Scrivi l'oggetto e le prime due righe di una mail di presentazione a una cantina di vini.",
+            "Scrivi un messaggio LinkedIn di due o tre righe per chiedere il collegamento a una responsabile acquisti.",
+            "Il cliente accetta di incontrarti, ma solo tra un mese."
+          ],
+          "key": [
+            "Esempio: <b>capisco; non vorrei vendergli niente per telefono, solo chiedergli dieci minuti. Mi può dire chi si occupa degli acquisti di imballaggi?</b>",
+            "Esempio: <b>certo, gliela mando oggi stesso. Posso richiamarLa giovedì per sapere che cosa ne pensa?</b>",
+            "Esempio: <b>sono Marco Neri di Alfa Imballaggi: vorrei parlare con chi si occupa degli imballaggi, per presentare una soluzione compostabile.</b>",
+            "Esempio: <b>Oggetto: bottiglie più leggere per l'export. Gentile dottor Ferri, mi chiamo Marco Neri e lavoro per Alfa Imballaggi. Le scrivo perché aiutiamo molte cantine a ridurre i costi di spedizione.</b>",
+            "Esempio: <b>Buongiorno dottoressa Bianchi, ho visto che seguite gli acquisti per la linea biologica: mi occupo di imballaggi compostabili e mi farebbe piacere entrare in contatto con Lei.</b>",
+            "Esempio: <b>va benissimo: fissiamo già la data? Le propongo martedì 1° dicembre alle 10; qualche giorno prima Le mando un promemoria.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è il commerciale di un'azienda che vende macchine per la pulizia industriale, il docente prima fa il centralinista e poi la responsabile della manutenzione di un grande albergo. Difficoltà da introdurre: il centralinista non vuole passare la telefonata e chiede di mandare una mail.",
+          "items": [
+            "Presentati al centralino.",
+            "Spiega il motivo della telefonata in una frase.",
+            "Gestisci la richiesta del centralinista e ottieni il nome della persona giusta.",
+            "Con la responsabile, presenta te e l'azienda in venti secondi.",
+            "Chiedi un appuntamento proponendo due date.",
+            "Conferma giorno, ora e indirizzo email, e saluta."
+          ],
+          "key": [
+            "Esempio: <b>Buongiorno, sono Laura Gatti di Pulitec. Potrei parlare con il responsabile della manutenzione?</b>",
+            "Esempio: <b>La chiamo perché forniamo macchine per la pulizia a molti alberghi della città.</b>",
+            "Esempio: <b>Certo, mando volentieri una mail: mi può dire a chi devo indirizzarla?</b>",
+            "Esempio: <b>Buongiorno, dottoressa Russo, sono Laura Gatti di Pulitec: aiutiamo gli alberghi a pulire più in fretta e con meno acqua.</b>",
+            "Esempio: <b>Le andrebbe di vederci venti minuti? Potrei venire martedì o giovedì mattina.</b>",
+            "Esempio: <b>Perfetto, allora giovedì alle 10 in albergo. Le mando una mail di conferma a questo indirizzo. Buona giornata!</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "vendite",
+      "cat": "Contatto",
+      "title": "Capire le esigenze del cliente: domande e ascolto",
+      "def": "Prima di proporre un prodotto, il commerciale fa domande per capire che cosa serve davvero al cliente: il problema, gli obiettivi, i volumi, i tempi, il budget, chi decide. Questa scheda raccoglie il lessico e le domande per l'analisi delle esigenze, e le frasi per mostrare che si è ascoltato.",
+      "form": "Questa fase si chiama <b>analisi delle esigenze</b> (o dei bisogni). Si comincia con <b>domande aperte</b> («Come lavorate oggi?», «Che cosa vorrebbe migliorare?») e si finisce con <b>domande chiuse</b> per confermare i dati («Quindi vi servono 500 pezzi al mese?»). Il commerciale ascolta più di quanto parla, prende appunti e <b>riformula</b> con parole sue quello che ha detto il cliente. Le domande sul budget e su chi decide si fanno con tatto, quando c'è già un po' di fiducia.",
+      "tables": [
+        {
+          "before": "<b>Che cosa scoprire.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "domanda tipica"
+          ],
+          "rows": [
+            [
+              "l'esigenza, il bisogno",
+              "Di che cosa avete bisogno?"
+            ],
+            [
+              "il problema attuale",
+              "Che cosa non funziona oggi?"
+            ],
+            [
+              "l'obiettivo",
+              "Che risultato vorreste ottenere?"
+            ],
+            [
+              "i volumi",
+              "Quanti pezzi vi servono al mese?"
+            ],
+            [
+              "le tempistiche",
+              "Entro quando vi serve?"
+            ],
+            [
+              "il budget",
+              "Avete già previsto un budget per questo progetto?"
+            ],
+            [
+              "il processo decisionale",
+              "Chi altro partecipa alla decisione?"
+            ],
+            [
+              "il fornitore attuale",
+              "Con chi lavorate oggi?"
+            ],
+            [
+              "i criteri di scelta",
+              "Che cosa conta di più per voi: prezzo, qualità, tempi?"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Le tecniche.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "la domanda aperta",
+              "lascia rispondere liberamente: come, che cosa, perché"
+            ],
+            [
+              "la domanda chiusa",
+              "si risponde sì o no, o con un dato"
+            ],
+            [
+              "l'ascolto attivo",
+              "ascoltare con attenzione e farlo vedere"
+            ],
+            [
+              "riformulare",
+              "ripetere con parole proprie quello che ha detto il cliente"
+            ],
+            [
+              "approfondire",
+              "chiedere più dettagli"
+            ],
+            [
+              "fare il punto, riepilogare",
+              "riassumere quello che si è capito"
+            ],
+            [
+              "prendere appunti",
+              "scrivere durante il colloquio"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "la domanda",
+              "question",
+              "la <i>questione</i> in italiano è un problema da risolvere, una faccenda"
+            ],
+            [
+              "esigere, pretendere",
+              "to demand",
+              "<i>demandare</i> vuol dire «affidare a qualcun altro»: demandare una decisione"
+            ],
+            [
+              "spiegare meglio, approfondire",
+              "to elaborate",
+              "<i>elaborare</i> vuol dire «preparare, sviluppare»: elaborare un progetto, dei dati"
+            ],
+            [
+              "completo, approfondito",
+              "comprehensive",
+              "<i>comprensivo</i> vuol dire «che capisce gli altri» o «che comprende» (prezzo comprensivo di IVA)"
+            ],
+            [
+              "fare una domanda",
+              "to ask a question",
+              "in italiano la domanda si <i>fa</i>, non si «chiede»"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "domande aperte",
+          "ex": "Mi racconta come gestite oggi le spedizioni? / Qual è il <b>problema</b> principale? / Che cosa vorrebbe migliorare?"
+        },
+        {
+          "label": "i dati",
+          "ex": "Quanti pezzi vi servono al mese? / Entro quando vi serve la fornitura?"
+        },
+        {
+          "label": "budget e decisione",
+          "ex": "Per proporLe la soluzione giusta: avete già previsto un <b>budget</b>? / Oltre a Lei, chi partecipa alla <b>decisione</b>?"
+        },
+        {
+          "label": "approfondire",
+          "ex": "Può farmi un esempio? / In che senso? / Che cosa intende per «troppo lento»?"
+        },
+        {
+          "label": "riformulare",
+          "ex": "Se ho capito bene, il problema sono i <b>tempi di consegna</b>. / Quindi per voi la cosa più importante è non fermare la produzione."
+        },
+        {
+          "label": "fare il punto",
+          "ex": "<b>Facciamo il punto</b>: vi servono 500 pezzi al mese, a partire da marzo. / Ho preso nota di tutto: Le preparo una proposta."
+        }
+      ],
+      "warn": "Non presentare il prodotto prima di aver capito il problema. Le domande sul <b>budget</b> possono sembrare invadenti: si fanno quando c'è già fiducia e si spiega perché servono («per proporLe la soluzione giusta»). <i>Esigenza</i> e <i>bisogno</i> sono quasi sinonimi; <i>esigenza</i> è più formale. Riformulare non vuol dire ripetere parola per parola: si dice con parole proprie e si chiede conferma.",
+      "errors": [
+        {
+          "wrong": "Interessante: può elaborare?",
+          "right": "Interessante: può spiegarmi meglio?",
+          "why": "Calco di «can you elaborate?»: <i>elaborare</i> vuol dire «preparare, sviluppare» (elaborare un progetto)."
+        },
+        {
+          "wrong": "Ho una questione: quanti pezzi vi servono?",
+          "right": "Ho una domanda: quanti pezzi vi servono?",
+          "why": "L'inglese «question» qui è la <i>domanda</i>; la <i>questione</i> è un problema, una faccenda."
+        },
+        {
+          "wrong": "Posso chiederLe una domanda?",
+          "right": "Posso farLe una domanda?",
+          "why": "Calco di «ask a question»: in italiano la domanda si <i>fa</i>."
+        },
+        {
+          "wrong": "Prima dell'offerta faccio un'analisi comprensiva del vostro processo.",
+          "right": "Prima dell'offerta faccio un'analisi completa del vostro processo.",
+          "why": "L'inglese «comprehensive» è <i>completo</i>; <i>comprensivo</i> vuol dire «che capisce» o «che include»."
+        },
+        {
+          "wrong": "Durante l'incontro prendo note.",
+          "right": "Durante l'incontro prendo appunti.",
+          "why": "Calco di «take notes»: in italiano si dice <i>prendere appunti</i> (o <i>prendere nota</i> di una cosa)."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: esigenze, fornitore, budget, tempistiche, appunti, riformulare.",
+          "items": [
+            "Prima di fare un'offerta bisogna capire le … del cliente.",
+            "Con quale … lavorate oggi?",
+            "Avete già previsto un … per il progetto?",
+            "Quali sono le …? Vi serve tutto entro marzo?",
+            "Durante l'incontro prendo …, così non dimentico niente.",
+            "Per far vedere che ho capito, provo a … con parole mie."
+          ],
+          "key": [
+            "<b>esigenze</b>",
+            "<b>fornitore</b>",
+            "<b>budget</b>",
+            "<b>tempistiche</b>",
+            "<b>appunti</b>",
+            "<b>riformulare</b>"
+          ]
+        },
+        {
+          "type": "Riformulazione (B1–B2)",
+          "instr": "Trasforma la domanda chiusa in una domanda aperta.",
+          "items": [
+            "Siete contenti del vostro fornitore?",
+            "Avete problemi con le consegne?",
+            "Vi serve una macchina più veloce?",
+            "Il prezzo è importante per voi?",
+            "Decide Lei?",
+            "Vi serve entro marzo?"
+          ],
+          "key": [
+            "Esempio: <b>che cosa pensa del vostro fornitore attuale?</b>",
+            "Esempio: <b>come vanno le consegne oggi?</b>",
+            "Esempio: <b>che cosa vorrebbe migliorare nella produzione?</b>",
+            "Esempio: <b>che cosa conta di più per voi nella scelta?</b>",
+            "Esempio: <b>come prendete le decisioni su questi acquisti?</b>",
+            "Esempio: <b>quali sono le vostre tempistiche?</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Di' che cosa chiederesti o risponderesti al cliente.",
+          "items": [
+            "Il cliente dice: «Il nostro fornitore è troppo lento.» Fai una domanda per approfondire.",
+            "Il cliente ha parlato per cinque minuti dei problemi del suo magazzino. Riformula in due frasi.",
+            "Chiedi il budget con tatto.",
+            "Chiedi chi altro partecipa alla decisione, senza sembrare scortese.",
+            "Fai il punto alla fine dell'incontro: volumi, tempi, priorità.",
+            "Il cliente dice: «Non lo so, mi dica Lei che cosa ci serve.»"
+          ],
+          "key": [
+            "Esempio: <b>che cosa intende per «lento»? Quanti giorni aspettate oggi, e quanti sarebbero accettabili?</b>",
+            "Esempio: <b>se ho capito bene, il magazzino è troppo piccolo e perdete tempo a cercare la merce. Quindi vi serve soprattutto un sistema per sapere subito dove si trova ogni prodotto, giusto?</b>",
+            "Esempio: <b>per proporLe la soluzione più adatta mi aiuterebbe sapere se avete già previsto un budget, anche solo indicativo.</b>",
+            "Esempio: <b>oltre a Lei, c'è qualcun altro che dovrebbe vedere la proposta? Così preparo il materiale anche per loro.</b>",
+            "Esempio: <b>facciamo il punto: vi servono circa 500 pezzi al mese da marzo, e la cosa più importante per voi è la puntualità delle consegne.</b>",
+            "Esempio: <b>volentieri, ma per consigliarLa bene ho bisogno di qualche informazione: mi racconta come lavorate oggi?</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è il commerciale di un'azienda che dà a noleggio stampanti e fotocopiatrici, il docente è l'office manager di uno studio di commercialisti con 15 persone. Difficoltà da introdurre: all'inizio il cliente risponde con poche parole; più avanti dice che la decisione la prende il titolare.",
+          "items": [
+            "Apri con una domanda aperta.",
+            "Scopri come lavorano oggi e qual è il problema principale.",
+            "Scopri i volumi (pagine al mese) e le tempistiche.",
+            "Chiedi il budget.",
+            "Scopri chi decide e come coinvolgerlo.",
+            "Fai il punto e proponi il passo successivo."
+          ],
+          "key": [
+            "Esempio: <b>Mi racconta come stampate oggi nello studio?</b>",
+            "Esempio: <b>E che cosa vi crea più problemi: i guasti, i costi, la qualità?</b>",
+            "Esempio: <b>Più o meno quante pagine stampate al mese? Il contratto attuale quando scade?</b>",
+            "Esempio: <b>Per proporLe la soluzione giusta: quanto spendete oggi al mese, più o meno?</b>",
+            "Esempio: <b>Capisco, decide il titolare: secondo Lei sarebbe utile un breve incontro anche con lui?</b>",
+            "Esempio: <b>Allora, 8.000 pagine al mese e il contratto scade a gennaio. Le preparo una proposta e la presentiamo insieme al titolare la settimana prossima.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "vendite",
+      "cat": "Presentazione",
+      "title": "La presentazione commerciale e la dimostrazione",
+      "def": "Dopo aver capito le esigenze, il commerciale presenta la sua proposta: in una riunione, con delle slide, con una dimostrazione del prodotto. Questa scheda raccoglie il lessico e le frasi per organizzare la presentazione, mostrare il prodotto, collegare i vantaggi alle esigenze del cliente e rispondere alle domande.",
+      "form": "Una presentazione commerciale ha di solito cinque momenti: l'<b>apertura</b> (si ringrazia e si ricordano le esigenze emerse), la <b>proposta</b> (la soluzione e i vantaggi), le <b>prove</b> (una dimostrazione, un caso di un altro cliente, dei numeri), le <b>domande</b> e i <b>prossimi passi</b>. Ogni vantaggio si collega a un'esigenza del cliente («Mi aveva detto che… per questo…»). La <b>dimostrazione</b> (o <i>demo</i>) può essere dal vivo, online o con un campione; per molti prodotti si offre anche una prova gratuita. Il registro è formale, ma diretto: poche slide, poche parole per slide.",
+      "tables": [
+        {
+          "before": "<b>Gli strumenti.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "la presentazione, le slide",
+              "il documento che si mostra durante l'incontro"
+            ],
+            [
+              "la dimostrazione, la demo",
+              "far vedere il prodotto mentre funziona"
+            ],
+            [
+              "il campione",
+              "un pezzo del prodotto da vedere o da provare"
+            ],
+            [
+              "la prova gratuita, il periodo di prova",
+              "usare il prodotto gratis per un tempo limitato"
+            ],
+            [
+              "il caso di successo, il case study",
+              "la storia di un cliente che ha avuto buoni risultati"
+            ],
+            [
+              "la referenza",
+              "un cliente che si può citare o contattare"
+            ],
+            [
+              "la brochure, il materiale informativo",
+              "il documento da lasciare al cliente"
+            ],
+            [
+              "il prototipo",
+              "il primo esemplare di un prodotto nuovo"
+            ]
+          ]
+        },
+        {
+          "before": "<b>La struttura.</b>",
+          "plain": true,
+          "headers": [
+            "momento",
+            "frase tipica"
+          ],
+          "rows": [
+            [
+              "l'apertura",
+              "Grazie per il tempo che ci dedica. Oggi vorrei mostrarLe…"
+            ],
+            [
+              "il richiamo alle esigenze",
+              "Nel nostro ultimo incontro mi aveva detto che…"
+            ],
+            [
+              "la proposta",
+              "Per questo Le proponiamo…"
+            ],
+            [
+              "il vantaggio",
+              "In questo modo potete…"
+            ],
+            [
+              "la prova",
+              "Un nostro cliente, un'azienda simile alla vostra, ha ridotto gli scarti del 15%."
+            ],
+            [
+              "le domande",
+              "Ci sono domande fin qui?"
+            ],
+            [
+              "i prossimi passi",
+              "Se è d'accordo, il prossimo passo è…"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "costante, coerente",
+              "consistent",
+              "<i>consistente</i> vuol dire «notevole, abbondante»: una somma consistente"
+            ],
+            [
+              "assistere, dare assistenza",
+              "to support",
+              "<i>sopportare</i> vuol dire «tollerare»"
+            ],
+            [
+              "il pubblico",
+              "audience",
+              "<i>audienza</i> non esiste; l'<i>udienza</i> è un incontro ufficiale (in tribunale, dal Papa)"
+            ],
+            [
+              "le testimonianze, le recensioni",
+              "testimonials",
+              "in italiano il <i>testimonial</i> è il personaggio famoso di una pubblicità; il <i>testimone</i> è chi ha visto un fatto"
+            ],
+            [
+              "richiedere (una prova)",
+              "to apply for",
+              "<i>applicare</i> vuol dire «mettere sopra» o «usare una regola»"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "aprire",
+          "ex": "Grazie per averci ricevuto. / Oggi in venti minuti Le mostro come potete ridurre i tempi di consegna."
+        },
+        {
+          "label": "collegare alle esigenze",
+          "ex": "Mi aveva detto che i <b>tempi di consegna</b> sono un problema: per questo… / Questa funzione risponde proprio alla Sua <b>esigenza</b> di…"
+        },
+        {
+          "label": "mostrare",
+          "ex": "Le faccio vedere come funziona. / Provi pure Lei: basta premere qui. / Questo è un <b>campione</b> del tessuto: lo tocchi."
+        },
+        {
+          "label": "dare prove",
+          "ex": "Un nostro cliente del Suo settore ha ridotto gli scarti del 15%. / Se vuole, La metto in contatto con un cliente che può farci da <b>referenza</b>."
+        },
+        {
+          "label": "rispondere alle domande",
+          "ex": "Ci sono domande fin qui? / Ottima domanda: Le rispondo subito. / Non ho il dato preciso: verifico e Le rispondo entro domani."
+        },
+        {
+          "label": "i prossimi passi",
+          "ex": "Se è d'accordo, il <b>prossimo passo</b> è una <b>prova gratuita</b> di due settimane. / Le mando le slide e un riepilogo entro stasera."
+        }
+      ],
+      "warn": "Prima di citare un cliente come <b>referenza</b> o in un caso di successo, bisogna avere il suo permesso. I numeri dei casi di successo devono essere veri e verificabili. Se non si sa rispondere, si dice «verifico e Le faccio sapere»: mai inventare. La <b>demo</b> si prova prima: un prodotto che non funziona davanti al cliente fa più danni di nessuna demo.",
+      "errors": [
+        {
+          "wrong": "In tutti i test i risultati sono molto consistenti.",
+          "right": "In tutti i test i risultati sono molto costanti (coerenti).",
+          "why": "L'inglese «consistent» è <i>costante</i>; <i>consistente</i> nel linguaggio commerciale vuol dire «notevole, abbondante»."
+        },
+        {
+          "wrong": "Sopportiamo i nostri clienti anche il sabato.",
+          "right": "Assistiamo i nostri clienti (diamo assistenza) anche il sabato.",
+          "why": "L'inglese «support» è <i>assistere</i>; <i>sopportare</i> vuol dire «tollerare»."
+        },
+        {
+          "wrong": "Oggi presento il prodotto davanti a un'audienza di cinquanta clienti.",
+          "right": "Oggi presento il prodotto davanti a un pubblico di cinquanta clienti.",
+          "why": "L'inglese «audience» è il <i>pubblico</i>; <i>audienza</i> non esiste e l'<i>udienza</i> è un incontro ufficiale."
+        },
+        {
+          "wrong": "Le mando i testimoni dei nostri clienti.",
+          "right": "Le mando le testimonianze (le recensioni) dei nostri clienti.",
+          "why": "Il <i>testimone</i> è la persona che ha visto un fatto; quello che dicono i clienti sono le <i>testimonianze</i>."
+        },
+        {
+          "wrong": "Può applicare per la prova gratuita sul nostro sito.",
+          "right": "Può richiedere la prova gratuita sul nostro sito.",
+          "why": "Calco di «apply for»: in italiano si <i>richiede</i> una prova; <i>applicare</i> vuol dire «mettere sopra» o «usare una regola»."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: campione, demo, prova gratuita, referenza, slide, prossimo passo.",
+          "items": [
+            "Le lascio un … del tessuto, così lo può toccare.",
+            "Durante la … Le faccio vedere il programma mentre funziona.",
+            "Può usare il programma per 30 giorni con la …",
+            "Un nostro cliente è disposto a farci da …: può chiamarlo.",
+            "Ho preparato solo dieci …, con poche parole e molte immagini.",
+            "Il … è un incontro con il vostro ufficio tecnico."
+          ],
+          "key": [
+            "<b>campione</b>",
+            "<b>demo</b>",
+            "<b>prova gratuita</b>",
+            "<b>referenza</b>",
+            "<b>slide</b>",
+            "<b>prossimo passo</b>"
+          ]
+        },
+        {
+          "type": "Riformulazione (B1–B2)",
+          "instr": "Collega la caratteristica del prodotto all'esigenza del cliente, in una o due frasi.",
+          "items": [
+            "Esigenza: consegne più veloci. Caratteristica: magazzino a 50 km dal cliente.",
+            "Esigenza: meno errori nelle fatture. Caratteristica: il programma controlla i dati da solo.",
+            "Esigenza: poco spazio nel negozio. Caratteristica: macchina larga 40 cm.",
+            "Esigenza: personale che cambia spesso. Caratteristica: uso semplice, formazione in due ore.",
+            "Esigenza: ridurre i costi dell'energia. Caratteristica: consuma il 30% in meno.",
+            "Esigenza: lavorare con clienti stranieri. Caratteristica: programma in sei lingue."
+          ],
+          "key": [
+            "Esempio: <b>mi aveva detto che vi servono consegne più veloci: il nostro magazzino è a 50 km da voi, quindi consegniamo in 24 ore.</b>",
+            "Esempio: <b>per ridurre gli errori nelle fatture, il programma controlla i dati da solo e Le segnala subito quello che non va.</b>",
+            "Esempio: <b>so che nel negozio lo spazio è poco: questa macchina è larga solo 40 cm e sta anche dietro il bancone.</b>",
+            "Esempio: <b>visto che il personale cambia spesso, conta molto la semplicità: in due ore una persona nuova sa già usarla.</b>",
+            "Esempio: <b>per i costi dell'energia: consuma il 30% in meno, quindi la differenza la vede subito in bolletta.</b>",
+            "Esempio: <b>lavorate con molti clienti stranieri: il programma è in sei lingue, quindi ognuno lo usa nella sua.</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Di' che cosa diresti in questa situazione.",
+          "items": [
+            "Apri la presentazione ricordando le esigenze emerse nel primo incontro.",
+            "Durante la demo il programma si blocca.",
+            "Il cliente chiede un dato che non conosci.",
+            "Il cliente chiede di parlare con un altro vostro cliente.",
+            "Il cliente interrompe: «Sì, ma in pratica che cosa cambia per noi?»",
+            "Chiudi la presentazione proponendo il prossimo passo."
+          ],
+          "key": [
+            "Esempio: <b>grazie per il tempo che ci dedica. L'ultima volta mi aveva parlato di due problemi, i ritardi nelle consegne e gli errori negli ordini: oggi Le faccio vedere come li risolviamo.</b>",
+            "Esempio: <b>mi scusi, la connessione ci sta facendo uno scherzo. Mentre riparte, Le mostro le stesse schermate nelle slide.</b>",
+            "Esempio: <b>non ho il dato preciso e non voglio darLe un numero sbagliato: verifico con l'ufficio tecnico e Le rispondo entro domani.</b>",
+            "Esempio: <b>certo: chiedo a un nostro cliente del Suo settore se è disponibile per una telefonata e Le faccio sapere.</b>",
+            "Esempio: <b>in pratica: oggi per un ordine ci mettete venti minuti, con il nostro sistema cinque. Su cento ordini alla settimana sono venticinque ore risparmiate.</b>",
+            "Esempio: <b>se è d'accordo, il prossimo passo è una prova gratuita di due settimane in uno dei vostri negozi; la installiamo noi lunedì.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è il commerciale di un'azienda che vende un programma per le prenotazioni dei ristoranti, il docente è il titolare di una trattoria che usa poco la tecnologia. Nel primo incontro il cliente aveva detto che le telefonate durante il servizio sono un problema. Difficoltà da introdurre: il cliente dice che prende le prenotazioni al telefono da trent'anni e che con il computer non si trova.",
+          "items": [
+            "Apri e ricorda il problema delle telefonate durante il servizio.",
+            "Presenta la soluzione in due frasi.",
+            "Mostra una funzione semplice.",
+            "Collega un vantaggio all'esigenza del cliente.",
+            "Rispondi al dubbio del cliente sul computer.",
+            "Proponi una prova gratuita."
+          ],
+          "key": [
+            "Esempio: <b>L'ultima volta mi aveva detto che durante il servizio il telefono squilla in continuazione.</b>",
+            "Esempio: <b>Con il nostro programma i clienti prenotano da soli, sul sito o con un messaggio. Lei vede tutte le prenotazioni su un tablet.</b>",
+            "Esempio: <b>Guardi: qui c'è la sala, e ogni tavolo prenotato diventa verde. Basta un dito.</b>",
+            "Esempio: <b>Così durante il servizio Lei e i Suoi camerieri pensate solo ai clienti in sala.</b>",
+            "Esempio: <b>Capisco, ma non serve il computer: si usa come il telefono. E chi vuole può continuare a chiamare.</b>",
+            "Esempio: <b>Perché non lo prova gratis per un mese? Lo installiamo noi e la prima settimana passo io a vedere come va.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "vendite",
+      "cat": "Trattativa",
+      "title": "Gestire le obiezioni: prezzo, tempi, concorrenza",
+      "def": "Il cliente ha dei dubbi: «costa troppo», «non è il momento», «lavoriamo già con un altro», «ci devo pensare». Questa scheda raccoglie il lessico e le frasi per accogliere l'obiezione, capire che cosa c'è dietro e rispondere senza mettersi sulla difensiva.",
+      "form": "Un'<b>obiezione</b> non è un no: spesso il cliente chiede informazioni o garanzie. Si risponde in quattro passi: <b>ascoltare</b> senza interrompere, <b>riconoscere</b> il punto di vista del cliente («Capisco»), fare una <b>domanda</b> per capire che cosa c'è dietro, <b>rispondere</b> con un argomento o una prova. Al prezzo si risponde parlando di valore (quanto fa risparmiare, quanto dura), non abbassando subito il prezzo: gli sconti sono nella scheda sulla trattativa. Dei concorrenti non si parla mai male.",
+      "tables": [
+        {
+          "before": "<b>Le obiezioni più frequenti.</b>",
+          "plain": true,
+          "headers": [
+            "il cliente dice",
+            "che cosa c'è spesso dietro"
+          ],
+          "rows": [
+            [
+              "«Costa troppo.»",
+              "non vede il valore, oppure ha un budget più basso"
+            ],
+            [
+              "«Il concorrente costa meno.»",
+              "confronta prodotti diversi, oppure vuole uno sconto"
+            ],
+            [
+              "«Non è il momento.»",
+              "ha altre priorità, oppure non è convinto"
+            ],
+            [
+              "«Lavoriamo già con un altro fornitore.»",
+              "è soddisfatto, oppure ha paura di cambiare"
+            ],
+            [
+              "«Ci devo pensare.»",
+              "ha un dubbio che non dice"
+            ],
+            [
+              "«Devo sentire il mio responsabile.»",
+              "non decide lui"
+            ],
+            [
+              "«I tempi di consegna sono troppo lunghi.»",
+              "ha una scadenza precisa"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Il lessico per rispondere.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "l'obiezione",
+              "un dubbio o una resistenza del cliente"
+            ],
+            [
+              "il rapporto qualità-prezzo",
+              "quanto vale il prodotto rispetto a quanto costa"
+            ],
+            [
+              "il costo totale",
+              "il prezzo più manutenzione, consumi e riparazioni negli anni"
+            ],
+            [
+              "il ritorno dell'investimento",
+              "in quanto tempo il cliente recupera la spesa"
+            ],
+            [
+              "la concorrenza, il concorrente",
+              "le altre aziende che vendono prodotti simili"
+            ],
+            [
+              "il valore aggiunto",
+              "quello che offriamo in più rispetto agli altri"
+            ],
+            [
+              "l'argomento di vendita",
+              "una ragione per comprare"
+            ],
+            [
+              "il rischio",
+              "che cosa può andare male, per esempio cambiando fornitore"
+            ],
+            [
+              "il periodo di prova",
+              "usare il prodotto per un po' prima di decidere"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "la concorrenza",
+              "sp. competencia",
+              "la <i>competenza</i> in italiano è la conoscenza di una materia"
+            ],
+            [
+              "la discussione",
+              "argument",
+              "l'<i>argomento</i> in italiano è il tema di cui si parla, o una ragione: un argomento di vendita"
+            ],
+            [
+              "anzi, in realtà",
+              "in fact",
+              "<i>infatti</i> conferma quello che si è appena detto: «È buono? Infatti lo comprano in molti»"
+            ],
+            [
+              "le voci",
+              "rumors",
+              "il <i>rumore</i> in italiano è un suono: il rumore del traffico"
+            ],
+            [
+              "rispondere a, affrontare",
+              "to address",
+              "<i>indirizzare</i> vuol dire «mandare verso qualcuno o qualcosa»: indirizzare una lettera, un cliente al collega"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "accogliere",
+          "ex": "Capisco la Sua <b>preoccupazione</b>. / È una domanda giusta. / Fa bene a voler essere sicuro."
+        },
+        {
+          "label": "capire che cosa c'è dietro",
+          "ex": "Rispetto a che cosa Le sembra caro? / Che cosa La fa esitare? / A parte il prezzo, c'è qualcos'altro che non La convince?"
+        },
+        {
+          "label": "il prezzo",
+          "ex": "Il prezzo è più alto, ma la macchina dura il doppio. / Se guardiamo il <b>costo totale</b> in cinque anni, la nostra soluzione costa meno. / Con il risparmio di energia recupera la spesa in circa due anni."
+        },
+        {
+          "label": "la concorrenza",
+          "ex": "Conosco quell'azienda e fa buoni prodotti; la differenza è l'assistenza. / Confrontiamo le due offerte voce per voce?"
+        },
+        {
+          "label": "il momento",
+          "ex": "Che cosa dovrebbe cambiare perché sia il momento giusto? / Possiamo cominciare con un piccolo ordine di prova."
+        },
+        {
+          "label": "«ci devo pensare»",
+          "ex": "Certo. Posso chiederLe su che cosa ha ancora dei dubbi? / Quando posso richiamarLa?"
+        }
+      ],
+      "warn": "Non contraddire il cliente («No, si sbaglia»): prima si riconosce il suo punto di vista. Non parlare mai male di un concorrente: il cliente può conoscerlo bene o tornare da lui. Per chiudere la vendita non si promettono tempi o prestazioni che non si possono garantire. <i>Capisco</i> non vuol dire <i>ha ragione</i>: si può capire un'obiezione e poi rispondere con i dati. I numeri sul risparmio (energia, ritorno dell'investimento) devono essere calcolati per quel cliente, non inventati.",
+      "errors": [
+        {
+          "wrong": "In Italia il nostro prodotto non ha competenza.",
+          "right": "In Italia il nostro prodotto non ha concorrenza (concorrenti).",
+          "why": "Lo spagnolo «competencia» è la <i>concorrenza</i>; la <i>competenza</i> è la conoscenza di una materia."
+        },
+        {
+          "wrong": "Non voglio avere un argomento con Lei sul prezzo.",
+          "right": "Non voglio avere una discussione con Lei sul prezzo.",
+          "why": "L'inglese «argument» qui è la <i>discussione</i>; l'<i>argomento</i> è il tema, o una ragione."
+        },
+        {
+          "wrong": "Ho sentito dei rumori sul vostro concorrente.",
+          "right": "Ho sentito delle voci sul vostro concorrente.",
+          "why": "L'inglese «rumors» sono le <i>voci</i>; il <i>rumore</i> è un suono forte."
+        },
+        {
+          "wrong": "Vorrei indirizzare la Sua obiezione sui tempi.",
+          "right": "Vorrei rispondere alla Sua obiezione sui tempi.",
+          "why": "Calco dell'inglese «address»: in italiano si <i>risponde a</i> un'obiezione; <i>indirizzare</i> vuol dire «mandare verso»."
+        },
+        {
+          "wrong": "Il nostro prodotto non costa di più: infatti costa meno.",
+          "right": "Il nostro prodotto non costa di più: anzi, costa meno.",
+          "why": "L'inglese «in fact» qui è <i>anzi</i>; <i>infatti</i> conferma quello che si è appena detto."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: obiezione, rapporto qualità-prezzo, costo totale, concorrenza, periodo di prova, valore aggiunto.",
+          "items": [
+            "«Costa troppo» è l'… più frequente.",
+            "Il prezzo non è basso, ma il … è ottimo.",
+            "Se guardiamo il … in cinque anni, la nostra macchina conviene.",
+            "La … ha prezzi più bassi, ma meno assistenza.",
+            "Con un … di un mese il cliente prova senza rischi.",
+            "L'assistenza in 24 ore è il nostro …: gli altri non la offrono."
+          ],
+          "key": [
+            "<b>obiezione</b>",
+            "<b>rapporto qualità-prezzo</b>",
+            "<b>costo totale</b>",
+            "<b>concorrenza</b>",
+            "<b>periodo di prova</b>",
+            "<b>valore aggiunto</b>"
+          ]
+        },
+        {
+          "type": "Classificazione (B1–B2)",
+          "instr": "Di che tipo è l'obiezione? Scegli tra: prezzo, tempi di consegna, momento, fornitore attuale, fiducia, decisione.",
+          "items": [
+            "«Da voi ci vogliono sei settimane, a me serve tutto entro fine mese.»",
+            "«Con il fornitore di adesso mi trovo bene da dieci anni.»",
+            "«Non vi conosco: come faccio a sapere che siete affidabili?»",
+            "«È fuori dal nostro budget.»",
+            "«Ne devo parlare con il consiglio di amministrazione.»",
+            "«Adesso abbiamo altre priorità, ne riparliamo l'anno prossimo.»"
+          ],
+          "key": [
+            "<b>tempi di consegna</b>",
+            "<b>fornitore attuale</b>",
+            "<b>fiducia</b>",
+            "<b>prezzo</b>",
+            "<b>decisione</b>",
+            "<b>momento</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Rispondi all'obiezione del cliente: riconosci, chiedi, rispondi.",
+          "items": [
+            "«Costa troppo.»",
+            "«Un'altra ditta mi fa lo stesso prodotto a 20 euro in meno.»",
+            "«Lavoriamo già con un altro fornitore e ci troviamo bene.»",
+            "«Ci devo pensare.»",
+            "«Non è il momento, ne riparliamo l'anno prossimo.»",
+            "«Non vi conosco: come faccio a fidarmi?»"
+          ],
+          "key": [
+            "Esempio: <b>capisco. Rispetto a che cosa Le sembra caro? Se guardiamo anche i consumi, in tre anni la nostra macchina Le costa meno di quella che ha adesso.</b>",
+            "Esempio: <b>è giusto confrontare. Le chiedo solo di controllare se nell'altro prezzo ci sono anche l'installazione e l'assistenza: da noi sono comprese.</b>",
+            "Esempio: <b>mi fa piacere, è importante avere un fornitore affidabile. Le propongo solo di provarci su un ordine piccolo, così ha un confronto.</b>",
+            "Esempio: <b>certo, è una decisione importante. Posso chiederLe su che cosa ha ancora dei dubbi? Magari Le posso dare subito qualche informazione in più.</b>",
+            "Esempio: <b>capisco. Posso chiederLe che cosa dovrebbe cambiare perché sia il momento giusto? Intanto Le mando i dati, così a gennaio li ha già pronti.</b>",
+            "Esempio: <b>ha ragione, non ci conosce ancora. Lavoriamo da vent'anni con aziende come la Sua: se vuole, La metto in contatto con un cliente che può raccontarLe la sua esperienza.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è il commerciale di un'azienda che installa impianti fotovoltaici per le imprese, il docente è il titolare di un'officina meccanica che ha ricevuto l'offerta. Difficoltà da introdurre: il cliente dice che un concorrente costa il 15% in meno; alla fine dice «Ci devo pensare».",
+          "items": [
+            "Accogli l'obiezione sul prezzo.",
+            "Fai una domanda per capire che cosa confronta il cliente.",
+            "Spiega il valore con il costo totale o il ritorno dell'investimento.",
+            "Parla del concorrente senza parlarne male.",
+            "Rispondi a «Ci devo pensare» scoprendo il dubbio.",
+            "Proponi un passo concreto."
+          ],
+          "key": [
+            "Esempio: <b>Capisco, il 15% è una differenza importante.</b>",
+            "Esempio: <b>Posso chiederLe che cosa c'è nell'altra offerta? Pannelli dello stesso tipo, stessa potenza, stessa garanzia?</b>",
+            "Esempio: <b>Il nostro impianto produce di più: secondo i nostri calcoli per la Sua officina, la differenza di prezzo si recupera in meno di due anni.</b>",
+            "Esempio: <b>È un'azienda seria; noi in più facciamo la manutenzione per dieci anni e abbiamo un tecnico qui in provincia.</b>",
+            "Esempio: <b>Certo. Su che cosa vorrebbe pensarci: sul prezzo, sui tempi o su qualcos'altro?</b>",
+            "Esempio: <b>Le propongo questo: venerdì passo con il tecnico e confrontiamo insieme le due offerte, voce per voce.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "vendite",
+      "cat": "Trattativa",
+      "title": "La trattativa: sconti, condizioni, concessioni",
+      "def": "Il cliente è interessato, ma chiede di cambiare qualcosa: il prezzo, i tempi, il pagamento, la quantità. Questa scheda raccoglie il lessico e le frasi per trattare: rispondere a una richiesta, concedere, chiedere qualcosa in cambio, arrivare a un accordo.",
+      "form": "Nella <b>trattativa</b> (o negoziazione) ogni parte cerca le condizioni migliori. La regola principale: non si concede niente senza chiedere qualcosa in cambio, la <b>contropartita</b> («Se voi…, noi…»). Si tratta su più cose insieme: prezzo, quantità, tempi di consegna, pagamento, durata del contratto, servizi. Il commerciale conosce il suo <b>margine di trattativa</b> (fino a dove può scendere) e sa quando serve l'approvazione del suo responsabile. Le condizioni di pagamento si nominano soltanto (come funzionano è spiegato in Banca); gli aspetti legali del contratto sono in Diritto.",
+      "tables": [
+        {
+          "before": "<b>Il lessico della trattativa.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "la trattativa, la negoziazione",
+              "la discussione per arrivare a un accordo"
+            ],
+            [
+              "trattare, negoziare",
+              "discutere le condizioni"
+            ],
+            [
+              "la richiesta",
+              "quello che chiede una parte"
+            ],
+            [
+              "la concessione",
+              "quello che una parte accetta di dare"
+            ],
+            [
+              "la contropartita",
+              "quello che si chiede in cambio"
+            ],
+            [
+              "il margine di trattativa",
+              "quanto si può scendere con il prezzo"
+            ],
+            [
+              "il prezzo minimo",
+              "sotto questo prezzo non si vende"
+            ],
+            [
+              "venirsi incontro",
+              "fare un passo ciascuno"
+            ],
+            [
+              "l'accordo, l'intesa",
+              "il risultato della trattativa"
+            ],
+            [
+              "le condizioni concordate",
+              "quello che si è deciso insieme"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Su che cosa si tratta.</b>",
+          "plain": true,
+          "headers": [
+            "voce",
+            "esempio di proposta"
+          ],
+          "rows": [
+            [
+              "il prezzo",
+              "sconto del 5% per ordini sopra i 10.000 euro"
+            ],
+            [
+              "la quantità",
+              "prezzo più basso oltre i 500 pezzi"
+            ],
+            [
+              "la durata",
+              "prezzo bloccato per due anni con un contratto di due anni"
+            ],
+            [
+              "i tempi di consegna",
+              "consegna in due settimane invece di quattro, con un supplemento"
+            ],
+            [
+              "il pagamento",
+              "a 60 giorni invece che a 30, ma senza sconto"
+            ],
+            [
+              "i servizi",
+              "installazione e formazione comprese"
+            ],
+            [
+              "l'esclusiva",
+              "solo quel cliente vende il prodotto nella sua zona"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "venire incontro, accogliere (una richiesta)",
+              "to accommodate",
+              "<i>accomodare</i> vuol dire «sistemare»; «si accomodi» vuol dire «si sieda, entri»"
+            ],
+            [
+              "la tariffa",
+              "rate",
+              "la <i>rata</i> in italiano è una parte di un pagamento diviso nel tempo: pagare in tre rate"
+            ],
+            [
+              "rivedere (il prezzo)",
+              "to revise; sp. revisar",
+              "<i>revisare</i> non esiste: il prezzo si <i>rivede</i> (nei contratti si parla di <i>revisione dei prezzi</i>)"
+            ],
+            [
+              "lo sconto",
+              "sp. bonificación",
+              "il <i>bonifico</i> in italiano è il pagamento in banca"
+            ],
+            [
+              "il compromesso",
+              "compromise",
+              "vuol dire anche «via di mezzo», ma nella vendita di una casa il <i>compromesso</i> è il contratto preliminare (vedi Diritto)"
+            ],
+            [
+              "gratuito, gratis",
+              "free",
+              "<i>libero</i> vuol dire «non occupato»: un posto libero"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "rispondere a una richiesta di sconto",
+          "ex": "Vediamo che cosa possiamo fare. / Uno <b>sconto</b> del 10% non è possibile; posso arrivare al 5%."
+        },
+        {
+          "label": "chiedere in cambio",
+          "ex": "Se ordinate 1.000 pezzi invece di 500, possiamo scendere a 8 euro. / Possiamo farlo, <b>a condizione che</b> il pagamento sia anticipato."
+        },
+        {
+          "label": "proporre un'alternativa",
+          "ex": "Invece dello sconto, possiamo includere l'installazione. / Che ne dice di un <b>prezzo bloccato</b> per due anni?"
+        },
+        {
+          "label": "prendere tempo",
+          "ex": "Su questo devo sentire il mio responsabile. / Le confermo entro domani."
+        },
+        {
+          "label": "dire di no",
+          "ex": "Mi dispiace, sotto questo prezzo non possiamo andare. / È il nostro prezzo migliore."
+        },
+        {
+          "label": "chiudere l'accordo",
+          "ex": "Allora siamo d'accordo: 5% di sconto e consegna a fine mese. / Le mando l'offerta aggiornata con le <b>condizioni concordate</b>."
+        }
+      ],
+      "warn": "Non concedere subito: uno sconto dato al primo «è caro» diventa il nuovo punto di partenza. Ogni concessione va scritta nell'offerta aggiornata: gli accordi a voce si dimenticano. Non promettere quello che non si può decidere da soli: «devo sentire il mio responsabile» è una frase normale. <i>Prezzo bloccato</i> vuol dire che il prezzo non aumenta per un certo periodo.",
+      "errors": [
+        {
+          "wrong": "Possiamo accomodare la Sua richiesta.",
+          "right": "Possiamo venire incontro alla Sua richiesta (accogliere la Sua richiesta).",
+          "why": "L'inglese «accommodate» qui è <i>venire incontro</i>; <i>accomodare</i> vuol dire «sistemare»."
+        },
+        {
+          "wrong": "La nostra rata oraria per l'installazione è di 50 euro.",
+          "right": "La nostra tariffa oraria per l'installazione è di 50 euro.",
+          "why": "L'inglese «rate» qui è la <i>tariffa</i>; la <i>rata</i> è una parte di un pagamento diviso nel tempo."
+        },
+        {
+          "wrong": "Possiamo revisare il prezzo, se ordinate di più.",
+          "right": "Possiamo rivedere il prezzo, se ordinate di più.",
+          "why": "Dall'inglese «revise» e dallo spagnolo «revisar»: in italiano il prezzo si <i>rivede</i>; <i>revisare</i> non esiste."
+        },
+        {
+          "wrong": "Le facciamo una bonificazione del 3%.",
+          "right": "Le facciamo uno sconto del 3%.",
+          "why": "Lo spagnolo «bonificación» è lo <i>sconto</i>; il <i>bonifico</i> è un pagamento in banca."
+        },
+        {
+          "wrong": "Se ordinate entro venerdì, l'installazione è libera.",
+          "right": "Se ordinate entro venerdì, l'installazione è gratuita.",
+          "why": "L'inglese «free» qui è <i>gratuito</i>; <i>libero</i> vuol dire «non occupato» o «senza limiti»."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: trattativa, concessione, contropartita, margine, accordo, prezzo bloccato.",
+          "items": [
+            "La … con il cliente è durata tre settimane.",
+            "Lo sconto del 5% è una … importante.",
+            "In cambio dello sconto chiediamo una …: il pagamento anticipato.",
+            "Il mio … di trattativa è del 7%: di più non posso scendere.",
+            "Dopo due incontri abbiamo trovato un …",
+            "Con il contratto di due anni il cliente ha un …: per due anni non aumenta."
+          ],
+          "key": [
+            "<b>trattativa</b>",
+            "<b>concessione</b>",
+            "<b>contropartita</b>",
+            "<b>margine</b>",
+            "<b>accordo</b>",
+            "<b>prezzo bloccato</b>"
+          ]
+        },
+        {
+          "type": "Riformulazione (B1–B2)",
+          "instr": "Il cliente chiede qualcosa: rispondi con uno scambio, «Se voi…, noi…».",
+          "items": [
+            "Il cliente chiede uno sconto del 5%.",
+            "Il cliente chiede la consegna in due settimane invece di quattro.",
+            "Il cliente chiede di pagare a 60 giorni invece che a 30.",
+            "Il cliente chiede l'installazione gratuita.",
+            "Il cliente chiede un prezzo bloccato per due anni.",
+            "Il cliente chiede l'esclusiva nella sua provincia."
+          ],
+          "key": [
+            "Esempio: <b>se ordinate almeno 1.000 pezzi, possiamo fare il 5%.</b>",
+            "Esempio: <b>se confermate l'ordine entro venerdì, possiamo consegnare in due settimane.</b>",
+            "Esempio: <b>se pagate a 60 giorni, il prezzo resta quello di listino, senza sconto.</b>",
+            "Esempio: <b>se firmate il contratto di assistenza per tre anni, l'installazione è compresa.</b>",
+            "Esempio: <b>se firmate un contratto di due anni, blocchiamo il prezzo per tutto il periodo.</b>",
+            "Esempio: <b>se garantite un minimo di 5.000 pezzi l'anno, vi diamo l'esclusiva per la provincia.</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Di' che cosa risponderesti al cliente.",
+          "items": [
+            "Il cliente chiede il 15% di sconto; puoi arrivare al massimo al 6%.",
+            "Il cliente vuole sia lo sconto sia il pagamento a 90 giorni.",
+            "Il cliente ti chiede una cosa che non puoi decidere da solo.",
+            "Il cliente chiede: «È la vostra ultima offerta?» E lo è.",
+            "Riassumi l'accordo alla fine della riunione.",
+            "Il cliente propone un prezzo sotto il vostro prezzo minimo."
+          ],
+          "key": [
+            "Esempio: <b>il 15% purtroppo non è possibile. Posso arrivare al 6% se l'ordine supera i 10.000 euro.</b>",
+            "Esempio: <b>le due cose insieme non riusciamo a farle: possiamo darLe lo sconto con il pagamento a 30 giorni, oppure i 90 giorni al prezzo pieno. Che cosa è più importante per voi?</b>",
+            "Esempio: <b>su questo non posso decidere da solo: ne parlo oggi con il mio responsabile e Le rispondo entro domani.</b>",
+            "Esempio: <b>sì, è il nostro prezzo migliore. Possiamo però lavorare sui tempi di consegna o sul servizio.</b>",
+            "Esempio: <b>allora riepilogo: 2.000 pezzi a 7,60 euro più IVA, consegna in tre settimane, pagamento a 30 giorni data fattura. Le mando oggi l'offerta aggiornata.</b>",
+            "Esempio: <b>mi dispiace, a quel prezzo non riusciamo a lavorare senza abbassare la qualità. Le posso proporre il modello base, che costa meno.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è il commerciale di un'azienda che produce bottiglie di vetro, il docente è il responsabile acquisti di una cantina. L'offerta: 50.000 bottiglie a 0,40 euro l'una, pagamento a 30 giorni, consegna in quattro settimane. Il commerciale può scendere fino a 0,37 euro, ma solo con un ordine più grande o un contratto di un anno. Difficoltà da introdurre: il cliente chiede 0,34 euro e il pagamento a 90 giorni.",
+          "items": [
+            "Ascolta e riassumi le richieste del cliente.",
+            "Rispondi alla richiesta sul prezzo con una contropartita.",
+            "Rispondi alla richiesta sul pagamento.",
+            "Proponi un'alternativa.",
+            "Prendi tempo su un punto che non puoi decidere da solo.",
+            "Riassumi l'accordo e di' che cosa succede ora."
+          ],
+          "key": [
+            "Esempio: <b>Se ho capito bene, mi chiede 0,34 euro a bottiglia e il pagamento a 90 giorni.</b>",
+            "Esempio: <b>A 0,34 non possiamo arrivare. Se però firmiamo un contratto di un anno, possiamo scendere a 0,37.</b>",
+            "Esempio: <b>Il pagamento a 90 giorni con questo prezzo è difficile: potrei arrivare a 60, ma devo verificarlo.</b>",
+            "Esempio: <b>Oppure teniamo 0,38 e Le blocchiamo il prezzo per tutto il prossimo anno.</b>",
+            "Esempio: <b>Sui 60 giorni devo avere l'approvazione del mio responsabile: Le confermo domani mattina.</b>",
+            "Esempio: <b>Allora: contratto di un anno, 0,37 euro a bottiglia, pagamento a 60 giorni se me lo approvano. Domani Le mando l'offerta aggiornata.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "vendite",
+      "cat": "Offerta e ordine",
+      "title": "L'offerta e il preventivo",
+      "def": "Il commerciale prepara per il cliente un'offerta scritta: che cosa vende, a che prezzo, con quali condizioni e fino a quando vale. Questa scheda raccoglie le voci di un'offerta, il lessico di prezzi, sconti, consegna e pagamento, e le frasi per presentarla e per rispondere alle domande del cliente.",
+      "form": "<b>Offerta</b> e <b>preventivo</b> spesso sono sinonimi: si dice più spesso <i>preventivo</i> per lavori e servizi da calcolare (rifare un impianto, sviluppare un sito), <i>offerta</i> per i prodotti. Un'offerta ha di solito un numero e una data, l'oggetto, la descrizione dei prodotti, i prezzi, gli sconti, l'IVA, le condizioni di consegna e di pagamento, la validità. Tra aziende i prezzi si scrivono di solito <b>IVA esclusa</b>; al consumatore si dà il prezzo finale, <b>IVA inclusa</b>. L'offerta si manda con una mail di accompagnamento in registro formale, con il <i>Lei</i>. Le condizioni di pagamento si scrivono nell'offerta; come funzionano bonifico e Ri.Ba. è spiegato in Banca.",
+      "tables": [
+        {
+          "before": "<b>Le voci di un'offerta.</b>",
+          "plain": true,
+          "headers": [
+            "voce",
+            "che cosa contiene",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "l'oggetto",
+              "di che cosa parla l'offerta",
+              "Offerta n. 125/2026 per la fornitura di 200 sedie da ufficio"
+            ],
+            [
+              "la descrizione",
+              "il prodotto o il servizio, con codice e caratteristiche",
+              "sedia ergonomica modello Alfa, art. 3021"
+            ],
+            [
+              "il prezzo unitario",
+              "il prezzo di un pezzo",
+              "€ 85,00 cad. (cadauno, cioè «ciascuno»)"
+            ],
+            [
+              "l'imponibile",
+              "il totale prima dell'IVA",
+              "€ 17.000,00"
+            ],
+            [
+              "l'IVA",
+              "l'imposta sul valore aggiunto",
+              "IVA 22%: € 3.740,00"
+            ],
+            [
+              "il totale",
+              "imponibile più IVA",
+              "€ 20.740,00"
+            ],
+            [
+              "i tempi di consegna",
+              "quando arriva la merce",
+              "entro 30 giorni dalla conferma d'ordine"
+            ],
+            [
+              "la resa",
+              "dove si consegna la merce e chi paga il trasporto",
+              "franco destino"
+            ],
+            [
+              "le condizioni di pagamento",
+              "come e quando paga il cliente",
+              "bonifico bancario a 30 giorni data fattura"
+            ],
+            [
+              "la validità",
+              "fino a quando vale l'offerta",
+              "offerta valida 30 giorni"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Prezzi, sconti e pagamento.</b>",
+          "after": "Le aliquote IVA in Italia sono quattro: 22% (ordinaria), 10%, 5% e 4% (ridotte, solo per alcuni beni e servizi). Quale si applica lo stabilisce la legge; in azienda la verifica l'amministrazione, non il commerciale.",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "il listino (prezzi)",
+              "l'elenco ufficiale dei prezzi dell'azienda"
+            ],
+            [
+              "il prezzo di listino",
+              "il prezzo prima degli sconti"
+            ],
+            [
+              "IVA esclusa, + IVA",
+              "il prezzo senza IVA: si usa tra aziende"
+            ],
+            [
+              "IVA inclusa, IVA compresa",
+              "il prezzo finale con l'IVA: si usa con il consumatore"
+            ],
+            [
+              "lo sconto",
+              "la riduzione del prezzo: uno sconto del 10%"
+            ],
+            [
+              "lo sconto quantità",
+              "lo sconto per chi compra molti pezzi"
+            ],
+            [
+              "l'acconto",
+              "una parte del prezzo pagata prima, di solito alla conferma d'ordine; il resto è il <i>saldo</i>"
+            ],
+            [
+              "a 30 giorni data fattura (30 gg d.f.)",
+              "il cliente paga entro 30 giorni dalla data della fattura"
+            ],
+            [
+              "a 30 giorni data fattura fine mese (30 gg d.f.f.m.)",
+              "di solito si paga l'ultimo giorno del mese dopo quello della fattura: fattura del 10 marzo, pagamento il 30 aprile; nel dubbio si controlla il contratto"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Consegna e trasporto.</b>",
+          "after": "Gli Incoterms in vigore sono gli Incoterms 2020 della Camera di commercio internazionale (ICC): undici sigle, tra cui anche FCA, CPT, CIP, DPU, FAS, FOB, CFR e CIF.",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "franco partenza (franco magazzino)",
+              "la merce si consegna al magazzino del venditore: il trasporto lo paga il cliente"
+            ],
+            [
+              "franco destino",
+              "il venditore porta la merce fino al cliente: il trasporto è compreso"
+            ],
+            [
+              "porto franco",
+              "sul documento di trasporto: il trasporto lo paga chi spedisce"
+            ],
+            [
+              "porto assegnato",
+              "sul documento di trasporto: il trasporto lo paga chi riceve"
+            ],
+            [
+              "le spese di trasporto",
+              "il costo per portare la merce dal venditore al cliente"
+            ],
+            [
+              "gli Incoterms",
+              "sigle internazionali per le vendite con l'estero: dicono dove finisce il compito del venditore e chi paga trasporto, assicurazione e dogana"
+            ],
+            [
+              "EXW (Ex Works)",
+              "il cliente ritira la merce presso il venditore e paga tutto il resto"
+            ],
+            [
+              "DAP (Delivered at Place)",
+              "il venditore porta la merce nel luogo indicato; i dazi d'importazione li paga il cliente"
+            ],
+            [
+              "DDP (Delivered Duty Paid)",
+              "il venditore porta la merce nel luogo indicato e paga anche i dazi"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "il preventivo",
+              "quote, quotation",
+              "la <i>quota</i> in italiano è una parte: la quota di mercato"
+            ],
+            [
+              "il preventivo",
+              "sp. presupuesto",
+              "lo spagnolo «presupuesto» vuol dire sia <i>preventivo</i> sia <i>budget</i>; in italiano il <i>budget</i> è la somma che il cliente può spendere"
+            ],
+            [
+              "l'IVA, la partita IVA",
+              "VAT, VAT number",
+              "in italiano si dice sempre <i>IVA</i>; il numero fiscale dell'azienda è la <i>partita IVA</i>"
+            ],
+            [
+              "lo sconto",
+              "discount",
+              "in italiano il <i>discount</i> è il supermercato a prezzi bassi"
+            ],
+            [
+              "conveniente",
+              "convenient",
+              "in italiano <i>conveniente</i> vuol dire soprattutto «a buon prezzo, vantaggioso»; «convenient» è <i>comodo</i>"
+            ],
+            [
+              "eventuale, eventualmente",
+              "eventual, eventually",
+              "<i>eventuale</i> vuol dire «possibile, se serve» (eventuali spese di trasporto); «eventually» è <i>alla fine</i>"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "presentare l'offerta",
+          "ex": "In allegato Le invio la nostra <b>offerta</b> n. 125/2026 per la fornitura di 200 sedie. / Come da accordi telefonici, abbiamo applicato uno <b>sconto</b> del 10% sul prezzo di listino."
+        },
+        {
+          "label": "prezzi e IVA",
+          "ex": "I prezzi indicati sono <b>IVA esclusa</b>. / Il prezzo unitario è di 85 euro <b>più IVA</b>. / Il totale, <b>IVA inclusa</b>, è di 20.740 euro."
+        },
+        {
+          "label": "consegna",
+          "ex": "La <b>consegna</b> è prevista entro 30 giorni dalla conferma d'ordine. / Il trasporto è a nostro carico: la resa è <b>franco destino</b>."
+        },
+        {
+          "label": "pagamento e validità",
+          "ex": "<b>Pagamento</b>: bonifico bancario a 30 giorni data fattura. / L'offerta è <b>valida</b> fino al 30 novembre 2026."
+        },
+        {
+          "label": "aggiornare l'offerta",
+          "ex": "Per quantità superiori a 500 pezzi possiamo rivedere il <b>prezzo unitario</b>. / Entro domani Le mando un'<b>offerta aggiornata</b>."
+        },
+        {
+          "label": "chiudere la mail",
+          "ex": "Restiamo <b>a disposizione</b> per qualsiasi chiarimento. / In attesa di un Suo cortese <b>riscontro</b>, porgiamo cordiali saluti."
+        }
+      ],
+      "warn": "<b>Prezzo netto</b> può voler dire «dopo gli sconti» oppure «senza IVA»: per non creare equivoci si scrive sempre <i>IVA esclusa</i> o <i>IVA inclusa</i>. <b>Franco</b> nelle condizioni di consegna non vuol dire «gratis» in generale: dice fino a dove il trasporto è a carico del venditore. Indicare sempre la <b>validità</b>: un prezzo calcolato oggi può non valere più tra tre mesi. Per i clienti di altri paesi l'IVA segue regole diverse: prima di mandare l'offerta, chiedere all'amministrazione. <i>Acconto</i> e <i>caparra</i> non sono la stessa cosa: la caparra è spiegata in Diritto.",
+      "errors": [
+        {
+          "wrong": "In allegato trova la nostra quota.",
+          "right": "In allegato trova il nostro preventivo (la nostra offerta).",
+          "why": "L'inglese «quote» è il <i>preventivo</i>; la <i>quota</i> è una parte di qualcosa."
+        },
+        {
+          "wrong": "I prezzi sono senza VAT.",
+          "right": "I prezzi sono IVA esclusa.",
+          "why": "In italiano l'imposta si chiama sempre <i>IVA</i> (ingl. «VAT»)."
+        },
+        {
+          "wrong": "Per questo ordine Le facciamo un discount del 5%.",
+          "right": "Per questo ordine Le facciamo uno sconto del 5%.",
+          "why": "In italiano il <i>discount</i> è un tipo di supermercato; la riduzione del prezzo è lo <i>sconto</i>."
+        },
+        {
+          "wrong": "Speriamo che eventualmente accettiate la nostra offerta.",
+          "right": "Speriamo che alla fine accettiate la nostra offerta.",
+          "why": "L'inglese «eventually» è <i>alla fine</i>; <i>eventualmente</i> vuol dire «se serve, nel caso»."
+        },
+        {
+          "wrong": "L'offerta espira il 30 novembre.",
+          "right": "L'offerta scade il 30 novembre.",
+          "why": "Calco di «expire» (anche sp. «expirar», fr. «expirer»): per un'offerta si dice <i>scadere</i>; <i>espirare</i> è mandare fuori l'aria."
+        },
+        {
+          "wrong": "Le mando il budget per il nuovo sito.",
+          "right": "Le mando il preventivo per il nuovo sito.",
+          "why": "Il <i>budget</i> è la somma che il cliente può spendere; il documento con il prezzo è il <i>preventivo</i> (errore frequente dallo spagnolo «presupuesto»)."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: validità, IVA esclusa, sconto, consegna, listino, preventivo.",
+          "items": [
+            "Il cliente ci ha chiesto un … per rifare l'impianto elettrico.",
+            "Il prezzo di … è 100 euro; con lo sconto diventa 90.",
+            "Per ordini sopra i 1.000 euro facciamo uno … del 5%.",
+            "Tra aziende i prezzi si scrivono di solito …",
+            "La … è prevista entro due settimane dall'ordine.",
+            "L'offerta ha una … di 30 giorni."
+          ],
+          "key": [
+            "<b>preventivo</b>",
+            "<b>listino</b>",
+            "<b>sconto</b>",
+            "<b>IVA esclusa</b>",
+            "<b>consegna</b>",
+            "<b>validità</b>"
+          ]
+        },
+        {
+          "type": "Classificazione (B1–B2)",
+          "instr": "Il cliente fa una domanda: di quale voce dell'offerta parla? Scrivi il termine.",
+          "items": [
+            "«Quando arriva la merce?»",
+            "«Entro quando devo pagare?»",
+            "«Fino a quando vale questo prezzo?»",
+            "«Il trasporto lo pagate voi o noi?»",
+            "«Quanto costa una sedia?»",
+            "«Quanto fa il totale senza IVA?»"
+          ],
+          "key": [
+            "i <b>tempi di consegna</b>",
+            "le <b>condizioni di pagamento</b>",
+            "la <b>validità</b> dell'offerta",
+            "la <b>resa</b> (franco destino o franco partenza)",
+            "il <b>prezzo unitario</b>",
+            "l'<b>imponibile</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Rispondi al cliente in registro formale, a voce o per scritto.",
+          "items": [
+            "Il cliente chiede se il prezzo comprende il trasporto; la resa è franco partenza.",
+            "Un cliente privato chiede il totale con l'IVA; il preventivo è di 1.000 euro più IVA al 22%.",
+            "L'offerta è scaduta da una settimana e il cliente vuole ordinare allo stesso prezzo.",
+            "Il cliente chiede che cosa vuol dire «30 gg d.f.f.m.».",
+            "Il cliente è un'azienda francese e chiede se nel prezzo c'è l'IVA italiana.",
+            "Il cliente chiede perché nell'offerta c'è un acconto del 30%."
+          ],
+          "key": [
+            "Esempio: <b>il prezzo è franco partenza, quindi il trasporto non è compreso. Se preferisce, ce ne occupiamo noi: Le aggiungo il costo nell'offerta.</b>",
+            "Esempio: <b>certo, Le mando l'offerta con i prezzi IVA inclusa: il totale è di 1.220 euro.</b>",
+            "Esempio: <b>l'offerta era valida fino al 15 ottobre; verifico con l'ufficio se possiamo mantenere lo stesso prezzo e Le confermo entro domani.</b>",
+            "Esempio: <b>vuol dire 30 giorni data fattura fine mese: se la fattura è del 10 marzo, il pagamento scade il 30 aprile.</b>",
+            "Esempio: <b>i prezzi dell'offerta sono IVA esclusa; per le vendite ad aziende di altri paesi dell'Unione europea l'IVA segue regole diverse, e la nostra amministrazione Le conferma come sarà indicata in fattura.</b>",
+            "Esempio: <b>i mobili sono fatti su misura, quindi chiediamo un acconto del 30% alla conferma d'ordine; il saldo si paga alla consegna.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è il commerciale di un'azienda di mobili per ufficio, il docente è la responsabile acquisti di uno studio professionale, che ha chiesto un preventivo per 20 scrivanie (320 euro l'una) e 20 sedie (85 euro l'una). Il commerciale la chiama per presentarle l'offerta. Difficoltà da introdurre: la cliente pensava che i prezzi fossero IVA inclusa e il trasporto compreso, e il totale le sembra sbagliato.",
+          "items": [
+            "Presenta l'offerta: numero, oggetto, prodotti.",
+            "Spiega i prezzi unitari e il totale.",
+            "Chiarisci l'equivoco sull'IVA e dai il totale con l'IVA.",
+            "Spiega tempi di consegna e resa, e chiarisci l'equivoco sul trasporto.",
+            "Spiega condizioni di pagamento e validità.",
+            "Chiudi la telefonata: proponi di mandare l'offerta aggiornata per email e chiedi un riscontro."
+          ],
+          "key": [
+            "Esempio: <b>Le ho appena mandato l'offerta n. 140/2026 per gli arredi dello studio: venti scrivanie e venti sedie.</b>",
+            "Esempio: <b>La scrivania costa 320 euro e la sedia 85: in totale sono 8.100 euro.</b>",
+            "Esempio: <b>I prezzi sono IVA esclusa, come si fa di solito tra aziende: con l'IVA al 22% il totale è di 9.882 euro.</b>",
+            "Esempio: <b>Consegniamo entro tre settimane dalla conferma d'ordine. La resa è franco partenza, quindi il trasporto non è compreso, ma possiamo occuparcene noi e aggiungerlo nell'offerta.</b>",
+            "Esempio: <b>Il pagamento è con bonifico a 30 giorni data fattura, e l'offerta è valida fino a fine mese.</b>",
+            "Esempio: <b>Le mando oggi stesso l'offerta aggiornata con il trasporto; mi fa sapere entro venerdì?</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "vendite",
+      "cat": "Offerta e ordine",
+      "title": "Chiudere la vendita: l'ordine e la conferma",
+      "def": "Il cliente è pronto a decidere: il commerciale deve chiudere la vendita, cioè ottenere l'ordine e confermare le condizioni. Questa scheda raccoglie il lessico e le frasi per chiedere la decisione, ricevere l'ordine, mandare la conferma d'ordine e far firmare l'offerta.",
+      "form": "<b>Chiudere</b> vuol dire chiedere la decisione in modo chiaro, quando il cliente mostra dei <b>segnali d'acquisto</b>: chiede dei tempi, del pagamento, dei colori. Tra aziende di solito il cliente manda l'<b>ordine</b> (o rimanda l'offerta <b>firmata per accettazione</b>), il venditore manda la <b>conferma d'ordine</b> con le condizioni, poi si prepara la consegna. Per forniture lunghe o servizi si firma un contratto: le clausole e i loro effetti legali sono spiegati in Diritto, i pagamenti in Banca. Qui c'è il lato commerciale: chiedere il sì e mettere per iscritto quello che si è concordato.",
+      "tables": [
+        {
+          "before": "<b>Il lessico dell'ordine.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "chiudere (la vendita, la trattativa)",
+              "ottenere il sì del cliente"
+            ],
+            [
+              "i segnali d'acquisto",
+              "domande o frasi che mostrano che il cliente è pronto"
+            ],
+            [
+              "l'ordine (d'acquisto)",
+              "il documento con cui il cliente dice che cosa compra"
+            ],
+            [
+              "il numero d'ordine",
+              "il codice dell'ordine, da citare in tutti i documenti"
+            ],
+            [
+              "la conferma d'ordine",
+              "il documento con cui il venditore accetta l'ordine e ripete le condizioni"
+            ],
+            [
+              "firmare per accettazione",
+              "firmare l'offerta per dire «accetto»"
+            ],
+            [
+              "l'ordine minimo",
+              "la quantità o l'importo minimi per poter ordinare"
+            ],
+            [
+              "l'ordine di prova",
+              "un primo ordine piccolo, per provare il fornitore"
+            ],
+            [
+              "in comodato (d'uso)",
+              "un prestito gratuito: il fornitore lascia una macchina al cliente; spesso, in cambio, il cliente compra da lui i prodotti (caffè, materiali)"
+            ],
+            [
+              "modificare, annullare l'ordine",
+              "cambiare l'ordine o cancellarlo"
+            ],
+            [
+              "evadere un ordine",
+              "preparare e spedire la merce ordinata"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Come si chiede la decisione.</b>",
+          "plain": true,
+          "headers": [
+            "tecnica",
+            "frase"
+          ],
+          "rows": [
+            [
+              "la domanda diretta",
+              "Possiamo procedere con l'ordine?"
+            ],
+            [
+              "l'alternativa",
+              "Preferisce la consegna a inizio o a fine mese?"
+            ],
+            [
+              "il riepilogo",
+              "Riassumendo: 200 sedie, consegna entro il 15, pagamento a 30 giorni. Va bene?"
+            ],
+            [
+              "il passo piccolo",
+              "Vogliamo cominciare con un ordine di prova?"
+            ],
+            [
+              "la scadenza (solo se è vera)",
+              "L'offerta vale fino a venerdì; da gennaio il listino aumenta."
+            ],
+            [
+              "il silenzio",
+              "dopo la domanda si aspetta la risposta, senza parlare"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "l'azienda, la ditta",
+              "firm",
+              "la <i>firma</i> in italiano è il nome scritto a mano sotto un documento (ingl. «signature»)"
+            ],
+            [
+              "la firma",
+              "signature",
+              "<i>signatura</i> non esiste"
+            ],
+            [
+              "sottoscrivere, acquistare (un servizio)",
+              "to contract; sp. contratar",
+              "<i>contrattare</i> in italiano vuol dire «discutere il prezzo»: contrattare al mercato"
+            ],
+            [
+              "impegnarsi",
+              "sp. comprometerse",
+              "<i>compromettersi</i> vuol dire «mettersi in una situazione negativa»"
+            ],
+            [
+              "felice, entusiasta",
+              "excited",
+              "<i>eccitato</i> in italiano vuol dire «agitato», e può avere un senso sessuale: da evitare"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "rispondere a un segnale d'acquisto",
+          "ex": "Se confermate oggi, la merce arriva entro il 15. Procediamo? / Sì, c'è anche in blu: Le preparo l'<b>ordine</b> in blu?"
+        },
+        {
+          "label": "chiedere la decisione",
+          "ex": "Possiamo procedere con l'ordine? / Le preparo la <b>conferma d'ordine</b>?"
+        },
+        {
+          "label": "proporre un'alternativa",
+          "ex": "Preferisce il modello grigio o quello nero? / Consegniamo lunedì o mercoledì?"
+        },
+        {
+          "label": "riepilogare",
+          "ex": "Riassumendo: 200 sedie a 85 euro più IVA, consegna entro il 15, pagamento a 30 giorni data fattura. Va bene?"
+        },
+        {
+          "label": "i documenti",
+          "ex": "Mi può rimandare l'offerta <b>firmata per accettazione</b>? / Le ho mandato la conferma d'ordine: controlli i dati, per favore."
+        },
+        {
+          "label": "dopo il sì",
+          "ex": "Grazie per la fiducia. / Ora passo l'ordine al magazzino e Le comunico la data di consegna."
+        }
+      ],
+      "warn": "Dopo la domanda di chiusura si tace e si aspetta: chi parla subito spesso abbassa il prezzo da solo. Le scadenze («l'offerta vale fino a venerdì») si usano solo se sono vere. La <b>conferma d'ordine</b> deve ripetere esattamente le condizioni concordate: prezzi, quantità, tempi, pagamento. Se il cliente manda un ordine con condizioni diverse dall'offerta, non si accetta in silenzio: si chiarisce prima (che cosa vale per la legge è spiegato in Diritto).",
+      "errors": [
+        {
+          "wrong": "Il cliente ha contrattato il servizio per due anni.",
+          "right": "Il cliente ha sottoscritto (acquistato) il servizio per due anni.",
+          "why": "Dall'inglese «to contract» e dallo spagnolo «contratar»: in italiano <i>contrattare</i> vuol dire «discutere il prezzo»."
+        },
+        {
+          "wrong": "Ci compromettiamo a consegnare entro il 15.",
+          "right": "Ci impegniamo a consegnare entro il 15.",
+          "why": "Lo spagnolo «comprometerse» è <i>impegnarsi</i>; <i>compromettersi</i> vuol dire «mettersi in una brutta situazione»."
+        },
+        {
+          "wrong": "La nostra firma ha sede a Milano.",
+          "right": "La nostra azienda (ditta) ha sede a Milano.",
+          "why": "L'inglese «firm» è l'<i>azienda</i>; la <i>firma</i> è il nome scritto sotto un documento."
+        },
+        {
+          "wrong": "Manca solo la Sua signatura sulla conferma d'ordine.",
+          "right": "Manca solo la Sua firma sulla conferma d'ordine.",
+          "why": "L'inglese «signature» è la <i>firma</i>; <i>signatura</i> non esiste."
+        },
+        {
+          "wrong": "Siamo molto eccitati di lavorare con voi.",
+          "right": "Siamo molto felici (contenti) di lavorare con voi.",
+          "why": "L'inglese «excited» qui è <i>felice</i>, <i>entusiasta</i>; <i>eccitato</i> vuol dire «agitato» e può avere un senso sessuale."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: ordine, conferma d'ordine, per accettazione, segnale d'acquisto, ordine minimo, numero d'ordine.",
+          "items": [
+            "Il cliente ci ha mandato l'… per 300 pezzi.",
+            "Entro 24 ore mandiamo al cliente la … con tutte le condizioni.",
+            "Mi rimanda l'offerta firmata …?",
+            "Quando il cliente chiede dei tempi di consegna, è un …",
+            "L'… è di 50 pezzi: per meno non spediamo.",
+            "Nella fattura citiamo sempre il … del cliente."
+          ],
+          "key": [
+            "<b>ordine</b>",
+            "<b>conferma d'ordine</b>",
+            "<b>per accettazione</b>",
+            "<b>segnale d'acquisto</b>",
+            "<b>ordine minimo</b>",
+            "<b>numero d'ordine</b>"
+          ]
+        },
+        {
+          "type": "Classificazione (B1–B2)",
+          "instr": "È un segnale d'acquisto? Rispondi sì o no.",
+          "items": [
+            "«Se ordiniamo oggi, quando arriva?»",
+            "«Mi mandi un catalogo, poi vediamo.»",
+            "«Il pagamento si può fare a 60 giorni?»",
+            "«Al momento non abbiamo budget.»",
+            "«Chi ci fa la formazione dopo l'installazione?»",
+            "«Lo conosco già, il vostro prodotto: non fa per noi.»"
+          ],
+          "key": [
+            "<b>sì</b>: chiede dei tempi",
+            "<b>no</b>: rimanda",
+            "<b>sì</b>: chiede delle condizioni",
+            "<b>no</b>: obiezione (budget)",
+            "<b>sì</b>: pensa già a dopo l'acquisto",
+            "<b>no</b>: rifiuto"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Di' o scrivi che cosa risponderesti.",
+          "items": [
+            "Il cliente chiede quando arriverebbe la merce: rispondi e chiedi la decisione.",
+            "Chiudi proponendo un'alternativa.",
+            "Fai il riepilogo delle condizioni prima di chiudere.",
+            "Il cliente dice di sì: ringrazia e spiega che cosa succede ora.",
+            "Nell'ordine del cliente c'è un prezzo diverso da quello dell'offerta: scrivi una mail breve.",
+            "Alla fine il cliente esita: proponi un ordine di prova."
+          ],
+          "key": [
+            "Esempio: <b>se confermate entro venerdì, la merce arriva il 15. Le preparo la conferma d'ordine?</b>",
+            "Esempio: <b>preferisce che consegniamo tutto insieme a fine mese, oppure metà subito e metà a dicembre?</b>",
+            "Esempio: <b>allora riepilogo: 300 pezzi a 12 euro più IVA, consegna entro il 15, pagamento a 30 giorni data fattura. È tutto corretto?</b>",
+            "Esempio: <b>grazie per la fiducia! Oggi Le mando la conferma d'ordine; appena il magazzino ci dà la data, Le comunico il giorno di consegna.</b>",
+            "Esempio: <b>Gentile dottoressa Bianchi, grazie per l'ordine n. 482. Nell'ordine il prezzo unitario è di 11 euro, mentre nella nostra offerta n. 131 è di 12 euro più IVA: ci conferma il prezzo dell'offerta, così procediamo?</b>",
+            "Esempio: <b>capisco che è un fornitore nuovo per voi. Vogliamo cominciare con un ordine di prova di 50 pezzi, alle stesse condizioni?</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è il commerciale di un'azienda che fornisce caffè in capsule e macchine agli uffici, il docente è l'office manager di un'azienda con 60 dipendenti. Dopo la presentazione e la trattativa è il momento di chiudere. Difficoltà da introdurre: il cliente dice di sì, ma poi chiede di spostare la consegna e vuole una macchina in più gratis.",
+          "items": [
+            "Riconosci un segnale d'acquisto e chiedi la decisione.",
+            "Fai il riepilogo delle condizioni.",
+            "Rispondi alla richiesta della macchina in più, con una contropartita.",
+            "Concorda la nuova data di consegna.",
+            "Spiega quali documenti arriveranno e che cosa deve fare il cliente.",
+            "Ringrazia e di' quali sono i prossimi passi."
+          ],
+          "key": [
+            "Esempio: <b>Mi chiede quando possiamo installare: allora procediamo con l'ordine?</b>",
+            "Esempio: <b>Riassumendo: tre macchine in comodato, 6.000 capsule al mese a 0,28 euro più IVA, pagamento a 30 giorni.</b>",
+            "Esempio: <b>La quarta macchina possiamo darla, se il contratto è di due anni invece che di uno.</b>",
+            "Esempio: <b>Va bene, spostiamo l'installazione a lunedì 14 dicembre: Le va bene la mattina?</b>",
+            "Esempio: <b>Oggi Le mando la conferma d'ordine: controlli i dati e me la rimandi firmata per accettazione.</b>",
+            "Esempio: <b>Grazie per la fiducia! La settimana prima dell'installazione La chiamo per organizzare l'accesso dei tecnici.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "vendite",
+      "cat": "Dopo la vendita",
+      "title": "Consegna e fatturazione: DDT, fattura elettronica, pagamenti",
+      "def": "Dopo l'ordine la merce parte e il cliente riceve i documenti: il documento di trasporto e la fattura. Il commerciale non li prepara, ma li deve conoscere per rispondere al cliente: quando arriva la merce, che cosa c'è scritto, perché la fattura non è arrivata, che cosa fare se manca qualcosa.",
+      "form": "Di solito la merce viaggia con il <b>DDT</b> (documento di trasporto, detto anche <i>bolla</i>), che dice che cosa si spedisce, a chi e perché. In Italia quasi tutte le fatture sono <b>elettroniche</b>: si mandano attraverso il <b>Sistema di Interscambio</b> (SdI) dell'Agenzia delle Entrate, e per riceverle il cliente comunica il suo <i>codice destinatario</i> o un indirizzo PEC. La fattura può essere <b>immediata</b> (per una singola operazione) o <b>differita</b> (riassume le consegne del mese con i loro DDT). Come si paga è spiegato in Banca. Nelle comunicazioni con il cliente si cita sempre il numero dell'ordine, del DDT o della fattura.",
+      "tables": [
+        {
+          "before": "<b>La consegna.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "la spedizione",
+              "l'invio della merce"
+            ],
+            [
+              "il corriere, il vettore",
+              "l'azienda che trasporta la merce"
+            ],
+            [
+              "il DDT (documento di trasporto), la bolla",
+              "accompagna la merce: chi spedisce, chi riceve, che cosa e quanto, la causale"
+            ],
+            [
+              "la causale del trasporto",
+              "perché la merce viaggia: vendita, reso, conto visione, riparazione"
+            ],
+            [
+              "il collo",
+              "ogni pacco o cassa della spedizione"
+            ],
+            [
+              "il bancale, il pallet",
+              "la base di legno su cui si caricano i colli"
+            ],
+            [
+              "il numero di spedizione, il tracking",
+              "il codice per seguire la spedizione"
+            ],
+            [
+              "la consegna parziale",
+              "arriva solo una parte dell'ordine"
+            ],
+            [
+              "firmare con riserva",
+              "il cliente firma il DDT, ma scrive che i colli sono danneggiati o mancanti"
+            ],
+            [
+              "la giacenza",
+              "la merce resta al corriere perché non è stata consegnata"
+            ]
+          ]
+        },
+        {
+          "before": "<b>La fattura.</b>",
+          "after": "I termini per emettere la fattura li segue l'amministrazione: il commerciale non promette date diverse. Il PDF della fattura mandato per email è solo una copia di cortesia: la fattura valida è quella che passa dallo SdI.",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "la fattura elettronica",
+              "il file della fattura, mandato attraverso il Sistema di Interscambio (SdI)"
+            ],
+            [
+              "il codice destinatario, la PEC",
+              "il codice (di 7 caratteri; per la pubblica amministrazione di 6) o l'indirizzo di posta elettronica certificata a cui il cliente riceve le fatture"
+            ],
+            [
+              "la partita IVA, il codice fiscale",
+              "i dati fiscali del cliente"
+            ],
+            [
+              "la fattura immediata",
+              "per una singola operazione: si manda allo SdI entro 12 giorni dall'operazione (la consegna o la spedizione)"
+            ],
+            [
+              "la fattura differita",
+              "riassume le consegne (o i servizi) del mese, con i numeri dei DDT: si emette entro il 15 del mese dopo"
+            ],
+            [
+              "la nota di credito",
+              "il documento che annulla o riduce una fattura: per un reso, un errore, uno sconto"
+            ],
+            [
+              "la scadenza",
+              "il giorno entro cui pagare"
+            ],
+            [
+              "il sollecito",
+              "il promemoria per un pagamento in ritardo"
+            ],
+            [
+              "l'insoluto",
+              "un pagamento che non è arrivato"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "la fattura",
+              "bill, invoice",
+              "la <i>bolletta</i> in italiano è la fattura di luce, gas, acqua, telefono"
+            ],
+            [
+              "addebitare",
+              "to charge; sp. cargar",
+              "<i>caricare</i> vuol dire mettere qualcosa su un mezzo o ricaricare un telefono"
+            ],
+            [
+              "il pacco",
+              "parcel",
+              "la <i>parcella</i> in italiano è il conto di un professionista: la parcella dell'avvocato"
+            ],
+            [
+              "la richiesta",
+              "sp. solicitud",
+              "il <i>sollecito</i> in italiano è il promemoria per un pagamento o una risposta in ritardo"
+            ],
+            [
+              "ritirare (la merce)",
+              "to collect",
+              "<i>collezionare</i> vuol dire raccogliere oggetti per passione: collezionare francobolli"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "la spedizione",
+          "ex": "La merce è partita oggi con il <b>corriere</b>: Le mando il numero di spedizione. / I <b>colli</b> sono tre, su un bancale."
+        },
+        {
+          "label": "chiedere i dati",
+          "ex": "Per la fattura elettronica ci serve il Suo <b>codice destinatario</b> o la PEC. / Mi conferma partita IVA e indirizzo di consegna?"
+        },
+        {
+          "label": "ritardi e consegne parziali",
+          "ex": "Per ora consegniamo 150 pezzi; gli altri 50 arrivano la prossima settimana. / Mi scuso per il ritardo: la merce arriva giovedì."
+        },
+        {
+          "label": "problemi alla consegna",
+          "ex": "Se i colli sono danneggiati, firmi il DDT <b>con riserva</b> e ci mandi una foto."
+        },
+        {
+          "label": "la fattura",
+          "ex": "La fattura è stata inviata allo SdI il 5 marzo: la trova nel Suo programma di fatturazione. / Per i due pezzi mancanti Le emettiamo una <b>nota di credito</b>."
+        },
+        {
+          "label": "un sollecito cortese",
+          "ex": "Le scrivo per un promemoria: la fattura n. 245 era in <b>scadenza</b> il 30 aprile. Se ha già pagato, non tenga conto di questa mail."
+        }
+      ],
+      "warn": "La fattura elettronica arriva dallo SdI, non per email: se il cliente dice che non l'ha ricevuta, si controlla prima il codice destinatario o la PEC. <b>Firmare con riserva</b> si fa subito, alla consegna: dopo è difficile dimostrare il danno. Il <i>collo</i> della spedizione è il pacco (la parola è la stessa del collo del corpo). Il <b>sollecito</b> si scrive in tono cortese: spesso è un ritardo o un errore, non una mancanza di volontà. <i>Bolla</i> è il nome di tutti i giorni del DDT.",
+      "errors": [
+        {
+          "wrong": "Le mando la bolletta per l'ordine di marzo.",
+          "right": "Le mando la fattura per l'ordine di marzo.",
+          "why": "L'inglese «bill» qui è la <i>fattura</i>; la <i>bolletta</i> è quella di luce, gas e telefono."
+        },
+        {
+          "wrong": "Vi carichiamo le spese di trasporto in fattura.",
+          "right": "Vi addebitiamo le spese di trasporto in fattura.",
+          "why": "L'inglese «charge» e lo spagnolo «cargar» qui sono <i>addebitare</i>; <i>caricare</i> vuol dire mettere su un mezzo."
+        },
+        {
+          "wrong": "La parcella arriva domani con il corriere.",
+          "right": "Il pacco arriva domani con il corriere.",
+          "why": "L'inglese «parcel» è il <i>pacco</i>; la <i>parcella</i> è il conto di un professionista (avvocato, commercialista)."
+        },
+        {
+          "wrong": "Abbiamo ricevuto il Suo sollecito di preventivo.",
+          "right": "Abbiamo ricevuto la Sua richiesta di preventivo.",
+          "why": "Lo spagnolo «solicitud» è la <i>richiesta</i>; il <i>sollecito</i> è un promemoria per qualcosa in ritardo."
+        },
+        {
+          "wrong": "Il corriere passa a collezionare la merce alle 16.",
+          "right": "Il corriere passa a ritirare la merce alle 16.",
+          "why": "L'inglese «to collect» qui è <i>ritirare</i>; <i>collezionare</i> vuol dire raccogliere oggetti per passione (francobolli, monete)."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: DDT, corriere, colli, codice destinatario, nota di credito, sollecito.",
+          "items": [
+            "Di solito la merce viaggia con il …, che dice che cosa contiene la spedizione.",
+            "Il … passa a ritirare la merce alle 16.",
+            "La spedizione è di quattro …, su un bancale.",
+            "Per ricevere la fattura elettronica il cliente ci deve dare il … o la PEC.",
+            "Per i pezzi rotti Le facciamo una …",
+            "La fattura non è stata pagata: mandiamo un … cortese."
+          ],
+          "key": [
+            "<b>DDT</b>",
+            "<b>corriere</b>",
+            "<b>colli</b>",
+            "<b>codice destinatario</b>",
+            "<b>nota di credito</b>",
+            "<b>sollecito</b>"
+          ]
+        },
+        {
+          "type": "Classificazione (B1–B2)",
+          "instr": "Quale documento serve? Scegli tra: DDT, fattura immediata, fattura differita, nota di credito, conferma d'ordine.",
+          "items": [
+            "Il cliente ci ha restituito due pezzi difettosi che erano già stati fatturati.",
+            "A marzo abbiamo fatto dieci consegne allo stesso cliente, ognuna con il suo DDT, e vogliamo una sola fattura.",
+            "Un camion parte dal magazzino con 20 colli.",
+            "Abbiamo appena ricevuto un ordine e vogliamo ripetere al cliente prezzi e tempi.",
+            "Oggi abbiamo finito un lavoro per un cliente e lo fatturiamo subito.",
+            "In una fattura abbiamo messo 100 euro in più per errore."
+          ],
+          "key": [
+            "<b>nota di credito</b>",
+            "<b>fattura differita</b>",
+            "<b>DDT</b>",
+            "<b>conferma d'ordine</b>",
+            "<b>fattura immediata</b>",
+            "<b>nota di credito</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Rispondi al cliente, a voce o per scritto.",
+          "items": [
+            "Il cliente chiede dove trova la fattura: per email non gli è arrivata.",
+            "La consegna sarà in ritardo di una settimana: avvisa il cliente.",
+            "Arriva solo una parte dell'ordine: spiega che cosa succede con il resto.",
+            "Il cliente dice che due colli sono arrivati rotti.",
+            "Scrivi un sollecito cortese per una fattura scaduta da 15 giorni.",
+            "Il cliente chiede perché in fattura c'è il trasporto, che secondo lui era compreso; l'offerta era franco partenza."
+          ],
+          "key": [
+            "Esempio: <b>la fattura elettronica non arriva per email ma dal Sistema di Interscambio: la trova nel Suo programma di fatturazione o nell'area riservata dell'Agenzia delle Entrate. Mi conferma il codice destinatario che ci ha dato?</b>",
+            "Esempio: <b>mi dispiace, il nostro fornitore ha avuto un ritardo: la merce arriverà giovedì 10 invece di giovedì 3. Se Le serve una parte subito, vediamo se possiamo fare una consegna parziale.</b>",
+            "Esempio: <b>oggi arrivano 150 pezzi; gli altri 50 partono entro venerdì con un secondo DDT, senza altre spese di trasporto.</b>",
+            "Esempio: <b>mi dispiace. Ha firmato il DDT con riserva? Mi mandi le foto dei colli e del DDT: apriamo subito la pratica con il corriere e Le rimandiamo i pezzi.</b>",
+            "Esempio: <b>Gentile dottor Ferri, Le scrivo per un promemoria: la fattura n. 245 del 31 marzo era in scadenza il 30 aprile e non risulta ancora pagata. Se il pagamento è già partito, non tenga conto di questa mail. Cordiali saluti.</b>",
+            "Esempio: <b>ho ricontrollato l'offerta: la resa era franco partenza, quindi il trasporto era escluso. Capisco che non era chiaro: per i prossimi ordini lo scriviamo anche nella conferma d'ordine.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è il commerciale di un'azienda che produce piastrelle, il docente è il titolare di un'impresa edile che chiama dal cantiere. Sono arrivate 40 scatole invece di 50, una è rotta, e il cliente non trova la fattura. Difficoltà da introdurre: il cliente è arrabbiato perché senza le piastrelle il cantiere è fermo.",
+          "items": [
+            "Ascolta e riepiloga il problema.",
+            "Chiedi se il DDT è stato firmato con riserva.",
+            "Spiega quando arrivano le scatole mancanti.",
+            "Spiega che cosa fate per la scatola rotta.",
+            "Spiega dove trovare la fattura.",
+            "Chiudi con un impegno preciso."
+          ],
+          "key": [
+            "Esempio: <b>Allora, sono arrivate 40 scatole invece di 50 e una è rotta: mi scuso per il disagio.</b>",
+            "Esempio: <b>Quando ha firmato il DDT, ha scritto la riserva per la scatola rotta?</b>",
+            "Esempio: <b>Le 10 scatole mancanti erano in una seconda spedizione: le facciamo partire oggi con il corriere espresso e arrivano domani in mattinata.</b>",
+            "Esempio: <b>La scatola rotta ve la sostituiamo con la stessa spedizione; se preferisce, invece, Le facciamo una nota di credito.</b>",
+            "Esempio: <b>La fattura è passata dallo SdI ieri: la trova nel programma di fatturazione del Suo commercialista.</b>",
+            "Esempio: <b>Le mando subito il numero di spedizione e domani alle nove La chiamo per sapere se è arrivato tutto.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "vendite",
+      "cat": "Dopo la vendita",
+      "title": "Il post-vendita: assistenza, garanzia, resi, reclami",
+      "def": "Dopo la consegna il rapporto con il cliente continua: domande, guasti, prodotti difettosi, merce da restituire, reclami. Questa scheda raccoglie il lessico e le frasi per l'assistenza tra aziende: aprire una pratica, gestire un reso, rispondere a un reclamo scritto. La vendita al consumatore è nella scheda sul negozio.",
+      "form": "L'<b>assistenza clienti</b> (servizio clienti, customer care) riceve le richieste e le registra, spesso con un numero di pratica o di <i>ticket</i>. Per restituire la merce tra aziende di solito serve un'<b>autorizzazione al reso</b>: dopo il controllo, la merce si sostituisce oppure si emette una nota di credito. Il <b>reclamo</b> è una lamentela formale: si risponde presto, ci si scusa se c'è un errore e si propone una soluzione con tempi precisi. Tra aziende la garanzia dipende dal contratto e dalla legge, con regole diverse da quelle per i consumatori. I reclami dei clienti verso la banca sono spiegati in Banca.",
+      "tables": [
+        {
+          "before": "<b>L'assistenza.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "l'assistenza clienti, il servizio clienti",
+              "l'ufficio che risponde ai clienti dopo la vendita"
+            ],
+            [
+              "l'assistenza tecnica",
+              "i tecnici che installano e riparano"
+            ],
+            [
+              "il ticket, la pratica, la segnalazione",
+              "la richiesta registrata, con un numero"
+            ],
+            [
+              "l'intervento",
+              "la visita o il lavoro del tecnico"
+            ],
+            [
+              "il guasto",
+              "quando una macchina non funziona"
+            ],
+            [
+              "il ricambio",
+              "il pezzo che sostituisce una parte rotta"
+            ],
+            [
+              "il contratto di assistenza, di manutenzione",
+              "un servizio pagato a parte per controlli e riparazioni"
+            ],
+            [
+              "i tempi di intervento",
+              "entro quanto arriva il tecnico"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Garanzia, resi e reclami.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "la garanzia",
+              "l'impegno a riparare o sostituire un prodotto difettoso"
+            ],
+            [
+              "la garanzia convenzionale (commerciale)",
+              "una garanzia in più, offerta dal produttore o dal venditore, con le sue condizioni"
+            ],
+            [
+              "essere in garanzia / fuori garanzia",
+              "la garanzia vale ancora / è finita"
+            ],
+            [
+              "il difetto, il prodotto difettoso",
+              "il prodotto non funziona come dovrebbe"
+            ],
+            [
+              "non conforme",
+              "diverso da quello ordinato o promesso"
+            ],
+            [
+              "il reso",
+              "la merce restituita"
+            ],
+            [
+              "l'autorizzazione al reso (RMA)",
+              "il permesso del venditore a restituire la merce, con un numero da scrivere sul pacco"
+            ],
+            [
+              "la sostituzione",
+              "dare un prodotto nuovo al posto di quello difettoso"
+            ],
+            [
+              "il reclamo",
+              "la lamentela formale del cliente"
+            ],
+            [
+              "il risarcimento",
+              "soldi per un danno (vedi Diritto)"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "la spesa",
+              "sp. gasto",
+              "il <i>guasto</i> in italiano è il danno di una macchina che non funziona"
+            ],
+            [
+              "fuori servizio, guasto",
+              "out of order",
+              "in italiano non si dice «fuori ordine»"
+            ],
+            [
+              "gestire (un reclamo)",
+              "to handle; sp. manejar",
+              "<i>maneggiare</i> vuol dire «tenere in mano, usare con le mani»: maneggiare con cura"
+            ],
+            [
+              "riparare, aggiustare",
+              "to fix",
+              "<i>fissare</i> vuol dire «attaccare bene» o «decidere»: fissare un appuntamento"
+            ],
+            [
+              "l'uso sbagliato, improprio",
+              "abuse, misuse",
+              "<i>abusivo</i> vuol dire «senza permesso, illegale»: un parcheggio abusivo"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "ricevere una segnalazione",
+          "ex": "Mi descrive il <b>guasto</b>? / Ho aperto una <b>pratica</b> con il numero 4521: un tecnico La chiama entro oggi."
+        },
+        {
+          "label": "la garanzia",
+          "ex": "La macchina è <b>in garanzia</b>: la riparazione è gratuita. / Questo pezzo si consuma con l'uso, quindi la garanzia non lo copre."
+        },
+        {
+          "label": "il reso",
+          "ex": "Le mando l'<b>autorizzazione al reso</b>: scriva il numero RMA sul pacco. / Appena riceviamo la merce, Le sostituiamo i pezzi."
+        },
+        {
+          "label": "rispondere a un reclamo",
+          "ex": "Ci scusiamo per il disagio. / Abbiamo verificato: l'errore è nostro. / Per rimediare Le proponiamo…"
+        },
+        {
+          "label": "dare tempi precisi",
+          "ex": "Il tecnico arriva domani entro le 12. / Il <b>ricambio</b> parte oggi e arriva giovedì."
+        },
+        {
+          "label": "chiudere la pratica",
+          "ex": "Il problema è risolto? Allora chiudo la pratica. / Grazie per la segnalazione: ci aiuta a migliorare."
+        }
+      ],
+      "warn": "Prima di autorizzare un reso si controlla il motivo: un difetto, un errore di spedizione e un cliente che ha cambiato idea non sono la stessa cosa. Non promettere una riparazione gratuita prima di sapere se il difetto è coperto dalla garanzia. In un reclamo scritto, se l'errore è vostro, dirlo con chiarezza aiuta a mantenere il cliente. La garanzia legale di due anni vale per i consumatori (vedi la scheda sul negozio); tra aziende contano il contratto e le regole del codice civile, che sono diverse.",
+      "errors": [
+        {
+          "wrong": "Per il trasporto abbiamo avuto un guasto di 500 euro.",
+          "right": "Per il trasporto abbiamo avuto una spesa di 500 euro.",
+          "why": "Lo spagnolo «gasto» è la <i>spesa</i>; il <i>guasto</i> è il danno di una macchina."
+        },
+        {
+          "wrong": "La macchina è fuori ordine da ieri.",
+          "right": "La macchina è fuori servizio (guasta) da ieri.",
+          "why": "Calco dell'inglese «out of order»: in italiano si dice <i>fuori servizio</i> o <i>guasto</i>."
+        },
+        {
+          "wrong": "Il pezzo si è rotto per un uso abusivo.",
+          "right": "Il pezzo si è rotto per un uso sbagliato (improprio).",
+          "why": "Dall'inglese «abuse»: <i>abusivo</i> vuol dire «senza permesso, illegale» (un parcheggio abusivo)."
+        },
+        {
+          "wrong": "Chi maneggia i reclami nella vostra azienda?",
+          "right": "Chi gestisce i reclami nella vostra azienda?",
+          "why": "Dall'inglese «to handle» e dallo spagnolo «manejar»: un reclamo si <i>gestisce</i>; <i>maneggiare</i> vuol dire «tenere in mano, usare con le mani»."
+        },
+        {
+          "wrong": "Il tecnico ha fissato la macchina in mezz'ora.",
+          "right": "Il tecnico ha riparato (aggiustato) la macchina in mezz'ora.",
+          "why": "L'inglese «to fix» qui è <i>riparare</i>; <i>fissare</i> vuol dire «attaccare bene» o «decidere»."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: guasto, pratica, ricambio, in garanzia, reso, reclamo.",
+          "items": [
+            "Il cliente ha chiamato per un … alla macchina.",
+            "Ho aperto una … con il numero 4521.",
+            "Il tecnico deve ordinare un …: arriva in due giorni.",
+            "La macchina ha un anno ed è ancora …",
+            "Per il … della merce sbagliata serve l'autorizzazione.",
+            "Il cliente ha scritto un … formale per il ritardo."
+          ],
+          "key": [
+            "<b>guasto</b>",
+            "<b>pratica</b>",
+            "<b>ricambio</b>",
+            "<b>in garanzia</b>",
+            "<b>reso</b>",
+            "<b>reclamo</b>"
+          ]
+        },
+        {
+          "type": "Riformulazione (B1–B2)",
+          "instr": "Il cliente parla con parole sue: scrivi il termine del post-vendita.",
+          "items": [
+            "«La macchina non si accende più.»",
+            "«Ci avete mandato il modello sbagliato.»",
+            "«Vorrei rimandarvi indietro i pezzi.»",
+            "«Mi mandate qualcuno a vederla?»",
+            "«Mi serve il pezzo che si è rotto.»",
+            "«Siamo molto scontenti e lo mettiamo per iscritto.»"
+          ],
+          "key": [
+            "un <b>guasto</b>",
+            "merce <b>non conforme</b>",
+            "un <b>reso</b>",
+            "un <b>intervento</b> tecnico",
+            "un <b>ricambio</b>",
+            "un <b>reclamo</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Rispondi al cliente, a voce o per scritto.",
+          "items": [
+            "Rispondi per email a un reclamo per una consegna arrivata con dieci giorni di ritardo; l'errore è vostro.",
+            "Il cliente chiede la riparazione gratuita, ma il pezzo si è rotto per un uso sbagliato.",
+            "Il cliente vuole restituire la merce perché ha cambiato idea; il contratto non prevede resi.",
+            "Spiega al cliente come fare un reso con l'autorizzazione.",
+            "Il tecnico non può arrivare prima di tre giorni: avvisa il cliente e proponi una soluzione.",
+            "Il cliente chiama per la terza volta per lo stesso guasto ed è arrabbiato."
+          ],
+          "key": [
+            "Esempio: <b>Gentile dottoressa Bianchi, ci scusiamo per il ritardo: l'ordine è rimasto fermo nel nostro magazzino per un errore. Sul prossimo ordine Le riconosciamo il trasporto gratuito e da oggi seguo personalmente le vostre consegne.</b>",
+            "Esempio: <b>il tecnico ha visto che il pezzo si è rotto per un urto, e in questo caso la garanzia non lo copre. Posso farLe un preventivo per la riparazione e mandarLe il ricambio entro due giorni.</b>",
+            "Esempio: <b>capisco; il nostro contratto non prevede il reso della merce in buono stato. Posso però proporLe di cambiarla con un altro articolo del catalogo.</b>",
+            "Esempio: <b>Le mando l'autorizzazione al reso con un numero RMA: lo scriva sul pacco e lo spedisca con il DDT, causale «reso». Quando lo riceviamo, controlliamo i pezzi e Le mandiamo quelli nuovi.</b>",
+            "Esempio: <b>il tecnico può venire solo giovedì; intanto Le mandiamo domani una macchina sostitutiva, così non si ferma.</b>",
+            "Esempio: <b>ha ragione a essere arrabbiato: è la terza volta, e non va bene. Domani mando il nostro tecnico più esperto e, se il guasto si ripete, Le sostituiamo la macchina.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è il commerciale di un'azienda che vende forni professionali, il docente è il titolare di una pizzeria. Il forno, consegnato quattro mesi fa, si spegne durante il servizio. Difficoltà da introdurre: il cliente vuole subito un forno nuovo e minaccia di cambiare fornitore; il tecnico può andare solo domani.",
+          "items": [
+            "Accogli la telefonata e scusati per il disagio.",
+            "Fai domande sul guasto.",
+            "Apri la pratica e spiega i tempi.",
+            "Spiega che cosa copre la garanzia.",
+            "Proponi una soluzione per il servizio di stasera.",
+            "Conferma per iscritto e chiudi."
+          ],
+          "key": [
+            "Esempio: <b>Mi dispiace molto, capisco che con il locale pieno è un problema grave.</b>",
+            "Esempio: <b>Quando si spegne? Compare un codice di errore sul pannello?</b>",
+            "Esempio: <b>Ho aperto la pratica con il numero 7730: il tecnico è da Lei domani alle 9, prima dell'apertura.</b>",
+            "Esempio: <b>Il forno è in garanzia: la riparazione e i ricambi sono gratuiti.</b>",
+            "Esempio: <b>Per stasera Le passo il nostro tecnico al telefono: con alcuni codici di errore il forno si può far ripartire subito.</b>",
+            "Esempio: <b>Le mando adesso una mail con il numero della pratica e l'orario del tecnico. Domani dopo l'intervento La richiamo io.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "vendite",
+      "cat": "Negozio",
+      "title": "La vendita in negozio: accoglienza, prova, cassa, cambio e reso",
+      "def": "Il commesso accoglie il cliente, lo aiuta a scegliere, lo accompagna alla cassa e, a volte, gestisce un cambio o un reso. Questa scheda raccoglie il lessico e le frasi della vendita al pubblico: accoglienza, prova, pagamento, scontrino, cambio, garanzia del consumatore.",
+      "form": "La vendita in negozio ha cinque momenti: <b>accoglienza</b> («Buongiorno, posso aiutarLa?»), <b>ascolto</b>, <b>proposta e prova</b> (il camerino, provare un prodotto), <b>cassa</b>, <b>saluto</b>. Alla cassa si dà lo <b>scontrino</b>, che oggi si chiama ufficialmente <i>documento commerciale</i>. Due regole del consumatore che il commesso deve conoscere: nel negozio fisico il cliente non ha per legge il diritto di cambiare idea, quindi il <b>cambio</b> e il <b>reso</b> sono una scelta del negozio; se il prodotto è <b>difettoso</b>, invece, vale la <b>garanzia legale</b>. Registro: di solito si dà del <i>Lei</i> agli adulti; in alcuni negozi per giovani si dà del <i>tu</i>.",
+      "tables": [
+        {
+          "before": "<b>Accoglienza e prova.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "il commesso, la commessa, l'addetto alle vendite",
+              "chi lavora in negozio e serve i clienti"
+            ],
+            [
+              "il reparto",
+              "una parte del negozio: il reparto uomo, il reparto elettrodomestici"
+            ],
+            [
+              "lo scaffale, l'espositore",
+              "dove sono esposti i prodotti"
+            ],
+            [
+              "la vetrina",
+              "lo spazio dietro il vetro, che si vede dalla strada"
+            ],
+            [
+              "il camerino",
+              "dove si provano i vestiti"
+            ],
+            [
+              "la taglia / il numero",
+              "la misura dei vestiti / delle scarpe"
+            ],
+            [
+              "disponibile / esaurito",
+              "c'è / non c'è più"
+            ],
+            [
+              "il magazzino",
+              "dove si tiene la merce che non è esposta"
+            ],
+            [
+              "ordinare un prodotto",
+              "farlo arrivare per un cliente quando in negozio non c'è"
+            ],
+            [
+              "i saldi / la promozione",
+              "gli sconti di fine stagione / uno sconto per un periodo"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Cassa, cambio e reso.</b>",
+          "after": "Per il pagamento con carta vedi Banca. Per un prodotto difettoso il cliente si rivolge al negozio, non al produttore.",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "la cassa",
+              "dove si paga"
+            ],
+            [
+              "lo scontrino (documento commerciale)",
+              "la prova d'acquisto"
+            ],
+            [
+              "lo scontrino di cortesia",
+              "uno scontrino senza prezzo, per chi riceve un regalo"
+            ],
+            [
+              "la confezione regalo, il pacchetto",
+              "la carta e il fiocco per un regalo"
+            ],
+            [
+              "il cambio",
+              "dare un altro prodotto al posto di quello comprato"
+            ],
+            [
+              "il reso, il rimborso",
+              "restituire il prodotto e riavere i soldi"
+            ],
+            [
+              "il buono (acquisto)",
+              "un valore da spendere nel negozio, al posto del rimborso"
+            ],
+            [
+              "la garanzia legale",
+              "per i prodotti nuovi dura due anni dalla consegna; se il difetto compare entro un anno, si presume che c'era già"
+            ],
+            [
+              "la riparazione, la sostituzione",
+              "i primi rimedi della garanzia; se non sono possibili, la riduzione del prezzo o la risoluzione del contratto (con il rimborso)"
+            ],
+            [
+              "il diritto di recesso",
+              "14 giorni per cambiare idea, ma solo negli acquisti a distanza (online, per telefono, da catalogo) o fuori dai negozi, con alcune eccezioni (prodotti su misura, deperibili)"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "il negozio",
+              "sp. tienda",
+              "la <i>tenda</i> in italiano è quella della finestra o del campeggio"
+            ],
+            [
+              "l'affare, l'attività",
+              "sp. negocio",
+              "il <i>negozio</i> in italiano è il punto vendita"
+            ],
+            [
+              "lo scontrino",
+              "receipt; sp. ticket",
+              "la <i>ricetta</i> in italiano è quella di cucina o del medico; il <i>ticket</i> è un biglietto, la quota da pagare per una visita medica o la pratica dell'assistenza"
+            ],
+            [
+              "la biblioteca",
+              "library",
+              "la <i>libreria</i> in italiano è il negozio di libri (o il mobile per i libri)"
+            ],
+            [
+              "in saldo, scontato",
+              "on sale",
+              "<i>in vendita</i> vuol dire solo «che si può comprare»"
+            ],
+            [
+              "il resto",
+              "change",
+              "il <i>cambio</i> in italiano è lo scambio di un prodotto con un altro, o il cambio di valuta"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "accogliere",
+          "ex": "Buongiorno, posso aiutarLa? / Cerca qualcosa in particolare? / Se ha bisogno, sono qui."
+        },
+        {
+          "label": "consigliare e far provare",
+          "ex": "Che <b>taglia</b> porta? / Il <b>camerino</b> è in fondo a destra. / Vuole provare anche il numero più grande?"
+        },
+        {
+          "label": "disponibilità",
+          "ex": "Questo modello è <b>esaurito</b>, ma posso ordinarlo: arriva in tre giorni. / Controllo in <b>magazzino</b>."
+        },
+        {
+          "label": "alla cassa",
+          "ex": "Come preferisce pagare? / Le faccio una <b>confezione regalo</b>? / Vuole lo <b>scontrino di cortesia</b>? / Ecco il resto e lo scontrino."
+        },
+        {
+          "label": "il cambio",
+          "ex": "Si può <b>cambiare</b> entro 30 giorni con lo scontrino. / Possiamo darLe un'altra taglia oppure un <b>buono</b>."
+        },
+        {
+          "label": "un prodotto difettoso",
+          "ex": "Mi dispiace: il prodotto è difettoso, quindi vale la <b>garanzia</b>. / Glielo sostituiamo subito, oppure lo mandiamo in riparazione."
+        }
+      ],
+      "warn": "Il cambio e il reso perché il cliente «ha cambiato idea» non sono un obbligo di legge nel negozio fisico; ma se il negozio li promette (con un cartello, sullo scontrino, sul sito), deve rispettarli. Il <b>diritto di recesso</b> di 14 giorni vale per gli acquisti online e fuori dal negozio, non per quelli fatti al banco. Per un prodotto difettoso la garanzia legale è un diritto del cliente: il commesso non può dire «deve rivolgersi al produttore». Le regole precise di cambio e reso le decide il negozio: il commesso le deve conoscere e spiegare con chiarezza.",
+      "errors": [
+        {
+          "wrong": "Ho aperto una tenda di scarpe in centro.",
+          "right": "Ho aperto un negozio di scarpe in centro.",
+          "why": "Lo spagnolo «tienda» è il <i>negozio</i>; la <i>tenda</i> è quella della finestra o del campeggio."
+        },
+        {
+          "wrong": "Mi può dare la ricetta, per favore?",
+          "right": "Mi può dare lo scontrino, per favore?",
+          "why": "L'inglese «receipt» è lo <i>scontrino</i> (o la <i>ricevuta</i>); la <i>ricetta</i> è quella di cucina o del medico."
+        },
+        {
+          "wrong": "Con i turisti facciamo un buon negozio.",
+          "right": "Con i turisti facciamo buoni affari.",
+          "why": "Lo spagnolo «negocio» qui è l'<i>affare</i>; il <i>negozio</i> è il punto vendita."
+        },
+        {
+          "wrong": "Questa giacca è in vendita: costa il 30% in meno.",
+          "right": "Questa giacca è in saldo (è scontata): costa il 30% in meno.",
+          "why": "L'inglese «on sale» è <i>in saldo</i>, <i>scontato</i>; <i>in vendita</i> vuol dire «che si può comprare»."
+        },
+        {
+          "wrong": "Ecco il Suo cambio: 5 euro e 50.",
+          "right": "Ecco il Suo resto: 5 euro e 50.",
+          "why": "L'inglese «change» qui è il <i>resto</i>; il <i>cambio</i> è lo scambio di un prodotto, o il cambio di valuta."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: camerino, taglia, esaurito, scontrino, buono, saldi.",
+          "items": [
+            "Può provare i pantaloni nel …, in fondo a destra.",
+            "Che … porta? La 44 o la 46?",
+            "Mi dispiace, questo modello è …: lo posso ordinare.",
+            "Per il cambio deve portare lo …",
+            "Non facciamo rimborsi, ma Le possiamo dare un … da spendere qui.",
+            "A gennaio cominciano i …: tutto costa meno."
+          ],
+          "key": [
+            "<b>camerino</b>",
+            "<b>taglia</b>",
+            "<b>esaurito</b>",
+            "<b>scontrino</b>",
+            "<b>buono</b>",
+            "<b>saldi</b>"
+          ]
+        },
+        {
+          "type": "Riformulazione (B1–B2)",
+          "instr": "Rendi la frase cortese, adatta a un commesso.",
+          "items": [
+            "«Che vuole?»",
+            "«Non c'è.»",
+            "«Senza scontrino niente cambio.»",
+            "«Il camerino è là.»",
+            "«Paga come?»",
+            "«Questo non è difettoso, l'ha rotto Lei.»"
+          ],
+          "key": [
+            "Esempio: <b>Buongiorno, posso aiutarLa?</b>",
+            "Esempio: <b>Mi dispiace, al momento è esaurito, ma lo posso ordinare.</b>",
+            "Esempio: <b>Per il cambio ci serve lo scontrino.</b>",
+            "Esempio: <b>Il camerino è in fondo a destra, prego.</b>",
+            "Esempio: <b>Come preferisce pagare?</b>",
+            "Esempio: <b>Da quello che vedo, il danno sembra dovuto a un urto: in questo caso la garanzia non lo copre, ma posso proporLe la riparazione a pagamento.</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Rispondi al cliente.",
+          "items": [
+            "Dopo dieci giorni un cliente vuole cambiare un maglione perché non gli piace il colore; il negozio fa cambi entro 30 giorni.",
+            "Un cliente vuole indietro i soldi per un paio di scarpe che non gli piacciono più; il negozio non fa rimborsi, solo buoni.",
+            "Per un acquisto fatto in negozio il cliente dice: «Ho il diritto di recesso di 14 giorni!»",
+            "Un frullatore comprato otto mesi fa non funziona più.",
+            "Il cliente cerca una taglia che è esaurita.",
+            "Il cliente chiede lo scontrino di cortesia e una confezione regalo."
+          ],
+          "key": [
+            "Esempio: <b>certo, siamo entro i 30 giorni: ha lo scontrino? Scelga pure un altro colore.</b>",
+            "Esempio: <b>mi dispiace, il nostro negozio non fa rimborsi per i prodotti in buono stato, ma Le posso dare un buono dello stesso valore, valido sei mesi.</b>",
+            "Esempio: <b>capisco, ma il recesso di 14 giorni vale per gli acquisti online, non per quelli in negozio. Noi però facciamo il cambio entro 30 giorni: vuole scegliere un altro prodotto?</b>",
+            "Esempio: <b>mi dispiace. Il frullatore è in garanzia: ha lo scontrino? Lo mandiamo in riparazione, e se non si può riparare Glielo sostituiamo.</b>",
+            "Esempio: <b>la 42 è esaurita qui, ma la posso far arrivare da un altro negozio entro giovedì. Le lascio un numero per avvisarLa?</b>",
+            "Esempio: <b>certo: ecco lo scontrino di cortesia, senza prezzo, e Le preparo subito il pacchetto.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è il commesso di un negozio di elettronica, il docente è un cliente che ha comprato delle cuffie tre settimane fa: un auricolare non funziona più e il cliente vuole i soldi indietro. Il negozio fa cambi entro 30 giorni. Difficoltà da introdurre: il cliente non ha lo scontrino, ma ha pagato con la carta.",
+          "items": [
+            "Accogli il cliente.",
+            "Fai domande per capire il problema.",
+            "Spiega che è un difetto e che vale la garanzia.",
+            "Rispondi alla richiesta di rimborso, spiegando i rimedi.",
+            "Gestisci il problema dello scontrino.",
+            "Concludi con una soluzione."
+          ],
+          "key": [
+            "Esempio: <b>Buongiorno, mi dica.</b>",
+            "Esempio: <b>Quando ha smesso di funzionare? Si sono rotte cadendo, o all'improvviso?</b>",
+            "Esempio: <b>Se si sono spente da sole, è un difetto e vale la garanzia.</b>",
+            "Esempio: <b>Con la garanzia prima di tutto Gliele sostituiamo o le ripariamo; il rimborso si fa quando questo non è possibile.</b>",
+            "Esempio: <b>Non si preoccupi per lo scontrino: con il pagamento con carta possiamo cercare l'acquisto. Mi dice il giorno, più o meno?</b>",
+            "Esempio: <b>Ecco, l'ho trovato. Le diamo subito un paio nuovo uguale; le cuffie difettose le mandiamo noi al produttore.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "vendite",
+      "cat": "Eventi",
+      "title": "Fiere ed eventi",
+      "def": "In fiera il commerciale incontra in pochi giorni molti clienti, nuovi e vecchi. Questa scheda raccoglie il lessico e le frasi per invitare i clienti, accogliere i visitatori allo stand, capire velocemente chi sono, raccogliere i contatti e fissare gli incontri successivi; e il lessico degli altri eventi aziendali.",
+      "form": "Una <b>fiera di settore</b> (o salone) dura di solito alcuni giorni; alcune sono aperte solo agli operatori del settore, altre anche al pubblico. L'azienda è <b>espositore</b> e ha uno <b>stand</b> in un <b>padiglione</b>; i visitatori entrano con un biglietto o un <i>badge</i>. In Italia ci sono grandi fiere di settore, come Vinitaly a Verona per il vino o il Salone del Mobile a Milano. Allo stand il tempo è poco: si accoglie, si fanno due o tre domande per capire chi è il visitatore, si dà il materiale giusto e si fissa il contatto successivo. Dopo la fiera si scrive presto a tutti i contatti (vedi la scheda sul follow-up).",
+      "tables": [
+        {
+          "before": "<b>La fiera.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "la fiera, il salone",
+              "una manifestazione dove le aziende presentano i loro prodotti"
+            ],
+            [
+              "la fiera di settore",
+              "una fiera per un solo settore: vino, mobili, moda…"
+            ],
+            [
+              "il quartiere fieristico",
+              "il luogo, con i suoi edifici, dove si fanno le fiere"
+            ],
+            [
+              "il padiglione",
+              "uno degli edifici della fiera"
+            ],
+            [
+              "lo stand",
+              "lo spazio dell'azienda dentro il padiglione"
+            ],
+            [
+              "l'espositore",
+              "l'azienda che ha uno stand"
+            ],
+            [
+              "il visitatore, l'operatore del settore",
+              "chi visita la fiera / chi la visita per lavoro"
+            ],
+            [
+              "il badge, il pass",
+              "il cartellino con il nome, per entrare"
+            ],
+            [
+              "il biglietto da visita",
+              "il cartoncino con nome, ruolo e contatti"
+            ],
+            [
+              "l'allestimento",
+              "la preparazione e l'arredamento dello stand"
+            ],
+            [
+              "il materiale promozionale, i gadget",
+              "cataloghi, depliant e piccoli regali con il marchio"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Altri eventi.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "l'evento aziendale",
+              "un incontro organizzato dall'azienda per clienti o partner"
+            ],
+            [
+              "il lancio, la presentazione di un prodotto",
+              "l'evento per far conoscere un prodotto nuovo"
+            ],
+            [
+              "il convegno, il congresso",
+              "un incontro di uno o più giorni con relatori su un tema"
+            ],
+            [
+              "il relatore, l'intervento",
+              "chi parla al convegno / il suo discorso"
+            ],
+            [
+              "il webinar",
+              "una presentazione o un corso online"
+            ],
+            [
+              "l'invito, la conferma di partecipazione",
+              "chiedere di venire / dire che si viene"
+            ],
+            [
+              "il rinfresco, l'aperitivo, il buffet",
+              "cibo e bevande alla fine dell'evento"
+            ],
+            [
+              "i contatti raccolti",
+              "i nomi e i dati delle persone incontrate"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "il potenziale cliente",
+              "prospect",
+              "il <i>prospetto</i> in italiano è un documento con dati e informazioni"
+            ],
+            [
+              "il convegno, il congresso",
+              "conference",
+              "la <i>conferenza</i> in italiano è soprattutto il discorso di una persona davanti a un pubblico"
+            ],
+            [
+              "la fiera, l'esposizione",
+              "exhibition",
+              "l'<i>esibizione</i> in italiano è uno spettacolo: l'esibizione di un cantante"
+            ],
+            [
+              "il convegno, il congresso",
+              "convention",
+              "la <i>convenzione</i> in italiano è un accordo: una convenzione con un'università"
+            ],
+            [
+              "il biglietto da visita",
+              "sp. tarjeta",
+              "la <i>targa</i> in italiano è quella dell'auto o quella sulla porta"
+            ],
+            [
+              "partecipare a",
+              "sp. asistir a",
+              "<i>assistere a</i> vuol dire essere presenti come pubblico: si assiste a uno spettacolo"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "invitare",
+          "ex": "Saremo a Vinitaly, <b>padiglione</b> 5, <b>stand</b> B12: passi a trovarci! / Se vuole, Le mando un biglietto omaggio."
+        },
+        {
+          "label": "accogliere",
+          "ex": "Buongiorno, benvenuto! Conosce già la nostra azienda? / Di che cosa si occupa?"
+        },
+        {
+          "label": "capire chi è il visitatore",
+          "ex": "Per quale mercato comprate? / State cercando un nuovo fornitore? / Si occupa Lei degli acquisti?"
+        },
+        {
+          "label": "presentare in breve",
+          "ex": "In due parole: produciamo olio extravergine biologico in Puglia. / Le faccio vedere la novità di quest'anno."
+        },
+        {
+          "label": "raccogliere il contatto",
+          "ex": "Mi lascia il Suo <b>biglietto da visita</b>? / La settimana prossima Le mando il catalogo per email."
+        },
+        {
+          "label": "fissare il passo successivo",
+          "ex": "Vuole che fissiamo un incontro dopo la fiera? / Ci vediamo domani alle 11 qui allo stand?"
+        }
+      ],
+      "warn": "Allo stand non si sta seduti al telefono né in gruppo tra colleghi: il visitatore non si avvicina. Prima di dare il materiale più costoso si capisce chi è il visitatore. Dietro il biglietto da visita si scrive subito di che cosa si è parlato: dopo tre giorni di fiera non si ricorda più niente. Il follow-up si fa entro pochi giorni dalla fine della fiera. Ai concorrenti che passano allo stand non si danno informazioni su prezzi e condizioni.",
+      "errors": [
+        {
+          "wrong": "Ci vediamo alla convenzione di Milano.",
+          "right": "Ci vediamo al convegno (al congresso) di Milano.",
+          "why": "L'inglese «convention» è il <i>convegno</i>, il <i>congresso</i>; la <i>convenzione</i> è un accordo."
+        },
+        {
+          "wrong": "Mi dà la Sua targa, per favore?",
+          "right": "Mi dà il Suo biglietto da visita, per favore?",
+          "why": "Lo spagnolo «tarjeta» è il <i>biglietto da visita</i>; la <i>targa</i> è quella dell'auto."
+        },
+        {
+          "wrong": "In fiera ho conosciuto molti prospetti.",
+          "right": "In fiera ho conosciuto molti potenziali clienti.",
+          "why": "L'inglese «prospect» è il <i>potenziale cliente</i>; il <i>prospetto</i> è un documento."
+        },
+        {
+          "wrong": "Ci vediamo all'esibizione di Milano.",
+          "right": "Ci vediamo alla fiera (all'esposizione) di Milano.",
+          "why": "L'inglese «exhibition» è la <i>fiera</i>, l'<i>esposizione</i>; l'<i>esibizione</i> è uno spettacolo."
+        },
+        {
+          "wrong": "Quest'anno assisteremo alla fiera come espositori.",
+          "right": "Quest'anno parteciperemo alla fiera come espositori.",
+          "why": "Lo spagnolo «asistir a» qui è <i>partecipare a</i>; <i>assistere a</i> vuol dire «essere presenti come pubblico»."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: padiglione, stand, espositori, biglietto da visita, badge, visitatori.",
+          "items": [
+            "Il nostro stand è nel … 5.",
+            "Quest'anno la fiera ha 4.000 … con il loro stand, da 30 paesi.",
+            "Per entrare devo mostrare il …",
+            "Il nostro … è piccolo, ma è vicino all'ingresso.",
+            "Il primo giorno sono passati più di mille …",
+            "Mi ha lasciato il suo …: lo chiamo lunedì."
+          ],
+          "key": [
+            "<b>padiglione</b>",
+            "<b>espositori</b>",
+            "<b>badge</b>",
+            "<b>stand</b>",
+            "<b>visitatori</b>",
+            "<b>biglietto da visita</b>"
+          ]
+        },
+        {
+          "type": "Domande (B1–B2)",
+          "instr": "Allo stand hai poco tempo: scrivi una domanda per scoprire che cosa ti serve sapere del visitatore.",
+          "items": [
+            "Di che cosa si occupa la sua azienda.",
+            "Perché è venuto in fiera.",
+            "Se ha già un fornitore.",
+            "Quanto compra, più o meno.",
+            "Se decide lui gli acquisti.",
+            "Quando vuole decidere."
+          ],
+          "key": [
+            "Esempio: <b>di che cosa si occupa la Sua azienda?</b>",
+            "Esempio: <b>che cosa La porta in fiera quest'anno?</b>",
+            "Esempio: <b>con chi lavorate oggi per questi prodotti?</b>",
+            "Esempio: <b>più o meno quanto comprate in un anno?</b>",
+            "Esempio: <b>si occupa Lei degli acquisti?</b>",
+            "Esempio: <b>entro quando pensate di scegliere il nuovo fornitore?</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Di' o scrivi che cosa diresti.",
+          "items": [
+            "Scrivi un invito breve a un cliente per la fiera: padiglione, stand, giorni.",
+            "Un visitatore si ferma allo stand ma sembra solo curioso.",
+            "Arriva un cliente importante mentre parli con un altro visitatore.",
+            "Un concorrente chiede informazioni precise sui vostri prezzi.",
+            "Un visitatore interessato ha solo due minuti.",
+            "Apri con tre frasi la presentazione di un prodotto nuovo allo stand."
+          ],
+          "key": [
+            "Esempio: <b>Gentile dottor Ferri, ad aprile saremo a Vinitaly, padiglione 5, stand B12, con la nuova linea biologica. Mi farebbe piacere salutarLa: mi dica che giorno passa, così Le riservo un momento.</b>",
+            "Esempio: <b>buongiorno! Se vuole, Le faccio assaggiare il nostro olio nuovo. Lei di che cosa si occupa?</b>",
+            "Esempio: <b>(al visitatore) mi scusi un attimo, La lascio con la mia collega che Le spiega tutto. (al cliente) Dottor Ferri, che piacere, si accomodi!</b>",
+            "Esempio: <b>i prezzi li diamo solo nelle offerte ai clienti; se Le interessa il prodotto, Le lascio volentieri il catalogo.</b>",
+            "Esempio: <b>allora vado al punto: questa è la nostra novità, costa meno e dura di più. Mi lascia il biglietto? Lunedì La chiamo io.</b>",
+            "Esempio: <b>buongiorno a tutti e grazie di essere qui. Oggi vi presentiamo in anteprima la nostra nuova linea: tre oli biologici pensati per la ristorazione. Dopo la presentazione vi aspettiamo per l'assaggio.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è il commerciale di un'azienda che produce olio d'oliva e ha uno stand a una fiera alimentare, il docente è il buyer straniero di una catena di supermercati. Difficoltà da introdurre: il buyer ha solo cinque minuti e chiede subito il prezzo per un container.",
+          "items": [
+            "Accogli il visitatore.",
+            "Scopri chi è e che cosa cerca.",
+            "Presenta il prodotto in due frasi.",
+            "Rispondi alla domanda sul prezzo senza dare un numero a caso.",
+            "Raccogli il contatto.",
+            "Fissa il passo successivo."
+          ],
+          "key": [
+            "Esempio: <b>Buongiorno, benvenuto! Vuole assaggiare il nostro olio?</b>",
+            "Esempio: <b>Per quale catena compra, e per quale mercato?</b>",
+            "Esempio: <b>Produciamo olio extravergine biologico in Puglia, in bottiglie da mezzo litro e da un litro. Lavoriamo già con due catene in Germania.</b>",
+            "Esempio: <b>Il prezzo dipende dal formato e dalla resa: Le preparo un'offerta precisa per un container entro venerdì.</b>",
+            "Esempio: <b>Mi lascia il Suo biglietto da visita? Le scrivo dietro «container, formato da un litro».</b>",
+            "Esempio: <b>Venerdì Le mando l'offerta e la settimana dopo facciamo una videochiamata: Le va bene martedì?</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "vendite",
+      "cat": "Contatto",
+      "title": "Il follow-up: email e messaggi commerciali",
+      "def": "Dopo un incontro, una fiera, un'offerta o una telefonata il commerciale ricontatta il cliente: ringrazia, manda quello che ha promesso, ricorda un'offerta, rompe un silenzio. Questa scheda raccoglie il lessico e le frasi per le email e i messaggi di follow-up. La prima mail a chi non ci conosce è nella scheda sul primo contatto.",
+      "form": "Il <b>follow-up</b> (ricontatto) si fa presto e con un motivo preciso: un materiale promesso, una domanda, una novità. Le email formali usano formule fisse: «Faccio seguito al nostro incontro di ieri», «Come d'accordo, Le invio…», «Le scrivo per sapere se ha avuto modo di…», «In attesa di un Suo cortese riscontro». Se il cliente non risponde, si riscrive dopo qualche giorno, sempre con cortesia e possibilmente con un'informazione nuova. L'oggetto della mail dice subito di che cosa si parla.",
+      "tables": [
+        {
+          "before": "<b>Come si comincia.</b>",
+          "plain": true,
+          "headers": [
+            "situazione",
+            "frase d'apertura"
+          ],
+          "rows": [
+            [
+              "dopo un incontro",
+              "Grazie ancora per il tempo che mi ha dedicato ieri."
+            ],
+            [
+              "dopo una telefonata",
+              "Faccio seguito alla nostra telefonata di questa mattina."
+            ],
+            [
+              "dopo una fiera",
+              "È stato un piacere conoscerLa al nostro stand a Vinitaly."
+            ],
+            [
+              "dopo un'offerta",
+              "Le scrivo per sapere se ha avuto modo di vedere la nostra offerta."
+            ],
+            [
+              "dopo un silenzio",
+              "Torno a scriverLe per sapere se il progetto è ancora attuale."
+            ],
+            [
+              "dopo una vendita",
+              "Spero che la consegna sia andata bene."
+            ]
+          ]
+        },
+        {
+          "before": "<b>Il lessico del follow-up.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "il follow-up, il ricontatto",
+              "il messaggio o la telefonata dopo un primo incontro"
+            ],
+            [
+              "ricontattare, risentirsi",
+              "farsi sentire di nuovo: ci risentiamo la prossima settimana"
+            ],
+            [
+              "fare seguito a",
+              "scrivere dopo e in collegamento con qualcosa"
+            ],
+            [
+              "come d'accordo, come concordato",
+              "come abbiamo deciso insieme"
+            ],
+            [
+              "in allegato, allegare",
+              "il file aggiunto alla mail / aggiungerlo"
+            ],
+            [
+              "avere modo di",
+              "trovare il tempo e l'occasione di fare qualcosa"
+            ],
+            [
+              "il riscontro",
+              "la risposta"
+            ],
+            [
+              "il promemoria",
+              "un breve messaggio per ricordare qualcosa"
+            ],
+            [
+              "l'aggiornamento",
+              "una notizia nuova su qualcosa di cui si è già parlato"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "i dati",
+              "data",
+              "la <i>data</i> in italiano è il giorno: la data dell'incontro"
+            ],
+            [
+              "mi faccia sapere",
+              "let me know",
+              "in italiano non si dice «mi lasci sapere»: si dice <i>farmi sapere</i>"
+            ],
+            [
+              "fare seguito a, ricontattare",
+              "to follow up",
+              "<i>seguire</i> vuol dire «andare dietro» o «occuparsi di» (seguo io il cliente)"
+            ],
+            [
+              "allegare",
+              "to attach; sp. adjuntar",
+              "<i>adjuntar</i> non esiste in italiano; <i>attaccare</i> vuol dire «fissare» o «aggredire»"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "ringraziare",
+          "ex": "Grazie ancora per il tempo che mi ha dedicato. / È stato un piacere conoscerLa."
+        },
+        {
+          "label": "mandare quello che si è promesso",
+          "ex": "<b>Come d'accordo</b>, Le invio <b>in allegato</b> il catalogo e la scheda tecnica."
+        },
+        {
+          "label": "chiedere un riscontro",
+          "ex": "Le scrivo per sapere se ha <b>avuto modo</b> di vedere l'offerta. / Ha domande su qualche punto?"
+        },
+        {
+          "label": "dare una novità",
+          "ex": "Le segnalo che da gennaio abbiamo un nuovo modello, più adatto alla Sua esigenza di spazio. / Le mando un breve <b>aggiornamento</b> sui tempi di consegna."
+        },
+        {
+          "label": "dopo un silenzio",
+          "ex": "Torno a scriverLe per sapere se il progetto è ancora attuale. / Se il momento non è quello giusto, mi dica pure quando <b>ricontattarLa</b>."
+        },
+        {
+          "label": "chiudere",
+          "ex": "Resto a disposizione per qualsiasi chiarimento. / In attesa di un Suo cortese <b>riscontro</b>, Le porgo cordiali saluti."
+        }
+      ],
+      "warn": "Ogni follow-up ha bisogno di un motivo: un messaggio senza niente di nuovo stanca il cliente. Non si scrive ogni giorno: di solito si lasciano alcuni giorni tra un messaggio e l'altro. Niente tono di rimprovero («Le ho già scritto tre volte»). Se il cliente dice di no, si ringrazia e si chiede se si può ricontattarlo più avanti. L'<b>oggetto</b> deve far capire subito il tema: «Offerta n. 125 – sedie da ufficio».",
+      "errors": [
+        {
+          "wrong": "Le mando la data che mi ha chiesto: fatturato e volumi.",
+          "right": "Le mando i dati che mi ha chiesto: fatturato e volumi.",
+          "why": "L'inglese «data» sono i <i>dati</i>; la <i>data</i> è il giorno."
+        },
+        {
+          "wrong": "Mi lasci sapere se ha domande.",
+          "right": "Mi faccia sapere se ha domande.",
+          "why": "Calco dell'inglese «let me know»: in italiano si dice <i>farmi sapere</i>."
+        },
+        {
+          "wrong": "Le scrivo per seguire la nostra conversazione di ieri.",
+          "right": "Faccio seguito alla nostra conversazione di ieri.",
+          "why": "Calco di «follow up»: in italiano si <i>fa seguito a</i> una conversazione."
+        },
+        {
+          "wrong": "Le adjunto il catalogo.",
+          "right": "Le allego il catalogo (Le invio in allegato il catalogo).",
+          "why": "Lo spagnolo «adjuntar» è <i>allegare</i>."
+        },
+        {
+          "wrong": "Spero che questa mail La trovi bene.",
+          "right": "Spero che stia bene.",
+          "why": "Calco della formula inglese «I hope this email finds you well»: in italiano si dice <i>spero che stia bene</i>, o si comincia direttamente."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: faccio seguito, come d'accordo, in allegato, avuto modo, riscontro, promemoria.",
+          "items": [
+            "… alla nostra telefonata di questa mattina.",
+            "…, Le invio il catalogo che mi ha chiesto.",
+            "Trova … la scheda tecnica.",
+            "Ha … di leggere la nostra offerta?",
+            "In attesa di un Suo cortese …, Le porgo cordiali saluti.",
+            "Le mando un breve …: l'offerta scade venerdì."
+          ],
+          "key": [
+            "<b>Faccio seguito</b>",
+            "<b>Come d'accordo</b>",
+            "<b>in allegato</b>",
+            "<b>avuto modo</b>",
+            "<b>riscontro</b>",
+            "<b>promemoria</b>"
+          ]
+        },
+        {
+          "type": "Riformulazione (B1–B2)",
+          "instr": "Riscrivi in modo cortese e professionale.",
+          "items": [
+            "«Allora, l'ha letta l'offerta o no?»",
+            "«Le ho già scritto tre volte!»",
+            "«Ecco il catalogo che voleva.»",
+            "«Non mi ha più risposto.»",
+            "«Mi risponda entro venerdì.»",
+            "«Se non Le interessa, me lo dica.»"
+          ],
+          "key": [
+            "Esempio: <b>Le scrivo per sapere se ha avuto modo di vedere la nostra offerta.</b>",
+            "Esempio: <b>Torno a scriverLe per sapere se ha ricevuto i miei messaggi.</b>",
+            "Esempio: <b>Come d'accordo, Le invio in allegato il catalogo.</b>",
+            "Esempio: <b>Mi farebbe piacere sapere che cosa ne pensa.</b>",
+            "Esempio: <b>Le ricordo che l'offerta è valida fino a venerdì.</b>",
+            "Esempio: <b>Se in questo momento il progetto non è una priorità, mi dica pure quando posso ricontattarLa.</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Scrivi il messaggio.",
+          "items": [
+            "Email dopo un incontro: ringrazia e manda il materiale promesso.",
+            "Email dopo la fiera a un visitatore con cui hai parlato cinque minuti.",
+            "Secondo follow-up a un'offerta senza risposta da due settimane, con una novità.",
+            "Messaggio breve su LinkedIn dopo un convegno.",
+            "Il cliente risponde «Per ora no, grazie»: rispondi.",
+            "Email un mese dopo una vendita, per sapere se il cliente è soddisfatto."
+          ],
+          "key": [
+            "Esempio: <b>Oggetto: catalogo e scheda tecnica. Gentile dottoressa Bianchi, grazie ancora per il tempo che mi ha dedicato ieri. Come d'accordo, Le invio in allegato il catalogo e la scheda tecnica del modello Alfa. Resto a disposizione per qualsiasi chiarimento. Cordiali saluti.</b>",
+            "Esempio: <b>Gentile dottor Ferri, è stato un piacere conoscerLa al nostro stand a Vinitaly. Come promesso, Le mando il listino della linea biologica: se Le interessa, possiamo sentirci la prossima settimana.</b>",
+            "Esempio: <b>Gentile dottor Neri, torno a scriverLe a proposito della nostra offerta n. 125. Nel frattempo è arrivato il nuovo modello, più compatto, che risponde al problema di spazio di cui mi aveva parlato: Le allego la scheda.</b>",
+            "Esempio: <b>Buongiorno, è stato un piacere ascoltare il Suo intervento al convegno di ieri. Mi farebbe piacere restare in contatto.</b>",
+            "Esempio: <b>grazie per la risposta, capisco. Se è d'accordo, mi faccio risentire tra sei mesi, quando preparate il budget del nuovo anno.</b>",
+            "Esempio: <b>Gentile signora Rossi, è passato un mese dalla consegna delle sedie: tutto bene? Se ha bisogno di qualcosa, sono a disposizione.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è il commerciale di un'agenzia che organizza viaggi aziendali, il docente è la responsabile delle risorse umane di un'azienda che ha ricevuto un'offerta tre settimane fa e non ha risposto. È una telefonata di follow-up. Difficoltà da introdurre: la responsabile non ha ancora letto l'offerta e nel frattempo il budget è stato ridotto.",
+          "items": [
+            "Presentati e ricorda il motivo della telefonata.",
+            "Chiedi se ha visto l'offerta.",
+            "Reagisci con cortesia alla risposta.",
+            "Scopri che cosa è cambiato.",
+            "Proponi una soluzione adatta al nuovo budget.",
+            "Fissa il prossimo contatto."
+          ],
+          "key": [
+            "Esempio: <b>Buongiorno dottoressa Russo, sono Luca Moretti di Viaggi Sole: La chiamo per l'offerta del viaggio aziendale che Le ho mandato a inizio mese.</b>",
+            "Esempio: <b>Ha avuto modo di vederla?</b>",
+            "Esempio: <b>Nessun problema, capisco che è un periodo pieno.</b>",
+            "Esempio: <b>Ci sono novità sul progetto, sul numero di persone o sul budget?</b>",
+            "Esempio: <b>Con un budget più basso possiamo proporre due giorni invece di tre, oppure una destinazione più vicina.</b>",
+            "Esempio: <b>Le mando entro giovedì una versione aggiornata e La richiamo lunedì mattina: Le va bene?</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "vendite",
+      "cat": "Numeri",
+      "title": "I numeri delle vendite: fatturato, margine, obiettivi, provvigioni",
+      "def": "Il commerciale lavora con i numeri: obiettivi da raggiungere, fatturato, margini, provvigioni, statistiche delle vendite. Questa scheda raccoglie il lessico per leggere un report, parlare dei risultati in una riunione e capire come si è pagati. Il bilancio dell'azienda è spiegato in Banca.",
+      "form": "Ogni commerciale ha degli <b>obiettivi</b> (target, budget di vendita) per un periodo: il mese, il trimestre, l'anno. I risultati si confrontano con l'obiettivo e con lo stesso periodo dell'anno prima. Il <b>fatturato</b> dice quanto si è venduto; il <b>margine</b> dice quanto si guadagna sulla vendita. Molti commerciali hanno uno stipendio <b>fisso</b> e una parte <b>variabile</b> (premi, provvigioni); gli <b>agenti di commercio</b> lavorano per una o più aziende, di solito a provvigione. Nei numeri italiani il punto separa le migliaia e la virgola i decimali: 1.250,50 euro.",
+      "tables": [
+        {
+          "before": "<b>Obiettivi e risultati.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "l'obiettivo, il target",
+              "quanto si deve vendere in un periodo"
+            ],
+            [
+              "il budget di vendita",
+              "gli obiettivi dell'anno, decisi in numeri"
+            ],
+            [
+              "il fatturato",
+              "il totale delle vendite in un periodo, di solito IVA esclusa"
+            ],
+            [
+              "raggiungere, superare, mancare l'obiettivo",
+              "arrivare all'obiettivo / andare oltre / non arrivarci"
+            ],
+            [
+              "la percentuale di raggiungimento",
+              "quanta parte dell'obiettivo si è fatta: il 90%"
+            ],
+            [
+              "rispetto allo stesso periodo dell'anno scorso",
+              "il confronto con l'anno prima"
+            ],
+            [
+              "il trimestre, il semestre",
+              "tre mesi, sei mesi"
+            ],
+            [
+              "il portafoglio clienti",
+              "i clienti di cui si occupa un commerciale"
+            ],
+            [
+              "la pipeline, le trattative aperte",
+              "le vendite possibili, ancora in corso"
+            ],
+            [
+              "il tasso di conversione",
+              "quante offerte (o quanti visitatori) diventano vendite"
+            ],
+            [
+              "lo scontrino medio",
+              "in negozio: quanto spende in media un cliente"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Margini e guadagni.</b>",
+          "after": "Margine e ricarico sono numeri diversi: con lo stesso esempio, il margine è del 40% sul prezzo e il ricarico è di circa il 67% sul costo.",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire, con un esempio"
+          ],
+          "rows": [
+            [
+              "il prezzo di vendita",
+              "quanto paga il cliente: 100 euro"
+            ],
+            [
+              "il costo",
+              "quanto costa il prodotto all'azienda (acquisto o produzione): 60 euro"
+            ],
+            [
+              "il margine (lordo)",
+              "prezzo meno costo: 40 euro, cioè il 40% del prezzo"
+            ],
+            [
+              "il ricarico",
+              "quanto si aggiunge al costo: 40 euro su 60, cioè circa il 67% del costo"
+            ],
+            [
+              "la provvigione",
+              "la percentuale sulle vendite pagata al commerciale o all'agente"
+            ],
+            [
+              "il fisso, la parte variabile",
+              "la parte sicura dello stipendio / la parte che dipende dai risultati"
+            ],
+            [
+              "il premio",
+              "soldi in più se si raggiunge l'obiettivo"
+            ],
+            [
+              "l'agente di commercio",
+              "vende per una o più aziende, di solito a provvigione"
+            ],
+            [
+              "l'utile",
+              "quello che resta all'azienda dopo tutti i costi (vedi Banca)"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "il miliardo",
+              "billion; sp. mil millones",
+              "il <i>bilione</i> in italiano quasi non si usa e vuol dire mille miliardi (come lo spagnolo «billón»)"
+            ],
+            [
+              "le cifre, i numeri",
+              "figures",
+              "la <i>figura</i> in italiano è una forma, un'immagine o una persona"
+            ],
+            [
+              "l'utile, il guadagno",
+              "profit; sp. beneficio",
+              "il <i>beneficio</i> in italiano è soprattutto un vantaggio"
+            ],
+            [
+              "il trimestre",
+              "quarter",
+              "il <i>quarto</i> in italiano è una parte su quattro: un quarto d'ora"
+            ],
+            [
+              "la provvigione",
+              "commission",
+              "per il compenso del commerciale si dice di solito <i>provvigione</i>; <i>commissione</i> si usa soprattutto per il costo di un servizio (le commissioni bancarie)"
+            ],
+            [
+              "mensile",
+              "sp. mensual; monthly",
+              "<i>mensuale</i> non esiste"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "gli obiettivi",
+          "ex": "Il mio <b>obiettivo</b> per il trimestre è di 200.000 euro. / Siamo al 90% del <b>budget</b>."
+        },
+        {
+          "label": "i risultati",
+          "ex": "Abbiamo <b>superato</b> l'obiettivo del 5%. / Il <b>fatturato</b> è cresciuto dell'8% rispetto allo stesso periodo dell'anno scorso."
+        },
+        {
+          "label": "spiegare un risultato basso",
+          "ex": "Questo mese abbiamo <b>mancato</b> l'obiettivo: due ordini grandi sono slittati a gennaio."
+        },
+        {
+          "label": "il margine",
+          "ex": "Su questo prodotto il <b>margine</b> è basso: non possiamo fare altri sconti."
+        },
+        {
+          "label": "la pipeline",
+          "ex": "Ho tre <b>trattative aperte</b> per circa 50.000 euro. / Il <b>tasso di conversione</b> delle offerte è del 30%."
+        },
+        {
+          "label": "come si è pagati",
+          "ex": "Ho un <b>fisso</b> più una <b>provvigione</b> del 3% sul fatturato. / Se raggiungo il budget, c'è un <b>premio</b>."
+        }
+      ],
+      "warn": "Fatturato non vuol dire guadagno: un'azienda può fatturare molto e guadagnare poco. Margine e ricarico non sono la stessa cosa: si dice sempre su che cosa si calcola la percentuale. In italiano un <b>miliardo</b> è mille milioni (ingl. «billion»). Quando si parla di risultati si precisa se le cifre sono IVA esclusa o IVA inclusa: il fatturato di solito è IVA esclusa.",
+      "errors": [
+        {
+          "wrong": "Il nostro fatturato è di due bilioni di euro.",
+          "right": "Il nostro fatturato è di due miliardi di euro.",
+          "why": "L'inglese «billion» è il <i>miliardo</i>; il <i>bilione</i> è mille volte di più."
+        },
+        {
+          "wrong": "Quest'anno abbiamo avuto benefici per il 12% del fatturato.",
+          "right": "Quest'anno abbiamo avuto un utile del 12% del fatturato.",
+          "why": "Lo spagnolo «beneficio» qui è l'<i>utile</i>; il <i>beneficio</i> in italiano è un vantaggio."
+        },
+        {
+          "wrong": "Le figure del trimestre sono buone.",
+          "right": "Le cifre (i numeri) del trimestre sono buone.",
+          "why": "L'inglese «figures» sono le <i>cifre</i>; la <i>figura</i> è una forma o un'immagine."
+        },
+        {
+          "wrong": "Nel terzo quarto abbiamo venduto di più.",
+          "right": "Nel terzo trimestre abbiamo venduto di più.",
+          "why": "L'inglese «quarter» qui è il <i>trimestre</i>; il <i>quarto</i> è una parte su quattro."
+        },
+        {
+          "wrong": "Le mando il report mensuale delle vendite.",
+          "right": "Le mando il report mensile delle vendite.",
+          "why": "Dallo spagnolo «mensual»: in italiano si dice <i>mensile</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: obiettivo, fatturato, margine, provvigione, trimestre, tasso di conversione.",
+          "items": [
+            "Il mio … per quest'anno è di 800.000 euro.",
+            "Il … dell'azienda è cresciuto del 10%.",
+            "Su questo prodotto il … è del 25%: possiamo fare poco sconto.",
+            "Oltre al fisso, prendo una … del 2% su quello che vendo.",
+            "Nel primo … (gennaio–marzo) abbiamo venduto meno.",
+            "Su 10 offerte ne chiudiamo 3: il … è del 30%."
+          ],
+          "key": [
+            "<b>obiettivo</b>",
+            "<b>fatturato</b>",
+            "<b>margine</b>",
+            "<b>provvigione</b>",
+            "<b>trimestre</b>",
+            "<b>tasso di conversione</b>"
+          ]
+        },
+        {
+          "type": "Calcolo (B1–B2)",
+          "instr": "Calcola e scrivi il risultato con il termine giusto.",
+          "items": [
+            "Obiettivo 100.000 euro, venduto 90.000 euro.",
+            "Prezzo di vendita 100 euro, costo 70 euro.",
+            "Costo 50 euro, prezzo di vendita 75 euro.",
+            "Vendite 200.000 euro, provvigione del 3%.",
+            "Fatturato dell'anno scorso 400.000 euro, di quest'anno 440.000 euro.",
+            "In un giorno 200 persone entrano nel negozio e 50 comprano."
+          ],
+          "key": [
+            "<b>percentuale di raggiungimento del 90%</b>: l'obiettivo è mancato del 10%",
+            "<b>margine di 30 euro</b>, cioè il 30% del prezzo",
+            "<b>ricarico di 25 euro</b>, cioè il 50% del costo",
+            "<b>provvigione di 6.000 euro</b>",
+            "il <b>fatturato è cresciuto del 10%</b>",
+            "<b>tasso di conversione del 25%</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Di' che cosa diresti in riunione o al colloquio.",
+          "items": [
+            "Presenta i risultati del trimestre: l'obiettivo è stato superato del 5%.",
+            "Spiega perché hai mancato l'obiettivo del mese: due ordini sono stati rinviati.",
+            "Il tuo responsabile chiede di fare un altro sconto a un cliente: spiega perché il margine non lo permette.",
+            "Presenta la tua pipeline: tre trattative aperte.",
+            "Un collega confonde margine e ricarico: spiega la differenza con un esempio.",
+            "A un colloquio di lavoro chiedi com'è fatto lo stipendio."
+          ],
+          "key": [
+            "Esempio: <b>nel terzo trimestre abbiamo fatturato 315.000 euro, il 5% in più dell'obiettivo; rispetto allo stesso periodo dell'anno scorso siamo cresciuti del 12%.</b>",
+            "Esempio: <b>a ottobre siamo all'85% dell'obiettivo, perché due ordini grandi sono slittati a novembre; li ho già confermati per iscritto.</b>",
+            "Esempio: <b>su questo prodotto abbiamo già un margine del 6%: con un altro 5% di sconto lavoriamo quasi senza guadagno. Possiamo offrirgli invece la consegna gratuita.</b>",
+            "Esempio: <b>ho tre trattative aperte per circa 90.000 euro: una è quasi chiusa, le altre due sono alla fase dell'offerta.</b>",
+            "Esempio: <b>se compriamo a 60 e vendiamo a 100, il margine è di 40 euro, il 40% del prezzo; il ricarico invece si calcola sul costo, quindi è di circa il 67%.</b>",
+            "Esempio: <b>posso chiederLe com'è composta la retribuzione? C'è una parte fissa e una variabile, e come si calcolano le provvigioni?</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è un commerciale di zona, il docente è il direttore commerciale. È la riunione di fine ottobre: l'obiettivo dell'anno è di un milione di euro; a fine ottobre il commerciale ha fatturato 780.000 euro (nello stesso periodo dell'anno scorso: 700.000). Difficoltà da introdurre: il direttore dice che il risultato non basta e chiede come arrivare all'obiettivo in due mesi.",
+          "items": [
+            "Presenta i numeri principali.",
+            "Fai il confronto con l'anno scorso.",
+            "Spiega i motivi del ritardo.",
+            "Rispondi alla critica del direttore.",
+            "Presenta la pipeline e come pensi di arrivare all'obiettivo.",
+            "Proponi delle azioni e chiedi un aiuto concreto."
+          ],
+          "key": [
+            "Esempio: <b>A fine ottobre ho fatturato 780.000 euro, cioè il 78% dell'obiettivo; mancano 220.000 euro.</b>",
+            "Esempio: <b>Rispetto allo stesso periodo dell'anno scorso siamo cresciuti di circa l'11%.</b>",
+            "Esempio: <b>Il ritardo dipende soprattutto da due clienti grandi, che hanno rinviato gli ordini a novembre.</b>",
+            "Esempio: <b>Capisco che il ritmo deve aumentare, ma la crescita sull'anno scorso c'è.</b>",
+            "Esempio: <b>Ho trattative aperte per 330.000 euro: se ne chiudo due su tre, arrivo all'obiettivo.</b>",
+            "Esempio: <b>Propongo di concentrarmi su queste tre trattative e chiedo di poter offrire il trasporto gratuito a chi ordina entro novembre.</b>"
+          ]
+        }
+      ]
+    }
+  ]
+}
