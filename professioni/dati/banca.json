@@ -1,5 +1,3770 @@
 {
-  "versione": "1.0",
+  "versione": "1.1",
   "livello": "Banca",
-  "schede": []
+  "schede": [
+    {
+      "lvl": "banca",
+      "cat": "Conto",
+      "title": "Il conto corrente",
+      "def": "Il bancario apre un conto corrente, ne spiega costi e servizi e risponde alle domande più comuni del cliente: saldo, estratto conto, movimenti, cointestazione, chiusura del conto.",
+      "form": "Il <b>conto corrente</b> è il servizio base della banca: sul conto si ricevono lo stipendio e i bonifici, si pagano le spese, si usa la carta. Prima di firmare il cliente riceve il <b>foglio informativo</b> con tutte le condizioni; l'<b>ISC</b> (indicatore sintetico di costo) serve a confrontare i conti di banche diverse. Ogni anno sul conto si paga l'<b>imposta di bollo</b>: per le persone fisiche 34,20 euro, che non si pagano se la giacenza media non supera i 5.000 euro. Il conto può avere un solo intestatario o essere <b>cointestato</b>. Con il cliente si dà del <i>Lei</i>. Il fido e lo sconfinamento sono spiegati nella scheda sul credito alle imprese; le tasse sui prodotti in <i>Il fisco del cliente</i>.",
+      "tables": [
+        {
+          "before": "<b>Il conto.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "l'intestatario, il titolare",
+              "la persona a cui appartiene il conto"
+            ],
+            [
+              "il conto cointestato a firma disgiunta / congiunta",
+              "ogni intestatario può operare da solo / servono le firme di tutti"
+            ],
+            [
+              "il delegato",
+              "una persona autorizzata a operare sul conto, senza esserne titolare"
+            ],
+            [
+              "l'IBAN",
+              "il codice del conto: in Italia ha 27 caratteri (IT, due cifre di controllo, CIN, ABI, CAB, numero di conto)"
+            ],
+            [
+              "il saldo contabile / il saldo disponibile",
+              "la somma registrata sul conto / la somma che si può usare subito"
+            ],
+            [
+              "l'estratto conto",
+              "l'elenco dei movimenti di un periodo"
+            ],
+            [
+              "l'accredito / l'addebito",
+              "una somma che entra / che esce dal conto"
+            ],
+            [
+              "la data valuta",
+              "il giorno da cui una somma comincia o smette di produrre interessi"
+            ],
+            [
+              "la giacenza media",
+              "la media dei saldi di ogni giorno in un periodo"
+            ],
+            [
+              "essere in rosso",
+              "avere il saldo sotto zero"
+            ],
+            [
+              "il canone",
+              "la somma fissa che si paga ogni mese o ogni anno per il conto"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Costi e documenti.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "il foglio informativo",
+              "il documento con le condizioni e i costi del conto, da consegnare prima del contratto"
+            ],
+            [
+              "il documento di sintesi",
+              "il riassunto delle condizioni, allegato al contratto e mandato ogni anno"
+            ],
+            [
+              "l'ISC",
+              "l'indicatore sintetico di costo: quanto costa il conto in un anno, per profili di cliente tipici"
+            ],
+            [
+              "l'imposta di bollo",
+              "34,20 euro l'anno per le persone fisiche; non si paga se la giacenza media non supera i 5.000 euro"
+            ],
+            [
+              "il conto a pacchetto / a consumo",
+              "un canone che comprende un certo numero di operazioni / si paga ogni operazione"
+            ],
+            [
+              "il conto di base",
+              "un conto con i servizi essenziali e costi bassi; è gratuito, per esempio, con un ISEE inferiore a 11.600 euro, ed è senza canone per i pensionati con una pensione fino a 18.000 euro lordi l'anno"
+            ],
+            [
+              "la chiusura del conto",
+              "il cliente può chiudere il conto quando vuole, senza penali"
+            ],
+            [
+              "il trasferimento del conto",
+              "la nuova banca si occupa di spostare bonifici, addebiti e saldo; per il cliente è gratuito"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "il saldo",
+              "balance",
+              "il <i>bilancio</i> in italiano è il documento contabile di un'azienda"
+            ],
+            [
+              "l'estratto conto",
+              "bank statement",
+              "la <i>dichiarazione</i> è un'altra cosa: la dichiarazione dei redditi"
+            ],
+            [
+              "la filiale",
+              "branch",
+              "il <i>ramo</i> in italiano è quello di un albero, o un settore di attività"
+            ],
+            [
+              "il conto corrente",
+              "account; (USA) checking account",
+              "<i>account</i> si usa per l'accesso online (l'account dell'home banking); non si dice «conto di controllo»"
+            ],
+            [
+              "lo sportello automatico, il bancomat",
+              "sp. cajero automático",
+              "il <i>cassiere</i> in italiano è la persona che lavora alla cassa"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "aprire il conto",
+          "ex": "Per aprire il conto mi servono un documento d'identità e il <b>codice fiscale</b>. / Le consegno il <b>foglio informativo</b> con tutti i costi."
+        },
+        {
+          "label": "i costi",
+          "ex": "Il <b>canone</b> è di 5 euro al mese e comprende 50 operazioni. / L'<b>imposta di bollo</b> è di 34,20 euro l'anno, ma non si paga se la giacenza media non supera i 5.000 euro."
+        },
+        {
+          "label": "saldo e movimenti",
+          "ex": "Il <b>saldo disponibile</b> è di 1.250 euro. / Lo stipendio è stato accreditato ieri."
+        },
+        {
+          "label": "l'estratto conto",
+          "ex": "L'<b>estratto conto</b> lo trova ogni mese nell'home banking. / Se preferisce, glielo mandiamo anche per posta."
+        },
+        {
+          "label": "la cointestazione",
+          "ex": "Il conto è <b>cointestato a firma disgiunta</b>: ognuno di voi può operare da solo. / Vuole dare una <b>delega</b> a Sua figlia?"
+        },
+        {
+          "label": "chiudere o trasferire",
+          "ex": "Può chiudere il conto quando vuole, senza penali. / Se apre un conto in un'altra banca, il <b>trasferimento</b> lo fa la nuova banca ed è gratuito."
+        }
+      ],
+      "warn": "<b>Saldo contabile</b> e <b>saldo disponibile</b> possono essere diversi: un assegno versato oggi, per esempio, si vede nel saldo ma non si può usare subito. <i>Bancomat</i> è il nome di un circuito, ma nel parlato si usa per la carta di debito e per lo sportello automatico. Il foglio informativo va consegnato prima del contratto. Le condizioni (canone, operazioni comprese) cambiano da un conto all'altro: valgono quelle del foglio informativo.",
+      "errors": [
+        {
+          "wrong": "Mi può dire il bilancio del mio conto?",
+          "right": "Mi può dire il saldo del mio conto?",
+          "why": "L'inglese «balance» qui è il <i>saldo</i>; il <i>bilancio</i> è il documento contabile di un'azienda."
+        },
+        {
+          "wrong": "Mi manda la dichiarazione del conto di marzo?",
+          "right": "Mi manda l'estratto conto di marzo?",
+          "why": "L'inglese «bank statement» è l'<i>estratto conto</i>; la <i>dichiarazione</i> è un'altra cosa (la dichiarazione dei redditi)."
+        },
+        {
+          "wrong": "Domani vado al ramo di via Roma.",
+          "right": "Domani vado alla filiale di via Roma.",
+          "why": "L'inglese «branch» qui è la <i>filiale</i>; il <i>ramo</i> è quello di un albero."
+        },
+        {
+          "wrong": "Vorrei aprire un conto di controllo per lo stipendio.",
+          "right": "Vorrei aprire un conto corrente per lo stipendio.",
+          "why": "Calco dell'inglese americano «checking account»: in italiano si dice <i>conto corrente</i>."
+        },
+        {
+          "wrong": "Ho prelevato 50 euro al cassiere automatico.",
+          "right": "Ho prelevato 50 euro allo sportello automatico (al bancomat).",
+          "why": "Lo spagnolo «cajero automático» è lo <i>sportello automatico</i>; il <i>cassiere</i> è la persona che lavora alla cassa."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: IBAN, saldo, estratto conto, canone, cointestato, filiale.",
+          "items": [
+            "Per ricevere lo stipendio deve dare al datore di lavoro il Suo …",
+            "Il … disponibile oggi è di 830 euro.",
+            "Ogni mese trova l'… con tutti i movimenti.",
+            "Il … del conto è di 4 euro al mese.",
+            "Il conto è … con mia moglie.",
+            "La nostra … più vicina è in via Garibaldi."
+          ],
+          "key": [
+            "<b>IBAN</b>",
+            "<b>saldo</b>",
+            "<b>estratto conto</b>",
+            "<b>canone</b>",
+            "<b>cointestato</b>",
+            "<b>filiale</b>"
+          ]
+        },
+        {
+          "type": "Riformulazione (B1–B2)",
+          "instr": "Il cliente parla con parole sue: scrivi il termine bancario.",
+          "items": [
+            "«Quanti soldi posso usare adesso?»",
+            "«Il foglio con tutti i movimenti del mese.»",
+            "«Quanto pago ogni mese per avere il conto?»",
+            "«Il codice lungo che comincia con IT.»",
+            "«Mia figlia può prelevare dal mio conto, ma il conto non è suo.»",
+            "«Sono sotto zero.»"
+          ],
+          "key": [
+            "il <b>saldo disponibile</b>",
+            "l'<b>estratto conto</b>",
+            "il <b>canone</b>",
+            "l'<b>IBAN</b>",
+            "è <b>delegata</b> sul conto (la <b>delega</b>)",
+            "sono <b>in rosso</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Rispondi al cliente in registro formale.",
+          "items": [
+            "Il cliente chiede perché l'assegno versato ieri non si può ancora usare.",
+            "Il cliente chiede che cos'è la data valuta che vede accanto a ogni movimento.",
+            "Un padre vuole aprire un conto con il figlio di vent'anni: spiega la differenza tra firma disgiunta e congiunta.",
+            "Il cliente chiede come confrontare il vostro conto con quello di un'altra banca.",
+            "Il cliente vuole chiudere il conto e ha paura di pagare una penale.",
+            "Una cliente con un reddito molto basso chiede un conto che costi poco."
+          ],
+          "key": [
+            "Esempio: <b>l'assegno è già nel saldo contabile, ma diventa disponibile dopo qualche giorno lavorativo, quando la banca di chi l'ha firmato lo paga.</b>",
+            "Esempio: <b>è il giorno da cui una somma comincia, o smette, di produrre interessi: può essere diverso dal giorno in cui l'operazione compare sul conto.</b>",
+            "Esempio: <b>con la firma disgiunta ognuno di voi può fare operazioni da solo; con la firma congiunta, per ogni operazione servono le firme di tutti e due.</b>",
+            "Esempio: <b>guardi l'ISC nel foglio informativo: indica quanto costa il conto in un anno e si trova nei fogli informativi di tutte le banche.</b>",
+            "Esempio: <b>può chiudere il conto quando vuole, senza penali. Se apre un conto da un'altra banca, il trasferimento lo fa la nuova banca ed è gratuito.</b>",
+            "Esempio: <b>esiste il conto di base, con i servizi essenziali: con un ISEE inferiore a 11.600 euro è gratuito. Le serve un'autocertificazione dell'ISEE.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è l'impiegato di una filiale, il docente è un ragazzo che ha appena trovato il primo lavoro e vuole aprire un conto per lo stipendio. Difficoltà da introdurre: il cliente dice che online trova conti a zero spese e chiede perché dovrebbe pagare il canone.",
+          "items": [
+            "Accogli il cliente e chiedi di che cosa ha bisogno.",
+            "Spiega quali documenti servono.",
+            "Presenta il conto: canone e operazioni comprese.",
+            "Spiega l'imposta di bollo.",
+            "Rispondi al confronto con i conti online.",
+            "Spiega i prossimi passi: firma, IBAN, carta."
+          ],
+          "key": [
+            "Esempio: <b>Buongiorno, come posso aiutarLa? Il conto Le serve soprattutto per lo stipendio?</b>",
+            "Esempio: <b>Mi servono un documento d'identità valido e il codice fiscale.</b>",
+            "Esempio: <b>Questo conto costa 3 euro al mese e comprende i bonifici online e la carta di debito.</b>",
+            "Esempio: <b>C'è poi l'imposta di bollo dello Stato, ma con una giacenza media fino a 5.000 euro non la paga.</b>",
+            "Esempio: <b>Fa bene a confrontare: guardi l'ISC di tutti e due i conti. Da noi ha in più la filiale e una persona di riferimento.</b>",
+            "Esempio: <b>Firmiamo il contratto, Le do subito l'IBAN da dare al datore di lavoro e la carta arriva a casa in pochi giorni.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "banca",
+      "cat": "Conto",
+      "title": "Il cliente straniero in banca: codice fiscale, conto per non residenti, documenti",
+      "def": "Un cliente che viene da un altro paese vuole aprire un conto in Italia, per lo stipendio, l'affitto o gli studi. Questa scheda raccoglie il lessico e le frasi per spiegargli che cosa serve, che tipo di conto può aprire e che cosa cambia per lui rispetto a un cliente italiano.",
+      "form": "Per aprire un conto in Italia serve sempre il <b>codice fiscale</b>: chi non ce l'ha lo chiede all'Agenzia delle Entrate; chi vive all'estero lo chiede al consolato italiano, e a molti cittadini di paesi extra UE che arrivano per lavoro lo attribuisce, all'inizio in forma provvisoria, lo Sportello unico per l'immigrazione. La banca distingue tra cliente <b>residente</b> e <b>non residente</b>: per chi non vive in Italia c'è il <b>conto per non residenti</b>. Il cliente firma anche un'<b>autocertificazione di residenza fiscale</b>, perché la banca deve comunicare all'Agenzia delle Entrate i conti di chi paga le tasse in un altro paese. Identificazione e controlli antiriciclaggio sono gli stessi per tutti (vedi la scheda sullo sportello). Ogni consumatore che soggiorna legalmente nell'Unione europea ha diritto al <b>conto di base</b>, anche senza residenza in Italia (vedi <i>Il conto corrente</i>). Con chi parla poco italiano: frasi brevi, una cosa alla volta, e controllare che abbia capito.",
+      "tables": [
+        {
+          "before": "<b>I documenti.</b>",
+          "plain": true,
+          "headers": [
+            "documento",
+            "a che cosa serve"
+          ],
+          "rows": [
+            [
+              "il passaporto, la carta d'identità",
+              "identificare il cliente"
+            ],
+            [
+              "il codice fiscale",
+              "il codice per i rapporti con il fisco, con la banca e con molti uffici; lo rilascia l'Agenzia delle Entrate"
+            ],
+            [
+              "il permesso di soggiorno",
+              "per i cittadini di paesi fuori dall'Unione europea che vivono in Italia"
+            ],
+            [
+              "il certificato di residenza",
+              "dimostrare dove il cliente risiede in Italia"
+            ],
+            [
+              "l'autocertificazione di residenza fiscale",
+              "dichiarare in quale paese il cliente paga le tasse"
+            ],
+            [
+              "la busta paga, il contratto di lavoro",
+              "dimostrare il reddito, per esempio per una carta di credito o un prestito"
+            ],
+            [
+              "il contratto d'affitto",
+              "un altro documento che mostra dove il cliente vive"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Conti e situazioni.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "il cliente residente / non residente",
+              "vive in Italia / vive all'estero"
+            ],
+            [
+              "il conto per non residenti",
+              "il conto per chi vive all'estero e ha bisogno di un conto in Italia"
+            ],
+            [
+              "la residenza fiscale",
+              "il paese dove il cliente paga le imposte"
+            ],
+            [
+              "il conto di base",
+              "un conto con i servizi essenziali: ne ha diritto ogni consumatore che soggiorna legalmente nell'Unione europea, anche senza residenza in Italia (per esempio un richiedente asilo)"
+            ],
+            [
+              "la residenza / il domicilio",
+              "il luogo dove una persona vive abitualmente (registrato all'anagrafe del Comune) / il luogo dove ha la sede principale dei suoi affari e interessi"
+            ],
+            [
+              "l'area SEPA",
+              "i paesi dove i pagamenti in euro funzionano allo stesso modo (Unione europea e alcuni altri)"
+            ],
+            [
+              "l'IBAN estero",
+              "un IBAN di un altro paese SEPA va accettato per bonifici e addebiti diretti: un datore di lavoro non può rifiutarlo"
+            ],
+            [
+              "il bonifico extra SEPA, il BIC (SWIFT)",
+              "un bonifico verso un paese fuori dall'area SEPA; il BIC è il codice internazionale della banca"
+            ],
+            [
+              "il tasso di cambio",
+              "il valore di una moneta rispetto a un'altra"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "la busta paga",
+              "payslip; sp. nómina",
+              "la <i>nomina</i> in italiano è l'atto con cui si dà un incarico: la nomina del direttore"
+            ],
+            [
+              "il permesso di soggiorno",
+              "residence permit",
+              "non si dice «permesso di residenza»"
+            ],
+            [
+              "il codice fiscale",
+              "tax code",
+              "non si dice «codice delle tasse»"
+            ],
+            [
+              "la bolletta",
+              "utility bill",
+              "non si dice «conto di utilità»"
+            ],
+            [
+              "firmare",
+              "to sign",
+              "<i>segnare</i> vuol dire «fare un segno, prendere nota»"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "capire la situazione",
+          "ex": "Lei vive in Italia o all'estero? / Ha già il <b>codice fiscale</b>?"
+        },
+        {
+          "label": "il codice fiscale",
+          "ex": "Il codice fiscale lo chiede all'<b>Agenzia delle Entrate</b> con il passaporto. / Senza codice fiscale non possiamo aprire il conto."
+        },
+        {
+          "label": "i documenti",
+          "ex": "Mi servono il passaporto, il codice fiscale e il <b>permesso di soggiorno</b>. / Per la carta di credito ci porti anche le ultime <b>buste paga</b>."
+        },
+        {
+          "label": "la residenza fiscale",
+          "ex": "In questo modulo indichi in quale paese paga le tasse. / È un obbligo per tutte le banche."
+        },
+        {
+          "label": "bonifici e IBAN",
+          "ex": "Il Suo IBAN spagnolo va benissimo per lo stipendio: la Spagna è nell'<b>area SEPA</b>. / Per il Brasile serve un <b>bonifico extra SEPA</b> con il codice BIC."
+        },
+        {
+          "label": "controllare che abbia capito",
+          "ex": "Mi sono spiegato? / Vuole che ripeta più piano? / Le scrivo qui i documenti da portare."
+        }
+      ],
+      "warn": "Senza codice fiscale non si apre il conto: è la prima cosa da controllare. Un IBAN di un altro paese dell'area SEPA va accettato per i pagamenti in euro: se un datore di lavoro lo rifiuta, il cliente può farglielo notare. <b>Residenza</b> e <b>residenza fiscale</b> possono non coincidere: un dubbio sul fisco del cliente non si risolve allo sportello, ma con un commercialista. Con chi parla poco italiano si evitano sigle e parole tecniche, oppure si spiegano.",
+      "errors": [
+        {
+          "wrong": "Mi porti le ultime tre nomine.",
+          "right": "Mi porti le ultime tre buste paga.",
+          "why": "Lo spagnolo «nómina» è la <i>busta paga</i>; la <i>nomina</i> è l'atto con cui si dà un incarico."
+        },
+        {
+          "wrong": "Mi serve anche il Suo permesso di residenza.",
+          "right": "Mi serve anche il Suo permesso di soggiorno.",
+          "why": "Calco dell'inglese «residence permit»: in italiano si dice <i>permesso di soggiorno</i>."
+        },
+        {
+          "wrong": "Non ho ancora il codice delle tasse.",
+          "right": "Non ho ancora il codice fiscale.",
+          "why": "Molti stranieri chiamano il codice fiscale «tax code»: in italiano si dice <i>codice fiscale</i>."
+        },
+        {
+          "wrong": "Per dimostrare il mio indirizzo posso portare un conto di utilità?",
+          "right": "Per dimostrare il mio indirizzo posso portare una bolletta (della luce, del gas)?",
+          "why": "Calco dell'inglese «utility bill»: in italiano si dice <i>bolletta</i>."
+        },
+        {
+          "wrong": "Segni qui, per favore.",
+          "right": "Firmi qui, per favore.",
+          "why": "Calco dell'inglese «sign»: <i>segnare</i> vuol dire «fare un segno, prendere nota»."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: codice fiscale, passaporto, non residente, residenza fiscale, busta paga, IBAN.",
+          "items": [
+            "Senza il … non si può aprire un conto in Italia.",
+            "Come documento d'identità va bene anche il …",
+            "Lavora in Germania e vive là: per noi è un cliente …",
+            "Nel modulo deve indicare la Sua …: il paese dove paga le tasse.",
+            "Per la carta di credito ci porti l'ultima …",
+            "Il Suo … francese va bene per ricevere lo stipendio."
+          ],
+          "key": [
+            "<b>codice fiscale</b>",
+            "<b>passaporto</b>",
+            "<b>non residente</b>",
+            "<b>residenza fiscale</b>",
+            "<b>busta paga</b>",
+            "<b>IBAN</b>"
+          ]
+        },
+        {
+          "type": "Classificazione (B1–B2)",
+          "instr": "Che cosa serve al cliente? Scegli tra: conto per non residenti, codice fiscale, autocertificazione di residenza fiscale, bonifico extra SEPA, conto di base, certificato di residenza.",
+          "items": [
+            "Vive in Francia e vuole un conto in Italia per la casa al mare.",
+            "Non ha ancora un codice per il fisco italiano.",
+            "La banca deve sapere in quale paese paga le tasse.",
+            "Deve mandare soldi alla famiglia in un paese fuori dall'area SEPA.",
+            "Ha un reddito molto basso e vuole un conto con i servizi essenziali.",
+            "Deve dimostrare con un documento del Comune dove risiede."
+          ],
+          "key": [
+            "il <b>conto per non residenti</b>",
+            "il <b>codice fiscale</b>",
+            "l'<b>autocertificazione di residenza fiscale</b>",
+            "un <b>bonifico extra SEPA</b>",
+            "il <b>conto di base</b>",
+            "il <b>certificato di residenza</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Rispondi al cliente in modo semplice e chiaro.",
+          "items": [
+            "Spiega a una studentessa appena arrivata come ottenere il codice fiscale.",
+            "Il datore di lavoro italiano dice al cliente che il suo IBAN portoghese non va bene.",
+            "Il cliente non capisce che cosa vuol dire «residenza fiscale».",
+            "Il cliente chiede perché deve compilare il modulo sulla residenza fiscale.",
+            "Il cliente parla poco italiano: controlla che abbia capito i documenti da portare.",
+            "Il cliente vuole mandare 500 euro alla famiglia in un paese fuori dall'Unione europea."
+          ],
+          "key": [
+            "Esempio: <b>vada a un ufficio dell'Agenzia delle Entrate con il passaporto e compili il modulo: di solito il codice fiscale lo danno subito. Poi torni da noi.</b>",
+            "Esempio: <b>il Portogallo è nell'area SEPA: per gli stipendi in euro il Suo IBAN va accettato. Può dirlo all'ufficio del personale; se vuole, Le scrivo due righe da mostrare.</b>",
+            "Esempio: <b>è il paese dove Lei paga le tasse sul reddito. Di solito è il paese dove vive e lavora.</b>",
+            "Esempio: <b>perché la banca deve comunicare all'Agenzia delle Entrate i conti di chi paga le tasse in un altro paese. Lo chiedono tutte le banche.</b>",
+            "Esempio: <b>allora, la prossima volta porti tre cose: il passaporto, il codice fiscale e il permesso di soggiorno. Me le può ripetere? Gliele scrivo anche qui.</b>",
+            "Esempio: <b>serve un bonifico extra SEPA: mi dà il nome, l'IBAN o il numero di conto e il codice BIC della banca. Le dico subito il costo e il tasso di cambio.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è l'impiegato di una filiale, il docente è un'ingegnera tedesca appena arrivata a Milano con un contratto di lavoro. Difficoltà da introdurre: non ha ancora il codice fiscale e il primo stipendio arriva tra due settimane.",
+          "items": [
+            "Accogli la cliente e scopri la sua situazione.",
+            "Spiega che serve il codice fiscale e come ottenerlo.",
+            "Elenca gli altri documenti.",
+            "Spiega che tipo di conto può aprire.",
+            "Spiega il modulo sulla residenza fiscale.",
+            "Proponi un piano per avere il conto prima dello stipendio."
+          ],
+          "key": [
+            "Esempio: <b>Benvenuta! Lei vive già a Milano? Il conto Le serve per lo stipendio?</b>",
+            "Esempio: <b>Per aprire il conto serve il codice fiscale: lo chiede all'Agenzia delle Entrate con il passaporto.</b>",
+            "Esempio: <b>Mi porti anche il passaporto o la carta d'identità e il contratto di lavoro.</b>",
+            "Esempio: <b>Visto che vive e lavora in Italia, può aprire un conto normale da residente.</b>",
+            "Esempio: <b>Le farò firmare un modulo dove indica in quale paese paga le tasse: è un obbligo per tutte le banche.</b>",
+            "Esempio: <b>Se domani va all'Agenzia delle Entrate, giovedì apriamo il conto e Le do subito l'IBAN; intanto, se vuole, per il primo stipendio può dare anche il Suo IBAN tedesco.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "banca",
+      "cat": "Pagamenti",
+      "title": "Pagamenti: bonifico, addebito diretto, carte, F24, pagoPA",
+      "def": "Il bancario spiega al cliente come pagare e come farsi pagare: bonifico, addebito diretto, carte, modello F24, pagoPA. Questa scheda raccoglie il lessico e le frasi per dare istruzioni, rispondere su tempi e costi e aiutare il cliente quando un pagamento va storto. La Ri.Ba. è spiegata nella scheda sul credito alle imprese.",
+      "form": "I pagamenti in euro tra i paesi dell'<b>area SEPA</b> funzionano allo stesso modo. Il <b>bonifico ordinario</b> arriva entro il giorno lavorativo successivo; il <b>bonifico istantaneo</b> arriva in pochi secondi, a qualsiasi ora, e dal 2025 non può costare più di quello ordinario. Dal 9 ottobre 2025, prima di inviare un bonifico, la banca controlla che il nome del beneficiario corrisponda all'IBAN (<b>verifica del beneficiario</b>). Con l'<b>addebito diretto</b> (SDD, che molti chiamano ancora <i>domiciliazione</i>) il cliente autorizza un'azienda a prendere i soldi dal conto, per esempio per le bollette. Le carte possono essere di debito, di credito o prepagate. Le imposte si pagano con il <b>modello F24</b>; le somme dovute alla pubblica amministrazione (multe, tasse scolastiche, ticket sanitari) con <b>pagoPA</b>, usando il codice dell'avviso.",
+      "tables": [
+        {
+          "before": "<b>Bonifico e addebito diretto.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "l'ordinante / il beneficiario",
+              "chi manda i soldi / chi li riceve"
+            ],
+            [
+              "la causale",
+              "il motivo del pagamento, scritto nel bonifico"
+            ],
+            [
+              "il bonifico ordinario",
+              "arriva entro il giorno lavorativo successivo"
+            ],
+            [
+              "il bonifico istantaneo",
+              "arriva in circa 10 secondi, ogni giorno e a ogni ora; non costa più del bonifico ordinario e non si può annullare"
+            ],
+            [
+              "la verifica del beneficiario",
+              "la banca controlla che nome e IBAN del beneficiario corrispondano"
+            ],
+            [
+              "il bonifico periodico",
+              "un bonifico che parte da solo ogni mese (per esempio per l'affitto)"
+            ],
+            [
+              "l'addebito diretto (SDD), la domiciliazione",
+              "un'azienda incassa dal conto del cliente, con la sua autorizzazione"
+            ],
+            [
+              "il mandato",
+              "l'autorizzazione che il cliente firma per l'addebito diretto"
+            ],
+            [
+              "il rimborso dell'addebito",
+              "per un addebito diretto autorizzato (SDD dei consumatori) il cliente può chiedere indietro i soldi entro otto settimane"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Carte e altri pagamenti.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "la carta di debito",
+              "i soldi escono subito dal conto"
+            ],
+            [
+              "la carta di credito",
+              "si paga dopo, di solito il mese successivo, entro un limite"
+            ],
+            [
+              "la carta prepagata",
+              "si spende solo la somma caricata"
+            ],
+            [
+              "il plafond",
+              "il limite di spesa della carta"
+            ],
+            [
+              "il PIN, il pagamento contactless",
+              "il codice segreto della carta / il pagamento avvicinando la carta o il telefono"
+            ],
+            [
+              "il modello F24",
+              "il modulo per pagare imposte e contributi"
+            ],
+            [
+              "pagoPA, l'avviso di pagamento",
+              "il sistema per pagare la pubblica amministrazione / il documento con il codice da usare"
+            ],
+            [
+              "il bollettino postale",
+              "un modulo di pagamento delle Poste, oggi meno usato"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "il bonifico",
+              "bank transfer; sp. transferencia",
+              "<i>trasferenza</i> non esiste in italiano"
+            ],
+            [
+              "l'addebito diretto",
+              "direct debit",
+              "il <i>debito</i> è una somma da restituire"
+            ],
+            [
+              "la scadenza",
+              "due date",
+              "non si dice «data dovuta»"
+            ],
+            [
+              "il modello (F24), il modulo",
+              "form",
+              "la <i>forma</i> in italiano è l'aspetto esterno di una cosa"
+            ],
+            [
+              "rifiutata, non accettata (la carta)",
+              "declined",
+              "<i>declinare</i> vuol dire «rifiutare con cortesia» (declinare un invito): per la carta non si usa"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "un bonifico",
+          "ex": "Mi servono l'<b>IBAN</b> e il nome del <b>beneficiario</b>. / Nella <b>causale</b> scriva il numero della fattura."
+        },
+        {
+          "label": "il bonifico istantaneo",
+          "ex": "Con il <b>bonifico istantaneo</b> i soldi arrivano in pochi secondi, allo stesso costo. / Attenzione: una volta partito, non si può annullare."
+        },
+        {
+          "label": "la verifica del beneficiario",
+          "ex": "Il nome non corrisponde all'IBAN: vuole controllare i dati prima di confermare?"
+        },
+        {
+          "label": "l'addebito diretto",
+          "ex": "Per pagare le bollette con l'<b>addebito diretto</b> firmi questo <b>mandato</b>. / Se un addebito non Le torna, può chiedere il rimborso entro otto settimane."
+        },
+        {
+          "label": "le carte",
+          "ex": "Con la <b>carta di debito</b> il pagamento esce subito dal conto; con la <b>carta di credito</b> l'addebito arriva il mese dopo."
+        },
+        {
+          "label": "F24 e pagoPA",
+          "ex": "Il <b>modello F24</b> lo può pagare nell'home banking o in filiale. / Per la multa usi <b>pagoPA</b>: inserisca il codice dell'avviso."
+        }
+      ],
+      "warn": "Il <b>bonifico istantaneo</b> non si può annullare: prima di inviarlo si controllano IBAN e nome, soprattutto se qualcuno mette fretta (le truffe sono spiegate in <i>Banca digitale e sicurezza</i>). Se la verifica del beneficiario dice che il nome non corrisponde, il cliente può correggere i dati o confermare il bonifico, ma in quel caso se ne assume il rischio. Il rimborso entro otto settimane vale per gli addebiti diretti autorizzati; per quelli non autorizzati i tempi sono diversi. Un bonifico mandato all'IBAN sbagliato non si annulla: si può solo chiedere la restituzione a chi l'ha ricevuto.",
+      "errors": [
+        {
+          "wrong": "Le faccio subito una trasferenza.",
+          "right": "Le faccio subito un bonifico.",
+          "why": "Lo spagnolo «transferencia» è il <i>bonifico</i>; <i>trasferenza</i> non esiste."
+        },
+        {
+          "wrong": "Pago la luce con il debito diretto.",
+          "right": "Pago la luce con l'addebito diretto (con la domiciliazione).",
+          "why": "Calco dell'inglese «direct debit»: in italiano si dice <i>addebito diretto</i>; il <i>debito</i> è una somma da restituire."
+        },
+        {
+          "wrong": "La data dovuta del pagamento è il 16.",
+          "right": "La scadenza del pagamento è il 16.",
+          "why": "Calco dell'inglese «due date»: si dice <i>scadenza</i>."
+        },
+        {
+          "wrong": "Compili la forma F24.",
+          "right": "Compili il modello F24.",
+          "why": "L'inglese «form» qui è il <i>modello</i>, il <i>modulo</i>; la <i>forma</i> è l'aspetto di una cosa."
+        },
+        {
+          "wrong": "Al supermercato la mia carta è stata declinata.",
+          "right": "Al supermercato la mia carta è stata rifiutata (non è passata).",
+          "why": "Calco dell'inglese «declined»: per la carta si dice <i>rifiutata</i>, <i>non accettata</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: beneficiario, causale, istantaneo, mandato, plafond, avviso.",
+          "items": [
+            "Il … del bonifico è il signor Bianchi.",
+            "Nella … scriva «affitto ottobre».",
+            "Con il bonifico … i soldi arrivano in pochi secondi.",
+            "Per l'addebito diretto deve firmare il …",
+            "Il … della mia carta di credito è di 3.000 euro al mese.",
+            "Per pagare la mensa con pagoPA serve il codice dell'…"
+          ],
+          "key": [
+            "<b>beneficiario</b>",
+            "<b>causale</b>",
+            "<b>istantaneo</b>",
+            "<b>mandato</b>",
+            "<b>plafond</b>",
+            "<b>avviso</b>"
+          ]
+        },
+        {
+          "type": "Classificazione (B1–B2)",
+          "instr": "Quale strumento usa il cliente? Scegli tra: bonifico ordinario, bonifico istantaneo, addebito diretto, carta di credito, modello F24, pagoPA.",
+          "items": [
+            "Pagare ogni mese la bolletta della luce senza pensarci.",
+            "Pagare le imposte.",
+            "Mandare di domenica, subito, la caparra per un appartamento.",
+            "Pagare la mensa scolastica al Comune.",
+            "Comprare un volo online e pagare il mese dopo.",
+            "Pagare una fattura che scade tra una settimana, con il bonifico che arriva il giorno lavorativo dopo."
+          ],
+          "key": [
+            "l'<b>addebito diretto</b>",
+            "il <b>modello F24</b>",
+            "il <b>bonifico istantaneo</b>",
+            "<b>pagoPA</b>",
+            "la <b>carta di credito</b>",
+            "il <b>bonifico ordinario</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Rispondi al cliente in registro formale.",
+          "items": [
+            "Il cliente chiede la differenza tra bonifico ordinario e istantaneo.",
+            "La verifica del beneficiario dice che il nome non corrisponde all'IBAN.",
+            "Il cliente vede un addebito di una palestra che ha già disdetto.",
+            "Il cliente chiede la differenza tra carta di debito e carta di credito.",
+            "Una cliente anziana non sa come pagare una multa con pagoPA.",
+            "Il cliente ha fatto un bonifico all'IBAN sbagliato."
+          ],
+          "key": [
+            "Esempio: <b>l'ordinario arriva entro il giorno lavorativo dopo; l'istantaneo in pochi secondi, anche di notte o la domenica. Il costo è lo stesso, ma l'istantaneo non si può annullare.</b>",
+            "Esempio: <b>il sistema dice che il nome non corrisponde: Le consiglio di controllare i dati con il beneficiario prima di confermare. Se conferma lo stesso, il rischio è Suo.</b>",
+            "Esempio: <b>se l'addebito è diretto e autorizzato, può chiedere il rimborso entro otto settimane; intanto revochiamo il mandato, così non arrivano altri addebiti.</b>",
+            "Esempio: <b>con la carta di debito il pagamento esce subito dal conto; con la carta di credito paga tutto insieme il mese dopo, entro un limite di spesa.</b>",
+            "Esempio: <b>non si preoccupi, lo facciamo insieme: sull'avviso c'è un codice; lo inseriamo qui, controlliamo l'importo e confermiamo.</b>",
+            "Esempio: <b>mi dispiace, un bonifico partito non si può annullare. Possiamo chiedere alla banca del beneficiario di restituire la somma, ma serve il consenso di chi l'ha ricevuta.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è l'impiegato di una filiale, il docente è una signora in pensione che deve pagare le bollette, una multa e mandare 200 euro al nipote che studia all'estero, in un paese dell'area euro. Difficoltà da introdurre: la signora non vuole usare l'home banking e vuole fare tutto allo sportello.",
+          "items": [
+            "Accogli la cliente e capisci che cosa deve pagare.",
+            "Proponi l'addebito diretto per le bollette.",
+            "Spiega come si paga la multa con pagoPA.",
+            "Spiega il bonifico per il nipote: tempi e costi.",
+            "Rispondi con pazienza al rifiuto dell'home banking.",
+            "Riepiloga quello che avete fatto."
+          ],
+          "key": [
+            "Esempio: <b>Buongiorno signora, mi dica pure: che cosa deve pagare oggi?</b>",
+            "Esempio: <b>Per le bollette possiamo attivare l'addebito diretto: firma una volta il mandato e poi si pagano da sole.</b>",
+            "Esempio: <b>La multa la paghiamo qui con pagoPA: mi dà l'avviso? Uso il codice che c'è scritto sopra.</b>",
+            "Esempio: <b>Per Suo nipote facciamo un bonifico istantaneo: arriva in pochi secondi e costa come un bonifico normale. Mi serve il suo IBAN.</b>",
+            "Esempio: <b>Va benissimo, può fare tutto qui in filiale. Se un giorno vuole provare l'app, Le facciamo vedere come funziona.</b>",
+            "Esempio: <b>Allora: addebito diretto per luce e gas, multa pagata, bonifico partito. Ecco le ricevute.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "banca",
+      "cat": "Credito",
+      "title": "Prestiti e mutui: TAN, TAEG, ammortamento, ipoteca, fideiussione",
+      "def": "Il bancario presenta un mutuo o un prestito, spiega tassi e costi e accompagna il cliente fino all'erogazione. Questa scheda raccoglie il lessico per parlare di TAN e TAEG, tasso fisso e variabile, rata e piano di ammortamento, garanzie, surroga ed estinzione anticipata.",
+      "form": "Il <b>mutuo</b> è un finanziamento a medio-lungo termine, di solito per comprare casa, garantito da un'<b>ipoteca</b> sull'immobile; il <b>prestito personale</b> è più breve e senza ipoteca. Il costo si legge in due numeri: il <b>TAN</b> (solo gli interessi) e il <b>TAEG</b> (interessi più le spese obbligatorie: istruttoria, perizia, incasso della rata, assicurazioni obbligatorie). Per confrontare due offerte si usa il TAEG. Il tasso può essere <b>fisso</b> (di solito legato all'IRS), <b>variabile</b> (legato all'Euribor) o misto; la banca aggiunge il suo <i>spread</i>. Prima del contratto il cliente riceve il <b>PIES</b>, il prospetto informativo europeo standardizzato. Per i mutui per la casa delle persone fisiche si può cambiare banca senza costi con la <b>surroga</b> ed estinguere il mutuo in anticipo senza penali. La compravendita (preliminare, rogito) è spiegata in Diritto; la detrazione degli interessi in <i>Il fisco del cliente</i>.",
+      "tables": [
+        {
+          "before": "<b>Tassi e costi.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "il TAN",
+              "tasso annuo nominale: solo gli interessi"
+            ],
+            [
+              "il TAEG",
+              "tasso annuo effettivo globale: interessi e spese obbligatorie; serve per confrontare le offerte"
+            ],
+            [
+              "il tasso fisso / variabile / misto",
+              "non cambia mai / segue l'andamento del mercato / si può cambiare a scadenze stabilite"
+            ],
+            [
+              "l'Euribor / l'IRS",
+              "il parametro di riferimento dei tassi variabili / dei tassi fissi"
+            ],
+            [
+              "lo spread",
+              "quello che la banca aggiunge al parametro (per i titoli di Stato lo <i>spread</i> è un'altra cosa: vedi <i>Le notizie finanziarie</i>)"
+            ],
+            [
+              "l'istruttoria",
+              "l'esame della richiesta da parte della banca"
+            ],
+            [
+              "la perizia",
+              "la valutazione dell'immobile fatta da un tecnico"
+            ],
+            [
+              "il PIES",
+              "il prospetto informativo europeo standardizzato, con tutte le condizioni del mutuo"
+            ],
+            [
+              "la polizza scoppio e incendio",
+              "l'assicurazione sull'immobile che la banca di solito chiede per il mutuo"
+            ],
+            [
+              "la delibera",
+              "la decisione della banca di concedere il finanziamento"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Rata e garanzie.</b>",
+          "after": "Esempio: un mutuo di 200.000 euro in 25 anni al TAN fisso del 3% ha una rata mensile di circa 948 euro; nella prima rata la quota interessi è di 500 euro e la quota capitale di circa 448.",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "il capitale, il debito residuo",
+              "la somma prestata / la parte ancora da restituire"
+            ],
+            [
+              "la rata",
+              "la somma da pagare a ogni scadenza, di solito ogni mese"
+            ],
+            [
+              "la quota capitale / la quota interessi",
+              "la parte della rata che restituisce il prestito / la parte che paga gli interessi"
+            ],
+            [
+              "il piano di ammortamento",
+              "la tabella di tutte le rate; nell'ammortamento «alla francese» la rata è costante, la quota interessi scende e la quota capitale sale"
+            ],
+            [
+              "l'ipoteca",
+              "la garanzia sull'immobile: se il cliente non paga, la banca può farlo vendere"
+            ],
+            [
+              "la fideiussione, il garante",
+              "una persona si impegna a pagare se il cliente non paga"
+            ],
+            [
+              "la percentuale finanziata",
+              "la parte del valore dell'immobile che la banca presta; spesso fino all'80%"
+            ],
+            [
+              "l'erogazione",
+              "il momento in cui la banca versa i soldi; per il mutuo di solito al rogito"
+            ],
+            [
+              "la surroga",
+              "portare il mutuo in un'altra banca senza costi: il debito residuo resta uguale, tasso e durata possono cambiare"
+            ],
+            [
+              "l'estinzione anticipata",
+              "restituire tutto o una parte del debito prima della scadenza"
+            ],
+            [
+              "il prestito personale / finalizzato / la cessione del quinto",
+              "senza uno scopo preciso / per comprare un bene preciso / rimborsato con una parte dello stipendio o della pensione"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "il mutuo (ipotecario)",
+              "mortgage; sp. hipoteca",
+              "in italiano l'<i>ipoteca</i> è solo la garanzia sulla casa, non il prestito"
+            ],
+            [
+              "il tasso variabile",
+              "adjustable rate",
+              "non si dice «tasso aggiustabile»"
+            ],
+            [
+              "chiedere un prestito, farsi prestare",
+              "to borrow",
+              "<i>prestare</i> vuol dire «dare in prestito» (ingl. «to lend»)"
+            ],
+            [
+              "la rata",
+              "instalment",
+              "<i>installamento</i> non esiste; l'<i>installazione</i> è il montaggio di un impianto"
+            ],
+            [
+              "la perizia",
+              "appraisal",
+              "l'<i>apprezzamento</i> è un giudizio positivo o, in economia, un aumento di valore"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "presentare il mutuo",
+          "ex": "Le proponiamo un mutuo a <b>tasso fisso</b> del 3% per 25 anni. / Con un capitale di 200.000 euro la <b>rata</b> è di circa 948 euro al mese."
+        },
+        {
+          "label": "TAN e TAEG",
+          "ex": "Il <b>TAN</b> è del 3%, il <b>TAEG</b> del 3,25%: la differenza dipende soprattutto dalle spese di istruttoria e di perizia. / Per confrontare le offerte guardi il TAEG."
+        },
+        {
+          "label": "fisso o variabile",
+          "ex": "Con il tasso fisso la rata non cambia mai; con il <b>variabile</b> segue l'Euribor e può salire o scendere. / Le preparo una simulazione con un rialzo dei tassi."
+        },
+        {
+          "label": "le garanzie",
+          "ex": "Il mutuo è garantito da un'<b>ipoteca</b> sulla casa. / Con questo reddito potrebbe servire un <b>garante</b>."
+        },
+        {
+          "label": "documenti e tempi",
+          "ex": "Ci porti le ultime buste paga e il contratto preliminare. / Dopo la <b>perizia</b> e la <b>delibera</b>, il mutuo viene erogato al rogito."
+        },
+        {
+          "label": "surroga ed estinzione",
+          "ex": "Se trova condizioni migliori, può portare il mutuo in un'altra banca con la <b>surroga</b>, senza costi. / Può restituire una parte del debito in anticipo, senza penali."
+        }
+      ],
+      "warn": "<b>TAN</b> e <b>TAEG</b> non sono la stessa cosa: un TAN basso con spese alte può costare più di un TAN un po' più alto. <i>Spread</i> ha due significati: nel mutuo è il margine della banca, nei giornali la differenza tra titoli di Stato. Con il tasso variabile la rata può aumentare: va sempre detto, con un esempio. La percentuale finanziata e le condizioni dipendono dalla banca e dal cliente: valgono quelle del PIES. Prima della delibera non si promette che il mutuo sarà concesso.",
+      "errors": [
+        {
+          "wrong": "Ho un'ipoteca di 150.000 euro con la vostra banca.",
+          "right": "Ho un mutuo di 150.000 euro con la vostra banca.",
+          "why": "Lo spagnolo «hipoteca» (come l'inglese «mortgage») è il <i>mutuo</i>; l'<i>ipoteca</i> è solo la garanzia sulla casa."
+        },
+        {
+          "wrong": "Ho un mutuo a tasso aggiustabile.",
+          "right": "Ho un mutuo a tasso variabile.",
+          "why": "Calco dell'inglese «adjustable rate»: in italiano si dice <i>tasso variabile</i>; <i>aggiustare</i> vuol dire soprattutto «riparare» o «sistemare»."
+        },
+        {
+          "wrong": "Vorrei prestare 20.000 euro per comprare la macchina.",
+          "right": "Vorrei chiedere in prestito 20.000 euro per comprare la macchina.",
+          "why": "L'inglese «to borrow» è <i>chiedere (prendere) in prestito</i>; <i>prestare</i> vuol dire «dare in prestito»."
+        },
+        {
+          "wrong": "Pago 900 euro di installamento al mese.",
+          "right": "Pago una rata di 900 euro al mese.",
+          "why": "Dall'inglese «instalment»: in italiano si dice <i>rata</i>; «installamento» non esiste."
+        },
+        {
+          "wrong": "Domani viene il tecnico per l'apprezzamento della casa.",
+          "right": "Domani viene il tecnico per la perizia della casa.",
+          "why": "L'inglese «appraisal» è la <i>perizia</i>, la <i>stima</i>; l'<i>apprezzamento</i> è un giudizio positivo o, in economia, un aumento di valore (l'apprezzamento dell'euro)."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: TAEG, ipoteca, rata, perizia, surroga, garante.",
+          "items": [
+            "Il … comprende interessi e spese: serve per confrontare le offerte.",
+            "Sulla casa la banca iscrive un'…",
+            "La … del mio mutuo è di 700 euro al mese.",
+            "Prima della delibera un tecnico fa la … dell'appartamento.",
+            "Con la … ho portato il mutuo in un'altra banca senza spese.",
+            "Mio padre ha firmato come …"
+          ],
+          "key": [
+            "<b>TAEG</b>",
+            "<b>ipoteca</b>",
+            "<b>rata</b>",
+            "<b>perizia</b>",
+            "<b>surroga</b>",
+            "<b>garante</b>"
+          ]
+        },
+        {
+          "type": "Riformulazione (B1–B2)",
+          "instr": "Il cliente parla con parole sue: scrivi il termine bancario.",
+          "items": [
+            "«Il tasso che comprende anche le spese.»",
+            "«La garanzia che la banca mette sulla casa.»",
+            "«Un tecnico viene a vedere quanto vale l'appartamento.»",
+            "«Porto il mutuo in un'altra banca.»",
+            "«Voglio restituire tutto prima della fine.»",
+            "«La tabella con tutte le rate.»"
+          ],
+          "key": [
+            "il <b>TAEG</b>",
+            "l'<b>ipoteca</b>",
+            "la <b>perizia</b>",
+            "la <b>surroga</b>",
+            "l'<b>estinzione anticipata</b>",
+            "il <b>piano di ammortamento</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Rispondi al cliente con parole semplici.",
+          "items": [
+            "Il cliente chiede perché il TAEG è più alto del TAN.",
+            "Il cliente non sa se scegliere il tasso fisso o il variabile.",
+            "Il cliente chiede perché all'inizio paga soprattutto interessi.",
+            "Il cliente ha un contratto a tempo determinato e chiede se può avere il mutuo.",
+            "Il cliente ha un mutuo in un'altra banca al 4,5% e chiede come pagare meno.",
+            "Il cliente ha ricevuto un'eredità e vuole restituire una parte del mutuo."
+          ],
+          "key": [
+            "Esempio: <b>il TAN comprende solo gli interessi; il TAEG aggiunge le spese obbligatorie, come l'istruttoria e la perizia. Per questo è il numero giusto per confrontare.</b>",
+            "Esempio: <b>con il fisso sa sempre quanto paga; con il variabile oggi la rata è più bassa, ma può salire. Dipende da quanto rischio vuole correre: Le preparo una simulazione con tutti e due.</b>",
+            "Esempio: <b>gli interessi si calcolano sul debito residuo: all'inizio il debito è alto, quindi la quota interessi è alta; poi scende e sale la quota capitale.</b>",
+            "Esempio: <b>non è escluso: valutiamo il reddito, la durata del contratto e le altre spese. Potrebbe servire un garante; prima della delibera non posso prometterLe niente.</b>",
+            "Esempio: <b>può chiedere la surroga: se noi Le offriamo un tasso più basso, il mutuo passa da noi senza costi per Lei.</b>",
+            "Esempio: <b>per un mutuo per la casa può restituire una parte in anticipo senza penali; poi possiamo ridurre la rata o la durata.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è il consulente mutui di una banca, il docente è un cliente che vuole comprare la prima casa a 250.000 euro e ha 60.000 euro di risparmi. Difficoltà da introdurre: il cliente ha visto online un TAN più basso e chiede di avere lo stesso; poi chiede se la rata può aumentare.",
+          "items": [
+            "Scopri prezzo della casa, risparmi e reddito.",
+            "Proponi importo e durata del mutuo.",
+            "Spiega TAN e TAEG.",
+            "Spiega fisso e variabile, e il rischio del variabile.",
+            "Rispondi al confronto con l'offerta online.",
+            "Spiega i prossimi passi: documenti, perizia, delibera, rogito."
+          ],
+          "key": [
+            "Esempio: <b>La casa costa 250.000 euro e Lei ha 60.000 euro: quanto guadagna al mese, più o meno?</b>",
+            "Esempio: <b>Allora servirebbe un mutuo di 190.000 euro, il 76% del valore. In 25 anni al 3% fisso la rata è di circa 900 euro.</b>",
+            "Esempio: <b>Il TAN è il tasso degli interessi; il TAEG comprende anche le spese. Per confrontare guardi il TAEG.</b>",
+            "Esempio: <b>Con il fisso la rata resta di 900 euro per tutta la durata del mutuo; con il variabile oggi è più bassa, ma se l'Euribor sale, sale anche la rata.</b>",
+            "Esempio: <b>Mi mostri l'offerta: confrontiamo i TAEG. Non posso promettere lo stesso tasso, ma posso chiedere una valutazione al mio responsabile.</b>",
+            "Esempio: <b>Ci porti le buste paga e il preliminare; poi facciamo la perizia e, dopo la delibera, firmiamo dal notaio il giorno del rogito.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "banca",
+      "cat": "Credito",
+      "title": "Il credito alle imprese: fido, anticipo fatture, Ri.Ba.",
+      "def": "Il gestore imprese parla con un imprenditore che ha bisogno di liquidità: un fido sul conto, un anticipo sulle fatture, l'incasso dei crediti con la Ri.Ba. Questa scheda raccoglie il lessico per spiegare le forme di credito, le garanzie e quello che la banca guarda prima di decidere.",
+      "form": "Le imprese hanno bisogno di credito a breve per pagare fornitori e stipendi mentre aspettano i pagamenti dei clienti. Le forme più comuni sono il <b>fido</b> (l'impresa può andare in rosso sul conto fino a un limite), l'<b>anticipo fatture</b> (la banca anticipa una parte dell'importo di fatture non ancora pagate) e l'anticipo delle <b>Ri.Ba.</b> La <b>Ri.Ba.</b> (ricevuta bancaria) è un modo di incassare: l'impresa la presenta alla sua banca, che la manda alla banca del cliente; alla scadenza il cliente paga, e se non paga la Ri.Ba. torna <b>insoluta</b>. Prima di concedere credito la banca valuta il <b>merito creditizio</b>: bilanci, andamento del conto, Centrale dei Rischi (vedi <i>Sigle e organismi</i>). Spesso chiede garanzie, come la fideiussione dei soci o una garanzia pubblica (il Fondo di garanzia per le PMI). Con l'imprenditore si dà del <i>Lei</i> e si parla con i numeri.",
+      "tables": [
+        {
+          "before": "<b>Le forme di credito.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "il fido, l'affidamento",
+              "il limite fino a cui la banca fa credito al cliente"
+            ],
+            [
+              "l'apertura di credito in conto corrente",
+              "l'impresa può andare in rosso sul conto fino al fido"
+            ],
+            [
+              "lo sconfinamento",
+              "andare oltre il fido; costa di più"
+            ],
+            [
+              "l'anticipo fatture",
+              "la banca anticipa una parte dell'importo delle fatture emesse"
+            ],
+            [
+              "la Ri.Ba. (ricevuta bancaria)",
+              "un modo di incassare: la banca del cliente gli presenta la ricevuta alla scadenza"
+            ],
+            [
+              "salvo buon fine (s.b.f.)",
+              "la banca accredita subito, ma se il cliente non paga riprende la somma"
+            ],
+            [
+              "l'insoluto",
+              "una Ri.Ba. o una fattura non pagata alla scadenza"
+            ],
+            [
+              "il castelletto",
+              "l'importo massimo di Ri.Ba. o fatture che la banca accetta di anticipare"
+            ],
+            [
+              "il finanziamento chirografario",
+              "un prestito senza garanzie reali (né ipoteca né pegno), per esempio per un macchinario"
+            ],
+            [
+              "il leasing",
+              "usare un bene (un macchinario, un furgone) pagando un canone, con la possibilità di comprarlo alla fine"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Valutazione, garanzie e dati dell'impresa.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "il merito creditizio",
+              "la capacità del cliente di restituire il debito"
+            ],
+            [
+              "la partita IVA",
+              "il numero fiscale di un'impresa o di un professionista; serve per aprire il conto dell'impresa e per le fatture"
+            ],
+            [
+              "il rating interno",
+              "il giudizio che la banca dà al cliente"
+            ],
+            [
+              "la Centrale dei Rischi",
+              "l'archivio della Banca d'Italia con i debiti dei clienti verso banche e finanziarie"
+            ],
+            [
+              "la fideiussione dei soci",
+              "i soci si impegnano a pagare con i loro beni se l'impresa non paga"
+            ],
+            [
+              "il Fondo di garanzia per le PMI",
+              "una garanzia pubblica su una parte del finanziamento"
+            ],
+            [
+              "la liquidità, il capitale circolante",
+              "i soldi disponibili / le risorse che servono per l'attività di tutti i giorni"
+            ],
+            [
+              "il piano industriale, il business plan",
+              "il documento con i progetti e i numeri previsti dell'impresa"
+            ],
+            [
+              "la revoca del fido",
+              "la banca toglie il fido; le condizioni sono nel contratto"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "il fido, l'apertura di credito",
+              "sp. póliza de crédito",
+              "la <i>polizza</i> in italiano è un contratto di assicurazione"
+            ],
+            [
+              "chirografario, senza garanzie reali",
+              "unsecured",
+              "«non sicuro» in italiano vuol dire «rischioso»; si può dire anche «non garantito»"
+            ],
+            [
+              "l'anticipo",
+              "advance",
+              "l'<i>avanzo</i> in italiano è quello che resta: l'avanzo di bilancio"
+            ],
+            [
+              "concedere (un prestito)",
+              "to grant",
+              "«garantire un prestito» vuol dire fare da garante"
+            ],
+            [
+              "il capitale circolante",
+              "working capital",
+              "non si dice «capitale di lavoro»"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "capire il bisogno",
+          "ex": "Di quanto avete bisogno, e per quanto tempo? / I vostri clienti pagano a 60 o a 90 giorni?"
+        },
+        {
+          "label": "il fido",
+          "ex": "Possiamo valutare un <b>fido</b> di 50.000 euro sul conto. / Se superate il fido, lo <b>sconfinamento</b> costa di più."
+        },
+        {
+          "label": "anticipo fatture e Ri.Ba.",
+          "ex": "Vi anticipiamo l'80% dell'importo delle fatture. / Le <b>Ri.Ba.</b> le accreditiamo <b>salvo buon fine</b>: se il cliente non paga, riprendiamo la somma."
+        },
+        {
+          "label": "i documenti",
+          "ex": "Ci servono gli ultimi due <b>bilanci</b> e la situazione contabile dell'anno. / Consultiamo anche la <b>Centrale dei Rischi</b>."
+        },
+        {
+          "label": "le garanzie",
+          "ex": "Per questo importo chiediamo la <b>fideiussione</b> dei soci. / Possiamo chiedere la garanzia del Fondo per le PMI."
+        },
+        {
+          "label": "un insoluto",
+          "ex": "Una Ri.Ba. del cliente Rossi è tornata <b>insoluta</b>: la riaddebitiamo sul vostro conto."
+        }
+      ],
+      "warn": "<b>Salvo buon fine</b> non è un incasso definitivo: se il cliente dell'impresa non paga, la somma viene ripresa. L'anticipo non è gratis: si pagano interessi e commissioni. Le percentuali di anticipo e i limiti dipendono dalla banca e dal cliente: quelle della scheda sono esempi. Prima della delibera non si promette il fido. Il fido si può revocare secondo le regole del contratto: va detto al cliente.",
+      "errors": [
+        {
+          "wrong": "Ci serve una polizza di credito di 50.000 euro.",
+          "right": "Ci serve un fido (un'apertura di credito) di 50.000 euro.",
+          "why": "Lo spagnolo «póliza de crédito» è il <i>fido</i>, l'<i>apertura di credito</i>; la <i>polizza</i> è un contratto di assicurazione."
+        },
+        {
+          "wrong": "Ci serve un prestito non sicuro, senza ipoteca.",
+          "right": "Ci serve un finanziamento chirografario, cioè senza garanzie reali.",
+          "why": "Calco dell'inglese «unsecured loan»: si dice <i>finanziamento chirografario</i>, <i>senza garanzie</i>; «non sicuro» vuol dire «rischioso»."
+        },
+        {
+          "wrong": "La banca ci dà un avanzo sulle fatture.",
+          "right": "La banca ci dà un anticipo sulle fatture.",
+          "why": "L'inglese «advance» è l'<i>anticipo</i>; l'<i>avanzo</i> è quello che resta."
+        },
+        {
+          "wrong": "La banca ci ha garantito un prestito di 100.000 euro.",
+          "right": "La banca ci ha concesso un prestito di 100.000 euro.",
+          "why": "L'inglese «to grant» qui è <i>concedere</i>; «garantire un prestito» vuol dire fare da garante."
+        },
+        {
+          "wrong": "Il prestito serve per il capitale di lavoro.",
+          "right": "Il prestito serve per il capitale circolante.",
+          "why": "Calco dell'inglese «working capital»: in italiano si dice <i>capitale circolante</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: fido, anticipo, insoluta, bilanci, fideiussione, sconfinamento.",
+          "items": [
+            "Sul conto dell'azienda c'è un … di 30.000 euro.",
+            "La banca ci dà un … dell'80% sulle fatture.",
+            "La Ri.Ba. del cliente Neri è tornata …",
+            "Per valutare la richiesta ci servono gli ultimi due …",
+            "I soci hanno firmato una … personale.",
+            "Questo mese siete andati oltre il fido: lo … costa di più."
+          ],
+          "key": [
+            "<b>fido</b>",
+            "<b>anticipo</b>",
+            "<b>insoluta</b>",
+            "<b>bilanci</b>",
+            "<b>fideiussione</b>",
+            "<b>sconfinamento</b>"
+          ]
+        },
+        {
+          "type": "Classificazione (B1–B2)",
+          "instr": "Di quale forma di credito ha bisogno l'impresa? Scegli tra: fido, anticipo fatture, anticipo Ri.Ba., finanziamento chirografario, leasing.",
+          "items": [
+            "Per qualche settimana deve poter andare in rosso sul conto.",
+            "Ha emesso fatture a 90 giorni e vuole una parte dei soldi subito.",
+            "Deve comprare un macchinario e restituire il prestito in cinque anni, senza ipoteca.",
+            "Vuole usare un furgone pagando un canone e comprarlo alla fine.",
+            "Ha presentato le ricevute bancarie dei clienti e vuole l'accredito prima della scadenza.",
+            "Ha bisogno ogni mese di un margine sul conto per pagare gli stipendi prima degli incassi."
+          ],
+          "key": [
+            "il <b>fido</b>",
+            "l'<b>anticipo fatture</b>",
+            "un <b>finanziamento chirografario</b>",
+            "il <b>leasing</b>",
+            "l'<b>anticipo Ri.Ba.</b> (salvo buon fine)",
+            "il <b>fido</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Rispondi all'imprenditore in registro formale.",
+          "items": [
+            "Spiega a un imprenditore che ha appena aperto l'attività che cos'è una Ri.Ba.",
+            "L'imprenditore chiede perché la banca guarda la Centrale dei Rischi.",
+            "Comunica all'imprenditore che una Ri.Ba. è tornata insoluta.",
+            "L'imprenditore non vuole firmare una fideiussione personale.",
+            "L'impresa è andata oltre il fido per la terza volta in un mese.",
+            "L'imprenditore chiede un fido più alto, ma l'ultimo bilancio è in perdita."
+          ],
+          "key": [
+            "Esempio: <b>è un modo per incassare dai clienti: Lei ci consegna le ricevute con importi e scadenze, noi le mandiamo alla banca del cliente, e alla scadenza il cliente paga.</b>",
+            "Esempio: <b>la Centrale dei Rischi ci dice quanti debiti ha l'impresa con le altre banche e se li paga regolarmente: ci serve per valutare il credito.</b>",
+            "Esempio: <b>Le comunico che la Ri.Ba. del 30 settembre del cliente Rossi è tornata insoluta: la riaddebitiamo sul conto. Le consiglio di contattare il cliente.</b>",
+            "Esempio: <b>capisco. Possiamo valutare una garanzia pubblica, come il Fondo per le PMI, che copre una parte del finanziamento; ma per questo importo una garanzia serve.</b>",
+            "Esempio: <b>è la terza volta questo mese che il conto va oltre il fido: lo sconfinamento costa di più. Vediamo insieme se il fido attuale basta per le vostre esigenze.</b>",
+            "Esempio: <b>con un bilancio in perdita la richiesta è più difficile. Mi porti la situazione di quest'anno e il piano per i prossimi mesi: la decisione spetta alla delibera.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è il gestore imprese di una banca, il docente è il titolare di un'azienda che produce mobili: i suoi clienti pagano a 90 giorni, mentre lui deve pagare i fornitori a 30. Difficoltà da introdurre: chiede 200.000 euro subito, e l'ultimo bilancio è in perdita.",
+          "items": [
+            "Fai domande per capire il bisogno.",
+            "Proponi l'anticipo fatture o delle Ri.Ba.",
+            "Spiega il salvo buon fine.",
+            "Chiedi i documenti.",
+            "Parla delle garanzie.",
+            "Rispondi sul bilancio in perdita senza promettere."
+          ],
+          "key": [
+            "Esempio: <b>Quanto fatturate al mese, e a quanti giorni pagano i vostri clienti?</b>",
+            "Esempio: <b>Invece di un prestito, possiamo anticiparvi le fatture o le Ri.Ba. dei clienti: così avete i soldi prima.</b>",
+            "Esempio: <b>L'anticipo è salvo buon fine: se un cliente non paga, la somma viene ripresa dal conto.</b>",
+            "Esempio: <b>Mi servono gli ultimi due bilanci, la situazione di quest'anno e l'elenco dei clienti principali.</b>",
+            "Esempio: <b>Per un importo così potrebbe servire la fideiussione dei soci, o la garanzia del Fondo per le PMI.</b>",
+            "Esempio: <b>Il bilancio in perdita pesa sulla valutazione: mi spieghi da che cosa dipende e come pensate di recuperare. Poi porto la pratica in delibera.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "banca",
+      "cat": "Risparmio",
+      "title": "Investimenti: azioni, obbligazioni, titoli di Stato, fondi, profilo di rischio",
+      "def": "Il consulente propone al cliente come investire i risparmi: azioni, obbligazioni, titoli di Stato, fondi, ETF. Questa scheda raccoglie il lessico per spiegare prodotti, rischio, rendimento e costi, e per conoscere il profilo del cliente prima di consigliare.",
+      "form": "Prima di consigliare un investimento la banca deve conoscere il cliente: con il <b>questionario MiFID</b> raccoglie esperienza, situazione finanziaria, obiettivi, <b>orizzonte temporale</b> e propensione al rischio, e controlla che il prodotto sia <b>adeguato</b>. La regola base: più rendimento atteso vuol dire più rischio. Le <b>azioni</b> sono quote di una società; le <b>obbligazioni</b> sono prestiti a una società o a uno Stato (BTP, BOT), con interessi e una scadenza; i <b>fondi comuni</b> e gli <b>ETF</b> raccolgono il denaro di molti risparmiatori e lo investono in tanti titoli (<b>diversificazione</b>). I titoli del cliente stanno nel <b>dossier titoli</b>. Le tasse sui rendimenti sono spiegate in <i>Il fisco del cliente</i>, il lessico dei giornali in <i>Le notizie finanziarie</i>, i depositi senza rischio di mercato in <i>Il risparmio e i depositi</i>. Mai promettere rendimenti.",
+      "tables": [
+        {
+          "before": "<b>I prodotti.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "l'azione, l'azionista",
+              "una quota del capitale di una società / chi la possiede"
+            ],
+            [
+              "il dividendo",
+              "la parte di utile che la società distribuisce agli azionisti"
+            ],
+            [
+              "l'obbligazione",
+              "un prestito a una società o a uno Stato: interessi (la cedola) e rimborso alla scadenza"
+            ],
+            [
+              "il BTP / il BOT",
+              "titolo di Stato italiano a medio-lungo termine, con una cedola di solito ogni sei mesi / titolo di Stato fino a un anno, senza cedola"
+            ],
+            [
+              "il fondo comune d'investimento",
+              "un gestore investe il denaro di molti risparmiatori in tanti titoli"
+            ],
+            [
+              "l'ETF",
+              "un fondo quotato in Borsa che segue un indice"
+            ],
+            [
+              "il PAC (piano di accumulo)",
+              "investire una piccola somma ogni mese, per esempio in un fondo"
+            ],
+            [
+              "il dossier titoli",
+              "il «conto» dove la banca custodisce i titoli del cliente"
+            ],
+            [
+              "la commissione di gestione",
+              "il costo annuo di un fondo, in percentuale"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Rischio e profilo del cliente.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "il rendimento",
+              "il guadagno di un investimento, in percentuale"
+            ],
+            [
+              "il rischio, la volatilità",
+              "la possibilità di perdere / quanto il prezzo sale e scende"
+            ],
+            [
+              "la diversificazione",
+              "non mettere tutti i soldi nello stesso investimento"
+            ],
+            [
+              "l'orizzonte temporale",
+              "per quanto tempo il cliente vuole investire"
+            ],
+            [
+              "il profilo di rischio",
+              "prudente, moderato, dinamico"
+            ],
+            [
+              "il questionario MiFID",
+              "le domande su esperienza, obiettivi e situazione finanziaria del cliente"
+            ],
+            [
+              "l'adeguatezza",
+              "il prodotto è adatto al profilo del cliente"
+            ],
+            [
+              "la plusvalenza / la minusvalenza",
+              "il guadagno / la perdita quando si vende un titolo"
+            ],
+            [
+              "il capitale garantito / non garantito",
+              "alla scadenza si riceve almeno la somma investita / si può perdere una parte del capitale"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "investire",
+              "sp. invertir",
+              "<i>invertire</i> in italiano vuol dire «girare al contrario»"
+            ],
+            [
+              "le azioni",
+              "stocks, shares",
+              "lo <i>stock</i> in italiano è la merce in magazzino"
+            ],
+            [
+              "il fondo comune",
+              "mutual fund",
+              "il <i>mutuo</i> in italiano è il prestito per la casa"
+            ],
+            [
+              "il consiglio",
+              "advice",
+              "l'<i>avviso</i> è una comunicazione o un avvertimento"
+            ],
+            [
+              "il piano di accumulo (PAC)",
+              "savings plan",
+              "il <i>piano di salvataggio</i> è quello per salvare una banca o un'azienda in crisi"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "conoscere il cliente",
+          "ex": "Prima di proporLe qualcosa compiliamo il <b>questionario</b>: per quanto tempo vuole investire? / Che cosa farebbe se in un anno l'investimento perdesse il 10%?"
+        },
+        {
+          "label": "i prodotti",
+          "ex": "Le <b>azioni</b> possono rendere di più, ma possono anche perdere molto. / Questo <b>BTP</b> paga una cedola ogni sei mesi e rimborsa il capitale alla scadenza."
+        },
+        {
+          "label": "diversificare",
+          "ex": "Non metta tutti i risparmi nello stesso titolo: un fondo diversifica per Lei. / Con un <b>PAC</b> investe 100 euro al mese."
+        },
+        {
+          "label": "i costi",
+          "ex": "Il fondo ha una <b>commissione di gestione</b> dell'1,5% l'anno. / Un ETF di solito costa meno."
+        },
+        {
+          "label": "il rischio",
+          "ex": "Il capitale non è garantito: può perdere una parte di quello che investe. / I rendimenti passati non sono una garanzia per il futuro."
+        },
+        {
+          "label": "l'adeguatezza",
+          "ex": "Con il Suo profilo prudente questo prodotto non è <b>adeguato</b>. / Le propongo una soluzione più adatta al Suo orizzonte."
+        }
+      ],
+      "warn": "Mai promettere un rendimento: si parla di rendimento atteso o passato. Anche i titoli di Stato hanno un rischio: il prezzo cambia prima della scadenza, e il rimborso dipende dallo Stato che li emette. <i>Garantito</i> si dice solo quando il contratto lo prevede davvero. Azioni, obbligazioni e fondi non sono depositi: non sono coperti dalla garanzia dei depositi (vedi <i>Il risparmio e i depositi</i>). Se il prodotto non è adeguato al profilo del cliente, va detto con chiarezza.",
+      "errors": [
+        {
+          "wrong": "Vorrei invertire 10.000 euro in un fondo.",
+          "right": "Vorrei investire 10.000 euro in un fondo.",
+          "why": "Lo spagnolo «invertir» è <i>investire</i>; <i>invertire</i> vuol dire «girare al contrario»."
+        },
+        {
+          "wrong": "Vorrei comprare degli stock di questa società.",
+          "right": "Vorrei comprare delle azioni di questa società.",
+          "why": "L'inglese «stocks» sono le <i>azioni</i>; lo <i>stock</i> è la merce in magazzino."
+        },
+        {
+          "wrong": "Ho messo i risparmi in un fondo mutuo.",
+          "right": "Ho messo i risparmi in un fondo comune.",
+          "why": "Calco dell'inglese «mutual fund»: in italiano si dice <i>fondo comune</i>; il <i>mutuo</i> è il prestito per la casa."
+        },
+        {
+          "wrong": "Le posso dare un avviso sui Suoi risparmi?",
+          "right": "Le posso dare un consiglio sui Suoi risparmi?",
+          "why": "L'inglese «advice» è il <i>consiglio</i>; l'<i>avviso</i> è una comunicazione o un avvertimento («a mio avviso» vuol dire «secondo me»)."
+        },
+        {
+          "wrong": "Le propongo un piano di salvataggio di 100 euro al mese.",
+          "right": "Le propongo un piano di accumulo (PAC) di 100 euro al mese.",
+          "why": "Calco dell'inglese «savings plan»: si dice <i>piano di accumulo</i>; il <i>piano di salvataggio</i> è quello per salvare una banca o un'azienda in crisi."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: azioni, cedola, diversificazione, orizzonte temporale, questionario, ETF.",
+          "items": [
+            "Ho comprato … di una società che produce energia.",
+            "Questo BTP paga una … ogni sei mesi.",
+            "Con la … il rischio si divide tra tanti titoli.",
+            "Il Suo … è di dieci anni: può accettare un po' più di rischio.",
+            "Prima di investire deve compilare il …",
+            "Un … segue un indice ed è quotato in Borsa."
+          ],
+          "key": [
+            "<b>azioni</b>",
+            "<b>cedola</b>",
+            "<b>diversificazione</b>",
+            "<b>orizzonte temporale</b>",
+            "<b>questionario</b>",
+            "<b>ETF</b>"
+          ]
+        },
+        {
+          "type": "Classificazione (B1–B2)",
+          "instr": "Che prodotto è? Scegli tra: azione, obbligazione societaria, BTP, BOT, fondo comune, ETF.",
+          "items": [
+            "Una quota di una società, che può pagare un dividendo.",
+            "Un prestito allo Stato italiano per dieci anni, con una cedola ogni sei mesi.",
+            "Un titolo dello Stato italiano a sei mesi, senza cedola.",
+            "Un prestito a un'azienda, con interessi e rimborso alla scadenza.",
+            "Un fondo quotato in Borsa che segue un indice.",
+            "Un gestore investe i soldi di molti risparmiatori in tanti titoli diversi."
+          ],
+          "key": [
+            "un'<b>azione</b>",
+            "un <b>BTP</b>",
+            "un <b>BOT</b>",
+            "un'<b>obbligazione societaria</b>",
+            "un <b>ETF</b>",
+            "un <b>fondo comune</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Rispondi al cliente con prudenza e chiarezza.",
+          "items": [
+            "Il cliente chiede: «Qual è l'investimento sicuro che rende il 10%?»",
+            "Spiega la diversificazione a un cliente che vuole mettere tutto in un'unica azione.",
+            "Il cliente non capisce perché deve rispondere al questionario.",
+            "Una cliente di 75 anni, con profilo prudente, chiede un fondo tutto in azioni.",
+            "Il fondo del cliente ha perso l'8% e il cliente è preoccupato.",
+            "Spiega la differenza tra azione e obbligazione."
+          ],
+          "key": [
+            "Esempio: <b>un investimento sicuro con un rendimento del 10% purtroppo non esiste: più rendimento vuol dire più rischio. Vediamo insieme quanto rischio può accettare.</b>",
+            "Esempio: <b>se quella società va male, perde molto. Se divide i soldi su tanti titoli, una perdita pesa meno sul totale.</b>",
+            "Esempio: <b>è un obbligo di legge e serve a Lei: con le Sue risposte possiamo proporLe solo prodotti adatti ai Suoi obiettivi e al rischio che può sopportare.</b>",
+            "Esempio: <b>capisco l'interesse, ma con il Suo profilo e il Suo orizzonte un fondo tutto azionario non è adeguato: può avere perdite forti. Le propongo una soluzione più prudente.</b>",
+            "Esempio: <b>capisco la preoccupazione. Il Suo orizzonte è di dieci anni e il fondo è diversificato: vediamo insieme da che cosa dipende la perdita prima di decidere.</b>",
+            "Esempio: <b>con l'azione Lei diventa socio della società e guadagna se la società va bene; con l'obbligazione presta soldi alla società, che Le paga interessi e Le restituisce il capitale alla scadenza.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è il consulente finanziario di una banca, il docente è un cliente di 40 anni con 30.000 euro sul conto corrente, che vuole «farli fruttare». Difficoltà da introdurre: un amico ha guadagnato molto con le criptovalute e il cliente vuole fare lo stesso.",
+          "items": [
+            "Fai domande per conoscere il profilo del cliente.",
+            "Chiedi orizzonte temporale e obiettivi.",
+            "Proponi una soluzione diversificata.",
+            "Spiega rischi e costi.",
+            "Rispondi con prudenza sulle criptovalute.",
+            "Spiega i prossimi passi."
+          ],
+          "key": [
+            "Esempio: <b>Ha già investito in passato? Che cosa farebbe se l'investimento perdesse il 10%?</b>",
+            "Esempio: <b>Fra quanti anni potrebbe servirLe questo denaro? Lo mette da parte per la casa, per la pensione?</b>",
+            "Esempio: <b>Potremmo dividere: una parte in titoli di Stato e una parte in un fondo diversificato, magari con un PAC mensile.</b>",
+            "Esempio: <b>Il capitale non è garantito e il fondo ha una commissione di gestione dell'1,2% l'anno: lo trova tutto nel documento informativo.</b>",
+            "Esempio: <b>Le criptovalute possono salire molto, ma anche perdere molto in pochi giorni, e non sono coperte da nessuna garanzia. Non le consiglierei per i risparmi che Le servono.</b>",
+            "Esempio: <b>Compiliamo il questionario, poi Le preparo una proposta scritta con rischi e costi, e la guardiamo insieme la prossima settimana.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "banca",
+      "cat": "Risparmio",
+      "title": "Il risparmio e i depositi: conto deposito, libretto, buoni postali, garanzia dei depositi",
+      "def": "Il bancario propone al cliente come mettere da parte i risparmi senza il rischio dei mercati: conto deposito, libretto, certificato di deposito, buoni fruttiferi postali. Questa scheda raccoglie il lessico per spiegare tassi lordi e netti, vincoli, svincolo anticipato e garanzia dei depositi.",
+      "form": "Il <b>conto deposito</b> serve a mettere da parte una somma che non serve subito: di solito rende più del conto corrente, ma non si usa per i pagamenti. Può essere <b>libero</b> (si ritira quando si vuole) o <b>vincolato</b> (la somma resta ferma per un periodo, per esempio 12 mesi, con un tasso più alto); con lo <b>svincolo anticipato</b> di solito si perde una parte degli interessi. I tassi si indicano <b>al lordo</b>: sugli interessi si paga il 26%, e sul conto deposito anche l'imposta di bollo dello 0,2% l'anno (vedi <i>Il fisco del cliente</i>). I <b>buoni fruttiferi postali</b> li emette Cassa Depositi e Prestiti, sono garantiti dallo Stato e si comprano alle Poste; sui loro interessi si paga il 12,5%. I depositi in banca sono protetti dal <b>Fondo interbancario di tutela dei depositi</b> (FITD; per le banche di credito cooperativo, dal Fondo di garanzia dei depositanti del credito cooperativo) fino a 100.000 euro per depositante e per banca; azioni, obbligazioni e fondi non sono coperti. Lordo e netto vanno sempre distinti.",
+      "tables": [
+        {
+          "before": "<b>I prodotti.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "il conto deposito libero / vincolato",
+              "si ritirano i soldi quando si vuole / i soldi restano fermi per un periodo stabilito"
+            ],
+            [
+              "il vincolo, la scadenza del vincolo",
+              "il periodo in cui i soldi restano fermi / il giorno in cui finisce"
+            ],
+            [
+              "lo svincolo anticipato",
+              "ritirare i soldi prima della scadenza; di solito si perde una parte degli interessi (lo dice il contratto)"
+            ],
+            [
+              "il conto di appoggio",
+              "il conto corrente collegato, dove arrivano gli interessi e i soldi alla scadenza"
+            ],
+            [
+              "il libretto di risparmio (bancario o postale)",
+              "un deposito semplice per mettere da parte piccole somme"
+            ],
+            [
+              "il certificato di deposito",
+              "una somma depositata per un periodo fisso, con un tasso stabilito"
+            ],
+            [
+              "i buoni fruttiferi postali",
+              "emessi da Cassa Depositi e Prestiti, garantiti dallo Stato, si comprano alle Poste"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Tassi e tutela.</b>",
+          "after": "Esempio: 10.000 euro in un conto deposito al 2,5% lordo per un anno danno 250 euro di interessi lordi; meno il 26%, restano 185 euro; poi c'è l'imposta di bollo dello 0,2%, cioè 20 euro.",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "il tasso lordo / netto",
+              "prima / dopo le tasse"
+            ],
+            [
+              "gli interessi maturati",
+              "gli interessi guadagnati fino a quel momento"
+            ],
+            [
+              "la capitalizzazione degli interessi",
+              "gli interessi si aggiungono al capitale e producono altri interessi"
+            ],
+            [
+              "la ritenuta del 26% / del 12,5%",
+              "la tassa sugli interessi dei depositi / sugli interessi dei buoni postali e dei titoli di Stato"
+            ],
+            [
+              "l'imposta di bollo dello 0,2%",
+              "l'imposta annua sul conto deposito"
+            ],
+            [
+              "il FITD",
+              "il Fondo interbancario di tutela dei depositi: se la banca fallisce, rimborsa fino a 100.000 euro per depositante e per banca (per le banche di credito cooperativo c'è un fondo simile, con lo stesso limite)"
+            ],
+            [
+              "che cosa copre / che cosa non copre",
+              "conti correnti, conti deposito, libretti, certificati di deposito nominativi / azioni, obbligazioni, fondi"
+            ],
+            [
+              "l'inflazione, il potere d'acquisto",
+              "l'aumento dei prezzi / quello che si può comprare con una somma"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "gli interessi maturati",
+              "accrued interest",
+              "non si dice «interessi accresciuti»"
+            ],
+            [
+              "il libretto di risparmio",
+              "passbook, savings book; ted. Sparbuch",
+              "non si dice «libro di risparmio»"
+            ],
+            [
+              "il deposito vincolato",
+              "sp. imposición a plazo",
+              "l'<i>imposizione</i> in italiano è un obbligo o una tassa: l'imposizione fiscale"
+            ],
+            [
+              "la scadenza",
+              "maturity",
+              "la <i>maturità</i> in italiano è l'esame di fine scuola superiore, o l'età adulta"
+            ],
+            [
+              "rendere (il 2%)",
+              "to earn",
+              "per un conto si dice <i>rende</i>; <i>guadagna</i> chi riceve gli interessi, o un titolo che sale in Borsa"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "proporre un deposito",
+          "ex": "Se questi soldi non Le servono per un anno, può metterli in un <b>conto deposito vincolato</b>. / Oggi il tasso per 12 mesi è del 2,5% lordo."
+        },
+        {
+          "label": "lordo e netto",
+          "ex": "Il 2,5% è <b>lordo</b>: sugli interessi si paga il 26%. / Su 10.000 euro riceve circa 185 euro netti in un anno, meno l'imposta di bollo."
+        },
+        {
+          "label": "lo svincolo",
+          "ex": "Se ritira i soldi prima della scadenza, perde una parte degli interessi: lo trova nel contratto. / Con il conto libero, invece, può ritirarli quando vuole."
+        },
+        {
+          "label": "i buoni postali",
+          "ex": "I <b>buoni fruttiferi</b> li trova alle Poste: sono garantiti dallo Stato e sugli interessi si paga il 12,5%."
+        },
+        {
+          "label": "la garanzia dei depositi",
+          "ex": "I depositi sono protetti dal <b>Fondo interbancario</b> fino a 100.000 euro per persona e per banca. / Le azioni e i fondi, invece, non sono coperti."
+        },
+        {
+          "label": "l'inflazione",
+          "ex": "Con l'inflazione al 2%, un tasso netto dell'1% non basta a mantenere il <b>potere d'acquisto</b>."
+        }
+      ],
+      "warn": "Il tasso pubblicizzato di solito è <b>lordo</b>: va sempre detto quanto resta al netto. Lo svincolo anticipato e le sue condizioni dipendono dal contratto. Il limite di 100.000 euro vale per ogni depositante e per ogni banca: in un conto cointestato conta la quota di ciascun intestatario. Azioni, obbligazioni e fondi non sono coperti dalla garanzia dei depositi; i buoni fruttiferi postali sono garantiti dallo Stato. I tassi della scheda sono esempi: valgono quelli del foglio informativo.",
+      "errors": [
+        {
+          "wrong": "Gli interessi accresciuti finora sono 120 euro.",
+          "right": "Gli interessi maturati finora sono 120 euro.",
+          "why": "Calco dell'inglese «accrued interest»: si dice <i>interessi maturati</i>; <i>accrescere</i> vuol dire «far diventare più grande»."
+        },
+        {
+          "wrong": "Ho messo da parte un po' di soldi sul libro di risparmio.",
+          "right": "Ho messo da parte un po' di soldi sul libretto di risparmio.",
+          "why": "Calco dell'inglese «passbook, savings book» (o del tedesco «Sparbuch»): si dice <i>libretto di risparmio</i>; il <i>libro</i> è quello da leggere."
+        },
+        {
+          "wrong": "Vorrei fare un'imposizione a dodici mesi.",
+          "right": "Vorrei fare un deposito vincolato a dodici mesi.",
+          "why": "Lo spagnolo «imposición a plazo» è il <i>deposito vincolato</i>; l'<i>imposizione</i> è un obbligo o una tassa."
+        },
+        {
+          "wrong": "Alla maturità del vincolo ritiro tutto.",
+          "right": "Alla scadenza del vincolo ritiro tutto.",
+          "why": "L'inglese «maturity» qui è la <i>scadenza</i>; la <i>maturità</i> è l'esame di fine scuola superiore."
+        },
+        {
+          "wrong": "Questo conto guadagna il 2% l'anno.",
+          "right": "Questo conto rende il 2% l'anno.",
+          "why": "Calco dell'inglese «the account earns 2%»: per un conto si dice che <i>rende</i> (o <i>paga</i>) il 2%; <i>guadagnare</i> si dice di chi riceve gli interessi, o in Borsa di un titolo che sale."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: vincolato, svincolo, lordo, netto, buoni fruttiferi, Fondo interbancario.",
+          "items": [
+            "Il conto deposito … rende di più, ma i soldi restano fermi un anno.",
+            "Con lo … anticipato perde una parte degli interessi.",
+            "Il tasso del 3% è …: prima delle tasse.",
+            "Al … , dopo le tasse, il rendimento è più basso.",
+            "I … postali sono garantiti dallo Stato.",
+            "Il … di tutela dei depositi copre fino a 100.000 euro."
+          ],
+          "key": [
+            "<b>vincolato</b>",
+            "<b>svincolo</b>",
+            "<b>lordo</b>",
+            "<b>netto</b>",
+            "<b>buoni fruttiferi</b>",
+            "<b>Fondo interbancario</b>"
+          ]
+        },
+        {
+          "type": "Calcolo (B1–B2)",
+          "instr": "Calcola e scrivi il risultato.",
+          "items": [
+            "10.000 euro al 3% lordo per un anno: quanto sono gli interessi lordi?",
+            "Sugli interessi del punto 1 si paga il 26%: quanto resta al netto?",
+            "Imposta di bollo dello 0,2% l'anno su 10.000 euro in un conto deposito: quanto si paga?",
+            "Buoni postali: 150 euro di interessi lordi, con la ritenuta del 12,5%. Quanto resta al netto?",
+            "Un cliente ha 130.000 euro su un solo conto in una banca: fino a quanto è protetto dal FITD?",
+            "Due persone hanno 180.000 euro su un conto cointestato, metà ciascuna: quanto è protetto?"
+          ],
+          "key": [
+            "<b>300 euro</b>",
+            "<b>222 euro</b> (300 − 78)",
+            "<b>20 euro</b>",
+            "<b>131,25 euro</b> (150 − 18,75)",
+            "fino a <b>100.000 euro</b>",
+            "<b>tutti i 180.000 euro</b>, se non hanno altri depositi nella stessa banca: 90.000 a testa, sotto il limite di 100.000 per depositante"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Rispondi al cliente con parole semplici.",
+          "items": [
+            "Spiega la differenza tra conto corrente e conto deposito.",
+            "Il cliente vuole ritirare i soldi da un deposito vincolato prima della scadenza.",
+            "Il cliente chiede se i suoi soldi sono al sicuro se la banca fallisce.",
+            "Il cliente ha 250.000 euro in una sola banca e chiede della garanzia dei depositi.",
+            "Il cliente confronta due offerte: una al 3% lordo e una al 2,3% netto.",
+            "Il cliente chiede la differenza tra un conto deposito e i buoni fruttiferi postali."
+          ],
+          "key": [
+            "Esempio: <b>il conto corrente serve per pagare e ricevere soldi ogni giorno; il conto deposito serve a mettere da parte una somma, che rende di più ma non si usa per i pagamenti.</b>",
+            "Esempio: <b>si può fare, ma con lo svincolo anticipato perde una parte degli interessi, come dice il contratto: Le calcolo subito quanto riceverebbe.</b>",
+            "Esempio: <b>i depositi sono protetti dal Fondo interbancario fino a 100.000 euro per persona e per banca: entro questo limite riceve indietro i Suoi soldi.</b>",
+            "Esempio: <b>la garanzia copre fino a 100.000 euro per depositante in ogni banca: per la parte sopra il limite non c'è questa protezione. Possiamo parlarne e valutare insieme le alternative.</b>",
+            "Esempio: <b>per confrontarle bisogna guardare tutte e due al netto: il 3% lordo, meno il 26%, è circa il 2,2% netto, quindi la seconda offerta rende un po' di più.</b>",
+            "Esempio: <b>il conto deposito è un prodotto della banca, con la garanzia del Fondo interbancario; i buoni li emette Cassa Depositi e Prestiti, sono garantiti dallo Stato e si comprano alle Poste.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è l'impiegato di una filiale, il docente è un pensionato che ha 40.000 euro sul conto corrente e non vuole correre rischi. Difficoltà da introdurre: dice di non fidarsi delle banche dopo aver letto di banche fallite.",
+          "items": [
+            "Fai domande per capire quando gli serviranno i soldi.",
+            "Proponi un conto deposito, libero o vincolato.",
+            "Spiega lordo e netto con un esempio.",
+            "Spiega che cosa succede con lo svincolo anticipato.",
+            "Rispondi alla sfiducia con la garanzia dei depositi, senza esagerare.",
+            "Spiega i prossimi passi."
+          ],
+          "key": [
+            "Esempio: <b>Questi soldi Le potrebbero servire nei prossimi mesi, o può lasciarli fermi per un anno?</b>",
+            "Esempio: <b>Potrebbe mettere 30.000 euro in un deposito vincolato a 12 mesi e lasciare il resto sul conto per le spese.</b>",
+            "Esempio: <b>Il tasso è del 2,5% lordo: su 30.000 euro sono 750 euro lordi, circa 555 netti dopo il 26%, e poi c'è il bollo.</b>",
+            "Esempio: <b>Se Le servono prima, può svincolarli, ma perde una parte degli interessi, come dice il contratto.</b>",
+            "Esempio: <b>La capisco. I depositi sono protetti dal Fondo interbancario fino a 100.000 euro per persona e per banca: i Suoi 40.000 euro sono dentro il limite.</b>",
+            "Esempio: <b>Le do il foglio informativo da leggere con calma; se è d'accordo, giovedì apriamo il deposito.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "banca",
+      "cat": "Sportello",
+      "title": "Allo sportello: identificazione e antiriciclaggio",
+      "def": "Allo sportello il bancario identifica il cliente, fa le domande previste dalla legge antiriciclaggio e gestisce operazioni in contanti e con assegni. Questa scheda raccoglie il lessico e le frasi per chiedere documenti e informazioni senza mettere a disagio il cliente.",
+      "form": "Le banche devono fare l'<b>adeguata verifica della clientela</b>: identificare il cliente con un documento valido e il codice fiscale, individuare il <b>titolare effettivo</b> (chi controlla davvero un'azienda), capire lo scopo del rapporto e, per alcune operazioni, l'<b>origine dei fondi</b>. Per i clienti più a rischio e per le <b>persone politicamente esposte</b> (PEP) i controlli sono più approfonditi. Le operazioni sospette si segnalano all'<b>UIF</b> (Unità di informazione finanziaria per l'Italia, presso la Banca d'Italia), e il cliente non deve saperlo. Dal 2023 il <b>limite all'uso del contante</b> è di 5.000 euro: un pagamento in contanti tra persone diverse deve restare sotto questa cifra. Versare i propri contanti sul proprio conto è permesso, ma la banca può chiedere da dove vengono. Le domande si presentano come obblighi di legge, non come sospetti; il tono è cortese e neutro.",
+      "tables": [
+        {
+          "before": "<b>L'identificazione.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "il documento d'identità valido",
+              "carta d'identità, passaporto, patente: non scaduti"
+            ],
+            [
+              "l'adeguata verifica (della clientela)",
+              "i controlli previsti dalla legge sul cliente e sulle sue operazioni"
+            ],
+            [
+              "il titolare effettivo",
+              "la persona che possiede o controlla davvero una società"
+            ],
+            [
+              "lo scopo del rapporto",
+              "a che cosa serve al cliente il conto o il servizio"
+            ],
+            [
+              "l'origine dei fondi",
+              "da dove vengono i soldi"
+            ],
+            [
+              "la persona politicamente esposta (PEP)",
+              "chi ha un incarico pubblico importante o l'ha lasciato da meno di un anno, i suoi familiari e le persone con cui ha stretti legami"
+            ],
+            [
+              "l'adeguata verifica rafforzata",
+              "controlli più approfonditi per i clienti più a rischio"
+            ],
+            [
+              "l'aggiornamento dei dati",
+              "la banca chiede al cliente, ogni tanto, di aggiornare documenti e informazioni"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Contante, assegni e controlli.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "il versamento / il prelievo",
+              "mettere soldi sul conto / ritirarli"
+            ],
+            [
+              "il limite all'uso del contante",
+              "5.000 euro: un pagamento in contanti tra persone diverse deve restare sotto questa cifra"
+            ],
+            [
+              "il frazionamento",
+              "dividere un pagamento in più parti per restare sotto il limite: è vietato quando serve ad aggirarlo"
+            ],
+            [
+              "l'operazione sospetta, la segnalazione all'UIF",
+              "un'operazione che fa pensare al riciclaggio / la comunicazione obbligatoria all'UIF"
+            ],
+            [
+              "il riciclaggio",
+              "far sembrare puliti soldi che vengono da un reato"
+            ],
+            [
+              "l'assegno bancario / circolare",
+              "firmato dal cliente sul suo conto / emesso dalla banca, con la somma già coperta"
+            ],
+            [
+              "la clausola «non trasferibile»",
+              "l'assegno può incassarlo solo il beneficiario; è obbligatoria dai 1.000 euro in su"
+            ],
+            [
+              "incassare un assegno",
+              "ricevere i soldi di un assegno, in contanti o sul conto"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "il riciclaggio",
+              "money laundering",
+              "non si dice «lavaggio di denaro»"
+            ],
+            [
+              "sospetto (un'operazione sospetta)",
+              "suspicious",
+              "<i>sospettoso</i> si dice di una persona che sospetta degli altri"
+            ],
+            [
+              "versare (sul conto)",
+              "sp. ingresar",
+              "<i>ingressare</i> non esiste in italiano"
+            ],
+            [
+              "la patente",
+              "driving licence",
+              "la <i>licenza</i> in italiano è un permesso per un'attività: la licenza commerciale"
+            ],
+            [
+              "incassare (un assegno)",
+              "to cash",
+              "<i>cassare</i> vuol dire «annullare» (cassare una sentenza)"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "i documenti",
+          "ex": "Mi serve un <b>documento d'identità</b> valido e il codice fiscale. / Il Suo documento è scaduto: ne ha un altro?"
+        },
+        {
+          "label": "presentare le domande",
+          "ex": "Per legge devo farLe alcune domande sull'operazione. / Sono informazioni che chiediamo a tutti i clienti."
+        },
+        {
+          "label": "l'origine dei fondi",
+          "ex": "Da dove vengono questi contanti? / Mi può mostrare un documento che lo dimostri?"
+        },
+        {
+          "label": "il titolare effettivo",
+          "ex": "Chi sono i soci che controllano la società? / Mi serve anche il documento del <b>titolare effettivo</b>."
+        },
+        {
+          "label": "il limite al contante",
+          "ex": "Non può pagare 6.000 euro in contanti al venditore: il pagamento in contanti deve restare sotto i 5.000 euro. / Possiamo fare un bonifico."
+        },
+        {
+          "label": "gli assegni",
+          "ex": "L'assegno è <b>non trasferibile</b>: può incassarlo solo il beneficiario. / Lo versiamo sul Suo conto?"
+        }
+      ],
+      "warn": "Al cliente non si dice mai che un'operazione è stata o sarà segnalata: è vietato dalla legge. Le domande si fanno a tutti, con lo stesso tono: non sono accuse. Il limite di 5.000 euro riguarda i pagamenti in contanti tra persone diverse: non vieta di versare i propri contanti sul conto. Se il cliente non dà le informazioni necessarie per l'adeguata verifica, la banca non può fare l'operazione e valuta se segnalarla all'UIF. I documenti scaduti non bastano per identificare il cliente.",
+      "errors": [
+        {
+          "wrong": "La legge contro il lavaggio di denaro ci obbliga a farLe queste domande.",
+          "right": "La legge antiriciclaggio ci obbliga a farLe queste domande.",
+          "why": "Calco dell'inglese «money laundering»: in italiano si dice <i>riciclaggio</i>."
+        },
+        {
+          "wrong": "È un'operazione sospettosa.",
+          "right": "È un'operazione sospetta.",
+          "why": "L'inglese «suspicious» qui è <i>sospetto</i>; <i>sospettoso</i> si dice di una persona che sospetta."
+        },
+        {
+          "wrong": "Vorrei ingressare 500 euro sul mio conto.",
+          "right": "Vorrei versare 500 euro sul mio conto.",
+          "why": "Lo spagnolo «ingresar» qui è <i>versare</i>; «ingressare» non esiste."
+        },
+        {
+          "wrong": "Come documento ho la mia licenza di guida.",
+          "right": "Come documento ho la mia patente.",
+          "why": "L'inglese «driving licence» è la <i>patente</i>; la <i>licenza</i> è un permesso per un'attività."
+        },
+        {
+          "wrong": "Vorrei cassare questo assegno.",
+          "right": "Vorrei incassare questo assegno.",
+          "why": "L'inglese «to cash» è <i>incassare</i>; <i>cassare</i> vuol dire «annullare»."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: documento, titolare effettivo, origine, contanti, versamento, non trasferibile.",
+          "items": [
+            "Per aprire il conto mi serve un … d'identità valido.",
+            "Chi controlla davvero la società è il …",
+            "Per legge devo chiederLe l'… di questi soldi.",
+            "Un pagamento in … deve restare sotto i 5.000 euro.",
+            "Vorrei fare un … di 300 euro sul mio conto.",
+            "L'assegno è …: può incassarlo solo Lei."
+          ],
+          "key": [
+            "<b>documento</b>",
+            "<b>titolare effettivo</b>",
+            "<b>origine</b>",
+            "<b>contanti</b>",
+            "<b>versamento</b>",
+            "<b>non trasferibile</b>"
+          ]
+        },
+        {
+          "type": "Classificazione (B1–B2)",
+          "instr": "È permesso? Rispondi sì o no.",
+          "items": [
+            "Pagare in contanti 4.000 euro a un artigiano.",
+            "Pagare in contanti 5.000 euro per un'auto usata.",
+            "Versare sul proprio conto 8.000 euro in contanti.",
+            "Dire al cliente che la sua operazione è stata segnalata all'UIF.",
+            "Aprire un conto con un documento d'identità scaduto.",
+            "Pagare 9.000 euro in contanti allo stesso venditore, in due volte da 4.500, per restare sotto il limite."
+          ],
+          "key": [
+            "<b>sì</b>: è sotto il limite",
+            "<b>no</b>: il pagamento deve restare sotto i 5.000 euro",
+            "<b>sì</b>, ma la banca può chiedere da dove vengono",
+            "<b>no</b>: è vietato",
+            "<b>no</b>: serve un documento valido",
+            "<b>no</b>: è un frazionamento per aggirare il limite"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Rispondi al cliente con cortesia.",
+          "items": [
+            "Il cliente si offende quando gli chiedi da dove vengono i contanti.",
+            "Il documento del cliente è scaduto.",
+            "Una società apre un conto: chiedi del titolare effettivo.",
+            "Il cliente vuole pagare in contanti un'auto usata da 7.000 euro.",
+            "Il cliente chiede perché la banca gli chiede di aggiornare i dati.",
+            "Il cliente vuole incassare un assegno non trasferibile intestato al fratello."
+          ],
+          "key": [
+            "Esempio: <b>mi scusi, non è un sospetto: per legge dobbiamo chiederlo per i versamenti di questo tipo, a tutti i clienti.</b>",
+            "Esempio: <b>purtroppo il documento è scaduto e non posso usarlo per l'identificazione: ha con sé un passaporto o la patente?</b>",
+            "Esempio: <b>per la società ci serve sapere chi sono le persone che la possiedono o la controllano, e un loro documento: è il titolare effettivo.</b>",
+            "Esempio: <b>in contanti il pagamento deve restare sotto i 5.000 euro. Possiamo fare un bonifico istantaneo al venditore: arriva subito.</b>",
+            "Esempio: <b>la legge ci chiede di tenere aggiornati i dati dei clienti: documento, lavoro, uso del conto. Bastano pochi minuti.</b>",
+            "Esempio: <b>l'assegno non trasferibile può incassarlo solo il beneficiario, cioè Suo fratello: deve venire lui, oppure versarlo sul suo conto.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è il cassiere di una filiale, il docente è un commerciante che vuole versare sul conto 12.000 euro in contanti: gli incassi del suo negozio delle ultime due settimane. Difficoltà da introdurre: il cliente si arrabbia: «Sono soldi miei, non devo spiegare niente a nessuno».",
+          "items": [
+            "Accogli il cliente e chiedi il documento.",
+            "Spiega che per legge devi fare alcune domande.",
+            "Chiedi l'origine dei soldi e un documento che la mostri.",
+            "Gestisci la reazione del cliente con calma.",
+            "Proponi una soluzione pratica.",
+            "Concludi l'operazione."
+          ],
+          "key": [
+            "Esempio: <b>Buongiorno, mi dà un documento d'identità, per favore?</b>",
+            "Esempio: <b>Per un versamento in contanti di questo importo la legge ci chiede alcune informazioni.</b>",
+            "Esempio: <b>Sono gli incassi del negozio? Mi può mostrare i corrispettivi giornalieri (le chiusure di cassa) di questi giorni?</b>",
+            "Esempio: <b>La capisco, nessuno pensa male di Lei: lo chiediamo a tutti, è un obbligo per la banca.</b>",
+            "Esempio: <b>Se oggi non ha con sé i documenti, può portarceli domani: completiamo la verifica e registriamo il versamento.</b>",
+            "Esempio: <b>Grazie, con questi documenti è tutto in ordine: il versamento è fatto, ecco la ricevuta.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "banca",
+      "cat": "Digitale",
+      "title": "Banca digitale e sicurezza: home banking, SCA, OTP, truffe",
+      "def": "Il bancario aiuta il cliente a usare l'home banking e l'app in sicurezza, e lo assiste quando qualcosa va storto: credenziali dimenticate, carta persa o rubata, un'operazione che il cliente non ha fatto, una truffa.",
+      "form": "Per entrare nell'home banking e per i pagamenti online la banca usa l'<b>autenticazione forte</b> (SCA, prevista dalla direttiva europea PSD2): servono due elementi diversi tra qualcosa che il cliente <i>sa</i> (password, PIN), che <i>ha</i> (il telefono) o che <i>è</i> (impronta, volto). L'<b>OTP</b> è un codice valido una sola volta. Le truffe più comuni sono il <b>phishing</b> (email falsa), lo <b>smishing</b> (SMS falso) e il <b>vishing</b> (telefonata falsa), spesso con lo <b>spoofing</b>: il numero o l'indirizzo sembrano quelli della banca. Regola d'oro: la banca non chiede mai codici, password o OTP per telefono, SMS o email. Se la carta è persa o rubata, o se c'è un'operazione non autorizzata: bloccare subito la carta (app o numero verde), fare la denuncia quando serve e <b>disconoscere</b> l'operazione con la banca. Con il cliente: calma e istruzioni chiare, una cosa alla volta.",
+      "tables": [
+        {
+          "before": "<b>L'accesso.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "l'home banking, l'app della banca",
+              "il servizio per usare il conto da computer o da telefono"
+            ],
+            [
+              "le credenziali, il codice utente",
+              "i dati per entrare: nome utente, password, PIN"
+            ],
+            [
+              "l'autenticazione forte (SCA)",
+              "per entrare o pagare servono due elementi diversi: qualcosa che si sa, che si ha o che si è"
+            ],
+            [
+              "l'OTP",
+              "una password usata una sola volta (one-time password)"
+            ],
+            [
+              "la notifica push",
+              "il messaggio dell'app con cui il cliente autorizza un'operazione"
+            ],
+            [
+              "l'impronta digitale, il riconoscimento del volto",
+              "modi per farsi riconoscere dal telefono"
+            ],
+            [
+              "il dispositivo associato",
+              "il telefono collegato al conto per autorizzare le operazioni"
+            ],
+            [
+              "i massimali",
+              "quanto si può spendere o trasferire al giorno o al mese"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Truffe e problemi.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "il phishing / lo smishing / il vishing",
+              "un'email / un SMS / una telefonata falsi, per rubare dati e codici"
+            ],
+            [
+              "lo spoofing",
+              "il numero o l'indirizzo sembra quello della banca, ma chi chiama o scrive è un truffatore"
+            ],
+            [
+              "la truffa del finto operatore",
+              "un falso impiegato della banca chiede di spostare i soldi su un «conto sicuro»"
+            ],
+            [
+              "la clonazione della carta",
+              "qualcuno copia i dati della carta e li usa"
+            ],
+            [
+              "il furto d'identità",
+              "qualcuno usa i dati o i documenti di un'altra persona"
+            ],
+            [
+              "bloccare la carta",
+              "renderla inutilizzabile, dall'app o al numero verde"
+            ],
+            [
+              "il numero verde",
+              "il numero di telefono gratuito"
+            ],
+            [
+              "disconoscere un'operazione",
+              "dire alla banca che non si è autorizzata un'operazione"
+            ],
+            [
+              "la denuncia",
+              "la dichiarazione alla polizia o ai carabinieri"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "per SMS, con un messaggio",
+              "by text",
+              "non si dice «per testo»"
+            ],
+            [
+              "disconoscere, contestare (un'operazione)",
+              "to dispute",
+              "<i>disputare</i> vuol dire «giocare una partita» o «discutere»"
+            ],
+            [
+              "il numero verde, l'assistenza clienti",
+              "helpline, toll-free number",
+              "non si dice «linea di aiuto»"
+            ],
+            [
+              "denunciare (un furto)",
+              "to report",
+              "<i>riportare</i> vuol dire «portare indietro», o raccontare (i giornali riportano una notizia)"
+            ],
+            [
+              "la sicurezza",
+              "safety",
+              "la <i>salvezza</i> è il fatto di salvarsi da un pericolo grave"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "attivare l'app",
+          "ex": "Scarichi l'app e associ il Suo telefono: per entrare userà l'impronta o un PIN. / Ogni pagamento online lo conferma con una <b>notifica</b>."
+        },
+        {
+          "label": "la regola d'oro",
+          "ex": "La banca non Le chiederà mai codici o password per telefono, SMS o email. / Se qualcuno lo fa, chiuda e chiami Lei il numero che trova sulla carta."
+        },
+        {
+          "label": "carta persa o rubata",
+          "ex": "<b>Blocchi</b> subito la carta dall'app o al <b>numero verde</b>. / Poi faccia la denuncia e Le ordiniamo una carta nuova."
+        },
+        {
+          "label": "un'operazione non autorizzata",
+          "ex": "Vede un'operazione che non ha fatto? La <b>disconosciamo</b> subito e blocchiamo la carta."
+        },
+        {
+          "label": "una possibile truffa",
+          "ex": "Mi racconti che cosa è successo: chi L'ha chiamata e che cosa Le ha chiesto? / Ha comunicato a qualcuno un codice?"
+        },
+        {
+          "label": "le credenziali",
+          "ex": "Ha dimenticato la password? La può reimpostare dall'app seguendo la procedura. / Le credenziali non le dia mai a nessuno, neanche a un familiare."
+        }
+      ],
+      "warn": "Con lo <b>spoofing</b> sul telefono può comparire il numero vero della banca: per questo non ci si fida del numero, ma si chiude e si richiama. Nessun impiegato chiede di spostare i soldi su un «conto sicuro»: è sempre una truffa. Bloccare subito la carta e avvisare la banca è importante. Per legge, per un'operazione non autorizzata la banca rimborsa subito (al più tardi entro la giornata operativa successiva), salvo un motivato sospetto di frode; il cliente, salvo dolo o colpa grave, perde al massimo 50 euro; l'operazione va disconosciuta senza ritardo, e comunque entro 13 mesi. Allo sportello non si promette il rimborso: si raccolgono i fatti e si avvia la pratica.",
+      "errors": [
+        {
+          "wrong": "Il codice OTP mi arriva per testo.",
+          "right": "Il codice OTP mi arriva per SMS.",
+          "why": "Calco dell'inglese «by text»: in italiano si dice <i>per SMS</i>, <i>con un messaggio</i>."
+        },
+        {
+          "wrong": "Vorrei disputare questo pagamento: non l'ho fatto io.",
+          "right": "Vorrei disconoscere (contestare) questo pagamento: non l'ho fatto io.",
+          "why": "L'inglese «to dispute» qui è <i>disconoscere</i>, <i>contestare</i>; <i>disputare</i> vuol dire giocare una partita."
+        },
+        {
+          "wrong": "Ho chiamato la linea di aiuto della banca.",
+          "right": "Ho chiamato il numero verde (l'assistenza clienti) della banca.",
+          "why": "Calco dell'inglese «helpline»: si dice <i>numero verde</i> o <i>assistenza clienti</i>."
+        },
+        {
+          "wrong": "Devo riportare il furto della carta.",
+          "right": "Devo denunciare il furto della carta.",
+          "why": "L'inglese «to report» qui è <i>denunciare</i>; <i>riportare</i> vuol dire «portare indietro» o «raccontare»."
+        },
+        {
+          "wrong": "Per la Sua salvezza, non dia il PIN a nessuno.",
+          "right": "Per la Sua sicurezza, non dia il PIN a nessuno.",
+          "why": "L'inglese «safety» qui è la <i>sicurezza</i>; la <i>salvezza</i> è il fatto di salvarsi da un pericolo grave."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: OTP, app, bloccare, numero verde, phishing, credenziali.",
+          "items": [
+            "Il codice … vale una sola volta.",
+            "Con l'… della banca vedo il saldo dal telefono.",
+            "Ho perso la carta: la devo … subito.",
+            "Il … per i clienti è gratuito e attivo giorno e notte.",
+            "Un'email falsa con il logo della banca è un tentativo di …",
+            "Le Sue … non le deve dare a nessuno."
+          ],
+          "key": [
+            "<b>OTP</b>",
+            "<b>app</b>",
+            "<b>bloccare</b>",
+            "<b>numero verde</b>",
+            "<b>phishing</b>",
+            "<b>credenziali</b>"
+          ]
+        },
+        {
+          "type": "Classificazione (B1–B2)",
+          "instr": "Che cosa è successo al cliente? Scegli tra: phishing, smishing, vishing, spoofing, clonazione della carta, furto d'identità.",
+          "items": [
+            "Un'email con il logo della banca chiede di cliccare un link per «verificare il conto».",
+            "Un SMS dice che la carta è bloccata e chiede di chiamare un numero.",
+            "Al telefono un finto operatore chiede il codice OTP.",
+            "Sul telefono compare il numero vero della banca, ma chi chiama è un truffatore.",
+            "Qualcuno usa i dati della carta, copiati da uno sportello automatico manomesso.",
+            "Qualcuno chiede un finanziamento con i documenti di un'altra persona."
+          ],
+          "key": [
+            "<b>phishing</b>",
+            "<b>smishing</b>",
+            "<b>vishing</b>",
+            "<b>spoofing</b>",
+            "<b>clonazione della carta</b>",
+            "<b>furto d'identità</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Rispondi al cliente con calma e istruzioni chiare.",
+          "items": [
+            "Il cliente ha dato il codice OTP a un finto operatore.",
+            "Il cliente ha perso il portafoglio con la carta dentro.",
+            "Un cliente anziano ha paura di usare l'app.",
+            "Il cliente chiede perché ogni pagamento online gli chiede una conferma.",
+            "Il cliente ha ricevuto un SMS «della banca» con un link.",
+            "Un finto operatore ha detto al cliente di spostare i soldi su un «conto sicuro»."
+          ],
+          "key": [
+            "Esempio: <b>blocchiamo subito le credenziali e la carta, poi controlliamo insieme le ultime operazioni. Le consiglio di fare la denuncia: Le preparo l'elenco delle operazioni da allegare.</b>",
+            "Esempio: <b>blocchi subito la carta dall'app o al numero verde; se pensa che sia stata rubata, faccia la denuncia. Intanto Le ordiniamo una carta nuova.</b>",
+            "Esempio: <b>la capisco. Facciamo insieme i primi passi qui in filiale; per cominciare può usare l'app solo per vedere il saldo, senza fare pagamenti.</b>",
+            "Esempio: <b>è l'autenticazione forte, prevista dalla legge europea: anche se qualcuno ruba la Sua password, senza il Suo telefono non può pagare.</b>",
+            "Esempio: <b>non clicchi sul link e non risponda: la banca non manda link per chiedere i codici. Lo cancelli e, se ha dubbi, chiami il numero che trova sulla carta.</b>",
+            "Esempio: <b>non sposti niente: nessun impiegato chiede mai di farlo, è una truffa. Chiuda la chiamata e venga in filiale, o chiami il numero ufficiale della banca.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è un impiegato dell'assistenza clienti, il docente è una cliente che ieri ha ricevuto una telefonata «dalla banca» e ha comunicato un codice; oggi vede sul conto un bonifico di 2.000 euro che non ha fatto. Difficoltà da introdurre: la cliente è agitata e dice che la banca deve restituirle subito i soldi.",
+          "items": [
+            "Calma la cliente e ascolta.",
+            "Fai domande per capire che cosa è successo.",
+            "Blocca credenziali e carta.",
+            "Avvia il disconoscimento e la richiesta di recupero del bonifico.",
+            "Spiega la denuncia.",
+            "Spiega che cosa succede ora, senza promettere il rimborso."
+          ],
+          "key": [
+            "Esempio: <b>Signora, ha fatto bene a chiamare subito: adesso vediamo insieme che cosa fare.</b>",
+            "Esempio: <b>Chi L'ha chiamata, a che ora, e che cosa Le ha chiesto di preciso?</b>",
+            "Esempio: <b>Blocco subito l'accesso all'home banking e la carta, così nessuno può fare altre operazioni.</b>",
+            "Esempio: <b>Registro che il bonifico non l'ha autorizzato Lei e chiedo alla banca del beneficiario di bloccare e restituire la somma, se è ancora possibile.</b>",
+            "Esempio: <b>Le consiglio di fare oggi la denuncia ai carabinieri o alla polizia, e di mandarcene una copia.</b>",
+            "Esempio: <b>La pratica la valuta l'ufficio competente secondo le regole di legge: non posso prometterLe il rimborso, ma Le diamo una risposta scritta.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "banca",
+      "cat": "Economia",
+      "title": "Il linguaggio del bilancio",
+      "def": "Il bancario legge il bilancio di un'impresa cliente per valutare un finanziamento e ne parla con l'imprenditore o con il commercialista. Questa scheda raccoglie il lessico dello stato patrimoniale, del conto economico e degli indicatori più usati.",
+      "form": "Il <b>bilancio d'esercizio</b> di una società comprende lo <b>stato patrimoniale</b> (che cosa l'impresa ha e che cosa deve, a una certa data: l'attivo e il passivo, che comprende anche il patrimonio netto), il <b>conto economico</b> (ricavi e costi dell'anno, fino all'utile o alla perdita), il <b>rendiconto finanziario</b> (i flussi di cassa; non serve nel bilancio abbreviato delle società più piccole) e la <b>nota integrativa</b> (le spiegazioni). Nelle società di capitali il bilancio lo approva l'assemblea dei soci e si deposita al Registro delle imprese (gli organi delle società sono spiegati in Diritto). Il bancario guarda soprattutto quanto l'impresa vende, quanto guadagna con la sua attività (il MOL, in inglese EBITDA), quanto è indebitata rispetto al patrimonio e quanta liquidità produce (il flusso di cassa). I numeri del commerciale (obiettivi, provvigioni) sono in Vendite.",
+      "tables": [
+        {
+          "before": "<b>Lo stato patrimoniale.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "l'attivo",
+              "quello che l'impresa possiede: immobili, macchinari, crediti, liquidità"
+            ],
+            [
+              "il passivo",
+              "da dove vengono le risorse: debiti e patrimonio netto"
+            ],
+            [
+              "il patrimonio netto",
+              "il capitale dei soci più gli utili accumulati"
+            ],
+            [
+              "le immobilizzazioni",
+              "i beni che restano nell'impresa per molti anni: immobili, macchinari, marchi"
+            ],
+            [
+              "i crediti verso clienti",
+              "quello che i clienti devono ancora pagare"
+            ],
+            [
+              "le rimanenze, il magazzino",
+              "le merci e le materie prime non ancora vendute o usate"
+            ],
+            [
+              "i debiti verso fornitori / verso banche",
+              "quello che l'impresa deve ancora pagare ai fornitori / restituire alle banche"
+            ],
+            [
+              "il fondo TFR",
+              "il debito verso i dipendenti per il trattamento di fine rapporto (vedi Diritto)"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Il conto economico e gli indicatori.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "i ricavi delle vendite, il fatturato",
+              "quanto l'impresa ha venduto nell'anno"
+            ],
+            [
+              "i costi della produzione",
+              "materie prime, personale, servizi, affitti"
+            ],
+            [
+              "il MOL (margine operativo lordo), l'EBITDA",
+              "quanto guadagna l'attività prima di ammortamenti, interessi e tasse"
+            ],
+            [
+              "gli ammortamenti",
+              "la parte del costo di un bene che si attribuisce a ogni anno"
+            ],
+            [
+              "gli accantonamenti",
+              "le somme messe da parte per costi o rischi futuri"
+            ],
+            [
+              "gli oneri finanziari",
+              "gli interessi pagati alle banche"
+            ],
+            [
+              "l'utile / la perdita d'esercizio",
+              "il risultato dell'anno, positivo / negativo"
+            ],
+            [
+              "il flusso di cassa (cash flow)",
+              "la liquidità che l'impresa produce o consuma in un periodo"
+            ],
+            [
+              "la posizione finanziaria netta",
+              "i debiti finanziari meno la liquidità"
+            ],
+            [
+              "il rendiconto finanziario",
+              "il documento del bilancio che mostra i flussi di cassa"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "il patrimonio netto",
+              "equity",
+              "l'<i>equità</i> in italiano è la giustizia, l'imparzialità"
+            ],
+            [
+              "l'attivo, le attività",
+              "assets",
+              "l'<i>assetto</i> è la sistemazione, l'organizzazione di qualcosa"
+            ],
+            [
+              "l'accantonamento",
+              "provision",
+              "la <i>provvigione</i> è il compenso del commerciale (vedi Vendite)"
+            ],
+            [
+              "le passività, i debiti",
+              "liabilities",
+              "la <i>responsabilità</i> in italiano è il dovere di rispondere delle proprie azioni"
+            ],
+            [
+              "il fatturato",
+              "sp. facturación",
+              "la <i>fatturazione</i> in italiano è l'emissione delle fatture"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "chiedere i documenti",
+          "ex": "Ci manda l'ultimo <b>bilancio</b> approvato con la <b>nota integrativa</b>? / Avete una situazione contabile aggiornata di quest'anno?"
+        },
+        {
+          "label": "ricavi e utile",
+          "ex": "I <b>ricavi</b> sono cresciuti del 10%, ma l'<b>utile</b> è sceso: da che cosa dipende? / L'anno si è chiuso con una <b>perdita</b> di 50.000 euro."
+        },
+        {
+          "label": "il MOL",
+          "ex": "Il <b>MOL</b> è positivo: l'attività produce margine. / Gli <b>oneri finanziari</b> pesano molto sul risultato."
+        },
+        {
+          "label": "i debiti",
+          "ex": "L'indebitamento verso le banche è alto rispetto al <b>patrimonio netto</b>."
+        },
+        {
+          "label": "crediti e magazzino",
+          "ex": "I <b>crediti verso clienti</b> sono aumentati: i clienti pagano più tardi? / Il <b>magazzino</b> è cresciuto molto."
+        },
+        {
+          "label": "concludere",
+          "ex": "Con questi numeri possiamo valutare un finanziamento più piccolo. / Ne parlo con l'ufficio crediti e Le faccio sapere."
+        }
+      ],
+      "warn": "<b>Fatturato</b> non vuol dire guadagno, e <b>utile</b> non vuol dire liquidità: un'impresa può avere un utile e poca cassa, per esempio se i clienti pagano tardi. Un bilancio si legge sempre insieme a quelli degli anni prima. In banca si usano spesso le parole inglesi (EBITDA, cash flow): vanno capite anche in italiano. Le questioni contabili e fiscali del cliente le spiega il suo commercialista, non il bancario.",
+      "errors": [
+        {
+          "wrong": "L'equità dell'azienda è di due milioni.",
+          "right": "Il patrimonio netto dell'azienda è di due milioni.",
+          "why": "L'inglese «equity» è il <i>patrimonio netto</i>; l'<i>equità</i> è la giustizia."
+        },
+        {
+          "wrong": "Gli assetti della società valgono cinque milioni.",
+          "right": "L'attivo della società vale cinque milioni.",
+          "why": "L'inglese «assets» sono le <i>attività</i>, l'<i>attivo</i>; l'<i>assetto</i> è la sistemazione di qualcosa."
+        },
+        {
+          "wrong": "Abbiamo fatto una provvigione per i crediti non pagati.",
+          "right": "Abbiamo fatto un accantonamento per i crediti non pagati.",
+          "why": "L'inglese «provision» è l'<i>accantonamento</i>; la <i>provvigione</i> è il compenso del commerciale."
+        },
+        {
+          "wrong": "Le responsabilità dell'impresa sono di tre milioni.",
+          "right": "Le passività (i debiti) dell'impresa sono di tre milioni.",
+          "why": "L'inglese «liabilities» sono le <i>passività</i>, i <i>debiti</i>; la <i>responsabilità</i> è un'altra cosa."
+        },
+        {
+          "wrong": "La fatturazione annua è di due milioni di euro.",
+          "right": "Il fatturato annuo è di due milioni di euro.",
+          "why": "Lo spagnolo «facturación» qui è il <i>fatturato</i>; la <i>fatturazione</i> è l'emissione delle fatture."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: attivo, patrimonio netto, ricavi, utile, ammortamenti, crediti.",
+          "items": [
+            "Immobili, macchinari e liquidità sono nell'…",
+            "Il capitale dei soci e gli utili accumulati formano il …",
+            "Quest'anno i … delle vendite sono stati di 3 milioni.",
+            "Dopo tutti i costi resta un … di 120.000 euro.",
+            "Gli … dividono il costo dei macchinari su più anni.",
+            "I … verso clienti sono aumentati: i clienti pagano più tardi."
+          ],
+          "key": [
+            "<b>attivo</b>",
+            "<b>patrimonio netto</b>",
+            "<b>ricavi</b>",
+            "<b>utile</b>",
+            "<b>ammortamenti</b>",
+            "<b>crediti</b>"
+          ]
+        },
+        {
+          "type": "Classificazione (B1–B2)",
+          "instr": "Dove si trova la voce: nello stato patrimoniale o nel conto economico?",
+          "items": [
+            "I ricavi delle vendite.",
+            "I debiti verso le banche.",
+            "Gli ammortamenti dell'anno.",
+            "Il magazzino a fine anno.",
+            "Gli interessi pagati alle banche.",
+            "Il capitale versato dai soci."
+          ],
+          "key": [
+            "<b>conto economico</b>",
+            "<b>stato patrimoniale</b>",
+            "<b>conto economico</b>",
+            "<b>stato patrimoniale</b>",
+            "<b>conto economico</b>",
+            "<b>stato patrimoniale</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Di' che cosa diresti all'imprenditore o al commercialista.",
+          "items": [
+            "Spiega a un imprenditore perché la banca chiede il bilancio.",
+            "I ricavi crescono, ma l'utile scende: chiedi spiegazioni.",
+            "L'impresa ha un utile, ma poca liquidità: spiega come può succedere.",
+            "Spiega che cos'è il MOL con parole semplici.",
+            "I crediti verso clienti sono raddoppiati in un anno: che cosa chiedi?",
+            "Il bilancio non è ancora approvato e il cliente vuole il finanziamento subito."
+          ],
+          "key": [
+            "Esempio: <b>il bilancio ci dice se l'impresa guadagna, quanti debiti ha e quanta liquidità produce: sono le informazioni che servono per capire se può restituire il finanziamento.</b>",
+            "Esempio: <b>vedo che i ricavi sono cresciuti del 12%, ma l'utile è sceso: sono aumentati i costi delle materie prime, o gli interessi?</b>",
+            "Esempio: <b>l'utile è calcolato sulle vendite dell'anno, ma se i clienti pagano a 120 giorni i soldi non sono ancora arrivati sul conto.</b>",
+            "Esempio: <b>il MOL è quello che guadagna l'attività prima di ammortamenti, interessi e tasse: ci dice se l'impresa, lavorando, produce margine.</b>",
+            "Esempio: <b>i crediti verso clienti sono raddoppiati: i clienti pagano più tardi? Ci sono clienti in difficoltà che rischiano di non pagare?</b>",
+            "Esempio: <b>senza bilancio approvato possiamo partire dalla situazione contabile aggiornata, firmata dal commercialista; la decisione finale però arriverà dopo.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è il gestore imprese di una banca, il docente è il commercialista di un'azienda alimentare che presenta il bilancio: ricavi di 5 milioni (+12%), utile di 80.000 euro (−40%), debiti verso banche di 3 milioni. Difficoltà da introdurre: il commercialista dice che i debiti «non sono un problema».",
+          "items": [
+            "Ringrazia e riassumi i numeri principali.",
+            "Chiedi perché l'utile è sceso.",
+            "Chiedi informazioni sui debiti.",
+            "Chiedi della liquidità e del flusso di cassa.",
+            "Rispondi con cortesia all'idea che i debiti non sono un problema.",
+            "Spiega i prossimi passi."
+          ],
+          "key": [
+            "Esempio: <b>Grazie. Allora: ricavi di 5 milioni, in crescita del 12%, utile di 80.000 euro, in calo del 40%.</b>",
+            "Esempio: <b>Con ricavi in crescita, come mai l'utile è sceso così tanto?</b>",
+            "Esempio: <b>I debiti verso le banche sono di 3 milioni: quanta parte scade entro un anno?</b>",
+            "Esempio: <b>Quanta liquidità ha prodotto l'attività quest'anno? Avete un prospetto del flusso di cassa?</b>",
+            "Esempio: <b>Capisco, ma 3 milioni di debiti con un utile di 80.000 euro sono un punto che l'ufficio crediti guarderà con attenzione: mi aiuti a spiegarlo bene.</b>",
+            "Esempio: <b>Mi mandi il piano di rimborso dei debiti e la situazione dei primi mesi dell'anno; poi porto la pratica all'ufficio crediti.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "banca",
+      "cat": "Economia",
+      "title": "Le notizie finanziarie: Borsa, spread, rating, rialzo e ribasso",
+      "def": "Il bancario legge le notizie economiche e ne parla con i clienti: Borsa, tassi, spread, rating, inflazione. Questa scheda raccoglie il lessico dei giornali e dei telegiornali economici, e le frasi per spiegare una notizia a un cliente senza allarmarlo.",
+      "form": "Le notizie finanziarie hanno un lessico fisso: la Borsa «chiude <b>in rialzo</b>» o «<b>in ribasso</b>», un titolo «guadagna» o «perde» una certa percentuale. Il <b>FTSE MIB</b> è il principale indice di <b>Piazza Affari</b>, cioè la Borsa di Milano. Lo <b>spread</b> è la differenza di rendimento tra i BTP italiani e i Bund tedeschi a dieci anni, misurata in <b>punti base</b> (100 punti base = 1%). Le <b>agenzie di rating</b> danno un voto al rischio di Stati e società. La <b>BCE</b> decide i tassi di interesse dell'area euro: quando li alza, i mutui a tasso variabile costano di più. L'<b>inflazione</b> è l'aumento dei prezzi; il <b>PIL</b> misura quanto produce un paese. Con il cliente: spiegare la notizia, collegarla ai suoi prodotti, non fare previsioni.",
+      "tables": [
+        {
+          "before": "<b>La Borsa.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "la Borsa, Piazza Affari",
+              "il mercato dove si comprano e vendono i titoli / la Borsa di Milano"
+            ],
+            [
+              "il titolo, la quotazione",
+              "un'azione o un'obbligazione / il suo prezzo in Borsa"
+            ],
+            [
+              "l'indice (FTSE MIB)",
+              "un numero che riassume l'andamento di molti titoli"
+            ],
+            [
+              "la seduta",
+              "la giornata di contrattazioni"
+            ],
+            [
+              "chiudere in rialzo / in ribasso",
+              "finire la giornata con un aumento / con un calo"
+            ],
+            [
+              "guadagnare / perdere il 2%",
+              "salire / scendere del 2%"
+            ],
+            [
+              "il crollo, il tonfo",
+              "un calo forte e improvviso (parole tipiche dei giornali)"
+            ],
+            [
+              "il mercato rialzista / ribassista",
+              "un periodo in cui i prezzi salgono / scendono"
+            ],
+            [
+              "la capitalizzazione",
+              "il valore in Borsa di tutte le azioni di una società"
+            ]
+          ]
+        },
+        {
+          "before": "<b>L'economia.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "lo spread (BTP-Bund)",
+              "la differenza di rendimento tra i titoli di Stato italiani e tedeschi a dieci anni"
+            ],
+            [
+              "il punto base",
+              "un centesimo di punto percentuale: 100 punti base = 1%"
+            ],
+            [
+              "il rating, la promozione / il declassamento",
+              "il voto di un'agenzia sul rischio di uno Stato o di una società / quando sale / quando scende"
+            ],
+            [
+              "i tassi della BCE",
+              "i tassi decisi dalla Banca centrale europea; influenzano Euribor e mutui"
+            ],
+            [
+              "l'inflazione",
+              "l'aumento dei prezzi in un periodo"
+            ],
+            [
+              "il PIL (prodotto interno lordo)",
+              "il valore di beni e servizi prodotti in un paese"
+            ],
+            [
+              "la recessione",
+              "un periodo in cui il PIL scende"
+            ],
+            [
+              "il debito pubblico",
+              "i debiti dello Stato"
+            ],
+            [
+              "il cambio euro-dollaro",
+              "quanti dollari vale un euro"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "salire",
+              "sp. subir",
+              "<i>subire</i> in italiano vuol dire «sopportare qualcosa di negativo»: subire una perdita"
+            ],
+            [
+              "mille miliardi",
+              "trillion",
+              "il <i>trilione</i> in italiano è un miliardo di miliardi"
+            ],
+            [
+              "il PIL",
+              "GDP",
+              "in italiano si usa la sigla <i>PIL</i>"
+            ],
+            [
+              "chiudere in rialzo",
+              "to close up",
+              "non si dice «chiudere su»"
+            ],
+            [
+              "la fiducia (dei consumatori)",
+              "confidence",
+              "la <i>confidenza</i> in italiano è la familiarità con qualcuno, o un segreto: fare una confidenza"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "la Borsa",
+          "ex": "Oggi <b>Piazza Affari</b> ha chiuso <b>in rialzo</b> dell'1,2%. / Il titolo ha perso il 3% dopo i conti del trimestre."
+        },
+        {
+          "label": "lo spread",
+          "ex": "Lo <b>spread</b> tra BTP e Bund è salito a 150 <b>punti base</b>. / Cento punti base sono l'1%."
+        },
+        {
+          "label": "il rating",
+          "ex": "Un'agenzia di <b>rating</b> ha promosso l'Italia: considera il rischio più basso."
+        },
+        {
+          "label": "la BCE",
+          "ex": "La <b>BCE</b> ha tagliato i tassi di un quarto di punto: per chi ha un mutuo variabile la rata potrebbe scendere."
+        },
+        {
+          "label": "inflazione e PIL",
+          "ex": "L'<b>inflazione</b> è scesa al 2%. / Il <b>PIL</b> è cresciuto dello 0,3% nel trimestre."
+        },
+        {
+          "label": "rassicurare il cliente",
+          "ex": "Il Suo fondo è diversificato e il Suo orizzonte è lungo. / Non posso dirLe che cosa farà la Borsa domani, nessuno lo sa."
+        }
+      ],
+      "warn": "Non si fanno previsioni sui mercati: si spiega la notizia e si guarda il profilo del cliente. <i>Spread</i> ha due significati: nei giornali la differenza tra BTP e Bund, nel mutuo il margine della banca (vedi <i>Prestiti e mutui</i>). Punti base e punti percentuali non sono la stessa cosa. I titoli dei giornali usano parole forti («crollo», «tonfo») anche per cali piccoli: prima di commentare si guardano i numeri. Le cifre del giorno cambiano: nella scheda sono esempi.",
+      "errors": [
+        {
+          "wrong": "Oggi la Borsa è subita del 2%.",
+          "right": "Oggi la Borsa è salita del 2%.",
+          "why": "Lo spagnolo «subir» è <i>salire</i>; <i>subire</i> vuol dire «sopportare qualcosa di negativo»."
+        },
+        {
+          "wrong": "Il debito pubblico è di tre trilioni di euro.",
+          "right": "Il debito pubblico è di tremila miliardi di euro.",
+          "why": "L'inglese «trillion» è <i>mille miliardi</i>; il <i>trilione</i> in italiano è un numero molto più grande."
+        },
+        {
+          "wrong": "Il GDP italiano è cresciuto dello 0,5%.",
+          "right": "Il PIL italiano è cresciuto dello 0,5%.",
+          "why": "In italiano si usa la sigla <i>PIL</i> (prodotto interno lordo), non quella inglese «GDP»."
+        },
+        {
+          "wrong": "Ieri Piazza Affari ha chiuso su dell'1%.",
+          "right": "Ieri Piazza Affari ha chiuso in rialzo dell'1%.",
+          "why": "Calco dell'inglese «closed up»: si dice <i>chiudere in rialzo</i>."
+        },
+        {
+          "wrong": "La confidenza dei consumatori è in calo.",
+          "right": "La fiducia dei consumatori è in calo.",
+          "why": "L'inglese «confidence» qui è la <i>fiducia</i>; la <i>confidenza</i> è la familiarità con qualcuno o un segreto (in statistica si dice però «intervallo di confidenza»)."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: rialzo, spread, punti base, rating, inflazione, PIL.",
+          "items": [
+            "Oggi la Borsa ha chiuso in … del 2%.",
+            "Lo … misura la differenza tra BTP e Bund.",
+            "Lo spread è salito di 20 …",
+            "L'agenzia ha abbassato il … della società.",
+            "L'… al 3% vuol dire che i prezzi sono saliti del 3% in un anno.",
+            "Il … misura quanto produce un paese."
+          ],
+          "key": [
+            "<b>rialzo</b>",
+            "<b>spread</b>",
+            "<b>punti base</b>",
+            "<b>rating</b>",
+            "<b>inflazione</b>",
+            "<b>PIL</b>"
+          ]
+        },
+        {
+          "type": "Riformulazione (B1–B2)",
+          "instr": "Trasforma il titolo del giornale in una frase semplice per il cliente.",
+          "items": [
+            "«Piazza Affari in rosso: −2%»",
+            "«Spread a quota 200»",
+            "«La BCE taglia i tassi»",
+            "«Un'agenzia declassa la società X»",
+            "«Inflazione al 3%»",
+            "«PIL in calo per il secondo trimestre di fila»"
+          ],
+          "key": [
+            "Esempio: <b>oggi la Borsa di Milano ha perso il 2%.</b>",
+            "Esempio: <b>i BTP rendono 2 punti percentuali in più dei titoli tedeschi.</b>",
+            "Esempio: <b>la BCE ha abbassato i tassi: i mutui variabili possono costare meno.</b>",
+            "Esempio: <b>un'agenzia ha abbassato il voto della società: la considera più rischiosa.</b>",
+            "Esempio: <b>in un anno i prezzi sono aumentati del 3%.</b>",
+            "Esempio: <b>per il secondo trimestre di seguito l'economia ha prodotto meno.</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Rispondi al cliente senza allarmarlo e senza fare previsioni.",
+          "items": [
+            "Il cliente ha letto «crollo della Borsa» ed è spaventato.",
+            "Il cliente chiede che cos'è lo spread e perché se ne parla tanto.",
+            "La BCE ha alzato i tassi e il cliente ha un mutuo variabile.",
+            "Il cliente chiede se deve vendere i suoi BTP perché lo spread sale.",
+            "Spiega che cosa vuol dire un'inflazione al 3% per i risparmi sul conto.",
+            "Il cliente chiede che cosa farà la Borsa il mese prossimo."
+          ],
+          "key": [
+            "Esempio: <b>vediamo i numeri: oggi l'indice ha perso il 3%. Il Suo portafoglio è diversificato e ha un orizzonte di dieci anni: per ora non c'è motivo di decidere in fretta.</b>",
+            "Esempio: <b>è la differenza tra quanto rendono i BTP italiani e i titoli tedeschi: se sale, i mercati considerano l'Italia più rischiosa e lo Stato paga più interessi.</b>",
+            "Esempio: <b>con il variabile, nei prossimi mesi la rata potrebbe aumentare. Se vuole, Le calcolo la rata nuova e vediamo se conviene passare al fisso.</b>",
+            "Esempio: <b>se tiene i BTP fino alla scadenza, lo Stato si impegna a restituirLe il capitale: il prezzo di oggi conta solo se vende prima. Valutiamo insieme le Sue esigenze.</b>",
+            "Esempio: <b>vuol dire che con gli stessi soldi, fra un anno, compra il 3% in meno: se il conto non rende niente, il valore reale dei risparmi scende.</b>",
+            "Esempio: <b>nessuno può saperlo, e io non faccio previsioni. Possiamo però controllare che i Suoi investimenti siano adatti al Suo profilo.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è il consulente finanziario di una banca, il docente è un cliente che ha sentito al telegiornale che la Borsa ha perso il 4% e vuole vendere tutto. Difficoltà da introdurre: il cliente dice: «Voi della banca non mi avete avvisato».",
+          "items": [
+            "Accogli il cliente e ascolta la sua preoccupazione.",
+            "Spiega la notizia con i numeri.",
+            "Collega la notizia ai suoi investimenti.",
+            "Ricorda il suo profilo e il suo orizzonte temporale.",
+            "Rispondi con calma all'accusa.",
+            "Proponi un incontro per rivedere gli investimenti."
+          ],
+          "key": [
+            "Esempio: <b>Capisco che sia preoccupato: ne parliamo con calma.</b>",
+            "Esempio: <b>Ieri l'indice di Milano ha perso il 4%, soprattutto per i titoli delle banche.</b>",
+            "Esempio: <b>Il Suo portafoglio è per metà in obbligazioni: ieri ha perso circa l'1,5%.</b>",
+            "Esempio: <b>Lei ha un profilo moderato e un orizzonte di dieci anni: un giorno di calo non cambia questi obiettivi.</b>",
+            "Esempio: <b>Nessuno poteva prevedere questo calo: il mio lavoro è aiutarLa a investire in modo adatto a Lei, non indovinare la Borsa.</b>",
+            "Esempio: <b>Le propongo di vederci la settimana prossima per rivedere insieme gli investimenti, senza fretta.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "banca",
+      "cat": "Fisco",
+      "title": "Il fisco del cliente: bollo, tasse sui rendimenti, interessi del mutuo",
+      "def": "Il bancario risponde alle domande del cliente sulle tasse legate ai prodotti della banca: imposta di bollo, tasse su interessi e rendimenti, certificazioni per la dichiarazione dei redditi, detrazione degli interessi del mutuo, bonifici per le detrazioni. Per la dichiarazione dei redditi il cliente si rivolge al CAF o al commercialista.",
+      "form": "Per molti prodotti la banca fa da <b>sostituto d'imposta</b>: trattiene direttamente le tasse e le versa allo Stato. Sugli interessi di conti e depositi e sui guadagni degli investimenti si paga il <b>26%</b>; sui titoli di Stato e sui buoni postali il <b>12,5%</b>. L'<b>imposta di bollo</b> è di 34,20 euro l'anno sul conto corrente delle persone fisiche (se la giacenza media supera i 5.000 euro) e dello 0,2% l'anno su conti deposito e dossier titoli. Per il mutuo dell'abitazione principale la banca manda ogni anno la <b>certificazione degli interessi</b> pagati: nella dichiarazione dei redditi il cliente può detrarre il 19% degli interessi, fino a 4.000 euro di interessi all'anno. Per alcune spese che danno diritto a una detrazione (per esempio i lavori in casa) serve un <b>bonifico parlante</b>, con causale e dati previsti dalla legge. Il codice fiscale è spiegato in <i>Il cliente straniero</i>. Il bancario non fa consulenza fiscale: rimanda al CAF o al commercialista.",
+      "tables": [
+        {
+          "before": "<b>Le tasse sui prodotti della banca.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "il sostituto d'imposta",
+              "chi trattiene la tassa e la versa allo Stato al posto del contribuente"
+            ],
+            [
+              "la ritenuta",
+              "la parte trattenuta come tassa"
+            ],
+            [
+              "l'imposta del 26%",
+              "su interessi di conti e depositi e su guadagni di azioni, obbligazioni societarie e fondi"
+            ],
+            [
+              "l'imposta del 12,5%",
+              "su interessi e guadagni di titoli di Stato e buoni postali"
+            ],
+            [
+              "l'imposta di bollo",
+              "34,20 euro l'anno sul conto corrente (persone fisiche, giacenza media sopra i 5.000 euro); 0,2% l'anno su conti deposito e titoli"
+            ],
+            [
+              "la plusvalenza / la minusvalenza",
+              "il guadagno / la perdita su una vendita di titoli; alcune minusvalenze si possono compensare con plusvalenze dei quattro anni successivi"
+            ],
+            [
+              "il regime amministrato",
+              "la banca calcola e paga le tasse sugli investimenti al posto del cliente"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Detrazioni e documenti.</b>",
+          "after": "Gli importi e le percentuali possono cambiare con le leggi di bilancio: vanno controllati ogni anno.",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "il 730, il CAF, il commercialista",
+              "la dichiarazione dei redditi la fa il cliente, di solito con il CAF o il commercialista: la banca dà solo i documenti"
+            ],
+            [
+              "la detrazione degli interessi del mutuo",
+              "il 19% degli interessi pagati per il mutuo dell'abitazione principale, fino a 4.000 euro di interessi all'anno (se il mutuo è cointestato, il limite si divide)"
+            ],
+            [
+              "la certificazione degli interessi",
+              "il documento che la banca manda ogni anno con gli interessi pagati sul mutuo"
+            ],
+            [
+              "il bonifico parlante",
+              "un bonifico con causale e dati previsti dalla legge, per le spese che danno diritto a una detrazione"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "la dichiarazione dei redditi",
+              "tax return; sp. declaración de la renta",
+              "non si dice «ritorno fiscale»; la <i>rendita</i> in italiano è un reddito periodico, per esempio da un immobile"
+            ],
+            [
+              "la ritenuta",
+              "withholding tax",
+              "non si dice «tassa di trattenuta»"
+            ],
+            [
+              "detraibile / deducibile",
+              "tax-deductible",
+              "in italiano sono due cose diverse: si detrae dall'imposta, si deduce dal reddito"
+            ],
+            [
+              "l'imposta di bollo",
+              "stamp duty",
+              "non si dice «tassa di timbro»"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "l'imposta di bollo",
+          "ex": "L'<b>imposta di bollo</b> non è un costo della banca: è un'imposta dello Stato. / Sul conto corrente è di 34,20 euro l'anno, se la giacenza media supera i 5.000 euro."
+        },
+        {
+          "label": "le tasse sugli interessi",
+          "ex": "Sugli interessi del conto deposito tratteniamo il 26%: Lei riceve già il netto. / Sui BTP l'aliquota è del 12,5%."
+        },
+        {
+          "label": "il regime amministrato",
+          "ex": "Con il <b>regime amministrato</b> le tasse sui guadagni le calcoliamo e le paghiamo noi."
+        },
+        {
+          "label": "il mutuo",
+          "ex": "All'inizio dell'anno Le mandiamo la <b>certificazione degli interessi</b> del mutuo: la porti al CAF per il 730."
+        },
+        {
+          "label": "il bonifico parlante",
+          "ex": "Per i lavori in casa serve un <b>bonifico parlante</b>: Le preparo il modulo con la causale giusta."
+        },
+        {
+          "label": "rimandare all'esperto",
+          "ex": "Per la Sua dichiarazione dei redditi Le consiglio di rivolgersi al CAF o al commercialista. / Su questo punto non posso darLe un consiglio fiscale."
+        }
+      ],
+      "warn": "Il bancario non fa consulenza fiscale: spiega le tasse che riguardano i prodotti della banca e rimanda al CAF o al commercialista. Aliquote, limiti e regole possono cambiare con le leggi di bilancio: prima di dare un numero al cliente si controlla che sia ancora valido. Per le spese con detrazione, un bonifico normale al posto del bonifico parlante può creare problemi: va fatto quello giusto.",
+      "errors": [
+        {
+          "wrong": "Devo fare la dichiarazione della rendita.",
+          "right": "Devo fare la dichiarazione dei redditi.",
+          "why": "Lo spagnolo «declaración de la renta» è la <i>dichiarazione dei redditi</i>; la <i>rendita</i> è un reddito periodico."
+        },
+        {
+          "wrong": "Questo documento mi serve per il ritorno fiscale.",
+          "right": "Questo documento mi serve per la dichiarazione dei redditi.",
+          "why": "Calco dell'inglese «tax return»: in italiano si dice <i>dichiarazione dei redditi</i>."
+        },
+        {
+          "wrong": "Sugli interessi c'è una tassa di trattenuta del 26%.",
+          "right": "Sugli interessi c'è una ritenuta del 26%.",
+          "why": "Calco dell'inglese «withholding tax»: in italiano si dice <i>ritenuta</i>."
+        },
+        {
+          "wrong": "Gli interessi del mutuo sono deducibili al 19%.",
+          "right": "Gli interessi del mutuo sono detraibili al 19%.",
+          "why": "L'inglese «tax-deductible» copre due cose che in italiano sono diverse: la <i>detrazione</i> si toglie dall'imposta, la <i>deduzione</i> dal reddito. Gli interessi del mutuo si <i>detraggono</i>."
+        },
+        {
+          "wrong": "Sul dossier titoli pago la tassa di timbro dello 0,2%.",
+          "right": "Sul dossier titoli pago l'imposta di bollo dello 0,2%.",
+          "why": "Calco dell'inglese «stamp duty»: si dice <i>imposta di bollo</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: imposta di bollo, ritenuta, 12,5%, certificazione, bonifico parlante, CAF.",
+          "items": [
+            "L'… di 34,20 euro è un'imposta dello Stato, non un costo della banca.",
+            "Sugli interessi la banca applica una … del 26%.",
+            "Sui BTP l'aliquota è del …",
+            "Per il 730 Le serve la … degli interessi del mutuo.",
+            "Per i lavori di ristrutturazione del bagno serve un … per avere la detrazione.",
+            "Per la dichiarazione dei redditi può andare al … o dal commercialista."
+          ],
+          "key": [
+            "<b>imposta di bollo</b>",
+            "<b>ritenuta</b>",
+            "<b>12,5%</b>",
+            "<b>certificazione</b>",
+            "<b>bonifico parlante</b>",
+            "<b>CAF</b>"
+          ]
+        },
+        {
+          "type": "Calcolo (B1–B2)",
+          "instr": "Calcola e scrivi il risultato.",
+          "items": [
+            "Interessi lordi di 400 euro su un conto deposito, ritenuta del 26%: quanto resta al netto?",
+            "Cedole di BTP per 400 euro lordi, ritenuta del 12,5%: quanto resta al netto?",
+            "3.000 euro di interessi del mutuo dell'abitazione principale: quanto vale la detrazione del 19%?",
+            "5.000 euro di interessi del mutuo dell'abitazione principale: qual è la detrazione massima?",
+            "Dossier titoli di 50.000 euro: quanto è l'imposta di bollo dello 0,2%?",
+            "Conto corrente di una persona fisica con giacenza media di 3.000 euro: quanto si paga di bollo?"
+          ],
+          "key": [
+            "<b>296 euro</b> (400 − 104)",
+            "<b>350 euro</b> (400 − 50)",
+            "<b>570 euro</b>",
+            "<b>760 euro</b>: il 19% di 4.000 euro, il limite massimo",
+            "<b>100 euro</b>",
+            "<b>niente</b>: la giacenza media non supera i 5.000 euro"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Rispondi al cliente con chiarezza, senza fare consulenza fiscale.",
+          "items": [
+            "Il cliente chiede perché sull'estratto conto c'è l'imposta di bollo.",
+            "Il cliente chiede se deve dichiarare gli interessi del conto deposito.",
+            "Il cliente chiede quanto può detrarre degli interessi del mutuo.",
+            "Il cliente deve pagare l'impresa che ristruttura il bagno e vuole la detrazione.",
+            "Il cliente chiede perché sui BTP paga meno tasse che sul conto deposito.",
+            "Il cliente chiede un consiglio per pagare meno tasse."
+          ],
+          "key": [
+            "Esempio: <b>è un'imposta dello Stato che la banca deve applicare: sul conto corrente è di 34,20 euro l'anno, ma non si paga se la giacenza media non supera i 5.000 euro.</b>",
+            "Esempio: <b>sugli interessi tratteniamo già il 26% come sostituto d'imposta. Per la Sua dichiarazione, però, Le conviene chiedere conferma al CAF o al commercialista.</b>",
+            "Esempio: <b>per il mutuo dell'abitazione principale può detrarre il 19% degli interessi, fino a 4.000 euro di interessi all'anno. La certificazione gliela mandiamo noi.</b>",
+            "Esempio: <b>per la detrazione serve un bonifico parlante: mi dà la fattura e il codice fiscale o la partita IVA dell'impresa, e Le preparo il bonifico con la causale giusta.</b>",
+            "Esempio: <b>per legge sugli interessi dei titoli di Stato l'aliquota è del 12,5%, mentre su quelli del conto deposito è del 26%.</b>",
+            "Esempio: <b>non posso darLe consigli fiscali: per questo è meglio un commercialista. Posso spiegarLe come sono tassati i nostri prodotti.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è l'impiegato di una filiale, il docente è un cliente che sta preparando il 730 e ha domande sul mutuo, sul conto deposito e sul bollo. Difficoltà da introdurre: alla fine chiede al bancario di dirgli che cosa scrivere nel 730.",
+          "items": [
+            "Accogli il cliente e chiedi di che cosa ha bisogno.",
+            "Spiega la certificazione degli interessi del mutuo.",
+            "Spiega la detrazione del 19% e il suo limite.",
+            "Spiega che gli interessi del conto deposito sono già tassati.",
+            "Spiega l'imposta di bollo.",
+            "Rispondi con cortesia alla richiesta sul 730."
+          ],
+          "key": [
+            "Esempio: <b>Buongiorno, mi dica: Le servono documenti per la dichiarazione?</b>",
+            "Esempio: <b>Ecco la certificazione degli interessi del mutuo: l'anno scorso ha pagato 2.800 euro di interessi.</b>",
+            "Esempio: <b>Per l'abitazione principale si detrae il 19%, fino a 4.000 euro di interessi: nel Suo caso sono 532 euro.</b>",
+            "Esempio: <b>Sugli interessi del conto deposito abbiamo già trattenuto il 26%: Le do il riepilogo.</b>",
+            "Esempio: <b>Il bollo sul conto deposito è dello 0,2%: lo trova nell'estratto conto di fine anno.</b>",
+            "Esempio: <b>Mi dispiace, non posso compilare o consigliare il 730: con questi documenti il CAF o il commercialista possono aiutarLa.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "banca",
+      "cat": "Clienti",
+      "title": "Email ai clienti e reclami",
+      "def": "Il bancario scrive ai clienti (comunicazioni, risposte, richieste di documenti) e gestisce i reclami. Questa scheda raccoglie le formule delle email formali di una banca, la procedura del reclamo, i tempi di risposta e il ricorso all'Arbitro Bancario Finanziario. I reclami dei clienti verso un'azienda che non è una banca sono in Vendite.",
+      "form": "Le email ai clienti seguono le regole della corrispondenza formale: oggetto chiaro, «Gentile signora…», il <i>Lei</i>, frasi brevi, un'informazione per paragrafo, firma con nome, ruolo e filiale. Per email non si chiedono mai codici o password. Il <b>reclamo</b> è una protesta scritta del cliente (lettera, email, PEC, modulo sul sito) all'<b>ufficio reclami</b> della banca. La banca deve rispondere entro <b>60 giorni</b>; per i servizi di pagamento entro <b>15 giornate lavorative</b> (in casi eccezionali fino a 35). Se il cliente non è soddisfatto della risposta, o non la riceve, può fare ricorso all'<b>ABF</b> (Arbitro Bancario Finanziario) entro 12 mesi dal reclamo: il ricorso costa 20 euro, che la banca rimborsa se il cliente ha ragione, anche solo in parte, e per le richieste di denaro vale fino a 200.000 euro. Per gli investimenti c'è l'<b>ACF</b> (Arbitro per le Controversie Finanziarie, presso la Consob). Con il cliente arrabbiato: cortesia, ringraziare per la segnalazione, risposte precise con date e numeri.",
+      "tables": [
+        {
+          "before": "<b>Le formule dell'email.</b>",
+          "plain": true,
+          "headers": [
+            "formula",
+            "quando si usa"
+          ],
+          "rows": [
+            [
+              "Oggetto: Richiesta documenti – pratica di mutuo n. 4521",
+              "un oggetto chiaro, con il numero della pratica"
+            ],
+            [
+              "Gentile signora Bianchi, / Gentile cliente,",
+              "all'inizio"
+            ],
+            [
+              "La informiamo che… / Le comunichiamo che…",
+              "per dare un'informazione"
+            ],
+            [
+              "Con riferimento alla Sua richiesta del 3 marzo…",
+              "per collegarsi a una richiesta o a un reclamo"
+            ],
+            [
+              "La preghiamo di inviarci… entro il…",
+              "per chiedere un documento"
+            ],
+            [
+              "Ci scusiamo per il disagio.",
+              "quando c'è stato un problema"
+            ],
+            [
+              "Restiamo a disposizione per qualsiasi chiarimento.",
+              "prima della firma"
+            ],
+            [
+              "Cordiali saluti, Laura Gatti, Gestore clienti, Filiale di Bologna Centro",
+              "la firma"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Il reclamo.</b>",
+          "plain": true,
+          "headers": [
+            "termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "il reclamo",
+              "la protesta scritta del cliente alla banca"
+            ],
+            [
+              "l'ufficio reclami",
+              "l'ufficio della banca che esamina i reclami"
+            ],
+            [
+              "i tempi di risposta",
+              "60 giorni; per i servizi di pagamento 15 giornate lavorative (fino a 35 in casi eccezionali)"
+            ],
+            [
+              "accogliere / non accogliere un reclamo",
+              "dare ragione / non dare ragione al cliente"
+            ],
+            [
+              "l'ABF",
+              "l'Arbitro Bancario Finanziario: ricorso entro 12 mesi dal reclamo, costo 20 euro"
+            ],
+            [
+              "l'ACF",
+              "l'Arbitro per le Controversie Finanziarie, per gli investimenti, presso la Consob"
+            ],
+            [
+              "il ricorso",
+              "la domanda all'arbitro"
+            ],
+            [
+              "l'indennizzo, il rimborso",
+              "una somma per compensare un danno o un disagio / la restituzione di una somma"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "rispondere",
+              "sp. contestar",
+              "<i>contestare</i> in italiano vuol dire «mettere in discussione, protestare»"
+            ],
+            [
+              "presentare un reclamo",
+              "to file a complaint",
+              "<i>archiviare</i> vuol dire «mettere in archivio» o chiudere una pratica"
+            ],
+            [
+              "il disagio, l'inconveniente",
+              "inconvenience",
+              "<i>inconvenienza</i> non esiste"
+            ],
+            [
+              "in allegato",
+              "attachment",
+              "l'<i>attaccamento</i> in italiano è un legame affettivo"
+            ],
+            [
+              "i giorni lavorativi",
+              "business days",
+              "non si dice «giorni di affari»"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "aprire l'email",
+          "ex": "Gentile signora Bianchi, <b>con riferimento</b> alla Sua richiesta del 3 marzo, Le comunichiamo che…"
+        },
+        {
+          "label": "chiedere un documento",
+          "ex": "<b>La preghiamo di</b> inviarci copia del documento d'identità entro il 15 aprile."
+        },
+        {
+          "label": "ricevere un reclamo",
+          "ex": "Grazie per la segnalazione: abbiamo registrato il Suo <b>reclamo</b> con il numero 2026/381. / Le risponderemo entro i tempi previsti."
+        },
+        {
+          "label": "rispondere a un reclamo accolto",
+          "ex": "Abbiamo verificato: la commissione è stata addebitata per errore e Le sarà rimborsata entro cinque giorni lavorativi. / Ci scusiamo per il disagio."
+        },
+        {
+          "label": "rispondere a un reclamo non accolto",
+          "ex": "Dopo le verifiche, non possiamo <b>accogliere</b> il Suo reclamo per i seguenti motivi: … / Se non è soddisfatta della risposta, può presentare <b>ricorso</b> all'Arbitro Bancario Finanziario."
+        },
+        {
+          "label": "chiudere",
+          "ex": "Restiamo a disposizione per qualsiasi chiarimento. / Cordiali saluti."
+        }
+      ],
+      "warn": "Il reclamo deve essere scritto: se il cliente protesta a voce, gli si spiega come presentarlo. I tempi di risposta vanno rispettati. Nella risposta che non dà ragione al cliente si indica sempre la possibilità di ricorrere all'ABF (o all'ACF per gli investimenti). Il tono resta cortese anche con il cliente arrabbiato: niente frasi difensive. Scusarsi per il disagio non vuol dire ammettere un errore; se però l'errore c'è, lo si dice con chiarezza. Indennizzi e rimborsi li decide l'ufficio competente: non si promettono al telefono.",
+      "errors": [
+        {
+          "wrong": "Non avete ancora contestato il mio reclamo.",
+          "right": "Non avete ancora risposto al mio reclamo.",
+          "why": "Lo spagnolo «contestar» è <i>rispondere</i>; <i>contestare</i> vuol dire «mettere in discussione, protestare»."
+        },
+        {
+          "wrong": "Vorrei archiviare un reclamo.",
+          "right": "Vorrei presentare un reclamo.",
+          "why": "Calco dell'inglese «to file a complaint»: si dice <i>presentare un reclamo</i>; <i>archiviare</i> vuol dire mettere in archivio."
+        },
+        {
+          "wrong": "Ci scusiamo per l'inconvenienza.",
+          "right": "Ci scusiamo per il disagio (per l'inconveniente).",
+          "why": "Dall'inglese «inconvenience»: «inconvenienza» non esiste; si dice <i>disagio</i> o <i>inconveniente</i>."
+        },
+        {
+          "wrong": "Trova il modulo per il reclamo in attaccamento.",
+          "right": "Trova il modulo per il reclamo in allegato.",
+          "why": "Dall'inglese «attachment»: nelle email si dice <i>in allegato</i>; l'<i>attaccamento</i> è un legame affettivo."
+        },
+        {
+          "wrong": "Le risponderemo entro quindici giorni di affari.",
+          "right": "Le risponderemo entro quindici giorni lavorativi.",
+          "why": "Calco dell'inglese «business days»: si dice <i>giorni lavorativi</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: oggetto, reclamo, ufficio reclami, 60 giorni, ricorso, ABF.",
+          "items": [
+            "Nell'… della mail scriva sempre il numero della pratica.",
+            "Il cliente ha presentato un … scritto per una commissione sbagliata.",
+            "Il reclamo lo esamina l'…",
+            "Per un reclamo sul mutuo la banca deve rispondere entro …",
+            "Se la risposta non lo soddisfa, il cliente può presentare …",
+            "Il ricorso all'… costa 20 euro."
+          ],
+          "key": [
+            "<b>oggetto</b>",
+            "<b>reclamo</b>",
+            "<b>ufficio reclami</b>",
+            "<b>60 giorni</b>",
+            "<b>ricorso</b>",
+            "<b>ABF</b>"
+          ]
+        },
+        {
+          "type": "Riformulazione (B1–B2)",
+          "instr": "Riscrivi in stile formale, per un'email della banca.",
+          "items": [
+            "«Ciao, ci servono i tuoi documenti.»",
+            "«Abbiamo sbagliato noi, scusa.»",
+            "«Il tuo reclamo è stato respinto.»",
+            "«Mandaci tutto entro venerdì.»",
+            "«Se hai domande, scrivici.»",
+            "«Ok, i soldi te li ridiamo.»"
+          ],
+          "key": [
+            "Esempio: <b>Gentile cliente, La preghiamo di inviarci copia del documento d'identità.</b>",
+            "Esempio: <b>Abbiamo verificato che si è trattato di un nostro errore e ci scusiamo per il disagio.</b>",
+            "Esempio: <b>Dopo le verifiche, non possiamo accogliere il Suo reclamo.</b>",
+            "Esempio: <b>La preghiamo di inviarci i documenti entro venerdì 13 novembre.</b>",
+            "Esempio: <b>Restiamo a disposizione per qualsiasi chiarimento.</b>",
+            "Esempio: <b>Le comunichiamo che la somma Le sarà rimborsata entro cinque giorni lavorativi.</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Scrivi l'email o rispondi al cliente.",
+          "items": [
+            "Scrivi un'email per chiedere a un cliente un documento d'identità valido, perché il suo è scaduto.",
+            "Rispondi a un reclamo accolto: una commissione addebitata per errore.",
+            "Rispondi a un reclamo non accolto, con l'indicazione dell'ABF.",
+            "Il cliente telefona arrabbiato: dopo 70 giorni non ha ancora ricevuto una risposta.",
+            "Il cliente chiede come funziona l'ABF.",
+            "Il cliente chiede un indennizzo per il disagio."
+          ],
+          "key": [
+            "Esempio: <b>Oggetto: aggiornamento documento d'identità. Gentile signor Neri, il documento d'identità che abbiamo in archivio è scaduto. La preghiamo di inviarci copia di un documento valido entro il 30 novembre, oppure portandolo in filiale. Cordiali saluti.</b>",
+            "Esempio: <b>Gentile signora Bianchi, con riferimento al Suo reclamo del 2 ottobre, abbiamo verificato che la commissione di 15 euro è stata addebitata per errore: Le sarà rimborsata entro cinque giorni lavorativi. Ci scusiamo per il disagio.</b>",
+            "Esempio: <b>Gentile signor Ferri, dopo le verifiche non possiamo accogliere il Suo reclamo, perché la commissione è prevista dal contratto (art. 7). Se non è soddisfatto della risposta, può presentare ricorso all'Arbitro Bancario Finanziario.</b>",
+            "Esempio: <b>ha ragione, i tempi sono passati e mi scuso. Sollecito subito l'ufficio reclami; intanto Le ricordo che, senza risposta, può già rivolgersi all'ABF.</b>",
+            "Esempio: <b>dopo aver presentato reclamo alla banca, se la risposta non La soddisfa o non arriva, può fare ricorso all'ABF entro 12 mesi: si fa online, costa 20 euro e l'arbitro decide in pochi mesi.</b>",
+            "Esempio: <b>capisco. Registro la Sua richiesta nel reclamo: la valuterà l'ufficio competente, e Le daremo una risposta scritta.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è un impiegato dell'ufficio reclami, il docente è un cliente che si lamenta perché per i bonifici istantanei paga una commissione più alta che per quelli ordinari. Difficoltà da introdurre: il cliente minaccia di scrivere ai giornali e di cambiare banca.",
+          "items": [
+            "Accogli il cliente e ringrazialo per la segnalazione.",
+            "Fatti spiegare il problema con date e importi.",
+            "Verifica e riconosci il problema, se c'è.",
+            "Spiega la procedura e i tempi del reclamo.",
+            "Rispondi con calma alla minaccia.",
+            "Conferma per iscritto."
+          ],
+          "key": [
+            "Esempio: <b>Grazie per averci segnalato il problema: vediamo subito di che cosa si tratta.</b>",
+            "Esempio: <b>Mi dice le date dei bonifici e quanto Le è stato addebitato ogni volta?</b>",
+            "Esempio: <b>Ha ragione: il bonifico istantaneo non può costare più di quello ordinario. Verifico perché Le è stata addebitata questa commissione.</b>",
+            "Esempio: <b>Registro il reclamo: per i servizi di pagamento Le rispondiamo entro 15 giornate lavorative.</b>",
+            "Esempio: <b>Capisco la Sua irritazione. Il mio obiettivo è risolvere il problema e restituirLe quello che non doveva pagare.</b>",
+            "Esempio: <b>Oggi stesso Le mando un'email con il numero del reclamo e i tempi di risposta.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "banca",
+      "cat": "Organismi",
+      "title": "Sigle e organismi: BCE, Banca d'Italia, Consob, ABF, Centrale dei Rischi",
+      "def": "Nel lavoro di banca si usano molte sigle: autorità di vigilanza, arbitri, archivi, associazioni, regole europee. Questa scheda raccoglie le sigle più frequenti, spiega che cosa fanno gli organismi e come parlarne al cliente.",
+      "form": "Le banche italiane sono vigilate dalla <b>Banca d'Italia</b> e, le più grandi, direttamente dalla <b>BCE</b> (Banca centrale europea), che decide anche i tassi dell'area euro. La <b>Consob</b> vigila sui mercati finanziari e sugli investimenti; l'<b>IVASS</b> sulle assicurazioni. Per le controversie con i clienti ci sono gli arbitri: l'<b>ABF</b> per i servizi bancari e l'<b>ACF</b> per gli investimenti (la procedura è spiegata in <i>Email ai clienti e reclami</i>). La <b>Centrale dei Rischi</b> della Banca d'Italia raccoglie i debiti dei clienti verso banche e finanziarie: un cliente viene segnalato se deve 30.000 euro o più a un intermediario, oppure dai 250 euro in su se è in sofferenza. Esistono anche archivi privati, i <b>SIC</b> (sistemi di informazioni creditizie), come CRIF. Il FITD tutela i depositi (vedi <i>Il risparmio e i depositi</i>); l'UIF riceve le segnalazioni antiriciclaggio (vedi <i>Allo sportello</i>). Con il cliente, ogni sigla si spiega la prima volta che si usa.",
+      "tables": [
+        {
+          "before": "<b>Autorità e organismi.</b>",
+          "plain": true,
+          "headers": [
+            "sigla",
+            "che cosa fa"
+          ],
+          "rows": [
+            [
+              "la BCE",
+              "la Banca centrale europea: decide i tassi dell'area euro e vigila direttamente sulle banche più grandi"
+            ],
+            [
+              "la Banca d'Italia",
+              "la banca centrale italiana: vigila sulle altre banche e controlla la trasparenza verso i clienti"
+            ],
+            [
+              "la Consob",
+              "vigila sui mercati finanziari e sui servizi di investimento"
+            ],
+            [
+              "l'IVASS",
+              "vigila sulle assicurazioni"
+            ],
+            [
+              "l'UIF",
+              "l'Unità di informazione finanziaria: riceve le segnalazioni di operazioni sospette"
+            ],
+            [
+              "l'ABF / l'ACF",
+              "l'Arbitro Bancario Finanziario / l'Arbitro per le Controversie Finanziarie"
+            ],
+            [
+              "il FITD",
+              "il Fondo interbancario di tutela dei depositi (per le banche di credito cooperativo c'è un fondo simile)"
+            ],
+            [
+              "l'ABI",
+              "l'Associazione bancaria italiana, che riunisce le banche"
+            ],
+            [
+              "il MEF",
+              "il Ministero dell'Economia e delle Finanze"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Archivi e sigle tecniche.</b>",
+          "plain": true,
+          "headers": [
+            "sigla o termine",
+            "che cosa vuol dire"
+          ],
+          "rows": [
+            [
+              "la Centrale dei Rischi (CR)",
+              "l'archivio della Banca d'Italia sui debiti dei clienti: segnala chi deve 30.000 euro o più, o dai 250 euro in su se è in sofferenza"
+            ],
+            [
+              "la sofferenza",
+              "la banca ritiene che il cliente abbia gravi difficoltà a restituire il debito"
+            ],
+            [
+              "i SIC, CRIF",
+              "archivi privati sui finanziamenti e su come vengono pagati"
+            ],
+            [
+              "la SEPA",
+              "l'area unica dei pagamenti in euro"
+            ],
+            [
+              "l'IBAN / il BIC (SWIFT)",
+              "il codice del conto / il codice internazionale della banca"
+            ],
+            [
+              "la PSD2",
+              "la direttiva europea sui servizi di pagamento (da qui l'autenticazione forte)"
+            ],
+            [
+              "la MiFID",
+              "la direttiva europea sui servizi di investimento (da qui il questionario)"
+            ],
+            [
+              "il TUB / il TUF",
+              "il Testo unico bancario / il Testo unico della finanza: le leggi principali su banche e mercati"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "la banca, l'istituto di credito, l'intermediario",
+              "sp. entidad (bancaria)",
+              "l'<i>entità</i> in italiano è una cosa che esiste, in senso astratto"
+            ],
+            [
+              "il SIC, l'archivio sui crediti",
+              "credit bureau",
+              "non si dice «ufficio di credito»"
+            ],
+            [
+              "le negoziazioni (in Borsa)",
+              "trading",
+              "il <i>commercio</i> in italiano è la compravendita di merci"
+            ],
+            [
+              "la sofferenza, il credito deteriorato",
+              "bad debt",
+              "non si dice «debito cattivo»"
+            ],
+            [
+              "il consiglio di amministrazione",
+              "board",
+              "il <i>bordo</i> in italiano è il margine di una cosa, o l'interno di una nave (a bordo)"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "la vigilanza",
+          "ex": "La nostra banca è vigilata dalla <b>Banca d'Italia</b>. / Le banche più grandi le vigila direttamente la <b>BCE</b>."
+        },
+        {
+          "label": "la Centrale dei Rischi",
+          "ex": "Prima di concederLe il prestito consultiamo la <b>Centrale dei Rischi</b>. / Può chiedere gratis alla Banca d'Italia i dati registrati a Suo nome."
+        },
+        {
+          "label": "gli arbitri",
+          "ex": "Per un problema con il conto può rivolgersi all'<b>ABF</b>; per gli investimenti all'<b>ACF</b>."
+        },
+        {
+          "label": "la tutela dei depositi",
+          "ex": "I depositi sono tutelati dal <b>FITD</b> fino a 100.000 euro per depositante."
+        },
+        {
+          "label": "le sigle tecniche",
+          "ex": "L'<b>IBAN</b> identifica il conto, il <b>BIC</b> identifica la banca."
+        },
+        {
+          "label": "le regole europee",
+          "ex": "La conferma con il telefono la chiede la <b>PSD2</b>: è una regola europea, non una scelta della banca."
+        }
+      ],
+      "warn": "Le sigle si spiegano sempre la prima volta. Essere registrati in <b>Centrale dei Rischi</b> non vuol dire essere un cattivo pagatore: l'archivio registra anche i debiti pagati regolarmente (per esempio un mutuo). Centrale dei Rischi (pubblica, della Banca d'Italia) e SIC (privati, come CRIF) sono archivi diversi. Ognuno può chiedere gratis i propri dati. Se un dato è sbagliato, la correzione si chiede all'intermediario che l'ha segnalato. Nomi e compiti degli organismi possono cambiare: prima di citarli in un documento, si controllano sui loro siti.",
+      "errors": [
+        {
+          "wrong": "La nostra entità ha filiali in tutta Italia.",
+          "right": "La nostra banca (il nostro istituto) ha filiali in tutta Italia.",
+          "why": "Lo spagnolo «entidad (bancaria)» è la <i>banca</i>, l'<i>istituto di credito</i>; l'<i>entità</i> è una cosa che esiste, in senso astratto."
+        },
+        {
+          "wrong": "La banca ha chiesto informazioni all'ufficio di credito.",
+          "right": "La banca ha consultato un SIC (un archivio sui crediti, come CRIF).",
+          "why": "Calco dell'inglese «credit bureau»: in italiano si parla di <i>SIC</i> o di <i>archivio sui crediti</i>."
+        },
+        {
+          "wrong": "La Consob ha sospeso il commercio del titolo.",
+          "right": "La Consob ha sospeso il titolo dalle negoziazioni.",
+          "why": "Calco dell'inglese «trading»: in Borsa si parla di <i>negoziazioni</i>; il <i>commercio</i> è la compravendita di merci."
+        },
+        {
+          "wrong": "La banca ha molti debiti cattivi.",
+          "right": "La banca ha molte sofferenze (molti crediti deteriorati).",
+          "why": "Calco dell'inglese «bad debt»: si dice <i>sofferenza</i>, <i>credito deteriorato</i>."
+        },
+        {
+          "wrong": "Il bordo della banca ha approvato il bilancio.",
+          "right": "Il consiglio di amministrazione della banca ha approvato il bilancio.",
+          "why": "L'inglese «board» è il <i>consiglio di amministrazione</i>; il <i>bordo</i> è il margine di una cosa."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento (A2–B1)",
+          "instr": "Completa con: BCE, Consob, Centrale dei Rischi, ABF, FITD, UIF.",
+          "items": [
+            "La … decide i tassi di interesse dell'area euro.",
+            "La … vigila sui mercati finanziari.",
+            "Nella … della Banca d'Italia ci sono i debiti dei clienti.",
+            "Per un problema con il conto il cliente può fare ricorso all'…",
+            "Il … tutela i depositi fino a 100.000 euro.",
+            "Le operazioni sospette si segnalano all'…"
+          ],
+          "key": [
+            "<b>BCE</b>",
+            "<b>Consob</b>",
+            "<b>Centrale dei Rischi</b>",
+            "<b>ABF</b>",
+            "<b>FITD</b>",
+            "<b>UIF</b>"
+          ]
+        },
+        {
+          "type": "Classificazione (B1–B2)",
+          "instr": "Chi se ne occupa? Scegli tra: BCE, Consob, UIF, FITD, ABF, IVASS.",
+          "items": [
+            "Decide i tassi di interesse dell'area euro.",
+            "Vigila sui mercati e sugli investimenti.",
+            "Riceve le segnalazioni di operazioni sospette.",
+            "Rimborsa i depositi se una banca fallisce.",
+            "Decide le controversie tra clienti e banche sui servizi bancari.",
+            "Vigila sulle assicurazioni."
+          ],
+          "key": [
+            "la <b>BCE</b>",
+            "la <b>Consob</b>",
+            "l'<b>UIF</b>",
+            "il <b>FITD</b>",
+            "l'<b>ABF</b>",
+            "l'<b>IVASS</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata (B2–C1)",
+          "instr": "Rispondi al cliente con parole semplici.",
+          "items": [
+            "Il cliente chiede che cos'è la Centrale dei Rischi e se lui è «segnalato».",
+            "Il cliente pensa che la Centrale dei Rischi sia una «lista dei cattivi pagatori».",
+            "Il cliente chiede chi controlla la banca.",
+            "Il cliente vuole sapere a chi rivolgersi per un problema con un fondo comune.",
+            "Spiega la differenza tra IBAN e BIC.",
+            "Il cliente dice che un'altra banca gli ha rifiutato un prestito «per colpa della CRIF»."
+          ],
+          "key": [
+            "Esempio: <b>è un archivio della Banca d'Italia con i debiti dei clienti verso banche e finanziarie. Con il Suo mutuo da 150.000 euro è registrato, ma questo è normale.</b>",
+            "Esempio: <b>non è così: la Centrale dei Rischi registra anche i debiti pagati regolarmente. Una segnalazione negativa c'è solo se ci sono problemi nei pagamenti.</b>",
+            "Esempio: <b>la nostra banca è vigilata dalla Banca d'Italia; per gli investimenti controlla anche la Consob.</b>",
+            "Esempio: <b>prima presenta reclamo alla banca; se la risposta non La soddisfa, per gli investimenti può rivolgersi all'ACF, l'arbitro presso la Consob.</b>",
+            "Esempio: <b>l'IBAN è il codice del Suo conto; il BIC è il codice internazionale della banca, che serve soprattutto per i bonifici fuori dall'area SEPA.</b>",
+            "Esempio: <b>la CRIF è un archivio privato sui finanziamenti. Può chiedere i Suoi dati per vedere che cosa c'è scritto; se un dato è sbagliato, si chiede la correzione a chi l'ha segnalato.</b>"
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è l'impiegato di una filiale, il docente è un piccolo imprenditore spaventato perché un'altra banca gli ha detto che «risulta in Centrale Rischi». Difficoltà da introdurre: è convinto di essere in una «lista nera» e chiede alla banca di cancellarlo.",
+          "items": [
+            "Ascolta il cliente e calmalo.",
+            "Spiega che cos'è la Centrale dei Rischi.",
+            "Spiega la soglia e che vengono registrati anche i debiti regolari.",
+            "Spiega come vedere gratis i propri dati.",
+            "Rispondi alla richiesta di cancellazione.",
+            "Proponi i prossimi passi."
+          ],
+          "key": [
+            "Esempio: <b>Capisco la preoccupazione: vediamo insieme di che cosa si tratta.</b>",
+            "Esempio: <b>La Centrale dei Rischi è un archivio della Banca d'Italia con i debiti dei clienti verso banche e finanziarie.</b>",
+            "Esempio: <b>Chi deve 30.000 euro o più viene registrato, anche se paga regolarmente: con il Suo fido da 50.000 euro, è normale esserci.</b>",
+            "Esempio: <b>Può chiedere gratis alla Banca d'Italia i dati registrati a Suo nome, anche online.</b>",
+            "Esempio: <b>Se i dati sono corretti, non si possono cancellare; se c'è un errore, chiediamo la correzione alla banca che li ha segnalati.</b>",
+            "Esempio: <b>Faccia la richiesta dei dati, poi torni da me e li guardiamo insieme.</b>"
+          ]
+        }
+      ]
+    }
+  ]
 }

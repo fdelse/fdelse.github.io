@@ -1,5 +1,5 @@
 {
-  "versione": "1.0",
+  "versione": "1.1",
   "livello": "Vendite",
   "schede": [
     {
@@ -1224,14 +1224,14 @@
               "l'<i>argomento</i> in italiano è il tema di cui si parla, o una ragione: un argomento di vendita"
             ],
             [
-              "anzi, in realtà",
+              "invece, in realtà",
               "in fact",
-              "<i>infatti</i> conferma quello che si è appena detto: «È buono? Infatti lo comprano in molti»"
+              "<i>infatti</i> conferma quello che si è appena detto («È buono? Infatti lo comprano in molti»); per correggere si dice <i>invece</i>"
             ],
             [
               "le voci",
               "rumors",
-              "il <i>rumore</i> in italiano è un suono: il rumore del traffico"
+              "il <i>rumore</i> in italiano è un suono (il rumore del traffico) o, in senso figurato, lo scalpore"
             ],
             [
               "rispondere a, affrontare",
@@ -1282,7 +1282,7 @@
         {
           "wrong": "Ho sentito dei rumori sul vostro concorrente.",
           "right": "Ho sentito delle voci sul vostro concorrente.",
-          "why": "L'inglese «rumors» sono le <i>voci</i>; il <i>rumore</i> è un suono forte."
+          "why": "L'inglese «rumors» sono le <i>voci</i>; il <i>rumore</i> è un suono (in senso figurato, lo scalpore: la notizia ha fatto rumore)."
         },
         {
           "wrong": "Vorrei indirizzare la Sua obiezione sui tempi.",
@@ -1290,9 +1290,9 @@
           "why": "Calco dell'inglese «address»: in italiano si <i>risponde a</i> un'obiezione; <i>indirizzare</i> vuol dire «mandare verso»."
         },
         {
-          "wrong": "Il nostro prodotto non costa di più: infatti costa meno.",
-          "right": "Il nostro prodotto non costa di più: anzi, costa meno.",
-          "why": "L'inglese «in fact» qui è <i>anzi</i>; <i>infatti</i> conferma quello che si è appena detto."
+          "wrong": "Molti pensano che sia caro: infatti è il più economico della gamma.",
+          "right": "Molti pensano che sia caro: invece è il più economico della gamma.",
+          "why": "L'inglese «in fact», quando corregge quello che si è appena detto, è <i>invece</i>, <i>in realtà</i>; <i>infatti</i> conferma: «Dicono che costa poco: infatti è il più economico»."
         }
       ],
       "exercises": [
@@ -1510,7 +1510,7 @@
             [
               "gratuito, gratis",
               "free",
-              "<i>libero</i> vuol dire «non occupato»: un posto libero"
+              "<i>libero</i> vuol dire «non occupato» (un posto libero); solo in <i>ingresso libero</i> vuol dire «senza pagare»"
             ]
           ]
         }
@@ -1566,7 +1566,7 @@
         {
           "wrong": "Se ordinate entro venerdì, l'installazione è libera.",
           "right": "Se ordinate entro venerdì, l'installazione è gratuita.",
-          "why": "L'inglese «free» qui è <i>gratuito</i>; <i>libero</i> vuol dire «non occupato» o «senza limiti»."
+          "why": "L'inglese «free» qui è <i>gratuito</i>; <i>libero</i> vuol dire «non occupato» (un posto libero), e solo in <i>ingresso libero</i> vuol dire «senza pagare»."
         }
       ],
       "exercises": [
@@ -2113,9 +2113,9 @@
               "<i>signatura</i> non esiste"
             ],
             [
-              "sottoscrivere, acquistare (un servizio)",
+              "sottoscrivere (un contratto), acquistare (un servizio)",
               "to contract; sp. contratar",
-              "<i>contrattare</i> in italiano vuol dire «discutere il prezzo»: contrattare al mercato"
+              "<i>contrattare</i> in italiano vuol dire «trattare le condizioni, soprattutto il prezzo»: contrattare al mercato"
             ],
             [
               "impegnarsi",
@@ -2160,8 +2160,8 @@
       "errors": [
         {
           "wrong": "Il cliente ha contrattato il servizio per due anni.",
-          "right": "Il cliente ha sottoscritto (acquistato) il servizio per due anni.",
-          "why": "Dall'inglese «to contract» e dallo spagnolo «contratar»: in italiano <i>contrattare</i> vuol dire «discutere il prezzo»."
+          "right": "Il cliente ha sottoscritto un contratto di due anni per il servizio.",
+          "why": "Dallo spagnolo «contratar» (e dall'inglese «to contract»): in italiano <i>contrattare</i> vuol dire «trattare le condizioni di un affare, soprattutto il prezzo»."
         },
         {
           "wrong": "Ci compromettiamo a consegnare entro il 15.",
@@ -2457,8 +2457,8 @@
           "why": "Lo spagnolo «solicitud» è la <i>richiesta</i>; il <i>sollecito</i> è un promemoria per qualcosa in ritardo."
         },
         {
-          "wrong": "Il corriere passa a collezionare la merce alle 16.",
-          "right": "Il corriere passa a ritirare la merce alle 16.",
+          "wrong": "Domani mattina il corriere passa a collezionare i pacchi.",
+          "right": "Domani mattina il corriere passa a ritirare i pacchi.",
           "why": "L'inglese «to collect» qui è <i>ritirare</i>; <i>collezionare</i> vuol dire raccogliere oggetti per passione (francobolli, monete)."
         }
       ],
@@ -2666,7 +2666,7 @@
             [
               "gestire (un reclamo)",
               "to handle; sp. manejar",
-              "<i>maneggiare</i> vuol dire «tenere in mano, usare con le mani»: maneggiare con cura"
+              "<i>maneggiare</i> vuol dire «usare con le mani» (maneggiare con cura); in senso figurato si dice del denaro, spesso in senso negativo"
             ],
             [
               "riparare, aggiustare",
@@ -2727,7 +2727,7 @@
         {
           "wrong": "Chi maneggia i reclami nella vostra azienda?",
           "right": "Chi gestisce i reclami nella vostra azienda?",
-          "why": "Dall'inglese «to handle» e dallo spagnolo «manejar»: un reclamo si <i>gestisce</i>; <i>maneggiare</i> vuol dire «tenere in mano, usare con le mani»."
+          "why": "Dall'inglese «to handle» e dallo spagnolo «manejar»: un reclamo si <i>gestisce</i>; <i>maneggiare</i> vuol dire «usare con le mani» e, in senso figurato, si dice del denaro, spesso in senso negativo."
         },
         {
           "wrong": "Il tecnico ha fissato la macchina in mezz'ora.",
@@ -2936,9 +2936,9 @@
           ],
           "rows": [
             [
-              "il negozio",
-              "sp. tienda",
-              "la <i>tenda</i> in italiano è quella della finestra o del campeggio"
+              "la rivista",
+              "magazine",
+              "il <i>magazzino</i> in italiano è dove si tiene la merce"
             ],
             [
               "l'affare, l'attività",
@@ -2997,9 +2997,9 @@
       "warn": "Il cambio e il reso perché il cliente «ha cambiato idea» non sono un obbligo di legge nel negozio fisico; ma se il negozio li promette (con un cartello, sullo scontrino, sul sito), deve rispettarli. Il <b>diritto di recesso</b> di 14 giorni vale per gli acquisti online e fuori dal negozio, non per quelli fatti al banco. Per un prodotto difettoso la garanzia legale è un diritto del cliente: il commesso non può dire «deve rivolgersi al produttore». Le regole precise di cambio e reso le decide il negozio: il commesso le deve conoscere e spiegare con chiarezza.",
       "errors": [
         {
-          "wrong": "Ho aperto una tenda di scarpe in centro.",
-          "right": "Ho aperto un negozio di scarpe in centro.",
-          "why": "Lo spagnolo «tienda» è il <i>negozio</i>; la <i>tenda</i> è quella della finestra o del campeggio."
+          "wrong": "Nel nostro negozio vendiamo anche magazzini di moda.",
+          "right": "Nel nostro negozio vendiamo anche riviste di moda.",
+          "why": "L'inglese «magazine» è la <i>rivista</i>; il <i>magazzino</i> è dove si tiene la merce."
         },
         {
           "wrong": "Mi può dare la ricetta, per favore?",
@@ -3233,14 +3233,14 @@
               "l'<i>esibizione</i> in italiano è uno spettacolo: l'esibizione di un cantante"
             ],
             [
-              "il convegno, il congresso",
+              "la convention (aziendale)",
               "convention",
-              "la <i>convenzione</i> in italiano è un accordo: una convenzione con un'università"
+              "per le riunioni aziendali si usa la parola inglese <i>convention</i>; la <i>convenzione</i> in italiano è un accordo"
             ],
             [
-              "il biglietto da visita",
-              "sp. tarjeta",
-              "la <i>targa</i> in italiano è quella dell'auto o quella sulla porta"
+              "pubblicizzare, fare pubblicità",
+              "to advertise",
+              "<i>avvertire</i> vuol dire «avvisare»: avvertire un cliente di un ritardo"
             ],
             [
               "partecipare a",
@@ -3279,14 +3279,14 @@
       "warn": "Allo stand non si sta seduti al telefono né in gruppo tra colleghi: il visitatore non si avvicina. Prima di dare il materiale più costoso si capisce chi è il visitatore. Dietro il biglietto da visita si scrive subito di che cosa si è parlato: dopo tre giorni di fiera non si ricorda più niente. Il follow-up si fa entro pochi giorni dalla fine della fiera. Ai concorrenti che passano allo stand non si danno informazioni su prezzi e condizioni.",
       "errors": [
         {
-          "wrong": "Ci vediamo alla convenzione di Milano.",
-          "right": "Ci vediamo al convegno (al congresso) di Milano.",
-          "why": "L'inglese «convention» è il <i>convegno</i>, il <i>congresso</i>; la <i>convenzione</i> è un accordo."
+          "wrong": "Alla convenzione annuale della rete vendita presentiamo la nuova linea.",
+          "right": "Alla convention (alla riunione) annuale della rete vendita presentiamo la nuova linea.",
+          "why": "Per le riunioni aziendali in italiano si usa la parola inglese <i>convention</i> (per i convegni scientifici si dice <i>convegno</i>, <i>congresso</i>); la <i>convenzione</i> è un accordo."
         },
         {
-          "wrong": "Mi dà la Sua targa, per favore?",
-          "right": "Mi dà il Suo biglietto da visita, per favore?",
-          "why": "Lo spagnolo «tarjeta» è il <i>biglietto da visita</i>; la <i>targa</i> è quella dell'auto."
+          "wrong": "Prima della fiera abbiamo avvertito la nuova linea su LinkedIn.",
+          "right": "Prima della fiera abbiamo pubblicizzato la nuova linea su LinkedIn.",
+          "why": "L'inglese «to advertise» è <i>pubblicizzare</i>, <i>fare pubblicità</i>; <i>avvertire</i> qualcuno vuol dire avvisarlo."
         },
         {
           "wrong": "In fiera ho conosciuto molti prospetti.",
@@ -3786,9 +3786,9 @@
               "per il compenso del commerciale si dice di solito <i>provvigione</i>; <i>commissione</i> si usa soprattutto per il costo di un servizio (le commissioni bancarie)"
             ],
             [
-              "mensile",
-              "sp. mensual; monthly",
-              "<i>mensuale</i> non esiste"
+              "lordo",
+              "gross",
+              "<i>grosso</i> in italiano vuol dire «grande»: uno stipendio grosso è uno stipendio alto"
             ]
           ]
         }
@@ -3842,9 +3842,9 @@
           "why": "L'inglese «quarter» qui è il <i>trimestre</i>; il <i>quarto</i> è una parte su quattro."
         },
         {
-          "wrong": "Le mando il report mensuale delle vendite.",
-          "right": "Le mando il report mensile delle vendite.",
-          "why": "Dallo spagnolo «mensual»: in italiano si dice <i>mensile</i>."
+          "wrong": "Il mio stipendio grosso è di 2.500 euro al mese, ma in busta paga arriva meno.",
+          "right": "Il mio stipendio lordo è di 2.500 euro al mese, ma in busta paga arriva meno.",
+          "why": "L'inglese «gross» è <i>lordo</i>; <i>grosso</i> vuol dire «grande»: uno stipendio grosso è uno stipendio alto."
         }
       ],
       "exercises": [
