@@ -1,7 +1,1661 @@
 {
-  "versione": "1.4",
+  "versione": "1.5",
   "livello": "B2",
   "schede": [
+    {
+      "lvl": "b2",
+      "cat": "Verbi",
+      "title": "I modi e i tempi",
+      "def": "Ogni forma di un verbo dice due cose. Il <b>modo</b> dice come chi parla presenta l'azione: come un fatto (<i>Marco parte</i>), come un'opinione o un desiderio (<i>penso che Marco parta</i>), come una cosa possibile (<i>Marco partirebbe</i>), come un ordine (<i>parti!</i>). Il <b>tempo</b> dice quando succede l'azione: adesso, prima o dopo. L'italiano ha <b>7 modi</b> e, in tutto, <b>21 tempi</b>. Quattro modi cambiano forma secondo la persona (io, tu, lui…): <b>indicativo, congiuntivo, condizionale, imperativo</b>. Tre non cambiano secondo la persona: <b>infinito, gerundio, participio</b>.",
+      "form": "<b>La regola delle coppie.</b> Quasi ogni tempo semplice, fatto di una parola sola (<i>parlo</i>), ha un tempo composto, fatto di due parole (<i>ho parlato</i>). Il composto si forma sempre allo stesso modo: <b>ausiliare</b> (<i>avere</i> o <i>essere</i>) <b>nel tempo semplice della coppia + participio passato</b>. Chi conosce i tempi semplici di <i>essere</i> e <i>avere</i> e il participio di un verbo sa fare tutti i tempi composti di quel verbo. L'ausiliare è sempre lo stesso del passato prossimo, e con <i>essere</i> il participio si accorda con il soggetto (vedi Il passato prossimo).<ul class='sch'><li><b>indicativo</b><ul><li>presente <i>parlo</i> → passato prossimo <i>ho parlato</i></li><li>imperfetto <i>parlavo</i> → trapassato prossimo <i>avevo parlato</i></li><li>passato remoto <i>parlai</i> → trapassato remoto <i>ebbi parlato</i></li><li>futuro semplice <i>parlerò</i> → futuro anteriore <i>avrò parlato</i></li></ul></li><li><b>congiuntivo</b><ul><li>presente <i>che parli</i> → passato <i>che abbia parlato</i></li><li>imperfetto <i>che parlassi</i> → trapassato <i>che avessi parlato</i></li></ul></li><li><b>condizionale</b><ul><li>presente <i>parlerei</i> → passato <i>avrei parlato</i></li></ul></li><li><b>infinito</b><ul><li>presente <i>parlare</i> → passato <i>aver parlato</i></li></ul></li><li><b>gerundio</b><ul><li>presente <i>parlando</i> → passato <i>avendo parlato</i></li></ul></li><li><b>senza coppia</b>: l'imperativo (<i>parla!</i>) e i due participi, presente (<i>parlante</i>) e passato (<i>parlato</i>)</li></ul>",
+      "tables": [
+        {
+          "before": "<b>La mappa dei 21 tempi.</b> L'ultima colonna dice in quale scheda del vademecum il tempo è spiegato.",
+          "plain": true,
+          "headers": [
+            "modo · tempo",
+            "esempio",
+            "a che cosa serve",
+            "scheda"
+          ],
+          "rows": [
+            [
+              "indicativo · presente",
+              "Parlo italiano.",
+              "fatti di adesso, abitudini, futuro vicino",
+              "Presente indicativo: verbi regolari (A0 · A1)"
+            ],
+            [
+              "indicativo · passato prossimo",
+              "Ieri ho parlato con Marco.",
+              "fatti conclusi nel passato, soprattutto nel parlato",
+              "Il passato prossimo (A2)"
+            ],
+            [
+              "indicativo · imperfetto",
+              "Da bambino parlavo poco.",
+              "descrizioni, abitudini e azioni in corso nel passato",
+              "L'imperfetto (B1)"
+            ],
+            [
+              "indicativo · trapassato prossimo",
+              "Avevo già parlato con lui.",
+              "un fatto passato avvenuto prima di un altro fatto passato",
+              "Il trapassato prossimo (B2)"
+            ],
+            [
+              "indicativo · passato remoto",
+              "Garibaldi parlò alla folla.",
+              "fatti lontani e conclusi, soprattutto nei racconti scritti",
+              "Il passato remoto (B2)"
+            ],
+            [
+              "indicativo · trapassato remoto",
+              "Dopo che ebbe parlato, uscì.",
+              "un fatto avvenuto subito prima di un altro al passato remoto; solo nello scritto letterario",
+              "Le proposizioni temporali avanzate (C1)"
+            ],
+            [
+              "indicativo · futuro semplice",
+              "Domani parlerò con il direttore.",
+              "fatti futuri, previsioni, promesse, supposizioni sul presente",
+              "Il futuro semplice (B1)"
+            ],
+            [
+              "indicativo · futuro anteriore",
+              "Quando avrò parlato con lui, ti chiamerò.",
+              "un fatto futuro già concluso prima di un altro; supposizioni sul passato",
+              "Il futuro anteriore (B2)"
+            ],
+            [
+              "congiuntivo · presente",
+              "Penso che parli bene.",
+              "opinioni, desideri, dubbi, emozioni, dopo che e dopo alcune congiunzioni",
+              "Il congiuntivo presente; Quando serve il congiuntivo (B1)"
+            ],
+            [
+              "congiuntivo · passato",
+              "Penso che abbia parlato troppo.",
+              "come il presente, per un fatto già successo",
+              "Il congiuntivo passato (B1)"
+            ],
+            [
+              "congiuntivo · imperfetto",
+              "Pensavo che parlasse inglese.",
+              "come il presente, quando il primo verbo è al passato o al condizionale; dopo se",
+              "Il congiuntivo imperfetto (B2)"
+            ],
+            [
+              "congiuntivo · trapassato",
+              "Pensavo che avesse già parlato.",
+              "un fatto avvenuto prima, quando il primo verbo è al passato o al condizionale; dopo se, per un'ipotesi ormai impossibile",
+              "Il congiuntivo trapassato (B2)"
+            ],
+            [
+              "condizionale · presente",
+              "Parlerei volentieri con lei.",
+              "desideri, richieste gentili, consigli, conseguenze di una condizione",
+              "Condizionale di cortesia (A2); Il condizionale semplice (B1)"
+            ],
+            [
+              "condizionale · passato",
+              "Avrei parlato, ma non c'era tempo.",
+              "azioni non realizzate, rimpianti; il futuro visto dal passato",
+              "Il condizionale passato (B2)"
+            ],
+            [
+              "imperativo · presente",
+              "Parla più piano!",
+              "ordini, istruzioni, consigli, inviti",
+              "L'imperativo (A2)"
+            ],
+            [
+              "infinito · presente",
+              "Parlare in pubblico è difficile.",
+              "l'azione senza persona: dopo dovere, potere, volere, dopo molte preposizioni, come nome",
+              "Modali: dovere, potere, volere (A0 · A1); Infinito sostantivato e passato (B2)"
+            ],
+            [
+              "infinito · passato",
+              "Dopo aver parlato, è uscito.",
+              "un'azione già conclusa, senza persona",
+              "Infinito sostantivato e passato (B2)"
+            ],
+            [
+              "gerundio · presente",
+              "Parlando, gesticola sempre.",
+              "un'azione che accompagna un'altra; con stare, un'azione in corso",
+              "Stare + gerundio (B1); Il gerundio: semplice e composto (B2)"
+            ],
+            [
+              "gerundio · passato",
+              "Avendo parlato con lui, so tutto.",
+              "un'azione conclusa prima di un'altra",
+              "Il gerundio: semplice e composto (B2)"
+            ],
+            [
+              "participio · presente",
+              "parlante, cantante, interessante",
+              "oggi quasi solo come aggettivo o come nome",
+              "—"
+            ],
+            [
+              "participio · passato",
+              "parlato, partito",
+              "tempi composti e forma passiva",
+              "Il passato prossimo (A2); La forma passiva (B1)"
+            ]
+          ]
+        },
+        {
+          "before": "<b>I tempi semplici</b>, con cinque verbi affiancati: <i>essere</i> e <i>avere</i>, irregolari, che servono anche a formare tutti i tempi composti, e un modello regolare per gruppo: <i>parlare</i> (-are), <i>credere</i> (-ere), <i>dormire</i> (-ire). I verbi come <i>capire</i>, che prendono <i>-isc-</i>, cambiano solo al presente, al congiuntivo presente e all'imperativo (<i>capisco, che capisca, capisci!</i>).<br><br><b>Indicativo presente.</b>",
+          "headers": [
+            "",
+            "essere",
+            "avere",
+            "parlare",
+            "credere",
+            "dormire"
+          ],
+          "rows": [
+            [
+              "io",
+              "sono",
+              "ho",
+              "parlo",
+              "credo",
+              "dormo"
+            ],
+            [
+              "tu",
+              "sei",
+              "hai",
+              "parli",
+              "credi",
+              "dormi"
+            ],
+            [
+              "lui/lei",
+              "è",
+              "ha",
+              "parla",
+              "crede",
+              "dorme"
+            ],
+            [
+              "noi",
+              "siamo",
+              "abbiamo",
+              "parliamo",
+              "crediamo",
+              "dormiamo"
+            ],
+            [
+              "voi",
+              "siete",
+              "avete",
+              "parlate",
+              "credete",
+              "dormite"
+            ],
+            [
+              "loro",
+              "sono",
+              "hanno",
+              "parlano",
+              "credono",
+              "dormono"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Indicativo imperfetto.</b>",
+          "headers": [
+            "",
+            "essere",
+            "avere",
+            "parlare",
+            "credere",
+            "dormire"
+          ],
+          "rows": [
+            [
+              "io",
+              "ero",
+              "avevo",
+              "parlavo",
+              "credevo",
+              "dormivo"
+            ],
+            [
+              "tu",
+              "eri",
+              "avevi",
+              "parlavi",
+              "credevi",
+              "dormivi"
+            ],
+            [
+              "lui/lei",
+              "era",
+              "aveva",
+              "parlava",
+              "credeva",
+              "dormiva"
+            ],
+            [
+              "noi",
+              "eravamo",
+              "avevamo",
+              "parlavamo",
+              "credevamo",
+              "dormivamo"
+            ],
+            [
+              "voi",
+              "eravate",
+              "avevate",
+              "parlavate",
+              "credevate",
+              "dormivate"
+            ],
+            [
+              "loro",
+              "erano",
+              "avevano",
+              "parlavano",
+              "credevano",
+              "dormivano"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Indicativo passato remoto.</b>",
+          "headers": [
+            "",
+            "essere",
+            "avere",
+            "parlare",
+            "credere",
+            "dormire"
+          ],
+          "rows": [
+            [
+              "io",
+              "fui",
+              "ebbi",
+              "parlai",
+              "credei / credetti",
+              "dormii"
+            ],
+            [
+              "tu",
+              "fosti",
+              "avesti",
+              "parlasti",
+              "credesti",
+              "dormisti"
+            ],
+            [
+              "lui/lei",
+              "fu",
+              "ebbe",
+              "parlò",
+              "credé / credette",
+              "dormì"
+            ],
+            [
+              "noi",
+              "fummo",
+              "avemmo",
+              "parlammo",
+              "credemmo",
+              "dormimmo"
+            ],
+            [
+              "voi",
+              "foste",
+              "aveste",
+              "parlaste",
+              "credeste",
+              "dormiste"
+            ],
+            [
+              "loro",
+              "furono",
+              "ebbero",
+              "parlarono",
+              "crederono / credettero",
+              "dormirono"
+            ]
+          ],
+          "after": "Molti verbi in -ere sono irregolari al passato remoto (<i>prendere → presi, prese, presero</i>): vedi Il passato remoto e I verbi irregolari."
+        },
+        {
+          "before": "<b>Indicativo futuro semplice.</b>",
+          "headers": [
+            "",
+            "essere",
+            "avere",
+            "parlare",
+            "credere",
+            "dormire"
+          ],
+          "rows": [
+            [
+              "io",
+              "sarò",
+              "avrò",
+              "parlerò",
+              "crederò",
+              "dormirò"
+            ],
+            [
+              "tu",
+              "sarai",
+              "avrai",
+              "parlerai",
+              "crederai",
+              "dormirai"
+            ],
+            [
+              "lui/lei",
+              "sarà",
+              "avrà",
+              "parlerà",
+              "crederà",
+              "dormirà"
+            ],
+            [
+              "noi",
+              "saremo",
+              "avremo",
+              "parleremo",
+              "crederemo",
+              "dormiremo"
+            ],
+            [
+              "voi",
+              "sarete",
+              "avrete",
+              "parlerete",
+              "crederete",
+              "dormirete"
+            ],
+            [
+              "loro",
+              "saranno",
+              "avranno",
+              "parleranno",
+              "crederanno",
+              "dormiranno"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Congiuntivo presente</b> (di solito dopo <i>che</i>).",
+          "headers": [
+            "",
+            "essere",
+            "avere",
+            "parlare",
+            "credere",
+            "dormire"
+          ],
+          "rows": [
+            [
+              "io",
+              "sia",
+              "abbia",
+              "parli",
+              "creda",
+              "dorma"
+            ],
+            [
+              "tu",
+              "sia",
+              "abbia",
+              "parli",
+              "creda",
+              "dorma"
+            ],
+            [
+              "lui/lei",
+              "sia",
+              "abbia",
+              "parli",
+              "creda",
+              "dorma"
+            ],
+            [
+              "noi",
+              "siamo",
+              "abbiamo",
+              "parliamo",
+              "crediamo",
+              "dormiamo"
+            ],
+            [
+              "voi",
+              "siate",
+              "abbiate",
+              "parliate",
+              "crediate",
+              "dormiate"
+            ],
+            [
+              "loro",
+              "siano",
+              "abbiano",
+              "parlino",
+              "credano",
+              "dormano"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Congiuntivo imperfetto</b> (di solito dopo <i>che</i> o <i>se</i>).",
+          "headers": [
+            "",
+            "essere",
+            "avere",
+            "parlare",
+            "credere",
+            "dormire"
+          ],
+          "rows": [
+            [
+              "io",
+              "fossi",
+              "avessi",
+              "parlassi",
+              "credessi",
+              "dormissi"
+            ],
+            [
+              "tu",
+              "fossi",
+              "avessi",
+              "parlassi",
+              "credessi",
+              "dormissi"
+            ],
+            [
+              "lui/lei",
+              "fosse",
+              "avesse",
+              "parlasse",
+              "credesse",
+              "dormisse"
+            ],
+            [
+              "noi",
+              "fossimo",
+              "avessimo",
+              "parlassimo",
+              "credessimo",
+              "dormissimo"
+            ],
+            [
+              "voi",
+              "foste",
+              "aveste",
+              "parlaste",
+              "credeste",
+              "dormiste"
+            ],
+            [
+              "loro",
+              "fossero",
+              "avessero",
+              "parlassero",
+              "credessero",
+              "dormissero"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Condizionale presente.</b>",
+          "headers": [
+            "",
+            "essere",
+            "avere",
+            "parlare",
+            "credere",
+            "dormire"
+          ],
+          "rows": [
+            [
+              "io",
+              "sarei",
+              "avrei",
+              "parlerei",
+              "crederei",
+              "dormirei"
+            ],
+            [
+              "tu",
+              "saresti",
+              "avresti",
+              "parleresti",
+              "crederesti",
+              "dormiresti"
+            ],
+            [
+              "lui/lei",
+              "sarebbe",
+              "avrebbe",
+              "parlerebbe",
+              "crederebbe",
+              "dormirebbe"
+            ],
+            [
+              "noi",
+              "saremmo",
+              "avremmo",
+              "parleremmo",
+              "crederemmo",
+              "dormiremmo"
+            ],
+            [
+              "voi",
+              "sareste",
+              "avreste",
+              "parlereste",
+              "credereste",
+              "dormireste"
+            ],
+            [
+              "loro",
+              "sarebbero",
+              "avrebbero",
+              "parlerebbero",
+              "crederebbero",
+              "dormirebbero"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Imperativo.</b> Non ha la persona <i>io</i>; la forma per <i>Lei</i> è quella del congiuntivo presente.",
+          "headers": [
+            "",
+            "essere",
+            "avere",
+            "parlare",
+            "credere",
+            "dormire"
+          ],
+          "rows": [
+            [
+              "tu",
+              "sii",
+              "abbi",
+              "parla",
+              "credi",
+              "dormi"
+            ],
+            [
+              "Lei",
+              "sia",
+              "abbia",
+              "parli",
+              "creda",
+              "dorma"
+            ],
+            [
+              "noi",
+              "siamo",
+              "abbiamo",
+              "parliamo",
+              "crediamo",
+              "dormiamo"
+            ],
+            [
+              "voi",
+              "siate",
+              "abbiate",
+              "parlate",
+              "credete",
+              "dormite"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Infinito, gerundio, participio.</b> Non cambiano secondo la persona; con <i>essere</i> il participio si accorda con il soggetto (<i>stato, stata, stati, state</i>).",
+          "headers": [
+            "",
+            "essere",
+            "avere",
+            "parlare",
+            "credere",
+            "dormire"
+          ],
+          "rows": [
+            [
+              "infinito presente",
+              "essere",
+              "avere",
+              "parlare",
+              "credere",
+              "dormire"
+            ],
+            [
+              "infinito passato",
+              "essere stato/a",
+              "aver avuto",
+              "aver parlato",
+              "aver creduto",
+              "aver dormito"
+            ],
+            [
+              "gerundio presente",
+              "essendo",
+              "avendo",
+              "parlando",
+              "credendo",
+              "dormendo"
+            ],
+            [
+              "gerundio passato",
+              "essendo stato/a",
+              "avendo avuto",
+              "avendo parlato",
+              "avendo creduto",
+              "avendo dormito"
+            ],
+            [
+              "participio presente",
+              "—",
+              "avente",
+              "parlante",
+              "credente",
+              "dormiente"
+            ],
+            [
+              "participio passato",
+              "stato",
+              "avuto",
+              "parlato",
+              "creduto",
+              "dormito"
+            ]
+          ]
+        },
+        {
+          "before": "<b>I tempi composti</b>, alla persona <i>io</i>. A sinistra un verbo che vuole <i>avere</i>, a destra uno che vuole <i>essere</i>. Per le altre persone si cambia l'ausiliare con le tabelle di <i>essere</i> e <i>avere</i> qui sopra; con <i>essere</i> il participio si accorda: <i>sono partita, siamo partiti</i>.",
+          "headers": [
+            "tempo",
+            "con avere: parlare",
+            "con essere: partire"
+          ],
+          "rows": [
+            [
+              "indicativo · passato prossimo",
+              "ho parlato",
+              "sono partito/a"
+            ],
+            [
+              "indicativo · trapassato prossimo",
+              "avevo parlato",
+              "ero partito/a"
+            ],
+            [
+              "indicativo · trapassato remoto",
+              "ebbi parlato",
+              "fui partito/a"
+            ],
+            [
+              "indicativo · futuro anteriore",
+              "avrò parlato",
+              "sarò partito/a"
+            ],
+            [
+              "congiuntivo · passato",
+              "che abbia parlato",
+              "che sia partito/a"
+            ],
+            [
+              "congiuntivo · trapassato",
+              "che avessi parlato",
+              "che fossi partito/a"
+            ],
+            [
+              "condizionale · passato",
+              "avrei parlato",
+              "sarei partito/a"
+            ],
+            [
+              "infinito · passato",
+              "aver parlato",
+              "essere partito/a"
+            ],
+            [
+              "gerundio · passato",
+              "avendo parlato",
+              "essendo partito/a"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "per scegliere il modo ci si chiede come si presenta l'azione: come un fatto (indicativo), come un'idea o un desiderio (congiuntivo), come una cosa possibile (condizionale), come un ordine (imperativo)",
+          "ex": "Marco <b>parte</b>. / Penso che Marco <b>parta</b>. / Marco <b>partirebbe</b>, ma non può. / <b>Parti</b>, Marco!"
+        },
+        {
+          "label": "indicativo: un fatto presentato come reale, nel presente, nel passato o nel futuro",
+          "ex": "<b>Lavoro</b> in banca. / Ieri <b>ho lavorato</b> fino a tardi. / Da giovane <b>lavoravo</b> in un bar. / Domani <b>lavorerò</b> da casa."
+        },
+        {
+          "label": "congiuntivo: un fatto visto attraverso un'opinione, un desiderio, un dubbio o un'emozione; di solito dopo che o dopo congiunzioni come benché e affinché",
+          "ex": "Penso che Marco <b>lavori</b> troppo. / Spero che tu <b>abbia</b> ragione. / Benché <b>sia</b> tardi, resto ancora un po'."
+        },
+        {
+          "label": "condizionale: un fatto possibile, desiderato o legato a una condizione; serve anche per chiedere con gentilezza",
+          "ex": "<b>Vorrei</b> un caffè. / Con più tempo <b>viaggerei</b> di più. / Al tuo posto <b>avrei accettato</b>."
+        },
+        {
+          "label": "imperativo: ordini, istruzioni, consigli",
+          "ex": "<b>Chiudi</b> la porta! / <b>Prenda</b> pure un biscotto. / <b>Giriamo</b> a destra."
+        },
+        {
+          "label": "infinito: il verbo senza persona; dopo dovere, potere, volere, dopo molte preposizioni, oppure come nome",
+          "ex": "Devo <b>studiare</b>. / Prima di <b>uscire</b>, chiudi la finestra. / <b>Viaggiare</b> apre la mente."
+        },
+        {
+          "label": "gerundio: un'azione che accompagna un'altra, di solito con lo stesso soggetto; con stare, un'azione in corso",
+          "ex": "<b>Tornando</b> a casa, ho incontrato Luca. / Sto <b>leggendo</b>."
+        },
+        {
+          "label": "participio passato: forma i tempi composti e la forma passiva; da solo può sostituire una frase intera",
+          "ex": "Ho <b>finito</b>. / La lettera è stata <b>scritta</b> ieri. / <b>Finita</b> la lezione, siamo usciti."
+        }
+      ],
+      "warn": "<b>Il congiuntivo non ha il futuro.</b> Per un fatto futuro dopo <i>penso che, credo che</i> si usa il congiuntivo presente o il futuro dell'indicativo: «penso che <i>arrivi</i> domani», «penso che <i>arriverà</i> domani». <b>Passato remoto e trapassato remoto</b> sono soprattutto della lingua scritta: nel parlato di gran parte d'Italia si usa il passato prossimo (vedi Il passato remoto). <b>Essere o avere.</b> Nei tempi composti l'ausiliare è sempre quello del passato prossimo: <i>ho parlato → avrei parlato</i>, <i>sono partito → sarei partito</i>.",
+      "errors": [
+        {
+          "wrong": "Avevo andato a casa.",
+          "right": "Ero andato a casa.",
+          "why": "In tutti i tempi composti l'ausiliare resta quello del passato prossimo: <i>sono andato → ero andato</i>."
+        },
+        {
+          "wrong": "Maria sarebbe stato contento.",
+          "right": "Maria sarebbe stata contenta.",
+          "why": "Con <i>essere</i> il participio si accorda con il soggetto in tutti i tempi composti, e con lui l'aggettivo."
+        },
+        {
+          "wrong": "Avremo voluto venire, ma pioveva.",
+          "right": "Avremmo voluto venire, ma pioveva.",
+          "why": "Il condizionale ha due <i>m</i> (<i>avremmo</i>); <i>avremo</i> è il futuro."
+        },
+        {
+          "wrong": "Se avrei tempo, verrei.",
+          "right": "Se avessi tempo, verrei.",
+          "why": "Nella frase con <i>se</i> che esprime una condizione non va mai il condizionale; per un'ipotesi va il congiuntivo (<i>se avessi</i>)."
+        },
+        {
+          "wrong": "Pensavo che sei stanco.",
+          "right": "Pensavo che fossi stanco.",
+          "why": "Dopo <i>pensare che</i> va il congiuntivo; con il primo verbo al passato si usa il congiuntivo imperfetto."
+        },
+        {
+          "wrong": "Dopo mangiare, sono uscito.",
+          "right": "Dopo aver mangiato, sono uscito.",
+          "why": "<i>Dopo</i> vuole l'infinito passato: l'azione è già conclusa."
+        },
+        {
+          "wrong": "Ieri ebbi parlato con il direttore.",
+          "right": "Ieri ho parlato con il direttore.",
+          "why": "Il trapassato remoto si usa solo nello scritto letterario, dopo <i>dopo che, appena, quando</i>, insieme al passato remoto."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Metti il verbo nel tempo composto della stessa coppia.",
+          "items": [
+            "Parlo con il direttore.",
+            "Partivamo alle otto.",
+            "Finirai il lavoro.",
+            "Penso che Anna arrivi.",
+            "Verrei volentieri.",
+            "Leggendo il libro, ho capito tutto."
+          ],
+          "key": [
+            "<b>Ho parlato</b> con il direttore.",
+            "<b>Eravamo partiti/e</b> alle otto.",
+            "<b>Avrai finito</b> il lavoro.",
+            "Penso che Anna <b>sia arrivata</b>.",
+            "<b>Sarei venuto/a</b> volentieri.",
+            "<b>Avendo letto</b> il libro, ho capito tutto."
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Avevamo andati al mare.",
+            "Le ragazze sarebbero arrivato tardi.",
+            "Avremo voluto aiutarti, ma eravamo via.",
+            "Dopo mangiare, ci siamo riposati.",
+            "Se avrei saputo, sarei venuto.",
+            "Pensavo che hai ragione."
+          ],
+          "key": [
+            "<b>Eravamo andati</b>",
+            "<b>arrivate</b>",
+            "<b>Avremmo voluto</b>",
+            "<b>Dopo aver mangiato</b>",
+            "<b>Se avessi saputo</b>",
+            "<b>avessi ragione</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa la frase con un verbo nel modo e nel tempo indicati.",
+          "items": [
+            "Ieri … (indicativo, passato prossimo)",
+            "Da bambino … (indicativo, imperfetto)",
+            "Spero che domani … (congiuntivo presente)",
+            "Al tuo posto … (condizionale presente)",
+            "Quando sono arrivato, il film … (indicativo, trapassato prossimo)",
+            "Marco, … , è tardi! (imperativo, tu)"
+          ],
+          "key": [
+            "Esempio: <b>ho finito il progetto</b>.",
+            "Esempio: <b>giocavo sempre in cortile</b>.",
+            "Esempio: <b>faccia bel tempo</b>.",
+            "Esempio: <b>accetterei l'offerta</b>.",
+            "Esempio: <b>era già cominciato</b>.",
+            "Esempio: <b>sbrigati</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b2",
+      "cat": "Verbi",
+      "title": "I verbi irregolari",
+      "def": "Un verbo è <b>irregolare</b> quando in alcuni tempi non segue i modelli <i>parlare, credere, dormire</i>. L'irregolarità però sta in pochi tempi: il <b>presente</b>, il <b>futuro</b>, il <b>passato remoto</b> e il <b>participio passato</b>. Da queste forme si ricavano quasi tutti gli altri tempi. La tabella raccoglie i 61 verbi irregolari più frequenti fino al B2, in ordine alfabetico; i verbi composti e quelli con la stessa finale (<i>ottenere, proporre, produrre</i>…) si coniugano come il verbo modello della tabella.",
+      "form": "Per ogni verbo bastano le forme della tabella: le altre si ricavano con regole fisse.<ul class='sch'><li><b>dal presente</b> vengono il congiuntivo presente, quasi sempre dalla persona <i>io</i> (<i>vengo → che venga</i>), e l'imperativo (<i>vieni!</i>; per Lei <i>venga!</i>)</li><li><b>dal futuro</b> viene il condizionale, con la stessa base: <i>verrò → verrei</i></li><li><b>dal participio</b> vengono tutti i tempi composti: <i>venuto → sono venuto, ero venuto, sarei venuto</i></li><li><b>il passato remoto</b> è irregolare solo in <i>io, lui/lei, loro</i>, con la stessa base: <i>venni, venne, vennero</i>; <i>tu, noi, voi</i> sono regolari: <i>venisti, venimmo, veniste</i></li><li><b>imperfetto, congiuntivo imperfetto e gerundio</b> sono quasi sempre regolari: le poche eccezioni sono nella seconda tabella</li></ul>",
+      "tables": [
+        {
+          "before": "<b>I 61 verbi.</b> «regolare» vuol dire che il tempo segue il modello di <i>parlare, credere, dormire</i> (vedi I modi e i tempi). All'imperativo la forma per <i>Lei</i> è quella del congiuntivo presente.",
+          "headers": [
+            "infinito",
+            "presente",
+            "passato remoto (io, lui/lei, loro)",
+            "futuro (io)",
+            "participio (ausiliare)",
+            "congiuntivo presente (io)",
+            "imperativo (tu)"
+          ],
+          "rows": [
+            [
+              "accendere",
+              "regolare",
+              "accesi, accese, accesero",
+              "accenderò",
+              "acceso (avere)",
+              "accenda",
+              "accendi"
+            ],
+            [
+              "andare",
+              "vado, vai, va, andiamo, andate, vanno",
+              "regolare",
+              "andrò",
+              "andato (essere)",
+              "vada",
+              "va' (vai)"
+            ],
+            [
+              "aprire",
+              "regolare",
+              "regolare",
+              "aprirò",
+              "aperto (avere)",
+              "apra",
+              "apri"
+            ],
+            [
+              "assumere",
+              "regolare",
+              "assunsi, assunse, assunsero",
+              "assumerò",
+              "assunto (avere)",
+              "assuma",
+              "assumi"
+            ],
+            [
+              "avere",
+              "ho, hai, ha, abbiamo, avete, hanno",
+              "ebbi, ebbe, ebbero",
+              "avrò",
+              "avuto (avere)",
+              "abbia",
+              "abbi"
+            ],
+            [
+              "bere",
+              "bevo, bevi, beve, beviamo, bevete, bevono",
+              "bevvi, bevve, bevvero",
+              "berrò",
+              "bevuto (avere)",
+              "beva",
+              "bevi"
+            ],
+            [
+              "cadere",
+              "regolare",
+              "caddi, cadde, caddero",
+              "cadrò",
+              "caduto (essere)",
+              "cada",
+              "cadi"
+            ],
+            [
+              "chiedere",
+              "regolare",
+              "chiesi, chiese, chiesero",
+              "chiederò",
+              "chiesto (avere)",
+              "chieda",
+              "chiedi"
+            ],
+            [
+              "chiudere",
+              "regolare",
+              "chiusi, chiuse, chiusero",
+              "chiuderò",
+              "chiuso (avere)",
+              "chiuda",
+              "chiudi"
+            ],
+            [
+              "conoscere",
+              "regolare",
+              "conobbi, conobbe, conobbero",
+              "conoscerò",
+              "conosciuto (avere)",
+              "conosca",
+              "conosci"
+            ],
+            [
+              "coprire",
+              "regolare",
+              "regolare",
+              "coprirò",
+              "coperto (avere)",
+              "copra",
+              "copri"
+            ],
+            [
+              "correggere",
+              "regolare",
+              "corressi, corresse, corressero",
+              "correggerò",
+              "corretto (avere)",
+              "corregga",
+              "correggi"
+            ],
+            [
+              "correre",
+              "regolare",
+              "corsi, corse, corsero",
+              "correrò",
+              "corso (avere o essere)",
+              "corra",
+              "corri"
+            ],
+            [
+              "crescere",
+              "regolare",
+              "crebbi, crebbe, crebbero",
+              "crescerò",
+              "cresciuto (essere o avere)",
+              "cresca",
+              "cresci"
+            ],
+            [
+              "dare",
+              "do, dai, dà, diamo, date, danno",
+              "diedi, diede, diedero (anche detti, dette, dettero)",
+              "darò",
+              "dato (avere)",
+              "dia",
+              "da' (dai)"
+            ],
+            [
+              "decidere",
+              "regolare",
+              "decisi, decise, decisero",
+              "deciderò",
+              "deciso (avere)",
+              "decida",
+              "decidi"
+            ],
+            [
+              "dipingere",
+              "regolare",
+              "dipinsi, dipinse, dipinsero",
+              "dipingerò",
+              "dipinto (avere)",
+              "dipinga",
+              "dipingi"
+            ],
+            [
+              "dire",
+              "dico, dici, dice, diciamo, dite, dicono",
+              "dissi, disse, dissero",
+              "dirò",
+              "detto (avere)",
+              "dica",
+              "di'"
+            ],
+            [
+              "discutere",
+              "regolare",
+              "discussi, discusse, discussero",
+              "discuterò",
+              "discusso (avere)",
+              "discuta",
+              "discuti"
+            ],
+            [
+              "dovere",
+              "devo, devi, deve, dobbiamo, dovete, devono",
+              "regolare",
+              "dovrò",
+              "dovuto (avere o essere)",
+              "debba",
+              "—"
+            ],
+            [
+              "esprimere",
+              "regolare",
+              "espressi, espresse, espressero",
+              "esprimerò",
+              "espresso (avere)",
+              "esprima",
+              "esprimi"
+            ],
+            [
+              "essere",
+              "sono, sei, è, siamo, siete, sono",
+              "fui, fu, furono",
+              "sarò",
+              "stato (essere)",
+              "sia",
+              "sii"
+            ],
+            [
+              "fare",
+              "faccio, fai, fa, facciamo, fate, fanno",
+              "feci, fece, fecero",
+              "farò",
+              "fatto (avere)",
+              "faccia",
+              "fa' (fai)"
+            ],
+            [
+              "leggere",
+              "regolare",
+              "lessi, lesse, lessero",
+              "leggerò",
+              "letto (avere)",
+              "legga",
+              "leggi"
+            ],
+            [
+              "mettere",
+              "regolare",
+              "misi, mise, misero",
+              "metterò",
+              "messo (avere)",
+              "metta",
+              "metti"
+            ],
+            [
+              "morire",
+              "muoio, muori, muore, moriamo, morite, muoiono",
+              "regolare",
+              "morirò",
+              "morto (essere)",
+              "muoia",
+              "muori"
+            ],
+            [
+              "muovere",
+              "regolare",
+              "mossi, mosse, mossero",
+              "muoverò",
+              "mosso (avere)",
+              "muova",
+              "muovi"
+            ],
+            [
+              "nascere",
+              "regolare",
+              "nacqui, nacque, nacquero",
+              "nascerò",
+              "nato (essere)",
+              "nasca",
+              "nasci"
+            ],
+            [
+              "offrire",
+              "regolare",
+              "regolare",
+              "offrirò",
+              "offerto (avere)",
+              "offra",
+              "offri"
+            ],
+            [
+              "perdere",
+              "regolare",
+              "persi, perse, persero",
+              "perderò",
+              "perso (anche perduto) (avere)",
+              "perda",
+              "perdi"
+            ],
+            [
+              "piacere",
+              "piaccio, piaci, piace, piacciamo, piacete, piacciono",
+              "piacqui, piacque, piacquero",
+              "piacerò",
+              "piaciuto (essere)",
+              "piaccia",
+              "piaci"
+            ],
+            [
+              "piangere",
+              "regolare",
+              "piansi, pianse, piansero",
+              "piangerò",
+              "pianto (avere)",
+              "pianga",
+              "piangi"
+            ],
+            [
+              "porre",
+              "pongo, poni, pone, poniamo, ponete, pongono",
+              "posi, pose, posero",
+              "porrò",
+              "posto (avere)",
+              "ponga",
+              "poni"
+            ],
+            [
+              "potere",
+              "posso, puoi, può, possiamo, potete, possono",
+              "regolare",
+              "potrò",
+              "potuto (avere o essere)",
+              "possa",
+              "—"
+            ],
+            [
+              "prendere",
+              "regolare",
+              "presi, prese, presero",
+              "prenderò",
+              "preso (avere)",
+              "prenda",
+              "prendi"
+            ],
+            [
+              "ridere",
+              "regolare",
+              "risi, rise, risero",
+              "riderò",
+              "riso (avere)",
+              "rida",
+              "ridi"
+            ],
+            [
+              "rimanere",
+              "rimango, rimani, rimane, rimaniamo, rimanete, rimangono",
+              "rimasi, rimase, rimasero",
+              "rimarrò",
+              "rimasto (essere)",
+              "rimanga",
+              "rimani"
+            ],
+            [
+              "risolvere",
+              "regolare",
+              "risolsi, risolse, risolsero",
+              "risolverò",
+              "risolto (avere)",
+              "risolva",
+              "risolvi"
+            ],
+            [
+              "rispondere",
+              "regolare",
+              "risposi, rispose, risposero",
+              "risponderò",
+              "risposto (avere)",
+              "risponda",
+              "rispondi"
+            ],
+            [
+              "rompere",
+              "regolare",
+              "ruppi, ruppe, ruppero",
+              "romperò",
+              "rotto (avere)",
+              "rompa",
+              "rompi"
+            ],
+            [
+              "salire",
+              "salgo, sali, sale, saliamo, salite, salgono",
+              "regolare",
+              "salirò",
+              "salito (essere o avere)",
+              "salga",
+              "sali"
+            ],
+            [
+              "sapere",
+              "so, sai, sa, sappiamo, sapete, sanno",
+              "seppi, seppe, seppero",
+              "saprò",
+              "saputo (avere)",
+              "sappia",
+              "sappi"
+            ],
+            [
+              "scegliere",
+              "scelgo, scegli, sceglie, scegliamo, scegliete, scelgono",
+              "scelsi, scelse, scelsero",
+              "sceglierò",
+              "scelto (avere)",
+              "scelga",
+              "scegli"
+            ],
+            [
+              "scendere",
+              "regolare",
+              "scesi, scese, scesero",
+              "scenderò",
+              "sceso (essere o avere)",
+              "scenda",
+              "scendi"
+            ],
+            [
+              "scrivere",
+              "regolare",
+              "scrissi, scrisse, scrissero",
+              "scriverò",
+              "scritto (avere)",
+              "scriva",
+              "scrivi"
+            ],
+            [
+              "sedere",
+              "siedo, siedi, siede, sediamo, sedete, siedono",
+              "regolare",
+              "sederò (anche siederò)",
+              "seduto (essere)",
+              "sieda",
+              "siedi"
+            ],
+            [
+              "soffrire",
+              "regolare",
+              "regolare",
+              "soffrirò",
+              "sofferto (avere)",
+              "soffra",
+              "soffri"
+            ],
+            [
+              "spegnere",
+              "spengo, spegni, spegne, spegniamo, spegnete, spengono",
+              "spensi, spense, spensero",
+              "spegnerò",
+              "spento (avere)",
+              "spenga",
+              "spegni"
+            ],
+            [
+              "spendere",
+              "regolare",
+              "spesi, spese, spesero",
+              "spenderò",
+              "speso (avere)",
+              "spenda",
+              "spendi"
+            ],
+            [
+              "stare",
+              "sto, stai, sta, stiamo, state, stanno",
+              "stetti, stette, stettero",
+              "starò",
+              "stato (essere)",
+              "stia",
+              "sta' (stai)"
+            ],
+            [
+              "succedere",
+              "regolare (nel senso di «accadere», solo lui/lei e loro: succede, succedono)",
+              "successe, successero",
+              "succederà",
+              "successo (essere)",
+              "succeda",
+              "—"
+            ],
+            [
+              "tenere",
+              "tengo, tieni, tiene, teniamo, tenete, tengono",
+              "tenni, tenne, tennero",
+              "terrò",
+              "tenuto (avere)",
+              "tenga",
+              "tieni"
+            ],
+            [
+              "togliere",
+              "tolgo, togli, toglie, togliamo, togliete, tolgono",
+              "tolsi, tolse, tolsero",
+              "toglierò",
+              "tolto (avere)",
+              "tolga",
+              "togli"
+            ],
+            [
+              "tradurre",
+              "traduco, traduci, traduce, traduciamo, traducete, traducono",
+              "tradussi, tradusse, tradussero",
+              "tradurrò",
+              "tradotto (avere)",
+              "traduca",
+              "traduci"
+            ],
+            [
+              "trarre",
+              "traggo, trai, trae, traiamo, traete, traggono",
+              "trassi, trasse, trassero",
+              "trarrò",
+              "tratto (avere)",
+              "tragga",
+              "trai"
+            ],
+            [
+              "uscire",
+              "esco, esci, esce, usciamo, uscite, escono",
+              "regolare",
+              "uscirò",
+              "uscito (essere)",
+              "esca",
+              "esci"
+            ],
+            [
+              "vedere",
+              "regolare",
+              "vidi, vide, videro",
+              "vedrò",
+              "visto (avere)",
+              "veda",
+              "vedi"
+            ],
+            [
+              "venire",
+              "vengo, vieni, viene, veniamo, venite, vengono",
+              "venni, venne, vennero",
+              "verrò",
+              "venuto (essere)",
+              "venga",
+              "vieni"
+            ],
+            [
+              "vincere",
+              "regolare",
+              "vinsi, vinse, vinsero",
+              "vincerò",
+              "vinto (avere)",
+              "vinca",
+              "vinci"
+            ],
+            [
+              "vivere",
+              "regolare",
+              "vissi, visse, vissero",
+              "vivrò",
+              "vissuto (avere o essere)",
+              "viva",
+              "vivi"
+            ],
+            [
+              "volere",
+              "voglio, vuoi, vuole, vogliamo, volete, vogliono",
+              "volli, volle, vollero",
+              "vorrò",
+              "voluto (avere o essere)",
+              "voglia",
+              "—"
+            ]
+          ],
+          "after": "<b>Passato remoto.</b> <i>Essere, dare, stare</i> sono irregolari anche in <i>tu, noi, voi</i>: <i>fosti, fummo, foste; desti, demmo, deste; stesti, stemmo, steste</i>. <i>Fare, dire, bere, tradurre, porre, trarre</i> in <i>tu, noi, voi</i> partono dalla forma lunga: <i>facesti, dicemmo, beveste, traducesti, ponesti, traeste</i>. <b>Avere o essere.</b> <i>Correre, crescere, salire, scendere, vivere</i> usano tutti e due gli ausiliari secondo la frase: <i>sono sceso dal treno / ho sceso le scale</i>; <i>sono corso a casa / ho corso per un'ora</i>. <i>Dovere, potere, volere</i> prendono l'ausiliare del verbo che segue (vedi Modali: dovere, potere, volere)."
+        },
+        {
+          "before": "<b>Imperfetto, congiuntivo imperfetto, gerundio.</b> Sono regolari in quasi tutti i verbi. Le eccezioni sono queste.",
+          "headers": [
+            "verbo",
+            "imperfetto (io)",
+            "congiuntivo imperfetto (io)",
+            "gerundio"
+          ],
+          "rows": [
+            [
+              "essere",
+              "ero",
+              "fossi",
+              "essendo"
+            ],
+            [
+              "fare",
+              "facevo",
+              "facessi",
+              "facendo"
+            ],
+            [
+              "dire",
+              "dicevo",
+              "dicessi",
+              "dicendo"
+            ],
+            [
+              "bere",
+              "bevevo",
+              "bevessi",
+              "bevendo"
+            ],
+            [
+              "tradurre (e produrre, condurre, ridurre…)",
+              "traducevo",
+              "traducessi",
+              "traducendo"
+            ],
+            [
+              "porre (e proporre, comporre, supporre…)",
+              "ponevo",
+              "ponessi",
+              "ponendo"
+            ],
+            [
+              "trarre (e attrarre, distrarre, sottrarre…)",
+              "traevo",
+              "traessi",
+              "traendo"
+            ],
+            [
+              "dare",
+              "regolare (davo)",
+              "dessi",
+              "regolare (dando)"
+            ],
+            [
+              "stare",
+              "regolare (stavo)",
+              "stessi",
+              "regolare (stando)"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "dalle forme della tabella si ricavano quasi tutti gli altri tempi",
+          "ex": "<b>verrò</b> → verrei (condizionale) / <b>vengo</b> → che venga, venga! (Lei) / <b>venuto</b> → sono venuto, ero venuto, sarei venuto"
+        },
+        {
+          "label": "presente con la -g- in io e loro, che resta nel congiuntivo presente: venire, tenere, rimanere, salire, scegliere, togliere, porre, spegnere, trarre",
+          "ex": "<b>vengo</b>, <b>vengono</b> → che venga / <b>rimango</b> → che rimanga / <b>scelgo</b> → che scelga / <b>spengo</b> → che spenga / <b>traggo</b> → che tragga"
+        },
+        {
+          "label": "presente che cambia in io, tu, lui/lei, loro, mentre noi e voi restano vicini all'infinito: sedere, morire, uscire, andare. Altri hanno un presente irregolare quasi in tutte le persone e vanno imparati per intero: essere, avere, dare, stare, sapere, potere, volere, dovere",
+          "ex": "<b>siedo</b> ma sediamo / <b>muoio</b> ma moriamo / <b>esco</b> ma usciamo / <b>vado</b> ma andiamo / <b>posso</b>, <b>possiamo</b> / <b>devo</b>, <b>dobbiamo</b>"
+        },
+        {
+          "label": "verbi che partono da una forma più lunga, usata in molti tempi: fare (fac-), dire (dic-), bere (bev-), tradurre (traduc-), porre (pon-), trarre (tra-)",
+          "ex": "<b>facciamo</b>, facevo, facendo / <b>diciamo</b>, dicevo, dicendo / <b>beviamo</b>, bevevo / <b>traduciamo</b>, traducevo / <b>poniamo</b>, ponevo"
+        },
+        {
+          "label": "futuro e condizionale senza la vocale prima della r (andare, avere, cadere, dovere, potere, sapere, vedere, vivere) o con la doppia r (bere, rimanere, tenere, venire, volere, porre, tradurre, trarre); essere fa sarò; dare, fare, stare tengono la a",
+          "ex": "<b>andrò</b> → andrei / <b>vedrò</b> → vedrei / <b>verrò</b> → verrei / <b>berrò</b> → berrei / <b>sarò</b> → sarei / <b>farò</b> → farei"
+        },
+        {
+          "label": "passato remoto in -si: prendere, mettere, chiudere, decidere, ridere, rispondere, chiedere, accendere, scendere, spendere, perdere, correre, assumere, risolvere, piangere, dipingere, vincere, spegnere, scegliere, togliere, rimanere, porre",
+          "ex": "<b>presi</b>, prese, presero / <b>misi</b>, mise, misero / <b>risposi</b>, rispose, risposero / <b>vinsi</b>, vinse, vinsero"
+        },
+        {
+          "label": "passato remoto in -ssi: scrivere, leggere, dire, vivere, discutere, muovere, correggere, esprimere, tradurre, trarre, succedere",
+          "ex": "<b>scrissi</b>, scrisse, scrissero / <b>lessi</b>, lesse, lessero / <b>dissi</b>, disse, dissero / <b>tradussi</b>, tradusse, tradussero"
+        },
+        {
+          "label": "passato remoto con la consonante doppia (venire, tenere, volere, cadere, sapere, bere, conoscere, crescere, rompere, avere) o con -cqu- (nascere, piacere); da imparare a parte essere, fare, vedere, dare, stare",
+          "ex": "<b>venni</b> / <b>volli</b> / <b>caddi</b> / <b>seppi</b> / <b>conobbi</b> / <b>ruppi</b> / <b>nacqui</b> / <b>piacque</b> / <b>fui</b> / <b>feci</b> / <b>vidi</b> / <b>diedi</b> / <b>stetti</b>"
+        },
+        {
+          "label": "participio in -so e in -sto",
+          "ex": "prendere → <b>preso</b>, mettere → <b>messo</b>, chiudere → <b>chiuso</b>, decidere → <b>deciso</b>, ridere → <b>riso</b>, accendere → <b>acceso</b>, scendere → <b>sceso</b>, spendere → <b>speso</b>, perdere → <b>perso</b>, correre → <b>corso</b>, discutere → <b>discusso</b>, muovere → <b>mosso</b>, succedere → <b>successo</b>, esprimere → <b>espresso</b> / chiedere → <b>chiesto</b>, rispondere → <b>risposto</b>, rimanere → <b>rimasto</b>, vedere → <b>visto</b>, porre → <b>posto</b>"
+        },
+        {
+          "label": "participio in -tto, -rto, -nto, -lto",
+          "ex": "fare → <b>fatto</b>, dire → <b>detto</b>, scrivere → <b>scritto</b>, leggere → <b>letto</b>, rompere → <b>rotto</b>, correggere → <b>corretto</b>, tradurre → <b>tradotto</b>, trarre → <b>tratto</b> / aprire → <b>aperto</b>, offrire → <b>offerto</b>, coprire → <b>coperto</b>, soffrire → <b>sofferto</b>, morire → <b>morto</b> / vincere → <b>vinto</b>, dipingere → <b>dipinto</b>, piangere → <b>pianto</b>, spegnere → <b>spento</b>, assumere → <b>assunto</b> / scegliere → <b>scelto</b>, togliere → <b>tolto</b>, risolvere → <b>risolto</b>"
+        },
+        {
+          "label": "i verbi composti e quelli con la stessa finale seguono il modello di un verbo della tabella",
+          "ex": "ottenere, mantenere, contenere come <b>tenere</b> (ottengo, ottenni, otterrò) / proporre, comporre, supporre come <b>porre</b> / produrre, condurre, ridurre come <b>tradurre</b> / attrarre, distrarre, sottrarre come <b>trarre</b> / permettere, promettere, smettere come <b>mettere</b> / comprendere, sorprendere, riprendere come <b>prendere</b> / descrivere come <b>scrivere</b> / sorridere come <b>ridere</b> / riuscire come <b>uscire</b> / divenire, convenire come <b>venire</b> / rivedere come <b>vedere</b> / scoprire come <b>coprire</b> / promuovere come <b>muovere</b> / accogliere, raccogliere, sciogliere come <b>togliere</b>"
+        }
+      ],
+      "warn": "<b>Participi come aggettivi.</b> I participi irregolari si usano spesso anche come aggettivi, e si accordano: <i>la porta è aperta</i>, <i>i negozi sono chiusi</i>, <i>la luce è spenta</i>. <b>Due forme corrette.</b> Alcuni verbi ne hanno due: <i>diedi / detti</i>, <i>perso / perduto</i>, <i>sederò / siederò</i>. <b>Verbi simili, forme diverse.</b> La somiglianza inganna: <i>scrivere → scritto</i> ma <i>vivere → vissuto</i>; <i>prendere → preso</i> ma <i>vendere → venduto</i>, che è regolare.",
+      "errors": [
+        {
+          "wrong": "Ho correggiuto il compito.",
+          "right": "Ho corretto il compito.",
+          "why": "<i>Correggere</i> ha il participio irregolare: <i>corretto</i>."
+        },
+        {
+          "wrong": "Domani venirò con te.",
+          "right": "Domani verrò con te.",
+          "why": "Al futuro <i>venire</i> raddoppia la <i>r</i>: <i>verrò</i>, e al condizionale <i>verrei</i>."
+        },
+        {
+          "wrong": "Spero che tu vieni.",
+          "right": "Spero che tu venga.",
+          "why": "Il congiuntivo presente si ricava dalla persona <i>io</i>: <i>vengo → venga</i>."
+        },
+        {
+          "wrong": "Ho rimanuto a casa.",
+          "right": "Sono rimasto a casa.",
+          "why": "<i>Rimanere</i> vuole <i>essere</i> e ha il participio irregolare: <i>rimasto</i>."
+        },
+        {
+          "wrong": "Marco prendé il treno.",
+          "right": "Marco prese il treno.",
+          "why": "<i>Prendere</i> è irregolare al passato remoto: <i>presi, prese, presero</i>."
+        },
+        {
+          "wrong": "Vorrei che tu fassi più attenzione.",
+          "right": "Vorrei che tu facessi più attenzione.",
+          "why": "<i>Fare</i> parte dalla forma lunga <i>fac-</i>: <i>facessi, facevo, facendo</i>."
+        },
+        {
+          "wrong": "Si è spegnuta la luce.",
+          "right": "Si è spenta la luce.",
+          "why": "<i>Spegnere</i> ha il participio irregolare: <i>spento</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Metti il verbo nel tempo indicato tra parentesi.",
+          "items": [
+            "Vengo con voi. (futuro)",
+            "Rimangono a casa. (passato prossimo)",
+            "Lui sceglie il vino. (passato remoto)",
+            "Tu dici la verità. (comincia con «Penso che»)",
+            "Bevo un caffè. (condizionale)",
+            "Spengo la luce. (passato prossimo)"
+          ],
+          "key": [
+            "<b>Verrò</b> con voi.",
+            "<b>Sono rimasti/e</b> a casa.",
+            "Lui <b>scelse</b> il vino.",
+            "Penso che tu <b>dica</b> la verità.",
+            "<b>Berrei</b> un caffè.",
+            "<b>Ho spento</b> la luce."
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Ieri ho risolvuto il problema.",
+            "Domani tenerò io le chiavi.",
+            "Voglio che tu togli le scarpe.",
+            "Dante nascé a Firenze nel 1265.",
+            "Il direttore ha assumuto due persone.",
+            "Mio padre si è sieduto in poltrona."
+          ],
+          "key": [
+            "<b>risolto</b>",
+            "<b>terrò</b>",
+            "<b>tolga</b>",
+            "<b>nacque</b>",
+            "<b>assunto</b>",
+            "<b>seduto</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa la frase con il verbo tra parentesi, nel tempo giusto.",
+          "items": [
+            "L'anno prossimo … (venire)",
+            "Ieri sera … (rimanere)",
+            "Al tuo posto … (dire)",
+            "Spero che tu … (sapere)",
+            "Non ho ancora … (scegliere)",
+            "Quando ero piccolo … (bere)"
+          ],
+          "key": [
+            "Esempio: <b>verrò in Italia per un mese</b>.",
+            "Esempio: <b>sono rimasto a casa a leggere</b>.",
+            "Esempio: <b>direi tutto al direttore</b>.",
+            "Esempio: <b>sappia la risposta</b>.",
+            "Esempio: <b>scelto il regalo per Anna</b>.",
+            "Esempio: <b>bevevo latte ogni mattina</b>."
+          ]
+        }
+      ]
+    },
     {
       "lvl": "b2",
       "cat": "Verbi",

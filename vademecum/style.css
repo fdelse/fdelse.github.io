@@ -1,4 +1,4 @@
-/* Vademecum di grammatica italiana — style.css — versione 1.4 */
+/* Vademecum di grammatica italiana — style.css — versione 1.5 */
 :root{
   --ink:#1b1e27;
   --ink-soft:#4a4f5e;
@@ -130,6 +130,7 @@ main{padding:0 0 80px;max-width:1340px;margin-inline:auto;width:100%;}
   padding:22px 24px 24px;
   display:flex;flex-direction:column;
   scroll-margin-top:20px;
+  position:relative;
 }
 .card__cat{
   font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;
@@ -247,6 +248,19 @@ ul.sch ul li::before{
 .ex-key li{font-size:13.5px;line-height:1.45;color:var(--ink-soft);}
 .ex-key li b{color:var(--lvl);font-weight:600;}
 
+/* ---------- pulsanti Copia ---------- */
+.copy-btn{
+  font-family:var(--sans);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;
+  line-height:1.3;color:var(--ink-faint);background:var(--card);
+  border:1px solid var(--line);border-radius:20px;padding:4px 11px;cursor:pointer;
+  transition:color .15s,border-color .15s;
+}
+.copy-btn:hover{color:var(--ink);border-color:var(--ink-faint);}
+.copy-btn.ok{color:var(--lvl);border-color:var(--lvl);}
+.copy-card{position:absolute;top:18px;right:20px;}
+.card__cat{padding-right:96px;}
+.eser-tools{display:flex;justify-content:flex-end;margin:0 0 2px;}
+
 .empty{display:none;padding:60px 56px;color:var(--ink-faint);font-size:16px;}
 .empty b{color:var(--ink);}
 .cited{
@@ -339,7 +353,7 @@ a:focus-visible, button:focus-visible, .nav-level:focus-visible{outline:2px soli
 
 /* ---------- stampa ---------- */
 @media print{
-  .spine,.totop{display:none !important;}
+  .spine,.totop,.copy-btn{display:none !important;}
   .shell{display:block;}
   body{background:#fff;}
   main{max-width:none;}

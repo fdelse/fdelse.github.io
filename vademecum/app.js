@@ -1,9 +1,9 @@
-/* Vademecum di grammatica italiana — app.js — versione 4.2
+/* Vademecum di grammatica italiana — app.js — versione 4.4
    Le schede stanno in dati/<livello>.json.
    Quando modifichi un file di dati, aggiorna la sua versione qui sotto in DATI
    (e il campo "versione" nel file): serve a far riscaricare il file al browser. */
-const VERSIONE = "4.2";
-const DATI = {a:"1.6", a2:"1.7", b1:"2.2", b2:"1.4", c1:"1.5"};
+const VERSIONE = "4.4";
+const DATI = {a:"1.6", a2:"1.7", b1:"2.2", b2:"1.5", c1:"1.5"};
 
 /* ===== Livelli ===== */
 const LEVELS = [
@@ -56,7 +56,8 @@ function searchText(e){
 }
 
 function cardHTML(e, lvlId, idx){
-  let h = "<article class='card' id='card-"+lvlId+"-"+idx+"' data-search=\""+searchText(e)+"\" data-t=\""+unapo(fold((e.title+" "+e.cat).toLowerCase()))+"\" style='--lvl:"+colorById[e.lvl]+"'>";
+  let h = "<article class='card' id='card-"+lvlId+"-"+idx+"' data-k='"+ENTRIES.indexOf(e)+"' data-search=\""+searchText(e)+"\" data-t=\""+unapo(fold((e.title+" "+e.cat).toLowerCase()))+"\" style='--lvl:"+colorById[e.lvl]+"'>";
+  h += "<button type='button' class='copy-btn copy-card' data-copy='scheda' title='Copia la spiegazione (senza esercizi)' aria-label='Copia la spiegazione della scheda'>Copia</button>";
   h += "<p class='card__cat'>"+e.cat+"</p>";
   h += "<h3 class='card__title'>"+e.title+"</h3>";
   h += "<p class='card__def'>"+e.def+"</p>";
@@ -85,6 +86,7 @@ function cardHTML(e, lvlId, idx){
   if(e.exercises && e.exercises.length){
     h += "<details class='sec sec-eser'><summary class='sec__h eser-toggle'>Esercizi<span class='eser-n'>"
       + e.exercises.reduce((n,x)=>n+x.items.length,0) + "</span></summary>";
+    h += "<div class='eser-tools'><button type='button' class='copy-btn' data-copy='esercizi' title='Copia gli esercizi (senza soluzioni)' aria-label='Copia gli esercizi della scheda, senza soluzioni'>Copia esercizi</button></div>";
     e.exercises.forEach(x=>{
       h += "<div class='ex-block'>"
         + "<p class='ex-type'>"+x.type+"</p>"
@@ -249,6 +251,196 @@ function setupDrawer(){
   });
 }
 
+/* ===== Copia =====
+   «Copia» (in alto nella scheda) copia la spiegazione: definizione, formazione, tabelle,
+   usi, esempi, avviso, errori tipici. «Copia esercizi» (dentro Esercizi) copia gli esercizi
+   senza le soluzioni. Ogni copia mette negli appunti due formati: HTML per Docs, Word ed
+   email; testo semplice per WhatsApp e le chat. Il programma in cui si incolla sceglie da solo. */
+
+const CELL = "border:1px solid #bbb;padding:4px 8px;text-align:left;vertical-align:top";
+
+/* Trasforma un pezzo di HTML in testo semplice: elenchi con «- » o «1. », a capo per <br> e <p>. */
+function toText(html){
+  const box = document.createElement("div");
+  box.innerHTML = html || "";
+  let out = "";
+  (function walk(node, depth){
+    node.childNodes.forEach(n=>{
+      if(n.nodeType===3){ out += n.nodeValue; return; }
+      if(n.nodeType!==1) return;
+      const tag = n.tagName;
+      if(tag==="BR"){ out += "\n"; return; }
+      if(tag==="UL" || tag==="OL"){
+        let k = 0;
+        n.childNodes.forEach(li=>{
+          if(li.nodeType!==1 || li.tagName!=="LI") return;
+          k++;
+          out += "\n" + "  ".repeat(depth) + (tag==="OL" ? k+". " : "- ");
+          walk(li, depth+1);
+        });
+        out += "\n";
+        return;
+      }
+      if(tag==="P" || tag==="DIV"){ out += "\n"; walk(n, depth); out += "\n"; return; }
+      walk(n, depth);
+    });
+  })(box, 0);
+  return out;
+}
+
+function tidy(s){
+  return s.replace(/ /g," ").replace(/[ \t]+\n/g,"\n").replace(/\n{3,}/g,"\n\n").trim()+"\n";
+}
+
+function clipTableHTML(t){
+  let h = "";
+  if(t.before) h += "<p>"+t.before+"</p>";
+  if(t.caption) h += "<p><b>"+t.caption+"</b></p>";
+  h += "<table style='border-collapse:collapse'>";
+  if(t.headers) h += "<tr>"+t.headers.map(x=>"<th style='"+CELL+"'>"+x+"</th>").join("")+"</tr>";
+  t.rows.forEach(r=>{
+    h += "<tr>"+r.map((c,i)=>"<td style='"+CELL+"'>"+(i===0 ? c : (t.plain ? "<i>"+c+"</i>" : "<b>"+c+"</b>"))+"</td>").join("")+"</tr>";
+  });
+  h += "</table>";
+  if(t.after) h += "<p>"+t.after+"</p>";
+  return h;
+}
+
+/* Nel testo semplice ogni riga di tabella diventa una riga: «io sono» per le coniugazioni,
+   «etichetta: valore | valore» per le altre tabelle. */
+function clipTableText(t){
+  const cell = c => toText(c).replace(/\s+/g," ").trim();
+  const line = r => {
+    const c = r.map(cell);
+    if(!t.headers && c.length===2) return c[0]+" "+c[1];
+    return (c[0] ? c[0]+": " : "") + c.slice(1).join(" | ");
+  };
+  let out = "";
+  if(t.before) out += toText(t.before)+"\n";
+  if(t.caption) out += cell(t.caption)+"\n";
+  if(t.headers) out += line(t.headers)+"\n";
+  t.rows.forEach(r=>{ out += line(r)+"\n"; });
+  if(t.after) out += toText(t.after)+"\n";
+  return out+"\n";
+}
+
+function cardClipHTML(e){
+  let h = "<p style='color:#777'>"+e.cat+"</p><h3>"+e.title+"</h3><p>"+e.def+"</p>";
+  if(e.form || (e.tables && e.tables.length)){
+    h += "<h4>Formazione</h4>";
+    if(e.form) h += "<div>"+e.form+"</div>";
+    (e.tables||[]).forEach(t=>{ h += clipTableHTML(t); });
+  }
+  if(e.uses && e.uses.length){
+    h += "<h4>Quando si usa</h4><ul>"
+      + e.uses.map(u=>"<li><b>"+u.label+"</b><br><i>"+u.ex+"</i></li>").join("") + "</ul>";
+  }
+  if(e.ex && e.ex.length){
+    h += "<h4>Esempi</h4>" + e.ex.map(x=>"<p><i>"+x+"</i></p>").join("");
+  }
+  if(e.warn) h += "<p><b>Attenzione — </b>"+e.warn+"</p>";
+  if(e.errors && e.errors.length){
+    h += "<h4>Errori tipici</h4><ul>"
+      + e.errors.map(x=>"<li><i><span style='text-decoration:line-through'>"+x.wrong+"</span></i> → <i>"+x.right+"</i>"
+        + (x.why ? "<br>"+x.why : "") + "</li>").join("") + "</ul>";
+  }
+  return h;
+}
+
+function cardClipText(e){
+  let out = e.cat.toUpperCase()+"\n"+toText(e.title)+"\n\n"+toText(e.def)+"\n\n";
+  if(e.form || (e.tables && e.tables.length)){
+    out += "FORMAZIONE\n";
+    if(e.form) out += toText(e.form)+"\n\n";
+    (e.tables||[]).forEach(t=>{ out += clipTableText(t); });
+  }
+  if(e.uses && e.uses.length){
+    out += "\nQUANDO SI USA\n";
+    e.uses.forEach(u=>{ out += "- "+toText(u.label).trim()+"\n  "+toText(u.ex).trim()+"\n"; });
+  }
+  if(e.ex && e.ex.length){
+    out += "\nESEMPI\n" + e.ex.map(x=>toText(x).trim()).join("\n") + "\n";
+  }
+  if(e.warn) out += "\nAttenzione — "+toText(e.warn).trim()+"\n";
+  if(e.errors && e.errors.length){
+    out += "\nERRORI TIPICI\n";
+    e.errors.forEach(x=>{
+      out += "✗ "+toText(x.wrong).trim()+" → ✓ "+toText(x.right).trim()+"\n";
+      if(x.why) out += "  "+toText(x.why).trim()+"\n";
+    });
+  }
+  return out;
+}
+
+function exercisesClipHTML(e){
+  return "<h3>"+e.title+"</h3><h4>Esercizi</h4>"
+    + e.exercises.map(x=>"<p><b>"+x.type+".</b> "+x.instr+"</p><ol>"
+      + x.items.map(it=>"<li>"+it+"</li>").join("") + "</ol>").join("");
+}
+
+/* Negli esercizi il grassetto serve (es. «sostituisci le parole in grassetto»):
+   nel testo semplice diventa *parola*, che WhatsApp mostra in grassetto. */
+function exercisesClipText(e){
+  let out = toText(e.title)+" — ESERCIZI\n";
+  e.exercises.forEach(x=>{
+    out += "\n"+x.type.toUpperCase()+" — "+toText(x.instr).trim()+"\n";
+    x.items.forEach((it,i)=>{ out += (i+1)+". "+toText(it.replace(/<\/?b>/g,"*")).trim()+"\n"; });
+  });
+  return out;
+}
+
+function legacyCopy(html, text){
+  return new Promise((resolve, reject)=>{
+    const onCopy = ev=>{
+      ev.preventDefault();
+      ev.clipboardData.setData("text/html", html);
+      ev.clipboardData.setData("text/plain", text);
+    };
+    document.addEventListener("copy", onCopy);
+    let ok = false;
+    try{ ok = document.execCommand("copy"); }catch(err){ ok = false; }
+    document.removeEventListener("copy", onCopy);
+    if(ok) resolve(); else reject(new Error("copia non riuscita"));
+  });
+}
+
+function writeClip(html, text){
+  if(navigator.clipboard && window.ClipboardItem){
+    try{
+      return navigator.clipboard.write([new ClipboardItem({
+        "text/html": new Blob([html], {type:"text/html"}),
+        "text/plain": new Blob([text], {type:"text/plain"})
+      })]).catch(()=>legacyCopy(html, text));
+    }catch(err){ return legacyCopy(html, text); }
+  }
+  return legacyCopy(html, text);
+}
+
+function flash(btn, label, ok){
+  if(!btn.dataset.label) btn.dataset.label = btn.textContent;
+  btn.textContent = label;
+  btn.classList.toggle("ok", ok);
+  clearTimeout(btn._t);
+  btn._t = setTimeout(()=>{ btn.textContent = btn.dataset.label; btn.classList.remove("ok"); }, 2000);
+}
+
+function setupCopy(){
+  const content = document.getElementById("content");
+  if(!content) return;
+  content.addEventListener("click", ev=>{
+    const btn = ev.target.closest(".copy-btn");
+    if(!btn) return;
+    const card = btn.closest(".card");
+    const e = card ? ENTRIES[+card.dataset.k] : null;
+    if(!e) return;
+    const ex = btn.dataset.copy === "esercizi";
+    const html = "<meta charset='utf-8'><div style='font-family:Arial,Helvetica,sans-serif'>"
+      + (ex ? exercisesClipHTML(e) : cardClipHTML(e)) + "</div>";
+    const text = tidy(ex ? exercisesClipText(e) : cardClipText(e));
+    writeClip(html, text).then(()=>flash(btn, "Copiato", true), ()=>flash(btn, "Non copiato", false));
+  });
+}
+
 function safe(fn,name){ try{ fn(); }catch(e){ console.error("Errore in "+name+":", e); } }
 
 function loadData(){
@@ -265,6 +457,7 @@ loadData().then(()=>{
   safe(setupScroll,"setupScroll");
   safe(setupNav,"setupNav");
   safe(setupDrawer,"setupDrawer");
+  safe(setupCopy,"setupCopy");
 }).catch(err=>{
   console.error(err);
   document.getElementById("content").innerHTML =
