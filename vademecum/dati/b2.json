@@ -1,5 +1,5 @@
 {
-  "versione": "1.5",
+  "versione": "1.6",
   "livello": "B2",
   "schede": [
     {
@@ -767,7 +767,7 @@
           "ex": "<b>Tornando</b> a casa, ho incontrato Luca. / Sto <b>leggendo</b>."
         },
         {
-          "label": "participio passato: forma i tempi composti e la forma passiva; da solo può sostituire una frase intera",
+          "label": "participio passato: forma i tempi composti e la forma passiva; da solo può sostituire una frase intera (vedi Il participio passato al posto di una frase)",
           "ex": "Ho <b>finito</b>. / La lettera è stata <b>scritta</b> ieri. / <b>Finita</b> la lezione, siamo usciti."
         }
       ],
@@ -3452,6 +3452,167 @@
     {
       "lvl": "b2",
       "cat": "Verbi",
+      "title": "Il participio passato al posto di una frase",
+      "def": "Il participio passato può stare da solo, senza ausiliare, al posto di una frase intera: «<i>Finita</i> la lezione, siamo usciti» = «Quando la lezione è finita, siamo usciti». Di solito indica un'azione <b>già conclusa</b> prima di quella della frase principale. È una costruzione compatta, frequente nello scritto, nelle notizie e nel parlato curato.",
+      "form": "<b>Come si costruisce.</b><ul class='sch'><li>quando sostituisce una frase, il participio va di solito <b>all'inizio</b>, seguito dalle parole che lo accompagnano e da una virgola: «<i>Finito</i> il lavoro, è tornato a casa»</li><li><b>verbi con avere</b>: la costruzione si fa solo se c'è una cosa su cui cade l'azione (l'oggetto: <i>il lavoro, i documenti</i>), e il participio si accorda con quella: «<i>pagato</i> il conto», «<i>letti</i> i documenti», «<i>fatte</i> le valigie». Chi fa l'azione è di solito il soggetto della frase principale</li><li>con i verbi che vogliono <i>avere</i> ma non hanno un oggetto (<i>dormire, lavorare, camminare, telefonare</i>) non si può: non «Dormito poco, ero stanco», ma «<i>Avendo dormito</i> poco, ero stanco»</li><li><b>verbi con essere</b>: il participio si accorda con chi fa l'azione: «<i>arrivata</i> a casa, Anna ha chiamato». Se chi fa l'azione non è il soggetto della frase principale, si dice subito dopo il participio: «<i>partiti</i> gli ospiti, abbiamo messo in ordine»</li><li>si può far precedere da <b>una volta</b> o <b>appena</b>: «<i>una volta finito</i> il corso, cercherò lavoro», «<i>appena arrivati</i>, ci siamo riposati»</li><li>nello scritto i pronomi si attaccano in fondo al participio: «<i>salutatili</i>, è uscito»</li><li>con i verbi che hanno un oggetto il participio può avere senso passivo, come un aggettivo: «<i>usato</i> con attenzione» (= se viene usato), «la lettera <i>spedita</i> lunedì»</li></ul>",
+      "tables": [
+        {
+          "before": "<b>Che cosa può sostituire.</b>",
+          "plain": true,
+          "headers": [
+            "valore",
+            "con il participio",
+            "con la frase intera"
+          ],
+          "rows": [
+            [
+              "tempo: dopo che",
+              "Finita la riunione, siamo andati a pranzo.",
+              "Dopo che la riunione è finita, …"
+            ],
+            [
+              "tempo: appena",
+              "Appena arrivati, ci siamo riposati.",
+              "Appena siamo arrivati, …"
+            ],
+            [
+              "causa: siccome",
+              "Perso il treno, Marco ha preso un taxi.",
+              "Siccome aveva perso il treno, …"
+            ],
+            [
+              "condizione: se",
+              "Usato con attenzione, questo prodotto è sicuro.",
+              "Se viene usato con attenzione, …"
+            ],
+            [
+              "una frase con che",
+              "Ho ricevuto la lettera spedita lunedì.",
+              "… la lettera che è stata spedita lunedì."
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "verbi con avere: il participio si accorda con la cosa; chi fa l'azione è di solito il soggetto della frase principale",
+          "ex": "<b>Pagato</b> il conto, siamo andati via. / <b>Letti</b> i documenti, il direttore li ha firmati. / <b>Fatte</b> le valigie, siamo partiti."
+        },
+        {
+          "label": "verbi con essere: il participio si accorda con chi fa l'azione, che si dice subito dopo se non è il soggetto della frase principale",
+          "ex": "<b>Arrivata</b> a casa, Anna ha chiamato sua madre. / <b>Partiti</b> gli ospiti, abbiamo messo in ordine. / <b>Finita</b> la lezione, gli studenti sono usciti."
+        },
+        {
+          "label": "una volta, appena + participio: per sottolineare che prima si fa una cosa e poi l'altra",
+          "ex": "<b>Una volta presa</b> la decisione, avvisami. / <b>Appena svegliato</b>, ho bevuto un caffè."
+        },
+        {
+          "label": "una causa o una condizione, nello stile curato",
+          "ex": "<b>Perso</b> il treno, Marco ha preso un taxi. / <b>Usato</b> con attenzione, il farmaco è sicuro."
+        },
+        {
+          "label": "al posto di una frase con che: il participio fa da aggettivo",
+          "ex": "La lettera <b>spedita</b> lunedì non è ancora arrivata. / I documenti <b>firmati</b> vanno consegnati in segreteria."
+        },
+        {
+          "label": "tre modi per dire «dopo»: participio, gerundio composto (vedi Il gerundio: semplice e composto), dopo + infinito passato (vedi Infinito sostantivato e passato)",
+          "ex": "<b>Finito</b> il lavoro, sono uscito. / <b>Avendo finito</b> il lavoro, sono uscito. / <b>Dopo aver finito</b> il lavoro, sono uscito."
+        }
+      ],
+      "warn": "<b>L'accordo.</b> Con i verbi che vogliono <i>avere</i> il participio si accorda con la cosa che segue («<i>fatti</i> i compiti», «<i>pagata</i> la bolletta»): non resta sempre in -o. <b>Chi ha fatto l'azione?</b> Se il soggetto del participio non è quello della frase principale, va detto: «<i>Arrivato</i> a casa, il telefono ha squillato» è sbagliato, perché sembra che sia arrivato il telefono. <b>Registro.</b> Nel parlato di tutti i giorni si preferisce «quando ho finito» o «dopo aver finito»; il participio da solo è più dello scritto.",
+      "errors": [
+        {
+          "wrong": "Finito la cena, siamo usciti.",
+          "right": "Finita la cena, siamo usciti.",
+          "why": "Il participio si accorda con <i>la cena</i>."
+        },
+        {
+          "wrong": "Fatto i compiti, i bambini sono andati a giocare.",
+          "right": "Fatti i compiti, i bambini sono andati a giocare.",
+          "why": "Il participio si accorda con <i>i compiti</i>."
+        },
+        {
+          "wrong": "Arrivato a casa, il telefono ha squillato.",
+          "right": "Appena sono arrivato a casa, il telefono ha squillato.",
+          "why": "Senza un soggetto detto, il participio si riferisce al soggetto della frase principale: qui sembra che sia arrivato il telefono. Si usa la frase intera."
+        },
+        {
+          "wrong": "Dormito poco, ero stanco.",
+          "right": "Avendo dormito poco, ero stanco.",
+          "why": "<i>Dormire</i> non ha un oggetto: con il participio da solo non si può; si usa il gerundio composto."
+        },
+        {
+          "wrong": "Arrivate a Roma, Marco e Luca hanno cercato un albergo.",
+          "right": "Arrivati a Roma, Marco e Luca hanno cercato un albergo.",
+          "why": "Con <i>essere</i> il participio si accorda con il soggetto: maschile plurale."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Riscrivi la parte in grassetto con il participio passato.",
+          "items": [
+            "<b>Dopo che abbiamo finito la cena</b>, siamo usciti.",
+            "<b>Quando è tornata dal lavoro</b>, Giulia si è fatta una doccia.",
+            "<b>Dopo che avevano visitato il museo</b>, sono andati a pranzo.",
+            "<b>Quando avrai ricevuto il pacco</b>, controlla che sia tutto a posto.",
+            "<b>Siccome aveva perso le chiavi</b>, Marco ha chiamato un fabbro.",
+            "Ho letto l'articolo <b>che è stato pubblicato</b> ieri."
+          ],
+          "key": [
+            "<b>Finita la cena</b>, siamo usciti.",
+            "<b>Tornata dal lavoro</b>, Giulia si è fatta una doccia.",
+            "<b>Visitato il museo</b>, sono andati a pranzo.",
+            "<b>Una volta ricevuto il pacco</b> (o <b>Ricevuto il pacco</b>), controlla che sia tutto a posto.",
+            "<b>Perse le chiavi</b>, Marco ha chiamato un fabbro.",
+            "Ho letto l'articolo <b>pubblicato</b> ieri."
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Finito la partita, i tifosi sono tornati a casa.",
+            "Fatto la spesa, siamo tornati a casa.",
+            "(Sono arrivato io.) Arrivato in ufficio, il capo mi ha chiamato.",
+            "Lavorato tutto il giorno, ero stanco.",
+            "Uscito dall'ufficio, Giulia ha preso un taxi.",
+            "Una volta firmato la lettera, spediscila."
+          ],
+          "key": [
+            "<b>Finita</b>",
+            "<b>Fatta</b>",
+            "Esempio: <b>Appena sono arrivato in ufficio</b>, il capo mi ha chiamato. (o <b>Quando sono arrivato</b>…; o <b>Arrivato in ufficio, sono stato chiamato dal capo.</b>)",
+            "<b>Avendo lavorato</b> tutto il giorno, ero stanco. (o <b>Dopo aver lavorato</b>…)",
+            "<b>Uscita</b>",
+            "<b>firmata</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa la frase. Nelle frasi 4 e 5 comincia con un participio passato.",
+          "items": [
+            "Finita la lezione, …",
+            "Arrivati a Roma, …",
+            "Una volta presa la patente, …",
+            "… , ci siamo messi a tavola.",
+            "… , ha spento il computer ed è uscito.",
+            "Appena svegliata, …"
+          ],
+          "key": [
+            "Esempio: <b>siamo andati a prendere un caffè</b>.",
+            "Esempio: <b>abbiamo cercato l'albergo</b>.",
+            "Esempio: <b>comprerò una macchina</b>.",
+            "Esempio: <b>Preparata la cena</b>.",
+            "Esempio: <b>Finito il lavoro</b>.",
+            "Esempio: <b>Anna ha aperto la finestra</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b2",
+      "cat": "Verbi",
       "title": "Infinito sostantivato e passato",
       "def": "L'infinito è la forma «base» del verbo (<i>parlare, essere</i>), ma non serve solo nel dizionario: può fare da <b>nome</b> («<i>viaggiare</i> apre la mente») e, nella forma <b>passata</b> (<i>aver parlato, essere andato</i>), indica un'azione già avvenuta rispetto a un'altra («dopo <i>aver mangiato</i>, sono uscito»).",
       "form": "<b>Infinito passato</b>: <b>avere</b> o <b>essere</b> all'infinito + participio passato, con lo stesso ausiliare del passato prossimo. Spesso si accorcia: <i>aver finito, esser tornato</i>. Con <i>essere</i> il participio si accorda con il soggetto: «dopo essere arrivat<b>a</b>», «dopo esser partit<b>i</b>». I pronomi si attaccano in fondo all'ausiliare: «dopo aver<b>lo</b> visto», «dopo esser<b>si</b> svegliato». <b>Infinito come nome</b>: può fare da soggetto o da oggetto della frase, di solito senza articolo («<i>fumare</i> fa male»); con l'articolo («<i>il</i> mangiare») suona letterario o fa parte di espressioni fisse.",
@@ -3936,6 +4097,187 @@
             "Esempio: <b>Me li faccio tagliare da un parrucchiere vicino a casa.</b>",
             "Esempio: <b>Ti faccio sapere domani.</b>",
             "Esempio: <b>Sì, mi lasciavano uscire fino a mezzanotte.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b2",
+      "cat": "Sintassi",
+      "title": "Le frasi consecutive",
+      "def": "La frase <b>consecutiva</b> dice la conseguenza di una cosa che nella prima parte è presentata come molto forte: «Ero <i>così</i> stanco <i>che</i> mi sono addormentato sul divano». La prima parte dice <b>quanto</b> (così, tanto, talmente…), la seconda dice <b>che cosa è successo</b> per questo.",
+      "form": "<b>Le costruzioni.</b><ul class='sch'><li><b>così, tanto, talmente</b> + aggettivo o avverbio + <b>che</b> + verbo coniugato: «era <i>così</i> buono <i>che</i> ne ho preso un altro pezzo»</li><li>verbo + <b>tanto, talmente</b> + <b>che</b>: «ha piovuto <i>tanto che</i> il fiume è uscito dagli argini»</li><li><b>tanto, tanta, tanti, tante</b> + nome + <b>che</b> (per l'accordo di <i>tanto</i> vedi Gli avverbi): «c'era <i>tanta</i> gente <i>che</i> non si poteva entrare»</li><li>un nome + <b>tale che</b>, oppure <b>al punto che, a tal punto che</b>: «ha fatto un rumore <i>tale che</i> si sono svegliati tutti», «si è arrabbiato <i>al punto che</i> è andato via»</li><li><b>da</b> + infinito, quando la conseguenza riguarda chi fa l'azione della prima parte, o una persona sottintesa se la prima parte non ha un soggetto: «era <i>così</i> stanco <i>da</i> non riuscire a parlare» (= che non riusciva a parlare), «faceva <i>così</i> caldo <i>da</i> non riuscire a dormire»</li><li><b>troppo … per</b> + infinito, <b>abbastanza … per</b> (o <b>da</b>) + infinito: «è <i>troppo</i> giovane <i>per</i> guidare», «è <i>abbastanza</i> grande <i>per</i> capire»; con persone diverse, <b>troppo … perché</b> + congiuntivo: «è troppo tardi <i>perché</i> tu possa partire»</li></ul><b>Il modo del verbo.</b><ul class='sch'><li><b>indicativo</b>: la conseguenza è un fatto: «era così buono <i>che</i> ne ho preso un altro pezzo»</li><li><b>condizionale</b>: la conseguenza è solo possibile: «è così caro <i>che</i> non lo <i>comprerei</i> mai»</li><li><b>congiuntivo</b>: se la prima parte è negativa («non è così grave <i>che</i> tu <i>debba</i> preoccuparti») e con <b>in modo che, così che</b> quando la conseguenza è voluta, non ancora successa («parla piano, <i>in modo che</i> tutti ti <i>capiscano</i>»); se la conseguenza è già avvenuta, anche qui l'indicativo («ha parlato forte, in modo che tutti l'hanno sentito»)</li></ul>",
+      "tables": [
+        {
+          "before": "<b>Le forme a confronto.</b>",
+          "plain": true,
+          "headers": [
+            "forma",
+            "esempio",
+            "nota"
+          ],
+          "rows": [
+            [
+              "così / tanto / talmente + aggettivo + che",
+              "Il film era così noioso che siamo usciti.",
+              "la forma più comune"
+            ],
+            [
+              "verbo + tanto / talmente + che",
+              "Ha studiato talmente tanto che ha preso il massimo dei voti.",
+              "con un verbo"
+            ],
+            [
+              "tanto, tanta, tanti, tante + nome + che",
+              "Avevo tanta fame che ho mangiato tutto.",
+              "con un nome"
+            ],
+            [
+              "un nome + tale che",
+              "Faceva un caldo tale che non si respirava.",
+              "più curato"
+            ],
+            [
+              "al punto che, a tal punto che",
+              "Era preoccupato al punto che non dormiva più.",
+              "sottolinea l'esagerazione"
+            ],
+            [
+              "così … da + infinito",
+              "Era così stanco da non riuscire a parlare.",
+              "la conseguenza riguarda chi fa l'azione della prima parte"
+            ],
+            [
+              "troppo … per + infinito",
+              "È troppo presto per decidere.",
+              "la conseguenza è che non si può fare; con persone diverse: troppo … perché + congiuntivo"
+            ],
+            [
+              "abbastanza … per / da + infinito",
+              "È abbastanza grande per capire.",
+              "la conseguenza è che si può fare"
+            ],
+            [
+              "in modo che, così che",
+              "Spiegalo bene, in modo che tutti capiscano. / Ha parlato forte, in modo che tutti l'hanno sentito.",
+              "congiuntivo se la conseguenza è voluta; indicativo se è già avvenuta"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "così, tanto, talmente + aggettivo o avverbio + che: la forma di tutti i giorni",
+          "ex": "Ero <b>così</b> stanco <b>che</b> mi sono addormentato. / Parlava <b>talmente</b> veloce <b>che</b> non capivo niente. / Era <b>tanto</b> bello <b>che</b> non sembrava vero."
+        },
+        {
+          "label": "tanto con un verbo o con un nome",
+          "ex": "Ha piovuto <b>tanto che</b> le strade erano allagate. / C'era <b>tanto</b> traffico <b>che</b> siamo arrivati tardi. / Ho <b>tante</b> cose da fare <b>che</b> non so da dove cominciare."
+        },
+        {
+          "label": "tale che, al punto che, a tal punto che: per sottolineare",
+          "ex": "Ha fatto un rumore <b>tale che</b> si sono svegliati tutti. / Si è arrabbiato <b>al punto che</b> è andato via senza salutare. / Era cambiato <b>a tal punto che</b> non l'ho riconosciuto."
+        },
+        {
+          "label": "così … da + infinito: più compatto, quando la conseguenza riguarda chi fa l'azione della prima parte",
+          "ex": "Era <b>così</b> emozionato <b>da</b> non riuscire a parlare. / Non sono <b>così</b> stupido <b>da</b> crederci."
+        },
+        {
+          "label": "troppo … per, abbastanza … per + infinito",
+          "ex": "È <b>troppo</b> tardi <b>per</b> uscire. / Sei <b>abbastanza</b> grande <b>per</b> decidere da solo."
+        },
+        {
+          "label": "in modo che, così che + congiuntivo: una conseguenza voluta",
+          "ex": "Scrivi in stampatello, <b>in modo che</b> si legga bene. / Ti mando l'indirizzo, <b>così che</b> tu possa trovarci."
+        }
+      ],
+      "warn": "<b>Così … che o così … come?</b> <i>Così … che</i> dice una conseguenza («era così buono che ne ho presi tre»); <i>così … come</i> fa un confronto («è così alto come suo padre»: vedi I comparativi). <b>Da + infinito o che?</b> Con <i>da</i> la conseguenza riguarda chi fa l'azione della prima parte («era così stanco da addormentarsi»); se c'è un'altra persona o cosa si usa <i>che</i>: «era così tardi che i negozi erano chiusi». <b>Tanto</b> davanti a un nome si accorda, davanti a un aggettivo no: vedi Gli avverbi. Per dire la conseguenza all'inizio di una nuova frase (<i>quindi, perciò, di conseguenza</i>): vedi I connettivi.",
+      "errors": [
+        {
+          "wrong": "Era così distratto di non accorgersi di niente.",
+          "right": "Era così distratto da non accorgersi di niente.",
+          "why": "Nella consecutiva con l'infinito si usa <i>da</i>."
+        },
+        {
+          "wrong": "C'era così molta gente che non si entrava.",
+          "right": "C'era così tanta gente che non si entrava.",
+          "why": "Con <i>così</i>, davanti a un nome si usa <i>tanto</i>, non <i>molto</i>: <i>così tanta gente</i>."
+        },
+        {
+          "wrong": "Era troppo stanco che non poteva parlare.",
+          "right": "Era così stanco che non poteva parlare. / Era troppo stanco per parlare.",
+          "why": "<i>Troppo</i> vuole <i>per</i> + infinito; con <i>che</i> si usa <i>così</i> o <i>tanto</i>."
+        },
+        {
+          "wrong": "Era così buono come ne ho mangiati tre.",
+          "right": "Era così buono che ne ho mangiati tre.",
+          "why": "Per la conseguenza si usa <i>che</i>; <i>come</i> è dei confronti."
+        },
+        {
+          "wrong": "Parlava così piano da nessuno lo sentiva.",
+          "right": "Parlava così piano che nessuno lo sentiva.",
+          "why": "Con un verbo coniugato si usa <i>che</i>; <i>da</i> vuole l'infinito."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Unisci le due frasi con una consecutiva, usando la forma tra parentesi.",
+          "items": [
+            "Il caffè era molto caldo. Mi sono bruciato la lingua. (così … che)",
+            "C'erano molte macchine. Non trovavamo parcheggio. (tanto … che)",
+            "La lezione era molto interessante. Nessuno guardava l'orologio. (talmente … che)",
+            "Era molto stanco. Si è addormentato in treno. (così … da)",
+            "C'era un silenzio profondissimo. Si sentiva il ticchettio dell'orologio. (tale … che)",
+            "Ha lavorato moltissimo. Si è ammalato. (al punto che)"
+          ],
+          "key": [
+            "<b>Il caffè era così caldo che mi sono bruciato la lingua.</b>",
+            "<b>C'erano tante macchine che non trovavamo parcheggio.</b>",
+            "<b>La lezione era talmente interessante che nessuno guardava l'orologio.</b>",
+            "<b>Era così stanco da addormentarsi in treno.</b>",
+            "<b>C'era un silenzio tale che si sentiva il ticchettio dell'orologio.</b>",
+            "<b>Ha lavorato tanto, al punto che si è ammalato.</b> (o <b>Ha lavorato al punto che si è ammalato.</b>)"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Faceva così freddo di non poter uscire.",
+            "È abbastanza grande di capire da solo.",
+            "C'era un rumore talmente che non si dormiva.",
+            "Il libro era così bello come l'ho letto in una notte.",
+            "Correva così veloce da nessuno riusciva a prenderlo.",
+            "Parla più forte, in modo che tutti ti sentono."
+          ],
+          "key": [
+            "<b>da non poter uscire</b>",
+            "<b>per capire</b> (o <b>da capire</b>)",
+            "<b>un rumore tale che</b> (o <b>talmente tanto rumore che</b>)",
+            "<b>che</b>",
+            "<b>che nessuno riusciva</b>",
+            "<b>sentano</b> (nel parlato si sente anche l'indicativo)"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa la frase con una conseguenza.",
+          "items": [
+            "Ero così emozionato che …",
+            "Ha studiato talmente tanto che …",
+            "C'era tanto traffico che …",
+            "Ero così stanco da …",
+            "Sei ancora troppo giovane per …",
+            "Mi ha fatto una domanda tale che …"
+          ],
+          "key": [
+            "Esempio: <b>non riuscivo a parlare</b>.",
+            "Esempio: <b>ha preso il voto più alto della classe</b>.",
+            "Esempio: <b>siamo arrivati con un'ora di ritardo</b>.",
+            "Esempio: <b>non riuscire a tenere gli occhi aperti</b>.",
+            "Esempio: <b>guidare la macchina</b>.",
+            "Esempio: <b>non ho saputo rispondere</b>."
           ]
         }
       ]

@@ -1,5 +1,5 @@
 {
-  "versione": "1.5",
+  "versione": "1.6",
   "livello": "C1",
   "schede": [
     {
@@ -931,6 +931,473 @@
             "Esempio: <b>A mio avviso, vivere in centro è comodo; d'altra parte, è molto caro.</b>",
             "Esempio: <b>Siccome ieri pioveva, siamo rimasti a casa e quindi abbiamo guardato un film.</b>",
             "Esempio: <b>Il progetto ha rispettato i tempi; oltre a ciò, è costato meno del previsto. In sintesi, è stato un successo.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "c1",
+      "cat": "Sintassi",
+      "title": "Frase scissa e dislocazione",
+      "def": "Sono due modi di <b>mettere in evidenza</b> una parte della frase, molto comuni nel parlato. Con la <b>frase scissa</b> la frase si divide in due: «<i>È Marco che</i> ha chiamato» (proprio Marco, non un altro). Con la <b>dislocazione</b> una parte si sposta all'inizio o alla fine della frase e un pronome la riprende: «<i>Il libro</i> l'ho già letto», «L'ho già letto, <i>il libro</i>».",
+      "form": "<b>Frase scissa.</b><ul class='sch'><li><b>essere</b> + la parte da mettere in evidenza + <b>che</b> + verbo coniugato: «È Marco che ha chiamato», «È a Roma che vivo, non a Milano», «È per questo che non sono venuto»</li><li>quando la parte in evidenza è chi fa l'azione, anche <b>essere + a + infinito</b>: «È Marco a chiamare», «Sono stati loro a dirmelo»</li><li><i>essere</i> si accorda con la persona in evidenza: «<i>Sono</i> loro che…», «<i>Siamo</i> noi a…». Con <i>a</i> + infinito il tempo lo porta <i>essere</i>: «<i>È stata</i> Anna a dirmelo», «<i>È</i> Anna a dirmelo»; con <i>che</i>, <i>essere</i> resta di solito al presente: «<i>È</i> Marco che ha chiamato» (si dice anche «È stato Marco che…»). Se la parte in evidenza comincia con una preposizione, <i>essere</i> resta al singolare: «<i>È</i> ai ragazzi che ho parlato»</li><li>nelle domande del parlato: «Chi <i>è che</i> ha chiamato?», «Cos'<i>è che</i> non va?»</li></ul><b>Dislocazione.</b><ul class='sch'><li><b>a sinistra</b>: la parte va all'inizio e un pronome la riprende prima del verbo: «<i>Il caffè</i> lo prendo amaro», «<i>A Roma</i> ci vado spesso», «<i>Di soldi</i> ne ho pochi»</li><li>con l'oggetto all'inizio, quando è l'argomento di cui si parla, il pronome è <b>obbligatorio</b> («Il libro <i>l'</i>ho letto», non «Il libro ho letto»). Senza pronome la frase va bene solo se quella parte è messa in contrasto e detta con la voce forte: «Il LIBRO ho letto, non il giornale». Il participio si accorda con il pronome («Le chiavi le ho trov<i>ate</i>»: vedi I pronomi diretti e indiretti)</li><li><b>a destra</b>: la parte va alla fine, dopo una pausa, per chiarire o ricordare di che cosa si parla: «L'hai visto, <i>il film</i>?», «Ne vuoi ancora, <i>di torta</i>?»</li></ul>",
+      "tables": [
+        {
+          "before": "<b>Le forme.</b>",
+          "plain": true,
+          "headers": [
+            "forma",
+            "esempio",
+            "serve a"
+          ],
+          "rows": [
+            [
+              "frase scissa con che",
+              "È Marco che ha rotto il vaso.",
+              "dire «proprio lui, non un altro»"
+            ],
+            [
+              "frase scissa con a + infinito",
+              "È stata Anna a dirmelo.",
+              "lo stesso, quando in evidenza c'è chi fa l'azione"
+            ],
+            [
+              "è … che nelle domande",
+              "Cos'è che non ti piace?",
+              "una domanda più naturale nel parlato"
+            ],
+            [
+              "è per questo che",
+              "È per questo che sono arrivato tardi.",
+              "mettere in evidenza la causa"
+            ],
+            [
+              "dislocazione a sinistra",
+              "Il caffè lo prendo senza zucchero.",
+              "dire subito di che cosa si parla"
+            ],
+            [
+              "dislocazione con ci e ne",
+              "A Roma ci vado spesso. / Di soldi ne ho pochi.",
+              "lo stesso, con un luogo o una quantità"
+            ],
+            [
+              "dislocazione a destra",
+              "L'hai già letto, il giornale?",
+              "ricordare o chiarire di che cosa si parla"
+            ],
+            [
+              "c'è … che",
+              "C'è un signore che ti cerca.",
+              "presentare una cosa o una persona nuova"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "frase scissa con che: proprio questa persona, questo luogo, questo motivo, non un altro",
+          "ex": "<b>È Marco che</b> ha rotto il vaso, non io. / <b>È a Milano che</b> lavoro. / <b>È per questo che</b> non sono venuto."
+        },
+        {
+          "label": "frase scissa con a + infinito: in evidenza chi fa l'azione",
+          "ex": "<b>È stata Anna a</b> dirmelo. / <b>Sono io a</b> doverti ringraziare. / <b>Sono stati loro a</b> decidere."
+        },
+        {
+          "label": "è che nelle domande del parlato",
+          "ex": "Chi <b>è che</b> ha chiamato? / Cos'<b>è che</b> non va? / Dov'<b>è che</b> abiti adesso?"
+        },
+        {
+          "label": "dislocazione a sinistra: prima l'argomento, poi quello che se ne dice",
+          "ex": "<b>Il caffè lo</b> prendo amaro. / <b>Questo film l'</b>ho già visto. / <b>Le chiavi le</b> ho lasciate in macchina."
+        },
+        {
+          "label": "dislocazione con ci e ne",
+          "ex": "<b>A Roma ci</b> vado spesso. / <b>Di soldi ne</b> ho pochi. / <b>Di libri ne</b> leggo molti."
+        },
+        {
+          "label": "dislocazione a destra: per ricordare o chiarire di che cosa si parla",
+          "ex": "<b>L'</b>hai comprato, <b>il pane</b>? / <b>Ne</b> vuoi ancora, <b>di torta</b>? / <b>Lo</b> conosci, <b>Paolo</b>?"
+        },
+        {
+          "label": "c'è … che: presentare qualcosa di nuovo",
+          "ex": "<b>C'è</b> un signore <b>che</b> ti cerca. / <b>C'è</b> una cosa <b>che</b> non ti ho detto."
+        }
+      ],
+      "warn": "<b>Registro.</b> La dislocazione è normale nel parlato e nello scritto informale, e non è un errore; nello scritto formale si usa meno, ma si trova: «Questo problema lo affronteremo nel prossimo capitolo». La frase scissa è frequente anche nello scritto formale: «È in questo contesto che…». <b>A Marco gli ho detto.</b> Con una persona all'inizio (<i>a Marco, a mia madre</i>) la ripresa con <i>gli, le</i> è molto diffusa nel parlato; nello scritto si evita e si dice «A Marco ho detto…». <b>Che, non chi, cui o perché.</b> Nella frase scissa la seconda parte comincia con <i>che</i> (o con <i>a</i> + infinito): «È Marco <i>che</i> ha chiamato», «È a Marco <i>che</i> ho scritto», «È per questo <i>che</i>…».",
+      "errors": [
+        {
+          "wrong": "Il libro ho già letto.",
+          "right": "Il libro l'ho già letto.",
+          "why": "Detta in modo normale, con l'oggetto all'inizio la frase vuole il pronome che lo riprende."
+        },
+        {
+          "wrong": "È a Marco a cui ho scritto.",
+          "right": "È a Marco che ho scritto.",
+          "why": "Dopo la parte con la preposizione si usa solo <i>che</i>."
+        },
+        {
+          "wrong": "È Marco chi ha chiamato.",
+          "right": "È Marco che ha chiamato.",
+          "why": "Nella frase scissa si usa <i>che</i> (o <i>a</i> + infinito), non <i>chi</i>."
+        },
+        {
+          "wrong": "Sono stati loro che dirmelo.",
+          "right": "Sono stati loro a dirmelo.",
+          "why": "Con l'infinito si usa <i>a</i>; con <i>che</i> serve il verbo coniugato: «che me l'hanno detto»."
+        },
+        {
+          "wrong": "È per questo perché non sono venuto.",
+          "right": "È per questo che non sono venuto.",
+          "why": "La seconda parte della frase scissa comincia sempre con <i>che</i>."
+        },
+        {
+          "wrong": "Di soldi ho pochi.",
+          "right": "Di soldi ne ho pochi.",
+          "why": "Con <i>di</i> + nome all'inizio, la quantità si riprende con <i>ne</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Riformulazione",
+          "instr": "Riformula mettendo in evidenza la parte tra parentesi, con la costruzione indicata.",
+          "items": [
+            "Marco ha rotto il vaso. (Marco; frase scissa con a + infinito)",
+            "Ho già visto questo film. (questo film; dislocazione a sinistra)",
+            "Vado spesso a Napoli. (a Napoli; dislocazione a sinistra)",
+            "Qui ho pochi amici. (di amici; dislocazione a sinistra)",
+            "Vivo a Milano, non a Roma. (a Milano; frase scissa con che)",
+            "Hai comprato il pane? (il pane; dislocazione a destra)"
+          ],
+          "key": [
+            "<b>È stato Marco a rompere il vaso.</b>",
+            "<b>Questo film l'ho già visto.</b>",
+            "<b>A Napoli ci vado spesso.</b>",
+            "<b>Di amici qui ne ho pochi.</b>",
+            "<b>È a Milano che vivo, non a Roma.</b>",
+            "<b>L'hai comprato, il pane?</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "La macchina ho lasciato in garage.",
+            "È stata Giulia chi ha vinto.",
+            "Sono stato io a ho deciso.",
+            "È stato ieri quando l'ho visto.",
+            "Sono io che paga il conto.",
+            "È per questo perché sono arrivato tardi."
+          ],
+          "key": [
+            "<b>La macchina l'ho lasciata</b> in garage.",
+            "<b>che ha vinto</b> (o <b>a vincere</b>)",
+            "<b>a decidere</b> (o <b>che ho deciso</b>)",
+            "<b>che</b> l'ho visto",
+            "<b>pago</b>",
+            "<b>che</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata",
+          "instr": "Scrivi una frase per la situazione, con la costruzione indicata.",
+          "items": [
+            "Pensano che sia stata tu a rompere il vaso; è stato tuo fratello. (frase scissa)",
+            "Un amico ti chiede del libro che ti ha prestato. (dislocazione a sinistra)",
+            "Al bar ordini per tutti e dici chi prende che cosa. (dislocazione a sinistra)",
+            "Chiedi a un collega se ha mandato la mail al cliente. (dislocazione a destra)",
+            "Spieghi perché sei arrivato tardi: c'era lo sciopero. (è per questo che)",
+            "Al telefono avvisi un collega che qualcuno lo sta aspettando. (c'è … che)"
+          ],
+          "key": [
+            "Esempio: <b>Non sono stata io: è stato mio fratello a romperlo.</b>",
+            "Esempio: <b>Il tuo libro l'ho finito ieri, te lo riporto domani.</b>",
+            "Esempio: <b>Il cappuccino lo prende Anna, il caffè lo prendo io.</b>",
+            "Esempio: <b>L'hai mandata, la mail al cliente?</b>",
+            "Esempio: <b>C'era lo sciopero dei treni: è per questo che sono arrivato tardi.</b>",
+            "Esempio: <b>C'è un signore che ti aspetta all'ingresso.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "c1",
+      "cat": "Lessico",
+      "title": "La formazione delle parole: prefissi e suffissi",
+      "def": "Molte parole italiane nascono da altre parole: si aggiunge un pezzo all'inizio (<b>prefisso</b>: <i>fare → rifare</i>) o alla fine (<b>suffisso</b>: <i>lavorare → lavoratore</i>), oppure si uniscono due parole (<i>porta(re) + foglio → portafoglio</i>). Conoscere i pezzi più frequenti aiuta a capire parole nuove e a scrivere in modo formale, dove spesso al posto di un verbo si usa un nome: <i>decidere → la decisione</i>.",
+      "form": "<ul class='sch'><li><b>i prefissi</b> cambiano il significato e di solito non il tipo di parola: <i>fare → rifare, disfare</i>; <i>possibile → impossibile</i></li><li><b>i suffissi</b> spesso cambiano il tipo di parola: da un verbo un nome (<i>pagare → pagamento</i>), da un aggettivo un nome (<i>bello → bellezza</i>), da un nome un aggettivo (<i>pericolo → pericoloso</i>), da un nome o un aggettivo un verbo (<i>semplice → semplificare</i>)</li><li>a volte il nome è il verbo senza la terminazione: <i>arrivare → l'arrivo</i>, <i>controllare → il controllo</i>, <i>firmare → la firma</i></li><li><b>le parole composte</b> uniscono due parole: <i>capostazione, apriscatole, portafoglio</i> (il plurale: vedi Doppi plurali e nomi composti)</li><li>non sono trattati qui: gli alterati (<i>-ino, -one, -accio</i>: vedi Nomi e aggettivi alterati), gli avverbi in <i>-mente</i> (vedi Gli avverbi), i prefissi che rafforzano (<i>stra-, super-, iper-</i>: vedi I superlativi)</li></ul>",
+      "tables": [
+        {
+          "before": "<b>Prefissi frequenti.</b>",
+          "plain": true,
+          "headers": [
+            "prefisso",
+            "significa",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "ri-",
+              "di nuovo, oppure indietro",
+              "rileggere, rifare, ritornare, ridare"
+            ],
+            [
+              "s-, dis-",
+              "il contrario, togliere",
+              "scontento, sfortuna, scaricare / disonesto, disordine, disfare"
+            ],
+            [
+              "in- (im-, il-, ir-)",
+              "il contrario, «non»",
+              "inutile, impossibile, illegale, irregolare"
+            ],
+            [
+              "pre-",
+              "prima",
+              "preavviso, prevendita, precotto"
+            ],
+            [
+              "post-, dopo-",
+              "dopo",
+              "postdatare, dopoguerra, dopocena"
+            ],
+            [
+              "anti-",
+              "contro",
+              "antifurto, antivirus, antinebbia"
+            ],
+            [
+              "ex",
+              "che era e non è più",
+              "ex marito, ex sindaco"
+            ],
+            [
+              "auto-",
+              "di sé, da sé",
+              "autocontrollo, autocritica, autodidatta"
+            ],
+            [
+              "co-, con-",
+              "insieme",
+              "coinquilino, coautore, condividere"
+            ],
+            [
+              "inter-, sotto-, sovra-",
+              "tra, sotto, sopra",
+              "internazionale, sottopassaggio, sottovalutare, sovraccarico"
+            ],
+            [
+              "mal-, ben-",
+              "male, bene",
+              "malinteso, maleducato / benvenuto, benestante"
+            ],
+            [
+              "semi-",
+              "a metà",
+              "semifinale, semifreddo"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Dal verbo al nome.</b>",
+          "plain": true,
+          "headers": [
+            "suffisso",
+            "esempi",
+            "nota"
+          ],
+          "rows": [
+            [
+              "-zione, -sione",
+              "organizzare → organizzazione, spiegare → spiegazione, decidere → decisione",
+              "il più frequente nello scritto"
+            ],
+            [
+              "-mento",
+              "pagare → pagamento, cambiare → cambiamento, trasferire → trasferimento",
+              ""
+            ],
+            [
+              "-ura",
+              "chiudere → chiusura, aprire → apertura, leggere → lettura",
+              "spesso costruito sul participio"
+            ],
+            [
+              "-aggio",
+              "atterrare → atterraggio, lavare → lavaggio, montare → montaggio",
+              ""
+            ],
+            [
+              "-anza, -enza",
+              "sperare → speranza, partire → partenza, conoscere → conoscenza",
+              ""
+            ],
+            [
+              "senza suffisso",
+              "arrivare → l'arrivo, controllare → il controllo, costare → il costo, firmare → la firma",
+              ""
+            ],
+            [
+              "-tore, -trice / -ante, -ente",
+              "lavorare → lavoratore, lavoratrice; insegnare → insegnante; dirigere → dirigente",
+              "chi fa l'azione"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Altri passaggi.</b>",
+          "plain": true,
+          "headers": [
+            "da",
+            "suffissi",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "aggettivo → nome",
+              "-ezza, -ità, -ia, -enza, -ismo",
+              "bello → bellezza, facile → facilità, allegro → allegria, presente → presenza, reale → realismo (-ismo: un modo di pensare o di fare)"
+            ],
+            [
+              "nome → aggettivo",
+              "-ale, -oso, -ico, -ario, -ese, -ano",
+              "nazione → nazionale, pericolo → pericoloso, storia → storico, banca → bancario, Milano → milanese, Roma → romano"
+            ],
+            [
+              "verbo → aggettivo",
+              "-abile, -ibile («che si può …»)",
+              "lavare → lavabile, accettare → accettabile, leggere → leggibile"
+            ],
+            [
+              "nome o aggettivo → verbo",
+              "-izzare, -ificare, -ire, -are (spesso con a- o in- davanti)",
+              "moderno → modernizzare, semplice → semplificare, chiaro → chiarire, ricco → arricchire, vecchio → invecchiare"
+            ],
+            [
+              "nome → chi lo fa o lo vende",
+              "-aio, -ista, -iere",
+              "giornale → giornalaio, piano → pianista, banca → banchiere"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "prefissi ri-, s-, dis-, in- (im-, il-, ir-): di nuovo, il contrario",
+          "ex": "Devo <b>rifare</b> l'esercizio. / Sono <b>scontento</b> del risultato. / È una persona <b>disonesta</b>. / È <b>inutile</b> insistere. / Purtroppo è <b>impossibile</b>. / È un parcheggio <b>illegale</b>. / Un verbo <b>irregolare</b>."
+        },
+        {
+          "label": "prefissi pre-, post-, anti-, ex, auto-, co-, inter-, sotto-, mal-, semi-",
+          "ex": "Serve un <b>preavviso</b> di un mese. / Il mio <b>ex</b> collega. / Un'<b>autocritica</b> sincera. / Il mio <b>coinquilino</b>. / Una telefonata <b>internazionale</b>. / Non <b>sottovalutare</b> il problema. / È stato un <b>malinteso</b>. / La <b>semifinale</b>."
+        },
+        {
+          "label": "dal verbo al nome: -zione, -sione, -mento, -ura, -aggio, o il verbo senza terminazione",
+          "ex": "L'<b>organizzazione</b> è perfetta. / Il <b>pagamento</b> è in ritardo. / L'<b>apertura</b> del negozio. / L'<b>atterraggio</b> è previsto alle 8. / L'<b>arrivo</b> del treno. / Il <b>controllo</b> dei biglietti."
+        },
+        {
+          "label": "nello scritto formale, il nome al posto del verbo",
+          "ex": "Se paghi in ritardo… → In caso di <b>ritardo</b> nel <b>pagamento</b>… / Abbiamo deciso di chiudere. → È stata presa la <b>decisione</b> di chiudere. / Il negozio chiude alle 20. → <b>Chiusura</b> alle 20."
+        },
+        {
+          "label": "chi fa l'azione: -tore, -trice, -ante, -ente, -aio, -ista, -iere",
+          "ex": "I <b>lavoratori</b> sono in sciopero. / Un'<b>insegnante</b> di matematica. / Il <b>dirigente</b> dell'ufficio. / Il <b>giornalaio</b> sotto casa. / Una brava <b>pianista</b>."
+        },
+        {
+          "label": "aggettivi e nomi nuovi: -ezza, -ità, -ia, -ale, -oso, -ico, -abile, -ibile",
+          "ex": "La <b>bellezza</b> del paesaggio. / Con <b>facilità</b>. / Una strada <b>pericolosa</b>. / Un centro <b>storico</b>. / Un tessuto <b>lavabile</b>. / Una scrittura poco <b>leggibile</b>."
+        },
+        {
+          "label": "verbi nuovi: -izzare, -ificare, -ire",
+          "ex": "Bisogna <b>semplificare</b> le procedure. / Vorrei <b>chiarire</b> un punto. / Il viaggio ci ha <b>arricchiti</b>."
+        }
+      ],
+      "warn": "<b>Non si indovina sempre.</b> Il contrario di <i>possibile</i> è <i>impossibile</i>, quello di <i>contento</i> è <i>scontento</i>, quello di <i>onesto</i> è <i>disonesto</i>: il prefisso giusto si impara parola per parola. Lo stesso vale per i suffissi: <i>organizzazione</i> ma <i>pagamento</i>, <i>arrivo</i> ma <i>partenza</i>. <b>In- cambia davanti ad alcune consonanti</b>: <i>im-</i> davanti a <i>p, b, m</i> (<i>impossibile, imbattibile, immorale</i>), <i>il-</i> davanti a <i>l</i> (<i>illegale</i>), <i>ir-</i> davanti a <i>r</i> (<i>irregolare</i>). <b>Ri- non vuol dire sempre «di nuovo»</b>: in <i>ricordare, rispondere, ricevere</i> non c'è nessuna ripetizione.",
+      "errors": [
+        {
+          "wrong": "È una cosa inpossibile.",
+          "right": "È una cosa impossibile.",
+          "why": "Davanti a <i>p</i>, <i>in-</i> diventa <i>im-</i>."
+        },
+        {
+          "wrong": "Un parcheggio inlegale.",
+          "right": "Un parcheggio illegale.",
+          "why": "Davanti a <i>l</i>, <i>in-</i> diventa <i>il-</i>."
+        },
+        {
+          "wrong": "Sono incontento del risultato.",
+          "right": "Sono scontento del risultato.",
+          "why": "Il contrario di <i>contento</i> si fa con <i>s-</i>."
+        },
+        {
+          "wrong": "L'arrivazione del treno è alle 10.",
+          "right": "L'arrivo del treno è alle 10.",
+          "why": "Il nome di <i>arrivare</i> è <i>arrivo</i>, senza suffisso."
+        },
+        {
+          "wrong": "Domani c'è il controllamento dei biglietti.",
+          "right": "Domani c'è il controllo dei biglietti.",
+          "why": "Il nome di <i>controllare</i> è <i>controllo</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Riformulazione",
+          "instr": "Riformula come in un testo formale, con un nome al posto del verbo in grassetto.",
+          "items": [
+            "Se <b>paghi</b> in ritardo, devi pagare una penale.",
+            "Il treno <b>arriva</b> alle 10.",
+            "Abbiamo <b>deciso</b> di chiudere l'ufficio.",
+            "L'azienda si <b>trasferisce</b> a Milano a marzo.",
+            "Bisogna <b>controllare</b> i documenti.",
+            "Il negozio <b>chiude</b> alle 20."
+          ],
+          "key": [
+            "Esempio: <b>In caso di ritardo nel pagamento è prevista una penale.</b>",
+            "Esempio: <b>L'arrivo del treno è previsto alle 10.</b>",
+            "Esempio: <b>È stata presa la decisione di chiudere l'ufficio.</b>",
+            "Esempio: <b>Il trasferimento dell'azienda a Milano è previsto a marzo.</b>",
+            "Esempio: <b>È necessario il controllo dei documenti.</b>",
+            "Esempio: <b>Orario di chiusura del negozio: ore 20.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Il risultato è inpreciso.",
+            "È un ragionamento inlogico.",
+            "La partizione del treno è alle 9.",
+            "Abbiamo ricevuto il pagazione.",
+            "Abbiamo ricevuto la confermazione dell'ordine.",
+            "È una persona molto inonesta."
+          ],
+          "key": [
+            "<b>impreciso</b>",
+            "<b>illogico</b>",
+            "<b>La partenza</b>",
+            "<b>il pagamento</b>",
+            "<b>la conferma</b> (<i>confermazione</i> esiste, ma è rara: oggi si dice <i>conferma</i>)",
+            "<b>disonesta</b>"
+          ]
+        },
+        {
+          "type": "Produzione guidata",
+          "instr": "Forma la parola indicata e usala in una frase.",
+          "items": [
+            "il contrario di utile",
+            "il nome di organizzare",
+            "chi lavora",
+            "che si può lavare",
+            "fare di nuovo",
+            "il nome di bello"
+          ],
+          "key": [
+            "Esempio: <b>È inutile insistere, non cambierà idea.</b>",
+            "Esempio: <b>L'organizzazione del convegno è stata perfetta.</b>",
+            "Esempio: <b>I lavoratori chiedono un nuovo contratto.</b>",
+            "Esempio: <b>Questa giacca è lavabile in lavatrice.</b>",
+            "Esempio: <b>Ho sbagliato tutto, devo rifare l'esercizio.</b>",
+            "Esempio: <b>La bellezza di questa città mi ha colpito.</b>"
           ]
         }
       ]

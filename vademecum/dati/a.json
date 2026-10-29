@@ -1,5 +1,5 @@
 {
-  "versione": "1.6",
+  "versione": "1.7",
   "livello": "A0 · A1",
   "schede": [
     {
@@ -1859,6 +1859,256 @@
     },
     {
       "lvl": "a",
+      "cat": "Sintassi",
+      "title": "Gli interrogativi",
+      "def": "Le parole interrogative servono a fare una domanda quando la risposta non è un semplice sì o no: «<i>Dove</i> abiti?», «<i>Che cosa</i> fai?», «<i>Quanto</i> costa?». Di solito stanno all'inizio della domanda. Se c'è una preposizione, la preposizione va davanti: «<i>Di dove</i> sei?», «<i>Con chi</i> esci?».",
+      "form": "<b>Come si costruisce la domanda.</b><ul class='sch'><li><b>domande con sì o no</b>: nessuna parola interrogativa, l'ordine è quello della frase normale; cambia solo la voce, che sale alla fine: «Parli italiano?»</li><li><b>domande con una parola interrogativa</b>: parola interrogativa + verbo: «Dove lavori?». Se c'è un soggetto, va dopo il verbo («Dove lavora <i>Marco</i>?») oppure all'inizio, prima della parola interrogativa («<i>Marco</i> dove lavora?»). Con <i>perché</i> può stare anche subito dopo: «Perché <i>Marco</i> non viene?»</li><li><b>preposizione + parola interrogativa</b>: la preposizione va sempre all'inizio, mai in fondo alla domanda: «<i>Con chi</i> parli?», «<i>A che ora</i> parti?»</li></ul>",
+      "tables": [
+        {
+          "before": "<b>Le parole interrogative.</b>",
+          "plain": true,
+          "headers": [
+            "parola",
+            "chiede",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "chi",
+              "una persona; come soggetto vuole il verbo al singolare (ma con essere: «chi sono quei ragazzi?»)",
+              "Chi viene stasera?"
+            ],
+            [
+              "che cosa, cosa, che",
+              "una cosa; le tre forme hanno lo stesso significato",
+              "Che cosa fai? / Cosa fai? / Che fai?"
+            ],
+            [
+              "che + nome",
+              "che tipo di cosa",
+              "Che lavoro fai? / Che ore sono?"
+            ],
+            [
+              "quale, quali",
+              "una scelta tra più cose o persone; davanti a è: qual è, senza apostrofo",
+              "Quale preferisci? / Qual è il tuo numero?"
+            ],
+            [
+              "quanto, quanta, quanti, quante",
+              "una quantità o un prezzo; quando chiede un prezzo, un peso, una durata o quanto si fa una cosa non cambia; davanti a un nome o al posto di un nome si accorda",
+              "Quanto costa? / Quanti anni hai? / Quanti siete?"
+            ],
+            [
+              "come",
+              "il modo, oppure com'è una persona o una cosa",
+              "Come stai? / Com'è la casa?"
+            ],
+            [
+              "dove",
+              "il luogo",
+              "Dove abiti?"
+            ],
+            [
+              "quando",
+              "il momento",
+              "Quando parti?"
+            ],
+            [
+              "perché",
+              "la causa; è la stessa parola anche nella risposta",
+              "Perché studi italiano? — Perché lavoro a Roma."
+            ]
+          ]
+        },
+        {
+          "before": "<b>Con la preposizione davanti.</b> Per la scelta della preposizione (<i>sono di</i>, <i>vengo da</i>…): vedi Le preposizioni semplici.",
+          "plain": true,
+          "headers": [
+            "domanda",
+            "per chiedere",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "di dove?",
+              "la città o il paese di una persona (con essere)",
+              "Di dove sei? — Sono di Siviglia."
+            ],
+            [
+              "da dove?",
+              "il luogo da cui si arriva o si parte",
+              "Da dove vieni? / Da dove parte il treno?"
+            ],
+            [
+              "a chi? con chi? per chi?",
+              "la persona a cui si dà, con cui si fa, per cui si fa una cosa",
+              "A chi scrivi? / Con chi esci? / Per chi è il regalo?"
+            ],
+            [
+              "di chi?",
+              "a chi appartiene una cosa",
+              "Di chi è questa borsa?"
+            ],
+            [
+              "di che cosa? a che cosa?",
+              "la cosa di cui si parla, a cui si pensa",
+              "Di che cosa parlate? / A che cosa pensi?"
+            ],
+            [
+              "a che ora?",
+              "l'ora precisa",
+              "A che ora comincia il film?"
+            ],
+            [
+              "da quanto tempo?",
+              "da quanto tempo dura una cosa che continua ancora",
+              "Da quanto tempo studi italiano?"
+            ],
+            [
+              "per quanto tempo?",
+              "quanto dura una cosa",
+              "Per quanto tempo resti a Roma?"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "chi: per chiedere una persona",
+          "ex": "<b>Chi</b> è? — È Marco. / <b>Chi</b> viene alla festa? — Vengono tutti. / <b>Chi</b> sono quei ragazzi?"
+        },
+        {
+          "label": "che cosa, cosa, che: per chiedere una cosa; che cosa è la forma più completa, cosa è molto comune, che da solo è del parlato",
+          "ex": "<b>Che cosa</b> fai stasera? / <b>Cosa</b> vuoi? / <b>Che</b> fai domani?"
+        },
+        {
+          "label": "che + nome: per chiedere che tipo di cosa",
+          "ex": "<b>Che</b> lavoro fai? / <b>Che</b> giorno è oggi? / <b>Che</b> ore sono?"
+        },
+        {
+          "label": "quale, quali: per scegliere tra più cose o persone",
+          "ex": "<b>Quale</b> vino preferisci, rosso o bianco? / <b>Quali</b> scarpe ti piacciono? / <b>Qual è</b> il tuo indirizzo?"
+        },
+        {
+          "label": "quanto: quando chiede un prezzo, un peso, una durata o quanto si fa una cosa non cambia; davanti a un nome, o al posto di un nome, si accorda: quanta, quanti, quante",
+          "ex": "<b>Quanto</b> costa? / <b>Quanto</b> costano le scarpe? / <b>Quanti</b> anni hai? / <b>Quanta</b> pasta compro? / <b>Quante</b> sorelle hai? / <b>Quanti</b> siete?"
+        },
+        {
+          "label": "come, dove, quando",
+          "ex": "<b>Come</b> stai? / <b>Come</b> ti chiami? / <b>Dove</b> abiti? / <b>Quando</b> torni?"
+        },
+        {
+          "label": "perché: nella domanda e nella risposta si usa la stessa parola",
+          "ex": "<b>Perché</b> studi italiano? — <b>Perché</b> mi piace. / <b>Perché</b> non vieni?"
+        },
+        {
+          "label": "con una preposizione, la preposizione va all'inizio della domanda",
+          "ex": "<b>Di dove</b> sei? / <b>Da dove</b> vieni? / <b>A chi</b> scrivi? / <b>Con chi</b> esci? / <b>Per chi</b> è il regalo? / <b>Di chi</b> è questa borsa? / <b>Di che cosa</b> parlate? / <b>A che cosa</b> pensi? / <b>A che ora</b> parte il treno? / <b>Da quanto tempo</b> abiti qui? / <b>Per quanto tempo</b> resti?"
+        }
+      ],
+      "warn": "<b>Qual è</b> si scrive senza apostrofo: vedi L'apostrofo. <b>Qual è o cos'è?</b> Per chiedere un dato, come un numero, un indirizzo o un nome, si usa <i>qual è</i>: «<i>Qual è</i> il tuo numero?», non «Cos'è il tuo numero?». <i>Cos'è</i> chiede di spiegare che cosa è una cosa: «<i>Cos'è</i> la ricevuta?». <b>Come o com'è?</b> «<i>Come</i> sta Marco?» chiede della salute o dell'umore; «<i>Com'è</i> Marco?» chiede del carattere o dell'aspetto.",
+      "errors": [
+        {
+          "wrong": "Che cosa è il tuo nome?",
+          "right": "Come ti chiami? / Qual è il tuo nome?",
+          "why": "Il nome si chiede con <i>come ti chiami</i> o con <i>qual è</i>, non con <i>che cosa è</i>."
+        },
+        {
+          "wrong": "Che tempo è? (per chiedere l'ora)",
+          "right": "Che ore sono? / Che ora è?",
+          "why": "<i>Tempo</i> è il tempo che fa (sole, pioggia); per l'ora si dice <i>che ore sono</i>."
+        },
+        {
+          "wrong": "Chi è questa borsa?",
+          "right": "Di chi è questa borsa?",
+          "why": "Per chiedere a chi appartiene una cosa si usa <i>di chi</i>."
+        },
+        {
+          "wrong": "Chi esci con?",
+          "right": "Con chi esci?",
+          "why": "La preposizione va all'inizio della domanda, davanti a <i>chi</i>."
+        },
+        {
+          "wrong": "Quanti costano le scarpe?",
+          "right": "Quanto costano le scarpe?",
+          "why": "Per chiedere il prezzo, <i>quanto</i> non cambia."
+        },
+        {
+          "wrong": "Quanto persone vengono?",
+          "right": "Quante persone vengono?",
+          "why": "Davanti a un nome <i>quanto</i> si accorda: <i>quante persone</i>."
+        },
+        {
+          "wrong": "Chi vengono stasera?",
+          "right": "Chi viene stasera?",
+          "why": "Come soggetto <i>chi</i> vuole il verbo al singolare."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con la parola interrogativa giusta.",
+          "items": [
+            "_____ ti chiami? — Mi chiamo Ana.",
+            "_____ abiti? — A Siviglia.",
+            "_____ anni hai? — Ventotto.",
+            "_____ è quel ragazzo? — È mio fratello.",
+            "_____ fai stasera? — Vado al cinema.",
+            "_____ studi italiano? — Perché lavoro a Roma."
+          ],
+          "key": [
+            "<b>Come</b>",
+            "<b>Dove</b>",
+            "<b>Quanti</b>",
+            "<b>Chi</b>",
+            "<b>Che cosa</b> (o <b>Cosa</b>, <b>Che</b>)",
+            "<b>Perché</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Scegli la forma corretta.",
+          "items": [
+            "(Quale / Quali) scarpe compri?",
+            "(Quanto / Quanti) costa il biglietto?",
+            "(Quanto / Quante) sorelle hai?",
+            "(Di chi / Chi) è questa giacca?",
+            "(Chi / Che) viene alla festa?",
+            "(Quanto / Quanti) siete in classe?"
+          ],
+          "key": [
+            "<b>Quali</b>",
+            "<b>Quanto</b>",
+            "<b>Quante</b>",
+            "<b>Di chi</b>",
+            "<b>Chi</b>",
+            "<b>Quanti</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Fai la domanda per la parte in grassetto. Usa il tu dove serve.",
+          "items": [
+            "Mi chiamo <b>Luca</b>.",
+            "Abito <b>a Bologna</b>.",
+            "Il corso comincia <b>a settembre</b>.",
+            "Esco <b>con Marta</b>.",
+            "Sono <b>di Lisbona</b>.",
+            "Questo libro costa <b>quindici euro</b>."
+          ],
+          "key": [
+            "<b>Come ti chiami?</b>",
+            "<b>Dove abiti?</b>",
+            "<b>Quando comincia il corso?</b>",
+            "<b>Con chi esci?</b>",
+            "<b>Di dove sei?</b>",
+            "<b>Quanto costa questo libro?</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a",
       "cat": "Verbi",
       "title": "Il verbo piacere",
       "def": "Si usa per dire che una cosa ci dà gusto, ci fa stare bene. La frase è costruita al rovescio rispetto all'inglese <i>I like</i> (come lo spagnolo <i>me gusta</i>): chi «fa» l'azione è <b>la cosa che piace</b>, mentre la persona è quella <b>a cui</b> piace. «<i>Mi piace</i> la pizza» vuol dire, alla lettera, «la pizza piace a me».",
@@ -2721,6 +2971,264 @@
             "<b>i suoi progetti</b>",
             "<b>le loro case</b>",
             "<b>le tue zie</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a",
+      "cat": "Numeri",
+      "title": "I numeri",
+      "def": "I numeri sono di due tipi. I <b>cardinali</b> dicono quante cose ci sono: <i>uno, due, tre, cento</i>. Gli <b>ordinali</b> dicono il posto in una serie: <i>primo, secondo, terzo</i>. Servono per contare, per i prezzi, le date, l'età e gli anni.",
+      "form": "<b>Come si formano i numeri.</b><ul class='sch'><li>fino alle migliaia si scrivono <b>in una parola sola</b>: <i>trentadue, centoventi, duemilaventisei</i>; <i>milione</i> e <i>miliardo</i> si scrivono staccati: <i>due milioni trecentomila</i></li><li>le decine <b>perdono la vocale</b> davanti a <i>uno</i> e <i>otto</i>: <i>ventuno, ventotto, trentuno, quarantotto</i>; davanti a un nome, i numeri che finiscono in <i>uno</i> perdono spesso la <i>o</i>: <i>ventun anni, trentun giorni</i></li><li><b>tre</b> alla fine di un numero vuole l'accento: <i>ventitré, trentatré</i> (vedi Gli accenti: tonico e grafico)</li><li><b>cento</b> e <b>mille</b> si dicono senza <i>uno</i> davanti; <i>mille</i> al plurale diventa <b>mila</b>: <i>duemila, diecimila</i></li><li><b>milione</b> e <b>miliardo</b> sono nomi: hanno il plurale (<i>due milioni</i>) e vogliono <i>di</i> davanti a un nome (<i>un milione di euro</i>), ma non se segue un altro numero (<i>un milione duecentomila abitanti</i>)</li><li>gli <b>ordinali</b> da 1 a 10 sono da imparare; dall'11 si toglie l'ultima vocale e si aggiunge <b>-esimo</b>: <i>undici → undicesimo, venti → ventesimo</i>; con <i>tre</i> e <i>sei</i> la vocale resta: <i>ventitreesimo, ventiseiesimo</i>. Si accordano come gli aggettivi: <i>la prima volta, i primi giorni</i></li></ul>",
+      "tables": [
+        {
+          "before": "<b>Da 0 a 20.</b>",
+          "rows": [
+            [
+              "0–5",
+              "zero, uno, due, tre, quattro, cinque"
+            ],
+            [
+              "6–10",
+              "sei, sette, otto, nove, dieci"
+            ],
+            [
+              "11–15",
+              "undici, dodici, tredici, quattordici, quindici"
+            ],
+            [
+              "16–20",
+              "sedici, diciassette, diciotto, diciannove, venti"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Le decine e i numeri grandi.</b>",
+          "rows": [
+            [
+              "20–90",
+              "venti, trenta, quaranta, cinquanta, sessanta, settanta, ottanta, novanta"
+            ],
+            [
+              "100–900",
+              "cento, duecento, trecento … novecento"
+            ],
+            [
+              "1.000",
+              "mille"
+            ],
+            [
+              "2.000–9.000",
+              "duemila, tremila … novemila"
+            ],
+            [
+              "1.000.000",
+              "un milione, due milioni"
+            ],
+            [
+              "1.000.000.000",
+              "un miliardo, due miliardi"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Gli ordinali.</b>",
+          "rows": [
+            [
+              "1º–5º",
+              "primo, secondo, terzo, quarto, quinto"
+            ],
+            [
+              "6º–10º",
+              "sesto, settimo, ottavo, nono, decimo"
+            ],
+            [
+              "dall'11º",
+              "undicesimo, dodicesimo, ventesimo, ventunesimo, ventitreesimo, centesimo, millesimo"
+            ]
+          ],
+          "after": "Si scrivono anche con una <i>o</i> o una <i>a</i> piccola in alto: <i>1º</i> (primo), <i>1ª</i> (prima). Per re, papi e secoli si usano i numeri romani, che si leggono come ordinali: <i>Luigi XIV</i> (quattordicesimo), <i>il XX secolo</i> (ventesimo)."
+        },
+        {
+          "before": "<b>Date, prezzi e altri usi.</b>",
+          "plain": true,
+          "headers": [
+            "per dire",
+            "come",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "la data",
+              "il + numero + mese, con la minuscola; con 8 e 11 l'8, l'11; per il giorno 1 si usa primo",
+              "Oggi è il 29 ottobre. / L'8 marzo. / Il primo maggio è festa."
+            ],
+            [
+              "l'anno",
+              "nel + anno, letto come un numero solo",
+              "Sono nato nel 1990 (millenovecentonovanta)."
+            ],
+            [
+              "il secolo",
+              "con il numero ordinale, oppure con il nome delle centinaia",
+              "il XX secolo = il Novecento (gli anni dal 1901 al 2000)"
+            ],
+            [
+              "il prezzo",
+              "euro non cambia al plurale",
+              "Costa dieci euro e cinquanta."
+            ],
+            [
+              "decimali e migliaia",
+              "virgola per i decimali, punto per le migliaia",
+              "2,5 (due virgola cinque) / 2.500 (duemilacinquecento)"
+            ],
+            [
+              "le percentuali",
+              "con l'articolo",
+              "Il 30% (trenta per cento) degli studenti."
+            ],
+            [
+              "le parti",
+              "la metà, un terzo, un quarto; mezzo",
+              "la metà della torta / mezzo chilo / un'ora e mezza"
+            ],
+            [
+              "un numero non preciso",
+              "una decina, una ventina, un centinaio, centinaia, migliaia",
+              "Siamo una ventina."
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "i cardinali: per contare e dire una quantità",
+          "ex": "Ho <b>due</b> fratelli. / Siamo in <b>dodici</b>. / In classe ci sono <b>diciotto</b> studenti. / Abito al numero <b>ventitré</b>. / Ha <b>ventun anni</b>."
+        },
+        {
+          "label": "i numeri grandi: cento, mille, duemila, un milione di, un miliardo di",
+          "ex": "Costa <b>cento</b> euro. / <b>Mille</b> grazie! / Hanno speso <b>tremila</b> euro. / Roma ha quasi tre <b>milioni di</b> abitanti. / Un <b>miliardo di</b> persone."
+        },
+        {
+          "label": "gli ordinali: il posto in una serie; si accordano con il nome",
+          "ex": "È la <b>prima</b> volta che vengo in Italia. / Abito al <b>terzo</b> piano. / Prenda la <b>seconda</b> a destra. / È il mio <b>ventesimo</b> compleanno. / Sono arrivato <b>quinto</b>, la mia amica <b>decima</b>."
+        },
+        {
+          "label": "la data: il + numero + mese; il primo, ma il due, il tre…; l'otto e l'undici con l'apostrofo",
+          "ex": "Che giorno è oggi? — È il <b>ventinove</b> ottobre. / Il <b>primo</b> gennaio è festa. / La festa della donna è l'<b>otto</b> marzo. / Sono nato l'<b>undici</b> giugno."
+        },
+        {
+          "label": "l'anno e il secolo",
+          "ex": "Sono nato nel <b>millenovecentonovanta</b>. / Nel <b>duemila</b> ero in Spagna. / L'arte del <b>Novecento</b>. / Nel <b>ventesimo secolo</b>."
+        },
+        {
+          "label": "prezzi, decimali, percentuali e parti",
+          "ex": "Costa <b>dieci euro e cinquanta</b>. / Il bambino pesa <b>tre virgola cinque</b> chili. / Il <b>trenta per cento</b> degli studenti. / La <b>metà</b> della classe. / Un <b>terzo</b> della torta. / <b>Mezzo</b> chilo di pane."
+        },
+        {
+          "label": "un numero non preciso: decina, ventina, centinaio; per centinaia e migliaia vedi Nomi solo plurali e solo singolari",
+          "ex": "Siamo una <b>decina</b>. / Ci sono una <b>ventina</b> di persone. / Ho speso un <b>centinaio</b> di euro. / <b>Migliaia</b> di turisti."
+        }
+      ],
+      "warn": "<b>Virgola e punto.</b> In italiano i decimali si separano con la virgola e le migliaia con il punto: <i>2,5</i> (due virgola cinque), <i>2.500</i> (duemilacinquecento). In inglese è il contrario. <b>Uno davanti a un nome</b>: vedi Articoli indeterminativi. <b>L'età</b> si dice con <i>avere</i> (vedi Essere e avere). <b>Le ore</b>: vedi L'ora.",
+      "errors": [
+        {
+          "wrong": "ventiuno",
+          "right": "ventuno",
+          "why": "Le decine perdono la vocale davanti a <i>uno</i> e <i>otto</i>."
+        },
+        {
+          "wrong": "Oggi è il 8 marzo.",
+          "right": "Oggi è l'8 marzo.",
+          "why": "Davanti a <i>otto</i> e <i>undici</i> l'articolo è <i>l'</i>."
+        },
+        {
+          "wrong": "Ho duemille euro.",
+          "right": "Ho duemila euro.",
+          "why": "Al plurale <i>mille</i> diventa <i>mila</i>."
+        },
+        {
+          "wrong": "Oggi è il uno maggio.",
+          "right": "Oggi è il primo maggio.",
+          "why": "Per il primo giorno del mese si usa l'ordinale <i>primo</i>."
+        },
+        {
+          "wrong": "Sono nato nel diciannove novanta.",
+          "right": "Sono nato nel millenovecentonovanta.",
+          "why": "Gli anni si leggono come un numero solo, non a coppie come in inglese."
+        },
+        {
+          "wrong": "Costa 3.50 euro.",
+          "right": "Costa 3,50 euro.",
+          "why": "In italiano i decimali si scrivono con la virgola."
+        },
+        {
+          "wrong": "Roma ha tre milioni abitanti.",
+          "right": "Roma ha tre milioni di abitanti.",
+          "why": "<i>Milione</i> vuole <i>di</i> davanti a un nome."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Scrivi il numero in lettere.",
+          "items": [
+            "21",
+            "38",
+            "73",
+            "100",
+            "2.500",
+            "1990 (un anno)"
+          ],
+          "key": [
+            "<b>ventuno</b>",
+            "<b>trentotto</b>",
+            "<b>settantatré</b>",
+            "<b>cento</b>",
+            "<b>duemilacinquecento</b>",
+            "<b>millenovecentonovanta</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Scegli la forma corretta.",
+          "items": [
+            "Oggi è il (uno / primo) giugno.",
+            "Il compleanno di Anna è (il / l') 11 luglio.",
+            "(Il / Nel) 2019 sono andato in Italia.",
+            "Questa borsa costa (mille / un mille) euro.",
+            "Ogni anno arrivano tre (milioni / milioni di) turisti.",
+            "È la (secondo / seconda) volta che lo vedo."
+          ],
+          "key": [
+            "<b>primo</b>",
+            "<b>l'</b>",
+            "<b>Nel</b>",
+            "<b>mille</b>",
+            "<b>milioni di</b>",
+            "<b>seconda</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Scrivi in lettere come si legge.",
+          "items": [
+            "il 1º maggio",
+            "il XXI secolo",
+            "12,5 chili",
+            "il 25% degli studenti",
+            "4,90 euro",
+            "papa Giovanni XXIII"
+          ],
+          "key": [
+            "<b>il primo maggio</b>",
+            "<b>il ventunesimo secolo</b>",
+            "<b>dodici virgola cinque chili</b> (o <b>dodici chili e mezzo</b>)",
+            "<b>il venticinque per cento degli studenti</b>",
+            "<b>quattro euro e novanta</b>",
+            "<b>papa Giovanni ventitreesimo</b>"
           ]
         }
       ]

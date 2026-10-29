@@ -1,5 +1,5 @@
 {
-  "versione": "2.2",
+  "versione": "2.3",
   "livello": "B1",
   "schede": [
     {
@@ -825,6 +825,203 @@
     },
     {
       "lvl": "b1",
+      "cat": "Verbi",
+      "title": "Verbi con a o di + infinito",
+      "def": "Quando un verbo è seguito da un altro verbo all'infinito, tra i due ci può essere <b>a</b>, <b>di</b> oppure niente: «comincio <i>a</i> lavorare», «finisco <i>di</i> lavorare», «devo lavorare». La preposizione dipende dal primo verbo e non si indovina sempre dal significato: conviene impararla insieme al verbo, come il suo participio.",
+      "form": "<b>Come orientarsi.</b><ul class='sch'><li><b>a</b>: soprattutto verbi che indicano l'inizio o la continuazione di un'azione (<i>cominciare, continuare</i>), l'imparare e l'insegnare, il riuscire e il provare, lo spingere qualcuno a fare (<i>aiutare, convincere, invitare</i>), e <i>andare, venire</i> per dire lo scopo: «vado <i>a</i> comprare il pane»</li><li><b>di</b>: la maggior parte degli altri verbi, soprattutto quelli che indicano decisioni, tentativi, speranze, ricordi (<i>decidere, cercare, sperare, ricordarsi</i>), la fine di un'azione (<i>finire, smettere</i>) e le espressioni con <i>avere</i> (<i>avere voglia di</i>)</li><li><b>niente</b>: <i>dovere, potere, volere, sapere</i> (vedi Modali: dovere, potere, volere); <i>preferire, desiderare, amare, odiare</i>; <i>piacere</i>; le espressioni come <i>è facile, è importante, è meglio</i></li><li>davanti a una parola che comincia per <i>a</i>, la preposizione <i>a</i> diventa di solito <b>ad</b>: «impara <i>ad</i> andare in bici»</li><li><b>persone diverse.</b> Di solito l'infinito si usa quando chi fa le due azioni è la stessa persona; con persone diverse si usa <i>che</i> + verbo coniugato (vedi Il congiuntivo presente). Con alcuni verbi invece l'infinito si usa anche con due persone: <i>chiedere, dire, consigliare, permettere</i> + <b>di</b> («ti chiedo <i>di</i> aspettare») e <i>aiutare, convincere, invitare, insegnare</i> + <b>a</b> («ti aiuto <i>a</i> portare la valigia»)</li></ul>",
+      "tables": [
+        {
+          "before": "<b>I verbi più usati.</b>",
+          "plain": true,
+          "headers": [
+            "costruzione",
+            "verbi",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "verbo + a + infinito",
+              "cominciare, iniziare, continuare, imparare, insegnare, aiutare, riuscire, provare, abituarsi, prepararsi, mettersi, convincere, invitare; andare e venire (per lo scopo)",
+              "Ho imparato a nuotare da bambino."
+            ],
+            [
+              "verbo + di + infinito",
+              "finire, smettere, decidere, cercare, tentare, sperare, credere, pensare (= avere intenzione), ricordarsi, dimenticare, accettare, rifiutare, promettere, evitare, sognare",
+              "Ho deciso di cambiare lavoro."
+            ],
+            [
+              "espressione + di + infinito",
+              "avere voglia di, avere paura di, avere bisogno di, avere il tempo di, essere contento di, essere stanco di, non vedere l'ora di",
+              "Non vedo l'ora di partire."
+            ],
+            [
+              "verbo + qualcuno + di + infinito",
+              "chiedere, dire, consigliare, permettere, ordinare (a qualcuno di fare); pregare (qualcuno di fare)",
+              "Il medico mi ha consigliato di camminare."
+            ],
+            [
+              "verbo + infinito, senza preposizione",
+              "dovere, potere, volere, sapere; preferire, desiderare, amare, odiare; piacere; è facile, è importante, è meglio, bisogna",
+              "Preferisco restare a casa."
+            ]
+          ]
+        },
+        {
+          "before": "<b>Le coppie che confondono.</b>",
+          "plain": true,
+          "headers": [
+            "",
+            "differenza",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "provare a / cercare di",
+              "lo stesso significato, «tentare», ma con due preposizioni diverse",
+              "Provo a chiamarlo. / Cerco di chiamarlo."
+            ],
+            [
+              "pensare a / pensare di",
+              "pensare a: avere in mente qualcuno o qualcosa; pensare di + infinito: avere intenzione",
+              "Penso a te. / Penso di partire domani."
+            ],
+            [
+              "è difficile capire / è difficile da capire",
+              "senza da, il soggetto è l'azione; con da, il soggetto è la cosa",
+              "È difficile capire questo libro. / Questo libro è difficile da capire."
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "verbi + a: cominciare, iniziare, continuare, imparare, insegnare, aiutare, riuscire, provare, abituarsi, prepararsi, mettersi, convincere, invitare",
+          "ex": "Ha <b>cominciato a</b> piovere. / <b>Continuo a</b> studiare. / Mi <b>insegni a</b> cucinare? / Mi <b>aiuti a</b> portare le valigie? / Non <b>riesco a</b> dormire. / <b>Provo a</b> chiamarlo. / Mi sono <b>abituato ad</b> alzarmi presto. / Si è <b>messo a</b> ridere. / L'ho <b>convinto a</b> venire. / Ti <b>invito a</b> venire alla festa."
+        },
+        {
+          "label": "andare e venire + a + infinito: per dire perché si va",
+          "ex": "<b>Vado a</b> comprare il pane. / <b>Vieni a</b> prendere un caffè?"
+        },
+        {
+          "label": "verbi + di: finire, smettere, decidere, cercare, tentare, sperare, credere, pensare, ricordarsi, dimenticare, accettare, rifiutare, promettere, evitare, sognare",
+          "ex": "<b>Ho finito di</b> lavorare. / <b>Ho smesso di</b> fumare. / <b>Cerco di</b> capire. / <b>Spero di</b> vederti presto. / <b>Credo di</b> avere ragione. / <b>Penso di</b> partire domani. / <b>Ricordati di</b> chiamare la nonna. / <b>Ho dimenticato di</b> chiudere la porta. / Ha <b>promesso di</b> aiutarmi. / <b>Evita di</b> mangiare tardi."
+        },
+        {
+          "label": "avere voglia, paura, bisogno, tempo di; essere contento, stanco di; non vedere l'ora di",
+          "ex": "<b>Ho voglia di</b> andare al mare. / <b>Ho paura di</b> sbagliare. / <b>Sono contento di</b> vederti. / <b>Sono stanco di</b> aspettare. / <b>Non vedo l'ora di</b> partire."
+        },
+        {
+          "label": "chiedere, dire, consigliare, permettere, ordinare a qualcuno di fare una cosa",
+          "ex": "Mi ha <b>chiesto di</b> aspettare. / Gli ho <b>detto di</b> venire. / Ti <b>consiglio di</b> riposare. / Non mi <b>permettono di</b> uscire."
+        },
+        {
+          "label": "senza preposizione: dovere, potere, volere, sapere, preferire, desiderare, amare, odiare, piacere, è facile, è meglio, bisogna",
+          "ex": "<b>Devo</b> studiare. / <b>Sai</b> nuotare? / <b>Preferisco</b> restare a casa. / <b>Odio</b> aspettare. / Mi <b>piace</b> leggere. / <b>È meglio</b> partire presto. / <b>Bisogna</b> prenotare."
+        }
+      ],
+      "warn": "<b>Non c'è una regola sicura</b>: verbi con un significato vicino possono volere preposizioni diverse (<i>provare a</i> e <i>cercare di</i>, <i>cominciare a</i> e <i>finire di</i>). Il consiglio pratico è imparare il verbo insieme alla preposizione, come una sola espressione: «riuscire a», «smettere di». <b>Nei tempi composti</b> la preposizione resta uguale: «sono riuscito <i>a</i> finire», «ho deciso <i>di</i> partire». <b>Con i pronomi</b> il pronome di solito si attacca all'infinito: «ho deciso di <i>comprarlo</i>», «prova a <i>chiamarla</i>»; con <i>andare</i> e <i>venire a</i> può stare anche davanti: «<i>ti</i> vengo a prendere», «<i>lo</i> vado a comprare». <b>Preposizioni + infinito</b> (<i>per, prima di, senza, invece di, dopo</i> + infinito passato): vedi Infinito sostantivato e passato.",
+      "errors": [
+        {
+          "wrong": "Ho provato di chiamarti.",
+          "right": "Ho provato a chiamarti.",
+          "why": "<i>Provare</i> vuole <i>a</i>; è <i>cercare</i> che vuole <i>di</i>."
+        },
+        {
+          "wrong": "Ho smesso fumare.",
+          "right": "Ho smesso di fumare.",
+          "why": "<i>Smettere</i> vuole <i>di</i>."
+        },
+        {
+          "wrong": "Mi aiuti di portare la valigia?",
+          "right": "Mi aiuti a portare la valigia?",
+          "why": "<i>Aiutare</i> vuole <i>a</i>."
+        },
+        {
+          "wrong": "Ho deciso a partire.",
+          "right": "Ho deciso di partire.",
+          "why": "<i>Decidere</i> vuole <i>di</i>."
+        },
+        {
+          "wrong": "Ho cominciato di lavorare alle otto.",
+          "right": "Ho cominciato a lavorare alle otto.",
+          "why": "<i>Cominciare</i> vuole <i>a</i>, anche se <i>finire</i> vuole <i>di</i>."
+        },
+        {
+          "wrong": "Ho imparato di nuotare da bambino.",
+          "right": "Ho imparato a nuotare da bambino.",
+          "why": "<i>Imparare</i> vuole <i>a</i>."
+        },
+        {
+          "wrong": "Questo esercizio è difficile di capire.",
+          "right": "Questo esercizio è difficile da capire.",
+          "why": "Dopo <i>facile, difficile</i> riferiti a una cosa si usa <i>da</i> + infinito."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Riscrivi la frase con il verbo tra parentesi + a / di + infinito.",
+          "items": [
+            "Non fumo più. (smettere, passato prossimo)",
+            "Adesso so guidare. (imparare, passato prossimo)",
+            "Domani parto: l'ho deciso. (decidere, passato prossimo)",
+            "Lavora ancora, anche se è tardi. (continuare, presente)",
+            "Non ho chiuso la finestra: me ne sono dimenticato. (dimenticare, passato prossimo)",
+            "Marco voleva il mio aiuto. (chiedere, passato prossimo)"
+          ],
+          "key": [
+            "<b>Ho smesso di fumare.</b>",
+            "<b>Ho imparato a guidare.</b>",
+            "<b>Ho deciso di partire domani.</b>",
+            "<b>Continua a lavorare, anche se è tardi.</b>",
+            "<b>Ho dimenticato di chiudere la finestra.</b> (o <b>Mi sono dimenticato/a di chiudere la finestra.</b>)",
+            "<b>Marco mi ha chiesto di aiutarlo.</b>"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Ho provato di aprire la finestra.",
+            "Domani cerco a finire il lavoro.",
+            "Non vedo l'ora a partire.",
+            "Ricordati comprare il pane.",
+            "Mi ha chiesto a chiamarlo.",
+            "Mi ha insegnato di guidare."
+          ],
+          "key": [
+            "<b>Ho provato ad aprire</b>",
+            "<b>cerco di finire</b>",
+            "<b>di partire</b>",
+            "<b>di comprare</b>",
+            "<b>di chiamarlo</b>",
+            "<b>a guidare</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa la frase con un infinito, con la preposizione giusta se serve.",
+          "items": [
+            "Quest'anno voglio imparare …",
+            "Ieri sera ho deciso …",
+            "Da domani smetto …",
+            "La mattina non riesco mai …",
+            "Un giorno mi piacerebbe …",
+            "Ti consiglio …"
+          ],
+          "key": [
+            "Esempio: <b>a suonare la chitarra</b>.",
+            "Esempio: <b>di iscrivermi in palestra</b>.",
+            "Esempio: <b>di mangiare dolci</b>.",
+            "Esempio: <b>ad alzarmi presto</b>.",
+            "Esempio: <b>vivere al mare</b> (senza preposizione).",
+            "Esempio: <b>di riposare un po'</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b1",
       "cat": "Nomi",
       "title": "Il partitivo",
       "def": "Indica una quantità non precisa, «una parte di» qualcosa: «vorrei <i>del</i> pane» (un po' di pane), «ho comprato <i>delle</i> mele» (alcune mele). Funziona anche come plurale di <i>un/una</i>, che un plurale non ce l'hanno.",
@@ -1187,6 +1384,297 @@
             "Esempio: <b>grattacieli moderni</b>.",
             "Esempio: <b>alcuni capolavori del Rinascimento</b>.",
             "Esempio: <b>tre francobolli</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "b1",
+      "cat": "Nomi",
+      "title": "Nomi e aggettivi alterati",
+      "def": "Un <b>alterato</b> è una parola a cui si aggiunge una terminazione (un <b>suffisso</b>) che ne cambia la sfumatura, non il significato di base: <i>casa → casetta</i> (piccola), <i>libro → librone</i> (grande), <i>tempo → tempaccio</i> (brutto). Si usano soprattutto con i nomi, ma anche con aggettivi, avverbi e qualche verbo. Sono molto frequenti nel parlato.",
+      "form": "<b>Come si formano.</b><ul class='sch'><li>si toglie l'ultima vocale e si aggiunge il suffisso, che si accorda come un nome o un aggettivo: <i>gatto → gattino, gattina, gattini</i></li><li>a volte la parola cambia un po': <i>uomo → omino, ometto, omone</i>; <i>cane → cagnolino</i>; <i>libro → libricino</i>; <i>fiore → fiorellino</i>; nelle parole in <i>-co, -go</i> si aggiunge la <i>h</i> per mantenere il suono: <i>poco → pochino</i>, <i>lago → laghetto</i></li><li>con <b>-one</b> molti nomi femminili diventano maschili: <i>la porta → il portone</i>, <i>la febbre → il febbrone</i></li><li>non tutte le parole accettano tutti i suffissi: si dice <i>casetta</i> e <i>casina</i>, ma non «casella» nel senso di piccola casa (<i>casella</i> è un'altra parola). Nel dubbio si usa <i>piccolo, grande, brutto</i> + nome</li></ul>",
+      "tables": [
+        {
+          "before": "<b>I quattro tipi.</b>",
+          "plain": true,
+          "headers": [
+            "tipo",
+            "suffissi",
+            "esempi"
+          ],
+          "rows": [
+            [
+              "piccolo (diminutivo)",
+              "-ino, -etto, -ello",
+              "gattino, ragazzino / casetta, libretto / alberello, paesello"
+            ],
+            [
+              "grande (accrescitivo)",
+              "-one, -ona",
+              "librone, nasone, ragazzone / una ragazzona"
+            ],
+            [
+              "affettuoso (vezzeggiativo)",
+              "-uccio",
+              "boccuccia, casuccia"
+            ],
+            [
+              "brutto o cattivo (peggiorativo)",
+              "-accio, -astro",
+              "tempaccio, parolaccia, ragazzaccio / giovinastro; con i colori -astro vuol dire «che tende a», spesso con un tono negativo: giallastro, rossastro"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Anche con aggettivi, avverbi e verbi.</b>",
+          "plain": true,
+          "headers": [
+            "",
+            "esempi",
+            "significa"
+          ],
+          "rows": [
+            [
+              "aggettivi",
+              "bellino, piccolino, grassottello",
+              "abbastanza bello, molto piccolo, un po' grasso"
+            ],
+            [
+              "avverbi",
+              "benino, maluccio, pochino, prestino",
+              "abbastanza bene, non molto bene, un po', un po' presto"
+            ],
+            [
+              "verbi",
+              "mangiucchiare, lavoricchiare, saltellare, giocherellare",
+              "mangiare poco e spesso, lavorare poco, fare piccoli salti, giocare senza attenzione"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Alterati diventati parole nuove</b>, con un significato proprio.",
+          "plain": true,
+          "headers": [
+            "parola",
+            "da",
+            "significa"
+          ],
+          "rows": [
+            [
+              "il finestrino",
+              "finestra",
+              "la finestra della macchina, del treno, dell'aereo"
+            ],
+            [
+              "l'ombrellone",
+              "ombrello",
+              "il grande ombrello da spiaggia"
+            ],
+            [
+              "il portone",
+              "porta",
+              "la porta d'ingresso di un palazzo"
+            ],
+            [
+              "il telefonino",
+              "telefono",
+              "il cellulare"
+            ],
+            [
+              "il panino",
+              "pane",
+              "il pane tagliato e farcito"
+            ],
+            [
+              "la cartolina",
+              "carta",
+              "il cartoncino illustrato da spedire"
+            ],
+            [
+              "il rossetto",
+              "rosso",
+              "il trucco per le labbra"
+            ],
+            [
+              "il tavolino",
+              "tavolo",
+              "un tavolo piccolo, anche quello del bar"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi alterati</b>: sembrano alterati, ma sono parole diverse.",
+          "plain": true,
+          "headers": [
+            "parola",
+            "non è",
+            "è"
+          ],
+          "rows": [
+            [
+              "mulino",
+              "un piccolo mulo",
+              "la costruzione dove si fa la farina"
+            ],
+            [
+              "lampone",
+              "un grande lampo",
+              "un frutto rosso"
+            ],
+            [
+              "bottone",
+              "una grande botte",
+              "quello della camicia"
+            ],
+            [
+              "tacchino",
+              "un piccolo tacco",
+              "un animale"
+            ],
+            [
+              "burrone",
+              "molto burro",
+              "una valle profonda e stretta"
+            ],
+            [
+              "canino",
+              "un piccolo cane (che è il cagnolino)",
+              "un dente"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "piccolo (diminutivi): -ino, -etto, -ello",
+          "ex": "Che bel <b>gattino</b>! / Abitano in una <b>casetta</b> in campagna. / Nel giardino c'è un <b>alberello</b>. / È nato in un <b>paesello</b> di montagna."
+        },
+        {
+          "label": "grande (accrescitivi): -one, -ona",
+          "ex": "Per l'esame devo studiare un <b>librone</b>. / Ha un <b>nasone</b> simpatico. / Ieri avevo un <b>febbrone</b>."
+        },
+        {
+          "label": "affettuoso (vezzeggiativi): -uccio",
+          "ex": "Che <b>boccuccia</b> ha questo bambino! / Vivono in una <b>casuccia</b> modesta."
+        },
+        {
+          "label": "brutto o cattivo (peggiorativi): -accio, -astro",
+          "ex": "Che <b>tempaccio</b>! / Non dire <b>parolacce</b>! / Fa il <b>ragazzaccio</b>. / Un gruppo di <b>giovinastri</b>. / Un colore <b>giallastro</b>."
+        },
+        {
+          "label": "con aggettivi e avverbi, per attenuare",
+          "ex": "È <b>bellino</b>, ma non bellissimo. / Come stai? — <b>Benino</b>. / Ne vorrei un <b>pochino</b>. / Arrivo un po' <b>prestino</b>. / È un po' <b>grassottello</b>."
+        },
+        {
+          "label": "con i verbi: un'azione fatta poco o senza impegno",
+          "ex": "<b>Mangiucchio</b> qualcosa davanti alla TV. / Il bambino <b>saltella</b> per la stanza. / <b>Giocherella</b> con la penna."
+        },
+        {
+          "label": "parole nuove nate da un alterato: finestrino, ombrellone, portone, telefonino, panino, cartolina, rossetto, tavolino",
+          "ex": "Abbassa il <b>finestrino</b>. / Affittiamo un <b>ombrellone</b>? / Ci vediamo davanti al <b>portone</b>. / Mi mandi una <b>cartolina</b>? / Ci sediamo a quel <b>tavolino</b>?"
+        },
+        {
+          "label": "falsi alterati: mulino, lampone, bottone, tacchino, burrone, canino",
+          "ex": "La torta ai <b>lamponi</b>. / Mi si è staccato un <b>bottone</b>. / A Natale mangiamo il <b>tacchino</b>. / Mi fa male il <b>canino</b>."
+        },
+        {
+          "label": "nel parlato, i diminutivi rendono più gentile una richiesta",
+          "ex": "Prendiamo un <b>caffettino</b>? / Aspetti un <b>attimino</b>, per favore. / Mi fa una <b>firmetta</b> qui?"
+        }
+      ],
+      "warn": "<b>Con misura.</b> Gli alterati veri e propri (<i>casetta, problemino, tempaccio</i>) sono del parlato e del tono familiare: in una lettera formale o in un testo di lavoro si evitano («un piccolo problema», non «un problemino»). Le parole nate da un alterato (<i>finestrino, portone, cartolina</i>) sono parole normali e vanno bene in ogni registro. <b>Non si inventano liberamente</b>: molti nomi non accettano un suffisso, o lo accettano solo con un significato particolare. Prima di usare un alterato poco comune, conviene controllare che esista. <b>Per le persone</b> con <i>-one</i> si usa anche il femminile <i>-ona</i>: <i>una ragazzona</i>.",
+      "errors": [
+        {
+          "wrong": "un uomino",
+          "right": "un omino",
+          "why": "<i>Uomo</i> perde la <i>u</i>: <i>omino, ometto, omone</i>."
+        },
+        {
+          "wrong": "Abbiamo adottato un canino.",
+          "right": "Abbiamo adottato un cagnolino.",
+          "why": "Il <i>canino</i> è un dente; il piccolo cane è il <i>cagnolino</i>."
+        },
+        {
+          "wrong": "Apri il finestrino, in cucina fa caldo.",
+          "right": "Apri la finestra, in cucina fa caldo.",
+          "why": "Il <i>finestrino</i> è quello della macchina o del treno."
+        },
+        {
+          "wrong": "Al mare abbiamo affittato un ombrellino.",
+          "right": "Al mare abbiamo affittato un ombrellone.",
+          "why": "Quello da spiaggia è l'<i>ombrellone</i>; l'<i>ombrellino</i> è un piccolo ombrello."
+        },
+        {
+          "wrong": "Ne vorrei un pocchino.",
+          "right": "Ne vorrei un pochino.",
+          "why": "Da <i>poco</i> si fa <i>pochino</i>, con la <i>h</i> e una sola <i>c</i>."
+        },
+        {
+          "wrong": "Il palazzo ha una portona di legno.",
+          "right": "Il palazzo ha un portone di legno.",
+          "why": "Con <i>-one</i> la <i>porta</i> diventa <i>il portone</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Trasformazione",
+          "instr": "Sostituisci le parole in grassetto con un alterato.",
+          "items": [
+            "Abitano in una <b>piccola casa</b> in campagna.",
+            "Per l'esame devo leggere un <b>libro grande e pesante</b>.",
+            "Oggi c'è un <b>brutto tempo</b>.",
+            "Il bambino gioca con un <b>piccolo gatto</b>.",
+            "Non dire <b>parole volgari</b>!",
+            "È entrato un <b>uomo piccolo</b> con il cappello."
+          ],
+          "key": [
+            "<b>casetta</b> (o <b>casina</b>)",
+            "<b>librone</b>",
+            "<b>tempaccio</b>",
+            "<b>gattino</b>",
+            "<b>parolacce</b>",
+            "<b>omino</b> (o <b>ometto</b>)"
+          ]
+        },
+        {
+          "type": "Correzione",
+          "instr": "Trova e correggi l'errore.",
+          "items": [
+            "Nel parco c'è un lagetto con le anatre.",
+            "Mia cugina è una ragazzone simpatica.",
+            "Al ristorante abbiamo prenotato un tavolino per dieci persone.",
+            "Piove da tre giorni: che tempone!",
+            "Ho visto un gattaccio bellissimo e tenerissimo.",
+            "A pranzo ho mangiato un pane con il prosciutto."
+          ],
+          "key": [
+            "<b>laghetto</b>",
+            "<b>ragazzona</b>",
+            "<b>un tavolo</b> (o <b>un tavolo grande</b>)",
+            "<b>tempaccio</b> (o <b>che brutto tempo</b>)",
+            "<b>gatto</b> (o <b>gattino</b>, <b>gattone</b>)",
+            "<b>un panino</b>"
+          ]
+        },
+        {
+          "type": "Completamento libero",
+          "instr": "Completa la frase con un alterato.",
+          "items": [
+            "In vacanza abbiamo dormito in un … di montagna.",
+            "Al mare affittiamo sempre lo stesso …",
+            "Come stai? — … , grazie.",
+            "Di torta ne vorrei solo un … , grazie.",
+            "Mi aspetti un …? Arrivo subito.",
+            "In macchina fa caldo: abbassa il …"
+          ],
+          "key": [
+            "Esempio: <b>paesino</b>.",
+            "Esempio: <b>ombrellone</b>.",
+            "Esempio: <b>Benino</b>.",
+            "Esempio: <b>pezzettino</b>.",
+            "Esempio: <b>attimino</b>.",
+            "Esempio: <b>finestrino</b>."
           ]
         }
       ]

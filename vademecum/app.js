@@ -1,9 +1,9 @@
-/* Vademecum di grammatica italiana — app.js — versione 4.4
+/* Vademecum di grammatica italiana — app.js — versione 4.6
    Le schede stanno in dati/<livello>.json.
    Quando modifichi un file di dati, aggiorna la sua versione qui sotto in DATI
    (e il campo "versione" nel file): serve a far riscaricare il file al browser. */
-const VERSIONE = "4.4";
-const DATI = {a:"1.6", a2:"1.7", b1:"2.2", b2:"1.5", c1:"1.5"};
+const VERSIONE = "4.6";
+const DATI = {a:"1.7", a2:"1.8", b1:"2.3", b2:"1.6", c1:"1.6"};
 
 /* ===== Livelli ===== */
 const LEVELS = [
@@ -57,7 +57,8 @@ function searchText(e){
 
 function cardHTML(e, lvlId, idx){
   let h = "<article class='card' id='card-"+lvlId+"-"+idx+"' data-k='"+ENTRIES.indexOf(e)+"' data-search=\""+searchText(e)+"\" data-t=\""+unapo(fold((e.title+" "+e.cat).toLowerCase()))+"\" style='--lvl:"+colorById[e.lvl]+"'>";
-  h += "<button type='button' class='copy-btn copy-card' data-copy='scheda' title='Copia la spiegazione (senza esercizi)' aria-label='Copia la spiegazione della scheda'>Copia</button>";
+  h += "<div class='card-tools'><button type='button' class='copy-btn copy-card' data-copy='scheda' title='Copia la spiegazione (senza esercizi)' aria-label='Copia la spiegazione della scheda'>Copia</button>"
+    + "<button type='button' class='copy-btn print-card' data-print='scheda' title='Stampa la spiegazione (senza esercizi); dalla finestra di stampa si può anche salvare in PDF' aria-label='Stampa la spiegazione della scheda'>Stampa</button></div>";
   h += "<p class='card__cat'>"+e.cat+"</p>";
   h += "<h3 class='card__title'>"+e.title+"</h3>";
   h += "<p class='card__def'>"+e.def+"</p>";
@@ -86,7 +87,8 @@ function cardHTML(e, lvlId, idx){
   if(e.exercises && e.exercises.length){
     h += "<details class='sec sec-eser'><summary class='sec__h eser-toggle'>Esercizi<span class='eser-n'>"
       + e.exercises.reduce((n,x)=>n+x.items.length,0) + "</span></summary>";
-    h += "<div class='eser-tools'><button type='button' class='copy-btn' data-copy='esercizi' title='Copia gli esercizi (senza soluzioni)' aria-label='Copia gli esercizi della scheda, senza soluzioni'>Copia esercizi</button></div>";
+    h += "<div class='eser-tools'><button type='button' class='copy-btn' data-copy='esercizi' title='Copia gli esercizi (senza soluzioni)' aria-label='Copia gli esercizi della scheda, senza soluzioni'>Copia esercizi</button>"
+      + "<button type='button' class='copy-btn' data-print='esercizi' title='Stampa gli esercizi (senza soluzioni); dalla finestra di stampa si può anche salvare in PDF' aria-label='Stampa gli esercizi della scheda, senza soluzioni'>Stampa esercizi</button></div>";
     e.exercises.forEach(x=>{
       h += "<div class='ex-block'>"
         + "<p class='ex-type'>"+x.type+"</p>"
@@ -424,6 +426,34 @@ function flash(btn, label, ok){
   btn._t = setTimeout(()=>{ btn.textContent = btn.dataset.label; btn.classList.remove("ok"); }, 2000);
 }
 
+/* ===== Stampa =====
+   «Stampa» (accanto a «Copia») stampa la spiegazione; «Stampa esercizi» (accanto a «Copia
+   esercizi») stampa gli esercizi senza soluzioni. Il contenuto è lo stesso della copia, su un
+   foglio pulito in bianco e nero. Dalla finestra di stampa si può anche salvare in PDF. */
+const PRINT_CSS = "@page{size:A4;margin:18mm 16mm}"
+  + "body{font-family:Arial,Helvetica,sans-serif;font-size:11.5pt;line-height:1.45;color:#000;margin:0}"
+  + "h3{font-family:Georgia,'Times New Roman',serif;font-size:17pt;margin:0 0 8px}"
+  + "h4{font-size:9.5pt;letter-spacing:.08em;text-transform:uppercase;margin:16px 0 6px;border-bottom:1px solid #999;padding-bottom:2px}"
+  + "p{margin:0 0 7px}ul{padding-left:18px;margin:0 0 8px}ul li{margin:0 0 5px}"
+  + "ol{padding-left:22px;margin:0 0 12px}ol li{margin:0 0 14px}"
+  + "table{border-collapse:collapse;width:100%;margin:6px 0 10px}tr{page-break-inside:avoid}"
+  + "th,td{border:1px solid #999;padding:3px 7px;text-align:left;vertical-align:top}"
+  + "h3,h4{page-break-after:avoid}";
+
+function printDoc(title, body){
+  const old = document.getElementById("print-frame");
+  if(old) old.remove();
+  const f = document.createElement("iframe");
+  f.id = "print-frame";
+  f.setAttribute("aria-hidden", "true");
+  f.style.cssText = "position:fixed;right:0;bottom:0;width:0;height:0;border:0;visibility:hidden";
+  f.onload = ()=>{ try{ f.contentWindow.focus(); f.contentWindow.print(); }catch(err){ console.error("Stampa non riuscita:", err); } };
+  f.srcdoc = "<!DOCTYPE html><html lang='it'><head><meta charset='utf-8'><title>"
+    + strip(title).replace(/</g,"&lt;") + "</title><style>" + PRINT_CSS + "</style></head><body>"
+    + body + "</body></html>";
+  document.body.appendChild(f);
+}
+
 function setupCopy(){
   const content = document.getElementById("content");
   if(!content) return;
@@ -433,6 +463,12 @@ function setupCopy(){
     const card = btn.closest(".card");
     const e = card ? ENTRIES[+card.dataset.k] : null;
     if(!e) return;
+    if(btn.dataset.print){
+      const pe = btn.dataset.print === "esercizi";
+      printDoc(e.title + (pe ? " — esercizi" : ""), pe ? exercisesClipHTML(e) : cardClipHTML(e));
+      return;
+    }
+    if(!btn.dataset.copy) return;
     const ex = btn.dataset.copy === "esercizi";
     const html = "<meta charset='utf-8'><div style='font-family:Arial,Helvetica,sans-serif'>"
       + (ex ? exercisesClipHTML(e) : cardClipHTML(e)) + "</div>";

@@ -1,5 +1,5 @@
 {
-  "versione": "1.7",
+  "versione": "1.8",
   "livello": "A2",
   "schede": [
     {
@@ -1706,6 +1706,475 @@
             "<b>queste idee</b>",
             "<b>quegli uomini</b>",
             "<b>questi esercizi</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a2",
+      "cat": "Aggettivi",
+      "title": "Gli indefiniti",
+      "def": "Gli indefiniti indicano persone, cose o quantità <b>senza precisarle</b>: «<i>qualcuno</i> ha chiamato» (non so chi), «ci vediamo <i>qualche</i> volta» (non dico quando), «<i>tutti</i> lo sanno». Alcuni si usano solo davanti a un nome, altri solo al posto di un nome, altri nei due modi.",
+      "form": "<b>Tre gruppi.</b><ul class='sch'><li><b>solo con un nome</b>: <i>ogni, qualche, qualsiasi, qualunque</i>. Non cambiano mai e davanti al nome vogliono il <b>singolare</b>: <i>ogni giorno, qualche volta, a qualsiasi ora</i> (per <i>qualche</i> vedi anche Articoli indeterminativi e Il partitivo). <i>Qualsiasi</i> e <i>qualunque</i> possono stare anche dopo il nome, con <i>un, una</i>: vogliono dire «uno qualsiasi» (<i>dammi una penna qualsiasi</i>) e spesso «comune, banale» (<i>un giorno qualunque</i>)</li><li><b>solo al posto di un nome</b>: <i>qualcuno, qualcosa, ognuno, chiunque</i>, e <i>niente, nulla</i> (vedi La negazione): «C'è <i>qualcuno</i>?»</li><li><b>nei due modi</b>: <i>nessuno, alcuni, tutto, altro, ciascuno, parecchio</i>: «<i>nessun</i> problema» / «<i>nessuno</i> lo sa»; «<i>alcuni</i> amici» / «<i>alcuni</i> dicono che…»</li></ul>Quelli che stanno davanti a un nome e cambiano (<i>alcuni, tutto, altro, parecchio</i>) si accordano con il nome come un aggettivo: <i>alcune persone, tutta la notte, altri due giorni, parecchia gente</i>.",
+      "tables": [
+        {
+          "before": "<b>Gli indefiniti più usati.</b>",
+          "plain": true,
+          "headers": [
+            "indefinito",
+            "come si usa",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "ogni",
+              "davanti a un nome singolare; non cambia",
+              "ogni giorno, ogni settimana"
+            ],
+            [
+              "qualche",
+              "davanti a un nome singolare; non cambia (vedi Il partitivo)",
+              "qualche volta"
+            ],
+            [
+              "qualcuno, qualcosa",
+              "al posto di un nome: una persona, una cosa",
+              "C'è qualcuno? / Vuoi qualcosa?"
+            ],
+            [
+              "ognuno, ciascuno",
+              "al posto di un nome: ogni persona; ciascuno anche davanti a un nome, e cambia come uno (ciascun libro, ciascuno studente)",
+              "Ognuno paga per sé."
+            ],
+            [
+              "nessuno",
+              "davanti a un nome cambia come uno (nessun libro, nessuno studente, nessuna casa); oppure al posto di un nome; solo singolare",
+              "Nessun problema! / Nessuna notizia."
+            ],
+            [
+              "alcuni, alcune",
+              "plurale; davanti a un nome o al posto di un nome; come diversi, vari",
+              "alcuni amici / Alcuni dicono che…"
+            ],
+            [
+              "tutto",
+              "davanti all'articolo + nome; da solo tutto = ogni cosa, tutti = ogni persona",
+              "tutto il giorno, tutte le sere / Tutti lo sanno."
+            ],
+            [
+              "altro",
+              "con l'articolo o da solo",
+              "un altro caffè, gli altri / Altro?"
+            ],
+            [
+              "parecchio",
+              "come molto; si accorda con il nome",
+              "parecchi soldi, parecchia gente"
+            ],
+            [
+              "qualsiasi, qualunque",
+              "davanti a un nome singolare: non importa quale; dopo il nome: uno qualsiasi, oppure comune, banale; non cambiano",
+              "a qualsiasi ora, qualunque cosa / un giorno qualunque"
+            ],
+            [
+              "chiunque",
+              "al posto di un nome: qualsiasi persona",
+              "Chiunque può entrare."
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "ogni e qualche: davanti a un nome singolare, e non cambiano",
+          "ex": "Vado in palestra <b>ogni</b> giorno. / <b>Ogni</b> volta che lo vedo, mi saluta. / <b>Qualche</b> volta ceno fuori."
+        },
+        {
+          "label": "alcuni, alcune, diversi, parecchi: una quantità non precisa, al plurale",
+          "ex": "<b>Alcuni</b> studenti sono già arrivati. / Ci vado <b>diverse</b> volte all'anno. / Ho <b>parecchi</b> libri da leggere."
+        },
+        {
+          "label": "qualcuno e qualcosa: una persona o una cosa che non si conosce o non si nomina",
+          "ex": "C'è <b>qualcuno</b>? / <b>Qualcuno</b> ha lasciato la porta aperta. / Vuoi <b>qualcosa</b> da bere?"
+        },
+        {
+          "label": "nessuno davanti a un nome cambia come uno: nessun, nessuno, nessuna (con non: vedi La negazione)",
+          "ex": "<b>Nessun</b> problema! / In classe <b>nessuno</b> studente parla tedesco. / <b>Nessuna</b> notizia da Marco."
+        },
+        {
+          "label": "tutto: davanti all'articolo; da solo vuol dire ogni cosa, tutti vuol dire ogni persona",
+          "ex": "Ho mangiato <b>tutto</b>. / <b>Tutti</b> sono d'accordo. / Lavoro <b>tutti i</b> giorni. / Ho dormito <b>tutta la</b> notte. / Vengono <b>tutti e due</b>."
+        },
+        {
+          "label": "ognuno e ciascuno: ogni persona, presa una per una",
+          "ex": "<b>Ognuno</b> porta qualcosa da mangiare. / C'è un regalo per <b>ciascuno</b> dei bambini."
+        },
+        {
+          "label": "altro: una cosa o una persona in più, o diversa",
+          "ex": "Prendo un <b>altro</b> caffè. / Dove sono gli <b>altri</b>? / Desidera <b>altro</b>? — No, grazie."
+        },
+        {
+          "label": "qualsiasi, qualunque, chiunque: non importa quale, non importa chi; dopo il nome, qualsiasi e qualunque vogliono dire «uno qualsiasi» o «comune, banale»",
+          "ex": "Chiamami a <b>qualsiasi</b> ora. / Mangio <b>qualunque</b> cosa. / <b>Chiunque</b> può partecipare. / Dammi una penna <b>qualsiasi</b>. / Era un giorno <b>qualunque</b>."
+        },
+        {
+          "label": "qualcosa e niente + di + aggettivo; + da + infinito",
+          "ex": "Vorrei <b>qualcosa di</b> dolce. / Non c'è <b>niente di</b> nuovo. / Non ho <b>niente da</b> fare. / C'è <b>qualcosa da</b> mangiare?"
+        }
+      ],
+      "warn": "<b>Ogni con un numero</b> vuole il plurale: «<i>ogni due giorni</i>». <b>Tutto vuole l'articolo</b> davanti al nome: «<i>tutti i</i> giorni», non «tutti giorni»; non lo vuole davanti al nome di una città e davanti a <i>questo, quello</i>: «tutta Roma», «tutto questo». <b>Qualcosa e niente sono maschili</b>: «è successo qualcosa»; con <i>di</i> + aggettivo l'aggettivo è sempre maschile: «qualcosa di strano», «niente di nuovo». <b>Alcuno al singolare</b> si usa solo nelle frasi negative e formali: «senza <i>alcun</i> dubbio». <b>Altre schede.</b> <i>Molto, poco, tanto, troppo</i>: vedi Gli avverbi; <i>niente, nulla</i> e <i>non … nessuno, non … niente</i>: vedi La negazione; <i>chiunque</i> e <i>qualunque</i> con il congiuntivo («chiunque sia»): vedi Quando serve il congiuntivo; <i>qualche</i> e <i>alcuni</i> al posto di <i>dei, delle</i>: vedi Il partitivo.",
+      "errors": [
+        {
+          "wrong": "Ognuno hanno il suo posto.",
+          "right": "Ognuno ha il suo posto.",
+          "why": "<i>Ognuno</i> vuole il verbo al singolare."
+        },
+        {
+          "wrong": "Ogni giorni vado in palestra.",
+          "right": "Ogni giorno vado in palestra.",
+          "why": "<i>Ogni</i> vuole il nome al singolare."
+        },
+        {
+          "wrong": "Lavoro tutti giorni.",
+          "right": "Lavoro tutti i giorni.",
+          "why": "Tra <i>tutto</i> e il nome ci vuole l'articolo."
+        },
+        {
+          "wrong": "È successo qualcosa strano.",
+          "right": "È successo qualcosa di strano.",
+          "why": "Tra <i>qualcosa</i> e un aggettivo ci vuole <i>di</i>."
+        },
+        {
+          "wrong": "Non c'è niente fare.",
+          "right": "Non c'è niente da fare.",
+          "why": "Tra <i>niente</i> e un infinito ci vuole <i>da</i>."
+        },
+        {
+          "wrong": "Nessuni studenti sono venuti.",
+          "right": "Nessuno studente è venuto.",
+          "why": "<i>Nessuno</i> non ha il plurale."
+        },
+        {
+          "wrong": "Ho comprato qualcosa di buona.",
+          "right": "Ho comprato qualcosa di buono.",
+          "why": "Dopo <i>qualcosa di</i> l'aggettivo è sempre maschile."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con qualcuno, qualcosa, ogni, qualche, tutti, niente.",
+          "items": [
+            "Ho fame: vorrei mangiare _____.",
+            "Senti? C'è _____ alla porta.",
+            "Vado al lavoro in bici _____ giorno, anche quando piove.",
+            "Resto a Roma solo _____ giorno.",
+            "Non ho fame, non voglio _____.",
+            "Ho invitato _____ i colleghi."
+          ],
+          "key": [
+            "<b>qualcosa</b>",
+            "<b>qualcuno</b>",
+            "<b>ogni</b>",
+            "<b>qualche</b>",
+            "<b>niente</b>",
+            "<b>tutti</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Scegli la forma corretta.",
+          "items": [
+            "(Ogni / Ognuno) giorno vado a correre.",
+            "Ci sono (qualche / alcuni) problemi.",
+            "(Nessuno / Nessuni) studente ha capito.",
+            "Lavoro (tutti i / tutti) sabati.",
+            "È successo (qualcosa di / qualcosa) grave.",
+            "Mi dai (un altro / altro) bicchiere?"
+          ],
+          "key": [
+            "<b>Ogni</b>",
+            "<b>alcuni</b>",
+            "<b>Nessuno</b>",
+            "<b>tutti i</b>",
+            "<b>qualcosa di</b>",
+            "<b>un altro</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Riscrivi la frase con l'indefinito tra parentesi, senza cambiare il significato.",
+          "items": [
+            "Vado in palestra tutti i giorni. (ogni)",
+            "Ho comprato alcuni libri. (qualche)",
+            "Ogni studente ha un libro. (ciascuno)",
+            "Ogni persona porta un piatto. (ognuno)",
+            "Ho visto ogni film di Fellini. (tutti)",
+            "Mangio tutto, non importa che cosa. (qualunque)"
+          ],
+          "key": [
+            "Vado in palestra <b>ogni giorno</b>.",
+            "Ho comprato <b>qualche libro</b>.",
+            "<b>Ciascuno studente</b> ha un libro.",
+            "<b>Ognuno</b> porta un piatto.",
+            "Ho visto <b>tutti i film</b> di Fellini.",
+            "Mangio <b>qualunque cosa</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "lvl": "a2",
+      "cat": "Avverbi",
+      "title": "Gli avverbi",
+      "def": "L'avverbio è una parola che <b>non cambia mai</b>: non ha maschile e femminile, singolare e plurale. Aggiunge un'informazione a un verbo («parla <i>lentamente</i>»), a un aggettivo («è <i>molto</i> bravo») o a un altro avverbio («sto <i>molto</i> bene»). Dice <b>come</b>, <b>quando</b>, <b>dove</b>, <b>quanto</b> e <b>quante volte</b> succede una cosa, oppure se chi parla ne è sicuro.",
+      "form": "<b>Molti avverbi si formano dall'aggettivo, con -mente.</b><ul class='sch'><li><b>aggettivi in -o</b>: femminile + <b>-mente</b>: <i>lento → lenta → lentamente</i>, <i>sicuro → sicuramente</i>, <i>vero → veramente</i></li><li><b>aggettivi in -e</b>: + <b>-mente</b>: <i>veloce → velocemente</i>, <i>semplice → semplicemente</i></li><li><b>aggettivi in -le e -re</b>, se prima c'è una vocale: perdono la <i>e</i>: <i>facile → facilmente</i>, <i>gentile → gentilmente</i>, <i>regolare → regolarmente</i>, <i>particolare → particolarmente</i></li><li><b>eccezioni</b>: <i>leggero → leggermente</i>, <i>altro → altrimenti</i></li><li>per dire «in modo buono» e «in modo cattivo» si usano <b>bene</b> e <b>male</b> (<i>cattivamente</i> esiste, ma vuol dire «con cattiveria»)</li></ul>Molti avverbi di uso quotidiano non vengono da un aggettivo e si imparano a memoria: <i>bene, male, molto, poco, sempre, mai, già, ancora, presto, tardi, qui, lì</i>.",
+      "tables": [
+        {
+          "before": "<b>Gli avverbi più usati, divisi per quello che dicono.</b>",
+          "plain": true,
+          "headers": [
+            "dicono",
+            "avverbi",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "come",
+              "bene, male, così, piano, insieme, volentieri, e quasi tutti quelli in -mente",
+              "Parla piano, per favore."
+            ],
+            [
+              "quando",
+              "adesso (ora), prima, poi, dopo, oggi, ieri, domani, presto, tardi, subito, già, ancora, appena",
+              "Arrivo subito."
+            ],
+            [
+              "quante volte",
+              "sempre, spesso, a volte, ogni tanto, raramente, mai",
+              "Vado spesso al cinema."
+            ],
+            [
+              "dove",
+              "qui (qua), lì (là), sopra, sotto, dentro, fuori, davanti, dietro, vicino, lontano",
+              "Ti aspetto fuori."
+            ],
+            [
+              "quanto",
+              "molto, poco, tanto, troppo, abbastanza, più, meno, quasi",
+              "Ho quasi finito."
+            ],
+            [
+              "sì, no, forse",
+              "sì, certo, davvero, proprio, no, non, forse, probabilmente",
+              "Forse vengo anch'io."
+            ]
+          ]
+        },
+        {
+          "before": "<b>Espressioni di più parole che fanno da avverbio.</b>",
+          "plain": true,
+          "headers": [
+            "espressione",
+            "significa",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "di solito",
+              "quasi sempre, per abitudine",
+              "Di solito mi alzo alle sette."
+            ],
+            [
+              "in fretta, di corsa",
+              "velocemente",
+              "Ho mangiato in fretta."
+            ],
+            [
+              "all'improvviso",
+              "senza che uno se lo aspetti",
+              "All'improvviso è andata via la luce."
+            ],
+            [
+              "a poco a poco, piano piano",
+              "un po' alla volta",
+              "A poco a poco capisco di più."
+            ],
+            [
+              "per caso",
+              "senza volerlo, senza averlo deciso",
+              "L'ho incontrato per caso."
+            ],
+            [
+              "per fortuna",
+              "per un caso felice",
+              "Per fortuna avevo l'ombrello."
+            ]
+          ]
+        },
+        {
+          "before": "<b>Dove si mette l'avverbio.</b>",
+          "plain": true,
+          "headers": [
+            "con",
+            "posizione",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "un verbo",
+              "di solito subito dopo il verbo",
+              "Parla lentamente. / Mangio sempre la pasta."
+            ],
+            [
+              "un aggettivo o un altro avverbio",
+              "prima",
+              "È molto bravo. / Sto abbastanza bene."
+            ],
+            [
+              "un tempo composto (passato prossimo e altri)",
+              "già, sempre, appena di solito vanno tra l'ausiliare e il participio (per mai, più, ancora vedi La negazione)",
+              "Ho già mangiato. / Ho sempre lavorato qui. / Sono appena arrivata."
+            ],
+            [
+              "un tempo composto",
+              "gli altri avverbi di solito vanno dopo il participio",
+              "Ho dormito bene. / Sono arrivati tardi."
+            ],
+            [
+              "tutta la frase",
+              "all'inizio",
+              "Purtroppo non posso venire. / Di solito ceno alle otto."
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "come si fa una cosa: bene, male, così, piano, insieme, volentieri e gli avverbi in -mente",
+          "ex": "Parli <b>bene</b> l'italiano! / Parla <b>piano</b>, il bambino dorme. / Lo faccio <b>volentieri</b>. / Guida <b>lentamente</b>. / Usciamo <b>insieme</b>?"
+        },
+        {
+          "label": "quando: adesso, ora, prima, poi, dopo, oggi, ieri, domani, presto, tardi, subito, già, ancora, appena",
+          "ex": "<b>Prima</b> mangio, <b>poi</b> esco. / Arrivo <b>subito</b>! / Mi alzo <b>presto</b>. / Hai <b>già</b> finito? / Non ho <b>ancora</b> finito. / Sono <b>appena</b> arrivato."
+        },
+        {
+          "label": "quante volte: sempre, spesso, a volte, ogni tanto, raramente, mai",
+          "ex": "Faccio <b>sempre</b> colazione. / Vado <b>spesso</b> al cinema. / <b>Ogni tanto</b> ci sentiamo. / Esco <b>raramente</b> la sera. / Non bevo <b>mai</b> caffè."
+        },
+        {
+          "label": "dove: qui, qua, lì, là, sopra, sotto, dentro, fuori, davanti, dietro, vicino, lontano",
+          "ex": "Vieni <b>qui</b>! / Ti aspetto <b>fuori</b>. / Il bagno è <b>sopra</b>, al primo piano. / Abito <b>vicino</b>, a cinque minuti. / Abiti <b>lontano</b>?"
+        },
+        {
+          "label": "quanto: molto, poco, tanto, troppo, abbastanza, quasi",
+          "ex": "Lavori <b>troppo</b>. / È <b>molto</b> simpatica. / Dormo <b>poco</b>. / Sto <b>abbastanza</b> bene. / Ho <b>quasi</b> finito."
+        },
+        {
+          "label": "se chi parla è sicuro: sì, certo, davvero, proprio, forse, probabilmente; purtroppo e per fortuna dicono se una cosa è bella o brutta",
+          "ex": "<b>Certo</b> che vengo! / È <b>davvero</b> bello. / <b>Forse</b> domani piove. / Arriva <b>probabilmente</b> stasera. / <b>Purtroppo</b> non posso. / <b>Per fortuna</b> avevo l'ombrello."
+        },
+        {
+          "label": "espressioni di più parole: di solito, in fretta, di corsa, all'improvviso, a poco a poco, piano piano, per caso",
+          "ex": "<b>Di solito</b> ceno alle otto. / Ho mangiato <b>in fretta</b>. / <b>All'improvviso</b> è andata via la luce. / <b>Piano piano</b> capisco di più. / L'ho incontrato <b>per caso</b>."
+        },
+        {
+          "label": "alcuni aggettivi, al maschile singolare, fanno da avverbio e non cambiano: piano, forte, chiaro, giusto, veloce",
+          "ex": "Parla più <b>forte</b>! / Parliamoci <b>chiaro</b>. / Avete risposto <b>giusto</b>. / Non guidare così <b>veloce</b>!"
+        }
+      ],
+      "warn": "<b>Molto, poco, tanto, troppo: avverbio o aggettivo?</b> Davanti a un nome sono aggettivi e si accordano: «<i>molte</i> persone», «<i>troppi</i> soldi», «<i>poca</i> pazienza». Davanti a un aggettivo o a un avverbio, e quando dicono quanto si fa una cosa, sono avverbi e non cambiano: «sono <i>molto</i> stanche», «lavorano <i>troppo</i>». Da soli dopo <i>essere</i> (= numerosi), o al posto di un nome, si accordano: «i problemi sono <i>tanti</i>», «Hai molti amici? — Sì, <i>tanti</i>». <b>Bene o buono?</b> <i>Buono</i> va con un nome («un <i>buon</i> caffè», «la torta è <i>buona</i>»); <i>bene</i> va con un verbo («cucini <i>bene</i>», «sto <i>bene</i>»). <b>Altre schede.</b> <i>Meglio, peggio</i>: vedi I comparativi; <i>benissimo, prestissimo</i>: vedi I superlativi; <i>non … mai, non … più, non … ancora</i>: vedi La negazione.",
+      "errors": [
+        {
+          "wrong": "Le ragazze sono molte stanche.",
+          "right": "Le ragazze sono molto stanche.",
+          "why": "Davanti a un aggettivo <i>molto</i> è avverbio e non cambia."
+        },
+        {
+          "wrong": "Questa borsa è troppa cara.",
+          "right": "Questa borsa è troppo cara.",
+          "why": "Anche <i>troppo</i>, davanti a un aggettivo, non cambia."
+        },
+        {
+          "wrong": "Parli buono l'italiano.",
+          "right": "Parli bene l'italiano.",
+          "why": "Con un verbo si usa <i>bene</i>; <i>buono</i> va con un nome."
+        },
+        {
+          "wrong": "Io sempre mangio la pasta.",
+          "right": "Io mangio sempre la pasta.",
+          "why": "<i>Sempre</i> va di solito dopo il verbo."
+        },
+        {
+          "wrong": "Ha risposto correttomente.",
+          "right": "Ha risposto correttamente.",
+          "why": "<i>-mente</i> si aggiunge al femminile: <i>corretta → correttamente</i>."
+        },
+        {
+          "wrong": "Lo faccio facilemente.",
+          "right": "Lo faccio facilmente.",
+          "why": "Gli aggettivi in <i>-le</i> perdono la <i>e</i>: <i>facile → facilmente</i>."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Completamento",
+          "instr": "Completa con l'avverbio in -mente che viene dall'aggettivo tra parentesi.",
+          "items": [
+            "(lento) Il nonno cammina _____.",
+            "(facile) Questo esercizio si fa _____.",
+            "(gentile) La commessa mi ha risposto _____.",
+            "(regolare) Faccio sport _____.",
+            "(leggero) Oggi ha piovuto _____.",
+            "(vero) Sei _____ bravo!"
+          ],
+          "key": [
+            "<b>lentamente</b>",
+            "<b>facilmente</b>",
+            "<b>gentilmente</b>",
+            "<b>regolarmente</b>",
+            "<b>leggermente</b>",
+            "<b>veramente</b>"
+          ]
+        },
+        {
+          "type": "Scelta",
+          "instr": "Scegli la forma corretta.",
+          "items": [
+            "Le mie sorelle sono (molto / molte) simpatiche.",
+            "Ho (molto / molti) amici a Roma.",
+            "Questo caffè è (buono / bene).",
+            "Cucini davvero (buono / bene)!",
+            "I miei colleghi lavorano (troppo / troppi).",
+            "Oggi in centro c'è (troppo / troppa) gente."
+          ],
+          "key": [
+            "<b>molto</b>",
+            "<b>molti</b>",
+            "<b>buono</b>",
+            "<b>bene</b>",
+            "<b>troppo</b>",
+            "<b>troppa</b>"
+          ]
+        },
+        {
+          "type": "Trasformazione",
+          "instr": "Metti l'avverbio tra parentesi nella posizione più comune.",
+          "items": [
+            "Ho finito il lavoro. (già)",
+            "Ho lavorato in questa ditta. (sempre)",
+            "Mi sono svegliato. (tardi)",
+            "Siamo arrivati a casa. (appena)",
+            "Stanotte ho dormito. (bene)",
+            "Hanno risposto. (gentilmente)"
+          ],
+          "key": [
+            "Ho <b>già</b> finito il lavoro.",
+            "Ho <b>sempre</b> lavorato in questa ditta.",
+            "Mi sono svegliato <b>tardi</b>.",
+            "Siamo <b>appena</b> arrivati a casa.",
+            "Stanotte ho dormito <b>bene</b>.",
+            "Hanno risposto <b>gentilmente</b>."
           ]
         }
       ]
