@@ -1,0 +1,450 @@
+{
+  "versione": "1.0",
+  "livello": "Colloqui",
+  "schede": [
+    {
+      "lvl": "colloqui",
+      "cat": "Colloquio",
+      "title": "Il colloquio di lavoro",
+      "def": "Il <b>colloquio di lavoro</b> è l'incontro in cui l'azienda conosce il candidato: che cosa ha studiato, che cosa sa fare, perché vuole quel posto e come reagisce alle domande difficili. La scheda raccoglie il lessico, le frasi per rispondere e le domande che il candidato può fare e quelle da evitare. Negli esercizi ci sono le domande del selezionatore, divise per livello, comprese quelle <b>a trabocchetto</b>: il docente fa il selezionatore, lo studente risponde.",
+      "form": "<b>Come si svolge.</b><ul class='sch'><li><b>le fasi</b>: accoglienza e presentazione; studi ed esperienze; competenze, con esempi concreti; motivazione; condizioni (contratto, orario, retribuzione); domande del candidato; saluti</li><li><b>i tipi di colloquio</b>: conoscitivo, di solito con l'ufficio del personale; tecnico, con il responsabile del reparto; di gruppo; al telefono o in videochiamata, spesso come primo passo della selezione</li><li><b>le domande a trabocchetto</b>: alcune domande ne nascondono un'altra; per esempio, dietro «Come reagisce alle critiche?» c'è «sa accettare un'osservazione senza mettersi sulla difensiva?». Per rispondere: essere sinceri ma positivi, parlare di fatti e risultati, non criticare nessuno, non raccontare la vita privata, prendersi qualche secondo per pensare</li><li><b>le domande del candidato</b>: alla fine il selezionatore chiede quasi sempre «Ha qualche domanda?». Che cosa chiedere e che cosa no: vedi la tabella</li></ul>",
+      "tables": [
+        {
+          "before": "<b>Il lessico del colloquio.</b>",
+          "plain": true,
+          "headers": [
+            "parola",
+            "che cos'è",
+            "esempio"
+          ],
+          "rows": [
+            [
+              "l'annuncio, l'offerta di lavoro",
+              "il testo che descrive il posto libero",
+              "L'annuncio è scaduto ieri."
+            ],
+            [
+              "candidarsi, la candidatura",
+              "proporsi per un posto",
+              "Mi sono candidata per il posto di contabile."
+            ],
+            [
+              "il curriculum (vitae), il CV",
+              "il documento con studi ed esperienze",
+              "Le ho mandato il curriculum la settimana scorsa."
+            ],
+            [
+              "la lettera di presentazione (o motivazionale)",
+              "la lettera che accompagna il curriculum",
+              "Nella lettera spiego perché mi interessa il posto."
+            ],
+            [
+              "il selezionatore, le risorse umane",
+              "chi fa il colloquio; l'ufficio del personale (anche HR)",
+              "Il primo colloquio è con le risorse umane."
+            ],
+            [
+              "le referenze",
+              "persone che possono dare informazioni sul candidato",
+              "Posso darLe il contatto del mio ultimo responsabile."
+            ],
+            [
+              "la RAL (retribuzione annua lorda)",
+              "quanto si guadagna in un anno, prima di tasse e contributi, comprese tredicesima ed eventuale quattordicesima",
+              "La RAL prevista è di 32.000 euro."
+            ],
+            [
+              "la fascia retributiva",
+              "lo stipendio minimo e massimo previsto per il posto",
+              "La fascia è tra 28.000 e 34.000 euro lordi."
+            ],
+            [
+              "lordo, netto",
+              "prima e dopo tasse e contributi",
+              "Al netto sono circa 1.900 euro al mese."
+            ],
+            [
+              "la tredicesima, la quattordicesima",
+              "una mensilità in più, di solito a dicembre; la quattordicesima solo in alcuni contratti, d'estate",
+              "Lo stipendio è su tredici mensilità."
+            ],
+            [
+              "il CCNL, il livello",
+              "il contratto collettivo nazionale del settore; il livello di inquadramento, da cui dipende lo stipendio minimo",
+              "Applichiamo il contratto del commercio, terzo livello."
+            ],
+            [
+              "le mansioni",
+              "i compiti del lavoro",
+              "Tra le mansioni c'è la gestione dei fornitori."
+            ],
+            [
+              "il contratto a tempo indeterminato, determinato",
+              "senza una data di fine, con una data di fine",
+              "Offriamo un contratto a tempo indeterminato."
+            ],
+            [
+              "a tempo pieno, part-time",
+              "con l'orario completo, con un orario ridotto",
+              "Il posto è a tempo pieno, 40 ore alla settimana."
+            ],
+            [
+              "il periodo di prova",
+              "i primi mesi, in cui tutte e due le parti possono interrompere il rapporto senza preavviso; al massimo sei mesi",
+              "Il periodo di prova è di tre mesi."
+            ],
+            [
+              "il preavviso",
+              "il tempo da lavorare dopo le dimissioni, prima di andare via; la durata la fissa il contratto collettivo",
+              "Quanti giorni di preavviso prevede il contratto?"
+            ],
+            [
+              "la disponibilità",
+              "da quando si può cominciare; anche a viaggiare (le trasferte) o a cambiare città",
+              "Cerchiamo una persona con disponibilità immediata."
+            ],
+            [
+              "il lavoro agile (smart working)",
+              "lavorare in parte fuori dall'ufficio, di solito da casa",
+              "Due giorni alla settimana lavoro da casa."
+            ],
+            [
+              "i benefit, il welfare aziendale",
+              "vantaggi oltre lo stipendio: buoni pasto, assicurazione sanitaria, corsi",
+              "Tra i benefit ci sono i buoni pasto."
+            ],
+            [
+              "il tirocinio, lo stage",
+              "un periodo di formazione in azienda",
+              "Lo stage dura sei mesi ed è retribuito."
+            ]
+          ]
+        },
+        {
+          "before": "<b>Le domande del candidato: da fare e da evitare.</b>",
+          "plain": true,
+          "headers": [
+            "domanda",
+            "va bene?",
+            "perché"
+          ],
+          "rows": [
+            [
+              "«Come si svolge una giornata tipo in questo ruolo?»",
+              "sì",
+              "mostra interesse per il lavoro concreto"
+            ],
+            [
+              "«Con chi lavorerei? Com'è il gruppo?»",
+              "sì",
+              "fa capire che pensa già a lavorare con loro"
+            ],
+            [
+              "«Quali risultati vi aspettate nei primi mesi?»",
+              "sì",
+              "mostra che punta ai risultati"
+            ],
+            [
+              "«Ci sono possibilità di formazione e di crescita?»",
+              "sì",
+              "mostra che vuole restare e migliorare"
+            ],
+            [
+              "«La posizione è nuova o è una sostituzione?»",
+              "sì",
+              "aiuta a capire che cosa si aspettano"
+            ],
+            [
+              "«Che contratto è previsto? Con quale CCNL e livello?»",
+              "sì, verso la fine",
+              "informazioni normali, se non sono già nell'annuncio"
+            ],
+            [
+              "«Com'è organizzato l'orario? C'è flessibilità?»",
+              "sì, verso la fine",
+              "mostra interesse per l'organizzazione del lavoro, non per il tempo libero"
+            ],
+            [
+              "«Quali sono i prossimi passi della selezione?»",
+              "sì, alla fine",
+              "è il modo giusto per sapere come continua"
+            ],
+            [
+              "«Che cosa fa esattamente la vostra azienda?»",
+              "no",
+              "si vede che non si è preparato"
+            ],
+            [
+              "«Quanti giorni di ferie ho? Posso fare i ponti?»",
+              "non subito",
+              "sembra interessato solo al tempo libero; se ne parla quando arriva l'offerta"
+            ],
+            [
+              "«Quanto guadagnerei?» come prima domanda",
+              "non subito",
+              "la retribuzione dovrebbe essere già nell'annuncio; se manca, si chiede verso la fine: «Mi può indicare la fascia retributiva prevista?»"
+            ],
+            [
+              "«Posso lavorare sempre da casa?»",
+              "non subito",
+              "meglio chiedere come è organizzato il lavoro agile"
+            ],
+            [
+              "«Allora, ho passato il colloquio?»",
+              "no",
+              "mette in imbarazzo il selezionatore: meglio chiedere i prossimi passi"
+            ],
+            [
+              "nessuna domanda",
+              "no",
+              "sembra poco interessato: conviene prepararne sempre una o due"
+            ]
+          ]
+        },
+        {
+          "before": "<b>Falsi amici.</b>",
+          "plain": true,
+          "headers": [
+            "italiano",
+            "inglese (e altre lingue)",
+            "attenzione"
+          ],
+          "rows": [
+            [
+              "il colloquio (di lavoro)",
+              "job interview (sp. entrevista)",
+              "l'intervista è soprattutto quella del giornalista"
+            ],
+            [
+              "il curriculum",
+              "résumé, CV",
+              "il riassunto è la sintesi di un testo, non il curriculum"
+            ],
+            [
+              "la laurea",
+              "degree (sp. grado)",
+              "il grado è un livello, anche nell'esercito (il grado di capitano); il titolo universitario è la laurea"
+            ],
+            [
+              "la fabbrica",
+              "factory",
+              "la fattoria è un'azienda agricola"
+            ],
+            [
+              "entusiasta, contento",
+              "excited",
+              "eccitato vuol dire soprattutto agitato, sovreccitato, e può avere anche un senso sessuale: al colloquio è fuori luogo; si dice entusiasta o contento"
+            ],
+            [
+              "in realtà",
+              "actually",
+              "attualmente vuol dire «adesso»"
+            ],
+            [
+              "lo stage",
+              "internship",
+              "in italiano lo stage è il tirocinio, non il palcoscenico (ingl. stage)"
+            ],
+            [
+              "candidarsi, fare domanda",
+              "to apply (for a job)",
+              "applicare vuol dire mettere sopra o mettere in pratica (applicare una regola); nel gergo delle risorse umane si sente anche «applicare», ma è un anglicismo: al colloquio si dice candidarsi"
+            ],
+            [
+              "il corso di laurea",
+              "sp. carrera",
+              "la carriera è soprattutto il percorso nel lavoro; gli studi sono il corso di laurea"
+            ],
+            [
+              "il master",
+              "Master's degree",
+              "il master italiano è un corso dopo la laurea; il Master's degree corrisponde di solito alla laurea magistrale"
+            ],
+            [
+              "l'azienda, la società",
+              "company",
+              "la compagnia si usa solo in alcuni settori: compagnia aerea, di assicurazioni"
+            ]
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "label": "presentarsi all'arrivo e ringraziare",
+          "ex": "Buongiorno, ho un <b>appuntamento</b> alle dieci con la dottoressa Bianchi. / La <b>ringrazio</b> per l'invito."
+        },
+        {
+          "label": "parlare degli studi",
+          "ex": "Mi sono <b>laureato</b> in Ingegneria nel 2018. / Ho un <b>master</b> in Marketing. / Ho fatto un <b>tirocinio</b> in uno studio di architettura."
+        },
+        {
+          "label": "parlare delle esperienze",
+          "ex": "Ho <b>lavorato</b> sei anni in un'azienda di logistica. / Mi <b>occupavo</b> delle spedizioni verso l'estero. / Ero <b>responsabile</b> di un gruppo di cinque persone."
+        },
+        {
+          "label": "presentare i punti di forza, sempre con un esempio",
+          "ex": "Sono una persona <b>organizzata</b>: per esempio, preparo ogni settimana un piano delle consegne. / Sono riuscito a <b>ridurre</b> i costi di trasporto del 10%."
+        },
+        {
+          "label": "spiegare la motivazione",
+          "ex": "Mi <b>interessa</b> questa posizione perché è il passo naturale dopo la mia esperienza. / Conosco i vostri prodotti e <b>apprezzo</b> la vostra attenzione alla qualità."
+        },
+        {
+          "label": "prendere tempo e chiedere di ripetere",
+          "ex": "È una bella domanda, mi lasci <b>pensare</b> un attimo. / Mi scusi, può <b>ripetere</b> la domanda? / Se ho <b>capito</b> bene, mi chiede…"
+        },
+        {
+          "label": "parlare di disponibilità e retribuzione",
+          "ex": "Sono <b>disponibile</b> da subito. / Il mio <b>preavviso</b> è di un mese. / Mi aspetto una <b>RAL</b> intorno ai 30.000 euro. / Per questa posizione che <b>fascia</b> avete previsto?"
+        },
+        {
+          "label": "chiudere il colloquio",
+          "ex": "La ringrazio per il <b>tempo</b> che mi ha dedicato. / Quali sono i <b>prossimi passi</b>? / Resto a <b>disposizione</b> per qualsiasi informazione."
+        }
+      ],
+      "warn": "<b>Il registro.</b> Al colloquio si dà del Lei, anche se il selezionatore è giovane; si passa al tu solo se lo propone il selezionatore. <b>Mai parlare male</b> del datore di lavoro attuale o precedente, anche se la domanda sembra invitare a farlo. <b>Domande vietate.</b> Il selezionatore non può fare domande sulle opinioni politiche, religiose o sindacali, né su fatti che non servono a valutare le capacità professionali (art. 8 dello Statuto dei lavoratori), come il matrimonio, i figli, la gravidanza, l'origine e, di solito, l'età. Discriminare per questi motivi è vietato (per il sesso e la famiglia, art. 27 del Codice delle pari opportunità). Se arrivano, si può rispondere con calma: «Preferirei parlare delle mie competenze per questo ruolo». <b>Lo stipendio.</b> Dal 7 giugno 2026 (d.lgs. 96/2026) il datore di lavoro deve indicare nell'annuncio la retribuzione iniziale o la fascia prevista e il contratto collettivo applicato, e non può chiedere, neanche tramite un'agenzia, quanto il candidato guadagna o guadagnava. Il candidato può invece dire quanto si aspetta. Le regole possono cambiare: in caso di dubbio vale il testo della legge.",
+      "errors": [
+        {
+          "wrong": "Sono molto eccitata per questa opportunità.",
+          "right": "Sono molto contenta (o entusiasta) di questa opportunità.",
+          "why": "<i>Eccitato</i> vuol dire soprattutto agitato, e può avere anche un senso sessuale: al colloquio è fuori luogo. L'inglese <i>excited</i> qui si traduce <i>entusiasta, contento</i>."
+        },
+        {
+          "wrong": "Le ho mandato il mio riassunto.",
+          "right": "Le ho mandato il mio curriculum.",
+          "why": "Il <i>résumé</i> inglese è il curriculum; il <i>riassunto</i> è la sintesi di un testo."
+        },
+        {
+          "wrong": "Ho un grado in Economia.",
+          "right": "Ho una laurea in Economia.",
+          "why": "Il titolo universitario (ingl. <i>degree</i>, sp. <i>grado</i>) in italiano è la <i>laurea</i>."
+        },
+        {
+          "wrong": "Ho lavorato due anni in una fattoria di automobili.",
+          "right": "Ho lavorato due anni in una fabbrica di automobili.",
+          "why": "L'inglese <i>factory</i> è la <i>fabbrica</i>; la <i>fattoria</i> è un'azienda agricola."
+        },
+        {
+          "wrong": "Eventualmente mi hanno offerto un contratto a tempo indeterminato.",
+          "right": "Alla fine mi hanno offerto un contratto a tempo indeterminato.",
+          "why": "L'inglese <i>eventually</i> vuol dire <i>alla fine</i>; <i>eventualmente</i> vuol dire «se serve, nel caso»."
+        },
+        {
+          "wrong": "Ho fatto la carriera di Diritto a Madrid.",
+          "right": "Ho studiato Giurisprudenza a Madrid. (o Mi sono laureato in Giurisprudenza…)",
+          "why": "Lo spagnolo <i>carrera</i> è il corso di laurea; in italiano la <i>carriera</i> è soprattutto il percorso nel lavoro."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "Domande di base (A2–B1)",
+          "instr": "Rispondi alle domande del selezionatore con frasi complete.",
+          "items": [
+            "Ha trovato facilmente il nostro ufficio?",
+            "Dove abita adesso?",
+            "Che cosa ha studiato?",
+            "Che lavoro fa adesso?",
+            "Da quanto tempo lavora in questo settore?",
+            "Quali lingue parla? A che livello?",
+            "Come ha saputo del nostro annuncio?",
+            "Quali programmi sa usare al computer?",
+            "Da quando può cominciare a lavorare?",
+            "Preferisce lavorare da solo/a o in gruppo?"
+          ],
+          "key": [
+            "Esempio: <b>Sì, grazie: ho preso la metropolitana e in dieci minuti ero qui.</b>",
+            "Esempio: <b>Abito a Milano da un anno.</b>",
+            "Esempio: <b>Ho studiato Economia all'Università di Siviglia.</b>",
+            "Esempio: <b>Lavoro come impiegata amministrativa in un'azienda di trasporti.</b>",
+            "Esempio: <b>Lavoro in questo settore da quattro anni.</b>",
+            "Esempio: <b>Parlo spagnolo, inglese a livello B2 e italiano a livello B1.</b>",
+            "Esempio: <b>Me ne ha parlato una collega, poi l'ho trovato sul vostro sito.</b>",
+            "Esempio: <b>Uso bene Excel e un programma di contabilità.</b>",
+            "Esempio: <b>Tra un mese: prima devo rispettare il preavviso.</b>",
+            "Esempio: <b>Mi trovo bene in gruppo, ma so anche lavorare da sola.</b>"
+          ]
+        },
+        {
+          "type": "Esperienza e competenze (B1–B2)",
+          "instr": "Rispondi alle domande del selezionatore con esempi concreti.",
+          "items": [
+            "Mi descriva il Suo lavoro attuale: di che cosa si occupa?",
+            "Qual è il risultato di cui è più orgoglioso/a?",
+            "Quali sono i Suoi punti di forza?",
+            "Che cosa ha imparato in questi anni di lavoro?",
+            "Come organizza il lavoro quando ha molte cose da fare?",
+            "Mi racconti un progetto che ha seguito dall'inizio alla fine.",
+            "Come si tiene aggiornato/a nel Suo settore?",
+            "È disponibile a viaggiare per lavoro?",
+            "Che tipo di contratto sta cercando?",
+            "Perché Le interessa questa posizione?"
+          ],
+          "key": [
+            "Esempio: <b>Mi occupo della contabilità clienti: preparo le fatture e controllo i pagamenti.</b>",
+            "Esempio: <b>L'anno scorso ho ridotto del 20% i ritardi nei pagamenti con un nuovo sistema di promemoria.</b>",
+            "Esempio: <b>Sono precisa e costante: in quattro anni ho sempre rispettato le scadenze di fatturazione.</b>",
+            "Esempio: <b>Ho imparato a gestire i clienti difficili e a lavorare sotto pressione.</b>",
+            "Esempio: <b>Ogni mattina faccio una lista delle priorità e comincio dalle cose urgenti.</b>",
+            "Esempio: <b>Ho seguito il passaggio al nuovo gestionale: ho preparato i dati, ho formato i colleghi e li ho assistiti nei primi mesi.</b>",
+            "Esempio: <b>Seguo corsi online e leggo le riviste del settore.</b>",
+            "Esempio: <b>Sì, anche all'estero, purché i viaggi siano organizzati con un po' di anticipo.</b>",
+            "Esempio: <b>Cerco un contratto a tempo pieno, possibilmente a tempo indeterminato.</b>",
+            "Esempio: <b>Perché unisce la mia esperienza in amministrazione con il lavoro in un ambiente internazionale.</b>"
+          ]
+        },
+        {
+          "type": "Domande a trabocchetto (B2–C1)",
+          "instr": "Rispondi alle domande del selezionatore. Attenzione: dietro ogni domanda ce n'è un'altra.",
+          "items": [
+            "Mi parli di Lei.",
+            "Qual è il Suo più grande difetto?",
+            "Perché vuole lasciare il Suo lavoro attuale?",
+            "Dove si vede tra cinque anni?",
+            "Perché dovremmo scegliere proprio Lei e non un altro candidato?",
+            "Che cosa sa della nostra azienda?",
+            "Ha altri colloqui in corso?",
+            "Come mai c'è un anno vuoto nel Suo curriculum?",
+            "Mi racconti un errore che ha fatto al lavoro.",
+            "Che cosa fa se non è d'accordo con una decisione del Suo responsabile?"
+          ],
+          "key": [
+            "Esempio: <b>Ho studiato Economia, da quattro anni lavoro nell'amministrazione di un'azienda di trasporti e adesso cerco un ruolo con più responsabilità.</b> Il selezionatore vuole capire se sa presentarsi in modo breve e ordinato, parlando di lavoro e non della vita privata.",
+            "Esempio: <b>A volte rispondo alle email troppo in fretta; adesso, prima di mandarne una importante, la rileggo con calma.</b> Vuole capire se si conosce ed è sincero: un difetto vero, ma non grave per il ruolo, con quello che fa per migliorare (non «sono troppo perfezionista»).",
+            "Esempio: <b>Nel mio lavoro attuale ho imparato molto, ma cerco un ruolo in cui crescere.</b> Vuole capire se parlerà male anche di questa azienda: si parla di quello che si cerca, mai male del capo o dei colleghi.",
+            "Esempio: <b>Mi vedo in questa azienda, con più responsabilità, magari alla guida di un piccolo gruppo.</b> Vuole capire se resterà e se ha obiettivi realistici; non «al Suo posto» né «in un'altra azienda».",
+            "Esempio: <b>Ho l'esperienza che chiedete nell'annuncio, parlo tre lingue e conosco già i programmi che usate.</b> Vuole sentire due o tre punti concreti legati al ruolo, non qualità generiche.",
+            "Esempio: <b>So che lavorate soprattutto con l'estero e che quest'anno avete aperto una sede a Madrid.</b> Vuole capire se si è preparato e se vuole proprio questa azienda o manda candidature a tutti.",
+            "Esempio: <b>Sì, qualcuno, ma questa posizione è quella che mi interessa di più.</b> Vuole capire quanto è interessato: si risponde con sincerità, senza fare nomi.",
+            "Esempio: <b>Quell'anno ho seguito un corso di specializzazione in contabilità e ho fatto qualche lavoro temporaneo.</b> Vuole capire se nasconde qualcosa: basta una spiegazione breve e positiva, senza dettagli privati.",
+            "Esempio: <b>Una volta ho mandato una fattura con l'importo sbagliato: me ne sono accorta, ho avvisato subito il cliente e da allora controllo tutto due volte.</b> Vuole capire se sa ammettere un errore e imparare.",
+            "Esempio: <b>Spiego con calma il mio punto di vista; se la decisione resta, la rispetto.</b> Vuole capire se sa dire la sua senza creare conflitti."
+          ]
+        },
+        {
+          "type": "Role play (tutti i livelli)",
+          "instr": "Lo studente è il candidato per un posto nel suo settore, il docente è il selezionatore. Prima di cominciare scegliete insieme l'annuncio: azienda, ruolo, requisiti, retribuzione. Il colloquio dura circa un quarto d'ora. Difficoltà da introdurre: a metà colloquio il selezionatore chiede «E adesso quanto guadagna?», che dal 7 giugno 2026 è una domanda vietata (lo studente può non rispondere e dire invece quanto si aspetta); alla fine resta in silenzio, aspettando che il candidato faccia le sue domande.",
+          "items": [
+            "Saluta, presentati e ringrazia per l'invito.",
+            "Presenta in due minuti studi ed esperienze.",
+            "Racconta un risultato concreto del tuo lavoro.",
+            "Spiega perché ti interessa questa posizione.",
+            "Rispondi a una domanda difficile senza criticare nessuno.",
+            "Rispondi alle domande sulle condizioni: contratto, disponibilità, retribuzione.",
+            "Fai due domande adatte al selezionatore.",
+            "Chiudi il colloquio in modo cortese."
+          ],
+          "key": [
+            "Esempio: <b>Buongiorno, sono Ana Ruiz. Grazie per avermi ricevuta.</b>",
+            "Esempio: <b>Dopo la laurea in Economia ho fatto uno stage in una banca; da quattro anni seguo la contabilità clienti di un'azienda di trasporti.</b>",
+            "Esempio: <b>Nella mia azienda ho organizzato l'archivio digitale e abbiamo dimezzato i tempi di ricerca dei documenti.</b>",
+            "Esempio: <b>Mi interessa perché lavorerei con clienti spagnoli e inglesi, e potrei esservi utile da subito.</b>",
+            "Esempio: <b>Il mio responsabile aveva un metodo diverso dal mio, e ho imparato a trovare un punto d'incontro.</b>",
+            "Esempio: <b>Preferirei non parlare del mio stipendio attuale; per questa posizione mi aspetto una RAL intorno ai 32.000 euro.</b>",
+            "Esempio: <b>La posizione è nuova o è una sostituzione? Con quante persone lavorerei ogni giorno?</b>",
+            "Esempio: <b>Grazie mille per il colloquio. Quando posso aspettarmi una risposta?</b>"
+          ]
+        }
+      ]
+    }
+  ]
+}
