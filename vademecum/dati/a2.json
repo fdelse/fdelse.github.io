@@ -1,5 +1,5 @@
 {
-  "versione": "1.8",
+  "versione": "1.9",
   "livello": "A2",
   "schede": [
     {
@@ -2744,7 +2744,7 @@
       "cat": "Verbi",
       "title": "Condizionale di cortesia",
       "def": "Il condizionale si studia per intero al B1, ma alcune sue forme servono subito: rendono una richiesta, un desiderio o un consiglio più gentili e meno diretti. «<i>Voglio</i> un caffè» è corretto ma brusco; «<i>vorrei</i> un caffè» è quello che si dice al bar.",
-      "form": "Bastano poche forme di tre verbi e qualche espressione fissa. Per il Lei si usa la stessa forma di <i>lui/lei</i>: «<i>potrebbe</i> ripetere?». Dopo <i>vorrei, potrei, dovrei</i> viene un nome o un verbo all'infinito, senza preposizioni: «vorrei un caffè», «vorrei prenotare».",
+      "form": "Bastano poche forme di tre verbi e qualche espressione fissa. Per il Lei si usa la stessa forma di <i>lui/lei</i>: «<i>potrebbe</i> ripetere?». Dopo <i>vorrei, potrei, dovrei</i> viene un nome o un verbo all'infinito, senza preposizioni: «vorrei un caffè», «vorrei prenotare» (vedi Modali: dovere, potere, volere).",
       "tables": [
         {
           "before": "<b>Le forme più utili.</b>",
@@ -2842,9 +2842,9 @@
           "why": "Dopo <i>vorrei</i> viene direttamente il nome."
         },
         {
-          "wrong": "Vorrei di prenotare.",
-          "right": "Vorrei prenotare.",
-          "why": "Anche con l'infinito niente <i>di</i>."
+          "wrong": "Avrei bisogno un'informazione.",
+          "right": "Avrei bisogno di un'informazione.",
+          "why": "<i>Avere bisogno</i> vuole sempre <i>di</i>."
         },
         {
           "wrong": "Mi piacerei andare al mare.",
@@ -2930,7 +2930,7 @@
       "cat": "Verbi",
       "title": "Sapere e potere",
       "def": "In alcune lingue (come l'inglese con <i>can</i>) un solo verbo vuol dire sia «essere capace» sia «avere la possibilità»; in italiano i verbi sono due. <b>Sapere</b> + infinito = saper fare una cosa perché la si è imparata. <b>Potere</b> + infinito = avere la possibilità o il permesso di farla. Accanto a <i>sapere</i> c'è <b>conoscere</b>, e accanto a <i>potere</i> c'è <b>riuscire</b>: anche questi vanno distinti.",
-      "form": "<b>Sapere</b> e <b>potere</b> sono irregolari e sono seguiti direttamente dall'infinito, senza preposizioni: «so nuotare», «posso venire». <b>Riuscire</b> invece vuole <b>a</b> (<i>ad</i> davanti a vocale): «riesco <i>a</i> finire», «non riesco <i>ad</i> aprire»; si coniuga come <i>uscire</i>.",
+      "form": "<b>Sapere</b> e <b>potere</b> sono irregolari e sono seguiti direttamente dall'infinito, senza preposizioni: «so nuotare», «posso venire» (vedi Modali: dovere, potere, volere). <b>Riuscire</b> invece vuole <b>a</b> (<i>ad</i> davanti a vocale): «riesco <i>a</i> finire», «non riesco <i>ad</i> aprire»; si coniuga come <i>uscire</i>.",
       "tables": [
         {
           "headers": [
@@ -3055,9 +3055,9 @@
           "why": "Con <i>che, se, dove…</i> si usa <i>sapere</i>."
         },
         {
-          "wrong": "So di guidare.",
-          "right": "So guidare.",
-          "why": "<i>Sapere</i> + infinito senza preposizione."
+          "wrong": "Ieri ho conosciuto la notizia.",
+          "right": "Ieri ho saputo la notizia.",
+          "why": "Al passato prossimo <i>sapere</i> vuol dire «venire a sapere»; <i>conoscere</i> si usa per le persone e i luoghi."
         },
         {
           "wrong": "Non riesco aprire la porta.",

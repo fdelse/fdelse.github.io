@@ -1,5 +1,5 @@
 {
-  "versione": "1.3",
+  "versione": "1.4",
   "livello": "Medicina",
   "schede": [
     {
@@ -166,7 +166,7 @@
       "uses": [
         {
           "label": "far indicare il punto del dolore e chiedere di precisare",
-          "ex": "Dove le fa male? / Mi fa male la <b>pancia</b>, qui a destra. / Il dolore arriva fino alla <b>schiena</b>? / Mi fa vedere con un dito?"
+          "ex": "Dove Le fa male? / Mi fa male la <b>pancia</b>, qui a destra. / Il dolore arriva fino alla <b>schiena</b>? / Mi fa vedere con un dito?"
         },
         {
           "label": "con il paziente la parola comune, nel referto il termine medico",
@@ -286,12 +286,12 @@
             "Spiega che adesso lo visiterai."
           ],
           "key": [
-            "Esempio: <b>Dove le fa male esattamente? Mi fa vedere con un dito?</b>",
+            "Esempio: <b>Dove Le fa male esattamente? Mi fa vedere con un dito?</b>",
             "Esempio: <b>Lì non è lo stomaco: è la parte bassa della pancia, a destra.</b>",
             "Esempio: <b>Il dolore va anche verso la schiena o verso la gamba?</b>",
             "Esempio: <b>Le fanno male anche altre parti, per esempio la schiena?</b>",
             "Esempio: <b>Scrivo «dolore addominale in fossa iliaca destra», cioè nella parte bassa della pancia, a destra.</b>",
-            "Esempio: <b>Adesso la visito: si sdrai sul lettino.</b>"
+            "Esempio: <b>Adesso La visito: si sdrai sul lettino.</b>"
           ]
         }
       ]
@@ -380,7 +380,7 @@
           "rows": [
             [
               "dove",
-              "Dove le fa male?",
+              "Dove Le fa male?",
               "qui; nella parte alta della pancia; dietro lo sterno"
             ],
             [
@@ -459,7 +459,7 @@
         },
         {
           "label": "da quanto tempo",
-          "ex": "Ho la <b>tosse</b> da una settimana. / Da quando le fa male? / Non dormo bene da un mese."
+          "ex": "Ho la <b>tosse</b> da una settimana. / Da quando Le fa male? / Non dormo bene da un mese."
         },
         {
           "label": "mi gira, mi brucia, mi prude",
@@ -677,7 +677,7 @@
         },
         {
           "label": "famiglia (anamnesi familiare)",
-          "ex": "I Suoi genitori sono vivi? / Di che cosa è morto suo padre? / In famiglia qualcuno ha avuto il <b>diabete</b>?"
+          "ex": "I Suoi genitori sono vivi? / Di che cosa è morto Suo padre? / In famiglia qualcuno ha avuto il <b>diabete</b>?"
         },
         {
           "label": "domande delicate: spiegare perché si fanno",
@@ -915,7 +915,7 @@
             [
               "misurare la febbre",
               "temperatura corporea (TC)",
-              "TC 37,5 °C (attenzione: TC è anche la TAC)"
+              "TC 37,5 °C (TC ha due significati: vedi Referti, sigle e abbreviazioni)"
             ],
             [
               "misurare l'ossigeno nel sangue",
@@ -940,7 +940,7 @@
         },
         {
           "label": "annunciare quello che si sta per fare",
-          "ex": "Adesso le misuro la <b>pressione</b>. / Le sento il <b>polso</b>. / Sentirà un po' di freddo: è il <b>fonendoscopio</b>."
+          "ex": "Adesso Le misuro la <b>pressione</b>. / Le sento il <b>polso</b>. / Sentirà un po' di freddo: è il <b>fonendoscopio</b>."
         },
         {
           "label": "chiudere la visita",
@@ -950,14 +950,14 @@
       "warn": "<b>Lei e tu non si mescolano</b> nella stessa visita: «si sdrai e rilassati» → «si sdrai e si rilassi». <b>Il lettino</b> è il letto della visita (sp. «camilla»). <b>Fonendoscopio</b> e <b>stetoscopio</b> sono la stessa cosa; in Italia si dice più spesso <i>fonendoscopio</i>.",
       "errors": [
         {
-          "wrong": "Siediti, signora.",
-          "right": "Si sieda, signora.",
-          "why": "Con un paziente adulto si dà del Lei: <i>si sieda</i>."
+          "wrong": "Sprema le mie dita.",
+          "right": "Mi stringa forte le dita.",
+          "why": "Calco dell'inglese «squeeze»: <i>spremere</i> si usa per un limone o un'arancia; le dita si <i>stringono</i> (mi stringa forte le dita)."
         },
         {
-          "wrong": "Si sdrai e rilassati.",
-          "right": "Si sdrai e si rilassi.",
-          "why": "Nella stessa frase non si passa dal Lei al tu."
+          "wrong": "È tenero qui?",
+          "right": "Le fa male se premo qui?",
+          "why": "L'inglese «tender» qui vuol dire «che fa male se si tocca» (nei referti: <i>dolente</i>); <i>tenero</i> vuol dire morbido o affettuoso."
         },
         {
           "wrong": "Si rotoli su la manica, per favore.",
@@ -965,14 +965,14 @@
           "why": "Calco dell'inglese «roll up your sleeve»: <i>rotolare</i> vuol dire girare su sé stesso come una palla; si dice <i>tirarsi su</i> o <i>arrotolarsi la manica</i>."
         },
         {
-          "wrong": "Adesso le prendo la tensione.",
-          "right": "Adesso le misuro la pressione.",
+          "wrong": "Adesso Le prendo la tensione.",
+          "right": "Adesso Le misuro la pressione.",
           "why": "Lo spagnolo «tensión (arterial)» a voce si dice <i>pressione</i>; <i>tensione arteriosa</i> esiste solo nel linguaggio tecnico."
         },
         {
-          "wrong": "Si relassi, signora.",
-          "right": "Si rilassi, signora.",
-          "why": "Dall'inglese «relax»: in italiano il verbo è <i>rilassarsi</i>."
+          "wrong": "Attacchi fuori la lingua.",
+          "right": "Tiri fuori la lingua.",
+          "why": "Calco dell'inglese «stick out»: <i>attaccare</i> vuol dire unire o incollare; la lingua si <i>tira fuori</i>."
         },
         {
           "wrong": "Respiri dentro… e fuori.",
@@ -986,7 +986,7 @@
           "instr": "Completa con: lettino, pressione, respiro, bocca, fianco, fonendoscopio.",
           "items": [
             "Si sdrai sul …, per favore.",
-            "Adesso le misuro la …",
+            "Adesso Le misuro la …",
             "Trattenga il … per qualche secondo.",
             "Apra la … e dica «a».",
             "Si giri sul … sinistro.",
@@ -1033,10 +1033,10 @@
             "sentire il polso"
           ],
           "key": [
-            "Esempio: <b>Adesso le misuro la pressione: sentirà stringere un po' il braccio.</b>",
+            "Esempio: <b>Adesso Le misuro la pressione: sentirà stringere un po' il braccio.</b>",
             "Esempio: <b>Ora ascolto il cuore e i polmoni: respiri con la bocca aperta.</b>",
-            "Esempio: <b>Le tocco la pancia; se le faccio male, me lo dica.</b>",
-            "Esempio: <b>Controllo i riflessi: le batto leggermente il ginocchio con questo martelletto.</b>",
+            "Esempio: <b>Le tocco la pancia; se Le faccio male, me lo dica.</b>",
+            "Esempio: <b>Controllo i riflessi: Le batto leggermente il ginocchio con questo martelletto.</b>",
             "Esempio: <b>Mi fa vedere la gola? Apra bene la bocca.</b>",
             "Esempio: <b>Le sento il polso: mi dà il braccio?</b>"
           ]
@@ -1053,9 +1053,9 @@
             "Chiudi la visita."
           ],
           "key": [
-            "Esempio: <b>Buongiorno signora, si accomodi. (lentamente, a voce più alta) Adesso la visito.</b>",
+            "Esempio: <b>Buongiorno signora, si accomodi. (lentamente, a voce più alta) Adesso La visito.</b>",
             "Esempio: <b>Le dispiace togliersi la maglia? Basta fino alla vita. Poi si sdrai qui sul lettino.</b>",
-            "Esempio: <b>Adesso le tocco la pancia: se le faccio male, me lo dica subito.</b>",
+            "Esempio: <b>Adesso le tocco la pancia: se Le faccio male, me lo dica subito.</b>",
             "Esempio: <b>Si metta seduta. Respiri profondamente con la bocca aperta… bene.</b>",
             "Esempio: <b>La pressione è 130 su 80: va bene.</b>",
             "Esempio: <b>Abbiamo finito: si rivesta pure, con calma.</b>"
@@ -1305,7 +1305,7 @@
             "Domani ho l'ecografia dell'addome: devo venire a …",
             "Il … sarà pronto tra una settimana.",
             "Per l'ecografia pelvica la … deve essere piena.",
-            "Durante la TAC le iniettiamo il … in vena.",
+            "Durante la TAC Le iniettiamo il … in vena.",
             "Con questa ricetta deve … l'esame al CUP."
           ],
           "key": [
@@ -1370,7 +1370,7 @@
           ],
           "key": [
             "Esempio: <b>Le prescrivo un'ecografia dell'addome: serve a vedere fegato, cistifellea, pancreas e reni.</b>",
-            "Esempio: <b>È un esame semplice: le mettono un po' di gel sulla pancia, non fa male e non ci sono radiazioni.</b>",
+            "Esempio: <b>È un esame semplice: Le mettono un po' di gel sulla pancia, non fa male e non ci sono radiazioni.</b>",
             "Esempio: <b>La mattina dell'esame venga a digiuno: niente colazione e niente caffè.</b>",
             "Esempio: <b>Con questa impegnativa prenota al CUP; ho messo la priorità B, quindi va fatta entro dieci giorni.</b>",
             "Esempio: <b>Per cominciare l'ecografia basta e non usa radiazioni. Se servirà, dopo valutiamo una TC.</b>",
@@ -1489,7 +1489,7 @@
           "ex": "Non è niente di grave. / È una cosa molto comune. / Di solito passa da sola."
         }
       ],
-      "warn": "<b>Ipotesi e certezze.</b> Se la diagnosi non è sicura, bisogna dirlo, ma senza spaventare: «per ora penso che sia…, facciamo un esame per esserne sicuri». <b>Positivo</b> nel linguaggio medico vuol dire che il test ha trovato quello che cercava: «tampone positivo» è di solito una cattiva notizia. <b>Prognosi riservata</b> vuol dire che i medici non possono ancora dire come andrà.",
+      "warn": "<b>Ipotesi e certezze.</b> Se la diagnosi non è sicura, bisogna dirlo, ma senza spaventare: «per ora penso che sia…, facciamo un esame per esserne sicuri». <b>Positivo e negativo</b>: vedi Referti, sigle e abbreviazioni. <b>Prognosi riservata</b> vuol dire che i medici non possono ancora dire come andrà.",
       "errors": [
         {
           "wrong": "Il paziente si è ricoverato bene dalla polmonite.",
@@ -1572,7 +1572,7 @@
           "key": [
             "Esempio: <b>Ha un'infezione della gola causata da batteri. Le prescrivo un antibiotico per dieci giorni.</b>",
             "Esempio: <b>Si è rotto il polso: dovrà tenere il gesso per un mese.</b>",
-            "Esempio: <b>Ha mal di schiena: le prescrivo un antinfiammatorio, poi farà fisioterapia.</b>",
+            "Esempio: <b>Ha mal di schiena: Le prescrivo un antinfiammatorio, poi farà fisioterapia.</b>",
             "Esempio: <b>Ha la pressione alta: la ricontrolliamo tra un mese.</b>",
             "Esempio: <b>Lo stomaco è infiammato: mangi leggero per qualche settimana.</b>",
             "Esempio: <b>Non è niente di pericoloso: per ora non serve nessuna cura.</b>"
@@ -1595,7 +1595,7 @@
             "Esempio: <b>Le prescrivo una compressa la mattina; poi meno sale e un po' di movimento ogni giorno.</b>",
             "Esempio: <b>Capisco. Se la pressione resta alta, il rischio per il cuore è serio; vediamo come va, forse con le abitudini potremo ridurre la dose.</b>",
             "Esempio: <b>Ci rivediamo tra un mese per un controllo.</b>",
-            "Esempio: <b>Mi può ripetere con parole sue come prende il farmaco?</b>"
+            "Esempio: <b>Mi può ripetere con parole Sue come prende il farmaco?</b>"
           ]
         }
       ]
@@ -1787,9 +1787,9 @@
           "why": "Lo spagnolo «pastilla» in italiano è <i>pastiglia</i>."
         },
         {
-          "wrong": "Due volte per giorno.",
-          "right": "Due volte al giorno.",
-          "why": "In italiano si dice <i>al giorno</i>."
+          "wrong": "Questo farmaco è espirato.",
+          "right": "Questo farmaco è scaduto.",
+          "why": "L'inglese «expired» qui è <i>scaduto</i>; <i>espirare</i> vuol dire buttare fuori l'aria."
         },
         {
           "wrong": "Prenda una tavoletta dopo cena.",
@@ -1816,7 +1816,7 @@
             "Metta venti … in un po' d'acqua.",
             "Per la tosse del bambino: un cucchiaio di … la sera.",
             "Metta la … sulla pelle due volte al giorno.",
-            "Per gli occhi le prescrivo un …",
+            "Per gli occhi Le prescrivo un …",
             "Il bambino ha la febbre e vomita: meglio una … che lo sciroppo."
           ],
           "key": [
@@ -1865,7 +1865,7 @@
             "Esempio: <b>Dipende dal farmaco; in generale non prenda due compresse insieme. Legga il foglietto o chieda al farmacista.</b>",
             "Esempio: <b>Con questo farmaco è meglio di no: l'alcol aumenta la sonnolenza.</b>",
             "Esempio: <b>È il foglietto con le istruzioni che trova nella scatola.</b>",
-            "Esempio: <b>Oggi la ricetta è elettronica: le do il promemoria con il numero; in farmacia porti anche la tessera sanitaria.</b>"
+            "Esempio: <b>Oggi la ricetta è elettronica: Le do il promemoria con il numero; in farmacia porti anche la tessera sanitaria.</b>"
           ]
         },
         {
@@ -1884,7 +1884,7 @@
             "Esempio: <b>Una compressa ogni dodici ore, per esempio alle 8 e alle 20, dopo mangiato, per sei giorni.</b>",
             "Esempio: <b>Prende altri farmaci? È allergico a qualche antibiotico?</b>",
             "Esempio: <b>Con l'antibiotico non si fa: lo prenda fino al sesto giorno, anche se sta meglio.</b>",
-            "Esempio: <b>Può dare un po' di diarrea. Se compaiono macchie sulla pelle, lo sospenda e mi chiami; se fa fatica a respirare o le si gonfiano viso o labbra, chiami subito il 112.</b>",
+            "Esempio: <b>Può dare un po' di diarrea. Se compaiono macchie sulla pelle, lo sospenda e mi chiami; se fa fatica a respirare o Le si gonfiano viso o labbra, chiami subito il 112.</b>",
             "Esempio: <b>La ricetta è elettronica: in farmacia dia questo promemoria e la tessera sanitaria.</b>"
           ]
         }
@@ -2073,15 +2073,15 @@
         },
         {
           "label": "spiegare l'anestesia",
-          "ex": "Faremo un'<b>anestesia generale</b>: lei dormirà per tutto il tempo. / Con la <b>spinale</b> resta sveglio, ma non sente niente dalla vita in giù."
+          "ex": "Faremo un'<b>anestesia generale</b>: Lei dormirà per tutto il tempo. / Con la <b>spinale</b> resta sveglio, ma non sente niente dalla vita in giù."
         },
         {
           "label": "preparazione",
-          "ex": "Resti <b>a digiuno</b> come le dirà l'anestesista: di solito niente cibo da sei ore prima. / Ne parli con l'anestesista se prende anticoagulanti."
+          "ex": "Resti <b>a digiuno</b> come Le dirà l'anestesista: di solito niente cibo da sei ore prima. / Ne parli con l'anestesista se prende anticoagulanti."
         },
         {
           "label": "dopo l'intervento",
-          "ex": "L'intervento è andato bene. / Il <b>drenaggio</b> lo togliamo domani. / I <b>punti</b> si tolgono tra dieci giorni dal suo medico."
+          "ex": "L'intervento è andato bene. / Il <b>drenaggio</b> lo togliamo domani. / I <b>punti</b> si tolgono tra dieci giorni dal Suo medico."
         },
         {
           "label": "tempi di ripresa",
@@ -2089,19 +2089,19 @@
         },
         {
           "label": "segnali di allarme",
-          "ex": "Se la ferita diventa rossa, calda o esce del liquido, torni subito. / Se le viene la febbre, ci chiami."
+          "ex": "Se la ferita diventa rossa, calda o esce del liquido, torni subito. / Se Le viene la febbre, ci chiami."
         }
       ],
       "warn": "<b>Operare</b>: il paziente <i>viene operato</i> o dice <i>mi hanno operato</i>; della malattia si dice <i>operato di</i> (di appendicite, di ernia), della parte del corpo <i>operato a</i> (al ginocchio, al cuore). <b>Medicazione</b> è anche il cerotto o la garza sulla ferita: «cambiare la medicazione». <b>Day surgery</b> e <b>day hospital</b> sono cose diverse: nel primo si fa un intervento, nel secondo una terapia o degli esami.",
       "errors": [
         {
-          "wrong": "Mi hanno operato del ginocchio.",
-          "right": "Mi hanno operato al ginocchio.",
-          "why": "Con la parte del corpo si usa <i>a</i>; <i>di</i> si usa con la malattia (operato di ernia)."
+          "wrong": "Dopo l'intervento Le mettiamo una goccia nel braccio.",
+          "right": "Dopo l'intervento Le mettiamo una flebo.",
+          "why": "L'inglese «drip» è la <i>flebo</i>; la <i>goccia</i> è una piccola quantità di liquido."
         },
         {
-          "wrong": "Domani le quitiamo i punti.",
-          "right": "Domani le togliamo i punti.",
+          "wrong": "Domani Le quitiamo i punti.",
+          "right": "Domani Le togliamo i punti.",
           "why": "Lo spagnolo «quitar» è <i>togliere</i>."
         },
         {
@@ -2130,7 +2130,7 @@
           "type": "Completamento (A2–B1)",
           "instr": "Completa con: sala operatoria, punti, anestesista, digiuno, cicatrice, drenaggio.",
           "items": [
-            "Prima dell'intervento lei parlerà con l'…",
+            "Prima dell'intervento Lei parlerà con l'…",
             "Dalla mezzanotte deve restare a …",
             "Il paziente è già in …: l'intervento comincia tra poco.",
             "Il … fa uscire i liquidi dalla ferita.",
@@ -2178,11 +2178,11 @@
             "Perché l'intervento in laparoscopia ha una ripresa più veloce."
           ],
           "key": [
-            "Esempio: <b>con la generale lei dorme; con la spinale resta sveglio, ma non sente niente dalla vita in giù.</b>",
+            "Esempio: <b>con la generale Lei dorme; con la spinale resta sveglio, ma non sente niente dalla vita in giù.</b>",
             "Esempio: <b>con lo stomaco vuoto l'anestesia è più sicura: se lo stomaco è pieno, c'è il rischio che il cibo vada nei polmoni.</b>",
             "Esempio: <b>tenga la ferita pulita e asciutta, non la bagni fino al controllo; se diventa rossa o esce del liquido, torni subito.</b>",
             "Esempio: <b>per un lavoro pesante deve aspettare circa un mese; prima facciamo un controllo.</b>",
-            "Esempio: <b>la capisco; l'anestesista la controlla per tutto il tempo e oggi l'anestesia è molto sicura.</b>",
+            "Esempio: <b>La capisco; l'anestesista La controlla per tutto il tempo e oggi l'anestesia è molto sicura.</b>",
             "Esempio: <b>i tagli sono piccoli, quindi c'è meno dolore e la ferita guarisce prima.</b>"
           ]
         },
@@ -2200,7 +2200,7 @@
           "key": [
             "Esempio: <b>chiudiamo il punto debole della parete della pancia e mettiamo una piccola rete per rinforzarlo.</b>",
             "Esempio: <b>di solito facciamo una spinale o un'anestesia locale con un po' di sedazione: ne parlerà con l'anestesista.</b>",
-            "Esempio: <b>resti a digiuno come le dirà l'anestesista, di solito da sei ore prima; la mattina venga alle sette.</b>",
+            "Esempio: <b>resti a digiuno come Le dirà l'anestesista, di solito da sei ore prima; la mattina venga alle sette.</b>",
             "Esempio: <b>la sera torna a casa, ma non può guidare: venga con qualcuno.</b>",
             "Esempio: <b>per un lavoro con i pesi una settimana è poco: dobbiamo aspettare almeno tre o quattro settimane. Le scrivo il certificato.</b>",
             "Esempio: <b>se ha febbre, se la ferita si gonfia o fa molto male, ci chiami. Il controllo è tra dieci giorni.</b>"
@@ -2319,7 +2319,7 @@
             ],
             [
               "il medico di guardia",
-              "il medico presente di notte e nei giorni festivi"
+              "vedi Parlare con i colleghi: presentare un caso, passare le consegne"
             ],
             [
               "lo specializzando",
@@ -2357,7 +2357,7 @@
             ],
             [
               "la day surgery",
-              "un piccolo intervento con ritorno a casa in giornata"
+              "vedi Chirurgia: l'intervento, l'anestesia, il decorso"
             ],
             [
               "la degenza",
@@ -2432,7 +2432,7 @@
             "Di notte, per un problema non urgente, chiamo la …",
             "Il … serve a decidere chi viene visitato per primo.",
             "Il … dirige il reparto.",
-            "Alla … le daremo una lettera per il suo medico.",
+            "Alla … Le daremo una lettera per il Suo medico.",
             "Per un incidente grave si va al …",
             "Il … è durato cinque giorni."
           ],
@@ -2480,9 +2480,9 @@
             "Esempio: <b>l'ufficio dove si prenotano visite ed esami</b>.",
             "Esempio: <b>il medico che si chiama di notte e nei festivi, quando il medico di base non c'è</b>.",
             "Esempio: <b>si viene in ospedale per un giorno per una terapia e la sera si torna a casa</b>.",
-            "Esempio: <b>il foglio con la diagnosi e le cure da fare a casa, da portare al suo medico</b>.",
-            "Esempio: <b>l'archivio online dove trova i suoi referti e le ricette</b>.",
-            "Esempio: <b>la parte del prezzo che paga lei per un esame o un farmaco</b>."
+            "Esempio: <b>il foglio con la diagnosi e le cure da fare a casa, da portare al Suo medico</b>.",
+            "Esempio: <b>l'archivio online dove trova i Suoi referti e le ricette</b>.",
+            "Esempio: <b>la parte del prezzo che paga Lei per un esame o un farmaco</b>."
           ]
         },
         {
@@ -2709,17 +2709,17 @@
           "ex": "l'<b>ECG</b> (e-ci-gi) / la <b>TAC</b> (tac) / la <b>PCR</b> (pi-ci-erre) / la <b>BPCO</b> (bi-pi-ci-o)"
         }
       ],
-      "warn": "<b>Sigle con due significati.</b> <i>TC</i> è la temperatura corporea, ma anche la TAC (tomografia computerizzata); <i>PCR</i> è la proteina C reattiva negli esami del sangue, ma anche un tipo di tampone («tampone PCR»). Si capisce dal contesto. <b>Negativo</b> nel referto è di solito una buona notizia: vuol dire che non è stato trovato quello che si cercava. <b>Creatinina</b> (esame del sangue) non è <i>creatina</i> (integratore per lo sport).",
+      "warn": "<b>Sigle con due significati.</b> <i>TC</i> è la temperatura corporea, ma anche la TAC (tomografia computerizzata); <i>PCR</i> è la proteina C reattiva negli esami del sangue, ma anche un tipo di tampone («tampone PCR»). Si capisce dal contesto. <b>Positivo e negativo.</b> <i>Positivo</i> vuol dire che il test ha trovato quello che cercava: «tampone positivo» è di solito una cattiva notizia. <i>Negativo</i> vuol dire che non l'ha trovato: nel referto è di solito una buona notizia. <b>Creatinina</b> (esame del sangue) non è <i>creatina</i> (integratore per lo sport).",
       "errors": [
         {
-          "wrong": "(test per un'infezione) Il risultato è negativo, purtroppo.",
-          "right": "Il risultato è negativo: non c'è infezione.",
-          "why": "<i>Negativo</i> vuol dire che l'infezione non è stata trovata: è una buona notizia."
+          "wrong": "Il test è venuto indietro positivo.",
+          "right": "Il test è risultato positivo.",
+          "why": "Calco dell'inglese «came back positive»: si dice <i>è risultato positivo</i> (nel parlato anche <i>è venuto / è uscito positivo</i>), senza <i>indietro</i>."
         },
         {
-          "wrong": "Le transaminase sono alte.",
-          "right": "Le transaminasi sono alte.",
-          "why": "In italiano si dice <i>le transaminasi</i>."
+          "wrong": "Le facciamo una cultura delle urine.",
+          "right": "Le facciamo un'urinocoltura (una coltura delle urine).",
+          "why": "L'inglese «culture» (l'esame che fa crescere i batteri) è la <i>coltura</i>; la <i>cultura</i> è il sapere, l'arte."
         },
         {
           "wrong": "La creatina è alta: i reni non funzionano bene.",
@@ -2810,12 +2810,12 @@
             "Controlla che il paziente abbia capito."
           ],
           "key": [
-            "Esempio: <b>Mi dice che cosa ha letto? Che cosa la preoccupa?</b>",
+            "Esempio: <b>Mi dice che cosa ha letto? Che cosa La preoccupa?</b>",
             "Esempio: <b>Quasi tutti i valori sono nella norma: fegato, reni ed emocromo vanno bene.</b>",
-            "Esempio: <b>La glicemia è lo zucchero nel sangue: è un po' alta, ma non vuol dire per forza che lei ha il diabete.</b>",
+            "Esempio: <b>La glicemia è lo zucchero nel sangue: è un po' alta, ma non vuol dire per forza che Lei ha il diabete.</b>",
             "Esempio: <b>Capisco la paura, ma questi esami non fanno pensare a una malattia grave.</b>",
             "Esempio: <b>Ripetiamo la glicemia a digiuno e facciamo l'emoglobina glicata; intanto meno dolci e più movimento.</b>",
-            "Esempio: <b>Mi ripete con parole sue che cosa faremo adesso?</b>"
+            "Esempio: <b>Mi ripete con parole Sue che cosa faremo adesso?</b>"
           ]
         }
       ]
@@ -2985,11 +2985,11 @@
       "uses": [
         {
           "label": "capire che cosa serve",
-          "ex": "Che tipo di <b>certificato</b> le serve? Per il lavoro o per lo sport? / A chi lo deve consegnare?"
+          "ex": "Che tipo di <b>certificato</b> Le serve? Per il lavoro o per lo sport? / A chi lo deve consegnare?"
         },
         {
           "label": "certificato di malattia",
-          "ex": "Le faccio tre giorni di <b>prognosi</b>. / Il certificato lo mando io all'INPS: le do il <b>numero di protocollo</b>. / Se non sta meglio, venerdì facciamo la <b>continuazione</b>."
+          "ex": "Le faccio tre giorni di <b>prognosi</b>. / Il certificato lo mando io all'INPS: Le do il <b>numero di protocollo</b>. / Se non sta meglio, venerdì facciamo la <b>continuazione</b>."
         },
         {
           "label": "spiegare la reperibilità",
@@ -3041,7 +3041,7 @@
             "Questo è il numero di … del certificato.",
             "Se martedì sta ancora male, facciamo la …",
             "Il medico dell'INPS può venire a casa per la …",
-            "Per giocare a pallavolo nella squadra della scuola le serve il certificato di …",
+            "Per giocare a pallavolo nella squadra della scuola Le serve il certificato di …",
             "Il certificato per lo sport non agonistico spesso è …"
           ],
           "key": [
@@ -3085,10 +3085,10 @@
             "Perché il certificato agonistico non puoi farlo tu."
           ],
           "key": [
-            "Esempio: <b>lo mando io all'INPS dal computer; lei riceve il numero di protocollo e, se il datore di lavoro lo chiede, glielo comunica.</b>",
+            "Esempio: <b>lo mando io all'INPS dal computer; Lei riceve il numero di protocollo e, se il datore di lavoro lo chiede, glielo comunica.</b>",
             "Esempio: <b>solo i giorni in cui deve stare a casa, non la malattia che ha.</b>",
             "Esempio: <b>sono le ore in cui deve essere a casa, perché può arrivare il medico dell'INPS per un controllo.</b>",
-            "Esempio: <b>posso certificare solo quello che vedo quando la visito: di regola il certificato comincia dal giorno della visita.</b>",
+            "Esempio: <b>posso certificare solo quello che vedo quando La visito: di regola il certificato comincia dal giorno della visita.</b>",
             "Esempio: <b>serve a controllare che il cuore stia bene prima di fare sforzi.</b>",
             "Esempio: <b>per le gare la visita è più completa e la può fare solo il medico dello sport.</b>"
           ]
@@ -3106,9 +3106,9 @@
           ],
           "key": [
             "Esempio: <b>da quando ha la febbre? Quanto è alta? Ha tosse, mal di gola?</b>",
-            "Esempio: <b>le faccio tre giorni di prognosi, fino a venerdì compreso.</b>",
+            "Esempio: <b>Le faccio tre giorni di prognosi, fino a venerdì compreso.</b>",
             "Esempio: <b>mi dispiace, di regola il certificato comincia dal giorno della visita, e io l'ho visitata oggi.</b>",
-            "Esempio: <b>il certificato lo mando io all'INPS; le do il numero di protocollo, che lei comunica all'azienda se glielo chiedono.</b>",
+            "Esempio: <b>il certificato lo mando io all'INPS; Le do il numero di protocollo, che Lei comunica all'azienda se glielo chiedono.</b>",
             "Esempio: <b>dalle 10 alle 12 e dalle 17 alle 19 deve essere a casa, anche nel fine settimana.</b>",
             "Esempio: <b>se venerdì ha ancora la febbre, torni da me e facciamo la continuazione.</b>"
           ]
@@ -3265,11 +3265,11 @@
         },
         {
           "label": "i vaccini",
-          "ex": "Le consiglio il <b>vaccino antinfluenzale</b>: per lei è gratuito. / Quando ha fatto l'ultimo <b>richiamo</b> del tetano?"
+          "ex": "Le consiglio il <b>vaccino antinfluenzale</b>: per Lei è gratuito. / Quando ha fatto l'ultimo <b>richiamo</b> del tetano?"
         },
         {
           "label": "il fumo",
-          "ex": "Ha mai pensato di <b>smettere di fumare</b>? / Se vuole, la aiuto: ci sono farmaci e centri antifumo."
+          "ex": "Ha mai pensato di <b>smettere di fumare</b>? / Se vuole, La aiuto: ci sono farmaci e centri antifumo."
         },
         {
           "label": "l'alcol",
@@ -3277,7 +3277,7 @@
         },
         {
           "label": "movimento e peso",
-          "ex": "Basta camminare mezz'ora al giorno a passo svelto. / Non le chiedo una <b>dieta</b> rigida: cominciamo con meno dolci."
+          "ex": "Basta camminare mezz'ora al giorno a passo svelto. / Non Le chiedo una <b>dieta</b> rigida: cominciamo con meno dolci."
         },
         {
           "label": "senza giudicare",
@@ -3318,7 +3318,7 @@
           "instr": "Completa con: mammografia, vaccino, richiamo, smettere, sovrappeso, sangue occulto.",
           "items": [
             "Le donne dai 50 ai 69 anni fanno la … ogni due anni.",
-            "Ogni anno, in autunno, le consiglio il … contro l'influenza.",
+            "Ogni anno, in autunno, Le consiglio il … contro l'influenza.",
             "Il … del tetano si fa ogni dieci anni.",
             "Il fumo fa male: deve … di fumare.",
             "È alto 1,70 e pesa 80 chili: è in …",
@@ -3389,8 +3389,8 @@
             "Esempio: <b>Dai 50 anni la ASL offre un test gratuito: si raccoglie a casa un piccolo campione di feci e si cerca il sangue che non si vede.</b>",
             "Esempio: <b>Quante sigarette fuma al giorno? E quante birre beve, più o meno, in una settimana?</b>",
             "Esempio: <b>Una lattina di birra è circa un'unità alcolica, quindi tre birre sono almeno tre unità: oltre due al giorno il rischio per fegato, cuore e pressione aumenta.</b>",
-            "Esempio: <b>Ha ragione, non voglio farle la predica: le do solo le informazioni, poi decide lei.</b>",
-            "Esempio: <b>Se le va, cominciamo dal test del colon: chiami il centro screening della ASL per farsi rimandare l'invito, e il kit lo ritira in farmacia. Intanto proviamo a scendere a due birre. Ci rivediamo tra tre mesi.</b>"
+            "Esempio: <b>Ha ragione, non voglio farle la predica: Le do solo le informazioni, poi decide Lei.</b>",
+            "Esempio: <b>Se Le va, cominciamo dal test del colon: chiami il centro screening della ASL per farsi rimandare l'invito, e il kit lo ritira in farmacia. Intanto proviamo a scendere a due birre. Ci rivediamo tra tre mesi.</b>"
           ]
         }
       ]
@@ -3458,7 +3458,7 @@
             ],
             [
               "capire che cosa sa il paziente",
-              "Che cosa le hanno detto finora?"
+              "Che cosa Le hanno detto finora?"
             ],
             [
               "avvisare",
@@ -3474,7 +3474,7 @@
             ],
             [
               "spiegare i passi successivi",
-              "Adesso le spiego che cosa possiamo fare."
+              "Adesso Le spiego che cosa possiamo fare."
             ]
           ]
         }
@@ -3486,11 +3486,11 @@
         },
         {
           "label": "controllare che il paziente abbia capito",
-          "ex": "Mi può ripetere con parole sue che cosa faremo? / Ha domande? / C'è qualcosa che non è chiaro?"
+          "ex": "Mi può ripetere con parole Sue che cosa faremo? / Ha domande? / C'è qualcosa che non è chiaro?"
         },
         {
           "label": "chiedere il consenso",
-          "ex": "Se è d'accordo, le chiedo di firmare il <b>modulo</b>. / Può cambiare idea in qualsiasi momento. / Vuole pensarci?"
+          "ex": "Se è d'accordo, Le chiedo di firmare il <b>modulo</b>. / Può cambiare idea in qualsiasi momento. / Vuole pensarci?"
         },
         {
           "label": "cattive notizie: avvisare e attenuare",
@@ -3502,7 +3502,7 @@
         },
         {
           "label": "parlare con i familiari, con il permesso del paziente",
-          "ex": "Suo padre mi ha autorizzato a parlare con lei. / Le condizioni sono stabili."
+          "ex": "Suo padre mi ha autorizzato a parlare con Lei. / Le condizioni sono stabili."
         }
       ],
       "warn": "<b>Le frasi che chiudono il discorso</b> («non c'è più niente da fare») si possono sostituire con frasi che indicano un obiettivo («adesso l'obiettivo è che stia il meglio possibile»). <b>Il gergo medico</b> («prognosi riservata», «metastasi», «cure palliative») va spiegato con parole semplici. <b>«Ha capito?»</b> mette il paziente in difficoltà: meglio chiedere di ripetere con parole sue.",
@@ -3513,9 +3513,9 @@
           "why": "Calco dell'inglese «break the news»: si dice <i>dare la notizia</i>."
         },
         {
-          "wrong": "Il paziente ha rifiutato a firmare.",
-          "right": "Il paziente si è rifiutato di firmare.",
-          "why": "Si dice <i>rifiutarsi di firmare</i> (o <i>rifiutare di firmare</i>)."
+          "wrong": "Suo padre è confortevole.",
+          "right": "Suo padre sta comodo e non soffre.",
+          "why": "Calco dell'inglese «he's comfortable»: di una persona si dice che <i>sta comoda</i> o che <i>non soffre</i>; <i>confortevole</i> si dice di una cosa comoda (una poltrona confortevole)."
         },
         {
           "wrong": "Mi dispiace molto, lo sento.",
@@ -3569,9 +3569,9 @@
             "Esempio: <b>Dovremmo fare un intervento.</b>",
             "Esempio: <b>Vorrei spiegarle l'esame.</b>",
             "Esempio: <b>Se è d'accordo, può firmare qui?</b>",
-            "Esempio: <b>Mi può ripetere con parole sue?</b>",
+            "Esempio: <b>Mi può ripetere con parole Sue?</b>",
             "Esempio: <b>Purtroppo non sono buone notizie.</b>",
-            "Esempio: <b>Adesso l'obiettivo è che lei stia il meglio possibile.</b>"
+            "Esempio: <b>Adesso l'obiettivo è che Lei stia il meglio possibile.</b>"
           ]
         },
         {
@@ -3586,31 +3586,31 @@
             "(il paziente non dice niente e piange)"
           ],
           "key": [
-            "Esempio: <b>Capisco la paura. È una malattia seria, ma ci sono delle cure; adesso le spiego che cosa possiamo fare.</b>",
-            "Esempio: <b>È un suo diritto: le preparo tutti gli esami da portare all'altro medico.</b>",
-            "Esempio: <b>Decide lei a chi dirlo e quando; se vuole, possiamo parlarne insieme a sua moglie più avanti.</b>",
-            "Esempio: <b>Non è colpa sua: adesso pensiamo a quello che possiamo fare.</b>",
-            "Esempio: <b>Capisco che vuole proteggerlo, ma suo padre ha il diritto di sapere, se lo desidera: gli chiederò che cosa vuole sapere.</b>",
-            "Esempio: <b>(pausa) Si prenda tutto il tempo che le serve. Sono qui.</b>"
+            "Esempio: <b>Capisco la paura. È una malattia seria, ma ci sono delle cure; adesso Le spiego che cosa possiamo fare.</b>",
+            "Esempio: <b>È un Suo diritto: Le preparo tutti gli esami da portare all'altro medico.</b>",
+            "Esempio: <b>Decide Lei a chi dirlo e quando; se vuole, possiamo parlarne insieme a Sua moglie più avanti.</b>",
+            "Esempio: <b>Non è colpa Sua: adesso pensiamo a quello che possiamo fare.</b>",
+            "Esempio: <b>Capisco che vuole proteggerlo, ma Suo padre ha il diritto di sapere, se lo desidera: gli chiederò che cosa vuole sapere.</b>",
+            "Esempio: <b>(pausa) Si prenda tutto il tempo che Le serve. Sono qui.</b>"
           ]
         },
         {
           "type": "Role play (tutti i livelli)",
-          "instr": "Lo studente è il chirurgo, il docente è la paziente: una donna di 60 anni che deve togliere la cistifellea in laparoscopia. Il medico deve ottenere il consenso informato. Difficoltà da introdurre: la paziente vuole firmare subito senza ascoltare e poi chiede «lei che cosa farebbe al mio posto?».",
+          "instr": "Lo studente è il chirurgo, il docente è la paziente: una donna di 60 anni che deve togliere la cistifellea in laparoscopia. Il medico deve ottenere il consenso informato. Difficoltà da introdurre: la paziente vuole firmare subito senza ascoltare e poi chiede «Lei che cosa farebbe al mio posto?».",
           "items": [
             "Spiega in che cosa consiste l'intervento.",
             "Spiega i benefici e i rischi principali.",
             "Spiega le alternative.",
             "Gestisci la fretta della paziente.",
-            "Rispondi alla domanda «lei che cosa farebbe?».",
+            "Rispondi alla domanda «Lei che cosa farebbe?».",
             "Spiega che può rifiutare o cambiare idea e chiedi il consenso."
           ],
           "key": [
             "Esempio: <b>Togliamo la cistifellea con tre o quattro piccoli tagli sulla pancia, in anestesia generale.</b>",
-            "Esempio: <b>Così i calcoli non le daranno più dolore. I rischi sono rari: sanguinamento, infezione, lesione delle vie biliari; a volte bisogna passare all'intervento con il taglio tradizionale.</b>",
+            "Esempio: <b>Così i calcoli non Le daranno più dolore. I rischi sono rari: sanguinamento, infezione, lesione delle vie biliari; a volte bisogna passare all'intervento con il taglio tradizionale.</b>",
             "Esempio: <b>Si può anche aspettare e curare il dolore con i farmaci, ma le coliche possono tornare.</b>",
             "Esempio: <b>Prima di firmare vorrei spiegarle tutto: ci vorranno solo cinque minuti.</b>",
-            "Esempio: <b>Con i dati che abbiamo, l'intervento è la scelta più indicata; la decisione però è sua.</b>",
+            "Esempio: <b>Con i dati che abbiamo, l'intervento è la scelta più indicata; la decisione però è Sua.</b>",
             "Esempio: <b>Può dire di no o cambiare idea in qualsiasi momento. Se è d'accordo, firmi qui.</b>"
           ]
         }
@@ -3694,7 +3694,7 @@
             ],
             [
               "la cartella clinica",
-              "il documento con tutta la storia del ricovero"
+              "vedi In ospedale: reparti, ricovero, dimissione"
             ],
             [
               "il diario clinico",
@@ -3829,9 +3829,9 @@
           "why": "L'inglese «on call» è <i>di guardia</i> se il medico è in ospedale, <i>reperibile</i> se è a casa e pronto a venire; «in chiamata» non si dice."
         },
         {
-          "wrong": "(davanti alla famiglia) Andiamo a vedere la 12.",
-          "right": "Andiamo a vedere la signora Rossi.",
-          "why": "Il numero del letto si usa solo tra colleghi."
+          "wrong": "L'abbiamo iniziato su antibiotici.",
+          "right": "Abbiamo iniziato una terapia antibiotica. (In reparto: l'abbiamo messo sotto antibiotico.)",
+          "why": "Calco dell'inglese «we started him on antibiotics»: si inizia la terapia, non il paziente."
         }
       ],
       "exercises": [
@@ -3890,7 +3890,7 @@
             "Esempio: <b>il letto 3 ha la febbre a 38,5 da stasera; ho fatto le emocolture, se sale ancora va rivalutato.</b>",
             "Esempio: <b>buongiorno, sono la dottoressa Bruni della medicina; avrei bisogno di una consulenza urgente per un paziente con dolore al petto e alterazioni all'ECG.</b>",
             "Esempio: <b>scusa l'ora, sono il medico di guardia; ho una paziente instabile e vorrei un tuo parere.</b>",
-            "Esempio: <b>mi chiedo se non sia meglio aspettare gli esami prima di cambiare terapia: lei che ne pensa?</b>",
+            "Esempio: <b>mi chiedo se non sia meglio aspettare gli esami prima di cambiare terapia: Lei che ne pensa?</b>",
             "Esempio: <b>il signor Verdi sta bene, i valori sono tornati normali: proporrei la dimissione per domani.</b>",
             "Esempio: <b>scusa, che cosa intendi con questa sigla?</b>"
           ]

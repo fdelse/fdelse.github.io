@@ -1,5 +1,5 @@
 {
-  "versione": "2.3",
+  "versione": "2.4",
   "livello": "B1",
   "schede": [
     {
@@ -828,7 +828,7 @@
       "cat": "Verbi",
       "title": "Verbi con a o di + infinito",
       "def": "Quando un verbo è seguito da un altro verbo all'infinito, tra i due ci può essere <b>a</b>, <b>di</b> oppure niente: «comincio <i>a</i> lavorare», «finisco <i>di</i> lavorare», «devo lavorare». La preposizione dipende dal primo verbo e non si indovina sempre dal significato: conviene impararla insieme al verbo, come il suo participio.",
-      "form": "<b>Come orientarsi.</b><ul class='sch'><li><b>a</b>: soprattutto verbi che indicano l'inizio o la continuazione di un'azione (<i>cominciare, continuare</i>), l'imparare e l'insegnare, il riuscire e il provare, lo spingere qualcuno a fare (<i>aiutare, convincere, invitare</i>), e <i>andare, venire</i> per dire lo scopo: «vado <i>a</i> comprare il pane»</li><li><b>di</b>: la maggior parte degli altri verbi, soprattutto quelli che indicano decisioni, tentativi, speranze, ricordi (<i>decidere, cercare, sperare, ricordarsi</i>), la fine di un'azione (<i>finire, smettere</i>) e le espressioni con <i>avere</i> (<i>avere voglia di</i>)</li><li><b>niente</b>: <i>dovere, potere, volere, sapere</i> (vedi Modali: dovere, potere, volere); <i>preferire, desiderare, amare, odiare</i>; <i>piacere</i>; le espressioni come <i>è facile, è importante, è meglio</i></li><li>davanti a una parola che comincia per <i>a</i>, la preposizione <i>a</i> diventa di solito <b>ad</b>: «impara <i>ad</i> andare in bici»</li><li><b>persone diverse.</b> Di solito l'infinito si usa quando chi fa le due azioni è la stessa persona; con persone diverse si usa <i>che</i> + verbo coniugato (vedi Il congiuntivo presente). Con alcuni verbi invece l'infinito si usa anche con due persone: <i>chiedere, dire, consigliare, permettere</i> + <b>di</b> («ti chiedo <i>di</i> aspettare») e <i>aiutare, convincere, invitare, insegnare</i> + <b>a</b> («ti aiuto <i>a</i> portare la valigia»)</li></ul>",
+      "form": "<b>Come orientarsi.</b><ul class='sch'><li><b>a</b>: soprattutto verbi che indicano l'inizio o la continuazione di un'azione (<i>cominciare, continuare</i>), l'imparare e l'insegnare, il riuscire e il provare, lo spingere qualcuno a fare (<i>aiutare, convincere, invitare</i>), e <i>andare, venire</i> per dire lo scopo: «vado <i>a</i> comprare il pane»</li><li><b>di</b>: la maggior parte degli altri verbi, soprattutto quelli che indicano decisioni, tentativi, speranze, ricordi (<i>decidere, cercare, sperare, ricordarsi</i>), la fine di un'azione (<i>finire, smettere</i>) e le espressioni con <i>avere</i> (<i>avere voglia di</i>)</li><li><b>niente</b>: <i>dovere, potere, volere, sapere</i> (vedi Modali: dovere, potere, volere); <i>preferire, desiderare, amare, odiare</i>; <i>piacere</i>; le espressioni come <i>è facile, è importante, è meglio</i></li><li>davanti a una parola che comincia per <i>a</i>, la preposizione <i>a</i> diventa di solito <b>ad</b>: «impara <i>ad</i> andare in bici»</li><li><b>persone diverse.</b> Di solito l'infinito si usa quando chi fa le due azioni è la stessa persona; con persone diverse si usa <i>che</i> + verbo coniugato (vedi Quando serve il congiuntivo). Con alcuni verbi invece l'infinito si usa anche con due persone: <i>chiedere, dire, consigliare, permettere</i> + <b>di</b> («ti chiedo <i>di</i> aspettare») e <i>aiutare, convincere, invitare, insegnare</i> + <b>a</b> («ti aiuto <i>a</i> portare la valigia»)</li></ul>",
       "tables": [
         {
           "before": "<b>I verbi più usati.</b>",
@@ -1025,7 +1025,7 @@
       "cat": "Nomi",
       "title": "Il partitivo",
       "def": "Indica una quantità non precisa, «una parte di» qualcosa: «vorrei <i>del</i> pane» (un po' di pane), «ho comprato <i>delle</i> mele» (alcune mele). Funziona anche come plurale di <i>un/una</i>, che un plurale non ce l'hanno.",
-      "form": "<b>di + articolo determinativo</b>: <i>del, dello, dell', della, dei, degli, delle</i>. Si sceglie come l'articolo: <i>il pane → del pane</i>, <i>gli spinaci → degli spinaci</i>. Al singolare si usa con le cose che non si contano (pane, acqua, latte, tempo); al plurale con le cose che si contano (mele, amici, libri). Le alternative con lo stesso significato sono <b>un po' di</b> (cose che non si contano), <b>alcuni/alcune</b> + plurale e <b>qualche</b> + singolare.",
+      "form": "<b>di + articolo determinativo</b>: <i>del, dello, dell', della, dei, degli, delle</i>. Si sceglie come l'articolo: <i>il pane → del pane</i>, <i>gli spinaci → degli spinaci</i>. Al singolare si usa con le cose che non si contano (pane, acqua, latte, tempo); al plurale con le cose che si contano (mele, amici, libri). Le alternative con lo stesso significato sono <b>un po' di</b> (cose che non si contano), <b>alcuni/alcune</b> + plurale e <b>qualche</b> + singolare (vedi Articoli indeterminativi).",
       "tables": [
         {
           "before": "<b>Partitivo e alternative.</b>",
@@ -1084,9 +1084,9 @@
           "why": "Dopo una quantità precisa si usa <i>di</i> senza articolo."
         },
         {
-          "wrong": "qualche libri",
-          "right": "qualche libro",
-          "why": "<i>Qualche</i> vuole il nome al singolare."
+          "wrong": "Vorrei dei pane.",
+          "right": "Vorrei del pane.",
+          "why": "<i>Pane</i> è singolare: <i>il pane → del pane</i>."
         },
         {
           "wrong": "Vorrei degli acqua.",
@@ -1135,7 +1135,7 @@
           "instr": "Trova e correggi l'errore.",
           "items": [
             "Ho comprato un chilo delle patate.",
-            "Ho qualche amici a Milano.",
+            "Ho comprato dei uova.",
             "Vorrei dei zucchero.",
             "Mi passi dell'olio e degli sale?",
             "Ho alcuni latte in frigo.",
@@ -1143,7 +1143,7 @@
           ],
           "key": [
             "<b>un chilo di patate</b>",
-            "<b>qualche amico</b>",
+            "<b>delle uova</b>",
             "<b>dello zucchero</b>",
             "<b>del sale</b>",
             "<b>del latte</b> (o <b>un po' di latte</b>)",
@@ -1746,7 +1746,7 @@
           "ex": "Chiunque venga, sarà accolto."
         }
       ],
-      "warn": "Non ci va il congiuntivo dopo le espressioni di <b>certezza</b>: so che, è vero che, è certo che, è chiaro che, si sa che. E non ci va dopo «secondo me», che vuole l'indicativo: «secondo me <b>è</b> tardi». Attenzione a «penso che»: nel parlato si sente spesso l'indicativo («penso che è tardi»), ma nello scritto e all'esame resta un errore.",
+      "warn": "Non ci va il congiuntivo dopo le espressioni di <b>certezza</b>: so che, è vero che, è certo che, è chiaro che, si sa che. E non ci va dopo «secondo me», che vuole l'indicativo: «secondo me <b>è</b> tardi». Attenzione a «penso che»: nel parlato si sente spesso l'indicativo («penso che è tardi»), ma nello scritto e all'esame resta un errore. <b>Stessa persona.</b> Con <i>volere</i> l'infinito va senza <i>di</i>: «voglio partire». Per un fatto già successo si usa <i>di</i> + infinito passato: «penso <i>di aver sbagliato</i>». La regola dell'infinito non vale per le congiunzioni: «<i>benché</i> io sia stanco, esco».",
       "errors": [
         {
           "wrong": "Penso che è tardi.",
@@ -2017,7 +2017,7 @@
           "ex": "Che vinca il migliore!"
         }
       ],
-      "warn": "<b>Stessa persona: di + infinito.</b> Dopo i verbi di opinione, speranza ed emozione, se chi pensa (o spera, teme…) e chi fa l'azione sono la stessa persona, non si usa il congiuntivo ma <i>di</i> + infinito: «penso <i>di</i> avere ragione» (io–io), ma «penso che <i>tu</i> abbia ragione» (io–tu). Con <i>volere</i> l'infinito va senza <i>di</i>: «voglio partire». La regola <b>non</b> vale per le congiunzioni: «<i>benché</i> io sia stanco, esco» (vedi Quando serve il congiuntivo).",
+      "warn": "<b>Stessa persona.</b> Se chi pensa (o spera, teme…) e chi fa l'azione sono la stessa persona, non si usa il congiuntivo: vedi Quando serve il congiuntivo.",
       "errors": [
         {
           "wrong": "che lui viena",
@@ -2048,11 +2048,6 @@
           "wrong": "che loro parlano",
           "right": "che loro parlino",
           "why": "Anche in <i>loro</i> la vocale cambia: <i>-ino</i> per i verbi in <i>-are</i>."
-        },
-        {
-          "wrong": "Spero che io trovi lavoro.",
-          "right": "Spero di trovare lavoro.",
-          "why": "Stessa persona: <i>di</i> + infinito."
         }
       ],
       "exercises": [
@@ -2085,7 +2080,7 @@
             "Spero che lui viena alla festa.",
             "Bisogna che io pagi l'affitto.",
             "Dubito che loro sanno la risposta.",
-            "Spero che io trovi presto lavoro."
+            "Penso che Marco stii male."
           ],
           "key": [
             "<b>parli</b>",
@@ -2093,7 +2088,7 @@
             "<b>venga</b>",
             "<b>paghi</b>",
             "<b>sappiano</b>",
-            "<b>Spero di trovare presto lavoro.</b>"
+            "<b>stia</b>"
           ]
         },
         {
@@ -2188,7 +2183,7 @@
           "ex": "È il film più bello che io abbia mai visto."
         }
       ],
-      "warn": "<b>Presente o passato?</b> Dipende da quando succede l'azione rispetto al momento in cui si parla: «penso che <i>stia</i> male» (adesso) / «penso che <i>sia stato</i> male» (prima). Se il primo verbo è al passato («pensavo che…»), servono invece il congiuntivo imperfetto o trapassato (vedi La concordanza dei tempi). Con la stessa persona si usa <i>di</i> + infinito passato: «penso di <i>aver sbagliato</i>».",
+      "warn": "<b>Presente o passato?</b> Dipende da quando succede l'azione rispetto al momento in cui si parla: «penso che <i>stia</i> male» (adesso) / «penso che <i>sia stato</i> male» (prima). Se il primo verbo è al passato («pensavo che…»), servono invece il congiuntivo imperfetto o trapassato (vedi La concordanza dei tempi). Con la stessa persona non si usa il congiuntivo: vedi Quando serve il congiuntivo.",
       "errors": [
         {
           "wrong": "Penso che è partito.",
@@ -2206,9 +2201,9 @@
           "why": "Con <i>essere</i> il participio si accorda con il soggetto."
         },
         {
-          "wrong": "Penso che io abbia sbagliato.",
-          "right": "Penso di aver sbagliato.",
-          "why": "Stessa persona: <i>di</i> + infinito passato."
+          "wrong": "Dubito che abbiano capiti.",
+          "right": "Dubito che abbiano capito.",
+          "why": "Con <i>avere</i> il participio non si accorda con il soggetto."
         },
         {
           "wrong": "Mi dispiace che non hai potuto venire.",
@@ -2244,7 +2239,7 @@
             "Sono contento che siete venuti.",
             "Spero che Giulia sia arrivato in orario.",
             "Mi sembra che lui abbia partito ieri.",
-            "Penso che io abbia dimenticato le chiavi.",
+            "Spero che voi abbiate divertiti alla festa.",
             "È la città più bella che ho mai visto.",
             "Benché ha studiato, non ha passato l'esame."
           ],
@@ -2252,7 +2247,7 @@
             "<b>siate</b>",
             "<b>arrivata</b>",
             "<b>sia partito</b>",
-            "<b>Penso di aver dimenticato</b>",
+            "<b>vi siate divertiti</b>",
             "<b>abbia</b> mai visto",
             "<b>abbia studiato</b>"
           ]
@@ -2875,8 +2870,8 @@
       "lvl": "b1",
       "cat": "Pronomi",
       "title": "I pronomi combinati",
-      "def": "Quando in una frase ci sono insieme un pronome <b>indiretto</b> e uno <b>diretto</b>, i due si fondono in un'unica forma. Perché accada devono essere pronomi <b>tutti e due</b>: se uno dei due resta esplicito oppure viene sottinteso, il combinato non si forma («Gli do il libro», «Li ha forniti»).",
-      "form": "L'indiretto va per primo e cambia vocale: mi/ti/ci/vi → me, te, ce, ve. Il diretto lo segue e <b>resta invariato</b>: può essere soltanto lo, la, li, le o ne. Due esempi completi: «Do il libro <b>a te</b>» → «<b>Te lo</b> do»; «Do il libro <b>a Marco</b>» → «<b>Glielo</b> do».",
+      "def": "Quando in una frase ci sono insieme un pronome <b>indiretto</b> e uno <b>diretto</b> (o la particella <i>ne</i>), i due si fondono in un'unica forma. Perché accada devono essere pronomi <b>tutti e due</b>: se uno dei due resta esplicito oppure viene sottinteso, il combinato non si forma («Gli do il libro», «Li ha forniti»).",
+      "form": "L'indiretto va per primo e cambia vocale: mi/ti/ci/vi → me, te, ce, ve. Il diretto lo segue e <b>resta invariato</b>: può essere soltanto lo, la, li, le o ne. Due esempi completi: «Do il libro <b>a te</b>» → «<b>Te lo</b> do»; «Do il libro <b>a Marco</b>» → «<b>Glielo</b> do». Per sapere quando al posto di <i>lo, la, li, le</i> si usa <i>ne</i> vedi Le particelle CI e NE («Lo o ne?»).",
       "tables": [
         {
           "headers": [
@@ -2937,8 +2932,8 @@
           "ex": "Glielo dico (a lui / a lei)."
         },
         {
-          "label": "al posto del diretto può esserci ne, quando si parla di una quantità o di un argomento",
-          "ex": "Me ne dai due? / Gliene parlo domani."
+          "label": "al posto del diretto può esserci ne, quando si parla di una quantità o di un argomento (vedi Le particelle CI e NE)",
+          "ex": "Hai delle caramelle? Me ne dai una? / Hai parlato ad Anna del progetto? — No, gliene parlo domani."
         },
         {
           "label": "la forma combinata sta prima del verbo, ma si attacca in fondo a infinito e imperativo",
@@ -2953,7 +2948,7 @@
           "ex": "Presenta me a Marco → Mi presenta a lui."
         }
       ],
-      "warn": "«gli» e «le» diventano <b>entrambi</b> «glie-», scritto attaccato al diretto: «glielo dico» vale sia per lui sia per lei, decide il contesto. Nei tempi composti il participio si accorda con il <b>diretto</b>, mai con l'indiretto: «Me li ha portat<i>i</i>». <br><br><b>L'apostrofo.</b> Si apostrofano solo le forme con <i>lo</i> e <i>la</i> (<i>me lo, te la, glielo, gliela, ce lo…</i>). Davanti alle forme di <i>avere</i> che cominciano con vocale o <i>h</i> (<i>ho, hai, ha, abbiamo, avete, hanno</i>) l'apostrofo si mette praticamente sempre: «me <b>l'</b>hai detto», «te <b>l'</b>ha data», «<b>gliel'</b>hanno spedito». Davanti ad altre vocali è facoltativo: «te l'invio» o «te lo invio». Le forme con <i>li</i> e <i>le</i> non si apostrofano mai: «me <b>li</b> ha dati», «<b>gliele</b> ho prese».",
+      "warn": "«gli» e «le» diventano <b>entrambi</b> «glie-», scritto attaccato al diretto: «glielo dico» vale sia per lui sia per lei, decide il contesto. Nei tempi composti il participio si accorda con il <b>diretto</b>, mai con l'indiretto: «Me li ha portat<i>i</i>» (con <i>ne</i>: vedi Le particelle CI e NE). <br><br><b>L'apostrofo.</b> Si apostrofano solo le forme con <i>lo</i> e <i>la</i> (<i>me lo, te la, glielo, gliela, ce lo…</i>). Davanti alle forme di <i>avere</i> che cominciano con vocale o <i>h</i> (<i>ho, hai, ha, abbiamo, avete, hanno</i>) l'apostrofo si mette praticamente sempre: «me <b>l'</b>hai detto», «te <b>l'</b>ha data», «<b>gliel'</b>hanno spedito». Davanti ad altre vocali è facoltativo: «te l'invio» o «te lo invio». Le forme con <i>li</i> e <i>le</i> non si apostrofano mai: «me <b>li</b> ha dati», «<b>gliele</b> ho prese».",
       "errors": [
         {
           "wrong": "Le lo do.",
@@ -2971,9 +2966,9 @@
           "why": "Davanti a <i>lo, la, li, le, ne</i>, <i>mi</i> diventa <i>me</i>."
         },
         {
-          "wrong": "Glie lo dico.",
-          "right": "Glielo dico.",
-          "why": "<i>Glie-</i> si scrive attaccato al diretto."
+          "wrong": "Mi dai delle mele? — Sì, te le do due.",
+          "right": "Sì, te ne do due.",
+          "why": "Per una parte o una quantità si usa <i>ne</i>, non <i>lo, la, li, le</i>."
         },
         {
           "wrong": "Le chiavi? Me l'ha dato.",
@@ -2996,7 +2991,7 @@
           "type": "Trasformazione",
           "instr": "Sostituisci le parole in grassetto con un pronome combinato.",
           "items": [
-            "Do <b>il libro a te</b>.",
+            "Do <b>due mele a te</b>.",
             "Presto <b>la macchina a Marco</b>.",
             "Mandi <b>le foto a me</b>?",
             "Spiego <b>la regola a voi</b>.",
@@ -3004,7 +2999,7 @@
             "Parlo <b>del problema al direttore</b>."
           ],
           "key": [
-            "<b>Te lo do.</b>",
+            "<b>Te ne do due.</b>",
             "<b>Gliela presto.</b>",
             "<b>Me le mandi?</b>",
             "<b>Ve la spiego.</b>",
@@ -3059,7 +3054,7 @@
       "cat": "Pronomi",
       "title": "Le particelle CI e NE",
       "def": "Due particelle brevissime che servono a non ripetere una parte della frase già detta. <b>CI</b> sostituisce soprattutto un luogo («Vai a Roma? — Sì, <i>ci</i> vado») o una cosa introdotta da <i>a</i>, <i>in</i>, <i>su</i> («Pensi all'esame? — Sì, <i>ci</i> penso»). <b>NE</b> sostituisce una quantità («Quanti caffè? — <i>Ne</i> prendo due») o una cosa introdotta da <i>di</i> o <i>da</i> («Parli del progetto? — Sì, <i>ne</i> parlo»).",
-      "form": "Stanno nella stessa posizione degli altri pronomi: prima del verbo coniugato («<i>ci</i> vado», «<i>ne</i> parlo»), attaccati alla fine di infinito, gerundio e imperativo («andar<i>ci</i>», «parlando<i>ne</i>», «prendi<i>ne</i>»). Dopo le forme brevi dell'imperativo (<i>va', fa', di'</i>) la consonante raddoppia: <i>vacci, fanne</i>. Con un altro pronome davanti cambiano la vocale come nei combinati: <i>ci</i> + <i>lo</i> → <b>ce lo</b>; <i>mi</i> + <i>ne</i> → <b>me ne</b>; <i>gli</i> + <i>ne</i> → <b>gliene</b>.",
+      "form": "Stanno nella stessa posizione degli altri pronomi: prima del verbo coniugato («<i>ci</i> vado», «<i>ne</i> parlo»), attaccati alla fine di infinito, gerundio e imperativo («andar<i>ci</i>», «parlando<i>ne</i>», «prendi<i>ne</i>»). Dopo le forme brevi dell'imperativo (<i>va', fa', di'</i>) la consonante raddoppia: <i>vacci, fanne</i>. Con un altro pronome davanti cambiano la vocale come nei combinati: <i>ci</i> + <i>lo</i> → <b>ce lo</b>; <i>mi</i> + <i>ne</i> → <b>me ne</b>; <i>gli</i> + <i>ne</i> → <b>gliene</b>.<br><br><b>Lo o ne?</b> <i>Lo, la, li, le</i> sostituiscono una cosa <b>intera e precisa</b>: «Compro il pane» → «<i>Lo</i> compro»; «Hai letto i libri?» → «Sì, <i>li</i> ho letti tutti». <i>Ne</i> sostituisce <b>una parte o una quantità</b> («Compro due panini» → «<i>Ne</i> compro due»; «Vuoi dello zucchero?» → «Sì, <i>ne</i> voglio un po'») oppure una cosa introdotta da <i>di</i> («Parlo del viaggio» → «<i>Ne</i> parlo»). Una prova pratica: se dopo il verbo resta un numero o una parola di quantità (<i>due, molti, pochi, un po', nessuno</i>), serve <i>ne</i>; con <i>tutto</i> invece si usa <i>lo, la, li, le</i>, perché si parla della cosa intera.",
       "tables": [
         {
           "before": "<b>Che cosa sostituiscono.</b>",
@@ -3153,6 +3148,10 @@
           "ex": "Quanti anni hai? — Ne ho trenta. / Vuoi del vino? — Sì, ne prendo un po'."
         },
         {
+          "label": "lo, la, li, le per la cosa intera; ne per una parte o una quantità",
+          "ex": "Hai comprato il giornale? — Sì, l'ho comprato. / Hai comprato dei giornali? — Sì, ne ho comprati due. / La torta? L'ho mangiata tutta."
+        },
+        {
           "label": "ne con i verbi che vogliono di",
           "ex": "Hai paura dei cani? — Sì, ne ho paura. / Che ne pensi?"
         },
@@ -3192,6 +3191,11 @@
           "wrong": "Mi ne vado.",
           "right": "Me ne vado.",
           "why": "Davanti a <i>ne</i>, <i>mi</i> diventa <i>me</i>."
+        },
+        {
+          "wrong": "Il pane? Ne ho comprato tutto.",
+          "right": "Il pane? L'ho comprato tutto.",
+          "why": "Con <i>tutto</i> si parla della cosa intera: si usa <i>lo, la, li, le</i>, non <i>ne</i>."
         }
       ],
       "exercises": [

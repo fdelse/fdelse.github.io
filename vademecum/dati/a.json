@@ -1,5 +1,5 @@
 {
-  "versione": "1.7",
+  "versione": "1.8",
   "livello": "A0 · A1",
   "schede": [
     {
@@ -2446,9 +2446,9 @@
           "why": "Il pronome va in un posto solo."
         },
         {
-          "wrong": "Voglio che vado al cinema.",
-          "right": "Voglio andare al cinema.",
-          "why": "Chi vuole e chi va sono la stessa persona: si usa l'infinito."
+          "wrong": "Possiamo andiamo al cinema?",
+          "right": "Possiamo andare al cinema?",
+          "why": "Dopo il modale il secondo verbo va all'infinito, non coniugato."
         },
         {
           "wrong": "Tu poi venire?",
@@ -3485,9 +3485,9 @@
           "why": "<i>Po'</i> è <i>poco</i> accorciato: si scrive con l'apostrofo, non con l'accento."
         },
         {
-          "wrong": "qual'è",
-          "right": "qual è",
-          "why": "<i>Qual</i> esiste anche come parola intera, quindi niente apostrofo."
+          "wrong": "Lo metto li.",
+          "right": "Lo metto lì.",
+          "why": "<i>Lì</i> (= in quel posto) vuole l'accento; <i>li</i> senza accento è il pronome (<i>li vedo</i>)."
         },
         {
           "wrong": "sò, stà, fà, quì",
